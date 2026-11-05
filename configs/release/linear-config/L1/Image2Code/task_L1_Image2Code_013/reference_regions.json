@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_013",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "136cddd9673b160c5bd881d95dc73024ffef57d770135fb0a5259971971505a7",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "chandelier branches 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.219,
+          0.351
+        ],
+        [
+          0.785,
+          0.351
+        ],
+        [
+          0.785,
+          0.737
+        ],
+        [
+          0.219,
+          0.737
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "suspension and central crown 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.444,
+          0.225
+        ],
+        [
+          0.557,
+          0.225
+        ],
+        [
+          0.557,
+          0.578
+        ],
+        [
+          0.444,
+          0.578
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "crystal pendants 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.248,
+          0.561
+        ],
+        [
+          0.749,
+          0.561
+        ],
+        [
+          0.749,
+          0.797
+        ],
+        [
+          0.248,
+          0.797
+        ]
+      ]
+    }
+  ]
+}

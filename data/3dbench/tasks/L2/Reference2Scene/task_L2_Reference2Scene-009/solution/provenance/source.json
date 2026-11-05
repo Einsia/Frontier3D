@@ -1,0 +1,35 @@
+{
+  "index": 3,
+  "key": "hintze",
+  "title": "Hintze Hall",
+  "source_url": "https://sketchfab.com/3d-models/hintze-hall-45f5e56887f44075bbf283977c99541f",
+  "slot": 9,
+  "excluded": false,
+  "source_file": "sources/hintze/hintze_hall.glb",
+  "sha256": "4798c9d7b0e89ec4f9ce430c144bf27ec91540269ef2e3f3a7b039f78805a41d",
+  "bytes": 156312760,
+  "task_path": "tasks/L2/Reference2Scene/task_L2_Reference2Scene-009",
+  "embedded_attribution": {
+    "author": "artfletch (https://sketchfab.com/artfletch)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/hintze-hall-45f5e56887f44075bbf283977c99541f",
+    "title": "Hintze Hall"
+  },
+  "uid": "45f5e56887f44075bbf283977c99541f",
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "author": {
+    "displayName": "artfletch",
+    "profileUrl": "https://sketchfab.com/artfletch",
+    "username": "artfletch"
+  },
+  "resource_family": "sketchfab/45f5e56887f44075bbf283977c99541f",
+  "author_name": "artfletch",
+  "preparation": "../../../../../../curation/l2-refresh-20261011/authoring/build_scene.py"
+}

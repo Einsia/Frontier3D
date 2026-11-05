@@ -1,0 +1,129 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-g05",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "upper_reservoir",
+    "ring_courtyard",
+    "basin_a",
+    "basin_b",
+    "lower_passage",
+    "control_chamber",
+    "observation_terrace",
+    "archive"
+  ],
+  "initial_state": "Both basins low; pump off; both inlets and drains closed. Platforms follow their own basin level.",
+  "entities": [
+    {
+      "id": "pump.power",
+      "role": "switch",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "basin.a.inlet",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "basin.b.inlet",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "basin.a.drain",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "basin.b.drain",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "basin.a.water",
+      "role": "water",
+      "actions": [
+        "inspect"
+      ],
+      "initial": "low",
+      "argument": ""
+    },
+    {
+      "id": "basin.b.water",
+      "role": "water",
+      "actions": [
+        "inspect"
+      ],
+      "initial": "low",
+      "argument": ""
+    },
+    {
+      "id": "platform.a",
+      "role": "floating_platform",
+      "actions": [
+        "inspect"
+      ],
+      "initial": "at low water",
+      "argument": ""
+    },
+    {
+      "id": "platform.b",
+      "role": "floating_platform",
+      "actions": [
+        "inspect"
+      ],
+      "initial": "at low water",
+      "argument": ""
+    },
+    {
+      "id": "door.control",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

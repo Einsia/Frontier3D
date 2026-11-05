@@ -1,0 +1,15 @@
+{
+  "key": "l3-g01",
+  "title": "Minecraft Open-World Village",
+  "domain": "game",
+  "input_mode": "image",
+  "package_format": "minecraft-openworld-v1",
+  "execution_status": "generation_ready",
+  "weights": {
+    "layout": 0.2,
+    "interaction": 0.15,
+    "environment": 0.2,
+    "objects": 0.3,
+    "rubric": 0.15
+  }
+}

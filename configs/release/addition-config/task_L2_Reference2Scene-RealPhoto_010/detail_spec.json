@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+  "family": "Reference2Scene",
+  "instruction_sha256": "8a696c6b1115025712c54b7ceb15342a85cdeb6ef5dab3570edfb61fd7d79396",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "90448b1d2aece2f6ef5dcd46b24e22d1ee28cf79124b36761e32f4ad91d7ded9"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "机鼻的圆钝端部、下颌收拢及向前机身过渡的曲面是否对应参考？",
+      "units": [
+        "visible aircraft nose and forward fuselage"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "驾驶舱窗的分片轮廓、倾斜边缘及窗间隔条是否对应参考？",
+      "units": [
+        "window bands"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "登机桥接机端的折叠褶皱、厚度及包围机身的边缘形状是否对应参考？",
+      "units": [
+        "beside the jet bridge"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "前起落架的支柱、轮轴、轮胎体积及连接结构是否对应参考？",
+      "units": [
+        "landing support"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "可见发动机的进气口、厚唇口、内腔及短舱曲面是否对应参考？",
+      "units": [
+        "Reconstruct the visible aircraft nose and forward fuselage beside the jet bridge, apron service vehicles and terminal backdrop."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "配餐升降车的箱体、剪叉支架、底盘及接机平台是否具有参考中的结构形态？",
+      "units": [
+        "apron service vehicles"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "前景装载设备的滚轮平台、升降支撑、梯子和护栏是否对应参考？",
+      "units": [
+        "apron service vehicles"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "航站楼的波浪屋檐厚度、上层弧形体块及玻璃立面分格是否对应参考？",
+      "units": [
+        "terminal roof silhouette"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

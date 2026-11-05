@@ -1,0 +1,268 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+  "family": "Reference2Scene",
+  "instruction_sha256": "9f293bf7697964e48f64467c6bb5206fe3f6b1a1ec70283bca64bf64e96ac980",
+  "reference_policy": "reference/reference-0.* is the ORIGINAL public reference image, not a generated reconstruction. Compare directly with candidate/main.png. Alternate view only supports shape interpretation.",
+  "focus": "Layer foreground shelves, central display route and deep bright arch; clutter must have volume and leave the reference route readable. Warm weathered brick and wood, dark shelving and patterned red rug in mixed warm/rear light; paintings and labels may be simplified.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "reference_feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Brick arches and columns with open passage depth. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Exposed timber ceiling beams and plank floor. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Foreground open dark display shelving with visible thickness and partial occlusion. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Dense but individually readable grouped vases, books, clocks, busts and boxes. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Central red rug, hanging globe lights and bright arched rear-room opening. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "dimension": "reference_layout",
+      "weight": 0.2,
+      "question": "Layer foreground shelves, central display route and deep bright arch; clutter must have volume and leave the reference route readable. Compare the authored main view without alignment/cropping/registration.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.1,
+      "question": "Compare BOTH authored candidate views for consistent meaningful 3D structure, thickness and attachments of the required subjects. Compare ALL supplied original reference views where present. Do not infer an unseen original backside or count a reflection as another object.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials_colors",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original surface colors, materials and style, not general attractiveness. Warm weathered brick and wood, dark shelving and patterned red rug in mixed warm/rear light; paintings and labels may be simplified.",
+      "units": [
+        "materials_colors"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_atmosphere",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original light direction, contrast, exposure, shadow depth and atmosphere in the authored main image. Warm weathered brick and wood, dark shelving and patterned red rug in mixed warm/rear light; paintings and labels may be simplified.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "42178ddfa40f9ab14f36fec7eb1d1fa8e92e62ea3204b046894fb81406a1cce5",
+    "image_size": [
+      800,
+      450
+    ],
+    "detector": {
+      "method": "vlm-boxes-v2",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "fingerprint": "d1e92a5fdae8e8438bd0622de7163b2589305ca336c953881b344e0317a89e5b"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "arch",
+        "label": "拱门",
+        "query": "archway",
+        "weight": 0.4,
+        "boxes": [
+          [
+            0.334,
+            0.289,
+            0.54,
+            0.7
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "机器参考图标注，尚未人工校准。框住中央砖拱内的整个通道开口，包括顶部暗处，不含外围砖砌拱圈。左下部分被落地钟遮挡，右下边缘被小家具遮挡；仅依据可见开口确定范围。"
+      },
+      {
+        "id": "shelves",
+        "label": "货架",
+        "query": "shelf",
+        "weight": 0.35,
+        "boxes": [
+          [
+            0,
+            0,
+            0.041,
+            1
+          ],
+          [
+            0.215,
+            0.309,
+            0.31,
+            0.838
+          ],
+          [
+            0.589,
+            0.376,
+            0.734,
+            0.711
+          ],
+          [
+            0.721,
+            0.382,
+            0.82,
+            0.693
+          ],
+          [
+            0.873,
+            0,
+            1,
+            1
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "机器参考图标注，尚未人工校准。每座货架按完整可见家具计一次，包含立柱、顶框及暗色部分。依次为左侧贴边货架、左中独立陈列架、后方拱顶木质陈列柜、右后方金属架及右前景大货架。拱顶陈列柜按具有开放层板的货架计入，其下部被木桶和杂物遮挡，边界略有不确定。两侧前景货架被画面裁切；镜中架子不另计。"
+      },
+      {
+        "id": "lamps",
+        "label": "吊灯",
+        "query": "pendant lamp",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.434,
+            0.304,
+            0.461,
+            0.384
+          ],
+          [
+            0.614,
+            0.171,
+            0.662,
+            0.282
+          ],
+          [
+            0.745,
+            0,
+            0.821,
+            0.147
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "机器参考图标注，尚未人工校准。计入三盏直接可见吊灯，框含可辨认的吊线、灯罩及暗色灯架。依次为拱门内小吊灯、中右白色吊灯及上方大白色吊灯；细吊线的起点略有不确定。左侧镜面中的枝形吊灯是反射，不另计实例。"
+      }
+    ],
+    "reviewed_by": "gpt-6-astra",
+    "review_kind": "automated_reference_only_v2",
+    "proposal_sha256": "820df9a1aa3085f9f598aa6d29bd768d8a73a5673b5086ff16d4e9dff7160eac",
+    "definitions_sha256": "558fa8daf9822182be1997c0a9c8f7f4b3fb775fe2a78cddb698d188d678b4f6",
+    "formal_score_eligible": false,
+    "proposal_detector_fingerprint": "741d93dddea1a9eb00c64f8dac30b978ceddb64c83ce5ab3c60c0e006715e20a",
+    "detector_revision_note": "Explicit mean token scores over frozen phrases with class/context competition. Single scale; larger detector and two-scale alternatives were rejected after reference-only review.",
+    "scoring_profile": "l2-reference-localized-v5.2.0",
+    "previous_annotation_sha256": "62411910745fc2dbac45686957ea0ed0607158709b1eaf972e1a2fcc500fc5ed",
+    "public_scope": "Reference boxes cover visible image extents, not inferred hidden geometry. Only the listed key objects enter localization; other scene content remains in the appearance component. Archway is the whole central arch-and-opening envelope. Shelves are five open display units, including clipped foreground units and distant visible units; clocks, closed cabinets and isolated posts are excluded. These classes await detector calibration.",
+    "source_annotation_sha256": "257c5376e69c73310fa7a724e7f84528b4d764d0898bfa5a101d1d63822e2b16",
+    "annotation_response_sha256": "fcf694c0c86ccac4d321b27831327845c33ffbcf18eec8a0bb289d30e957eaeb"
+  },
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

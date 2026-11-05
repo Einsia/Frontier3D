@@ -1,0 +1,402 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_008",
+  "family": "Reference2Scene",
+  "instruction_sha256": "b5634f0b57bc80e4ed4811f63f90567c9d94846e84d41db27b4094717e4b2e0f",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "可动上翻柜门铰链与伸缩撑杆；精确数值由程序测量；薄板开放柜体有真实空腔和背板",
+  "checks": [
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "units": [
+        "layout_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.03333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "layout_closed",
+      "component": "H",
+      "question": "在 closed 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "units": [
+        "layout_closed"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.03333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "layout_front",
+      "component": "H",
+      "question": "在 front 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "units": [
+        "layout_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.03333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "layout_half_open",
+      "component": "H",
+      "question": "在 half_open 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "units": [
+        "layout_half_open"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.03333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "layout_side",
+      "component": "H",
+      "question": "在 side 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "units": [
+        "layout_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.03333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png"
+      ]
+    },
+    {
+      "id": "layout_top",
+      "component": "H",
+      "question": "在 top 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "units": [
+        "layout_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.03333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：薄板柜体内腔、背板与边缘厚度。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.13333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：门框、门芯和上方铰接件的局部形态。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.13333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：左右伸缩撑杆的端部连接与轴向嵌套。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.13333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "material_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "material_closed",
+      "component": "M",
+      "question": "在 closed 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "material_closed"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "material_front",
+      "component": "M",
+      "question": "在 front 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "material_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "material_half_open",
+      "component": "M",
+      "question": "在 half_open 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "material_half_open"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "material_side",
+      "component": "M",
+      "question": "在 side 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "material_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png"
+      ]
+    },
+    {
+      "id": "material_top",
+      "component": "M",
+      "question": "在 top 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "material_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "lighting_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_closed",
+      "component": "M",
+      "question": "在 closed 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "lighting_closed"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "lighting_front",
+      "component": "M",
+      "question": "在 front 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "lighting_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "lighting_half_open",
+      "component": "M",
+      "question": "在 half_open 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "lighting_half_open"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "lighting_side",
+      "component": "M",
+      "question": "在 side 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "lighting_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png"
+      ]
+    },
+    {
+      "id": "lighting_top",
+      "component": "M",
+      "question": "在 top 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "units": [
+        "lighting_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.008333333333333333,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "5ce137f14dd65dd7af1b5a7b89fa7bc0e7e9f8a73f6f8dcdbad28a16ae125d14",
+    "reference/reference-1.png": "ccc2d33133d66942c4ee4d6b4e02ef979aa8e0a567d843f009d78e1ba68a68a6",
+    "reference/reference-2.png": "12ff5a1e888dcda800c1300cda213bbb6be4a2d32b3f66f82659d705aa70d4b7",
+    "reference/reference-3.png": "4d383f6b2e7e5fd2b81c868c6cad2b3ee19d0b28dd1a9ce56b5a22deb52ef67a",
+    "reference/reference-4.png": "2fdf9c8f054578902fcf7cc0032e3ded6a6f6e28cb9217d2f0c6892b8b0698a5",
+    "reference/reference-5.png": "256310e10d8d12f483c16ad0d7bc6cbe647b824897ac7eac9af414f8dc057a01"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

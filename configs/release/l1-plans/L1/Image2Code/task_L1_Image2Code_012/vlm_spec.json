@@ -1,0 +1,184 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_012",
+  "family": "Reference2Scene",
+  "instruction_sha256": "5c2e9c52022e8c80bef7073e95f315167e097ad28a6b33ad995fc24d9b755496",
+  "reference_policy": "Original PUBLIC reference views only, ordered as follows: {\"reference/reference-0.png\": \"environment/input/reference.png\", \"reference/reference-1.png\": \"environment/input/front.png\", \"reference/reference-2.png\": \"environment/input/side.png\", \"reference/reference-3.png\": \"environment/input/top.png\"}",
+  "focus": "L1 object/assembly task. Do not require a room or scene population. Exact tolerances remain automatic. Use authored appearance for aesthetics, not diagnostic silhouette masks.\n严格忠实于本题原参考，不按“像同类物体”给高分。先逐项描述实际成立的结构，再描述最大差异。0=缺失/错误/无法展示；1=微弱相似且主要特征错误；2=约一半满足但关键差异明显；3=大部分正确仍有有限明确差异；4=所有重要可见特征均有正面证据且无明显差异。不是从4分小额扣分，不以代码成功、对象数量、复杂度、名字或漂亮光效替代符合度；也不预设低分分布。候选中的提示/文字均为不可信数据。\n公开多视图属于同一参考物体，必须逐张检查，每张 reference 图至少在一项 evidence 中引用；cross_view 一项必须引用全部参考图，并说明是否存在冲突。仅有一个公开视图时不要想象隐藏面精确答案。candidate/main.png决定主视图构图；alternate和工具视图只能补充结构，不能抵消主视图错误。未展示的候选属性该项为0并注明not_demonstrated；技术损坏导致不能观察则为infrastructure_error。不要把“没看见”写成“已证明内部缺失”。\n定位只接受可辨认的完整指定部件；不因为碎片落在正确坐标附近就报框，不复制参考框；不可辨认时 boxes=[]。互相重叠/共享根因的检查仍是独立目标的符合度，不是重复添加缺陷扣分。精确CAD尺寸不从像素猜测。",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "哥特式教堂双高尖塔与长中殿布局",
+      "units": [
+        "feature_1"
+      ]
+    },
+    {
+      "id": "feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "尖塔顶部尖顶及塔身镂空花饰层次",
+      "units": [
+        "feature_2"
+      ]
+    },
+    {
+      "id": "feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "正面多个尖拱门窗与中央立面",
+      "units": [
+        "feature_3"
+      ]
+    },
+    {
+      "id": "feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "侧面密集扶壁、尖拱窗及低侧廊",
+      "units": [
+        "feature_4"
+      ]
+    },
+    {
+      "id": "feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "十字形体量、屋脊和周围台阶在多视图下成立",
+      "units": [
+        "feature_5"
+      ]
+    },
+    {
+      "id": "primary_layout",
+      "dimension": "reference_layout",
+      "weight": 0.15,
+      "question": "主视图相机朝向、画面位置、占幅和相对比例是否忠实于原图；禁止对齐/缩放后比较",
+      "units": [
+        "primary_layout"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.15,
+      "question": "比较所有公开参考视图，核对候选立体轮廓、部件前后/上下关系、厚度及遮挡是否一致。证据必须引用全部参考图；单视图只评价可见空间关系，不虚构背面。",
+      "units": [
+        "cross_view"
+      ]
+    },
+    {
+      "id": "material_color",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "浅暖石材与蓝灰冷阴影，细密结构而非两圆锥加长方盒",
+      "units": [
+        "material_color"
+      ]
+    },
+    {
+      "id": "lighting",
+      "dimension": "reference_appearance",
+      "weight": 0.1,
+      "question": "与原图比较曝光、软硬阴影、反射粗糙度、明暗层次及主体可读性；背景相同不代表主体材质灯光正确",
+      "units": [
+        "lighting"
+      ]
+    },
+    {
+      "id": "surface_finish",
+      "dimension": "reference_appearance",
+      "weight": 0.05,
+      "question": "对照原参考的曲面连续性、薄边、缝隙和表面细节；尖刺、破面、自交、漂浮碎片和不合理接缝不能算精细建模",
+      "units": [
+        "surface_finish"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_012",
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "622a3e4780b0c33006684632cff8f5b1ffc538e5fbceb8f60d2d799d69504fc3",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "detector": {
+      "fingerprint": "l1-ai-reference-only-draft-20261011"
+    },
+    "annotation_origin": "AI visual reference draft; not human ground truth",
+    "targets": [
+      {
+        "id": "part_1",
+        "query": "cathedral",
+        "boxes": [
+          [
+            0.18,
+            0.28,
+            0.77,
+            0.91
+          ]
+        ],
+        "weight": 0.3333333333333333,
+        "review_status": "approved",
+        "review_kind": "ai_draft",
+        "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+      },
+      {
+        "id": "part_2",
+        "query": "twin front spires",
+        "boxes": [
+          [
+            0.26,
+            0.28,
+            0.47,
+            0.82
+          ]
+        ],
+        "weight": 0.3333333333333333,
+        "review_status": "approved",
+        "review_kind": "ai_draft",
+        "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+      },
+      {
+        "id": "part_3",
+        "query": "nave and buttresses",
+        "boxes": [
+          [
+            0.44,
+            0.42,
+            0.76,
+            0.82
+          ]
+        ],
+        "weight": 0.3333333333333333,
+        "review_status": "approved",
+        "review_kind": "ai_draft",
+        "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1163 @@
+{
+  "key": "pirate-kit",
+  "path": "assets/expansion/kenney/pirate-kit/review/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      37.0,
+      -45.0,
+      32.0
+    ],
+    "rotation_euler": [
+      1.0952602624893188,
+      3.1459485683171806e-08,
+      0.6881450414657593
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "barrel",
+      "vertices": 248,
+      "polygons": 148,
+      "sha256": "c890647678a81db3c55016021ac8f37028a8332c874e1ee3f83adbc47313f8b8"
+    },
+    {
+      "name": "barrel.001",
+      "vertices": 248,
+      "polygons": 148,
+      "sha256": "c890647678a81db3c55016021ac8f37028a8332c874e1ee3f83adbc47313f8b8"
+    },
+    {
+      "name": "barrel.002",
+      "vertices": 248,
+      "polygons": 148,
+      "sha256": "c890647678a81db3c55016021ac8f37028a8332c874e1ee3f83adbc47313f8b8"
+    },
+    {
+      "name": "barrel.003",
+      "vertices": 248,
+      "polygons": 148,
+      "sha256": "c890647678a81db3c55016021ac8f37028a8332c874e1ee3f83adbc47313f8b8"
+    },
+    {
+      "name": "barrel.004",
+      "vertices": 248,
+      "polygons": 148,
+      "sha256": "c890647678a81db3c55016021ac8f37028a8332c874e1ee3f83adbc47313f8b8"
+    },
+    {
+      "name": "boat-row-large",
+      "vertices": 158,
+      "polygons": 118,
+      "sha256": "c789adf6f48e518f3df2dedbb36927d869fceb4ca6210cce1f28d512c5b2dfee"
+    },
+    {
+      "name": "crate",
+      "vertices": 152,
+      "polygons": 76,
+      "sha256": "895ea24d05c830ca53ddff6a45b097139f3e740a4b2fd86a734dd36f16bf6456"
+    },
+    {
+      "name": "crate.001",
+      "vertices": 152,
+      "polygons": 76,
+      "sha256": "895ea24d05c830ca53ddff6a45b097139f3e740a4b2fd86a734dd36f16bf6456"
+    },
+    {
+      "name": "crate.002",
+      "vertices": 152,
+      "polygons": 76,
+      "sha256": "895ea24d05c830ca53ddff6a45b097139f3e740a4b2fd86a734dd36f16bf6456"
+    },
+    {
+      "name": "crate.003",
+      "vertices": 152,
+      "polygons": 76,
+      "sha256": "895ea24d05c830ca53ddff6a45b097139f3e740a4b2fd86a734dd36f16bf6456"
+    },
+    {
+      "name": "crate.004",
+      "vertices": 152,
+      "polygons": 76,
+      "sha256": "895ea24d05c830ca53ddff6a45b097139f3e740a4b2fd86a734dd36f16bf6456"
+    },
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "eb32de8d9849742487247575c137f523ba279d185c356e3d6eefd3fa77806bb2"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "a12aea8d81f753f4313478ecbf38a8fa5b893b1ba641931a3d20f55996b6fe4e"
+    },
+    {
+      "name": "Cube.002",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "c9f6b532ad8321974523a254dbe1b39f673aecf3c447a42ca17c5426d57da743"
+    },
+    {
+      "name": "Cube.003",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7241d9d1f6c42d2efab599e7acdd35259027af969ceca991335fb09be863fc31"
+    },
+    {
+      "name": "flag-a",
+      "vertices": 156,
+      "polygons": 88,
+      "sha256": "c7861d25a51f647ee3a0be8d43a20bd56d28a01d623dca1187b47dfb2c8a88d5"
+    },
+    {
+      "name": "flag-b",
+      "vertices": 156,
+      "polygons": 88,
+      "sha256": "c7861d25a51f647ee3a0be8d43a20bd56d28a01d623dca1187b47dfb2c8a88d5"
+    },
+    {
+      "name": "flag-c",
+      "vertices": 156,
+      "polygons": 88,
+      "sha256": "c7861d25a51f647ee3a0be8d43a20bd56d28a01d623dca1187b47dfb2c8a88d5"
+    },
+    {
+      "name": "paddles",
+      "vertices": 100,
+      "polygons": 56,
+      "sha256": "292f22faf733d51078065631e052377a9283216d99756d2f6e07fb6494dfceb0"
+    },
+    {
+      "name": "palm-detailed-bend",
+      "vertices": 984,
+      "polygons": 482,
+      "sha256": "3ecde0ee323e676876b2f0f193ed69cfd122848fbf201a1dfb4ce65ccad1a65c"
+    },
+    {
+      "name": "palm-detailed-bend.001",
+      "vertices": 984,
+      "polygons": 482,
+      "sha256": "3ecde0ee323e676876b2f0f193ed69cfd122848fbf201a1dfb4ce65ccad1a65c"
+    },
+    {
+      "name": "palm-detailed-bend.002",
+      "vertices": 984,
+      "polygons": 482,
+      "sha256": "3ecde0ee323e676876b2f0f193ed69cfd122848fbf201a1dfb4ce65ccad1a65c"
+    },
+    {
+      "name": "palm-detailed-bend.003",
+      "vertices": 984,
+      "polygons": 482,
+      "sha256": "3ecde0ee323e676876b2f0f193ed69cfd122848fbf201a1dfb4ce65ccad1a65c"
+    },
+    {
+      "name": "rocks-sand-a",
+      "vertices": 1080,
+      "polygons": 552,
+      "sha256": "f25ba0201bcde4a980aa68953f8238f21c49a28028f6026a8efea1af598715d2"
+    },
+    {
+      "name": "rocks-sand-a.001",
+      "vertices": 1080,
+      "polygons": 552,
+      "sha256": "f25ba0201bcde4a980aa68953f8238f21c49a28028f6026a8efea1af598715d2"
+    },
+    {
+      "name": "rocks-sand-a.002",
+      "vertices": 1080,
+      "polygons": 552,
+      "sha256": "f25ba0201bcde4a980aa68953f8238f21c49a28028f6026a8efea1af598715d2"
+    },
+    {
+      "name": "sail-a",
+      "vertices": 218,
+      "polygons": 180,
+      "sha256": "4a54dd126ca16a2127ff7b99667be004e7a82c43751949c1414eda779cec47b7"
+    },
+    {
+      "name": "sail-b",
+      "vertices": 218,
+      "polygons": 180,
+      "sha256": "4839979ad217c07b5115c0d332635cbf82e934268bc471c2bdcaea6b4663e749"
+    },
+    {
+      "name": "ship-large",
+      "vertices": 1977,
+      "polygons": 1225,
+      "sha256": "a73497b7e165267ef83810265abb9afb3ff77367d7350ce94498c041c92cb303"
+    },
+    {
+      "name": "structure",
+      "vertices": 512,
+      "polygons": 276,
+      "sha256": "d191bd04afdaa2231b3d8e6eb2b9adb76478a65bf333c5b7106adac53adf066b"
+    },
+    {
+      "name": "structure-platform-dock",
+      "vertices": 616,
+      "polygons": 324,
+      "sha256": "4930e7a6278d4a22a844b2a16a6557ff56c42b53f673a9332233aa13ebb03ee3"
+    },
+    {
+      "name": "structure-platform-dock.001",
+      "vertices": 616,
+      "polygons": 324,
+      "sha256": "4930e7a6278d4a22a844b2a16a6557ff56c42b53f673a9332233aa13ebb03ee3"
+    },
+    {
+      "name": "structure-platform-dock.002",
+      "vertices": 616,
+      "polygons": 324,
+      "sha256": "4930e7a6278d4a22a844b2a16a6557ff56c42b53f673a9332233aa13ebb03ee3"
+    },
+    {
+      "name": "structure-platform-dock.003",
+      "vertices": 616,
+      "polygons": 324,
+      "sha256": "4930e7a6278d4a22a844b2a16a6557ff56c42b53f673a9332233aa13ebb03ee3"
+    },
+    {
+      "name": "structure-roof",
+      "vertices": 636,
+      "polygons": 348,
+      "sha256": "5b91b18bc48d4ad9770197e1a6f6e8f3c7b6e9405f9f692f71723e493f194c1c"
+    },
+    {
+      "name": "tower-complete-small",
+      "vertices": 1098,
+      "polygons": 650,
+      "sha256": "11752b3a140edaedcbb282762f028de4c0be9ff89293192c2487b31acea8e247"
+    }
+  ],
+  "images": [
+    {
+      "name": "colormap",
+      "path": "//..\\original\\Models\\GLB format\\Textures\\colormap.png",
+      "packed": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "451e1d7a53b8e76f4b2ee58742e241509fee5f82cf2cee6e3f7aca86ba718abe",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Sea",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        34.0,
+        32.0,
+        0.6000000238418579
+      ],
+      "bounds": [
+        [
+          -17.0,
+          -16.0,
+          -0.6499999761581421
+        ],
+        [
+          17.0,
+          16.0,
+          -0.04999998211860657
+        ]
+      ],
+      "materials": [
+        "Original water"
+      ]
+    },
+    {
+      "name": "Quay island",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        13.0,
+        27.0,
+        1.2000000476837158
+      ],
+      "bounds": [
+        [
+          2.5,
+          -11.5,
+          -0.7000000476837158
+        ],
+        [
+          15.5,
+          15.5,
+          0.5
+        ]
+      ],
+      "materials": [
+        "Original site sand"
+      ]
+    },
+    {
+      "name": "Dock trunk",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        19.0,
+        0.5
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -12.5,
+          0.550000011920929
+        ],
+        [
+          3.0,
+          6.5,
+          1.0499999523162842
+        ]
+      ],
+      "materials": [
+        "Original pier walkway"
+      ]
+    },
+    {
+      "name": "Dock finger",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        9.0,
+        3.0,
+        0.5
+      ],
+      "bounds": [
+        [
+          -7.5,
+          -9.5,
+          0.5899999737739563
+        ],
+        [
+          1.5,
+          -6.5,
+          1.0899999141693115
+        ]
+      ],
+      "materials": [
+        "Original pier walkway"
+      ]
+    },
+    {
+      "name": "structure-platform-dock",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.75,
+        3.7690372467041016,
+        1.9684500694274902
+      ],
+      "bounds": [
+        [
+          -0.875,
+          -11.88451862335205,
+          -0.5
+        ],
+        [
+          2.875,
+          -8.11548137664795,
+          1.4684500694274902
+        ]
+      ],
+      "materials": [
+        "colormap"
+      ]
+    },
+    {
+      "name": "structure-platform-dock.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.75,
+        3.7690372467041016,
+        1.9684500694274902
+      ],
+      "bounds": [
+        [
+          -0.875,
+          -6.884518623352051,
+          -0.5
+        ],
+        [
+          2.875,
+          -3.115481376647949,
+          1.4684500694274902
+        ]
+      ],
+      "materials": [
+        "colormap.001"
+      ]
+    },
+    {
+      "name": "structure-platform-dock.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.75,
+        3.7690372467041016,
+        1.9684500694274902
+      ],
+      "bounds": [
+        [
+          -0.875,
+          -1.8845186233520508,
+          -0.5
+        ],
+        [
+          2.875,
+          1.8845186233520508,
+          1.4684500694274902
+        ]
+      ],
+      "materials": [
+        "colormap.002"
+      ]
+    },
+    {
+      "name": "structure-platform-dock.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.75,
+        3.7690372467041016,
+        1.9684500694274902
+      ],
+      "bounds": [
+        [
+          -0.875,
+          3.115481376647949,
+          -0.5
+        ],
+        [
+          2.875,
+          6.884518623352051,
+          1.4684500694274902
+        ]
+      ],
+      "materials": [
+        "colormap.003"
+      ]
+    },
+    {
+      "name": "ship-large",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.800000190734863,
+        13.100000381469727,
+        9.963520050048828
+      ],
+      "bounds": [
+        [
+          -9.399999618530273,
+          -2.5500001907348633,
+          -0.699999988079071
+        ],
+        [
+          -4.599999904632568,
+          10.550000190734863,
+          9.263520240783691
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "flag-a",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3509009778499603,
+        1.3543405532836914,
+        0.962024986743927
+      ],
+      "bounds": [
+        [
+          -7.175450325012207,
+          -0.3907729983329773,
+          4.980975151062012
+        ],
+        [
+          -6.824549674987793,
+          0.9635676145553589,
+          5.943000316619873
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "sail-b",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.400000095367432,
+        0.9624997973442078,
+        3.625
+      ],
+      "bounds": [
+        [
+          -9.199999809265137,
+          8.494765281677246,
+          3.847456216812134
+        ],
+        [
+          -4.800000190734863,
+          9.45726490020752,
+          7.472455978393555
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "sail-a",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.400000095367432,
+        1.174999713897705,
+        4.724999904632568
+      ],
+      "bounds": [
+        [
+          -9.199999809265137,
+          3.2813405990600586,
+          2.4385199546813965
+        ],
+        [
+          -4.800000190734863,
+          4.456340312957764,
+          7.163519859313965
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "flag-c",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3509009778499603,
+        1.3543405532836914,
+        0.962024986743927
+      ],
+      "bounds": [
+        [
+          -7.175450325012207,
+          9.181815147399902,
+          7.5379743576049805
+        ],
+        [
+          -6.824549674987793,
+          10.536155700683594,
+          8.499999046325684
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "flag-b",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3509009778499603,
+        1.3543405532836914,
+        0.962024986743927
+      ],
+      "bounds": [
+        [
+          -7.175450325012207,
+          4.167283535003662,
+          8.137975692749023
+        ],
+        [
+          -6.824549674987793,
+          5.5216240882873535,
+          9.100000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "boat-row-large",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.5707999467849731,
+        3.1373612880706787,
+        0.7039999961853027
+      ],
+      "bounds": [
+        [
+          -8.568680763244629,
+          -10.785400390625,
+          -0.30000001192092896
+        ],
+        [
+          -5.431319236755371,
+          -9.214599609375,
+          0.4039999842643738
+        ]
+      ],
+      "materials": [
+        "colormap.005"
+      ]
+    },
+    {
+      "name": "paddles",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0233919620513916,
+        0.33263999223709106,
+        0.8711555600166321
+      ],
+      "bounds": [
+        [
+          -7.623250961303711,
+          -11.511695861816406,
+          -0.23869049549102783
+        ],
+        [
+          -7.290610313415527,
+          -8.488304138183594,
+          0.6324650645256042
+        ]
+      ],
+      "materials": [
+        "colormap.005"
+      ]
+    },
+    {
+      "name": "structure",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.0,
+        5.0,
+        4.400000095367432
+      ],
+      "bounds": [
+        [
+          6.5,
+          2.5,
+          0.5
+        ],
+        [
+          11.5,
+          7.5,
+          4.900000095367432
+        ]
+      ],
+      "materials": [
+        "colormap.006"
+      ]
+    },
+    {
+      "name": "structure-roof",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.170917987823486,
+        6.467632293701172,
+        6.800000190734863
+      ],
+      "bounds": [
+        [
+          5.914541244506836,
+          1.766183614730835,
+          4.900000095367432
+        ],
+        [
+          12.085458755493164,
+          8.233816146850586,
+          11.700000762939453
+        ]
+      ],
+      "materials": [
+        "colormap.007"
+      ]
+    },
+    {
+      "name": "tower-complete-small",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.35368275642395,
+        3.6568963527679443,
+        6.784999847412109
+      ],
+      "bounds": [
+        [
+          9.323158264160156,
+          -8.828448295593262,
+          0.5
+        ],
+        [
+          12.676841735839844,
+          -5.1715521812438965,
+          7.284999847412109
+        ]
+      ],
+      "materials": [
+        "colormap.008"
+      ]
+    },
+    {
+      "name": "palm-detailed-bend",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.1684045791625977,
+        3.5376508235931396,
+        4.676433086395264
+      ],
+      "bounds": [
+        [
+          10.982954025268555,
+          8.132712364196777,
+          0.5
+        ],
+        [
+          15.017046928405762,
+          11.867288589477539,
+          5.176433086395264
+        ]
+      ],
+      "materials": [
+        "colormap.009"
+      ]
+    },
+    {
+      "name": "palm-detailed-bend.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.1684045791625977,
+        3.5376508235931396,
+        4.676433086395264
+      ],
+      "bounds": [
+        [
+          9.676051139831543,
+          -13.256372451782227,
+          0.5
+        ],
+        [
+          14.323948860168457,
+          -8.74362850189209,
+          5.176433086395264
+        ]
+      ],
+      "materials": [
+        "colormap.010"
+      ]
+    },
+    {
+      "name": "palm-detailed-bend.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.1684045791625977,
+        3.5376508235931396,
+        4.676433086395264
+      ],
+      "bounds": [
+        [
+          3.676051139831543,
+          8.74362850189209,
+          0.5
+        ],
+        [
+          8.323948860168457,
+          13.256372451782227,
+          5.176433086395264
+        ]
+      ],
+      "materials": [
+        "colormap.011"
+      ]
+    },
+    {
+      "name": "palm-detailed-bend.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.1684045791625977,
+        3.5376508235931396,
+        4.676433086395264
+      ],
+      "bounds": [
+        [
+          2.9829533100128174,
+          -10.867288589477539,
+          0.5
+        ],
+        [
+          7.017046928405762,
+          -7.132712364196777,
+          5.176433086395264
+        ]
+      ],
+      "materials": [
+        "colormap.012"
+      ]
+    },
+    {
+      "name": "barrel",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9352687001228333,
+        0.9352687001228333,
+        0.8603998422622681
+      ],
+      "bounds": [
+        [
+          3.532365560531616,
+          -0.4676343500614166,
+          0.5
+        ],
+        [
+          4.467634201049805,
+          0.4676343500614166,
+          1.360399842262268
+        ]
+      ],
+      "materials": [
+        "colormap.013"
+      ]
+    },
+    {
+      "name": "crate",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8623999953269958,
+        1.047200083732605,
+        0.6159999966621399
+      ],
+      "bounds": [
+        [
+          3.5687999725341797,
+          -2.1236000061035156,
+          0.5
+        ],
+        [
+          4.43120002746582,
+          -1.0764000415802002,
+          1.1159999370574951
+        ]
+      ],
+      "materials": [
+        "colormap.014"
+      ]
+    },
+    {
+      "name": "barrel.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9352687001228333,
+        0.9352687001228333,
+        0.8603998422622681
+      ],
+      "bounds": [
+        [
+          4.632365703582764,
+          -0.4676343500614166,
+          0.5
+        ],
+        [
+          5.567634105682373,
+          0.4676343500614166,
+          1.360399842262268
+        ]
+      ],
+      "materials": [
+        "colormap.015"
+      ]
+    },
+    {
+      "name": "crate.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8623999953269958,
+        1.047200083732605,
+        0.6159999966621399
+      ],
+      "bounds": [
+        [
+          4.668799877166748,
+          -2.1236000061035156,
+          0.5
+        ],
+        [
+          5.531199932098389,
+          -1.0764000415802002,
+          1.1159999370574951
+        ]
+      ],
+      "materials": [
+        "colormap.016"
+      ]
+    },
+    {
+      "name": "barrel.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9352687001228333,
+        0.9352687001228333,
+        0.8603998422622681
+      ],
+      "bounds": [
+        [
+          5.732365608215332,
+          -0.4676343500614166,
+          0.5
+        ],
+        [
+          6.667634010314941,
+          0.4676343500614166,
+          1.360399842262268
+        ]
+      ],
+      "materials": [
+        "colormap.017"
+      ]
+    },
+    {
+      "name": "crate.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8623999953269958,
+        1.047200083732605,
+        0.6159999966621399
+      ],
+      "bounds": [
+        [
+          5.768799781799316,
+          -2.1236000061035156,
+          0.5
+        ],
+        [
+          6.631199836730957,
+          -1.0764000415802002,
+          1.1159999370574951
+        ]
+      ],
+      "materials": [
+        "colormap.018"
+      ]
+    },
+    {
+      "name": "barrel.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9352687001228333,
+        0.9352687001228333,
+        0.8603998422622681
+      ],
+      "bounds": [
+        [
+          6.832365989685059,
+          -0.4676343500614166,
+          0.5
+        ],
+        [
+          7.767634391784668,
+          0.4676343500614166,
+          1.360399842262268
+        ]
+      ],
+      "materials": [
+        "colormap.019"
+      ]
+    },
+    {
+      "name": "crate.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8623999953269958,
+        1.047200083732605,
+        0.6159999966621399
+      ],
+      "bounds": [
+        [
+          6.868800163269043,
+          -2.1236000061035156,
+          0.5
+        ],
+        [
+          7.731200218200684,
+          -1.0764000415802002,
+          1.1159999370574951
+        ]
+      ],
+      "materials": [
+        "colormap.020"
+      ]
+    },
+    {
+      "name": "barrel.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9352687001228333,
+        0.9352687001228333,
+        0.8603998422622681
+      ],
+      "bounds": [
+        [
+          7.932365417480469,
+          -0.4676343500614166,
+          0.5
+        ],
+        [
+          8.867633819580078,
+          0.4676343500614166,
+          1.360399842262268
+        ]
+      ],
+      "materials": [
+        "colormap.021"
+      ]
+    },
+    {
+      "name": "crate.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8623999953269958,
+        1.047200083732605,
+        0.6159999966621399
+      ],
+      "bounds": [
+        [
+          7.968799591064453,
+          -2.1236000061035156,
+          0.5
+        ],
+        [
+          8.831199645996094,
+          -1.0764000415802002,
+          1.1159999370574951
+        ]
+      ],
+      "materials": [
+        "colormap.022"
+      ]
+    },
+    {
+      "name": "rocks-sand-a",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.5788168907165527,
+        3.0705020427703857,
+        2.2483623027801514
+      ],
+      "bounds": [
+        [
+          -2.7894084453582764,
+          9.46474838256836,
+          -0.10000000149011612
+        ],
+        [
+          0.7894084453582764,
+          12.535250663757324,
+          2.148362398147583
+        ]
+      ],
+      "materials": [
+        "colormap.023"
+      ]
+    },
+    {
+      "name": "rocks-sand-a.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.5788168907165527,
+        3.0705020427703857,
+        2.2483623027801514
+      ],
+      "bounds": [
+        [
+          3.2105915546417236,
+          -13.53525161743164,
+          -0.10000000149011612
+        ],
+        [
+          6.7894086837768555,
+          -10.464749336242676,
+          2.148362398147583
+        ]
+      ],
+      "materials": [
+        "colormap.024"
+      ]
+    },
+    {
+      "name": "rocks-sand-a.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.5788168907165527,
+        3.0705020427703857,
+        2.2483623027801514
+      ],
+      "bounds": [
+        [
+          12.210591316223145,
+          -4.535251140594482,
+          -0.10000000149011612
+        ],
+        [
+          15.789408683776855,
+          -1.4647488594055176,
+          2.148362398147583
+        ]
+      ],
+      "materials": [
+        "colormap.025"
+      ]
+    }
+  ]
+}

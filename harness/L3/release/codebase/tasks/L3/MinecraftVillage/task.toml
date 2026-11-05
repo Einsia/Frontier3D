@@ -1,0 +1,12 @@
+version = 1
+id = "L3/MinecraftVillage"
+level = 3
+category = "PlayableReconstruction"
+title = "Minecraft plains village reconstruction and interaction"
+instruction = "instruction.md"
+environment = "environment"
+reference_kind = "game_screenshot"
+input_mode = "image"
+domain = "game"
+scoring_contract = "l3-evidence-v3"
+environment_files = ["input/reference.jpg", "input/INTERFACE.md", "input/BenchEntity.h", "input/BenchObserver.h", "input/BenchInventory.h"]

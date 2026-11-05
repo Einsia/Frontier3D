@@ -1,0 +1,79 @@
+[
+  {
+    "part": "hub_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "shaft_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "hub_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "shaft_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "bolt_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "bolt_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_2",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_2",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "spacer",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  }
+]

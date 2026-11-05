@@ -1,0 +1,692 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_013",
+  "title": "环槽回转套筒",
+  "category": "Text2Code",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_body_dimensions",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "竖直Z轴套筒外径36.21 mm、高80.6 mm、底Z=0；实际表面和尺寸误差≤0.15 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_through_bore",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "直径15.9 mm真实通孔及剩余连续壁；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_groove",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "外周方槽轴向宽6.06 mm、径向深2.21 mm、中心Z=50.8，槽肩锐利且不倒角；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_chamfers",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "两端内外边缘均0.9×0.9 mm、45度倒角，槽不倒角；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "蓝灰金属材料；相机和背景不作为隐藏匹配目标；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_body_dimensions",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "竖直Z轴套筒外径36.21 mm、高80.6 mm、底Z=0；实际表面和尺寸误差≤0.15 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "body_dimensions",
+        "public_requirement": "竖直Z轴套筒外径36.21 mm、高80.6 mm、底Z=0；实际表面和尺寸误差≤0.15 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "grooved_sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.03621,
+                    0.03621,
+                    0.0806
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "native_sleeve_surface",
+            "metric": "machined_sleeve",
+            "group": "sleeve_surface",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "surface",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_surface",
+            "metric": "machined_sleeve",
+            "group": "sleeve_surface",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "surface",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "native_sleeve_body_dimensions",
+            "metric": "machined_sleeve",
+            "group": "sleeve_dimensions",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "body_dimensions",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_body_dimensions",
+            "metric": "machined_sleeve",
+            "group": "sleeve_dimensions",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "body_dimensions",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_through_bore",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "直径15.9 mm真实通孔及剩余连续壁",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "through_bore",
+        "public_requirement": "直径15.9 mm真实通孔及剩余连续壁",
+        "legacy_check_bindings": [
+          {
+            "id": "native_sleeve_solid",
+            "metric": "machined_sleeve",
+            "group": "sleeve_solid",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "solid",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_solid",
+            "metric": "machined_sleeve",
+            "group": "sleeve_solid",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "solid",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "native_sleeve_through_bore",
+            "metric": "machined_sleeve",
+            "group": "sleeve_bore",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "through_bore",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_through_bore",
+            "metric": "machined_sleeve",
+            "group": "sleeve_bore",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "through_bore",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "bore_sections",
+            "metric": "hole_pattern",
+            "group": "part_features",
+            "params": {
+              "object_dimensions": [
+                0.03621,
+                0.03621,
+                0.0806
+              ],
+              "object_dimension_tolerance": "dimension_m",
+              "centers": [
+                [
+                  0,
+                  0
+                ]
+              ],
+              "z_values": [
+                0.005,
+                0.04,
+                0.075
+              ],
+              "radius": 0.00795,
+              "tolerance": "bore_radius_m",
+              "angular_samples": 64,
+              "axis_samples": 17,
+              "relative_to_object": true
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_groove",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "外周方槽轴向宽6.06 mm、径向深2.21 mm、中心Z=50.8，槽肩锐利且不倒角",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "groove",
+        "public_requirement": "外周方槽轴向宽6.06 mm、径向深2.21 mm、中心Z=50.8，槽肩锐利且不倒角",
+        "legacy_check_bindings": [
+          {
+            "id": "native_sleeve_surface",
+            "metric": "machined_sleeve",
+            "group": "sleeve_surface",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "surface",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_surface",
+            "metric": "machined_sleeve",
+            "group": "sleeve_surface",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "surface",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "native_sleeve_groove",
+            "metric": "machined_sleeve",
+            "group": "sleeve_groove",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "groove",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_groove",
+            "metric": "machined_sleeve",
+            "group": "sleeve_groove",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "groove",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_chamfers",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "两端内外边缘均0.9×0.9 mm、45度倒角，槽不倒角",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "chamfers",
+        "public_requirement": "两端内外边缘均0.9×0.9 mm、45度倒角，槽不倒角",
+        "legacy_check_bindings": [
+          {
+            "id": "native_sleeve_surface",
+            "metric": "machined_sleeve",
+            "group": "sleeve_surface",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "surface",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_surface",
+            "metric": "machined_sleeve",
+            "group": "sleeve_surface",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "surface",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "native_sleeve_chamfers",
+            "metric": "machined_sleeve",
+            "group": "sleeve_chamfers",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/native_sleeve",
+              "scene": "/scene",
+              "feature": "chamfers",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          },
+          {
+            "id": "glb_sleeve_chamfers",
+            "metric": "machined_sleeve",
+            "group": "sleeve_chamfers",
+            "pass_threshold": 1,
+            "params": {
+              "path": "/numeric_checks/glb_sleeve",
+              "scene": "/artifacts/scene.glb/scene",
+              "feature": "chamfers",
+              "design": {
+                "outer_radius_m": 0.018105,
+                "bore_radius_m": 0.00795,
+                "height_m": 0.0806,
+                "groove_width_m": 0.00606,
+                "groove_depth_m": 0.00221,
+                "groove_center_z_m": 0.0508,
+                "chamfer_m": 0.0009,
+                "tolerance_m": 0.00015
+              }
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_editable_part",
+      "component": "E",
+      "weight": 0.2,
+      "question": "一件闭合、连通、独立可编辑真实三维零件，不要求装配或爆炸动画",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_topology",
+      "component": "E",
+      "weight": 0.2,
+      "question": "所有零件闭合且分别连通",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_solid_validity",
+      "component": "E",
+      "weight": 0.2,
+      "question": "有效实体零件",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_glb_assembled",
+      "component": "E",
+      "weight": 0.2,
+      "question": "GLB与原生静态实体的几何、单位及可表达材质一致",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_units",
+      "component": "E",
+      "weight": 0.2,
+      "question": "米制导出、Z向上；按本题0.15 mm尺寸/表面位置容差判定",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015,
+          "bore_radius_m": 7.5e-05
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "9fb443ada68102be00bb328abd3bb877f11991b527e8f265c31098809cf679e3",
+    "task.toml": "82dc59e8e865a0f70caac11ebdf0ebd87bf89c4890aacade7f434877de51445a",
+    "harness/eval_spec.json": "37be499cd688259c677c1eaf9eaace4bf50ba53983b47bce509486e5072445eb"
+  },
+  "source_requirement_dispositions": {
+    "procedural_materials": "system_evidence_only",
+    "editable_part": "E",
+    "body_dimensions": "Q",
+    "through_bore": "Q",
+    "groove": "Q",
+    "chamfers": "Q",
+    "topology": "E",
+    "solid_validity": "E",
+    "glb_readable": "system_evidence_only",
+    "glb_assembled": "E",
+    "reconstruction": "system_evidence_only",
+    "instructions": "system_evidence_only",
+    "units": "E",
+    "materials": "Q",
+    "review_view": "system_evidence_only",
+    "seed_quality": "system_evidence_only"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

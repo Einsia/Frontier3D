@@ -1,0 +1,128 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010",
+  "family": "Reference2Scene",
+  "instruction_sha256": "cd81e6ddfee367fcdff8857d48f40b573dd831038ce147af542d303b0bd8eb0b",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "大卫头像；精确数值由程序测量；大卫式青年男性半身头像而非泛化球脸",
+  "checks": [
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：大卫式青年男性半身头像而非泛化球脸",
+      "units": [
+        "layout_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.2,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：眉弓、眼窝与眼睑的凹凸和连续曲面。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：鼻梁鼻翼、唇缝唇体、下巴与下颌。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：公开可见耳廓的外耳轮、内部折叠和头侧过渡。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：重叠卷发体积、弯曲方向、发簇间沟槽和层次。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：哑白石膏/石材柔和明暗，鼻眼唇的浅阴影不能被白光抹掉",
+      "units": [
+        "material_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：哑白石膏/石材柔和明暗，鼻眼唇的浅阴影不能被白光抹掉",
+      "units": [
+        "lighting_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "082d3a85c019ef945bf7349311cfeb2c024f4b9fe7b01a045e2ea20ef546e763"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

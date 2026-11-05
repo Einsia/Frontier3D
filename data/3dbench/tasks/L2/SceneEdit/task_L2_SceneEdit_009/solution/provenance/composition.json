@@ -1,0 +1,183 @@
+{
+  "used_assets": {
+    "railroad-straight": {
+      "path": "assets/expansion/kenney/train-kit/original/Models/GLB format/railroad-straight.glb",
+      "sha256": "bcbd501f74b754b61f2ddb5cba2d45d5d694bfd25c497fa72af65202a53930d9"
+    },
+    "train-locomotive-a": {
+      "path": "assets/expansion/kenney/train-kit/original/Models/GLB format/train-locomotive-a.glb",
+      "sha256": "8dfe9d20667c1534652286149fb0e1639ff48975a4187d3ad2fd956add0bba2a"
+    },
+    "train-carriage-box": {
+      "path": "assets/expansion/kenney/train-kit/original/Models/GLB format/train-carriage-box.glb",
+      "sha256": "6b594f3f7ef779879043219e2ee79eb37523427e2100855296a0c9662b36689c"
+    },
+    "train-carriage-flatbed": {
+      "path": "assets/expansion/kenney/train-kit/original/Models/GLB format/train-carriage-flatbed.glb",
+      "sha256": "2dc5ebc40ec9e550f0c06f59622a44b42024b593194a207a7f66ad30c44f4ff8"
+    },
+    "train-carriage-tank": {
+      "path": "assets/expansion/kenney/train-kit/original/Models/GLB format/train-carriage-tank.glb",
+      "sha256": "0de1d92587c0b4d79e6dd1dad7d4d2e8ef849330af07e2f1701b98b9e0cf4e6a"
+    }
+  },
+  "placements": [
+    {
+      "name": "railroad-straight",
+      "position": [
+        0,
+        -16,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        0,
+        -8,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        0,
+        8,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        0,
+        16,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        5,
+        -16,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        5,
+        -8,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        5,
+        0,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        5,
+        8,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "railroad-straight",
+      "position": [
+        5,
+        16,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "train-locomotive-a",
+      "position": [
+        0,
+        10,
+        0.18
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "train-carriage-box",
+      "position": [
+        0,
+        4,
+        0.18
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": true
+    },
+    {
+      "name": "train-carriage-flatbed",
+      "position": [
+        0,
+        -2,
+        0.18
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "train-carriage-tank",
+      "position": [
+        5,
+        -7,
+        0.18
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    }
+  ],
+  "source": "https://kenney.nl/assets/train-kit",
+  "license": "CC0-1.0",
+  "changes": "Original full scene layout and procedural site context; selected licensed asset assembly deleted from model input."
+}

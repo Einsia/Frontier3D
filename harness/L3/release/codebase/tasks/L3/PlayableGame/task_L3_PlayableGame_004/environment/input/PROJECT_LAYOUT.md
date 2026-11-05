@@ -1,0 +1,1 @@
+The submitted project must use output/ue5_project/3DBenchGame.uproject as its fixed UE5 project entry. The project root must contain Config/ and Content/; Source/, Plugins/, and SourceAssets/Blender/ are allowed when used. Put a short launch and controls note in output/README.md. Do not submit generated Binaries/, Intermediate/, Saved/, or DerivedDataCache/ directories.

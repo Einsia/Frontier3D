@@ -1,0 +1,210 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-r01",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "main_forecourt",
+    "main_gate",
+    "inner_courtyard",
+    "side_gallery",
+    "service_store"
+  ],
+  "initial_state": "Main and service doors closed, lighting groups off, equipment and barriers in service store.",
+  "entities": [
+    {
+      "id": "gate.main.01",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "gate.main.02",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.service.01",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.service.02",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "barrier.01",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "service area",
+      "argument": ""
+    },
+    {
+      "id": "barrier.02",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "service area",
+      "argument": ""
+    },
+    {
+      "id": "barrier.03",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "service area",
+      "argument": ""
+    },
+    {
+      "id": "barrier.04",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "service area",
+      "argument": ""
+    },
+    {
+      "id": "light.group.01",
+      "role": "light",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "light.group.02",
+      "role": "light",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "light.group.03",
+      "role": "light",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "cart.equipment",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "empty; service store",
+      "argument": ""
+    },
+    {
+      "id": "case.01",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "closed; each contains an accessory",
+      "argument": ""
+    },
+    {
+      "id": "case.02",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "closed; each contains an accessory",
+      "argument": ""
+    },
+    {
+      "id": "lamp.accessory.01",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "inside cases",
+      "argument": ""
+    },
+    {
+      "id": "lamp.accessory.02",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "inside cases",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

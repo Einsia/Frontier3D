@@ -1,0 +1,269 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_021",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/af0cd7917dcba5aedcab/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/adc0145f0699845c3f0f/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/189c5d3c071003874b95/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_bars",
+      "label": "渐变琴条面",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.126,
+          0.354
+        ],
+        [
+          0.275,
+          0.278
+        ],
+        [
+          0.832,
+          0.486
+        ],
+        [
+          0.768,
+          0.517
+        ]
+      ]
+    },
+    {
+      "id": "r_tubes",
+      "label": "悬垂共鸣管组",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.201,
+          0.374
+        ],
+        [
+          0.646,
+          0.471
+        ],
+        [
+          0.646,
+          0.503
+        ],
+        [
+          0.204,
+          0.489
+        ]
+      ]
+    },
+    {
+      "id": "r_left",
+      "label": "左端支撑",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.077,
+          0.572
+        ],
+        [
+          0.096,
+          0.365
+        ],
+        [
+          0.109,
+          0.346
+        ],
+        [
+          0.269,
+          0.262
+        ],
+        [
+          0.277,
+          0.279
+        ],
+        [
+          0.138,
+          0.374
+        ],
+        [
+          0.129,
+          0.584
+        ]
+      ]
+    },
+    {
+      "id": "r_right",
+      "label": "右端框架及腿",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.735,
+          0.737
+        ],
+        [
+          0.756,
+          0.512
+        ],
+        [
+          0.84,
+          0.469
+        ],
+        [
+          0.865,
+          0.506
+        ],
+        [
+          0.884,
+          0.691
+        ],
+        [
+          0.872,
+          0.698
+        ],
+        [
+          0.832,
+          0.685
+        ],
+        [
+          0.818,
+          0.539
+        ],
+        [
+          0.8,
+          0.549
+        ],
+        [
+          0.786,
+          0.746
+        ],
+        [
+          0.776,
+          0.75
+        ]
+      ]
+    },
+    {
+      "id": "r_mallets",
+      "label": "琴面上的交叉琴槌",
+      "weight": 0.05,
+      "polygon": [
+        [
+          0.289,
+          0.371
+        ],
+        [
+          0.351,
+          0.337
+        ],
+        [
+          0.349,
+          0.32
+        ],
+        [
+          0.366,
+          0.313
+        ],
+        [
+          0.382,
+          0.326
+        ],
+        [
+          0.397,
+          0.319
+        ],
+        [
+          0.409,
+          0.328
+        ],
+        [
+          0.405,
+          0.343
+        ],
+        [
+          0.384,
+          0.348
+        ],
+        [
+          0.424,
+          0.389
+        ],
+        [
+          0.417,
+          0.395
+        ],
+        [
+          0.369,
+          0.345
+        ],
+        [
+          0.295,
+          0.381
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标中，排除相机与灯光，对静态组装对象的实际几何求整体轴对齐包围盒，取三个轴向尺寸的最大值，与1.000 m标称值比较；容差字段为原文2%的相对比例。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

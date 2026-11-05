@@ -1,0 +1,102 @@
+{
+  "source": "assets/expansion/polyhaven-models/desk_lamp_arm_01/original/source.blend",
+  "visible_mesh_objects": 27,
+  "vertices": 11659,
+  "dimensions_m": [
+    0.6173094511032104,
+    0.4577183723449707,
+    0.8790191411972046
+  ],
+  "normalization": {
+    "uniform_scale": 1.00000003390407,
+    "maximum_extent_m": 0.8790190517902374,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        1.3185285329818726,
+        -1.7331900596618652,
+        1.4943325519561768
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -4.2214843176680006e-08,
+        0.6435012221336365
+      ],
+      "ortho_scale": 1.2745776176452637
+    },
+    "front": {
+      "position": [
+        -1.4901161193847656e-08,
+        -2.6122090816497803,
+        0.7032153010368347
+      ],
+      "rotation": [
+        1.4711275100708008,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.2745776176452637
+    },
+    "side": {
+      "position": [
+        2.637057065963745,
+        0.02484804391860962,
+        0.7032153010368347
+      ],
+      "rotation": [
+        1.4711276292800903,
+        -1.2499955914790917e-07,
+        1.570796251296997
+      ],
+      "ortho_scale": 1.2745776176452637
+    },
+    "top": {
+      "position": [
+        -1.4901161193847656e-08,
+        0.023969024419784546,
+        3.076566696166992
+      ],
+      "rotation": [
+        0.00048828125,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.2745776176452637
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "geo_lamp-head",
+    "geo_top-pivot",
+    "geo_top-spring_a_bottom-hook",
+    "geo_middle-pivot",
+    "geo_arm_2_a",
+    "geo_arm_2_b",
+    "geo_arm_1_c",
+    "geo_arm_1_b",
+    "geo_arm_1_a",
+    "geo_lamp-base-pivot",
+    "geo_lower-spring_b",
+    "geo_base_pivot",
+    "geo_pivot-holder",
+    "geo_middle_wire",
+    "geo_top_wire",
+    "geo_lower-spring_top-bar",
+    "geo_lower-spring_a_bottom-hook",
+    "geo_lower-spring_a_top-hook",
+    "geo_lower-spring_a",
+    "geo_lower-spring_b_bottom-hook",
+    "geo_lower-spring_b_top-hook",
+    "geo_top-spring_b_bottom-hook",
+    "geo_top-spring_a",
+    "geo_top-spring_b",
+    "geo_top-spring_a_top-hook",
+    "geo_top-spring_b_top-hook",
+    "geo_lamp-head-button"
+  ]
+}

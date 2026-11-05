@@ -1,0 +1,16 @@
+{
+  "key": "train-kit",
+  "target_objects_removed": [
+    "wheels-back",
+    "train-carriage-box",
+    "wheels-front.001",
+    "train-carriage-box placement"
+  ],
+  "preserved_mesh_count": 37,
+  "preserved_meshes_equal": true,
+  "preserved_materials_equal": true,
+  "camera_and_render_settings_equal": true,
+  "missing_active_images": 0,
+  "external_libraries": 0,
+  "scope": "Pair construction: only named target objects deleted; actual full and input renders."
+}

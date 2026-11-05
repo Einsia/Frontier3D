@@ -1,0 +1,164 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+  "family": "Brief2Scene",
+  "instruction_sha256": "57437486cb068e02a79240d378801dd1c089885c67be20b8af8c5bd0fd1a7a43",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {},
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "大厅地面是否具有可辨识的石材铺装网格结构？",
+      "units": [
+        "polished-stone lobby with a 600 mm floor grid"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "信箱组是否由独立可辨的箱格组成，并具有实体厚度？",
+      "units": [
+        "a 12-compartment mailbox bank"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "电梯入口是否形成完整门洞，开启的门体是否退出通行开口？",
+      "units": [
+        "Fully open a 0.90 m elevator doorway."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "门槛是否具有可辨识的沟槽几何及跨接处细节？",
+      "units": [
+        "aligned sill grooves within 2 mm"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "轿厢是否由有厚度的地板和围壁构成真实内部空间？",
+      "units": [
+        "The car is 1.40 m deep and 1.60 m wide"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "扶手是否具有实体杆件形态和合理支撑？",
+      "units": [
+        "handrails on three walls at 0.90 m"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "控制面板与镜面是否具有可辨识的独立构件形态？",
+      "units": [
+        "a control panel and a mirror"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "机器人是否具有独立底座、屏幕和层架构件，层架是否有厚度与合理支撑？",
+      "units": [
+        "The robot has a 0.50 x 0.45 m base, screen top at 1.20 m, three shelves"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D09",
+      "component": "F",
+      "question": "包裹是否呈实体长方体形态，并具有可辨识的标签表面？",
+      "units": [
+        "a 0.35 x 0.25 x 0.15 m parcel on the top tray with label upward"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D10",
+      "component": "F",
+      "question": "机器人关节式姿态是否由实际几何构件表达，而非仅靠贴图暗示？",
+      "units": [
+        "A static articulated robot pose is required;"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ]
+}

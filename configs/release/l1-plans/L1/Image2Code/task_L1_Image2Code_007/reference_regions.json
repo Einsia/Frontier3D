@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_007",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "a7c4979ee9a3a231ae2e58fec2fe621ddb3941041949d60796c8b9a9d2a756cd",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "octagonal lantern",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.12,
+          0.13
+        ],
+        [
+          0.88,
+          0.13
+        ],
+        [
+          0.88,
+          0.93
+        ],
+        [
+          0.12,
+          0.93
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "panel body",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.22,
+          0.39
+        ],
+        [
+          0.77,
+          0.39
+        ],
+        [
+          0.77,
+          0.89
+        ],
+        [
+          0.22,
+          0.89
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "roof and eaves",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.12,
+          0.13
+        ],
+        [
+          0.88,
+          0.13
+        ],
+        [
+          0.88,
+          0.48
+        ],
+        [
+          0.12,
+          0.48
+        ]
+      ]
+    }
+  ]
+}

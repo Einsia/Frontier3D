@@ -1,0 +1,556 @@
+{
+  "family": "lead_screw_stage",
+  "title_zh": "丝杠驱动滑台",
+  "title_en": "Lead-screw positioning stage",
+  "description_zh": "导向杆与丝杠分别承担导向和驱动，螺母座置于移动平台下方；本题不要求建模螺纹牙型。",
+  "description_en": "Separate guidance and drive using guide rods and a lead screw, with a nut block under the moving platform. Thread tooth geometry is not required.",
+  "parts": [
+    {
+      "id": "base",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            170,
+            100,
+            6
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        3
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        0,
+        60
+      ]
+    },
+    {
+      "id": "guide_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 150,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        -30,
+        26
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -27.5,
+        0,
+        72
+      ]
+    },
+    {
+      "id": "guide_bushing_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 9,
+          "height": 40,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 44,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        -30,
+        26
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        0,
+        84
+      ]
+    },
+    {
+      "id": "guide_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 150,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        30,
+        26
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        82.5,
+        0,
+        96
+      ]
+    },
+    {
+      "id": "guide_bushing_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 9,
+          "height": 40,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 44,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        30,
+        26
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        38,
+        108
+      ]
+    },
+    {
+      "id": "lead_screw",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 5,
+          "height": 182,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        26
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -27.5,
+        38,
+        120
+      ]
+    },
+    {
+      "id": "nut_block",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            24,
+            22,
+            18
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 28,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        26
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        38,
+        132
+      ]
+    },
+    {
+      "id": "platform",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            58,
+            86,
+            6
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        38
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        82.5,
+        38,
+        144
+      ]
+    },
+    {
+      "id": "end_0",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            12,
+            90,
+            36
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 16,
+          "at": [
+            0,
+            -30,
+            2
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 16,
+          "at": [
+            0,
+            0,
+            2
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 16,
+          "at": [
+            0,
+            30,
+            2
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        -76,
+        0,
+        24
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        76,
+        156
+      ]
+    },
+    {
+      "id": "end_1",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            12,
+            90,
+            36
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 16,
+          "at": [
+            0,
+            -30,
+            2
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 16,
+          "at": [
+            0,
+            0,
+            2
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 16,
+          "at": [
+            0,
+            30,
+            2
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        76,
+        0,
+        24
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -27.5,
+        76,
+        168
+      ]
+    },
+    {
+      "id": "handwheel",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 18,
+          "height": 6,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 10,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        88,
+        0,
+        26
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        76,
+        180
+      ]
+    }
+  ],
+  "mates": [
+    {
+      "type": "coaxial",
+      "a": "guide_0",
+      "b": "guide_bushing_0",
+      "axis": "x",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "guide_1",
+      "b": "guide_bushing_1",
+      "axis": "x",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "lead_screw",
+      "b": "nut_block",
+      "axis": "x",
+      "radial_clearance_mm": 0.2
+    }
+  ],
+  "level": 1,
+  "kind": "assembly",
+  "units": "millimetres",
+  "tolerance_mm": 0.3,
+  "part_count": 11
+}

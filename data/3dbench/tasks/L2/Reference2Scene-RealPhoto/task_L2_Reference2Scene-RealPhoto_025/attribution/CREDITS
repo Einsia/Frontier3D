@@ -1,0 +1,17 @@
+Task: L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025
+Original source task ID: L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_028
+
+Original source notice (environment/input/CREDIT.txt):
+
+Mip-NeRF 360 Counter：厨房台面
+Source document: https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug
+Revision: 1010
+Project: https://jonbarron.info/mipnerf360/
+Attribution: Mip-NeRF 360 project / dataset; Jonathan T. Barron, Ben Mildenhall, Dor Verbin, Pratul P. Srinivasan, Peter Hedman
+Usage: User-supplied image for benchmark inclusion; upstream image redistribution license unverified; no blanket public license asserted
+Changes: metadata-free RGB PNG; original dimensions retained; no crop or generated content.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

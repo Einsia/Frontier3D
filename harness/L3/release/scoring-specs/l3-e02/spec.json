@@ -1,0 +1,211 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-e02",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "d59ca159adb9d652aa8e4a9ce82890b50be05a83ccb557cd8384de02bcefa454",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Preserve the long supermarket aisle, with tall shelving dominating the right and receding toward shorter stocked fixtures at the left rear.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Keep merchandise coverage dense but uneven, including a few visibly depleted wire bins and gaps between product groups.",
+        "id": "env-03"
+      },
+      {
+        "criterion": "Match the enclosed shop atmosphere: pale suspended ceiling, broad overhead lighting, subdued gray floor and colorful goods against dark shelving.",
+        "id": "env-04"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "A long, tall shelving run forms the dominant right-hand wall and recedes strongly down the aisle.",
+            "id": "shelves-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Numerous shallow horizontal tiers have narrow front lips, with fairly tight vertical spacing.",
+            "id": "shelves-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Dark perforated backing and shelf surfaces contrast with silver-gray shelf-edge rails.",
+            "id": "shelves-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Small pale price-label holders repeat along the rails; some middle and lower bays use projecting wire baskets or dividers.",
+            "id": "shelves-04",
+            "kind": "construction"
+          }
+        ],
+        "id": "target-01",
+        "importance": "core",
+        "label": "Main supermarket shelving",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 30
+      },
+      {
+        "features": [
+          {
+            "criterion": "Upright rectangular pasta cartons form repeated rows, with large blue and turquoise blocks near the center.",
+            "id": "pasta-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Soft upright bags alternate with cartons, especially across upper shelves and lower central tiers.",
+            "id": "pasta-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Printed cardboard and glossy transparent bag windows reveal pale yellow pasta in varied recognizable shapes.",
+            "id": "pasta-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Green, yellow, cream, red and orange packaging breaks up the dominant blue and turquoise rows.",
+            "id": "pasta-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-02",
+        "importance": "core",
+        "label": "Packaged pasta and dry goods",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 20
+      },
+      {
+        "features": [
+          {
+            "criterion": "Dense rows of cylindrical sauce jars occupy the right foreground across multiple tiers.",
+            "id": "jars-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Jars have rounded shoulders, short necks, screw lids and broad wraparound labels.",
+            "id": "jars-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Reflective clear glass reveals predominantly red-orange sauces, with some pale cream contents on the lowest visible tiers.",
+            "id": "jars-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Green, blue and gold lids and dark green, blue or light labels form distinct product blocks with modest size variation.",
+            "id": "jars-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-03",
+        "importance": "core",
+        "label": "Jarred sauces and condiments",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [
+          {
+            "criterion": "A broad gray aisle floor extends alongside the shelves beneath a low, flat ceiling.",
+            "id": "interior-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The ceiling has a visible rectangular panel grid, linear light fixtures and inset ventilation equipment.",
+            "id": "interior-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The floor is smooth, muted gray with a slight sheen; ceiling panels are pale and matte.",
+            "id": "interior-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Shorter stocked fixtures at the left rear establish adjoining aisles and continue the dark metal shelving language.",
+            "id": "interior-04",
+            "kind": "construction"
+          }
+        ],
+        "id": "target-04",
+        "importance": "core",
+        "label": "Shop interior and adjoining fixtures",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [],
+        "id": "target-05",
+        "importance": "supporting",
+        "label": "Brief-defined service and storage areas; not pictured",
+        "references": [
+          "Public brief"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [],
+        "id": "target-06",
+        "importance": "supporting",
+        "label": "Brief-defined stock handling objects; not pictured",
+        "references": [
+          "Public brief"
+        ],
+        "weight": 5
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "626bf908e4021ded8113469177cf3f43e34f520562b6541bdad03839769f4850"
+  }
+}

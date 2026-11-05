@@ -1,0 +1,279 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/09c289195d6cbbb7a32e/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/f17decdc737560e21be3/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/c679e0f04443f87d730a/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "摩托车整体可见主体",
+      "polygon": [
+        [
+          0.267,
+          0.773
+        ],
+        [
+          0.268,
+          0.597
+        ],
+        [
+          0.32,
+          0.48
+        ],
+        [
+          0.44,
+          0.445
+        ],
+        [
+          0.608,
+          0.455
+        ],
+        [
+          0.669,
+          0.347
+        ],
+        [
+          0.66,
+          0.237
+        ],
+        [
+          0.695,
+          0.226
+        ],
+        [
+          0.751,
+          0.284
+        ],
+        [
+          0.836,
+          0.341
+        ],
+        [
+          0.886,
+          0.284
+        ],
+        [
+          0.944,
+          0.3
+        ],
+        [
+          0.941,
+          0.447
+        ],
+        [
+          0.918,
+          0.477
+        ],
+        [
+          0.925,
+          0.552
+        ],
+        [
+          0.867,
+          0.637
+        ],
+        [
+          0.735,
+          0.681
+        ],
+        [
+          0.519,
+          0.734
+        ],
+        [
+          0.36,
+          0.779
+        ]
+      ],
+      "weight": 0.4
+    },
+    {
+      "id": "r02",
+      "label": "发动机与下部排气结构",
+      "polygon": [
+        [
+          0.522,
+          0.593
+        ],
+        [
+          0.601,
+          0.535
+        ],
+        [
+          0.75,
+          0.512
+        ],
+        [
+          0.767,
+          0.627
+        ],
+        [
+          0.713,
+          0.687
+        ],
+        [
+          0.553,
+          0.71
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "r03",
+      "label": "绿色展示垫",
+      "polygon": [
+        [
+          0.225,
+          0.999
+        ],
+        [
+          0.277,
+          0.667
+        ],
+        [
+          0.857,
+          0.603
+        ],
+        [
+          0.999,
+          0.755
+        ],
+        [
+          0.999,
+          0.805
+        ],
+        [
+          0.514,
+          0.999
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r04",
+      "label": "左侧头盔货架",
+      "polygon": [
+        [
+          0.143,
+          0.001
+        ],
+        [
+          0.388,
+          0.001
+        ],
+        [
+          0.434,
+          0.433
+        ],
+        [
+          0.234,
+          0.468
+        ],
+        [
+          0.17,
+          0.174
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r05",
+      "label": "中后方配件小货架",
+      "polygon": [
+        [
+          0.486,
+          0.272
+        ],
+        [
+          0.633,
+          0.264
+        ],
+        [
+          0.636,
+          0.448
+        ],
+        [
+          0.498,
+          0.472
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "n01",
+      "measurement_definition": "在原生场景中识别摩托车前后轮总成并计数；遮挡不改变计数，轮胎与轮毂不重复计为不同车轮。",
+      "quantity": "摩托车车轮数量",
+      "relation": "equal",
+      "source_quote": "two wheels",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n02",
+      "measurement_definition": "应用对象变换后，在各车轮自身轮平面内测量轮胎外缘通过轮轴的外径，以场景米制长度逐轮核验尺度约定。",
+      "quantity": "摩托车车轮外径",
+      "relation": "equal",
+      "source_quote": "Use a 0.65 m outer motorcycle-wheel diameter as the task scale convention",
+      "target": 0.65,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n03",
+      "measurement_definition": "读取两相机世界位置，以主相机局部正 X 轴变换到世界空间所得单位向量乘以 0.30 m，核验该向量等于备用相机位置减主相机位置。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

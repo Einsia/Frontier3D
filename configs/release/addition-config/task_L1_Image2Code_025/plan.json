@@ -1,0 +1,264 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_025",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/3938ac7e1cabad9121bc/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/fad51af34e365ff79a44/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/1ca0d8bb06d314c9e350/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "把手与仪表区域",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.468,
+          0.147
+        ],
+        [
+          0.643,
+          0.156
+        ],
+        [
+          0.728,
+          0.218
+        ],
+        [
+          0.724,
+          0.253
+        ],
+        [
+          0.549,
+          0.29
+        ],
+        [
+          0.533,
+          0.208
+        ],
+        [
+          0.468,
+          0.183
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "转向柱及外露线缆",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.551,
+          0.236
+        ],
+        [
+          0.655,
+          0.234
+        ],
+        [
+          0.65,
+          0.696
+        ],
+        [
+          0.593,
+          0.685
+        ],
+        [
+          0.578,
+          0.409
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "前轮与悬挂附件",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.581,
+          0.532
+        ],
+        [
+          0.679,
+          0.53
+        ],
+        [
+          0.725,
+          0.588
+        ],
+        [
+          0.724,
+          0.674
+        ],
+        [
+          0.664,
+          0.706
+        ],
+        [
+          0.621,
+          0.676
+        ]
+      ]
+    },
+    {
+      "id": "r04",
+      "label": "踏板",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.474,
+          0.701
+        ],
+        [
+          0.552,
+          0.663
+        ],
+        [
+          0.608,
+          0.664
+        ],
+        [
+          0.641,
+          0.687
+        ],
+        [
+          0.636,
+          0.718
+        ],
+        [
+          0.486,
+          0.804
+        ],
+        [
+          0.453,
+          0.778
+        ]
+      ]
+    },
+    {
+      "id": "r05",
+      "label": "货箱、后架与后轮",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.23,
+          0.717
+        ],
+        [
+          0.276,
+          0.624
+        ],
+        [
+          0.336,
+          0.607
+        ],
+        [
+          0.479,
+          0.641
+        ],
+        [
+          0.492,
+          0.813
+        ],
+        [
+          0.423,
+          0.842
+        ],
+        [
+          0.407,
+          0.872
+        ],
+        [
+          0.313,
+          0.861
+        ],
+        [
+          0.28,
+          0.815
+        ],
+        [
+          0.229,
+          0.79
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n01",
+      "source_quote": "both wheels",
+      "quantity": "车轮数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维场景中按独立轮轴对应的完整车轮总成计数，轮胎与轮毂不分别计数。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整车最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在静态姿态下取得车辆几何的世界坐标包围盒，取三个轴向尺寸最大值；排除相机和照明对象，保留车辆实体灯壳。explicit_tolerance以任务单位表示名义值的2%，即0.02 m；此项为待测量要求。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

@@ -1,0 +1,15 @@
+Task: L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008
+Original source task ID: L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008
+
+Original source notice (environment/input/CREDIT.txt):
+
+柏林车站玻璃拱顶与站台
+Source: https://pixabay.com/images/download/morgengry-berlin-5010635_1920.jpg
+License: Pixabay Content License
+{"label": "Pixabay Content License", "url": "https://pixabay.com/service/license-summary/", "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."}
+Images obtained from the user-curated Feishu document, revision 902; no generative edits.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

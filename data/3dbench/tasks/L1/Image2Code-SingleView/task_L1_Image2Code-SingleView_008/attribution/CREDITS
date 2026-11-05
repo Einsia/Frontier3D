@@ -1,0 +1,17 @@
+Task: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008
+Original source task ID: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008
+
+Original source notice (environment/input/CREDIT.txt):
+
+RED Digital Cinema Weapon Dragon 8K Camera
+Author: Christopher Holloway (https://sketchfab.com/cholloway2392)
+Source: https://sketchfab.com/3d-models/red-digital-cinema-weapon-dragon-8k-camera-e1127f2c8d4d4d65b9608ff3714890bc
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Removed only the two display-turntable meshes; camera components retained.
+No endorsement by the original author is implied.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2a976e1cd10117e1699cd074ddfe2bb98528acc78952b75e8136d3c9988ea3bf",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "e38f24570cf1eeb8fc22bb427fa26c9cd95353c2b8cab9c3776c67de39ed003c"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d01",
+      "component": "F",
+      "question": "前景车轮是否具有可辨的轮胎厚度、轮圈内孔、轮毂和辐条结构？",
+      "units": [
+        "foreground wheels, frames and supports require real geometry."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d02",
+      "component": "F",
+      "question": "前景自行车的车架管件、连接节点与架内空隙是否符合参考中的局部形态？",
+      "units": [
+        "Preserve the foreground bicycle geometry"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d03",
+      "component": "F",
+      "question": "前景自行车的前叉、转向立管和弯折车把是否具有对应的立体连接结构？",
+      "units": [
+        "foreground wheels, frames and supports require real geometry."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d04",
+      "component": "F",
+      "question": "前景自行车的坐垫支杆、曲柄脚踏、后架和可见支撑脚是否保留相应局部形态？",
+      "units": [
+        "Preserve the foreground bicycle geometry"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d05",
+      "component": "F",
+      "question": "前景后货筐及右侧车篮是否保留敞口、边框厚度和可辨网格结构？",
+      "units": [
+        "Preserve the foreground bicycle geometry"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d06",
+      "component": "F",
+      "question": "栏杆是否具有独立横杆、细竖杆、杆间开口及立柱连接，而非实心平板？",
+      "units": [
+        "Keep major components independently editable, with thickness, support and meaningful spacing."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d07",
+      "component": "F",
+      "question": "桥梁是否保留梁体截面厚度、交接层次以及参考中可辨的悬吊杆和托件？",
+      "units": [
+        "with yellow/green overhead beams"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d08",
+      "component": "F",
+      "question": "支柱是否保留有厚度的柱身、可见侧面及与上部梁体相接的结构？",
+      "units": [
+        "pale support columns"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

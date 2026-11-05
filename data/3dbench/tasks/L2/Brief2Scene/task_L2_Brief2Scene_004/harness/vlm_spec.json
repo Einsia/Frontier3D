@@ -1,0 +1,218 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_004",
+  "family": "Brief2Scene",
+  "instruction_sha256": "d7f3e7d71d30a6b4564c56461c45780148abd44970d70c35cdab3c7d8213e36a",
+  "reference_policy": "Written brief only; no private example image is a target. VLM internal weights: instruction following 60%, aesthetics 40%.",
+  "focus": "Castle: four wall runs meet four corner towers with thick crenellations. Open gate and lowered timber drawbridge provide continuous courtyard access. Taller roofed keep at rear, stair, catapult and tree leave central route clear. Warm gray masonry/dark red roofs/green ground; no gameplay requirement.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "inventory_wall_run",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required wall_run:4 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "wall_run_1",
+        "wall_run_2",
+        "wall_run_3",
+        "wall_run_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "inventory_tower",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required tower:4 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "tower_1",
+        "tower_2",
+        "tower_3",
+        "tower_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "inventory_gate",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required gate objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "gate"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "inventory_drawbridge",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required drawbridge objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "drawbridge"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "inventory_keep",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required keep objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "keep"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "inventory_stair",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required stair objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "stair"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "inventory_catapult",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required catapult objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "catapult"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "inventory_tree",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Are the required tree objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "tree"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "relations",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Verify each named layout/connection/access relation against the brief. Allow alternative layouts meeting the contract; check entrances, paths, occlusion, grouping and ground contact. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "corner_closure_1",
+        "corner_closure_2",
+        "corner_closure_3",
+        "corner_closure_4",
+        "open_gateway",
+        "bridge_route",
+        "courtyard_clearance",
+        "rear_keep"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "appearance",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Do materials/colors, style and lighting match the explicit brief? Reference styling is illustrative. Ignore differences the written contract allows. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "materials_colors",
+        "style",
+        "lighting"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "Compare BOTH authored candidate views for consistent meaningful 3D structure, thickness and attachments of the required subjects. Compare ALL supplied original reference views where present. Do not infer an unseen original backside or count a reflection as another object.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "aesthetic_composition",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade authored composition, visual hierarchy, framing and readability of the intended focal subjects.",
+      "units": [
+        "aesthetic_composition"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "aesthetic_light_color",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade light/shadow shaping, exposure, color harmony and atmosphere within the brief style; flat/unreadable lighting loses credit.",
+      "units": [
+        "aesthetic_light_color"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "aesthetic_finish",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade visible shape/material finish, proportion, intentional detail, clean joins and coherent stylization; crude generic placeholders are weak.",
+      "units": [
+        "aesthetic_finish"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "aesthetic_coherence",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade whole-scene design coherence, intentional spatial rhythm and visual polish; complexity alone earns nothing.",
+      "units": [
+        "aesthetic_coherence"
+      ],
+      "required_evidence": [
+        "candidate/main.png"
+      ]
+    }
+  ],
+  "localization": null,
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Semporna Waterhouse (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 18,
+  "original_sha256": "bf47d3dad9f25e3fd3c2ddae0a6d57bc03c066546348e22bc25e2940d9580c3c",
+  "input_sha256": "d96f04c149425286eb36e74fdfc61fa425c2c0f1b09c704c55bf4bf87a3bc586",
+  "input_dimensions": [
+    1200,
+    1600
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

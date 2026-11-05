@@ -1,0 +1,1321 @@
+{
+  "version": "release145-no-codeedit-20261104",
+  "supported_levels": [
+    1,
+    2,
+    3
+  ],
+  "supported_tasks": 145,
+  "levels": {
+    "L1": 65,
+    "L2": 65,
+    "L3": 15
+  },
+  "tasks": [
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_001",
+      "release_id": "3DBench-001",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "螺栓法兰总成",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_001/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_002",
+      "release_id": "3DBench-002",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "双支座轴承总成",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_002/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_003",
+      "release_id": "3DBench-003",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "丝杠驱动滑台",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_003/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_004",
+      "release_id": "3DBench-004",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "小型机用虎钳",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_004/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_005",
+      "release_id": "3DBench-005",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "滑轮叉架总成",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_005/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_006",
+      "release_id": "3DBench-006",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "六孔分度转台",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_006/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_007",
+      "release_id": "3DBench-007",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "滑动门闩总成",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_007/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_008",
+      "release_id": "3DBench-008",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "密封电子盒总成",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_008/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_009",
+      "release_id": "3DBench-009",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "同轴滤芯壳体",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_009/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_010",
+      "release_id": "3DBench-010",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "伸缩方管锁销总成",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_010/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_011",
+      "release_id": "3DBench-011",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "双轴相机托架",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_011/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_012",
+      "release_id": "3DBench-012",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "四滚轮导向夹具",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_012/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_013",
+      "release_id": "3DBench-013",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "环槽回转套筒",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_013/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_014",
+      "release_id": "3DBench-014",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "平面曲线矩形扫掠件",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_014/task.toml"
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_015",
+      "release_id": "3DBench-015",
+      "level": 1,
+      "category": "Text2Code",
+      "title": "Text2Code：文字重建",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_015/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_001",
+      "release_id": "3DBench-016",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "工业双目显微镜",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_001/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_002",
+      "release_id": "3DBench-017",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "开盖台式钻床",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_002/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_003",
+      "release_id": "3DBench-018",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "管风琴",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_003/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_004",
+      "release_id": "3DBench-019",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "老旧风力涡轮塔",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_004/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_005",
+      "release_id": "3DBench-020",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "复古机械打字机",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_005/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_006",
+      "release_id": "3DBench-021",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "木制脚踏纺车",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_006/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_007",
+      "release_id": "3DBench-022",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "八角飞檐宫灯",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_007/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+      "release_id": "3DBench-023",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "可动上翻柜门铰链与伸缩撑杆",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_009",
+      "release_id": "3DBench-024",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "球壳悬浮机器人",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_009/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_010",
+      "release_id": "3DBench-025",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "双翼科学着陆器",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_010/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_011",
+      "release_id": "3DBench-026",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "多轮行星探索车",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_011/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_012",
+      "release_id": "3DBench-027",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "科隆大教堂微缩模型",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_013",
+      "release_id": "3DBench-028",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "枝状水晶吊灯",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_013/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_014",
+      "release_id": "3DBench-029",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "McLaren 720S GT3 赛车",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_014/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_015",
+      "release_id": "3DBench-030",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "涡扇喷气发动机",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_015/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_016",
+      "release_id": "3DBench-031",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "茶具托盘套装",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_016/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_017",
+      "release_id": "3DBench-032",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "波音 787-9 客机",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_018",
+      "release_id": "3DBench-033",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "星形发动机",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_018/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_019",
+      "release_id": "3DBench-034",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "雅马哈 YZF-R1 摩托车",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_020",
+      "release_id": "3DBench-035",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "圆号",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_021",
+      "release_id": "3DBench-036",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "马林巴琴",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_022",
+      "release_id": "3DBench-037",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "三角钢琴",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_023",
+      "release_id": "3DBench-038",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "R2-D2",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_024",
+      "release_id": "3DBench-039",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "刹车盘与卡钳",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_025",
+      "release_id": "3DBench-040",
+      "level": 1,
+      "category": "Image2Code",
+      "title": "赛博朋克踏板车",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001",
+      "release_id": "3DBench-041",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "Nike Pegasus 36 运动鞋",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002",
+      "release_id": "3DBench-042",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "液压理发椅",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003",
+      "release_id": "3DBench-043",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "榴莲",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004",
+      "release_id": "3DBench-044",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "多连杆夹持台灯",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005",
+      "release_id": "3DBench-045",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "法棍面包篮",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006",
+      "release_id": "3DBench-046",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "综合力量训练器",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007",
+      "release_id": "3DBench-047",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "便携无线电收发机",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008",
+      "release_id": "3DBench-048",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "RED 8K 摄影机",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009",
+      "release_id": "3DBench-049",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "流鬃马头雕像",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010",
+      "release_id": "3DBench-050",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "大卫头像",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011",
+      "release_id": "3DBench-051",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "DJI Mavic 3 无人机",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012",
+      "release_id": "3DBench-052",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "花纹浮雕宝箱",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013",
+      "release_id": "3DBench-053",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "双端滚筒采掘机器人",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014",
+      "release_id": "3DBench-054",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "Birkin 手袋",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015",
+      "release_id": "3DBench-055",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "人体工学网椅",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016",
+      "release_id": "3DBench-056",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "人体心脏",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017",
+      "release_id": "3DBench-057",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "骆驼",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+      "release_id": "3DBench-058",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "边境牧羊犬",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+      "release_id": "3DBench-059",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "东蓝鸲",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+      "release_id": "3DBench-060",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "Tag Heuer 手表",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+      "release_id": "3DBench-061",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "复古拳击手套",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+      "release_id": "3DBench-062",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "长颈鹿毛绒玩具",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+      "release_id": "3DBench-063",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "圆明园牛首",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+      "release_id": "3DBench-064",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "YSL 高跟鞋",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024/task.toml"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025",
+      "release_id": "3DBench-065",
+      "level": 1,
+      "category": "Image2Code-SingleView",
+      "title": "Balenciaga 墨镜",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_001",
+      "release_id": "3DBench-066",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "帆船港口与岸边货运区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_001/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_002",
+      "release_id": "3DBench-067",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "行星基地与高架试验轨道",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_002/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_003",
+      "release_id": "3DBench-068",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "双向道路与六户住宅街区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_003/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_004",
+      "release_id": "3DBench-069",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "四角塔楼与可通行城堡庭院",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_004/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_005",
+      "release_id": "3DBench-070",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "中央步道与小型纪念墓园",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_005/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_006",
+      "release_id": "3DBench-071",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "三道微型高尔夫练习场",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_006/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_007",
+      "release_id": "3DBench-072",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "岩礁灯塔与海岸植被",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_007/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_008",
+      "release_id": "3DBench-073",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "砂岩峡谷通道与荒漠植被",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_008/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_009",
+      "release_id": "3DBench-074",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "低角度光照下的月表景观",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_009/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_010",
+      "release_id": "3DBench-075",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "Brief2Scene：俯视卡通工地",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_010/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_011",
+      "release_id": "3DBench-076",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "吧台·双臂调酒机器人",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_011/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_012",
+      "release_id": "3DBench-077",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "温室·番茄采摘机器人",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_012/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+      "release_id": "3DBench-078",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "公寓楼道·配送机器人等电梯",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_013/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_014",
+      "release_id": "3DBench-079",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "图书馆·高层取书",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_014/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+      "release_id": "3DBench-080",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "工具间·挂板取工具",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_015/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_016",
+      "release_id": "3DBench-081",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "洗衣房·折叠工作站",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_016/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_017",
+      "release_id": "3DBench-082",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "咖啡站·拉花中段",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_017/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_018",
+      "release_id": "3DBench-083",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "停车场·充电机器人插枪",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_018/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+      "release_id": "3DBench-084",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "人形测试场·障碍段中途",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_019/task.toml"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+      "release_id": "3DBench-085",
+      "level": 2,
+      "category": "Brief2Scene",
+      "title": "无人机机巢·换电中段",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_020/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+      "release_id": "3DBench-086",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "日照教室与成排课桌",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-001/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-002",
+      "release_id": "3DBench-087",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "Seven Stars 街角立面与狭巷",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-002/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-003",
+      "release_id": "3DBench-088",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "废弃仓库的梁柱与破损围护",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-003/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-004",
+      "release_id": "3DBench-089",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "乡村厨房的橱柜、料理台与窗边餐桌",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-004/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-005",
+      "release_id": "3DBench-090",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "俯视城市街区与多层建筑群",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-005/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-006",
+      "release_id": "3DBench-091",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "现代卧室的床铺、照明与软装",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-006/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-007",
+      "release_id": "3DBench-092",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "Charité 手术室与吊臂医疗设备",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-007/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+      "release_id": "3DBench-093",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "砖拱旧货店与密集陈列",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-008/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-009",
+      "release_id": "3DBench-094",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "Hintze Hall 中庭、拱廊与悬挂鲸骨",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-009/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-010",
+      "release_id": "3DBench-095",
+      "level": 2,
+      "category": "Reference2Scene",
+      "title": "Grange 木饰面餐厅与长桌",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-010/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001",
+      "release_id": "3DBench-096",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "RoboCup@Home：杂物桌面与厨具重建",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002",
+      "release_id": "3DBench-097",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "MessyKitchens：水槽旁杂乱杯碟重建",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003",
+      "release_id": "3DBench-098",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "藏书客厅、沙发与落地窗",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004",
+      "release_id": "3DBench-099",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "教堂肋拱、长椅与祭坛",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005",
+      "release_id": "3DBench-100",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "商用厨房的炉灶与不锈钢工作台",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006",
+      "release_id": "3DBench-101",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "幼儿园活动室与低矮家具",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007",
+      "release_id": "3DBench-102",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "木梁餐厅与棋盘格过道",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008",
+      "release_id": "3DBench-103",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "柏林车站玻璃拱顶与站台",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009",
+      "release_id": "3DBench-104",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "旋转木马的马匹、立杆与灯饰",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+      "release_id": "3DBench-105",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "香港机场机坪与登机桥",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+      "release_id": "3DBench-106",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "海湾停泊船只",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+      "release_id": "3DBench-107",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "哈雷摩托车店陈列",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+      "release_id": "3DBench-108",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "鸡肉意面餐盘",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+      "release_id": "3DBench-109",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "班尼迪克蛋餐盘",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015",
+      "release_id": "3DBench-110",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "汉堡薯条餐盘",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+      "release_id": "3DBench-111",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "水果生日蛋糕",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+      "release_id": "3DBench-112",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "切片牛排餐盘",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+      "release_id": "3DBench-113",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "万丽酒店客房",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+      "release_id": "3DBench-114",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "彩玻璃木饰餐厅",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+      "release_id": "3DBench-115",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "仙本那水屋步道",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021",
+      "release_id": "3DBench-116",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "国科大艺术与科学大楼",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+      "release_id": "3DBench-117",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "日落购物广场",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023",
+      "release_id": "3DBench-118",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "木饰休息厅与楼梯口",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+      "release_id": "3DBench-119",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "高架桥下自行车停车区",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024/task.toml"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+      "release_id": "3DBench-120",
+      "level": 2,
+      "category": "Reference2Scene-RealPhoto",
+      "title": "Mip-NeRF 360 Counter：厨房台面",
+      "status": "extension",
+      "manifest": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_001",
+      "release_id": "3DBench-121",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "现代浴室：补建浴缸",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_001/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_002",
+      "release_id": "3DBench-122",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "阁楼工作室：补回望远镜",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_002/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_003",
+      "release_id": "3DBench-123",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "石砌地牢：恢复拱道照明",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_003/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_004",
+      "release_id": "3DBench-124",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "铁匠铺：恢复炉台与锻造设备",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_004/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_005",
+      "release_id": "3DBench-125",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "雪原骑士：恢复阴云日光层次",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_005/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_006",
+      "release_id": "3DBench-126",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "科幻走廊：补回两处霓虹轮廓灯",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_006/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_007",
+      "release_id": "3DBench-127",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "卡通咖啡馆：补回吧台与咖啡机",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_007/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_008",
+      "release_id": "3DBench-128",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "赛车场：补建维修站与带顶看台",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_008/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_009",
+      "release_id": "3DBench-129",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "货运站：恢复敞口货车厢",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_009/task.toml"
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_010",
+      "release_id": "3DBench-130",
+      "level": 2,
+      "category": "SceneEdit",
+      "title": "飞船通道：补回覆布货桶组",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_010/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_001",
+      "release_id": "3DBench-131",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "具身：精细厨房与家务生活区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_001/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_002",
+      "release_id": "3DBench-132",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "具身：超市营业区、冷库与卸货区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_002/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_003",
+      "release_id": "3DBench-133",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "具身：维修工坊与室外物流场",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_003/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_004",
+      "release_id": "3DBench-134",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "具身：育苗棚、果园与灌溉服务区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_004/task.toml"
+    },
+    {
+      "task_id": "L3/Text2Environment/task_L3_Text2Environment_001",
+      "release_id": "3DBench-135",
+      "level": 3,
+      "category": "Text2Environment",
+      "title": "具身：病区及物资服务走廊",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_001/task.toml"
+    },
+    {
+      "task_id": "L3/Text2Environment/task_L3_Text2Environment_002",
+      "release_id": "3DBench-136",
+      "level": 3,
+      "category": "Text2Environment",
+      "title": "具身：水处理设施与检修平台",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_002/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_005",
+      "release_id": "3DBench-137",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "Minecraft Open-World Village",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_005/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_006",
+      "release_id": "3DBench-138",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "只狼：苇名城主楼及相连庭院",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_006/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_007",
+      "release_id": "3DBench-139",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "荒野大镖客2：瓦伦丁中心街区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_007/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_008",
+      "release_id": "3DBench-140",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "守望先锋：Rialto 运河广场与后勤街区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_008/task.toml"
+    },
+    {
+      "task_id": "L3/Text2Environment/task_L3_Text2Environment_003",
+      "release_id": "3DBench-141",
+      "level": 3,
+      "category": "Text2Environment",
+      "title": "星际拓荒风格：外星水力遗迹区域",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_003/task.toml"
+    },
+    {
+      "task_id": "L3/Text2Environment/task_L3_Text2Environment_004",
+      "release_id": "3DBench-142",
+      "level": 3,
+      "category": "Text2Environment",
+      "title": "旷野之息风格：驿站、废墟与山谷生活区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_004/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_009",
+      "release_id": "3DBench-143",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "现实：横店秦王宫前广场、宫门和相连院落",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_009/task.toml"
+    },
+    {
+      "task_id": "L3/Image2Environment/task_L3_Image2Environment_010",
+      "release_id": "3DBench-144",
+      "level": 3,
+      "category": "Image2Environment",
+      "title": "现实：长洲渡轮码头与市场后勤区",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_010/task.toml"
+    },
+    {
+      "task_id": "L3/Text2Environment/task_L3_Text2Environment_005",
+      "release_id": "3DBench-145",
+      "level": 3,
+      "category": "Text2Environment",
+      "title": "现实：县域铁路站前综合交通枢纽",
+      "status": "native",
+      "manifest": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_005/task.toml"
+    }
+  ]
+}

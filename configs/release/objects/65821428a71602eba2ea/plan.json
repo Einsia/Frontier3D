@@ -1,0 +1,375 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_004",
+  "title": "老旧风力涡轮塔",
+  "category": "Image2Code",
+  "profile": "image-no-comparable-gt-40-50-10-v1",
+  "weights": {
+    "H": 0.4,
+    "F": 0.5,
+    "M": 0.1
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "9b13ead4cc4395eec81f2ff47310caf3bea498f403ef62dfb4b70812fcb1c816"
+    },
+    {
+      "path": "environment/input/front.png",
+      "sha256": "8ee247d7c166a163cceb2bfacd61b64db96ff25d5e5401e74083ba40963ab2fc"
+    },
+    {
+      "path": "environment/input/side.png",
+      "sha256": "38beaee3a6bcf2b3a66e05fafeffae927635e648a2200d10fed1c9b3e8d256b7"
+    },
+    {
+      "path": "environment/input/top.png",
+      "sha256": "2e54ddad5ee4c1a1f998c8fb1ba47751277ac3c806fb9fa778415a248edae876"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "silhouette",
+      "component": "H",
+      "weight": 0.5,
+      "question": "细高的老旧风力塔而非现代三叶风机",
+      "method": "silhouette_iou",
+      "measurement_rule": "逐个声明视角在原像素网格计算交并比，然后等权平均；参考标注固定，候选独立复渲染提取；不可拟合、平移、缩放或以RGB相似度替代。",
+      "source": "instruction.md",
+      "parameters": {
+        "view_ids": [
+          "reference",
+          "front",
+          "side",
+          "top"
+        ],
+        "reference_masks": "preannotate_visible_subjects; no candidate-conditioned segmentation"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "weight": 0.125,
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：细高的老旧风力塔而非现代三叶风机",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "layout_front",
+      "component": "H",
+      "weight": 0.125,
+      "question": "在 front 视角核对整体姿态、主体比例、空间层次和遮挡：细高的老旧风力塔而非现代三叶风机",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "layout_side",
+      "component": "H",
+      "weight": 0.125,
+      "question": "在 side 视角核对整体姿态、主体比例、空间层次和遮挡：细高的老旧风力塔而非现代三叶风机",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "layout_top",
+      "component": "H",
+      "weight": 0.125,
+      "question": "在 top 视角核对整体姿态、主体比例、空间层次和遮挡：细高的老旧风力塔而非现代三叶风机",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：四片破旧不规则扇叶围绕中央轮毂。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：木金属混合交叉支架与下部机架。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：塔后垂落管线、机械连接与红色小指示件。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：转子高悬并通过机架真实连接到底部。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "material_front",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 front 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "material_side",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 side 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "material_top",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 top 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "lighting_front",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 front 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "lighting_side",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 side 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "lighting_top",
+      "component": "M",
+      "weight": 0.125,
+      "question": "在 top 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：锈褐叶片、旧木、暗金属和底部土石；磨损层次而非纯色立方体",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "0a3aa23e4c8dd194db20413a1232f026c3c341f83f720d837414e952aeccd966",
+    "task.toml": "658a0a21490a1eb9c39ae9fa3bfbbdff1bcd3850eea4209624f8c029d9b45cdf",
+    "harness/eval_spec.json": "935a85a86c8d6540abf11cfc8c033f3ec44e1dea786aa0c5540491faff619912"
+  },
+  "view_pairs": [
+    {
+      "id": "reference",
+      "reference": "reference/reference-0.png",
+      "reference_source": "environment/input/reference.png",
+      "candidate": "candidate/main.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "front",
+      "reference": "reference/reference-1.png",
+      "reference_source": "environment/input/front.png",
+      "candidate": "candidate/paired-1.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "side",
+      "reference": "reference/reference-2.png",
+      "reference_source": "environment/input/side.png",
+      "candidate": "candidate/paired-2.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "top",
+      "reference": "reference/reference-3.png",
+      "reference_source": "environment/input/top.png",
+      "candidate": "candidate/paired-3.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    }
+  ],
+  "focus": "细高的老旧风力塔而非现代三叶风机",
+  "geometry_gt_policy": "source_present_coordinate_scope_approval_pending; no GT substitution during a run",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

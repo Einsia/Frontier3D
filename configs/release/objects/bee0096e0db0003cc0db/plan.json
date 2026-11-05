@@ -1,0 +1,662 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_006",
+  "title": "三道微型高尔夫练习场",
+  "category": "Brief2Scene",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_inventory_lane",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required lane:3 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_lane",
+      "parameters": {
+        "units": [
+          "lane_1",
+          "lane_2",
+          "lane_3"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_cup",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required cup:3 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_cup",
+      "parameters": {
+        "units": [
+          "cup_1",
+          "cup_2",
+          "cup_3"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_flag",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required flag:3 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_flag",
+      "parameters": {
+        "units": [
+          "flag_1",
+          "flag_2",
+          "flag_3"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_ball",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required ball:3 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_ball",
+      "parameters": {
+        "units": [
+          "ball_1",
+          "ball_2",
+          "ball_3"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_windmill",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required windmill objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_windmill",
+      "parameters": {
+        "units": [
+          "windmill"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_castle",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required castle objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_castle",
+      "parameters": {
+        "units": [
+          "castle"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_diamond",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required diamond:3 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_diamond",
+      "parameters": {
+        "units": [
+          "diamond_1",
+          "diamond_2",
+          "diamond_3"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_visitor_path",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required visitor_path objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_visitor_path",
+      "parameters": {
+        "units": [
+          "visitor_path"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_relations",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Verify each named layout/connection/access relation against the brief. Allow alternative layouts meeting the contract; check entrances, paths, occlusion, grouping and ground contact. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#relations",
+      "parameters": {
+        "units": [
+          "lane_continuity_1",
+          "lane_continuity_2",
+          "lane_continuity_3",
+          "cup_connection_1",
+          "cup_connection_2",
+          "cup_connection_3",
+          "obstacle_passage_1",
+          "obstacle_passage_2",
+          "start_access_1",
+          "start_access_2",
+          "start_access_3"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_appearance",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Do materials/colors, style and lighting match the explicit brief? Reference styling is illustrative. Ignore differences the written contract allows. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#appearance",
+      "parameters": {
+        "units": [
+          "materials_colors",
+          "style",
+          "lighting"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_site_dimensions",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: roughly 25 by 26 metre",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/site_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "site_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "site",
+            "scope": "union",
+            "lower": [
+              25,
+              26,
+              null
+            ],
+            "upper": [
+              25,
+              26,
+              null
+            ],
+            "relative_tolerance": 0.1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_lane_count",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: three parallel lanes",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/lane_count",
+      "parameters": {
+        "native_check": {
+          "id": "lane_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "lane",
+            "minimum": 3,
+            "maximum": 3
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_cup_count",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: real recessed cup",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/cup_count",
+      "parameters": {
+        "native_check": {
+          "id": "cup_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "cup",
+            "minimum": 3,
+            "maximum": 3
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_ball_count",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: one ball at each start",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/ball_count",
+      "parameters": {
+        "native_check": {
+          "id": "ball_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "ball",
+            "minimum": 3,
+            "maximum": 3
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_diamond_obstacle_count",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: near the far end of every lane",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/diamond_obstacle_count",
+      "parameters": {
+        "native_check": {
+          "id": "diamond_obstacle_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "diamond_obstacle",
+            "minimum": 3,
+            "maximum": 3
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_lane_dimensions",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: about 4 m wide and 20 m long",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/lane_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "lane_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "lane",
+            "scope": "each",
+            "lower": [
+              4,
+              20,
+              null
+            ],
+            "upper": [
+              4,
+              20,
+              null
+            ],
+            "relative_tolerance": 0.1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_windmill_opening",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: a ball of diameter 0.1 m can pass",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/windmill_opening",
+      "parameters": {
+        "native_check": {
+          "id": "windmill_opening",
+          "metric": "l2_brief_opening",
+          "group": "numeric",
+          "params": {
+            "role": "windmill",
+            "support_role": "lane",
+            "min_width": 0.1,
+            "min_height": 0.1,
+            "passage_shape": "ball",
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_castle_arch_opening",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: a ball of diameter 0.1 m can pass",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/castle_arch_opening",
+      "parameters": {
+        "native_check": {
+          "id": "castle_arch_opening",
+          "metric": "l2_brief_opening",
+          "group": "numeric",
+          "params": {
+            "role": "castle_arch",
+            "support_role": "lane",
+            "min_width": 0.1,
+            "min_height": 0.1,
+            "passage_shape": "ball",
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_real_cup_depression",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: real recessed cup",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/real_cup_depression",
+      "parameters": {
+        "native_check": {
+          "id": "real_cup_depression",
+          "metric": "l2_surface_depression",
+          "group": "numeric",
+          "params": {
+            "role": "cup",
+            "support_role": "lane",
+            "directions": 32,
+            "inner_fraction": 0.25,
+            "rim_fractions": [
+              0.7,
+              0.8,
+              0.9
+            ],
+            "outside_fraction": 1.15,
+            "min_depth_m": 0.001,
+            "min_rim_height_m": 0,
+            "required_fraction": 0.75,
+            "occlusion_tolerance_m": 1e-05
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_lane_entity_correspondence",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: three parallel lanes",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/lane_entity_correspondence",
+      "parameters": {
+        "native_check": {
+          "id": "lane_entity_correspondence",
+          "metric": "l2_course_correspondence",
+          "group": "numeric",
+          "params": {
+            "lane_role": "lane",
+            "ball_role": "ball",
+            "cup_role": "cup",
+            "obstacle_role": "diamond_obstacle",
+            "contact_tolerance_m": 0.01,
+            "parallel_tolerance_degrees": 2.0,
+            "end_fraction": 0.15,
+            "obstacle_min_progress": 0.6
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_ball_diameter",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: a ball of diameter 0.1 m",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/ball_diameter",
+      "parameters": {
+        "native_check": {
+          "id": "ball_diameter",
+          "metric": "l2_brief_diameter_range",
+          "group": "numeric",
+          "params": {
+            "role": "ball",
+            "lower": 0.1,
+            "upper": 0.1,
+            "relative_tolerance": 0.01,
+            "require_endpoints": false
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_lane_ball_routes",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: Keep the playing surface continuous all the way to the cup",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/lane_ball_routes",
+      "parameters": {
+        "native_check": {
+          "id": "lane_ball_routes",
+          "metric": "l2_ball_course",
+          "group": "numeric",
+          "params": {
+            "lane_role": "lane",
+            "ball_role": "ball",
+            "cup_role": "cup",
+            "obstacle_role": "diamond_obstacle",
+            "contact_tolerance_m": 0.01,
+            "parallel_tolerance_degrees": 2.0,
+            "end_fraction": 0.15,
+            "obstacle_min_progress": 0.6,
+            "ball_diameter_m": 0.1,
+            "cell_size": 0.02,
+            "max_step": 0.002,
+            "max_slope": 0.5,
+            "surface_epsilon": 0.0005,
+            "seam_directions": 32,
+            "seam_samples": 33,
+            "seam_max_jump_m": 0.002
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_actual_start_visitor_route",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/actual_start_visitor_route",
+      "parameters": {
+        "native_check": {
+          "id": "actual_start_visitor_route",
+          "metric": "l2_course_visitor_route",
+          "group": "numeric",
+          "params": {
+            "lane_role": "lane",
+            "ball_role": "ball",
+            "cup_role": "cup",
+            "obstacle_role": "diamond_obstacle",
+            "contact_tolerance_m": 0.01,
+            "parallel_tolerance_degrees": 2.0,
+            "end_fraction": 0.15,
+            "obstacle_min_progress": 0.6,
+            "visitor_role": "visitor_path",
+            "min_width": 1.2,
+            "cell_size": 0.04,
+            "max_step": 0.02,
+            "max_slope": 0.5,
+            "surface_epsilon": 0.001,
+            "clearance_height": 1.8,
+            "seam_overlap_m": 0.02
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_specified_obstacle_lanes",
+      "component": "Q",
+      "weight": 0.028571428571428574,
+      "question": "instruction.md: Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/specified_obstacle_lanes",
+      "parameters": {
+        "native_check": {
+          "id": "specified_obstacle_lanes",
+          "metric": "l2_course_obstacle_placement",
+          "group": "numeric",
+          "params": {
+            "lane_role": "lane",
+            "ball_role": "ball",
+            "cup_role": "cup",
+            "obstacle_role": "diamond_obstacle",
+            "contact_tolerance_m": 0.01,
+            "parallel_tolerance_degrees": 2.0,
+            "end_fraction": 0.15,
+            "obstacle_min_progress": 0.6,
+            "windmill_role": "windmill",
+            "castle_role": "castle_arch"
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "editable_structure",
+      "component": "E",
+      "weight": 0.5,
+      "question": "主要结构可独立编辑，允许实例和程序修改器；按主要语义部件的可编辑比例检查",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "population": "public major structures; no object-name constraint"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "view_consistency",
+      "component": "E",
+      "weight": 0.5,
+      "question": "规定相机关系、两张提交图与同一原生场景的几何/状态一致性",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "camera_checks": [
+          {
+            "id": "alternate_relationship",
+            "metric": "l2_case_camera_pair",
+            "group": "alternate_relationship",
+            "params": {
+              "mode": "orbit",
+              "degrees": 25,
+              "tolerance": 0.25
+            },
+            "role": "standard",
+            "pass_threshold": 1
+          }
+        ],
+        "image_error_half_scale": 0.01
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "a90971cd4d1573769fb11b28c536c985662080e8eb33ddee014b4b6903a2bb30",
+    "task.toml": "33f33b7bff1688b1934adce4c8532181dfb2835658ac76bba01ef3a9ac38767b",
+    "harness/eval_spec.json": "5e0c4c3390a717ad7acaefa074dc562ef872a2702934e9f3e2b822992fa48c05",
+    "harness/methods.json": "ad17d740377c9b5e74c4cc75f31004254f2731d1c202d437fc70362e998762b5",
+    "harness/vlm_spec.json": "a591a721a96404d0558b620a16b682da196c9fa4994b1abbedf25db00717c0b8"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

@@ -1,0 +1,28 @@
+{
+  "key": "winter-castle",
+  "scope": "Data preparation validation, not model performance",
+  "target_objects_removed": [],
+  "private_original_values": [
+    {
+      "type": "world",
+      "node": "Background",
+      "strength": 1.0
+    }
+  ],
+  "preserved_objects_equal": true,
+  "preserved_mesh_count": 576,
+  "preserved_materials_equal": true,
+  "camera_and_render_settings_equal": true,
+  "packed_dependencies": true,
+  "external_libraries": 0,
+  "settings": {
+    "frame": 1,
+    "engine": "CYCLES",
+    "resolution": [
+      800,
+      450
+    ],
+    "view": "Standard",
+    "exposure": 0.0
+  }
+}

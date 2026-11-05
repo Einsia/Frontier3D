@@ -1,0 +1,429 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_020",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_bell",
+      "label": "喇叭口与收窄颈部",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.12,
+          0.635
+        ],
+        [
+          0.17,
+          0.531
+        ],
+        [
+          0.281,
+          0.433
+        ],
+        [
+          0.415,
+          0.369
+        ],
+        [
+          0.458,
+          0.378
+        ],
+        [
+          0.472,
+          0.411
+        ],
+        [
+          0.429,
+          0.529
+        ],
+        [
+          0.45,
+          0.594
+        ],
+        [
+          0.484,
+          0.664
+        ],
+        [
+          0.456,
+          0.716
+        ],
+        [
+          0.371,
+          0.661
+        ],
+        [
+          0.283,
+          0.631
+        ],
+        [
+          0.178,
+          0.672
+        ],
+        [
+          0.135,
+          0.661
+        ]
+      ]
+    },
+    {
+      "id": "r_coils",
+      "label": "主体盘管及前方回弯",
+      "weight": 0.35,
+      "polygon": [
+        [
+          0.433,
+          0.644
+        ],
+        [
+          0.467,
+          0.476
+        ],
+        [
+          0.501,
+          0.408
+        ],
+        [
+          0.636,
+          0.375
+        ],
+        [
+          0.698,
+          0.393
+        ],
+        [
+          0.766,
+          0.46
+        ],
+        [
+          0.81,
+          0.568
+        ],
+        [
+          0.798,
+          0.697
+        ],
+        [
+          0.743,
+          0.772
+        ],
+        [
+          0.641,
+          0.809
+        ],
+        [
+          0.549,
+          0.793
+        ],
+        [
+          0.461,
+          0.751
+        ]
+      ]
+    },
+    {
+      "id": "r_valves",
+      "label": "银色阀门和操纵机构",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.515,
+          0.483
+        ],
+        [
+          0.603,
+          0.507
+        ],
+        [
+          0.691,
+          0.548
+        ],
+        [
+          0.789,
+          0.591
+        ],
+        [
+          0.777,
+          0.694
+        ],
+        [
+          0.685,
+          0.744
+        ],
+        [
+          0.635,
+          0.728
+        ],
+        [
+          0.53,
+          0.658
+        ],
+        [
+          0.499,
+          0.622
+        ]
+      ]
+    },
+    {
+      "id": "r_mouthpiece",
+      "label": "吹嘴及竖直引管",
+      "weight": 0.1,
+      "polygon": [
+        [
+          0.803,
+          0.285
+        ],
+        [
+          0.844,
+          0.285
+        ],
+        [
+          0.836,
+          0.319
+        ],
+        [
+          0.824,
+          0.369
+        ],
+        [
+          0.822,
+          0.455
+        ],
+        [
+          0.819,
+          0.569
+        ],
+        [
+          0.804,
+          0.569
+        ],
+        [
+          0.809,
+          0.444
+        ],
+        [
+          0.809,
+          0.366
+        ],
+        [
+          0.811,
+          0.316
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_horn",
+      "query": "完整法国号",
+      "weight": 0.4,
+      "boxes": [
+        [
+          0.12,
+          0.285,
+          0.844,
+          0.809
+        ]
+      ],
+      "boundary_notes": "完整乐器一个实例，包括吹嘴、暗色喇叭表面和所有可见管路；不含背景。"
+    },
+    {
+      "id": "t_bell",
+      "query": "扩张喇叭口及颈部",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.12,
+          0.37,
+          0.484,
+          0.716
+        ]
+      ],
+      "boundary_notes": "以左侧扩张口、口沿和收窄至盘管连接处的颈部为一个组件；包含暗金表面，不延伸到主体盘管。"
+    },
+    {
+      "id": "t_valves",
+      "query": "阀门总成",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.499,
+          0.483,
+          0.789,
+          0.744
+        ]
+      ],
+      "boundary_notes": "将横向银色管段、圆形阀盖、连杆和右侧拨键作为一个总成；不将微小紧固件单独定位。"
+    },
+    {
+      "id": "t_mouthpiece",
+      "query": "顶部杯形吹嘴",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.803,
+          0.285,
+          0.844,
+          0.365
+        ]
+      ],
+      "boundary_notes": "仅顶部银色杯形吹嘴及其收窄柄部；下方金色套环和长引管不属于此框。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_identity",
+      "source_quote": "Reconstruct the French horn's circular coiled tubing, flared bell, mouthpiece and valve assembly.",
+      "question": "整体是否明确呈现参考中的法国号形态？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_coils",
+      "source_quote": "circular coiled tubing",
+      "question": "圆形盘管是否构成主体，并保持参考中的多层回绕布局？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_bell",
+      "source_quote": "flared bell",
+      "question": "扩张喇叭口是否位于盘管左侧并经收窄颈部与主体相连？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_mouthpiece",
+      "source_quote": "mouthpiece",
+      "question": "吹嘴是否经右侧细长引管伸至主体上方？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_valves",
+      "source_quote": "valve assembly",
+      "question": "阀门总成是否位于盘管前方，并具有参考中的横向管段和右侧操纵件布局？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_appearance",
+      "source_quote": "They show the same object and pose.",
+      "question": "是否保留参考中金色管体与喇叭口、银色阀件与吹嘴的金属外观？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_proportion",
+      "source_quote": "Infer other proportions from the images.",
+      "question": "喇叭口、盘管、吹嘴和阀门之间的相对比例是否符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_solid",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "乐器是否使用可编辑的完整三维几何，而非图像平面、朝向相机的壳或平面螺旋纹理？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_separable",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "不同机械组件是否为可编辑对象或清晰可分离的网格岛，连续曲面可保持整体？",
+      "weight": 0.07
+    },
+    {
+      "id": "s_occlusion",
+      "source_quote": "connections and occlusions",
+      "question": "盘管、阀件与喇叭颈部的前后遮挡及连接关系是否符合各参考视图？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_pose",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "question": "第1帧是否保存完整静态姿态，且与导出的 scene.glb 姿态一致？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_up",
+      "source_quote": "Use metres, Z up",
+      "question": "场景是否以米为单位并采用Z轴向上？",
+      "weight": 0.05
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_continuity",
+      "source_quote": "Preserve tube continuity",
+      "question": "直管、回弯和汇接处是否连续衔接，无断口或突兀折角？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_bell_opening",
+      "source_quote": "the bell opening",
+      "question": "喇叭口是否具有真实敞开的内腔，而非实心封面？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_bell_wall",
+      "source_quote": "wall thickness",
+      "question": "喇叭口沿是否有可辨识薄壁厚度，并连接内外壁？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_flare",
+      "source_quote": "flared bell",
+      "question": "喇叭颈部是否以连续扩张曲面过渡到宽大口沿，并保留颈部套环？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_turns",
+      "source_quote": "repeated turns",
+      "question": "盘管是否保留立体圆管截面、重复回弯和前方小回路，而非平面螺旋？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_gaps",
+      "source_quote": "gaps between loops",
+      "question": "相邻回路之间是否保留真实空隙，避免管段粘连成片？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_mouthpiece",
+      "source_quote": "mouthpiece",
+      "question": "吹嘴是否保留杯口凹腔、加厚口缘及向细柄收窄的外形？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_valve_parts",
+      "source_quote": "valve assembly",
+      "question": "阀门是否保留圆形盖体、横向管段和局部套接构造？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_thin_parts",
+      "source_quote": "thin structures",
+      "question": "阀门旁的细连杆、扁平拨键和小环形件是否具有真实厚度与独立轮廓？",
+      "weight": 0.08
+    },
+    {
+      "id": "d_connections",
+      "source_quote": "connections",
+      "question": "引管支撑、管路套环及阀体接管是否保留参考可见的局部连接结构？",
+      "weight": 0.06
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在最终静态姿态下，将乐器几何变换到以米计的世界坐标，排除相机和灯光；求世界轴对齐包围盒三个轴向长度的最大值，与标称1.000 m比较。explicit_tolerance为原文2%的相对容差。"
+    }
+  ],
+  "limitations": [
+    "主图路径input/reference.png对应公开证据reference/reference-1.png；所有冻结区域和定位框仅依据该原始主图。其余三图仅补充可见结构理解。",
+    "未提供候选；本计划不陈述任何候选属性或已完成的测量结果。",
+    "原文未定义maximum overall span的几何算法；此处固定采用世界轴对齐包围盒最长边，并将1.000 m理解为带2%容差的尺度标称值，而非仅有上限。",
+    "图中可见组件数量与比例用于参考形态比较，不转化为原文未明确规定的精确数量或尺寸。",
+    "遮挡内部的管道走向、壁厚数值和声学结构无法从公开图像确定，不设隐藏几何要求。",
+    "第1帧属于姿态保存条件，不是几何测量；渲染分辨率、渲染器及交付脚本设置不纳入内容质量测量。"
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_012",
+  "family": "Brief2Scene",
+  "instruction_sha256": "913cb37d731a5051f9eafbb7a46cf94dbba32b12ebfd5b3a5e10fb5b04bf8b90",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {},
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "温室骨架是否由具有实体截面的拱形框架构成？",
+      "units": [
+        "greenhouse with arch frames"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "覆盖层和地面织物是否以独立几何表面表现，并具有合理支承？",
+      "units": [
+        "a cover transmitting about 40% light and reflective ground fabric"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "种植槽是否有可辨识的槽腔、实体槽壁和合理支承？",
+      "units": [
+        "Two parallel planting troughs"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "藤蔓与各自拉紧的攀爬绳是否为可辨识的独立构件？",
+      "units": [
+        "Vines climb taut individual strings"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "叶片是否组成有纵深的低多边形体积簇，而非单个交叉广告板？",
+      "units": [
+        "Build volumetric clusters of low-poly leaves, not one crossed billboard."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "番茄果串是否包含实体果实、果梗及连接果梗的主梗？",
+      "units": [
+        "One bunch has six tomatoes of 0.05-0.07 m diameter, a cluster axis tilted downward 20 degrees and stems joining a main stalk."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "机器人履带是否为有厚度、可辨识接地段的实体结构？",
+      "units": [
+        "The robot has 0.60 m wide tracks, 0.90 m ground-contact length"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "机械臂是否由可辨识的连杆和关节几何组成，并形成静态关节姿态？",
+      "units": [
+        "A static articulated robot pose is required; no controller, physical dynamics or manipulation trajectory is required. Represent specified joints and end-effectors geometrically."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D09",
+      "component": "F",
+      "question": "吸盘是否有可辨识的杯形结构和接触环？",
+      "units": [
+        "Its suction cup touches the second fruit, contact-ring penetration at most 3 mm and axis through the fruit centre."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D10",
+      "component": "F",
+      "question": "电剪是否具有分开的实体刀片，采收篮是否具有实际开口、篮壁及容纳果实的内腔？",
+      "units": [
+        "Electric shear blades open 15 degrees, sit 0.02 m behind the stem and straddle its cross-section. A front harvest basket has a 0.40 x 0.30 m opening at 0.40 m height and contains three fruits."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ]
+}

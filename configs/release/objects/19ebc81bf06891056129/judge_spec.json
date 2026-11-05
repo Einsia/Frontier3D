@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002",
+  "family": "Reference2Scene-RealPhoto",
+  "instruction_sha256": "ff486178a8573da1b57eac39dfe5056550c04f508175fe204c6f721ef5850fc4",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "White counter with thickness, inset dark sink and black cooktop edge. Overhead oblique view; sink at rear, plate at lower left, purple mug on board upper center, tilted mugs to the right, black cooktop crossing the lower right. White reflective counter and ceramic surfaces, dark blue plate and mug, purple and pale blue mugs, warm wood and soft overhead highlights. Small logos and distant furniture may simplify.",
+  "checks": [
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "question": "Overhead oblique view; sink at rear, plate at lower left, purple mug on board upper center, tilted mugs to the right, black cooktop crossing the lower right. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "layout_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.2,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "question": "Visible local structure: White counter with thickness, inset dark sink and black cooktop edge. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.1,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "question": "Visible local structure: Dark blue deep plate with real hollow interior, rim and base. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.1,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "question": "Visible local structure: Upright purple mug and white dish on round wooden board. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.1,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "question": "Visible local structure: White mug on its side, tilted light blue mug and dark blue mug on its side, with hollow walls and handles. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "units": [
+        "detail_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.1,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_5",
+      "component": "F",
+      "question": "Visible local structure: Wooden spoon, round board thickness and the actual spacing, overlaps and support contacts. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "units": [
+        "detail_5"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.1,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "question": "Compare original material/color fidelity: White reflective counter and ceramic surfaces, dark blue plate and mug, purple and pale blue mugs, warm wood and soft overhead highlights. Small logos and distant furniture may simplify.",
+      "units": [
+        "material_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "question": "Compare original material/color fidelity: White reflective counter and ceramic surfaces, dark blue plate and mug, purple and pale blue mugs, warm wood and soft overhead highlights. Small logos and distant furniture may simplify.",
+      "units": [
+        "lighting_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "59825bae8701075f58075afe9f8e269e24ce0ec6863f9b75e2d4e3585b2b3ce5"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

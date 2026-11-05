@@ -1,0 +1,473 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "盘沿是否呈现参考中宽阔、连续且缓缓下凹的曲面？",
+      "source_quote": "plate rim",
+      "weight": 0.125
+    },
+    {
+      "id": "D02",
+      "question": "面条是否具有可辨截面和厚度，而非扁平贴图？",
+      "source_quote": "Pasta strands and cut chicken pieces must have volume",
+      "weight": 0.125
+    },
+    {
+      "id": "D03",
+      "question": "面条是否形成参考中的盘绕、垂落弧线及条间空隙？",
+      "source_quote": "Pasta strands",
+      "weight": 0.125
+    },
+    {
+      "id": "D04",
+      "question": "鸡肉切块是否具有厚实切面和不规则外轮廓？",
+      "source_quote": "cut chicken pieces must have volume",
+      "weight": 0.125
+    },
+    {
+      "id": "D05",
+      "question": "鸡肉表皮与内部肉层是否形成参考可见的层次及切块接缝？",
+      "source_quote": "sliced browned chicken",
+      "weight": 0.125
+    },
+    {
+      "id": "D06",
+      "question": "可辨蘑菇是否保留弧形切片轮廓及露出酱汁的厚度？",
+      "source_quote": "mushrooms",
+      "weight": 0.125
+    },
+    {
+      "id": "D07",
+      "question": "顶部绿叶是否具有参考中的折叠、弯曲和叶缘轮廓？",
+      "source_quote": "green garnish",
+      "weight": 0.125
+    },
+    {
+      "id": "D08",
+      "question": "酱汁边缘是否呈现薄层铺展的不规则轮廓及绕过食材的局部形状？",
+      "source_quote": "creamy sauce",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划只冻结参考区域与检查要求，不陈述任何候选属性或测量结果。",
+    "主参考采用公开映射中的 input/reference.png，对应附件证据 reference/reference-0.png；坐标基于原始参考图。",
+    "未提供 legacy-detail-20261018-v1 的独立正文；只依据本次嵌入的合同和检查规则扩展。",
+    "单张未标定照片不能确定真实深度、隐藏表面或精确相机参数；除盘径约定外，不把参考比例估计作为精确尺寸要求。",
+    "盘子外缘被画面裁切，不能从图像完整测量盘径；0.28 m 必须作为场景几何的尺度约定检查。",
+    "鸡肉切块和部分蘑菇相互遮挡或被酱汁覆盖，无法可靠冻结完整实例数量；定位类采用明确的整体食物组，不推断隐藏切块。",
+    "主要组件的划分、有效间距和支撑没有明确数值阈值；通过场景结构及可见形态定性检查。",
+    "微观食物纹理允许简化，不据此要求逐粒调料、毛孔或纤维的几何复刻。",
+    "相机平移属于原生场景几何检查；渲染引擎、图像尺寸、色彩管理、脚本和交付文件不列为内容质量数值检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在应用对象变换后的世界坐标中，测量完整盘体外缘在盘面内的直径；以原生几何检查尺度约定，不从裁切照片估计真实尺寸。",
+      "quantity": "盘径尺度约定",
+      "relation": "equal",
+      "source_quote": "Use a 0.28 m plate diameter as the task scale convention",
+      "target": 0.28,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两台相机的世界位置，将备用相机相对主相机的位移转换到主相机局部坐标；检查位移向量等于沿局部正 X 的 0.03 m 平移。",
+      "quantity": "备用相机沿主相机局部正 X 的平移距离",
+      "relation": "equal",
+      "source_quote": "translate 0.03 m to its right along local X",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "中央偏左的面条堆",
+      "polygon": [
+        [
+          0.264,
+          0.506
+        ],
+        [
+          0.274,
+          0.345
+        ],
+        [
+          0.361,
+          0.249
+        ],
+        [
+          0.39,
+          0.192
+        ],
+        [
+          0.456,
+          0.194
+        ],
+        [
+          0.527,
+          0.279
+        ],
+        [
+          0.556,
+          0.404
+        ],
+        [
+          0.543,
+          0.564
+        ],
+        [
+          0.491,
+          0.625
+        ],
+        [
+          0.354,
+          0.604
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R02",
+      "label": "右侧切片鸡肉组",
+      "polygon": [
+        [
+          0.49,
+          0.739
+        ],
+        [
+          0.502,
+          0.639
+        ],
+        [
+          0.532,
+          0.621
+        ],
+        [
+          0.556,
+          0.345
+        ],
+        [
+          0.572,
+          0.223
+        ],
+        [
+          0.655,
+          0.208
+        ],
+        [
+          0.812,
+          0.258
+        ],
+        [
+          0.887,
+          0.345
+        ],
+        [
+          0.891,
+          0.421
+        ],
+        [
+          0.846,
+          0.534
+        ],
+        [
+          0.885,
+          0.639
+        ],
+        [
+          0.884,
+          0.744
+        ],
+        [
+          0.864,
+          0.809
+        ],
+        [
+          0.803,
+          0.87
+        ],
+        [
+          0.671,
+          0.846
+        ],
+        [
+          0.551,
+          0.81
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R03",
+      "label": "面条顶部绿叶",
+      "polygon": [
+        [
+          0.328,
+          0.156
+        ],
+        [
+          0.344,
+          0.142
+        ],
+        [
+          0.353,
+          0.148
+        ],
+        [
+          0.345,
+          0.171
+        ],
+        [
+          0.386,
+          0.184
+        ],
+        [
+          0.418,
+          0.23
+        ],
+        [
+          0.445,
+          0.207
+        ],
+        [
+          0.454,
+          0.222
+        ],
+        [
+          0.475,
+          0.209
+        ],
+        [
+          0.48,
+          0.229
+        ],
+        [
+          0.465,
+          0.255
+        ],
+        [
+          0.423,
+          0.265
+        ],
+        [
+          0.376,
+          0.236
+        ],
+        [
+          0.347,
+          0.204
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R04",
+      "label": "左下蘑菇与周围酱汁",
+      "polygon": [
+        [
+          0.213,
+          0.591
+        ],
+        [
+          0.315,
+          0.581
+        ],
+        [
+          0.416,
+          0.62
+        ],
+        [
+          0.452,
+          0.719
+        ],
+        [
+          0.402,
+          0.797
+        ],
+        [
+          0.304,
+          0.813
+        ],
+        [
+          0.209,
+          0.72
+        ]
+      ],
+      "weight": 0.25
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否重建了参考中的白色餐盘？",
+      "source_quote": "white plate",
+      "weight": 0.05
+    },
+    {
+      "id": "S02",
+      "question": "是否具有参考中的长条面食主体？",
+      "source_quote": "pasta",
+      "weight": 0.05
+    },
+    {
+      "id": "S03",
+      "question": "鸡肉是否呈切片且表面煎至褐色？",
+      "source_quote": "sliced browned chicken",
+      "weight": 0.05
+    },
+    {
+      "id": "S04",
+      "question": "是否保留参考可见的蘑菇食材？",
+      "source_quote": "mushrooms",
+      "weight": 0.05
+    },
+    {
+      "id": "S05",
+      "question": "酱汁是否呈参考中的奶油状外观？",
+      "source_quote": "creamy sauce",
+      "weight": 0.05
+    },
+    {
+      "id": "S06",
+      "question": "是否保留参考中的绿色装饰叶？",
+      "source_quote": "green garnish",
+      "weight": 0.05
+    },
+    {
+      "id": "S07",
+      "question": "面条居中偏左、鸡肉位于右侧、绿叶位于面条顶部及蘑菇分布是否对应参考？",
+      "source_quote": "Preserve the placement",
+      "weight": 0.05
+    },
+    {
+      "id": "S08",
+      "question": "面条堆、鸡肉与低矮酱汁的相对高度是否对应参考？",
+      "source_quote": "height of the food groups",
+      "weight": 0.05
+    },
+    {
+      "id": "S09",
+      "question": "盘沿的可见宽度和食物周围留白是否对应参考？",
+      "source_quote": "plate rim",
+      "weight": 0.05
+    },
+    {
+      "id": "S10",
+      "question": "酱汁是否按参考大范围铺在食物下方并包围食物组？",
+      "source_quote": "sauce coverage",
+      "weight": 0.05
+    },
+    {
+      "id": "S11",
+      "question": "瓷盘、湿润面条、煎鸡皮、蘑菇、酱汁和叶片的材质是否可区分并符合参考？",
+      "source_quote": "material differences",
+      "weight": 0.05
+    },
+    {
+      "id": "S12",
+      "question": "主要食物组和盘体是否可独立编辑？",
+      "source_quote": "Keep major components independently editable",
+      "weight": 0.05
+    },
+    {
+      "id": "S13",
+      "question": "食物与盘体、食物之间是否具有合理支撑关系？",
+      "source_quote": "with thickness, support and meaningful spacing",
+      "weight": 0.05
+    },
+    {
+      "id": "S14",
+      "question": "主要组件之间是否具有合理间距，避免无依据的悬浮或穿插？",
+      "source_quote": "meaningful spacing",
+      "weight": 0.05
+    },
+    {
+      "id": "S15",
+      "question": "主体是否由真实三维几何构成，且备用视角仍保持体积与遮挡关系？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.05
+    },
+    {
+      "id": "S16",
+      "question": "其余尺寸是否按参考比例推断，隐藏表面是否合理补全？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.05
+    },
+    {
+      "id": "S17",
+      "question": "主透视相机的视角、取景和透视关系是否匹配参考？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.05
+    },
+    {
+      "id": "S18",
+      "question": "备用相机是否保持主相机的旋转与镜头参数？",
+      "source_quote": "without changing rotation or lens",
+      "weight": 0.05
+    },
+    {
+      "id": "S19",
+      "question": "两个视图是否来自同一场景，且保留对应相机？",
+      "source_quote": "All images must come from the same scene and specified cameras; retain cameras",
+      "weight": 0.05
+    },
+    {
+      "id": "S20",
+      "question": "场景是否使用米制且以 Z 轴为上方？",
+      "source_quote": "Use metres and Z up.",
+      "weight": 0.05
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "按一个连续面条堆定位，包含盘绕主体、下部松散面条及表面较暗部分；不含顶部绿叶、酱汁或投影。远离主堆且与酱汁难以区分的细小条状物不作为独立实例。",
+      "boxes": [
+        [
+          0.264,
+          0.193,
+          0.557,
+          0.631
+        ]
+      ],
+      "id": "T01",
+      "query": "中央偏左的完整面条堆",
+      "weight": 0.4
+    },
+    {
+      "boundary_notes": "以右侧整份切片鸡肉为一个食物组实例，覆盖全部可见表皮、浅色切面和暗色侧面；不含投影。切块互相遮挡，不把不确定接缝当作独立实例边界。",
+      "boxes": [
+        [
+          0.489,
+          0.208,
+          0.892,
+          0.869
+        ]
+      ],
+      "id": "T02",
+      "query": "右侧整份切片煎鸡肉",
+      "weight": 0.4
+    },
+    {
+      "boundary_notes": "定位面条顶端可辨的连续叶簇，包含深绿色折叠面和全部可见叶尖；酱汁中的微小绿色碎片不在此类范围内。",
+      "boxes": [
+        [
+          0.328,
+          0.142,
+          0.48,
+          0.266
+        ]
+      ],
+      "id": "T03",
+      "query": "面条顶部的绿色叶簇",
+      "weight": 0.2
+    }
+  ]
+}

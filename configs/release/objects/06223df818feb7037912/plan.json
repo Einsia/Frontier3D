@@ -1,0 +1,438 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_008",
+  "title": "砂岩峡谷通道与荒漠植被",
+  "category": "Brief2Scene",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_inventory_passage",
+      "component": "Q",
+      "weight": 0.08571428571428572,
+      "question": "Are the required passage objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_passage",
+      "parameters": {
+        "units": [
+          "passage"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_wall_side",
+      "component": "Q",
+      "weight": 0.08571428571428572,
+      "question": "Are the required wall_side:2 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_wall_side",
+      "parameters": {
+        "units": [
+          "wall_side_1",
+          "wall_side_2"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_pillar",
+      "component": "Q",
+      "weight": 0.08571428571428572,
+      "question": "Are the required pillar:2 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_pillar",
+      "parameters": {
+        "units": [
+          "pillar_1",
+          "pillar_2"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_arch",
+      "component": "Q",
+      "weight": 0.08571428571428572,
+      "question": "Are the required arch objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_arch",
+      "parameters": {
+        "units": [
+          "arch"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_vegetation_cluster",
+      "component": "Q",
+      "weight": 0.08571428571428572,
+      "question": "Are the required vegetation_cluster:3 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_vegetation_cluster",
+      "parameters": {
+        "units": [
+          "vegetation_cluster_1",
+          "vegetation_cluster_2",
+          "vegetation_cluster_3"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_relations",
+      "component": "Q",
+      "weight": 0.08571428571428572,
+      "question": "Verify each named layout/connection/access relation against the brief. Allow alternative layouts meeting the contract; check entrances, paths, occlusion, grouping and ground contact. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#relations",
+      "parameters": {
+        "units": [
+          "passage_continuity",
+          "arch_clearance",
+          "vegetation_separation",
+          "plant_grounding",
+          "two_view_consistency"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_appearance",
+      "component": "Q",
+      "weight": 0.08571428571428572,
+      "question": "Do materials/colors, style and lighting match the explicit brief? Reference styling is illustrative. Ignore differences the written contract allows. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#appearance",
+      "parameters": {
+        "units": [
+          "materials_colors",
+          "style",
+          "lighting"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_site_dimensions",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: approximately 60 m long and 36 m wide",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/site_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "site_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "site",
+            "scope": "union",
+            "lower": [
+              36,
+              60,
+              null
+            ],
+            "upper": [
+              36,
+              60,
+              null
+            ],
+            "relative_tolerance": 0.1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_rock_mass_dimensions",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: rock masses 8–18 m high",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/rock_mass_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "rock_mass_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "rock_mass",
+            "scope": "each",
+            "lower": [
+              null,
+              null,
+              8
+            ],
+            "upper": [
+              null,
+              null,
+              18
+            ],
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_pillar_count",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: at least two freestanding pillars",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/pillar_count",
+      "parameters": {
+        "native_check": {
+          "id": "pillar_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "pillar",
+            "minimum": 2
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_pillar_dimensions",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: rock masses 8–18 m high",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/pillar_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "pillar_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "pillar",
+            "scope": "each",
+            "lower": [
+              null,
+              null,
+              8
+            ],
+            "upper": [
+              null,
+              null,
+              18
+            ],
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_vegetation_cluster_count",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: three separated vegetation clusters",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/vegetation_cluster_count",
+      "parameters": {
+        "native_check": {
+          "id": "vegetation_cluster_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "vegetation_cluster",
+            "minimum": 3,
+            "maximum": 3
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_natural_arch_opening",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: an open span of at least 6 m",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/natural_arch_opening",
+      "parameters": {
+        "native_check": {
+          "id": "natural_arch_opening",
+          "metric": "l2_brief_opening",
+          "group": "numeric",
+          "params": {
+            "role": "natural_arch",
+            "support_role": "site",
+            "min_width": 6,
+            "min_height": null,
+            "passage_shape": "rectangle",
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_passage_clear_route",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: at least 3 m wide",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/passage_clear_route",
+      "parameters": {
+        "native_check": {
+          "id": "passage_clear_route",
+          "metric": "l2_brief_route",
+          "group": "numeric",
+          "params": {
+            "road_role": "passage",
+            "start_role": "foreground_entry",
+            "goal_role": "far_exit",
+            "min_width": 3,
+            "cell_size": 0.04,
+            "max_snap": 0.75,
+            "clearance_height": 0.1,
+            "surface_epsilon": 0.001,
+            "max_step": 0.02,
+            "max_slope": 0.5
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_main_ground_height",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: eye height 1.7 m",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/main_ground_height",
+      "parameters": {
+        "native_check": {
+          "id": "main_ground_height",
+          "metric": "l2_brief_camera_ground",
+          "group": "numeric",
+          "params": {
+            "camera": "__main",
+            "support_role": "site",
+            "lower": 1.7,
+            "upper": 1.7,
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_alternate_ground_height",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "instruction.md: at least 8 m above ground",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/alternate_ground_height",
+      "parameters": {
+        "native_check": {
+          "id": "alternate_ground_height",
+          "metric": "l2_brief_camera_ground",
+          "group": "numeric",
+          "params": {
+            "camera": "__alternate",
+            "support_role": "site",
+            "lower": 8,
+            "upper": null,
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "editable_structure",
+      "component": "E",
+      "weight": 0.5,
+      "question": "主要结构可独立编辑，允许实例和程序修改器；按主要语义部件的可编辑比例检查",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "population": "public major structures; no object-name constraint"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "view_consistency",
+      "component": "E",
+      "weight": 0.5,
+      "question": "规定相机关系、两张提交图与同一原生场景的几何/状态一致性",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "camera_checks": [],
+        "image_error_half_scale": 0.01
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "665b5200661eea4adcda21a73c65da98cde5940c5b7a4de185a53a08585f9c44",
+    "task.toml": "83f954557c6a6097d405129d4fbd81e5a1e293caae215ca689f5a9a1df03024a",
+    "harness/eval_spec.json": "d13c82b3862a24e635470d6d313bf347795c90e1562b47054ece34c72badf5a4",
+    "harness/methods.json": "30aa0cc14057a21d664ff563c41d58b1d40a104ad4ef0546607231f4f9a9a0a6",
+    "harness/vlm_spec.json": "0b080db4d2c4fe13cb6fec20e04bea87ea074c87b12838c3e2ff93aecf07836a"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

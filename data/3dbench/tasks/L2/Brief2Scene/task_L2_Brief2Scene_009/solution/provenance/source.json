@@ -1,0 +1,21 @@
+{
+  "id": "moon",
+  "title": "Lunar Landscape",
+  "title_zh": "月表地形",
+  "category": "terrain",
+  "provider": "poly_haven",
+  "author": "Poly Haven and credited contributing artists",
+  "source_page": "https://polyhaven.com/collections",
+  "license": "CC0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_status": "verified",
+  "download_url": "https://dl.polyhaven.org/file/ph-assets/Scenes/moon.zip",
+  "format": "zip",
+  "download_status": "downloaded",
+  "archive": "assets/diverse/moon/source.zip",
+  "archive_sha256": "97108962fdb4b42a0d9982f95440dd272e8e02db48edd48858004a433b2499f6",
+  "bytes": 3359914176,
+  "blend_candidates": [
+    "assets/diverse/moon/original/ph_moon.blend"
+  ]
+}

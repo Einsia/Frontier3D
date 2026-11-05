@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-e01",
+  "id": "L3/EmbodiedEnvironment/DuplexHome",
+  "domain": "embodied",
+  "input_mode": "image",
+  "title": "具身：精细厨房与家务生活区",
+  "title_en": "Embodied Environment: Furnished Kitchen and Utility Suite",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "41dcd7fcb7387507e091f6372685e14a49b4cf422f4e2d305d7061daeba00366",
+  "chinese_instruction_sha256": "84a066bb72b2cfbe86081957f2324ab3f116cbcf58fd628be80e29db82122957",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "a66bf56fbc663e34538998f177e86f3a8dad20aa1665830808e95bb3b81afa8c",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

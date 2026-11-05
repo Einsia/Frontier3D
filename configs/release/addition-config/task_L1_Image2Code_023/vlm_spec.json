@@ -1,0 +1,189 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_023",
+  "family": "Reference2Scene",
+  "instruction_sha256": "3449318ee0ce05e82d60079f790d627149d2be323737b1969caf2f26648a74ea",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_023",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "0d79e9253cabdf69f0bc0453f5e137851520bb58ab872eb5a62baaa66b5cc87e",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-0a3454f3b94a9f6c997b53a84b42a7c4f0bd058411afae736c880b70d52be2ac"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_head",
+        "query": "完整可见穹顶头部，含端口及底部环带",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.395,
+            0.165,
+            0.691,
+            0.375
+          ]
+        ],
+        "boundary_notes": "包括顶部小突起、黑色光学表面及头部环带；不含躯干。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_body",
+        "query": "圆柱躯干及其底部外壳",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.313,
+            0.315,
+            0.676,
+            0.716
+          ]
+        ],
+        "boundary_notes": "以可见外壳为界，包括下沿肋条和暗色开口；排除侧腿及独立中央支撑。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_side_legs",
+        "query": "两侧腿的可见结构，不含足底",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.326,
+            0.301,
+            0.4,
+            0.471
+          ],
+          [
+            0.582,
+            0.379,
+            0.729,
+            0.787
+          ],
+          [
+            0.345,
+            0.666,
+            0.403,
+            0.738
+          ]
+        ],
+        "boundary_notes": "远腿被躯干遮挡，上部与下部按可辨识可见片段分别框定，并非额外腿；近腿包括肩壳、细长杆及踝连接。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_feet",
+        "query": "楔形足部",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.308,
+            0.669,
+            0.438,
+            0.778
+          ],
+          [
+            0.323,
+            0.748,
+            0.51,
+            0.879
+          ],
+          [
+            0.563,
+            0.702,
+            0.789,
+            0.856
+          ]
+        ],
+        "boundary_notes": "包含各足可见底板、斜面及贴附软管，保留暗面；远足仅框可见范围，不补全遮挡。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_front_vents",
+        "query": "躯干正面上下排列的圆角格栅",
+        "weight": 0.1,
+        "boxes": [
+          [
+            0.394,
+            0.423,
+            0.455,
+            0.486
+          ],
+          [
+            0.379,
+            0.481,
+            0.434,
+            0.545
+          ]
+        ],
+        "boundary_notes": "含金属边框、内部横片和黑色凹腔，不含周围大面板。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

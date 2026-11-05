@@ -1,0 +1,19 @@
+{
+  "uid": "8a020dc63e3e41139a4d5eea651bdcbc",
+  "name": "Yamaha YZF-R1 RACE Tech Black",
+  "source_url": "https://sketchfab.com/3d-models/yamaha-yzf-r1-race-tech-black-8a020dc63e3e41139a4d5eea651bdcbc",
+  "author": {
+    "displayName": "dragos12_",
+    "profileUrl": "https://sketchfab.com/dragos12_"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "a98f66fb01b70d44573c2e3a77f85dd577a8336540cab73eab969359e4ad316e",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

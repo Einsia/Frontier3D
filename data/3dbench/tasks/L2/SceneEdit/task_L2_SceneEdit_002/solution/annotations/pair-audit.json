@@ -1,0 +1,24 @@
+{
+  "key": "attic-hideout",
+  "scope": "Data preparation validation, not model performance",
+  "target_objects_removed": [
+    "Cylinder.005"
+  ],
+  "private_original_values": [],
+  "preserved_objects_equal": true,
+  "preserved_mesh_count": 22,
+  "preserved_materials_equal": true,
+  "camera_and_render_settings_equal": true,
+  "packed_dependencies": true,
+  "external_libraries": 0,
+  "settings": {
+    "frame": 1,
+    "engine": "CYCLES",
+    "resolution": [
+      960,
+      640
+    ],
+    "view": "AgX",
+    "exposure": 0.0
+  }
+}

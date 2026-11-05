@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-reference-localized-v5.2.0",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-009",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "b6a381084e938030c205c35cef8a10abfa4188e2a38f932ea37f1c840007a7f6",
+  "image_size": [
+    1600,
+    900
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "suspended whale skeleton full visible extent",
+      "label": "suspended whale skeleton full visible extent",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.44,
+          0.461,
+          0.591,
+          0.69
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. suspended whale skeleton full visible extent"
+    },
+    {
+      "id": "target_2",
+      "query": "far main staircase including two upper branches",
+      "label": "far main staircase including two upper branches",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.435,
+          0.736,
+          0.594,
+          0.899
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. far main staircase including two upper branches"
+    },
+    {
+      "id": "target_3",
+      "query": "central pitched glazed roof structure excluding near foreground arch",
+      "label": "central pitched glazed roof structure excluding near foreground arch",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.278,
+          0.076,
+          0.763,
+          0.592
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. central pitched glazed roof structure excluding near foreground arch"
+    }
+  ]
+}

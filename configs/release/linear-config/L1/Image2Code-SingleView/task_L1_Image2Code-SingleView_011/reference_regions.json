@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "037fb17f09f7ce7c8e0a94725910ad6e4018afb2af7c3b8ddecada4e1254b78a",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "drone body 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.419,
+          0.366
+        ],
+        [
+          0.651,
+          0.366
+        ],
+        [
+          0.651,
+          0.569
+        ],
+        [
+          0.419,
+          0.569
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "left rotor assembly 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.201,
+          0.46
+        ],
+        [
+          0.305,
+          0.46
+        ],
+        [
+          0.305,
+          0.582
+        ],
+        [
+          0.201,
+          0.582
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "right rotor assembly 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.663,
+          0.386
+        ],
+        [
+          0.804,
+          0.386
+        ],
+        [
+          0.804,
+          0.566
+        ],
+        [
+          0.663,
+          0.566
+        ]
+      ]
+    }
+  ]
+}

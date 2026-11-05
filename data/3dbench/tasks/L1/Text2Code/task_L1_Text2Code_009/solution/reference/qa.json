@@ -1,0 +1,65 @@
+[
+  {
+    "part": "housing",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "filter",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "cap_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "seal_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "cap_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "seal_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "tie_rod",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "nut",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  }
+]

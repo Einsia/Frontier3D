@@ -1,0 +1,191 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001",
+  "title": "RoboCup@Home：杂物桌面与厨具重建",
+  "category": "Reference2Scene-RealPhoto",
+  "profile": "image-no-comparable-gt-40-50-10-v1",
+  "weights": {
+    "H": 0.4,
+    "F": 0.5,
+    "M": 0.1
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "9039a7bac3dba37f65fea5c876c998770086bdd089e29d351045d1468df27533"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "silhouette",
+      "component": "H",
+      "weight": 0.5,
+      "question": "Oblique crowded tabletop; ironing board behind left, watering can behind center, dish rack right, pan and utensils across the foreground. Preserve visible overlaps and supporting contacts. No alignment/cropping. Judge the authored main composition.",
+      "method": "silhouette_iou",
+      "measurement_rule": "逐个声明视角在原像素网格计算交并比，然后等权平均；参考标注固定，候选独立复渲染提取；不可拟合、平移、缩放或以RGB相似度替代。",
+      "source": "instruction.md",
+      "parameters": {
+        "view_ids": [
+          "reference"
+        ],
+        "reference_masks": "preannotate_visible_subjects; no candidate-conditioned segmentation"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "weight": 0.5,
+      "question": "Oblique crowded tabletop; ironing board behind left, watering can behind center, dish rack right, pan and utensils across the foreground. Preserve visible overlaps and supporting contacts. No alignment/cropping. Judge the authored main composition.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "weight": 0.2,
+      "question": "Visible local structure: Dark rectangular table with thickness, supports, blue mats and surrounding chairs. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "weight": 0.2,
+      "question": "Visible local structure: Blue slotted colander and turquoise watering can with hollow body, handle and spout. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "weight": 0.2,
+      "question": "Visible local structure: White open dish rack with cups and green cleaning brush. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "weight": 0.2,
+      "question": "Visible local structure: Stacked containers, cutting boards and the frying pan with walls and handle. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_5",
+      "component": "F",
+      "weight": 0.2,
+      "question": "Visible local structure: Plant, cork trivet, mugs, knives, spatula, cleaning brushes and ironing board. Compare real form, openings, thickness, layers and attachments; color has no credit here.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "weight": 0.5,
+      "question": "Compare original material/color fidelity: Dark table, blue mats and colander, turquoise can, white rack, green brush and plant; pale room with soft directional highlights. Packaging text and tiny bristles may simplify.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "weight": 0.5,
+      "question": "Compare original material/color fidelity: Dark table, blue mats and colander, turquoise can, white rack, green brush and plant; pale room with soft directional highlights. Packaging text and tiny bristles may simplify.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "7f9fb9c11b3f7f5c662d23cf8216acb88bfa98a3ff5c639529fb6b23ba02406d",
+    "task.toml": "ea38daaf845873da222a5821592a664768f1f299fad39f4c69d2f19307c49eb5",
+    "harness/eval_spec.json": "29dc81d3732d9d8aa6b1d875892299068a3300ec0d28a3bdc523ecf457f7eeb5",
+    "harness/methods.json": "43c920d65919a0de7e28473227aa2072895bdc05d57e20811e12cb0adabdeca7",
+    "harness/vlm_spec.json": "0f3620083cf94663c688fa4af90cad02068425daf9e2700388702c9722443ba9"
+  },
+  "view_pairs": [
+    {
+      "id": "reference",
+      "reference": "reference/reference-0.png",
+      "reference_source": "environment/input/reference.png",
+      "candidate": "candidate/main.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    }
+  ],
+  "focus": "Dark rectangular table with thickness, supports, blue mats and surrounding chairs. Oblique crowded tabletop; ironing board behind left, watering can behind center, dish rack right, pan and utensils across the foreground. Preserve visible overlaps and supporting contacts. Dark table, blue mats and colander, turquoise can, white rack, green brush and plant; pale room with soft directional highlights. Packaging text and tiny bristles may simplify.",
+  "geometry_gt_policy": "no_native_reference; no GT substitution during a run",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

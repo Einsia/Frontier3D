@@ -1,0 +1,72 @@
+{
+  "task_id": "L1/Text2Code/task_L1_Text2Code_003",
+  "category": "Text2Code",
+  "level": "L1",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {},
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/036f3cb322b63c57fc66/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_part_roles": 0.03529411764705882,
+        "vlm_base": 0.03529411764705882,
+        "vlm_guide_rods": 0.03529411764705882,
+        "vlm_guide_sleeves": 0.03529411764705882,
+        "vlm_lead_rod": 0.03529411764705882,
+        "vlm_nut_block": 0.03529411764705882,
+        "vlm_platform": 0.03529411764705882,
+        "vlm_end_supports": 0.03529411764705882,
+        "vlm_handwheel": 0.03529411764705882,
+        "vlm_assembly_clearance": 0.03529411764705882,
+        "vlm_topology": 0.03529411764705882,
+        "vlm_solid_validity": 0.03529411764705882,
+        "vlm_units": 0.03529411764705882,
+        "vlm_hierarchy": 0.03529411764705882,
+        "vlm_materials": 0.03529411764705882,
+        "vlm_state_cycle": 0.03529411764705882,
+        "vlm_glb_assembled": 0.03529411764705882,
+        "vlm_aesthetic_composition": 0.1,
+        "vlm_aesthetic_light_color": 0.1,
+        "vlm_aesthetic_finish": 0.1,
+        "vlm_aesthetic_coherence": 0.1
+      },
+      "detail": {
+        "detail_semantic_base": 0.05454545454545454,
+        "detail_semantic_guide_rods": 0.05454545454545454,
+        "detail_semantic_guide_sleeves": 0.05454545454545454,
+        "detail_semantic_lead_rod": 0.05454545454545454,
+        "detail_semantic_nut_block": 0.05454545454545454,
+        "detail_semantic_platform": 0.05454545454545454,
+        "detail_semantic_end_supports": 0.05454545454545454,
+        "detail_semantic_handwheel": 0.05454545454545454
+      },
+      "content": {
+        "detail_semantic_base": 0.05454545454545454,
+        "detail_semantic_guide_rods": 0.05454545454545454,
+        "detail_semantic_guide_sleeves": 0.05454545454545454,
+        "detail_semantic_lead_rod": 0.05454545454545454,
+        "detail_semantic_nut_block": 0.05454545454545454,
+        "detail_semantic_platform": 0.05454545454545454,
+        "detail_semantic_end_supports": 0.05454545454545454,
+        "detail_semantic_handwheel": 0.05454545454545454
+      }
+    }
+  }
+}

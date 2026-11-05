@@ -1,0 +1,362 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+  "family": "Reference2Scene",
+  "instruction_sha256": "7d45405c4d43d5155fb5307d640ac03b34be9b410d2d4c1b17fbd001e00ebdf6",
+  "reference_policy": "reference/reference-0.* is the ORIGINAL public reference image, not a generated reconstruction. Compare directly with candidate/main.png. Alternate view only supports shape interpretation.",
+  "focus": "Desk rows recede toward the board, with open aisles and right-window depth; retain the original wide classroom framing. Warm worn timber against muted walls and dark board, strong right-side daylight and directional desk shadows; text may be simplified.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "reference_feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Staggered individual timber desks and separate chairs with thin tubular supports, not solid box rows. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Broad front chalkboard with timber frame and ledge. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Tall right-side windows with blind divisions and radiator below. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Ceiling pendants and exposed pipe structure. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Direct ORIGINAL -> CANDIDATE fidelity, not generic plausibility: Wall clock and grouped notices/maps in their distinct wall regions. Compare characteristic visible geometry, proportion and completeness.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "dimension": "reference_layout",
+      "weight": 0.2,
+      "question": "Desk rows recede toward the board, with open aisles and right-window depth; retain the original wide classroom framing. Compare the authored main view without alignment/cropping/registration.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.1,
+      "question": "Compare BOTH authored candidate views for consistent meaningful 3D structure, thickness and attachments of the required subjects. Compare ALL supplied original reference views where present. Do not infer an unseen original backside or count a reflection as another object.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials_colors",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original surface colors, materials and style, not general attractiveness. Warm worn timber against muted walls and dark board, strong right-side daylight and directional desk shadows; text may be simplified.",
+      "units": [
+        "materials_colors"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_atmosphere",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original light direction, contrast, exposure, shadow depth and atmosphere in the authored main image. Warm worn timber against muted walls and dark board, strong right-side daylight and directional desk shadows; text may be simplified.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "ca15493df21dd517175f58f30bf888ed0dca73f3d2554eeb40054e18613b547e",
+    "image_size": [
+      800,
+      450
+    ],
+    "detector": {
+      "method": "vlm-boxes-v2",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "fingerprint": "d1e92a5fdae8e8438bd0622de7163b2589305ca336c953881b344e0317a89e5b"
+    },
+    "context_queries": [
+      "desk",
+      "door",
+      "bulletin board",
+      "map",
+      "alphabet chart"
+    ],
+    "targets": [
+      {
+        "id": "board",
+        "label": "黑板",
+        "query": "chalkboard",
+        "weight": 0.3,
+        "boxes": [
+          [
+            0.42,
+            0.351,
+            0.651,
+            0.589
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "机器参考图标注，尚未人工校准。按整块黑板及外框标注，包含较暗板面和底部托槽；不含上方字母条、灯条及旁侧公告栏。"
+      },
+      {
+        "id": "chairs",
+        "label": "椅子",
+        "query": "chair",
+        "weight": 0.3,
+        "boxes": [
+          [
+            0,
+            0.611,
+            0.105,
+            0.78
+          ],
+          [
+            0.07,
+            0.576,
+            0.12,
+            0.638
+          ],
+          [
+            0.12,
+            0.584,
+            0.171,
+            0.68
+          ],
+          [
+            0.25,
+            0.567,
+            0.31,
+            0.722
+          ],
+          [
+            0.264,
+            0.542,
+            0.312,
+            0.609
+          ],
+          [
+            0.13,
+            0.656,
+            0.381,
+            1
+          ],
+          [
+            0.334,
+            0.613,
+            0.495,
+            1
+          ],
+          [
+            0.419,
+            0.584,
+            0.555,
+            0.911
+          ],
+          [
+            0.474,
+            0.578,
+            0.552,
+            0.778
+          ],
+          [
+            0.691,
+            0.549,
+            0.748,
+            0.591
+          ],
+          [
+            0.674,
+            0.593,
+            0.799,
+            0.68
+          ],
+          [
+            0.679,
+            0.629,
+            0.81,
+            0.727
+          ],
+          [
+            0.634,
+            0.676,
+            0.86,
+            0.887
+          ],
+          [
+            0.48,
+            0.92,
+            0.946,
+            1
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "机器参考图标注，尚未人工校准。每框对应一把可辨识椅子的全部可见部分，包括能够归属的椅背、座面和支架，不将课桌并入椅子。前景及左缘椅子被画面裁切；多把椅子的座面、椅腿被桌面或前排椅子遮挡，不推测隐藏轮廓。中央后排与右侧密集处的支架归属有一定不确定性；左上边缘孤立木片未另算实例。"
+      },
+      {
+        "id": "windows",
+        "label": "窗户",
+        "query": "window",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.815,
+            0.149,
+            0.855,
+            0.56
+          ],
+          [
+            0.854,
+            0,
+            0.936,
+            0.587
+          ],
+          [
+            0.944,
+            0,
+            1,
+            0.618
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "机器参考图标注，尚未人工校准。按右墙三组完整窗框单元划分，包含各自窗扇、玻璃及百叶覆盖区域，不按小窗格拆分。中间和右侧窗户顶部出框，最右窗户右缘也被裁切；远端窄窗的边框受透视影响，边界略有不确定性。"
+      },
+      {
+        "id": "lights",
+        "label": "顶灯",
+        "query": "ceiling light",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.092,
+            0.02,
+            0.171,
+            0.178
+          ],
+          [
+            0.282,
+            0.178,
+            0.336,
+            0.287
+          ],
+          [
+            0.539,
+            0,
+            0.62,
+            0.122
+          ],
+          [
+            0.594,
+            0.138,
+            0.65,
+            0.262
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "机器参考图标注，尚未人工校准。共四盏悬挂顶灯，按灯罩及可见吊线的整体范围标注，不包含光晕。黑板上方横向灯条属于壁面照明，未计入顶灯。"
+      }
+    ],
+    "reviewed_by": "gpt-6-astra",
+    "review_kind": "automated_reference_only_v2",
+    "proposal_sha256": "820df9a1aa3085f9f598aa6d29bd768d8a73a5673b5086ff16d4e9dff7160eac",
+    "definitions_sha256": "558fa8daf9822182be1997c0a9c8f7f4b3fb775fe2a78cddb698d188d678b4f6",
+    "formal_score_eligible": false,
+    "proposal_detector_fingerprint": "741d93dddea1a9eb00c64f8dac30b978ceddb64c83ce5ab3c60c0e006715e20a",
+    "detector_revision_note": "Explicit mean token scores over frozen phrases with class/context competition. Single scale; larger detector and two-scale alternatives were rejected after reference-only review.",
+    "scoring_profile": "l2-reference-localized-v5.2.0",
+    "previous_annotation_sha256": "408864fbaa2d3050c9f7d0b884ea8f7cea09478f4fd03f3b0dadea604263ce1a",
+    "public_scope": "Reference boxes cover visible image extents, not inferred hidden geometry. Only the listed key objects enter localization; other scene content remains in the appearance component. Blackboard excludes the map, alphabet strip and bulletin boards. Windows are three visible full-height openings, not separate upper panes. Chair instance annotation/detection remains pending.",
+    "source_annotation_sha256": "2df3b90e035b09888ef44cd68913ea31f1b0d28a893b4896a05936807adfc133",
+    "annotation_response_sha256": "ea11af9a1abd3cc193f76c77eff87fc0439856e46d944822068830b59b9313a8"
+  },
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

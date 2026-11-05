@@ -1,0 +1,19 @@
+{
+  "uid": "806388e5dcda4c8f960a1bbd6682649e",
+  "file": "source.glb",
+  "download_filename": "old_wind_turbine_tower.glb",
+  "bytes": 94944704,
+  "sha256": "98bbb477a4f5863cb482e39e9705f2b34d0be300b3ac2c085a1b98f60b0dbe2b",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Helley (https://sketchfab.com/Helley)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/old-wind-turbine-tower-806388e5dcda4c8f960a1bbd6682649e",
+    "title": "Old Wind Turbine Tower"
+  },
+  "gltf_meshes": 43,
+  "gltf_images": 19,
+  "animations": [
+    "Take 001"
+  ]
+}

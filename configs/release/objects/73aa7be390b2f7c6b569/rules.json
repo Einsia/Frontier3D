@@ -1,0 +1,502 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_019",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "前轮与前悬挂",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.642,
+          0.557
+        ],
+        [
+          0.78,
+          0.553
+        ],
+        [
+          0.841,
+          0.649
+        ],
+        [
+          0.845,
+          0.744
+        ],
+        [
+          0.795,
+          0.784
+        ],
+        [
+          0.706,
+          0.761
+        ],
+        [
+          0.65,
+          0.692
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "后轮、排气与驻车架",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.13,
+          0.602
+        ],
+        [
+          0.227,
+          0.559
+        ],
+        [
+          0.225,
+          0.464
+        ],
+        [
+          0.281,
+          0.407
+        ],
+        [
+          0.369,
+          0.408
+        ],
+        [
+          0.448,
+          0.513
+        ],
+        [
+          0.462,
+          0.611
+        ],
+        [
+          0.378,
+          0.655
+        ],
+        [
+          0.302,
+          0.683
+        ],
+        [
+          0.136,
+          0.624
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "车尾与座椅",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.205,
+          0.419
+        ],
+        [
+          0.231,
+          0.327
+        ],
+        [
+          0.273,
+          0.27
+        ],
+        [
+          0.381,
+          0.3
+        ],
+        [
+          0.431,
+          0.333
+        ],
+        [
+          0.482,
+          0.414
+        ],
+        [
+          0.443,
+          0.458
+        ],
+        [
+          0.331,
+          0.399
+        ]
+      ]
+    },
+    {
+      "id": "r04",
+      "label": "油箱与侧整流罩",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.439,
+          0.416
+        ],
+        [
+          0.482,
+          0.374
+        ],
+        [
+          0.55,
+          0.36
+        ],
+        [
+          0.627,
+          0.375
+        ],
+        [
+          0.675,
+          0.482
+        ],
+        [
+          0.747,
+          0.548
+        ],
+        [
+          0.653,
+          0.7
+        ],
+        [
+          0.526,
+          0.666
+        ],
+        [
+          0.429,
+          0.602
+        ]
+      ]
+    },
+    {
+      "id": "r05",
+      "label": "车头、风挡与操纵部件",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.577,
+          0.462
+        ],
+        [
+          0.62,
+          0.387
+        ],
+        [
+          0.678,
+          0.35
+        ],
+        [
+          0.744,
+          0.417
+        ],
+        [
+          0.789,
+          0.36
+        ],
+        [
+          0.821,
+          0.374
+        ],
+        [
+          0.799,
+          0.423
+        ],
+        [
+          0.804,
+          0.524
+        ],
+        [
+          0.773,
+          0.552
+        ],
+        [
+          0.63,
+          0.53
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t01",
+      "query": "含轮胎和轮辋的车轮",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.229,
+          0.408,
+          0.428,
+          0.642
+        ],
+        [
+          0.651,
+          0.585,
+          0.84,
+          0.779
+        ]
+      ],
+      "boundary_notes": "分别框后轮与前轮的可见外缘；包括暗色轮胎，不补全被车身遮挡部分，不含驻车架小轮。"
+    },
+    {
+      "id": "t02",
+      "query": "后轮驻车架",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.134,
+          0.537,
+          0.312,
+          0.68
+        ]
+      ],
+      "boundary_notes": "包括可见管架、支臂及底部小轮，不包含后轮或背景。"
+    },
+    {
+      "id": "t03",
+      "query": "侧面排气消声器",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.269,
+          0.451,
+          0.377,
+          0.583
+        ]
+      ],
+      "boundary_notes": "限定银灰色斜置消声器及可见端部，不将遮挡后的管路推断为框内范围。"
+    },
+    {
+      "id": "t04",
+      "query": "燃油箱",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.453,
+          0.36,
+          0.635,
+          0.482
+        ]
+      ],
+      "boundary_notes": "包括油箱盖及深色油箱曲面；不把高光单独视为物体。"
+    },
+    {
+      "id": "t05",
+      "query": "主骑乘座垫",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.343,
+          0.335,
+          0.477,
+          0.435
+        ]
+      ],
+      "boundary_notes": "仅主座垫可见范围；不含后方上翘尾壳及尾部靠垫。"
+    },
+    {
+      "id": "t06",
+      "query": "前部透明风挡",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.618,
+          0.352,
+          0.76,
+          0.465
+        ]
+      ],
+      "boundary_notes": "包括透明风挡的完整可见边缘和暗色透明区域，不包含后视镜或下方车头壳。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "source_quote": "Yamaha YZF-R1 RACE Tech Black",
+      "question": "主体是否呈现参考中的雅马哈YZF-R1黑色运动摩托车身份与整体造型？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s02",
+      "source_quote": "two wheels, tyres and brake assemblies",
+      "question": "前后车轮及轮胎是否齐全且位于参考对应位置？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s03",
+      "source_quote": "brake assemblies",
+      "question": "制动组件是否装配在车轮对应位置并具有参考中的可见关系？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s04",
+      "source_quote": "front forks",
+      "question": "前叉是否连接车头与前轮并保持参考中的倾斜方向？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s05",
+      "source_quote": "fairing",
+      "question": "整流罩是否保留参考中的包覆式车头与侧面轮廓？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s06",
+      "source_quote": "fuel tank",
+      "question": "油箱是否位于座椅与车头之间并保持参考中的隆起比例？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s07",
+      "source_quote": "seat",
+      "question": "座椅及其上翘车尾关系是否符合参考？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s08",
+      "source_quote": "handlebars",
+      "question": "车把是否位于风挡后方并呈现参考中的操纵部件布局？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s09",
+      "source_quote": "exhaust",
+      "question": "排气装置是否沿车身下方延伸并在后轮侧面斜向上布置？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s10",
+      "source_quote": "the visible paddock stand",
+      "question": "可见驻车架是否保留在后轮周围并呈支撑车体的关系？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s11",
+      "source_quote": "Preserve the wheelbase",
+      "question": "前后轮中心间距相对整车尺寸的比例是否符合参考？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s12",
+      "source_quote": "body lean",
+      "question": "车身倾斜与整体静态姿态是否符合参考？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s13",
+      "source_quote": "layered black/metal material regions",
+      "question": "黑色车壳与金属机械部件的分层区域及表面外观是否符合参考？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s14",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "原生几何是否为可编辑的完整立体结构，而非图像平面或朝向相机的薄壳替代物？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s15",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "不同机械组件是否可独立编辑或清楚分离，同时允许连续曲面保持连通？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s16",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "question": "第1帧的静态姿态与导出的scene.glb姿态是否一致？",
+      "weight": 0.0625
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d01",
+      "source_quote": "two wheels, tyres and brake assemblies",
+      "question": "轮胎是否具有圆润胎冠、真实侧壁厚度与参考可见胎纹，轮辋是否保留辐条间开口？",
+      "weight": 0.1
+    },
+    {
+      "id": "d02",
+      "source_quote": "brake assemblies",
+      "question": "制动盘的薄圆环、可见孔洞及包夹盘缘的卡钳结构是否保留？",
+      "weight": 0.1
+    },
+    {
+      "id": "d03",
+      "source_quote": "front forks",
+      "question": "前叉是否保留细长管件、下端轴座与前轮连接的局部结构？",
+      "weight": 0.1
+    },
+    {
+      "id": "d04",
+      "source_quote": "fairing openings",
+      "question": "车头进气口和侧整流罩开口是否有真实边缘厚度、凹入深度及内部遮挡？",
+      "weight": 0.1
+    },
+    {
+      "id": "d05",
+      "source_quote": "fuel tank",
+      "question": "油箱是否具有连续鼓起曲面、侧面收腰和嵌入式圆形加油盖？",
+      "weight": 0.1
+    },
+    {
+      "id": "d06",
+      "source_quote": "seat",
+      "question": "座垫是否保留前窄后宽的曲边、下凹承坐面及可见厚度？",
+      "weight": 0.1
+    },
+    {
+      "id": "d07",
+      "source_quote": "handlebars",
+      "question": "车把是否保留握把圆柱、弯曲手柄及与转向部件相连的细结构？",
+      "weight": 0.1
+    },
+    {
+      "id": "d08",
+      "source_quote": "exhaust",
+      "question": "排气是否保留弯曲管路、带端盖的消声器体积与出口孔洞？",
+      "weight": 0.1
+    },
+    {
+      "id": "d09",
+      "source_quote": "the visible paddock stand",
+      "question": "驻车架是否保留弯管框、斜撑、上伸支臂及底部滚轮的连接结构？",
+      "weight": 0.1
+    },
+    {
+      "id": "d10",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "风挡的弯曲薄片边缘、后视镜细支杆及分层车壳接缝是否保持真实厚度与连接遮挡？",
+      "weight": 0.1
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n01",
+      "source_quote": "two wheels",
+      "quantity": "摩托车主车轮数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维场景中按独立轮轴及轮辋轮胎装配识别主车轮；不计制动盘和驻车架滚轮。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "以米读取最终静态姿态的世界空间几何，包含驻车架，排除相机与灯光；计算整体轴对齐包围盒各轴跨度并取最大值，与1.000 m名义值比较。explicit_tolerance为原文2%的相对容差，不是米值。"
+    }
+  ],
+  "limitations": [
+    "未提供候选；本计划不包含任何候选属性判断或已完成测量。",
+    "主图input/reference.png对应原始附件reference/reference-1.png；其他原始证据为reference/reference-0.png、reference/reference-2.png和reference/reference-3.png。所有区域和定位框仅冻结于主图。",
+    "附件文件名的front/side称谓与画面观察方向不完全一致；使用实际可见内容，不据文件名推断几何。",
+    "整体最大跨度未明定采用轴对齐包围盒还是其他几何跨度；本计划明确采用世界坐标轴包围盒最大边长。2%按相对名义尺寸解释。",
+    "米制与Z向上需在原生场景中核验；完整立体性、组件可编辑性和跨格式姿态一致性不能仅凭单张渲染判断。",
+    "未明示的尺寸、轴距、角度、孔洞数量及间隙仅作参考形态比较，不增加精确数值或容差。",
+    "细小标志和紧固件允许简化；遮挡或不可分辨部分不建立隐藏几何目标。渲染设置、图像尺寸及交付脚本不作为内容质量检查。"
+  ]
+}

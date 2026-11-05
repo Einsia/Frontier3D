@@ -1,0 +1,341 @@
+{
+  "version": "l1-evaluation-design-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+  "category": "Image2Code",
+  "status": "design_with_legacy_partial_implementation",
+  "scoring_profile": "image_reference",
+  "sources": {
+    "instruction.md": "fc55a6a7ee90167456bebaaaa018272bf5d1f9f3f5dbf7f87f1530f82649229f",
+    "solution/EVALUATION.md": "947c64dce89cb56ad589dfedcfaad75101463ee61abd644440108aaa034421ee",
+    "harness/eval_spec.json": "9ec9b2df22bf23ffcf496335b3288154e4dbef4b10f3479ae183b2728c259a4b"
+  },
+  "title": "评测接口：可动上翻柜门铰链与伸缩撑杆",
+  "case_focus": "本题为带开合运动的多视图重建。重点为：柜体薄板与空腔、门框及门芯、上沿铰链轴、两端转动接头、撑杆轴向伸缩、连续开合与连接保持。",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "line": 15,
+      "source_quote": "| 执行与交付 | 干净 workspace 按题面命令运行；五个固定产物均有效；打开 Blender 和 GLB，原生重渲染 | 只交图片、缺几何或依赖已有输出不能通过交付检查 |",
+      "dimension": "执行与交付",
+      "criteria": [
+        "干净 workspace 按题面命令运行；五个固定产物均有效；打开 Blender 和 GLB，原生重渲染",
+        "只交图片、缺几何或依赖已有输出不能通过交付检查"
+      ],
+      "methods": [
+        "execution",
+        "delivery",
+        "state"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_02",
+      "line": 16,
+      "source_quote": "| 尺度与比例 | 世界坐标真实顶点的包围盒最大跨度；目标 1 m、容差 2%；比较主体与附件比例 | 排除相机灯光；在闭合第 1 帧测量；形状对齐不能用额外缩放掩盖尺度错误 |",
+      "dimension": "尺度与比例",
+      "criteria": [
+        "世界坐标真实顶点的包围盒最大跨度；目标 1 m、容差 2%；比较主体与附件比例",
+        "排除相机灯光；在闭合第 1 帧测量；形状对齐不能用额外缩放掩盖尺度错误"
+      ],
+      "methods": [
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_03",
+      "line": 17,
+      "source_quote": "| 三维形体 | 给定相机轮廓 IoU、可见表面双向采样距离、法线角差 | 只做整体刚体对齐，不逐件独立配准；不要求源拓扑或源网格缺陷 |",
+      "dimension": "三维形体",
+      "criteria": [
+        "给定相机轮廓 IoU、可见表面双向采样距离、法线角差",
+        "只做整体刚体对齐，不逐件独立配准；不要求源拓扑或源网格缺陷"
+      ],
+      "methods": [
+        "numeric",
+        "editable"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_04",
+      "line": 18,
+      "source_quote": "| 结构与编辑性 | 逐区域检查厚度、凹凸、孔隙、连接和可分离语义部件；BVH/截面探针 | 有机表面允许单一连续网格，不能按对象名或对象数评分 |",
+      "dimension": "结构与编辑性",
+      "criteria": [
+        "逐区域检查厚度、凹凸、孔隙、连接和可分离语义部件；BVH/截面探针",
+        "有机表面允许单一连续网格，不能按对象名或对象数评分"
+      ],
+      "methods": [
+        "editable"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_05",
+      "line": 19,
+      "source_quote": "| 细节覆盖 | 下方语义区域分别记录可见形状与关系覆盖，然后宏平均 | 防止大面片淹没小部件；题面允许简化的细字与微小磨损不设硬门槛 |",
+      "dimension": "细节覆盖",
+      "criteria": [
+        "下方语义区域分别记录可见形状与关系覆盖，然后宏平均",
+        "防止大面片淹没小部件；题面允许简化的细字与微小磨损不设硬门槛"
+      ],
+      "methods": [
+        "numeric",
+        "visible_geometry",
+        "assembly"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_06",
+      "line": 20,
+      "source_quote": "| 材质与构图 | 从原生场景重渲染，比较主要区域颜色、材质类别、曲面明暗与视图 | 不能以像素总分替代几何测量；须考虑光照与材质格式差异 |",
+      "dimension": "材质与构图",
+      "criteria": [
+        "从原生场景重渲染，比较主要区域颜色、材质类别、曲面明暗与视图",
+        "不能以像素总分替代几何测量；须考虑光照与材质格式差异"
+      ],
+      "methods": [
+        "image_pair"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_07",
+      "line": 21,
+      "source_quote": "| 跨格式一致 | 独立导入 GLB，比较各要求姿态的包围盒和采样几何；main.png 对照原生重渲染 | 不能用不同模型分别交图片、Blender 与 GLB |",
+      "dimension": "跨格式一致",
+      "criteria": [
+        "独立导入 GLB，比较各要求姿态的包围盒和采样几何；main.png 对照原生重渲染",
+        "不能用不同模型分别交图片、Blender 与 GLB"
+      ],
+      "methods": [
+        "state",
+        "delivery",
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_08",
+      "line": 22,
+      "source_quote": "| 重复性与成本 | 两次干净运行，记录几何/图像差异、时间、token、工具调用与重试 | 质量和成本分开；不比较 Blender 二进制字节是否相同 |",
+      "dimension": "重复性与成本",
+      "criteria": [
+        "两次干净运行，记录几何/图像差异、时间、token、工具调用与重试",
+        "质量和成本分开；不比较 Blender 二进制字节是否相同"
+      ],
+      "methods": [
+        "execution",
+        "delivery",
+        "cost",
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_09",
+      "line": 23,
+      "source_quote": "| 运动与连接 | 采样 1、16、31、46、61、76、91、106、121 帧：门绕上铰轴运动、柜体固定、左右撑杆两端保持附着、杆件同轴伸缩、刚性网格及尺度恒定、121 帧回到 1 帧 | 精确曲线/缓动不作目标；不能以整门平移或网格拉伸伪造；不要求气压仿真 |",
+      "dimension": "运动与连接",
+      "criteria": [
+        "采样 1、16、31、46、61、76、91、106、121 帧：门绕上铰轴运动、柜体固定、左右撑杆两端保持附着、杆件同轴伸缩、刚性网格及尺度恒定、121 帧回到 1 帧",
+        "精确曲线/缓动不作目标；不能以整门平移或网格拉伸伪造；不要求气压仿真"
+      ],
+      "methods": [
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    }
+  ],
+  "method_definitions": {
+    "execution": "外层清洁基准+seed 0/1/2执行；原生/导出独立加载；交付哈希绑定，失败不删除。",
+    "delivery": "独立重新导入GLB比较世界尺度、几何/孔槽/姿态和可表达材质；不可表达的程序化节点单列，不自动烘焙位图。",
+    "state": "Declared frames: no-bitmap audit only. Motion/rigidity/attachments and animated GLB equivalence remain unmeasured.",
+    "numeric": "按本题数值条款拟合实际平面/圆柱/截面；报告mm误差和容差；孔槽用边界+占用/连通检查，AABB仅作粗筛。",
+    "visible_geometry": "仅公开视角可见面并集做精确GT；统一整体配准、独立尺度门、逐图轮廓/可见面距离/法线；局部区域宏平均，未知背面仅检查合理性。",
+    "editable": "检查实际可编辑几何/部件组织及代码重建；对象名、变量名、顶点顺序不作为正确性真值。",
+    "assembly": "以几何匹配角色/对称置换；一次整体刚体对齐后测轴线、接触、规定间隙和实际实体穿透，禁止逐件配准。",
+    "image_pair": "从提交原生场景重渲染，再与本题公开参考图比较；前景轮廓、区域色差/结构和相机误差分报，进入主评分；提交PNG与重渲染须一致。全图SSIM不独立决定达标。",
+    "cost": "保留成功、失败、重试和反馈各轮时间/token/调用；未知token为null；成本与质量分列。"
+  },
+  "public_numeric_clauses": [
+    "Use metres, Z up, and a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights. This is a task scale convention, not a real-world measurement. Infer other proportions from the images.",
+    "The four main views show the open pose. input/closed.png and input/half_open.png use the same primary camera to show the closed and intermediate poses. Follow input/motion.json at 24 fps: frame 1 closed, 31 half open, 61 open, 91 half closed and 121 closed again. Animate continuously through the cycle; match the visible poses, attachment relationships and rotation direction rather than the exact source easing. Measure the 1 m span at frame 1. Keep rigid component shape and scale constant. Save the Blender scene at frame 61 for inspection; preserve the full 1–121 animation in Blender and GLB. Render main.png at frame 61. An exploded view is not required.",
+    "Render main.png at 1000 x 1000 pixels from a camera matching input/reference.png, using neutral studio lighting, Cycles, AgX and exposure 0. Retain the camera and lighting in scene.blend."
+  ],
+  "local_regions": [
+    "柜体薄板与空腔",
+    "门框及门芯",
+    "上沿铰链轴",
+    "两端转动接头",
+    "撑杆轴向伸缩",
+    "连续开合与连接保持"
+  ],
+  "expected_parts": null,
+  "frames": {
+    "protocol": "l1-reproduction-frame-policy-v1",
+    "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+    "native_frames": [
+      1,
+      31,
+      61,
+      91,
+      121,
+      1
+    ],
+    "glb_frames": [
+      1
+    ],
+    "cross_format_frames": [],
+    "scope": "Visual v2 native material states; GLB readability only, no animation equality",
+    "native_inspection": "single_session_material_audit",
+    "limitation": "No motion, rigid shape, attachment or GLB animation quality claim"
+  },
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "main.png",
+    "README.md"
+  ],
+  "current_tolerances": {
+    "span_m": 0.02
+  },
+  "reference_images": {
+    "input/reference.png": "5ce137f14dd65dd7af1b5a7b89fa7bc0e7e9f8a73f6f8dcdbad28a16ae125d14",
+    "input/front.png": "12ff5a1e888dcda800c1300cda213bbb6be4a2d32b3f66f82659d705aa70d4b7",
+    "input/side.png": "2fdf9c8f054578902fcf7cc0032e3ded6a6f6e28cb9217d2f0c6892b8b0698a5",
+    "input/top.png": "256310e10d8d12f483c16ad0d7bc6cbe647b824897ac7eac9af414f8dc057a01",
+    "input/closed.png": "ccc2d33133d66942c4ee4d6b4e02ef979aa8e0a567d843f009d78e1ba68a68a6",
+    "input/half_open.png": "4d383f6b2e7e5fd2b81c868c6cad2b3ee19d0b28dd1a9ce56b5a22deb52ef67a"
+  },
+  "material_policy": {
+    "kind": "procedural_only",
+    "bitmap_inputs": "forbidden",
+    "constant_colors_and_procedural_nodes": "allowed",
+    "apply_bitmap_ban_to_reference_assets": false,
+    "authority": "user_goal_2026-10-03",
+    "requires_public_prompt_override": true
+  },
+  "deferred": [],
+  "scope_limits": [
+    "私有solution只供测评端，不进入生成输入",
+    "设计完成不等于算法实现或候选通过；各项原始误差和未实现项保留",
+    "未公开的尺度/距离/图像阈值须pilot校准，不能静默作为硬门槛",
+    "缺件/盲孔/错配合/破坏保护区等反例须先验收，再提升覆盖声明",
+    "Refreshed 20261010 asset; no old slot geometry/count/regions retained.",
+    "Visual v2 only: no exact CAD or motion score; full_task_verified=false."
+  ],
+  "current_requirements": [
+    {
+      "id": "public_clause_02",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity",
+        "native_state_materials"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+    },
+    {
+      "id": "public_clause_03",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_04",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_05",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity",
+        "native_state_materials"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+    },
+    {
+      "id": "public_clause_06",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity",
+        "saved_camera",
+        "saved_resolution",
+        "main_render_consistency"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "delivery",
+      "implementation": "partial",
+      "check_ids": [
+        "export",
+        "main_loadable",
+        "main_dimensions",
+        "main_format",
+        "readme",
+        "reproducible"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "procedural_materials",
+      "implementation": "partial",
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "seed_quality",
+      "implementation": "partial",
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    }
+  ],
+  "image_quality": {
+    "version": "l1-reference-visual-v2.0.0",
+    "weights": {
+      "main_image": 0.8,
+      "render_validity": 0.2
+    },
+    "method": "native-appearance-v1",
+    "image_checks": [
+      "primary_similarity"
+    ],
+    "system_checks": [
+      "export",
+      "glb_procedural_materials",
+      "main_dimensions",
+      "main_format",
+      "main_loadable",
+      "main_render_consistency",
+      "native_procedural_materials",
+      "native_state_materials",
+      "readme",
+      "real_geometry",
+      "reproducible",
+      "saved_camera",
+      "saved_resolution"
+    ],
+    "scope": "declared_primary_view_only",
+    "seed_aggregation": "minimum"
+  }
+}

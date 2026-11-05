@@ -1,0 +1,74 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "76ab108535f892f632240c4108c8d2cd9460b2593120d57dad49ed76c733931c",
+      "width": 1600,
+      "height": 1200,
+      "provenance": {
+        "task": "l3-r01",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-r01/20240111_Qinwang_Gong.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:20240111_Qinwang_Gong.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/20240111_Qinwang_Gong.jpg",
+        "sha256": "10c630b134b38be00fa0fefbda5ae4a6f0a9109399ce595cfff5ddc9ef9a95df",
+        "license_urls": [
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "author": "Yumeto",
+        "kind": "photograph",
+        "license": "CC-BY-SA-4.0"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-02",
+      "path": "references/reference-02.jpg",
+      "sha256": "9388d345241c0ed84b97a12696e484f1c9165626f675afae0c5521dc68304328",
+      "width": 1280,
+      "height": 960,
+      "provenance": {
+        "task": "l3-r01",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-r01/20240111_Zhonggong_Men-1280.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:20240111_Zhonggong_Men.jpg",
+        "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/20240111_Zhonggong_Men.jpg/1280px-20240111_Zhonggong_Men.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+        "sha256": "5560bd1956735becc11d4baeb43c569b731be8ae2fc7a3215e8fdae9de6116d7",
+        "license_urls": [
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "author": "Yumeto",
+        "kind": "photograph",
+        "source_resize": "Commons 1280px thumbnail",
+        "license": "CC-BY-SA-4.0"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-03",
+      "path": "references/reference-03.jpg",
+      "sha256": "6a44fd857a8c16abe659e25c05946e458f9d75ec82131f7e78a5aea13876eebe",
+      "width": 1280,
+      "height": 960,
+      "provenance": {
+        "task": "l3-r01",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-r01/20240111_Sihaiguiyi_Dian-1280.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:20240111_Sihaiguiyi_Dian.jpg",
+        "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/20240111_Sihaiguiyi_Dian.jpg/1280px-20240111_Sihaiguiyi_Dian.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+        "sha256": "d2aa968cfcd48ee9d283180b7ba6b85b462fd39c50c8703457161141fd1ec832",
+        "license_urls": [
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "author": "Yumeto",
+        "kind": "photograph",
+        "source_resize": "Commons 1280px thumbnail",
+        "license": "CC-BY-SA-4.0"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

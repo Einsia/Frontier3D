@@ -1,0 +1,24 @@
+{
+  "title": "Eggs Benedict (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 7,
+  "original_sha256": "aa9a7a44b452583703dc13d1fba3878aa18d15213d08ddc6e9e4a76a2c99ee9e",
+  "input_sha256": "99d1a409f84840572fc203eb4e3783f1ad3d93daa704997109bb090f9cbe51e7",
+  "input_dimensions": [
+    1200,
+    1600
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

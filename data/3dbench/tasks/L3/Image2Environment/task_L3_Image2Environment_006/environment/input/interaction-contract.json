@@ -1,0 +1,179 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-g02",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "outer_courtyard",
+    "entrance_hall",
+    "guard_room",
+    "reception_room",
+    "upper_store",
+    "inner_courtyard"
+  ],
+  "initial_state": "Start in the outer courtyard; side door and shortcut locked; lift at lower floor.",
+  "entities": [
+    {
+      "id": "screen.01",
+      "role": "sliding_door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "screen.02",
+      "role": "sliding_door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "screen.03",
+      "role": "sliding_door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "screen.04",
+      "role": "sliding_door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "lift.main",
+      "role": "lift",
+      "actions": [
+        "call",
+        "travel"
+      ],
+      "initial": "at lower landing; stopped",
+      "argument": "landing=lower|upper"
+    },
+    {
+      "id": "lift.barrier.01",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; interlocked with lift",
+      "argument": ""
+    },
+    {
+      "id": "lift.barrier.02",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; interlocked with lift",
+      "argument": ""
+    },
+    {
+      "id": "storage.key_box",
+      "role": "container",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; contains key",
+      "argument": ""
+    },
+    {
+      "id": "item.key",
+      "role": "key",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "collect",
+        "return"
+      ],
+      "initial": "inside key box",
+      "argument": ""
+    },
+    {
+      "id": "door.side",
+      "role": "locked_door",
+      "actions": [
+        "open",
+        "close",
+        "unlock"
+      ],
+      "initial": "locked",
+      "argument": ""
+    },
+    {
+      "id": "shortcut.lever",
+      "role": "lever",
+      "actions": [
+        "activate"
+      ],
+      "initial": "inactive",
+      "argument": ""
+    },
+    {
+      "id": "gate.shortcut",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "locked by upper mechanism",
+      "argument": ""
+    },
+    {
+      "id": "cargo.crate",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "outer courtyard",
+      "argument": ""
+    },
+    {
+      "id": "ladder.upper",
+      "role": "ladder",
+      "actions": [
+        "climb_up",
+        "climb_down"
+      ],
+      "initial": "usable at both landings",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [
+    "side_key"
+  ],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

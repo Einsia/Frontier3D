@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-reference-localized-v5.2.0",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-010",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "5bcd9b00dcf2d6fea9c8d42848cc14442ff268d0f4d2da50f7a1521a717bf0df",
+  "image_size": [
+    1600,
+    900
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "long dining table including all visible supports",
+      "label": "long dining table including all visible supports",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.297,
+          0.522,
+          0.686,
+          0.985
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. long dining table including all visible supports"
+    },
+    {
+      "id": "target_2",
+      "query": "rear fireplace including pale surround",
+      "label": "rear fireplace including pale surround",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.615,
+          0.469,
+          0.775,
+          0.69
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. rear fireplace including pale surround"
+    },
+    {
+      "id": "target_3",
+      "query": "left tall window group including framing",
+      "label": "left tall window group including framing",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.062,
+          0.158,
+          0.261,
+          0.699
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. left tall window group including framing"
+    }
+  ]
+}

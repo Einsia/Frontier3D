@@ -1,0 +1,411 @@
+{
+  "version": "l2-method-plan-v1",
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_008",
+  "category": "SceneEdit",
+  "sources": {
+    "instruction.md": "54863288b7aaaee56349f28d136b74898f5ad7a9bb676480ac0bf1391fd00864",
+    "solution/EVALUATION.md": "810761266ccc1d014175e339e07767414003ed2c5419e211eea84b6b75d38f6a"
+  },
+  "evaluation_title": "评测接口：赛车场：补建维修站与带顶看台",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "dimension": "可执行性",
+      "description": [
+        "固定输出完整、入口执行、原生重渲染及依赖有效",
+        "按 instruction 约定入口从干净输入执行；检查图片来自提交工程。"
+      ],
+      "source_quote": "| 可执行性 | 固定输出完整、入口执行、原生重渲染及依赖有效 | 按 instruction 约定入口从干净输入执行；检查图片来自提交工程。 |",
+      "methods": [
+        "execution_and_native_rerender",
+        "dependency_integrity"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_02",
+      "dimension": "需求覆盖",
+      "description": [
+        "成排维修车库、端部办公空间、阶梯看台与悬挑顶、赛道两侧布局和入口净空",
+        "用题面语义清单逐项检查；评测侧先标注目标区域，不用模型任意命名判断。"
+      ],
+      "source_quote": "| 需求覆盖 | 成排维修车库、端部办公空间、阶梯看台与悬挑顶、赛道两侧布局和入口净空 | 用题面语义清单逐项检查；评测侧先标注目标区域，不用模型任意命名判断。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "target_geometry_and_contacts"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_03",
+      "dimension": "局部效果",
+      "description": [
+        "目标结构/颜色/照明恢复程度",
+        "原生完整工程和 reference.png 为私有目标；分目标区域与全局报告，不用简单全图平均掩盖局部失败。"
+      ],
+      "source_quote": "| 局部效果 | 目标结构/颜色/照明恢复程度 | 原生完整工程和 reference.png 为私有目标；分目标区域与全局报告，不用简单全图平均掩盖局部失败。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "target_geometry_and_contacts"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_04",
+      "dimension": "保持性",
+      "description": [
+        "非目标对象、几何、变换、材质、灯、相机、渲染设置保持率",
+        "对照 initial.blend 和 preserved-baseline.json；先哈希粗查，再在有必要时验证语义等价，避免顶点排序改变误判。"
+      ],
+      "source_quote": "| 保持性 | 非目标对象、几何、变换、材质、灯、相机、渲染设置保持率 | 对照 initial.blend 和 preserved-baseline.json；先哈希粗查，再在有必要时验证语义等价，避免顶点排序改变误判。 |",
+      "methods": [
+        "non_target_surface_and_shading_preservation"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_05",
+      "dimension": "空间一致性",
+      "description": [
+        "接触与穿透、深度层次、备用视角一致",
+        "几何题用 BVH、轮廓与表面采样；灯光/材质题核对原几何完整保留。备用图不要求匹配隐藏目标图。"
+      ],
+      "source_quote": "| 空间一致性 | 接触与穿透、深度层次、备用视角一致 | 几何题用 BVH、轮廓与表面采样；灯光/材质题核对原几何完整保留。备用图不要求匹配隐藏目标图。 |",
+      "methods": [
+        "camera_relationship",
+        "same_seed_reproduction"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_06",
+      "dimension": "视觉",
+      "description": [
+        "区域轮廓、Lab 颜色分布、亮暗层次和阴影",
+        "在同相机重渲染，不要求单个噪点一致；合法目标引起的间接反射及接触阴影变化不算非目标编辑。"
+      ],
+      "source_quote": "| 视觉 | 区域轮廓、Lab 颜色分布、亮暗层次和阴影 | 在同相机重渲染，不要求单个噪点一致；合法目标引起的间接反射及接触阴影变化不算非目标编辑。 |",
+      "methods": [
+        "main_view_image_comparison",
+        "reviewed_regions_and_landmarks"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_07",
+      "dimension": "可复现性",
+      "description": [
+        "同输入重复运行一致、资产自包含",
+        "验证第二次运行以及离线重开工程；禁止读取私有完整模型。"
+      ],
+      "source_quote": "| 可复现性 | 同输入重复运行一致、资产自包含 | 验证第二次运行以及离线重开工程；禁止读取私有完整模型。 |",
+      "methods": [
+        "camera_relationship",
+        "same_seed_reproduction"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_08",
+      "dimension": "效率",
+      "description": [
+        "时间、token、调用与失败成本",
+        "Harness 统一记录，和质量分开。"
+      ],
+      "source_quote": "| 效率 | 时间、token、调用与失败成本 | Harness 统一记录，和质量分开。 |",
+      "methods": [
+        "cost_accounting_separate"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    }
+  ],
+  "public_numeric_clauses": [
+    "For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens."
+  ],
+  "public_render_contract": {},
+  "material_policy": {
+    "image_textures": false,
+    "procedural_shading": true,
+    "solid_color": true,
+    "scope": [
+      "materials",
+      "nested_node_groups",
+      "world",
+      "lights",
+      "geometry_node_image_inputs",
+      "legacy_modifier_textures",
+      "compositor_images"
+    ],
+    "edit_baseline": "Converted baseline and reference; native render regenerated, visual review pending"
+  },
+  "scoring": {
+    "evaluation_mode": "system_validity_with_physical_quality",
+    "component_weights": {
+      "numeric": 0.18,
+      "target": 0.54,
+      "preservation": 0.18,
+      "physics": 0.1
+    },
+    "physics_weight": 0.1,
+    "minimum_quality": null,
+    "weights_status": "pilot_not_calibrated"
+  },
+  "ground_truth": {
+    "use_private_example_for_brief": false,
+    "alternate_view_pixel_gt": false,
+    "hidden_dimensions_or_object_names_as_requirements": false,
+    "main_image": "public_reference",
+    "private_target_index": "evaluator_localization_only"
+  },
+  "mvp_status": "not_run",
+  "implementation_status": "five_case_regional_controls_pending",
+  "target": "维修站和看台",
+  "target_features": [
+    "3相邻车库和端部办公室",
+    "车库真开口/分隔柱/连续屋顶",
+    "独立看台台阶和侧墙",
+    "看台顶棚真实厚度及支撑",
+    "入库净空/赛道保持通畅"
+  ],
+  "case_measurements": "3相邻车库和端部办公室；车库真开口/分隔柱/连续屋顶；独立看台台阶和侧墙；看台顶棚真实厚度及支撑；入库净空/赛道保持通畅",
+  "numeric_method": "Localize reference target using private index; compare submitted geometry in the visible target region without requiring original names/splits. Measure cavity, thickness, contacts and route where specified; preserve non-target surfaces using global scene coordinates and shading, allowing equivalent remeshing.",
+  "deferred": [],
+  "human_assistance": [
+    "Review procedural palette/opacity/normal replacements and matching reference images",
+    "Confirm visible target and semantic region correspondence",
+    "Calibrate shape and lighting thresholds using accepted examples"
+  ],
+  "dataset_version": "l2-edit-procedural-data-v1",
+  "edit_measurement_mode": "geometry",
+  "reference_target": {
+    "scene": "solution/reference/scene.blend",
+    "objects": [
+      "pitsGarage(Clone)",
+      "pitsGarage placement",
+      "pitsGarage(Clone).001",
+      "pitsGarage placement.001",
+      "pitsGarage(Clone).002",
+      "pitsGarage placement.002",
+      "pitsOffice(Clone)",
+      "pitsOffice placement",
+      "grandStandCovered(Clone)",
+      "grandStandCovered placement"
+    ],
+    "files": [
+      "solution/reference/scene.blend",
+      "solution/annotations/pair-audit.json"
+    ]
+  },
+  "active_checks": [
+    {
+      "id": "alternate_relationship",
+      "existing_check": "alternate_relationship",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "main_camera_preserved",
+      "existing_check": "main_camera_preserved",
+      "source": "The pit buildings and covered grandstand have been removed from this stylized raceway. Rebuild the arrangement shown in input/reference.png: three adjoining pit garages along one side of the straight, an office block at the end of that row, and a separate covered stepped grandstand on the opposite side. Restore the garage bays facing the track with recessed openings, dividing piers and a continuous roof line. The office should read as a distinct end section with its visible window band. The grandstand needs individual seating tiers, supporting side walls, an open viewing face and an overhanging roof with real thickness and support. Align the structures with the surviving track, barriers and start gantry, preserving the gaps needed to enter the garage bays and keeping the racing surface unobstructed. Match the light concrete, red accent surfaces, dark glazing and compact cartoon proportions. Tiny signs may be simplified into colour blocks. Do not change the cars, road, barriers, gantry, terrain, camera or lights."
+    },
+    {
+      "id": "main_native_size",
+      "existing_check": "main_native_size",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "main_png",
+      "existing_check": "main_png",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "alternate_native_size",
+      "existing_check": "alternate_native_size",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "alternate_png",
+      "existing_check": "alternate_png",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_engine",
+      "existing_check": "preserve_engine",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_view_transform",
+      "existing_check": "preserve_view_transform",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_look",
+      "existing_check": "preserve_look",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_exposure",
+      "existing_check": "preserve_exposure",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_gamma",
+      "existing_check": "preserve_gamma",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_resolution",
+      "existing_check": "preserve_resolution",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_resolution_percentage",
+      "existing_check": "preserve_resolution_percentage",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_unit_system",
+      "existing_check": "preserve_unit_system",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "preserve_unit_scale",
+      "existing_check": "preserve_unit_scale",
+      "source": "Start from input/initial.blend and use the single supplied reference image. Preserve everything outside the permitted changes described above, including all cameras, render and colour-management settings. Render main.png from the supplied main camera. For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens. Keep both cameras and the same edited scene in scene.blend. Pack all dependencies. Do not replace the scene with a reference image plane or retrieve the original complete scene from the internet. Hidden details may be inferred plausibly. Retain the original scene scale and Z-up orientation."
+    },
+    {
+      "id": "editable",
+      "existing_check": "editable",
+      "source": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```"
+    }
+  ],
+  "remaining_engineering": [
+    "Continuous shells, part contacts/support and task-specific clearances",
+    "Equivalent remeshing and surface-shading preservation where valid",
+    "Task-specific openings, internal spaces and structural part correspondence",
+    "True garage openings, continuous roof, individual tiers, support and track/bay clearance",
+    "Exact semantic counts marked pending in numeric_requirements",
+    "Target material appearance similarity"
+  ],
+  "edit_structure": {
+    "thickness": true,
+    "open_cavity": false
+  },
+  "edit_regions": [
+    {
+      "id": "garage_1",
+      "objects": [
+        "pitsGarage(Clone)"
+      ],
+      "source_quote": "three adjoining pit garages along one side of the straight"
+    },
+    {
+      "id": "garage_2",
+      "objects": [
+        "pitsGarage(Clone).001"
+      ],
+      "source_quote": "three adjoining pit garages along one side of the straight"
+    },
+    {
+      "id": "garage_3",
+      "objects": [
+        "pitsGarage(Clone).002"
+      ],
+      "source_quote": "three adjoining pit garages along one side of the straight"
+    },
+    {
+      "id": "end_office",
+      "objects": [
+        "pitsOffice(Clone)"
+      ],
+      "source_quote": "an office block at the end of that row"
+    },
+    {
+      "id": "covered_grandstand",
+      "objects": [
+        "grandStandCovered(Clone)"
+      ],
+      "source_quote": "a separate covered stepped grandstand on the opposite side"
+    }
+  ],
+  "eligibility_scope": "System validity only; all content checks affect quality, not eligibility",
+  "numeric_requirements": [
+    {
+      "id": "alternate_translation_m",
+      "method": "camera_local_translation",
+      "expected": 0.3,
+      "unit": "m",
+      "tolerance": 0.003,
+      "source_quote": "For alternate.png, copy that camera and translate it 0.30 m along its local positive X axis without changing its rotation or lens."
+    },
+    {
+      "id": "pit_garage_count",
+      "method": "pending_geometry_count",
+      "expected": 3,
+      "unit": "count",
+      "tolerance": 0,
+      "source_quote": "three adjoining pit garages"
+    }
+  ],
+  "base_scoring": {
+    "profile": "edit_target",
+    "text_semantics": "separate_from_image_metric",
+    "vit_enabled": false,
+    "cost_in_quality_score": false,
+    "main_image_weight": 0.0,
+    "weights_status": "pilot_definition_not_calibrated",
+    "invalid_input_has_model_score": false,
+    "evaluation_mode": "native_edit_target_quality",
+    "minimum_quality": null,
+    "target_weight": 0.8,
+    "numeric_weight": 0.2,
+    "similarity_weight": 0.6,
+    "preservation_weight": 0.2,
+    "geometry_weights": {
+      "surface": 0.6,
+      "regions": 0.25,
+      "structure": 0.15
+    }
+  },
+  "base_scoring_profile": "l2-edit-target-v4.0.0",
+  "physics": {
+    "version": "physical-context-v1",
+    "scope": "edit_delta",
+    "edit_mode": "geometry",
+    "contact_tolerance_m": 0.02
+  },
+  "vlm_judge": {
+    "version": "l2-vlm-judge-v3",
+    "mode": "interactive",
+    "spec_path": "harness/vlm_spec.json",
+    "spec_sha256": "9cd69aefde3487d76d5d396286e526d2bd205040d3a0ff8471eb7f5cefff7ee6",
+    "component_weights": {
+      "numeric": 0.2,
+      "target": 0.3,
+      "preservation": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+    "edit_context": {
+      "before": {
+        "path": "harness/vlm_context/before.png",
+        "sha256": "afd112ff9ea869aae94001a1589115c8ff709474ec7a74d788a0f447767d5068",
+        "scene_sha256": "b7ed65c7bad78e9b1d5c30e825d37d7eaf73488833ff43b18ee8a0b3a7046c24"
+      },
+      "target": {
+        "path": "harness/vlm_context/target.png",
+        "sha256": "6ce7e08ef0f9b572091423a4309ca5497a792ce776bbc7437109dbfb65fdcab3",
+        "scene_sha256": "0ac660e9e30f2f053e4f89ad74ad03623f325c86670695b7e6604ff34e3b145b"
+      }
+    }
+  },
+  "score_aggregation_note": "## 当前复评口径：v8 / Strict fidelity review\n\n仅复评原作品，未改动原生成题面。逐题原图/文本特征；主视图必查，跨视图项必须核对所有公开原图和候选双视图。\n每项列出达成、差异和严重度后评0–4级；主要缺陷最多2级，主体错误/缺失0级，不能因制作精致掩盖不忠于参考。\n保持原总权重及自动/物理测量：Brief VLM60/测量30/物理10；Edit 数值20/目标30/保持20/物理10/VLM20；Reference 图像50/定位20/物理10/VLM20。\n定位沿用原冻结参考框及公式，重新独立识别候选框。禁止任意配准。未展示仅扣对应项；技术失败不补零。\n机器草案和裁判尚待人工校准，不声称人工认证。详见 harness/vlm_spec.json。\n"
+}

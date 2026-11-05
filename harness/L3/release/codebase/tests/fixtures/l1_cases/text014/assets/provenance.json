@@ -1,0 +1,11 @@
+{
+  "source": "public instruction coordinates only; no GT or source model",
+  "builder_sha256": "d34293f8b4441876805f0c064751a101cfba64909a1e2ce0860577b95f8d25a9",
+  "cadquery_ocp_novtk": "7.9.3.1.1",
+  "valid_solid": true,
+  "volume_mm3": 3433.059600093822,
+  "linear_deflection_mm": 0.01,
+  "vertices": 3124,
+  "triangles": 6244,
+  "asset_sha256": "caf1b96d96ddab49844479f76ca982d9f38302f025e517fcb0c1118237fbad9c"
+}

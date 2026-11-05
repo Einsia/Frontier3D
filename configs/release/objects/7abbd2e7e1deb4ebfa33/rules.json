@@ -1,0 +1,622 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_011",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "吧台是否具有实体台面厚度及合理支撑？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "清洗槽是否具有低于台面的槽腔及实体边壁？",
+      "source_quote": "a washing well and ice well, each 0.35 m wide and 0.05 m below the surface",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "冰槽是否具有低于台面的槽腔及实体边壁？",
+      "source_quote": "a washing well and ice well, each 0.35 m wide and 0.05 m below the surface",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "吧凳是否具有可辨识的座面及合理支撑构件？",
+      "source_quote": "Place four stools at 0.75 m seat height.",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "上方储物架及空瓶挂钩是否具有可辨识的实体结构？",
+      "source_quote": "the empty bottle hook matches the removed bottle's orientation",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "机器人是否以实体躯干、机械臂、关节和夹爪组成可辨识的关节结构？",
+      "source_quote": "Represent specified joints and end-effectors geometrically.",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "摇酒器是否具有可辨识的容器形体、口部及实体壁厚？",
+      "source_quote": "a 0.22 m tall, 0.08 m diameter metal shaker with mouth",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "酒杯是否具有开口、杯沿和容器壁，有柄杯是否具有实体把手？",
+      "source_quote": "Arrange four glasses at 0.12 m spacing, handles where applicable facing right 45 degrees.",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "取下的酒瓶是否具有可辨识的瓶身中段、瓶口和瓶塞？",
+      "source_quote": "The left gripper holds the removed bottle at its middle, mouth downward and stopper toward the shaker",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "杯中冰块是否为球体形态？",
+      "source_quote": "Put one ice sphere in the glass.",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "本任务仅提供文字，无参考图；依照 TEXT TASKS 规则，reference_primary 为空字符串，regions 和 targets 为空。嵌入 schema 的 reference_primary minLength:1 与该规则冲突，此处遵循明确的文字任务规则。",
+    "未提供 legacy-detail-20261018-v1 的额外正文；仅依据本轮公开合同编制，不推断其隐藏要求或任何候选属性。",
+    "“within 10 mm”紧随吧台高度，暂按高度容差解释；其是否同时修饰长度存在歧义。为保留原单位，高度使用相对 1.05 m 标称值的毫米偏差检查，不进行单位改写。",
+    "“eight inverted bottles ... one removed”未明确八瓶是取瓶前总数还是架上剩余数。计数暂按总共八瓶、其中一瓶被取下解释，不另设架上七瓶的隐藏硬性要求。",
+    "瓶间至少 80 mm、杯间 0.12 m、臂基座相距 0.35 m 均未明确中心距或净距；需记录测量约定，并保留其他合理解释。",
+    "躯干 1.20 m、机械臂 0.75 m reach、基座 at 0.95 m 的尺寸端点未完全定义；分别暂按躯干高度、机械臂几何可达半径和基座离地高度解释。",
+    "摇酒器倾斜角的基准轴、杯柄向右 45 度的平面及参考方向、空挂钩与瓶身的对应轴均未明确；不可追加未公开的姿态约束。",
+    "最多 2 mm 穿透未明确指定物体对；需分别报告左夹爪与瓶身、瓶塞与摇酒器之间的实际关系，不据此强制瓶塞接触摇酒器。",
+    "工作球的球心及拾瓶、清洗槽、冰槽、目标杯的服务点未指定；需采用场景及 README 明示的约定，并核查其与相应对象的关系。",
+    "机械臂扫掠包络未指定关节行程；只能使用公开记录的几何包络约定，不推定逆运动学、动力学或轨迹可行性。",
+    "四只杯是否包含目标威士忌杯未显式说明；暂按包含处理，且不得要求所有杯子都有把手。",
+    "未规定槽长、槽壁厚、凳型、关节数量、瓶型、架体尺寸、灯具和工具数量；不得以自拟数值或形态作为硬性要求。",
+    "2800 K 是明确的照明外观参数，保留为独立数值检查；不将输出像素、渲染器、曝光、gamma 或脚本执行设置作为内容质量检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中沿吧台长度轴测量实体吧台的两端距离。",
+      "quantity": "吧台长度",
+      "relation": "equal",
+      "source_quote": "Create a 2.40 m bar counter",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "测量地面至台面顶面的 Z 高度，计算其相对原文标称 1.05 m 的绝对偏差，并以 mm 报告。",
+      "quantity": "吧台高度相对 1.05 m 的偏差",
+      "relation": "at_most",
+      "source_quote": "at 1.05 m height, within 10 mm",
+      "target": 10,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "沿吧台前后方向测量实体台面的深度。",
+      "quantity": "吧台深度",
+      "relation": "equal",
+      "source_quote": "0.45 m depth",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "沿已记录的槽宽方向测量清洗槽开口宽度。",
+      "quantity": "清洗槽宽度",
+      "relation": "equal",
+      "source_quote": "a washing well and ice well, each 0.35 m wide",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "沿已记录的槽宽方向测量冰槽开口宽度。",
+      "quantity": "冰槽宽度",
+      "relation": "equal",
+      "source_quote": "a washing well and ice well, each 0.35 m wide",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "测量台面顶面与清洗槽内部底面之间的 Z 向高差；记录槽底面的选取约定。",
+      "quantity": "清洗槽下沉深度",
+      "relation": "equal",
+      "source_quote": "each 0.35 m wide and 0.05 m below the surface",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "测量台面顶面与冰槽内部底面之间的 Z 向高差；记录槽底面的选取约定。",
+      "quantity": "冰槽下沉深度",
+      "relation": "equal",
+      "source_quote": "each 0.35 m wide and 0.05 m below the surface",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "按语义实体统计吧凳，不按网格零件计数。",
+      "quantity": "吧凳数量",
+      "relation": "equal",
+      "source_quote": "Place four stools",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "逐凳测量当地地面至座面顶面的 Z 向高度。",
+      "quantity": "每个吧凳座高",
+      "relation": "equal",
+      "source_quote": "0.75 m seat height",
+      "target": 0.75,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "测量台面顶面至上方储物架下表面的 Z 向距离。",
+      "quantity": "储物架底部距台面高度",
+      "relation": "equal",
+      "source_quote": "underside 0.35 m above the counter",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "统计储物架系统的酒瓶实体，包括已取下的一瓶；同时报告架上数量以保留原文歧义。",
+      "quantity": "酒瓶数量",
+      "relation": "equal",
+      "source_quote": "carries eight inverted bottles",
+      "target": 8,
+      "unit": "瓶",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "统计从储物架取下并由左夹爪持有的酒瓶实体。",
+      "quantity": "取下酒瓶数量",
+      "relation": "equal",
+      "source_quote": "one removed",
+      "target": 1,
+      "unit": "瓶",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "对架上相邻瓶逐对测量间距；分别记录实体表面净距及中心距，注明所用解释。",
+      "quantity": "架上瓶间最小间距",
+      "relation": "at_least",
+      "source_quote": "at least 80 mm between them",
+      "target": 80,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "按记录的躯干端点测量躯干自身 Z 向尺寸，排除机械臂及其他独立构件。",
+      "quantity": "机器人躯干尺寸",
+      "relation": "equal",
+      "source_quote": "a 1.20 m torso",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "按连接到躯干的独立机械臂组件计数。",
+      "quantity": "机械臂数量",
+      "relation": "equal",
+      "source_quote": "two arms",
+      "target": 2,
+      "unit": "条",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "逐臂使用记录的基座点、末端参考点及连杆几何测定可达半径；不以冻结姿态的基座至末端直线距离替代最大 reach。",
+      "quantity": "每臂几何可达距离",
+      "relation": "equal",
+      "source_quote": "two arms of 0.75 m reach",
+      "target": 0.75,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "逐臂测量记录的基座参考点相对地面的 Z 高度。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "bases at 0.95 m",
+      "target": 0.95,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "测量两臂基座参考点之间的距离，并记录中心距或其他端点约定。",
+      "quantity": "机械臂基座间距",
+      "relation": "equal",
+      "source_quote": "0.35 m apart",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "沿摇酒器自身纵轴测量底部至顶部的尺寸，不使用倾斜后的世界 Z 包围盒高度。",
+      "quantity": "摇酒器高度",
+      "relation": "equal",
+      "source_quote": "0.22 m tall",
+      "target": 0.22,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "在摇酒器轴线垂直截面测量外径；若外径变化，记录取样截面。",
+      "quantity": "摇酒器直径",
+      "relation": "equal",
+      "source_quote": "0.08 m diameter metal shaker",
+      "target": 0.08,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "在冻结姿态下测量摇酒器口部参考点与目标杯沿参考面的 Z 向高差，记录口部参考点约定。",
+      "quantity": "摇酒器口高于杯沿的距离",
+      "relation": "equal",
+      "source_quote": "mouth 0.03 m above a whisky-glass rim",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 2,
+      "id": "N22",
+      "measurement_definition": "测量摇酒器轴线相对已记录基准方向朝目标杯倾斜的角度；单独核查倾斜方向。",
+      "quantity": "摇酒器倾角",
+      "relation": "equal",
+      "source_quote": "tilted toward it 15 +/-2 degrees",
+      "target": 15,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "统计目标威士忌杯内部的独立球形冰块实体。",
+      "quantity": "杯中冰球数量",
+      "relation": "equal",
+      "source_quote": "Put one ice sphere in the glass.",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "在冻结姿态下计算相关接触物体实体边界的最大穿透深度，分别报告左夹爪与瓶身、瓶塞与摇酒器的结果；不强制后者接触。",
+      "quantity": "取瓶相关接触穿透深度",
+      "relation": "at_most",
+      "source_quote": "with at most 2 mm penetration",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "按语义杯实体计数，并明确目标威士忌杯是否包含在内。",
+      "quantity": "酒杯数量",
+      "relation": "equal",
+      "source_quote": "Arrange four glasses",
+      "target": 4,
+      "unit": "只",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "沿杯子排列顺序逐对测量相邻杯间距，并记录中心距或净距约定。",
+      "quantity": "相邻杯间距",
+      "relation": "equal",
+      "source_quote": "at 0.12 m spacing",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "仅对有柄杯，依据记录的参考平面及右向基准，测量杯心至把手方向的角度。",
+      "quantity": "适用杯柄朝右角度",
+      "relation": "equal",
+      "source_quote": "handles where applicable facing right 45 degrees",
+      "target": 45,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "沿后方通行路线及其采样点测量横向自由宽度，排除被评估机器人，包含其他家具及突出部件，并检查采样点之间的瓶颈。",
+      "quantity": "后方操作通道宽度",
+      "relation": "equal",
+      "source_quote": "Keep a 0.80 m rear operating aisle",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "使用记录的机械臂几何扫掠包络，计算其与储物架下表面的最小表面间距。",
+      "quantity": "臂扫掠包络与架底净距",
+      "relation": "at_least",
+      "source_quote": "at least 0.15 m between arm sweep and storage underside",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "测量拾瓶服务点至各臂已记录工作球球心的欧氏距离，取最小值；与冻结持瓶接触点分开记录。",
+      "quantity": "拾瓶服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "测量清洗槽服务点至各臂已记录工作球球心的欧氏距离，取最小值。",
+      "quantity": "清洗槽服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "测量冰槽服务点至各臂已记录工作球球心的欧氏距离，取最小值。",
+      "quantity": "冰槽服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N33",
+      "measurement_definition": "测量目标杯服务点至各臂已记录工作球球心的欧氏距离，取最小值；不得用其他杯替代。",
+      "quantity": "目标杯服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N34",
+      "measurement_definition": "将摇酒器轴线延长至目标杯开口平面，计算交点与开口几何中心的平面内距离；轴线不与该平面相交时不满足。",
+      "quantity": "摇酒器轴线对杯口中心偏差",
+      "relation": "at_most",
+      "source_quote": "The shaker-axis extension crosses the glass opening centre within 10 mm",
+      "target": 10,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N35",
+      "measurement_definition": "检查承担指定暖光的光源色温参数或可追溯的色温颜色定义，不从渲染像素估计。",
+      "quantity": "指定照明色温",
+      "relation": "equal",
+      "source_quote": "2800 K light",
+      "target": 2800,
+      "unit": "K",
+      "upper": null
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为配有双臂鸡尾酒机器人的吧台？",
+      "source_quote": "Bar: dual-arm cocktail robot.",
+      "weight": 0.04
+    },
+    {
+      "id": "S02",
+      "question": "主视图是否从顾客侧斜看吧台？",
+      "source_quote": "seen obliquely from the customer side",
+      "weight": 0.04
+    },
+    {
+      "id": "S03",
+      "question": "吧台是否采用深色石材？",
+      "source_quote": "Use dark stone",
+      "weight": 0.04
+    },
+    {
+      "id": "S04",
+      "question": "吧台是否同时设置清洗槽和冰槽？",
+      "source_quote": "with a washing well and ice well",
+      "weight": 0.04
+    },
+    {
+      "id": "S05",
+      "question": "吧台是否配有吧凳？",
+      "source_quote": "Place four stools",
+      "weight": 0.04
+    },
+    {
+      "id": "S06",
+      "question": "储物架是否位于吧台上方，架上酒瓶是否倒置？",
+      "source_quote": "An overhead storage rack, underside 0.35 m above the counter, carries eight inverted bottles",
+      "weight": 0.04
+    },
+    {
+      "id": "S07",
+      "question": "机器人是否冻结在调酒前的静态关节姿态？",
+      "source_quote": "Freeze the moment before mixing",
+      "weight": 0.04
+    },
+    {
+      "id": "S08",
+      "question": "右夹爪是否实际握持金属摇酒器？",
+      "source_quote": "the right gripper holds a 0.22 m tall, 0.08 m diameter metal shaker",
+      "weight": 0.04
+    },
+    {
+      "id": "S09",
+      "question": "摇酒器口是否位于目标威士忌杯沿上方并朝该杯倾斜？",
+      "source_quote": "with mouth 0.03 m above a whisky-glass rim, tilted toward it 15 +/-2 degrees",
+      "weight": 0.04
+    },
+    {
+      "id": "S10",
+      "question": "目标威士忌杯内是否放置冰球？",
+      "source_quote": "Put one ice sphere in the glass.",
+      "weight": 0.04
+    },
+    {
+      "id": "S11",
+      "question": "左夹爪是否在取下酒瓶的中段握持该瓶？",
+      "source_quote": "The left gripper holds the removed bottle at its middle",
+      "weight": 0.04
+    },
+    {
+      "id": "S12",
+      "question": "左手酒瓶是否瓶口朝下？",
+      "source_quote": "mouth downward",
+      "weight": 0.04
+    },
+    {
+      "id": "S13",
+      "question": "瓶塞是否朝向摇酒器？",
+      "source_quote": "stopper toward the shaker",
+      "weight": 0.04
+    },
+    {
+      "id": "S14",
+      "question": "酒杯是否成组排列，适用的杯柄是否朝右？",
+      "source_quote": "Arrange four glasses at 0.12 m spacing, handles where applicable facing right 45 degrees.",
+      "weight": 0.04
+    },
+    {
+      "id": "S15",
+      "question": "吧台后方是否保留可通行的操作通道？",
+      "source_quote": "Keep a 0.80 m rear operating aisle",
+      "weight": 0.04
+    },
+    {
+      "id": "S16",
+      "question": "取瓶位置是否留下空挂钩，且挂钩方向与取下酒瓶的方向匹配？",
+      "source_quote": "the empty bottle hook matches the removed bottle's orientation",
+      "weight": 0.04
+    },
+    {
+      "id": "S17",
+      "question": "场景是否使用深绿色瓷砖？",
+      "source_quote": "Use dark-green tile",
+      "weight": 0.04
+    },
+    {
+      "id": "S18",
+      "question": "场景是否设置黄铜吊灯？",
+      "source_quote": "brass pendants",
+      "weight": 0.04
+    },
+    {
+      "id": "S19",
+      "question": "场景是否使用暖色木材？",
+      "source_quote": "warm wood",
+      "weight": 0.04
+    },
+    {
+      "id": "S20",
+      "question": "场景是否包含不锈钢工具？",
+      "source_quote": "stainless tools",
+      "weight": 0.04
+    },
+    {
+      "id": "S21",
+      "question": "饮品是否呈琥珀色？",
+      "source_quote": "amber drink colour",
+      "weight": 0.04
+    },
+    {
+      "id": "S22",
+      "question": "场景是否具有暖光及照向瓶架的射灯？",
+      "source_quote": "2800 K light and bottle-rack spots",
+      "weight": 0.04
+    },
+    {
+      "id": "S23",
+      "question": "画面是否包含机械臂、摇酒器、酒杯和酒瓶？",
+      "source_quote": "Frame arms, shaker, glasses and bottles.",
+      "weight": 0.04
+    },
+    {
+      "id": "S24",
+      "question": "场景是否保持静态且没有液体流动、冰块物理模拟或人物？",
+      "source_quote": "Static; no liquid flow, ice physics or people.",
+      "weight": 0.04
+    },
+    {
+      "id": "S25",
+      "question": "第二视角是否展示同一几何和冻结姿态，并揭示关键接触及净空路线？",
+      "source_quote": "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose",
+      "weight": 0.04
+    }
+  ],
+  "targets": []
+}

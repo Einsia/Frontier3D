@@ -1,0 +1,24 @@
+{
+  "title": "Harley-Davidson Shop (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 4,
+  "original_sha256": "11820bd0b1e16b327341820af764b6b288b82c280a18471d361c1d1c4aa7ebb2",
+  "input_sha256": "5ee27640ccad7381850df5b0c33f9dde6698b58293a9248364921592f26cfb90",
+  "input_dimensions": [
+    1600,
+    1200
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

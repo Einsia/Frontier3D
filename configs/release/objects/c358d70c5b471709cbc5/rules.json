@@ -1,0 +1,560 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_head",
+      "label": "头部与长颈",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.575,
+          0.335
+        ],
+        [
+          0.591,
+          0.207
+        ],
+        [
+          0.619,
+          0.136
+        ],
+        [
+          0.686,
+          0.123
+        ],
+        [
+          0.752,
+          0.162
+        ],
+        [
+          0.752,
+          0.211
+        ],
+        [
+          0.702,
+          0.252
+        ],
+        [
+          0.668,
+          0.381
+        ],
+        [
+          0.625,
+          0.436
+        ],
+        [
+          0.584,
+          0.454
+        ]
+      ]
+    },
+    {
+      "id": "r_body",
+      "label": "驼峰、躯干与鞍毯",
+      "weight": 0.35,
+      "polygon": [
+        [
+          0.227,
+          0.494
+        ],
+        [
+          0.252,
+          0.407
+        ],
+        [
+          0.321,
+          0.349
+        ],
+        [
+          0.336,
+          0.281
+        ],
+        [
+          0.398,
+          0.219
+        ],
+        [
+          0.455,
+          0.234
+        ],
+        [
+          0.512,
+          0.232
+        ],
+        [
+          0.553,
+          0.26
+        ],
+        [
+          0.585,
+          0.337
+        ],
+        [
+          0.602,
+          0.506
+        ],
+        [
+          0.552,
+          0.535
+        ],
+        [
+          0.394,
+          0.522
+        ],
+        [
+          0.307,
+          0.527
+        ]
+      ]
+    },
+    {
+      "id": "r_rear",
+      "label": "后腿与尾巴",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.229,
+          0.472
+        ],
+        [
+          0.302,
+          0.498
+        ],
+        [
+          0.397,
+          0.513
+        ],
+        [
+          0.389,
+          0.61
+        ],
+        [
+          0.335,
+          0.766
+        ],
+        [
+          0.339,
+          0.824
+        ],
+        [
+          0.38,
+          0.878
+        ],
+        [
+          0.376,
+          0.901
+        ],
+        [
+          0.312,
+          0.902
+        ],
+        [
+          0.305,
+          0.877
+        ],
+        [
+          0.241,
+          0.889
+        ],
+        [
+          0.23,
+          0.86
+        ],
+        [
+          0.23,
+          0.75
+        ],
+        [
+          0.226,
+          0.704
+        ],
+        [
+          0.249,
+          0.588
+        ]
+      ]
+    },
+    {
+      "id": "r_front",
+      "label": "前腿与足部",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.414,
+          0.513
+        ],
+        [
+          0.563,
+          0.479
+        ],
+        [
+          0.562,
+          0.566
+        ],
+        [
+          0.538,
+          0.677
+        ],
+        [
+          0.539,
+          0.759
+        ],
+        [
+          0.549,
+          0.79
+        ],
+        [
+          0.579,
+          0.81
+        ],
+        [
+          0.577,
+          0.829
+        ],
+        [
+          0.515,
+          0.835
+        ],
+        [
+          0.507,
+          0.794
+        ],
+        [
+          0.502,
+          0.65
+        ],
+        [
+          0.49,
+          0.548
+        ],
+        [
+          0.466,
+          0.559
+        ],
+        [
+          0.468,
+          0.745
+        ],
+        [
+          0.478,
+          0.778
+        ],
+        [
+          0.504,
+          0.79
+        ],
+        [
+          0.505,
+          0.811
+        ],
+        [
+          0.442,
+          0.821
+        ],
+        [
+          0.433,
+          0.793
+        ],
+        [
+          0.434,
+          0.69
+        ],
+        [
+          0.423,
+          0.609
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_camel",
+      "query": "完整骆驼及其贴身饰物",
+      "weight": 0.3,
+      "boxes": [
+        [
+          0.226,
+          0.124,
+          0.751,
+          0.901
+        ]
+      ],
+      "boundary_notes": "包含毛发、四足、尾巴、鞍毯和饰带的全部可见外缘；排除背景。"
+    },
+    {
+      "id": "t_blanket",
+      "query": "覆盖躯干的花纹鞍毯",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.227,
+          0.234,
+          0.598,
+          0.53
+        ]
+      ],
+      "boundary_notes": "包含绕峰上缘、侧面垂片和右侧细长垂边；不含独立颈带。"
+    },
+    {
+      "id": "t_head",
+      "query": "骆驼头部及耳朵",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.606,
+          0.125,
+          0.751,
+          0.258
+        ]
+      ],
+      "boundary_notes": "包含口鼻、耳、头顶毛及贴头缰带；头颈交界按下颌后缘划分，不将整段鬃毛颈纳入。"
+    },
+    {
+      "id": "t_tail",
+      "query": "下垂尾巴",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.254,
+          0.477,
+          0.29,
+          0.602
+        ]
+      ],
+      "boundary_notes": "仅可辨识的尾柄及末端毛束，包含暗面，不扩展到背后的腿。"
+    },
+    {
+      "id": "t_feet",
+      "query": "可见的骆驼足部",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.235,
+          0.812,
+          0.306,
+          0.887
+        ],
+        [
+          0.307,
+          0.824,
+          0.38,
+          0.901
+        ],
+        [
+          0.434,
+          0.745,
+          0.505,
+          0.82
+        ],
+        [
+          0.509,
+          0.759,
+          0.579,
+          0.834
+        ]
+      ],
+      "boundary_notes": "四个可辨足部，自裹带下方至趾端，包含足跟暗面。"
+    },
+    {
+      "id": "t_wraps",
+      "query": "腿部花纹裹带",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.231,
+          0.749,
+          0.267,
+          0.815
+        ],
+        [
+          0.304,
+          0.765,
+          0.337,
+          0.828
+        ],
+        [
+          0.434,
+          0.68,
+          0.469,
+          0.748
+        ],
+        [
+          0.508,
+          0.693,
+          0.54,
+          0.761
+        ]
+      ],
+      "boundary_notes": "仅四条腿上的可见带状饰物，含背光边缘，不包含裸露腿或足。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_identity",
+      "source_quote": "Reconstruct the camel visible in the reference.",
+      "question": "主体是否为参考所示骆驼？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_neck",
+      "source_quote": "long bent neck",
+      "question": "是否保留参考中向上弯曲的长颈及其比例？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_head",
+      "source_quote": "head",
+      "question": "头部的朝向、位置和相对大小是否匹配参考？",
+      "weight": 0.06
+    },
+    {
+      "id": "s_ears",
+      "source_quote": "ears",
+      "question": "是否保留参考中的耳朵及其位置？",
+      "weight": 0.04
+    },
+    {
+      "id": "s_humps",
+      "source_quote": "humps",
+      "question": "驼峰的起伏、位置及与躯干的关系是否匹配参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_stance",
+      "source_quote": "four-legged stance",
+      "question": "四腿的静态站姿、间隔与遮挡关系是否匹配参考？",
+      "weight": 0.09
+    },
+    {
+      "id": "s_tail",
+      "source_quote": "tail",
+      "question": "尾巴是否位于臀部并按参考下垂？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_blanket",
+      "source_quote": "patterned saddle blanket",
+      "question": "是否保留参考中覆背垂侧的花纹鞍毯及其纹样分布？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_shape",
+      "source_quote": "Match the visible silhouette, proportions",
+      "question": "整体轮廓及头颈、躯干、四肢的比例是否匹配参考？",
+      "weight": 0.09
+    },
+    {
+      "id": "s_fur",
+      "source_quote": "fur",
+      "question": "是否匹配参考中驼峰和颈部的浓密毛发与其他部位的短毛分布？",
+      "weight": 0.07
+    },
+    {
+      "id": "s_color",
+      "source_quote": "color regions",
+      "question": "是否匹配体毛深浅分区、鞍毯色块以及头颈和腿部饰带的外观？",
+      "weight": 0.07
+    },
+    {
+      "id": "s_volume",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "主体是否为有完整体积的可编辑三维几何，而非图像平面或朝相机薄壳？",
+      "weight": 0.07
+    },
+    {
+      "id": "s_unseen",
+      "source_quote": "complete unseen surfaces plausibly without inventing internal machinery",
+      "question": "不可见表面是否合理闭合补全，且未添加内部机械装置？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_parts",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "独立饰物等组件是否可独立编辑或分离，允许有机表面连续？",
+      "weight": 0.05
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_neck",
+      "source_quote": "long bent neck",
+      "question": "长颈的弯折曲线、截面厚度及与胸部和头部的过渡是否自然且符合参考？",
+      "weight": 0.16
+    },
+    {
+      "id": "d_head",
+      "source_quote": "head",
+      "question": "口鼻隆起、嘴缝、鼻部凹陷和眼周结构是否具有参考可见的局部形态？",
+      "weight": 0.14
+    },
+    {
+      "id": "d_ears",
+      "source_quote": "ears",
+      "question": "耳朵是否保留短尖外轮廓、厚度及耳根连接？",
+      "weight": 0.08
+    },
+    {
+      "id": "d_humps",
+      "source_quote": "humps",
+      "question": "驼峰顶部弧线、峰间过渡及毛束形成的轮廓起伏是否匹配参考？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_legs",
+      "source_quote": "four-legged stance",
+      "question": "腿部关节起伏、收细的下腿和宽厚足端的连接是否匹配参考？",
+      "weight": 0.16
+    },
+    {
+      "id": "d_tail",
+      "source_quote": "tail",
+      "question": "尾柄的细长厚度、下垂曲线及末端毛束是否保留？",
+      "weight": 0.08
+    },
+    {
+      "id": "d_blanket",
+      "source_quote": "patterned saddle blanket",
+      "question": "鞍毯是否具有贴体弯曲、薄边厚度、波状下摆及侧缘垂片，而非平面贴图替代？",
+      "weight": 0.16
+    },
+    {
+      "id": "d_bands",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "头颈饰带和腿部裹带是否具有可见宽厚、环绕曲率及与身体正确的接触遮挡？",
+      "weight": 0.1
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在静态姿态下，以米为单位计算主体及附属几何的世界坐标包围盒，取三个轴向尺寸的最大值；排除相机和灯光。显式容差为标称值的2%，即0.02 m。"
+    },
+    {
+      "id": "n_legs",
+      "source_quote": "four-legged stance",
+      "quantity": "腿数",
+      "unit": "条",
+      "relation": "equal",
+      "target": 4,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在完整三维几何中计数从躯干连接至足端的独立解剖腿链，不按网格岛数计数。"
+    }
+  ],
+  "limitations": [
+    "仅使用单张公开参考；背面、被毯遮挡处及内部结构无法从图像唯一确定，不冻结隐藏几何。",
+    "input/reference.png为公开映射指向的主参考，对应附件reference/reference-0.png；区域与框均固定于该原图。",
+    "头颈及腿足的连续有机表面没有严格分割线；定位边界按说明约定，不作为额外几何尺寸要求。",
+    "最大整体跨度采用世界轴向包围盒最大尺寸解释；原文未明确跨度算法。",
+    "数值检查不从像素推算尺寸，也不把图像中可见但未明文量化的部件数量另立精确计数要求。",
+    "帧号、渲染参数、图像分辨率及交付文件规则不作为内容质量测量项；三维可编辑性及隐藏表面须检查场景几何，不能仅凭渲染判定。"
+  ]
+}

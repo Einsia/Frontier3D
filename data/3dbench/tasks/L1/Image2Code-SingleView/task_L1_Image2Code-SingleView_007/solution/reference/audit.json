@@ -1,0 +1,89 @@
+{
+  "source": "assets/expansion/polyhaven-models/vintage_radio_transceiver/original/source.blend",
+  "visible_mesh_objects": 14,
+  "vertices": 22915,
+  "dimensions_m": [
+    0.6181803345680237,
+    0.4178740978240967,
+    0.4343927502632141
+  ],
+  "normalization": {
+    "uniform_scale": 0.9999999517902498,
+    "maximum_extent_m": 0.6181803643703461,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        0.9272705912590027,
+        -1.236360788345337,
+        0.9590128660202026
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -6.614462222387374e-08,
+        0.6435011625289917
+      ],
+      "ortho_scale": 0.8963615298271179
+    },
+    "front": {
+      "position": [
+        0.0,
+        -1.8545411825180054,
+        0.40265050530433655
+      ],
+      "rotation": [
+        1.4711276292800903,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 0.8963615298271179
+    },
+    "side": {
+      "position": [
+        1.8545411825180054,
+        -7.450580596923828e-09,
+        0.40265050530433655
+      ],
+      "rotation": [
+        1.4711277484893799,
+        -5.938254332704673e-09,
+        1.570796251296997
+      ],
+      "ortho_scale": 0.8963615298271179
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.0006181878852657974,
+        2.07173752784729
+      ],
+      "rotation": [
+        0.0003452669770922512,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 0.8963615298271179
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "vintage_radio_transceiver",
+    "vintage_radio_transceiver_dial",
+    "vintage_radio_transceiver_cable",
+    "vintage_radio_transceiver_antenna",
+    "vintage_radio_transceiver_antenna_plug_a",
+    "vintage_radio_transceiver_antenna_plug_b",
+    "vintage_radio_transceiver_microphone",
+    "vintage_radio_transceiver_microphone_plug",
+    "vintage_radio_transceiver_morse_key_arm",
+    "vintage_radio_transceiver_morse_key_base",
+    "vintage_radio_transceiver_morse_key_plug",
+    "vintage_radio_transceiver_speaker",
+    "vintage_radio_transceiver_speaker_plug",
+    "vintage_radio_transceiver_cables"
+  ]
+}

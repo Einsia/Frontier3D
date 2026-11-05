@@ -1,0 +1,128 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003",
+  "family": "Reference2Scene",
+  "instruction_sha256": "041b317c8236dbf607c9aac88e8598957681cbca2cea7cd5e36cc01a7d7c7c87",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "榴莲；精确数值由程序测量；椭圆偏不规则榴莲果实而非光滑球体",
+  "checks": [
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：椭圆偏不规则榴莲果实而非光滑球体",
+      "units": [
+        "layout_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.2,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：密集短锥刺随曲面分布，刺根连接表皮。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：顶部粗短略倾斜果柄连接果皮。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：表皮凹沟和成片起伏不过分规则。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：完整有体积果皮，不能是散乱刺团或空心破壳。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：黄绿色多层次粗糙果皮与褐绿果柄，细小自然阴影",
+      "units": [
+        "material_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：黄绿色多层次粗糙果皮与褐绿果柄，细小自然阴影",
+      "units": [
+        "lighting_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "b39da4dbe6857507ede1dbb3af7fca98b50ab6740276bdb3b4dfd56d02757118"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

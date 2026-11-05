@@ -1,0 +1,27 @@
+{
+  "uid": "00fd99e778c244c3bd3b65f99dad7cb2",
+  "name": "Nike Air Zoom Pegasus 36",
+  "source_url": "https://sketchfab.com/3d-models/nike-air-zoom-pegasus-36-00fd99e778c244c3bd3b65f99dad7cb2",
+  "author": {
+    "username": "quaz30",
+    "displayName": "quaz30",
+    "profileUrl": "https://sketchfab.com/quaz30"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/SYI2wkBS0iV0a2kil7HcBs7un4b",
+  "document_revision": 647,
+  "source_sha256": "d81874d66f97b013841368c35ac663e8434634a8e71be759b72a4566a669d424",
+  "download_method": "User browser download; identity verified from embedded glTF asset.extras",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "replaces": {
+    "title": "双铃机械闹钟",
+    "resource_family": "polyhaven-models/alarm_clock_01"
+  }
+}

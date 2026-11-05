@@ -1,0 +1,7 @@
+Radial engine
+Author: DmitriusRus (https://sketchfab.com/DmitriusRus)
+Source: https://sketchfab.com/3d-models/radial-engine-eee62b16cd534d7b802aa3bb069e8b0f
+License: CC-BY-NC-4.0
+http://creativecommons.org/licenses/by-nc/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

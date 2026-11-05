@@ -1,0 +1,737 @@
+{
+  "version": "scalable-v1.1.0",
+  "profile": "L1",
+  "mode": "text",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "README.md"
+  ],
+  "scene": "scene.blend",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "critical_constraints": [
+    "native_procedural_materials",
+    "glb_procedural_materials",
+    "native_sleeve_solid",
+    "glb_sleeve_solid",
+    "native_sleeve_surface",
+    "glb_sleeve_surface",
+    "native_sleeve_body_dimensions",
+    "glb_sleeve_body_dimensions",
+    "native_sleeve_through_bore",
+    "glb_sleeve_through_bore",
+    "native_sleeve_groove",
+    "glb_sleeve_groove",
+    "native_sleeve_chamfers",
+    "glb_sleeve_chamfers",
+    "part_count",
+    "closed",
+    "connected",
+    "solid_validity",
+    "export",
+    "all_seed_quality",
+    "native_state_materials"
+  ],
+  "tolerances": {
+    "dimension_m": 0.00015,
+    "bore_radius_m": 7.5e-05
+  },
+  "l1_geometry": {
+    "version": "l1-mesh-v1",
+    "weld_m": 1e-09,
+    "intersection_epsilon_m": 1e-09,
+    "degenerate_area_m2": 1e-18,
+    "max_triangles": 200000,
+    "max_intersection_pairs": 2000000
+  },
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.13,
+        -0.16,
+        0.12
+      ],
+      "target": [
+        0,
+        0,
+        0.04
+      ],
+      "ortho_scale": 0.12,
+      "resolution": 128,
+      "frame": 1
+    }
+  ],
+  "l1_protocol": {
+    "version": "l1-requirements-v1",
+    "requirements": [
+      {
+        "id": "procedural_materials",
+        "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+        "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_procedural_materials",
+          "glb_procedural_materials",
+          "native_state_materials"
+        ],
+        "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+      },
+      {
+        "id": "editable_part",
+        "text": "一件闭合、连通、独立可编辑真实三维零件，不要求装配或爆炸动画",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_count",
+          "real_geometry"
+        ],
+        "reason": "实体数量/非平面检查不能证明完整编辑结构。"
+      },
+      {
+        "id": "body_dimensions",
+        "text": "竖直Z轴套筒外径36.21 mm、高80.6 mm、底Z=0；实际表面和尺寸误差≤0.15 mm",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory",
+          "native_sleeve_body_dimensions",
+          "glb_sleeve_body_dimensions",
+          "native_sleeve_surface",
+          "glb_sleeve_surface"
+        ],
+        "reason": "已接入实际径向面/高度/底面与双向解析轮廓上界；待本版真实原生/GLB正反例验收。"
+      },
+      {
+        "id": "through_bore",
+        "text": "直径15.9 mm真实通孔及剩余连续壁",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "bore_sections",
+          "native_sleeve_through_bore",
+          "glb_sleeve_through_bore",
+          "native_sleeve_solid",
+          "glb_sleeve_solid"
+        ],
+        "reason": "已接入所有三角面轴向圆柱裁剪与有效实体占用、实际孔径和单通孔拓扑；待真实格式正反例验收。"
+      },
+      {
+        "id": "groove",
+        "text": "外周方槽轴向宽6.06 mm、径向深2.21 mm、中心Z=50.8，槽肩锐利且不倒角",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_sleeve_groove",
+          "glb_sleeve_groove",
+          "native_sleeve_surface",
+          "glb_sleeve_surface"
+        ],
+        "reason": "已接入两侧完整环形槽肩、宽度/中心/深度及环边与圆柱面共边锐角检查；不可识别面保持不可测，待真实格式验收。"
+      },
+      {
+        "id": "chamfers",
+        "text": "两端内外边缘均0.9×0.9 mm、45度倒角，槽不倒角",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_sleeve_chamfers",
+          "glb_sleeve_chamfers",
+          "native_sleeve_surface",
+          "glb_sleeve_surface"
+        ],
+        "reason": "已接入两端内外四处径向/轴向倒角边长与45度解析轮廓上界；待真实原生/GLB正反例验收。"
+      },
+      {
+        "id": "topology",
+        "text": "所有零件闭合且分别连通",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "closed",
+          "connected"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "solid_validity",
+        "text": "有效实体零件",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "solid_validity"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "glb_readable",
+        "text": "GLB可重新导入",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "export"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "glb_assembled",
+        "text": "GLB与原生静态实体的几何、单位及可表达材质一致",
+        "source": "instruction.md paragraph 3",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "export",
+          "reproducible"
+        ],
+        "reason": "复用跨格式诊断，任务级等价阈值未标定。"
+      },
+      {
+        "id": "reconstruction",
+        "text": "清洁环境从代码重建，使用便携依赖，不依赖旧产物或个人路径",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "reproducible"
+        ],
+        "reason": "基准/seed和现有比较已接线，复杂诊断可能预算耗尽，完整语义与依赖仍未覆盖。"
+      },
+      {
+        "id": "instructions",
+        "text": "README说明执行方式及依赖",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "readme"
+        ],
+        "reason": "仅检查可读取并收集辅助文件，内容语义待验证。"
+      },
+      {
+        "id": "units",
+        "text": "米制导出、Z向上；按本题0.15 mm尺寸/表面位置容差判定",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory",
+          "native_sleeve_body_dimensions",
+          "glb_sleeve_body_dimensions",
+          "native_sleeve_surface",
+          "glb_sleeve_surface"
+        ],
+        "reason": "已按原生/GLB世界米制网格测量Z基准和实际轮廓，不做尺度拟合；待真实格式验收。"
+      },
+      {
+        "id": "materials",
+        "text": "蓝灰金属材料；相机和背景不作为隐藏匹配目标",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "有效材质/表面外观尚未正式绑定。"
+      },
+      {
+        "id": "review_view",
+        "text": "保存可供审阅的真实三维原生场景",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "assembled_valid"
+        ],
+        "reason": "固定诊断视图只验证非空，未自动适配视角及材质。"
+      },
+      {
+        "id": "seed_quality",
+        "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+        "source": "user_goal_2026-10-03 / seed delivery protocol",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "all_seed_quality"
+        ],
+        "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+      }
+    ]
+  },
+  "checks": {
+    "spec": [
+      {
+        "id": "part_inventory",
+        "metric": "semantic_inventory",
+        "group": "parts",
+        "importance": "high",
+        "params": {
+          "parts": [
+            {
+              "id": "grooved_sleeve",
+              "type": "MESH",
+              "count": 1,
+              "dimensions": [
+                0.03621,
+                0.03621,
+                0.0806
+              ],
+              "tolerance": "dimension_m"
+            }
+          ]
+        }
+      }
+    ],
+    "geometry": [
+      {
+        "id": "native_sleeve_solid",
+        "metric": "machined_sleeve",
+        "group": "sleeve_solid",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/native_sleeve",
+          "scene": "/scene",
+          "feature": "solid",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "glb_sleeve_solid",
+        "metric": "machined_sleeve",
+        "group": "sleeve_solid",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/glb_sleeve",
+          "scene": "/artifacts/scene.glb/scene",
+          "feature": "solid",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "native_sleeve_surface",
+        "metric": "machined_sleeve",
+        "group": "sleeve_surface",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/native_sleeve",
+          "scene": "/scene",
+          "feature": "surface",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "glb_sleeve_surface",
+        "metric": "machined_sleeve",
+        "group": "sleeve_surface",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/glb_sleeve",
+          "scene": "/artifacts/scene.glb/scene",
+          "feature": "surface",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "native_sleeve_body_dimensions",
+        "metric": "machined_sleeve",
+        "group": "sleeve_dimensions",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/native_sleeve",
+          "scene": "/scene",
+          "feature": "body_dimensions",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "glb_sleeve_body_dimensions",
+        "metric": "machined_sleeve",
+        "group": "sleeve_dimensions",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/glb_sleeve",
+          "scene": "/artifacts/scene.glb/scene",
+          "feature": "body_dimensions",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "native_sleeve_through_bore",
+        "metric": "machined_sleeve",
+        "group": "sleeve_bore",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/native_sleeve",
+          "scene": "/scene",
+          "feature": "through_bore",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "glb_sleeve_through_bore",
+        "metric": "machined_sleeve",
+        "group": "sleeve_bore",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/glb_sleeve",
+          "scene": "/artifacts/scene.glb/scene",
+          "feature": "through_bore",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "native_sleeve_groove",
+        "metric": "machined_sleeve",
+        "group": "sleeve_groove",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/native_sleeve",
+          "scene": "/scene",
+          "feature": "groove",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "glb_sleeve_groove",
+        "metric": "machined_sleeve",
+        "group": "sleeve_groove",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/glb_sleeve",
+          "scene": "/artifacts/scene.glb/scene",
+          "feature": "groove",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "native_sleeve_chamfers",
+        "metric": "machined_sleeve",
+        "group": "sleeve_chamfers",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/native_sleeve",
+          "scene": "/scene",
+          "feature": "chamfers",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "glb_sleeve_chamfers",
+        "metric": "machined_sleeve",
+        "group": "sleeve_chamfers",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/numeric_checks/glb_sleeve",
+          "scene": "/artifacts/scene.glb/scene",
+          "feature": "chamfers",
+          "design": {
+            "outer_radius_m": 0.018105,
+            "bore_radius_m": 0.00795,
+            "height_m": 0.0806,
+            "groove_width_m": 0.00606,
+            "groove_depth_m": 0.00221,
+            "groove_center_z_m": 0.0508,
+            "chamfer_m": 0.0009,
+            "tolerance_m": 0.00015
+          }
+        }
+      },
+      {
+        "id": "closed",
+        "metric": "equals",
+        "group": "topology",
+        "params": {
+          "path": "/scene/all_closed",
+          "expected": true
+        }
+      },
+      {
+        "id": "connected",
+        "metric": "equals",
+        "group": "connectivity",
+        "params": {
+          "path": "/scene/all_connected",
+          "expected": true
+        }
+      },
+      {
+        "id": "solid_validity",
+        "metric": "equals",
+        "group": "solid",
+        "params": {
+          "path": "/scene/all_valid_solids",
+          "expected": true
+        }
+      },
+      {
+        "id": "real_geometry",
+        "metric": "equals",
+        "group": "volume",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        }
+      },
+      {
+        "id": "bore_sections",
+        "metric": "hole_pattern",
+        "group": "part_features",
+        "params": {
+          "object_dimensions": [
+            0.03621,
+            0.03621,
+            0.0806
+          ],
+          "object_dimension_tolerance": "dimension_m",
+          "centers": [
+            [
+              0,
+              0
+            ]
+          ],
+          "z_values": [
+            0.005,
+            0.04,
+            0.075
+          ],
+          "radius": 0.00795,
+          "tolerance": "bore_radius_m",
+          "angular_samples": 64,
+          "axis_samples": 17,
+          "relative_to_object": true
+        }
+      }
+    ],
+    "structure": [
+      {
+        "id": "part_count",
+        "metric": "equals",
+        "group": "parts",
+        "params": {
+          "path": "/scene/mesh_count",
+          "expected": 1
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "native_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "importance": "high",
+        "params": {
+          "path": "/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "glb_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "importance": "high",
+        "params": {
+          "path": "/artifacts/scene.glb/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "assembled_valid",
+        "metric": "render_validity",
+        "group": "assembled",
+        "params": {
+          "view": "assembled"
+        }
+      },
+      {
+        "id": "native_state_materials",
+        "metric": "procedural_material_sequence",
+        "group": "declared_state_material_policy",
+        "params": {
+          "path": "/material_sequences/native",
+          "frames": [
+            1
+          ]
+        }
+      }
+    ],
+    "robust": [
+      {
+        "id": "export",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/scene.glb/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "readme",
+        "metric": "equals",
+        "group": "instructions",
+        "params": {
+          "path": "/artifacts/README.md/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "reproducible",
+        "metric": "seed_success",
+        "group": "reproduction"
+      },
+      {
+        "id": "all_seed_quality",
+        "metric": "all_seed_checks",
+        "group": "seed_quality",
+        "params": {
+          "checks": [
+            "glb_procedural_materials",
+            "glb_sleeve_body_dimensions",
+            "glb_sleeve_chamfers",
+            "glb_sleeve_groove",
+            "glb_sleeve_solid",
+            "glb_sleeve_surface",
+            "glb_sleeve_through_bore",
+            "native_procedural_materials",
+            "native_sleeve_body_dimensions",
+            "native_sleeve_chamfers",
+            "native_sleeve_groove",
+            "native_sleeve_solid",
+            "native_sleeve_surface",
+            "native_sleeve_through_bore",
+            "native_state_materials"
+          ],
+          "native_frames": [
+            1
+          ],
+          "glb_frames": [
+            1
+          ]
+        }
+      }
+    ]
+  }
+}

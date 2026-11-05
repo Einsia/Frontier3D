@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/jacobjennings/CadQuarry/blob/543b067ea9e416bc2e9587cb8775e012480b70ee/sample/demo-1k/parts/revolved_498d671a_0036.py",
+  "commit": "543b067ea9e416bc2e9587cb8775e012480b70ee",
+  "license": "CC0-1.0",
+  "author": "Jacob Jennings / CadQuarry",
+  "modifications": "SI Blender conversion and original review camera/material; source shape unchanged.",
+  "files": {
+    "LICENSE.txt": "b59daeb26e90f7cf189fdb887995e1abcf3b52de8b452cf6fedb090b6fa05338",
+    "target.blend": "e29a802eeb662af3cd598b1b483af6bec52c84311a31f20e67b3e7b80c474554",
+    "target.glb": "e61992253a94408bf1dc7ff20df79cd1b7bc3ea3fccb049e80df05aa10736d3e",
+    "target.png": "64221f304825768fd313974a563f327f769434f727dbe67d0ccea7c63cafbbf1",
+    "target.py": "d19169be6818d6140897e9f563af2f0d8d9e0c361ab88d5f11559cca7df44476",
+    "target.step": "9489b03e56369f9d23526f45c42e1139a790e19e9a0d37d4bce0a7da330370ac",
+    "validation.json": "5b032af3061fc6b87a15d9c72481bf0f3ad18774bc04640aaeee0a3491ff2e4c"
+  }
+}

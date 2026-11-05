@@ -1,0 +1,271 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-e02",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "shop_floor",
+    "stockroom",
+    "cold_store",
+    "loading_bay",
+    "returns_counter"
+  ],
+  "initial_state": "All twelve stock units at loading bay, cart empty, scanner empty and cold-store door closed.",
+  "entities": [
+    {
+      "id": "door.cold_store",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "crate.01",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "crate.02",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "cart.stock",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "loading bay; empty",
+      "argument": ""
+    },
+    {
+      "id": "scanner.counter",
+      "role": "scanner",
+      "actions": [
+        "scan"
+      ],
+      "initial": "no items scanned",
+      "argument": "cargo entity ID"
+    },
+    {
+      "id": "stock.milk.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.milk.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.milk.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.milk.04",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.tin.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.tin.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.tin.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.tin.04",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.bottle.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.bottle.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.bottle.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "stock.bottle.04",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "loading bay",
+      "argument": ""
+    },
+    {
+      "id": "storage.chilled",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    },
+    {
+      "id": "storage.ambient",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    },
+    {
+      "id": "storage.fragile",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    },
+    {
+      "id": "returns.counter",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

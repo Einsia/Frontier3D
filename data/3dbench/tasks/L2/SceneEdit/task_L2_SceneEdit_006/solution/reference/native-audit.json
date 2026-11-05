@@ -1,0 +1,4810 @@
+{
+  "key": "final-cc0-frosty-cyberpunk",
+  "path": "assets/cc0-replacements-20260921/frosty-cyberpunk/prepared/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    960,
+    640
+  ],
+  "camera": {
+    "name": "_Camera_08.001",
+    "position": [
+      3.3667960166931152,
+      -3.4623801708221436,
+      1.3563294410705566
+    ],
+    "rotation_euler": [
+      1.5765411853790283,
+      -7.136452495615231e-06,
+      -1.00089430809021
+    ],
+    "lens": 22.0,
+    "sensor_width": 45.0
+  },
+  "libraries": [],
+  "texts": [
+    "space_topbar.py"
+  ],
+  "meshes": [
+    {
+      "name": "_CHAIR_",
+      "vertices": 2259,
+      "polygons": 2182,
+      "sha256": "4b3f6e31dfb58104fcfb07fd3f30f32a265feb61f3a9e2a406af6f5c598adbc8"
+    },
+    {
+      "name": "_TABLE_",
+      "vertices": 4390,
+      "polygons": 4274,
+      "sha256": "472cd0a6239cdd2815b7bb0a89b1a03c802c622c8875e1e18c29a27e127a8549"
+    },
+    {
+      "name": "Bolted.Base",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "37122dcab5e9aa16ffbd049020e1d9200a7771acdaf061674688a11228ab86c5"
+    },
+    {
+      "name": "Bolted.Bolts",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "75058415f5dec69aacc81a898a52817678e214a081d5b290ae9f782ae9f07285"
+    },
+    {
+      "name": "Bolted.BoolUtil",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "0eb1843ac100c458750b2a50c73401f19b155137577c51eb6d15db162da44ab0"
+    },
+    {
+      "name": "Bulge",
+      "vertices": 8,
+      "polygons": 0,
+      "sha256": "197ca6296ddefc43490c550f66e2f1927109eac28d45022fe9049d4360108e16"
+    },
+    {
+      "name": "Chamfered",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "0f1feef25ccac7411f24f6f8f5d5690570edd025cc9aa0c75d3e5d499c2201dd"
+    },
+    {
+      "name": "Clip",
+      "vertices": 8,
+      "polygons": 0,
+      "sha256": "5477f04edd1586d5faf537daca2fd14114db5816de3a5f69ef74439671b32e49"
+    },
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "eb4c86c388d0e09fd2b37e2f7075a52231a7f5c03a079c6d771f941590ba9733"
+    },
+    {
+      "name": "Cube.004",
+      "vertices": 24,
+      "polygons": 26,
+      "sha256": "440418ef50a9c04a1fada2a5103976130fad2d86c67d21aef930853cd010edc2"
+    },
+    {
+      "name": "Cube.006",
+      "vertices": 859,
+      "polygons": 1021,
+      "sha256": "6ef595bc435563cb4dab206ef18effd2b59a94025adc2bd05b5f4c3269ff097f"
+    },
+    {
+      "name": "Cube.010",
+      "vertices": 777,
+      "polygons": 1550,
+      "sha256": "72c8c1216d0e791daea4db737c572b0f42eea9a315ca83ea2ffd16230f09cacc"
+    },
+    {
+      "name": "Cube.016",
+      "vertices": 2702,
+      "polygons": 2496,
+      "sha256": "5d45af0f72b8a49df7d4a14f616bbafc4552f56cb82f82974a3e4d39d5693318"
+    },
+    {
+      "name": "Cube.036",
+      "vertices": 1806,
+      "polygons": 1768,
+      "sha256": "b383e3354c40a643e8349b68fdc67cc0cf6f337c86f164788f6b644931311307"
+    },
+    {
+      "name": "Cube.050",
+      "vertices": 1627,
+      "polygons": 1586,
+      "sha256": "b03e62c4facf9ce63addd87a3d087c0ce63341894d4c8f5e23d181051258ad82"
+    },
+    {
+      "name": "Cube.051",
+      "vertices": 1802,
+      "polygons": 1784,
+      "sha256": "06f71d5d409b178ef68da4b9b8fc85b83343fe17ced9b7cc52c7641e5dfbc443"
+    },
+    {
+      "name": "Cylinder.001",
+      "vertices": 210,
+      "polygons": 180,
+      "sha256": "cf50b67cf4eef24bdbf95d90c976cd3924fafe38993dd74181cad0f159257884"
+    },
+    {
+      "name": "Cylinder.011",
+      "vertices": 152,
+      "polygons": 124,
+      "sha256": "fcff426ab08a33f654b14b34ccbaf6ca48be41ca4dc9f6a3ae7d72dd627de850"
+    },
+    {
+      "name": "Cylinder.012",
+      "vertices": 393,
+      "polygons": 422,
+      "sha256": "f93076bd0c3c58ba6aef3b41c5d75ada1e82a85921495b58b1d7258a4324d2aa"
+    },
+    {
+      "name": "Cylinder.014",
+      "vertices": 797,
+      "polygons": 1496,
+      "sha256": "ffe2e821cd685fba978405e1dfcdaf0e91523a2bc995bf3a87bb655fa7fa2e4c"
+    },
+    {
+      "name": "Cylinder.015",
+      "vertices": 441,
+      "polygons": 846,
+      "sha256": "4ddaacadf67ed2242c11b3e84ec860738ca7cc105d47122c8ae15b51dceddb00"
+    },
+    {
+      "name": "Cylinder.026",
+      "vertices": 550,
+      "polygons": 576,
+      "sha256": "703611d00abd237eb00414ea1c8c0e1ef05453ea3826e596ad3b812a0d0cc0dc"
+    },
+    {
+      "name": "Cylinder.027",
+      "vertices": 4598,
+      "polygons": 4538,
+      "sha256": "55ee2df01c7d7a2910704aea19323efc7216f83600b3a85d176aa346adc9d45a"
+    },
+    {
+      "name": "Cylinder.028",
+      "vertices": 48,
+      "polygons": 33,
+      "sha256": "e3bdb5a3860c324b70815a74fdc8041e53d005e77ef62bea094dfd8077208c44"
+    },
+    {
+      "name": "Cylinder.040",
+      "vertices": 4290,
+      "polygons": 4131,
+      "sha256": "99a24a1910a3c2e34260489f1d0163921913631d3af629433f3fbe959e94f5fa"
+    },
+    {
+      "name": "Cylinder.061",
+      "vertices": 256,
+      "polygons": 206,
+      "sha256": "2fd187d31a880f20bfd68d81c56502d80859f96cf6e9a253cf52c5829762befe"
+    },
+    {
+      "name": "Flat",
+      "vertices": 6,
+      "polygons": 0,
+      "sha256": "62dfcc5950b51fc5579220465b5d3a2bee6788182339b0d1f69ca91118e659a6"
+    },
+    {
+      "name": "Flat.BoolUtil",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "1c746100f1a64db85b6dd44e1821c703414499ddb6443c5cbd900358122c6289"
+    },
+    {
+      "name": "GEO_PipeStraight.001",
+      "vertices": 1008,
+      "polygons": 960,
+      "sha256": "23bdf63b11e41c5d6b9644edce3c5ba2569c689fc0ea5294a0466ff3223ae671"
+    },
+    {
+      "name": "GEO_PipeStraight.024",
+      "vertices": 25791,
+      "polygons": 24727,
+      "sha256": "48f925384f7b4547c66b635b1797202e69a0912672672095207105336b2453f3"
+    },
+    {
+      "name": "GEO_PipeStraight.038",
+      "vertices": 9173,
+      "polygons": 8607,
+      "sha256": "0855e66b9ab345a80d61f2eb15d4ea0b902df9dc4ad22e66988eefcdd672581f"
+    },
+    {
+      "name": "GEO_PipeStraight.178",
+      "vertices": 64,
+      "polygons": 64,
+      "sha256": "91e6db58242248991a9dca177685bf9b3c9dcabb38dfaef071c4d55f4c98a987"
+    },
+    {
+      "name": "Grid.001",
+      "vertices": 28,
+      "polygons": 52,
+      "sha256": "e94240fd9421db2c3d3d9d3d4a525e6dc203e82281556a68f05c4cb08455df68"
+    },
+    {
+      "name": "Grid.002",
+      "vertices": 28,
+      "polygons": 24,
+      "sha256": "f8db259d80d99cb20411bb7971bbdcd6a5a1f91d4f0f7f9ed04d622383d7d702"
+    },
+    {
+      "name": "Grid.003",
+      "vertices": 42,
+      "polygons": 36,
+      "sha256": "fe9e78e9377eaaa081d2e36a5c54b3d97d03e3437e87fe277eae862cde2dcf46"
+    },
+    {
+      "name": "Grid.004",
+      "vertices": 2944,
+      "polygons": 2736,
+      "sha256": "efec9fc86575585d4ac1ea815d6150419295d5e7d8d6fc7156a490149dd1d92e"
+    },
+    {
+      "name": "Grid.005",
+      "vertices": 2944,
+      "polygons": 2736,
+      "sha256": "ee82e111b27c14bb09d6fe768abbde922c73933e7a8119ffea6d53b2bd990ccd"
+    },
+    {
+      "name": "Grid.006",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "3bd371b80df2bbec7dd3ff56c44d53db1e10eab7dad36dae3f4143f0ec5cdf9f"
+    },
+    {
+      "name": "Grid.007",
+      "vertices": 72,
+      "polygons": 60,
+      "sha256": "7a14979ce221969c91e384ff0d4eaa36eec613f02d9b39265387c72198f144b5"
+    },
+    {
+      "name": "Grid.008",
+      "vertices": 1284,
+      "polygons": 1251,
+      "sha256": "8caefc757be1b3c5b5dd44a9b1c7a0c638a567cdd673f0f6beff9b27dc8269b4"
+    },
+    {
+      "name": "Grid.009",
+      "vertices": 234,
+      "polygons": 222,
+      "sha256": "928d011af9727078fd54c03ef86660c75d26d48692f34170f764b7704ad8a0a8"
+    },
+    {
+      "name": "Grid.016",
+      "vertices": 150,
+      "polygons": 100,
+      "sha256": "5008d1a75d1b409dd3e861125332580c0f5d449c34921f855295bfe5234c3918"
+    },
+    {
+      "name": "log_cabin_01_snow2.005",
+      "vertices": 160,
+      "polygons": 316,
+      "sha256": "34c54fb17ec39a637ed2a060f593fee315d63c50a1fe4c5282b480f0642ba9d5"
+    },
+    {
+      "name": "log_cabin_01_snow2.012",
+      "vertices": 638,
+      "polygons": 1272,
+      "sha256": "3fddce2af168dc410f9911506bc7c9671213cf3c0e3f7e81eb76e23778221c86"
+    },
+    {
+      "name": "log_cabin_01_snow2.014",
+      "vertices": 1189,
+      "polygons": 2374,
+      "sha256": "388c50942538ba1508fc62e335b114a1be5a0b9159d256935560bcd75c2b6260"
+    },
+    {
+      "name": "log_cabin_01_snow2.015",
+      "vertices": 601,
+      "polygons": 1198,
+      "sha256": "e0557d0117fc9777a8411c6906f8745f57da1188ee742337050e0c3e6d9d1824"
+    },
+    {
+      "name": "log_cabin_01_snow2.016",
+      "vertices": 160,
+      "polygons": 316,
+      "sha256": "34c54fb17ec39a637ed2a060f593fee315d63c50a1fe4c5282b480f0642ba9d5"
+    },
+    {
+      "name": "log_cabin_01_snow2.018",
+      "vertices": 478,
+      "polygons": 952,
+      "sha256": "fb0afc7f813f10c2cf7f9a15dc45fb64aae3e6a519b183b34b6d36abb4dd2d61"
+    },
+    {
+      "name": "log_cabin_01_snow2.019",
+      "vertices": 834,
+      "polygons": 1663,
+      "sha256": "4f14afcbe71ffed67d3608327c77449c324512b372697d8cd49d03e7e5613f5f"
+    },
+    {
+      "name": "Pipe25_Curve90Segmented_R30.015",
+      "vertices": 4462,
+      "polygons": 4502,
+      "sha256": "a5850a965ed853742bf62d7ecaac2f7527fdec543c88bc73891036c1d6a2b5c7"
+    },
+    {
+      "name": "Pipe25_Holder_02.002",
+      "vertices": 176,
+      "polygons": 136,
+      "sha256": "c0a44b8c3348656dd31fd0965c9562daafcf8b068571280272364925ac15d6b4"
+    },
+    {
+      "name": "Pipe25_Holder_02.003",
+      "vertices": 176,
+      "polygons": 136,
+      "sha256": "c0a44b8c3348656dd31fd0965c9562daafcf8b068571280272364925ac15d6b4"
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.001",
+      "vertices": 160,
+      "polygons": 132,
+      "sha256": "3d73770c1d4a8a2a699cb0c575dd5f528cc291f15bd34a8a987661390fa83e09"
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.003",
+      "vertices": 160,
+      "polygons": 132,
+      "sha256": "4c0a318ecc52a22b07dfe0857e10823a26465c721a0dc38315f10445ab8ac84e"
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.004",
+      "vertices": 160,
+      "polygons": 132,
+      "sha256": "3d73770c1d4a8a2a699cb0c575dd5f528cc291f15bd34a8a987661390fa83e09"
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.005",
+      "vertices": 160,
+      "polygons": 132,
+      "sha256": "4c0a318ecc52a22b07dfe0857e10823a26465c721a0dc38315f10445ab8ac84e"
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.006",
+      "vertices": 160,
+      "polygons": 132,
+      "sha256": "4c0a318ecc52a22b07dfe0857e10823a26465c721a0dc38315f10445ab8ac84e"
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.007",
+      "vertices": 160,
+      "polygons": 132,
+      "sha256": "4c0a318ecc52a22b07dfe0857e10823a26465c721a0dc38315f10445ab8ac84e"
+    },
+    {
+      "name": "Pipe25_Holder_03.001",
+      "vertices": 608,
+      "polygons": 572,
+      "sha256": "7885e1f7d4e4ffec10120e9c2b94b1279a152aea9c46c4c63b8f56f6698cce95"
+    },
+    {
+      "name": "Pipe25_Holder_03.002",
+      "vertices": 608,
+      "polygons": 572,
+      "sha256": "7885e1f7d4e4ffec10120e9c2b94b1279a152aea9c46c4c63b8f56f6698cce95"
+    },
+    {
+      "name": "Pipe25_Holder_03.004",
+      "vertices": 608,
+      "polygons": 572,
+      "sha256": "7885e1f7d4e4ffec10120e9c2b94b1279a152aea9c46c4c63b8f56f6698cce95"
+    },
+    {
+      "name": "Pipe25_Holder_03.005",
+      "vertices": 608,
+      "polygons": 572,
+      "sha256": "7885e1f7d4e4ffec10120e9c2b94b1279a152aea9c46c4c63b8f56f6698cce95"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.001",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "705123514a9b5e7500d26666d3ff8607ff4bc68fe9be29b49dbc0bdc14f62b71"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.003",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.004",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "705123514a9b5e7500d26666d3ff8607ff4bc68fe9be29b49dbc0bdc14f62b71"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.005",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "705123514a9b5e7500d26666d3ff8607ff4bc68fe9be29b49dbc0bdc14f62b71"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.006",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "705123514a9b5e7500d26666d3ff8607ff4bc68fe9be29b49dbc0bdc14f62b71"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.007",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.008",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.009",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.010",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.011",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.012",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.013",
+      "vertices": 144,
+      "polygons": 93,
+      "sha256": "e25d41c221a8da35f6085fbad53394f7b301a25b11805ba916b115fe3bb89159"
+    },
+    {
+      "name": "Pipe25_Seperator_D.020",
+      "vertices": 12,
+      "polygons": 6,
+      "sha256": "e0e5310803df65da6c0e82b249b53561e60ad0a4bf9afa72d3677918f9bb03ea"
+    },
+    {
+      "name": "Plane.002",
+      "vertices": 434,
+      "polygons": 448,
+      "sha256": "1eb06f0770ba2d513fd685b9ded5f83d6edf89e47d6f42dd22187dd19911d95f"
+    },
+    {
+      "name": "Plane.007",
+      "vertices": 754,
+      "polygons": 736,
+      "sha256": "31129ba2bac243df364057ab38732d63a555b84fa1e70c43417364d95b7f2b9b"
+    },
+    {
+      "name": "Plane.011",
+      "vertices": 731,
+      "polygons": 1319,
+      "sha256": "54e9f12229fcec475f5dcb4dc1c47e49d73f61a3c1d26cbb290dcea187bdd664"
+    },
+    {
+      "name": "Plane.012",
+      "vertices": 754,
+      "polygons": 736,
+      "sha256": "31129ba2bac243df364057ab38732d63a555b84fa1e70c43417364d95b7f2b9b"
+    },
+    {
+      "name": "Plane.013",
+      "vertices": 626,
+      "polygons": 623,
+      "sha256": "277364c51c61d5c2173b7dc52fc82c1afc076044dd5594e578417aad4958beda"
+    },
+    {
+      "name": "Plane.016",
+      "vertices": 1090,
+      "polygons": 1938,
+      "sha256": "0e6026bc0cdf9e60fb7386367929a656180ea2e19c8c1482b9131611af26bfe4"
+    },
+    {
+      "name": "Plane.017",
+      "vertices": 409,
+      "polygons": 400,
+      "sha256": "75cbf9ae4b63c68ee74a1911f9d789e9feb5204b24499be495023243aae39546"
+    },
+    {
+      "name": "Plane.019",
+      "vertices": 1166,
+      "polygons": 1925,
+      "sha256": "b995659a1e4cbfef8692b29be3dceee970ce9fc415923472b3960fd078ca5928"
+    },
+    {
+      "name": "Plane.021",
+      "vertices": 581,
+      "polygons": 755,
+      "sha256": "7b06d25b05e30b3a0edbe2e3f7ecc6ab0b784bf6aa766e576a85b1682c23cefd"
+    },
+    {
+      "name": "Plane.028",
+      "vertices": 28,
+      "polygons": 24,
+      "sha256": "77b4281e74f994dfe88207ed8b81722d9407dc3a594c5222babd3596d711e29a"
+    },
+    {
+      "name": "Plane.029",
+      "vertices": 291,
+      "polygons": 508,
+      "sha256": "7ea2b514245774c90d32dbd29ac76e6367faefbbf85b4d6e3c9a198121b2ebef"
+    },
+    {
+      "name": "Plane.035",
+      "vertices": 334,
+      "polygons": 328,
+      "sha256": "46d35b4e29697cc998cd22a6f4df1b49c608d8df3ee24d4619a47b082509f86d"
+    },
+    {
+      "name": "Plane.037",
+      "vertices": 382,
+      "polygons": 376,
+      "sha256": "835d6b5865db824c79615de962a65965aa94bd24ae476fe73eae4497b5a150f6"
+    },
+    {
+      "name": "Plane.038",
+      "vertices": 421,
+      "polygons": 407,
+      "sha256": "ffb2830d830fa29fc87215f1003fa31fb9618077917ce1acc528983ba43ea5dc"
+    },
+    {
+      "name": "Plane.048",
+      "vertices": 193,
+      "polygons": 187,
+      "sha256": "de35241bf42946f6f0bbc82e9645c32d0272a24473a015f76e62d96a56c885ab"
+    },
+    {
+      "name": "Ribbed",
+      "vertices": 9,
+      "polygons": 0,
+      "sha256": "27135d8fffd6c88904af3eed9322e3451e57f09cf39248d05c812fceba0e053a"
+    },
+    {
+      "name": "Simple",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "0f1feef25ccac7411f24f6f8f5d5690570edd025cc9aa0c75d3e5d499c2201dd"
+    },
+    {
+      "name": "Suzanne.003",
+      "vertices": 4428,
+      "polygons": 4023,
+      "sha256": "b0b179d5ede2c9821c199830abde427388135217cfc4503c003525bdad1514ad"
+    },
+    {
+      "name": "Suzanne.016",
+      "vertices": 4966,
+      "polygons": 4880,
+      "sha256": "1a75243aff5d152ab45d503358ef8c303027825e876010d550341671081ebe88"
+    },
+    {
+      "name": "Suzanne.027",
+      "vertices": 4428,
+      "polygons": 4023,
+      "sha256": "22025cc3d0f289d6e06a409df6e8703744d6f35e862764264b40441ce83d422c"
+    },
+    {
+      "name": "UV Sphere.002",
+      "vertices": 1159,
+      "polygons": 1032,
+      "sha256": "f42b25a5898e6a702c8b28fc26a4d3b2d09b55957d8619f15fccda4200be444c"
+    },
+    {
+      "name": "UV Sphere.011",
+      "vertices": 559,
+      "polygons": 509,
+      "sha256": "afc1dffd5990e52b46b2275aa7554ee759015cc13a4ba467898e1af5a3f0da37"
+    },
+    {
+      "name": "Vert.107",
+      "vertices": 8,
+      "polygons": 0,
+      "sha256": "e4567a0a0e175a9d5a7e40fd800bc7cedd35c14eb66a82fae90940d6a2858f58"
+    },
+    {
+      "name": "Vert.108",
+      "vertices": 1080,
+      "polygons": 1070,
+      "sha256": "8b0548d0298617d9d7f72f1e3c110e8d1f6edb79e70df19b3e9093dc5c03d307"
+    },
+    {
+      "name": "Vert.109",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "f26de50a5f9e32f2a9ac19c272aeda5401c56300f19956434a24aa6cd070fb5e"
+    },
+    {
+      "name": "Vert.110",
+      "vertices": 410,
+      "polygons": 400,
+      "sha256": "853af6bc5fa4acad1364db1a8b0e932f1a45da996b1a6f32d67947f7dbf8a292"
+    },
+    {
+      "name": "Vert.111",
+      "vertices": 1900,
+      "polygons": 1890,
+      "sha256": "1f6cae101728c234196c8e1b37444522a43f5c1913d9e037b1c56d33c75738da"
+    },
+    {
+      "name": "Vert.112",
+      "vertices": 5,
+      "polygons": 0,
+      "sha256": "322b7272a42f62ec60421e850c4f5321a843cecc403a471a60b6087ae7b26e10"
+    },
+    {
+      "name": "Vert.113",
+      "vertices": 7,
+      "polygons": 0,
+      "sha256": "0658acce51c15c200e0779b0927beda336a024a94ed3b98a7f9b1d4695dbc604"
+    },
+    {
+      "name": "Vert.114",
+      "vertices": 6,
+      "polygons": 0,
+      "sha256": "9b54c7e64de9248bdf059451b34413f2c2592a61895fbf71489fc34d980769c5"
+    },
+    {
+      "name": "Vert.115",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "8827d62b038e62283147a9e7a85695cb4350679ee1dcbd4f9c419872137b922f"
+    },
+    {
+      "name": "Vert.116",
+      "vertices": 8,
+      "polygons": 0,
+      "sha256": "490998505f90d5089f59a3a88718b92296b1bf2c4691a4bdc38b6dc191188a6f"
+    },
+    {
+      "name": "Vert.117",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "d5d4d444db84a6939ed7cce986f95473594ccd00749a88ec3360cf1446968aee"
+    },
+    {
+      "name": "Vert.118",
+      "vertices": 5,
+      "polygons": 0,
+      "sha256": "bd038c65077174fe517de774ba2367576916c21088f9971f379d3097bb5ca657"
+    },
+    {
+      "name": "Vert.119",
+      "vertices": 5,
+      "polygons": 0,
+      "sha256": "fd00efd67279d679e32276acb57f9b1959be146606539f8845474618e6a16dd8"
+    },
+    {
+      "name": "Vert.120",
+      "vertices": 6,
+      "polygons": 0,
+      "sha256": "9a0da40d622b70ab2f28ac3f7da8f3a7cffc765665aad98f3c14ac132f831ea4"
+    },
+    {
+      "name": "Vert.121",
+      "vertices": 7,
+      "polygons": 0,
+      "sha256": "b955cb70df9a370ddb033e49e123b3e4add476b4636da1bb60eb3e1a1c9f65fd"
+    },
+    {
+      "name": "Vert.122",
+      "vertices": 7,
+      "polygons": 0,
+      "sha256": "55bcbc89ce811f380ad644b2091b6e4301b6f153dcc80f074d0c96c74fd2a743"
+    },
+    {
+      "name": "Vert.123",
+      "vertices": 5,
+      "polygons": 0,
+      "sha256": "85e09078777f873d34546fe136ef6a3984fad48bf7024a6227ded5b2ca7d72ba"
+    },
+    {
+      "name": "Vert.124",
+      "vertices": 6,
+      "polygons": 0,
+      "sha256": "5874ad842142039baefed01be76248779141d4005a3b49974d9ead3befeea92f"
+    },
+    {
+      "name": "Vert.125",
+      "vertices": 26,
+      "polygons": 0,
+      "sha256": "c991b3b8381725ad07db6284d25f1066190f12af52bbfd2e039fa01be4ed0387"
+    },
+    {
+      "name": "Vert.126",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "7444c5ab84a9642eccf9f9e3be4b87f09dbaf9a59d178ff5fbe36a3f4cc3dccb"
+    },
+    {
+      "name": "Vert.127",
+      "vertices": 4,
+      "polygons": 0,
+      "sha256": "d0eb1ddb1c66b57c0cbd3e65ed2d033a25568d81c43cbaba48d15fcc72d788cd"
+    },
+    {
+      "name": "Vert.128",
+      "vertices": 13,
+      "polygons": 0,
+      "sha256": "93fab37a8443b70b39b9b13f7e96e7e9919a5ce2f40663b83880347e05456c7a"
+    },
+    {
+      "name": "Vert.129",
+      "vertices": 12,
+      "polygons": 0,
+      "sha256": "41c9f484ca24dd2390f757045385aff22d17786fdf4c8e0a980fe4aeb548b3b7"
+    },
+    {
+      "name": "Vert.130",
+      "vertices": 9,
+      "polygons": 0,
+      "sha256": "60036ed5cafc17f076c53fff01fa7e45c847b7a50d362fa8166905a9ded024b4"
+    },
+    {
+      "name": "Vert.131",
+      "vertices": 48,
+      "polygons": 0,
+      "sha256": "6c13c1556449a258ee29cea40df6916eef05ba1009469423d119e18cfdb21c47"
+    },
+    {
+      "name": "Vert.132",
+      "vertices": 15,
+      "polygons": 0,
+      "sha256": "df593a4cceecf023d3ae11db24b2ed8c6491c4554028fc09e3c2659f64002ce2"
+    },
+    {
+      "name": "Vert.149",
+      "vertices": 5,
+      "polygons": 0,
+      "sha256": "84f277caaa11820604f07af3be7b409e4cdf42a7b7c86c38562a64f9299231ec"
+    }
+  ],
+  "images": [
+    {
+      "name": "bush_leaves_green.png.001",
+      "path": "//..\\..\\..\\Cyberpunk_Scene\\Blends\\Assets\\bush_leaves_green.png",
+      "packed": true,
+      "dimensions": [
+        1515,
+        540
+      ],
+      "sha256": "159b7a74d08a6732ed4674cc55f048c2c85cb8f876c0d880481a03150d8cf76c",
+      "external_exists": null
+    },
+    {
+      "name": "Flowers",
+      "path": "//..\\..\\..\\..\\..\\..\\Downloads\\Stylized Nature MegaKit[Standard]\\glTF\\Flowers.png",
+      "packed": true,
+      "dimensions": [
+        1008,
+        981
+      ],
+      "sha256": "5c531f2329c241c625aafd6cb769de29f33b480ef2a16491c2489f3c68e62a6a",
+      "external_exists": null
+    },
+    {
+      "name": "font_2K.png",
+      "path": "//..\\..\\..\\Cyberpunk_Scene\\Blends\\Assets\\font_2K.png",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "9d80733493cfa20152c80979a7f3320f33b0b13c8b311a5f18de3b223ca828f5",
+      "external_exists": null
+    },
+    {
+      "name": "labels.png.001",
+      "path": "D:\\DUCKuments\\GAMEDEV_n_ART\\Projects\\Cyberpunk_Scene\\Blends\\Assets\\labels.png",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "c109f4d3c7fae2d6a0a832a6a0a34513073ae6ff505231d14316b4d7f9990ddc",
+      "external_exists": null
+    },
+    {
+      "name": "Leaves",
+      "path": "//..\\..\\..\\..\\..\\..\\Downloads\\Stylized Nature MegaKit[Standard]\\glTF\\Leaves.png",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "23248cebe28a24e78add32db3c2ee2f4d7b9219e9d2467279722f0197a7b6bd5",
+      "external_exists": null
+    },
+    {
+      "name": "qwantani_moonrise_puresky_2k.hdr.002",
+      "path": "//..\\..\\..\\Cyberpunk_Scene\\Blends\\Assets\\qwantani_moonrise_puresky_2k.hdr",
+      "packed": true,
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "sha256": "810443e6c76c60505e389ce52f29096d6d574251e29c1ae95de1b1972f2998d8",
+      "external_exists": null
+    },
+    {
+      "name": "ScreenTex_Atlas_01.png",
+      "path": "//..\\..\\..\\Cyberpunk_Scene\\Blends\\Assets\\ScreenTex_Atlas_01.png",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "e316aed88d353ef0655e609e2fd4a8c96738728abbebda135287e83f00138fdb",
+      "external_exists": null
+    },
+    {
+      "name": "ScreenTex_Atlas_02.png",
+      "path": "//..\\..\\..\\Cyberpunk_Scene\\Blends\\Assets\\ScreenTex_Atlas_02.png",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "97b37db9313b5e1210c7ede753f478b1b5058fbe7d5bea7bd118d9bc12fa9ea3",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Floor_Alt_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        19.0,
+        10.0,
+        0.30000001192092896
+      ],
+      "bounds": [
+        [
+          -8.0,
+          -5.0,
+          -0.30000001192092896
+        ],
+        [
+          11.0,
+          5.0,
+          1.4934242731357017e-10
+        ]
+      ],
+      "materials": [
+        "M_ROOM_Floor_1",
+        "M_ROOM_Floor_2"
+      ]
+    },
+    {
+      "name": "Doors_And_Windows",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        17.280099868774414,
+        7.911396026611328,
+        2.0628960132598877
+      ],
+      "bounds": [
+        [
+          -7.230000019073486,
+          -4.081394672393799,
+          -0.010616399347782135
+        ],
+        [
+          10.050100326538086,
+          3.83000111579895,
+          2.0522797107696533
+        ]
+      ],
+      "materials": [
+        "M_ROOM_Door",
+        "M_GENERIC_MediumBlue",
+        "M_TRANSP_GlassFake"
+      ]
+    },
+    {
+      "name": "Walls",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        17.600004196166992,
+        7.800002098083496,
+        2.700000286102295
+      ],
+      "bounds": [
+        [
+          -7.200001239776611,
+          -4.000000476837158,
+          0.0
+        ],
+        [
+          10.400002479553223,
+          3.800001621246338,
+          2.700000286102295
+        ]
+      ],
+      "materials": [
+        "M_ROOM_Wall",
+        "M_ROOM_Wall_Top"
+      ]
+    },
+    {
+      "name": "Ceiling",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        19.0,
+        10.0,
+        0.19999980926513672
+      ],
+      "bounds": [
+        [
+          -8.236003875732422,
+          -5.0,
+          2.693227767944336
+        ],
+        [
+          10.763996124267578,
+          5.0,
+          2.8932275772094727
+        ]
+      ],
+      "materials": [
+        "M_ROOM_Ceiling"
+      ]
+    },
+    {
+      "name": "Cylinder.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4003877341747284,
+        1.7427613735198975,
+        0.6568270325660706
+      ],
+      "bounds": [
+        [
+          7.799806118011475,
+          -3.939293384552002,
+          1.8187485933303833
+        ],
+        [
+          8.200193405151367,
+          -2.0859158039093018,
+          2.90425443649292
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MediumBlue",
+        "M_EMIT_Light_RedNormal",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Light_Trim_01_RoundEnd.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.699999809265137,
+        0.7500002980232239,
+        0.012309517711400986
+      ],
+      "bounds": [
+        [
+          -6.499999046325684,
+          -3.050001621246338,
+          -0.0011573968222364783
+        ],
+        [
+          0.20000095665454865,
+          -2.299999237060547,
+          0.011152121238410473
+        ]
+      ],
+      "materials": [
+        "M_LIGHT_BlueLightOff",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Light_Trim_01_RoundCrossT.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        8.650003433227539,
+        7.199995994567871,
+        0.012309517711400986
+      ],
+      "bounds": [
+        [
+          0.7999966740608215,
+          -3.7000010013580322,
+          -0.0011573968222364783
+        ],
+        [
+          9.450004577636719,
+          3.5000007152557373,
+          0.011152121238410473
+        ]
+      ],
+      "materials": [
+        "M_EMIT_Light_BlueFloor",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Light_Neon_Suzanne",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2242058515548706,
+        0.09865725785493851,
+        0.8947010636329651
+      ],
+      "bounds": [
+        [
+          8.30327033996582,
+          -1.6775875091552734,
+          1.2649720907211304
+        ],
+        [
+          8.401931762695312,
+          -0.4533812999725342,
+          2.1596732139587402
+        ]
+      ],
+      "materials": [
+        "M_EMIT_Light_OrangeNeon",
+        "M_EMIT_Light_BlueNeon",
+        "M_TRANSP_Plastic"
+      ]
+    },
+    {
+      "name": "Light_Tube_01_Double",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.21527978777885437,
+        2.137272357940674,
+        0.45050856471061707
+      ],
+      "bounds": [
+        [
+          5.9400315284729,
+          -0.212263286113739,
+          2.25325345993042
+        ],
+        [
+          6.155311107635498,
+          1.92500901222229,
+          2.7037620544433594
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalGlossy3",
+        "M_EMIT_Light_BlueFloor"
+      ]
+    },
+    {
+      "name": "Light_Tube_01_DoubleBroken",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.21537338197231293,
+        2.1385369300842285,
+        0.4478546977043152
+      ],
+      "bounds": [
+        [
+          2.940990686416626,
+          -0.21332645416259766,
+          2.2476718425750732
+        ],
+        [
+          3.1563639640808105,
+          1.9252104759216309,
+          2.695526599884033
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalGlossy3",
+        "M_LIGHT_BlueLightOff"
+      ]
+    },
+    {
+      "name": "Light_Neon_Duck.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0870819091796875,
+        0.10388833284378052,
+        1.0349596738815308
+      ],
+      "bounds": [
+        [
+          3.6886754035949707,
+          -2.298020124435425,
+          1.1019853353500366
+        ],
+        [
+          4.775757789611816,
+          -2.1941282749176025,
+          2.1369450092315674
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Plastic",
+        "M_EMIT_Light_YellowDuck",
+        "M_EMIT_Light_RedNeon"
+      ]
+    },
+    {
+      "name": "Cylinder.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4003877341747284,
+        1.7427613735198975,
+        0.6568270325660706
+      ],
+      "bounds": [
+        [
+          4.799806118011475,
+          -3.939293384552002,
+          1.8187485933303833
+        ],
+        [
+          5.200193881988525,
+          -2.0859158039093018,
+          2.90425443649292
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MediumBlue",
+        "M_EMIT_Light_RedNormal",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cylinder.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4003877341747284,
+        1.7427613735198975,
+        0.6568270325660706
+      ],
+      "bounds": [
+        [
+          1.7998061180114746,
+          -3.939293384552002,
+          1.8187485933303833
+        ],
+        [
+          2.2001938819885254,
+          -2.0859158039093018,
+          2.90425443649292
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MediumBlue",
+        "M_EMIT_Light_RedNormal",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cylinder.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4003877341747284,
+        1.7427613735198975,
+        0.6568270325660706
+      ],
+      "bounds": [
+        [
+          -1.2001938819885254,
+          -3.939293384552002,
+          1.8187485933303833
+        ],
+        [
+          -0.7998061180114746,
+          -2.0859158039093018,
+          2.90425443649292
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MediumBlue",
+        "M_EMIT_Light_RedNormal",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cylinder.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4003877341747284,
+        1.7427613735198975,
+        0.6568270325660706
+      ],
+      "bounds": [
+        [
+          -4.200193881988525,
+          -3.939293384552002,
+          1.8187485933303833
+        ],
+        [
+          -3.7998061180114746,
+          -2.0859158039093018,
+          2.90425443649292
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MediumBlue",
+        "M_EMIT_Light_RedNormal",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cylinder.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4003877341747284,
+        1.7427613735198975,
+        0.6568270325660706
+      ],
+      "bounds": [
+        [
+          8.485915184020996,
+          -1.8001939058303833,
+          1.8187487125396729
+        ],
+        [
+          10.339292526245117,
+          -1.3998061418533325,
+          2.90425443649292
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MediumBlue",
+        "M_EMIT_Light_RedNormal",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cylinder.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4003877341747284,
+        1.7427613735198975,
+        0.6568270325660706
+      ],
+      "bounds": [
+        [
+          8.485915184020996,
+          1.1998060941696167,
+          1.8187487125396729
+        ],
+        [
+          10.339292526245117,
+          1.6001938581466675,
+          2.90425443649292
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MediumBlue",
+        "M_EMIT_Light_RedNormal",
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "CyberScreens_Wall",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.223513126373291,
+        2.691422700881958,
+        1.339722990989685
+      ],
+      "bounds": [
+        [
+          -0.956679105758667,
+          -3.323030948638916,
+          1.2033586502075195
+        ],
+        [
+          5.3646440505981445,
+          2.9629528522491455,
+          2.543081760406494
+        ]
+      ],
+      "materials": [
+        "M_PROPS_PCMat",
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "CyberScreens_Wall.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.289192199707031,
+        2.5957024097442627,
+        1.7718206644058228
+      ],
+      "bounds": [
+        [
+          -0.9055429697036743,
+          -3.308316707611084,
+          0.748470664024353
+        ],
+        [
+          5.395345687866211,
+          2.955617904663086,
+          2.520291328430176
+        ]
+      ],
+      "materials": [
+        "M_SPECIAL_ScreenBack",
+        "M_SPECIAL_ScreenAtlas_01",
+        "M_SPECIAL_ScreenAtlas_02"
+      ]
+    },
+    {
+      "name": "Furn_TableFloatingBig",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.8989088535308838,
+        0.9209359288215637,
+        0.5207197666168213
+      ],
+      "bounds": [
+        [
+          1.782075047492981,
+          0.6685436964035034,
+          0.22369016706943512
+        ],
+        [
+          2.961787223815918,
+          2.6784183979034424,
+          0.7444099187850952
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Glass",
+        "M_PROPS_Furn_3",
+        "M_PROPS_Furn_1",
+        "M_GENERIC_MetalDarkBlue",
+        "M_EMIT_FurnLight",
+        "M_PROPS_Furn_2",
+        "M_PROPS_Pot01",
+        "M_GENERIC_Black",
+        "M_GENERIC_MetalGlossy2"
+      ]
+    },
+    {
+      "name": "Furn_TableFloatingBig.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.8989088535308838,
+        0.9209359288215637,
+        0.5207197666168213
+      ],
+      "bounds": [
+        [
+          2.7582826614379883,
+          -0.8467397689819336,
+          0.22369016706943512
+        ],
+        [
+          4.858671188354492,
+          0.6752095222473145,
+          0.7444099187850952
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Glass",
+        "M_PROPS_Furn_3",
+        "M_PROPS_Furn_1",
+        "M_GENERIC_MetalDarkBlue",
+        "M_EMIT_FurnLight",
+        "M_PROPS_Furn_2",
+        "M_PROPS_Pot01",
+        "M_GENERIC_Black",
+        "M_GENERIC_MetalGlossy2"
+      ]
+    },
+    {
+      "name": "Furn_ChairFloating",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3562116026878357,
+        0.4580053389072418,
+        0.7030973434448242
+      ],
+      "bounds": [
+        [
+          2.668426036834717,
+          1.7033131122589111,
+          0.11342817544937134
+        ],
+        [
+          3.1409051418304443,
+          2.0783376693725586,
+          0.8165255188941956
+        ]
+      ],
+      "materials": [
+        "M_PROPS_Furn_1",
+        "M_GENERIC_MetalDarkBlue",
+        "M_PROPS_Furn_2",
+        "M_EMIT_FurnLight"
+      ]
+    },
+    {
+      "name": "Furn_ChairFloating.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3562116026878357,
+        0.4580053389072418,
+        0.7030973434448242
+      ],
+      "bounds": [
+        [
+          3.766866683959961,
+          0.2412184476852417,
+          0.11342817544937134
+        ],
+        [
+          4.288917541503906,
+          0.8095411062240601,
+          0.8165255188941956
+        ]
+      ],
+      "materials": [
+        "M_PROPS_Furn_1",
+        "M_GENERIC_MetalDarkBlue",
+        "M_PROPS_Furn_2",
+        "M_EMIT_FurnLight"
+      ]
+    },
+    {
+      "name": "Misc_CyberScreen_A",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7952429056167603,
+        0.22866113483905792,
+        0.37466686964035034
+      ],
+      "bounds": [
+        [
+          2.1752712726593018,
+          1.8025813102722168,
+          0.7436063885688782
+        ],
+        [
+          2.4576921463012695,
+          2.6115801334381104,
+          1.1182732582092285
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue",
+        "M_GENERIC_MetalWhiteGlossy",
+        "M_PROPS_PCMat"
+      ]
+    },
+    {
+      "name": "Misc_CyberScreen_A.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7840389013290405,
+        0.1416279524564743,
+        0.24275453388690948
+      ],
+      "bounds": [
+        [
+          2.2582108974456787,
+          1.8140455484390259,
+          0.8600797653198242
+        ],
+        [
+          2.4530367851257324,
+          2.605924367904663,
+          1.1028343439102173
+        ]
+      ],
+      "materials": [
+        "M_SPECIAL_ScreenBack",
+        "M_SPECIAL_ScreenAtlas_02"
+      ]
+    },
+    {
+      "name": "Misc_Duckputer_A",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6664875745773315,
+        0.30074945092201233,
+        0.28449690341949463
+      ],
+      "bounds": [
+        [
+          3.604254961013794,
+          -0.21981917321681976,
+          0.7425150275230408
+        ],
+        [
+          4.335047245025635,
+          0.31195348501205444,
+          1.0270118713378906
+        ]
+      ],
+      "materials": [
+        "M_EMIT_Light_YellowDuckPC",
+        "M_GENERIC_MetalWhiteGlossy",
+        "M_PROPS_PCMat",
+        "M_GENERIC_MetalDarkBlue",
+        "M_GENERIC_Cable_2"
+      ]
+    },
+    {
+      "name": "Misc_Duckputer_A.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.66932213306427,
+        0.16074812412261963,
+        0.22048301994800568
+      ],
+      "bounds": [
+        [
+          3.6096057891845703,
+          -0.2122402787208557,
+          0.803005039691925
+        ],
+        [
+          4.289736747741699,
+          0.19114559888839722,
+          1.0234880447387695
+        ]
+      ],
+      "materials": [
+        "M_SPECIAL_ScreenBack",
+        "M_SPECIAL_ScreenAtlas_02",
+        "M_SPECIAL_ScreenAtlas_01"
+      ]
+    },
+    {
+      "name": "Misc_Duckputer_B",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.49560821056365967,
+        0.28834620118141174,
+        0.29221582412719727
+      ],
+      "bounds": [
+        [
+          2.4153921604156494,
+          1.2518706321716309,
+          0.7435330748558044
+        ],
+        [
+          2.8407437801361084,
+          1.811675786972046,
+          1.0357489585876465
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalWhiteGlossy",
+        "M_EMIT_Light_YellowDuck",
+        "M_PROPS_PCMat",
+        "M_GENERIC_MetalDarkBlue",
+        "M_GENERIC_Cable_2"
+      ]
+    },
+    {
+      "name": "Misc_Duckputer_B.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4747794270515442,
+        0.1574820578098297,
+        0.2175695300102234
+      ],
+      "bounds": [
+        [
+          2.4015908241271973,
+          1.2397174835205078,
+          0.8141956329345703
+        ],
+        [
+          2.695939064025879,
+          1.7399009466171265,
+          1.031765103340149
+        ]
+      ],
+      "materials": [
+        "M_SPECIAL_ScreenBack",
+        "M_SPECIAL_ScreenAtlas_02",
+        "M_SPECIAL_ScreenAtlas_01"
+      ]
+    },
+    {
+      "name": "FlowerPot",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6032295227050781,
+        0.5247734785079956,
+        0.37409624457359314
+      ],
+      "bounds": [
+        [
+          7.356324195861816,
+          -2.0419323444366455,
+          -9.931623523584676e-09
+        ],
+        [
+          8.14934253692627,
+          -1.2706634998321533,
+          0.37409624457359314
+        ]
+      ],
+      "materials": [
+        "M_PROPS_Pot02",
+        "M_GENERIC_MetalGreen01",
+        "M_PROPS_HoloDirt",
+        "M_PROPS_Pot01"
+      ]
+    },
+    {
+      "name": "Cylinder.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3828904628753662,
+        0.33656707406044006,
+        0.22409652173519135
+      ],
+      "bounds": [
+        [
+          7.787240505218506,
+          -1.3948757648468018,
+          -0.006451802793890238
+        ],
+        [
+          8.185295104980469,
+          -1.0409510135650635,
+          0.21764472126960754
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalGreen01",
+        "M_PROPS_Pot04",
+        "M_PROPS_HoloDirt",
+        "M_PROPS_Pot03"
+      ]
+    },
+    {
+      "name": "Misc_LaserBlender_Base",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12230788916349411,
+        0.1464289128780365,
+        0.26260295510292053
+      ],
+      "bounds": [
+        [
+          3.1985981464385986,
+          0.34411564469337463,
+          0.7430410385131836
+        ],
+        [
+          3.3592159748077393,
+          0.5205029249191284,
+          1.0056439638137817
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue",
+        "M_TRANSP_BLNDR_Blue",
+        "M_PROPS_BLNDR_Blue",
+        "M_PROPS_BLNDR_Orange",
+        "M_SPECIAL_ScreenAtlas_02"
+      ]
+    },
+    {
+      "name": "Misc_LaserBlender_Lasers",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.09839406609535217,
+        0.011416011489927769,
+        0.16158869862556458
+      ],
+      "bounds": [
+        [
+          3.2254154682159424,
+          0.39760348200798035,
+          0.840433657169342
+        ],
+        [
+          3.322699546813965,
+          0.4380250871181488,
+          1.0020222663879395
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalWhiteRough",
+        "M_EMIT_Light_Blndr_Laser",
+        "M_GENERIC_MetalDarkBlue",
+        "M_GENERIC_Mirror"
+      ]
+    },
+    {
+      "name": "Suzanne.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.09776201844215393,
+        0.09916746616363525,
+        0.11635846644639969
+      ],
+      "bounds": [
+        [
+          3.224335193634033,
+          0.3699522614479065,
+          0.8462735414505005
+        ],
+        [
+          3.322097063064575,
+          0.46911975741386414,
+          0.9626320004463196
+        ]
+      ],
+      "materials": [
+        "M_PROPS_BLNDR_Orange",
+        "M_EMIT_Light_Blndr_SUZEYE",
+        "M_PROPS_BLNDR_Blue"
+      ]
+    },
+    {
+      "name": "Flower_3_Group",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.47435542941093445,
+        0.5070686340332031,
+        0.6548455357551575
+      ],
+      "bounds": [
+        [
+          7.403265953063965,
+          -1.9378310441970825,
+          0.33159366250038147
+        ],
+        [
+          8.056464195251465,
+          -1.3017654418945312,
+          0.9864392280578613
+        ]
+      ],
+      "materials": [
+        "_Leaves",
+        "_Flowers"
+      ]
+    },
+    {
+      "name": "bush_green_medium",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4858967363834381,
+        0.466161847114563,
+        0.2680880129337311
+      ],
+      "bounds": [
+        [
+          7.733585357666016,
+          -1.4544621706008911,
+          0.13218125700950623
+        ],
+        [
+          8.219482421875,
+          -0.9883003234863281,
+          0.4002692699432373
+        ]
+      ],
+      "materials": [
+        "bush_leaves_green"
+      ]
+    },
+    {
+      "name": "Misc_BatteryCharger_X4_D",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3439881503582001,
+        0.14102506637573242,
+        0.30912256240844727
+      ],
+      "bounds": [
+        [
+          4.657285213470459,
+          -2.0030150413513184,
+          1.182303547859192
+        ],
+        [
+          5.0012736320495605,
+          -1.8619897365570068,
+          1.4914261102676392
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalGreen01",
+        "M_GENERIC_Greenish_Paint",
+        "M_GENERIC_GrayBlue",
+        "M_GENERIC_Black",
+        "M_EMIT_BatteryEmit",
+        "M_GENERIC_MetalDarkBlue",
+        "M_GENERIC_MetalGlossy2"
+      ]
+    },
+    {
+      "name": "Cube.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10956638306379318,
+        1.473710536956787,
+        0.046574290841817856
+      ],
+      "bounds": [
+        [
+          5.745217323303223,
+          -3.7368552684783936,
+          2.203856945037842
+        ],
+        [
+          5.854783535003662,
+          -2.2631447315216064,
+          2.2504310607910156
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cube.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10956638306379318,
+        1.473710536956787,
+        0.046574290841817856
+      ],
+      "bounds": [
+        [
+          0.8452169895172119,
+          -3.7368552684783936,
+          2.203856945037842
+        ],
+        [
+          0.9547833800315857,
+          -2.2631447315216064,
+          2.2504310607910156
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cube.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10956638306379318,
+        1.473710536956787,
+        0.046574290841817856
+      ],
+      "bounds": [
+        [
+          -4.654783248901367,
+          -3.7368552684783936,
+          2.203856945037842
+        ],
+        [
+          -4.545217037200928,
+          -2.2631447315216064,
+          2.2504310607910156
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cube.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10956638306379318,
+        1.473710536956787,
+        0.046574290841817856
+      ],
+      "bounds": [
+        [
+          3.845216989517212,
+          -3.7368552684783936,
+          2.203856945037842
+        ],
+        [
+          3.9547834396362305,
+          -2.2631447315216064,
+          2.2504310607910156
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cube.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10956638306379318,
+        1.473710536956787,
+        0.046574290841817856
+      ],
+      "bounds": [
+        [
+          -0.054783061146736145,
+          -3.7368552684783936,
+          2.203856945037842
+        ],
+        [
+          0.05478332191705704,
+          -2.2631447315216064,
+          2.2504310607910156
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cube.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10956638306379318,
+        1.473710536956787,
+        0.046574290841817856
+      ],
+      "bounds": [
+        [
+          -2.0547831058502197,
+          -3.7368552684783936,
+          2.203856945037842
+        ],
+        [
+          -1.9452166557312012,
+          -2.2631447315216064,
+          2.2504310607910156
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cube.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10956638306379318,
+        1.473710536956787,
+        0.046574290841817856
+      ],
+      "bounds": [
+        [
+          8.6631441116333,
+          -2.0547831058502197,
+          2.203856945037842
+        ],
+        [
+          10.136855125427246,
+          -1.9452166557312012,
+          2.2504310607910156
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkRough"
+      ]
+    },
+    {
+      "name": "Cylinder.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.02415279671549797,
+        0.7619714736938477,
+        0.5010876655578613
+      ],
+      "bounds": [
+        [
+          3.8879239559173584,
+          -3.380985736846924,
+          2.2128124237060547
+        ],
+        [
+          3.912076711654663,
+          -2.619014263153076,
+          2.713900089263916
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Black"
+      ]
+    },
+    {
+      "name": "Cylinder.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.02415279671549797,
+        0.7619714736938477,
+        0.5010876655578613
+      ],
+      "bounds": [
+        [
+          5.787923812866211,
+          -3.380985736846924,
+          2.2128124237060547
+        ],
+        [
+          5.812077045440674,
+          -2.619014263153076,
+          2.713900089263916
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Black"
+      ]
+    },
+    {
+      "name": "Cylinder.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.02415279671549797,
+        0.7619714736938477,
+        0.5010876655578613
+      ],
+      "bounds": [
+        [
+          0.8879238963127136,
+          -3.380985736846924,
+          2.2128124237060547
+        ],
+        [
+          0.9120766520500183,
+          -2.619014263153076,
+          2.713900089263916
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Black"
+      ]
+    },
+    {
+      "name": "Cylinder.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.02415279671549797,
+        0.6619715690612793,
+        0.5010876655578613
+      ],
+      "bounds": [
+        [
+          -4.612076759338379,
+          -3.3309857845306396,
+          2.2128124237060547
+        ],
+        [
+          -4.587923526763916,
+          -2.6690142154693604,
+          2.713900089263916
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Black"
+      ]
+    },
+    {
+      "name": "Cylinder.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.02415279671549797,
+        0.7619714736938477,
+        0.5010876655578613
+      ],
+      "bounds": [
+        [
+          -0.012076164595782757,
+          -3.380985736846924,
+          2.2128124237060547
+        ],
+        [
+          0.012076633051037788,
+          -2.619014263153076,
+          2.713900089263916
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Black"
+      ]
+    },
+    {
+      "name": "Cylinder.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.02415279671549797,
+        0.7619714736938477,
+        0.5010876655578613
+      ],
+      "bounds": [
+        [
+          -2.0120761394500732,
+          -3.380985736846924,
+          2.2128124237060547
+        ],
+        [
+          -1.9879233837127686,
+          -2.619014263153076,
+          2.713900089263916
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Black"
+      ]
+    },
+    {
+      "name": "Cylinder.016",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.02415279671549797,
+        0.7619709968566895,
+        0.5010876655578613
+      ],
+      "bounds": [
+        [
+          9.019014358520508,
+          -2.0120761394500732,
+          2.2128124237060547
+        ],
+        [
+          9.780984878540039,
+          -1.9879233837127686,
+          2.713900089263916
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Black"
+      ]
+    },
+    {
+      "name": "Misc_CableBox_01_A_Large.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6094589829444885,
+        0.12743206322193146,
+        0.30945882201194763
+      ],
+      "bounds": [
+        [
+          2.649953842163086,
+          -2.0030109882354736,
+          0.27212804555892944
+        ],
+        [
+          3.259413003921509,
+          -1.8755788803100586,
+          0.5815868377685547
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Greenish_Paint"
+      ]
+    },
+    {
+      "name": "Misc_CableBox_01_A_Large.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6094589829444885,
+        0.12743206322193146,
+        0.30945882201194763
+      ],
+      "bounds": [
+        [
+          0.5969659090042114,
+          -0.15863120555877686,
+          0.27212804555892944
+        ],
+        [
+          0.724398136138916,
+          0.45082780718803406,
+          0.5815868377685547
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Greenish_Paint"
+      ]
+    },
+    {
+      "name": "Misc_CableBox_01_A_Small",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.1809043437242508,
+        0.07857514917850494,
+        0.1809043288230896
+      ],
+      "bounds": [
+        [
+          6.815593242645264,
+          -2.004615545272827,
+          0.1377841830253601
+        ],
+        [
+          6.99649715423584,
+          -1.9260404109954834,
+          0.3186885118484497
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Greenish_Paint"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.13644276559352875,
+        0.025462379679083824,
+        0.15250197052955627
+      ],
+      "bounds": [
+        [
+          4.787269592285156,
+          -2.007857322692871,
+          2.5217785835266113
+        ],
+        [
+          4.812731742858887,
+          -1.8553553819656372,
+          2.6582212448120117
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.13644276559352875,
+        0.025462379679083824,
+        0.15250197052955627
+      ],
+      "bounds": [
+        [
+          7.687269687652588,
+          -2.007857322692871,
+          2.281778573989868
+        ],
+        [
+          7.712731838226318,
+          -1.8553553819656372,
+          2.4182212352752686
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2579019069671631,
+        0.025815801694989204,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          8.487092971801758,
+          -3.3101296424865723,
+          2.5451691150665283
+        ],
+        [
+          8.512908935546875,
+          -3.052227735519409,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2579019069671631,
+        0.025815801694989204,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          5.787092685699463,
+          -3.3101296424865723,
+          2.5451691150665283
+        ],
+        [
+          5.812908172607422,
+          -3.052227735519409,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.37790191173553467,
+        0.025815807282924652,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          3.1870923042297363,
+          -3.3101298809051514,
+          2.5451691150665283
+        ],
+        [
+          3.2129080295562744,
+          -2.932227849960327,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.37790191173553467,
+        0.025815807282924652,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          0.9870921969413757,
+          -3.3101298809051514,
+          2.5451691150665283
+        ],
+        [
+          1.0129079818725586,
+          -2.932227849960327,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.37790191173553467,
+        0.025815807282924652,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          -3.0129077434539795,
+          -3.3101298809051514,
+          2.5451691150665283
+        ],
+        [
+          -2.9870920181274414,
+          -2.932227849960327,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.37790191173553467,
+        0.025815807282924652,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          -5.012907981872559,
+          -2.8101298809051514,
+          2.5451691150665283
+        ],
+        [
+          -4.987092018127441,
+          -2.432227849960327,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2579019069671631,
+        0.025815801694989204,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          8.932228088378906,
+          -1.0129073858261108,
+          2.5451691150665283
+        ],
+        [
+          9.190130233764648,
+          -0.9870915412902832,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_02_Wide.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2579019069671631,
+        0.025815801694989204,
+        0.08967040479183197
+      ],
+      "bounds": [
+        [
+          8.932228088378906,
+          2.9870927333831787,
+          2.5451691150665283
+        ],
+        [
+          9.190130233764648,
+          3.012908697128296,
+          2.6348395347595215
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_03.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.30544060468673706,
+        0.04863207787275314,
+        0.23833175003528595
+      ],
+      "bounds": [
+        [
+          5.775561809539795,
+          -2.9538588523864746,
+          2.231262445449829
+        ],
+        [
+          5.824193954467773,
+          -2.6484181880950928,
+          2.4695942401885986
+        ]
+      ],
+      "materials": [
+        "M_PIPES_Rusty_2"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_03.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.30544060468673706,
+        0.04863207787275314,
+        0.23833175003528595
+      ],
+      "bounds": [
+        [
+          3.8755617141723633,
+          -2.9538588523864746,
+          2.231262445449829
+        ],
+        [
+          3.924193859100342,
+          -2.6484181880950928,
+          2.4695942401885986
+        ]
+      ],
+      "materials": [
+        "M_PIPES_Rusty_2"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_03.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.30544060468673706,
+        0.04863207787275314,
+        0.23833175003528595
+      ],
+      "bounds": [
+        [
+          -0.024438269436359406,
+          -2.9538588523864746,
+          2.231262445449829
+        ],
+        [
+          0.024193819612264633,
+          -2.6484181880950928,
+          2.4695942401885986
+        ]
+      ],
+      "materials": [
+        "M_PIPES_Rusty_2"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_03.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.30544060468673706,
+        0.04863207787275314,
+        0.23833175003528595
+      ],
+      "bounds": [
+        [
+          -2.0244383811950684,
+          -2.9538588523864746,
+          2.231262445449829
+        ],
+        [
+          -1.9758062362670898,
+          -2.6484181880950928,
+          2.4695942401885986
+        ]
+      ],
+      "materials": [
+        "M_PIPES_Rusty_2"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_03.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.30544060468673706,
+        0.04863207787275314,
+        0.23833175003528595
+      ],
+      "bounds": [
+        [
+          0.8755617737770081,
+          -2.9538588523864746,
+          2.231262445449829
+        ],
+        [
+          0.9241938591003418,
+          -2.6484181880950928,
+          2.4695942401885986
+        ]
+      ],
+      "materials": [
+        "M_PIPES_Rusty_2"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190504193306,
+        0.022461125627160072,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          8.485177993774414,
+          -3.313025712966919,
+          2.571206569671631
+        ],
+        [
+          8.514822006225586,
+          -3.2833950519561768,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190504193306,
+        0.022461125627160072,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          5.785178184509277,
+          -3.313025712966919,
+          2.571206569671631
+        ],
+        [
+          5.814821720123291,
+          -3.2833950519561768,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190504193306,
+        0.022461125627160072,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          3.18517804145813,
+          -2.964815139770508,
+          2.5713963508605957
+        ],
+        [
+          3.2148213386535645,
+          -2.9351844787597656,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          8.487088203430176,
+          -3.079350709915161,
+          2.571206569671631
+        ],
+        [
+          8.512911796569824,
+          -3.051692485809326,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          5.787087917327881,
+          -3.079350709915161,
+          2.571206569671631
+        ],
+        [
+          5.8129119873046875,
+          -3.051692485809326,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          3.187656879425049,
+          -3.312162399291992,
+          2.5713963508605957
+        ],
+        [
+          3.2131054401397705,
+          -3.2847836017608643,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190504193306,
+        0.022461125627160072,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          0.9851779341697693,
+          -2.964815139770508,
+          2.5713963508605957
+        ],
+        [
+          1.0148212909698486,
+          -2.9351844787597656,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          0.9876568913459778,
+          -3.312162399291992,
+          2.5713963508605957
+        ],
+        [
+          1.0131053924560547,
+          -3.2847836017608643,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190504193306,
+        0.022461125627160072,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          -3.014822006225586,
+          -2.964815139770508,
+          2.5713963508605957
+        ],
+        [
+          -2.9851787090301514,
+          -2.9351844787597656,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          -3.012343168258667,
+          -3.312162399291992,
+          2.5713963508605957
+        ],
+        [
+          -2.9868946075439453,
+          -3.2847836017608643,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190504193306,
+        0.022461125627160072,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          -5.014822006225586,
+          -2.4613351821899414,
+          2.5713963508605957
+        ],
+        [
+          -4.985178470611572,
+          -2.431704521179199,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.30847030878067017
+      ],
+      "bounds": [
+        [
+          -5.012342929840088,
+          -2.812162399291992,
+          2.5713963508605957
+        ],
+        [
+          -4.986894607543945,
+          -2.7847836017608643,
+          2.879866600036621
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          9.163394927978516,
+          -1.0148216485977173,
+          2.571206569671631
+        ],
+        [
+          9.193025588989258,
+          -0.9851781725883484,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          8.931692123413086,
+          -1.0129117965698242,
+          2.571206569671631
+        ],
+        [
+          8.9593505859375,
+          -0.9870879650115967,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          9.163394927978516,
+          2.9851784706115723,
+          2.571206569671631
+        ],
+        [
+          9.193025588989258,
+          3.014822006225586,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Pipe25_Holder_Base_1B.019",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.01945190690457821,
+        0.02246112748980522,
+        0.35847029089927673
+      ],
+      "bounds": [
+        [
+          8.931692123413086,
+          2.987088203430176,
+          2.571206569671631
+        ],
+        [
+          8.9593505859375,
+          3.0129122734069824,
+          2.9296770095825195
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          5.391484260559082,
+          -3.4573757648468018,
+          2.610452175140381
+        ],
+        [
+          5.408515930175781,
+          -3.4426259994506836,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          5.191484451293945,
+          -2.7973756790161133,
+          2.610452175140381
+        ],
+        [
+          5.2085161209106445,
+          -2.782625913619995,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          4.951484680175781,
+          -2.5520009994506836,
+          2.610452175140381
+        ],
+        [
+          4.9685163497924805,
+          -2.5372512340545654,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          5.071484088897705,
+          -3.447375774383545,
+          2.610452175140381
+        ],
+        [
+          5.088515758514404,
+          -3.4326260089874268,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          2.4114840030670166,
+          -3.4573757648468018,
+          2.610452175140381
+        ],
+        [
+          2.428515672683716,
+          -3.4426259994506836,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          5.191483974456787,
+          -3.577375888824463,
+          2.610452175140381
+        ],
+        [
+          5.208515644073486,
+          -3.5626261234283447,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          5.631484031677246,
+          -1.757375717163086,
+          2.610452175140381
+        ],
+        [
+          5.648515701293945,
+          -1.7426259517669678,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          7.561484336853027,
+          -1.757375717163086,
+          2.610452175140381
+        ],
+        [
+          7.578516006469727,
+          -1.7426259517669678,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          8.161498069763184,
+          0.06148466840386391,
+          2.610452175140381
+        ],
+        [
+          8.176248550415039,
+          0.07851611077785492,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          7.681484222412109,
+          -1.6373757123947144,
+          2.610452175140381
+        ],
+        [
+          7.698515892028809,
+          -1.6226259469985962,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          7.801484107971191,
+          -1.757375717163086,
+          2.610452175140381
+        ],
+        [
+          7.818515777587891,
+          -1.7426259517669678,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          5.191483974456787,
+          -3.3373758792877197,
+          2.610452175140381
+        ],
+        [
+          5.208515644073486,
+          -3.3226261138916016,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          8.161498069763184,
+          3.591484546661377,
+          2.610452175140381
+        ],
+        [
+          8.176248550415039,
+          3.608516216278076,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          -1.0085159540176392,
+          -3.4573757648468018,
+          2.610452175140381
+        ],
+        [
+          -0.991484522819519,
+          -3.4426259994506836,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Connector_03.016",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.017031440511345863,
+        0.014749660156667233,
+        0.2581879794597626
+      ],
+      "bounds": [
+        [
+          -5.00851583480835,
+          -3.4573757648468018,
+          2.610452175140381
+        ],
+        [
+          -4.99148416519165,
+          -3.4426259994506836,
+          2.868640184402466
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalDarkBlue"
+      ]
+    },
+    {
+      "name": "PipeLarge_Hollow_Straight_L05.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.5008554458618164,
+        0.4636351466178894,
+        0.1600000113248825
+      ],
+      "bounds": [
+        [
+          1.2589378356933594,
+          -2.922110080718994,
+          -0.0005683526396751404
+        ],
+        [
+          3.759793281555176,
+          -2.45847487449646,
+          0.15943166613578796
+        ]
+      ],
+      "materials": [
+        "M_PIPES_Rusty"
+      ]
+    },
+    {
+      "name": "PipeLarge_Stepped_Bent_01.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        9.886709213256836,
+        2.275879383087158,
+        0.5009711980819702
+      ],
+      "bounds": [
+        [
+          -3.4933547973632812,
+          -3.885371685028076,
+          2.279029369354248
+        ],
+        [
+          6.3933539390563965,
+          -1.609492301940918,
+          2.7800004482269287
+        ]
+      ],
+      "materials": [
+        "M_PIPES_Rusty",
+        "M_PIPES_Rusty_2"
+      ]
+    },
+    {
+      "name": "Pipes_01",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        15.264117240905762,
+        7.559998512268066,
+        2.683582305908203
+      ],
+      "bounds": [
+        [
+          -7.020606517791748,
+          -3.8899996280670166,
+          -0.04999971389770508
+        ],
+        [
+          8.243510246276855,
+          3.669999122619629,
+          2.633582592010498
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalGlossy1",
+        "M_PIPES_Thing",
+        "M_GENERIC_MetalDarkBlue",
+        "M_GENERIC_Greenish_Paint",
+        "M_GENERIC_MetalGlossy2"
+      ]
+    },
+    {
+      "name": "PipeSmall_Bent_02.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        16.365867614746094,
+        7.075122356414795,
+        2.6942389011383057
+      ],
+      "bounds": [
+        [
+          -7.200000762939453,
+          -3.2951226234436035,
+          -0.05000042915344238
+        ],
+        [
+          9.165865898132324,
+          3.7799997329711914,
+          2.6442384719848633
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownish",
+        "M_PIPES_Thing",
+        "M_GENERIC_Black",
+        "M_GENERIC_MetalBrownishDark"
+      ]
+    },
+    {
+      "name": "Grid.019",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3150426745414734,
+        0.3168646991252899,
+        0.14711488783359528
+      ],
+      "bounds": [
+        [
+          4.2207136154174805,
+          -0.4936011731624603,
+          0.7780566811561584
+        ],
+        [
+          4.622745513916016,
+          -0.09270048886537552,
+          0.9251715540885925
+        ]
+      ],
+      "materials": [
+        "M_PROPS_Cardboard"
+      ]
+    },
+    {
+      "name": "Grid.038",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3181356191635132,
+        0.32017600536346436,
+        0.037984397262334824
+      ],
+      "bounds": [
+        [
+          4.2111430168151855,
+          -0.493777871131897,
+          0.7430124282836914
+        ],
+        [
+          4.617311477661133,
+          -0.08887619525194168,
+          0.7809968590736389
+        ]
+      ],
+      "materials": [
+        "M_PROPS_Cardboard"
+      ]
+    },
+    {
+      "name": "Misc_CableBox_01_B_Large.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.30945882201194763,
+        0.12766365706920624,
+        0.30945882201194763
+      ],
+      "bounds": [
+        [
+          4.162869930267334,
+          -2.0086655616760254,
+          0.6419273018836975
+        ],
+        [
+          4.4723286628723145,
+          -1.8810018301010132,
+          0.9513861536979675
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Greenish_Paint",
+        "M_SPECIAL_ScreenAtlas_02"
+      ]
+    },
+    {
+      "name": "Beverage_Can_01.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.06929999589920044,
+        0.06929999589920044,
+        0.1348443180322647
+      ],
+      "bounds": [
+        [
+          2.421452522277832,
+          1.9393006563186646,
+          0.7438786029815674
+        ],
+        [
+          2.519439220428467,
+          2.037287473678589,
+          0.8787229061126709
+        ]
+      ],
+      "materials": [
+        "M_PROPS_Can_02",
+        "M_Metal.004"
+      ]
+    },
+    {
+      "name": "Beverage_Can_02.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.08103761076927185,
+        0.06062982603907585,
+        0.1674930453300476
+      ],
+      "bounds": [
+        [
+          4.595492839813232,
+          -0.13168396055698395,
+          -0.05019482970237732
+        ],
+        [
+          4.707070350646973,
+          0.04821658879518509,
+          0.010435003787279129
+        ]
+      ],
+      "materials": [
+        "M_Metal.001",
+        "M_PROPS_Can_01"
+      ]
+    },
+    {
+      "name": "Plane.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.23538242280483246,
+        0.23538242280483246,
+        0.13664086163043976
+      ],
+      "bounds": [
+        [
+          2.9018945693969727,
+          0.024481408298015594,
+          0.7400655746459961
+        ],
+        [
+          3.137277126312256,
+          0.25986382365226746,
+          0.8767064213752747
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Thing"
+      ]
+    },
+    {
+      "name": "Suzanne.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.1868503987789154,
+        0.17203472554683685,
+        0.06693989038467407
+      ],
+      "bounds": [
+        [
+          2.9222567081451416,
+          0.04970293492078781,
+          0.8395131826400757
+        ],
+        [
+          3.12258243560791,
+          0.23647749423980713,
+          0.906453013420105
+        ]
+      ],
+      "materials": [
+        "M_PROPS_BLNDR_Orange",
+        "M_EMIT_Light_Blndr_SUZEYE",
+        "M_PROPS_BLNDR_Blue"
+      ]
+    },
+    {
+      "name": "PinPad",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.13772806525230408,
+        0.01894921064376831,
+        0.1690966933965683
+      ],
+      "bounds": [
+        [
+          5.091037750244141,
+          -2.213766574859619,
+          1.214425802230835
+        ],
+        [
+          5.228765487670898,
+          -2.194817304611206,
+          1.383522391319275
+        ]
+      ],
+      "materials": [
+        "M_PROPS_Furn_2",
+        "M_EMIT_Light_YellowDuckPC",
+        "M_GENERIC_MediumBlue",
+        "M_GENERIC_Cable_2",
+        "M_CustomFont",
+        "M_SPECIAL_ScreenAtlas_02"
+      ]
+    },
+    {
+      "name": "Cable_Thin.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6036399602890015,
+        2.0552942752838135,
+        0.7930562496185303
+      ],
+      "bounds": [
+        [
+          3.73382568359375,
+          -2.0000414848327637,
+          -0.017328262329101562
+        ],
+        [
+          4.337465763092041,
+          0.055252790451049805,
+          0.7757279872894287
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.17675518989563,
+        1.8771815299987793,
+        0.33286237716674805
+      ],
+      "bounds": [
+        [
+          0.6187156438827515,
+          -1.9793193340301514,
+          0.14200055599212646
+        ],
+        [
+          2.795470714569092,
+          -0.10213780403137207,
+          0.4748629331588745
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Cable_1",
+        "M_GENERIC_GrayBlue"
+      ]
+    },
+    {
+      "name": "Cable_Thin.034",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.28171205520629883,
+        0.06397616863250732,
+        0.5965079069137573
+      ],
+      "bounds": [
+        [
+          4.420041084289551,
+          -1.9903587102890015,
+          0.7757620811462402
+        ],
+        [
+          4.701752662658691,
+          -1.9263825416564941,
+          1.3722699880599976
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.035",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9987032413482666,
+        0.07888662815093994,
+        0.4825655221939087
+      ],
+      "bounds": [
+        [
+          3.2269229888916016,
+          -2.0107765197753906,
+          0.33469724655151367
+        ],
+        [
+          4.225625991821289,
+          -1.9318900108337402,
+          0.8172627687454224
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Cable_1",
+        "M_GENERIC_GrayBlue"
+      ]
+    },
+    {
+      "name": "Cable_Thin.043",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.13493001461029053,
+        3.233609914779663,
+        2.8059284687042236
+      ],
+      "bounds": [
+        [
+          0.6176514625549316,
+          0.35073113441467285,
+          -0.018764495849609375
+        ],
+        [
+          0.7525814771652222,
+          3.584341049194336,
+          2.7871639728546143
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_Cable_1",
+        "M_GENERIC_GrayBlue"
+      ]
+    },
+    {
+      "name": "Cable_Thin.053",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.36358749866485596,
+        0.5202460289001465,
+        0.017858028411865234
+      ],
+      "bounds": [
+        [
+          2.1013095378875732,
+          1.7060985565185547,
+          0.7455606460571289
+        ],
+        [
+          2.4648969173431396,
+          2.226344585418701,
+          0.7634186744689941
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.054",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0081617832183838,
+        0.16732394695281982,
+        1.1714484691619873
+      ],
+      "bounds": [
+        [
+          2.041313409805298,
+          -1.9953376054763794,
+          0.5573558807373047
+        ],
+        [
+          3.0494751930236816,
+          -1.8280136585235596,
+          1.728804349899292
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.055",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7512890100479126,
+        0.07405388355255127,
+        1.9289898872375488
+      ],
+      "bounds": [
+        [
+          3.083712100982666,
+          -1.9893139600753784,
+          0.5239111185073853
+        ],
+        [
+          3.835001230239868,
+          -1.9152600765228271,
+          2.4529011249542236
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.056",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.21062839031219482,
+        0.028560876846313477,
+        1.0976319313049316
+      ],
+      "bounds": [
+        [
+          3.1013994216918945,
+          -1.9810019731521606,
+          0.5317261219024658
+        ],
+        [
+          3.312027931213379,
+          -1.9524410963058472,
+          1.6293580532073975
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.057",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.6422290802001953,
+        0.8030177354812622,
+        1.9764652252197266
+      ],
+      "bounds": [
+        [
+          1.380817174911499,
+          -1.965396523475647,
+          0.57039475440979
+        ],
+        [
+          3.0230464935302734,
+          -1.1623787879943848,
+          2.5468599796295166
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.058",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.14738810062408447,
+        0.5469553470611572,
+        1.3697705268859863
+      ],
+      "bounds": [
+        [
+          0.628786563873291,
+          -0.5286135673522949,
+          0.5145076513290405
+        ],
+        [
+          0.7761746644973755,
+          0.018341779708862305,
+          1.8842781782150269
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.059",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.4936881065368652,
+        0.8760861158370972,
+        0.7059420347213745
+      ],
+      "bounds": [
+        [
+          1.3341480493545532,
+          -1.9844638109207153,
+          0.5155185461044312
+        ],
+        [
+          2.827836036682129,
+          -1.1083776950836182,
+          1.2214605808258057
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.060",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.07607996463775635,
+        0.48902463912963867,
+        1.9763152599334717
+      ],
+      "bounds": [
+        [
+          0.6357401609420776,
+          -0.48090481758117676,
+          0.5066337585449219
+        ],
+        [
+          0.711820125579834,
+          0.008119821548461914,
+          2.4829490184783936
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.061",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.05784714221954346,
+        1.620110273361206,
+        1.4076634645462036
+      ],
+      "bounds": [
+        [
+          0.6027778387069702,
+          0.12355589866638184,
+          0.5333954095840454
+        ],
+        [
+          0.6606249809265137,
+          1.743666172027588,
+          1.941058874130249
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.062",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.06713902950286865,
+        1.4738540649414062,
+        2.0117809772491455
+      ],
+      "bounds": [
+        [
+          0.6000275611877441,
+          0.2845730781555176,
+          0.49480152130126953
+        ],
+        [
+          0.6671665906906128,
+          1.7584271430969238,
+          2.506582498550415
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.063",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1671597957611084,
+        0.6517105102539062,
+        0.1821427345275879
+      ],
+      "bounds": [
+        [
+          6.893411636352539,
+          -1.9943320751190186,
+          -0.002012491226196289
+        ],
+        [
+          8.060571670532227,
+          -1.3426215648651123,
+          0.1801302433013916
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.064",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7854394912719727,
+        0.18602633476257324,
+        0.18666887283325195
+      ],
+      "bounds": [
+        [
+          6.889979362487793,
+          -1.9875566959381104,
+          -0.004110097885131836
+        ],
+        [
+          7.675418853759766,
+          -1.801530361175537,
+          0.18255877494812012
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.065",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2564208507537842,
+        0.10909771919250488,
+        2.7205471992492676
+      ],
+      "bounds": [
+        [
+          6.984818458557129,
+          -1.992745041847229,
+          0.20471882820129395
+        ],
+        [
+          8.241239547729492,
+          -1.8836473226547241,
+          2.9252660274505615
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.066",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.243661880493164,
+        5.659094333648682,
+        0.28820836544036865
+      ],
+      "bounds": [
+        [
+          0.6342899799346924,
+          -1.9864591360092163,
+          -0.05142009258270264
+        ],
+        [
+          6.877951622009277,
+          3.672635078430176,
+          0.23678827285766602
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.067",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.375514030456543,
+        1.7029500007629395,
+        1.014901876449585
+      ],
+      "bounds": [
+        [
+          3.8867146968841553,
+          -2.0166335105895996,
+          1.9247026443481445
+        ],
+        [
+          8.262228965759277,
+          -0.31368350982666016,
+          2.9396045207977295
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.068",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0402092933654785,
+        0.6665859222412109,
+        0.6634294986724854
+      ],
+      "bounds": [
+        [
+          3.0370609760284424,
+          -0.7455697059631348,
+          2.091670036315918
+        ],
+        [
+          6.14945650100708,
+          0.5436526536941528,
+          2.7550995349884033
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.069",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.760317325592041,
+        3.1826412677764893,
+        2.9678614139556885
+      ],
+      "bounds": [
+        [
+          2.5255415439605713,
+          -5.602644920349121,
+          0.027643680572509766
+        ],
+        [
+          6.738210201263428,
+          -1.426017165184021,
+          2.9955050945281982
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.070",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.217982053756714,
+        3.179992914199829,
+        3.0000686645507812
+      ],
+      "bounds": [
+        [
+          2.5917444229125977,
+          -5.3831353187561035,
+          -0.0009171962738037109
+        ],
+        [
+          6.442782402038574,
+          -1.6141955852508545,
+          2.9991514682769775
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.071",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.1238925457000732,
+        3.4942944049835205,
+        0.8093351125717163
+      ],
+      "bounds": [
+        [
+          2.191133737564087,
+          -1.9705698490142822,
+          -0.036440253257751465
+        ],
+        [
+          4.31502628326416,
+          1.5237245559692383,
+          0.7728948593139648
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.072",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        11.779183387756348,
+        17.662736892700195,
+        1.2424527406692505
+      ],
+      "bounds": [
+        [
+          -7.349510192871094,
+          -12.080406188964844,
+          1.4544676542282104
+        ],
+        [
+          13.682182312011719,
+          8.44918441772461,
+          2.696920394897461
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.073",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        9.658952713012695,
+        14.1456937789917,
+        0.7001992464065552
+      ],
+      "bounds": [
+        [
+          -4.856928825378418,
+          -9.379744529724121,
+          1.9355757236480713
+        ],
+        [
+          12.136272430419922,
+          7.230557918548584,
+          2.635774850845337
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cable_Thin.074",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5846415758132935,
+        0.509376049041748,
+        0.013512134552001953
+      ],
+      "bounds": [
+        [
+          3.2394051551818848,
+          -0.10554051399230957,
+          0.7411947250366211
+        ],
+        [
+          3.8240468502044678,
+          0.4038355350494385,
+          0.754706859588623
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "VOLUMECUBE",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        19.430030822753906,
+        8.963629722595215,
+        3.8552799224853516
+      ],
+      "bounds": [
+        [
+          -8.009023666381836,
+          -4.806282043457031,
+          -0.4363287687301636
+        ],
+        [
+          11.42100715637207,
+          4.157347679138184,
+          3.4189512729644775
+        ]
+      ],
+      "materials": [
+        "Material"
+      ]
+    },
+    {
+      "name": "PipeSmall_Bent_02.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.415493488311768,
+        1.424769639968872,
+        0.7845036387443542
+      ],
+      "bounds": [
+        [
+          1.7268891334533691,
+          -3.28238582611084,
+          1.8478810787200928
+        ],
+        [
+          8.142382621765137,
+          -1.8576160669326782,
+          2.632384777069092
+        ]
+      ],
+      "materials": [
+        "M_GENERIC_MetalBrownish",
+        "M_PIPES_Thing",
+        "M_GENERIC_Black",
+        "M_GENERIC_MetalBrownishDark",
+        "M_TRANSP_PipeThing"
+      ]
+    },
+    {
+      "name": "IcePatchSmall_01_Bumpy.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.298942804336548,
+        1.308592438697815,
+        0.11641798168420792
+      ],
+      "bounds": [
+        [
+          4.094834327697754,
+          -4.05984354019165,
+          -0.016165949404239655
+        ],
+        [
+          6.478396415710449,
+          -2.5961153507232666,
+          0.10025203227996826
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IcePatchSmall_02_Bumpy.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.708374261856079,
+        1.8142726421356201,
+        0.18896281719207764
+      ],
+      "bounds": [
+        [
+          0.5693002343177795,
+          -4.811830043792725,
+          -0.020759664475917816
+        ],
+        [
+          2.8705592155456543,
+          -2.457287073135376,
+          0.16820316016674042
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IcePatchSmall_04_Bumpy.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.7642306089401245,
+        1.1202539205551147,
+        0.15915918350219727
+      ],
+      "bounds": [
+        [
+          -0.06390827894210815,
+          -3.2351441383361816,
+          -0.024959973990917206
+        ],
+        [
+          2.0221469402313232,
+          -1.2936168909072876,
+          0.13419921696186066
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IcePatchSmall_04_Bumpy.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5794818997383118,
+        0.8810343742370605,
+        0.21742033958435059
+      ],
+      "bounds": [
+        [
+          5.5972490310668945,
+          -2.245537757873535,
+          -0.15679122507572174
+        ],
+        [
+          6.64969539642334,
+          -1.2529478073120117,
+          0.060629118233919144
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesLarge_01_B.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.673622488975525,
+        1.2937883138656616,
+        2.7426342964172363
+      ],
+      "bounds": [
+        [
+          0.3911748230457306,
+          -4.185001850128174,
+          -0.08748239278793335
+        ],
+        [
+          2.0647976398468018,
+          -2.8912129402160645,
+          2.6551520824432373
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesLarge_02.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.556254506111145,
+        0.1698193997144699,
+        1.0411338806152344
+      ],
+      "bounds": [
+        [
+          4.012265205383301,
+          -3.8333468437194824,
+          1.5876773595809937
+        ],
+        [
+          4.568519592285156,
+          -3.663527250289917,
+          2.6288111209869385
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_01.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6739981770515442,
+        0.12831728160381317,
+        0.8452246189117432
+      ],
+      "bounds": [
+        [
+          2.7227582931518555,
+          -3.5145657062530518,
+          1.726770043373108
+        ],
+        [
+          3.396756410598755,
+          -3.3862483501434326,
+          2.5719947814941406
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_02.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.47268256545066833,
+        0.11209425330162048,
+        1.0358459949493408
+      ],
+      "bounds": [
+        [
+          5.903820037841797,
+          -3.0453202724456787,
+          1.2424031496047974
+        ],
+        [
+          6.400084018707275,
+          -2.8711843490600586,
+          2.284745454788208
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_03.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1164743900299072,
+        0.11731711030006409,
+        1.002762794494629
+      ],
+      "bounds": [
+        [
+          4.143335819244385,
+          -2.869957447052002,
+          1.3753077983856201
+        ],
+        [
+          5.259810447692871,
+          -2.75264048576355,
+          2.378070592880249
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_Cables_01.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5673105120658875,
+        0.10438867658376694,
+        0.45641028881073
+      ],
+      "bounds": [
+        [
+          4.225208282470703,
+          -3.8009748458862305,
+          1.8460677862167358
+        ],
+        [
+          4.795086860656738,
+          -3.6815834045410156,
+          2.302478075027466
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_Cables_02.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4557514786720276,
+        0.21609070897102356,
+        0.8511984348297119
+      ],
+      "bounds": [
+        [
+          6.026144504547119,
+          -1.9864238500595093,
+          1.8088711500167847
+        ],
+        [
+          6.528717041015625,
+          -1.62436044216156,
+          2.660069465637207
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_Cables_03.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3019036650657654,
+        0.07936206459999084,
+        0.42592358589172363
+      ],
+      "bounds": [
+        [
+          4.9962158203125,
+          -2.8533830642700195,
+          1.733608365058899
+        ],
+        [
+          5.307923793792725,
+          -2.685469150543213,
+          2.159531831741333
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_Pipes_01.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.13372662663459778,
+        0.16777034103870392,
+        0.5640774369239807
+      ],
+      "bounds": [
+        [
+          1.1235777139663696,
+          -2.883437156677246,
+          1.7971491813659668
+        ],
+        [
+          1.2573044300079346,
+          -2.7156670093536377,
+          2.3612265586853027
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    },
+    {
+      "name": "IciclesSmall_Pipes_01.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.13372662663459778,
+        0.16777034103870392,
+        0.5640774369239807
+      ],
+      "bounds": [
+        [
+          6.137310981750488,
+          -3.004115104675293,
+          1.8400123119354248
+        ],
+        [
+          6.301242351531982,
+          -2.813448667526245,
+          2.4040896892547607
+        ]
+      ],
+      "materials": [
+        "M_TRANSP_Ice"
+      ]
+    }
+  ]
+}

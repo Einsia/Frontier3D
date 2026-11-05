@@ -1,0 +1,438 @@
+{
+  "version": "l2-v2.2.0",
+  "profile": "L2",
+  "mode": "text",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "main.png",
+    "alternate.png"
+  ],
+  "scene": "scene.blend",
+  "critical_constraints": [
+    "ground_geometry",
+    "building_geometry",
+    "tower_crane_geometry",
+    "mixer_truck_geometry",
+    "dump_truck_geometry",
+    "material_storage_geometry",
+    "road_geometry",
+    "gate_geometry",
+    "fence_geometry",
+    "work_zone_geometry",
+    "scene_extent",
+    "main_camera",
+    "alternate_camera",
+    "clear_entrance_route",
+    "alternate_azimuth",
+    "supported_equipment",
+    "render_main",
+    "render_alternate",
+    "main_native_size",
+    "alternate_native_size",
+    "editable_scene",
+    "scene_units",
+    "no_billboards",
+    "delivery_main",
+    "delivery_alternate"
+  ],
+  "seeds": [
+    20260914,
+    20260915,
+    20260916
+  ],
+  "tolerances": {
+    "site_extent_m": 4.0,
+    "ground_contact_m": 0.25,
+    "road_snap_m": 3.5,
+    "road_width_m": 0.25
+  },
+  "render_views": [],
+  "checks": {
+    "content": [
+      {
+        "id": "ground_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "ground",
+          "min_dimensions": [
+            30,
+            20,
+            0
+          ],
+          "max_dimensions": [
+            50,
+            40,
+            2
+          ],
+          "min_volume": 0
+        }
+      },
+      {
+        "id": "building_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "building",
+          "min_dimensions": [
+            2,
+            2,
+            1
+          ],
+          "max_dimensions": [
+            25,
+            25,
+            40
+          ],
+          "min_volume": 0.001
+        }
+      },
+      {
+        "id": "tower_crane_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "tower_crane",
+          "min_dimensions": [
+            1,
+            1,
+            5
+          ],
+          "max_dimensions": [
+            35,
+            35,
+            60
+          ],
+          "min_volume": 0.001
+        }
+      },
+      {
+        "id": "mixer_truck_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "mixer_truck",
+          "min_dimensions": [
+            1,
+            2,
+            1
+          ],
+          "max_dimensions": [
+            5,
+            12,
+            6
+          ],
+          "min_volume": 0.001
+        }
+      },
+      {
+        "id": "dump_truck_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "dump_truck",
+          "min_dimensions": [
+            1,
+            2,
+            1
+          ],
+          "max_dimensions": [
+            5,
+            12,
+            6
+          ],
+          "min_volume": 0.001
+        }
+      },
+      {
+        "id": "material_storage_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "material_storage",
+          "min_dimensions": [
+            0.2,
+            0.2,
+            0.1
+          ],
+          "max_dimensions": [
+            20,
+            20,
+            8
+          ],
+          "min_volume": 0.001
+        }
+      },
+      {
+        "id": "road_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "road",
+          "min_dimensions": [
+            0.1,
+            0.1,
+            0
+          ],
+          "max_dimensions": [
+            60,
+            60,
+            1
+          ],
+          "min_volume": 0
+        }
+      },
+      {
+        "id": "gate_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "gate",
+          "min_dimensions": [
+            0.1,
+            0.1,
+            1
+          ],
+          "max_dimensions": [
+            12,
+            12,
+            8
+          ],
+          "min_volume": 0.001
+        }
+      },
+      {
+        "id": "fence_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "fence",
+          "min_dimensions": [
+            0.01,
+            0.01,
+            0.5
+          ],
+          "max_dimensions": [
+            55,
+            45,
+            8
+          ],
+          "min_volume": 0.001
+        }
+      },
+      {
+        "id": "work_zone_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "work_zone",
+          "min_dimensions": [
+            1,
+            1,
+            0
+          ],
+          "max_dimensions": [
+            30,
+            30,
+            2
+          ],
+          "min_volume": 0
+        }
+      },
+      {
+        "id": "scene_extent",
+        "metric": "l2_extent",
+        "group": "site_scale",
+        "params": {
+          "role": "ground",
+          "expected": [
+            40,
+            30
+          ],
+          "tolerance": "site_extent_m"
+        }
+      }
+    ],
+    "spatial": [
+      {
+        "id": "main_camera",
+        "metric": "camera_config",
+        "group": "cameras",
+        "importance": "high",
+        "params": {
+          "camera": "Main Camera",
+          "projection": "ORTHO",
+          "resolution": [
+            1280,
+            960
+          ],
+          "elevation": [
+            45.0,
+            75.0
+          ]
+        }
+      },
+      {
+        "id": "alternate_camera",
+        "metric": "camera_config",
+        "group": "cameras",
+        "importance": "high",
+        "params": {
+          "camera": "Alternate Camera",
+          "projection": "ORTHO",
+          "resolution": [
+            1280,
+            960
+          ]
+        }
+      },
+      {
+        "id": "clear_entrance_route",
+        "metric": "l2_route",
+        "group": "circulation",
+        "params": {
+          "road_role": "road",
+          "start_role": "gate",
+          "goal_role": "work_zone",
+          "min_width": 4.0,
+          "cell_size": 0.1,
+          "max_snap": 3.0,
+          "clearance_height": 4.0
+        }
+      },
+      {
+        "id": "alternate_azimuth",
+        "metric": "l2_camera_separation",
+        "group": "cameras",
+        "params": {
+          "main": "Main Camera",
+          "alternate": "Alternate Camera",
+          "min_azimuth_degrees": 10
+        },
+        "importance": "high"
+      }
+    ],
+    "physics": [
+      {
+        "id": "collision_budget",
+        "metric": "collision_free",
+        "group": "collision",
+        "params": {
+          "max_pairs": 300
+        }
+      },
+      {
+        "id": "supported_equipment",
+        "metric": "l2_support",
+        "group": "support",
+        "params": {
+          "roles": [
+            "building",
+            "tower_crane",
+            "mixer_truck",
+            "dump_truck",
+            "material_storage"
+          ],
+          "max_gap": 0.15,
+          "max_penetration": 0.15
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "render_main",
+        "metric": "image_validity",
+        "group": "renders",
+        "params": {
+          "path": "/artifacts/main.png/path"
+        }
+      },
+      {
+        "id": "render_alternate",
+        "metric": "image_validity",
+        "group": "renders",
+        "params": {
+          "path": "/artifacts/alternate.png/path"
+        }
+      },
+      {
+        "id": "main_native_size",
+        "metric": "equals",
+        "group": "render_dimensions",
+        "params": {
+          "path": "/artifacts/main.png/size",
+          "expected": [
+            1280,
+            960
+          ]
+        }
+      },
+      {
+        "id": "alternate_native_size",
+        "metric": "equals",
+        "group": "render_dimensions",
+        "params": {
+          "path": "/artifacts/alternate.png/size",
+          "expected": [
+            1280,
+            960
+          ]
+        }
+      }
+    ],
+    "structure": [
+      {
+        "id": "editable_scene",
+        "metric": "equals",
+        "group": "editable",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        }
+      },
+      {
+        "id": "scene_units",
+        "metric": "equals",
+        "group": "units",
+        "params": {
+          "path": "/scene/unit_system",
+          "expected": "METRIC"
+        }
+      },
+      {
+        "id": "no_billboards",
+        "metric": "billboard_free",
+        "group": "anti_cheating",
+        "params": {
+          "max_suspects": 0
+        }
+      }
+    ],
+    "robust": [
+      {
+        "id": "seed_reproducibility",
+        "metric": "seed_success",
+        "group": "reruns"
+      },
+      {
+        "id": "delivery_main",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/main.png/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "delivery_alternate",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/alternate.png/loadable",
+          "expected": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1349 @@
+{
+  "key": "city-kit-suburban",
+  "path": "assets/expansion/kenney/city-kit-suburban/review/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      40.0,
+      -45.0,
+      37.0
+    ],
+    "rotation_euler": [
+      1.0319024324417114,
+      8.757344005516643e-08,
+      0.7266425490379333
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "building-type-a",
+      "vertices": 1870,
+      "polygons": 1174,
+      "sha256": "ffd2f16d6390a704b2e9c7f6cafbc7abf48348282bee215562c8642c78ff6cec"
+    },
+    {
+      "name": "building-type-b",
+      "vertices": 2798,
+      "polygons": 1748,
+      "sha256": "73d42185fb785a1d019eb26a93c49de17d2cd0b4ac7598cc29b4975df27b3e71"
+    },
+    {
+      "name": "building-type-g",
+      "vertices": 1779,
+      "polygons": 1067,
+      "sha256": "ac82808145b89541fd7340d1ee173b54337cfa0c0cf9462427963bf59b31f4e2"
+    },
+    {
+      "name": "building-type-j",
+      "vertices": 1882,
+      "polygons": 1210,
+      "sha256": "189bbe2a0bdc5c250ecf6e55276d8d022cff41b83d1a5d11d63bf44299e3b5f2"
+    },
+    {
+      "name": "building-type-o",
+      "vertices": 2178,
+      "polygons": 1326,
+      "sha256": "7bc475c1af93c56c11c479e53da140e9d32b4b737fdddea958b63b23ea06b0b8"
+    },
+    {
+      "name": "building-type-u",
+      "vertices": 2250,
+      "polygons": 1332,
+      "sha256": "563f093950108d9ab4e5fab668354e58ef024d27f5aa4b848dd1abb63a51706f"
+    },
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "efe2b0e4c873bfa0c3908ea4622f29518fc5a170d3112f786281fc0d78ddec1b"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "27c24d03d9ee50df80ea2173b5adc2daf4027690bf1f7027e566ed1742acc848"
+    },
+    {
+      "name": "Cube.002",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "3cffafc327eefa00d9efd79fa57d2072c3ed0cd9ae755d2e7037ed2302118ce1"
+    },
+    {
+      "name": "Cube.003",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "3cffafc327eefa00d9efd79fa57d2072c3ed0cd9ae755d2e7037ed2302118ce1"
+    },
+    {
+      "name": "Cube.004",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.005",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.006",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.007",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.008",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.009",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.010",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.011",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "7186ace2a47046e7346888a006579f2173d0666a081c0a97f7e71dd0f67875f4"
+    },
+    {
+      "name": "Cube.012",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "e40161230bffc76e5a14c80427f19d7030d453893dede2c3ca5a1d77c70de0b8"
+    },
+    {
+      "name": "Cube.013",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "e40161230bffc76e5a14c80427f19d7030d453893dede2c3ca5a1d77c70de0b8"
+    },
+    {
+      "name": "Cube.014",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "e40161230bffc76e5a14c80427f19d7030d453893dede2c3ca5a1d77c70de0b8"
+    },
+    {
+      "name": "Cube.015",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "e40161230bffc76e5a14c80427f19d7030d453893dede2c3ca5a1d77c70de0b8"
+    },
+    {
+      "name": "Cube.016",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "e40161230bffc76e5a14c80427f19d7030d453893dede2c3ca5a1d77c70de0b8"
+    },
+    {
+      "name": "Cube.017",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "e40161230bffc76e5a14c80427f19d7030d453893dede2c3ca5a1d77c70de0b8"
+    },
+    {
+      "name": "planter",
+      "vertices": 360,
+      "polygons": 204,
+      "sha256": "632fb3ace9fa2d376292281bbd448866a5954aca2494548edea9432b955b7774"
+    },
+    {
+      "name": "planter.001",
+      "vertices": 360,
+      "polygons": 204,
+      "sha256": "632fb3ace9fa2d376292281bbd448866a5954aca2494548edea9432b955b7774"
+    },
+    {
+      "name": "planter.002",
+      "vertices": 360,
+      "polygons": 204,
+      "sha256": "632fb3ace9fa2d376292281bbd448866a5954aca2494548edea9432b955b7774"
+    },
+    {
+      "name": "planter.003",
+      "vertices": 360,
+      "polygons": 204,
+      "sha256": "632fb3ace9fa2d376292281bbd448866a5954aca2494548edea9432b955b7774"
+    },
+    {
+      "name": "planter.004",
+      "vertices": 360,
+      "polygons": 204,
+      "sha256": "632fb3ace9fa2d376292281bbd448866a5954aca2494548edea9432b955b7774"
+    },
+    {
+      "name": "planter.005",
+      "vertices": 360,
+      "polygons": 204,
+      "sha256": "632fb3ace9fa2d376292281bbd448866a5954aca2494548edea9432b955b7774"
+    },
+    {
+      "name": "tree-small",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.001",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.002",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.003",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.004",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.005",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.006",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.007",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.008",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.009",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.010",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    },
+    {
+      "name": "tree-small.011",
+      "vertices": 80,
+      "polygons": 42,
+      "sha256": "520dfcfb8bd39adb18966eaf56b6ed20f73a030986b30686d85df36152ac22ac"
+    }
+  ],
+  "images": [
+    {
+      "name": "colormap",
+      "path": "//..\\original\\Models\\GLB format\\Textures\\colormap.png",
+      "packed": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Neighbourhood site",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        32.0,
+        34.0,
+        0.5
+      ],
+      "bounds": [
+        [
+          -16.0,
+          -17.0,
+          -0.5
+        ],
+        [
+          16.0,
+          17.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "Original site grass"
+      ]
+    },
+    {
+      "name": "Two way street",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.0,
+        34.0,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -3.0,
+          -17.0,
+          -0.029999999329447746
+        ],
+        [
+          3.0,
+          17.0,
+          0.04999999701976776
+        ]
+      ],
+      "materials": [
+        "Original road surface"
+      ]
+    },
+    {
+      "name": "Continuous sidewalk",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2999999523162842,
+        34.0,
+        0.18000000715255737
+      ],
+      "bounds": [
+        [
+          -4.300000190734863,
+          -17.0,
+          0.0299999937415123
+        ],
+        [
+          -3.0,
+          17.0,
+          0.21000000834465027
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "Continuous sidewalk.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2999999523162842,
+        34.0,
+        0.18000000715255737
+      ],
+      "bounds": [
+        [
+          3.0,
+          -17.0,
+          0.0299999937415123
+        ],
+        [
+          4.300000190734863,
+          17.0,
+          0.21000000834465027
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "Lane dash",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          -16.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          -14.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "Lane dash.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          -12.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          -10.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "Lane dash.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          -8.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          -6.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "Lane dash.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          -4.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          -2.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "Lane dash.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          0.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          2.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "Lane dash.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          4.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          6.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "Lane dash.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          8.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          10.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "Lane dash.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.12999999523162842,
+        2.0,
+        0.019999999552965164
+      ],
+      "bounds": [
+        [
+          -0.06499999761581421,
+          12.0,
+          0.04999999701976776
+        ],
+        [
+          0.06499999761581421,
+          14.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paint"
+      ]
+    },
+    {
+      "name": "building-type-a",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.849999904632568,
+        4.626620292663574,
+        3.750934362411499
+      ],
+      "bounds": [
+        [
+          -11.313310623168945,
+          -12.925000190734863,
+          0.0
+        ],
+        [
+          -6.686689376831055,
+          -7.074999809265137,
+          3.750934362411499
+        ]
+      ],
+      "materials": [
+        "colormap"
+      ]
+    },
+    {
+      "name": "Driveway",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.299999952316284,
+        2.4000000953674316,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -7.450000286102295,
+          -13.199999809265137,
+          0.030000001192092896
+        ],
+        [
+          -4.150000095367432,
+          -10.800000190734863,
+          0.10999999940395355
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "planter",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2000000476837158,
+        0.9000000357627869,
+        0.5313286185264587
+      ],
+      "bounds": [
+        [
+          -5.450000286102295,
+          -8.600000381469727,
+          0.11999999731779099
+        ],
+        [
+          -4.550000190734863,
+          -7.400000095367432,
+          0.6513286232948303
+        ]
+      ],
+      "materials": [
+        "colormap.001"
+      ]
+    },
+    {
+      "name": "tree-small",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          -14.126111030578613,
+          -14.107500076293945,
+          0.0
+        ],
+        [
+          -13.07388973236084,
+          -12.892499923706055,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.002"
+      ]
+    },
+    {
+      "name": "tree-small.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          -14.126111030578613,
+          -7.107500076293945,
+          0.0
+        ],
+        [
+          -13.07388973236084,
+          -5.892499923706055,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.003"
+      ]
+    },
+    {
+      "name": "building-type-b",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        8.22599983215332,
+        5.130000114440918,
+        5.118750095367432
+      ],
+      "bounds": [
+        [
+          -11.565000534057617,
+          -4.113000392913818,
+          0.0
+        ],
+        [
+          -6.434998989105225,
+          4.113000392913818,
+          5.118750095367432
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "Driveway.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.299999952316284,
+        2.4000000953674316,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -7.450000286102295,
+          -3.200000047683716,
+          0.030000001192092896
+        ],
+        [
+          -4.150000095367432,
+          -0.7999999523162842,
+          0.10999999940395355
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "planter.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2000000476837158,
+        0.9000000357627869,
+        0.5313286185264587
+      ],
+      "bounds": [
+        [
+          -5.450000286102295,
+          1.3999998569488525,
+          0.11999999731779099
+        ],
+        [
+          -4.550000190734863,
+          2.6000001430511475,
+          0.6513286232948303
+        ]
+      ],
+      "materials": [
+        "colormap.005"
+      ]
+    },
+    {
+      "name": "tree-small.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          -14.126111030578613,
+          -4.107500076293945,
+          0.0
+        ],
+        [
+          -13.07388973236084,
+          -2.8924999237060547,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.006"
+      ]
+    },
+    {
+      "name": "tree-small.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          -14.126111030578613,
+          2.8924999237060547,
+          0.0
+        ],
+        [
+          -13.07388973236084,
+          4.107500076293945,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.007"
+      ]
+    },
+    {
+      "name": "building-type-g",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.525000095367432,
+        5.300999641418457,
+        3.4569435119628906
+      ],
+      "bounds": [
+        [
+          -11.650500297546387,
+          6.737499237060547,
+          0.0
+        ],
+        [
+          -6.349499702453613,
+          13.262500762939453,
+          3.4569435119628906
+        ]
+      ],
+      "materials": [
+        "colormap.008"
+      ]
+    },
+    {
+      "name": "Driveway.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.299999952316284,
+        2.4000000953674316,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -7.450000286102295,
+          6.800000190734863,
+          0.030000001192092896
+        ],
+        [
+          -4.150000095367432,
+          9.199999809265137,
+          0.10999999940395355
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "planter.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2000000476837158,
+        0.9000000357627869,
+        0.5313286185264587
+      ],
+      "bounds": [
+        [
+          -5.450000286102295,
+          11.399999618530273,
+          0.11999999731779099
+        ],
+        [
+          -4.550000190734863,
+          12.600000381469727,
+          0.6513286232948303
+        ]
+      ],
+      "materials": [
+        "colormap.009"
+      ]
+    },
+    {
+      "name": "tree-small.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          -14.126111030578613,
+          5.892499923706055,
+          0.0
+        ],
+        [
+          -13.07388973236084,
+          7.107500076293945,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.010"
+      ]
+    },
+    {
+      "name": "tree-small.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          -14.126111030578613,
+          12.892499923706055,
+          0.0
+        ],
+        [
+          -13.07388973236084,
+          14.107500076293945,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.011"
+      ]
+    },
+    {
+      "name": "building-type-j",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.164999961853027,
+        4.122000217437744,
+        4.668750286102295
+      ],
+      "bounds": [
+        [
+          6.938999652862549,
+          -13.082500457763672,
+          0.0
+        ],
+        [
+          11.060999870300293,
+          -6.917500019073486,
+          4.668750286102295
+        ]
+      ],
+      "materials": [
+        "colormap.012"
+      ]
+    },
+    {
+      "name": "Driveway.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.299999952316284,
+        2.4000000953674316,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          4.150000095367432,
+          -13.199999809265137,
+          0.030000001192092896
+        ],
+        [
+          7.450000286102295,
+          -10.800000190734863,
+          0.10999999940395355
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "planter.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2000000476837158,
+        0.9000000357627869,
+        0.5313286185264587
+      ],
+      "bounds": [
+        [
+          4.549999713897705,
+          -8.600000381469727,
+          0.11999999731779099
+        ],
+        [
+          5.449999809265137,
+          -7.400000095367432,
+          0.6513286232948303
+        ]
+      ],
+      "materials": [
+        "colormap.013"
+      ]
+    },
+    {
+      "name": "tree-small.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          13.07388973236084,
+          -14.107500076293945,
+          0.0
+        ],
+        [
+          14.126111030578613,
+          -12.892499923706055,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.014"
+      ]
+    },
+    {
+      "name": "tree-small.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          13.07388973236084,
+          -7.107500076293945,
+          0.0
+        ],
+        [
+          14.126111030578613,
+          -5.892499923706055,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.015"
+      ]
+    },
+    {
+      "name": "building-type-o",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.715000152587891,
+        4.625999927520752,
+        5.118750095367432
+      ],
+      "bounds": [
+        [
+          6.686999797821045,
+          -2.8575003147125244,
+          0.0
+        ],
+        [
+          11.312999725341797,
+          2.8575003147125244,
+          5.118750095367432
+        ]
+      ],
+      "materials": [
+        "colormap.016"
+      ]
+    },
+    {
+      "name": "Driveway.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.299999952316284,
+        2.4000000953674316,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          4.150000095367432,
+          -3.200000047683716,
+          0.030000001192092896
+        ],
+        [
+          7.450000286102295,
+          -0.7999999523162842,
+          0.10999999940395355
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "planter.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2000000476837158,
+        0.9000000357627869,
+        0.5313286185264587
+      ],
+      "bounds": [
+        [
+          4.549999713897705,
+          1.3999998569488525,
+          0.11999999731779099
+        ],
+        [
+          5.449999809265137,
+          2.6000001430511475,
+          0.6513286232948303
+        ]
+      ],
+      "materials": [
+        "colormap.017"
+      ]
+    },
+    {
+      "name": "tree-small.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          13.07388973236084,
+          -4.107500076293945,
+          0.0
+        ],
+        [
+          14.126111030578613,
+          -2.8924999237060547,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.018"
+      ]
+    },
+    {
+      "name": "tree-small.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          13.07388973236084,
+          2.8924999237060547,
+          0.0
+        ],
+        [
+          14.126111030578613,
+          4.107500076293945,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.019"
+      ]
+    },
+    {
+      "name": "building-type-u",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.426001071929932,
+        4.891207695007324,
+        5.118750095367432
+      ],
+      "bounds": [
+        [
+          6.55439567565918,
+          6.786999702453613,
+          0.0
+        ],
+        [
+          11.44560432434082,
+          13.213001251220703,
+          5.118750095367432
+        ]
+      ],
+      "materials": [
+        "colormap.020"
+      ]
+    },
+    {
+      "name": "Driveway.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.299999952316284,
+        2.4000000953674316,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          4.150000095367432,
+          6.800000190734863,
+          0.030000001192092896
+        ],
+        [
+          7.450000286102295,
+          9.199999809265137,
+          0.10999999940395355
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "planter.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2000000476837158,
+        0.9000000357627869,
+        0.5313286185264587
+      ],
+      "bounds": [
+        [
+          4.549999713897705,
+          11.399999618530273,
+          0.11999999731779099
+        ],
+        [
+          5.449999809265137,
+          12.600000381469727,
+          0.6513286232948303
+        ]
+      ],
+      "materials": [
+        "colormap.021"
+      ]
+    },
+    {
+      "name": "tree-small.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          13.07388973236084,
+          5.892499923706055,
+          0.0
+        ],
+        [
+          14.126111030578613,
+          7.107500076293945,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.022"
+      ]
+    },
+    {
+      "name": "tree-small.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0522209405899048,
+        1.2149999141693115,
+        2.8350000381469727
+      ],
+      "bounds": [
+        [
+          13.07388973236084,
+          12.892499923706055,
+          0.0
+        ],
+        [
+          14.126111030578613,
+          14.107500076293945,
+          2.8350000381469727
+        ]
+      ],
+      "materials": [
+        "colormap.023"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_016",
+  "family": "Reference2Scene",
+  "instruction_sha256": "5f44361e5faf1d96d452e57edc18168244ba879867c991d79bb96cea5cb90677",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_016",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "7752f72eab7ae61534be3b6a636dbf54cff665823d16e53345c974c05579c425",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-b3ff52de2e4eec9bd7145b7e0ca7ca5900dd5756627f00a24d0b2e297b3be202"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_tray",
+        "query": "带两端装饰把手的完整椭圆托盘",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.184,
+            0.47,
+            0.824,
+            0.718
+          ]
+        ],
+        "boundary_notes": "包括黑色盘底、侧壁、金色盘沿和两端把手；不包括投影。上方器皿造成的遮挡不改变托盘可见外缘范围。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_teapot",
+        "query": "含盖、壶嘴和把手的茶壶",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.439,
+            0.348,
+            0.68,
+            0.571
+          ]
+        ],
+        "boundary_notes": "包含盖钮、深色盖面、左侧壶嘴、右侧把手及底足；排除前方小罐。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_cups",
+        "query": "带把手的敞口茶杯",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.268,
+            0.42,
+            0.427,
+            0.549
+          ],
+          [
+            0.603,
+            0.518,
+            0.758,
+            0.649
+          ]
+        ],
+        "boundary_notes": "分别框定左右茶杯，包含杯口、深色内壁、杯足及把手，不含杯碟。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_saucers",
+        "query": "茶杯下方的浅碟",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.219,
+            0.478,
+            0.456,
+            0.566
+          ],
+          [
+            0.556,
+            0.57,
+            0.791,
+            0.666
+          ]
+        ],
+        "boundary_notes": "包括浅碟全部可见黑色表面、金色边缘与厚度；中部被杯子遮挡，不补推隐藏边界。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_small_vessel",
+        "query": "带盖的小型圆腹容器",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.378,
+            0.495,
+            0.503,
+            0.639
+          ]
+        ],
+        "boundary_notes": "包括盖钮、盖面、罐身、可见侧耳和底足；不含后方茶壶及前方勺子。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_spoon",
+        "query": "金色小勺",
+        "weight": 0.05,
+        "boxes": [
+          [
+            0.346,
+            0.624,
+            0.532,
+            0.653
+          ]
+        ],
+        "boundary_notes": "包含左侧细长装饰柄及右侧勺斗；不将附近花纹或反光当作独立器物。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

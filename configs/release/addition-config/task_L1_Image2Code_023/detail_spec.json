@@ -1,0 +1,209 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_023",
+  "family": "Reference2Scene",
+  "instruction_sha256": "3449318ee0ce05e82d60079f790d627149d2be323737b1969caf2f26648a74ea",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "0d79e9253cabdf69f0bc0453f5e137851520bb58ab872eb5a62baaa66b5cc87e",
+    "reference/reference-1.png": "9f92966c56cb409de9ffde6366dfb44807e3ea18e3837687d737e407cbaa69f5",
+    "reference/reference-2.png": "526e240f062d400f44eec01a110cac44b1a566c4a16b0a9cb66ed5ee29d015a2",
+    "reference/reference-3.png": "6d742a600e39c068b0cd12b7ce9b3ddf99454c2c3da16d4a09eccd884ea346ff"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_curvature",
+      "component": "F",
+      "question": "头顶与躯干的曲面是否连续，头部底缘环带是否保留弧形截面？",
+      "units": [
+        "Preserve continuous curvature"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_panels",
+      "component": "F",
+      "question": "躯干面板边缘、长槽及凹入层级是否具有真实局部深度？",
+      "units": [
+        "recessed panels"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_ports",
+      "component": "F",
+      "question": "黑色镜头、环形端口边框与突出短筒是否保留各自曲面及厚度？",
+      "units": [
+        "optical ports"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_grilles",
+      "component": "F",
+      "question": "正面圆角格栅与侧面通风口是否保留边框、隔片和后方凹腔？",
+      "units": [
+        "openings"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_connections",
+      "component": "F",
+      "question": "肩部圆弧壳、关节孔及踝部横向连接件是否保持参考的局部结构？",
+      "units": [
+        "leg connections"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_gaps",
+      "component": "F",
+      "question": "腿与躯干、踝杆与足部之间是否保留可见穿透间隙？",
+      "units": [
+        "three-dimensional gaps"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_feet",
+      "component": "F",
+      "question": "足部是否保留楔形斜面、厚底板及侧面弧形构件？",
+      "units": [
+        "side legs and feet"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_thin",
+      "component": "F",
+      "question": "足部弯曲软管与腿部细杆是否具有独立截面、弯曲及连接端？",
+      "units": [
+        "thin structures"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_center",
+      "component": "F",
+      "question": "中央支撑的叉形连接、轴件与中央足的连接是否保留？",
+      "units": [
+        "central support where visible"
+      ],
+      "global_weight": 0.05,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_bottom",
+      "component": "F",
+      "question": "躯干下沿是否保留厚边、分隔肋及支撑上方凹腔？",
+      "units": [
+        "thickness"
+      ],
+      "global_weight": 0.05,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+  "family": "Reference2Scene",
+  "instruction_sha256": "6a639e4df46970e7fdcf1afed965af632e44e1e230d55956b397347816c61187",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "69f6994858de43d813ea0d2b7295fce504d15d05350feb280145e0ec3a9fc832",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-1a6ff97ff238dd1e3fdbf63c58c76caf0d1dfc4008fe898fb041aa6fd5e20be4"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "包含犬体全部可见毛缘、耳、口鼻、四肢和尾部，包含深色表面；不包含背景与阴影。",
+        "boxes": [
+          [
+            0.146,
+            0.326,
+            0.671,
+            0.715
+          ]
+        ],
+        "id": "t01",
+        "query": "完整边境牧羊犬",
+        "weight": 0.4,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包括可见双耳、头颅、面颊、口鼻和下颌；止于头颈连接处，不把白色胸颈毛领计入头部。",
+        "boxes": [
+          [
+            0.146,
+            0.391,
+            0.284,
+            0.531
+          ]
+        ],
+        "id": "t02",
+        "query": "犬头及耳口鼻",
+        "weight": 0.25,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "从可辨的臀尾连接处到白色尾尖，包含黑色尾毛的完整可见轮廓；尾根与臀部交界存在自然连续性。",
+        "boxes": [
+          [
+            0.49,
+            0.326,
+            0.671,
+            0.42
+          ]
+        ],
+        "id": "t03",
+        "query": "上扬的蓬松尾巴",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "框住四个可辨足爪的可见末端体积；前足彼此重叠，框允许重叠。只覆盖可见足爪，不推定被遮住的轮廓，不将单个脚趾作为实例。",
+        "boxes": [
+          [
+            0.207,
+            0.674,
+            0.24,
+            0.715
+          ],
+          [
+            0.22,
+            0.66,
+            0.261,
+            0.701
+          ],
+          [
+            0.494,
+            0.583,
+            0.526,
+            0.636
+          ],
+          [
+            0.586,
+            0.55,
+            0.625,
+            0.593
+          ]
+        ],
+        "id": "t04",
+        "query": "可见足爪",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

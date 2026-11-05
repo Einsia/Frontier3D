@@ -1,0 +1,28 @@
+## Procedural-material measurement protocol (2026-10-03)
+
+Use solid colors or procedural Blender shading nodes. Do not use image textures,
+environment images, baked/generated image maps, image-dependent geometry nodes,
+or image compositor nodes, even if packed, muted or unlinked in a used node tree.
+The supplied photograph is a visual guide only; do not use it as a rendered material. Keep geometry, cameras and resources editable.
+For numerical measurements, assign the following `bench_role` custom properties
+to the actual mesh objects (or to their semantic parent with mesh descendants).
+Role labels select geometry to measure; they do not prove semantic correctness.
+Use bench_role="scale_anchor" for the foreground desk tabletop. Use scale_support for the actual supporting floor, balcony deck or ground beneath that anchor. Height is measured from its top surface to the local support surface, not world Z=0. The published tolerance is 2% of the stated value; independent threshold calibration remains pending.
+Numerical measurement settings: {"role": "scale_anchor", "expected": 0.75, "tolerance": 0.015, "support_role": "scale_support"}.
+Main-view appearance is compared on the original pixel grid with fixed multiscale SSIM, region color/lightness and edge-distance diagnostics. No hidden dimensions or alternate-view target image are introduced.
+
+## Object localization
+
+Reference-owned key-object boxes are matched one-to-one against independently observed candidate boxes of the same class. Pair similarity uses 50% IoU, 30% center agreement and 20% size agreement. Missing and additional objects reduce localization quality. The measurement describes image-plane layout and cannot certify metric 3D depth.
+
+Frozen key-object classes: chalkboard (30%), chair (30%), window (20%), ceiling light (20%).
+
+Reference boxes cover visible image extents, not inferred hidden geometry. Only the listed key objects enter localization; other scene content remains in the appearance component. Blackboard excludes the map, alphabet strip and bulletin boards. Windows are three visible full-height openings, not separate upper panes. Chair instance annotation/detection remains pending.
+
+## Scoring
+
+Final item score: `50% main_image + 20% localization + 20% vlm + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

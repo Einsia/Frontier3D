@@ -1,0 +1,11 @@
+.git
+.env
+.env.*
+!.env.example
+.venv
+data
+runs
+artifacts
+third_party
+__pycache__
+*.sqlite3*

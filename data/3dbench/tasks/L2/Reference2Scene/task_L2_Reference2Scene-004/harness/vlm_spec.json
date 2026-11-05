@@ -1,0 +1,239 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Reference2Scene/task_L2_Reference2Scene-004",
+  "family": "Reference2Scene",
+  "instruction_sha256": "6f2482a0fba9679cced7a3418830f9fbb5616fe2ca28205cd93b88f1c000483b",
+  "reference_policy": "Public originals only. reference-0 -> main; alternate is a geometry diagnostic.",
+  "focus": "Pale divided cabinets with wooden worktops. Cooker/cabinets left, bright window/table right, cropped preparation island foreground; preserve walking gaps. Pale cabinets, warm wood, black appliances, soft neutral daylight and ochre pendant; tiny food/text may simplify.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "reference_feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Pale divided cabinets with wooden worktops. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Black cooker, hood and kettle/cookware. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Foreground preparation island with open book and vegetables. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Window-side table with separate chairs. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Recessed window and pendant with solid shade. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "dimension": "reference_layout",
+      "weight": 0.2,
+      "question": "Cooker/cabinets left, bright window/table right, cropped preparation island foreground; preserve walking gaps. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.1,
+      "question": "Compare every supplied original and every required authored view for coherent real 3D structure, thickness and attachments. Use native inspection for suspected flat photographic substitutes; wrong/absent required geometry earns zero on its feature. Do not infer unseen reference geometry. Alternate has no reference pixel target.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials_colors",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original material/color fidelity: Pale cabinets, warm wood, black appliances, soft neutral daylight and ochre pendant; tiny food/text may simplify.",
+      "units": [
+        "materials_colors"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_atmosphere",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original light direction, contrast, exposure, shadows and atmosphere: Pale cabinets, warm wood, black appliances, soft neutral daylight and ochre pendant; tiny food/text may simplify.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.2.0",
+    "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-004",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "361a3ef7a2f2d751a37e8717e6894546af280bfa641f327da218515462edc7e9",
+    "image_size": [
+      1600,
+      900
+    ],
+    "detector": {
+      "method": "vlm-boxes-v2",
+      "model": "strict-agentic-judge",
+      "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+    },
+    "context_queries": [],
+    "review_kind": "primary_assistant_reference_only_ai_draft",
+    "human_reviewed": false,
+    "formal_score_eligible": false,
+    "targets": [
+      {
+        "id": "target_1",
+        "query": "black cooker including oven and hob",
+        "label": "black cooker including oven and hob",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.218,
+            0.604,
+            0.423,
+            1.0
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. black cooker including oven and hob"
+      },
+      {
+        "id": "target_2",
+        "query": "range hood above cooker",
+        "label": "range hood above cooker",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.247,
+            0.154,
+            0.413,
+            0.424
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. range hood above cooker"
+      },
+      {
+        "id": "target_3",
+        "query": "right window including frame",
+        "label": "right window including frame",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.646,
+            0.064,
+            0.9,
+            0.7
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. right window including frame"
+      },
+      {
+        "id": "target_4",
+        "query": "foreground preparation island including cropped visible base",
+        "label": "foreground preparation island including cropped visible base",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.385,
+            0.815,
+            0.808,
+            1.0
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. foreground preparation island including cropped visible base"
+      }
+    ]
+  },
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

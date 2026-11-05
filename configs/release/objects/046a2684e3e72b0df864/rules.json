@@ -1,0 +1,439 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "木栈道是否呈现连续铺板及相邻板条的接缝结构？",
+      "source_quote": "timber waterfront walkway",
+      "weight": 0.125
+    },
+    {
+      "id": "D02",
+      "question": "亭顶是否具有参考图中逐层收窄、向上升起的分层坡面？",
+      "source_quote": "pavilion with layered peaked roof",
+      "weight": 0.125
+    },
+    {
+      "id": "D03",
+      "question": "亭顶最高处是否具有参考图中细长尖顶及向下展开的坡面轮廓？",
+      "source_quote": "pavilion with layered peaked roof",
+      "weight": 0.125
+    },
+    {
+      "id": "D04",
+      "question": "各层屋檐是否具有伸出的边缘、可见厚度和暗色底面？",
+      "source_quote": "roof overhangs",
+      "weight": 0.125
+    },
+    {
+      "id": "D05",
+      "question": "屋顶层间是否保留参考图可见的开敞间隙和内部支撑构件？",
+      "source_quote": "Use geometry for posts, rails and roof layers",
+      "weight": 0.125
+    },
+    {
+      "id": "D06",
+      "question": "近处白色立柱是否具有实体截面，并在檐下形成可辨的梁柱及斜撑连接？",
+      "source_quote": "white posts and railings",
+      "weight": 0.125
+    },
+    {
+      "id": "D07",
+      "question": "栈道护栏是否呈现立柱、上扶手及下方多道细横向构件组成的开敞结构？",
+      "source_quote": "white posts and railings",
+      "weight": 0.125
+    },
+    {
+      "id": "D08",
+      "question": "远处栈道下方是否保留可辨的重复支腿及交叉支撑形态？",
+      "source_quote": "Preserve repeated supports",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划不描述或推断任何候选属性。",
+    "主参考采用输入路径 input/reference.png，其附件证据路径为 reference/reference-0.png；区域与框均冻结在该原始参考图的归一化坐标中。",
+    "legacy-detail-20261018-v1 的完整文本未附；这里只依据本次嵌入的合同、检查规则和公开参考建立扩展计划。",
+    "没有原始模型、深度图或标定相机，无法从单图确定隐藏结构及其他尺寸；不将估计比例转为精确数值要求。",
+    "1.05 m 是护栏高度的任务尺度约定，并非参考场景的实测尺寸；原文没有明确具体测点，测量采用局部步行面至对应上扶手顶面的竖直距离。",
+    "重复支撑数量、屋顶层数、构件间距和厚度没有给出精确数值，仅作参考形态比较。",
+    "参考中的座椅、花卉及小型附件不是文字独立指定的重建对象，不另设必需对象检查。",
+    "远景植被和水面允许简化；微小远景构件不逐个定位，棕榈以可辨的连片树丛作为定位范围。",
+    "独立编辑性、原生几何、隐藏面及相机变换须检查场景数据，不能只凭渲染图确认；此处数值项目是待执行测量定义，并非已测结果。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中按米读取世界坐标，沿 Z 轴测量栈道局部步行面至对应护栏上扶手顶面的距离；逐段核验用作尺度约定的栈道护栏。",
+      "quantity": "栈道护栏高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.05 m walkway railing height as the task scale convention",
+      "target": 1.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两相机世界位置，计算备用相机相对主相机的位移向量，并与主相机旋转所定义的局部正 X 单位向量乘以 0.30 m 比较，以检验方向及距离。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "近景亭顶及分层屋檐",
+      "polygon": [
+        [
+          0,
+          0.22
+        ],
+        [
+          0.098,
+          0.222
+        ],
+        [
+          0.166,
+          0.024
+        ],
+        [
+          0.239,
+          0.232
+        ],
+        [
+          0.396,
+          0.247
+        ],
+        [
+          0.37,
+          0.304
+        ],
+        [
+          0.52,
+          0.328
+        ],
+        [
+          0.516,
+          0.354
+        ],
+        [
+          0.443,
+          0.397
+        ],
+        [
+          0.791,
+          0.461
+        ],
+        [
+          0.788,
+          0.494
+        ],
+        [
+          0.548,
+          0.545
+        ],
+        [
+          0,
+          0.559
+        ]
+      ],
+      "weight": 0.35
+    },
+    {
+      "id": "R02",
+      "label": "向远处收束的木栈道",
+      "polygon": [
+        [
+          0,
+          0.705
+        ],
+        [
+          0.101,
+          0.707
+        ],
+        [
+          0.326,
+          0.789
+        ],
+        [
+          0.349,
+          0.831
+        ],
+        [
+          0.598,
+          0.915
+        ],
+        [
+          0.608,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R03",
+      "label": "近景白色亭柱与护栏",
+      "polygon": [
+        [
+          0.344,
+          0.52
+        ],
+        [
+          0.546,
+          0.522
+        ],
+        [
+          0.549,
+          0.754
+        ],
+        [
+          0.654,
+          0.792
+        ],
+        [
+          0.739,
+          0.953
+        ],
+        [
+          0.836,
+          0.961
+        ],
+        [
+          0.829,
+          1
+        ],
+        [
+          0.603,
+          1
+        ],
+        [
+          0.596,
+          0.91
+        ],
+        [
+          0.507,
+          0.904
+        ],
+        [
+          0.508,
+          0.82
+        ],
+        [
+          0.342,
+          0.838
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "右侧蓝色水面",
+      "polygon": [
+        [
+          0.76,
+          0.692
+        ],
+        [
+          0.868,
+          0.687
+        ],
+        [
+          1,
+          0.699
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0.866,
+          1
+        ],
+        [
+          0.866,
+          0.969
+        ],
+        [
+          0.746,
+          0.952
+        ],
+        [
+          0.663,
+          0.789
+        ],
+        [
+          0.658,
+          0.733
+        ]
+      ],
+      "weight": 0.15
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否重建了临水木栈道这一主体？",
+      "source_quote": "timber waterfront walkway",
+      "weight": 0.0625
+    },
+    {
+      "id": "S02",
+      "question": "是否呈现具有分层尖顶屋顶的亭子，并保持参考中的近大远小亭体布局？",
+      "source_quote": "pavilion with layered peaked roof",
+      "weight": 0.0625
+    },
+    {
+      "id": "S03",
+      "question": "亭子的主要立柱是否具有参考中的白色外观？",
+      "source_quote": "white posts and railings",
+      "weight": 0.0625
+    },
+    {
+      "id": "S04",
+      "question": "栈道边缘是否布置了参考中的白色护栏？",
+      "source_quote": "white posts and railings",
+      "weight": 0.0625
+    },
+    {
+      "id": "S05",
+      "question": "栈道周围是否保留蓝色水域及参考中的主要水陆关系？",
+      "source_quote": "surrounding blue water",
+      "weight": 0.0625
+    },
+    {
+      "id": "S06",
+      "question": "远处是否呈现棕榈树，并保持参考中的远景位置和尺度关系？",
+      "source_quote": "distant palms",
+      "weight": 0.0625
+    },
+    {
+      "id": "S07",
+      "question": "支撑构件是否沿栈道和亭体呈现参考中的重复排列？",
+      "source_quote": "Preserve repeated supports",
+      "weight": 0.0625
+    },
+    {
+      "id": "S08",
+      "question": "亭顶是否保留明显外挑的屋檐及其整体层次？",
+      "source_quote": "roof overhangs",
+      "weight": 0.0625
+    },
+    {
+      "id": "S09",
+      "question": "栈道是否保留由前景向远处延伸的空间纵深？",
+      "source_quote": "walkway depth",
+      "weight": 0.0625
+    },
+    {
+      "id": "S10",
+      "question": "远处地平线的位置与透视关系是否对应参考？",
+      "source_quote": "and the horizon",
+      "weight": 0.0625
+    },
+    {
+      "id": "S11",
+      "question": "立柱、栏杆和屋顶各层是否由实际三维几何构成？",
+      "source_quote": "Use geometry for posts, rails and roof layers",
+      "weight": 0.0625
+    },
+    {
+      "id": "S12",
+      "question": "主要部件是否可独立编辑，并具备实体厚度、支撑及合理间距？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S13",
+      "question": "场景是否具有真实空间结构，而非用完整参考图平面或单相机投影代替？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S14",
+      "question": "未明确规定的尺寸是否保持合理比例，隐藏面是否作了可信的补全？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S15",
+      "question": "主视图是否采用与参考取景和透视相匹配的透视相机？",
+      "source_quote": "Create a perspective camera matching the input and render main.png.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S16",
+      "question": "是否保留主相机及其平移副本，副本旋转和镜头不变，且两幅图来自同一场景的对应相机？",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.0625
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "仅定位占据画面左上部的近景亭顶；包括尖顶、全部可见屋顶层、外挑檐口及暗色檐底，左边界为原图裁切边。远处微小亭顶不属于此定位类。",
+      "boxes": [
+        [
+          0,
+          0.024,
+          0.792,
+          0.561
+        ]
+      ],
+      "id": "T01",
+      "query": "近景亭子的完整可见分层尖顶屋顶",
+      "weight": 0.35
+    },
+    {
+      "boundary_notes": "范围为前景连续可见的木铺板步行面，包括阴影中的深色木板；不包括护栏、座椅、水面或远处被植被遮挡的栈道。",
+      "boxes": [
+        [
+          0,
+          0.705,
+          0.608,
+          1
+        ]
+      ],
+      "id": "T02",
+      "query": "前景木栈道铺板面",
+      "weight": 0.3
+    },
+    {
+      "boundary_notes": "按连续护栏组件定位，含立柱、上扶手与细横向构件；不把后方座椅或亭柱上部纳入。远处不可分辨的细小栏杆不逐个框选。",
+      "boxes": [
+        [
+          0.101,
+          0.679,
+          0.837,
+          1
+        ]
+      ],
+      "id": "T03",
+      "query": "前景栈道右缘连续白色护栏",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "将右侧相互遮挡的棕榈作为一个连片树丛实例，包含可见叶冠及树干，右侧按图像裁切边截止；不含水中倒影、岸边石块或其他阔叶植被。",
+      "boxes": [
+        [
+          0.854,
+          0.507,
+          1,
+          0.677
+        ]
+      ],
+      "id": "T04",
+      "query": "右侧远景棕榈树丛",
+      "weight": 0.15
+    }
+  ]
+}

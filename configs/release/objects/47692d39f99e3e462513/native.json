@@ -1,0 +1,344 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "linear-visual-20261018-v1",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_007",
+  "family": "Brief2Scene",
+  "instruction_sha256": "e78c32562302925f340d551cd0a3469894d537dbac4626ae21682fe66d334734",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "岩礁灯塔与海岸植被；精确数值由程序测量；\nLighthouse: tapered white tower with red band, separate dark roof, recessed lantern glazing and projecting gallery. Irregular rocky island has green top, faceted cliffs and surrounding sea. Six to ten varied volumetric conifers with trunks do not hide lantern; no billboards. Complete tower/island view with directional daylight.",
+  "checks": [
+    {
+      "id": "vlm_inventory_tower",
+      "component": "Q",
+      "question": "Are the required tower objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "tower"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_inventory_lantern_windows",
+      "component": "Q",
+      "question": "Are the required lantern_windows objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "lantern_windows"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_inventory_gallery",
+      "component": "Q",
+      "question": "Are the required gallery objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "gallery"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_inventory_roof",
+      "component": "Q",
+      "question": "Are the required roof objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "roof"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_inventory_island",
+      "component": "Q",
+      "question": "Are the required island objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "island"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_inventory_water",
+      "component": "Q",
+      "question": "Are the required water objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "water"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_inventory_conifer",
+      "component": "Q",
+      "question": "Are the required conifer:6 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "conifer_1",
+        "conifer_2",
+        "conifer_3",
+        "conifer_4",
+        "conifer_5",
+        "conifer_6"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_relations",
+      "component": "Q",
+      "question": "Verify each named layout/connection/access relation against the brief. Allow alternative layouts meeting the contract; check entrances, paths, occlusion, grouping and ground contact. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "tower_island_contact",
+        "island_water_relation",
+        "lantern_visibility",
+        "full_scene_framing"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_appearance",
+      "component": "Q",
+      "question": "Do materials/colors, style and lighting match the explicit brief? Reference styling is illustrative. Ignore differences the written contract allows. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.",
+      "units": [
+        "materials_colors",
+        "style",
+        "lighting"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_cross_view",
+      "component": "Q",
+      "question": "Compare BOTH authored candidate views for consistent meaningful 3D structure, thickness and attachments of the required subjects. Compare ALL supplied original reference views where present. Do not infer an unseen original backside or count a reflection as another object. 核对参考可见的具体形状与部件关系；具备体积和多视角稳定性仅能证明相关性质，不能替代参考形状符合度。",
+      "units": [
+        "cross_view"
+      ],
+      "global_weight": 0.024,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_composition",
+      "component": "Q",
+      "question": "Grade authored composition, visual hierarchy, framing and readability of the intended focal subjects.",
+      "units": [
+        "aesthetic_composition"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_light_color",
+      "component": "Q",
+      "question": "Grade light/shadow shaping, exposure, color harmony and atmosphere within the brief style; flat/unreadable lighting loses credit.",
+      "units": [
+        "aesthetic_light_color"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_finish",
+      "component": "Q",
+      "question": "Grade visible shape/material finish, proportion, intentional detail, clean joins and coherent stylization; crude generic placeholders are weak.",
+      "units": [
+        "aesthetic_finish"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_coherence",
+      "component": "Q",
+      "question": "Grade whole-scene design coherence, intentional spatial rhythm and visual polish; complexity alone earns nothing.",
+      "units": [
+        "aesthetic_coherence"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "detail_semantic_inventory_tower",
+      "component": "F",
+      "question": "Are the required tower objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "units": [
+        "tower"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.05714285714285715,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_inventory_lantern_windows",
+      "component": "F",
+      "question": "Are the required lantern_windows objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "units": [
+        "lantern_windows"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.05714285714285715,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_inventory_gallery",
+      "component": "F",
+      "question": "Are the required gallery objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "units": [
+        "gallery"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.05714285714285715,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_inventory_roof",
+      "component": "F",
+      "question": "Are the required roof objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "units": [
+        "roof"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.05714285714285715,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_inventory_island",
+      "component": "F",
+      "question": "Are the required island objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "units": [
+        "island"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.05714285714285715,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_inventory_water",
+      "component": "F",
+      "question": "Are the required water objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "units": [
+        "water"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.05714285714285715,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_inventory_conifer",
+      "component": "F",
+      "question": "Are the required conifer:6 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "units": [
+        "conifer_1",
+        "conifer_2",
+        "conifer_3",
+        "conifer_4",
+        "conifer_5",
+        "conifer_6"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.05714285714285715,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    }
+  ],
+  "reference_bindings": {},
+  "authoring": "fixed_public_features_linear_fidelity_independent_dimensions",
+  "formal_score_eligible": false
+}

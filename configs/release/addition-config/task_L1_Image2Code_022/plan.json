@@ -1,0 +1,284 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_022",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/667b64cf6af2f7c452fa/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/4c3470502580302bea30/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/4f84062a31e2fa020f87/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "开启琴盖及薄边",
+      "polygon": [
+        [
+          0.183,
+          0.533
+        ],
+        [
+          0.278,
+          0.473
+        ],
+        [
+          0.694,
+          0.269
+        ],
+        [
+          0.709,
+          0.272
+        ],
+        [
+          0.576,
+          0.355
+        ],
+        [
+          0.205,
+          0.544
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R02",
+      "label": "弯曲琴壳与内部琴腔",
+      "polygon": [
+        [
+          0.131,
+          0.579
+        ],
+        [
+          0.538,
+          0.359
+        ],
+        [
+          0.594,
+          0.359
+        ],
+        [
+          0.702,
+          0.389
+        ],
+        [
+          0.735,
+          0.414
+        ],
+        [
+          0.735,
+          0.488
+        ],
+        [
+          0.578,
+          0.598
+        ],
+        [
+          0.597,
+          0.63
+        ],
+        [
+          0.597,
+          0.688
+        ],
+        [
+          0.453,
+          0.763
+        ],
+        [
+          0.109,
+          0.627
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R03",
+      "label": "键盘与前部键床",
+      "polygon": [
+        [
+          0.106,
+          0.585
+        ],
+        [
+          0.477,
+          0.68
+        ],
+        [
+          0.498,
+          0.737
+        ],
+        [
+          0.449,
+          0.775
+        ],
+        [
+          0.088,
+          0.668
+        ],
+        [
+          0.089,
+          0.635
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "琴盖支撑杆",
+      "polygon": [
+        [
+          0.446,
+          0.409
+        ],
+        [
+          0.456,
+          0.411
+        ],
+        [
+          0.576,
+          0.635
+        ],
+        [
+          0.563,
+          0.64
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R05",
+      "label": "前侧琴腿与轮脚",
+      "polygon": [
+        [
+          0.451,
+          0.754
+        ],
+        [
+          0.5,
+          0.748
+        ],
+        [
+          0.49,
+          0.834
+        ],
+        [
+          0.493,
+          0.859
+        ],
+        [
+          0.499,
+          0.878
+        ],
+        [
+          0.482,
+          0.887
+        ],
+        [
+          0.46,
+          0.876
+        ],
+        [
+          0.455,
+          0.84
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R06",
+      "label": "悬挂踏板组件",
+      "polygon": [
+        [
+          0.318,
+          0.733
+        ],
+        [
+          0.399,
+          0.755
+        ],
+        [
+          0.382,
+          0.811
+        ],
+        [
+          0.36,
+          0.824
+        ],
+        [
+          0.301,
+          0.809
+        ],
+        [
+          0.312,
+          0.792
+        ]
+      ],
+      "weight": 0.15
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": 0.02,
+      "id": "N01",
+      "measurement_definition": "在最终静态姿态中，将乐器几何应用对象变换后汇总到世界坐标，以米读取其 X、Y、Z 包围盒边长并取最大值；排除相机与灯光。与名义值 1.000 m 比较，使用原文给出的相对容差 2%。",
+      "quantity": "乐器整体最大跨度",
+      "relation": "equal",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "target": 1,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "8da56115df2dbdfdbea357732ccff3f31ea893d52959cec27c06901dfd4ab238",
+      "width": 1280,
+      "height": 960,
+      "provenance": {
+        "task": "l3-r02",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-r02/Cheung_Chau_Ferry_Pier_2026-1280.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Cheung_Chau_Ferry_Pier_2026.jpg",
+        "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Cheung_Chau_Ferry_Pier_2026.jpg/1280px-Cheung_Chau_Ferry_Pier_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+        "sha256": "9738fbcdba9a2d5bd4e77a532cdf132f1975c09ce28ed3796b53babcb02357ef",
+        "license_urls": [
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "author": "Tombus20032000",
+        "kind": "photograph",
+        "source_resize": "Commons 1280px thumbnail",
+        "license": "CC-BY-SA-4.0"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

@@ -1,0 +1,19 @@
+{
+  "uid": "f0829ad13fb4423b9539cc3ba0d13b9e",
+  "name": "Marimba",
+  "source_url": "https://sketchfab.com/3d-models/marimba-f0829ad13fb4423b9539cc3ba0d13b9e",
+  "author": {
+    "displayName": "3D Vault",
+    "profileUrl": "https://sketchfab.com/3DVault"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "9c2ee35ba32d65b492490eba7b61fa3a21d4df1d3a3ac22240ac1e05d9d67312",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

@@ -1,0 +1,8 @@
+{
+  "source": "pilot-v2/assemblies/roller_guide",
+  "license": "CC0-1.0",
+  "changes": [
+    "Pins start at z=6 in matching base recesses; 13 mm spacers now rest on the base and support the rollers at z=21."
+  ],
+  "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+}

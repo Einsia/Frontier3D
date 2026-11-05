@@ -1,0 +1,78 @@
+{
+  "status": "design_only_not_executable",
+  "requirements_source": "instruction.zh.md",
+  "requirements": [
+    {
+      "id": "B13-001",
+      "requirement_zh": "公寓楼道·配送机器人等电梯 设计住宅楼电梯厅里配送机器人候梯的场景，采用电梯厅斜上方三分之四视角。"
+    },
+    {
+      "id": "B13-002",
+      "requirement_zh": "电梯厅约 3.6 × 2.4 米，地面抛光石材并按 600 网格分缝，一侧墙面为信报箱组（12 格、总宽 1.80 米、底面高 0.30 米）。"
+    },
+    {
+      "id": "B13-003",
+      "requirement_zh": "电梯门宽 0.90 米、完全开启，轿厢进深 1.40 米、宽 1.60 米，轿厢地坎与厅地面齐平、高差不超过 3 毫米，厢内三面可见扶手横杆（高 0.90 米）、操作盘与一面轿厢镜；"
+    },
+    {
+      "id": "B13-004",
+      "requirement_zh": "厅门地坎导槽与轿厢地坎对齐偏差不超过 2 毫米。"
+    },
+    {
+      "id": "B13-005",
+      "requirement_zh": "配送机器人停在厅中央候梯位：底盘 0.50 × 0.45 米，屏顶高 1.20 米，三层载物格，顶层托盘放一只 0.35 × 0.25 × 0.15 米的快递纸箱，箱面面单贴纸朝上；"
+    },
+    {
+      "id": "B13-006",
+      "requirement_zh": "机身中线正对电梯门中线，偏差不超过 5°，机身前缘距门地坎 1.20 米。"
+    },
+    {
+      "id": "B13-007",
+      "requirement_zh": "地面贴直径 1.50 米的候梯回转标圈，圈内除机器人外无障碍。"
+    },
+    {
+      "id": "B13-008",
+      "requirement_zh": "可通行验收：从回转圈到电梯门的直线进厢路径净宽不小于 0.80 米，信报箱凸出与消防栓箱不得侵入；"
+    },
+    {
+      "id": "B13-009",
+      "requirement_zh": "轿厢内净空满足机器人保守通行包络 0.75 米加两侧各 0.30 米余量。"
+    },
+    {
+      "id": "B13-010",
+      "requirement_zh": "可触及验收：顶层托盘面高 0.85 米，与轿厢操作盘（高 1.10 米）构成可达操作面集合，另行标记进入轿厢后的控制服务位，服务位至操作盘距离不超过 0.90 米且无阻挡；"
+    },
+    {
+      "id": "B13-011",
+      "requirement_zh": "提交场景仍保持门外 1.20 米的候梯姿态。"
+    },
+    {
+      "id": "B13-012",
+      "requirement_zh": "可操作验收：纸箱中心与托盘中心对齐偏差不超过 20 毫米，箱体不悬挑出托盘边缘。"
+    },
+    {
+      "id": "B13-013",
+      "requirement_zh": "壁灯暖光 3000K 加轿厢顶灯外泄。"
+    },
+    {
+      "id": "B13-014",
+      "requirement_zh": "主视角同框机器人、敞开的电梯门与轿厢纵深；"
+    },
+    {
+      "id": "B13-015",
+      "requirement_zh": "第二视角可从轿厢内向外望。"
+    },
+    {
+      "id": "B13-016",
+      "requirement_zh": "这是可编辑静态场景，不要求电梯运行或机器人进出动画。"
+    }
+  ],
+  "methods": [
+    "native rerun and render",
+    "world-space vertex dimensions and angles",
+    "signed contact/clearance measurements using geometric surfaces",
+    "sampled free-route widths and service-envelope distances",
+    "semantic object and material review"
+  ],
+  "unimplemented": "No automatic harness, validated reach solver, GT scene, calibrated aggregate score or model results."
+}

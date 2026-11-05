@@ -1,0 +1,35 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-g06",
+  "id": "L3/GameEnvironment/ZeldaFrontierValley",
+  "domain": "game",
+  "input_mode": "text",
+  "title": "旷野之息风格：驿站、废墟与山谷生活区",
+  "title_en": "Breath of the Wild-inspired Frontier Valley",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "../COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "layout": 0.25,
+    "interaction": 0.35,
+    "rubric": 0.4
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "0d9ed4c95d281812f6ac30856488d11373ecd4753dfeb22409827403432f10d8",
+  "chinese_instruction_sha256": "dd9656031d0682c32786eb27f941d22b47aa82800f0fa317ae8118ff70189492",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "pending",
+    "scope": "Task-specific objective test implementation and reference object annotations are separate from generation readiness."
+  }
+}

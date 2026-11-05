@@ -1,0 +1,308 @@
+{
+  "pack": "space-kit",
+  "license": "CC0-1.0",
+  "source": "https://kenney.nl/assets/space-kit",
+  "used_assets": {
+    "hangar_largeA": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/hangar_largeA.glb",
+      "sha256": "cae233b3e53aa5004bc8d7d43bd00763a919064af6b5249f354a71cae5fbf29a"
+    },
+    "hangar_roundGlass": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/hangar_roundGlass.glb",
+      "sha256": "6b6346d95b90b8c012880832cef3969a108ae2b153bef8e2106b27997e33d601"
+    },
+    "satelliteDish_large": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/satelliteDish_large.glb",
+      "sha256": "8fe696a37081a0a6f1c56ab867f447f33a498ef9f1daabb5aabc62b1ce09277e"
+    },
+    "machine_generatorLarge": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/machine_generatorLarge.glb",
+      "sha256": "bbfa33a2e7c7eff7d9ee12f64255249b7e2f5d4b2ada2d681aa35cf38ba599bc"
+    },
+    "rover": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/rover.glb",
+      "sha256": "9784549775017e540ab84e6fc0eb8a1902dbeff9ba4285cecb97c086d2937fa5"
+    },
+    "monorail_trackStraight": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/monorail_trackStraight.glb",
+      "sha256": "0e56d1390dcc8767f0486a1e695208e082a803d3e5210fe8b094a1afdae3462b"
+    },
+    "monorail_trainFront": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/monorail_trainFront.glb",
+      "sha256": "7291b45dedec952daf0e2188235518757953f82df616f7d6029a2ce5f08102f9"
+    },
+    "rocket_baseA": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/rocket_baseA.glb",
+      "sha256": "cd1e61105d70a6d8ae4d5245b7c8655e6f13c879af9e4db7195191d64f01e2bd"
+    },
+    "rocket_fuelA": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/rocket_fuelA.glb",
+      "sha256": "093c94f292a974d4765224d7704c948d4b33d8e7e891489d4c66eb4b0b263868"
+    },
+    "rocket_topA": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/rocket_topA.glb",
+      "sha256": "29cd77e5f86546e46947781cec63dcb29b56b8f4cc66262bf1b52928eecc2c19"
+    },
+    "crater": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/crater.glb",
+      "sha256": "8b872ebe7358e1d5f08c600ed43f61d4d0dbbd03274a718424c599778915b175"
+    },
+    "pipe_straight": {
+      "path": "assets/expansion/kenney/space-kit/original/Models/GLTF format/pipe_straight.glb",
+      "sha256": "3386146dbfa9a9f2c7bcc5a6599a3c9d43a9e029c26f61b345ff6b16df80e6a1"
+    }
+  },
+  "placements": [
+    {
+      "asset": "hangar_largeA",
+      "ground_position": [
+        6,
+        5,
+        0.08
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "hangar_roundGlass",
+      "ground_position": [
+        6,
+        -6,
+        0.08
+      ],
+      "uniform_scale": 2.3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "satelliteDish_large",
+      "ground_position": [
+        13,
+        10,
+        0.08
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 35
+    },
+    {
+      "asset": "machine_generatorLarge",
+      "ground_position": [
+        -0.5,
+        8,
+        0.08
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rover",
+      "ground_position": [
+        2,
+        -6,
+        0.08
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 40
+    },
+    {
+      "asset": "rover",
+      "ground_position": [
+        2,
+        -3,
+        0.08
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 40
+    },
+    {
+      "asset": "rover",
+      "ground_position": [
+        2,
+        0,
+        0.08
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 40
+    },
+    {
+      "asset": "monorail_trackStraight",
+      "ground_position": [
+        -9,
+        -10,
+        2.7
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "monorail_trackStraight",
+      "ground_position": [
+        -9,
+        -7,
+        2.7
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "monorail_trackStraight",
+      "ground_position": [
+        -9,
+        -4,
+        2.7
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "monorail_trackStraight",
+      "ground_position": [
+        -9,
+        -1,
+        2.7
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "monorail_trackStraight",
+      "ground_position": [
+        -9,
+        2,
+        2.7
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "monorail_trackStraight",
+      "ground_position": [
+        -9,
+        5,
+        2.7
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "monorail_trackStraight",
+      "ground_position": [
+        -9,
+        8,
+        2.7
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "monorail_trainFront",
+      "ground_position": [
+        -9,
+        -4,
+        3.0
+      ],
+      "uniform_scale": 2.2,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rocket_baseA",
+      "ground_position": [
+        -2,
+        -10,
+        0.08
+      ],
+      "uniform_scale": 1.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rocket_fuelA",
+      "ground_position": [
+        -2,
+        -10,
+        2.8
+      ],
+      "uniform_scale": 1.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rocket_fuelA",
+      "ground_position": [
+        -2,
+        -10,
+        3.65
+      ],
+      "uniform_scale": 1.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rocket_topA",
+      "ground_position": [
+        -2,
+        -10,
+        4.5
+      ],
+      "uniform_scale": 1.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crater",
+      "ground_position": [
+        -13,
+        9,
+        -0.02
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crater",
+      "ground_position": [
+        12,
+        -12,
+        -0.02
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crater",
+      "ground_position": [
+        -12,
+        -12,
+        -0.02
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crater",
+      "ground_position": [
+        0,
+        13,
+        -0.02
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "pipe_straight",
+      "ground_position": [
+        -2,
+        2,
+        0.08
+      ],
+      "uniform_scale": 2,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "pipe_straight",
+      "ground_position": [
+        -2,
+        5,
+        0.08
+      ],
+      "uniform_scale": 2,
+      "yaw_degrees": 0
+    }
+  ],
+  "modifications": "Original scene composition, procedural ground/roads/piers, imported licensed asset geometry. Example for text brief review only; not a pixel-exact ground truth."
+}

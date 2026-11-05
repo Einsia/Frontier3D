@@ -1,0 +1,522 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+  "title": "可动上翻柜门铰链与伸缩撑杆",
+  "category": "Image2Code",
+  "profile": "image-no-comparable-gt-40-50-10-v1",
+  "weights": {
+    "H": 0.4,
+    "F": 0.5,
+    "M": 0.1
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "5ce137f14dd65dd7af1b5a7b89fa7bc0e7e9f8a73f6f8dcdbad28a16ae125d14"
+    },
+    {
+      "path": "environment/input/closed.png",
+      "sha256": "ccc2d33133d66942c4ee4d6b4e02ef979aa8e0a567d843f009d78e1ba68a68a6"
+    },
+    {
+      "path": "environment/input/front.png",
+      "sha256": "12ff5a1e888dcda800c1300cda213bbb6be4a2d32b3f66f82659d705aa70d4b7"
+    },
+    {
+      "path": "environment/input/half_open.png",
+      "sha256": "4d383f6b2e7e5fd2b81c868c6cad2b3ee19d0b28dd1a9ce56b5a22deb52ef67a"
+    },
+    {
+      "path": "environment/input/side.png",
+      "sha256": "2fdf9c8f054578902fcf7cc0032e3ded6a6f6e28cb9217d2f0c6892b8b0698a5"
+    },
+    {
+      "path": "environment/input/top.png",
+      "sha256": "256310e10d8d12f483c16ad0d7bc6cbe647b824897ac7eac9af414f8dc057a01"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "silhouette",
+      "component": "H",
+      "weight": 0.5,
+      "question": "薄板开放柜体有真实空腔和背板",
+      "method": "silhouette_iou",
+      "measurement_rule": "逐个声明视角在原像素网格计算交并比，然后等权平均；参考标注固定，候选独立复渲染提取；不可拟合、平移、缩放或以RGB相似度替代。",
+      "source": "instruction.md",
+      "parameters": {
+        "view_ids": [
+          "reference",
+          "closed",
+          "front",
+          "half_open",
+          "side",
+          "top"
+        ],
+        "reference_masks": "preannotate_visible_subjects; no candidate-conditioned segmentation"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "weight": 0.08333333333333333,
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "layout_closed",
+      "component": "H",
+      "weight": 0.08333333333333333,
+      "question": "在 closed 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "layout_front",
+      "component": "H",
+      "weight": 0.08333333333333333,
+      "question": "在 front 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "layout_half_open",
+      "component": "H",
+      "weight": 0.08333333333333333,
+      "question": "在 half_open 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "layout_side",
+      "component": "H",
+      "weight": 0.08333333333333333,
+      "question": "在 side 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-4.png",
+        "candidate/paired-4.png"
+      ]
+    },
+    {
+      "id": "layout_top",
+      "component": "H",
+      "weight": 0.08333333333333333,
+      "question": "在 top 视角核对整体姿态、主体比例、空间层次和遮挡：薄板开放柜体有真实空腔和背板",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "hinge_kinematics",
+      "component": "F",
+      "weight": 0.2,
+      "question": "1/31/61/91/121帧门轴转动、撑杆端点保持连接、轴向伸缩及刚性保形",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "frames": [
+          1,
+          31,
+          61,
+          91,
+          121
+        ],
+        "extra_frames": [
+          1,
+          11,
+          21,
+          31,
+          41,
+          51,
+          61,
+          71,
+          81,
+          91,
+          101,
+          111,
+          121
+        ],
+        "motion_source": "environment/input/motion.json",
+        "point_error_half_scale_over_span": 0.01,
+        "rigid_shape_half_scale_over_span": 0.005,
+        "physics_simulation": false
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "weight": 0.26666666666666666,
+      "question": "公开参考各视角可见局部结构：薄板柜体内腔、背板与边缘厚度。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "weight": 0.26666666666666666,
+      "question": "公开参考各视角可见局部结构：门框、门芯和上方铰接件的局部形态。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "weight": 0.26666666666666666,
+      "question": "公开参考各视角可见局部结构：左右伸缩撑杆的端部连接与轴向嵌套。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png",
+        "reference/reference-4.png",
+        "candidate/paired-4.png",
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "material_closed",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 closed 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "material_front",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 front 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "material_half_open",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 half_open 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "material_side",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 side 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-4.png",
+        "candidate/paired-4.png"
+      ]
+    },
+    {
+      "id": "material_top",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 top 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "lighting_closed",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 closed 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "lighting_front",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 front 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "lighting_half_open",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 half_open 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "lighting_side",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 side 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-4.png",
+        "candidate/paired-4.png"
+      ]
+    },
+    {
+      "id": "lighting_top",
+      "component": "M",
+      "weight": 0.08333333333333333,
+      "question": "在 top 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅木柜体、淡金框、灰半透门片和金属撑杆；反射不能遮没内腔",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-5.png",
+        "candidate/paired-5.png"
+      ]
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "fc55a6a7ee90167456bebaaaa018272bf5d1f9f3f5dbf7f87f1530f82649229f",
+    "task.toml": "7fc666196ecc21c2078c91610a79f570163c7f93ad0713b3eb10df48edddb1fb",
+    "harness/eval_spec.json": "9ec9b2df22bf23ffcf496335b3288154e4dbef4b10f3479ae183b2728c259a4b"
+  },
+  "view_pairs": [
+    {
+      "id": "reference",
+      "reference": "reference/reference-0.png",
+      "reference_source": "environment/input/reference.png",
+      "candidate": "candidate/main.png",
+      "frame": 61,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "closed",
+      "reference": "reference/reference-1.png",
+      "reference_source": "environment/input/closed.png",
+      "candidate": "candidate/paired-1.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "front",
+      "reference": "reference/reference-2.png",
+      "reference_source": "environment/input/front.png",
+      "candidate": "candidate/paired-2.png",
+      "frame": 61,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "half_open",
+      "reference": "reference/reference-3.png",
+      "reference_source": "environment/input/half_open.png",
+      "candidate": "candidate/paired-3.png",
+      "frame": 31,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "side",
+      "reference": "reference/reference-4.png",
+      "reference_source": "environment/input/side.png",
+      "candidate": "candidate/paired-4.png",
+      "frame": 61,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    },
+    {
+      "id": "top",
+      "reference": "reference/reference-5.png",
+      "reference_source": "environment/input/top.png",
+      "candidate": "candidate/paired-5.png",
+      "frame": 61,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    }
+  ],
+  "focus": "薄板开放柜体有真实空腔和背板",
+  "geometry_gt_policy": "source_present_coordinate_scope_approval_pending; no GT substitution during a run",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

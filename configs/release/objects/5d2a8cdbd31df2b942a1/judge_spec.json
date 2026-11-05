@@ -1,0 +1,308 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_003",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2af1b373a2319953dfcb3a633fac39b408c643ccc6230769182488f7b0513c97",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "管风琴；精确数值由程序测量；高耸木制管风琴柜而非普通箱柜",
+  "checks": [
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：高耸木制管风琴柜而非普通箱柜",
+      "units": [
+        "layout_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "layout_front",
+      "component": "H",
+      "question": "在 front 视角核对整体姿态、主体比例、空间层次和遮挡：高耸木制管风琴柜而非普通箱柜",
+      "units": [
+        "layout_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "layout_side",
+      "component": "H",
+      "question": "在 side 视角核对整体姿态、主体比例、空间层次和遮挡：高耸木制管风琴柜而非普通箱柜",
+      "units": [
+        "layout_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "layout_top",
+      "component": "H",
+      "question": "在 top 视角核对整体姿态、主体比例、空间层次和遮挡：高耸木制管风琴柜而非普通箱柜",
+      "units": [
+        "layout_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：成排银色音管高低阶梯及中央峰形排列。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：两侧金色长管与黑色凹入衬底。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：下部键盘、操作区与脚踏板。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：两侧高柜、中央凹口与顶板形成多视图一致体积。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "material_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "material_front",
+      "component": "M",
+      "question": "在 front 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "material_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "material_side",
+      "component": "M",
+      "question": "在 side 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "material_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "material_top",
+      "component": "M",
+      "question": "在 top 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "material_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "lighting_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_front",
+      "component": "M",
+      "question": "在 front 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "lighting_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "lighting_side",
+      "component": "M",
+      "question": "在 side 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "lighting_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "lighting_top",
+      "component": "M",
+      "question": "在 top 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：暖木纹、亮银/金音管、深色内衬；材质不能混成均匀塑料",
+      "units": [
+        "lighting_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "ceb4356b36a9c632a9168239b6ad423a8cac2aa7735d900a5a60be9937022430",
+    "reference/reference-1.png": "581d283b312a3ed84a0a1415b0b5d1ff36fcbbaf24f124b2292f583fa00e4c33",
+    "reference/reference-2.png": "11653647670ffc3269b0221aa19678ee0c6d331477f1858fc6285863dce128eb",
+    "reference/reference-3.png": "ccf966f66b13e0863a5fbaaddd562a41e7d121f7d42ff698058777b827b09419"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

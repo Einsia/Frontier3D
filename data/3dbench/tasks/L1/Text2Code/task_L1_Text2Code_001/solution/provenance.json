@@ -1,0 +1,21 @@
+{
+  "resource_family": "original/bolted_flange",
+  "source": "Previously authored procedural candidate, pilot-v2/assemblies/bolted_flange",
+  "license": "CC0-1.0 for original procedural geometry and renders",
+  "license_evidence": "reference/LICENSE-DATA.md",
+  "scope": "One family is assigned to this task only; its old variants are not separate formal tasks.",
+  "files": {
+    "assembled.png": "7f7e2df0187c8cafa0bd9affde0219e047ebac76ac49336f01b5cb4dbb8b60f7",
+    "exploded.png": "fa00fa65229172f0c322c0bd6abbd1e6d30c35230645f897007e47d7d2832e91",
+    "front.png": "b278a1d3d3c47b8f7483e3418cfbbdaf9db1e1be0698b6aa0c031c734be826ca",
+    "geometry.json": "9d0e670ca3cfb660c2e1993e908fb4e64cb3cf7bddbcc326ea9878b8a7ba065c",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "f27aae086c816fe06ee25adf61e1bcdcbaf16ac7e00b97b8314a3a5fa73ab725",
+    "qa.json": "710410af55933f495e1e1e0c2b27d0093e0276b159176b0c86c5a7819dde6320",
+    "scene.blend": "723b8f742197f192565bc8bae88c3034c38588d91cf7477b849bc005f46fab9f",
+    "scene.glb": "3c26e5864ac37ccaa5a40d788943c645e55446b660bd2fa688f9c1e29cb6d2bf",
+    "spec.json": "81a8574c9909475537f116e6c604261c447841b1a9abbe1e69e187343404b7cf",
+    "top.png": "5c16bd920658870c77721605541791e58ec42b46b98a868c9257afc47f2c04bc"
+  },
+  "modifications": "Task instructions rewritten in natural English and Chinese; original 11-part geometry preserved."
+}

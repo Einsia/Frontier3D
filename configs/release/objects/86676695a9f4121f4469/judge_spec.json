@@ -1,0 +1,92 @@
+{
+  "protocol": "3dbench-strict-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001",
+  "family": "Reference2Scene",
+  "instruction_sha256": "0f87508e95d7204af3252ae9d9824a7e2fc014a2ed999c1749cd2d05dd8553ff",
+  "reference_policy": "单张公开参考。main 决定原构图；alternate 只核实三维结构。未知背面合理补全，不引入私有真值。",
+  "focus": "Nike Pegasus 36 运动鞋；只核对公开参考中可见的具体形态和题面明确要求。",
+  "checks": [
+    {
+      "id": "shoe_profile",
+      "component": "F",
+      "global_weight": 0.3,
+      "question": "鞋的具体整体形态：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "鞋头收分与高度",
+        "后跟到前掌的曲线",
+        "鞋面相对鞋底的体积",
+        "参考视角下前后左右比例"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "shoe_upper",
+      "component": "F",
+      "global_weight": 0.3,
+      "question": "连续鞋面和开口：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "弯曲连续鞋面",
+        "有厚度的鞋领开口",
+        "后跟软垫与鞋舌",
+        "侧片主要轮廓及其连接"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "shoe_laces",
+      "component": "F",
+      "global_weight": 0.2,
+      "question": "鞋带与鞋面连接关系：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "穿孔处连接",
+        "交叉鞋带走向",
+        "鞋带下真实间隙",
+        "鞋舌与鞋带的遮挡关系"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "shoe_sole",
+      "component": "F",
+      "global_weight": 0.2,
+      "question": "分层鞋底形态：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "中底与外底层次",
+        "沿长度变化的厚度",
+        "前掌及后跟曲面",
+        "鞋底与鞋面贴合关系"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "5450cb16d71a02ff3468f90ebaad3d0e10ccc9f2ef9249dbf128830489cef8e2"
+  },
+  "authoring": "four_task_public_requirement_reference_fidelity_review_model_blind",
+  "formal_score_eligible": false
+}

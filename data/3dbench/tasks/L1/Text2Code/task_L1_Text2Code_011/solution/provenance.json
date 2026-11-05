@@ -1,0 +1,28 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/camera_pan_tilt",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/camera_pan_tilt",
+    "license": "CC0-1.0",
+    "changes": [
+      "Pedestal extended from z=8 to 28 to support fork base.",
+      "Camera plate made 10 mm thick and centered on the tilt axis, giving a closed pin bore."
+    ],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "79b6dbff0a1a140d61e50435e009e01690acbced9088ddb806a4f1a065f3c181",
+    "assembled.png": "87bce58707c6d5728f2322430e5d9bf7f3a86192354b09fb6ef403826b53daeb",
+    "exploded.png": "2b835b68d08f975379a6717fca5dc241dc25ab67f8feba29952ed1958ab2513f",
+    "front.png": "f2237b48f793517db7ac5932c4a878a044b5b7447004b2589183ca4b614a2f87",
+    "geometry.json": "96a97c5d9671a709c7591b88475c8d8c6333836aedc35a9a376350d57bb325f5",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "7f84e82cb183e4227cb9ad9c08fb5f8ee300f2707b89623221c48e136100e9cf",
+    "qa.json": "928d87a439bec0bdf0d1803a78801516a57458caa258734fd1b18d59bd7227d4",
+    "scene.blend": "81fead7a0317573e205c4610d086e5ef939561fdf52f26264eafc697c0cc491d",
+    "scene.glb": "5cc0c817318ed9903695a562673100aed95ec2137d67ec9244025d09baa68793",
+    "spec.json": "af436a737128a1300db939a413f2ee4d697cd0b35e797738042034d7e4d3ffa9",
+    "top.png": "78b27490e98be141eccfaf7517b2c3ff8a5872a1840c7dbaeffdf414e3f25f9a"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Tests",
+  "Description": "Minimal source project for the 3DBench UE5 runtime smoke test",
+  "Modules": [
+    {
+      "Name": "UE5Smoke",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

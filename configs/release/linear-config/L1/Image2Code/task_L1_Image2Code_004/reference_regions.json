@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_004",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "9b13ead4cc4395eec81f2ff47310caf3bea498f403ef62dfb4b70812fcb1c816",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "wind tower 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.31,
+          0.156
+        ],
+        [
+          0.62,
+          0.156
+        ],
+        [
+          0.62,
+          0.835
+        ],
+        [
+          0.31,
+          0.835
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "four-blade rotor 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.31,
+          0.156
+        ],
+        [
+          0.62,
+          0.156
+        ],
+        [
+          0.62,
+          0.571
+        ],
+        [
+          0.31,
+          0.571
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "tower support 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.391,
+          0.387
+        ],
+        [
+          0.595,
+          0.387
+        ],
+        [
+          0.595,
+          0.806
+        ],
+        [
+          0.391,
+          0.806
+        ]
+      ]
+    }
+  ]
+}

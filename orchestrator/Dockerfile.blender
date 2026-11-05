@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libx11-6 libxrender1 libxfixes3 libxi6 libxkbcommon0 libsm6 libice6 \
+    libgl1 libegl1 libgomp1 libwayland-client0 libwayland-cursor0 libwayland-egl1 \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /workspace
+# The selected official Blender directory is mounted read-only at /opt/blender.
+ENTRYPOINT ["/opt/blender/blender"]

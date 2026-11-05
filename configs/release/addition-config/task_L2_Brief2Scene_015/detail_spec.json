@@ -1,0 +1,194 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+  "family": "Brief2Scene",
+  "instruction_sha256": "0eb5e4c857eb663d2f3c4cf606fc84665b6234dc64f142eaea252325413e41a5",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {},
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "墙板是否具有实际穿孔结构？",
+      "units": [
+        "perforated wall panels"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "工作台是否具有实体台面厚度和可信的支撑结构？",
+      "units": [
+        "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "台钳是否具有能夹持法兰的实体钳口结构？",
+      "units": [
+        "A left-end vise grips a flange"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "法兰是否呈具有直径和轴向厚度的实体形态？",
+      "units": [
+        "a flange 0.12 m in diameter and 0.03 m thick"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "洞洞板是否具有板体厚度、孔洞和可信的安装支撑？",
+      "units": [
+        "A 1.20 x 0.80 m pegboard"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "被夹持扳手是否具有双端闭合环孔及连接两端的手柄？",
+      "units": [
+        "the double-ended ring wrench"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "螺丝刀是否具有可辨识的手柄、杆部和工作端？",
+      "units": [
+        "four screwdrivers"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "钳子是否具有可辨识的钳口、连接部和握柄？",
+      "units": [
+        "two pliers"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D09",
+      "component": "F",
+      "question": "机械臂是否以实体构件表达基座、关节和双指末端夹具？",
+      "units": [
+        "Represent specified joints and end-effectors geometrically."
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D10",
+      "component": "F",
+      "question": "螺栓是否具有可辨识的头部和杆部实体形态？",
+      "units": [
+        "Add three bolts"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D11",
+      "component": "F",
+      "question": "抹布是否具有布片形态和实体厚度？",
+      "units": [
+        "a rag"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D12",
+      "component": "F",
+      "question": "零件托盘是否具有底部和围合容纳空间的边缘？",
+      "units": [
+        "a parts tray"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ]
+}

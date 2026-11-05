@@ -1,0 +1,153 @@
+{
+  "key": "medieval-dungeon-interior",
+  "scope": "Data preparation validation, not model performance",
+  "target_objects_removed": [],
+  "private_original_values": [
+    {
+      "type": "light",
+      "name": "Point.001",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.002",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.003",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.004",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.005",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.006",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.007",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.008",
+      "energy": 250.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.009",
+      "energy": 250.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Point.010",
+      "energy": 250.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Preparation softbox 0",
+      "energy": 300.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Preparation softbox 1",
+      "energy": 300.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "light",
+      "name": "Preparation softbox 2",
+      "energy": 300.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "preserved_objects_equal": true,
+  "preserved_mesh_count": 83,
+  "preserved_materials_equal": true,
+  "camera_and_render_settings_equal": true,
+  "packed_dependencies": true,
+  "external_libraries": 0,
+  "settings": {
+    "frame": 1,
+    "engine": "CYCLES",
+    "resolution": [
+      960,
+      640
+    ],
+    "view": "AgX",
+    "exposure": 0.0
+  }
+}

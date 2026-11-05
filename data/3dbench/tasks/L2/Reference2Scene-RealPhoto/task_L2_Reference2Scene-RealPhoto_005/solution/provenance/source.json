@@ -1,0 +1,30 @@
+{
+  "title": "商用厨房的炉灶与不锈钢工作台",
+  "source_urls": [
+    "https://pixabay.com/images/download/robynsworld-kitchen-1159532_1920.jpg"
+  ],
+  "document_revision": 902,
+  "license": {
+    "label": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "4f4e32d148332d30373223f63f22aadb5cc8603e7c8be2b3ba6252a9c715ad72",
+      "size": [
+        1280,
+        853
+      ],
+      "original_document_token": "Phl1beFImouGRRxtoiTcysQSnry"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

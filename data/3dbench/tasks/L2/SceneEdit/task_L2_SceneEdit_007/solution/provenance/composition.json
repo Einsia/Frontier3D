@@ -1,0 +1,353 @@
+{
+  "used_assets": {
+    "tableRound": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/tableRound.glb",
+      "sha256": "f8daea9124a542a00b7bdacfddac82dc468573d43e44d7b54dd6316e9695754b"
+    },
+    "chairRounded": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/chairRounded.glb",
+      "sha256": "53f4933ec547179c499f04dbda1231cf44b83ec82c7f4ab981cdf680aee5c973"
+    },
+    "kitchenCabinet": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/kitchenCabinet.glb",
+      "sha256": "7238c57778935ae25db5e57e9f7af3ba7068c71b005ff7cfbff3b6f3b1a13200"
+    },
+    "kitchenBar": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/kitchenBar.glb",
+      "sha256": "792c3d31e60c8a8d8c7a28cf7d1efe004c5a601adc1b163a8799dde32c1b559d"
+    },
+    "kitchenBarEnd": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/kitchenBarEnd.glb",
+      "sha256": "410c6d83defe4ed248a8ec32f81553b56c8b610372d02ecf0e547e3f52cdc0a1"
+    },
+    "kitchenCoffeeMachine": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/kitchenCoffeeMachine.glb",
+      "sha256": "063f582c6fa0f00a9f24e3393dac2295491c4becdaf5513c893ab1a2826b6ec3"
+    },
+    "kitchenFridgeSmall": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/kitchenFridgeSmall.glb",
+      "sha256": "35dab7f63711623be321bfd82072f4ab29fe8006aac9371c6e6b78df2e02f5ed"
+    },
+    "bookcaseOpen": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/bookcaseOpen.glb",
+      "sha256": "750702218d68c062b15dfef6ab06a4014d1cfa8bd05f02e57c53b7e13bec157c"
+    },
+    "pottedPlant": {
+      "path": "assets/expansion/kenney/furniture-kit/original/Models/GLTF format/pottedPlant.glb",
+      "sha256": "5b760eda2766f75fda36b2c5df652a1662f82981ef64cd8fa7fe7bcd386b3a15"
+    }
+  },
+  "placements": [
+    {
+      "name": "tableRound",
+      "position": [
+        -2,
+        1,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -3,
+        1,
+        0
+      ],
+      "scale": 2,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -1,
+        1,
+        0
+      ],
+      "scale": 2,
+      "yaw": -90,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -2,
+        0,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -2,
+        2,
+        0
+      ],
+      "scale": 2,
+      "yaw": 180,
+      "target": false
+    },
+    {
+      "name": "tableRound",
+      "position": [
+        -2,
+        -1.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -3,
+        -1.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -1,
+        -1.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": -90,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -2,
+        -2.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        -2,
+        -0.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 180,
+      "target": false
+    },
+    {
+      "name": "tableRound",
+      "position": [
+        1,
+        -1.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        0,
+        -1.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        2,
+        -1.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": -90,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        1,
+        -2.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "chairRounded",
+      "position": [
+        1,
+        -0.5,
+        0
+      ],
+      "scale": 2,
+      "yaw": 180,
+      "target": false
+    },
+    {
+      "name": "kitchenCabinet",
+      "position": [
+        0.75,
+        2.9,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "kitchenBar",
+      "position": [
+        0.75,
+        1.55,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": true
+    },
+    {
+      "name": "kitchenCabinet",
+      "position": [
+        1.61,
+        2.9,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "kitchenBar",
+      "position": [
+        1.61,
+        1.55,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": true
+    },
+    {
+      "name": "kitchenCabinet",
+      "position": [
+        2.47,
+        2.9,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "kitchenBar",
+      "position": [
+        2.47,
+        1.55,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": true
+    },
+    {
+      "name": "kitchenBarEnd",
+      "position": [
+        0.22,
+        1.55,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": true
+    },
+    {
+      "name": "kitchenBarEnd",
+      "position": [
+        3,
+        1.55,
+        0
+      ],
+      "scale": 2,
+      "yaw": 180,
+      "target": true
+    },
+    {
+      "name": "kitchenCoffeeMachine",
+      "position": [
+        2.1,
+        1.55,
+        0.84
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": true
+    },
+    {
+      "name": "kitchenFridgeSmall",
+      "position": [
+        3.4,
+        2.8,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "bookcaseOpen",
+      "position": [
+        -2,
+        3.12,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "pottedPlant",
+      "position": [
+        -3.4,
+        2.8,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "pottedPlant",
+      "position": [
+        3.4,
+        -2.9,
+        0
+      ],
+      "scale": 2,
+      "yaw": 0,
+      "target": false
+    }
+  ],
+  "source": "https://kenney.nl/assets/furniture-kit",
+  "license": "CC0-1.0",
+  "changes": "Original full scene layout and procedural site context; selected licensed asset assembly deleted from model input."
+}

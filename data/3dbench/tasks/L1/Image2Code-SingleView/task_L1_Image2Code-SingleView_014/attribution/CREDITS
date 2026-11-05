@@ -1,0 +1,17 @@
+Task: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014
+Original source task ID: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014
+
+Original source notice (environment/input/CREDIT.txt):
+
+Birkin Caballo
+Author: Roberto Domínguez (https://sketchfab.com/vmmaniac)
+Source: https://sketchfab.com/3d-models/birkin-caballo-12b8a613f4004c03ada00aeef8992e7f
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

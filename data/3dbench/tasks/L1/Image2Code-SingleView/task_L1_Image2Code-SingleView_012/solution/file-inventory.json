@@ -1,0 +1,170 @@
+[
+  {
+    "path": "attribution/input/CREDIT.txt",
+    "bytes": 183,
+    "sha256": "f64c4dcbc29ac709ee19cd65060796eb750739b3f95063657551c539c719572b",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/reference.png",
+    "bytes": 1435128,
+    "sha256": "734a6a362c6cdfb61fc18fa74b0a2e6599218b59d4486b00f26ea778893ef33c",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "harness/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "instruction.md",
+    "bytes": 3305,
+    "sha256": "6588d0fc500f0b406ecd9d372ff213ed455779d8329c0f9cd21d2d4258929d0b",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "instruction.zh.md",
+    "bytes": 2795,
+    "sha256": "f7193dc9c5963e1379ccb83d0de4c71069d34016e2f95638b06743bd16e64343",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "README.md",
+    "bytes": 1748,
+    "sha256": "0834ca2fca8f183d55c607c669e427cfafb055e3f329814729d44a1474c3280c",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/EVALUATION.md",
+    "bytes": 4912,
+    "sha256": "56192a10bbc8c40edc0dc45765063652cdd85969cdcda7f1abf1d8c658b6235f",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/api-files.json",
+    "bytes": 40729,
+    "sha256": "7b521108990e30f24f36952cb43e94c7a8cccd583c3dbaf25740183ea061b66d",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/api-info.json",
+    "bytes": 1482,
+    "sha256": "148dc8196c4d6d06cd3fd52a6112938e21bbbd00738b9fb5882a1ab4aeb36616",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/publisher.html",
+    "bytes": 204126,
+    "sha256": "f464355279511102f4cef86223861f38f4294160c9f562b26bc691111a56c683",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/source.json",
+    "bytes": 2453,
+    "sha256": "1c4745ca3f49b4e1366e80f6414c15b34a1312f6e07fc13a377f2a42f2298760",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/audit.json",
+    "bytes": 1745,
+    "sha256": "99344321faa676c37c00685cf71fee563d62fce0aa88a506961b933c3936d602",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/front.png",
+    "bytes": 1303851,
+    "sha256": "3d62cd25e984f7b20664165a5349dcf320ec8384fcf47d56ed76be6a66f9599f",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/main.png",
+    "bytes": 1435128,
+    "sha256": "734a6a362c6cdfb61fc18fa74b0a2e6599218b59d4486b00f26ea778893ef33c",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.blend",
+    "bytes": 8308196,
+    "sha256": "6bd708cdf94e0ed8e7ea236d82e1160fd316ffb6edda889adcb0f16596211fee",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.glb",
+    "bytes": 9516472,
+    "sha256": "ec40623a9fbadac082f754393120c8bd1eca198836aa40b77af09ad394dadbfe",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/side.png",
+    "bytes": 1160826,
+    "sha256": "863d085c23afde1a4b91628b5e89429c6f53a14b3bd54d1f566bf100e99cc899",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/top.png",
+    "bytes": 1267619,
+    "sha256": "0c268bdfa4b6f4b4c348e077068858166fa2d3a3fcec121fc79f87c4c5fb8c29",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/treasure_chest_diff_1k.jpg",
+    "bytes": 812089,
+    "sha256": "4a2ee3b53835e7d4a3e411863c7829f37df1221aeb1cd78d89e24239cf8bbd0b",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/treasure_chest_metal_1k.exr",
+    "bytes": 168816,
+    "sha256": "77301e2eb6a7b9225284207a70c569951b8ab5b0843d0b79f6268bd7ededfa18",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/treasure_chest_nor_gl_1k.exr",
+    "bytes": 2028681,
+    "sha256": "8c7920313b200ca71f906f82c99fda3aa461f8d924873c571fabeca19153ba07",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/treasure_chest_rough_1k.exr",
+    "bytes": 1183153,
+    "sha256": "0d456f1597ffaa1c5caa43023cd5f60bf386753d008153f4cdc78509673ea0f2",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/treasure_chest.blend",
+    "bytes": 2621706,
+    "sha256": "a1100399b814d8f06590fe067ab93f9395f7b0ebf9fd49b27b77d32ae8ae4dd4",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "task.toml",
+    "bytes": 753,
+    "sha256": "edc65b9e8c4be98353d114684a2277744dc0d6bc407ddc7fd1df5ec27b2b77c2",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  }
+]

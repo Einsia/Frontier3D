@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_012",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "622a3e4780b0c33006684632cff8f5b1ffc538e5fbceb8f60d2d799d69504fc3",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "cathedral",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.18,
+          0.28
+        ],
+        [
+          0.77,
+          0.28
+        ],
+        [
+          0.77,
+          0.91
+        ],
+        [
+          0.18,
+          0.91
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "twin front spires",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.26,
+          0.28
+        ],
+        [
+          0.47,
+          0.28
+        ],
+        [
+          0.47,
+          0.82
+        ],
+        [
+          0.26,
+          0.82
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "nave and buttresses",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.44,
+          0.42
+        ],
+        [
+          0.76,
+          0.42
+        ],
+        [
+          0.76,
+          0.82
+        ],
+        [
+          0.44,
+          0.82
+        ]
+      ]
+    }
+  ]
+}

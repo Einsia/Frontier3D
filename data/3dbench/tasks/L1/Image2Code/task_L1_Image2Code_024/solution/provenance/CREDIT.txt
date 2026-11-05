@@ -1,0 +1,7 @@
+Brake Disk and Caliper
+Author: Vladi (https://sketchfab.com/vladivpg)
+Source: https://sketchfab.com/3d-models/brake-disk-and-caliper-5feda9dbf20a49cf9fd29d550e55e4b9
+License: CC-BY-4.0
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

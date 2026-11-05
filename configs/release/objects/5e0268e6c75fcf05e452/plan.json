@@ -1,0 +1,1876 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_011",
+  "title": "双轴相机托架",
+  "category": "Text2Code",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "19件独立可编辑部件：base×1、sleeve×1、spindle×1、fork_base×1、upright×2、platform×1、tilt_pin×2、bushing×2、bolt×4、washer×4；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_base",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "底座90×90×8 mm，底Z=0；中心孔16.4 mm，XY=(±35,±35)四孔6.4 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_pan_sleeve",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "竖直旋转套外径36 mm、孔16.4 mm、高20 mm，Z=8..28；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_spindle",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "竖直主轴直径16 mm、长30 mm，中心Z=21；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_fork_base",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "叉座64×50×6 mm、中心Z=31、中心孔16.4 mm，贴合旋转套；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_uprights",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "两立板6×50×50 mm，中心(±28,0,59)；X向孔14.4 mm在Y=0/Z=69；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_bushings",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "两衬套外径14 mm、孔8.4 mm、长6 mm，中心(±28,0,69)，沿X；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_platform",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "相机平台48×64×10 mm，中心(0,0,69)，X向孔8.4 mm；与两侧立板各留1 mm间隙；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_tilt_pins",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "两倾斜销直径8 mm、各长16 mm，中心(±24,0,69)，进入平台及衬套；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_fasteners",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "四螺杆直径6 mm、长9.5 mm从Z=0起；垫圈12/6.4/1.5 mm，六角头高4 mm/外接圆10.8 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "weight": 0.049999999999999996,
+      "question": "结构件蓝灰、主轴/销/螺栓银色、旋转套/衬套/垫圈黄铜；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_part_roles",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "19件独立可编辑部件：base×1、sleeve×1、spindle×1、fork_base×1、upright×2、platform×1、tilt_pin×2、bushing×2、bolt×4、washer×4",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "part_roles",
+        "public_requirement": "19件独立可编辑部件：base×1、sleeve×1、spindle×1、fork_base×1、upright×2、platform×1、tilt_pin×2、bushing×2、bolt×4、washer×4",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "part_count",
+            "metric": "equals",
+            "group": "parts",
+            "params": {
+              "path": "/scene/mesh_count",
+              "expected": 19
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_base",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "底座90×90×8 mm，底Z=0；中心孔16.4 mm，XY=(±35,±35)四孔6.4 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "base",
+        "public_requirement": "底座90×90×8 mm，底Z=0；中心孔16.4 mm，XY=(±35,±35)四孔6.4 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "base_holes",
+            "metric": "hole_pattern",
+            "group": "part_features",
+            "importance": "high",
+            "params": {
+              "object_dimensions": [
+                0.09,
+                0.09,
+                0.008
+              ],
+              "object_dimension_tolerance": "dimension_m",
+              "centers": [
+                [
+                  -0.035,
+                  -0.035
+                ],
+                [
+                  -0.035,
+                  0.035
+                ],
+                [
+                  0.035,
+                  -0.035
+                ],
+                [
+                  0.035,
+                  0.035
+                ]
+              ],
+              "z_values": [
+                0.0012,
+                0.004,
+                0.0068
+              ],
+              "radius": 0.0032,
+              "tolerance": "bore_radius_m",
+              "angular_samples": 32,
+              "axis_samples": 9,
+              "relative_to_object": true
+            }
+          },
+          {
+            "id": "base_bore",
+            "metric": "hole_pattern",
+            "group": "part_features",
+            "importance": "high",
+            "params": {
+              "object_dimensions": [
+                0.09,
+                0.09,
+                0.008
+              ],
+              "object_dimension_tolerance": "dimension_m",
+              "centers": [
+                [
+                  0,
+                  0
+                ]
+              ],
+              "z_values": [
+                0.0012,
+                0.004,
+                0.0068
+              ],
+              "radius": 0.008199999999999999,
+              "tolerance": "bore_radius_m",
+              "angular_samples": 32,
+              "axis_samples": 9,
+              "relative_to_object": true
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_pan_sleeve",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "竖直旋转套外径36 mm、孔16.4 mm、高20 mm，Z=8..28",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "pan_sleeve",
+        "public_requirement": "竖直旋转套外径36 mm、孔16.4 mm、高20 mm，Z=8..28",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_spindle",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "竖直主轴直径16 mm、长30 mm，中心Z=21",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "spindle",
+        "public_requirement": "竖直主轴直径16 mm、长30 mm，中心Z=21",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_fork_base",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "叉座64×50×6 mm、中心Z=31、中心孔16.4 mm，贴合旋转套",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "fork_base",
+        "public_requirement": "叉座64×50×6 mm、中心Z=31、中心孔16.4 mm，贴合旋转套",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "fork_bore",
+            "metric": "hole_pattern",
+            "group": "part_features",
+            "importance": "high",
+            "params": {
+              "object_dimensions": [
+                0.064,
+                0.05,
+                0.006
+              ],
+              "object_dimension_tolerance": "dimension_m",
+              "centers": [
+                [
+                  0,
+                  0
+                ]
+              ],
+              "z_values": [
+                0.0009,
+                0.003,
+                0.0051
+              ],
+              "radius": 0.008199999999999999,
+              "tolerance": "bore_radius_m",
+              "angular_samples": 32,
+              "axis_samples": 9,
+              "relative_to_object": true
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_uprights",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "两立板6×50×50 mm，中心(±28,0,59)；X向孔14.4 mm在Y=0/Z=69",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "uprights",
+        "public_requirement": "两立板6×50×50 mm，中心(±28,0,59)；X向孔14.4 mm在Y=0/Z=69",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_bushings",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "两衬套外径14 mm、孔8.4 mm、长6 mm，中心(±28,0,69)，沿X",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "bushings",
+        "public_requirement": "两衬套外径14 mm、孔8.4 mm、长6 mm，中心(±28,0,69)，沿X",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_platform",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "相机平台48×64×10 mm，中心(0,0,69)，X向孔8.4 mm；与两侧立板各留1 mm间隙",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "platform",
+        "public_requirement": "相机平台48×64×10 mm，中心(0,0,69)，X向孔8.4 mm；与两侧立板各留1 mm间隙",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_tilt_pins",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "两倾斜销直径8 mm、各长16 mm，中心(±24,0,69)，进入平台及衬套",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "tilt_pins",
+        "public_requirement": "两倾斜销直径8 mm、各长16 mm，中心(±24,0,69)，进入平台及衬套",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_fasteners",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "四螺杆直径6 mm、长9.5 mm从Z=0起；垫圈12/6.4/1.5 mm，六角头高4 mm/外接圆10.8 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "fasteners",
+        "public_requirement": "四螺杆直径6 mm、长9.5 mm从Z=0起；垫圈12/6.4/1.5 mm，六角头高4 mm/外接圆10.8 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.09,
+                    0.09,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.036,
+                    0.036,
+                    0.02
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "spindle",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.016,
+                    0.016,
+                    0.03
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "fork_base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.064,
+                    0.05,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "upright",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.05,
+                    0.05
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "platform",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.048,
+                    0.064,
+                    0.01
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "tilt_pin",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.016,
+                    0.008,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bushing",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.006,
+                    0.014,
+                    0.014
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0108,
+                    0.009353074,
+                    0.0135
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_assembly_clearance",
+      "component": "Q",
+      "weight": 0.03636363636363637,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {
+        "requirement_id": "assembly_clearance",
+        "public_requirement": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+        "legacy_check_bindings": [],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_topology",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "所有零件闭合且分别连通",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_solid_validity",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "有效实体零件",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_units",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "米制导出，X长度/Y宽度/Z向上",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_hierarchy",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "自由描述性名称、独立可编辑部件与清晰组织",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_state_cycle",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_glb_assembled",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "GLB与原生帧1装配态一致",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "db2c028df238a448d3dc74efe3fdf43a0fce6beb0f64b13f02a93ee27b68e3b4",
+    "task.toml": "44b9f9ab5d1daacd517dd4fcc250623836785f7ef923462e630b4d242993e094",
+    "harness/eval_spec.json": "997d8f8dd836f894e1271c0e4311b7bdb0e483cc32989dafb23df7f9c0ca02bc"
+  },
+  "source_requirement_dispositions": {
+    "part_roles": "Q",
+    "base": "Q",
+    "pan_sleeve": "Q",
+    "spindle": "Q",
+    "fork_base": "Q",
+    "uprights": "Q",
+    "bushings": "Q",
+    "platform": "Q",
+    "tilt_pins": "Q",
+    "fasteners": "Q",
+    "assembly_clearance": "Q",
+    "topology": "E",
+    "solid_validity": "E",
+    "units": "E",
+    "hierarchy": "E",
+    "state_cycle": "E",
+    "glb_readable": "system_evidence_only",
+    "glb_assembled": "E",
+    "reconstruction": "system_evidence_only",
+    "instructions": "system_evidence_only",
+    "materials": "Q",
+    "procedural_materials": "system_evidence_only",
+    "seed_quality": "system_evidence_only"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

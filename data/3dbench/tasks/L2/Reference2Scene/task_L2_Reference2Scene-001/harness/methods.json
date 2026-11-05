@@ -1,0 +1,348 @@
+{
+  "version": "l2-method-plan-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+  "category": "Reference2Scene",
+  "sources": {
+    "instruction.md": "947a9f48f9bcf356bdc695f13500f8764893a7c482e71bedc1ca66fe5db56222",
+    "solution/EVALUATION.md": "29b441ba6e6354e3774fe60224cc699e3ac9b6f4b73079b8a0fd5f29757cd482"
+  },
+  "evaluation_title": "评测接口：日照教室与成排课桌",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "dimension": "可执行性",
+      "description": [
+        "固定文件完整率、入口运行与原生重渲染成功率、缺失依赖数",
+        "清洁工作区按 instruction 命令运行；核对双视图来自提交工程，禁止直接拷贝参考图当输出。"
+      ],
+      "source_quote": "| 可执行性 | 固定文件完整率、入口运行与原生重渲染成功率、缺失依赖数 | 清洁工作区按 instruction 命令运行；核对双视图来自提交工程，禁止直接拷贝参考图当输出。 |",
+      "methods": [
+        "execution_and_native_rerender",
+        "dependency_integrity"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md",
+      "coverage": "framework",
+      "scoring_role": "validity"
+    },
+    {
+      "id": "evaluation_02",
+      "dimension": "结构",
+      "description": [
+        "本题语义部件覆盖率、几何独立可编辑性",
+        "按上述清单建立评测侧区域标注；不依赖提交对象名称，不限定实现方式。"
+      ],
+      "source_quote": "| 结构 | 本题语义部件覆盖率、几何独立可编辑性 | 按上述清单建立评测侧区域标注；不依赖提交对象名称，不限定实现方式。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "geometry_selection_without_semantic_score"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md",
+      "coverage": "partial",
+      "scoring_role": "diagnostic_only"
+    },
+    {
+      "id": "evaluation_03",
+      "dimension": "几何",
+      "description": [
+        "可见区域轮廓误差、采样表面距离、深度层次和接触/穿透",
+        "将参考按题目尺度归一并用可见地标对齐后比较；原模型绝对坐标和隐藏表面不做硬约束。不同合理单视图解允许通过。"
+      ],
+      "source_quote": "| 几何 | 可见区域轮廓误差、采样表面距离、深度层次和接触/穿透 | 将参考按题目尺度归一并用可见地标对齐后比较；原模型绝对坐标和隐藏表面不做硬约束。不同合理单视图解允许通过。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "geometry_selection_without_semantic_score"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md",
+      "coverage": "partial",
+      "scoring_role": "diagnostic_only"
+    },
+    {
+      "id": "evaluation_04",
+      "dimension": "视觉",
+      "description": [
+        "主视图构图、材质分布、光影；参考对齐后的区域图像差异",
+        "从提交工程重渲染；报告几何、材质、光影分项，细小文字及允许简化的细节不要求像素一致。"
+      ],
+      "source_quote": "| 视觉 | 主视图构图、材质分布、光影；参考对齐后的区域图像差异 | 从提交工程重渲染；报告几何、材质、光影分项，细小文字及允许简化的细节不要求像素一致。 |",
+      "methods": [
+        "main_view_image_comparison",
+        "reviewed_regions_and_landmarks"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md",
+      "coverage": "partial",
+      "scoring_role": "appearance_proxy"
+    },
+    {
+      "id": "evaluation_05",
+      "dimension": "状态一致性",
+      "description": [
+        "备用相机规定偏移、视差与遮挡一致性",
+        "两相机使用同一实体结构；备用视图没有目标图，不与源作者任意备用相机比较。"
+      ],
+      "source_quote": "| 状态一致性 | 备用相机规定偏移、视差与遮挡一致性 | 两相机使用同一实体结构；备用视图没有目标图，不与源作者任意备用相机比较。 |",
+      "methods": [
+        "camera_relationship",
+        "same_seed_reproduction"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md",
+      "coverage": "framework",
+      "scoring_role": "diagnostic_only"
+    },
+    {
+      "id": "evaluation_06",
+      "dimension": "可维护性",
+      "description": [
+        "可复现生成、可编辑主要对象、依赖局部化",
+        "二次执行代码得到等价场景；生成代码不能只是读取私有 GT 或联网取回原场景。"
+      ],
+      "source_quote": "| 可维护性 | 可复现生成、可编辑主要对象、依赖局部化 | 二次执行代码得到等价场景；生成代码不能只是读取私有 GT 或联网取回原场景。 |",
+      "methods": [
+        "camera_relationship",
+        "same_seed_reproduction"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md",
+      "coverage": "framework",
+      "scoring_role": "diagnostic_only"
+    },
+    {
+      "id": "evaluation_07",
+      "dimension": "效率",
+      "description": [
+        "耗时、token、工具调用、渲染及失败重试",
+        "Harness 统一记录；未校准前不将其混入质量总分。"
+      ],
+      "source_quote": "| 效率 | 耗时、token、工具调用、渲染及失败重试 | Harness 统一记录；未校准前不将其混入质量总分。 |",
+      "methods": [
+        "cost_accounting_separate"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md",
+      "coverage": "framework",
+      "scoring_role": "diagnostic_only"
+    }
+  ],
+  "public_numeric_clauses": [
+    "Set the foreground desk tabletop height to 0.75 m.",
+    "Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged.",
+    "Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1."
+  ],
+  "public_render_contract": {
+    "engine": "CYCLES",
+    "view_transform": "Standard",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "material_policy": {
+    "image_textures": false,
+    "procedural_shading": true,
+    "solid_color": true,
+    "scope": [
+      "materials",
+      "nested_node_groups",
+      "world",
+      "lights",
+      "geometry_node_image_inputs",
+      "legacy_modifier_textures",
+      "compositor_images"
+    ],
+    "edit_baseline": "Image-textured original inputs require a versioned procedural baseline and matching reference; never silently exempt inherited image textures"
+  },
+  "scoring": {
+    "profile": "reference_visual",
+    "text_semantics": "separate_from_image_metric",
+    "vit_enabled": false,
+    "cost_in_quality_score": false,
+    "main_image_weight": 0.6,
+    "weights_status": "pilot_detector_and_perception_calibration_pending",
+    "invalid_input_has_model_score": false,
+    "main_image_method": "reference-regions-v1",
+    "evaluation_mode": "render_and_reference_similarity",
+    "minimum_similarity": null,
+    "diagnostic_weight": 0.0,
+    "render_validity_weight": 0.1,
+    "physics_weight": 0.1,
+    "localization_weight": 0.2,
+    "component_weights": {
+      "main_image": 0.6,
+      "localization": 0.2,
+      "physics": 0.1,
+      "render_validity": 0.1
+    }
+  },
+  "ground_truth": {
+    "use_private_example_for_brief": false,
+    "alternate_view_pixel_gt": false,
+    "hidden_dimensions_or_object_names_as_requirements": false,
+    "main_image": "public_reference",
+    "private_target_index": null
+  },
+  "mvp_status": "case_controls_pending",
+  "implementation_status": "embodied_reference_pilot",
+  "case_measurements": "Set the foreground desk tabletop height to 0.75 m.",
+  "numeric_method": "Use only published scale convention and visible geometric relations; match a reviewed entity/landmark binding. Do not infer hidden dimensions or compare alternate view to absent ground truth.",
+  "deferred": [],
+  "human_assistance": [
+    "Review reference instance boxes and detector errors on independent examples",
+    "Calibrate location weights and thresholds independently of model rankings"
+  ],
+  "active_checks": [
+    {
+      "id": "real_geometry",
+      "existing_check": "real_geometry",
+      "source": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required."
+    },
+    {
+      "id": "alternate_relationship",
+      "existing_check": "alternate_relationship",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "main_projection",
+      "existing_check": "main_projection",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "main_native_size",
+      "existing_check": "main_native_size",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "main_png",
+      "existing_check": "main_png",
+      "source": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```"
+    },
+    {
+      "id": "alternate_native_size",
+      "existing_check": "alternate_native_size",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "alternate_png",
+      "existing_check": "alternate_png",
+      "source": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```"
+    },
+    {
+      "id": "engine",
+      "existing_check": "engine",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "view_transform",
+      "existing_check": "view_transform",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "exposure",
+      "existing_check": "exposure",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "gamma",
+      "existing_check": "gamma",
+      "source": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency."
+    },
+    {
+      "id": "metres",
+      "existing_check": "metres",
+      "source": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required."
+    },
+    {
+      "id": "unit_scale",
+      "existing_check": "unit_scale",
+      "source": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required."
+    },
+    {
+      "id": "editable",
+      "existing_check": "editable",
+      "source": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required."
+    },
+    {
+      "id": "published_scale_height",
+      "source": "instruction.md public scale convention and explicit numerical protocol",
+      "check": {
+        "id": "published_scale_height",
+        "metric": "l2_reference_height",
+        "group": "numeric",
+        "params": {
+          "role": "scale_anchor",
+          "expected": 0.75,
+          "tolerance": 0.015,
+          "support_role": "scale_support"
+        }
+      }
+    }
+  ],
+  "numeric_role_protocol": "Optional diagnostics only; no scale roles required for the main score.",
+  "scale_definition": {
+    "kind": "height",
+    "target": "the foreground desk tabletop",
+    "expected": 0.75,
+    "tolerance": 0.015,
+    "checks": [
+      {
+        "id": "published_scale_height",
+        "source": "instruction.md public scale convention and explicit numerical protocol",
+        "check": {
+          "id": "published_scale_height",
+          "metric": "l2_reference_height",
+          "group": "numeric",
+          "params": {
+            "role": "scale_anchor",
+            "expected": 0.75,
+            "tolerance": 0.015,
+            "support_role": "scale_support"
+          }
+        }
+      }
+    ],
+    "protocol": "Use bench_role=\"scale_anchor\" for the foreground desk tabletop. Use scale_support for the actual supporting floor, balcony deck or ground beneath that anchor. Height is measured from its top surface to the local support surface, not world Z=0. Tolerance for this pilot is 2% of the published value; it is not a calibrated benchmark threshold."
+  },
+  "implemented_scope": [
+    "fixed reference subject regions",
+    "static surface support",
+    "existing validity gates",
+    "independent semantic detection",
+    "same-class one-to-one image-plane box matching"
+  ],
+  "remaining_engineering": [],
+  "optional_diagnostics": [
+    "absolute dimensions",
+    "semantic identity"
+  ],
+  "physics": {
+    "method": "static-support-v1",
+    "gravity": "down_z",
+    "ground_mode": "scene",
+    "contact_tolerance_m": 0.02,
+    "ground_lower_fraction": 0.35,
+    "minimum_ground_area_fraction": 0.15
+  },
+  "reference_annotation": {
+    "path": "harness/reference_regions.json",
+    "sha256": "95a15b6f5a97145f26e0957a130f99b4f6e5da9123a3b1a186c0496576c3334d"
+  },
+  "reference_boxes": {
+    "path": "harness/reference_boxes.json",
+    "sha256": "7ca2cd49db5973c268347c476fb0518df38090f940e14f857ae412b9e7a8fcaf"
+  },
+  "vlm_judge": {
+    "version": "l2-vlm-judge-v3",
+    "mode": "interactive",
+    "spec_path": "harness/vlm_spec.json",
+    "spec_sha256": "6adf2d5301190ca3b681fae019b3627676979efcbb07c6d2144d273a4d8b694a",
+    "component_weights": {
+      "main_image": 0.5,
+      "localization": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication"
+  },
+  "score_aggregation_note": "## 当前复评口径：v8 / Strict fidelity review\n\n仅复评原作品，未改动原生成题面。逐题原图/文本特征；主视图必查，跨视图项必须核对所有公开原图和候选双视图。\n每项列出达成、差异和严重度后评0–4级；主要缺陷最多2级，主体错误/缺失0级，不能因制作精致掩盖不忠于参考。\n保持原总权重及自动/物理测量：Brief VLM60/测量30/物理10；Edit 数值20/目标30/保持20/物理10/VLM20；Reference 图像50/定位20/物理10/VLM20。\n定位沿用原冻结参考框及公式，重新独立识别候选框。禁止任意配准。未展示仅扣对应项；技术失败不补零。\n机器草案和裁判尚待人工校准，不声称人工认证。详见 harness/vlm_spec.json。\n"
+}

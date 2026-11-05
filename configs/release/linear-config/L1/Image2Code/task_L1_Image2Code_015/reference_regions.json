@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_015",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "8f185382e6090ef31b0bb6fb659e19e6fc298bc9ed58677cff2d25b412ec70e8",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "front fan intake 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.611,
+          0.405
+        ],
+        [
+          0.887,
+          0.405
+        ],
+        [
+          0.887,
+          0.727
+        ],
+        [
+          0.611,
+          0.727
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "engine core and pipes 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.253,
+          0.355
+        ],
+        [
+          0.746,
+          0.355
+        ],
+        [
+          0.746,
+          0.704
+        ],
+        [
+          0.253,
+          0.704
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "rear exhaust cone 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.084,
+          0.249
+        ],
+        [
+          0.414,
+          0.249
+        ],
+        [
+          0.414,
+          0.559
+        ],
+        [
+          0.084,
+          0.559
+        ]
+      ]
+    }
+  ]
+}

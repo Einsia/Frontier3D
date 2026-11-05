@@ -1,0 +1,179 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Text2Code/task_L1_Text2Code_010",
+  "family": "Brief2Scene",
+  "instruction_sha256": "69695a1870d190ed2834ad20f9d152860ca1d8897338a8dc5c408c95e0393f7f",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "伸缩方管锁销总成；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "question": "9件独立可编辑部件：outer_tube×1、inner_tube×1、guide×2、plug×1、cap×1、pin×1、retainer×2；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_part_roles"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_outer_tube",
+      "component": "Q",
+      "question": "竖直外方管外44×44 mm、开口36×36 mm、长80 mm，Z=0..80；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_outer_tube"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_inner_tube",
+      "component": "Q",
+      "question": "内方管外32×32 mm、开口26×26 mm、长90 mm，Z=40..130，和外管同轴；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_inner_tube"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_guides",
+      "component": "Q",
+      "question": "两个方导环外35.6×35.6 mm、开口32.4×32.4 mm、高8 mm，中心Z=8/70；下环位于内管下方并为空；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_guides"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_plug",
+      "component": "Q",
+      "question": "底塞43×43×5 mm，中心Z=-2.5；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_plug"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_cap",
+      "component": "Q",
+      "question": "顶盖34×34×4 mm，中心Z=132；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_cap"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_pin",
+      "component": "Q",
+      "question": "锁销直径6 mm、长58 mm，沿X，Y=0/Z=66；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_pin"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_pin_clearance",
+      "component": "Q",
+      "question": "两管对齐X向孔6.4 mm，并切去上导环相交的下缘以供锁销通过；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_pin_clearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_retainers",
+      "component": "Q",
+      "question": "两个销挡圈外径12 mm、孔6.4 mm、X宽2 mm，中心X=±30且位于销轴线上；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_retainers"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_assembly_clearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "question": "方管/盖板蓝灰、锁销银色、独立导环与挡圈黄铜；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_materials"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04363636363636364,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ],
+  "reference_bindings": {},
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

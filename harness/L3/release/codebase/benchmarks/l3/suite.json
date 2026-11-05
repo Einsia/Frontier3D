@@ -1,0 +1,549 @@
+{
+  "schema_version": 1,
+  "status": "proposed_suite",
+  "target_count": 15,
+  "weights": null,
+  "input_split": {
+    "game": {
+      "image": 4,
+      "text": 2
+    },
+    "embodied": {
+      "image": 4,
+      "text": 2
+    },
+    "real_world": {
+      "image": 2,
+      "text": 1
+    }
+  },
+  "odd_category_split": "real_world_2_image_1_text_total_10_image_5_text",
+  "tasks": [
+    {
+      "id": "G01",
+      "slug": "MinecraftVillage",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "Minecraft：河岸平原村落",
+      "status": "pilot_unvalidated",
+      "task_path": "tasks/L3/MinecraftVillage",
+      "extent_m": [
+        140,
+        120
+      ],
+      "zones": [
+        "村庄街区",
+        "双铁匠铺",
+        "农田与牲畜圈",
+        "水岸与地形"
+      ],
+      "minimum_buildings": 11,
+      "minimum_accessible_rooms": 8,
+      "minimum_nonstructural_props": 40,
+      "mechanism_families": [
+        "铰链开合与通行",
+        "容器取物",
+        "收获补种",
+        "方块编辑",
+        "加工与库存前置条件"
+      ],
+      "continuous_workflow": "住宅取种子→农田收获补种→铁匠铺加工→仓库取工具→返回检查持久状态",
+      "reference_status": "single_image_available_annotations_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "G02",
+      "slug": "SekiroCastleKeep",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "只狼：苇名城主楼及相连庭院",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        100,
+        90
+      ],
+      "zones": [
+        "三层主楼",
+        "屋顶与回廊",
+        "外围庭院",
+        "相连服务院落"
+      ],
+      "minimum_buildings": 3,
+      "minimum_accessible_rooms": 16,
+      "minimum_nonstructural_props": 100,
+      "mechanism_families": [
+        "推拉门",
+        "屏风与通行",
+        "梯子与楼层连通",
+        "升降平台",
+        "机关开启侧路"
+      ],
+      "continuous_workflow": "从庭院进入主楼→逐层取钥匙→开启上层机关→返回庭院走解锁侧路",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。",
+      "scope_alternatives": [
+        {
+          "scale": "single_room",
+          "title": "只狼：苇名城的一个精细房间",
+          "status": "candidate_scope_pending_reference_selection"
+        }
+      ]
+    },
+    {
+      "id": "G03",
+      "slug": "RDR2FrontierTown",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "荒野大镖客2：瓦伦丁中心街区",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        240,
+        180
+      ],
+      "zones": [
+        "主街与支路",
+        "酒馆与商铺",
+        "马厩后院",
+        "货场与坡地"
+      ],
+      "minimum_buildings": 14,
+      "minimum_accessible_rooms": 8,
+      "minimum_nonstructural_props": 140,
+      "mechanism_families": [
+        "百叶门与双扇门",
+        "货物搬运与堆放",
+        "马厩围栏",
+        "手推车",
+        "店铺抽屉与收纳"
+      ],
+      "continuous_workflow": "货场装车→穿越街区→商铺卸货入柜→关闭马厩围栏→返回货场",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "G04",
+      "slug": "OverwatchHarborDistrict",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "守望先锋：指定沿海护送地图街区",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        220,
+        140
+      ],
+      "zones": [
+        "港口广场",
+        "商业街及侧巷",
+        "两层仓库",
+        "高架检修通道"
+      ],
+      "minimum_buildings": 12,
+      "minimum_accessible_rooms": 8,
+      "minimum_nonstructural_props": 120,
+      "mechanism_families": [
+        "升降门",
+        "检修电源联锁",
+        "货梯",
+        "可移动载荷平台",
+        "多层可达路径"
+      ],
+      "continuous_workflow": "恢复分区电源→开启仓库→货梯运送货箱→沿街运至码头",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "G05",
+      "slug": "OuterWildsHydraulicRuins",
+      "domain": "game",
+      "input_mode": "text",
+      "title": "星际拓荒风格：外星水力遗迹区域",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        240,
+        180
+      ],
+      "zones": [
+        "环形遗迹",
+        "蓄水庭院",
+        "地下水道与控制室",
+        "观测台及栈道"
+      ],
+      "minimum_buildings": 8,
+      "minimum_accessible_rooms": 10,
+      "minimum_nonstructural_props": 100,
+      "mechanism_families": [
+        "阀门",
+        "闸门",
+        "水位状态",
+        "浮台高度",
+        "供电与通路联锁"
+      ],
+      "continuous_workflow": "低水位进入控制室→调整阀门→升水浮台抵达高层→开排水闸→从下层返回",
+      "reference_status": "not_applicable",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "G06",
+      "slug": "ZeldaFrontierValley",
+      "domain": "game",
+      "input_mode": "text",
+      "title": "旷野之息风格：驿站、废墟与山谷生活区",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        320,
+        240
+      ],
+      "zones": [
+        "驿站与马棚",
+        "废墟及高地",
+        "河谷与桥",
+        "林地营地"
+      ],
+      "minimum_buildings": 10,
+      "minimum_accessible_rooms": 6,
+      "minimum_nonstructural_props": 140,
+      "mechanism_families": [
+        "物体推拉与稳定放置",
+        "压板",
+        "绞盘桥",
+        "拾取收纳",
+        "升降台"
+      ],
+      "continuous_workflow": "驿站取工具→营地搬运配重→触发压板→放下桥梁→高地回收物资并返回",
+      "reference_status": "not_applicable",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "E01",
+      "slug": "DuplexHome",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：两层住宅、车库与庭院",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        42,
+        32
+      ],
+      "zones": [
+        "两层生活空间",
+        "厨房与洗衣房",
+        "车库",
+        "庭院温室"
+      ],
+      "minimum_buildings": 3,
+      "minimum_accessible_rooms": 16,
+      "minimum_nonstructural_props": 150,
+      "mechanism_families": [
+        "门窗与抽屉",
+        "抓取和摆放",
+        "容器收纳",
+        "水龙头开关",
+        "洗衣设备状态"
+      ],
+      "continuous_workflow": "车库取篮→卧室收衣→洗衣房装载→厨房归置餐具→庭院放置工具",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。",
+      "scope_alternatives": [
+        {
+          "scale": "single_room",
+          "title": "具身：复杂可交互厨房",
+          "status": "candidate_scope_pending_reference_selection"
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "slug": "SupermarketServiceBlock",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：超市营业区、冷库与卸货区",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        85,
+        65
+      ],
+      "zones": [
+        "营业货架区",
+        "后场与冷库",
+        "卸货口",
+        "收银及回收区"
+      ],
+      "minimum_buildings": 3,
+      "minimum_accessible_rooms": 10,
+      "minimum_nonstructural_props": 250,
+      "mechanism_families": [
+        "推车",
+        "冷库门",
+        "货架摆放",
+        "扫码与分拣状态",
+        "周转箱开合"
+      ],
+      "continuous_workflow": "卸货口领取货物→冷链与常温分类入库→按清单补货→推车回收",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "E03",
+      "slug": "WorkshopLoadingYard",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：维修工坊与室外物流场",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        120,
+        90
+      ],
+      "zones": [
+        "维修工位",
+        "备件库",
+        "室外装卸场",
+        "包装与废料区"
+      ],
+      "minimum_buildings": 5,
+      "minimum_accessible_rooms": 12,
+      "minimum_nonstructural_props": 180,
+      "mechanism_families": [
+        "工具取放",
+        "滑轨抽屉",
+        "夹具",
+        "工位升降台",
+        "托盘车"
+      ],
+      "continuous_workflow": "备件库取件→工位夹持装配→测试夹具状态→装箱→运到室外托盘",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "E04",
+      "slug": "GreenhouseOrchard",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：温室、果园与灌溉服务区",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        200,
+        150
+      ],
+      "zones": [
+        "连栋温室",
+        "果园地块",
+        "泵房与储水池",
+        "分拣包装棚"
+      ],
+      "minimum_buildings": 7,
+      "minimum_accessible_rooms": 8,
+      "minimum_nonstructural_props": 180,
+      "mechanism_families": [
+        "阀门与分区水流状态",
+        "采摘",
+        "容器容量",
+        "运输车",
+        "分拣与称量"
+      ],
+      "continuous_workflow": "泵房开启目标灌溉分区→温室采摘→分拣称量→装箱运到集货棚",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "E05",
+      "slug": "ClinicalServiceWard",
+      "domain": "embodied",
+      "input_mode": "text",
+      "title": "具身：病区及物资服务走廊",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        90,
+        70
+      ],
+      "zones": [
+        "病房与卫生间",
+        "护士站",
+        "清洁与物资间",
+        "环形服务走廊"
+      ],
+      "minimum_buildings": 1,
+      "minimum_accessible_rooms": 22,
+      "minimum_nonstructural_props": 200,
+      "mechanism_families": [
+        "门与防碰撞通行",
+        "抽屉和柜锁",
+        "床体升降",
+        "手推车",
+        "物资分区收纳"
+      ],
+      "continuous_workflow": "物资间按清单装车→多病房补给→调整空床高度→回收容器→归还推车",
+      "reference_status": "not_applicable",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "E06",
+      "slug": "WaterTreatmentFacility",
+      "domain": "embodied",
+      "input_mode": "text",
+      "title": "具身：水处理设施与检修平台",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        180,
+        130
+      ],
+      "zones": [
+        "泵房与管道区",
+        "沉降池",
+        "高架检修平台",
+        "控制和备件室"
+      ],
+      "minimum_buildings": 6,
+      "minimum_accessible_rooms": 10,
+      "minimum_nonstructural_props": 160,
+      "mechanism_families": [
+        "串并联阀门",
+        "电源联锁",
+        "检修门",
+        "过滤件装卸",
+        "跨层运输"
+      ],
+      "continuous_workflow": "断开目标回路→关闭旁路阀→更换过滤件→复位→验证目标池进水状态",
+      "reference_status": "not_applicable",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "R01",
+      "slug": "HengdianPalaceDistrict",
+      "domain": "real_world",
+      "input_mode": "image",
+      "title": "现实：横店秦王宫前广场、宫门和相连院落",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        300,
+        220
+      ],
+      "zones": [
+        "前广场",
+        "宫门与台阶",
+        "两侧廊庑",
+        "相连庭院及服务区"
+      ],
+      "minimum_buildings": 10,
+      "minimum_accessible_rooms": 8,
+      "minimum_nonstructural_props": 180,
+      "mechanism_families": [
+        "大型双扇门",
+        "侧门",
+        "活动围栏",
+        "灯光分区",
+        "影视器材推车与收纳"
+      ],
+      "continuous_workflow": "从服务区推送器材→开启侧门进院→设置拍摄区围栏与灯光→收回器材",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "R02",
+      "slug": "CoastalFerryTerminal",
+      "domain": "real_world",
+      "input_mode": "image",
+      "title": "现实：一处沿海渡口、市场街与后勤区",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        220,
+        160
+      ],
+      "zones": [
+        "渡口候船区",
+        "连接栈桥",
+        "市场与街巷",
+        "后勤仓库"
+      ],
+      "minimum_buildings": 12,
+      "minimum_accessible_rooms": 8,
+      "minimum_nonstructural_props": 160,
+      "mechanism_families": [
+        "闸机与通行门",
+        "升降栈桥",
+        "货物推车",
+        "摊位卷帘",
+        "遮阳棚"
+      ],
+      "continuous_workflow": "后勤区取货→开市场卷帘→配送摊位→打开登船通道→收车入库",
+      "reference_status": "acquisition_pending",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    },
+    {
+      "id": "R03",
+      "slug": "RegionalRailHub",
+      "domain": "real_world",
+      "input_mode": "text",
+      "title": "现实：县域铁路站前综合交通枢纽",
+      "status": "proposed",
+      "task_path": null,
+      "extent_m": [
+        280,
+        210
+      ],
+      "zones": [
+        "站前广场",
+        "站厅与站台",
+        "公交与出租车接驳区",
+        "商业及后勤区"
+      ],
+      "minimum_buildings": 7,
+      "minimum_accessible_rooms": 14,
+      "minimum_nonstructural_props": 200,
+      "mechanism_families": [
+        "闸机",
+        "电梯",
+        "行李车",
+        "卷帘门",
+        "路径与无障碍通行"
+      ],
+      "continuous_workflow": "接驳区领取行李→经站厅闸机和电梯到站台→卸载→经后勤路线归还车辆",
+      "reference_status": "not_applicable",
+      "oracle_status": "specification_pending",
+      "scope_note": "范围和交互为拟定题目约束；题名不表示游戏原作或现实地点具有这些机制。"
+    }
+  ],
+  "scope_policy": {
+    "allowed_scales": [
+      "single_room",
+      "multi_room",
+      "region"
+    ],
+    "uniform_minimum_area": null,
+    "uniform_minimum_zone_count": null,
+    "complexity_basis": [
+      "spatial_structure",
+      "object_relationships",
+      "dynamic_clearance",
+      "interaction_preconditions",
+      "continuous_workflow"
+    ],
+    "aggregation": "per_task; report results stratified by spatial scale"
+  }
+}

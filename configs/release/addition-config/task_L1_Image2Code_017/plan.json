@@ -1,0 +1,276 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_017",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/44424d37ed6644498d01/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/7f3e4e39dadca84d1e8e/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/5a73d7da8da42c87c80b/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "长机身",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.257,
+          0.469
+        ],
+        [
+          0.277,
+          0.449
+        ],
+        [
+          0.311,
+          0.451
+        ],
+        [
+          0.647,
+          0.547
+        ],
+        [
+          0.72,
+          0.585
+        ],
+        [
+          0.706,
+          0.602
+        ],
+        [
+          0.613,
+          0.59
+        ],
+        [
+          0.286,
+          0.495
+        ],
+        [
+          0.263,
+          0.483
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "远侧后掠机翼",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.476,
+          0.504
+        ],
+        [
+          0.748,
+          0.438
+        ],
+        [
+          0.785,
+          0.435
+        ],
+        [
+          0.772,
+          0.444
+        ],
+        [
+          0.567,
+          0.524
+        ],
+        [
+          0.523,
+          0.527
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "近侧弯曲机翼",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.41,
+          0.526
+        ],
+        [
+          0.51,
+          0.551
+        ],
+        [
+          0.471,
+          0.57
+        ],
+        [
+          0.437,
+          0.604
+        ],
+        [
+          0.416,
+          0.635
+        ],
+        [
+          0.405,
+          0.629
+        ],
+        [
+          0.399,
+          0.614
+        ]
+      ]
+    },
+    {
+      "id": "r04",
+      "label": "近侧发动机短舱",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.36,
+          0.543
+        ],
+        [
+          0.375,
+          0.541
+        ],
+        [
+          0.408,
+          0.552
+        ],
+        [
+          0.405,
+          0.582
+        ],
+        [
+          0.371,
+          0.578
+        ],
+        [
+          0.356,
+          0.566
+        ]
+      ]
+    },
+    {
+      "id": "r05",
+      "label": "垂直及水平尾翼",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.606,
+          0.575
+        ],
+        [
+          0.715,
+          0.498
+        ],
+        [
+          0.736,
+          0.503
+        ],
+        [
+          0.713,
+          0.568
+        ],
+        [
+          0.788,
+          0.554
+        ],
+        [
+          0.799,
+          0.558
+        ],
+        [
+          0.729,
+          0.592
+        ],
+        [
+          0.685,
+          0.62
+        ],
+        [
+          0.673,
+          0.616
+        ],
+        [
+          0.658,
+          0.587
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n01",
+      "source_quote": "twin engine nacelles",
+      "quantity": "发动机短舱数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维几何中按独立发动机短舱组件计数；同一短舱的外壳、内部和吊挂不重复计数，遮挡不减少计数。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "模型最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在静态姿态下，将飞机全部几何变换到米制世界坐标，排除相机与灯光，求沿模型纵向、横向和Z向的整体包围尺寸并取最大值。容差字段0.02表示原文的相对容差2%，不是额外推定的绝对公差。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Birthday Cake (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 9,
+  "original_sha256": "d6444ecfdabad722e1d0d2c699f553d2cfb7253fdf1c2ed93c1c98039a34aef0",
+  "input_sha256": "bab2eaa081717b702c334437324b5abf05a5f7aa252aeb0efc0193f3e7d46d43",
+  "input_dimensions": [
+    1200,
+    1600
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

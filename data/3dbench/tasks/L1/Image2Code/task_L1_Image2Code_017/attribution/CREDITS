@@ -1,0 +1,17 @@
+Task: L1/Image2Code/task_L1_Image2Code_017
+Original source task ID: L1/Image2Code/task_L1_Image2Code_019
+
+Original source notice (environment/input/CREDIT.txt):
+
+Boeing 787-9 Qantas Centenary
+Author: mudkipz321 (https://sketchfab.com/mudkipz321)
+Source: https://sketchfab.com/3d-models/boeing-787-9-qantas-centenary-4b061566dc5a4495bff5e8c7e911ec4e
+License: CC-BY-4.0
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Baked the evaluated source pose at frame 1; source animation omitted from the static task.
+No endorsement by the original author is implied.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

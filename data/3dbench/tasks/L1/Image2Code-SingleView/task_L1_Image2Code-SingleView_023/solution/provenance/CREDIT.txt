@@ -1,0 +1,7 @@
+Yuanmingyuan Ox Head
+Author: User-provided original model (https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug)
+Source: https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug
+License: User-contributed, permission for inclusion in this benchmark per conversation; no public license asserted
+https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

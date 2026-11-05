@@ -1,0 +1,208 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Text2Code/task_L1_Text2Code_005",
+  "family": "Brief2Scene",
+  "instruction_sha256": "83b9dc201557dcad87dc3d5ec2d6656eb5fe062766809098ee6a21bb1fe6473c",
+  "reference_policy": "Written brief only; NEVER show a private reference design to the text judge.",
+  "focus": "L1 object/assembly task. Do not require a room or scene population. Exact tolerances remain automatic. Use authored appearance for aesthetics, not diagnostic silhouette masks. 每项按题面独立检查零件、加工特征和装配关系。不存在私有参考造型约束。不可凭物体名确认孔道、尺寸或材质。 本题不要求提交相机或灯光；全部候选使用同一固定中性摄影棚呈现。只评价模型自身的构成、角色配色、表面质量和可读性，不把测评器的相机/灯光成果奖励给候选，也不因未创作相机/灯光扣分。",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "part_roles",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "16件独立可编辑部件：base×1、cheek×2、pulley×1、bushing×1、axle×1、collar×2、bolt×4、washer×4 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "part_roles"
+      ]
+    },
+    {
+      "id": "base",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "底座80×70×8 mm，底Z=0，四孔直径6.4 mm位于XY=(±30,±24) Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "base"
+      ]
+    },
+    {
+      "id": "cheeks",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "两叉板8×42×64 mm，中心(±20,0,40)，X向通孔10.4 mm，轴线Y=0/Z=50 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "cheeks"
+      ]
+    },
+    {
+      "id": "pulley",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "滑轮沿X；中心桶径40 mm、长18 mm，两轮缘径50 mm/厚3 mm且X=±10.5；融合为一件，中心孔16.4 mm Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "pulley"
+      ]
+    },
+    {
+      "id": "bushing",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "衬套外径16 mm、孔径10.4 mm、长24 mm，居中装入滑轮 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "bushing"
+      ]
+    },
+    {
+      "id": "axle",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "轴直径10 mm、长58 mm，X向居中，Y=0/Z=50 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "axle"
+      ]
+    },
+    {
+      "id": "collars",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "两轴环外径18 mm、孔径10.4 mm、宽3 mm，X=±28 mm Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "collars"
+      ]
+    },
+    {
+      "id": "fasteners",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "四螺杆直径6 mm、长9.5 mm从Z=0起；垫圈12/6.4/1.5 mm在底座上；六角头高4 mm/外接圆10.8 mm在垫圈上 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "fasteners"
+      ]
+    },
+    {
+      "id": "wheel_clearance",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "滑轮两侧到叉板各有4 mm间隙 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "wheel_clearance"
+      ]
+    },
+    {
+      "id": "assembly_clearance",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "assembly_clearance"
+      ]
+    },
+    {
+      "id": "topology",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "所有零件闭合且分别连通 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "topology"
+      ]
+    },
+    {
+      "id": "solid_validity",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "有效实体零件 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "solid_validity"
+      ]
+    },
+    {
+      "id": "units",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "米制导出，X长度/Y宽度/Z向上 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "units"
+      ]
+    },
+    {
+      "id": "hierarchy",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "自由描述性名称、独立可编辑部件与清晰组织 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "hierarchy"
+      ]
+    },
+    {
+      "id": "state_cycle",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "state_cycle"
+      ]
+    },
+    {
+      "id": "glb_assembled",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "GLB与原生帧1装配态一致 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "glb_assembled"
+      ]
+    },
+    {
+      "id": "materials",
+      "dimension": "instruction_following",
+      "weight": 0.03529411764705882,
+      "question": "结构件蓝灰，轴与螺栓银色，衬套/轴环/垫圈黄铜 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "materials"
+      ]
+    },
+    {
+      "id": "aesthetic_composition",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "在统一诊断视图下评价零件构成、装配层级和主体可读性；不评价测评器控制的取景。",
+      "units": [
+        "aesthetic_composition"
+      ]
+    },
+    {
+      "id": "aesthetic_light_color",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "评价题面允许的角色配色、材质反射层次与色彩协调；统一灯光由测评器提供，不作为候选创作能力。",
+      "units": [
+        "aesthetic_light_color"
+      ]
+    },
+    {
+      "id": "aesthetic_finish",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade visible shape/material finish, clean joins, proportions and intentional detail; complexity alone earns nothing.",
+      "units": [
+        "aesthetic_finish"
+      ]
+    },
+    {
+      "id": "aesthetic_coherence",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade coherent overall design and presentation; allow every design satisfying the written brief.",
+      "units": [
+        "aesthetic_coherence"
+      ]
+    }
+  ],
+  "localization": null
+}

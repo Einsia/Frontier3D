@@ -1,0 +1,76 @@
+{
+  "version": "reference-boxes-v1",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "734a6a362c6cdfb61fc18fa74b0a2e6599218b59d4486b00f26ea778893ef33c",
+  "image_size": [
+    1000,
+    1000
+  ],
+  "detector": {
+    "fingerprint": "l1-ai-reference-only-draft-20261011"
+  },
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "targets": [
+    {
+      "id": "part_1",
+      "query": "treasure chest",
+      "boxes": [
+        [
+          0.08,
+          0.16,
+          0.92,
+          0.9
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_2",
+      "query": "arched lid",
+      "boxes": [
+        [
+          0.08,
+          0.16,
+          0.91,
+          0.54
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_3",
+      "query": "side handle",
+      "boxes": [
+        [
+          0.71,
+          0.54,
+          0.86,
+          0.68
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    }
+  ]
+}

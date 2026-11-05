@@ -1,0 +1,13 @@
+{
+  "fps": 24,
+  "frames": {
+    "1": "closed",
+    "31": "half open",
+    "61": "open",
+    "91": "half closed",
+    "121": "closed"
+  },
+  "primary_render_frame": 61,
+  "scale_reference_frame": 1,
+  "motion": "Upward door rotation with hinged telescoping support struts. Remain attached at both ends; rigid parts retain their shape."
+}

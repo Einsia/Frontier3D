@@ -1,0 +1,85 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/CodeEdit/task_L1_CodeEdit_006",
+  "family": "SceneEdit",
+  "instruction_sha256": "c959e7a2b68f3db273950fece690fa8fd4542d3caa82ce3308bfbe4760082597",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "法兰轮毂孔组重布；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "question": "Revise the supplied flanged hub so its six mounting holes lie outside the neck. Replace the old six cuts with six diameter-4.3 mm through-holes, equally spaced on a 33.0 mm pitch circle, preserving the original angular phase. Fill the obsolete cuts, including the grooves they left in the neck. Increase the central bore from diameter 10.8 to 12.5 mm. Increase the flange thickness from 2.5 to 4.0 mm upward from its unchanged bottom plane. Keep the flange outside diameter 42.5 mm, neck outside diameter 21.52 mm and overall height 27.4 mm. Retain 0.4 mm chamfers at the top and bottom edge sets, adapting their topology to the new bores. The final hub must be one closed connected solid with six separate open mounting holes and an uninterrupted neck wall around the central bore.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "question": "本题孔、槽、口袋和相交通道为真实空腔；按题面区分盲孔、贯通与连接，不得封片/填料冒充；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "question": "移除/填补题面指定旧特征并保留未指定的细节；不得叠加两套孔/槽或全局拉伸；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "units": [
+        "protected_appearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/before.png": "e74c2ee8c9529785fa386deb768bc4653c65f9739375b7040d76d24e0594e688",
+    "reference/target.png": "67f46761e32e1932691b8932a0affc410857d07836a1fcfae0fd46c1cd23886c"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

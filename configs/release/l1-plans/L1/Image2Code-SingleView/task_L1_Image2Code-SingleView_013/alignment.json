@@ -1,0 +1,265 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013",
+  "category": "Image2Code-SingleView",
+  "title": "双端滚筒采掘机器人",
+  "profile": "l1-reference-l2aligned-v1.0.0",
+  "l2_baseline": "l2-reference-localized-vlm-v7.1.0",
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "physics": 0.1,
+    "vlm": 0.2
+  },
+  "spec_sha256": "c481937e625faca2cc4ed04aaf6923f77d5bca0ff1c5b6ccd3038be2b6ff8639",
+  "sources": {
+    "instruction.md": "74d952eb07894659c0863b051f823328bdec169ec29a25924d9951e69c9040b7",
+    "solution/EVALUATION.md": "d236c6cdbcb57e6096b4154cbd96c5c78e5f2b2dd5c06099fb29ddf4c706f729",
+    "harness/eval_spec.json": "91382e925a7b85c7f21f861a0f42618d60e1cd9b0ebde3ac034619af39815cb6",
+    "harness/evaluation_design.json": "13cc03ac260682110f274720364076d07af642cf3a738a3c12692121b0759f1d",
+    "environment/input/reference.png": "af90725edfe05190eefc0936b3e4d1df7aa796f98b27b8c83230d5435997385f"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "automatic_checks": [],
+  "reference_primary": "environment/input/reference.png",
+  "render_views": [
+    {
+      "id": "primary",
+      "location": [
+        1,
+        -1,
+        1
+      ],
+      "target": [
+        0,
+        0,
+        0.4
+      ],
+      "ortho_scale": 1.6,
+      "resolution": 128,
+      "frame": 1,
+      "beauty": true,
+      "beauty_resolution": [
+        1000,
+        1000
+      ],
+      "camera_source": "saved"
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "visible_components",
+      "text": "Reconstruct the assembled object using only the single image input/reference.png. No additional views or initial model are supplied. Model the compact central chassis, paired articulated end frames, large cylindrical digging drums with repeated scoops or ribs, tracks or wheel supports visible in the image, and the connecting joints. Preserve symmetry where present, real spaces between arms and chassis, and the repeated drum details around their circumference.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "尚未接入本题语义部件识别、局部特征与连接判定；不能以非空网格/全图相似度代替。"
+    },
+    {
+      "id": "editable_3d",
+      "text": "真实三维，可分别编辑语义部件；允许对象层级或可分离网格岛；不得用图像平面或不透明无结构块冒充",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "real_geometry",
+        "editable"
+      ],
+      "reason": "只核验非平面网格及基础可编辑性，尚不能识别语义分组或薄壳冒充。"
+    },
+    {
+      "id": "units_orientation",
+      "text": "米制导出，Z 向上",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "overall_span"
+      ],
+      "reason": "使用经过场景单位转换的真实顶点计算物理跨度，未绑定本题语义朝向。"
+    },
+    {
+      "id": "proportions",
+      "text": "按唯一公开主图保持可见轮廓、比例、遮挡及层次；合理补全背面/底面，不要求隐藏源拓扑",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "全图 SSIM 仅作整体外观证据，其他视图/局部比例及三维一致性尚未绑定。"
+    },
+    {
+      "id": "connections",
+      "text": "可见孔隙、薄结构、连接点和重叠层次为真实几何；避免刚性部件严重穿透或悬空，允许设计接头和软线缆",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "未绑定本题部件、孔隙和真实接触/碰撞关系。"
+    },
+    {
+      "id": "materials",
+      "text": "匹配主导材质、颜色及可见表面特征；细微磨损、字体/标记按本题允许范围简化",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "主图帧1在基准和每seed按本题粗二维ROI与真实几何掩膜对拍并乘入主分；不证明帧61外观、精确语义分割、厚度/连接或材质与灯光各自正确，其他公开视图和标定仍待完成。"
+    },
+    {
+      "id": "primary_view",
+      "text": "使用与 reference.png 匹配的相机生成 main.png",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "saved_camera"
+      ],
+      "reason": "主图帧1在基准和每seed按本题粗二维ROI与真实几何掩膜对拍并乘入主分；不证明帧61外观、精确语义分割、厚度/连接或材质与灯光各自正确，其他公开视图和标定仍待完成。"
+    },
+    {
+      "id": "camera_lighting",
+      "text": "场景保留审阅相机及中性棚拍照明",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "saved_camera"
+      ],
+      "reason": "取证保存相机及可见灯数量；中性照明/环境光的实际外观尚待判定，不把灯对象数量当照明正确性。"
+    },
+    {
+      "id": "main_png",
+      "text": "交付可解码的 PNG 主图，实际像素为 1000×1000",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "main_loadable",
+        "main_dimensions",
+        "main_format",
+        "main_render_consistency"
+      ],
+      "reason": "每次seed保存相机在帧1可信重渲染并核对PNG像素；完整渲染管线与容差标定仍待验收。"
+    },
+    {
+      "id": "state_cycle",
+      "text": "帧 1 装配、帧 61 主要语义组自由爆炸并返回帧 1；零件保形且可恢复",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "已配置题目帧策略与独立 seed 比较；姿态/语义组、可读性、完整保形及材质等价未正式标定。"
+    },
+    {
+      "id": "glb_equivalence",
+      "text": "原生与 GLB 在交付姿态的几何、尺度和可表达材质一致",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "跨格式诊断已复用，但本题等价阈值和角色/材质映射未标定。"
+    },
+    {
+      "id": "reconstruction",
+      "text": "便携代码在清洁环境重建全部交付；不依赖旧输出、个人路径或外部下载源模型/源视图",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "外层冻结公开输入及源码、禁网执行、重跑已有支持；完整依赖/来源语义和图像与场景一致性仍需验收。"
+    },
+    {
+      "id": "instructions",
+      "text": "README 说明运行与依赖",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "仅核验可读取，未判定说明内容。"
+    },
+    {
+      "id": "procedural_materials",
+      "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+      "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+      "source": "user_goal_2026-10-03 / seed delivery protocol",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": "f0e08684a5b8fe71096548e0bc51808cad4add1ddefa6be28365e82c096b710d",
+  "reference_boxes": "a7462dc16a0497c3d2e54a3834e839918ce663af810f54986c67f83adb70978d",
+  "vlm_spec_digest": "2f7aa855b040986183fd3a91c72b7338a27b6598a8cb950b5a51bb4244d9dd18",
+  "formal_score_eligible": false,
+  "reference_views": [
+    "environment/input/reference.png"
+  ],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": true,
+  "calibration_exposure": "reference_only_draft"
+}

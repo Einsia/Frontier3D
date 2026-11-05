@@ -1,0 +1,164 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+  "family": "Brief2Scene",
+  "instruction_sha256": "0411d1ec72c32f526468334816e0e8dd1ee52f9b0be4cf6897fe5a5d72b656ac",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {},
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "坡道是否具有实体斜面及防滑条纹细节？",
+      "units": [
+        "a 15-degree ramp 1.50 m long and 1.20 m wide with anti-slip stripes"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "台阶是否具有明确的踏面、立面和实体厚度？",
+      "units": [
+        "three steps each 0.15 +/-0.005 m high and 0.30 m deep"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "间隙是否形成真实开口，边缘是否具有倒角？",
+      "units": [
+        "a 0.45 m wide, 0.30 m deep gap with bevelled yellow edges"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "障碍柱是否具有与指定直径相符的圆形截面和实体柱身？",
+      "units": [
+        "five posts 0.08 m in diameter and 0.50 m high"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "扶手是否由具有圆形截面的栏杆及支撑立柱组成？",
+      "units": [
+        "rails at 0.90 m, diameter 0.04 m, posts no more than 0.80 m apart"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "人形机器人是否具有可辨识的躯干、头部、双臂、双腿、关节及末端部件？",
+      "units": [
+        "Represent specified joints and end-effectors geometrically."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "机器人脚部是否具有可辨识的脚底和脚尖几何？",
+      "units": [
+        "front sole on the tread with at most 30 mm toe overhang, rear foot on the ramp"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "头部是否具有可辨识的相机部件？",
+      "units": [
+        "point head camera toward the next step"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D09",
+      "component": "F",
+      "question": "补光灯是否具有灯柱结构，拍摄相机是否具有三脚架结构？",
+      "units": [
+        "Add three 1.80 m fill-light posts, a tripod camera"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D10",
+      "component": "F",
+      "question": "标牌、围挡及其他实体部件是否具有合理厚度和支撑，并可按语义分离？",
+      "units": [
+        "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ]
+}

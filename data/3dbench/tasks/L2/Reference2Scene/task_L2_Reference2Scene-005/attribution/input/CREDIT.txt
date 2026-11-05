@@ -1,0 +1,6 @@
+Drone City
+Author: Voxelatio
+Source: https://blendswap.com/blend/27360
+License: CC0
+License reference: https://creativecommons.org/publicdomain/zero/1.0/
+Changes: imported/packed in Blender 5.2.1; camera and render setup; texture path repair where recorded in audit.json. Original download preserved privately.

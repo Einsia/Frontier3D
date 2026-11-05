@@ -1,0 +1,7 @@
+House Construction Site
+Author: Majadroid
+Original source: https://opengameart.org/content/3d-house-construction-site-lowpoly-cc0
+License: CC0
+https://creativecommons.org/publicdomain/zero/1.0/
+Distribution source: Original publisher
+The original author license applies to scene assets; modifications for benchmark inputs will be documented separately.

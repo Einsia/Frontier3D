@@ -1,0 +1,27 @@
+schema_version = "1.4"
+[task]
+name = "3dbench/l3-g04"
+description = "守望先锋：Rialto 运河广场与后勤街区"
+keywords = ["3d", "unreal-engine", "l3", "game"]
+[metadata]
+release_task_id = "L3/Image2Environment/task_L3_Image2Environment_008"
+release_id = "3DBench-140"
+task_key = "l3-g04"
+level = 3
+category = "Image2Environment"
+source_category = "game"
+source_task = "OverwatchHarborDistrict"
+difficulty = "hard"
+protocol = "l3-perceptual-quality-v5"
+execution_backend = "provisioned-ue-host"
+requires_external_ue = true
+requires_host_verifier = true
+[agent]
+timeout_sec = 86400
+[verifier]
+timeout_sec = 86400
+[environment]
+build_timeout_sec = 3600
+cpus = 16
+memory_mb = 65536
+storage_mb = 204800

@@ -1,0 +1,964 @@
+{
+  "Diffuse": {
+    "8k": {
+      "jpg": {
+        "size": 26065609,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_diff_8k.jpg",
+        "md5": "f3fe770f39d42f5e6f0de850a721f91b"
+      },
+      "png": {
+        "size": 126503035,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/chinese_chandelier/chinese_chandelier_diff_8k.png",
+        "md5": "390f1965dbe460a7f2448728f5dc25a7"
+      },
+      "exr": {
+        "size": 84462865,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_diff_8k.exr",
+        "md5": "35c6f88590fe76cb56ab3e488ef1ebb8"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 6470691,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_diff_4k.jpg",
+        "md5": "2090db318a2d214e1640a9b5a2aac04a"
+      },
+      "png": {
+        "size": 43037975,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/chinese_chandelier/chinese_chandelier_diff_4k.png",
+        "md5": "6860df812ea60fefd6937c6919f1e26a"
+      },
+      "exr": {
+        "size": 18619172,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_diff_4k.exr",
+        "md5": "9a6f34e53353aff0cac7c170f6729770"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 1799175,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_diff_2k.jpg",
+        "md5": "0502ffb38f800736c32166a408492275"
+      },
+      "png": {
+        "size": 13058470,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/chinese_chandelier/chinese_chandelier_diff_2k.png",
+        "md5": "7fe3d1a9ba13daf32075e21aa5bcf3a6"
+      },
+      "exr": {
+        "size": 4467810,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_diff_2k.exr",
+        "md5": "739d2e8b78329b5e6fa7070111cf6acd"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 534740,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_diff_1k.jpg",
+        "md5": "266a8032eda876ee3e6e2ea5132b47e0"
+      },
+      "png": {
+        "size": 3868493,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/chinese_chandelier/chinese_chandelier_diff_1k.png",
+        "md5": "e9ceed831ebfd4434c0a6683ea49b7d4"
+      },
+      "exr": {
+        "size": 1256633,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_diff_1k.exr",
+        "md5": "2b5e2b69ec667ee8f6e1e7466da41eb7"
+      }
+    }
+  },
+  "nor_dx": {
+    "8k": {
+      "jpg": {
+        "size": 28688010,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_nor_dx_8k.jpg",
+        "md5": "71035e4e610214eabc9c40f589aa1874"
+      },
+      "png": {
+        "size": 147140695,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/chinese_chandelier/chinese_chandelier_nor_dx_8k.png",
+        "md5": "b17d8a1de88b8091473ab0029a215c3d"
+      },
+      "exr": {
+        "size": 56810898,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_nor_dx_8k.exr",
+        "md5": "5582e4dec4a2495fade7e8306522f459"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 8190959,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_nor_dx_4k.jpg",
+        "md5": "d18624eebf22964d228825b0efa86a77"
+      },
+      "png": {
+        "size": 45905845,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/chinese_chandelier/chinese_chandelier_nor_dx_4k.png",
+        "md5": "eef1ed00f9a326038d64732fc1d78745"
+      },
+      "exr": {
+        "size": 16304296,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_nor_dx_4k.exr",
+        "md5": "689240c46beddaed25c23b3ed84184f7"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 2354688,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_nor_dx_2k.jpg",
+        "md5": "b977aa7ae487ce90191900cd197ba9b4"
+      },
+      "png": {
+        "size": 13411688,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/chinese_chandelier/chinese_chandelier_nor_dx_2k.png",
+        "md5": "c12866121802a5fc647a88ccafc483d3"
+      },
+      "exr": {
+        "size": 4623353,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_nor_dx_2k.exr",
+        "md5": "a198c710b4f599693ec24c8ff0c92317"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 720939,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_nor_dx_1k.jpg",
+        "md5": "bda99ef5d29e489fa2192ab1187dd57f"
+      },
+      "png": {
+        "size": 3938763,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/chinese_chandelier/chinese_chandelier_nor_dx_1k.png",
+        "md5": "9b8d59edb99ea16dee0f91f85f597a15"
+      },
+      "exr": {
+        "size": 1462368,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_nor_dx_1k.exr",
+        "md5": "b38fa175c2180d93a3c3a1663d1cb0e3"
+      }
+    }
+  },
+  "nor_gl": {
+    "8k": {
+      "jpg": {
+        "size": 28668906,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_nor_gl_8k.jpg",
+        "md5": "9ac737a250589dd320a70c2e8cca60ba"
+      },
+      "png": {
+        "size": 147142074,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/chinese_chandelier/chinese_chandelier_nor_gl_8k.png",
+        "md5": "44e09f27b612e8950abd7118e4c52cc1"
+      },
+      "exr": {
+        "size": 56615125,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_nor_gl_8k.exr",
+        "md5": "505be3460b3ffecb78d7d3bbc77fb73e"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 8168730,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_nor_gl_4k.jpg",
+        "md5": "dcd22a84a16e5e6531d6066bc9826a6f"
+      },
+      "png": {
+        "size": 45909994,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/chinese_chandelier/chinese_chandelier_nor_gl_4k.png",
+        "md5": "a1c19e0dd47fb6f91e7d5da71afff78f"
+      },
+      "exr": {
+        "size": 16228906,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_nor_gl_4k.exr",
+        "md5": "e52658f723e521155b758ddb57932e67"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 2343942,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_nor_gl_2k.jpg",
+        "md5": "0a4527207ef9d516d24e0e817eddc240"
+      },
+      "png": {
+        "size": 13411719,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/chinese_chandelier/chinese_chandelier_nor_gl_2k.png",
+        "md5": "756be80b6968928eae886833b44ce97b"
+      },
+      "exr": {
+        "size": 4603052,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_nor_gl_2k.exr",
+        "md5": "09a13e3d57f4cc28cc48cff1f027ce3b"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 717746,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.jpg",
+        "md5": "92945c99d1079cdece6d39c4184c1de3"
+      },
+      "png": {
+        "size": 3939348,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.png",
+        "md5": "ea5a6df5ef159676e7bc66aa8b603657"
+      },
+      "exr": {
+        "size": 1460048,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.exr",
+        "md5": "fadc5dfed5bd5514a5c1d1d1ab1f0bce"
+      }
+    }
+  },
+  "blend": {
+    "8k": {
+      "blend": {
+        "include": {
+          "textures/chinese_chandelier_rough_8k.exr": {
+            "size": 20421380,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_rough_8k.exr",
+            "md5": "65fed81cf354d0ce09ccf66e821aa81d"
+          },
+          "textures/chinese_chandelier_diff_8k.jpg": {
+            "size": 26065609,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_diff_8k.jpg",
+            "md5": "f3fe770f39d42f5e6f0de850a721f91b"
+          },
+          "textures/chinese_chandelier_nor_gl_8k.exr": {
+            "size": 56615125,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_nor_gl_8k.exr",
+            "md5": "505be3460b3ffecb78d7d3bbc77fb73e"
+          },
+          "textures/chinese_chandelier_metal_8k.exr": {
+            "size": 4817593,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_metal_8k.exr",
+            "md5": "7cab23b51fe84166d061608dab8716f0"
+          }
+        },
+        "size": 323160,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/8k/chinese_chandelier/chinese_chandelier_8k.blend",
+        "md5": "f8fb36f2dae71bebc32370035011ee70"
+      }
+    },
+    "4k": {
+      "blend": {
+        "include": {
+          "textures/chinese_chandelier_nor_gl_4k.exr": {
+            "size": 16228906,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_nor_gl_4k.exr",
+            "md5": "e52658f723e521155b758ddb57932e67"
+          },
+          "textures/chinese_chandelier_diff_4k.jpg": {
+            "size": 6470691,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_diff_4k.jpg",
+            "md5": "2090db318a2d214e1640a9b5a2aac04a"
+          },
+          "textures/chinese_chandelier_rough_4k.exr": {
+            "size": 5264520,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_rough_4k.exr",
+            "md5": "e96bbc87c45f025a82329fa8da060cee"
+          },
+          "textures/chinese_chandelier_metal_4k.exr": {
+            "size": 1287195,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_metal_4k.exr",
+            "md5": "179eeb98c727baee7d577e83442d706f"
+          }
+        },
+        "size": 323228,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/4k/chinese_chandelier/chinese_chandelier_4k.blend",
+        "md5": "008d2a7bb6300cbfe23a152f1ee93a12"
+      }
+    },
+    "2k": {
+      "blend": {
+        "include": {
+          "textures/chinese_chandelier_metal_2k.exr": {
+            "size": 380007,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_metal_2k.exr",
+            "md5": "84df7fbf461d79495fc54e519a318321"
+          },
+          "textures/chinese_chandelier_rough_2k.exr": {
+            "size": 1505525,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_rough_2k.exr",
+            "md5": "a67c3d7f933a4f9d6acb956574fd79d9"
+          },
+          "textures/chinese_chandelier_diff_2k.jpg": {
+            "size": 1799175,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_diff_2k.jpg",
+            "md5": "0502ffb38f800736c32166a408492275"
+          },
+          "textures/chinese_chandelier_nor_gl_2k.exr": {
+            "size": 4603052,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_nor_gl_2k.exr",
+            "md5": "09a13e3d57f4cc28cc48cff1f027ce3b"
+          }
+        },
+        "size": 322985,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/2k/chinese_chandelier/chinese_chandelier_2k.blend",
+        "md5": "4c7b2236a291d6a7b3d90e3726875b3a"
+      }
+    },
+    "1k": {
+      "blend": {
+        "include": {
+          "textures/chinese_chandelier_metal_1k.exr": {
+            "size": 124068,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_metal_1k.exr",
+            "md5": "0840f86afae94566e0604f387b55f395"
+          },
+          "textures/chinese_chandelier_rough_1k.exr": {
+            "size": 460321,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_rough_1k.exr",
+            "md5": "4ca5e4cee4170f10f1a27af965fe8a57"
+          },
+          "textures/chinese_chandelier_nor_gl_1k.exr": {
+            "size": 1460048,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.exr",
+            "md5": "fadc5dfed5bd5514a5c1d1d1ab1f0bce"
+          },
+          "textures/chinese_chandelier_diff_1k.jpg": {
+            "size": 534740,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_diff_1k.jpg",
+            "md5": "266a8032eda876ee3e6e2ea5132b47e0"
+          }
+        },
+        "size": 323264,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/chinese_chandelier/chinese_chandelier_1k.blend",
+        "md5": "d6a685154eb26f7bcb22855693ef457c"
+      }
+    }
+  },
+  "gltf": {
+    "8k": {
+      "gltf": {
+        "include": {
+          "textures/chinese_chandelier_nor_gl_8k.jpg": {
+            "size": 28668906,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_nor_gl_8k.jpg",
+            "md5": "9ac737a250589dd320a70c2e8cca60ba"
+          },
+          "textures/chinese_chandelier_diff_8k.jpg": {
+            "size": 26065609,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_diff_8k.jpg",
+            "md5": "f3fe770f39d42f5e6f0de850a721f91b"
+          },
+          "chinese_chandelier.bin": {
+            "size": 293368,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/chinese_chandelier/chinese_chandelier.bin",
+            "md5": "bcc8236d67568f8c8a320bf986503df3"
+          },
+          "textures/chinese_chandelier_arm_8k.jpg": {
+            "size": 30276807,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_arm_8k.jpg",
+            "md5": "f1114eee5bd2e545a6bf8c52d5e210d2"
+          }
+        },
+        "size": 2824,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/chinese_chandelier/chinese_chandelier_8k.gltf",
+        "md5": "0bf0430b1a4622b1ab93e9d30ac34e01"
+      }
+    },
+    "4k": {
+      "gltf": {
+        "include": {
+          "textures/chinese_chandelier_diff_4k.jpg": {
+            "size": 6470691,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_diff_4k.jpg",
+            "md5": "2090db318a2d214e1640a9b5a2aac04a"
+          },
+          "textures/chinese_chandelier_nor_gl_4k.jpg": {
+            "size": 8168730,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_nor_gl_4k.jpg",
+            "md5": "dcd22a84a16e5e6531d6066bc9826a6f"
+          },
+          "chinese_chandelier.bin": {
+            "size": 293368,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/chinese_chandelier/chinese_chandelier.bin",
+            "md5": "bcc8236d67568f8c8a320bf986503df3"
+          },
+          "textures/chinese_chandelier_arm_4k.jpg": {
+            "size": 7745563,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_arm_4k.jpg",
+            "md5": "77576a30326b0eb2660bcfda617d8012"
+          }
+        },
+        "size": 2824,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/chinese_chandelier/chinese_chandelier_4k.gltf",
+        "md5": "c0889e65556975a605c58401eda787af"
+      }
+    },
+    "2k": {
+      "gltf": {
+        "include": {
+          "chinese_chandelier.bin": {
+            "size": 293368,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/chinese_chandelier/chinese_chandelier.bin",
+            "md5": "bcc8236d67568f8c8a320bf986503df3"
+          },
+          "textures/chinese_chandelier_arm_2k.jpg": {
+            "size": 2089673,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_arm_2k.jpg",
+            "md5": "80c8a184e2950ee0157feba46352a2b5"
+          },
+          "textures/chinese_chandelier_diff_2k.jpg": {
+            "size": 1799175,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_diff_2k.jpg",
+            "md5": "0502ffb38f800736c32166a408492275"
+          },
+          "textures/chinese_chandelier_nor_gl_2k.jpg": {
+            "size": 2343942,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_nor_gl_2k.jpg",
+            "md5": "0a4527207ef9d516d24e0e817eddc240"
+          }
+        },
+        "size": 2824,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/chinese_chandelier/chinese_chandelier_2k.gltf",
+        "md5": "f17fe108638f944f361191f5042687af"
+      }
+    },
+    "1k": {
+      "gltf": {
+        "include": {
+          "textures/chinese_chandelier_arm_1k.jpg": {
+            "size": 610608,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_arm_1k.jpg",
+            "md5": "95b8a35eade01967c372d110e07e5be1"
+          },
+          "chinese_chandelier.bin": {
+            "size": 293368,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/chinese_chandelier/chinese_chandelier.bin",
+            "md5": "bcc8236d67568f8c8a320bf986503df3"
+          },
+          "textures/chinese_chandelier_nor_gl_1k.jpg": {
+            "size": 717746,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.jpg",
+            "md5": "92945c99d1079cdece6d39c4184c1de3"
+          },
+          "textures/chinese_chandelier_diff_1k.jpg": {
+            "size": 534740,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_diff_1k.jpg",
+            "md5": "266a8032eda876ee3e6e2ea5132b47e0"
+          }
+        },
+        "size": 2824,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/chinese_chandelier/chinese_chandelier_1k.gltf",
+        "md5": "c7e2ba009f318a55d56831c4c7d3adf2"
+      }
+    }
+  },
+  "usd": {
+    "8k": {
+      "usd": {
+        "include": {
+          "textures/chinese_chandelier_rough_8k.exr": {
+            "size": 20421380,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_rough_8k.exr",
+            "md5": "65fed81cf354d0ce09ccf66e821aa81d"
+          },
+          "textures/chinese_chandelier_diff_8k.jpg": {
+            "size": 26065609,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_diff_8k.jpg",
+            "md5": "f3fe770f39d42f5e6f0de850a721f91b"
+          },
+          "textures/chinese_chandelier_nor_gl_8k.exr": {
+            "size": 56615125,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_nor_gl_8k.exr",
+            "md5": "505be3460b3ffecb78d7d3bbc77fb73e"
+          },
+          "textures/chinese_chandelier_metal_8k.exr": {
+            "size": 4817593,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_metal_8k.exr",
+            "md5": "7cab23b51fe84166d061608dab8716f0"
+          }
+        },
+        "size": 404548,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/8k/chinese_chandelier/chinese_chandelier_8k.usdc",
+        "md5": "58f1323d9feb0c6460298e00510d5fb6"
+      }
+    },
+    "4k": {
+      "usd": {
+        "include": {
+          "textures/chinese_chandelier_nor_gl_4k.exr": {
+            "size": 16228906,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_nor_gl_4k.exr",
+            "md5": "e52658f723e521155b758ddb57932e67"
+          },
+          "textures/chinese_chandelier_diff_4k.jpg": {
+            "size": 6470691,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_diff_4k.jpg",
+            "md5": "2090db318a2d214e1640a9b5a2aac04a"
+          },
+          "textures/chinese_chandelier_rough_4k.exr": {
+            "size": 5264520,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_rough_4k.exr",
+            "md5": "e96bbc87c45f025a82329fa8da060cee"
+          },
+          "textures/chinese_chandelier_metal_4k.exr": {
+            "size": 1287195,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_metal_4k.exr",
+            "md5": "179eeb98c727baee7d577e83442d706f"
+          }
+        },
+        "size": 404563,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/4k/chinese_chandelier/chinese_chandelier_4k.usdc",
+        "md5": "d35b906aac25c876a7be1ed45686b127"
+      }
+    },
+    "2k": {
+      "usd": {
+        "include": {
+          "textures/chinese_chandelier_metal_2k.exr": {
+            "size": 380007,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_metal_2k.exr",
+            "md5": "84df7fbf461d79495fc54e519a318321"
+          },
+          "textures/chinese_chandelier_rough_2k.exr": {
+            "size": 1505525,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_rough_2k.exr",
+            "md5": "a67c3d7f933a4f9d6acb956574fd79d9"
+          },
+          "textures/chinese_chandelier_diff_2k.jpg": {
+            "size": 1799175,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_diff_2k.jpg",
+            "md5": "0502ffb38f800736c32166a408492275"
+          },
+          "textures/chinese_chandelier_nor_gl_2k.exr": {
+            "size": 4603052,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_nor_gl_2k.exr",
+            "md5": "09a13e3d57f4cc28cc48cff1f027ce3b"
+          }
+        },
+        "size": 404548,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/2k/chinese_chandelier/chinese_chandelier_2k.usdc",
+        "md5": "ad0020199313fc52ac3b603e3228e765"
+      }
+    },
+    "1k": {
+      "usd": {
+        "include": {
+          "textures/chinese_chandelier_metal_1k.exr": {
+            "size": 124068,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_metal_1k.exr",
+            "md5": "0840f86afae94566e0604f387b55f395"
+          },
+          "textures/chinese_chandelier_rough_1k.exr": {
+            "size": 460321,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_rough_1k.exr",
+            "md5": "4ca5e4cee4170f10f1a27af965fe8a57"
+          },
+          "textures/chinese_chandelier_nor_gl_1k.exr": {
+            "size": 1460048,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.exr",
+            "md5": "fadc5dfed5bd5514a5c1d1d1ab1f0bce"
+          },
+          "textures/chinese_chandelier_diff_1k.jpg": {
+            "size": 534740,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_diff_1k.jpg",
+            "md5": "266a8032eda876ee3e6e2ea5132b47e0"
+          }
+        },
+        "size": 404548,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/1k/chinese_chandelier/chinese_chandelier_1k.usdc",
+        "md5": "0dc683fe2bd0392701aabb5f65f4887d"
+      }
+    }
+  },
+  "Metal": {
+    "8k": {
+      "jpg": {
+        "size": 3895728,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_metal_8k.jpg",
+        "md5": "626e42d0f0da0a5662732ac229254112"
+      },
+      "png": {
+        "size": 3905407,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/chinese_chandelier/chinese_chandelier_metal_8k.png",
+        "md5": "50f03d8f0c3f1841e6aac8bfd397b0f8"
+      },
+      "exr": {
+        "size": 4817593,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_metal_8k.exr",
+        "md5": "7cab23b51fe84166d061608dab8716f0"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 915092,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_metal_4k.jpg",
+        "md5": "9f85d13a986ed68bfcebd0d35209b1c0"
+      },
+      "png": {
+        "size": 1540400,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/chinese_chandelier/chinese_chandelier_metal_4k.png",
+        "md5": "a098243db97a1884b92f9e5bfe81c4c1"
+      },
+      "exr": {
+        "size": 1287195,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_metal_4k.exr",
+        "md5": "179eeb98c727baee7d577e83442d706f"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 236828,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_metal_2k.jpg",
+        "md5": "5792b9c316ee47b9869e73388e09017a"
+      },
+      "png": {
+        "size": 511733,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/chinese_chandelier/chinese_chandelier_metal_2k.png",
+        "md5": "221cbac916870838a735d9bf067304e3"
+      },
+      "exr": {
+        "size": 380007,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_metal_2k.exr",
+        "md5": "84df7fbf461d79495fc54e519a318321"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 67281,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_metal_1k.jpg",
+        "md5": "c2a6ddc1538c92ed0a94c57ceb1d90b3"
+      },
+      "png": {
+        "size": 158312,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/chinese_chandelier/chinese_chandelier_metal_1k.png",
+        "md5": "647eaa0c17a495dff5170cc4ac3b7b27"
+      },
+      "exr": {
+        "size": 124068,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_metal_1k.exr",
+        "md5": "0840f86afae94566e0604f387b55f395"
+      }
+    }
+  },
+  "arm": {
+    "8k": {
+      "jpg": {
+        "size": 30276807,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_arm_8k.jpg",
+        "md5": "f1114eee5bd2e545a6bf8c52d5e210d2"
+      },
+      "png": {
+        "size": 58421400,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/chinese_chandelier/chinese_chandelier_arm_8k.png",
+        "md5": "cc27bd1fefdd2b874b07836feff63fef"
+      },
+      "exr": {
+        "size": 62056662,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_arm_8k.exr",
+        "md5": "eeb888e069f04a3866e144e36e81709c"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 7745563,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_arm_4k.jpg",
+        "md5": "77576a30326b0eb2660bcfda617d8012"
+      },
+      "png": {
+        "size": 28190194,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/chinese_chandelier/chinese_chandelier_arm_4k.png",
+        "md5": "11e9a51f69d73bb0b79f7417505157f9"
+      },
+      "exr": {
+        "size": 15891354,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_arm_4k.exr",
+        "md5": "037360f9539990257b3afe5c90b87708"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 2089673,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_arm_2k.jpg",
+        "md5": "80c8a184e2950ee0157feba46352a2b5"
+      },
+      "png": {
+        "size": 9259120,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/chinese_chandelier/chinese_chandelier_arm_2k.png",
+        "md5": "e7e3c2d1b1dbd4ab91ef9d219e34ec4e"
+      },
+      "exr": {
+        "size": 4204766,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_arm_2k.exr",
+        "md5": "29c5e23667a34e7f974468588af7d7ed"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 610608,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_arm_1k.jpg",
+        "md5": "95b8a35eade01967c372d110e07e5be1"
+      },
+      "png": {
+        "size": 2854621,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/chinese_chandelier/chinese_chandelier_arm_1k.png",
+        "md5": "66c6f42603f59a455d33b2c21c5325ef"
+      },
+      "exr": {
+        "size": 1243590,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_arm_1k.exr",
+        "md5": "04285cd55c09e1a23f318c23056dbcb0"
+      }
+    }
+  },
+  "fbx": {
+    "8k": {
+      "fbx": {
+        "include": {
+          "textures/chinese_chandelier_rough_8k.exr": {
+            "size": 20421380,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_rough_8k.exr",
+            "md5": "65fed81cf354d0ce09ccf66e821aa81d"
+          },
+          "textures/chinese_chandelier_diff_8k.jpg": {
+            "size": 26065609,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_diff_8k.jpg",
+            "md5": "f3fe770f39d42f5e6f0de850a721f91b"
+          },
+          "textures/chinese_chandelier_nor_gl_8k.exr": {
+            "size": 56615125,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_nor_gl_8k.exr",
+            "md5": "505be3460b3ffecb78d7d3bbc77fb73e"
+          },
+          "textures/chinese_chandelier_metal_8k.exr": {
+            "size": 4817593,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_metal_8k.exr",
+            "md5": "7cab23b51fe84166d061608dab8716f0"
+          }
+        },
+        "size": 317084,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/8k/chinese_chandelier/chinese_chandelier_8k.fbx",
+        "md5": "12fe597a2e26527afc860a3012adee97"
+      }
+    },
+    "4k": {
+      "fbx": {
+        "include": {
+          "textures/chinese_chandelier_nor_gl_4k.exr": {
+            "size": 16228906,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_nor_gl_4k.exr",
+            "md5": "e52658f723e521155b758ddb57932e67"
+          },
+          "textures/chinese_chandelier_diff_4k.jpg": {
+            "size": 6470691,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_diff_4k.jpg",
+            "md5": "2090db318a2d214e1640a9b5a2aac04a"
+          },
+          "textures/chinese_chandelier_rough_4k.exr": {
+            "size": 5264520,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_rough_4k.exr",
+            "md5": "e96bbc87c45f025a82329fa8da060cee"
+          },
+          "textures/chinese_chandelier_metal_4k.exr": {
+            "size": 1287195,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_metal_4k.exr",
+            "md5": "179eeb98c727baee7d577e83442d706f"
+          }
+        },
+        "size": 317084,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/4k/chinese_chandelier/chinese_chandelier_4k.fbx",
+        "md5": "3578bf89c8caa12ffbe5a1a35770d2c8"
+      }
+    },
+    "2k": {
+      "fbx": {
+        "include": {
+          "textures/chinese_chandelier_metal_2k.exr": {
+            "size": 380007,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_metal_2k.exr",
+            "md5": "84df7fbf461d79495fc54e519a318321"
+          },
+          "textures/chinese_chandelier_rough_2k.exr": {
+            "size": 1505525,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_rough_2k.exr",
+            "md5": "a67c3d7f933a4f9d6acb956574fd79d9"
+          },
+          "textures/chinese_chandelier_diff_2k.jpg": {
+            "size": 1799175,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_diff_2k.jpg",
+            "md5": "0502ffb38f800736c32166a408492275"
+          },
+          "textures/chinese_chandelier_nor_gl_2k.exr": {
+            "size": 4603052,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_nor_gl_2k.exr",
+            "md5": "09a13e3d57f4cc28cc48cff1f027ce3b"
+          }
+        },
+        "size": 317084,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/2k/chinese_chandelier/chinese_chandelier_2k.fbx",
+        "md5": "ba27581fb6bd73ed1f81ebf31fccdf4c"
+      }
+    },
+    "1k": {
+      "fbx": {
+        "include": {
+          "textures/chinese_chandelier_metal_1k.exr": {
+            "size": 124068,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_metal_1k.exr",
+            "md5": "0840f86afae94566e0604f387b55f395"
+          },
+          "textures/chinese_chandelier_rough_1k.exr": {
+            "size": 460321,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_rough_1k.exr",
+            "md5": "4ca5e4cee4170f10f1a27af965fe8a57"
+          },
+          "textures/chinese_chandelier_nor_gl_1k.exr": {
+            "size": 1460048,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.exr",
+            "md5": "fadc5dfed5bd5514a5c1d1d1ab1f0bce"
+          },
+          "textures/chinese_chandelier_diff_1k.jpg": {
+            "size": 534740,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_diff_1k.jpg",
+            "md5": "266a8032eda876ee3e6e2ea5132b47e0"
+          }
+        },
+        "size": 317084,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/chinese_chandelier/chinese_chandelier_1k.fbx",
+        "md5": "a4d3436ccdbbe7e40cb0e436e107cb67"
+      }
+    }
+  },
+  "AO": {
+    "8k": {
+      "jpg": {
+        "size": 20572616,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_ao_8k.jpg",
+        "md5": "0d7485beacbef5e878a9a156efcb91c0"
+      },
+      "png": {
+        "size": 21042845,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/chinese_chandelier/chinese_chandelier_ao_8k.png",
+        "md5": "3f9ad4dc353b167bd32c0361cb5005ba"
+      },
+      "exr": {
+        "size": 20954225,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_ao_8k.exr",
+        "md5": "6ac1cabbab97aa86f4fbcafff3bc09a8"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 6168174,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_ao_4k.jpg",
+        "md5": "0ed7b142728d06ca5346e8dc29d49b5d"
+      },
+      "png": {
+        "size": 13334851,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/chinese_chandelier/chinese_chandelier_ao_4k.png",
+        "md5": "67754abbf21a9390db33c6ff80b0c7a6"
+      },
+      "exr": {
+        "size": 6644508,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_ao_4k.exr",
+        "md5": "c0cbe99fb97f5b680f0a3e7ed1ab47d2"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 1691558,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_ao_2k.jpg",
+        "md5": "65bd73a9bd0a7cfe9ff362ff92b3bdca"
+      },
+      "png": {
+        "size": 4504357,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/chinese_chandelier/chinese_chandelier_ao_2k.png",
+        "md5": "b9d1eaf51162b6c953b1d54448034c8c"
+      },
+      "exr": {
+        "size": 1836262,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_ao_2k.exr",
+        "md5": "e84599c43eef6df492a9080d72042c41"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 494437,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_ao_1k.jpg",
+        "md5": "c376c8df6c75ebaf7a615102dd60dc3a"
+      },
+      "png": {
+        "size": 1377165,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/chinese_chandelier/chinese_chandelier_ao_1k.png",
+        "md5": "d4e41729ca1508038da57d0d5a8912b4"
+      },
+      "exr": {
+        "size": 556039,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_ao_1k.exr",
+        "md5": "47c27c4da91ec8ce36c1af0dac34bf52"
+      }
+    }
+  },
+  "Rough": {
+    "8k": {
+      "jpg": {
+        "size": 20762985,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/chinese_chandelier/chinese_chandelier_rough_8k.jpg",
+        "md5": "8479b1a326eecb411018788baf0c3b4a"
+      },
+      "png": {
+        "size": 26567866,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/chinese_chandelier/chinese_chandelier_rough_8k.png",
+        "md5": "aaf321b0ef3decd1c5f468cb8203910b"
+      },
+      "exr": {
+        "size": 20421380,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/chinese_chandelier/chinese_chandelier_rough_8k.exr",
+        "md5": "65fed81cf354d0ce09ccf66e821aa81d"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 5045389,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/chinese_chandelier/chinese_chandelier_rough_4k.jpg",
+        "md5": "ac135f945e9d84be381f3da8fee80c31"
+      },
+      "png": {
+        "size": 8729716,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/chinese_chandelier/chinese_chandelier_rough_4k.png",
+        "md5": "3a56db161abce914ea880f368e7be5a6"
+      },
+      "exr": {
+        "size": 5264520,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/chinese_chandelier/chinese_chandelier_rough_4k.exr",
+        "md5": "e96bbc87c45f025a82329fa8da060cee"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 1380304,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/chinese_chandelier/chinese_chandelier_rough_2k.jpg",
+        "md5": "42f292e426af94d41879cf0febc263da"
+      },
+      "png": {
+        "size": 2855479,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/chinese_chandelier/chinese_chandelier_rough_2k.png",
+        "md5": "d1e0e56c4bdb6994ca90b533d0d11d0b"
+      },
+      "exr": {
+        "size": 1505525,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/chinese_chandelier/chinese_chandelier_rough_2k.exr",
+        "md5": "a67c3d7f933a4f9d6acb956574fd79d9"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 406685,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_rough_1k.jpg",
+        "md5": "8feca67c8610ab2f0a4a4b562194405d"
+      },
+      "png": {
+        "size": 911876,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/chinese_chandelier/chinese_chandelier_rough_1k.png",
+        "md5": "876849d39c75d6e2cff2c9ef25fd9f52"
+      },
+      "exr": {
+        "size": 460321,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_rough_1k.exr",
+        "md5": "4ca5e4cee4170f10f1a27af965fe8a57"
+      }
+    }
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-e05",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "loop_corridor",
+    "patient_room_01",
+    "patient_room_02",
+    "patient_room_03",
+    "patient_room_04",
+    "patient_room_05",
+    "patient_room_06",
+    "nursing_station",
+    "clean_supply",
+    "utility_room"
+  ],
+  "initial_state": "Unoccupied ward, card at nursing station, six clean towel packs in supply store, one return container in each room.",
+  "entities": [
+    {
+      "id": "door.room.01",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.room.02",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.room.03",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.room.04",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.room.05",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.room.06",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "cabinet.supply.01",
+      "role": "locked_cabinet",
+      "actions": [
+        "open",
+        "close",
+        "unlock"
+      ],
+      "initial": "locked",
+      "argument": ""
+    },
+    {
+      "id": "cabinet.supply.02",
+      "role": "locked_cabinet",
+      "actions": [
+        "open",
+        "close",
+        "unlock"
+      ],
+      "initial": "locked",
+      "argument": ""
+    },
+    {
+      "id": "drawer.bedside.01",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; empty",
+      "argument": ""
+    },
+    {
+      "id": "drawer.bedside.02",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; empty",
+      "argument": ""
+    },
+    {
+      "id": "drawer.bedside.03",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; empty",
+      "argument": ""
+    },
+    {
+      "id": "drawer.bedside.04",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; empty",
+      "argument": ""
+    },
+    {
+      "id": "drawer.bedside.05",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; empty",
+      "argument": ""
+    },
+    {
+      "id": "drawer.bedside.06",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; empty",
+      "argument": ""
+    },
+    {
+      "id": "curtain.room03",
+      "role": "curtain",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "cart.supply",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "empty; parking recess",
+      "argument": ""
+    },
+    {
+      "id": "bed.room03",
+      "role": "adjustable_bed",
+      "actions": [
+        "set_height",
+        "set_head_angle"
+      ],
+      "initial": "low; head flat",
+      "argument": "height_cm or angle_deg"
+    },
+    {
+      "id": "card.supply",
+      "role": "keycard",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "collect",
+        "return"
+      ],
+      "initial": "nursing station",
+      "argument": ""
+    },
+    {
+      "id": "towel.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "clean supply",
+      "argument": ""
+    },
+    {
+      "id": "towel.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "clean supply",
+      "argument": ""
+    },
+    {
+      "id": "towel.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "clean supply",
+      "argument": ""
+    },
+    {
+      "id": "towel.04",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "clean supply",
+      "argument": ""
+    },
+    {
+      "id": "towel.05",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "clean supply",
+      "argument": ""
+    },
+    {
+      "id": "towel.06",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "clean supply",
+      "argument": ""
+    },
+    {
+      "id": "return.container.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "one in each patient room",
+      "argument": ""
+    },
+    {
+      "id": "return.container.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "one in each patient room",
+      "argument": ""
+    },
+    {
+      "id": "return.container.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "one in each patient room",
+      "argument": ""
+    },
+    {
+      "id": "return.container.04",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "one in each patient room",
+      "argument": ""
+    },
+    {
+      "id": "return.container.05",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "one in each patient room",
+      "argument": ""
+    },
+    {
+      "id": "return.container.06",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "one in each patient room",
+      "argument": ""
+    },
+    {
+      "id": "tap.01",
+      "role": "tap",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "tap.02",
+      "role": "tap",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "return.bin",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "utility room; empty",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [
+    "supply_card"
+  ],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

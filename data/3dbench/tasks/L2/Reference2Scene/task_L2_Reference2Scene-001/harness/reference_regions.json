@@ -1,0 +1,101 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+  "reviewed_by": "assistant_visual_review_2026-10-08",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "ca15493df21dd517175f58f30bf888ed0dca73f3d2554eeb40054e18613b547e",
+  "regions": [
+    {
+      "id": "desks",
+      "label": "课桌与椅子",
+      "weight": 0.5,
+      "polygon": [
+        [
+          0.01,
+          0.55
+        ],
+        [
+          0.93,
+          0.55
+        ],
+        [
+          0.93,
+          0.99
+        ],
+        [
+          0.01,
+          0.99
+        ]
+      ]
+    },
+    {
+      "id": "board",
+      "label": "黑板与前墙",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.32,
+          0.3
+        ],
+        [
+          0.77,
+          0.3
+        ],
+        [
+          0.77,
+          0.6
+        ],
+        [
+          0.32,
+          0.6
+        ]
+      ]
+    },
+    {
+      "id": "windows",
+      "label": "右侧窗户",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.82,
+          0.02
+        ],
+        [
+          0.99,
+          0.02
+        ],
+        [
+          0.99,
+          0.63
+        ],
+        [
+          0.82,
+          0.63
+        ]
+      ]
+    },
+    {
+      "id": "lights",
+      "label": "顶灯",
+      "weight": 0.1,
+      "polygon": [
+        [
+          0.1,
+          0.04
+        ],
+        [
+          0.69,
+          0.04
+        ],
+        [
+          0.69,
+          0.3
+        ],
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    }
+  ]
+}

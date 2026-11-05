@@ -1,0 +1,46 @@
+{
+  "family": "revolved",
+  "part_id": "revolved_498d671a_0036",
+  "default_params": {
+    "outer_d": 36.21,
+    "length": 80.6,
+    "inner_d": 15.9,
+    "groove_depth": 2.21,
+    "groove_w": 6.06,
+    "groove_pos": 50.8,
+    "end_chamfer": 0.9,
+    "end_chamfered": true
+  },
+  "native_geometry": {
+    "initial": {
+      "valid_solid": true,
+      "solid_count": 1,
+      "volume_mm3": 65433.963942212744,
+      "bounds_mm": [
+        -18.11575504897787,
+        -18.11575504897787,
+        -0.010755048977868675,
+        18.11575504897787,
+        18.11575504897787,
+        80.61075504897786
+      ]
+    },
+    "target": {
+      "valid_solid": true,
+      "solid_count": 1,
+      "volume_mm3": 65433.963942212744,
+      "bounds_mm": [
+        -18.11575504897787,
+        -18.11575504897787,
+        -0.010755048977868675,
+        18.11575504897787,
+        18.11575504897787,
+        80.61075504897786
+      ]
+    }
+  },
+  "local_edit_code": "",
+  "source": "https://github.com/jacobjennings/CadQuarry",
+  "license": "CC0-1.0",
+  "scope": "Valid OCC reference, not model testing."
+}

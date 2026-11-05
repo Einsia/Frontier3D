@@ -1,0 +1,308 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_007",
+  "family": "Reference2Scene",
+  "instruction_sha256": "8fffe02d1e770c634fb1a5a7ce8a66ca2a0710356843b87beb65bddc0c00fbe4",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "八角飞檐宫灯；精确数值由程序测量；八角宫灯的中空多面立体框架",
+  "checks": [
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：八角宫灯的中空多面立体框架",
+      "units": [
+        "layout_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "layout_front",
+      "component": "H",
+      "question": "在 front 视角核对整体姿态、主体比例、空间层次和遮挡：八角宫灯的中空多面立体框架",
+      "units": [
+        "layout_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "layout_side",
+      "component": "H",
+      "question": "在 side 视角核对整体姿态、主体比例、空间层次和遮挡：八角宫灯的中空多面立体框架",
+      "units": [
+        "layout_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "layout_top",
+      "component": "H",
+      "question": "在 top 视角核对整体姿态、主体比例、空间层次和遮挡：八角宫灯的中空多面立体框架",
+      "units": [
+        "layout_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：外挑翘角与顶端多层八角轮廓。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：白色半透面板被深色木条分隔。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：多根红色流苏从角部垂挂。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：底部卷曲脚端、面板和顶架连接完整。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "material_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "material_front",
+      "component": "M",
+      "question": "在 front 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "material_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "material_side",
+      "component": "M",
+      "question": "在 side 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "material_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "material_top",
+      "component": "M",
+      "question": "在 top 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "material_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "lighting_reference"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_front",
+      "component": "M",
+      "question": "在 front 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "lighting_front"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-1.png",
+        "candidate/paired-1.png"
+      ]
+    },
+    {
+      "id": "lighting_side",
+      "component": "M",
+      "question": "在 side 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "lighting_side"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-2.png",
+        "candidate/paired-2.png"
+      ]
+    },
+    {
+      "id": "lighting_top",
+      "component": "M",
+      "question": "在 top 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：红褐木、米白花卉面板、红色流苏与细金色挂点；程序装饰可近似，不要求相同纹理文件",
+      "units": [
+        "lighting_top"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.0125,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-3.png",
+        "candidate/paired-3.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "a7c4979ee9a3a231ae2e58fec2fe621ddb3941041949d60796c8b9a9d2a756cd",
+    "reference/reference-1.png": "643fa498604c40d906c1aa4cc9d38d84169672d9a40cebed00b80f8433ab2b10",
+    "reference/reference-2.png": "58f3186d3d3fd2b03776a665b278e2f589efdbfce997a7e7ca0cab38c3569ecb",
+    "reference/reference-3.png": "1218ea21ad7e53833782b13550527763efe4cc08503599253b0c8d7c6db8c7ae"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

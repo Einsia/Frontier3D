@@ -1,0 +1,2426 @@
+{
+  "key": "final-cc0-medieval-dungeon-interior",
+  "path": "assets/cc0-replacements-20260921/medieval-dungeon-interior/prepared/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    960,
+    640
+  ],
+  "camera": {
+    "name": "TaskCamera",
+    "position": [
+      0.0,
+      -5.0,
+      1.600000023841858
+    ],
+    "rotation_euler": [
+      1.5526164770126343,
+      -0.0,
+      0.0
+    ],
+    "lens": 22.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "Circle.002",
+      "vertices": 22,
+      "polygons": 30,
+      "sha256": "fb3ae0d41dbb41c0537afd142b144ea482750e74841de4aeb19349489790a317"
+    },
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 5,
+      "sha256": "06f8743b7fc306ee5d321beebf93268cf121233ca1bdc4c42f551c89b6cd0896"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 18,
+      "polygons": 8,
+      "sha256": "799b1805bd71595f4e8798104802db4ad9e988b92ff7330a230b3b12c8105a30"
+    },
+    {
+      "name": "Cube.002",
+      "vertices": 36,
+      "polygons": 36,
+      "sha256": "076bc50693585e6716c2ce7a563b8a0657a1fbf18e99cbfdb23e061df8caf9d4"
+    },
+    {
+      "name": "Cube.003",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "becbb87adff260b3449ea78839b2899ef4315d73dea015666c941452526d7972"
+    },
+    {
+      "name": "Cube.004",
+      "vertices": 18,
+      "polygons": 8,
+      "sha256": "391c8d063f0006fb028c18789f530d1c8ff1609b991e35072408074954881fbf"
+    },
+    {
+      "name": "Cube.005",
+      "vertices": 56,
+      "polygons": 32,
+      "sha256": "b08fb1f5ed5cb32d8d695b35f9059c556c34564b6d8ef334d463826606c4d493"
+    },
+    {
+      "name": "Cube.006",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "8d3f14e021c085718c422c337f37764e771aff0c73f54966da5f16386bbfe808"
+    },
+    {
+      "name": "Cube.007",
+      "vertices": 18,
+      "polygons": 8,
+      "sha256": "c95a447be7f50ccc4e0892a31008d8a2b70fd5d4ea5af4ee4b18e218029da116"
+    },
+    {
+      "name": "Cube.008",
+      "vertices": 24,
+      "polygons": 6,
+      "sha256": "4041cd0ccac432df0ff38784c0fdd7172b15cb323bf9845b3480fcad43241a71"
+    },
+    {
+      "name": "Cube.009",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "c29b954f873130a44f6fab3a04d36a7daa08255f764237114e65d29ee8b8ad6a"
+    },
+    {
+      "name": "Cylinder",
+      "vertices": 36,
+      "polygons": 32,
+      "sha256": "c84140f630d55aa5fce20808735b2dcc458467ba0206e2e31fb1c1ba252b6698"
+    },
+    {
+      "name": "NurbsPath",
+      "vertices": 80,
+      "polygons": 80,
+      "sha256": "e4327916065553de86a5eb966a642a395bfb968ae30e057e8f6b2c6641ac19a2"
+    },
+    {
+      "name": "Plane",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "8c18c5ae66401f66da8268459a27c3509150d20dacaf4ccc6329cf47d966e28c"
+    },
+    {
+      "name": "Plane.001",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "8c18c5ae66401f66da8268459a27c3509150d20dacaf4ccc6329cf47d966e28c"
+    },
+    {
+      "name": "Plane.002",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "8c18c5ae66401f66da8268459a27c3509150d20dacaf4ccc6329cf47d966e28c"
+    },
+    {
+      "name": "Plane.003",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "a13a93d46a65b298348507793eee0cb70c43277ac126cf9d7f41f1c0336f419c"
+    },
+    {
+      "name": "Plane.004",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "8c18c5ae66401f66da8268459a27c3509150d20dacaf4ccc6329cf47d966e28c"
+    },
+    {
+      "name": "Plane.005",
+      "vertices": 34,
+      "polygons": 18,
+      "sha256": "f2c39d919d9bd014ac0b89be78481cb0be710f46e3e79dfb11232d86bb39a390"
+    },
+    {
+      "name": "Plane.006",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "a13a93d46a65b298348507793eee0cb70c43277ac126cf9d7f41f1c0336f419c"
+    },
+    {
+      "name": "Plane.007",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "8c18c5ae66401f66da8268459a27c3509150d20dacaf4ccc6329cf47d966e28c"
+    },
+    {
+      "name": "Plane.008",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "a13a93d46a65b298348507793eee0cb70c43277ac126cf9d7f41f1c0336f419c"
+    },
+    {
+      "name": "Plane.009",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "8c18c5ae66401f66da8268459a27c3509150d20dacaf4ccc6329cf47d966e28c"
+    },
+    {
+      "name": "Plane.010",
+      "vertices": 46,
+      "polygons": 25,
+      "sha256": "9c1a42d642476e30c7395388f86987c8df7c048793f174f47d767dc2f9e05b79"
+    },
+    {
+      "name": "Torus.004",
+      "vertices": 176,
+      "polygons": 168,
+      "sha256": "8555f570bd50056f046edac641c82c142799f5d123cd256b29b39eb29fb69f29"
+    }
+  ],
+  "images": [
+    {
+      "name": "bricks_1_c.png",
+      "path": "//..\\original\\dungeon\\textures\\bricks_1\\bricks_1_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "ff7c51811c4828e3d9f0093e7070add54e46307592d2521c5a1198976460339b",
+      "external_exists": null
+    },
+    {
+      "name": "bricks_1_n.png",
+      "path": "//..\\original\\dungeon\\textures\\bricks_1\\bricks_1_n.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "5295dc1dd3582874909a0b3071d27e0dfcfd066a76ec59d99b4fa98bcb14cea0",
+      "external_exists": null
+    },
+    {
+      "name": "bricks_c.png",
+      "path": "//..\\original\\dungeon\\textures\\bricks\\bricks_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "84aea52fdb3eff4b57bb3643155160b2cfb4ad295d3d0419c63831d2ce6c7f2a",
+      "external_exists": null
+    },
+    {
+      "name": "bricks_n.png",
+      "path": "//..\\original\\dungeon\\textures\\bricks\\bricks_n.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "097aa4a9062d5baf699ebb92d1ded6a0de1be78695774d4882615276d0d887f9",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_1_c.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete_1\\concrete_1_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "6c629b211b0e80d7954d3afb3a48ab6cc41df3b8420e55cd251ce92cb55bcd44",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_1_n.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete_1\\concrete_1_n.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "5d9bd99d41e2ec65e9010c879b285dfd97f8ff90800af3c5fd504d54df10976f",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_2_c.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete_2\\concrete_2_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "07e6e2530de21161b4c5ac48089463bac82d73c122252dbda968e8ca497b5cc9",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_2_n.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete_2\\concrete_2_n.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "8e1f418bbf7c2a66e16e584f4e3b787680cc5aaf0a084ee2c4fcd06ce4cc5ecf",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_3_c.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete_3\\concrete_3_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "07e6e2530de21161b4c5ac48089463bac82d73c122252dbda968e8ca497b5cc9",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_3_n.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete_3\\concrete_3_n.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "85b853725bb568dcc24459f0842a80696890f25472d7cfd3d547ec712ce2c2cd",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_c.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete\\concrete_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "aab90fe6e7ec8de5b0d97e5eb258a1540c2813900ca600f711715dc1cd653f1c",
+      "external_exists": null
+    },
+    {
+      "name": "concrete_n.png",
+      "path": "//..\\original\\dungeon\\textures\\concrete\\concrete_n.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "35f4a3f4426cd2fe9ddc563d67ec5dc58580b3e18a0c1076780b09db7008b43a",
+      "external_exists": null
+    },
+    {
+      "name": "iron_c.png",
+      "path": "//..\\original\\dungeon\\textures\\iron\\iron_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "63ea1ae81c421675369e0dbd9d4e6f3c22d2d921ef63c48f62c046a4266fce8d",
+      "external_exists": null
+    },
+    {
+      "name": "iron_n.png",
+      "path": "//..\\original\\dungeon\\textures\\iron\\iron_n.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "ef2c2f4f52cfce1382a35d20f8a149d12b0b65e2afb663bd36f5212f1d09f188",
+      "external_exists": null
+    },
+    {
+      "name": "lights_white_c.png",
+      "path": "//..\\original\\dungeon\\textures\\lights_white\\lights_white_c.png",
+      "packed": true,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "ff2a63a90b7cd6d20f0877a8fad14bbce607c5d79c9c353c99f162817cc0cdbb",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "hall_arch_joint_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -2.0,
+          0.0
+        ],
+        [
+          1.0,
+          -1.5,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -2.5,
+          -5.0,
+          0.0
+        ],
+        [
+          -2.0,
+          -3.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          2.0,
+          -5.0,
+          0.0
+        ],
+        [
+          2.5,
+          -3.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -7.0,
+          -5.0,
+          0.0
+        ],
+        [
+          -6.5,
+          -3.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -2.5,
+          -18.0,
+          -4.0
+        ],
+        [
+          -2.0,
+          -16.0,
+          -1.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -15.0,
+          -4.0
+        ],
+        [
+          1.0,
+          -14.5,
+          -1.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -10.0,
+          -2.0,
+          0.0
+        ],
+        [
+          -8.0,
+          -1.5,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -2.5,
+          4.0,
+          0.0
+        ],
+        [
+          -2.0,
+          6.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          2.0,
+          4.0,
+          0.0
+        ],
+        [
+          2.5,
+          6.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -7.0,
+          4.0,
+          0.0
+        ],
+        [
+          -6.5,
+          6.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          6.5,
+          4.0,
+          0.0
+        ],
+        [
+          7.0,
+          6.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -6.5,
+          0.0
+        ],
+        [
+          1.0,
+          -6.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -7.0,
+          -18.0,
+          -4.0
+        ],
+        [
+          -6.5,
+          -16.0,
+          -1.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          6.5,
+          -5.0,
+          0.0
+        ],
+        [
+          7.0,
+          -3.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          8.0,
+          -2.0,
+          0.0
+        ],
+        [
+          10.0,
+          -1.5,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -1.0,
+          2.5,
+          0.0
+        ],
+        [
+          1.0,
+          3.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.016",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -10.0,
+          2.5,
+          0.0
+        ],
+        [
+          -8.0,
+          3.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.017",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          8.0,
+          2.5,
+          0.0
+        ],
+        [
+          10.0,
+          3.0,
+          2.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "hall_arch_joint_1.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.5,
+        2.5
+      ],
+      "bounds": [
+        [
+          -15.5,
+          -18.0,
+          -8.0
+        ],
+        [
+          -15.0,
+          -16.0,
+          -5.5
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_concrete",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -19.0,
+          -8.0
+        ],
+        [
+          -15.5,
+          -15.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "hall_arch_connection",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.000000953674316,
+        0.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -15.500000953674316,
+          -19.0,
+          -8.0
+        ],
+        [
+          -15.499999046325684,
+          -15.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -15.5,
+          -19.0,
+          -4.0
+        ],
+        [
+          -15.5,
+          -15.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -15.5,
+          -23.0,
+          -4.0
+        ],
+        [
+          -15.5,
+          -19.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -15.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -15.5,
+          -19.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -15.5,
+          -15.0,
+          -4.0
+        ],
+        [
+          -15.5,
+          -11.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -15.5,
+          -15.0,
+          -8.0
+        ],
+        [
+          -15.5,
+          -11.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -11.0,
+          -8.0
+        ],
+        [
+          -15.5,
+          -11.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -11.0,
+          -4.0
+        ],
+        [
+          -15.5,
+          -11.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -11.0,
+          -8.0
+        ],
+        [
+          -19.5,
+          -11.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -11.0,
+          -4.0
+        ],
+        [
+          -19.5,
+          -11.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -11.0,
+          -8.0
+        ],
+        [
+          -23.5,
+          -11.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -11.0,
+          -4.0
+        ],
+        [
+          -23.5,
+          -11.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -11.0,
+          -8.0
+        ],
+        [
+          -27.5,
+          -11.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -11.0,
+          -4.0
+        ],
+        [
+          -27.5,
+          -11.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -27.5,
+          -23.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -23.0,
+          -4.0
+        ],
+        [
+          -27.5,
+          -23.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -23.5,
+          -23.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.016",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -23.0,
+          -4.0
+        ],
+        [
+          -23.5,
+          -23.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.017",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -19.5,
+          -23.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -23.0,
+          -4.0
+        ],
+        [
+          -19.5,
+          -23.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.019",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -15.5,
+          -23.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.020",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -23.0,
+          -4.0
+        ],
+        [
+          -15.5,
+          -23.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.021",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -19.0,
+          -4.0
+        ],
+        [
+          -31.5,
+          -15.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.022",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -15.0,
+          -4.0
+        ],
+        [
+          -31.5,
+          -11.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.023",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -23.0,
+          -4.0
+        ],
+        [
+          -31.5,
+          -19.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.024",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -19.0,
+          -8.0
+        ],
+        [
+          -31.5,
+          -15.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.025",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -15.0,
+          -8.0
+        ],
+        [
+          -31.5,
+          -11.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_bricks.026",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -31.5,
+          -19.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "bricks"
+      ]
+    },
+    {
+      "name": "tile_concrete.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -15.0,
+          -8.0
+        ],
+        [
+          -15.5,
+          -11.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -15.5,
+          -19.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -19.0,
+          -8.0
+        ],
+        [
+          -19.5,
+          -15.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -15.0,
+          -8.0
+        ],
+        [
+          -19.5,
+          -11.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -19.5,
+          -19.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -19.0,
+          -8.0
+        ],
+        [
+          -23.5,
+          -15.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -15.0,
+          -8.0
+        ],
+        [
+          -23.5,
+          -11.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -23.5,
+          -19.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -19.0,
+          -8.0
+        ],
+        [
+          -27.5,
+          -15.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -15.0,
+          -8.0
+        ],
+        [
+          -27.5,
+          -11.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_concrete.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -23.0,
+          -8.0
+        ],
+        [
+          -27.5,
+          -19.0,
+          -8.0
+        ]
+      ],
+      "materials": [
+        "concrete"
+      ]
+    },
+    {
+      "name": "tile_bricks_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -23.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -15.5,
+          -19.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -19.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -15.5,
+          -15.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -19.5,
+          -15.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -15.5,
+          -11.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -23.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -19.5,
+          -19.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -19.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -19.5,
+          -15.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -23.5,
+          -15.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -19.5,
+          -11.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -23.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -23.5,
+          -19.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -19.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -23.5,
+          -15.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -27.5,
+          -15.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -23.5,
+          -11.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -23.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -27.5,
+          -19.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -19.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -27.5,
+          -15.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "tile_bricks_1.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -31.5,
+          -15.0,
+          -6.516827397717861e-07
+        ],
+        [
+          -27.5,
+          -11.0,
+          6.516827397717861e-07
+        ]
+      ],
+      "materials": [
+        "bricks_1"
+      ]
+    },
+    {
+      "name": "pillar",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -23.433012008666992,
+          -20.5,
+          -8.0
+        ],
+        [
+          -22.566987991333008,
+          -19.5,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -23.433012008666992,
+          -20.5,
+          -4.0
+        ],
+        [
+          -22.566987991333008,
+          -19.5,
+          0.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -29.433012008666992,
+          -20.5,
+          -8.0
+        ],
+        [
+          -28.566987991333008,
+          -19.5,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -29.433012008666992,
+          -20.5,
+          -4.0
+        ],
+        [
+          -28.566987991333008,
+          -19.5,
+          0.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -18.433012008666992,
+          -20.5,
+          -8.0
+        ],
+        [
+          -17.566987991333008,
+          -19.5,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -18.433012008666992,
+          -20.5,
+          -4.0
+        ],
+        [
+          -17.566987991333008,
+          -19.5,
+          0.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -18.433012008666992,
+          -14.0,
+          -8.0
+        ],
+        [
+          -17.566987991333008,
+          -13.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -18.433012008666992,
+          -14.0,
+          -4.0
+        ],
+        [
+          -17.566987991333008,
+          -13.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -23.433012008666992,
+          -14.0,
+          -8.0
+        ],
+        [
+          -22.566987991333008,
+          -13.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -23.433012008666992,
+          -14.0,
+          -4.0
+        ],
+        [
+          -22.566987991333008,
+          -13.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -29.433012008666992,
+          -14.0,
+          -8.0
+        ],
+        [
+          -28.566987991333008,
+          -13.0,
+          -4.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    },
+    {
+      "name": "pillar.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8660253882408142,
+        1.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -29.433012008666992,
+          -14.0,
+          -4.0
+        ],
+        [
+          -28.566987991333008,
+          -13.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "concrete_1"
+      ]
+    }
+  ]
+}

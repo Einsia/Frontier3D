@@ -1,0 +1,142 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+  "family": "Reference2Scene",
+  "instruction_sha256": "83900d29cde02744a77d038e5d94909428213d02fa38c73bd03338bc24540f1c",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "2cdd8ba9c6a7ad2000cfff44fc81c6c83e9749048a4c3b8cc33785a8e106770f",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-59998c874e311cde255bba2f9effef9d6b144d631435a55cebed8a894e214713"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_giraffe",
+        "query": "完整毛绒幼年长颈鹿",
+        "weight": 0.4,
+        "boxes": [
+          [
+            0.252,
+            0.268,
+            0.696,
+            0.819
+          ]
+        ],
+        "boundary_notes": "包含所有可见耳角、深色鬃毛、尾端及足端；不含底座和投影。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_head",
+        "query": "长颈鹿头部及耳角",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.536,
+            0.268,
+            0.696,
+            0.439
+          ]
+        ],
+        "boundary_notes": "包括口鼻和头顶附属结构；下界按头颈过渡处划分，不延伸至长颈或颈后鬃毛。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_tail",
+        "query": "向后下垂的尾巴与深色尾穗",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.252,
+            0.469,
+            0.34,
+            0.601
+          ]
+        ],
+        "boundary_notes": "仅框可辨识的尾根、弯曲尾杆与完整深色尾端；与臀部连接处边界存在自然过渡。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_base",
+        "query": "圆形木纹展示底座",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.212,
+            0.642,
+            0.789,
+            0.877
+          ]
+        ],
+        "boundary_notes": "按可见圆盘外缘取框，包含被足部遮挡之间的底座表面，不含背景与投影；不推定隐藏厚度。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

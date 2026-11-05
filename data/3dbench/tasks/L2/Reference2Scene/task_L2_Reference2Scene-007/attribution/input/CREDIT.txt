@@ -1,0 +1,6 @@
+Surgical Room
+Author: ChrisRE
+Source: https://sketchfab.com/3d-models/charite-university-hospital-operating-room-9ec46c4d615a4581a235eebfb162f574
+License: CC Attribution-NonCommercial
+License reference: http://creativecommons.org/licenses/by-nc/4.0/
+Changes: imported/packed in Blender 5.2.1; camera and render setup; texture path repair where recorded in audit.json. Original download preserved privately.

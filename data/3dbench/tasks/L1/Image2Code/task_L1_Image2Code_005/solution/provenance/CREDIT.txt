@@ -1,0 +1,7 @@
+Typewriter
+Author: landout (https://sketchfab.com/landout)
+Source: https://sketchfab.com/3d-models/typewriter-4954fbf220d748ecbd82005f31d29f15
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

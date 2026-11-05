@@ -1,0 +1,24 @@
+{
+  "title": "Boats (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 3,
+  "original_sha256": "bf24ea6d9d5b15cf9fb73368480a08ae6369bdf05b641a9bc3b718a15d7a0bec",
+  "input_sha256": "0f402af6cd1b3853dac943e45429968cdd1ad2ccf179715b20712082c89ff3aa",
+  "input_dimensions": [
+    1600,
+    1200
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

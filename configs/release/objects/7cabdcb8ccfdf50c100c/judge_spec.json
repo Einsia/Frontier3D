@@ -1,0 +1,85 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/CodeEdit/task_L1_CodeEdit_012",
+  "family": "SceneEdit",
+  "instruction_sha256": "ca92495ad85b9cf0947e11a6b8a44dc1f2fa25f3761a835aea4238964bda4d19",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "镂空端盖辐条与沉孔改型；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "question": "Revise the supplied eight-spoke cover. Keep its outside diameter 70 mm, inner rim diameter 58 mm, central hub diameter 18 mm, thickness 6 mm and pose. Narrow every spoke from 5.0 to 3.5 mm, symmetrically about its existing radial centreline. Retain all eight spokes, their 45-degree spacing and their continuous connection into the hub and rim. Increase the central through-bore from diameter 8 to 10 mm. Add four diameter-3.2 mm through-holes at the four cardinal directions on a diameter-64 mm pitch circle. From the top face, counterbore each new hole to diameter 5.0 mm and depth 1.5 mm. Keep the original flat top and bottom outside those cuts. Do not shift the spokes to make room, merge the eight open sectors, break the narrow rim walls, or retain material where a spoke was narrowed.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "question": "本题孔、槽、口袋和相交通道为真实空腔；按题面区分盲孔、贯通与连接，不得封片/填料冒充；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "question": "移除/填补题面指定旧特征并保留未指定的细节；不得叠加两套孔/槽或全局拉伸；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "units": [
+        "protected_appearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/before.png": "755f5a31867c52e5ce279bbc2dcf6214426c1a9ef272e0705c6abdaf7eeb6c4d",
+    "reference/target.png": "626a336cad95dd7170e48a4bf3a9d0280daf246f5d4cc97ceca40f1bca001fcf"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

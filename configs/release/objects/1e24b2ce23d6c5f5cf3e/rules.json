@@ -1,0 +1,380 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "楼梯开口是否具有可见的边缘厚度、下沉井壁和向下延伸的踏步结构？",
+      "source_quote": "foreground stair opening",
+      "weight": 0.125
+    },
+    {
+      "id": "D02",
+      "question": "木扶手是否保留粗厚圆润截面及前景转角的连接形状？",
+      "source_quote": "wood/metal railings",
+      "weight": 0.125
+    },
+    {
+      "id": "D03",
+      "question": "金属栏杆是否具有细横杆、竖向支柱及可见底部固定结构？",
+      "source_quote": "wood/metal railings",
+      "weight": 0.125
+    },
+    {
+      "id": "D04",
+      "question": "楼梯转折处的横杆是否保留弯折、绕角和随梯段下降的结构？",
+      "source_quote": "wood/metal railings",
+      "weight": 0.125
+    },
+    {
+      "id": "D05",
+      "question": "长凳座面是否保留连续反向弯曲的轮廓及圆钝端部？",
+      "source_quote": "main seating shape",
+      "weight": 0.125
+    },
+    {
+      "id": "D06",
+      "question": "长凳是否具有厚实软垫、分段接缝及下方可见支脚？",
+      "source_quote": "the curved bench near the windows",
+      "weight": 0.125
+    },
+    {
+      "id": "D07",
+      "question": "墙面板是否保留竖向分缝、嵌入门板边界及金属面板的分块结构？",
+      "source_quote": "wall panels",
+      "weight": 0.125
+    },
+    {
+      "id": "D08",
+      "question": "清晰可见的顶灯是否呈嵌入式小型灯口，并具有可辨的边框结构？",
+      "source_quote": "ceiling lights",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "本计划仅使用指令与公开参考图，未提供、检查或推断任何候选产物。",
+    "主参考采用指令中的 input/reference.png；其公开附件映射为 reference/reference-0.png。所有区域与框均固定于该原始图像的归一化坐标。",
+    "未提供 legacy-detail-20261018-v1 的独立协议正文；本计划遵循本轮嵌入的契约与检查规则，不推断额外旧版要求。",
+    "单张未标定照片无法确定真实尺寸、遮挡结构或唯一相机参数；1.05 m 是任务尺度约定，其余比例不设虚构数值阈值。",
+    "栏杆间距、走廊深度、构件厚度与支撑没有给出精确数值或容差，仅作形态及相对比例检查。",
+    "定位类限定为清晰可分辨的主要物体；远处细小灯具、标牌、鞋子、人物及装饰不冻结为必需实例。",
+    "栏杆定位采用两组主要连续组件的可见范围；遮挡导致的内部空隙不视为独立实例，框内可能包含背景。",
+    "原图边缘裁切及家具遮挡限制了完整构件边界的判断；不要求恢复唯一的不可见真实细节。",
+    "相机位移属于明确几何要求；渲染引擎、色彩管理、曝光、图像尺寸及交付文件不列为内容质量测量。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中，以楼梯开口上层完成地面为基准，沿世界 Z 轴测量对应水平护栏扶手顶部高度；按场景米制单位核验约定值，不以照片像素估算。",
+      "quantity": "楼梯开口护栏高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.05 m stair-opening railing height as the task scale convention, not a measured real-world dimension.",
+      "target": 1.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两个保留相机的世界位置，将备用相机减主相机的位置差投影到主相机局部正 X 单位轴，核验右移距离；另检查位移方向与该轴一致。",
+      "quantity": "备用相机沿主相机局部正 X 轴的平移距离",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "前景楼梯开口与下降梯段",
+      "polygon": [
+        [
+          0.272,
+          0.556
+        ],
+        [
+          0.438,
+          0.608
+        ],
+        [
+          0.997,
+          0.587
+        ],
+        [
+          0.997,
+          0.997
+        ],
+        [
+          0.286,
+          0.997
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R02",
+      "label": "中景横向护栏与红色通道",
+      "polygon": [
+        [
+          0.0,
+          0.446
+        ],
+        [
+          0.966,
+          0.386
+        ],
+        [
+          0.94,
+          0.597
+        ],
+        [
+          0.0,
+          0.705
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R03",
+      "label": "窗前曲线长凳",
+      "polygon": [
+        [
+          0.55,
+          0.306
+        ],
+        [
+          0.651,
+          0.305
+        ],
+        [
+          0.659,
+          0.42
+        ],
+        [
+          0.563,
+          0.442
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "左侧木墙与金属墙板",
+      "polygon": [
+        [
+          0.0,
+          0.061
+        ],
+        [
+          0.287,
+          0.068
+        ],
+        [
+          0.436,
+          0.123
+        ],
+        [
+          0.479,
+          0.328
+        ],
+        [
+          0.332,
+          0.472
+        ],
+        [
+          0.0,
+          0.522
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R05",
+      "label": "后方窗墙及其与走廊的连接",
+      "polygon": [
+        [
+          0.5,
+          0.121
+        ],
+        [
+          0.999,
+          0.119
+        ],
+        [
+          0.999,
+          0.312
+        ],
+        [
+          0.502,
+          0.31
+        ]
+      ],
+      "weight": 0.2
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "整体是否呈现参考图中的室内休息区走廊？",
+      "source_quote": "Reconstruct the lounge corridor",
+      "weight": 0.0625
+    },
+    {
+      "id": "S02",
+      "question": "楼梯开口是否位于前景，并与走廊连通？",
+      "source_quote": "with foreground stair opening",
+      "weight": 0.0625
+    },
+    {
+      "id": "S03",
+      "question": "栏杆是否呈现参考图中的木扶手与金属杆件组合？",
+      "source_quote": "wood/metal railings",
+      "weight": 0.0625
+    },
+    {
+      "id": "S04",
+      "question": "红色地毯是否覆盖参考图所示的主要通行带？",
+      "source_quote": "red carpet",
+      "weight": 0.0625
+    },
+    {
+      "id": "S05",
+      "question": "墙面板的分布及木质、金属外观是否对应参考图？",
+      "source_quote": "wall panels",
+      "weight": 0.0625
+    },
+    {
+      "id": "S06",
+      "question": "天花板是否具有参考图所示的分布式顶灯？",
+      "source_quote": "ceiling lights",
+      "weight": 0.0625
+    },
+    {
+      "id": "S07",
+      "question": "曲线长凳是否位于后方窗户附近？",
+      "source_quote": "the curved bench near the windows",
+      "weight": 0.0625
+    },
+    {
+      "id": "S08",
+      "question": "上层走廊与下方楼梯空间的高差关系是否保留？",
+      "source_quote": "Preserve the level change",
+      "weight": 0.0625
+    },
+    {
+      "id": "S09",
+      "question": "栏杆横杆与立柱的相对间距是否保持参考图的节奏？",
+      "source_quote": "rail spacing",
+      "weight": 0.0625
+    },
+    {
+      "id": "S10",
+      "question": "前景楼梯、通道与后方窗墙是否保持参考图的纵深层次？",
+      "source_quote": "corridor depth",
+      "weight": 0.0625
+    },
+    {
+      "id": "S11",
+      "question": "主要座椅是否保持参考图的连续曲线形态与棕色软垫外观？",
+      "source_quote": "main seating shape",
+      "weight": 0.0625
+    },
+    {
+      "id": "S12",
+      "question": "主要构件是否独立可编辑，并具有厚度、支撑与合理间隔？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S13",
+      "question": "场景是否由真实三维构件组成，且侧移视图显示一致的视差与遮挡变化？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S14",
+      "question": "未定尺寸是否按参考比例推定，隐藏表面是否合理闭合延续？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S15",
+      "question": "主透视相机是否匹配参考图的视点、取景与透视关系？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.0625
+    },
+    {
+      "id": "S16",
+      "question": "备用相机是否由主相机向局部右方平移得到，并保持相同旋转和镜头，且两视图使用同一场景？",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.0625
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "仅定位中央清晰可见的一张连续曲线长凳，包含软垫、深色底部及支脚；排除落地阴影。",
+      "boxes": [
+        [
+          0.554,
+          0.309,
+          0.651,
+          0.433
+        ]
+      ],
+      "id": "T01",
+      "query": "窗前棕色曲线软垫长凳",
+      "weight": 0.25
+    },
+    {
+      "boundary_notes": "分别框定横跨中景的水平护栏和前景随梯段转折的连续栏杆组；包含木扶手、金属杆件、立柱与深色可见部分，按图像边缘裁切。远处右上角仅露出局部的其他扶手不属于这两组。",
+      "boxes": [
+        [
+          0.0,
+          0.386,
+          0.968,
+          0.683
+        ],
+        [
+          0.272,
+          0.552,
+          1.0,
+          1.0
+        ]
+      ],
+      "id": "T02",
+      "query": "楼梯开口的主要木扶手金属栏杆组件",
+      "weight": 0.25
+    },
+    {
+      "boundary_notes": "定位左侧占主导的木饰面墙体，包括嵌入门板、暗部与右侧转角；不将表面标牌拆成实例，不包括楼梯井壁。",
+      "boxes": [
+        [
+          0.0,
+          0.06,
+          0.338,
+          0.522
+        ]
+      ],
+      "id": "T03",
+      "query": "左侧主要木饰面墙体",
+      "weight": 0.25
+    },
+    {
+      "boundary_notes": "将左中部相邻金属板及其深色边缘作为一组连续墙板定位；包括板面反光所在的实体表面，不将反射内容视为独立物体。",
+      "boxes": [
+        [
+          0.299,
+          0.114,
+          0.478,
+          0.413
+        ]
+      ],
+      "id": "T04",
+      "query": "左中部金属墙板组",
+      "weight": 0.25
+    }
+  ]
+}

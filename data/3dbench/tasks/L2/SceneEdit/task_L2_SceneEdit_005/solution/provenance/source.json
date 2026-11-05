@@ -1,0 +1,26 @@
+{
+  "id": "winter_castle",
+  "title": "Winter Castle Knight",
+  "title_zh": "雪山城堡",
+  "category": "terrain",
+  "provider": "blendswap",
+  "author": "fdoss001",
+  "source_page": "https://www.blendswap.com/blend/24418",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_status": "verified",
+  "download_url": "https://huggingface.co/datasets/sjijs/VPhotoBench/resolve/main/assets/blender/040_winter_castle_knight/winter-castle-knight.blend",
+  "mirror": "VPhotoBench scene distribution; original upstream source retained; no VPhotoBench tasks or scoring used",
+  "expected_sha256": "38d659aa608409dd69ee5a3bb698a4aea84d4c1fd127baad4e86c97288fd57ca",
+  "format": "blend",
+  "download_status": "downloaded",
+  "archive": "assets/diverse/winter_castle/source.blend",
+  "archive_sha256": "38d659aa608409dd69ee5a3bb698a4aea84d4c1fd127baad4e86c97288fd57ca",
+  "bytes": 464703380,
+  "blend_candidates": [
+    "assets/diverse/winter_castle/source.blend"
+  ],
+  "resource_family": "upstream/winter-castle",
+  "packaged_scene_sha256": "024c0d5bfc9ab0d81fb8125319041b4c41299fd30afe22e052f21bdecdee8ece",
+  "changes": "Author geometry/layout retained; render normalization and documented exclusions of shared resources. SceneEdit additionally removes listed target objects or perturbs existing lighting. No generated replacement assets."
+}

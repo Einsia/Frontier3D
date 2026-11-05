@@ -1,0 +1,142 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+  "family": "Reference2Scene",
+  "instruction_sha256": "cb24922140129b221609450522eda36c05926eae8fe529215ccd68710f1ec294",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "084d54a1551c472ae2d86ef86838a97b89a9bf24bfa150174e9dc44c67af86f1",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-8d0c3af561aabb206ae28097be1b912d207a6d1445ba9f2933dc38f849bd7b8d"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "将中央连续白色篷膜作为一个实例，包含亮边、暗面和全部可见尖角；不包含外伸拉索、柱脚、阴影或背景。",
+        "boxes": [
+          [
+            0.167,
+            0.348,
+            0.582,
+            0.521
+          ]
+        ],
+        "id": "T01",
+        "query": "中央白色张拉篷膜",
+        "weight": 0.35,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位右侧连续商业建筑主体，包含深色立面、玻璃、突出檐口和底层店面；按图像边界截断，不包含左侧反射玻璃或独立室外楼梯。",
+        "boxes": [
+          [
+            0.804,
+            0,
+            1,
+            0.698
+          ]
+        ],
+        "id": "T02",
+        "query": "右侧玻璃立面商业建筑",
+        "weight": 0.25,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位上层平台面向前景的连续栏杆总成，包含横向扶手、立柱和暗色玻璃板；右端止于其转入楼梯栏杆处，不分别计数细小板格。",
+        "boxes": [
+          [
+            0.052,
+            0.579,
+            0.82,
+            0.707
+          ]
+        ],
+        "id": "T03",
+        "query": "上层露台前沿玻璃栏杆总成",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位右侧连接上层露台和下层广场的外部楼梯总成，包含可见踏步、侧墙及两侧栏杆的完整范围；不包含建筑上的扶梯、地面投影或反射。",
+        "boxes": [
+          [
+            0.812,
+            0.616,
+            1,
+            0.879
+          ]
+        ],
+        "id": "T04",
+        "query": "右侧室外层间楼梯",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

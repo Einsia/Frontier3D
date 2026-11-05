@@ -1,0 +1,164 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+  "family": "Brief2Scene",
+  "instruction_sha256": "2fa9be608caeda231ad3d57e28ed1fa7009c34cac252efa706fe71b6c7f8f0e8",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {},
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "底座是否具有可辨识的箱体形态与上下层结构？",
+      "units": [
+        "two-tier box base"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "停机坪是否呈圆形，并具有H形标记和内圈刻度？",
+      "units": [
+        "a circular 1.60 m landing pad, H marking, inner graduations"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "限位件是否呈块状，定位件和辅助定位件是否呈锥状？",
+      "units": [
+        "two symmetric limit blocks, three positioning cones and a fourth auxiliary cone"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "开启的壳体门是否具有实体门板，开口内是否可辨认线缆和导向件？",
+      "units": [
+        "Open both housing doors 80 +/-3 degrees, showing wiring and guides"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "状态指示件是否具有侧面条带形态？",
+      "units": [
+        "a half-lit side status strip"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "无人机是否具有四旋翼构型、机身、螺旋桨及可辨识的支脚？",
+      "units": [
+        "A quadrotor of 0.60 m motor spacing and 0.45 m body length rests level within 2 degrees, its four feet seated in the cone positions with at most 5 mm gaps. Propellers are stationary at different natural orientations."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "机尾是否具有可滑动电池舱盖、舱口、插入导轨和导向配合特征？",
+      "units": [
+        "Slide the rear battery hatch 70% open. A swapping arm from a rear column holds a charged 0.20 x 0.12 x 0.06 m battery, inserted 60 +/-5% along the tail-bay rails. Align guide features within 2 mm"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "换电机构是否具有后立柱、机械臂及实体夹持末端，并以几何结构表达关节？",
+      "units": [
+        "Represent specified joints and end-effectors geometrically."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D09",
+      "component": "F",
+      "question": "两块电池是否具有相匹配的实体外形，等待位置是否具有转台结构？",
+      "units": [
+        "The removed depleted battery rests at a turntable waiting position inside the dock, visually matching the charged one except for a red charge label"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "D10",
+      "component": "F",
+      "question": "风速仪是否具有桅杆支撑，信标是否为可辨识的独立实体部件？",
+      "units": [
+        "Add a 0.40 m anemometer mast and a beacon at the pad edge."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ]
+}

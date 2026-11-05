@@ -1,0 +1,24 @@
+{
+  "title": "Burger (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 8,
+  "original_sha256": "f8663dd7ae7b7c0adccf83ee4f2248a0abb07f8332cac815f46264cb267fa110",
+  "input_sha256": "5a6a0a08322883e722d773aadc2cd328e5bca89446052c2661a750cb7fc2bdf8",
+  "input_dimensions": [
+    1200,
+    1600
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

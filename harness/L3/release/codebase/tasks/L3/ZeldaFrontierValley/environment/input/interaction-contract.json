@@ -1,0 +1,177 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-g06",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "stable_lodge",
+    "service_room",
+    "river_bridge",
+    "woodland_camp",
+    "ruins",
+    "supply_chamber"
+  ],
+  "initial_state": "Bridge raised, plate unloaded, lift low, tools in chest, three supplies at upper ruins.",
+  "entities": [
+    {
+      "id": "chest.tools",
+      "role": "container",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; contains tools",
+      "argument": ""
+    },
+    {
+      "id": "item.tools",
+      "role": "tool",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "collect",
+        "return"
+      ],
+      "initial": "inside chest",
+      "argument": ""
+    },
+    {
+      "id": "counterweight",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "at camp",
+      "argument": ""
+    },
+    {
+      "id": "plate.bridge",
+      "role": "pressure_plate",
+      "actions": [
+        "inspect"
+      ],
+      "initial": "unloaded",
+      "argument": ""
+    },
+    {
+      "id": "winch.bridge",
+      "role": "winch",
+      "actions": [
+        "lower",
+        "raise"
+      ],
+      "initial": "disabled; plate unloaded",
+      "argument": ""
+    },
+    {
+      "id": "bridge.river",
+      "role": "bridge",
+      "actions": [
+        "inspect"
+      ],
+      "initial": "raised",
+      "argument": ""
+    },
+    {
+      "id": "lift.ruins",
+      "role": "lift",
+      "actions": [
+        "call",
+        "travel"
+      ],
+      "initial": "lower landing",
+      "argument": "landing=lower|upper"
+    },
+    {
+      "id": "gate.stable",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "supply.bundle.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "upper ruins",
+      "argument": ""
+    },
+    {
+      "id": "supply.bundle.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "upper ruins",
+      "argument": ""
+    },
+    {
+      "id": "supply.bundle.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "upper ruins",
+      "argument": ""
+    },
+    {
+      "id": "cargo.crate",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; lower ruins",
+      "argument": ""
+    },
+    {
+      "id": "storage.lodge",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [
+    "tools"
+  ],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

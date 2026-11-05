@@ -1,0 +1,222 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_022",
+  "family": "Reference2Scene",
+  "instruction_sha256": "aeb561d62cac9c122570ade11d6fa4c245c1655691169fb428f5a6a1ec66f7b0",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_022",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "9d4d111d06709c67aa8bc2a8c3db3723075e5e8402c494a966780484250a7b68",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-e36f7ce5a40029ac15ff91f7f559f66a3a5f190018ea1d5fefcc529d33f0347b"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "依据 reference/reference-1.png；包含完整可见暗色琴壳、前部键床及曲面侧壁，不含琴盖、腿和投影。框内因曲面轮廓而存在背景。",
+        "boxes": [
+          [
+            0.088,
+            0.358,
+            0.736,
+            0.775
+          ]
+        ],
+        "id": "T01",
+        "query": "三角钢琴琴壳与键床",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含开启盖板的暗色表面、远端尖部与亮色薄边；不包含支撑杆。主图呈近乎侧视的狭长轮廓。",
+        "boxes": [
+          [
+            0.184,
+            0.269,
+            0.709,
+            0.546
+          ]
+        ],
+        "id": "T02",
+        "query": "开启的琴盖",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "仅框住斜向支撑杆的可见全段；端部被盖板和琴壳遮挡处不补全。",
+        "boxes": [
+          [
+            0.445,
+            0.409,
+            0.576,
+            0.641
+          ]
+        ],
+        "id": "T03",
+        "query": "琴盖支撑杆",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "将整排黑白键作为一个可辨组件定位，覆盖可见键面和前缘；不将细小单键分别列为实例。",
+        "boxes": [
+          [
+            0.132,
+            0.64,
+            0.439,
+            0.745
+          ]
+        ],
+        "id": "T04",
+        "query": "黑白键盘",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "三个框分别覆盖左前腿、右前腿及后方部分可见腿，均包括脚座和金属色轮组件；不推断被琴体遮挡的长度。",
+        "boxes": [
+          [
+            0.128,
+            0.677,
+            0.171,
+            0.788
+          ],
+          [
+            0.452,
+            0.753,
+            0.499,
+            0.886
+          ],
+          [
+            0.603,
+            0.56,
+            0.636,
+            0.607
+          ]
+        ],
+        "id": "T05",
+        "query": "带轮脚的琴腿",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "整体框覆盖可见竖杆、斜撑、底座和踏板端部；将组件作为单实例，不把细小踏板分别定位。",
+        "boxes": [
+          [
+            0.301,
+            0.733,
+            0.4,
+            0.824
+          ]
+        ],
+        "id": "T06",
+        "query": "悬挂踏板组件",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "仅覆盖键盘后方可见的深色倾斜谱板，包括全部板面和薄边，不含下方键床。",
+        "boxes": [
+          [
+            0.219,
+            0.553,
+            0.418,
+            0.659
+          ]
+        ],
+        "id": "T07",
+        "query": "谱架板",
+        "weight": 0.05,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位琴腔内可见的框架、音板和弦区整体；边界止于内侧琴缘。支撑杆和谱架遮挡造成的空缺不补全为独立实例，细弦及小孔不单列。",
+        "boxes": [
+          [
+            0.139,
+            0.378,
+            0.721,
+            0.662
+          ]
+        ],
+        "id": "T08",
+        "query": "可见内部结构总成",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

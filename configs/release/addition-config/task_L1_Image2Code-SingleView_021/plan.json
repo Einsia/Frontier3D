@@ -1,0 +1,321 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/7b7006fad20e414ec18c/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/aaadc61571a6a4312081/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/5f160e0b20768e96a2d1/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_front_glove",
+      "label": "前方偏右手套",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.437,
+          0.465
+        ],
+        [
+          0.614,
+          0.415
+        ],
+        [
+          0.642,
+          0.524
+        ],
+        [
+          0.66,
+          0.563
+        ],
+        [
+          0.669,
+          0.735
+        ],
+        [
+          0.651,
+          0.791
+        ],
+        [
+          0.599,
+          0.832
+        ],
+        [
+          0.538,
+          0.842
+        ],
+        [
+          0.485,
+          0.818
+        ],
+        [
+          0.455,
+          0.776
+        ],
+        [
+          0.458,
+          0.744
+        ],
+        [
+          0.415,
+          0.729
+        ],
+        [
+          0.401,
+          0.694
+        ],
+        [
+          0.422,
+          0.607
+        ],
+        [
+          0.459,
+          0.566
+        ]
+      ]
+    },
+    {
+      "id": "r_rear_glove",
+      "label": "后方偏左手套可见部分",
+      "weight": 0.35,
+      "polygon": [
+        [
+          0.418,
+          0.362
+        ],
+        [
+          0.462,
+          0.365
+        ],
+        [
+          0.558,
+          0.386
+        ],
+        [
+          0.59,
+          0.402
+        ],
+        [
+          0.587,
+          0.419
+        ],
+        [
+          0.442,
+          0.467
+        ],
+        [
+          0.453,
+          0.552
+        ],
+        [
+          0.425,
+          0.609
+        ],
+        [
+          0.408,
+          0.695
+        ],
+        [
+          0.414,
+          0.734
+        ],
+        [
+          0.464,
+          0.748
+        ],
+        [
+          0.459,
+          0.798
+        ],
+        [
+          0.419,
+          0.79
+        ],
+        [
+          0.377,
+          0.765
+        ],
+        [
+          0.351,
+          0.723
+        ],
+        [
+          0.352,
+          0.69
+        ],
+        [
+          0.387,
+          0.641
+        ],
+        [
+          0.362,
+          0.646
+        ],
+        [
+          0.341,
+          0.634
+        ],
+        [
+          0.327,
+          0.607
+        ],
+        [
+          0.336,
+          0.568
+        ],
+        [
+          0.374,
+          0.506
+        ],
+        [
+          0.401,
+          0.481
+        ],
+        [
+          0.418,
+          0.429
+        ]
+      ]
+    },
+    {
+      "id": "r_cords",
+      "label": "悬挂绳索及顶部绳结",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.435,
+          0.419
+        ],
+        [
+          0.516,
+          0.243
+        ],
+        [
+          0.516,
+          0.207
+        ],
+        [
+          0.532,
+          0.196
+        ],
+        [
+          0.548,
+          0.207
+        ],
+        [
+          0.553,
+          0.246
+        ],
+        [
+          0.55,
+          0.286
+        ],
+        [
+          0.538,
+          0.283
+        ],
+        [
+          0.541,
+          0.422
+        ],
+        [
+          0.489,
+          0.439
+        ],
+        [
+          0.469,
+          0.437
+        ]
+      ]
+    },
+    {
+      "id": "r_support",
+      "label": "顶部斜向细支撑杆",
+      "weight": 0.05,
+      "polygon": [
+        [
+          0.507,
+          0.224
+        ],
+        [
+          0.514,
+          0.235
+        ],
+        [
+          0.66,
+          0.154
+        ],
+        [
+          0.657,
+          0.147
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_glove_count",
+      "source_quote": "paired vintage boxing gloves",
+      "quantity": "手套数量",
+      "unit": "只",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维场景中按完整手套主体计数；各自的拇指、袖口及分离网格不另算手套。"
+    },
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制原生场景中对全部对象几何应用世界变换，排除相机和灯光，求整体世界轴对齐包围盒三轴长度的最大值，与标称1.000 m比较；容差字段表示原文2%的相对容差。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

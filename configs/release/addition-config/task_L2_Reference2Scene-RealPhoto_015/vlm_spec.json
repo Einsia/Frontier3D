@@ -1,0 +1,165 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015",
+  "family": "Reference2Scene",
+  "instruction_sha256": "7a74a0e829de383d244c4aab54f55558ad5e4fb10cc79c5be0e4414bd8ca385f",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "5a6a0a08322883e722d773aadc2cd328e5bca89446052c2661a750cb7fc2bdf8",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-7199bc91e7a8a01708752974ecf7171e60babba1f42c6107685eb78321e3043e"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "整体汉堡含前后可见面包形体及露出馅料，不含签杆、薯条或投影；右侧截于原图边界，不推断图外延伸。",
+        "boxes": [
+          [
+            0.302,
+            0.159,
+            1,
+            0.827
+          ]
+        ],
+        "id": "t01",
+        "query": "面包与可见馅料组成的汉堡整体",
+        "weight": 0.4,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "作为一组定位左后方及左侧伸出的全部可见薯条；组框可包含遮挡物，不逐根拆分互相遮挡、边界不明确的薯条。",
+        "boxes": [
+          [
+            0,
+            0.13,
+            0.539,
+            0.598
+          ]
+        ],
+        "id": "t02",
+        "query": "薯条组",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含杯沿、内部酱料和完整可见金属杯壁，包括暗面；左侧被画面截断，排除盘上阴影。",
+        "boxes": [
+          [
+            0,
+            0.232,
+            0.328,
+            0.475
+          ]
+        ],
+        "id": "t03",
+        "query": "小金属酱料杯",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "每框包含一根签杆及其深色圆状装饰，覆盖到进入面包的可见终点；后方签杆顶端被画面截断，不补全隐藏段。",
+        "boxes": [
+          [
+            0.604,
+            0,
+            0.66,
+            0.191
+          ],
+          [
+            0.737,
+            0.014,
+            0.803,
+            0.321
+          ]
+        ],
+        "id": "t04",
+        "query": "带深色装饰的竖直签杆",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "单个盘子的全部可见范围，包含宽盘沿和盛放面，排除桌面及投影；左右及下缘均被原图截断，框较大源于盘体实际占幅。",
+        "boxes": [
+          [
+            0,
+            0.044,
+            1,
+            1
+          ]
+        ],
+        "id": "t05",
+        "query": "承托食物的浅色圆盘",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

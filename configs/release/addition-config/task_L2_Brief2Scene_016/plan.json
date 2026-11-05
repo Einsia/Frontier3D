@@ -1,0 +1,397 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_016",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/115315f5b3dd517fb660/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/22d49954d609f2fdc1bc/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/1cea150836f6eb8709e1/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "按独立语义机体计数前开门洗衣机。",
+      "quantity": "洗衣机数量",
+      "relation": "equal",
+      "source_quote": "three front-loading washers",
+      "target": 3,
+      "unit": "台",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "逐台在机体局部横向测量实体外包尺寸，打开门体另行记录。",
+      "quantity": "每台洗衣机宽度",
+      "relation": "equal",
+      "source_quote": "each 0.60 x 0.60 m",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "逐台在机体局部前后轴测量机体深度，不将打开门的伸出量当作机体深度。",
+      "quantity": "每台洗衣机深度",
+      "relation": "equal",
+      "source_quote": "each 0.60 x 0.60 m",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "逐台测量支承地面至机体顶部的 Z 向距离，不含顶部篮子。",
+      "quantity": "每台洗衣机高度",
+      "relation": "equal",
+      "source_quote": "0.85 m tall",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "以闭合门姿态为零位，绕实际铰链轴测量中间门的开启角。",
+      "quantity": "中间洗衣机门开启角",
+      "relation": "equal",
+      "source_quote": "Open the middle door 130 degrees",
+      "target": 130,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "计数中间洗衣机开门区域所呈现的独立待处理织物。",
+      "quantity": "待处理织物数量",
+      "relation": "equal",
+      "source_quote": "two waiting textiles",
+      "target": 2,
+      "unit": "件",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "逐台计数放置在其顶部的独立篮子。",
+      "quantity": "每台洗衣机顶部篮子数量",
+      "relation": "equal",
+      "source_quote": "put a basket on each machine",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "计数对面储物柜由实体边界形成的独立隔间。",
+      "quantity": "储物隔间数量",
+      "relation": "equal",
+      "source_quote": "four compartments",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "计数储物柜内独立的洗涤剂瓶实体。",
+      "quantity": "洗涤剂瓶数量",
+      "relation": "equal",
+      "source_quote": "four differently coloured detergent bottles",
+      "target": 4,
+      "unit": "瓶",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "沿桌面局部长轴测量桌板边界长度。",
+      "quantity": "桌面长度",
+      "relation": "equal",
+      "source_quote": "1.60 x 0.80 m",
+      "target": 1.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "沿桌面局部短轴测量桌板边界宽度。",
+      "quantity": "桌面宽度",
+      "relation": "equal",
+      "source_quote": "1.60 x 0.80 m",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "测量地面至桌面工作表面的 Z 向高度。",
+      "quantity": "桌面高度",
+      "relation": "equal",
+      "source_quote": "at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "计数后方框架上具有独立基座与末端执行器的机械臂。",
+      "quantity": "机械臂数量",
+      "relation": "equal",
+      "source_quote": "Two arms on a rear frame",
+      "target": 2,
+      "unit": "条",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "分别测量固定基座参考点相对地面的 Z 高度，参考点须在场景或 README 中明确。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "bases at 1.15 m",
+      "target": 1.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "测量两个固定基座参考点之间的欧氏距离。",
+      "quantity": "基座间距",
+      "relation": "equal",
+      "source_quote": "0.30 m apart",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "逐臂核对以固定基座为中心的声明几何可达包络半径；不以当前伸展长度替代包络半径。",
+      "quantity": "每条机械臂可达包络半径",
+      "relation": "equal",
+      "source_quote": "0.70 m reach each",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "在毛巾材料展开坐标或可恢复的未变形几何中测量短边尺寸，并记录约定。",
+      "quantity": "被夹持毛巾短边尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.70 x 1.40 m towel",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "在毛巾材料展开坐标或可恢复的未变形几何中测量长边尺寸，并记录约定。",
+      "quantity": "被夹持毛巾长边尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.70 x 1.40 m towel",
+      "target": 1.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "测量毛巾被拉平主体代表平面相对桌面工作表面的竖直偏移，明确代表平面的选取。",
+      "quantity": "毛巾离桌面高度",
+      "relation": "equal",
+      "source_quote": "stretched 0.15 m above the table",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "识别毛巾各材料角点，计算最高角点 Z 减最低角点 Z。",
+      "quantity": "毛巾角点高度差",
+      "relation": "at_most",
+      "source_quote": "at most 0.05 m corner-height variation",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "将毛巾纵向中心线投影到桌面平面，计算其在毛巾长度范围内相对桌面长轴的最大横向距离，以 mm 报告。",
+      "quantity": "毛巾中心线对齐偏差",
+      "relation": "at_most",
+      "source_quote": "its centreline matches the table's long axis within 20 mm",
+      "target": 20,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "分别在两处夹持区域对实体夹爪与毛巾执行相交或有符号距离分析，报告最大穿透深度。",
+      "quantity": "夹爪穿透深度",
+      "relation": "at_most",
+      "source_quote": "Gripper penetration is at most 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "计数位于桌面下方的独立篮子实体。",
+      "quantity": "桌下篮子数量",
+      "relation": "equal",
+      "source_quote": "Put two baskets beneath the table",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "计数桌旁空间上独立的折叠织物堆，不以堆内层数代替堆数。",
+      "quantity": "桌旁折叠堆数量",
+      "relation": "equal",
+      "source_quote": "three folded stacks beside it",
+      "target": 3,
+      "unit": "堆",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "在地面导航平面检查绕桌闭合自由路径及其最小净宽；排除被评估机器人，计入其余家具、打开门和突出物，结合路线坐标验证连续性。",
+      "quantity": "绕桌连续路线净宽",
+      "relation": "at_least",
+      "source_quote": "Provide a continuous 0.90 m loop around the table",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "逐台沿洗衣机前方服务区域测量至障碍物的最小自由通行净距，计入当前打开门和其他突出物，排除被评估机器人。",
+      "quantity": "洗衣机前方净空",
+      "relation": "at_least",
+      "source_quote": "at least 0.70 m clear in front of the washers",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "逐一计算当前毛巾抓取接触点到对应固定机械臂基座参考点的欧氏距离，不移动基座。",
+      "quantity": "当前抓取点至对应基座距离",
+      "relation": "at_most",
+      "source_quote": "Each current towel grasp must be within its corresponding fixed arm's 0.70 m reach.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "对标记的滚筒开口人工交接服务点测量相对地面的 Z 高度，披露点位选择。",
+      "quantity": "滚筒开口服务高度",
+      "relation": "range",
+      "source_quote": "Drum opening, towel compartment and table service heights are 0.40-1.20 m for human transfer",
+      "target": 0.4,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "对标记的毛巾隔间人工交接服务点测量相对地面的 Z 高度，披露点位选择。",
+      "quantity": "毛巾隔间服务高度",
+      "relation": "range",
+      "source_quote": "Drum opening, towel compartment and table service heights are 0.40-1.20 m for human transfer",
+      "target": 0.4,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "对标记的桌面人工交接服务点测量相对地面的 Z 高度。",
+      "quantity": "桌面服务高度",
+      "relation": "range",
+      "source_quote": "Drum opening, towel compartment and table service heights are 0.40-1.20 m for human transfer",
+      "target": 0.4,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "建立每个被夹持角点与实际接触夹爪的对应表，逐角计数对应夹爪。",
+      "quantity": "每个被夹持角点对应的夹爪数量",
+      "relation": "equal",
+      "source_quote": "Each held corner corresponds to one gripper",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "将中间门实体绕其铰链从闭合位置扫至指定开启姿态形成体积，计算该体积与两条机械臂完整实体表面的最小距离。",
+      "quantity": "机械臂至洗衣机门扫掠体积净距",
+      "relation": "at_least",
+      "source_quote": "keep at least 0.10 m between arms and the washer door's swept volume",
+      "target": 0.1,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

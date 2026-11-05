@@ -1,0 +1,5 @@
+多连杆夹持台灯
+Yann Kervran, Kuutti Siitonen
+https://polyhaven.com/a/desk_lamp_arm_01
+CC0-1.0
+Changes: static display normalization, original studio lighting and cameras. Source meshes may combine multiple physical components; reconstruction must preserve editable semantic parts.

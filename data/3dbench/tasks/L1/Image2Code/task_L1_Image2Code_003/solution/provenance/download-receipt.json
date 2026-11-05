@@ -1,0 +1,17 @@
+{
+  "uid": "a8c0797a4a07498a9eadaead25e5e3e8",
+  "file": "source.glb",
+  "download_filename": "pipe_organs.glb",
+  "bytes": 14454076,
+  "sha256": "75ab8a7ef794ca09d4862b4851f6caa0f152c0a813681d0d44d2e0334dfa8d6b",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Ryoce (https://sketchfab.com/Ryoce)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/pipe-organs-a8c0797a4a07498a9eadaead25e5e3e8",
+    "title": "Pipe Organs"
+  },
+  "gltf_meshes": 7,
+  "gltf_images": 9,
+  "animations": []
+}

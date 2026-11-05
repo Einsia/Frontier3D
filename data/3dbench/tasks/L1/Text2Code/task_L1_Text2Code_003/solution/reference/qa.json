@@ -1,0 +1,79 @@
+[
+  {
+    "part": "base",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "guide_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "guide_bushing_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "guide_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "guide_bushing_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "lead_screw",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "nut_block",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "platform",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "end_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "end_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "handwheel",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  }
+]

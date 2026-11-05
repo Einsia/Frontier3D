@@ -1,0 +1,76 @@
+{
+  "version": "reference-boxes-v1",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "5ce137f14dd65dd7af1b5a7b89fa7bc0e7e9f8a73f6f8dcdbad28a16ae125d14",
+  "image_size": [
+    1000,
+    1000
+  ],
+  "detector": {
+    "fingerprint": "l1-ai-reference-only-draft-20261011"
+  },
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "targets": [
+    {
+      "id": "part_1",
+      "query": "cabinet carcass",
+      "boxes": [
+        [
+          0.24,
+          0.18,
+          0.93,
+          0.73
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_2",
+      "query": "open framed door",
+      "boxes": [
+        [
+          0.08,
+          0.26,
+          0.8,
+          0.54
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_3",
+      "query": "cabinet cavity",
+      "boxes": [
+        [
+          0.26,
+          0.35,
+          0.79,
+          0.71
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    }
+  ]
+}

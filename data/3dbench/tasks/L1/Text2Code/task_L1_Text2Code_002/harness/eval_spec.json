@@ -1,0 +1,573 @@
+{
+  "version": "scalable-v1.1.0",
+  "profile": "L1",
+  "mode": "text",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "README.md"
+  ],
+  "scene": "scene.blend",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "critical_constraints": [
+    "part_count",
+    "closed",
+    "connected",
+    "solid_validity",
+    "export",
+    "native_procedural_materials",
+    "glb_procedural_materials",
+    "native_state_materials",
+    "all_seed_quality"
+  ],
+  "tolerances": {
+    "dimension_m": 0.0003
+  },
+  "l1_geometry": {
+    "version": "l1-mesh-v1",
+    "weld_m": 1e-09,
+    "intersection_epsilon_m": 1e-09,
+    "degenerate_area_m2": 1e-18,
+    "max_triangles": 200000,
+    "max_intersection_pairs": 2000000
+  },
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.22,
+        -0.24,
+        0.19
+      ],
+      "target": [
+        0,
+        0,
+        0.027
+      ],
+      "ortho_scale": 0.2,
+      "resolution": 128,
+      "frame": 1
+    },
+    {
+      "id": "exploded",
+      "location": [
+        0.3,
+        -0.32,
+        0.28
+      ],
+      "target": [
+        0,
+        0,
+        0.06
+      ],
+      "ortho_scale": 0.38,
+      "resolution": 128,
+      "frame": 61
+    }
+  ],
+  "l1_protocol": {
+    "version": "l1-requirements-v1",
+    "requirements": [
+      {
+        "id": "part_roles",
+        "text": "底座1、支座2、衬套2、轴环2、轴1、螺栓4、垫圈4，共16件独立可编辑零件",
+        "source": "instruction.md paragraphs 1–2",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory",
+          "part_count"
+        ],
+        "reason": "尺寸代理与件数已接入，真实角色特征和编辑性尚未绑定。"
+      },
+      {
+        "id": "base",
+        "text": "底座140×70×6 mm，底面Z=0且XY中心为0",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory"
+        ],
+        "reason": "包围盒尺寸已接入；位置基准和安装孔尚未测量。"
+      },
+      {
+        "id": "blocks",
+        "text": "支座18×48×42 mm，X=±42 mm，底面位于底座上；横向孔直径24.4 mm",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory"
+        ],
+        "reason": "缺横向孔径、贯通、实际轴线和安装位置证据。"
+      },
+      {
+        "id": "sleeves",
+        "text": "衬套长18 mm、外径24 mm、内径16.4 mm，平齐装在各支座内",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory"
+        ],
+        "reason": "尚未接入圆柱与孔特征及平齐关系。"
+      },
+      {
+        "id": "shaft",
+        "text": "轴直径16 mm、长130 mm，沿X且中心X=0，轴线Y=0/Z=34 mm",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory"
+        ],
+        "reason": "尺寸代理不证明真实轴线、方向和位置。"
+      },
+      {
+        "id": "collars",
+        "text": "两轴环外径24 mm、孔径16.4 mm、宽5 mm，X=±56 mm",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory"
+        ],
+        "reason": "孔道、宽度特征及相对位置尚未绑定。"
+      },
+      {
+        "id": "mounting_passages",
+        "text": "每支座Y=±18 mm处有直径6.4 mm竖向孔且连续穿过底座",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "需分别绑定支座/底座完整厚度孔道、孔位、轴线及连通判定。"
+      },
+      {
+        "id": "fasteners",
+        "text": "螺杆直径6 mm、长49.5 mm、底Z=0；垫圈12/6.4/1.5 mm、底Z=48 mm；六角头外接圆10.8 mm、高4 mm且坐在垫圈上",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory"
+        ],
+        "reason": "尚无分段轮廓、孔洞和贴合关系测量，合法六角转角不得由包围盒决定。"
+      },
+      {
+        "id": "assembly_clearance",
+        "text": "同轴安装、规定间隙、真实孔道及无额外机械结构，尺寸/位置误差≤0.3 mm",
+        "source": "instruction.md paragraphs 1–2",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "逐件相对装配、干涉及加工特征完整判定待接入。"
+      },
+      {
+        "id": "topology",
+        "text": "每件闭合且单独连通",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "closed",
+          "connected"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "solid_validity",
+        "text": "有效实体零件",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "solid_validity"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "units",
+        "text": "米制导出、X长度/Y宽度/Z向上",
+        "source": "instruction.md paragraphs 2–3",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_inventory"
+        ],
+        "reason": "跨格式尺度和真实几何轴向尚需独立验证。"
+      },
+      {
+        "id": "hierarchy",
+        "text": "自由描述性命名和清晰可编辑结构",
+        "source": "instruction.md paragraphs 2–3",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "hierarchy",
+          "part_count"
+        ],
+        "reason": "父节点与对象数仅为结构代理，单根语义层级与编辑性未完整覆盖。"
+      },
+      {
+        "id": "materials",
+        "text": "结构件蓝灰、轴与螺栓银色、衬套/轴环/垫圈黄铜色",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "材质诊断尚未绑定本题各角色及表面外观。"
+      },
+      {
+        "id": "state_cycle",
+        "text": "帧1装配、帧61自由爆炸、保形且返回帧1恢复；相机与爆炸距离自由",
+        "source": "instruction.md paragraph 3",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "assembled_valid",
+          "exploded_valid",
+          "reproducible"
+        ],
+        "reason": "重现及渲染有效性不能证明任务拆分合理，审阅视图尚未自适应。"
+      },
+      {
+        "id": "glb_readable",
+        "text": "GLB可重新导入",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "export"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "glb_assembled",
+        "text": "GLB为原生帧1装配结果",
+        "source": "instruction.md paragraph 3",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "export",
+          "reproducible"
+        ],
+        "reason": "已复用跨格式诊断，任务级语义阈值仍待标定。"
+      },
+      {
+        "id": "reconstruction",
+        "text": "清洁环境重建全部产物，使用便携依赖而非旧输出或个人路径",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "reproducible"
+        ],
+        "reason": "基准/seed实际执行与现有重现方法已接线，完整材质/依赖/任务语义尚未覆盖。"
+      },
+      {
+        "id": "instructions",
+        "text": "README包含依赖及运行说明",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "readme"
+        ],
+        "reason": "当前检查非空UTF-8可读，说明语义完整性待验收。"
+      },
+      {
+        "id": "procedural_materials",
+        "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+        "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_procedural_materials",
+          "glb_procedural_materials",
+          "native_state_materials"
+        ],
+        "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+      },
+      {
+        "id": "seed_quality",
+        "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+        "source": "user_goal_2026-10-03 / seed delivery protocol",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "all_seed_quality"
+        ],
+        "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+      }
+    ]
+  },
+  "checks": {
+    "spec": [
+      {
+        "id": "part_inventory",
+        "metric": "semantic_inventory",
+        "group": "parts",
+        "importance": "high",
+        "params": {
+          "parts": [
+            {
+              "id": "base",
+              "type": "MESH",
+              "count": 1,
+              "dimensions": [
+                0.14,
+                0.07,
+                0.006
+              ],
+              "tolerance": "dimension_m"
+            },
+            {
+              "id": "bearing_block",
+              "type": "MESH",
+              "count": 2,
+              "dimensions": [
+                0.018,
+                0.048,
+                0.042
+              ],
+              "tolerance": "dimension_m"
+            },
+            {
+              "id": "sleeve",
+              "type": "MESH",
+              "count": 2,
+              "dimensions": [
+                0.018,
+                0.024,
+                0.024
+              ],
+              "tolerance": "dimension_m"
+            },
+            {
+              "id": "collar",
+              "type": "MESH",
+              "count": 2,
+              "dimensions": [
+                0.005,
+                0.024,
+                0.024
+              ],
+              "tolerance": "dimension_m"
+            },
+            {
+              "id": "shaft",
+              "type": "MESH",
+              "count": 1,
+              "dimensions": [
+                0.13,
+                0.016,
+                0.016
+              ],
+              "tolerance": "dimension_m"
+            },
+            {
+              "id": "bolt",
+              "type": "MESH",
+              "count": 4,
+              "dimensions": [
+                0.009353,
+                0.0108,
+                0.0535
+              ],
+              "tolerance": "dimension_m"
+            },
+            {
+              "id": "washer",
+              "type": "MESH",
+              "count": 4,
+              "dimensions": [
+                0.012,
+                0.012,
+                0.0015
+              ],
+              "tolerance": "dimension_m"
+            }
+          ]
+        }
+      }
+    ],
+    "geometry": [
+      {
+        "id": "closed",
+        "metric": "equals",
+        "group": "topology",
+        "params": {
+          "path": "/scene/all_closed",
+          "expected": true
+        }
+      },
+      {
+        "id": "connected",
+        "metric": "equals",
+        "group": "connectivity",
+        "params": {
+          "path": "/scene/all_connected",
+          "expected": true
+        }
+      },
+      {
+        "id": "solid_validity",
+        "metric": "equals",
+        "group": "solid",
+        "params": {
+          "path": "/scene/all_valid_solids",
+          "expected": true
+        }
+      },
+      {
+        "id": "real_geometry",
+        "metric": "equals",
+        "group": "volume",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        }
+      }
+    ],
+    "structure": [
+      {
+        "id": "part_count",
+        "metric": "equals",
+        "group": "parts",
+        "params": {
+          "path": "/scene/mesh_count",
+          "expected": 16
+        }
+      },
+      {
+        "id": "hierarchy",
+        "metric": "equals",
+        "group": "hierarchy",
+        "params": {
+          "path": "/scene/all_parented",
+          "expected": true
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "assembled_valid",
+        "metric": "render_validity",
+        "group": "assembled",
+        "params": {
+          "view": "assembled"
+        }
+      },
+      {
+        "id": "exploded_valid",
+        "metric": "render_validity",
+        "group": "exploded",
+        "params": {
+          "view": "exploded"
+        }
+      },
+      {
+        "id": "native_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "glb_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/artifacts/scene.glb/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "native_state_materials",
+        "metric": "procedural_material_sequence",
+        "group": "declared_state_material_policy",
+        "params": {
+          "path": "/material_sequences/native",
+          "frames": [
+            1,
+            61,
+            1
+          ]
+        }
+      }
+    ],
+    "robust": [
+      {
+        "id": "export",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/scene.glb/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "readme",
+        "metric": "equals",
+        "group": "instructions",
+        "params": {
+          "path": "/artifacts/README.md/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "reproducible",
+        "metric": "seed_success",
+        "group": "reproduction"
+      },
+      {
+        "id": "all_seed_quality",
+        "metric": "all_seed_checks",
+        "group": "seed_quality",
+        "params": {
+          "checks": [
+            "glb_procedural_materials",
+            "native_procedural_materials",
+            "native_state_materials"
+          ],
+          "native_frames": [
+            1,
+            61,
+            1
+          ],
+          "glb_frames": [
+            1
+          ]
+        }
+      }
+    ]
+  }
+}

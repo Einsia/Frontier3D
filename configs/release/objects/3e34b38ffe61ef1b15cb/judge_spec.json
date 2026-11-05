@@ -1,0 +1,85 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/CodeEdit/task_L1_CodeEdit_010",
+  "family": "SceneEdit",
+  "instruction_sha256": "18e0c66dcdebad9288a6d3c848f3eaf61b2b1574ee4e1768bfc3302b4229b76e",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "六角转方形过渡体收口；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "question": "Reshape the supplied hexagon-to-square transition body. Retain the bottom hexagon with 58.8 mm circumcircle diameter, the overall height 63.3 mm, and all section centres and orientations. At half height, reduce the square cross-section from 47.0 × 47.0 to 40.0 × 40.0 mm; at the top, reduce it from 35.1 × 35.1 to 28.0 × 28.0 mm. Form a smooth continuous loft through those three sections, retaining the same section correspondence and general transition character as the supplied model. Increase the axial through-bore from diameter 14.7 to 18.0 mm. Keep the original bottom plane and world pose. Do not use disconnected stacked blocks or hide the bore with shading.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "question": "本题孔、槽、口袋和相交通道为真实空腔；按题面区分盲孔、贯通与连接，不得封片/填料冒充；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "question": "移除/填补题面指定旧特征并保留未指定的细节；不得叠加两套孔/槽或全局拉伸；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "units": [
+        "protected_appearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/before.png": "b4174238ec5db1267317e6ffb2ad7f970101fa7bbd5cedfa7166e2f88943b12c",
+    "reference/target.png": "bca1fc17f847852faa25d2990d6414ffa132efba5fd245f8655cbd6ba79e631e"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

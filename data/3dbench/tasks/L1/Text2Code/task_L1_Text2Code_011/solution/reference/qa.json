@@ -1,0 +1,135 @@
+[
+  {
+    "part": "base",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "pan_bearing",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "pan_spindle",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "fork_base",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "fork_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "fork_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "camera_platform",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "tilt_pin_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "tilt_bushing_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "tilt_pin_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "tilt_bushing_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 1
+  },
+  {
+    "part": "bolt_2",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_2",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_3",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_3",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  }
+]

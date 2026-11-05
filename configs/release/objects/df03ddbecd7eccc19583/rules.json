@@ -1,0 +1,514 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_head",
+      "label": "头部、可见眼与喙",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.132,
+          0.517
+        ],
+        [
+          0.178,
+          0.486
+        ],
+        [
+          0.177,
+          0.458
+        ],
+        [
+          0.204,
+          0.414
+        ],
+        [
+          0.252,
+          0.387
+        ],
+        [
+          0.307,
+          0.39
+        ],
+        [
+          0.355,
+          0.419
+        ],
+        [
+          0.404,
+          0.447
+        ],
+        [
+          0.448,
+          0.543
+        ],
+        [
+          0.361,
+          0.568
+        ],
+        [
+          0.223,
+          0.535
+        ]
+      ]
+    },
+    {
+      "id": "r_body",
+      "label": "圆润躯干与胸腹",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.225,
+          0.528
+        ],
+        [
+          0.361,
+          0.422
+        ],
+        [
+          0.486,
+          0.451
+        ],
+        [
+          0.618,
+          0.512
+        ],
+        [
+          0.704,
+          0.566
+        ],
+        [
+          0.623,
+          0.642
+        ],
+        [
+          0.54,
+          0.698
+        ],
+        [
+          0.424,
+          0.709
+        ],
+        [
+          0.314,
+          0.677
+        ],
+        [
+          0.261,
+          0.622
+        ]
+      ]
+    },
+    {
+      "id": "r_wing_tail",
+      "label": "近侧翼与尾部",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.44,
+          0.454
+        ],
+        [
+          0.51,
+          0.461
+        ],
+        [
+          0.607,
+          0.509
+        ],
+        [
+          0.7,
+          0.554
+        ],
+        [
+          0.782,
+          0.574
+        ],
+        [
+          0.81,
+          0.594
+        ],
+        [
+          0.806,
+          0.607
+        ],
+        [
+          0.776,
+          0.606
+        ],
+        [
+          0.701,
+          0.585
+        ],
+        [
+          0.624,
+          0.614
+        ],
+        [
+          0.546,
+          0.617
+        ],
+        [
+          0.493,
+          0.59
+        ],
+        [
+          0.462,
+          0.546
+        ]
+      ]
+    },
+    {
+      "id": "r_feet",
+      "label": "双腿、抓握脚趾与爪",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.234,
+          0.777
+        ],
+        [
+          0.27,
+          0.752
+        ],
+        [
+          0.316,
+          0.747
+        ],
+        [
+          0.339,
+          0.715
+        ],
+        [
+          0.378,
+          0.696
+        ],
+        [
+          0.541,
+          0.691
+        ],
+        [
+          0.533,
+          0.731
+        ],
+        [
+          0.49,
+          0.759
+        ],
+        [
+          0.519,
+          0.76
+        ],
+        [
+          0.499,
+          0.782
+        ],
+        [
+          0.471,
+          0.797
+        ],
+        [
+          0.458,
+          0.846
+        ],
+        [
+          0.447,
+          0.819
+        ],
+        [
+          0.37,
+          0.845
+        ],
+        [
+          0.353,
+          0.826
+        ],
+        [
+          0.384,
+          0.792
+        ],
+        [
+          0.425,
+          0.789
+        ],
+        [
+          0.447,
+          0.753
+        ],
+        [
+          0.413,
+          0.73
+        ],
+        [
+          0.365,
+          0.759
+        ],
+        [
+          0.336,
+          0.787
+        ],
+        [
+          0.309,
+          0.814
+        ],
+        [
+          0.304,
+          0.791
+        ],
+        [
+          0.261,
+          0.814
+        ],
+        [
+          0.272,
+          0.784
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_bird",
+      "query": "完整蓝鸟",
+      "weight": 0.3,
+      "boxes": [
+        [
+          0.132,
+          0.387,
+          0.809,
+          0.846
+        ]
+      ],
+      "boundary_notes": "包括喙、尾尖、双脚及深色爪趾；不含背景。"
+    },
+    {
+      "id": "t_beak",
+      "query": "可见鸟喙",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.132,
+          0.489,
+          0.225,
+          0.525
+        ]
+      ],
+      "boundary_notes": "包括浅色上喙及深色下缘，止于头部交界。"
+    },
+    {
+      "id": "t_eye",
+      "query": "可见眼睛及眼缘",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.215,
+          0.485,
+          0.268,
+          0.524
+        ]
+      ],
+      "boundary_notes": "仅一个可辨眼，包含黑色眼球与窄眼缘，不推定背面眼的框。"
+    },
+    {
+      "id": "t_wing",
+      "query": "可见折叠翼",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.44,
+          0.451,
+          0.703,
+          0.618
+        ],
+        [
+          0.399,
+          0.437,
+          0.47,
+          0.457
+        ]
+      ],
+      "boundary_notes": "第一框为完整近侧翼可见范围，第二框仅为背部露出的远侧翼窄片；不补遮挡部分。"
+    },
+    {
+      "id": "t_tail",
+      "query": "伸出的蓝色尾羽",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.688,
+          0.558,
+          0.809,
+          0.609
+        ]
+      ],
+      "boundary_notes": "仅翼后伸出的尾部可见范围，包含圆钝末端，不含下方腹部。"
+    },
+    {
+      "id": "t_feet",
+      "query": "可见腿脚与爪",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.234,
+          0.699,
+          0.415,
+          0.814
+        ],
+        [
+          0.354,
+          0.7,
+          0.54,
+          0.846
+        ]
+      ],
+      "boundary_notes": "分别框住画面左、右腿脚的可见范围，包含深色腿趾及浅色爪尖；不逐一框极小鳞片。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_identity",
+      "source_quote": "Reconstruct the stylized blue bird",
+      "question": "主体是否为参考中的风格化蓝鸟？",
+      "weight": 0.12
+    },
+    {
+      "id": "s_body",
+      "source_quote": "including its rounded body",
+      "question": "躯干是否呈参考中饱满圆润的鸟体形态？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_head",
+      "source_quote": "head and beak",
+      "question": "头与喙是否齐全，并保持参考中头在左前方、喙向左伸出的关系？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_wings",
+      "source_quote": "wings",
+      "question": "双翼是否贴合躯干折叠，且可见范围与遮挡关系符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_tail",
+      "source_quote": "tapered tail",
+      "question": "尾部是否在躯干后方朝右伸出并逐渐收窄？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_feet",
+      "source_quote": "gripping feet where visible",
+      "question": "躯干下方是否有参考所示的双脚及弯曲抓握姿态？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_blue",
+      "source_quote": "Preserve the blue, warm breast and pale underside color regions",
+      "question": "头、背、翼与尾是否保留参考的蓝色色区？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_breast",
+      "source_quote": "warm breast",
+      "question": "前胸是否保留参考中的暖橙棕色色区？",
+      "weight": 0.07
+    },
+    {
+      "id": "s_underside",
+      "source_quote": "pale underside color regions",
+      "question": "腹部下侧是否保留参考中的浅色色区？",
+      "weight": 0.07
+    },
+    {
+      "id": "s_eye",
+      "source_quote": "eye placement",
+      "question": "可见眼是否位于喙后上方，位置与头部比例符合参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_complete",
+      "source_quote": "Match visible surfaces; complete unseen surfaces plausibly without inventing internal machinery.",
+      "question": "可见表面是否匹配参考，未见表面是否合理补全且未添加内部机械结构？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_geometry",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "主体是否为可编辑的完整三维几何，而非图像平面或朝向相机的薄壳？",
+      "weight": 0.03
+    },
+    {
+      "id": "s_components",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "独立部件是否可单独编辑或为可分离网格岛，同时允许有机表面连续？",
+      "weight": 0.02
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_curves",
+      "source_quote": "Preserve continuous curvature",
+      "question": "头顶、颈部与胸腹是否具有参考中连续圆滑的曲面过渡？",
+      "weight": 0.18
+    },
+    {
+      "id": "d_beak",
+      "source_quote": "head and beak",
+      "question": "喙是否为有厚度的短尖楔形，并保留上下喙的细窄分界？",
+      "weight": 0.15
+    },
+    {
+      "id": "d_eye",
+      "source_quote": "recesses",
+      "question": "眼部是否保留嵌入头部的眼窝过渡与窄眼缘，而非平面贴点？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_wing",
+      "source_quote": "wings",
+      "question": "近侧翼是否有隆起的肩部、圆弧下缘及尾向叠置羽片的局部层次？",
+      "weight": 0.18
+    },
+    {
+      "id": "d_tail",
+      "source_quote": "tapered tail",
+      "question": "尾部是否为有薄厚的收窄羽片形体，并保留纵向分片与圆钝末端？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_toes",
+      "source_quote": "gripping feet where visible",
+      "question": "脚部是否具有细腿、分叉弯曲脚趾及逐渐变尖的弯爪？",
+      "weight": 0.15
+    },
+    {
+      "id": "d_gaps",
+      "source_quote": "the gaps around the feet",
+      "question": "双脚周围及分叉脚趾间是否保留真实空隙，未被实体填平？",
+      "weight": 0.1
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "物体最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标下，排除相机和灯光，对完整主体求世界轴对齐包围盒，取X、Y、Z三个跨度中的最大值；按名义1.000 m及其2%相对容差判定。explicit_tolerance以相对比例表示。"
+    }
+  ],
+  "limitations": [
+    "仅有单张参考；背面、内部及被遮挡部位不能冻结为精确目标几何，允许合理补全。",
+    "input/reference.png对应附件原始证据路径reference/reference-0.png；所有区域与框均固定于该原图归一化坐标。",
+    "背部窄蓝片按可见远侧翼处理，其遮挡后的边界不可由此图确定。",
+    "“maximum overall span”未明示采用轴对齐包围盒还是任意方向最大距离；本计划采用世界轴对齐包围盒最大边，并保留该解释歧义。",
+    "细羽允许简化；不要求逐根羽毛、精确源拓扑、顶点数或对象名。",
+    "可编辑性、完整体积和未见表面需检查原生几何，不能仅凭主视图确认；本计划未检查任何候选。",
+    "帧号、图像尺寸、渲染设置与交付文件要求不作为内容几何的数值质量检查。"
+  ]
+}

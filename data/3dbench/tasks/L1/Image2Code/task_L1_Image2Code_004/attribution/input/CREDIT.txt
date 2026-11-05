@@ -1,0 +1,7 @@
+Old Wind Turbine Tower
+Author: Helley (https://sketchfab.com/Helley)
+Source: https://sketchfab.com/3d-models/old-wind-turbine-tower-806388e5dcda4c8f960a1bbd6682649e
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Baked the evaluated source pose at frame 1; source animation omitted from the static task.
+No endorsement by the original author is implied.

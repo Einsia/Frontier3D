@@ -1,0 +1,415 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_024",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_rotor",
+      "label": "制动盘及外缘通风层",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.385,
+          0.301
+        ],
+        [
+          0.499,
+          0.346
+        ],
+        [
+          0.681,
+          0.452
+        ],
+        [
+          0.671,
+          0.573
+        ],
+        [
+          0.621,
+          0.695
+        ],
+        [
+          0.552,
+          0.783
+        ],
+        [
+          0.469,
+          0.826
+        ],
+        [
+          0.403,
+          0.825
+        ],
+        [
+          0.329,
+          0.792
+        ],
+        [
+          0.285,
+          0.723
+        ],
+        [
+          0.273,
+          0.618
+        ],
+        [
+          0.289,
+          0.494
+        ],
+        [
+          0.332,
+          0.38
+        ]
+      ]
+    },
+    {
+      "id": "r_hub",
+      "label": "中央凸起轮毂与中心开口",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.508,
+          0.377
+        ],
+        [
+          0.561,
+          0.383
+        ],
+        [
+          0.606,
+          0.426
+        ],
+        [
+          0.625,
+          0.492
+        ],
+        [
+          0.616,
+          0.576
+        ],
+        [
+          0.581,
+          0.65
+        ],
+        [
+          0.531,
+          0.693
+        ],
+        [
+          0.477,
+          0.704
+        ],
+        [
+          0.426,
+          0.674
+        ],
+        [
+          0.404,
+          0.608
+        ],
+        [
+          0.415,
+          0.516
+        ],
+        [
+          0.454,
+          0.43
+        ]
+      ]
+    },
+    {
+      "id": "r_caliper",
+      "label": "金色卡钳及安装结构",
+      "weight": 0.35,
+      "polygon": [
+        [
+          0.355,
+          0.272
+        ],
+        [
+          0.378,
+          0.239
+        ],
+        [
+          0.443,
+          0.2
+        ],
+        [
+          0.487,
+          0.195
+        ],
+        [
+          0.498,
+          0.182
+        ],
+        [
+          0.59,
+          0.208
+        ],
+        [
+          0.65,
+          0.23
+        ],
+        [
+          0.663,
+          0.263
+        ],
+        [
+          0.696,
+          0.277
+        ],
+        [
+          0.701,
+          0.31
+        ],
+        [
+          0.723,
+          0.359
+        ],
+        [
+          0.729,
+          0.436
+        ],
+        [
+          0.714,
+          0.484
+        ],
+        [
+          0.62,
+          0.439
+        ],
+        [
+          0.554,
+          0.371
+        ],
+        [
+          0.489,
+          0.352
+        ],
+        [
+          0.409,
+          0.313
+        ],
+        [
+          0.36,
+          0.287
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_rotor",
+      "query": "圆形制动盘，包括深色盘面与通风外缘",
+      "weight": 0.35,
+      "boxes": [
+        [
+          0.273,
+          0.301,
+          0.683,
+          0.827
+        ]
+      ],
+      "boundary_notes": "框住卡钳下方可见盘体的完整范围；包含左侧深色厚度，不补全被卡钳遮住的圆周，不含投影。"
+    },
+    {
+      "id": "t_hub",
+      "query": "凸起的中央轮毂",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.399,
+          0.376,
+          0.626,
+          0.704
+        ]
+      ],
+      "boundary_notes": "包含黑色前面、环形台阶及凸起侧壁，不把周围摩擦盘面算入轮毂。"
+    },
+    {
+      "id": "t_caliper",
+      "query": "完整金色卡钳组件",
+      "weight": 0.3,
+      "boxes": [
+        [
+          0.354,
+          0.182,
+          0.73,
+          0.484
+        ]
+      ],
+      "boundary_notes": "包含壳体、安装耳、可见紧固件和前端细管；不包含其后露出的制动盘。"
+    },
+    {
+      "id": "t_bore",
+      "query": "轮毂中心通孔",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.527,
+          0.504,
+          0.58,
+          0.593
+        ]
+      ],
+      "boundary_notes": "限中心孔口及可见内壁，不含外围凸起环唇；不对微小孔洞另作定位类别。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_rotor",
+      "source_quote": "circular rotor",
+      "question": "主体是否为参考所示的圆形环状制动盘？",
+      "weight": 0.12
+    },
+    {
+      "id": "s_hub",
+      "source_quote": "hub opening and fastener pattern",
+      "question": "中央轮毂是否具有中心开口？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_fasteners",
+      "source_quote": "hub opening and fastener pattern",
+      "question": "轮毂紧固特征是否围绕中心形成参考所示的环状分布？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_caliper",
+      "source_quote": "caliper body and mounting features",
+      "question": "是否具有参考所示的卡钳主体？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_mounts",
+      "source_quote": "caliper body and mounting features",
+      "question": "卡钳是否保留可辨识的安装耳及紧固结构？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_layout",
+      "source_quote": "They show the same object and pose.",
+      "question": "卡钳是否跨夹盘体上部边缘，轮毂是否与盘体同心，整体姿态是否符合参考？",
+      "weight": 0.12
+    },
+    {
+      "id": "s_appearance",
+      "source_quote": "Infer other proportions from the images.",
+      "question": "金色卡钳、深色金属盘面与黑色轮毂的外观和相对比例是否符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_relations",
+      "source_quote": "connections and occlusions",
+      "question": "部件连接和卡钳对盘体的遮挡关系是否符合各参考视图？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_geometry",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "是否使用完整可编辑三维实体，而非图像平面或朝向相机的薄壳替代？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_separable",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands",
+      "question": "不同机械部件是否为独立可编辑对象或可清楚分离的网格岛？",
+      "weight": 0.06
+    },
+    {
+      "id": "s_axis",
+      "source_quote": "Use metres, Z up",
+      "question": "场景是否使用米制并以 Z 轴为上方向？",
+      "weight": 0.04
+    },
+    {
+      "id": "s_pose",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "question": "第 1 帧是否保存最终静态姿态，且 scene.glb 中姿态一致？",
+      "weight": 0.04
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_rim",
+      "source_quote": "Preserve thickness",
+      "question": "盘缘是否具有双层盘片厚度、中间通风槽及连接肋，而非单片平面？",
+      "weight": 0.16
+    },
+    {
+      "id": "d_face",
+      "source_quote": "recesses, openings",
+      "question": "摩擦盘面是否保留参考所示的圆孔及圆端细长槽的局部形状？",
+      "weight": 0.13
+    },
+    {
+      "id": "d_hub",
+      "source_quote": "concentric steps",
+      "question": "轮毂是否具有凸起钟帽形侧壁及连续同心环形台阶？",
+      "weight": 0.13
+    },
+    {
+      "id": "d_bore",
+      "source_quote": "hub opening",
+      "question": "中心开口是否为有内壁厚度和环形孔缘的真实通孔？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_fasteners",
+      "source_quote": "fastener pattern",
+      "question": "轮毂紧固位置是否具有可见孔腔、凹座或紧固件形体，而非仅用色点表示？",
+      "weight": 0.08
+    },
+    {
+      "id": "d_shell",
+      "source_quote": "caliper body",
+      "question": "卡钳是否具有圆滑厚壳、分层侧盖和参考所示的不规则边缘转折？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_mounts",
+      "source_quote": "mounting features",
+      "question": "卡钳安装耳是否为带孔或嵌入紧固件的厚实凸耳？",
+      "weight": 0.08
+    },
+    {
+      "id": "d_bridge",
+      "source_quote": "recesses and gaps between components",
+      "question": "卡钳桥架间是否保留开窗、内部深色构件及盘片穿过的间隙？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_tube",
+      "source_quote": "thin structures, connections",
+      "question": "卡钳端部是否保留细长弯管及其与壳体连接的接头？",
+      "weight": 0.05
+    },
+    {
+      "id": "d_inner",
+      "source_quote": "recesses and gaps between components",
+      "question": "轮毂与外盘之间是否保留参考可见的支承连接及分段空隙？",
+      "weight": 0.05
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "装配体最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在最终姿态下，以米读取所有装配体几何的世界坐标，排除相机和灯光，计算整体包围盒三个轴向跨度并取最大值；以 1.000 m 为标称值检验。explicit_tolerance 为原文 2% 的相对容差，不是另加的米制容差。"
+    }
+  ],
+  "limitations": [
+    "主图 input/reference.png 对应原始公开证据 reference/reference-1.png；其余公开证据依次对应 input/front.png、input/side.png、input/top.png。所有定位均只冻结在主图上。",
+    "未提供候选产物；本计划不推断候选的几何、材质或合规情况。",
+    "原文未指定最大跨度的具体几何算法；此处采用世界轴对齐包围盒的最大边长，并将 1.000 m 理解为尺度标称值而非仅有上限。",
+    "原文没有明确孔、槽、肋或紧固件的数量与尺寸；只进行参考形态比较，不从像素推导精确数值要求。",
+    "细小标记允许简化，不要求复现参考图中的文字或商标。",
+    "被遮挡的内部结构仅以多视图可见证据为依据，不补设隐藏几何要求。",
+    "未附 legacy-detail-20261018-v1 的独立协议正文；计划依据本次嵌入的合同与检查规则制定。"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "status": "design_only_not_executable",
+  "requirements_source": "instruction.zh.md",
+  "requirements": [
+    {
+      "id": "B14-001",
+      "requirement_zh": "图书馆·高层取书 设计开架书库里取书机器人从顶层取书的场景，采用低位仰视加斜偏的视角。"
+    },
+    {
+      "id": "B14-002",
+      "requirement_zh": "书库段约 4.8 × 1.2 米：一组单面钢制书架长 4.80 米、深 0.30 米，六层，层面前沿高度 0.30、0.68、1.06、1.44、1.82、2.20 米（±10 毫米），层板上书脊密集排列、书高 0.24–0.32 米混排、色彩克制；"
+    },
+    {
+      "id": "B14-003",
+      "requirement_zh": "顶层其中一列留出 0.03 米书脊空位，表示目标书被抽出一半之外尚有空位状态。"
+    },
+    {
+      "id": "B14-004",
+      "requirement_zh": "升降柱式取书机器人停在书架前巷道中线：底盘 0.55 × 0.50 米带防撞条，中央升降柱升至柱顶 2.05 米，柱顶水平伸出悬臂，臂端两指式取书手爪已卡住目标书脊两侧、书被抽出 40 毫米（书前缘越过层板前沿 40 毫米，误差 5 毫米），书体保持与邻书一致的竖直姿态、侧倾不超过 2°，沿水平方向抽出；"
+    },
+    {
+      "id": "B14-005",
+      "requirement_zh": "底盘前部一只受书托盘张开口朝上，托盘口中心与书体投影中心对齐偏差不超过 5 毫米、垂直间距 1.10 米。"
+    },
+    {
+      "id": "B14-006",
+      "requirement_zh": "巷道净宽 0.85 米（±30 毫米）沿中线每 0.25 米采样，书架前沿除正在抽出的目标书外，其余书脊突出不得大于层板前沿 5 毫米。"
+    },
+    {
+      "id": "B14-007",
+      "requirement_zh": "可通行验收：巷道两端连通成环路，底盘外缘与书架前沿净距不小于 0.15 米。"
+    },
+    {
+      "id": "B14-008",
+      "requirement_zh": "可触及验收：升降柱行程为 0.15–2.05 米，工具参考高度相对滑台固定上偏 0.15 米，因此顶层取书参考高度 2.20 米与最低层还书参考高度 0.30 米均可达到；"
+    },
+    {
+      "id": "B14-009",
+      "requirement_zh": "以书底面为取还书高度基准。"
+    },
+    {
+      "id": "B14-010",
+      "requirement_zh": "可操作验收：手爪指面与书脊面贴合穿透不超过 2 毫米，被抽书与左右邻书各留 2 毫米缝不干涉。"
+    },
+    {
+      "id": "B14-011",
+      "requirement_zh": "使用暖白层板灯带、米色书脊与深灰机器人，安静均匀的阅读照明。"
+    },
+    {
+      "id": "B14-012",
+      "requirement_zh": "主视角从巷道端部低角度仰视，同框升降柱、抽出 40 毫米的书与空书位。"
+    },
+    {
+      "id": "B14-013",
+      "requirement_zh": "这是可编辑静态场景，不要求书本翻动或升降运动。"
+    }
+  ],
+  "methods": [
+    "native rerun and render",
+    "world-space vertex dimensions and angles",
+    "signed contact/clearance measurements using geometric surfaces",
+    "sampled free-route widths and service-envelope distances",
+    "semantic object and material review"
+  ],
+  "unimplemented": "No automatic harness, validated reach solver, GT scene, calibrated aggregate score or model results."
+}

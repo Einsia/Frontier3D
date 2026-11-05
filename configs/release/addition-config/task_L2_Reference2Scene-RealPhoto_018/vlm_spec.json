@@ -1,0 +1,176 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+  "family": "Reference2Scene",
+  "instruction_sha256": "cd3835d6f8a58b325674a9b26d986ab6af1ce190d323140bfc07f47d3cc161b9",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "48630c58fc2a2dc5afc8ce34495f6ec19f1bff0866ffd4571a327f4505e9dad8",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-68762e4e3de06a128a583ff2979fc8436b9686167fe4e1a128bb70fd670f8813"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "包含可见床体、全部枕头及垂落白色寝具；排除床头板、床边柜和投影。下边界包含最下方垂落被角。",
+        "boxes": [
+          [
+            0.096,
+            0.466,
+            0.752,
+            0.935
+          ]
+        ],
+        "id": "t01",
+        "query": "床与白色寝具整体",
+        "weight": 0.25,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含床头软包、细框与顶部线性照明构件的可见整体；包含深色框面，排除墙上光晕及两侧台灯。",
+        "boxes": [
+          [
+            0.072,
+            0.41,
+            0.513,
+            0.551
+          ]
+        ],
+        "id": "t02",
+        "query": "床头板及顶部线性照明构件",
+        "weight": 0.18,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "将跨两面墙连续转折的灯槽作为一个实例；框包含其可见槽面与下沿，边缘截断于图像边界，不包含整个中央顶面作为目标。",
+        "boxes": [
+          [
+            0,
+            0.037,
+            1,
+            0.29
+          ]
+        ],
+        "id": "t03",
+        "query": "连续天花灯槽",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包括圆形饰面、深色厚框、上方链条和横向悬挂杆；排除墙面阴影，不要求辨认内部微小文字。",
+        "boxes": [
+          [
+            0.378,
+            0.285,
+            0.487,
+            0.395
+          ]
+        ],
+        "id": "t04",
+        "query": "带悬挂件的圆形墙饰",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位主浴室入口，包含可见深色左框、顶框及右侧宽立柱；内部设施属于开口内容，不另数微小用品；下部遮挡处不外推。",
+        "boxes": [
+          [
+            0.587,
+            0.19,
+            0.99,
+            0.624
+          ]
+        ],
+        "id": "t05",
+        "query": "右侧浴室与洗手台入口",
+        "weight": 0.17,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "一个地毯实例的全部可见片段联合包围框；包括床左右及前景的深色纹样，排除右侧木地板和阴影；地毯在左边及底边被画面截断，床下边界不推断。",
+        "boxes": [
+          [
+            0,
+            0.599,
+            0.882,
+            1
+          ]
+        ],
+        "id": "t06",
+        "query": "床下及床周围的图案地毯",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

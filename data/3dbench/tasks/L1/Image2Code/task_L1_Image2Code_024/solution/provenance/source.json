@@ -1,0 +1,19 @@
+{
+  "uid": "5feda9dbf20a49cf9fd29d550e55e4b9",
+  "name": "Brake Disk and Caliper",
+  "source_url": "https://sketchfab.com/3d-models/brake-disk-and-caliper-5feda9dbf20a49cf9fd29d550e55e4b9",
+  "author": {
+    "displayName": "Vladi",
+    "profileUrl": "https://sketchfab.com/vladivpg"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "88672361afe97d026b6a98eb1b21583d45f45b323cb12a2006e8551bff929f59",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

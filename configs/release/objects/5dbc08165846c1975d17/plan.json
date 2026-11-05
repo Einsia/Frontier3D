@@ -1,0 +1,191 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003",
+  "title": "藏书客厅、沙发与落地窗",
+  "category": "Reference2Scene-RealPhoto",
+  "profile": "image-no-comparable-gt-40-50-10-v1",
+  "weights": {
+    "H": 0.4,
+    "F": 0.5,
+    "M": 0.1
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "6205fbe47445ddc6be04271788ad2d2dee22c55685259344862e9e81ad55b96c"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "silhouette",
+      "component": "H",
+      "weight": 0.5,
+      "question": "Bookcase left/rear, bright tall windows right, table across center and cropped foreground seating.",
+      "method": "silhouette_iou",
+      "measurement_rule": "逐个声明视角在原像素网格计算交并比，然后等权平均；参考标注固定，候选独立复渲染提取；不可拟合、平移、缩放或以RGB相似度替代。",
+      "source": "instruction.md",
+      "parameters": {
+        "view_ids": [
+          "reference"
+        ],
+        "reference_masks": "preannotate_visible_subjects; no candidate-conditioned segmentation"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "weight": 0.5,
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：Bookcase left/rear, bright tall windows right, table across center and cropped foreground seating.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "weight": 0.2,
+      "question": "公开参考各视角可见局部结构：Large built-in divided bookcase with cabinet base。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "weight": 0.2,
+      "question": "公开参考各视角可见局部结构：Grouped books, ornaments and leaning library ladder。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "weight": 0.2,
+      "question": "公开参考各视角可见局部结构：Sofas and armchairs with shaped upholstery。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "weight": 0.2,
+      "question": "公开参考各视角可见局部结构：Central wooden coffee table on rug。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_5",
+      "component": "F",
+      "weight": 0.2,
+      "question": "公开参考各视角可见局部结构：Tall garden windows and layered lamps。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "weight": 0.5,
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：Warm timber and yellow lamp shades, pale patterned seating, bright green garden daylight; book covers may simplify.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "weight": 0.5,
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：Warm timber and yellow lamp shades, pale patterned seating, bright green garden daylight; book covers may simplify.",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "150d3328ba1040321c94e4ea429b5041f283db43266eb3807f2674fc32ba7d08",
+    "task.toml": "baaf38f53d70c1081f843c7530ad14cda3c41a5c6a7077bd591d48d23bb7ff52",
+    "harness/eval_spec.json": "a9582306c2afe8c3958c0297dbb6d6e22bcb5666443a859e4e773752d6030cd5",
+    "harness/methods.json": "ed438e95d66ba74b39b7360857310c540baed654705ec5d1d469ab1a324462d7",
+    "harness/vlm_spec.json": "e58445a6724d1cf5990043cee5e7e8dcd0aec070f1b7de99ae7caa7d16311c2a"
+  },
+  "view_pairs": [
+    {
+      "id": "reference",
+      "reference": "reference/reference-0.png",
+      "reference_source": "environment/input/reference.png",
+      "candidate": "candidate/main.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    }
+  ],
+  "focus": "Bookcase left/rear, bright tall windows right, table across center and cropped foreground seating.",
+  "geometry_gt_policy": "no_native_reference; no GT substitution during a run",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

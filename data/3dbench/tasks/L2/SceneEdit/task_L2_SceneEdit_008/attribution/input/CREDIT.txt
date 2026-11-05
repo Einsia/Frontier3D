@@ -1,0 +1,5 @@
+Kenney
+https://kenney.nl/assets/racing-kit
+CC0-1.0
+
+Changes: converted native scene, rendering normalization, task-specific removals or light/foliage colour perturbations.

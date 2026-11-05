@@ -1,0 +1,32 @@
+{
+  "title": "RoboCup@Home：杂物桌面与厨具重建",
+  "source_urls": [
+    "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  ],
+  "document_revision": 1080,
+  "document_label": "RoboCup@Home",
+  "retrieved_at": "2026-10-29",
+  "license": {
+    "label": "User-provided; upstream dataset identity and redistribution license unverified",
+    "status": "pending_source_and_license_confirmation"
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "9039a7bac3dba37f65fea5c876c998770086bdd089e29d351045d1468df27533",
+      "size": [
+        1439,
+        1079
+      ],
+      "original_document_token": "RyfrbaGZVo7LGQxlR1GcRdbDn7b",
+      "original_document_block": "EA3cdD8mlovGrFxFSpOcBAI3nqg"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

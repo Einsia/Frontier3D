@@ -1,0 +1,17 @@
+{
+  "blender": "5.2.1 LTS",
+  "reopened": true,
+  "packed_textures": true,
+  "camera_offset_verified": true,
+  "same_lens_rotation": true,
+  "rendered": [
+    "main.png",
+    "alternate.png"
+  ],
+  "resolution": [
+    1600,
+    900
+  ],
+  "cycles_samples": 32,
+  "mesh_objects": 21
+}

@@ -1,0 +1,401 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "牛头及颈部",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.296,
+          0.496
+        ],
+        [
+          0.364,
+          0.365
+        ],
+        [
+          0.416,
+          0.286
+        ],
+        [
+          0.511,
+          0.255
+        ],
+        [
+          0.611,
+          0.292
+        ],
+        [
+          0.66,
+          0.553
+        ],
+        [
+          0.616,
+          0.611
+        ],
+        [
+          0.439,
+          0.664
+        ],
+        [
+          0.331,
+          0.627
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "双角与双耳",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.208,
+          0.286
+        ],
+        [
+          0.282,
+          0.224
+        ],
+        [
+          0.373,
+          0.209
+        ],
+        [
+          0.475,
+          0.261
+        ],
+        [
+          0.594,
+          0.27
+        ],
+        [
+          0.638,
+          0.348
+        ],
+        [
+          0.722,
+          0.402
+        ],
+        [
+          0.722,
+          0.441
+        ],
+        [
+          0.575,
+          0.438
+        ],
+        [
+          0.536,
+          0.32
+        ],
+        [
+          0.416,
+          0.35
+        ],
+        [
+          0.296,
+          0.345
+        ],
+        [
+          0.21,
+          0.329
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "深色多面底座",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.198,
+          0.782
+        ],
+        [
+          0.31,
+          0.647
+        ],
+        [
+          0.423,
+          0.612
+        ],
+        [
+          0.628,
+          0.589
+        ],
+        [
+          0.723,
+          0.612
+        ],
+        [
+          0.857,
+          0.724
+        ],
+        [
+          0.852,
+          0.738
+        ],
+        [
+          0.563,
+          0.89
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t01",
+      "query": "弯曲牛角",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.209,
+          0.211,
+          0.474,
+          0.33
+        ],
+        [
+          0.538,
+          0.272,
+          0.635,
+          0.438
+        ]
+      ],
+      "boundary_notes": "分别框定左右可见角，从角根至角尖，包含暗面；不补画遮挡部分。"
+    },
+    {
+      "id": "t02",
+      "query": "牛耳",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.296,
+          0.292,
+          0.413,
+          0.35
+        ],
+        [
+          0.624,
+          0.35,
+          0.721,
+          0.44
+        ]
+      ],
+      "boundary_notes": "仅包含可辨认的耳片可见范围，耳根遮挡处止于遮挡边界。"
+    },
+    {
+      "id": "t03",
+      "query": "鼻孔及凸起孔缘",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.297,
+          0.496,
+          0.336,
+          0.553
+        ],
+        [
+          0.368,
+          0.516,
+          0.426,
+          0.575
+        ]
+      ],
+      "boundary_notes": "每个框包括完整可见孔缘和内部暗孔，不仅框黑色区域。"
+    },
+    {
+      "id": "t04",
+      "query": "眼球及眼眶眉部",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.363,
+          0.365,
+          0.395,
+          0.434
+        ],
+        [
+          0.443,
+          0.393,
+          0.551,
+          0.467
+        ]
+      ],
+      "boundary_notes": "包含眼球、眼睑与紧邻眉弓；远侧仅框可辨认的露出部分。"
+    },
+    {
+      "id": "t05",
+      "query": "圆润口鼻与下唇",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.297,
+          0.495,
+          0.46,
+          0.639
+        ]
+      ],
+      "boundary_notes": "涵盖鼻孔、圆钝鼻端、嘴缝及下唇，不延伸到长鼻梁。"
+    },
+    {
+      "id": "t06",
+      "query": "多面底座",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.198,
+          0.589,
+          0.858,
+          0.89
+        ]
+      ],
+      "boundary_notes": "包含全部可见深色顶面和侧面，不包含颈部、背景或投影。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "source_quote": "Reconstruct the user-provided Yuanmingyuan ox-head sculpture and its pedestal.",
+      "question": "主体是否为参考中的圆明园牛首雕塑及其底座？",
+      "weight": 0.1
+    },
+    {
+      "id": "s02",
+      "source_quote": "Preserve the paired curved horns, ears, rounded muzzle, nostrils, eye and brow forms, and the neck's transition into the faceted base.",
+      "question": "双曲角是否位于头顶两侧，双耳是否向两侧伸出，符合参考布局？",
+      "weight": 0.1
+    },
+    {
+      "id": "s03",
+      "source_quote": "rounded muzzle, nostrils, eye and brow forms",
+      "question": "圆口鼻、鼻孔、眼睛与眉部是否齐全且位置关系符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s04",
+      "source_quote": "the neck's transition into the faceted base",
+      "question": "颈部是否自然承接牛头并落入下方多面底座？",
+      "weight": 0.1
+    },
+    {
+      "id": "s05",
+      "source_quote": "Match the sculptural proportions and visible material.",
+      "question": "头部、角耳、颈部与宽底座的相对比例是否符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s06",
+      "source_quote": "Match the sculptural proportions and visible material.",
+      "question": "是否匹配参考斑驳灰褐色雕塑表面、棕暗色角及近黑底座的材质观感？",
+      "weight": 0.1
+    },
+    {
+      "id": "s07",
+      "source_quote": "Match visible surfaces; complete unseen surfaces plausibly without inventing internal machinery.",
+      "question": "可见表面是否匹配参考，未见背面是否合理补全且未添加内部机械？",
+      "weight": 0.1
+    },
+    {
+      "id": "s08",
+      "source_quote": "Do not invent a complete animal body or functioning fountain mechanism.",
+      "question": "是否未增添完整动物身体或可运作的喷泉机构？",
+      "weight": 0.1
+    },
+    {
+      "id": "s09",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "是否使用完整可编辑三维体积，而非图像平面或朝向相机的薄壳？",
+      "weight": 0.1
+    },
+    {
+      "id": "s10",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "不同组件是否可独立编辑或为可分离网格岛，同时允许有机表面连续？",
+      "weight": 0.1
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d01",
+      "source_quote": "paired curved horns",
+      "question": "角是否具有参考的粗根、连续弯曲、渐细尖端及回钩轮廓，而非扁平线条？",
+      "weight": 0.15
+    },
+    {
+      "id": "d02",
+      "source_quote": "ears",
+      "question": "耳片是否呈外伸的扁长锥叶形，具有厚度、弯曲表面和收尖耳端？",
+      "weight": 0.1
+    },
+    {
+      "id": "d03",
+      "source_quote": "rounded muzzle",
+      "question": "鼻梁至鼻端是否连续隆起，鼻端是否圆钝饱满而非尖嘴？",
+      "weight": 0.15
+    },
+    {
+      "id": "d04",
+      "source_quote": "nostrils",
+      "question": "鼻孔是否具有凸起厚孔缘、椭圆开口及可见内凹深度？",
+      "weight": 0.15
+    },
+    {
+      "id": "d05",
+      "source_quote": "eye and brow forms",
+      "question": "眼球是否鼓起并嵌在眼睑环与厚眉弓下，保留眼眶凹槽？",
+      "weight": 0.15
+    },
+    {
+      "id": "d06",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "口鼻下方是否保留弧形嘴缝、内凹开口与具有厚度的下唇？",
+      "weight": 0.1
+    },
+    {
+      "id": "d07",
+      "source_quote": "the neck's transition into the faceted base",
+      "question": "颈侧与下颌是否连续转折，并保留颈根收束、边缘层次及与底座的连接？",
+      "weight": 0.1
+    },
+    {
+      "id": "d08",
+      "source_quote": "faceted base",
+      "question": "底座是否为向下外扩的实体多面形，保留斜侧面、折棱和底缘厚度？",
+      "weight": 0.1
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n01",
+      "source_quote": "paired curved horns",
+      "quantity": "牛角数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维几何中辨识从头部生长的独立角形结构并计数，不以网格岛数量替代解剖结构数量。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标下，对牛首及底座全部实体几何求整体包围盒，取三个轴向尺寸的最大值；排除相机和灯光。容差为原文2%，在本标称值下为0.02 m。"
+    }
+  ],
+  "limitations": [
+    "本计划仅依据公开单视图及文字冻结，未提供或评估任何候选。",
+    "主参考使用公开映射路径input/reference.png，对应附件原始证据reference/reference-0.png；所有区域与框均冻结于该原图。",
+    "背面、内部和遮挡连接不可由单视图唯一恢复；仅要求合理完整，不设隐藏几何真值。",
+    "最大整体跨度未明示采用轴向包围盒还是任意方向最大点距；本计划明确采用世界轴向包围盒最大尺寸作为操作定义。",
+    "Z向上和米制属于场景坐标与单位约定；帧号、导出流程、渲染参数及图像尺寸不作为内容质量数值检查。",
+    "除成对牛角和整体尺度外，不从图像估算新增精确尺寸、角度、数量或容差。"
+  ]
+}

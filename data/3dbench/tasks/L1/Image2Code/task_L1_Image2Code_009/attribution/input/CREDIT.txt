@@ -1,0 +1,5 @@
+球壳悬浮机器人
+Quandtum
+https://opengameart.org/content/ba-2-blast-all-bot-mark-2
+CC0-1.0
+Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting. All inherited texture maps removed because the author identifies third-party texture samples without their licenses. Plain olive material created for this task. No upstream textured .blend or archive redistributed.

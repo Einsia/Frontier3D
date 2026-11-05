@@ -1,0 +1,125 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+  "family": "Reference2Scene",
+  "instruction_sha256": "d5daec0fcc0b7c8fe4804b97600a7da6ccfb4212b5f06c5a2ec4b4be842f86c8",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "64503d869c6dce4bacf2ae834a299fd170adfcf7cef9c06efd65954f6e9a6a0f",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-0bfba1509573c509a20b8e3ad3ddca4d4e07bb104ecce9d8f20d0e1a6cf1396c"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "按一个连续面条堆定位，包含盘绕主体、下部松散面条及表面较暗部分；不含顶部绿叶、酱汁或投影。远离主堆且与酱汁难以区分的细小条状物不作为独立实例。",
+        "boxes": [
+          [
+            0.264,
+            0.193,
+            0.557,
+            0.631
+          ]
+        ],
+        "id": "T01",
+        "query": "中央偏左的完整面条堆",
+        "weight": 0.4,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "以右侧整份切片鸡肉为一个食物组实例，覆盖全部可见表皮、浅色切面和暗色侧面；不含投影。切块互相遮挡，不把不确定接缝当作独立实例边界。",
+        "boxes": [
+          [
+            0.489,
+            0.208,
+            0.892,
+            0.869
+          ]
+        ],
+        "id": "T02",
+        "query": "右侧整份切片煎鸡肉",
+        "weight": 0.4,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位面条顶端可辨的连续叶簇，包含深绿色折叠面和全部可见叶尖；酱汁中的微小绿色碎片不在此类范围内。",
+        "boxes": [
+          [
+            0.328,
+            0.142,
+            0.48,
+            0.266
+          ]
+        ],
+        "id": "T03",
+        "query": "面条顶部的绿色叶簇",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

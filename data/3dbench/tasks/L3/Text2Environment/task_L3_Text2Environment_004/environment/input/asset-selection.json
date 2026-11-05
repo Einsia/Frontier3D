@@ -1,0 +1,30 @@
+{
+  "material_ids": [
+    "wooden_floor_02",
+    "old_wooden_floor_01",
+    "seaworn_stone_tiles",
+    "cobblestone_floor_09",
+    "dark_rock_02",
+    "rock_06",
+    "grass_ground",
+    "grass_concrete_pavement",
+    "baseball_playground",
+    "playground_sand",
+    "quatrefoil_jacquard_fabric",
+    "denim_fabric"
+  ],
+  "model_packs": [
+    "nature-kit",
+    "castle-kit",
+    "survival-kit",
+    "furniture-kit"
+  ],
+  "available_model_count": 625,
+  "model_catalog": "/assets/models/manifest.json",
+  "material_catalog": "/assets/polyhaven/manifest.json",
+  "catalog_sha256": {
+    "materials": "14d62e1c63a8a1b5a6a2286707fa89bb772859058199ef8918892ab735705e05",
+    "models": "2a53433384384d8e2d57af7bf931db0a189bc26f59caeffe06cc094db97d52bf"
+  },
+  "note": "Shortlist only; all libraries remain available. Modify assets or build your own to match the task style."
+}

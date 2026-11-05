@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-e02",
+  "id": "L3/EmbodiedEnvironment/SupermarketServiceBlock",
+  "domain": "embodied",
+  "input_mode": "image",
+  "title": "具身：超市营业区、冷库与卸货区",
+  "title_en": "Embodied Environment: Supermarket and Service Areas",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "e4d6de56b69159eb0fbf1793f27c5c21e846114181c13911ac6063ad899cf0d4",
+  "chinese_instruction_sha256": "4683a11cc118a68b74b09122f5898800385c89c00d96d2310750f3a1d302bb9f",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "d59ca159adb9d652aa8e4a9ce82890b50be05a83ccb557cd8384de02bcefa454",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

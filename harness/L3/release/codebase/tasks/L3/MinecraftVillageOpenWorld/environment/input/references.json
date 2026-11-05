@@ -1,0 +1,11 @@
+{
+  "input_mode": "image",
+  "images": [
+    {
+      "path": "reference.jpg",
+      "sha256": "8d86ab55f1ddb532f2c051a84396316677898e71fbf7cdbd9a23a6eb127f5a18",
+      "width": 2560,
+      "height": 1440
+    }
+  ]
+}

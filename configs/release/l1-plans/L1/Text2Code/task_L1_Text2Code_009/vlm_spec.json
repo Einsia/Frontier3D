@@ -1,0 +1,199 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Text2Code/task_L1_Text2Code_009",
+  "family": "Brief2Scene",
+  "instruction_sha256": "391f4b60c299bfc91c6b5f8f2cf711123494c6bf82dc66769550e0b0d307e872",
+  "reference_policy": "Written brief only; NEVER show a private reference design to the text judge.",
+  "focus": "L1 object/assembly task. Do not require a room or scene population. Exact tolerances remain automatic. Use authored appearance for aesthetics, not diagnostic silhouette masks. 每项按题面独立检查零件、加工特征和装配关系。不存在私有参考造型约束。不可凭物体名确认孔道、尺寸或材质。 本题不要求提交相机或灯光；全部候选使用同一固定中性摄影棚呈现。只评价模型自身的构成、角色配色、表面质量和可读性，不把测评器的相机/灯光成果奖励给候选，也不因未创作相机/灯光扣分。",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "part_roles",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "9件独立可编辑部件：housing×1、filter×1、cap×2、seal×2、rod×1、nut×1、washer×1 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "part_roles"
+      ]
+    },
+    {
+      "id": "housing",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "轴线Z且XY=0；壳体外径60 mm、孔52 mm、长70 mm，Z=8..78；两端扩孔59.4 mm、深2.1 mm Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "housing"
+      ]
+    },
+    {
+      "id": "filter",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "内芯外径42 mm、孔14 mm、长62 mm，中心Z=43；保留于原生场景且爆炸态可见 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "filter"
+      ]
+    },
+    {
+      "id": "caps",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "两端盖外径68 mm、孔10.4 mm、厚8 mm，中心Z=4/82 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "caps"
+      ]
+    },
+    {
+      "id": "seals",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "两密封环外径59 mm、孔52.6 mm、厚2 mm，中心Z=9/77，放置于端部沉孔 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "seals"
+      ]
+    },
+    {
+      "id": "tie_rod",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "贯穿拉杆直径10 mm、长90 mm，中心Z=43 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "tie_rod"
+      ]
+    },
+    {
+      "id": "nut",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "圆螺母外径18 mm、孔10.4 mm、高5 mm，中心Z=90 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "nut"
+      ]
+    },
+    {
+      "id": "washer",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "底部垫圈外径22 mm、孔10.4 mm、厚2 mm，中心Z=-3 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "washer"
+      ]
+    },
+    {
+      "id": "assembly_clearance",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "assembly_clearance"
+      ]
+    },
+    {
+      "id": "topology",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "所有零件闭合且分别连通 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "topology"
+      ]
+    },
+    {
+      "id": "solid_validity",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "有效实体零件 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "solid_validity"
+      ]
+    },
+    {
+      "id": "units",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "米制导出，X长度/Y宽度/Z向上 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "units"
+      ]
+    },
+    {
+      "id": "hierarchy",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "自由描述性名称、独立可编辑部件与清晰组织 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "hierarchy"
+      ]
+    },
+    {
+      "id": "state_cycle",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "state_cycle"
+      ]
+    },
+    {
+      "id": "glb_assembled",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "GLB与原生帧1装配态一致 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "glb_assembled"
+      ]
+    },
+    {
+      "id": "materials",
+      "dimension": "instruction_following",
+      "weight": 0.0375,
+      "question": "壳体和端盖黄铜色、内芯米色、密封圈深色，其他按题面材质类别；无螺纹和耐压机构 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "materials"
+      ]
+    },
+    {
+      "id": "aesthetic_composition",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "在统一诊断视图下评价零件构成、装配层级和主体可读性；不评价测评器控制的取景。",
+      "units": [
+        "aesthetic_composition"
+      ]
+    },
+    {
+      "id": "aesthetic_light_color",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "评价题面允许的角色配色、材质反射层次与色彩协调；统一灯光由测评器提供，不作为候选创作能力。",
+      "units": [
+        "aesthetic_light_color"
+      ]
+    },
+    {
+      "id": "aesthetic_finish",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade visible shape/material finish, clean joins, proportions and intentional detail; complexity alone earns nothing.",
+      "units": [
+        "aesthetic_finish"
+      ]
+    },
+    {
+      "id": "aesthetic_coherence",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade coherent overall design and presentation; allow every design satisfying the written brief.",
+      "units": [
+        "aesthetic_coherence"
+      ]
+    }
+  ],
+  "localization": null
+}

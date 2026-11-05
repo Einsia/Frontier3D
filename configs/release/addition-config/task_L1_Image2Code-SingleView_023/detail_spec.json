@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+  "family": "Reference2Scene",
+  "instruction_sha256": "fe7f61608cb129a847605f11ab975e9ed364cea20f317d65d79a7916ce9101af",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "caadc44bf37355e3c54e491b0e062d70274ac6cbdf4b246c786b39333460a217"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d01",
+      "component": "F",
+      "question": "角是否具有参考的粗根、连续弯曲、渐细尖端及回钩轮廓，而非扁平线条？",
+      "units": [
+        "paired curved horns"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d02",
+      "component": "F",
+      "question": "耳片是否呈外伸的扁长锥叶形，具有厚度、弯曲表面和收尖耳端？",
+      "units": [
+        "ears"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d03",
+      "component": "F",
+      "question": "鼻梁至鼻端是否连续隆起，鼻端是否圆钝饱满而非尖嘴？",
+      "units": [
+        "rounded muzzle"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d04",
+      "component": "F",
+      "question": "鼻孔是否具有凸起厚孔缘、椭圆开口及可见内凹深度？",
+      "units": [
+        "nostrils"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d05",
+      "component": "F",
+      "question": "眼球是否鼓起并嵌在眼睑环与厚眉弓下，保留眼眶凹槽？",
+      "units": [
+        "eye and brow forms"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d06",
+      "component": "F",
+      "question": "口鼻下方是否保留弧形嘴缝、内凹开口与具有厚度的下唇？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d07",
+      "component": "F",
+      "question": "颈侧与下颌是否连续转折，并保留颈根收束、边缘层次及与底座的连接？",
+      "units": [
+        "the neck's transition into the faceted base"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d08",
+      "component": "F",
+      "question": "底座是否为向下外扩的实体多面形，保留斜侧面、折棱和底缘厚度？",
+      "units": [
+        "faceted base"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

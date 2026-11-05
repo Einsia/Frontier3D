@@ -1,0 +1,162 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-g04",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "canal_plaza",
+    "shopping_street",
+    "side_alley",
+    "warehouse",
+    "elevated_walkway",
+    "maintenance_room",
+    "delivery_dock"
+  ],
+  "initial_state": "District service power off; freight platform at warehouse; crates on upper floor.",
+  "entities": [
+    {
+      "id": "power.service",
+      "role": "switch",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "shutter.01",
+      "role": "shutter",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; require power",
+      "argument": ""
+    },
+    {
+      "id": "shutter.02",
+      "role": "shutter",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; require power",
+      "argument": ""
+    },
+    {
+      "id": "lift.freight",
+      "role": "lift",
+      "actions": [
+        "call",
+        "travel",
+        "resume"
+      ],
+      "initial": "lower landing; power off",
+      "argument": "landing=lower|upper"
+    },
+    {
+      "id": "lift.door.01",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; landing interlock",
+      "argument": ""
+    },
+    {
+      "id": "lift.door.02",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; landing interlock",
+      "argument": ""
+    },
+    {
+      "id": "cargo.crate.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "upper warehouse",
+      "argument": ""
+    },
+    {
+      "id": "cargo.crate.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "upper warehouse",
+      "argument": ""
+    },
+    {
+      "id": "platform.cargo",
+      "role": "platform",
+      "actions": [
+        "load",
+        "unload",
+        "start",
+        "stop",
+        "resume"
+      ],
+      "initial": "empty; warehouse start",
+      "argument": ""
+    },
+    {
+      "id": "barrier.route",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "obstacle.route",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "blocks platform path",
+      "argument": ""
+    },
+    {
+      "id": "dock.latch",
+      "role": "latch",
+      "actions": [
+        "lock",
+        "unlock"
+      ],
+      "initial": "unlocked",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

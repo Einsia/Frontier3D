@@ -1,0 +1,234 @@
+{
+  "version": "l2-method-plan-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-007",
+  "category": "Reference2Scene",
+  "sources": {
+    "instruction.md": "822ed8f574dc52330f0e449e304e51e8efb42de4a4b9c905fd570328b9020b78",
+    "solution/EVALUATION.md": "f19464a7229ee6ad57664dc5a16a4ab88298f3169476a9d41713603a25d623f6"
+  },
+  "evaluation_title": "评测设计：Charité 手术室与吊臂医疗设备",
+  "evaluation_rows": [
+    {
+      "id": "public_contract",
+      "dimension": "题包逐题要求",
+      "source_quote": "# 评测设计：Charité 手术室与吊臂医疗设备",
+      "description": [
+        "Yellow right wall and pale left wall with doors. Wide open floor foreground, equipment clusters around rear/right perimeter and suspended arms above. Bright clinical white/pale gray surfaces, saturated yellow wall, black screens and restrained metal highlights."
+      ],
+      "methods": [
+        "strict_fidelity",
+        "native_appearance",
+        "reference_boxes",
+        "static_support"
+      ]
+    }
+  ],
+  "active_checks": [
+    {
+      "id": "real_geometry",
+      "existing_check": "real_geometry",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_relationship",
+      "existing_check": "alternate_relationship",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_projection",
+      "existing_check": "main_projection",
+      "source": "instruction.md"
+    },
+    {
+      "id": "support_geometry_available",
+      "existing_check": "support_geometry_available",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_native_size",
+      "existing_check": "main_native_size",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_png",
+      "existing_check": "main_png",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_native_size",
+      "existing_check": "alternate_native_size",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_png",
+      "existing_check": "alternate_png",
+      "source": "instruction.md"
+    },
+    {
+      "id": "engine",
+      "existing_check": "engine",
+      "source": "instruction.md"
+    },
+    {
+      "id": "view_transform",
+      "existing_check": "view_transform",
+      "source": "instruction.md"
+    },
+    {
+      "id": "exposure",
+      "existing_check": "exposure",
+      "source": "instruction.md"
+    },
+    {
+      "id": "gamma",
+      "existing_check": "gamma",
+      "source": "instruction.md"
+    },
+    {
+      "id": "metres",
+      "existing_check": "metres",
+      "source": "instruction.md"
+    },
+    {
+      "id": "unit_scale",
+      "existing_check": "unit_scale",
+      "source": "instruction.md"
+    },
+    {
+      "id": "editable",
+      "existing_check": "editable",
+      "source": "instruction.md"
+    },
+    {
+      "id": "seed_execution",
+      "existing_check": "seed_execution",
+      "source": "instruction.md"
+    }
+  ],
+  "material_policy": {
+    "image_textures": true,
+    "packed_dependencies": true,
+    "whole_reference_projection": false
+  },
+  "scoring": {
+    "component_weights": {
+      "main_image": 0.5,
+      "localization": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "weights_status": "pilot_human_calibration_pending"
+  },
+  "appearance_views": [
+    {
+      "artifact": "main.png",
+      "reference_key": "main",
+      "reference_path": "environment/input/reference.png",
+      "reference_sha256": "42e353243ece28c10f501e14771a8d8ca08fa73bccbaf88355994e9b0116b0fd",
+      "method": "reference-regions-v1",
+      "annotation": {
+        "version": "reference-regions-v1",
+        "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-007",
+        "reference_path": "environment/input/reference.png",
+        "reference_sha256": "42e353243ece28c10f501e14771a8d8ca08fa73bccbaf88355994e9b0116b0fd",
+        "regions": [
+          {
+            "id": "region_1",
+            "label": "large rightmost medical equipment cart",
+            "weight": 0.3333333333333333,
+            "polygon": [
+              [
+                0.791,
+                0.337
+              ],
+              [
+                1.0,
+                0.337
+              ],
+              [
+                1.0,
+                0.831
+              ],
+              [
+                0.791,
+                0.831
+              ]
+            ]
+          },
+          {
+            "id": "region_2",
+            "label": "rear left door including frame",
+            "weight": 0.3333333333333333,
+            "polygon": [
+              [
+                0.262,
+                0.32
+              ],
+              [
+                0.398,
+                0.32
+              ],
+              [
+                0.398,
+                0.701
+              ],
+              [
+                0.262,
+                0.701
+              ]
+            ]
+          },
+          {
+            "id": "region_3",
+            "label": "central ceiling-mounted surgical-light and articulated-arm installation",
+            "weight": 0.3333333333333333,
+            "polygon": [
+              [
+                0.331,
+                0.0
+              ],
+              [
+                0.617,
+                0.0
+              ],
+              [
+                0.617,
+                0.467
+              ],
+              [
+                0.331,
+                0.467
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "physics": {
+    "method": "static-support-v1",
+    "gravity": "down_z",
+    "ground_mode": "scene",
+    "contact_tolerance_m": 0.02,
+    "ground_lower_fraction": 0.35,
+    "minimum_ground_area_fraction": 0.15
+  },
+  "vlm_judge": {
+    "version": "l2-vlm-judge-v3",
+    "mode": "interactive",
+    "spec_path": "harness/vlm_spec.json",
+    "spec_sha256": "05656bc00630bed043c697ceff7fa1e3a2a3598a6238bfd592ca5ac0e4d0082e",
+    "component_weights": {
+      "main_image": 0.5,
+      "localization": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication"
+  },
+  "score_aggregation_note": "\n## Frozen evaluator protocol (L2 refresh v9, 2026-10-14)\n\nThe valid-scene score retains 50% reference appearance, 20% key-object image-plane\nlocalization, 10% static support and 20% strict task-specific visual fidelity.\nLocal textures and packed dependencies are allowed. Complete-reference planes or\ncamera projections cannot replace genuine scene geometry. Execution, complete\ndeliverables and native rerendering remain validity checks, not quality bonuses.\nNo candidate-fitted alignment, cropping, rescaling or pose registration is used.\nFor two-input tasks, main and alternate are compared with their corresponding\npublic originals with equal image weights; frozen static regions exclude action\nstate differences. Localization uses the first view. Novel is independently\nrerendered and checked for 3D consistency, not pixel-compared with a private photo.\nSingle-input alternates have no pixel target. Small explicitly permitted details\nremain optional. Reference annotations and ordinal VLM grades are AI-authored pilot\nmeasurements awaiting human calibration, not certified 3D ground truth.\n",
+  "remaining_engineering": [
+    "人工校准参考框及视觉等级",
+    "尺度实体自动对应尚为诊断，不推断隐藏真实尺寸"
+  ]
+}

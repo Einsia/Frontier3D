@@ -1,0 +1,468 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+  "detail_checks": [
+    {
+      "id": "d01",
+      "question": "床垫与床体是否呈现有厚度、受支撑的体积及床角轮廓？",
+      "source_quote": "Reconstruct the bed and white bedding",
+      "weight": 0.125
+    },
+    {
+      "id": "d02",
+      "question": "枕头的鼓起边缘、被面折返及床侧垂落褶皱是否具有参考中的局部形态？",
+      "source_quote": "bed and white bedding",
+      "weight": 0.125
+    },
+    {
+      "id": "d03",
+      "question": "床头板的分段软包、窄框与顶部线性灯槽是否具有可辨的结构层次？",
+      "source_quote": "headboard with linear lighting",
+      "weight": 0.125
+    },
+    {
+      "id": "d04",
+      "question": "天花灯槽是否保留内凹截面、下沿厚度及墙角转折？",
+      "source_quote": "ceiling coves",
+      "weight": 0.125
+    },
+    {
+      "id": "d05",
+      "question": "圆形墙饰是否保留厚边框、内嵌圆面及上方悬挂连接的可见形态？",
+      "source_quote": "circular wall decoration",
+      "weight": 0.125
+    },
+    {
+      "id": "d06",
+      "question": "地毯是否保留可见边界，以及断续条带和不规则斑块的局部图案形状？",
+      "source_quote": "patterned floor",
+      "weight": 0.125
+    },
+    {
+      "id": "d07",
+      "question": "右侧开口是否保留有厚度的侧柱、顶部框架与地面门槛构造？",
+      "source_quote": "right-side bathroom/vanity opening",
+      "weight": 0.125
+    },
+    {
+      "id": "d08",
+      "question": "浴室可见浴缸的开口与弧形缸壁、洗手台的台面厚度及下方空隙是否保留主要形态？",
+      "source_quote": "Distant bathroom details and small amenities may be simplified.",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "仅依据所附原始参考图与 instruction.md 制定计划；未提供候选，不推断任何候选属性。",
+    "未提供 legacy-detail-20261018-v1 的独立正文；此计划依据本次嵌入的合同与检查规则扩展。",
+    "reference_primary 使用输入映射中的 input/reference.png；对应可见附件证据路径为 reference/reference-0.png。",
+    "多边形与定位框仅在原始参考图上冻结，表示可见内容范围；不代表真实尺寸、隐藏几何或数值容差。",
+    "单张未标定照片无法唯一确定相机参数、真实深度及遮挡表面；除床垫宽度约定外，比例和间距仅作参考一致性判断。",
+    "浴室远处细节及小用品允许简化；其精确数量、文字、品牌和微小构件不设强制要求。",
+    "三维结构、独立编辑、隐藏表面及相机变换需检查场景原生数据，单凭主视图不能确证。",
+    "数值项仅列明示的内容几何尺寸和相机位移；未给出数值的厚度、支撑和间距不设阈值，渲染设置与图像尺寸不作为内容质量指标。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "n01",
+      "measurement_definition": "在场景原生几何中识别床垫，应用对象变换后，沿床垫自身横向测量两侧外表面之间的宽度；排除枕头及垂落被褥，按场景米制单位判定。",
+      "quantity": "床垫宽度约定",
+      "relation": "equal",
+      "source_quote": "Use a 1.8 m mattress width as the task scale convention, not a measured real-world dimension.",
+      "target": 1.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n02",
+      "measurement_definition": "读取两台相机的世界坐标中心，以主相机旋转矩阵将位置差转入主相机局部坐标，判定其为沿局部正 X 轴长度 0.30 m 的纯平移；旋转和镜头一致性另作语义检查。",
+      "quantity": "备用相机沿主相机局部右向的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X without changing rotation or lens",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "床与白色寝具",
+      "polygon": [
+        [
+          0.096,
+          0.505
+        ],
+        [
+          0.447,
+          0.463
+        ],
+        [
+          0.751,
+          0.546
+        ],
+        [
+          0.75,
+          0.609
+        ],
+        [
+          0.525,
+          0.797
+        ],
+        [
+          0.227,
+          0.934
+        ],
+        [
+          0.117,
+          0.728
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "r02",
+      "label": "床头板与线性灯带",
+      "polygon": [
+        [
+          0.071,
+          0.429
+        ],
+        [
+          0.512,
+          0.407
+        ],
+        [
+          0.514,
+          0.471
+        ],
+        [
+          0.099,
+          0.546
+        ]
+      ],
+      "weight": 0.18
+    },
+    {
+      "id": "r03",
+      "label": "天花灯槽与转角",
+      "polygon": [
+        [
+          0,
+          0.035
+        ],
+        [
+          0.517,
+          0.232
+        ],
+        [
+          1,
+          0.087
+        ],
+        [
+          1,
+          0.172
+        ],
+        [
+          0.495,
+          0.29
+        ],
+        [
+          0,
+          0.211
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r04",
+      "label": "圆形墙饰与悬挂件",
+      "polygon": [
+        [
+          0.376,
+          0.283
+        ],
+        [
+          0.434,
+          0.287
+        ],
+        [
+          0.46,
+          0.315
+        ],
+        [
+          0.488,
+          0.342
+        ],
+        [
+          0.49,
+          0.384
+        ],
+        [
+          0.461,
+          0.397
+        ],
+        [
+          0.424,
+          0.384
+        ],
+        [
+          0.422,
+          0.343
+        ],
+        [
+          0.403,
+          0.304
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r05",
+      "label": "右侧浴室开口及内部主要设施",
+      "polygon": [
+        [
+          0.594,
+          0.268
+        ],
+        [
+          0.918,
+          0.204
+        ],
+        [
+          0.835,
+          0.608
+        ],
+        [
+          0.75,
+          0.594
+        ],
+        [
+          0.751,
+          0.545
+        ],
+        [
+          0.588,
+          0.518
+        ]
+      ],
+      "weight": 0.17
+    },
+    {
+      "id": "r06",
+      "label": "床右侧及前景图案地毯",
+      "polygon": [
+        [
+          0.746,
+          0.6
+        ],
+        [
+          0.88,
+          0.633
+        ],
+        [
+          0.657,
+          1
+        ],
+        [
+          0.259,
+          1
+        ],
+        [
+          0.263,
+          0.935
+        ],
+        [
+          0.525,
+          0.802
+        ]
+      ],
+      "weight": 0.15
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "question": "主体是否为参考中的双人床，并保持其朝向及前景占比？",
+      "source_quote": "Reconstruct the bed",
+      "weight": 0.0625
+    },
+    {
+      "id": "s02",
+      "question": "床上是否保留参考中的白色枕头、床单和覆盖床面的被褥？",
+      "source_quote": "white bedding",
+      "weight": 0.0625
+    },
+    {
+      "id": "s03",
+      "question": "床头后方是否保留横向床头板及其线性照明关系？",
+      "source_quote": "headboard with linear lighting",
+      "weight": 0.0625
+    },
+    {
+      "id": "s04",
+      "question": "房间上方是否保留沿墙转折的天花灯槽布局？",
+      "source_quote": "ceiling coves",
+      "weight": 0.0625
+    },
+    {
+      "id": "s05",
+      "question": "床头墙面偏右上方是否保留参考中的圆形装饰及整体外观？",
+      "source_quote": "circular wall decoration",
+      "weight": 0.0625
+    },
+    {
+      "id": "s06",
+      "question": "床周围是否保留图案地毯与外侧木地板的铺设关系及外观？",
+      "source_quote": "patterned floor",
+      "weight": 0.0625
+    },
+    {
+      "id": "s07",
+      "question": "床右侧是否保留通向浴室与洗手台的开口及可见内部主要设施？",
+      "source_quote": "right-side bathroom/vanity opening",
+      "weight": 0.0625
+    },
+    {
+      "id": "s08",
+      "question": "主视图的视点、透视收敛与房间构图是否对应参考？",
+      "source_quote": "Preserve the room's perspective",
+      "weight": 0.0625
+    },
+    {
+      "id": "s09",
+      "question": "床、床边家具和浴室通道之间是否保持参考中的相对净空？",
+      "source_quote": "furniture clearances",
+      "weight": 0.0625
+    },
+    {
+      "id": "s10",
+      "question": "参考中可见开口是否保持位置、朝向与通透关系？",
+      "source_quote": "openings",
+      "weight": 0.0625
+    },
+    {
+      "id": "s11",
+      "question": "天花、床头及浴室的照明是否保留参考中的暖色氛围和明暗分布？",
+      "source_quote": "warm lighting",
+      "weight": 0.0625
+    },
+    {
+      "id": "s12",
+      "question": "场景是否采用米制尺度并以 Z 轴为上方向？",
+      "source_quote": "Use metres and Z up.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s13",
+      "question": "主要构件是否可独立编辑，并具有合理厚度、支撑及间隔？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s14",
+      "question": "场景是否以真实三维构件形成空间，并在备用视角保持结构一致？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s15",
+      "question": "其他构件尺寸是否按参考比例推断，隐藏表面是否合理补全？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s16",
+      "question": "是否保留匹配参考的透视主相机及复制平移的备用相机，两者旋转与镜头不变且均观察同一场景？",
+      "source_quote": "All images must come from the same scene and specified cameras; retain cameras and pack textures.",
+      "weight": 0.0625
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "包含可见床体、全部枕头及垂落白色寝具；排除床头板、床边柜和投影。下边界包含最下方垂落被角。",
+      "boxes": [
+        [
+          0.096,
+          0.466,
+          0.752,
+          0.935
+        ]
+      ],
+      "id": "t01",
+      "query": "床与白色寝具整体",
+      "weight": 0.25
+    },
+    {
+      "boundary_notes": "包含床头软包、细框与顶部线性照明构件的可见整体；包含深色框面，排除墙上光晕及两侧台灯。",
+      "boxes": [
+        [
+          0.072,
+          0.41,
+          0.513,
+          0.551
+        ]
+      ],
+      "id": "t02",
+      "query": "床头板及顶部线性照明构件",
+      "weight": 0.18
+    },
+    {
+      "boundary_notes": "将跨两面墙连续转折的灯槽作为一个实例；框包含其可见槽面与下沿，边缘截断于图像边界，不包含整个中央顶面作为目标。",
+      "boxes": [
+        [
+          0,
+          0.037,
+          1,
+          0.29
+        ]
+      ],
+      "id": "t03",
+      "query": "连续天花灯槽",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "包括圆形饰面、深色厚框、上方链条和横向悬挂杆；排除墙面阴影，不要求辨认内部微小文字。",
+      "boxes": [
+        [
+          0.378,
+          0.285,
+          0.487,
+          0.395
+        ]
+      ],
+      "id": "t04",
+      "query": "带悬挂件的圆形墙饰",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "定位主浴室入口，包含可见深色左框、顶框及右侧宽立柱；内部设施属于开口内容，不另数微小用品；下部遮挡处不外推。",
+      "boxes": [
+        [
+          0.587,
+          0.19,
+          0.99,
+          0.624
+        ]
+      ],
+      "id": "t05",
+      "query": "右侧浴室与洗手台入口",
+      "weight": 0.17
+    },
+    {
+      "boundary_notes": "一个地毯实例的全部可见片段联合包围框；包括床左右及前景的深色纹样，排除右侧木地板和阴影；地毯在左边及底边被画面截断，床下边界不推断。",
+      "boxes": [
+        [
+          0,
+          0.599,
+          0.882,
+          1
+        ]
+      ],
+      "id": "t06",
+      "query": "床下及床周围的图案地毯",
+      "weight": 0.15
+    }
+  ]
+}

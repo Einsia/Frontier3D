@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-e03",
+  "id": "L3/EmbodiedEnvironment/WorkshopLoadingYard",
+  "domain": "embodied",
+  "input_mode": "image",
+  "title": "具身：维修工坊与室外物流场",
+  "title_en": "Embodied Environment: Repair Workshop and Loading Yard",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "41f0666369febe7fae684fad94eba1eb43005e15d5c67986eb20305c71c1638f",
+  "chinese_instruction_sha256": "08a502fa8714e8668af3d1cfea04fc5f6a5b7c9cee0bd5ca78fd1fb18f299c00",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "006aec73c895a18bcc36b986ae398901c4c53e55fb727cdf9fbddb5e91b4943c",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

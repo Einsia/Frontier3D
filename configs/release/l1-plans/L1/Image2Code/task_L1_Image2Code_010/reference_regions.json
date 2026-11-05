@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_010",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "6a9f2a63fa3caea6a738b78f048aadaa09dc2600d381eb00e61cf3fb3c504d20",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "lander central body",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.36,
+          0.43
+        ],
+        [
+          0.59,
+          0.43
+        ],
+        [
+          0.59,
+          0.6
+        ],
+        [
+          0.36,
+          0.6
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "left solar array",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.22,
+          0.36
+        ],
+        [
+          0.47,
+          0.36
+        ],
+        [
+          0.47,
+          0.49
+        ],
+        [
+          0.22,
+          0.49
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "right solar array",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.54,
+          0.46
+        ],
+        [
+          0.82,
+          0.46
+        ],
+        [
+          0.82,
+          0.6
+        ],
+        [
+          0.54,
+          0.6
+        ]
+      ]
+    }
+  ]
+}

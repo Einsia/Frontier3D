@@ -1,0 +1,27 @@
+{
+  "uid": "f398bcd363ce43f896722cf349ef5c92",
+  "name": "DJI Mavic3 Classic DJI drone",
+  "source_url": "https://sketchfab.com/3d-models/dji-mavic3-classic-dji-drone-f398bcd363ce43f896722cf349ef5c92",
+  "author": {
+    "username": "Metazeon",
+    "displayName": "Metazeon",
+    "profileUrl": "https://sketchfab.com/Metazeon"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/SYI2wkBS0iV0a2kil7HcBs7un4b",
+  "document_revision": 647,
+  "source_sha256": "4a5ed491e40a45283e62ef085eba835aec03517d938c15b1eaa680cc0b54fb31",
+  "download_method": "User browser download; identity verified from embedded glTF asset.extras",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "replaces": {
+    "title": "四镜头巡天卫星",
+    "resource_family": "nasa-assemblies/tess"
+  }
+}

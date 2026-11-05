@@ -1,0 +1,232 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/8408f28db6769bb57ee9/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/f3cc0397a477cccab9dc/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/3090753a3754746afa73/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "张拉篷膜及支撑范围",
+      "polygon": [
+        [
+          0.164,
+          0.347
+        ],
+        [
+          0.482,
+          0.342
+        ],
+        [
+          0.591,
+          0.499
+        ],
+        [
+          0.588,
+          0.587
+        ],
+        [
+          0.193,
+          0.584
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R02",
+      "label": "上层平台与前沿栏杆",
+      "polygon": [
+        [
+          0.054,
+          0.569
+        ],
+        [
+          0.607,
+          0.575
+        ],
+        [
+          0.819,
+          0.648
+        ],
+        [
+          0.819,
+          0.713
+        ],
+        [
+          0.054,
+          0.689
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R03",
+      "label": "下层广场铺地与通行空间",
+      "polygon": [
+        [
+          0.062,
+          0.719
+        ],
+        [
+          0.494,
+          0.718
+        ],
+        [
+          0.499,
+          0.952
+        ],
+        [
+          0.846,
+          0.957
+        ],
+        [
+          0.908,
+          0.899
+        ],
+        [
+          0.965,
+          1
+        ],
+        [
+          0.069,
+          1
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "右侧玻璃商业建筑",
+      "polygon": [
+        [
+          0.849,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.691
+        ],
+        [
+          0.862,
+          0.637
+        ],
+        [
+          0.806,
+          0.482
+        ],
+        [
+          0.818,
+          0.195
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R05",
+      "label": "日落天空与远处城市山脊",
+      "polygon": [
+        [
+          0.044,
+          0.219
+        ],
+        [
+          0.815,
+          0.219
+        ],
+        [
+          0.815,
+          0.407
+        ],
+        [
+          0.686,
+          0.389
+        ],
+        [
+          0.497,
+          0.377
+        ],
+        [
+          0.475,
+          0.342
+        ],
+        [
+          0.216,
+          0.387
+        ],
+        [
+          0.044,
+          0.382
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景按米读取公共露台代表性栏杆，沿世界 Z 轴测量相邻完成面至栏杆顶部的高度。",
+      "quantity": "公共露台栏杆高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.1 m public-terrace railing height as the task scale convention, not a measured real-world dimension.",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两个保留相机的世界位置，以主相机局部正 X 轴的世界单位向量为方向，验证备用相机位置等于主相机位置加该方向乘 0.30 m。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens;",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

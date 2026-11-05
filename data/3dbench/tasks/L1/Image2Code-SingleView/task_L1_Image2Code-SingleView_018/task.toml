@@ -1,0 +1,23 @@
+# Task metadata; requirements live in instruction.md.
+version = 1
+id = "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018"
+level = 1
+category = "Image2Code-SingleView"
+title = "边境牧羊犬"
+difficulty = "hard"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "not_implemented"
+resource_family = "sketchfab/516a1a06c6f248b6b8c28801eb1397ac"
+environment_files = ["input/reference.png"]
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/scene.glb", "output/main.png", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019"
+release_id = "3DBench-058"

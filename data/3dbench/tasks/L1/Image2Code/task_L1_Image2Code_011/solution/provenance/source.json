@@ -1,0 +1,17 @@
+{
+  "id": "surface_vehicle",
+  "author": "NASA and NASA 3D Resources contributors",
+  "source": "https://github.com/nasa/NASA-3D-Resources/tree/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Space%20Exploration%20Vehicle",
+  "commit": "11ebb4ee043715aefbba6aeec8a61746fad67fa7",
+  "rights": "NASA media usage guidelines; not relabelled CC0",
+  "rights_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "downloaded_files": [
+    {
+      "source_path": "3D Models/Space Exploration Vehicle/Space Exploration Vehicle.glb",
+      "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Space%20Exploration%20Vehicle/Space%20Exploration%20Vehicle.glb",
+      "sha256": "09dcfbd45a475440de4ca2405fe3be4f784dee6f12e752bad5faa9f6db6c4a8d",
+      "bytes": 22431576,
+      "local": "assets/expansion/nasa-assemblies/surface_vehicle/source.glb"
+    }
+  ]
+}

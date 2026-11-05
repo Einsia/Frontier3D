@@ -1,0 +1,95 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "new-tasks-20261019-v1",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_023",
+  "family": "Reference2Scene",
+  "instruction_sha256": "3449318ee0ce05e82d60079f790d627149d2be323737b1969caf2f26648a74ea",
+  "reference_policy": "All and only supplied public images; text briefs have no target image. Invisible private surfaces are not targets.",
+  "focus": "Visual requirement diagnostic. Exact numerical requirements need native measurement; never infer numerical compliance from perspective images. Do not add physics or hidden shape requirements.",
+  "reference_bindings": {
+    "reference/reference-0.png": "9f92966c56cb409de9ffde6366dfb44807e3ea18e3837687d737e407cbaa69f5",
+    "reference/reference-1.png": "0d79e9253cabdf69f0bc0453f5e137851520bb58ab872eb5a62baaa66b5cc87e",
+    "reference/reference-2.png": "526e240f062d400f44eec01a110cac44b1a566c4a16b0a9cb66ed5ee29d015a2",
+    "reference/reference-3.png": "6d742a600e39c068b0cd12b7ce9b3ddf99454c2c3da16d4a09eccd884ea346ff"
+  },
+  "authoring": "public_contract_only_frozen_before_generation_pending_calibration",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "form",
+      "component": "H",
+      "global_weight": 0.45,
+      "question": "整体主体身份、轮廓、体量比例和布局；只看几何形状与相对关系，不能用配色代替。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "features",
+      "component": "F",
+      "global_weight": 0.35,
+      "question": "逐项检查公开题面中特征部件、曲面、厚度、开口、连接和局部形体；每项均需具体描述。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "materials",
+      "component": "M",
+      "global_weight": 0.1,
+      "question": "公开要求的主要材质、颜色和作者光照，不在形体项重复计入。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "composition",
+      "component": "Q",
+      "global_weight": 0.1,
+      "question": "主图的相机、构图、遮挡和对象取景，辅助图只诊断三维真实性。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

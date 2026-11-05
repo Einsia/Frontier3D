@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_002",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "40f25837b9ea0a2c3b4ab3fa139acbb5b1443dd97c80b198083dfbd5ca1e1b55",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "drill press",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.29,
+          0.19
+        ],
+        [
+          0.66,
+          0.19
+        ],
+        [
+          0.66,
+          0.91
+        ],
+        [
+          0.29,
+          0.91
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "open belt cover",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.32,
+          0.19
+        ],
+        [
+          0.59,
+          0.19
+        ],
+        [
+          0.59,
+          0.44
+        ],
+        [
+          0.32,
+          0.44
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "worktable and base",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.29,
+          0.64
+        ],
+        [
+          0.53,
+          0.64
+        ],
+        [
+          0.53,
+          0.91
+        ],
+        [
+          0.29,
+          0.91
+        ]
+      ]
+    }
+  ]
+}

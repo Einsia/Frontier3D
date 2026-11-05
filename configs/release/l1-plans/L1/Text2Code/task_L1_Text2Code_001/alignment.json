@@ -1,0 +1,283 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_001",
+  "category": "Text2Code",
+  "title": "螺栓法兰总成",
+  "profile": "l1-brief-l2aligned-v1.0.0",
+  "l2_baseline": "l2-brief-vlm-v7.0.0",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "physics": 0.1
+  },
+  "spec_sha256": "7f1592a41fe4327c43d0325d9173c711532d2e7136eeb77535acb61797735738",
+  "sources": {
+    "instruction.md": "93b80b7675ac4de4ae72fc06eaa5c31e7ff79b99563077320c7bcd05b00a8c44",
+    "solution/EVALUATION.md": "61d0750f4123752b20f0ad819288b535f404dacd1d1376d362276354bafdb99d",
+    "harness/eval_spec.json": "fbe05c3ffba7a66531bc3aa3e58d0f74189f9703ce1595b6581d10d7f93589a6",
+    "harness/evaluation_design.json": "a6dfa3b0dbe260aa6a552c15d729a210347daa88158391de461479b83e1a5fd3"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": null,
+  "automatic_checks": [
+    "part_inventory",
+    "closed",
+    "connected",
+    "solid_validity",
+    "part_count",
+    "hierarchy"
+  ],
+  "reference_primary": null,
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.15,
+        -0.15,
+        0.12
+      ],
+      "target": [
+        0,
+        0,
+        0.02
+      ],
+      "ortho_scale": 0.15,
+      "resolution": 128,
+      "frame": 1
+    },
+    {
+      "id": "exploded",
+      "location": [
+        0.2,
+        -0.2,
+        0.22
+      ],
+      "target": [
+        0,
+        0,
+        0.05
+      ],
+      "ortho_scale": 0.3,
+      "resolution": 128,
+      "frame": 61
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "part_roles",
+      "text": "两个法兰、一根轴、四个六角螺栓、四个垫圈，共11件独立可编辑零件",
+      "source": "instruction.md paragraphs 1, 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory",
+        "part_count"
+      ],
+      "reason": "尺寸匹配与对象数量只能提供代理证据，尚未识别真实特征及编辑性。"
+    },
+    {
+      "id": "flange_dimensions",
+      "text": "法兰外径90 mm、厚12 mm",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "包围盒不是圆柱特征测量，不依赖名称但仍需语义绑定。"
+    },
+    {
+      "id": "flange_bores",
+      "text": "中心通孔20.4 mm；四个6.4 mm孔位于64 mm节圆且90度等分",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "共用截面与孔道方法尚未绑定本题孔位、完整厚度及容差。"
+    },
+    {
+      "id": "shaft_dimensions",
+      "text": "轴直径20 mm、长46 mm",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚未用实际轴线与圆形截面验证。"
+    },
+    {
+      "id": "bolt_features",
+      "text": "螺杆直径6 mm、长27.5 mm，六角头高4 mm、外接圆直径10.8 mm",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尺寸代理不证明分段结构；合法六角转角需要特征测量。"
+    },
+    {
+      "id": "washer_features",
+      "text": "垫圈外径12 mm、内径6.4 mm、厚1.5 mm",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚未绑定垫圈通孔与厚度测量。"
+    },
+    {
+      "id": "assembly",
+      "text": "法兰底面相对高度0/14 mm、间隙2 mm；轴心20 mm；垫圈底26 mm；螺杆底0 mm，轴孔共轴且贴合",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "位置容差0.3 mm、配合、轴线、接触及整体平移/绕Z旋转归一尚未接入。"
+    },
+    {
+      "id": "clearance",
+      "text": "真实通孔、规定间隙且无非预期实体穿透",
+      "source": "instruction.md paragraph 4",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "单件有效性不能代替零件间干涉和间隙判定。"
+    },
+    {
+      "id": "units",
+      "text": "米制、Z向上及0.3 mm尺寸/位置容差",
+      "source": "instruction.md paragraph 4",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "仍需跨格式物理尺度、几何轴向及位置验证。"
+    },
+    {
+      "id": "hierarchy",
+      "text": "描述性名称自由、明确装配层级",
+      "source": "instruction.md paragraph 4",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "hierarchy"
+      ],
+      "reason": "所有零件有父对象不等于合理单根层级。"
+    },
+    {
+      "id": "materials",
+      "text": "蓝灰法兰、银灰轴与螺栓、黄铜垫圈",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "现有材质诊断尚未绑定各角色配色与外观。"
+    },
+    {
+      "id": "state_cycle",
+      "text": "帧1装配、帧61自由爆炸、保形且可恢复",
+      "source": "instruction.md paragraph 4",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "assembled_valid",
+        "exploded_valid",
+        "reproducible"
+      ],
+      "reason": "重现比较与两帧有效性不能证明本题拆分合理；固定诊断视图尚未自适应合法整体位移。"
+    },
+    {
+      "id": "glb_assembled",
+      "text": "GLB与原生帧1等价",
+      "source": "instruction.md paragraph 4",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "跨格式诊断已复用，任务级语义阈值仍待标定。"
+    },
+    {
+      "id": "reconstruction",
+      "text": "清洁环境从solution.py重建全部产物，不依赖旧输出或个人路径",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "独立基准与全部seed有实际执行及几何比较；完整依赖、材质等价和任务语义尚未覆盖。"
+    },
+    {
+      "id": "instructions",
+      "text": "README说明依赖与运行方法，辅助文件便携",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "已检查README可读取并收集源码/辅助文件；尚未验证说明语义完整性。"
+    },
+    {
+      "id": "procedural_materials",
+      "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+      "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+      "source": "user_goal_2026-10-03 / seed delivery protocol",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": null,
+  "reference_boxes": null,
+  "vlm_spec_digest": "844c91e577937b2102d061dd00a1cb5f467464b44149dd7d49e5c3e66c3a9a13",
+  "formal_score_eligible": false,
+  "reference_views": [],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": false,
+  "presentation_policy": "fixed_neutral_studio_intrinsic_object_aesthetics_not_authored_lighting"
+}

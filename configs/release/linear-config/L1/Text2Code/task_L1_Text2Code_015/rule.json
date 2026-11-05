@@ -1,0 +1,66 @@
+{
+  "task_id": "L1/Text2Code/task_L1_Text2Code_015",
+  "category": "Text2Code",
+  "level": "L1",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {},
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/02c585085a31551abcf3/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_part_roles": 0.04,
+        "vlm_hub_features": 0.04,
+        "vlm_flange_holes": 0.04,
+        "vlm_shafts": 0.04,
+        "vlm_spacer": 0.04,
+        "vlm_washers": 0.04,
+        "vlm_bolts": 0.04,
+        "vlm_assembly_clearance": 0.04,
+        "vlm_topology": 0.04,
+        "vlm_solid_validity": 0.04,
+        "vlm_units": 0.04,
+        "vlm_hierarchy": 0.04,
+        "vlm_state_cycle": 0.04,
+        "vlm_glb_assembled": 0.04,
+        "vlm_materials": 0.04,
+        "vlm_aesthetic_composition": 0.1,
+        "vlm_aesthetic_light_color": 0.1,
+        "vlm_aesthetic_finish": 0.1,
+        "vlm_aesthetic_coherence": 0.1
+      },
+      "detail": {
+        "detail_semantic_hub_features": 0.06666666666666667,
+        "detail_semantic_flange_holes": 0.06666666666666667,
+        "detail_semantic_shafts": 0.06666666666666667,
+        "detail_semantic_spacer": 0.06666666666666667,
+        "detail_semantic_washers": 0.06666666666666667,
+        "detail_semantic_bolts": 0.06666666666666667
+      },
+      "content": {
+        "detail_semantic_hub_features": 0.06666666666666667,
+        "detail_semantic_flange_holes": 0.06666666666666667,
+        "detail_semantic_shafts": 0.06666666666666667,
+        "detail_semantic_spacer": 0.06666666666666667,
+        "detail_semantic_washers": 0.06666666666666667,
+        "detail_semantic_bolts": 0.06666666666666667
+      }
+    }
+  }
+}

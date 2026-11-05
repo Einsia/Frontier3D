@@ -1,0 +1,78 @@
+{
+  "status": "design_only_not_executable",
+  "requirements_source": "instruction.zh.md",
+  "requirements": [
+    {
+      "id": "B19-001",
+      "requirement_zh": "人形测试场·障碍段中途 设计机器人测试场里一段人形机器人通过障碍的赛道，采用顺赛道方向的斜上方长视角。"
+    },
+    {
+      "id": "B19-002",
+      "requirement_zh": "测试场约 10 × 4 米，地面为蓝色运动地胶并施划白色赛道边线，赛道标线宽 1.20 米（±20 毫米），沿全程连续；"
+    },
+    {
+      "id": "B19-003",
+      "requirement_zh": "末端扶手段按另列的 0.90 米净宽验收。"
+    },
+    {
+      "id": "B19-004",
+      "requirement_zh": "赛道要素依次布置：入口标线后一段 15° 坡道（坡长 1.50 米、宽 1.20 米，坡面防滑条纹）；"
+    },
+    {
+      "id": "B19-005",
+      "requirement_zh": "接三级台阶，每级高 0.15 米（±5 毫米）、踏面深 0.30 米、级间一致；"
+    },
+    {
+      "id": "B19-006",
+      "requirement_zh": "接一条跨越沟，沟宽 0.45 米、深 0.30 米，沟沿倒角、沟内涂警示黄；"
+    },
+    {
+      "id": "B19-007",
+      "requirement_zh": "接五根绕桩，桩径 0.08 米、高 0.50 米，相邻桩横向错位 0.40 米、纵向间距 0.80 米；"
+    },
+    {
+      "id": "B19-008",
+      "requirement_zh": "最后是一段扶手走廊，长 2.00 米、净宽 0.90 米，两侧扶手高 0.90 米、直径 0.04 米、立柱间距不超过 0.80 米。"
+    },
+    {
+      "id": "B19-009",
+      "requirement_zh": "人形机器人（身高 1.30 米、肩宽 0.40 米）冻结在第一级台阶上：前脚掌踩上第一级踏面、足尖越沿不超过 30 毫米，后腿仍触坡道面、膝关节弯曲约 60°，躯干前倾 8°（±2°），双臂一前一后摆开维持平衡，头部摄像头朝向下一级台阶。"
+    },
+    {
+      "id": "B19-010",
+      "requirement_zh": "赛道边立三盏补光灯柱（高 1.80 米）与一台三脚架摄像装置，起点与终点各设标牌。"
+    },
+    {
+      "id": "B19-011",
+      "requirement_zh": "可通行验收：赛道边线内侧除设计障碍外无任何杂物侵入，坡道两侧留 0.30 米安全边距。"
+    },
+    {
+      "id": "B19-012",
+      "requirement_zh": "可触及验收：台阶各级前沿、绕桩桩位均落在赛道中线 0.60 米带内。"
+    },
+    {
+      "id": "B19-013",
+      "requirement_zh": "可操作验收：机器人足底与坡道、台阶接触面贴合穿透不超过 3 毫米，几何平衡代理（躯干竖直延长线，不作为真实重心或动态稳定性证明）落在前脚支撑面内偏差不超过 0.05 米。"
+    },
+    {
+      "id": "B19-014",
+      "requirement_zh": "使用灰黑机身配橙色关节标识，场地背景为素色围挡，均匀高天棚灯加灯柱补光。"
+    },
+    {
+      "id": "B19-015",
+      "requirement_zh": "主视角沿赛道把坡道、台阶上的机器人与后续障碍串进同一纵深画面。"
+    },
+    {
+      "id": "B19-016",
+      "requirement_zh": "这是可编辑静态场景，不要求步态仿真、跌倒或传感器数据可视化。"
+    }
+  ],
+  "methods": [
+    "native rerun and render",
+    "world-space vertex dimensions and angles",
+    "signed contact/clearance measurements using geometric surfaces",
+    "sampled free-route widths and service-envelope distances",
+    "semantic object and material review"
+  ],
+  "unimplemented": "No automatic harness, validated reach solver, GT scene, calibrated aggregate score or model results."
+}

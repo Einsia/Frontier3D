@@ -1,0 +1,36 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements.",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "8dd245cef5dcd650a8da06ee40ac68b4d25164133a4d7f89a52710295eddc6a9",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "id": "reference-02",
+      "path": "references/reference-02.jpg",
+      "sha256": "0a843c670a2f061700f8da1871720cbee23ff3d994d17dda093556a0dede8d0b",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "id": "reference-03",
+      "path": "references/reference-03.jpg",
+      "sha256": "893162e3a21ce5d7ab825506f419c2fadfd8979202d0fdfa493c6c635c92b3ac",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "id": "reference-04",
+      "path": "references/reference-04.jpg",
+      "sha256": "8f40fdebf30cd04ffb8f9dd67e60a1ce9d8f0c16c5a5b0b714b66baba5cc27dc",
+      "width": 1280,
+      "height": 800
+    }
+  ]
+}

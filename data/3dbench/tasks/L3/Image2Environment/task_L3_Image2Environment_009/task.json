@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-r01",
+  "id": "L3/RealWorldEnvironment/HengdianPalaceDistrict",
+  "domain": "real_world",
+  "input_mode": "image",
+  "title": "现实：横店秦王宫前广场、宫门和相连院落",
+  "title_en": "Hengdian Qin Palace: Forecourt, Gate and Courtyards",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "8e579c52b213e229127d5607feac7ee101fc3e303970f71122d61cf6a6edc832",
+  "chinese_instruction_sha256": "d08e155dd512a2290459d3d7a9a3160d8099d8e59ae3436f96ead2d410d1a66e",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "5ccfb8064a42a8719b9070fecbd7fa1f7ed072b4c5fd5c48935c51c97b367f80",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

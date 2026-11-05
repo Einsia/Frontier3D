@@ -1,0 +1,28 @@
+{
+  "status": "native_input_validated",
+  "targets_removed": [
+    "Bathtube_0001",
+    "Bathtube_0002"
+  ],
+  "preserved_mesh_count": 854,
+  "preserved_meshes_equal_to_reference": true,
+  "orphan_data_purged": true,
+  "embedded_texts_removed": true,
+  "missing_textures": [],
+  "linked_libraries": 0,
+  "settings": {
+    "engine": "CYCLES",
+    "resolution": [
+      1200,
+      800
+    ],
+    "resolution_percentage": 100,
+    "view_transform": "AgX",
+    "look": "None",
+    "exposure": 0.0,
+    "camera": "Camera_Main",
+    "samples": 32
+  },
+  "blender_version": "5.2.1 LTS",
+  "scope": "Input integrity and actual preview only. Not a reconstruction evaluator or model execution test."
+}

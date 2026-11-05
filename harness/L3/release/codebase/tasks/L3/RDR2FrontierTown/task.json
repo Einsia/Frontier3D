@@ -1,0 +1,37 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-g03",
+  "id": "L3/GameEnvironment/RDR2FrontierTown",
+  "domain": "game",
+  "input_mode": "image",
+  "title": "荒野大镖客2：瓦伦丁中心街区",
+  "title_en": "Red Dead Redemption 2: Central Valentine District",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "../COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "layout": 0.2,
+    "interaction": 0.15,
+    "environment": 0.2,
+    "objects": 0.3,
+    "rubric": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "744bce7b8b7ad425c4c2ec900947f2a656c75af85a933e476eae7c0b2927fb4b",
+  "chinese_instruction_sha256": "ef6cc731f8f4d96465664b8126f9c18af54190e8efffbe3d020fd31f72da1252",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "pending",
+    "scope": "Task-specific objective test implementation and reference object annotations are separate from generation readiness."
+  }
+}

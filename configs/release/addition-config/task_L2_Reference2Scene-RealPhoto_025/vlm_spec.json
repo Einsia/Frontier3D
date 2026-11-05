@@ -1,0 +1,240 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2c0c892153c5eb37c248336b87261f0f9322a52f0ec1eb89e74169ce31521906",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+    "image_size": [
+      800,
+      533
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "64930d1ee3db4fe201c7dedf8356b4a4fae4a672c96ca5ed2f268dc745a4bd92",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-9c6555ca5781848c911b10b0a08b23a3cd274f45ae8e60a5c87e5e0bb0357705"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "覆盖可见壶盖、透明壶身、内部结构及左侧深色把手；包含深色表面，不包含台面投影。",
+        "boxes": [
+          [
+            0.166,
+            0.306,
+            0.496,
+            0.94
+          ]
+        ],
+        "id": "t01",
+        "query": "大型滤水壶",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "框定木碗可见外缘；左侧按原图裁切，碗中水果不另作本类实例。",
+        "boxes": [
+          [
+            0,
+            0.428,
+            0.212,
+            0.82
+          ]
+        ],
+        "id": "t02",
+        "query": "木质果碗",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "覆盖右前方四个可分辨洋葱的可见部分，包括右缘裁切的深色洋葱；不把底缘难以解析的细小碎片列为实例。",
+        "boxes": [
+          [
+            0.71,
+            0.722,
+            0.819,
+            0.854
+          ],
+          [
+            0.78,
+            0.69,
+            0.879,
+            0.835
+          ],
+          [
+            0.828,
+            0.805,
+            0.946,
+            0.966
+          ],
+          [
+            0.939,
+            0.854,
+            1,
+            0.985
+          ]
+        ],
+        "id": "t03",
+        "query": "前景洋葱",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "分别覆盖前景大锅及右侧承装洋葱的可见锅具；右侧框包括上伸的环状把手；画外部分不补框，反光不另计实例。",
+        "boxes": [
+          [
+            0.448,
+            0.767,
+            0.924,
+            1
+          ],
+          [
+            0.818,
+            0.718,
+            1,
+            1
+          ]
+        ],
+        "id": "t04",
+        "query": "金属锅具",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "仅指托盘前的带盖白色储物罐，覆盖罐盖及罐身；不将前景无明确类别的白色柱状物归入此类。",
+        "boxes": [
+          [
+            0.522,
+            0.295,
+            0.623,
+            0.507
+          ]
+        ],
+        "id": "t05",
+        "query": "白色储物罐",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "覆盖后方透明碗的可见外缘及中央轴；前方被滤水壶遮挡处不推断隐藏轮廓，不包含后方包装盒或下方独立透明盖。",
+        "boxes": [
+          [
+            0.324,
+            0.203,
+            0.534,
+            0.401
+          ]
+        ],
+        "id": "t06",
+        "query": "透明料理机碗",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "分别框定上层完整手套和下层露出的手套；上层包括黑色袖口，下层仅覆盖可辨露出部分，不推断遮挡后的完整轮廓。",
+        "boxes": [
+          [
+            0.552,
+            0.446,
+            0.932,
+            0.647
+          ],
+          [
+            0.594,
+            0.593,
+            0.84,
+            0.675
+          ]
+        ],
+        "id": "t07",
+        "query": "蓝色隔热手套",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "覆盖单株盆栽的可见叶片、枝干及花盆；顶部按画框裁切，包含深色叶片，排除旁边包装袋。",
+        "boxes": [
+          [
+            0.055,
+            0,
+            0.358,
+            0.437
+          ]
+        ],
+        "id": "t08",
+        "query": "后方盆栽",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+  "family": "Reference2Scene",
+  "instruction_sha256": "5f07b6ef2d08a95a7ee65e6184c1487d0e3366dd634c96005432b93f517afdda",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "99d1a409f84840572fc203eb4e3783f1ad3d93daa704997109bb090f9cbe51e7",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-b2dd22b94f41d5f30b659dd87f98dad9a2cdc20d2ff67c8107abd6d1419e3225"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "每框对应一份完整堆叠的可见主体，包括蛋、肉、面包和贴附酱汁；排除向外独立伸展的脆片、散落装饰和投影。后方主体的遮挡边界以可见范围为准，不补估隐藏底座。",
+        "boxes": [
+          [
+            0.07,
+            0.018,
+            0.662,
+            0.475
+          ],
+          [
+            0.23,
+            0.305,
+            0.939,
+            0.892
+          ]
+        ],
+        "id": "T01",
+        "query": "蛋与面包堆叠主体",
+        "weight": 0.4,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位被黄色酱汁覆盖的蛋体，包含可辨白色蛋缘；不纳入向肉层或面包延伸的酱汁流挂、顶上脆片或投影。覆盖关系使蛋与酱汁边界存在视觉不确定性。",
+        "boxes": [
+          [
+            0.202,
+            0.019,
+            0.66,
+            0.318
+          ],
+          [
+            0.407,
+            0.305,
+            0.849,
+            0.653
+          ]
+        ],
+        "id": "T02",
+        "query": "酱汁覆盖的柔软蛋体",
+        "weight": 0.35,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "每框包围对应堆叠中全部可辨肉层，包括深褐色纤维与伸出的肉边；框内可能含遮挡物和空隙，不将其判为肉。忽略无法分辨的小碎屑，不包含投影。",
+        "boxes": [
+          [
+            0.071,
+            0.138,
+            0.418,
+            0.474
+          ],
+          [
+            0.27,
+            0.427,
+            0.938,
+            0.81
+          ]
+        ],
+        "id": "T03",
+        "query": "褐色纤维状肉层",
+        "weight": 0.25,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

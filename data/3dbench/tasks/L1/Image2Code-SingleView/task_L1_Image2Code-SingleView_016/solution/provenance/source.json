@@ -1,0 +1,19 @@
+{
+  "uid": "2edbedffae6b49ee97f919a8528329ba",
+  "name": "Human Heart",
+  "source_url": "https://sketchfab.com/3d-models/human-heart-2edbedffae6b49ee97f919a8528329ba",
+  "author": {
+    "displayName": "Rudy",
+    "profileUrl": "https://sketchfab.com/Rudy27"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "14bf4e9ef97e3efb66f819228fe2e8e2ffda92283ffdee499018c4e26cd381e7",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

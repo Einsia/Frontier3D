@@ -1,0 +1,142 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_020",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2d216c372b840cd1e72c169f15811581860119acf22725204edd91eecb1eddbc",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_020",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "d443aa774e2b54ed05ffc3425172daa9e1c6989cc66e948ddef034df7deb0e67",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-854d974bd8133c8afa3e9916c4cf269fe1ca0b290bc1cd81fabe027aa3c0574c"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_horn",
+        "query": "完整法国号",
+        "weight": 0.4,
+        "boxes": [
+          [
+            0.12,
+            0.285,
+            0.844,
+            0.809
+          ]
+        ],
+        "boundary_notes": "完整乐器一个实例，包括吹嘴、暗色喇叭表面和所有可见管路；不含背景。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_bell",
+        "query": "扩张喇叭口及颈部",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.12,
+            0.37,
+            0.484,
+            0.716
+          ]
+        ],
+        "boundary_notes": "以左侧扩张口、口沿和收窄至盘管连接处的颈部为一个组件；包含暗金表面，不延伸到主体盘管。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_valves",
+        "query": "阀门总成",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.499,
+            0.483,
+            0.789,
+            0.744
+          ]
+        ],
+        "boundary_notes": "将横向银色管段、圆形阀盖、连杆和右侧拨键作为一个总成；不将微小紧固件单独定位。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_mouthpiece",
+        "query": "顶部杯形吹嘴",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.803,
+            0.285,
+            0.844,
+            0.365
+          ]
+        ],
+        "boundary_notes": "仅顶部银色杯形吹嘴及其收窄柄部；下方金色套环和长引管不属于此框。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "version": "5.8.3",
+  "source_repository": "https://github.com/EpicGames/UnrealEngine",
+  "source_commit_from_zip_comment": "396c9f059903aed5fec78ecd3d437a40c6415368",
+  "archive_filename": "UnrealEngine-release.zip",
+  "archive_sha256": "3a69f8e7167dbf4ada98477bc2a713dff40e05202e1228b73ecc17daff670a4f",
+  "archive_provenance": "User-supplied GitHub source archive; version read from Engine/Build/Build.version",
+  "dependency_exclusions": [
+    "Win32",
+    "Win64",
+    "Mac",
+    "Android",
+    "IOS",
+    "TVOS"
+  ],
+  "target_platform": "Linux x86_64",
+  "validation_status": "compiled_and_vulkan_render_verified",
+  "toolchain": "v26_clang-20.1.8-rockylinux8",
+  "built_targets": [
+    "ShaderCompileWorker",
+    "UnrealEditor",
+    "UnrealPak"
+  ],
+  "runtime_validation": {
+    "project": "Minecraft pilot with explicit assistant compatibility patch",
+    "gpu": "NVIDIA H100",
+    "render_size": [
+      1280,
+      720
+    ],
+    "scope": "Engine and observer integration; not an autonomous model score"
+  }
+}

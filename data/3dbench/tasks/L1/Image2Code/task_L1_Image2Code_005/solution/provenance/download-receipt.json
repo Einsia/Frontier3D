@@ -1,0 +1,17 @@
+{
+  "uid": "4954fbf220d748ecbd82005f31d29f15",
+  "file": "source.glb",
+  "download_filename": "typewriter.glb",
+  "bytes": 24158944,
+  "sha256": "f0dabc8f7053fd42552a7284f8ca4c1182c20aedf14ba30c87286cf05873aea8",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "landout (https://sketchfab.com/landout)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/typewriter-4954fbf220d748ecbd82005f31d29f15",
+    "title": "Typewriter"
+  },
+  "gltf_meshes": 2,
+  "gltf_images": 6,
+  "animations": []
+}

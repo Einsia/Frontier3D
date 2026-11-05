@@ -1,0 +1,56 @@
+schema_version = 1
+harness_version = "l2-harness-v0.6.0"
+task_id = "L2/Brief2Scene"
+level = 2
+
+[generator]
+command = "src.generator"
+runtime = "local"
+model_env = "OPENAI_MODEL"
+reasoning_effort = "max"
+timeout_seconds = 57600
+max_attempts = 1
+max_total_seconds = 115200
+
+[retry_policy]
+retry_timeout = true
+retry_transport_error = true
+retry_empty_output = false
+retry_protocol_error = false
+max_retries = 5
+backoff_seconds = [2]
+
+[workspace]
+environment_files = []
+output_files = ["solution.py", "scene.blend", "main.png", "alternate.png"]
+working_directory_mode = "staged_readonly"
+network = false
+
+[execution]
+sandbox = "bubblewrap"
+timeout_seconds = 28800
+max_total_seconds = 86400
+threads = 8
+
+[audit]
+max_mean_pixel_error = 0.01
+max_p99_pixel_error = 0.05
+
+[[audit.views]]
+artifact = "main.png"
+camera = "Main Camera"
+resolution = [1280, 960]
+
+[[audit.views]]
+artifact = "alternate.png"
+camera = "Alternate Camera"
+resolution = [1280, 960]
+
+[semantics]
+roles = ["ground", "building", "tower_crane", "mixer_truck", "dump_truck", "material_storage", "road", "gate", "fence", "work_zone"]
+
+[preview]
+max_repairs = 1
+
+[requirements]
+path = "requirements.json"

@@ -1,0 +1,13 @@
+# l2-edit-embodied-v5.0.0
+
+18% numeric + 54% target + 18% preservation + 10% physics
+
+Only changed/additional geometry must contact the preserved initial scene. Unchanged initial geometry is a trusted fixture, not a newly generated answer. Pure lighting edits earn physical preservation credit by preserving the supplied geometry; abstract light sources are not solid floating objects.
+
+## 评分
+
+本题最终得分：`20% numeric + 20% preservation + 20% vlm + 30% target + 10% detail`。各分项定义与取证流程见[评分说明](../../../../../../../docs/cn/scoring.md)。
+
+内容缺失、形状或布局偏差降低相应质量分；技术故障及必需证据缺失保留未完成状态，不能补零或重分配权重。交付、执行、加载、依赖及真实性按题目合同独立检查。评分采用绑定的真实场景重渲染证据，保留提交图片与不一致诊断。
+
+数值检查仅覆盖已实现且有证据的指标，未实现的精确计数不视为达标。视觉判断不能证明隐藏几何、真实接触或完整物理正确性；参考区域和感知评分仍有校准限制。

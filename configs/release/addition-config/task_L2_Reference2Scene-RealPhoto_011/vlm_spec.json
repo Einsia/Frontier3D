@@ -1,0 +1,132 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+  "family": "Reference2Scene",
+  "instruction_sha256": "09181e30bc77a6d3a38f230208d0ca829ff0a53f8b5f54aef485baf7652ed736",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "0f402af6cd1b3853dac943e45429968cdd1ad2ccf179715b20712082c89ff3aa",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-753b1655075a488b0223ecd4aa9159bac6a6badf63e55e1121716ed372a34e6b"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "依次为左侧船、中央白色封闭舱船、中央右侧窄船、最右侧船和远处小船。整船范围包括可辨认的篷顶、支架、发动机、船艏附件及附着旗杆旗帜，包含暗色船体；不延伸到系泊绳、水面投影或倒影。遮挡处只框可见范围，不推测隐藏轮廓；极小远处船点不纳入。",
+        "boxes": [
+          [
+            0.183,
+            0.418,
+            0.448,
+            0.583
+          ],
+          [
+            0.505,
+            0.382,
+            0.692,
+            0.663
+          ],
+          [
+            0.679,
+            0.343,
+            0.812,
+            0.598
+          ],
+          [
+            0.794,
+            0.346,
+            0.976,
+            0.612
+          ],
+          [
+            0.61,
+            0.318,
+            0.646,
+            0.35
+          ]
+        ],
+        "id": "T01",
+        "query": "可辨认的完整船只",
+        "weight": 0.8,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "框住画面中部主要远岛群的连续可见山体，包含深色山坡及后方浅色山峰；不含天空、水面或倒影。右侧极小岛点及左端难分辨的低对比远景不单独定位。",
+        "boxes": [
+          [
+            0.365,
+            0.259,
+            0.734,
+            0.31
+          ]
+        ],
+        "id": "T02",
+        "query": "主要远处岛屿山体",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

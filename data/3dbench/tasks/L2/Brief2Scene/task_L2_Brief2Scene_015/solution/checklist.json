@@ -1,0 +1,66 @@
+{
+  "status": "design_only_not_executable",
+  "requirements_source": "instruction.zh.md",
+  "requirements": [
+    {
+      "id": "B15-001",
+      "requirement_zh": "工具间·挂板取工具 设计工具间里固定臂机械从挂板取工具的场景，采用工作台侧斜上方视角。"
+    },
+    {
+      "id": "B15-002",
+      "requirement_zh": "工具间约 3.0 × 2.4 米，墙面为穿孔隔音板。"
+    },
+    {
+      "id": "B15-003",
+      "requirement_zh": "工作台长 1.50 米、宽 0.70 米、高 0.90 米，台面为钢面并局部划线；"
+    },
+    {
+      "id": "B15-004",
+      "requirement_zh": "台钳固定在台面左端，钳口夹持一只法兰盘零件（直径 0.12 米、厚 0.03 米），钳口与零件接触无穿插。"
+    },
+    {
+      "id": "B15-005",
+      "requirement_zh": "台后墙上挂一块 1.20 × 0.80 米工具挂板，底边离台面 0.10 米：板上按工具轮廓描线悬挂扳手五把、螺丝刀四把、钳子两把，其中双头梅花扳手的轮廓空位可见（工具被取走），空位轮廓线完整清晰。"
+    },
+    {
+      "id": "B15-006",
+      "requirement_zh": "固定臂机械装在台面后缘中部：基座高 0.95 米，臂展 0.85 米，末端两指夹爪夹住那把扳手的柄部中部，扳手悬在台面上方 0.30 米，扳手梅花环工作端朝向台钳上的法兰盘、指向偏差不超过 5°，夹爪指面与扳手柄贴合穿透不超过 2 毫米。"
+    },
+    {
+      "id": "B15-007",
+      "requirement_zh": "台面上另放待装螺栓三只、抹布一块与零件托盘一只。"
+    },
+    {
+      "id": "B15-008",
+      "requirement_zh": "可通行验收：工作台前操作位进深不小于 0.80 米，侧墙至台缘通道净宽 0.90 米且连续。"
+    },
+    {
+      "id": "B15-009",
+      "requirement_zh": "可触及验收：挂板十一个悬挂点位（包含已取走扳手的空位）距臂基座均不超过 0.85 米，高度落在 0.95–1.75 米工作带内。"
+    },
+    {
+      "id": "B15-010",
+      "requirement_zh": "可操作验收：扳手空位轮廓与被取扳手外形完全互补，挂板上其余工具无一件与邻位搭叠。"
+    },
+    {
+      "id": "B15-011",
+      "requirement_zh": "使用灰白墙板、橙色挂板工具轮廓线、深灰机械臂与冷白工具间照明。"
+    },
+    {
+      "id": "B15-012",
+      "requirement_zh": "主视角同框机械臂、扳手与挂板空位，第二视角可从台钳方向回望。"
+    },
+    {
+      "id": "B15-013",
+      "requirement_zh": "这是可编辑静态场景，不要求工具使用动画或装配过程。"
+    }
+  ],
+  "methods": [
+    "native rerun and render",
+    "world-space vertex dimensions and angles",
+    "signed contact/clearance measurements using geometric surfaces",
+    "sampled free-route widths and service-envelope distances",
+    "semantic object and material review"
+  ],
+  "unimplemented": "No automatic harness, validated reach solver, GT scene, calibrated aggregate score or model results."
+}

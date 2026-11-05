@@ -1,0 +1,423 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+  "detail_checks": [
+    {
+      "id": "detail_open_toe_straps",
+      "question": "是否保留露趾开口、前部横向带和踝部环带的局部形态？",
+      "source_quote": "Preserve the open toe, front strap, ankle strap",
+      "weight": 0.2
+    },
+    {
+      "id": "detail_insole_sole",
+      "question": "鞋垫是否呈连续弯曲形态，鞋底是否保持薄的截面？",
+      "source_quote": "curved insole, thin sole",
+      "weight": 0.16
+    },
+    {
+      "id": "detail_heel_structure",
+      "question": "后跟是否具有图示的雕塑性结构和可见负空间？",
+      "source_quote": "sculptural heel structure, including the negative spaces in the heel",
+      "weight": 0.2
+    },
+    {
+      "id": "detail_surface_geometry",
+      "question": "可见表面是否保留连续曲率、厚度、凹陷、开口和连接关系？",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "weight": 0.18
+    },
+    {
+      "id": "detail_separable_parts",
+      "question": "独立部件是否可编辑为独立对象或清晰分离的网格岛？",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands",
+      "weight": 0.14
+    },
+    {
+      "id": "detail_unseen_surfaces",
+      "question": "不可见表面是否以合理的完整几何延续，而没有添加内部机械结构？",
+      "source_quote": "complete unseen surfaces plausibly without inventing internal machinery",
+      "weight": 0.12
+    }
+  ],
+  "limitations": [
+    "单张视图无法可靠确定鞋体背面、底面和内部结构；这些区域只能按指令要求作合理延续。",
+    "指令中的“maximum overall span”未指定测量轴或具体包围盒定义，本计划按排除摄像机和灯光后的几何轴对齐包围盒最大尺寸解释。",
+    "图像中的材质区域和小型标志细节受单视角、遮挡和分辨率限制；小标志不作为可读文字要求。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": 0.02,
+      "id": "num_max_overall_span",
+      "measurement_definition": "对场景中所有目标几何求轴对齐包围盒，取三轴尺寸中的最大值；排除摄像机和灯光。",
+      "quantity": "整体最大跨度",
+      "relation": "at_most",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights.",
+      "target": 1.0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "region_full_footwear",
+      "label": "完整高跟鞋可见主体轮廓",
+      "polygon": [
+        [
+          0.25,
+          0.145
+        ],
+        [
+          0.46,
+          0.143
+        ],
+        [
+          0.69,
+          0.18
+        ],
+        [
+          0.735,
+          0.39
+        ],
+        [
+          0.703,
+          0.55
+        ],
+        [
+          0.701,
+          0.75
+        ],
+        [
+          0.63,
+          0.793
+        ],
+        [
+          0.58,
+          0.862
+        ],
+        [
+          0.39,
+          0.89
+        ],
+        [
+          0.25,
+          0.86
+        ],
+        [
+          0.255,
+          0.75
+        ],
+        [
+          0.36,
+          0.65
+        ],
+        [
+          0.46,
+          0.48
+        ],
+        [
+          0.46,
+          0.27
+        ]
+      ],
+      "weight": 0.28
+    },
+    {
+      "id": "region_open_toe_front",
+      "label": "前部露趾区域与前带",
+      "polygon": [
+        [
+          0.253,
+          0.745
+        ],
+        [
+          0.316,
+          0.725
+        ],
+        [
+          0.47,
+          0.742
+        ],
+        [
+          0.541,
+          0.783
+        ],
+        [
+          0.535,
+          0.85
+        ],
+        [
+          0.461,
+          0.882
+        ],
+        [
+          0.305,
+          0.876
+        ],
+        [
+          0.25,
+          0.853
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "region_insole_upper",
+      "label": "弯曲鞋垫和鞋面区域",
+      "polygon": [
+        [
+          0.465,
+          0.242
+        ],
+        [
+          0.594,
+          0.216
+        ],
+        [
+          0.676,
+          0.267
+        ],
+        [
+          0.681,
+          0.397
+        ],
+        [
+          0.638,
+          0.564
+        ],
+        [
+          0.59,
+          0.724
+        ],
+        [
+          0.524,
+          0.812
+        ],
+        [
+          0.431,
+          0.815
+        ],
+        [
+          0.365,
+          0.75
+        ],
+        [
+          0.447,
+          0.606
+        ],
+        [
+          0.488,
+          0.439
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "region_ankle_strap",
+      "label": "踝部环带与扣件",
+      "polygon": [
+        [
+          0.458,
+          0.167
+        ],
+        [
+          0.578,
+          0.145
+        ],
+        [
+          0.665,
+          0.166
+        ],
+        [
+          0.69,
+          0.218
+        ],
+        [
+          0.659,
+          0.257
+        ],
+        [
+          0.558,
+          0.257
+        ],
+        [
+          0.464,
+          0.231
+        ]
+      ],
+      "weight": 0.12
+    },
+    {
+      "id": "region_sculptural_heel",
+      "label": "雕塑性后跟和负空间",
+      "polygon": [
+        [
+          0.604,
+          0.481
+        ],
+        [
+          0.674,
+          0.473
+        ],
+        [
+          0.702,
+          0.531
+        ],
+        [
+          0.674,
+          0.613
+        ],
+        [
+          0.698,
+          0.636
+        ],
+        [
+          0.669,
+          0.69
+        ],
+        [
+          0.684,
+          0.724
+        ],
+        [
+          0.629,
+          0.745
+        ],
+        [
+          0.594,
+          0.711
+        ],
+        [
+          0.624,
+          0.651
+        ],
+        [
+          0.598,
+          0.595
+        ]
+      ],
+      "weight": 0.2
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "sem_subject_identity",
+      "question": "图中是否重建为单只黑色开放式高跟鞋？",
+      "source_quote": "Reconstruct the displayed high-heeled footwear arrangement.",
+      "weight": 0.14
+    },
+    {
+      "id": "sem_open_toe_strap_inventory",
+      "question": "是否同时存在露趾开口、前带和踝带？",
+      "source_quote": "Preserve the open toe, front strap, ankle strap",
+      "weight": 0.14
+    },
+    {
+      "id": "sem_insole_sole_heel_inventory",
+      "question": "是否包含弯曲鞋垫、薄鞋底和雕塑性后跟结构？",
+      "source_quote": "and curved insole, thin sole and sculptural heel structure",
+      "weight": 0.14
+    },
+    {
+      "id": "sem_heel_negative_spaces",
+      "question": "后跟结构中是否保留可见的负空间？",
+      "source_quote": "including the negative spaces in the heel",
+      "weight": 0.1
+    },
+    {
+      "id": "sem_placement_material",
+      "question": "鞋的可见摆放关系和不同材质区域是否匹配参考图？",
+      "source_quote": "Match the visible placement and material regions.",
+      "weight": 0.14
+    },
+    {
+      "id": "sem_geometry_completeness",
+      "question": "是否使用完整三维几何，并为不可见表面提供合理延续？",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "weight": 0.14
+    },
+    {
+      "id": "sem_no_camera_shell",
+      "question": "是否避免用图像平面或仅面向相机的薄壳替代完整几何？",
+      "source_quote": "Image planes or camera-facing shells are not substitutes for full geometry.",
+      "weight": 0.1
+    },
+    {
+      "id": "sem_static_pose_export",
+      "question": "是否在第1帧保持静态姿态，并将同一姿态导出为scene.glb？",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "weight": 0.1
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "按鞋体、带体、扣件和后跟结构的可见实体边界标注；不包含投影阴影或反射，遮挡处按可见轮廓截断。",
+      "boxes": [
+        [
+          0.25,
+          0.145,
+          0.735,
+          0.89
+        ]
+      ],
+      "id": "target_full_footwear",
+      "query": "完整高跟鞋可见主体",
+      "weight": 0.28
+    },
+    {
+      "boundary_notes": "仅包含前部横向带的可见实体，不包含其投射阴影；图中仅有一个可辨识实例。",
+      "boxes": [
+        [
+          0.27,
+          0.747,
+          0.541,
+          0.852
+        ]
+      ],
+      "id": "target_front_strap",
+      "query": "前部横向带",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "包含从鞋头到踝部的鞋垫和包覆鞋面可见实体，避开后跟金属结构；被带体遮挡的部分不外推。",
+      "boxes": [
+        [
+          0.36,
+          0.241,
+          0.681,
+          0.819
+        ]
+      ],
+      "id": "target_insole_upper",
+      "query": "弯曲鞋垫与鞋面",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "包含踝部环带及其可见扣件和带尾，排除背景与阴影；图中仅有一个可辨识实例。",
+      "boxes": [
+        [
+          0.458,
+          0.145,
+          0.69,
+          0.264
+        ]
+      ],
+      "id": "target_ankle_strap",
+      "query": "踝部环带和扣件",
+      "weight": 0.12
+    },
+    {
+      "boundary_notes": "包含可见的金色雕塑性后跟实体及其支撑连接，按实体外轮廓标注；内部空隙保持为空，不把空隙标成实体。",
+      "boxes": [
+        [
+          0.594,
+          0.477,
+          0.703,
+          0.747
+        ]
+      ],
+      "id": "target_sculptural_heel",
+      "query": "雕塑性后跟结构",
+      "weight": 0.2
+    }
+  ]
+}

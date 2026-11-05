@@ -1,0 +1,540 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_016",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_tray",
+      "label": "椭圆托盘及两端把手",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.182,
+          0.471
+        ],
+        [
+          0.411,
+          0.469
+        ],
+        [
+          0.635,
+          0.515
+        ],
+        [
+          0.779,
+          0.579
+        ],
+        [
+          0.825,
+          0.648
+        ],
+        [
+          0.779,
+          0.694
+        ],
+        [
+          0.666,
+          0.719
+        ],
+        [
+          0.47,
+          0.686
+        ],
+        [
+          0.298,
+          0.625
+        ],
+        [
+          0.188,
+          0.556
+        ]
+      ]
+    },
+    {
+      "id": "r_teapot",
+      "label": "茶壶、壶盖、壶嘴及把手",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.438,
+          0.356
+        ],
+        [
+          0.469,
+          0.354
+        ],
+        [
+          0.487,
+          0.412
+        ],
+        [
+          0.493,
+          0.388
+        ],
+        [
+          0.557,
+          0.348
+        ],
+        [
+          0.62,
+          0.395
+        ],
+        [
+          0.68,
+          0.417
+        ],
+        [
+          0.682,
+          0.495
+        ],
+        [
+          0.63,
+          0.54
+        ],
+        [
+          0.61,
+          0.57
+        ],
+        [
+          0.515,
+          0.569
+        ],
+        [
+          0.467,
+          0.522
+        ],
+        [
+          0.447,
+          0.451
+        ]
+      ]
+    },
+    {
+      "id": "r_left_set",
+      "label": "左侧杯碟",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.267,
+          0.42
+        ],
+        [
+          0.374,
+          0.419
+        ],
+        [
+          0.424,
+          0.468
+        ],
+        [
+          0.45,
+          0.51
+        ],
+        [
+          0.432,
+          0.549
+        ],
+        [
+          0.343,
+          0.569
+        ],
+        [
+          0.257,
+          0.548
+        ],
+        [
+          0.22,
+          0.516
+        ],
+        [
+          0.231,
+          0.493
+        ],
+        [
+          0.272,
+          0.48
+        ]
+      ]
+    },
+    {
+      "id": "r_right_set",
+      "label": "右侧杯碟",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.605,
+          0.519
+        ],
+        [
+          0.699,
+          0.516
+        ],
+        [
+          0.743,
+          0.537
+        ],
+        [
+          0.758,
+          0.57
+        ],
+        [
+          0.791,
+          0.606
+        ],
+        [
+          0.785,
+          0.641
+        ],
+        [
+          0.718,
+          0.665
+        ],
+        [
+          0.612,
+          0.651
+        ],
+        [
+          0.557,
+          0.618
+        ],
+        [
+          0.564,
+          0.592
+        ],
+        [
+          0.604,
+          0.574
+        ]
+      ]
+    },
+    {
+      "id": "r_small_vessel",
+      "label": "前方带盖小罐",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.435,
+          0.495
+        ],
+        [
+          0.458,
+          0.514
+        ],
+        [
+          0.49,
+          0.531
+        ],
+        [
+          0.502,
+          0.574
+        ],
+        [
+          0.48,
+          0.62
+        ],
+        [
+          0.451,
+          0.639
+        ],
+        [
+          0.407,
+          0.632
+        ],
+        [
+          0.381,
+          0.591
+        ],
+        [
+          0.382,
+          0.548
+        ],
+        [
+          0.401,
+          0.52
+        ]
+      ]
+    },
+    {
+      "id": "r_spoon",
+      "label": "托盘前缘小勺",
+      "weight": 0.05,
+      "polygon": [
+        [
+          0.347,
+          0.629
+        ],
+        [
+          0.451,
+          0.634
+        ],
+        [
+          0.505,
+          0.624
+        ],
+        [
+          0.531,
+          0.624
+        ],
+        [
+          0.527,
+          0.639
+        ],
+        [
+          0.484,
+          0.653
+        ],
+        [
+          0.45,
+          0.647
+        ],
+        [
+          0.347,
+          0.647
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_tray",
+      "query": "带两端装饰把手的完整椭圆托盘",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.184,
+          0.47,
+          0.824,
+          0.718
+        ]
+      ],
+      "boundary_notes": "包括黑色盘底、侧壁、金色盘沿和两端把手；不包括投影。上方器皿造成的遮挡不改变托盘可见外缘范围。"
+    },
+    {
+      "id": "t_teapot",
+      "query": "含盖、壶嘴和把手的茶壶",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.439,
+          0.348,
+          0.68,
+          0.571
+        ]
+      ],
+      "boundary_notes": "包含盖钮、深色盖面、左侧壶嘴、右侧把手及底足；排除前方小罐。"
+    },
+    {
+      "id": "t_cups",
+      "query": "带把手的敞口茶杯",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.268,
+          0.42,
+          0.427,
+          0.549
+        ],
+        [
+          0.603,
+          0.518,
+          0.758,
+          0.649
+        ]
+      ],
+      "boundary_notes": "分别框定左右茶杯，包含杯口、深色内壁、杯足及把手，不含杯碟。"
+    },
+    {
+      "id": "t_saucers",
+      "query": "茶杯下方的浅碟",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.219,
+          0.478,
+          0.456,
+          0.566
+        ],
+        [
+          0.556,
+          0.57,
+          0.791,
+          0.666
+        ]
+      ],
+      "boundary_notes": "包括浅碟全部可见黑色表面、金色边缘与厚度；中部被杯子遮挡，不补推隐藏边界。"
+    },
+    {
+      "id": "t_small_vessel",
+      "query": "带盖的小型圆腹容器",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.378,
+          0.495,
+          0.503,
+          0.639
+        ]
+      ],
+      "boundary_notes": "包括盖钮、盖面、罐身、可见侧耳和底足；不含后方茶壶及前方勺子。"
+    },
+    {
+      "id": "t_spoon",
+      "query": "金色小勺",
+      "weight": 0.05,
+      "boxes": [
+        [
+          0.346,
+          0.624,
+          0.532,
+          0.653
+        ]
+      ],
+      "boundary_notes": "包含左侧细长装饰柄及右侧勺斗；不将附近花纹或反光当作独立器物。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_tray",
+      "source_quote": "the tray rim and handles",
+      "question": "是否重现参考中的浅椭圆托盘、连续盘沿及两端装饰把手？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_teapot",
+      "source_quote": "teapot with lid, spout and handle",
+      "question": "是否重现圆腹茶壶及其壶盖、上扬壶嘴和弧形把手？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_cups",
+      "source_quote": "the cups",
+      "question": "是否重现参考中两只带把手的敞口茶杯及其整体形态？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_saucers",
+      "source_quote": "saucers",
+      "question": "是否重现两只茶杯下方的浅圆碟？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_vessel",
+      "source_quote": "small vessels visible in the supplied views",
+      "question": "是否重现茶壶前方带盖、圆腹、带小侧耳的容器？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_spoon",
+      "source_quote": "Reconstruct the tea-tray arrangement",
+      "question": "是否保留参考托盘前部可见的金色小勺？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_layout",
+      "source_quote": "Preserve their relative placement",
+      "question": "茶壶居后、杯碟分列两侧、小罐居前及勺子靠前缘的相对位置和遮挡是否匹配参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_appearance",
+      "source_quote": "decorative ceramic pattern regions. Fine painted motifs may be simplified.",
+      "question": "是否保留乳白陶瓷、深色盘碟及盖面、金色边饰和花卉纹样区域，且仅简化细小彩绘？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_geometry",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "器物是否为可编辑的完整三维几何，而非图像平面或仅朝向相机的壳片？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_components",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "独立部件是否可作为对象或清晰可分的网格岛编辑，同时允许有机表面连续？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_axes",
+      "source_quote": "Use metres, Z up",
+      "question": "场景是否采用米制并以 Z 轴为上方？",
+      "weight": 0.05
+    },
+    {
+      "id": "s_pose",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "question": "第 1 帧是否保存最终静态摆放，且 scene.glb 与其姿态一致？",
+      "weight": 0.05
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_tray_rim",
+      "source_quote": "the tray rim and handles",
+      "question": "托盘是否具有浅凹盘面、连续薄盘沿和向下延伸的侧壁厚度？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_tray_handles",
+      "source_quote": "the tray rim and handles",
+      "question": "两端把手是否形成镂空拱形握持空间，并以装饰性弯曲端部连接盘沿？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_teapot_body",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "茶壶圆腹至收窄颈部、底足的曲面是否连续，环形把手是否在上下连接处自然接合？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_spout",
+      "source_quote": "teapot with lid, spout and handle",
+      "question": "壶嘴是否由腹部连续弯曲上扬，末端具有真实开口和可见壁厚？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_lids",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "茶壶及小罐的盖是否具有隆起盖面、外缘台阶、收颈盖钮和与器口接合的层次？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_cups",
+      "source_quote": "thin walls, hollow openings",
+      "question": "茶杯是否具有薄口沿、下凹内腔、收窄杯底和带通孔且连接杯壁的弯曲把手？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_saucers_vessel",
+      "source_quote": "saucers and small vessels visible in the supplied views",
+      "question": "浅碟是否保留薄而上翘的边缘及承杯凹部？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_small_vessel",
+      "source_quote": "small vessels visible in the supplied views",
+      "question": "小罐是否保留鼓腹、收窄底足、器口台阶及短小侧耳的局部结构？",
+      "weight": 0.125
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_overall_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在最终静态姿态下，排除相机和灯光，对全部器物应用世界变换后求世界轴对齐包围盒，取 X、Y、Z 三向尺寸的最大值与 1.000 m 比较；explicit_tolerance 表示原文 2% 的相对容差。此项待原生几何测量，不由图像像素估算。"
+    }
+  ],
+  "limitations": [
+    "主图 input/reference.png 对应公开证据 reference/reference-1.png；所有区域及定位框仅冻结于该原始主图。其余三张图只辅助理解结构。",
+    "未提供 legacy-detail-20261018-v1 的独立正文；本计划仅依照本次嵌入的合同与检查表，不推定额外规则。",
+    "图中器物数量用于参考内容匹配，并非文字明确给出的精确几何计数，因此不另列数值检查。",
+    "“maximum overall span”未指定包围盒跨度或最远点距离；本计划明确采用世界轴对齐包围盒最大边。将 1.000 m 解释为尺度标称值，而非允许任意更小模型的单纯上限。",
+    "小勺由参考中的整体茶具摆放要求支持，正文未单独点名；花卉区域按可简化的装饰纹样处理，不强制推定为独立实体花瓣。",
+    "被遮挡的内腔、接合面和底部不设隐藏尺寸或拓扑要求；壁厚、开口深度与局部曲率没有文字数值目标。",
+    "第 1 帧属于姿态存储要求，不是几何计数；渲染尺寸、渲染器及曝光不作为内容质量数值检查。"
+  ]
+}

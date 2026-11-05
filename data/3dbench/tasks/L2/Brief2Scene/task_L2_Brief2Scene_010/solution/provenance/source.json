@@ -1,0 +1,23 @@
+{
+  "id": "construction",
+  "title": "House Construction Site",
+  "title_zh": "建筑工地与周边道路",
+  "category": "industrial",
+  "provider": "opengameart",
+  "author": "Majadroid",
+  "source_page": "https://opengameart.org/content/3d-house-construction-site-lowpoly-cc0",
+  "license": "CC0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_status": "verified",
+  "download_url": "https://opengameart.org/sites/default/files/lowpoly-house-construction-site-by-majadroid_2.zip",
+  "format": "zip",
+  "download_status": "downloaded",
+  "archive": "assets/diverse/construction/source.zip",
+  "archive_sha256": "bd7a45ea71fd15b2a77479ada84abd6f981248c9e5f884988d7091876dc0d83a",
+  "bytes": 3261658,
+  "blend_candidates": [
+    "assets/diverse/construction/original/LowPoly-House-Construction-Site-By-Majadroid/HouseConstructionSite-SingleObject.blend",
+    "assets/diverse/construction/original/LowPoly-House-Construction-Site-By-Majadroid/HouseConstructionSite.blend"
+  ],
+  "selected_blend": "assets/diverse/construction/original/LowPoly-House-Construction-Site-By-Majadroid/HouseConstructionSite.blend"
+}

@@ -1,0 +1,409 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_007",
+  "title": "卡通咖啡馆：补回吧台与咖啡机",
+  "category": "SceneEdit",
+  "profile": "edit-continuous-80-20-v1",
+  "weights": {
+    "T": 0.8,
+    "K": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "3197032284f5d634eef6d61aa51b09c7ad89fac461f56a67f0999dd299a42e4e"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "target_surface",
+      "component": "T",
+      "weight": 0.5,
+      "question": "目标局部表面的真实凹腔、轮廓、厚度及修改范围重建",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md",
+      "parameters": {
+        "target": {
+          "scene": "solution/reference/scene.blend",
+          "objects": [
+            "kitchenBar(Clone)",
+            "kitchenBar placement",
+            "kitchenBar(Clone).001",
+            "kitchenBar placement.001",
+            "kitchenBar(Clone).002",
+            "kitchenBar placement.002",
+            "kitchenBarEnd(Clone)",
+            "kitchenBarEnd placement",
+            "kitchenBarEnd(Clone).001",
+            "kitchenBarEnd placement.001",
+            "kitchenCoffeeMachine(Clone)",
+            "mug",
+            "kitchenCoffeeMachine placement"
+          ],
+          "files": [
+            "solution/reference/scene.blend",
+            "solution/annotations/pair-audit.json"
+          ]
+        },
+        "edit_structure": {
+          "thickness": true,
+          "open_cavity": false
+        },
+        "edit_regions": [
+          {
+            "id": "service_counter",
+            "objects": [
+              "kitchenBar(Clone)",
+              "kitchenBar placement",
+              "kitchenBar(Clone).001",
+              "kitchenBar placement.001",
+              "kitchenBar(Clone).002",
+              "kitchenBar placement.002",
+              "kitchenBarEnd(Clone)",
+              "kitchenBarEnd placement",
+              "kitchenBarEnd(Clone).001",
+              "kitchenBarEnd placement.001"
+            ],
+            "source_quote": "The front service counter and the coffee machine on it have been removed"
+          },
+          {
+            "id": "coffee_machine",
+            "objects": [
+              "kitchenCoffeeMachine(Clone)"
+            ],
+            "source_quote": "The front service counter and the coffee machine on it have been removed"
+          }
+        ],
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "half_scale": "0.01 * frozen target-region maximum span; baseline coordinates unchanged"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Restore the long cafe service counter with paneled body. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Provide continuous pale countertop with rounded ends and real thickness. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Restore a recognizable coffee machine housing, brew head, drip tray and controls. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_4",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Keep counter grounded and machine supported by its worktop. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_5",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Retain the service/customer passage and pale-blue/timber finish without duplicate cabinet remnants. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "protected_native",
+      "component": "K",
+      "weight": 0.6,
+      "question": "公开初始场景中允许修改区外的表面和姿态",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md",
+      "parameters": {
+        "baseline_scene": "environment/input/initial.blend",
+        "scope_contract": {
+          "target": "吧台和咖啡机",
+          "target_features": [
+            "长吧台板及圆端",
+            "连续台面",
+            "机器外壳/冲煮口/接水盘/控制件",
+            "吧台接地/机器支撑于台面",
+            "服务通道及顾客路径净空"
+          ],
+          "case_measurements": "长吧台板及圆端；连续台面；机器外壳/冲煮口/接水盘/控制件；吧台接地/机器支撑于台面；服务通道及顾客路径净空",
+          "edit_structure": {
+            "thickness": true,
+            "open_cavity": false
+          },
+          "edit_regions": [
+            {
+              "id": "service_counter",
+              "objects": [
+                "kitchenBar(Clone)",
+                "kitchenBar placement",
+                "kitchenBar(Clone).001",
+                "kitchenBar placement.001",
+                "kitchenBar(Clone).002",
+                "kitchenBar placement.002",
+                "kitchenBarEnd(Clone)",
+                "kitchenBarEnd placement",
+                "kitchenBarEnd(Clone).001",
+                "kitchenBarEnd placement.001"
+              ],
+              "source_quote": "The front service counter and the coffee machine on it have been removed"
+            },
+            {
+              "id": "coffee_machine",
+              "objects": [
+                "kitchenCoffeeMachine(Clone)"
+              ],
+              "source_quote": "The front service counter and the coffee machine on it have been removed"
+            }
+          ],
+          "reference_target": {
+            "scene": "solution/reference/scene.blend",
+            "objects": [
+              "kitchenBar(Clone)",
+              "kitchenBar placement",
+              "kitchenBar(Clone).001",
+              "kitchenBar placement.001",
+              "kitchenBar(Clone).002",
+              "kitchenBar placement.002",
+              "kitchenBarEnd(Clone)",
+              "kitchenBarEnd placement",
+              "kitchenBarEnd(Clone).001",
+              "kitchenBarEnd placement.001",
+              "kitchenCoffeeMachine(Clone)",
+              "mug",
+              "kitchenCoffeeMachine placement"
+            ],
+            "files": [
+              "solution/reference/scene.blend",
+              "solution/annotations/pair-audit.json"
+            ]
+          }
+        },
+        "half_scale_m": null,
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "fallback_half_scale": "L2 only: 0.001 * frozen baseline protected-region maximum span",
+        "normalization": "per protected property tolerance; equal required groups; no arbitrary registration",
+        "allowed_induced_changes": "legitimate shadows/reflections from permitted edit"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "protected_properties",
+      "component": "K",
+      "weight": 0.2,
+      "question": "允许修改区外的材质参数、层级及保留相机参数",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "baseline_scene": "environment/input/initial.blend",
+        "scope_contract": {
+          "target": "吧台和咖啡机",
+          "target_features": [
+            "长吧台板及圆端",
+            "连续台面",
+            "机器外壳/冲煮口/接水盘/控制件",
+            "吧台接地/机器支撑于台面",
+            "服务通道及顾客路径净空"
+          ],
+          "case_measurements": "长吧台板及圆端；连续台面；机器外壳/冲煮口/接水盘/控制件；吧台接地/机器支撑于台面；服务通道及顾客路径净空",
+          "edit_structure": {
+            "thickness": true,
+            "open_cavity": false
+          },
+          "edit_regions": [
+            {
+              "id": "service_counter",
+              "objects": [
+                "kitchenBar(Clone)",
+                "kitchenBar placement",
+                "kitchenBar(Clone).001",
+                "kitchenBar placement.001",
+                "kitchenBar(Clone).002",
+                "kitchenBar placement.002",
+                "kitchenBarEnd(Clone)",
+                "kitchenBarEnd placement",
+                "kitchenBarEnd(Clone).001",
+                "kitchenBarEnd placement.001"
+              ],
+              "source_quote": "The front service counter and the coffee machine on it have been removed"
+            },
+            {
+              "id": "coffee_machine",
+              "objects": [
+                "kitchenCoffeeMachine(Clone)"
+              ],
+              "source_quote": "The front service counter and the coffee machine on it have been removed"
+            }
+          ],
+          "reference_target": {
+            "scene": "solution/reference/scene.blend",
+            "objects": [
+              "kitchenBar(Clone)",
+              "kitchenBar placement",
+              "kitchenBar(Clone).001",
+              "kitchenBar placement.001",
+              "kitchenBar(Clone).002",
+              "kitchenBar placement.002",
+              "kitchenBarEnd(Clone)",
+              "kitchenBarEnd placement",
+              "kitchenBarEnd(Clone).001",
+              "kitchenBarEnd placement.001",
+              "kitchenCoffeeMachine(Clone)",
+              "mug",
+              "kitchenCoffeeMachine placement"
+            ],
+            "files": [
+              "solution/reference/scene.blend",
+              "solution/annotations/pair-audit.json"
+            ]
+          }
+        },
+        "tolerances": {},
+        "normalization": "equal protected property groups; numeric kernels with public tolerance; exact categorical identity where required"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "weight": 0.2,
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "be0696283972bb7788de8efcb398307537333c68dc223674d3695e55a46ca7d6",
+    "task.toml": "f5d3761ca1dcb4fe62d529e32bf3d1eab7e5713e36983cf45009c8f4007f6890",
+    "harness/eval_spec.json": "616c4a95ac64330cc1d335144d45b1df70101ff8a58d19b1224f2f592488f521",
+    "harness/methods.json": "ab899dda620f84f333334edca6dd133093bf5f958549e7b1efd347cc3211d09d",
+    "harness/vlm_context/before.png": "197c142ffc3549596a1da744cb483bb2666ec13cdc09cd208eddb951c48ea790",
+    "harness/vlm_context/target.png": "65ee3ca2cab68e0708316d9a1bc9a82927b14015977a7869c6fcf2e03b89d6d3",
+    "harness/vlm_spec.json": "ffa7f935e10327335ac9737126801da04fda7aebdb2d2b1bd5036752f9c295f2"
+  },
+  "edit_context": {
+    "before": {
+      "path": "harness/vlm_context/before.png",
+      "sha256": "197c142ffc3549596a1da744cb483bb2666ec13cdc09cd208eddb951c48ea790",
+      "scene_sha256": "4dafc696b1b61582ba1affc8ec690279b0b21e9c7a7a55b8cf33582dea4748ca"
+    },
+    "target": {
+      "path": "harness/vlm_context/target.png",
+      "sha256": "65ee3ca2cab68e0708316d9a1bc9a82927b14015977a7869c6fcf2e03b89d6d3",
+      "scene_sha256": "ca4e292f4f3b2400f31d11e49d847abe0af6623b25b4dd2ca5e2e34f14bdea0c"
+    }
+  },
+  "reference_binding_status": "frozen_existing_context",
+  "native_scope": {
+    "target": "吧台和咖啡机",
+    "target_features": [
+      "长吧台板及圆端",
+      "连续台面",
+      "机器外壳/冲煮口/接水盘/控制件",
+      "吧台接地/机器支撑于台面",
+      "服务通道及顾客路径净空"
+    ],
+    "case_measurements": "长吧台板及圆端；连续台面；机器外壳/冲煮口/接水盘/控制件；吧台接地/机器支撑于台面；服务通道及顾客路径净空",
+    "edit_structure": {
+      "thickness": true,
+      "open_cavity": false
+    },
+    "edit_regions": [
+      {
+        "id": "service_counter",
+        "objects": [
+          "kitchenBar(Clone)",
+          "kitchenBar placement",
+          "kitchenBar(Clone).001",
+          "kitchenBar placement.001",
+          "kitchenBar(Clone).002",
+          "kitchenBar placement.002",
+          "kitchenBarEnd(Clone)",
+          "kitchenBarEnd placement",
+          "kitchenBarEnd(Clone).001",
+          "kitchenBarEnd placement.001"
+        ],
+        "source_quote": "The front service counter and the coffee machine on it have been removed"
+      },
+      {
+        "id": "coffee_machine",
+        "objects": [
+          "kitchenCoffeeMachine(Clone)"
+        ],
+        "source_quote": "The front service counter and the coffee machine on it have been removed"
+      }
+    ],
+    "reference_target": {
+      "scene": "solution/reference/scene.blend",
+      "objects": [
+        "kitchenBar(Clone)",
+        "kitchenBar placement",
+        "kitchenBar(Clone).001",
+        "kitchenBar placement.001",
+        "kitchenBar(Clone).002",
+        "kitchenBar placement.002",
+        "kitchenBarEnd(Clone)",
+        "kitchenBarEnd placement",
+        "kitchenBarEnd(Clone).001",
+        "kitchenBarEnd placement.001",
+        "kitchenCoffeeMachine(Clone)",
+        "mug",
+        "kitchenCoffeeMachine placement"
+      ],
+      "files": [
+        "solution/reference/scene.blend",
+        "solution/annotations/pair-audit.json"
+      ]
+    }
+  },
+  "geometry_gt_policy": "Use supplied initial-frame target only within explicit edit scope; fixed format conversions, no fitted registration.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

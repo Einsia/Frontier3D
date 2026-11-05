@@ -1,0 +1,23 @@
+# Task metadata only; all model requirements are in instruction.md.
+version = 1
+id = "L2/Brief2Scene/task_L2_Brief2Scene_005"
+level = 2
+category = "Brief2Scene"
+title = "中央步道与小型纪念墓园"
+difficulty = "easy"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "mvp"
+resource_family = "kenney/graveyard-kit"
+environment_files = []
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/main.png", "output/alternate.png", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L2/Brief2Scene/task_L2_Brief2Scene_005"
+release_id = "3DBench-070"

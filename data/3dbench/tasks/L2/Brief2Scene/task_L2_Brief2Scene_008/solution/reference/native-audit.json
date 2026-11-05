@@ -1,0 +1,6775 @@
+{
+  "key": "final-cc0-canyon",
+  "path": "assets/cc0-replacements-20260921/canyon/prepared/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 32,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    960,
+    640
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      46.13697814941406,
+      -38.39024353027344,
+      0.7628946304321289
+    ],
+    "rotation_euler": [
+      1.668532371520996,
+      1.8156426904170075e-06,
+      0.1535891890525818
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [
+    "Text"
+  ],
+  "meshes": [
+    {
+      "name": "Cactus_Flat_1",
+      "vertices": 581,
+      "polygons": 291,
+      "sha256": "f9ee9b7866f438adf0c92321297335699d576b793ed54c6ece13be338172db35"
+    },
+    {
+      "name": "Cactus_Flat_1-colonly",
+      "vertices": 74,
+      "polygons": 80,
+      "sha256": "029075d7c398b4ffb54837e903b044256261c0b0bde41372b3f3864b71b8df99"
+    },
+    {
+      "name": "Cactus_Flat_2",
+      "vertices": 578,
+      "polygons": 287,
+      "sha256": "402f9e3c6ab25802c94ebc678ca045ed2d4fae84704a460f3f929c3efe38623e"
+    },
+    {
+      "name": "Cactus_Flat_2-colonly",
+      "vertices": 73,
+      "polygons": 79,
+      "sha256": "1caff4e5b38d10707977cb3e18f2455f51bffe1223b63ed3b84a7f73e6be4158"
+    },
+    {
+      "name": "Cactus_Flat_3",
+      "vertices": 391,
+      "polygons": 196,
+      "sha256": "b0ed824ae5ee82c4bfe67cd2ecfd4138955de5c1897c610341550f555ab04149"
+    },
+    {
+      "name": "Cactus_Flat_3-colonly",
+      "vertices": 48,
+      "polygons": 56,
+      "sha256": "5abe745abf089edb13c4942b104c5f8a95aaab3dcb978daeddd7af8f452e9e4b"
+    },
+    {
+      "name": "Cactus_Small_1",
+      "vertices": 153,
+      "polygons": 80,
+      "sha256": "a3c85abb660f2e71fb73d7fafbf3a52eece0b0ad266dfe3614d20143bac44690"
+    },
+    {
+      "name": "Cactus_Small_1-colonly",
+      "vertices": 25,
+      "polygons": 24,
+      "sha256": "c5f72906439193de051d60dd8567dea5dd31c6249aff938fc320242a45291510"
+    },
+    {
+      "name": "Cactus_Small_2",
+      "vertices": 153,
+      "polygons": 80,
+      "sha256": "e1083f503305907fd30a11fa6a8d276c1c53a18a9061a4d67aacfde630efb154"
+    },
+    {
+      "name": "Cactus_Small_2-colonly",
+      "vertices": 25,
+      "polygons": 24,
+      "sha256": "4f337881db924f3a1ae52493a4cad29973e193f547072095dbb4cef3b04051ef"
+    },
+    {
+      "name": "Cactus_Small_3",
+      "vertices": 146,
+      "polygons": 80,
+      "sha256": "9e6efc8195ea97ba49027945093b677ef70f28aae6c7bd31cc00b0d4befc1acc"
+    },
+    {
+      "name": "Cactus_Small_3-colonly",
+      "vertices": 25,
+      "polygons": 24,
+      "sha256": "16fa748bd43eae3acab6558736281cacab7c904d940d59064b2ca98c0ddc7d1d"
+    },
+    {
+      "name": "Cactus_Small_4",
+      "vertices": 146,
+      "polygons": 80,
+      "sha256": "83275dd1a2cd519e199011a4d83a36d9660990eeb9d945d2b1c60bf9764bc4a2"
+    },
+    {
+      "name": "Cactus_Small_4-colonly",
+      "vertices": 25,
+      "polygons": 24,
+      "sha256": "85efff75717305e5bf6b6ab53b423d48ef5c95e41dc14db8283a763c30ade706"
+    },
+    {
+      "name": "Cactus_Small_5",
+      "vertices": 130,
+      "polygons": 72,
+      "sha256": "59fc300adfb2ffe9b5af66fb871371d7fe8742552ec4e89300cad8bcce1d376b"
+    },
+    {
+      "name": "Cactus_Small_5-colonly",
+      "vertices": 25,
+      "polygons": 24,
+      "sha256": "94bad403324b5d6011f84e3ac0d1b5c5a103ca44e8b74afbbdb4b76904e1a5b4"
+    },
+    {
+      "name": "Cactus_Tall_1",
+      "vertices": 811,
+      "polygons": 440,
+      "sha256": "b3dbc73b8ddfcd1b5f76a0e25e40408e9ddac29a95d27ef49a1b12d5ec276f8a"
+    },
+    {
+      "name": "Cactus_Tall_1-colonly",
+      "vertices": 123,
+      "polygons": 120,
+      "sha256": "7899b29cdeb7ff6a1663db537f36026ed2fea7c2e2f860da0ee51fa241c41807"
+    },
+    {
+      "name": "Cactus_Tall_2",
+      "vertices": 490,
+      "polygons": 264,
+      "sha256": "36e015118e25e532b18569cc96ddae4e12cbfe18b5a3b688fac112e667fe00b8"
+    },
+    {
+      "name": "Cactus_Tall_2-colonly",
+      "vertices": 74,
+      "polygons": 72,
+      "sha256": "4b2ed1b7a2cc5bdbfa54512e29a92e0d351097e1ef074bbb95a3f6fcb2235c3c"
+    },
+    {
+      "name": "Cactus_Tall_3",
+      "vertices": 747,
+      "polygons": 408,
+      "sha256": "644fef16158ebff12a1cbbc214b9242b45c7518eb7b073e2a7298ab9c65f8282"
+    },
+    {
+      "name": "Cactus_Tall_3-colonly",
+      "vertices": 123,
+      "polygons": 120,
+      "sha256": "99f171d5489e3700165ad402c1e5d7091a999f6228ce85a255f4feddba82d30e"
+    },
+    {
+      "name": "Cactus_Tall_4",
+      "vertices": 522,
+      "polygons": 280,
+      "sha256": "e285f9b722197f4cacfe84e87521cb1111a332dc193e33258153785c0bd0b76a"
+    },
+    {
+      "name": "Cactus_Tall_4-colonly",
+      "vertices": 74,
+      "polygons": 72,
+      "sha256": "f2c27cc9980adc7ec77682c290fe43baa48b3fb8eb9f391cc131d2d32a7c1578"
+    },
+    {
+      "name": "Cactus_Tall_5",
+      "vertices": 779,
+      "polygons": 424,
+      "sha256": "120acf16db865895bf13c6201b226462e385ad0b358a04cff62bc2efd1e03bf6"
+    },
+    {
+      "name": "Cactus_Tall_5-colonly",
+      "vertices": 123,
+      "polygons": 120,
+      "sha256": "2b26aaba44f43da01045bde5ddca56a9fd1af3dac6d6a18bc7fa241d66f0cbee"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.006",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.012",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.013",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.014",
+      "vertices": 12,
+      "polygons": 10,
+      "sha256": "5d0ae77df08101fdf9b7defbdc4ee051a98d5550cf769766c48b4f31c07ee830"
+    },
+    {
+      "name": "Cube.019",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.020",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.021",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.022",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.023",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cube.024",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "53db40c150660018674ba89d3906dfa5c80bab5c103060ac8d56a0b50fe03cdb"
+    },
+    {
+      "name": "Cylinder.002",
+      "vertices": 48,
+      "polygons": 41,
+      "sha256": "755dbeccb090f180ac4a3ddbdda8c6c01339c8062d5cf57801c0b9fa2653f506"
+    },
+    {
+      "name": "Cylinder.003",
+      "vertices": 194,
+      "polygons": 96,
+      "sha256": "b4d65a41c50e23ee0affda7ebc57dba9c2cac452dc93eba4033087caf2ed40e2"
+    },
+    {
+      "name": "Cylinder.005",
+      "vertices": 197,
+      "polygons": 100,
+      "sha256": "1a8c1dcc5277ccae525f6fc1a508bc22f1448ef096a650700eb02086390a26dc"
+    },
+    {
+      "name": "Cylinder.006",
+      "vertices": 194,
+      "polygons": 96,
+      "sha256": "57ba545a1a864421b6c5badbc28fc0582fa7cec1083f5399fc581dd9805921a9"
+    },
+    {
+      "name": "Cylinder.007",
+      "vertices": 194,
+      "polygons": 96,
+      "sha256": "f89bf1acc7816d31f447b0e14e8b4f37e5f4be10778328dbdc2992131414dfb5"
+    },
+    {
+      "name": "Cylinder.008",
+      "vertices": 190,
+      "polygons": 95,
+      "sha256": "9081baf7333be3514451f1b5bd977c02faa63bba0a930e707ceddcfd2603f5e3"
+    },
+    {
+      "name": "Cylinder.009",
+      "vertices": 98,
+      "polygons": 96,
+      "sha256": "74b418a158ddded191eea4d91257da7879392f9cca2c147cdeac5322177b47cd"
+    },
+    {
+      "name": "Cylinder.010",
+      "vertices": 296,
+      "polygons": 161,
+      "sha256": "31ceb7a691907eaef6c017f0ff74f35141e6b4c5fabff6f1d902b7fa3fa03c5f"
+    },
+    {
+      "name": "Cylinder.011",
+      "vertices": 48,
+      "polygons": 41,
+      "sha256": "755dbeccb090f180ac4a3ddbdda8c6c01339c8062d5cf57801c0b9fa2653f506"
+    },
+    {
+      "name": "Cylinder.017",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "aaf93ed30790ce1356d19ffed0951e3547a6c93bdcf4384792057172d4f077bb"
+    },
+    {
+      "name": "Cylinder.018",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "aaf93ed30790ce1356d19ffed0951e3547a6c93bdcf4384792057172d4f077bb"
+    },
+    {
+      "name": "Cylinder.027",
+      "vertices": 194,
+      "polygons": 96,
+      "sha256": "f89bf1acc7816d31f447b0e14e8b4f37e5f4be10778328dbdc2992131414dfb5"
+    },
+    {
+      "name": "Cylinder.033",
+      "vertices": 296,
+      "polygons": 161,
+      "sha256": "861a662be305fa772d02cbc45bdc40b7df8bbffd1281b2d7c041f43954a1ecd1"
+    },
+    {
+      "name": "Cylinder.034",
+      "vertices": 48,
+      "polygons": 41,
+      "sha256": "c3c9663789842f64d97f2375b86db12494b9e81712f74bd9bb28d15cb93f6d43"
+    },
+    {
+      "name": "Cylinder.035",
+      "vertices": 264,
+      "polygons": 145,
+      "sha256": "9156b80cd47eedbc791fd313ae936139f2fcb9a699e21c02405aa8c60dd49cf3"
+    },
+    {
+      "name": "Grass_1",
+      "vertices": 8,
+      "polygons": 4,
+      "sha256": "66cb0fb45398a1aa79bd7391038b7a88ebcb4afd3e63ef7999dfef952bd5e2b8"
+    },
+    {
+      "name": "Grass_10",
+      "vertices": 42,
+      "polygons": 36,
+      "sha256": "502213212784c38756fa93a123d9c476004a0326aeee3abfb7f3b0e54e5dbf56"
+    },
+    {
+      "name": "Grass_2",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "f4f4f2eb25aa490088b616e6b6fff6567f4497d00430361ee3b2e823fcdd40db"
+    },
+    {
+      "name": "Grass_3",
+      "vertices": 8,
+      "polygons": 4,
+      "sha256": "286f5b7437c2876c2cf285bb441c8105a5d796180ee67f4a9074937f1ec8d608"
+    },
+    {
+      "name": "Grass_4",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "23f402b92b53fe94cf2980bea8ce2bda875216ddb63066da99fe1fefd50a3f15"
+    },
+    {
+      "name": "Grass_5",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "62557524a2a6723afa943907759128c45fae88e789a8c5a46968c8544991c869"
+    },
+    {
+      "name": "Grass_6",
+      "vertices": 8,
+      "polygons": 4,
+      "sha256": "b8227d224dc0dffa119360f92ae33b7a5cc7675f1f67c292222e648cf5823347"
+    },
+    {
+      "name": "Grass_7",
+      "vertices": 42,
+      "polygons": 36,
+      "sha256": "55131849c3997093056c9a6a3a0d616f31357ee46a0408e7b0d8deef7fcc9406"
+    },
+    {
+      "name": "Grass_8",
+      "vertices": 42,
+      "polygons": 36,
+      "sha256": "fc4b48d37cd9c343ebbd85458339f5424aa36a7d61834bb4626d48af2b593336"
+    },
+    {
+      "name": "Grass_9",
+      "vertices": 33,
+      "polygons": 28,
+      "sha256": "485e26aa92c44d4712bb37de3b2c7cd0c216cc2ad5790fab5c7bbd0d24581c4e"
+    },
+    {
+      "name": "Leafs_1",
+      "vertices": 432,
+      "polygons": 216,
+      "sha256": "83b8763341a89edde713c1e3914aca2cdcffd7122ac4bfed54a2c04dcbf4f064"
+    },
+    {
+      "name": "Leafs_2",
+      "vertices": 288,
+      "polygons": 144,
+      "sha256": "dcbd4b542ce524501a759756febbf817dbe1c91073370fa8eb60466fa2e3a8c7"
+    },
+    {
+      "name": "Plane",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "bc76ac91510b8416ddb792fe94146258a2e5a5ef1329d18782bdd90217651fe8"
+    },
+    {
+      "name": "Rock_Boulders_1",
+      "vertices": 92,
+      "polygons": 93,
+      "sha256": "3cbdbdc4045ebf702472603849e8b01130ab157b9a75b187b80f30c5102fb786"
+    },
+    {
+      "name": "Rock_Boulders_1-colonly",
+      "vertices": 92,
+      "polygons": 93,
+      "sha256": "3cbdbdc4045ebf702472603849e8b01130ab157b9a75b187b80f30c5102fb786"
+    },
+    {
+      "name": "Rock_Boulders_2",
+      "vertices": 148,
+      "polygons": 146,
+      "sha256": "338c212fd64c15ddf1db2f7385fc2208134aeb3b7fc481aaa9e44e6f36f43399"
+    },
+    {
+      "name": "Rock_Boulders_2-colonly",
+      "vertices": 148,
+      "polygons": 146,
+      "sha256": "338c212fd64c15ddf1db2f7385fc2208134aeb3b7fc481aaa9e44e6f36f43399"
+    },
+    {
+      "name": "Rock_Boulders_3",
+      "vertices": 128,
+      "polygons": 126,
+      "sha256": "1697cb3b653554a5ccae9e5b732572b5f455417e7a0624834db45f84490af7b1"
+    },
+    {
+      "name": "Rock_Boulders_3-colonly",
+      "vertices": 128,
+      "polygons": 126,
+      "sha256": "1697cb3b653554a5ccae9e5b732572b5f455417e7a0624834db45f84490af7b1"
+    },
+    {
+      "name": "Rock_Boulders_4",
+      "vertices": 108,
+      "polygons": 106,
+      "sha256": "c637345fc140f1044f768a2cfb98ec94eac31cb4973bf1fad0c6ccfc0c0016a2"
+    },
+    {
+      "name": "Rock_Boulders_4-colonly",
+      "vertices": 108,
+      "polygons": 106,
+      "sha256": "c637345fc140f1044f768a2cfb98ec94eac31cb4973bf1fad0c6ccfc0c0016a2"
+    },
+    {
+      "name": "Rock_Boulders_5",
+      "vertices": 110,
+      "polygons": 109,
+      "sha256": "9596b2b370fdf64029dd2d3d19ea23230155d5c79065dde6d023368b0143f0df"
+    },
+    {
+      "name": "Rock_Boulders_5-colonly",
+      "vertices": 110,
+      "polygons": 109,
+      "sha256": "9596b2b370fdf64029dd2d3d19ea23230155d5c79065dde6d023368b0143f0df"
+    },
+    {
+      "name": "Rock_Boulders_6",
+      "vertices": 110,
+      "polygons": 108,
+      "sha256": "08d69da3ddd42498e6a6d50ecadc3b926dd800016a91e7cd76d07595102e01a9"
+    },
+    {
+      "name": "Rock_Boulders_6-colonly",
+      "vertices": 110,
+      "polygons": 108,
+      "sha256": "08d69da3ddd42498e6a6d50ecadc3b926dd800016a91e7cd76d07595102e01a9"
+    },
+    {
+      "name": "Rock_Formations_1",
+      "vertices": 98,
+      "polygons": 96,
+      "sha256": "24c318d80393cabe027f4390914a1c598e6a34c2c9d24e1ac1c490591f776e71"
+    },
+    {
+      "name": "Rock_Formations_1-colonly",
+      "vertices": 98,
+      "polygons": 96,
+      "sha256": "24c318d80393cabe027f4390914a1c598e6a34c2c9d24e1ac1c490591f776e71"
+    },
+    {
+      "name": "Rock_Formations_10",
+      "vertices": 91,
+      "polygons": 93,
+      "sha256": "759b9f8a1b7d55caf10baa53b05a86af9c33d9d1a5598934804de15d5e0a1dfd"
+    },
+    {
+      "name": "Rock_Formations_10-colonly",
+      "vertices": 91,
+      "polygons": 93,
+      "sha256": "759b9f8a1b7d55caf10baa53b05a86af9c33d9d1a5598934804de15d5e0a1dfd"
+    },
+    {
+      "name": "Rock_Formations_11",
+      "vertices": 268,
+      "polygons": 266,
+      "sha256": "d61fc045764addc107bed874a7f16ea222ca60a722412586d3a5cf19128f7f24"
+    },
+    {
+      "name": "Rock_Formations_11-colonly",
+      "vertices": 268,
+      "polygons": 266,
+      "sha256": "d61fc045764addc107bed874a7f16ea222ca60a722412586d3a5cf19128f7f24"
+    },
+    {
+      "name": "Rock_Formations_12",
+      "vertices": 148,
+      "polygons": 146,
+      "sha256": "f0f19024038d5b464eab68274c0d80f2d95615e0737baef7f248c8d6f2b7f659"
+    },
+    {
+      "name": "Rock_Formations_12-colonly",
+      "vertices": 148,
+      "polygons": 146,
+      "sha256": "f0f19024038d5b464eab68274c0d80f2d95615e0737baef7f248c8d6f2b7f659"
+    },
+    {
+      "name": "Rock_Formations_2",
+      "vertices": 98,
+      "polygons": 96,
+      "sha256": "49c2e3e09ee860368fc6aee9b7dc90f39a6a55134846d785b43f94a44d5c9e7f"
+    },
+    {
+      "name": "Rock_Formations_2-colonly",
+      "vertices": 98,
+      "polygons": 96,
+      "sha256": "49c2e3e09ee860368fc6aee9b7dc90f39a6a55134846d785b43f94a44d5c9e7f"
+    },
+    {
+      "name": "Rock_Formations_3",
+      "vertices": 194,
+      "polygons": 192,
+      "sha256": "5553666b3747d45bc0b0366dc0b22405ec51bf268c7e029effbc953de275d397"
+    },
+    {
+      "name": "Rock_Formations_3-colonly",
+      "vertices": 194,
+      "polygons": 192,
+      "sha256": "5553666b3747d45bc0b0366dc0b22405ec51bf268c7e029effbc953de275d397"
+    },
+    {
+      "name": "Rock_Formations_4",
+      "vertices": 84,
+      "polygons": 82,
+      "sha256": "477c9ec89cec67184777ec4e6bfc4ba3712a8b3a98174ab31e0b8e4098c98834"
+    },
+    {
+      "name": "Rock_Formations_4-colonly",
+      "vertices": 84,
+      "polygons": 82,
+      "sha256": "477c9ec89cec67184777ec4e6bfc4ba3712a8b3a98174ab31e0b8e4098c98834"
+    },
+    {
+      "name": "Rock_Formations_5",
+      "vertices": 130,
+      "polygons": 128,
+      "sha256": "4568335b9dc4152f6da287b84d53dc56071d5d0fd28d6310b1a16285aafe0879"
+    },
+    {
+      "name": "Rock_Formations_5-colonly",
+      "vertices": 130,
+      "polygons": 128,
+      "sha256": "4568335b9dc4152f6da287b84d53dc56071d5d0fd28d6310b1a16285aafe0879"
+    },
+    {
+      "name": "Rock_Formations_6",
+      "vertices": 84,
+      "polygons": 82,
+      "sha256": "7c38cf559a98fded9f42adb0efebe7cd90297edee2119966e71ef3245f13ff5a"
+    },
+    {
+      "name": "Rock_Formations_6-colonly",
+      "vertices": 84,
+      "polygons": 82,
+      "sha256": "7c38cf559a98fded9f42adb0efebe7cd90297edee2119966e71ef3245f13ff5a"
+    },
+    {
+      "name": "Rock_Formations_7",
+      "vertices": 96,
+      "polygons": 100,
+      "sha256": "9a3badba54b74fe6c50e25d2b7c4c7fc5ce47aa68c1e428c988cd84b308cf99a"
+    },
+    {
+      "name": "Rock_Formations_7-colonly",
+      "vertices": 96,
+      "polygons": 100,
+      "sha256": "9a3badba54b74fe6c50e25d2b7c4c7fc5ce47aa68c1e428c988cd84b308cf99a"
+    },
+    {
+      "name": "Rock_Formations_8",
+      "vertices": 103,
+      "polygons": 103,
+      "sha256": "f9f5ba686b79d5b6ba990bc7c3f57abb8579ae954b09df9a1bba01dc5c79462e"
+    },
+    {
+      "name": "Rock_Formations_8-colonly",
+      "vertices": 103,
+      "polygons": 103,
+      "sha256": "f9f5ba686b79d5b6ba990bc7c3f57abb8579ae954b09df9a1bba01dc5c79462e"
+    },
+    {
+      "name": "Rock_Formations_9",
+      "vertices": 93,
+      "polygons": 96,
+      "sha256": "3829e515e81d55157736097f739694193cef78dd67157ac396cf06132015a72f"
+    },
+    {
+      "name": "Rock_Formations_9-colonly",
+      "vertices": 93,
+      "polygons": 96,
+      "sha256": "3829e515e81d55157736097f739694193cef78dd67157ac396cf06132015a72f"
+    },
+    {
+      "name": "Rock_Platforms_1",
+      "vertices": 56,
+      "polygons": 54,
+      "sha256": "c877b6da4c64c190493c3f0944428147a603452be698bfc1acb722a182e9263b"
+    },
+    {
+      "name": "Rock_Platforms_1-colonly",
+      "vertices": 56,
+      "polygons": 54,
+      "sha256": "c877b6da4c64c190493c3f0944428147a603452be698bfc1acb722a182e9263b"
+    },
+    {
+      "name": "Rock_Platforms_10",
+      "vertices": 141,
+      "polygons": 139,
+      "sha256": "a859b7c164db0423b9dfe8469b2fd60a000c615367405bf93a62be64330b746e"
+    },
+    {
+      "name": "Rock_Platforms_10-colonly",
+      "vertices": 141,
+      "polygons": 139,
+      "sha256": "a859b7c164db0423b9dfe8469b2fd60a000c615367405bf93a62be64330b746e"
+    },
+    {
+      "name": "Rock_Platforms_2",
+      "vertices": 56,
+      "polygons": 54,
+      "sha256": "1a4fdf03b911afe46c1d6560de4aebecc309ef4cbecd76e408878c4a7510ab44"
+    },
+    {
+      "name": "Rock_Platforms_2-colonly",
+      "vertices": 56,
+      "polygons": 54,
+      "sha256": "1a4fdf03b911afe46c1d6560de4aebecc309ef4cbecd76e408878c4a7510ab44"
+    },
+    {
+      "name": "Rock_Platforms_3",
+      "vertices": 74,
+      "polygons": 72,
+      "sha256": "cfe186a05a82c72d60c13b45ba7ce5779404489cb9bbf91feedadc9c7fc8c651"
+    },
+    {
+      "name": "Rock_Platforms_3-colonly",
+      "vertices": 74,
+      "polygons": 72,
+      "sha256": "cfe186a05a82c72d60c13b45ba7ce5779404489cb9bbf91feedadc9c7fc8c651"
+    },
+    {
+      "name": "Rock_Platforms_4",
+      "vertices": 56,
+      "polygons": 54,
+      "sha256": "a3a976138378577869cabbedb9e8ab0df7de56023860696d80e25192a23c03a8"
+    },
+    {
+      "name": "Rock_Platforms_4-colonly",
+      "vertices": 56,
+      "polygons": 54,
+      "sha256": "a3a976138378577869cabbedb9e8ab0df7de56023860696d80e25192a23c03a8"
+    },
+    {
+      "name": "Rock_Platforms_5",
+      "vertices": 148,
+      "polygons": 146,
+      "sha256": "451f077b979f2490fbb85f52d83ad373ebee413557891f7a73a68bd84ef15f73"
+    },
+    {
+      "name": "Rock_Platforms_5-colonly",
+      "vertices": 148,
+      "polygons": 146,
+      "sha256": "451f077b979f2490fbb85f52d83ad373ebee413557891f7a73a68bd84ef15f73"
+    },
+    {
+      "name": "Rock_Platforms_6",
+      "vertices": 65,
+      "polygons": 126,
+      "sha256": "012b09457b649d18bf85c8897074706eba3b94f76f8b73e2aff23ebf09044562"
+    },
+    {
+      "name": "Rock_Platforms_6-colonly",
+      "vertices": 65,
+      "polygons": 126,
+      "sha256": "012b09457b649d18bf85c8897074706eba3b94f76f8b73e2aff23ebf09044562"
+    },
+    {
+      "name": "Rock_Platforms_7",
+      "vertices": 184,
+      "polygons": 182,
+      "sha256": "f38fe3ff57fddc2e695e56e223957635d6e96405de3d7c68495daf7dbe9a3d6c"
+    },
+    {
+      "name": "Rock_Platforms_7-colonly",
+      "vertices": 184,
+      "polygons": 182,
+      "sha256": "f38fe3ff57fddc2e695e56e223957635d6e96405de3d7c68495daf7dbe9a3d6c"
+    },
+    {
+      "name": "Rock_Platforms_8",
+      "vertices": 158,
+      "polygons": 158,
+      "sha256": "365f340e1f10d148105bd0618bf310910ab985a02acb2ce0c43ea978f86b1832"
+    },
+    {
+      "name": "Rock_Platforms_8-colonly",
+      "vertices": 158,
+      "polygons": 158,
+      "sha256": "365f340e1f10d148105bd0618bf310910ab985a02acb2ce0c43ea978f86b1832"
+    },
+    {
+      "name": "Rock_Platforms_9",
+      "vertices": 152,
+      "polygons": 150,
+      "sha256": "1c73c4c90b73262f86c7e93cdca34c4fe5680f17d8cdd71438ad0d6dd091877f"
+    },
+    {
+      "name": "Rock_Platforms_9-colonly",
+      "vertices": 152,
+      "polygons": 150,
+      "sha256": "1c73c4c90b73262f86c7e93cdca34c4fe5680f17d8cdd71438ad0d6dd091877f"
+    },
+    {
+      "name": "Sticks_1",
+      "vertices": 12,
+      "polygons": 8,
+      "sha256": "17cf27e5ed0fafbf083da06abca9cd4aa5056bdb627fbe1deb1005d865feeeae"
+    },
+    {
+      "name": "Sticks_2",
+      "vertices": 12,
+      "polygons": 8,
+      "sha256": "73930c5666ccc097873cdb27d03785429aa0cde123d97860749b656f64d81a96"
+    },
+    {
+      "name": "Sticks_3",
+      "vertices": 12,
+      "polygons": 8,
+      "sha256": "7c3b4ae9a5870a3e3a1df58e046a443228de3b2ba943a193d8acb3652b8956f4"
+    },
+    {
+      "name": "Sticks_4",
+      "vertices": 12,
+      "polygons": 4,
+      "sha256": "55cb2f1e6f19afe5d86ac8b71cadccf90e818f0cdbb4668f584080c34cde7ada"
+    },
+    {
+      "name": "Sticks_5",
+      "vertices": 12,
+      "polygons": 8,
+      "sha256": "d59cac7e7473237cc3710db8baf3910a8d0f70631b425a7430225f2b14a9e0c0"
+    },
+    {
+      "name": "Sticks_6",
+      "vertices": 12,
+      "polygons": 8,
+      "sha256": "8bbea6df65f864e9610c74178201220c449fa4bffc9b6d798329acb4484043e6"
+    },
+    {
+      "name": "Tile_Ground",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "e6bee86ab5753e77c19ce2881acd2af338246e5c296850c34d8d2a20fe0a07de"
+    },
+    {
+      "name": "Tile_Ground-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "e6bee86ab5753e77c19ce2881acd2af338246e5c296850c34d8d2a20fe0a07de"
+    },
+    {
+      "name": "Tile_Ground_Ramp_1",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "3aea62eeb21a9f10a2f22a2c91b38e57856d6f775625c96cd3fd3916f2a4edc3"
+    },
+    {
+      "name": "Tile_Ground_Ramp_1-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "3aea62eeb21a9f10a2f22a2c91b38e57856d6f775625c96cd3fd3916f2a4edc3"
+    },
+    {
+      "name": "Tile_Ground_Ramp_2",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "e61ba9164b09cbf331d2af113f18f2d889f9913057a39b08f895b0832aad41a4"
+    },
+    {
+      "name": "Tile_Ground_Ramp_2-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "e61ba9164b09cbf331d2af113f18f2d889f9913057a39b08f895b0832aad41a4"
+    },
+    {
+      "name": "Tile_Ground_Ramp_3",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "4979e7dcb9da95939062af16771bd44902c1ec8aa8d5f7e361921b03a1552df8"
+    },
+    {
+      "name": "Tile_Ground_Ramp_3-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "4979e7dcb9da95939062af16771bd44902c1ec8aa8d5f7e361921b03a1552df8"
+    },
+    {
+      "name": "Tile_Ground_Ramp_4",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "6e353ec3885f5f9c06d0e8b4e2caaa04c9a46e1550ca4426642663e8efbd0596"
+    },
+    {
+      "name": "Tile_Ground_Ramp_4-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "6e353ec3885f5f9c06d0e8b4e2caaa04c9a46e1550ca4426642663e8efbd0596"
+    },
+    {
+      "name": "Tile_Wall_Corner_1",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "ef38ad79b59a6ef486f18a8fd55e1810a529d06d00ae465703d6156d83d55de7"
+    },
+    {
+      "name": "Tile_Wall_Corner_1-colonly",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "ef38ad79b59a6ef486f18a8fd55e1810a529d06d00ae465703d6156d83d55de7"
+    },
+    {
+      "name": "Tile_Wall_Corner_2",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "77444fd24fe15fa5be2d5bca3cbf942332ae9d2dd6f1c09da2184a9c1a1a144b"
+    },
+    {
+      "name": "Tile_Wall_Corner_2-colonly",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "77444fd24fe15fa5be2d5bca3cbf942332ae9d2dd6f1c09da2184a9c1a1a144b"
+    },
+    {
+      "name": "Tile_Wall_Corner_3",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "67078df8f547d25ed30360f2eab6dc5a03f47661486fa7fbd3699b68bf761fc2"
+    },
+    {
+      "name": "Tile_Wall_Corner_3-colonly",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "67078df8f547d25ed30360f2eab6dc5a03f47661486fa7fbd3699b68bf761fc2"
+    },
+    {
+      "name": "Tile_Wall_Corner_4",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "648b2090ce927ff25916f3f8ecd0c1f5a98aa60a649b794bc89daa26acb379fd"
+    },
+    {
+      "name": "Tile_Wall_Corner_4-colonly",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "648b2090ce927ff25916f3f8ecd0c1f5a98aa60a649b794bc89daa26acb379fd"
+    },
+    {
+      "name": "Tile_Wall_Ledge",
+      "vertices": 30,
+      "polygons": 20,
+      "sha256": "e86614777c72de2c483e42ab234a27cdbce145ea07d20f36175ab6ad0e100c27"
+    },
+    {
+      "name": "Tile_Wall_Ledge-colonly",
+      "vertices": 30,
+      "polygons": 20,
+      "sha256": "e86614777c72de2c483e42ab234a27cdbce145ea07d20f36175ab6ad0e100c27"
+    },
+    {
+      "name": "Tile_Wall_Ledge_Corner",
+      "vertices": 54,
+      "polygons": 41,
+      "sha256": "2f3dacf5aabe813cdd30bd7d7a41ee66c55fd102cf249df574fe70371ccc47e0"
+    },
+    {
+      "name": "Tile_Wall_Ledge_Corner-colonly",
+      "vertices": 54,
+      "polygons": 41,
+      "sha256": "2f3dacf5aabe813cdd30bd7d7a41ee66c55fd102cf249df574fe70371ccc47e0"
+    },
+    {
+      "name": "Tile_Wall_Ledges",
+      "vertices": 38,
+      "polygons": 29,
+      "sha256": "f24c83f618ae35d14083d0b3b48a73c50d77163b7d4ba09b21e73c9894f0c2df"
+    },
+    {
+      "name": "Tile_Wall_Ledges-colonly",
+      "vertices": 38,
+      "polygons": 29,
+      "sha256": "f24c83f618ae35d14083d0b3b48a73c50d77163b7d4ba09b21e73c9894f0c2df"
+    },
+    {
+      "name": "Tile_Wall_Ramp_1",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "0cf326cc70c03085c8b5e1802f69b74d08d1e90772e2e76e1ba05f1f55dd56b2"
+    },
+    {
+      "name": "Tile_Wall_Ramp_1-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "0cf326cc70c03085c8b5e1802f69b74d08d1e90772e2e76e1ba05f1f55dd56b2"
+    },
+    {
+      "name": "Tile_Wall_Ramp_1_2",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "11801e1022aa4fa055949108b357f38c409e74428475005743b7b2618eb36c38"
+    },
+    {
+      "name": "Tile_Wall_Ramp_1_2-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "11801e1022aa4fa055949108b357f38c409e74428475005743b7b2618eb36c38"
+    },
+    {
+      "name": "Tile_Wall_Ramp_2",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "ac59cd1fb02ccc633a412daac2605e5b371cad16d5619b56488edf62629a0061"
+    },
+    {
+      "name": "Tile_Wall_Ramp_2-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "ac59cd1fb02ccc633a412daac2605e5b371cad16d5619b56488edf62629a0061"
+    },
+    {
+      "name": "Tile_Wall_Ramp_2_2",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "d8264e016073156db888754797600b9e1ab9403b70fe39e7f34fef0259fec9f6"
+    },
+    {
+      "name": "Tile_Wall_Ramp_2_2-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "d8264e016073156db888754797600b9e1ab9403b70fe39e7f34fef0259fec9f6"
+    },
+    {
+      "name": "Tile_Wall_Ramp_3",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "58bc0bd02bb3bb6f18d946dfab650f2a6f98d8a3a4bf4b110871fefdbd2300ce"
+    },
+    {
+      "name": "Tile_Wall_Ramp_3-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "58bc0bd02bb3bb6f18d946dfab650f2a6f98d8a3a4bf4b110871fefdbd2300ce"
+    },
+    {
+      "name": "Tile_Wall_Ramp_3_2",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "46659c7294843ca6e7a2d8ff324f7f3c0ef7de8a62af29d398744c8de1f3cf60"
+    },
+    {
+      "name": "Tile_Wall_Ramp_3_2-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "46659c7294843ca6e7a2d8ff324f7f3c0ef7de8a62af29d398744c8de1f3cf60"
+    },
+    {
+      "name": "Tile_Wall_Ramp_4",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "8bc3a52e023fb3f27809e201fb37bb95d7af8c538dbb8a2b9bc67128a0e3ca3e"
+    },
+    {
+      "name": "Tile_Wall_Ramp_4-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "8bc3a52e023fb3f27809e201fb37bb95d7af8c538dbb8a2b9bc67128a0e3ca3e"
+    },
+    {
+      "name": "Tile_Wall_Ramp_4_2",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "4cd69ccfbf89330e33765186b2880c232241709408acb1f79ac27a55cfcd84a4"
+    },
+    {
+      "name": "Tile_Wall_Ramp_4_2-colonly",
+      "vertices": 3,
+      "polygons": 1,
+      "sha256": "4cd69ccfbf89330e33765186b2880c232241709408acb1f79ac27a55cfcd84a4"
+    },
+    {
+      "name": "Tile_Wall_Side_1",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "28f1ccdaed5651779f041896e1d5390e2187def347258c225be3fd2e159bc187"
+    },
+    {
+      "name": "Tile_Wall_Side_1-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "28f1ccdaed5651779f041896e1d5390e2187def347258c225be3fd2e159bc187"
+    },
+    {
+      "name": "Tile_Wall_Side_2",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "f658a5ababdadf854a0f19d31ced442268ae09fe832792ed925dffedfc714e3f"
+    },
+    {
+      "name": "Tile_Wall_Side_2-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "f658a5ababdadf854a0f19d31ced442268ae09fe832792ed925dffedfc714e3f"
+    },
+    {
+      "name": "Tile_Wall_Side_3",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "3116c2a072b982be02e90a11b1a01687de4f048c1d35fee474a0b3005eba8890"
+    },
+    {
+      "name": "Tile_Wall_Side_3-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "3116c2a072b982be02e90a11b1a01687de4f048c1d35fee474a0b3005eba8890"
+    },
+    {
+      "name": "Tile_Wall_Side_4",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "929ba0ebfd74a6c170b01c9e3921f942e3cce119f5e737aa568cde590a6a7dbf"
+    },
+    {
+      "name": "Tile_Wall_Side_4-colonly",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "929ba0ebfd74a6c170b01c9e3921f942e3cce119f5e737aa568cde590a6a7dbf"
+    },
+    {
+      "name": "Tree_1",
+      "vertices": 32,
+      "polygons": 25,
+      "sha256": "8ffbeab356d54c0a618de415882cd8563d45454a72ca069d066e4836182d2901"
+    },
+    {
+      "name": "Tree_1-colonly",
+      "vertices": 32,
+      "polygons": 25,
+      "sha256": "8ffbeab356d54c0a618de415882cd8563d45454a72ca069d066e4836182d2901"
+    },
+    {
+      "name": "Tree_1_Leaf",
+      "vertices": 104,
+      "polygons": 62,
+      "sha256": "b1231283e5bccc3f818650277da4aaf7d5cf842017a3d36c3ba49450bc148522"
+    },
+    {
+      "name": "Tree_2",
+      "vertices": 32,
+      "polygons": 25,
+      "sha256": "6e8e2c31ceb35f67995948e24967ae7d0046b44e5ba1063abf076c5e63cc6475"
+    },
+    {
+      "name": "Tree_2-colonly",
+      "vertices": 32,
+      "polygons": 25,
+      "sha256": "6e8e2c31ceb35f67995948e24967ae7d0046b44e5ba1063abf076c5e63cc6475"
+    },
+    {
+      "name": "Tree_2_Leaf",
+      "vertices": 42,
+      "polygons": 28,
+      "sha256": "931a5581b58d66e6497709edd01004bd23fedc7992ddfed36f1be16634d06ad5"
+    },
+    {
+      "name": "Tree_3",
+      "vertices": 40,
+      "polygons": 33,
+      "sha256": "9df6c39a2d96b4a4ee5f43c85a0f5970554a28b560d4bcb6697564fcc4b1ebb6"
+    },
+    {
+      "name": "Tree_3-colonly",
+      "vertices": 40,
+      "polygons": 33,
+      "sha256": "9df6c39a2d96b4a4ee5f43c85a0f5970554a28b560d4bcb6697564fcc4b1ebb6"
+    },
+    {
+      "name": "Tree_3_Leaf",
+      "vertices": 256,
+      "polygons": 128,
+      "sha256": "98ce9a57782e45ef0ddbb1a563572ef5b83d359835e6e6ed3f74d61668bd5284"
+    },
+    {
+      "name": "Tree_4",
+      "vertices": 32,
+      "polygons": 25,
+      "sha256": "1d734554a0eb73fef8a0deaffde0d9f21f4dd65d60f653ff5efde970e9fe0019"
+    },
+    {
+      "name": "Tree_4-colonly",
+      "vertices": 32,
+      "polygons": 25,
+      "sha256": "1d734554a0eb73fef8a0deaffde0d9f21f4dd65d60f653ff5efde970e9fe0019"
+    },
+    {
+      "name": "Tree_4_Leaf",
+      "vertices": 60,
+      "polygons": 20,
+      "sha256": "c049f1e8b32cc208df3446217d072e7622beb630f600ec8b38303ec50abfbc31"
+    },
+    {
+      "name": "untitled.001",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "71407a1758014d85217854307deadb628d3d0c2029e395a364ba98a802b299b2"
+    },
+    {
+      "name": "untitled.009",
+      "vertices": 12,
+      "polygons": 6,
+      "sha256": "2e4f7b44678860950bf3145920f511d7ed2666470474633918935ff05609170d"
+    },
+    {
+      "name": "untitled.015",
+      "vertices": 12,
+      "polygons": 6,
+      "sha256": "f057a825c690c793635556fea59696f650c6c0eff139e9cddf4d7e1c857b4d3b"
+    },
+    {
+      "name": "untitled.018",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "126c0030bafabf86ca5bfa771b0757341e2a7549a8921266a87a686aad2540a2"
+    },
+    {
+      "name": "untitled.021",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "150a820dfc301da2206a994e61c0cb749e7a2cb9723dea4da61e31caa15e40fc"
+    },
+    {
+      "name": "untitled.022",
+      "vertices": 192,
+      "polygons": 80,
+      "sha256": "027e75989920cde95bc9ba541c1f59d5a467d141d1deef8dc20de264798a7284"
+    },
+    {
+      "name": "untitled.024",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "75a209603d289ee480f31564d12b10f8543152f4d8a9f5cd26722cf32023fa6b"
+    },
+    {
+      "name": "untitled.025",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "5ec32df2623e6077233e2b237adc6ca34c721dfc9d2c85ed5e4f2c790f5657e2"
+    },
+    {
+      "name": "untitled.026",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "4e0e7067bec52698aaacce98715c229efa93d3b62ef37f7e76f93a970a111cb0"
+    },
+    {
+      "name": "untitled.027",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "c5724aeac2b0cbfb6c47ac8ac202a94959ad6e328c445f99a771b783723dfff6"
+    },
+    {
+      "name": "untitled.030",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "e26b252a225e10dcf4254245b2ef9b0c1cd06672d66744e9bec6f2dcc14efbaa"
+    },
+    {
+      "name": "untitled.031",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "0e90ca5763f71dcd6534c04695c8d615088e33024baf16f0f3cf424cc7024445"
+    },
+    {
+      "name": "untitled.040",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "a436a24d6d2cec98b3914c85995dac11e7c3b5cbd3361558f82c0dd394842c14"
+    },
+    {
+      "name": "untitled.041",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "49f3902475c77ba5db860243cf523cb9d77010190e67df252eb10e5aa47be858"
+    },
+    {
+      "name": "untitled.042",
+      "vertices": 192,
+      "polygons": 80,
+      "sha256": "027e75989920cde95bc9ba541c1f59d5a467d141d1deef8dc20de264798a7284"
+    },
+    {
+      "name": "untitled.043",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "312c4aa2821450a8dc544c5e1d0b2a9a09fcb172d0742d8d0f723ae13cca72f8"
+    },
+    {
+      "name": "untitled.044",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "d5d26faae3a4db4de68d684d70e2caf8993edb61a6d9bf104f1d09ca279a4036"
+    },
+    {
+      "name": "untitled.045",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "1a44ea4d837fb14b4c43766bc0410dc63f1bd17c72bbd6897614b12af50be9b7"
+    },
+    {
+      "name": "untitled.046",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "00c9514fd6dbee68cbbeafd4594b3ef015eb5e0d5db9cb6ce70068b9d24e8094"
+    },
+    {
+      "name": "untitled.047",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "d3b2845cd8f862a7077c84c8db4681b5bedf1277a35d61bdf78b11088c4a3802"
+    },
+    {
+      "name": "untitled.048",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "5adc7f1a80cae8667ebf50b4e684b2a6e21cc4ee0c62abf59beb045eba562900"
+    },
+    {
+      "name": "untitled.067",
+      "vertices": 4,
+      "polygons": 2,
+      "sha256": "8e3aaee08eca6159f108725ecc9919d8d32854da386fa9f11f57fd8b4c406ac5"
+    },
+    {
+      "name": "untitled.068",
+      "vertices": 4,
+      "polygons": 2,
+      "sha256": "2fc1ea1f60dcb3bd37b3143e99676968a9bf21bd07c52c49cb6b22a3e1dce4a7"
+    },
+    {
+      "name": "untitled.069",
+      "vertices": 6,
+      "polygons": 4,
+      "sha256": "9e48786e958d68d2571133dc48aa9881eba0fd9ef5e9625d645d81e041f2c6f7"
+    },
+    {
+      "name": "untitled.072",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "17c19ebd33dc20132daf7ae029a15a3171e6bd6c6b0844efe7dd305cc44e6d86"
+    },
+    {
+      "name": "untitled.131",
+      "vertices": 192,
+      "polygons": 80,
+      "sha256": "e57780e4d02b450e7c454761f6a8708f45c86e9a85d3b8b39fe0268ceb9a8a07"
+    },
+    {
+      "name": "untitled.135",
+      "vertices": 4,
+      "polygons": 1,
+      "sha256": "49f3902475c77ba5db860243cf523cb9d77010190e67df252eb10e5aa47be858"
+    }
+  ],
+  "images": [
+    {
+      "name": "CanyonGround_Ambient Occlusion.png",
+      "path": "//..\\original\\Textures\\CanyonGround\\CanyonGround_Ambient Occlusion.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "901664d079e33df765d8842d84ea5de86e3970d2483129354675818895b4403d",
+      "external_exists": null
+    },
+    {
+      "name": "CanyonGround_Diffuse.png",
+      "path": "//..\\original\\Textures\\CanyonGround\\CanyonGround_Diffuse.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "cfee968664abdd1c3977cbd6c5b20d1a88618e12d53b77d85230594a880a0e3d",
+      "external_exists": null
+    },
+    {
+      "name": "CanyonGround_Normal.png",
+      "path": "//..\\original\\Textures\\CanyonGround\\CanyonGround_Normal.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "4592a42419bc1a094397e217f86ffd0bfea447483b420e29774b08b286f8eb5e",
+      "external_exists": null
+    },
+    {
+      "name": "CanyonGround_Roughness.png",
+      "path": "//..\\original\\Textures\\CanyonGround\\CanyonGround_Roughness.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "c9ffd242e80b2e059b3f7167ff83f9e248211c0a7e49653e47da967e86cc105d",
+      "external_exists": null
+    },
+    {
+      "name": "CanyonWall_3_Ambient Occlusion.png",
+      "path": "//..\\original\\Textures\\CanyonWall_3\\CanyonWall_3_Ambient Occlusion.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "aaf95965000c026270de1c035dc7c1a8872145f25f325e12f2b3483cb97f9ba3",
+      "external_exists": null
+    },
+    {
+      "name": "CanyonWall_3_Diffuse.png",
+      "path": "//..\\original\\Textures\\CanyonWall_3\\CanyonWall_3_Diffuse.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "35ca851adfdde5a41cb0e76b8553a127bdbb27ae885b6a81147918e5a57281d5",
+      "external_exists": null
+    },
+    {
+      "name": "CanyonWall_3_Normal.png",
+      "path": "//..\\original\\Textures\\CanyonWall_3\\CanyonWall_3_Normal.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "126316bbe63323e2bd70264adad563078a5002ad51f514a51029c349e936f7f2",
+      "external_exists": null
+    },
+    {
+      "name": "CanyonWall_3_Roughness.png",
+      "path": "//..\\original\\Textures\\CanyonWall_3\\CanyonWall_3_Roughness.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "3c162270fdf6ee40903484cc316bc1674bac0cd4b4f9983531dcb6846e0f9d19",
+      "external_exists": null
+    },
+    {
+      "name": "Plant_Alpha.tga",
+      "path": "//..\\original\\Textures\\plants\\Plant_Alpha.tga",
+      "packed": true,
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "sha256": "f156d101349adac262fdf92aedd0cd345997380ab4347e4c2f96a8cf00dada06",
+      "external_exists": null
+    },
+    {
+      "name": "Plant_color.tga",
+      "path": "//..\\original\\Textures\\plants\\Plant_color.tga",
+      "packed": true,
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "sha256": "71f750e1f4eabb8bbedcabddf88902ccbb5ad47d63401471b9a6911060eb2d04",
+      "external_exists": null
+    },
+    {
+      "name": "Plant_normal.png",
+      "path": "//..\\original\\Textures\\plants\\Plant_normal.png",
+      "packed": true,
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "sha256": "18c9cef928abd9b3585459629e188e7e00f9e50a76cf10a5124d47fdbcbb5e8b",
+      "external_exists": null
+    },
+    {
+      "name": "Plants_2_Diffuse.png",
+      "path": "//..\\original\\Textures\\plants_2\\Plants_2_Diffuse.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "ebcc20d68486089a54e04fe17058d5e5937bc0933ddc497be30a3c26afb22142",
+      "external_exists": null
+    },
+    {
+      "name": "Plants_2_Normal.png",
+      "path": "//..\\original\\Textures\\plants_2\\Plants_2_Normal.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "574f2792992e2fdbce29970823ce5139cc9b0758c22294231c2bfa084f338986",
+      "external_exists": null
+    },
+    {
+      "name": "Plants_2_Roughness.png",
+      "path": "//..\\original\\Textures\\plants_2\\Plants_2_Roughness.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "63e72fb56d10637486a8100a17e00f35cd510557092664d50b652bad6637bac4",
+      "external_exists": null
+    },
+    {
+      "name": "Rocks_Ambient Occlusion.png",
+      "path": "//..\\original\\Textures\\Rocks\\Rocks_Ambient Occlusion.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "a70465f7fe18d2bd601ed6c22bce2f33dc9c0f43a3f4ff6748311a1300a38453",
+      "external_exists": null
+    },
+    {
+      "name": "Rocks_Diffuse.png",
+      "path": "//..\\original\\Textures\\Rocks\\Rocks_Diffuse.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "af669c51f4ae762872df6b3418d6338c372a7bab6e221d5c58ac7d46b8129e45",
+      "external_exists": null
+    },
+    {
+      "name": "Rocks_Normal.png",
+      "path": "//..\\original\\Textures\\Rocks\\Rocks_Normal.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "fba4c18edf46a91f3ed543707697e960922aa29ea3d7707766a9e4090dc93a7a",
+      "external_exists": null
+    },
+    {
+      "name": "Rocks_Roughness.png",
+      "path": "//..\\original\\Textures\\Rocks\\Rocks_Roughness.png",
+      "packed": true,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "sha256": "e0281332bba3d74f4a64e2880f964907cb10435646e9b1e776b0e149cc9bcd89",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        158.1231689453125,
+        158.1231689453125,
+        0.0
+      ],
+      "bounds": [
+        [
+          -64.99238586425781,
+          -79.06158447265625,
+          0.0
+        ],
+        [
+          93.13078308105469,
+          79.06158447265625,
+          0.0
+        ]
+      ],
+      "materials": [
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cylinder.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.18054962158203125,
+        0.18054962158203125,
+        1.9407522678375244
+      ],
+      "bounds": [
+        [
+          -0.09027481079101562,
+          -0.09027481079101562,
+          0.0
+        ],
+        [
+          0.09027481079101562,
+          0.09027481079101562,
+          1.9407522678375244
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "Cylinder.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.45935192704200745,
+        0.41189733147621155,
+        0.6876630783081055
+      ],
+      "bounds": [
+        [
+          -0.21355152130126953,
+          -0.21119418740272522,
+          2.816952928696992e-06
+        ],
+        [
+          0.24580040574073792,
+          0.20070314407348633,
+          0.6876658797264099
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.41789788007736206,
+        0.6426371932029724,
+        0.675561249256134
+      ],
+      "bounds": [
+        [
+          -0.2089339643716812,
+          -0.3165009319782257,
+          -0.6755616664886475
+        ],
+        [
+          0.20896390080451965,
+          0.3261362612247467,
+          -4.0046870708465576e-07
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2752224802970886,
+        4.8121421514224494e-08,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          -0.14475657045841217,
+          0.0,
+          0.0
+        ],
+        [
+          0.13046592473983765,
+          4.8121421514224494e-08,
+          1.0798155069351196
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1914552450180054,
+        0.3736424446105957,
+        0.1070934534072876
+      ],
+      "bounds": [
+        [
+          1.0728836059570312e-06,
+          -0.18682190775871277,
+          0.0
+        ],
+        [
+          1.1914563179016113,
+          0.18682053685188293,
+          0.1070934534072876
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1914552450180054,
+        0.3049246072769165,
+        8.881784197001252e-16
+      ],
+      "bounds": [
+        [
+          1.082767312254873e-06,
+          -0.15246230363845825,
+          -4.562066599055753e-14
+        ],
+        [
+          1.1914563179016113,
+          0.15246230363845825,
+          -4.4732487570857404e-14
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.685698986053467,
+        1.173956292177536e-07,
+        2.685698986053467
+      ],
+      "bounds": [
+        [
+          -1.3428492546081543,
+          -1.173956292177536e-07,
+          0.0
+        ],
+        [
+          1.3428497314453125,
+          0.0,
+          2.685698986053467
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.032",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        17.1983642578125,
+        3.136070728302002,
+        3.1358702182769775
+      ],
+      "bounds": [
+        [
+          -14.771373748779297,
+          -1.5691752433776855,
+          -2.5236568450927734
+        ],
+        [
+          2.4269914627075195,
+          1.5668953657150269,
+          0.6122133731842041
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4084218144416809,
+        0.49537888169288635,
+        0.6418306231498718
+      ],
+      "bounds": [
+        [
+          -0.2190939486026764,
+          -0.2539561986923218,
+          -0.6418301463127136
+        ],
+        [
+          0.18932786583900452,
+          0.24142268300056458,
+          5.057081580162048e-07
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4136608839035034,
+        0.49621278047561646,
+        0.6945525407791138
+      ],
+      "bounds": [
+        [
+          -0.2137814462184906,
+          -0.23884956538677216,
+          -0.6263164281845093
+        ],
+        [
+          0.19987943768501282,
+          0.2573632001876831,
+          0.06823614239692688
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4318903684616089,
+        0.6885230541229248,
+        0.8240759372711182
+      ],
+      "bounds": [
+        [
+          -0.18479017913341522,
+          -0.32340407371520996,
+          -0.8240766525268555
+        ],
+        [
+          0.24710017442703247,
+          0.36511898040771484,
+          -7.245689630508423e-07
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4542670249938965,
+        0.1233108639717102,
+        0.4542672634124756
+      ],
+      "bounds": [
+        [
+          -0.22713351249694824,
+          -0.0616554319858551,
+          1.4901161193847656e-08
+        ],
+        [
+          0.22713351249694824,
+          0.0616554319858551,
+          0.4542672634124756
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "Cylinder.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7261777520179749,
+        1.1747207641601562,
+        1.1670196056365967
+      ],
+      "bounds": [
+        [
+          -0.13688033819198608,
+          -0.0005207657814025879,
+          -1.0393331050872803
+        ],
+        [
+          0.5892974138259888,
+          1.1741999387741089,
+          0.12768644094467163
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.18054962158203125,
+        0.18054962158203125,
+        1.9407522678375244
+      ],
+      "bounds": [
+        [
+          -0.09027481079101562,
+          -0.09027481079101562,
+          0.0
+        ],
+        [
+          0.09027481079101562,
+          0.09027481079101562,
+          1.9407522678375244
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "untitled.034",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        17.1983642578125,
+        3.136070728302002,
+        3.1358702182769775
+      ],
+      "bounds": [
+        [
+          -14.771373748779297,
+          -1.5691752433776855,
+          -2.5236568450927734
+        ],
+        [
+          2.4269914627075195,
+          1.5668953657150269,
+          0.6122133731842041
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.039",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2752224802970886,
+        4.8121421514224494e-08,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          -0.1816885620355606,
+          0.0,
+          0.0
+        ],
+        [
+          0.09353393316268921,
+          4.8121421514224494e-08,
+          1.0798155069351196
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.040",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5504448413848877,
+        4.8121421514224494e-08,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          -0.3129042685031891,
+          0.0,
+          0.0
+        ],
+        [
+          0.23754054307937622,
+          4.8121421514224494e-08,
+          1.0798155069351196
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.026",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1597487926483154,
+        5.06942328115656e-08,
+        1.060512900352478
+      ],
+      "bounds": [
+        [
+          -0.5798743367195129,
+          0.0,
+          -2.1606683731079102e-07
+        ],
+        [
+          0.5798745155334473,
+          5.06942328115656e-08,
+          1.060512661933899
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.027",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798745155334473,
+        5.06942328115656e-08,
+        1.0605127811431885
+      ],
+      "bounds": [
+        [
+          -0.2899368703365326,
+          -5.06942328115656e-08,
+          -4.172325134277344e-07
+        ],
+        [
+          0.28993767499923706,
+          0.0,
+          1.0605124235153198
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.028",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798743367195129,
+        5.06942328115656e-08,
+        1.0605127811431885
+      ],
+      "bounds": [
+        [
+          -0.2899368703365326,
+          -5.06942328115656e-08,
+          -4.172325134277344e-07
+        ],
+        [
+          0.28993746638298035,
+          0.0,
+          1.0605124235153198
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.029",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1597487926483154,
+        5.06942328115656e-08,
+        1.0605127811431885
+      ],
+      "bounds": [
+        [
+          -0.5798743367195129,
+          -5.06942328115656e-08,
+          -4.172325134277344e-07
+        ],
+        [
+          0.5798745155334473,
+          0.0,
+          1.0605124235153198
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.031",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798743367195129,
+        5.06942328115656e-08,
+        1.060512900352478
+      ],
+      "bounds": [
+        [
+          -0.2899368703365326,
+          0.0,
+          -2.1606683731079102e-07
+        ],
+        [
+          0.28993746638298035,
+          5.06942328115656e-08,
+          1.060512661933899
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.033",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798745155334473,
+        5.06942328115656e-08,
+        1.060512900352478
+      ],
+      "bounds": [
+        [
+          -0.2899368703365326,
+          0.0,
+          -2.1606683731079102e-07
+        ],
+        [
+          0.28993767499923706,
+          5.06942328115656e-08,
+          1.060512661933899
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.025",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4136608839035034,
+        0.49621278047561646,
+        0.6945525407791138
+      ],
+      "bounds": [
+        [
+          -0.2137814462184906,
+          -0.23884956538677216,
+          -0.6263164281845093
+        ],
+        [
+          0.19987943768501282,
+          0.2573632001876831,
+          0.06823614239692688
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.020",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.340358853340149,
+        1.2826426029205322,
+        0.7623627185821533
+      ],
+      "bounds": [
+        [
+          -1.1586415767669678,
+          -1.9073486328125e-06,
+          -0.581994354724884
+        ],
+        [
+          0.18171727657318115,
+          1.2826406955718994,
+          0.1803683340549469
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.027",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.18054962158203125,
+        0.18054962158203125,
+        1.9407522678375244
+      ],
+      "bounds": [
+        [
+          -0.09027481079101562,
+          -0.09027481079101562,
+          0.0
+        ],
+        [
+          0.09027481079101562,
+          0.09027481079101562,
+          1.9407522678375244
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "untitled.101",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        17.1983642578125,
+        3.136070728302002,
+        3.1358702182769775
+      ],
+      "bounds": [
+        [
+          -14.771373748779297,
+          -1.5691752433776855,
+          -2.5236568450927734
+        ],
+        [
+          2.4269914627075195,
+          1.5668953657150269,
+          0.6122133731842041
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.028",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3403587341308594,
+        0.661487340927124,
+        0.7623627185821533
+      ],
+      "bounds": [
+        [
+          -1.1586415767669678,
+          0.6211533546447754,
+          -0.581994354724884
+        ],
+        [
+          0.18171721696853638,
+          1.2826406955718994,
+          0.1803683340549469
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.024",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1320756673812866,
+        1.1383395195007324,
+        0.0
+      ],
+      "bounds": [
+        [
+          2.7136121616422315e-07,
+          4.98170606988424e-07,
+          -3.3100997143264976e-07
+        ],
+        [
+          1.1320759057998657,
+          1.1383399963378906,
+          -3.3100997143264976e-07
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.025",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1320756673812866,
+        1.1383395195007324,
+        0.0
+      ],
+      "bounds": [
+        [
+          -1.1320756673812866,
+          2.0048328508437407e-07,
+          -3.646099457910168e-07
+        ],
+        [
+          5.26521759525167e-08,
+          1.1383397579193115,
+          -3.646099457910168e-07
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.037",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3428494930267334,
+        1.173956292177536e-07,
+        2.685698986053467
+      ],
+      "bounds": [
+        [
+          -0.6714248657226562,
+          -1.173956292177536e-07,
+          0.0
+        ],
+        [
+          0.6714246273040771,
+          0.0,
+          2.685698986053467
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.038",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3428494930267334,
+        1.173956292177536e-07,
+        2.685698986053467
+      ],
+      "bounds": [
+        [
+          -0.6714251041412354,
+          -1.173956292177536e-07,
+          0.0
+        ],
+        [
+          0.671424388885498,
+          0.0,
+          2.685698986053467
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cylinder.017",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2857826054096222,
+        0.2857826054096222,
+        2.0
+      ],
+      "bounds": [
+        [
+          -0.1428913027048111,
+          -0.1428913027048111,
+          0.0
+        ],
+        [
+          0.1428913027048111,
+          0.1428913027048111,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "Cylinder.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2857826054096222,
+        0.2857826054096222,
+        2.0
+      ],
+      "bounds": [
+        [
+          -0.1428913027048111,
+          -0.1428913027048111,
+          0.0
+        ],
+        [
+          0.1428913027048111,
+          0.1428913027048111,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "untitled.060",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.2641515731811523,
+        1.1383397579193115,
+        0.0
+      ],
+      "bounds": [
+        [
+          -1.1320756673812866,
+          2.0048328508437407e-07,
+          -3.646099457910168e-07
+        ],
+        [
+          1.1320759057998657,
+          1.1383399963378906,
+          -3.646099457910168e-07
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.047",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3428494930267334,
+        1.0791606903076172,
+        2.685698986053467
+      ],
+      "bounds": [
+        [
+          -0.6714248657226562,
+          -0.5395804643630981,
+          0.0
+        ],
+        [
+          0.6714246273040771,
+          0.539580225944519,
+          2.685698986053467
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.048",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3428494930267334,
+        1.0791606903076172,
+        2.685698986053467
+      ],
+      "bounds": [
+        [
+          -0.6714251041412354,
+          -0.5395804643630981,
+          0.0
+        ],
+        [
+          0.671424388885498,
+          0.539580225944519,
+          2.685698986053467
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.046",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.2641515731811523,
+        1.1383397579193115,
+        1.480916142463684
+      ],
+      "bounds": [
+        [
+          -1.1320756673812866,
+          2.0048328508437407e-07,
+          -0.7404584288597107
+        ],
+        [
+          1.1320759057998657,
+          1.1383399963378906,
+          0.7404577136039734
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.051",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3428494930267334,
+        1.1572937965393066,
+        2.023961305618286
+      ],
+      "bounds": [
+        [
+          -0.6714248657226562,
+          -3.7588606573990546e-06,
+          0.0
+        ],
+        [
+          0.6714246273040771,
+          1.157289981842041,
+          2.023961305618286
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.022",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.14080113172531128,
+        1.2309214980632532e-08,
+        0.2710295021533966
+      ],
+      "bounds": [
+        [
+          -0.07040147483348846,
+          -7.753426416456932e-07,
+          6.230548024177551e-07
+        ],
+        [
+          0.07039964944124222,
+          -7.630334266650607e-07,
+          0.27103012800216675
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.030",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.14080113172531128,
+        1.2309214980632532e-08,
+        0.2710295021533966
+      ],
+      "bounds": [
+        [
+          -0.07040147483348846,
+          -7.753426416456932e-07,
+          6.230548024177551e-07
+        ],
+        [
+          0.07039964944124222,
+          -7.630334266650607e-07,
+          0.27103012800216675
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "untitled.021",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.685698986053467,
+        2.934890375172472e-08,
+        0.6714246273040771
+      ],
+      "bounds": [
+        [
+          -1.3428421020507812,
+          5.86978146088768e-08,
+          4.76837158203125e-07
+        ],
+        [
+          1.3428568840026855,
+          8.804671836060152e-08,
+          0.6714251041412354
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cube.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Cube.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Cube.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.019",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.020",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.021",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.022",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.023",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Cube.024",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Ground",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -82.0,
+          -2.0,
+          14.0
+        ],
+        [
+          -78.0,
+          2.0,
+          14.0
+        ]
+      ],
+      "materials": [
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Side_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -81.0,
+          -5.0,
+          0.0
+        ],
+        [
+          -77.0,
+          -5.0,
+          4.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Corner_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -85.0,
+          -5.0,
+          0.0
+        ],
+        [
+          -81.0,
+          -1.0,
+          4.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Side_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -80.0,
+          -4.0,
+          8.0
+        ],
+        [
+          -76.0,
+          -4.0,
+          10.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Corner_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -84.0,
+          -4.0,
+          8.0
+        ],
+        [
+          -80.0,
+          0.0,
+          10.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Side_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          -79.0,
+          -3.0,
+          10.0
+        ],
+        [
+          -75.0,
+          -3.0,
+          13.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Corner_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          -83.0,
+          -3.0,
+          10.0
+        ],
+        [
+          -79.0,
+          1.0,
+          13.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Side_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -78.0,
+          -2.0,
+          13.0
+        ],
+        [
+          -74.0,
+          -2.0,
+          14.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Corner_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -82.0,
+          -2.0,
+          13.0
+        ],
+        [
+          -78.0,
+          2.0,
+          14.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Ground_Ramp_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -85.0,
+          -9.0,
+          4.0
+        ],
+        [
+          -81.0,
+          -5.0,
+          8.0
+        ]
+      ],
+      "materials": [
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Ground_Ramp_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -84.0,
+          -8.0,
+          8.0
+        ],
+        [
+          -80.0,
+          -4.0,
+          10.0
+        ]
+      ],
+      "materials": [
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Ground_Ramp_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          -83.0,
+          -7.0,
+          10.0
+        ],
+        [
+          -79.0,
+          -3.0,
+          13.0
+        ]
+      ],
+      "materials": [
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Ground_Ramp_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -82.0,
+          -6.0,
+          13.0
+        ],
+        [
+          -78.0,
+          -2.0,
+          14.0
+        ]
+      ],
+      "materials": [
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -82.0,
+          -6.0,
+          13.0
+        ],
+        [
+          -82.0,
+          -2.0,
+          14.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -84.0,
+          -8.0,
+          8.0
+        ],
+        [
+          -84.0,
+          -4.0,
+          10.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          -83.0,
+          -7.0,
+          10.0
+        ],
+        [
+          -83.0,
+          -3.0,
+          13.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ledges",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.5256295800209045,
+        3.597738027572632
+      ],
+      "bounds": [
+        [
+          -81.0,
+          -5.520193099975586,
+          4.235595226287842
+        ],
+        [
+          -77.0,
+          -4.994563102722168,
+          7.8333330154418945
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -85.0,
+          -9.0,
+          4.0
+        ],
+        [
+          -85.0,
+          -5.0,
+          8.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_4_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -78.0,
+          -6.0,
+          13.0
+        ],
+        [
+          -78.0,
+          -2.0,
+          14.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_2_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -80.0,
+          -8.0,
+          8.0
+        ],
+        [
+          -80.0,
+          -4.0,
+          10.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_3_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          -79.0,
+          -7.0,
+          10.0
+        ],
+        [
+          -79.0,
+          -3.0,
+          13.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ramp_1_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -81.0,
+          -9.0,
+          4.0
+        ],
+        [
+          -81.0,
+          -5.0,
+          8.0
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ledge",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.27074986696243286,
+        0.3520157039165497
+      ],
+      "bounds": [
+        [
+          -81.0,
+          -5.270750045776367,
+          2.0
+        ],
+        [
+          -77.0,
+          -5.0,
+          2.352015733718872
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Tile_Wall_Ledge_Corner",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.225255012512207,
+        4.212420463562012,
+        0.4122879207134247
+      ],
+      "bounds": [
+        [
+          -85.22525787353516,
+          -5.212420463562012,
+          2.0
+        ],
+        [
+          -81.0,
+          -1.0,
+          2.412287950515747
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Grass_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.32127463817596436,
+        0.308441698551178,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          40.56686019897461,
+          -21.886690139770508,
+          -0.032533228397369385
+        ],
+        [
+          40.88813400268555,
+          -21.578248977661133,
+          1.0472822189331055
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_6",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6105231046676636,
+        0.5504448413848877,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          40.941627502441406,
+          -21.860092163085938,
+          -0.032533228397369385
+        ],
+        [
+          41.55215072631836,
+          -21.309646606445312,
+          1.0472822189331055
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.325894296169281,
+        0.3114630877971649,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          40.30938720703125,
+          -21.546098709106445,
+          -0.032533228397369385
+        ],
+        [
+          40.635284423828125,
+          -21.234634399414062,
+          1.0472822189331055
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.20259973406791687,
+        0.12129873037338257,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          40.73915481567383,
+          -20.991945266723633,
+          -0.032533228397369385
+        ],
+        [
+          40.94175338745117,
+          -20.870647430419922,
+          1.0472822189331055
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_5",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.24751251935958862,
+        0.06689783185720444,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          41.01437759399414,
+          -20.991945266723633,
+          -0.032533228397369385
+        ],
+        [
+          41.26189041137695,
+          -20.925046920776367,
+          1.0472822189331055
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.40119051933288574,
+        0.2216665893793106,
+        1.0798155069351196
+      ],
+      "bounds": [
+        [
+          40.18871307373047,
+          -20.991945266723633,
+          -0.032533228397369385
+        ],
+        [
+          40.58990478515625,
+          -20.770278930664062,
+          1.0472822189331055
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_9",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.24308858811855316,
+        0.23817366361618042,
+        1.084059715270996
+      ],
+      "bounds": [
+        [
+          42.67514419555664,
+          -21.474925994873047,
+          -0.032533228397369385
+        ],
+        [
+          42.91823196411133,
+          -21.236751556396484,
+          1.051526427268982
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_10",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.2806359529495239,
+        0.25105804204940796,
+        1.1311001777648926
+      ],
+      "bounds": [
+        [
+          42.936668395996094,
+          -21.523412704467773,
+          -0.032533228397369385
+        ],
+        [
+          43.21730422973633,
+          -21.272354125976562,
+          1.0985668897628784
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_7",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.23275451362133026,
+        0.2508968114852905,
+        1.0802525281906128
+      ],
+      "bounds": [
+        [
+          41.86534118652344,
+          -21.4763240814209,
+          -0.032533228397369385
+        ],
+        [
+          42.09809494018555,
+          -21.225427627563477,
+          1.0477192401885986
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Grass_8",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.25997596979141235,
+        0.2426275908946991,
+        1.1139733791351318
+      ],
+      "bounds": [
+        [
+          42.12809753417969,
+          -21.52861213684082,
+          -0.032533228397369385
+        ],
+        [
+          42.3880729675293,
+          -21.28598403930664,
+          1.0814400911331177
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Sticks_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1597487926483154,
+        1.1597487926483154,
+        1.0605130195617676
+      ],
+      "bounds": [
+        [
+          40.5600700378418,
+          -20.383657455444336,
+          -0.03253364562988281
+        ],
+        [
+          41.71982192993164,
+          -19.223909378051758,
+          1.0279793739318848
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Sticks_6",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798745155334473,
+        0.5798745155334473,
+        1.0605130195617676
+      ],
+      "bounds": [
+        [
+          42.24381637573242,
+          -20.093719482421875,
+          -0.03253364562988281
+        ],
+        [
+          42.82368850708008,
+          -19.513845443725586,
+          1.0279793739318848
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Sticks_5",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798743367195129,
+        0.5798743367195129,
+        1.0605130195617676
+      ],
+      "bounds": [
+        [
+          41.85000991821289,
+          -20.093719482421875,
+          -0.03253364562988281
+        ],
+        [
+          42.42988204956055,
+          -19.513845443725586,
+          1.0279793739318848
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Sticks_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1597487926483154,
+        1.1597487926483154,
+        1.0605130195617676
+      ],
+      "bounds": [
+        [
+          40.5600700378418,
+          -19.383657455444336,
+          -0.03253364562988281
+        ],
+        [
+          41.71982192993164,
+          -18.223909378051758,
+          1.0279793739318848
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Sticks_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798743367195129,
+        0.5798743367195129,
+        1.0605130195617676
+      ],
+      "bounds": [
+        [
+          41.6728401184082,
+          -19.093719482421875,
+          -0.03253364562988281
+        ],
+        [
+          42.25271224975586,
+          -18.513845443725586,
+          1.0279793739318848
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Sticks_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5798745155334473,
+        0.5798745155334473,
+        1.0605130195617676
+      ],
+      "bounds": [
+        [
+          40.18976974487305,
+          -20.093719482421875,
+          -0.03253364562988281
+        ],
+        [
+          40.7696418762207,
+          -19.513845443725586,
+          1.0279793739318848
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Small_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4010672867298126,
+        0.4022350311279297,
+        0.5778250694274902
+      ],
+      "bounds": [
+        [
+          43.623321533203125,
+          -18.728347778320312,
+          -0.1899999976158142
+        ],
+        [
+          44.02438735961914,
+          -18.326112747192383,
+          0.3878251016139984
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Tall_5",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0604835748672485,
+        0.33670151233673096,
+        2.1908466815948486
+      ],
+      "bounds": [
+        [
+          43.21969985961914,
+          -17.89749526977539,
+          -0.1900004744529724
+        ],
+        [
+          44.28018569946289,
+          -17.560794830322266,
+          2.0008461475372314
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Flat_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8356256484985352,
+        0.7456015348434448,
+        1.060545802116394
+      ],
+      "bounds": [
+        [
+          44.03006362915039,
+          -17.760875701904297,
+          -0.015485024079680443
+        ],
+        [
+          44.86568832397461,
+          -17.015274047851562,
+          1.0450607538223267
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Flat_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8234678506851196,
+        0.9034491181373596,
+        1.6807056665420532
+      ],
+      "bounds": [
+        [
+          44.885704040527344,
+          -17.981945037841797,
+          0.0004503820091485977
+        ],
+        [
+          45.709171295166016,
+          -17.078495025634766,
+          1.681156039237976
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Small_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5253124833106995,
+        0.5268419981002808,
+        0.6529898047447205
+      ],
+      "bounds": [
+        [
+          44.34858703613281,
+          -18.552053451538086,
+          -0.1899992823600769
+        ],
+        [
+          44.8739013671875,
+          -18.025211334228516,
+          0.46299052238464355
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Flat_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9298614859580994,
+        0.6213744878768921,
+        0.9406957030296326
+      ],
+      "bounds": [
+        [
+          45.099639892578125,
+          -18.250619888305664,
+          0.010723146609961987
+        ],
+        [
+          46.02949905395508,
+          -17.62924575805664,
+          0.9514188766479492
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Small_5",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5253124833106995,
+        0.5268419981002808,
+        0.6807560920715332
+      ],
+      "bounds": [
+        [
+          45.14637756347656,
+          -18.552053451538086,
+          -0.18999910354614258
+        ],
+        [
+          45.67169189453125,
+          -18.025211334228516,
+          0.49075695872306824
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Tall_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8731043338775635,
+        0.33670151233673096,
+        2.1908466815948486
+      ],
+      "bounds": [
+        [
+          42.01829147338867,
+          -17.808263778686523,
+          -0.1900004744529724
+        ],
+        [
+          42.89139938354492,
+          -17.4715633392334,
+          2.0008461475372314
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Tall_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5231070518493652,
+        0.33670151233673096,
+        2.190847635269165
+      ],
+      "bounds": [
+        [
+          42.265899658203125,
+          -18.16758918762207,
+          -0.19000095129013062
+        ],
+        [
+          42.789005279541016,
+          -17.830888748168945,
+          2.0008466243743896
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Tall_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5967931747436523,
+        0.4842807948589325,
+        2.3216774463653564
+      ],
+      "bounds": [
+        [
+          42.46809005737305,
+          -19.289133071899414,
+          -0.1900004744529724
+        ],
+        [
+          43.064884185791016,
+          -18.804853439331055,
+          2.1316769123077393
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Tall_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.205993413925171,
+        0.7248870134353638,
+        2.1908466815948486
+      ],
+      "bounds": [
+        [
+          40.7968864440918,
+          -18.6853084564209,
+          -0.1900004744529724
+        ],
+        [
+          42.00288009643555,
+          -17.96042251586914,
+          2.0008461475372314
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Small_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.46817120909690857,
+        0.46953433752059937,
+        0.7498482465744019
+      ],
+      "bounds": [
+        [
+          44.209754943847656,
+          -19.005054473876953,
+          -0.1899990290403366
+        ],
+        [
+          44.67792510986328,
+          -18.535518646240234,
+          0.559849202632904
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Cactus_Small_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5434412956237793,
+        0.5450235605239868,
+        0.6538118720054626
+      ],
+      "bounds": [
+        [
+          43.19758605957031,
+          -18.799741744995117,
+          -0.18999981880187988
+        ],
+        [
+          43.74102783203125,
+          -18.254716873168945,
+          0.46381205320358276
+        ]
+      ],
+      "materials": [
+        "Plant_2",
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Tree_4_Leaf",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.2641515731811523,
+        2.3375637531280518,
+        1.7244280576705933
+      ],
+      "bounds": [
+        [
+          44.28485107421875,
+          -23.606056213378906,
+          1.3563848733901978
+        ],
+        [
+          46.54900360107422,
+          -21.26849365234375,
+          3.080812931060791
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Tree_1_Leaf",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.8306480646133423,
+        1.7920973300933838,
+        1.2236850261688232
+      ],
+      "bounds": [
+        [
+          43.242374420166016,
+          -21.53119659423828,
+          1.1951582431793213
+        ],
+        [
+          45.07302474975586,
+          -19.739099502563477,
+          2.4188432693481445
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Tree_3_Leaf",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.558869481086731,
+        1.749722957611084,
+        1.5673240423202515
+      ],
+      "bounds": [
+        [
+          45.32926559448242,
+          -21.81546401977539,
+          1.1873047351837158
+        ],
+        [
+          46.88813781738281,
+          -20.06574058532715,
+          2.7546286582946777
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Tree_2_Leaf",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.5762114524841309,
+        1.8332602977752686,
+        1.7299904823303223
+      ],
+      "bounds": [
+        [
+          43.147891998291016,
+          -23.81568145751953,
+          1.0978796482086182
+        ],
+        [
+          44.72410202026367,
+          -21.982419967651367,
+          2.8278701305389404
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Tree_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.47557514905929565,
+        0.42523887753486633,
+        2.5060598850250244
+      ],
+      "bounds": [
+        [
+          45.66836929321289,
+          -21.155481338500977,
+          -0.5865287780761719
+        ],
+        [
+          46.14394760131836,
+          -20.730241775512695,
+          1.9195311069488525
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "Tree_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4636366367340088,
+        0.42523887753486633,
+        2.560136556625366
+      ],
+      "bounds": [
+        [
+          44.98653793334961,
+          -22.652042388916016,
+          -0.5865283608436584
+        ],
+        [
+          45.450172424316406,
+          -22.226804733276367,
+          1.9736082553863525
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "Tree_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5283554196357727,
+        0.44085538387298584,
+        2.3435027599334717
+      ],
+      "bounds": [
+        [
+          43.70478057861328,
+          -20.91684913635254,
+          -0.7049971222877502
+        ],
+        [
+          44.23313522338867,
+          -20.475994110107422,
+          1.6385056972503662
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "Tree_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5350392460823059,
+        0.42523887753486633,
+        2.4481499195098877
+      ],
+      "bounds": [
+        [
+          43.93775177001953,
+          -23.06483268737793,
+          -0.5966405868530273
+        ],
+        [
+          44.4727897644043,
+          -22.63959312438965,
+          1.8515093326568604
+        ]
+      ],
+      "materials": [
+        "Plant_2"
+      ]
+    },
+    {
+      "name": "Leafs_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1643996238708496,
+        1.1724786758422852,
+        0.355205237865448
+      ],
+      "bounds": [
+        [
+          44.87440490722656,
+          -19.68143653869629,
+          0.00045002996921539307
+        ],
+        [
+          46.03880310058594,
+          -18.508956909179688,
+          0.3556552529335022
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Leafs_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9068674445152283,
+        0.850845992565155,
+        0.264415442943573
+      ],
+      "bounds": [
+        [
+          45.7893180847168,
+          -19.19025230407715,
+          0.00045083576696924865
+        ],
+        [
+          46.69618606567383,
+          -18.339406967163086,
+          0.26486629247665405
+        ]
+      ],
+      "materials": [
+        "Plant_1"
+      ]
+    },
+    {
+      "name": "Rock_Formations_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.26816463470459,
+        6.25013542175293,
+        3.0151124000549316
+      ],
+      "bounds": [
+        [
+          37.49150466918945,
+          -3.637105703353882,
+          -0.24990761280059814
+        ],
+        [
+          43.75967025756836,
+          2.613029956817627,
+          2.765204906463623
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.78972864151001,
+        4.767996311187744,
+        2.687382698059082
+      ],
+      "bounds": [
+        [
+          39.15522384643555,
+          -1.9745454788208008,
+          2.09871768951416
+        ],
+        [
+          43.944950103759766,
+          2.7934508323669434,
+          4.786100387573242
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_6",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.351563453674316,
+        4.624613285064697,
+        5.602344512939453
+      ],
+      "bounds": [
+        [
+          32.65748596191406,
+          -43.58607864379883,
+          -0.8647851943969727
+        ],
+        [
+          38.00904846191406,
+          -38.961463928222656,
+          4.7375593185424805
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.373213768005371,
+        5.999866008758545,
+        5.57888650894165
+      ],
+      "bounds": [
+        [
+          25.70452308654785,
+          -33.841949462890625,
+          -1.9116177558898926
+        ],
+        [
+          31.07773780822754,
+          -27.842082977294922,
+          3.667268753051758
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.584358215332031,
+        4.350652694702148,
+        3.718855857849121
+      ],
+      "bounds": [
+        [
+          23.920909881591797,
+          -41.809043884277344,
+          -4.76837158203125e-07
+        ],
+        [
+          28.505268096923828,
+          -37.45838928222656,
+          3.718855381011963
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.203144073486328,
+        5.0943498611450195,
+        4.730449676513672
+      ],
+      "bounds": [
+        [
+          31.731611251831055,
+          -37.056236267089844,
+          -1.4577521085739136
+        ],
+        [
+          36.93475341796875,
+          -31.961885452270508,
+          3.272697925567627
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_9",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        21.58570098876953,
+        5.437023162841797,
+        6.817066669464111
+      ],
+      "bounds": [
+        [
+          3.276003837585449,
+          -28.69742202758789,
+          -1.4779183864593506
+        ],
+        [
+          24.861703872680664,
+          -23.260398864746094,
+          5.33914852142334
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_10",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        18.818870544433594,
+        4.862503528594971,
+        12.294000625610352
+      ],
+      "bounds": [
+        [
+          5.350430488586426,
+          -36.2257194519043,
+          -2.495048999786377
+        ],
+        [
+          24.169300079345703,
+          -31.36321449279785,
+          9.798952102661133
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Formations_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.724253177642822,
+        6.1535749435424805,
+        11.514793395996094
+      ],
+      "bounds": [
+        [
+          23.35203742980957,
+          -10.145590782165527,
+          -0.6241593360900879
+        ],
+        [
+          30.076290130615234,
+          -3.9920153617858887,
+          10.890634536743164
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_6",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.473097324371338,
+        3.8950512409210205,
+        13.410576820373535
+      ],
+      "bounds": [
+        [
+          29.157241821289062,
+          -3.8606176376342773,
+          -0.10327529907226562
+        ],
+        [
+          32.63033676147461,
+          0.034433603286743164,
+          13.30730152130127
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_7",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        10.353023529052734,
+        9.195913314819336,
+        15.508546829223633
+      ],
+      "bounds": [
+        [
+          31.362106323242188,
+          -3.6122398376464844,
+          -2.0271291732788086
+        ],
+        [
+          41.71512985229492,
+          5.583673477172852,
+          13.481417655944824
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_10",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        8.498238563537598,
+        8.23886489868164,
+        6.59560489654541
+      ],
+      "bounds": [
+        [
+          49.12221908569336,
+          -25.6818790435791,
+          -1.13181471824646
+        ],
+        [
+          57.62045669555664,
+          -17.44301414489746,
+          5.463789939880371
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_8",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        8.986884117126465,
+        8.948081016540527,
+        8.8916015625
+      ],
+      "bounds": [
+        [
+          29.878686904907227,
+          -16.307924270629883,
+          -0.12248635292053223
+        ],
+        [
+          42.20928192138672,
+          -3.964616060256958,
+          8.769115447998047
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_9",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        7.53148889541626,
+        8.072961807250977,
+        9.1100492477417
+      ],
+      "bounds": [
+        [
+          44.173160552978516,
+          -15.218302726745605,
+          -1.1408236026763916
+        ],
+        [
+          51.70465087890625,
+          -7.145340919494629,
+          7.969225883483887
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_5",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        16.895523071289062,
+        8.249025344848633,
+        19.6607666015625
+      ],
+      "bounds": [
+        [
+          20.12545394897461,
+          -23.31504249572754,
+          -5.766475200653076
+        ],
+        [
+          37.02097702026367,
+          -15.066017150878906,
+          13.894290924072266
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        13.472824096679688,
+        10.840856552124023,
+        13.17605209350586
+      ],
+      "bounds": [
+        [
+          12.859469413757324,
+          -4.829034328460693,
+          -1.757200002670288
+        ],
+        [
+          26.332294464111328,
+          6.01182222366333,
+          11.418851852416992
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        10.923419952392578,
+        5.769700527191162,
+        3.2926840782165527
+      ],
+      "bounds": [
+        [
+          21.7777099609375,
+          -48.25415802001953,
+          -0.960071325302124
+        ],
+        [
+          32.70112991333008,
+          -42.48445510864258,
+          2.3326125144958496
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Formations_11",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        22.21306610107422,
+        9.050490379333496,
+        17.26938247680664
+      ],
+      "bounds": [
+        [
+          39.986793518066406,
+          6.332566261291504,
+          -3.9396371841430664
+        ],
+        [
+          62.199859619140625,
+          15.383056640625,
+          13.329745292663574
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Formations_12",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        7.005383014678955,
+        6.1214518547058105,
+        12.022527694702148
+      ],
+      "bounds": [
+        [
+          58.86142349243164,
+          -16.67963218688965,
+          -0.3679375648498535
+        ],
+        [
+          65.86680603027344,
+          -10.558180809020996,
+          11.654590606689453
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3"
+      ]
+    },
+    {
+      "name": "Rock_Boulders_1",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.41489839553833,
+        2.4270200729370117,
+        1.6277110576629639
+      ],
+      "bounds": [
+        [
+          27.079416275024414,
+          -28.93470001220703,
+          0.5692533254623413
+        ],
+        [
+          29.494314193725586,
+          -26.507680892944336,
+          2.1969642639160156
+        ]
+      ],
+      "materials": [
+        "Rocks"
+      ]
+    },
+    {
+      "name": "Rock_Boulders_5",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.3580551147460938,
+        2.265941619873047,
+        2.5104587078094482
+      ],
+      "bounds": [
+        [
+          40.654571533203125,
+          -7.42717170715332,
+          -0.44244635105133057
+        ],
+        [
+          43.01262664794922,
+          -5.161230087280273,
+          2.068012237548828
+        ]
+      ],
+      "materials": [
+        "Rocks"
+      ]
+    },
+    {
+      "name": "Rock_Boulders_3",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.3927268981933594,
+        2.5673766136169434,
+        4.367153644561768
+      ],
+      "bounds": [
+        [
+          46.750701904296875,
+          -19.128337860107422,
+          -0.2685508728027344
+        ],
+        [
+          49.143428802490234,
+          -16.56096076965332,
+          4.098602771759033
+        ]
+      ],
+      "materials": [
+        "Rocks"
+      ]
+    },
+    {
+      "name": "Rock_Boulders_2",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.525129556655884,
+        2.581829071044922,
+        4.366847038269043
+      ],
+      "bounds": [
+        [
+          47.74547576904297,
+          -34.14632034301758,
+          -1.0876234769821167
+        ],
+        [
+          50.270606994628906,
+          -31.564491271972656,
+          3.279223918914795
+        ]
+      ],
+      "materials": [
+        "Rocks"
+      ]
+    },
+    {
+      "name": "Rock_Boulders_4",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.129340648651123,
+        3.874652862548828,
+        2.6005935668945312
+      ],
+      "bounds": [
+        [
+          33.855072021484375,
+          -16.8784122467041,
+          -0.5478147864341736
+        ],
+        [
+          37.984413146972656,
+          -13.003759384155273,
+          2.052778720855713
+        ]
+      ],
+      "materials": [
+        "Rocks"
+      ]
+    },
+    {
+      "name": "Rock_Boulders_6",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.8717231750488281,
+        1.9465198516845703,
+        1.9761983156204224
+      ],
+      "bounds": [
+        [
+          36.584800720214844,
+          -22.51689910888672,
+          -0.6576047539710999
+        ],
+        [
+          38.456520080566406,
+          -20.570377349853516,
+          1.3185935020446777
+        ]
+      ],
+      "materials": [
+        "Rocks"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_7",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        21.06366539001465,
+        8.151214599609375,
+        5.999841690063477
+      ],
+      "bounds": [
+        [
+          2.109969139099121,
+          -43.96318817138672,
+          0.18595290184020996
+        ],
+        [
+          23.173633575439453,
+          -35.811973571777344,
+          6.185794830322266
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_8",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        20.359699249267578,
+        5.676974773406982,
+        9.766902923583984
+      ],
+      "bounds": [
+        [
+          3.1899795532226562,
+          -53.428321838378906,
+          -1.8115348815917969
+        ],
+        [
+          23.549678802490234,
+          -47.751346588134766,
+          7.9553680419921875
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Rock_Platforms_5",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        12.036415100097656,
+        6.910201072692871,
+        4.954927921295166
+      ],
+      "bounds": [
+        [
+          29.1617431640625,
+          -56.21195983886719,
+          -1.7295286655426025
+        ],
+        [
+          41.198158264160156,
+          -49.301761627197266,
+          3.2253992557525635
+        ]
+      ],
+      "materials": [
+        "CanyonWall_3",
+        "CanyonGround"
+      ]
+    },
+    {
+      "name": "Tile_Ground-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          0.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Side_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          4.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Corner_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Side_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Corner_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          4.0,
+          2.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Side_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          3.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Corner_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          4.0,
+          3.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Side_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Corner_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          4.0,
+          1.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Ground_Ramp_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          4.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Ground_Ramp_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Ground_Ramp_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          3.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Ground_Ramp_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          3.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ledges-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.5256295800209045,
+        3.597738027572632
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -0.5201928615570068,
+          0.23559513688087463
+        ],
+        [
+          2.0,
+          0.005436703562736511,
+          3.8333332538604736
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          4.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_4_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        1.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_2_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        2.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_3_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          3.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ramp_1_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.0,
+        4.0,
+        4.0
+      ],
+      "bounds": [
+        [
+          0.0,
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          4.0
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ledge-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        0.27074986696243286,
+        0.3520157039165497
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -0.27074986696243286,
+          0.0
+        ],
+        [
+          2.0,
+          0.0,
+          0.3520157039165497
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tile_Wall_Ledge_Corner-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.225255012512207,
+        4.212420463562012,
+        0.4122879207134247
+      ],
+      "bounds": [
+        [
+          -0.2252548635005951,
+          -0.21242032945156097,
+          0.0
+        ],
+        [
+          4.0,
+          4.0,
+          0.4122879207134247
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Small_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.24475818872451782,
+        0.24475818872451782,
+        0.5172011852264404
+      ],
+      "bounds": [
+        [
+          -0.12146972864866257,
+          -0.12291503697633743,
+          -0.19045013189315796
+        ],
+        [
+          0.12328846007585526,
+          0.12184315174818039,
+          0.3267510235309601
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Flat_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6887506246566772,
+        0.48981335759162903,
+        0.945083737373352
+      ],
+      "bounds": [
+        [
+          -0.3057767152786255,
+          -0.36450260877609253,
+          0.014096166007220745
+        ],
+        [
+          0.38297390937805176,
+          0.1253107488155365,
+          0.9591798782348633
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Flat_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6662384867668152,
+        0.6110849976539612,
+        1.5626047849655151
+      ],
+      "bounds": [
+        [
+          -0.27504268288612366,
+          -0.5309699773788452,
+          0.01569017581641674
+        ],
+        [
+          0.39119580388069153,
+          0.08011502772569656,
+          1.5782949924468994
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Small_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.32058095932006836,
+        0.32058095932006836,
+        0.5959495902061462
+      ],
+      "bounds": [
+        [
+          -0.15909940004348755,
+          -0.16099245846271515,
+          -0.19044989347457886
+        ],
+        [
+          0.1614815592765808,
+          0.1595885008573532,
+          0.4054996967315674
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Flat_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7066917419433594,
+        0.3397515118122101,
+        0.800849974155426
+      ],
+      "bounds": [
+        [
+          -0.5345054864883423,
+          -0.24519455432891846,
+          0.01574632339179516
+        ],
+        [
+          0.17218627035617828,
+          0.09455695748329163,
+          0.816596269607544
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Small_5-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.32058095932006836,
+        0.32058095932006836,
+        0.6562623977661133
+      ],
+      "bounds": [
+        [
+          -0.15909940004348755,
+          -0.16099245846271515,
+          -0.19044971466064453
+        ],
+        [
+          0.1614815592765808,
+          0.1595885008573532,
+          0.46581268310546875
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Small_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.28570953011512756,
+        0.2857095003128052,
+        0.6808634400367737
+      ],
+      "bounds": [
+        [
+          -0.14179325103759766,
+          -0.14348037540912628,
+          -0.19044964015483856
+        ],
+        [
+          0.1439162790775299,
+          0.1422291398048401,
+          0.4904138147830963
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Small_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3316443860530853,
+        0.33164435625076294,
+        0.5812959671020508
+      ],
+      "bounds": [
+        [
+          -0.1645900160074234,
+          -0.16654838621616364,
+          -0.19044995307922363
+        ],
+        [
+          0.16705437004566193,
+          0.1650959849357605,
+          0.39084604382514954
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Tall_5-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9874864220619202,
+        0.20488135516643524,
+        2.16433048248291
+      ],
+      "bounds": [
+        [
+          -0.6695048213005066,
+          -0.10244067758321762,
+          -0.19045108556747437
+        ],
+        [
+          0.3179816007614136,
+          0.10244067758321762,
+          1.973879337310791
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Tall_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7719454765319824,
+        0.20488135516643524,
+        2.16433048248291
+      ],
+      "bounds": [
+        [
+          -0.6695048213005066,
+          -0.10244067758321762,
+          -0.19045108556747437
+        ],
+        [
+          0.10244067758321762,
+          0.10244067758321762,
+          1.973879337310791
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Tall_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4204244315624237,
+        0.20488135516643524,
+        2.1643314361572266
+      ],
+      "bounds": [
+        [
+          -0.10244067758321762,
+          -0.10244067758321762,
+          -0.19045108556747437
+        ],
+        [
+          0.3179837465286255,
+          0.10244067758321762,
+          1.9738802909851074
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Tall_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5228654742240906,
+        0.3800371289253235,
+        2.295161247253418
+      ],
+      "bounds": [
+        [
+          -0.20488430559635162,
+          -0.27759644389152527,
+          -0.19045108556747437
+        ],
+        [
+          0.31798115372657776,
+          0.10244067758321762,
+          2.104710102081299
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Cactus_Tall_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1318726539611816,
+        0.6209433078765869,
+        2.164330244064331
+      ],
+      "bounds": [
+        [
+          -0.6695060729980469,
+          -0.5185026526451111,
+          -0.19045108556747437
+        ],
+        [
+          0.46236661076545715,
+          0.10244067758321762,
+          1.973879098892212
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tree_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.47557514905929565,
+        0.42523887753486633,
+        2.5060598850250244
+      ],
+      "bounds": [
+        [
+          -0.2188703864812851,
+          -0.21261943876743317,
+          -0.5869793891906738
+        ],
+        [
+          0.25670474767684937,
+          0.21261943876743317,
+          1.9190804958343506
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tree_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4636366367340088,
+        0.42523887753486633,
+        2.560136556625366
+      ],
+      "bounds": [
+        [
+          -0.21262161433696747,
+          -0.21262072026729584,
+          -0.586978018283844
+        ],
+        [
+          0.2510150074958801,
+          0.2126181572675705,
+          1.973158597946167
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tree_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5283554196357727,
+        0.44085538387298584,
+        2.3435027599334717
+      ],
+      "bounds": [
+        [
+          -0.2197258472442627,
+          -0.28409647941589355,
+          -0.7054477334022522
+        ],
+        [
+          0.30862957239151,
+          0.15675890445709229,
+          1.6380550861358643
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Tree_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5350392460823059,
+        0.42523887753486633,
+        2.4481499195098877
+      ],
+      "bounds": [
+        [
+          -0.32241979241371155,
+          -0.21261943876743317,
+          -0.5869793891906738
+        ],
+        [
+          0.21261943876743317,
+          0.21261943876743317,
+          1.8611705303192139
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.26816463470459,
+        6.25013542175293,
+        3.0151124000549316
+      ],
+      "bounds": [
+        [
+          -3.1619913578033447,
+          -3.1439626216888428,
+          -1.4123212099075317
+        ],
+        [
+          3.106173038482666,
+          3.106173038482666,
+          1.6027913093566895
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.78972864151001,
+        4.767996311187744,
+        2.687382698059082
+      ],
+      "bounds": [
+        [
+          -2.394864082336426,
+          -2.383997917175293,
+          -1.399627685546875
+        ],
+        [
+          2.394864559173584,
+          2.383998394012451,
+          1.287755012512207
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_6-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.351563453674316,
+        4.624613285064697,
+        5.602344512939453
+      ],
+      "bounds": [
+        [
+          -2.581153631210327,
+          -2.7810003757476807,
+          -2.5414443016052246
+        ],
+        [
+          2.7704100608825684,
+          1.843612790107727,
+          3.0609002113342285
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.373213768005371,
+        5.999866008758545,
+        5.57888650894165
+      ],
+      "bounds": [
+        [
+          -2.537623643875122,
+          -3.276146411895752,
+          -3.2844767570495605
+        ],
+        [
+          2.83558988571167,
+          2.723719596862793,
+          2.29440975189209
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.584358215332031,
+        4.350652694702148,
+        3.718855857849121
+      ],
+      "bounds": [
+        [
+          -2.306994676589966,
+          -2.1612462997436523,
+          -2.2596631050109863
+        ],
+        [
+          2.2773637771606445,
+          2.189406633377075,
+          1.4591928720474243
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.203144073486328,
+        5.0943498611450195,
+        4.730449676513672
+      ],
+      "bounds": [
+        [
+          -2.831289768218994,
+          -2.4279098510742188,
+          -2.727989912033081
+        ],
+        [
+          2.371854066848755,
+          2.66644024848938,
+          2.00246000289917
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_9-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        21.58570098876953,
+        5.437023162841797,
+        6.817066669464111
+      ],
+      "bounds": [
+        [
+          -11.199329376220703,
+          -2.3699145317077637,
+          -4.603031635284424
+        ],
+        [
+          10.386370658874512,
+          3.067108392715454,
+          2.2140350341796875
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_10-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        18.818870544433594,
+        4.862503528594971,
+        12.294000625610352
+      ],
+      "bounds": [
+        [
+          -9.08191967010498,
+          -2.482516050338745,
+          -7.635741233825684
+        ],
+        [
+          9.736949920654297,
+          2.3799874782562256,
+          4.658259868621826
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.724253177642822,
+        6.1535749435424805,
+        11.514793395996094
+      ],
+      "bounds": [
+        [
+          -3.8443400859832764,
+          -3.3131721019744873,
+          -5.471038818359375
+        ],
+        [
+          2.879913091659546,
+          2.8404030799865723,
+          6.043754577636719
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_6-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.473097324371338,
+        3.8950512409210205,
+        13.410576820373535
+      ],
+      "bounds": [
+        [
+          -1.564778208732605,
+          -2.1034669876098633,
+          -6.170003890991211
+        ],
+        [
+          1.9083192348480225,
+          1.7915842533111572,
+          7.240572929382324
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_7-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        10.353023529052734,
+        9.195913314819336,
+        15.508546829223633
+      ],
+      "bounds": [
+        [
+          -4.870002746582031,
+          -4.2568464279174805,
+          -10.03787612915039
+        ],
+        [
+          5.483020305633545,
+          4.9390668869018555,
+          5.470670700073242
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_10-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        8.498238563537598,
+        8.23886489868164,
+        6.59560489654541
+      ],
+      "bounds": [
+        [
+          -4.081964015960693,
+          -4.483262538909912,
+          -3.4081931114196777
+        ],
+        [
+          4.416274547576904,
+          3.7556023597717285,
+          3.1874117851257324
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_8-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        8.986884117126465,
+        8.948081016540527,
+        8.8916015625
+      ],
+      "bounds": [
+        [
+          -3.895500421524048,
+          -3.6670444011688232,
+          -3.3867743015289307
+        ],
+        [
+          5.091383934020996,
+          5.281036853790283,
+          5.504827499389648
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_9-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        7.53148889541626,
+        8.072961807250977,
+        9.1100492477417
+      ],
+      "bounds": [
+        [
+          -3.9531137943267822,
+          -4.170183181762695,
+          -4.0667924880981445
+        ],
+        [
+          3.5783751010894775,
+          3.902778387069702,
+          5.043256759643555
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_5-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        16.895523071289062,
+        8.249025344848633,
+        19.6607666015625
+      ],
+      "bounds": [
+        [
+          -8.616573333740234,
+          -4.478233814239502,
+          -10.445073127746582
+        ],
+        [
+          8.278949737548828,
+          3.770792007446289,
+          9.215692520141602
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        13.472824096679688,
+        10.840856552124023,
+        13.17605209350586
+      ],
+      "bounds": [
+        [
+          -6.269783973693848,
+          -4.775125503540039,
+          -5.41210412979126
+        ],
+        [
+          7.203040599822998,
+          6.065731048583984,
+          7.7639479637146
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        10.923419952392578,
+        5.769700527191162,
+        3.2926840782165527
+      ],
+      "bounds": [
+        [
+          -5.538531303405762,
+          -2.9430532455444336,
+          -2.0045576095581055
+        ],
+        [
+          5.384888172149658,
+          2.8266472816467285,
+          1.2881263494491577
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_11-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        22.21306610107422,
+        9.050490379333496,
+        17.26938247680664
+      ],
+      "bounds": [
+        [
+          -11.758678436279297,
+          -3.930941343307495,
+          -10.175341606140137
+        ],
+        [
+          10.454387664794922,
+          5.119548797607422,
+          7.094040870666504
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Formations_12-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        7.005383014678955,
+        6.1214518547058105,
+        12.022527694702148
+      ],
+      "bounds": [
+        [
+          -3.660975217819214,
+          -3.0435240268707275,
+          -5.642813205718994
+        ],
+        [
+          3.344407796859741,
+          3.077927827835083,
+          6.379714488983154
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Boulders_1-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.41489839553833,
+        2.4270200729370117,
+        1.6277110576629639
+      ],
+      "bounds": [
+        [
+          -1.3388386964797974,
+          -1.1535779237747192,
+          -0.921483039855957
+        ],
+        [
+          1.0760595798492432,
+          1.273442029953003,
+          0.7062280178070068
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Boulders_5-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.3580551147460938,
+        2.265941619873047,
+        2.5104587078094482
+      ],
+      "bounds": [
+        [
+          -1.1560096740722656,
+          -1.1351337432861328,
+          -1.2216711044311523
+        ],
+        [
+          1.2020454406738281,
+          1.130807876586914,
+          1.288787603378296
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Boulders_3-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.3927268981933594,
+        2.5673766136169434,
+        4.367153644561768
+      ],
+      "bounds": [
+        [
+          -1.249298095703125,
+          -1.1283369064331055,
+          -2.2685508728027344
+        ],
+        [
+          1.1434288024902344,
+          1.439039707183838,
+          2.098602771759033
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Boulders_2-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.525129556655884,
+        2.581829071044922,
+        4.366847038269043
+      ],
+      "bounds": [
+        [
+          -1.302443504333496,
+          -1.317784070968628,
+          -2.1005570888519287
+        ],
+        [
+          1.2226860523223877,
+          1.2640451192855835,
+          2.2662901878356934
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Boulders_4-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.129340648651123,
+        3.874652862548828,
+        2.6005935668945312
+      ],
+      "bounds": [
+        [
+          -1.9444427490234375,
+          -1.9509754180908203,
+          -1.104416012763977
+        ],
+        [
+          2.1848978996276855,
+          1.9236774444580078,
+          1.4961775541305542
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Boulders_6-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.8717231750488281,
+        1.9465198516845703,
+        1.9761983156204224
+      ],
+      "bounds": [
+        [
+          -0.9450511932373047,
+          -0.9893484115600586,
+          -0.988109290599823
+        ],
+        [
+          0.9266719818115234,
+          0.9571714401245117,
+          0.9880890250205994
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_7-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        21.06366539001465,
+        8.151214599609375,
+        5.999841690063477
+      ],
+      "bounds": [
+        [
+          -10.96786880493164,
+          -3.7829127311706543,
+          -3.1060993671417236
+        ],
+        [
+          10.095796585083008,
+          4.368301868438721,
+          2.893742561340332
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_8-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        20.359699249267578,
+        5.676974773406982,
+        9.766902923583984
+      ],
+      "bounds": [
+        [
+          -9.315658569335938,
+          -3.079723834991455,
+          -4.808241844177246
+        ],
+        [
+          11.044039726257324,
+          2.5972509384155273,
+          4.958661079406738
+        ]
+      ],
+      "materials": []
+    },
+    {
+      "name": "Rock_Platforms_5-colonly",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        12.036415100097656,
+        6.910201072692871,
+        4.954927921295166
+      ],
+      "bounds": [
+        [
+          -6.013286590576172,
+          -3.477708578109741,
+          -2.883983612060547
+        ],
+        [
+          6.023128509521484,
+          3.432492733001709,
+          2.070944309234619
+        ]
+      ],
+      "materials": []
+    }
+  ]
+}

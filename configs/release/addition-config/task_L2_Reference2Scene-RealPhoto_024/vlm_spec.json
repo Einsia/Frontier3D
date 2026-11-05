@@ -1,0 +1,155 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2a976e1cd10117e1699cd074ddfe2bb98528acc78952b75e8136d3c9988ea3bf",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "e38f24570cf1eeb8fc22bb427fa26c9cd95353c2b8cab9c3776c67de39ed003c",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-53e37dd70f4bcdb27a46cac5b2340763e182435fbc8f37c07903772aee6625fd"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "仅定位三个可清楚分辨的近景自行车；每框包含该车可见车轮、车把、车架、坐垫、支撑及附属货筐或车篮，包含深色表面，不包含地面阴影。左侧自行车按图像边缘截断。右上远处拥挤且局部被裁切的小车群不属于此类。",
+        "boxes": [
+          [
+            0,
+            0.561,
+            0.501,
+            0.823
+          ],
+          [
+            0.653,
+            0.524,
+            0.774,
+            0.715
+          ],
+          [
+            0.747,
+            0.533,
+            0.867,
+            0.661
+          ]
+        ],
+        "id": "t01",
+        "query": "可辨的近景自行车及其附属载物部件",
+        "weight": 0.5,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位左下自行车后架上的单个蓝色敞口货筐，包含全部可见外壁、深色内壁和上缘，不纳入自行车后轮或投影。",
+        "boxes": [
+          [
+            0.352,
+            0.591,
+            0.501,
+            0.698
+          ]
+        ],
+        "id": "t02",
+        "query": "前景自行车后架上的敞口货筐",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位四根具有可辨独立柱身的主要支撑柱，包含亮面和阴暗侧面；按可见柱身的外接框处理栏杆及自行车遮挡，不推断隐藏延伸。排除远处无法可靠区分的细小或重度遮挡构件。",
+        "boxes": [
+          [
+            0.558,
+            0.291,
+            0.647,
+            0.696
+          ],
+          [
+            0.466,
+            0.441,
+            0.495,
+            0.572
+          ],
+          [
+            0.65,
+            0.417,
+            0.688,
+            0.568
+          ],
+          [
+            0.757,
+            0.38,
+            0.805,
+            0.608
+          ]
+        ],
+        "id": "t03",
+        "query": "桥下可辨的主要竖直支撑柱",
+        "weight": 0.3,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

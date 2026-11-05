@@ -1,0 +1,22 @@
+{
+  "key": "racing-kit",
+  "target_objects_removed": [
+    "pitsGarage(Clone)",
+    "pitsGarage placement",
+    "pitsGarage(Clone).001",
+    "pitsGarage placement.001",
+    "pitsGarage(Clone).002",
+    "pitsGarage placement.002",
+    "pitsOffice(Clone)",
+    "pitsOffice placement",
+    "grandStandCovered(Clone)",
+    "grandStandCovered placement"
+  ],
+  "preserved_mesh_count": 26,
+  "preserved_meshes_equal": true,
+  "preserved_materials_equal": true,
+  "camera_and_render_settings_equal": true,
+  "missing_active_images": 0,
+  "external_libraries": 0,
+  "scope": "Pair construction: only named target objects deleted; actual full and input renders."
+}

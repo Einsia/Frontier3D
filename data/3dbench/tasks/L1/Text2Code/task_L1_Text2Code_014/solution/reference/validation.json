@@ -1,0 +1,42 @@
+{
+  "family": "swept",
+  "part_id": "swept_498d67a9_0179",
+  "default_params": {
+    "path_w": 45,
+    "path_h": 42.57,
+    "sweep_a": 9.3,
+    "sweep_b": 6.9
+  },
+  "native_geometry": {
+    "initial": {
+      "valid_solid": true,
+      "solid_count": 1,
+      "volume_mm3": 3433.059600093819,
+      "bounds_mm": [
+        -5.546434763107211,
+        -3.616339884364443,
+        -0.16633988436441158,
+        27.06803965999179,
+        3.6163398843644425,
+        42.867009737535895
+      ]
+    },
+    "target": {
+      "valid_solid": true,
+      "solid_count": 1,
+      "volume_mm3": 3433.059600093819,
+      "bounds_mm": [
+        -5.546434763107211,
+        -3.616339884364443,
+        -0.16633988436441158,
+        27.06803965999179,
+        3.6163398843644425,
+        42.867009737535895
+      ]
+    }
+  },
+  "local_edit_code": "",
+  "source": "https://github.com/jacobjennings/CadQuarry",
+  "license": "CC0-1.0",
+  "scope": "Valid OCC reference, not model testing."
+}

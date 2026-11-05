@@ -1,0 +1,361 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_007",
+  "title": "岩礁灯塔与海岸植被",
+  "category": "Brief2Scene",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_inventory_tower",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Are the required tower objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_tower",
+      "parameters": {
+        "units": [
+          "tower"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_lantern_windows",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Are the required lantern_windows objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_lantern_windows",
+      "parameters": {
+        "units": [
+          "lantern_windows"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_gallery",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Are the required gallery objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_gallery",
+      "parameters": {
+        "units": [
+          "gallery"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_roof",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Are the required roof objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_roof",
+      "parameters": {
+        "units": [
+          "roof"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_island",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Are the required island objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_island",
+      "parameters": {
+        "units": [
+          "island"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_water",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Are the required water objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_water",
+      "parameters": {
+        "units": [
+          "water"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_conifer",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Are the required conifer:6 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_conifer",
+      "parameters": {
+        "units": [
+          "conifer_1",
+          "conifer_2",
+          "conifer_3",
+          "conifer_4",
+          "conifer_5",
+          "conifer_6"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_relations",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Verify each named layout/connection/access relation against the brief. Allow alternative layouts meeting the contract; check entrances, paths, occlusion, grouping and ground contact. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#relations",
+      "parameters": {
+        "units": [
+          "tower_island_contact",
+          "island_water_relation",
+          "lantern_visibility",
+          "full_scene_framing"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_appearance",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "Do materials/colors, style and lighting match the explicit brief? Reference styling is illustrative. Ignore differences the written contract allows. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#appearance",
+      "parameters": {
+        "units": [
+          "materials_colors",
+          "style",
+          "lighting"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_tree_count",
+      "component": "Q",
+      "weight": 0.08,
+      "question": "instruction.md: six to ten three-dimensional conifers",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/tree_count",
+      "parameters": {
+        "native_check": {
+          "id": "tree_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "tree",
+            "minimum": 6,
+            "maximum": 10
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_island_dimensions",
+      "component": "Q",
+      "weight": 0.08,
+      "question": "instruction.md: roughly 35–50 m across",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/island_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "island_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "island",
+            "scope": "union",
+            "lower": [
+              null,
+              35,
+              null
+            ],
+            "upper": [
+              null,
+              50,
+              null
+            ],
+            "relative_tolerance": 0.1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_tower_top_level",
+      "component": "Q",
+      "weight": 0.08,
+      "question": "instruction.md: tower about 30 m tall",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/tower_top_level",
+      "parameters": {
+        "native_check": {
+          "id": "tower_top_level",
+          "metric": "l2_brief_level",
+          "group": "numeric",
+          "params": {
+            "role": "tower",
+            "support_role": "island",
+            "endpoint": "top",
+            "lower": 30,
+            "upper": 30,
+            "relative_tolerance": 0.1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_tower_bottom_level",
+      "component": "Q",
+      "weight": 0.08,
+      "question": "instruction.md: must sit on the island rather than float above it",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/tower_bottom_level",
+      "parameters": {
+        "native_check": {
+          "id": "tower_bottom_level",
+          "metric": "l2_brief_level",
+          "group": "numeric",
+          "params": {
+            "role": "tower",
+            "support_role": "island",
+            "endpoint": "bottom",
+            "lower": -0.02,
+            "upper": 0.02,
+            "relative_tolerance": 0
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_tree_bottom_level",
+      "component": "Q",
+      "weight": 0.08,
+      "question": "instruction.md: must sit on the island rather than float above it",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/tree_bottom_level",
+      "parameters": {
+        "native_check": {
+          "id": "tree_bottom_level",
+          "metric": "l2_brief_level",
+          "group": "numeric",
+          "params": {
+            "role": "tree",
+            "support_role": "island",
+            "endpoint": "bottom",
+            "lower": -0.02,
+            "upper": 0.02,
+            "relative_tolerance": 0
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "editable_structure",
+      "component": "E",
+      "weight": 0.5,
+      "question": "主要结构可独立编辑，允许实例和程序修改器；按主要语义部件的可编辑比例检查",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "population": "public major structures; no object-name constraint"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "view_consistency",
+      "component": "E",
+      "weight": 0.5,
+      "question": "规定相机关系、两张提交图与同一原生场景的几何/状态一致性",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "camera_checks": [
+          {
+            "id": "alternate_relationship",
+            "metric": "l2_case_camera_pair",
+            "group": "alternate_relationship",
+            "params": {
+              "mode": "orbit",
+              "degrees": 25,
+              "tolerance": 0.25
+            },
+            "role": "standard",
+            "pass_threshold": 1
+          }
+        ],
+        "image_error_half_scale": 0.01
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "251a41d2a462bf52ec7eadca2b2497a2ed40f33a0c951e21656181cf79d0e1c4",
+    "task.toml": "28602a9d5686aaad7a64875e05660daed5d59b63e5c4803e36a2cc4227adee99",
+    "harness/eval_spec.json": "5e0c4c3390a717ad7acaefa074dc562ef872a2702934e9f3e2b822992fa48c05",
+    "harness/methods.json": "fc5df61418f31b4f83dc259fb925661f021ddf2cc2009076828f5ac0c237f94f",
+    "harness/vlm_spec.json": "510c1a01fa3ea42d5ee8a0a929b4862c1c401297493e336f0e7ddaa5309d861c"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "HK Airport",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 2,
+  "original_sha256": "518aa1801489d6f3a0dcdbede3ead14948e4a7cd4d47f9a56ba23ccd9774b4b1",
+  "input_sha256": "90448b1d2aece2f6ef5dcd46b24e22d1ee28cf79124b36761e32f4ad91d7ded9",
+  "input_dimensions": [
+    1200,
+    1600
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Not specified in source document",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

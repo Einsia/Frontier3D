@@ -1,0 +1,250 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-g02",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "55f80d0db0472999fe6aeb720634aac38c34161b4bba7d552130771652aa7115",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "The tall central keep dominates a connected complex of lower buildings, enclosed courtyards and stone-supported terraces.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Preserve the pronounced elevation changes: broad exterior stairs rise between buildings, while overlapping roofs occupy multiple heights below the keep.",
+        "id": "env-02"
+      },
+      {
+        "criterion": "Exterior spaces have closely spaced architectural edges, substantial retaining walls and narrow gaps, conveying a dense fortified compound.",
+        "id": "env-03"
+      },
+      {
+        "criterion": "Include both the exterior courtyard approach and the principal interior gallery setting, with coherent floor heights and architectural scale.",
+        "id": "env-04"
+      },
+      {
+        "criterion": "Exterior atmosphere is wintry and subdued, with a gray lavender sky, distant haze, falling snow and uneven snow deposits on roofs and ground.",
+        "id": "env-05"
+      },
+      {
+        "criterion": "Maintain the contrast between cold, diffuse exterior light and dim timber interiors punctuated by small warm hanging lanterns.",
+        "id": "env-06"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "A tall, tapering stack of roofed stories rises above a much wider lower mass.",
+            "id": "keep-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Broad projecting roofs have lifted corners, overlapping triangular gables and a prominent curved central gable profile.",
+            "id": "keep-02",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Facade bays are divided by substantial timber posts and horizontal beams, with recessed panels and closely spaced vertical window slats.",
+            "id": "keep-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Roof edges show repeated rounded tile ends, layered ridge caps and restrained ornamental crest details.",
+            "id": "keep-04",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Dark weathered brown timber, muted plaster panels and charcoal gray tiles establish the keep's aged exterior palette.",
+            "id": "keep-05",
+            "kind": "material"
+          }
+        ],
+        "id": "target-keep",
+        "importance": "core",
+        "label": "Main castle keep",
+        "references": [
+          "reference-01",
+          "reference-02"
+        ],
+        "weight": 35
+      },
+      {
+        "features": [
+          {
+            "criterion": "Tall battered stone bases support the buildings and define steep-sided courtyard approaches.",
+            "id": "courtyard-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "A long, broad straight stair climbs toward a recessed entrance between elevated structures.",
+            "id": "courtyard-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Retaining walls use irregular, visibly jointed stone blocks with coarse surfaces and varied sizes.",
+            "id": "courtyard-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Snow collects along stair edges and ground margins while darker central tread surfaces remain visible.",
+            "id": "courtyard-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-courtyards",
+        "importance": "core",
+        "label": "Stone foundations and connected courtyard approach",
+        "references": [
+          "reference-01",
+          "reference-02"
+        ],
+        "weight": 25
+      },
+      {
+        "features": [
+          {
+            "criterion": "Lower gatehouses, projecting bays and side towers form an uneven stepped roofscape around the keep.",
+            "id": "outbuildings-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The courtyard-facing gatehouse has a prominent triangular gable above wide eaves and a lower tiled roof.",
+            "id": "outbuildings-02",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Deep eaves expose repeated supporting members; timber posts frame pale wall panels and dark rectangular openings.",
+            "id": "outbuildings-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Gray ceramic roof tiles form continuous parallel courses, with cylindrical caps along ridges and decorative gable crests.",
+            "id": "outbuildings-04",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Weathered wood and stained beige plaster match the keep, with light snow emphasizing roof courses.",
+            "id": "outbuildings-05",
+            "kind": "material"
+          }
+        ],
+        "id": "target-outbuildings",
+        "importance": "supporting",
+        "label": "Connected gatehouses and surrounding roofscape",
+        "references": [
+          "reference-01",
+          "reference-02"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [
+          {
+            "criterion": "A broad upper gallery wraps around a large rectangular opening to the floor below.",
+            "id": "interior-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Heavy square posts and multiple horizontal timber rails enclose the opening, with substantial corner posts.",
+            "id": "interior-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Wall elevations are organized into repeated timber-framed bays, with lower screen panels and upper pale panels or dark slatted sections.",
+            "id": "interior-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Broad wooden floorboards show strong grain, uneven coloration and worn reflective patches.",
+            "id": "interior-04",
+            "kind": "material"
+          },
+          {
+            "criterion": "Dark structural wood contrasts with subdued cream and ochre screens bearing landscape and tree paintings.",
+            "id": "interior-05",
+            "kind": "material"
+          }
+        ],
+        "id": "target-interior",
+        "importance": "core",
+        "label": "Interior timber gallery and screen-lined rooms",
+        "references": [
+          "reference-03"
+        ],
+        "weight": 20
+      },
+      {
+        "features": [
+          {
+            "criterion": "Small hanging lanterns sit high along the interior perimeter and emit localized warm yellow light.",
+            "id": "fittings-01",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Visible exterior fittings include a simple wooden rack against a plaster wall and barrels near the stair entrance.",
+            "id": "fittings-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Sparse winter vegetation occupies snowy margins beside the approach rather than obscuring the architecture.",
+            "id": "fittings-03",
+            "kind": "shape"
+          }
+        ],
+        "id": "target-fittings",
+        "importance": "detail",
+        "label": "Visible fittings and courtyard accents",
+        "references": [
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 5
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "23dcd6784c27f46caac367b734d7f366ae701542ecb9a0abf88c9071051b1282",
+    "environment/input/references/reference-03.jpg": "e24bcdb7aa3e50c0120e7a1abbb59012712623710f45b9c015afa90a7758e863",
+    "environment/input/references/reference-02.jpg": "66a800f7936eba0484bf734103c5cab309a345e6b5fc0478e1b6d9af2da8c2a0"
+  }
+}

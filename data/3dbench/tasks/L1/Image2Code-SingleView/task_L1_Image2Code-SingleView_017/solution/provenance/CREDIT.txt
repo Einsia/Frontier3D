@@ -1,0 +1,8 @@
+Camel
+Author: eb78 (https://sketchfab.com/E.A.Cornell)
+Source: https://sketchfab.com/3d-models/camel-99af7daa5baf450ea7b809937937e6d5
+License: CC Attribution
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Baked the evaluated source pose at frame 1; source animation omitted from the static task.
+Excluded importer-generated armature custom display shapes before pose baking; these objects are absent from the original GLB mesh nodes. Recomputed normalization and reference cameras from real source geometry.
+No endorsement by the original author is implied.

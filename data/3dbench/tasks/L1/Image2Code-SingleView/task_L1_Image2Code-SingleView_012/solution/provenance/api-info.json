@@ -1,0 +1,69 @@
+{
+  "type": 2,
+  "name": "Treasure Chest",
+  "authors": {
+    "Rico Cilliers": "All"
+  },
+  "date_published": 1650585600,
+  "staging": null,
+  "categories": [
+    "props",
+    "containers",
+    "decorative",
+    "collection: smugglers_cove"
+  ],
+  "tags": [
+    "old",
+    "wooden",
+    "chest",
+    "treasure",
+    "pirates",
+    "gold",
+    "crate",
+    "maritime",
+    "colonial",
+    "worn",
+    "antique",
+    "wood",
+    "prop",
+    "container",
+    "metal",
+    "box",
+    "ornate"
+  ],
+  "polycount": 103330,
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "texel_density": 2947.164483897876,
+  "dimensions": [
+    959.0365290641785,
+    522.853434085846,
+    618.9745217561722
+  ],
+  "sponsors": [
+    "25436656",
+    "68131842",
+    "26820710"
+  ],
+  "files_hash": "0ae2580ba667a1c67340426abc76f7665306406e",
+  "description": "Free 8K model of a worn wooden treasure chest with ornate iron straps, rivets and a weathered, antique maritime look.",
+  "category_id": "be4936dd-7967-5545-a51a-72e71ff47aa7",
+  "category": "Containers & Storage/Boxes & Crates/Chests & Trunks",
+  "collections": [
+    "smugglers_cove"
+  ],
+  "attributes": {
+    "condition": [
+      "worn"
+    ],
+    "material": [
+      "wood",
+      "metal"
+    ]
+  },
+  "img_version": "0a748403",
+  "download_count": 41165,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/treasure_chest.png?width=256&height=256&v=0a748403"
+}

@@ -1,0 +1,25 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/pulley_axle",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/pulley_axle",
+    "license": "CC0-1.0",
+    "changes": [],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "ebffc95df2f88354764b10c978153485420d3c796f4e09850b549d81988ec4a4",
+    "assembled.png": "479fed6f26e4006612f6221afe03f2cc7483f8090c4f875c9a6aca57f03cc2ce",
+    "exploded.png": "01342e0e425ca273f087bd619b0f9ebe569a23dda61096ae841fc89c81e7c3e7",
+    "front.png": "8bc19c43e172c704c354ffeb007c62d97ab72abbdf2b08f3b61474b955fcbfc6",
+    "geometry.json": "60029e54a873a39d07737c8e41dc54df6dd1ed101dbacf4c5a229ee683de1d1f",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "c8834059ce3c99146c1abe8434455fbc4d9373a8db5fa6a36e2aa0a476e19add",
+    "qa.json": "a2357a2ca1696397cefe4137b99c9f0c17e25ef2c90d995e2a80f38a2c514d7e",
+    "scene.blend": "45d1d614a04c86e8d40c539b1a8092df3df6fecd3ac467739b1d10928dc56ce6",
+    "scene.glb": "84811b363a78def9b28f57b019adc42b7748f99d0912fee0e1f1a8d948843189",
+    "spec.json": "c73c1adb52efa2351552078ec6d9d700e3c412528a9af081c12122e4ea520173",
+    "top.png": "3cb5111ea19e68dc17db7dff0e75b7056e599a81b2197981ef01607ad7879dff"
+  }
+}

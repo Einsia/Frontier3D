@@ -1,0 +1,97 @@
+{
+  "version": "model-list-harness-contract-20261105",
+  "source": "data/3dbench_merge_20261021/model_list.md",
+  "source_columns": [
+    "Model",
+    "Harness",
+    "Reasoning Effort"
+  ],
+  "source_metadata_sha256": "7e388474cb5e8cfbab304e3df99f164145224d4e9ae8980be15ffd58f47ce90a",
+  "scope": "Declared model/harness/effort mapping; historical observations remain in separate experiment evidence.",
+  "models": [
+    {
+      "model": "gpt-6-astra",
+      "harness": "Codex",
+      "harness_id": "codex",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "harness": "Codex",
+      "harness_id": "codex",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "harness": "Codex",
+      "harness_id": "codex",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "claude-opus-5-5",
+      "harness": "ClaudeCode",
+      "harness_id": "claude-code",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "gemini-3.1-pro-preview",
+      "harness": "gemini-cli",
+      "harness_id": "gemini-cli",
+      "effort": "high",
+      "in_final_145_score_group": false
+    },
+    {
+      "model": "glm-5.3-flash",
+      "harness": "zcode",
+      "harness_id": "zcode",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "qwen3.8-max",
+      "harness": "ClaudeCode",
+      "harness_id": "claude-code",
+      "effort": "xhigh",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "kimi-k3",
+      "harness": "Kimi codecli",
+      "harness_id": "kimi-codecli",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "kimi-k3.1-pro",
+      "harness": "Kimi codecli",
+      "harness_id": "kimi-codecli",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "deepseek-v4.1-flash",
+      "harness": "DeepSeek Harness",
+      "harness_id": "deepseek-harness",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "MiniMax-M3.1-Flash",
+      "harness": "ClaudeCode",
+      "harness_id": "claude-code",
+      "effort": "max",
+      "in_final_145_score_group": true
+    },
+    {
+      "model": "doubao-seed-evolving",
+      "harness": "ClaudeCode",
+      "harness_id": "claude-code",
+      "effort": "max",
+      "in_final_145_score_group": true
+    }
+  ]
+}

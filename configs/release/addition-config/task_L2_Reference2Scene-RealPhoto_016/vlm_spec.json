@@ -1,0 +1,131 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+  "family": "Reference2Scene",
+  "instruction_sha256": "20487720bf527609597e3e8839f7b6cabc558e29c04045a0880740be3585ed2f",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "bab2eaa081717b702c334437324b5abf05a5f7aa252aeb0efc0193f3e7d46d43",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-86373dd60ebfbf753a37e44a0f9980094d4388bf1f962b4a3a9d6b43c7222a7b"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "仅框白色圆柱主体的可见范围，包含较暗的侧面糖霜；排除顶部配料、底缘外伸碎屑及投影。",
+        "boxes": [
+          [
+            0.079,
+            0.543,
+            0.887,
+            0.945
+          ]
+        ],
+        "id": "T01",
+        "query": "白色圆柱蛋糕主体",
+        "weight": 0.45,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "分别框数字 2 和 3 的完整可见蜡烛范围，包含烛芯、可辨识的底部支杆和金属暗面；不延伸推测被水果遮住的部分，不包含投影。",
+        "boxes": [
+          [
+            0.101,
+            0.079,
+            0.33,
+            0.404
+          ],
+          [
+            0.285,
+            0.14,
+            0.518,
+            0.452
+          ]
+        ],
+        "id": "T02",
+        "query": "银色数字蜡烛",
+        "weight": 0.4,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "仅框水果后方圆牌的可见部分，包含边缘和暗部；不补出被前方水果遮挡的下半部，不把印刷文字拆成实例。",
+        "boxes": [
+          [
+            0.649,
+            0.274,
+            0.818,
+            0.365
+          ]
+        ],
+        "id": "T03",
+        "query": "顶部浅色圆形装饰牌",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Text2Code/task_L1_Text2Code_002",
+  "family": "Brief2Scene",
+  "instruction_sha256": "57ad170ecca70e93ba211c773256c442b7b35ed6f8585478da750359d5efe8f7",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "双支座轴承总成；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "question": "底座1、支座2、衬套2、轴环2、轴1、螺栓4、垫圈4，共16件独立可编辑零件；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_part_roles"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_base",
+      "component": "Q",
+      "question": "底座140×70×6 mm，底面Z=0且XY中心为0；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_base"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_blocks",
+      "component": "Q",
+      "question": "支座18×48×42 mm，X=±42 mm，底面位于底座上；横向孔直径24.4 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_blocks"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_sleeves",
+      "component": "Q",
+      "question": "衬套长18 mm、外径24 mm、内径16.4 mm，平齐装在各支座内；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_sleeves"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_shaft",
+      "component": "Q",
+      "question": "轴直径16 mm、长130 mm，沿X且中心X=0，轴线Y=0/Z=34 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_shaft"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_collars",
+      "component": "Q",
+      "question": "两轴环外径24 mm、孔径16.4 mm、宽5 mm，X=±56 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_collars"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_mounting_passages",
+      "component": "Q",
+      "question": "每支座Y=±18 mm处有直径6.4 mm竖向孔且连续穿过底座；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_mounting_passages"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_fasteners",
+      "component": "Q",
+      "question": "螺杆直径6 mm、长49.5 mm、底Z=0；垫圈12/6.4/1.5 mm、底Z=48 mm；六角头外接圆10.8 mm、高4 mm且坐在垫圈上；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_fasteners"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "question": "同轴安装、规定间隙、真实孔道及无额外机械结构，尺寸/位置误差≤0.3 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_assembly_clearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "question": "结构件蓝灰、轴与螺栓银色、衬套/轴环/垫圈黄铜色；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_materials"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.048,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ],
+  "reference_bindings": {},
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

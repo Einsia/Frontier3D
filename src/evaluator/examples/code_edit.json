@@ -1,0 +1,71 @@
+{
+  "version": "l1-v1.0.0",
+  "profile": "L1",
+  "mode": "edit",
+  "required_artifacts": ["solution.py", "scene.blend", "scene.glb"],
+  "scene": "scene.blend",
+  "reference_scene": "solution/scene.blend",
+  "baseline_scene": "environment/input/scene.blend",
+  "critical_constraints": ["closed", "connected", "one_part", "bore"],
+  "seeds": [0, 1, 2],
+  "tolerances": {"dimension_m": 0.0003, "serialization": 0.00001},
+  "render_views": [
+    {"id": "top", "location": [0, 0, 0.12], "target": [0, 0, 0.003], "ortho_scale": 0.075, "resolution": 128},
+    {"id": "front", "location": [0, -0.12, 0.003], "target": [0, 0, 0.003], "ortho_scale": 0.075, "resolution": 128},
+    {"id": "iso", "location": [0.08, -0.10, 0.08], "target": [0, 0, 0.003], "ortho_scale": 0.075, "resolution": 128}
+  ],
+  "checks": {
+    "spec": [
+      {
+        "id": "bore", "metric": "occupancy", "group": "central_bore", "role": "target",
+        "params": {
+          "points": [[0, 0, 0.003], [0.0116, 0, 0.001], [0.0116, 0, 0.005], [-0.0116, 0, 0.003], [0, 0.0116, 0.003], [0, -0.0116, 0.003], [0.0124, 0, 0.003], [-0.0124, 0, 0.003], [0, 0.0124, 0.003], [0, -0.0124, 0.003]],
+          "inside": [false, false, false, false, false, false, true, true, true, true]
+        }
+      },
+      {
+        "id": "outer_dimensions", "metric": "numeric", "group": "outer_shape", "role": "preserve",
+        "params": {"path": "/scene/dimensions", "expected": [0.06, 0.06, 0.006], "tolerance": "dimension_m"}
+      },
+      {
+        "id": "bottom", "metric": "numeric", "group": "pose", "role": "preserve",
+        "params": {"path": "/scene/bounds/0/2", "expected": 0, "tolerance": "serialization"}
+      },
+      {
+        "id": "pose", "metric": "numeric", "group": "pose", "role": "preserve",
+        "params": {"path": "/scene/objects/Body/matrix_world", "reference_path": "/baseline/objects/Body/matrix_world", "tolerance": "serialization"}
+      },
+      {
+        "id": "small_hole", "metric": "occupancy", "group": "small_hole", "role": "preserve",
+        "params": {
+          "points": [[0.021, 0, 0.001], [0.021, 0, 0.005], [0.0236, 0, 0.003], [0.0184, 0, 0.003], [0.021, 0.0026, 0.003], [0.0244, 0, 0.003], [0.0176, 0, 0.003], [0.021, 0.0034, 0.003]],
+          "inside": [false, false, false, false, false, true, true, true]
+        }
+      },
+      {
+        "id": "material", "metric": "numeric", "group": "material", "role": "preserve",
+        "params": {"path": "/scene/objects/Body/material_colors", "reference_path": "/baseline/objects/Body/material_colors", "tolerance": "serialization"}
+      }
+    ],
+    "geometry": [
+      {"id": "closed", "metric": "equals", "group": "topology", "params": {"path": "/scene/all_closed", "expected": true}},
+      {"id": "connected", "metric": "equals", "group": "connectivity", "params": {"path": "/scene/all_connected", "expected": true}}
+    ],
+    "structure": [
+      {"id": "one_part", "metric": "equals", "group": "parts", "params": {"path": "/scene/mesh_count", "expected": 1}},
+      {"id": "editable", "metric": "equals", "group": "editing", "params": {"path": "/scene/all_editable", "expected": true}}
+    ],
+    "visual": [
+      {"id": "top_mask", "metric": "mask_iou", "group": "silhouette", "params": {"view": "top"}},
+      {"id": "front_mask", "metric": "mask_iou", "group": "silhouette", "params": {"view": "front"}},
+      {"id": "iso_mask", "metric": "mask_iou", "group": "silhouette", "params": {"view": "iso"}},
+      {"id": "top_valid", "metric": "render_validity", "group": "visibility", "params": {"view": "top"}},
+      {"id": "front_valid", "metric": "render_validity", "group": "visibility", "params": {"view": "front"}},
+      {"id": "iso_valid", "metric": "render_validity", "group": "visibility", "params": {"view": "iso"}}
+    ],
+    "robust": [
+      {"id": "export", "metric": "equals", "group": "delivery", "params": {"path": "/artifacts/scene.glb/loadable", "expected": true}},
+      {"id": "reproducible", "metric": "seed_success", "group": "reruns"}
+    ]
+  }
+}

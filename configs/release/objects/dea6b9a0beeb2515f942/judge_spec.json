@@ -1,0 +1,149 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/Text2Code/task_L1_Text2Code_012",
+  "family": "Brief2Scene",
+  "instruction_sha256": "766b103590fa56d7af5b50ae27d68170ee724984bf4be7b7970e3fea972d0f8d",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "四滚轮导向夹具；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "question": "14件独立可编辑部件：base×1、workpiece×1、roller×4、pin×4、spacer×4；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_part_roles"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_base",
+      "component": "Q",
+      "question": "底座120×120×8 mm，底Z=0；四轴位XY=(-28,0)/(28,0)/(0,-28)/(0,28)处从顶面切直径8.4 mm盲孔到底Z=5；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_base"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_workpiece",
+      "component": "Q",
+      "question": "中心工件30×30×50 mm，中心(0,0,33)，立于底座；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_workpiece"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_rollers",
+      "component": "Q",
+      "question": "四独立滚轮外径25 mm、孔8.4 mm、高28 mm，中心Z=35，竖轴位于四指定XY；各距工件0.5 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_rollers"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_pins",
+      "component": "Q",
+      "question": "四销直径8 mm、长46 mm，Z=6..52，与各滚轮同轴并进入底座盲孔；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_pins"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_spacers",
+      "component": "Q",
+      "question": "四间隔套外径14 mm、孔8.4 mm、高13 mm，Z=8..21，支撑滚轮；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_spacers"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_bore_topology",
+      "component": "Q",
+      "question": "滚轮/间隔套保留真实通孔，底座为规定深度盲孔而非通孔，不用涂色圆冒充；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_bore_topology"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_assembly_clearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "question": "底座蓝灰，销银色，滚轮/工件/间隔套黄铜；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_materials"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.05333333333333334,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ],
+  "reference_bindings": {},
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

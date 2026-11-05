@@ -1,0 +1,280 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_016",
+  "family": "Brief2Scene",
+  "instruction_sha256": "b9289d7212d080a9d9cfbcb43c3416786e7c7be07c7fb68de58d5f6e3ba46235",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为约 4.2 × 3.6 m 的洗衣房？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Create a roughly 4.2 x 3.6 m laundry room"
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "房间是否采用浅灰色瓷砖？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "with pale-grey tiles"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "前开门洗衣机是否沿一面墙排列？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "three front-loading washers along a wall"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "中间洗衣机门是否打开并露出滚筒？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Open the middle door 130 degrees, exposing its drum"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "开门处是否呈现待处理织物？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "exposing its drum and two waiting textiles"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "每台洗衣机上是否放有篮子？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "put a basket on each machine"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "储物柜是否位于洗衣机对面并设有隔间？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Opposite storage has four compartments"
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "储物柜内的洗涤剂瓶是否颜色各异？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "four differently coloured detergent bottles"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "储物柜内是否放有毛巾堆？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Opposite storage has four compartments with four differently coloured detergent bottles and towel stacks."
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "折叠桌是否位于中央并具有防滑工作表面？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "A central non-slip folding table"
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "机械臂是否安装在桌后框架的固定基座上？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Two arms on a rear frame have bases"
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "冻结姿态是否表现夹爪实际握住同一毛巾的相对角并将其拉平悬于桌上？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Freeze flattening: their grippers hold opposite corners of a 0.70 x 1.40 m towel, stretched 0.15 m above the table."
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "毛巾主体是否近乎水平？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Its plane is nearly horizontal"
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "毛巾纵向中心线是否与桌面长轴对齐？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "its centreline matches the table's long axis within 20 mm"
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "桌下是否放有篮子？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Put two baskets beneath the table"
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "桌旁是否放有独立的折叠织物堆？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "three folded stacks beside it"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "桌周是否有连续闭合通路？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Provide a continuous 0.90 m loop around the table"
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "洗衣机前方是否保留可通行净空？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "at least 0.70 m clear in front of the washers"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "两夹爪是否各对应一个被握角点且没有交叉手位？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Each held corner corresponds to one gripper without crossed hands"
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "墙裙是否采用白色瓷砖？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Use white tile wainscot"
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "储物柜是否呈浅色木材外观？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "light timber storage"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "篮子是否呈彩色外观？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "coloured baskets"
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "照明是否以冷白光为主并在滚筒处加入暖色重点光？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "cool-white light plus a warm drum accent"
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "主视图是否同时突出机械臂、悬挂毛巾和开门洗衣机？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Frame arms, suspended towel and open washer."
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "场景是否呈静态铰接机械臂姿态且没有水或滚筒旋转？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Static; no cloth solver, water or drum rotation."
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

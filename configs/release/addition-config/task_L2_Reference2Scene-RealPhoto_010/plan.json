@@ -1,0 +1,401 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/203fc1e02a7ce9b4a9fb/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/29664500582965046aa6/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/960f034309e909bbad0a/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "机鼻及前机身",
+      "polygon": [
+        [
+          0.646,
+          0.63
+        ],
+        [
+          0.65,
+          0.53
+        ],
+        [
+          0.725,
+          0.46
+        ],
+        [
+          0.895,
+          0.39
+        ],
+        [
+          0.981,
+          0.399
+        ],
+        [
+          1,
+          0.46
+        ],
+        [
+          1,
+          0.694
+        ],
+        [
+          0.933,
+          0.769
+        ],
+        [
+          0.85,
+          0.793
+        ],
+        [
+          0.721,
+          0.777
+        ],
+        [
+          0.672,
+          0.716
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R02",
+      "label": "右侧登机桥接机端",
+      "polygon": [
+        [
+          0.864,
+          0.496
+        ],
+        [
+          1,
+          0.46
+        ],
+        [
+          1,
+          0.664
+        ],
+        [
+          0.96,
+          0.653
+        ],
+        [
+          0.937,
+          0.565
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R03",
+      "label": "可见发动机",
+      "polygon": [
+        [
+          0.362,
+          0.548
+        ],
+        [
+          0.488,
+          0.545
+        ],
+        [
+          0.545,
+          0.578
+        ],
+        [
+          0.532,
+          0.648
+        ],
+        [
+          0.467,
+          0.666
+        ],
+        [
+          0.382,
+          0.652
+        ],
+        [
+          0.355,
+          0.604
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R04",
+      "label": "前起落架",
+      "polygon": [
+        [
+          0.779,
+          0.78
+        ],
+        [
+          0.83,
+          0.783
+        ],
+        [
+          0.853,
+          0.871
+        ],
+        [
+          0.849,
+          0.905
+        ],
+        [
+          0.763,
+          0.905
+        ],
+        [
+          0.757,
+          0.864
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R05",
+      "label": "航站楼屋顶与立面",
+      "polygon": [
+        [
+          0.444,
+          0.351
+        ],
+        [
+          0.556,
+          0.323
+        ],
+        [
+          0.681,
+          0.335
+        ],
+        [
+          0.678,
+          0.301
+        ],
+        [
+          0.735,
+          0.289
+        ],
+        [
+          0.85,
+          0.291
+        ],
+        [
+          0.878,
+          0.32
+        ],
+        [
+          0.937,
+          0.315
+        ],
+        [
+          1,
+          0.325
+        ],
+        [
+          1,
+          0.397
+        ],
+        [
+          0.477,
+          0.4
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R06",
+      "label": "前景配餐升降车",
+      "polygon": [
+        [
+          0.251,
+          0.46
+        ],
+        [
+          0.57,
+          0.46
+        ],
+        [
+          0.57,
+          0.453
+        ],
+        [
+          0.681,
+          0.453
+        ],
+        [
+          0.681,
+          0.548
+        ],
+        [
+          0.533,
+          0.551
+        ],
+        [
+          0.534,
+          0.716
+        ],
+        [
+          0.261,
+          0.713
+        ],
+        [
+          0.264,
+          0.666
+        ],
+        [
+          0.348,
+          0.66
+        ],
+        [
+          0.369,
+          0.553
+        ],
+        [
+          0.254,
+          0.551
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R07",
+      "label": "前景货物装载平台",
+      "polygon": [
+        [
+          0.257,
+          0.739
+        ],
+        [
+          0.495,
+          0.739
+        ],
+        [
+          0.495,
+          0.622
+        ],
+        [
+          0.651,
+          0.605
+        ],
+        [
+          0.667,
+          0.699
+        ],
+        [
+          0.723,
+          0.767
+        ],
+        [
+          0.714,
+          0.802
+        ],
+        [
+          0.258,
+          0.794
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R08",
+      "label": "左下牵引车",
+      "polygon": [
+        [
+          0.08,
+          0.792
+        ],
+        [
+          0.118,
+          0.765
+        ],
+        [
+          0.151,
+          0.745
+        ],
+        [
+          0.204,
+          0.746
+        ],
+        [
+          0.232,
+          0.77
+        ],
+        [
+          0.226,
+          0.805
+        ],
+        [
+          0.18,
+          0.837
+        ],
+        [
+          0.084,
+          0.834
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中按米读取前机身主体外壳的横截面，截面垂直于机身纵轴；测量外表面直径，排除机翼、支架和局部附件。截面位置歧义需记录，不以二维像素宽度代替。",
+      "quantity": "前机身外径",
+      "relation": "equal",
+      "source_quote": "Use a 5.5 m forward-fuselage external diameter as the task scale convention",
+      "target": 5.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两台相机的世界位置，用主相机旋转矩阵的逆将位置差变换到主相机局部坐标，测量局部正 X 方向的位移分量；其余方向及姿态保持关系另行检查。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

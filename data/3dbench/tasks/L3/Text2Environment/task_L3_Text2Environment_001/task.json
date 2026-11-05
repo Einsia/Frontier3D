@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-e05",
+  "id": "L3/EmbodiedEnvironment/ClinicalServiceWard",
+  "domain": "embodied",
+  "input_mode": "text",
+  "title": "具身：病区及物资服务走廊",
+  "title_en": "Embodied Environment: Ward and Supply Corridor",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "fa1f21a319310cf9003d9e869aacd83e131c2b96a3183d418d5577292b13a2ee",
+  "chinese_instruction_sha256": "9e075a0fe853d9108cc63fd8fe1a586d2645b7ae13f7e9c28674a499ace4d29b",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "48d398a1db3111960dadfe08348837405e13d4dedb3c48e8a57252d6532ebb9e",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

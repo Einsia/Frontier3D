@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017",
+  "family": "Reference2Scene",
+  "instruction_sha256": "1534bfcbb47aa05dca45b3fc6fe6d377836b8f3b04ce35d26620c2279f9e7294",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "be89c2341a4cf6d3728cb8ff96ddb186641dea9b57d8e17b5ac095bd5fbc14e0"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_neck",
+      "component": "F",
+      "question": "长颈的弯折曲线、截面厚度及与胸部和头部的过渡是否自然且符合参考？",
+      "units": [
+        "long bent neck"
+      ],
+      "global_weight": 0.16,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_head",
+      "component": "F",
+      "question": "口鼻隆起、嘴缝、鼻部凹陷和眼周结构是否具有参考可见的局部形态？",
+      "units": [
+        "head"
+      ],
+      "global_weight": 0.14,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_ears",
+      "component": "F",
+      "question": "耳朵是否保留短尖外轮廓、厚度及耳根连接？",
+      "units": [
+        "ears"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_humps",
+      "component": "F",
+      "question": "驼峰顶部弧线、峰间过渡及毛束形成的轮廓起伏是否匹配参考？",
+      "units": [
+        "humps"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_legs",
+      "component": "F",
+      "question": "腿部关节起伏、收细的下腿和宽厚足端的连接是否匹配参考？",
+      "units": [
+        "four-legged stance"
+      ],
+      "global_weight": 0.16,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_tail",
+      "component": "F",
+      "question": "尾柄的细长厚度、下垂曲线及末端毛束是否保留？",
+      "units": [
+        "tail"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_blanket",
+      "component": "F",
+      "question": "鞍毯是否具有贴体弯曲、薄边厚度、波状下摆及侧缘垂片，而非平面贴图替代？",
+      "units": [
+        "patterned saddle blanket"
+      ],
+      "global_weight": 0.16,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_bands",
+      "component": "F",
+      "question": "头颈饰带和腿部裹带是否具有可见宽厚、环绕曲率及与身体正确的接触遮挡？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

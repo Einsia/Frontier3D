@@ -1,0 +1,27 @@
+{
+  "uid": "e1127f2c8d4d4d65b9608ff3714890bc",
+  "name": "RED Digital Cinema Weapon Dragon 8K Camera",
+  "source_url": "https://sketchfab.com/3d-models/red-digital-cinema-weapon-dragon-8k-camera-e1127f2c8d4d4d65b9608ff3714890bc",
+  "author": {
+    "username": "cholloway2392",
+    "displayName": "Christopher Holloway",
+    "profileUrl": "https://sketchfab.com/cholloway2392"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/SYI2wkBS0iV0a2kil7HcBs7un4b",
+  "document_revision": 647,
+  "source_sha256": "0e5d1f8e749613b88d596453fdc901be59919557d7d604e4915e2dcf64eb6af9",
+  "download_method": "User browser download; identity verified from embedded glTF asset.extras",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Removed only the two display-turntable meshes; camera components retained.",
+  "replaces": {
+    "title": "复古摄像机",
+    "resource_family": "polyhaven-models/vintage_video_camera"
+  }
+}

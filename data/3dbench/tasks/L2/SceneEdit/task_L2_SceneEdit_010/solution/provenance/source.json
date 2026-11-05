@@ -1,0 +1,15 @@
+{
+  "id": "space-hallways",
+  "source_page": "https://marin1234.itch.io/asset-jam-space-hallways",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "author": "marin1234",
+  "archive": "assets\\cc0-replacements-20260921\\space-hallways\\assets spaceship.zip",
+  "archive_sha256": "10d8cf4ff82ff5e7709723f47541ff332970d0ddd7e17d802dbc24f86179b356",
+  "upstream_filename": "assets spaceship.zip",
+  "upload_id": "6546541",
+  "asset_origin": "Downloaded author scene; no generative synthesis",
+  "resource_family": "upstream/space-hallways",
+  "packaged_scene_sha256": "fde8f4e7b1c9fa6e4d38ff744f5749f26b787dced3d244e6beab98fe8b0b65b7",
+  "changes": "Author geometry/layout retained; render normalization and documented exclusions of shared resources. SceneEdit additionally removes listed target objects or perturbs existing lighting. No generated replacement assets."
+}

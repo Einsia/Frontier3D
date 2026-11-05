@@ -1,0 +1,92 @@
+{
+  "protocol": "3dbench-strict-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009",
+  "family": "Reference2Scene",
+  "instruction_sha256": "64e1238e8ae6fd86d419b341c3264d1a66c4b6097938565b9929828a32204b3a",
+  "reference_policy": "单张公开参考。main 决定原构图；alternate 只核实三维结构。未知背面合理补全，不引入私有真值。",
+  "focus": "流鬃马头雕像；只核对公开参考中可见的具体形态和题面明确要求。",
+  "checks": [
+    {
+      "id": "horse_profile",
+      "component": "F",
+      "global_weight": 0.3,
+      "question": "参考马头的具体比例：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "长额头至口鼻的连续侧线",
+        "头部朝向及长宽比例",
+        "下颌的具体轮廓",
+        "头与颈部的相对比例"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "horse_anatomy",
+      "component": "F",
+      "global_weight": 0.3,
+      "question": "头部解剖曲面：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "竖耳及耳内凹陷",
+        "嵌入头部的眼眶和眼睛",
+        "口鼻的体积与鼻孔",
+        "额头面颊下颌的连续过渡"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "horse_mane",
+      "component": "F",
+      "global_weight": 0.25,
+      "question": "后掠鬃毛的雕塑体积：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "主要毛束的后掠方向",
+        "大小不一的层叠曲面体积",
+        "毛束之间的沟槽",
+        "鬃毛与颈部的连续连接"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "horse_neck",
+      "component": "F",
+      "global_weight": 0.15,
+      "question": "颈胸及底座关系：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "颈部至胸部的连续弧面",
+        "颈胸切面形态",
+        "矩形底座的比例",
+        "颈胸落在底座上的位置与连接"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "08b125d69dc1e5a3d1022e2a3051f4fb59463b53513959ead004c0df9cebf44f"
+  },
+  "authoring": "four_task_public_requirement_reference_fidelity_review_model_blind",
+  "formal_score_eligible": false
+}

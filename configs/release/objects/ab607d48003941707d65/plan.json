@@ -1,0 +1,174 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014",
+  "title": "Birkin 手袋",
+  "category": "Image2Code-SingleView",
+  "profile": "image-no-comparable-gt-40-50-10-v1",
+  "weights": {
+    "H": 0.4,
+    "F": 0.5,
+    "M": 0.1
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "e2f2111e52cf6160ec5b6b6a56431dd29af5d45edd42bd97a399472fd3a5fd7c"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "silhouette",
+      "component": "H",
+      "weight": 0.5,
+      "question": "Birkin式梯形软包身与侧褶",
+      "method": "silhouette_iou",
+      "measurement_rule": "逐个声明视角在原像素网格计算交并比，然后等权平均；参考标注固定，候选独立复渲染提取；不可拟合、平移、缩放或以RGB相似度替代。",
+      "source": "instruction.md",
+      "parameters": {
+        "view_ids": [
+          "reference"
+        ],
+        "reference_masks": "preannotate_visible_subjects; no candidate-conditioned segmentation"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "layout_reference",
+      "component": "H",
+      "weight": 0.5,
+      "question": "在 reference 视角核对整体姿态、主体比例、空间层次和遮挡：Birkin式梯形软包身与侧褶",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_1",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：两根拱形提手由细根部连接包身。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_2",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：顶部翻盖、横向束带与金属锁扣。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_3",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：包面皮革拼饰、马形装饰及垂挂皮件。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_4",
+      "component": "F",
+      "weight": 0.25,
+      "question": "公开参考各视角可见局部结构：底角、包边和侧面柔性褶皱而非硬方盒。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "material_reference",
+      "component": "M",
+      "weight": 0.5,
+      "question": "在 reference 原始配对渲染中比较色调、粗糙度、纹理尺度和反射表现：浅驼色皮革、棕色边油、银色五金、浅粉装饰，细缝线和柔和反光",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "lighting_reference",
+      "component": "M",
+      "weight": 0.5,
+      "question": "在 reference 原始配对渲染中比较光源方向、阴影软硬、曝光及明暗层次：浅驼色皮革、棕色边油、银色五金、浅粉装饰，细缝线和柔和反光",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready",
+      "required_evidence": [
+        "reference/reference-0.png",
+        "candidate/main.png"
+      ]
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "18e359a1d40987d921b018d8c667c44f50b3d5bf4184087dd0b966ad81d1028f",
+    "task.toml": "731183ddba94ba9495cdda735d77963608d9c3e674cca882ccefd6347273bae8",
+    "harness/eval_spec.json": "bf25d62bd670c47a0c07f835fd4e88afef3161f30bb9a6c3ee68376347fbd5b8"
+  },
+  "view_pairs": [
+    {
+      "id": "reference",
+      "reference": "reference/reference-0.png",
+      "reference_source": "environment/input/reference.png",
+      "candidate": "candidate/main.png",
+      "frame": 1,
+      "camera_rule": "declared_public_view_or_saved_primary_no_candidate_fitting",
+      "mask_scope": "frozen_visible_subjects_and_static_regions"
+    }
+  ],
+  "focus": "Birkin式梯形软包身与侧褶",
+  "geometry_gt_policy": "source_present_coordinate_scope_approval_pending; no GT substitution during a run",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

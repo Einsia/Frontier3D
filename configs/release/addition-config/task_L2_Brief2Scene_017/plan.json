@@ -1,0 +1,419 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_017",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/e7eb34b37308d7335cca/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/9d96d7762d42275b1c0c/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/3f2f2bb81115949fed0a/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在台面本体长度轴上计算实体投影跨度。",
+      "quantity": "台面长度",
+      "relation": "equal",
+      "source_quote": "a 1.80 m counter",
+      "target": 1.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "以地面为高度基准，沿 Z 测量台面工作上表面高度。",
+      "quantity": "台面高度",
+      "relation": "equal",
+      "source_quote": "0.95 m high",
+      "target": 0.95,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "在台面本体前后轴上计算实体投影跨度。",
+      "quantity": "台面深度",
+      "relation": "equal",
+      "source_quote": "0.60 m deep",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "统计咖啡机独立冲煮组数量。",
+      "quantity": "冲煮组数量",
+      "relation": "equal",
+      "source_quote": "single-group espresso machine",
+      "target": 1,
+      "unit": "组",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "沿咖啡机本体左右轴测量完整设备实体的投影宽度。",
+      "quantity": "咖啡机宽度",
+      "relation": "equal",
+      "source_quote": "0.55 m wide",
+      "target": 0.55,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "计算咖啡机本体实体的最大 Z 与最小 Z 之差。",
+      "quantity": "咖啡机高度",
+      "relation": "equal",
+      "source_quote": "0.45 m high",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "统计后方搁架上独立咖啡袋实体。",
+      "quantity": "咖啡袋数量",
+      "relation": "equal",
+      "source_quote": "three coffee bags",
+      "target": 3,
+      "unit": "袋",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "按已声明的基座参考点，测量其相对地面的 Z 高度。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "base height 1.00 m",
+      "target": 1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "根据场景声明的 reach 定义核查机械臂几何伸展长度或基座中心包络半径；不据此推断动力学可行性。",
+      "quantity": "机械臂伸达尺度",
+      "relation": "equal",
+      "source_quote": "reach 0.85 m",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "由奶缸内壁和声明的容量液位封闭内腔，积分其体积并以原任务单位报告。",
+      "quantity": "奶缸容量",
+      "relation": "equal",
+      "source_quote": "0.35-litre stainless milk pitcher",
+      "target": 0.35,
+      "unit": "litre",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "由拿铁杯内壁和声明的容量液位封闭内腔，积分其体积并以原任务单位报告。",
+      "quantity": "拿铁杯容量",
+      "relation": "equal",
+      "source_quote": "a 250 ml latte cup",
+      "target": 250,
+      "unit": "ml",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "沿 Z 计算壶嘴出液端与已声明杯端基准的高度差，同时记录杯口及液面的基准歧义。",
+      "quantity": "壶嘴高于杯子的距离",
+      "relation": "equal",
+      "source_quote": "Its spout is 0.03 m above a 250 ml latte cup",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 2,
+      "id": "N13",
+      "measurement_definition": "测量奶缸本体竖直轴相对世界 Z 轴的夹角，并记录本体轴定义。",
+      "quantity": "奶缸倾角",
+      "relation": "equal",
+      "source_quote": "pitcher tilted 20 +/-2 degrees",
+      "target": 20,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "将壶嘴延伸方向与液面求交；沿已声明的前后轴，以液面前缘为 0、后缘为 1，测量交点归一化位置并确认交点位于液面内。",
+      "quantity": "壶嘴瞄准点的液面纵向位置",
+      "relation": "range",
+      "source_quote": "spout extension aimed toward the rear third of the liquid surface",
+      "target": 0.6666666666666666,
+      "unit": "液面前后跨度比例",
+      "upper": 1
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "将杯中心至杯把中心的方向投影到水平面，按声明的正面零轴测量向右方位角。",
+      "quantity": "杯把向右角度",
+      "relation": "equal",
+      "source_quote": "cup handle points right 45 degrees",
+      "target": 45,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "统计前方杯排中的独立杯实体。",
+      "quantity": "前排杯数量",
+      "relation": "equal",
+      "source_quote": "Four cups line the front",
+      "target": 4,
+      "unit": "杯",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "逐一测量前排每对相邻杯的间距；分别记录中心距和边缘净距，不以平均值替代逐对结果。",
+      "quantity": "前排相邻杯间距",
+      "relation": "equal",
+      "source_quote": "at 0.15 m spacing",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "统计前排杯中杯口朝下且放置在沥水架上的杯。",
+      "quantity": "沥水架上倒置杯数量",
+      "relation": "equal",
+      "source_quote": "one inverted on a draining rack",
+      "target": 1,
+      "unit": "杯",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "沿声明的后方工作方向，测量工作区前后边界间的自由深度；记录边界和障碍物范围。",
+      "quantity": "后方工作深度",
+      "relation": "equal",
+      "source_quote": "Keep a 0.80 m rear working depth",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "计算声明的机械臂扫掠几何包络与搁架下表面之间的最小表面距离。",
+      "quantity": "机械臂扫掠与搁架下表面净距",
+      "relation": "at_least",
+      "source_quote": "at least 0.15 m between the arm sweep and shelf underside",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "计算冲煮头服务点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "冲煮头服务点至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "计算磨豆机出粉口服务点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "出粉口服务点至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "计算杯排左端代表点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "杯排左端至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "计算杯排右端代表点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "杯排右端至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "读取冲煮头服务点相对地面的 Z 高度。",
+      "quantity": "冲煮头服务点高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "读取磨豆机出粉口服务点相对地面的 Z 高度。",
+      "quantity": "出粉口服务点高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "读取杯排左端代表点相对地面的 Z 高度。",
+      "quantity": "杯排左端高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "读取杯排右端代表点相对地面的 Z 高度。",
+      "quantity": "杯排右端高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "统计与杯排两个不同端部对应的代表服务点，排除同一端点的重复标签。",
+      "quantity": "杯排代表端点数量",
+      "relation": "equal",
+      "source_quote": "two representative cup-row endpoints",
+      "target": 2,
+      "unit": "点",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "识别奶缸实体全部最低点，计算这些点到所有搁架实体表面的最小距离。",
+      "quantity": "奶缸最低点至搁架净距",
+      "relation": "at_least",
+      "source_quote": "keep its lowest point at least 0.05 m clear of shelves and other cups",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "识别奶缸实体全部最低点，计算这些点到目标拿铁杯之外其他杯实体表面的最小距离。",
+      "quantity": "奶缸最低点至其他杯净距",
+      "relation": "at_least",
+      "source_quote": "keep its lowest point at least 0.05 m clear of shelves and other cups",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "在指定锁合界面计算手柄与冲煮组的表面间距，并结合结构检查确认锁入关系。",
+      "quantity": "手柄与冲煮组锁合接触间距",
+      "relation": "equal",
+      "source_quote": "a portafilter locked beneath the group",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N33",
+      "measurement_definition": "在声明的抓持界面计算末端执行器与奶缸的表面间距，并检查是否构成抓持接触。",
+      "quantity": "机械臂与奶缸抓持接触间距",
+      "relation": "equal",
+      "source_quote": "gripping a 0.35-litre stainless milk pitcher",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N34",
+      "measurement_definition": "计算倒置杯的承托部位与沥水架承托表面的最小间距。",
+      "quantity": "倒置杯与沥水架承托接触间距",
+      "relation": "equal",
+      "source_quote": "one inverted on a draining rack",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+  "family": "Reference2Scene",
+  "instruction_sha256": "23262d8c56173c1f2e0b3452d019a8a68e1e61e5b4f768b15538424fc244183d",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "03585d7383b1ed0602282c281a4a3af419c9b50a40452d014517233fcfc80b61",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-d293e9831456bcdb36d9e1a95b1bc5283cd1f2f4c631996653b1fc0eee08f2ad"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "按鞋体、带体、扣件和后跟结构的可见实体边界标注；不包含投影阴影或反射，遮挡处按可见轮廓截断。",
+        "boxes": [
+          [
+            0.25,
+            0.145,
+            0.735,
+            0.89
+          ]
+        ],
+        "id": "target_full_footwear",
+        "query": "完整高跟鞋可见主体",
+        "weight": 0.28,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "仅包含前部横向带的可见实体，不包含其投射阴影；图中仅有一个可辨识实例。",
+        "boxes": [
+          [
+            0.27,
+            0.747,
+            0.541,
+            0.852
+          ]
+        ],
+        "id": "target_front_strap",
+        "query": "前部横向带",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含从鞋头到踝部的鞋垫和包覆鞋面可见实体，避开后跟金属结构；被带体遮挡的部分不外推。",
+        "boxes": [
+          [
+            0.36,
+            0.241,
+            0.681,
+            0.819
+          ]
+        ],
+        "id": "target_insole_upper",
+        "query": "弯曲鞋垫与鞋面",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含踝部环带及其可见扣件和带尾，排除背景与阴影；图中仅有一个可辨识实例。",
+        "boxes": [
+          [
+            0.458,
+            0.145,
+            0.69,
+            0.264
+          ]
+        ],
+        "id": "target_ankle_strap",
+        "query": "踝部环带和扣件",
+        "weight": 0.12,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含可见的金色雕塑性后跟实体及其支撑连接，按实体外轮廓标注；内部空隙保持为空，不把空隙标成实体。",
+        "boxes": [
+          [
+            0.594,
+            0.477,
+            0.703,
+            0.747
+          ]
+        ],
+        "id": "target_sculptural_heel",
+        "query": "雕塑性后跟结构",
+        "weight": 0.2,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

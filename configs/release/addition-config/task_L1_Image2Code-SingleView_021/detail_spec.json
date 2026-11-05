@@ -1,0 +1,96 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2d00b0dbe2e08e21c096bf792dade56ed281430d88641aec1240661f79c8c21e",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "2dcdf0d99db12f288b7353fbbb8a56a2b270145e05e324cc54ff3ae206e6f92b"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_padding",
+      "component": "F",
+      "question": "拳垫是否有真实厚度、连续鼓起的曲面及底部圆弧，而非薄壳轮廓？",
+      "units": [
+        "the gloves need real padded volume"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_thumb",
+      "component": "F",
+      "question": "拇指是否形成弯曲的独立鼓包，并保留与拳体交界的凹沟和连接过渡？",
+      "units": [
+        "bent thumbs"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_cuff",
+      "component": "F",
+      "question": "袖口是否保留斜椭圆开口、可见内壁、边缘厚度及下缘束带式转折？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_cord",
+      "component": "F",
+      "question": "细绳是否有连续截面，保留顶部绕结、短尾及通向袖口的连接和交叉遮挡？",
+      "units": [
+        "thin structures, connections and occlusions"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_seams",
+      "component": "F",
+      "question": "是否保留拇指边缘接缝、袖口下缘接缝及拳体底部收拢褶皱等局部结构？",
+      "units": [
+        "Seams and wear may use local textures"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

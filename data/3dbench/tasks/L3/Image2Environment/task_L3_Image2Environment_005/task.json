@@ -1,0 +1,23 @@
+{
+  "key": "l3-g01",
+  "title": "Minecraft Open-World Village",
+  "domain": "game",
+  "input_mode": "image",
+  "package_format": "minecraft-openworld-v1",
+  "execution_status": "generation_ready",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "instruction_sha256": "cf78623bedfb29ddb710c71ed6506285389f4107f17786533fa1c2b763f127e6",
+  "source_instruction_sha256": "02ae47c3add3cd53e8356555be4cbee717e953c4e720239fbbaeb675a53e56aa",
+  "common_contract": "COMMON.md",
+  "evaluation_protocol": "l3-perceptual-quality-v5",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  }
+}

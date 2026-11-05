@@ -1,0 +1,2762 @@
+{
+  "id": "construction",
+  "source_file": "assets/diverse/construction/original/LowPoly-House-Construction-Site-By-Majadroid/HouseConstructionSite.blend",
+  "original": {
+    "engine": "CYCLES",
+    "frame": 4,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "percentage": 100
+  },
+  "engine": "CYCLES",
+  "frame": 4,
+  "resolution": [
+    800,
+    450
+  ],
+  "pixel_aspect": [
+    1.0,
+    1.0
+  ],
+  "view_transform": "AgX",
+  "look": "None",
+  "exposure": 0.0,
+  "gamma": 1.0,
+  "unit_scale": 1.0,
+  "cameras": [
+    {
+      "name": "Benchmark_Main",
+      "matrix_world": [
+        [
+          -0.5592016577720642,
+          0.3993828296661377,
+          -0.7264895439147949,
+          -76.4039306640625
+        ],
+        [
+          -0.8290319442749023,
+          -0.26939573884010315,
+          0.49003297090530396,
+          53.594642639160156
+        ],
+        [
+          -2.4537202989449725e-06,
+          0.8763103485107422,
+          0.48174744844436646,
+          32.33314514160156
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "PERSP",
+      "lens_mm": 50.0,
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "sensor_fit": "AUTO",
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "ortho_scale": 6.0,
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "dof": {
+        "enabled": false,
+        "focus_distance": 10.0,
+        "aperture_fstop": 2.799999952316284,
+        "aperture_blades": 0,
+        "aperture_rotation": 0.0,
+        "aperture_ratio": 1.0
+      }
+    },
+    {
+      "name": "Benchmark_Alternate",
+      "matrix_world": [
+        [
+          -0.5592016577720642,
+          0.3993828296661377,
+          -0.7264895439147949,
+          -76.8512954711914
+        ],
+        [
+          -0.8290319442749023,
+          -0.26939573884010315,
+          0.49003297090530396,
+          52.93141555786133
+        ],
+        [
+          -2.4537202989449725e-06,
+          0.8763103485107422,
+          0.48174744844436646,
+          32.3331413269043
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "PERSP",
+      "lens_mm": 50.0,
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 24.0,
+      "sensor_fit": "AUTO",
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "ortho_scale": 6.0,
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "dof": {
+        "enabled": false,
+        "focus_distance": 10.0,
+        "aperture_fstop": 2.799999952316284,
+        "aperture_blades": 0,
+        "aperture_rotation": 0.0,
+        "aperture_ratio": 1.0
+      }
+    }
+  ],
+  "inventory": [
+    {
+      "id": "Benchmark Sun",
+      "type": "LIGHT",
+      "polygons": 0,
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "materials": [],
+      "hide_render": false
+    },
+    {
+      "id": "Ground",
+      "type": "MESH",
+      "polygons": 266,
+      "bounds": [
+        [
+          -50.0,
+          -50.0,
+          -0.02347719669342041
+        ],
+        [
+          50.0,
+          50.0,
+          3.611790657043457
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader.001",
+        "Submission_Diffuse_Shader.001",
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Roads",
+      "type": "MESH",
+      "polygons": 248,
+      "bounds": [
+        [
+          -68.00008392333984,
+          -68.00008392333984,
+          -0.20000000298023224
+        ],
+        [
+          67.99994659423828,
+          68.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader.002"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "BuildingBase",
+      "type": "MESH",
+      "polygons": 7,
+      "bounds": [
+        [
+          -23.14773941040039,
+          -38.447532653808594,
+          0.15000025928020477
+        ],
+        [
+          38.35226058959961,
+          13.052467346191406,
+          0.5500003099441528
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "BuildingFloor.001",
+      "type": "MESH",
+      "polygons": 2233,
+      "bounds": [
+        [
+          -23.14773941040039,
+          -38.447532653808594,
+          0.14999985694885254
+        ],
+        [
+          38.35226058959961,
+          13.052467346191406,
+          35.750003814697266
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "BuildingSmallFloor.001",
+      "type": "MESH",
+      "polygons": 1229,
+      "bounds": [
+        [
+          -3.147737979888916,
+          -38.447532653808594,
+          35.349998474121094
+        ],
+        [
+          38.35226058959961,
+          13.052467346191406,
+          61.08019256591797
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Fassade",
+      "type": "MESH",
+      "polygons": 1885,
+      "bounds": [
+        [
+          -23.147741317749023,
+          -38.447532653808594,
+          0.5500003099441528
+        ],
+        [
+          38.352264404296875,
+          13.052467346191406,
+          19.350000381469727
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Crane Ground",
+      "type": "MESH",
+      "polygons": 1109,
+      "bounds": [
+        [
+          -38.582054138183594,
+          -1.2219429016113281,
+          1.952052116394043e-06
+        ],
+        [
+          -14.106035232543945,
+          40.384674072265625,
+          54.07588577270508
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Crane Mounted",
+      "type": "MESH",
+      "polygons": 1076,
+      "bounds": [
+        [
+          -19.097150802612305,
+          -46.271873474121094,
+          22.950000762939453
+        ],
+        [
+          11.566457748413086,
+          -15.978052139282227,
+          71.31101989746094
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Office Container",
+      "type": "MESH",
+      "polygons": 132,
+      "bounds": [
+        [
+          41.959556579589844,
+          39.275299072265625,
+          0.0
+        ],
+        [
+          44.959556579589844,
+          46.275299072265625,
+          2.5999999046325684
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dixie",
+      "type": "MESH",
+      "polygons": 41,
+      "bounds": [
+        [
+          -48.69370651245117,
+          2.9915874004364014,
+          0.0
+        ],
+        [
+          -47.4337043762207,
+          4.251587390899658,
+          2.395681381225586
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          31.837238311767578,
+          16.36632537841797,
+          0.0
+        ],
+        [
+          36.16061019897461,
+          19.289653778076172,
+          1.7779886722564697
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Office Container.001",
+      "type": "MESH",
+      "polygons": 132,
+      "bounds": [
+        [
+          34.959556579589844,
+          43.275299072265625,
+          0.0
+        ],
+        [
+          41.959556579589844,
+          46.275299072265625,
+          2.5999999046325684
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Office Container.002",
+      "type": "MESH",
+      "polygons": 132,
+      "bounds": [
+        [
+          26.957284927368164,
+          40.72618865966797,
+          0.0
+        ],
+        [
+          29.95728874206543,
+          47.72618865966797,
+          2.5999999046325684
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Office Container.003",
+      "type": "MESH",
+      "polygons": 132,
+      "bounds": [
+        [
+          37.959556579589844,
+          43.275299072265625,
+          2.5999999046325684
+        ],
+        [
+          44.959556579589844,
+          46.275299072265625,
+          5.199999809265137
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dixie.001",
+      "type": "MESH",
+      "polygons": 41,
+      "bounds": [
+        [
+          25.272092819213867,
+          44.738746643066406,
+          0.0
+        ],
+        [
+          26.53209114074707,
+          45.998748779296875,
+          2.395681381225586
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dixie.002",
+      "type": "MESH",
+      "polygons": 41,
+      "bounds": [
+        [
+          25.272092819213867,
+          43.1842155456543,
+          0.0
+        ],
+        [
+          26.53209114074707,
+          44.444217681884766,
+          2.395681381225586
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container Stairs",
+      "type": "MESH",
+      "polygons": 32,
+      "bounds": [
+        [
+          33.509002685546875,
+          43.2219123840332,
+          -1.1920928955078125e-06
+        ],
+        [
+          37.92098617553711,
+          47.38728332519531,
+          2.7166664600372314
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Office Container.004",
+      "type": "MESH",
+      "polygons": 132,
+      "bounds": [
+        [
+          -48.53885269165039,
+          5.5052714347839355,
+          -4.76837158203125e-07
+        ],
+        [
+          -45.53885269165039,
+          12.50527286529541,
+          2.59999942779541
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dixie.003",
+      "type": "MESH",
+      "polygons": 41,
+      "bounds": [
+        [
+          -48.836395263671875,
+          1.4695919752120972,
+          0.0
+        ],
+        [
+          -47.576393127441406,
+          2.7295920848846436,
+          2.395681381225586
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dixie.004",
+      "type": "MESH",
+      "polygons": 41,
+      "bounds": [
+        [
+          -48.78883361816406,
+          -0.05240359529852867,
+          0.0
+        ],
+        [
+          -47.528831481933594,
+          1.2075964212417603,
+          2.395681381225586
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.001",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          -47.71928787231445,
+          -5.628368377685547,
+          2.384185791015625e-07
+        ],
+        [
+          -46.06928634643555,
+          -1.6283683776855469,
+          1.7779889106750488
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.002",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          -18.16229820251465,
+          3.167043447494507,
+          35.750003814697266
+        ],
+        [
+          -16.718544006347656,
+          6.246059417724609,
+          37.08349609375
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.003",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          -27.967533111572266,
+          9.171008110046387,
+          -9.5367431640625e-07
+        ],
+        [
+          -23.967533111572266,
+          10.82100772857666,
+          1.7779877185821533
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.004",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          -27.872407913208008,
+          6.317263126373291,
+          -9.5367431640625e-07
+        ],
+        [
+          -23.872407913208008,
+          7.967263698577881,
+          1.7779877185821533
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.005",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          -28.015094757080078,
+          3.7013309001922607,
+          -9.5367431640625e-07
+        ],
+        [
+          -24.015094757080078,
+          5.3513312339782715,
+          1.7779877185821533
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.006",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          25.82987403869629,
+          -42.23526382446289,
+          0.0
+        ],
+        [
+          28.85101318359375,
+          -40.945594787597656,
+          1.3334914445877075
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.007",
+      "type": "MESH",
+      "polygons": 104,
+      "bounds": [
+        [
+          38.10226058959961,
+          -25.538949966430664,
+          -1.0244548320770264e-06
+        ],
+        [
+          41.77958297729492,
+          -21.219104766845703,
+          20.791807174682617
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.008",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          25.098922729492188,
+          15.559916496276855,
+          -2.384185791015625e-07
+        ],
+        [
+          29.42229461669922,
+          18.483243942260742,
+          1.7779884338378906
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container.009",
+      "type": "MESH",
+      "polygons": 28,
+      "bounds": [
+        [
+          -20.523738861083984,
+          36.60935592651367,
+          -9.5367431640625e-07
+        ],
+        [
+          -16.314868927001953,
+          38.86478042602539,
+          1.7779877185821533
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Container Stairs.001",
+      "type": "MESH",
+      "polygons": 33,
+      "bounds": [
+        [
+          -24.211713790893555,
+          -19.270326614379883,
+          0.0
+        ],
+        [
+          -23.147741317749023,
+          -12.434343338012695,
+          4.703112602233887
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Office Container.005",
+      "type": "MESH",
+      "polygons": 151,
+      "bounds": [
+        [
+          -12.103270530700684,
+          27.133943557739258,
+          -5.364418029785156e-07
+        ],
+        [
+          -3.7032699584960938,
+          30.133947372436523,
+          2.59999942779541
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Office Container.006",
+      "type": "MESH",
+      "polygons": 151,
+      "bounds": [
+        [
+          3.8546347618103027,
+          -49.23418426513672,
+          -5.364418029785156e-07
+        ],
+        [
+          12.25463581085205,
+          -46.23418426513672,
+          2.59999942779541
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dumper Truck",
+      "type": "MESH",
+      "polygons": 432,
+      "bounds": [
+        [
+          43.559814453125,
+          29.03314208984375,
+          9.5367431640625e-07
+        ],
+        [
+          46.68963623046875,
+          36.03515625,
+          3.197587490081787
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Concrete Truck",
+      "type": "MESH",
+      "polygons": 458,
+      "bounds": [
+        [
+          38.559814453125,
+          29.03314208984375,
+          9.5367431640625e-07
+        ],
+        [
+          41.68963623046875,
+          36.21415710449219,
+          3.8147659301757812
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Small Truck",
+      "type": "MESH",
+      "polygons": 347,
+      "bounds": [
+        [
+          25.62479591369629,
+          33.17264175415039,
+          0.0
+        ],
+        [
+          31.756126403808594,
+          37.3350830078125,
+          2.9572701454162598
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dumper Truck.001",
+      "type": "MESH",
+      "polygons": 432,
+      "bounds": [
+        [
+          -46.33681106567383,
+          18.837011337280273,
+          9.5367431640625e-07
+        ],
+        [
+          -41.943729400634766,
+          26.30333137512207,
+          3.197587490081787
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dumper Truck.002",
+      "type": "MESH",
+      "polygons": 432,
+      "bounds": [
+        [
+          5.3357086181640625,
+          33.32252502441406,
+          9.5367431640625e-07
+        ],
+        [
+          10.760149002075195,
+          40.98057174682617,
+          3.197587490081787
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Dumper Truck.003",
+      "type": "MESH",
+      "polygons": 432,
+      "bounds": [
+        [
+          -22.145734786987305,
+          42.40336227416992,
+          9.5367431640625e-07
+        ],
+        [
+          -14.618674278259277,
+          47.02995300292969,
+          3.197587490081787
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Concrete Truck.001",
+      "type": "MESH",
+      "polygons": 458,
+      "bounds": [
+        [
+          -47.79233169555664,
+          33.60564041137695,
+          9.5367431640625e-07
+        ],
+        [
+          -39.9743766784668,
+          39.66770935058594,
+          3.8147659301757812
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Concrete Truck.002",
+      "type": "MESH",
+      "polygons": 458,
+      "bounds": [
+        [
+          -37.07304382324219,
+          24.644376754760742,
+          9.5367431640625e-07
+        ],
+        [
+          -29.78541374206543,
+          31.938467025756836,
+          3.8147659301757812
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Small Truck.001",
+      "type": "MESH",
+      "polygons": 347,
+      "bounds": [
+        [
+          19.80476951599121,
+          -46.44763946533203,
+          1.9073486328125e-06
+        ],
+        [
+          26.102825164794922,
+          -41.22350311279297,
+          2.9572720527648926
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Fence",
+      "type": "MESH",
+      "polygons": 88,
+      "bounds": [
+        [
+          -50.0,
+          -50.0,
+          1.1920928955078125e-07
+        ],
+        [
+          50.0,
+          49.97651672363281,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks",
+      "type": "MESH",
+      "polygons": 42,
+      "bounds": [
+        [
+          -21.17342758178711,
+          -1.86860990524292,
+          35.750003814697266
+        ],
+        [
+          -19.67342758178711,
+          2.7819437980651855,
+          36.35000228881836
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.001",
+      "type": "MESH",
+      "polygons": 42,
+      "bounds": [
+        [
+          -19.344593048095703,
+          -4.69753360748291,
+          35.750003814697266
+        ],
+        [
+          -17.844593048095703,
+          -0.5120351314544678,
+          36.35000228881836
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.002",
+      "type": "MESH",
+      "polygons": 42,
+      "bounds": [
+        [
+          -4.152548789978027,
+          -6.797364711761475,
+          35.750003814697266
+        ],
+        [
+          0.6878249049186707,
+          -4.512592792510986,
+          36.35000228881836
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.003",
+      "type": "MESH",
+      "polygons": 42,
+      "bounds": [
+        [
+          -5.412726402282715,
+          -10.074578285217285,
+          35.750003814697266
+        ],
+        [
+          -0.6900423765182495,
+          -8.333243370056152,
+          36.35000228881836
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.004",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          15.843252182006836,
+          -18.590892791748047,
+          58.150001525878906
+        ],
+        [
+          20.493806838989258,
+          -17.090890884399414,
+          58.95000076293945
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.005",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          14.212748527526855,
+          -16.54164695739746,
+          58.150001525878906
+        ],
+        [
+          18.994617462158203,
+          -14.563748359680176,
+          58.95000076293945
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.006",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          15.156875610351562,
+          45.75856399536133,
+          0.0
+        ],
+        [
+          19.807430267333984,
+          47.25856399536133,
+          0.7999981045722961
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.007",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          13.678853034973145,
+          44.04220199584961,
+          0.9688403606414795
+        ],
+        [
+          18.422712326049805,
+          45.862953186035156,
+          1.7688384056091309
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.008",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          9.995284080505371,
+          45.460880279541016,
+          0.14802992343902588
+        ],
+        [
+          14.777153968811035,
+          47.438777923583984,
+          0.948028028011322
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.009",
+      "type": "MESH",
+      "polygons": 138,
+      "bounds": [
+        [
+          -8.986872673034668,
+          -37.548194885253906,
+          35.750003814697266
+        ],
+        [
+          0.06557238101959229,
+          -27.071428298950195,
+          36.69803237915039
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.010",
+      "type": "MESH",
+      "polygons": 138,
+      "bounds": [
+        [
+          -8.12447738647461,
+          4.0130815505981445,
+          29.35000228881836
+        ],
+        [
+          2.596588373184204,
+          11.263508796691895,
+          30.298030853271484
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Boxes",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          -6.4941301345825195,
+          6.551675319671631,
+          35.750003814697266
+        ],
+        [
+          -5.325497627258301,
+          8.547829627990723,
+          36.788246154785156
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Boxes.001",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          -3.398486375808716,
+          -3.8489651679992676,
+          35.750003814697266
+        ],
+        [
+          -2.2298543453216553,
+          -1.8528112173080444,
+          36.788246154785156
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Boxes.002",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          -44.8237419128418,
+          9.837632179260254,
+          1.1920928955078125e-07
+        ],
+        [
+          -43.65510940551758,
+          11.833786010742188,
+          1.0382416248321533
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Boxes.003",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          9.655421257019043,
+          43.234859466552734,
+          -7.62939453125e-06
+        ],
+        [
+          11.990486145019531,
+          44.847198486328125,
+          1.1178489923477173
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Boxes.004",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          15.172205924987793,
+          -16.302701950073242,
+          42.14999771118164
+        ],
+        [
+          17.50727081298828,
+          -14.690361976623535,
+          43.267852783203125
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          -13.196809768676758,
+          -5.046730995178223,
+          35.750003814697266
+        ],
+        [
+          -10.995274543762207,
+          -1.7636090517044067,
+          36.750003814697266
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.001",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          3.5280861854553223,
+          -27.24696922302246,
+          58.149993896484375
+        ],
+        [
+          7.312621593475342,
+          -24.179113388061523,
+          59.149993896484375
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.002",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          29.678424835205078,
+          -35.27189636230469,
+          29.35000228881836
+        ],
+        [
+          33.46295928955078,
+          -32.204036712646484,
+          30.35000228881836
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.003",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          12.526798248291016,
+          6.712646007537842,
+          19.75
+        ],
+        [
+          16.408077239990234,
+          10.68682861328125,
+          21.75
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.004",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -8.174903869628906,
+          14.695745468139648,
+          0.0
+        ],
+        [
+          -4.553874969482422,
+          18.420888900756836,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.005",
+      "type": "MESH",
+      "polygons": 84,
+      "bounds": [
+        [
+          -13.491617202758789,
+          14.49947452545166,
+          0.0
+        ],
+        [
+          -9.985103607177734,
+          18.251087188720703,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.006",
+      "type": "MESH",
+      "polygons": 84,
+      "bounds": [
+        [
+          -29.34351921081543,
+          -3.3418726921081543,
+          0.0
+        ],
+        [
+          -25.331483840942383,
+          0.44957923889160156,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.007",
+      "type": "MESH",
+      "polygons": 18,
+      "bounds": [
+        [
+          -45.07579040527344,
+          19.69871711730957,
+          1.3373970985412598
+        ],
+        [
+          -43.41475296020508,
+          23.101335525512695,
+          2.3373970985412598
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.008",
+      "type": "MESH",
+      "polygons": 90,
+      "bounds": [
+        [
+          -18.28634262084961,
+          13.705102920532227,
+          0.0
+        ],
+        [
+          -14.270953178405762,
+          17.918434143066406,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.011",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          3.0822153091430664,
+          -41.15494918823242,
+          -4.0531158447265625e-06
+        ],
+        [
+          8.922390937805176,
+          -39.65494918823242,
+          0.5999951958656311
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.012",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -3.4656081199645996,
+          -40.98231506347656,
+          -4.0531158447265625e-06
+        ],
+        [
+          2.412184476852417,
+          -39.32843017578125,
+          0.5999951958656311
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.013",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          0.0030036717653274536,
+          -42.91741943359375,
+          -4.0531158447265625e-06
+        ],
+        [
+          5.880795955657959,
+          -41.26353454589844,
+          0.5999951958656311
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.014",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          9.903190612792969,
+          -31.947834014892578,
+          22.950000762939453
+        ],
+        [
+          15.9290132522583,
+          -29.23419952392578,
+          23.549999237060547
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.015",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -16.665050506591797,
+          -41.589813232421875,
+          -4.0531158447265625e-06
+        ],
+        [
+          -8.763592720031738,
+          -39.69162368774414,
+          0.5999951958656311
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.016",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          39.48948669433594,
+          5.214234828948975,
+          -5.9604644775390625e-06
+        ],
+        [
+          41.655094146728516,
+          13.1619873046875,
+          0.5999932885169983
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Boxes.005",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          -7.088833332061768,
+          -43.7028694152832,
+          -3.814697265625e-06
+        ],
+        [
+          -4.808508396148682,
+          -41.52454376220703,
+          1.0382376909255981
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.017",
+      "type": "MESH",
+      "polygons": 42,
+      "bounds": [
+        [
+          40.037017822265625,
+          -0.8304319381713867,
+          -7.62939453125e-06
+        ],
+        [
+          41.537017822265625,
+          3.8201217651367188,
+          0.5999916195869446
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.018",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          40.2191162109375,
+          -7.593538284301758,
+          -1.1920928955078125e-07
+        ],
+        [
+          41.8805046081543,
+          -2.893467903137207,
+          0.7999979853630066
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.019",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          40.375980377197266,
+          -12.70621395111084,
+          0.0
+        ],
+        [
+          42.19673156738281,
+          -7.962353706359863,
+          0.7999981045722961
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.020",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -26.506711959838867,
+          -36.74049758911133,
+          -5.9604644775390625e-06
+        ],
+        [
+          -24.341106414794922,
+          -28.792747497558594,
+          0.5999932885169983
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.009",
+      "type": "MESH",
+      "polygons": 78,
+      "bounds": [
+        [
+          -30.85723304748535,
+          45.33366394042969,
+          0.0
+        ],
+        [
+          -27.502784729003906,
+          48.94474411010742,
+          2.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.010",
+      "type": "MESH",
+      "polygons": 78,
+      "bounds": [
+        [
+          -36.04322814941406,
+          44.92672348022461,
+          -1.9073486328125e-06
+        ],
+        [
+          -32.65332794189453,
+          48.570648193359375,
+          1.9999980926513672
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.021",
+      "type": "MESH",
+      "polygons": 42,
+      "bounds": [
+        [
+          31.627971649169922,
+          -21.64350128173828,
+          19.75
+        ],
+        [
+          36.51321029663086,
+          -18.878305435180664,
+          20.349998474121094
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Big Boxes.011",
+      "type": "MESH",
+      "polygons": 36,
+      "bounds": [
+        [
+          46.1240119934082,
+          -45.216365814208984,
+          9.5367431640625e-07
+        ],
+        [
+          48.32554626464844,
+          -41.93324279785156,
+          1.0000009536743164
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          46.911556243896484,
+          -40.352882385253906,
+          0.0
+        ],
+        [
+          47.911556243896484,
+          -39.352882385253906,
+          1.1999969482421875
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Cube.001",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          2.5386850833892822,
+          15.46789836883545,
+          0.0
+        ],
+        [
+          7.352507591247559,
+          17.711572647094727,
+          1.0
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Cube.002",
+      "type": "MESH",
+      "polygons": 60,
+      "bounds": [
+        [
+          15.64985466003418,
+          14.861898422241211,
+          1.1920928955078125e-07
+        ],
+        [
+          20.701231002807617,
+          17.675508499145508,
+          1.9999998807907104
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Cube.003",
+      "type": "MESH",
+      "polygons": 60,
+      "bounds": [
+        [
+          43.25874710083008,
+          -48.706722259521484,
+          0.0
+        ],
+        [
+          48.310123443603516,
+          -45.89311599731445,
+          1.999999761581421
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.001",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          47.42465591430664,
+          -38.96746063232422,
+          0.0
+        ],
+        [
+          48.42465591430664,
+          -37.96746063232422,
+          1.1999969482421875
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.002",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          45.95460510253906,
+          -39.06108093261719,
+          -4.76837158203125e-07
+        ],
+        [
+          46.95460510253906,
+          -38.06108093261719,
+          1.1999964714050293
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.003",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          39.65070724487305,
+          -15.552441596984863,
+          9.5367431640625e-07
+        ],
+        [
+          40.65070724487305,
+          -14.552441596984863,
+          1.199997901916504
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.004",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          40.09835433959961,
+          46.92476272583008,
+          0.0
+        ],
+        [
+          41.09835433959961,
+          47.92476272583008,
+          1.1999969482421875
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.005",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          41.59323501586914,
+          46.981258392333984,
+          0.0
+        ],
+        [
+          42.59323501586914,
+          47.981258392333984,
+          1.1999969482421875
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.006",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -15.892751693725586,
+          29.6805362701416,
+          0.0
+        ],
+        [
+          -14.892751693725586,
+          30.6805362701416,
+          1.1999969482421875
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.007",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -16.362529754638672,
+          27.928895950317383,
+          0.0
+        ],
+        [
+          -15.362529754638672,
+          28.928895950317383,
+          1.1999969482421875
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.008",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -16.239768981933594,
+          31.13129997253418,
+          1.1920928955078125e-07
+        ],
+        [
+          -15.239768981933594,
+          32.13130187988281,
+          1.199997067451477
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.009",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -14.673762321472168,
+          28.012840270996094,
+          1.1920928955078125e-07
+        ],
+        [
+          -13.673762321472168,
+          29.012840270996094,
+          1.199997067451477
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.010",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -21.737382888793945,
+          -40.94068908691406,
+          -9.5367431640625e-07
+        ],
+        [
+          -20.737382888793945,
+          -39.94068908691406,
+          1.199995994567871
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.011",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          17.176401138305664,
+          -30.87139320373535,
+          58.15000534057617
+        ],
+        [
+          18.176401138305664,
+          -29.87139320373535,
+          59.35000228881836
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.012",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          33.869388580322266,
+          -3.159101724624634,
+          51.749996185302734
+        ],
+        [
+          34.869388580322266,
+          -2.159101724624634,
+          52.94999313354492
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.013",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          32.950592041015625,
+          -5.764769077301025,
+          51.749996185302734
+        ],
+        [
+          33.950592041015625,
+          -4.764769077301025,
+          52.94999313354492
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.014",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          31.489158630371094,
+          -3.9988577365875244,
+          51.749996185302734
+        ],
+        [
+          32.489158630371094,
+          -2.9988577365875244,
+          52.94999313354492
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.015",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -7.524652481079102,
+          -23.87273597717285,
+          35.750003814697266
+        ],
+        [
+          -6.275976181030273,
+          -22.624059677124023,
+          36.95000076293945
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.016",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -7.461774826049805,
+          -25.68518829345703,
+          35.750003814697266
+        ],
+        [
+          -6.213098526000977,
+          -24.436511993408203,
+          36.95000076293945
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.017",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -8.280670166015625,
+          -22.586822509765625,
+          35.750003814697266
+        ],
+        [
+          -7.031993865966797,
+          -21.338146209716797,
+          36.95000076293945
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.018",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -5.871340751647949,
+          -25.111164093017578,
+          35.750003814697266
+        ],
+        [
+          -4.622664451599121,
+          -23.86248779296875,
+          36.95000076293945
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Cube.004",
+      "type": "MESH",
+      "polygons": 60,
+      "bounds": [
+        [
+          14.354305267333984,
+          36.28449249267578,
+          -8.344650268554688e-07
+        ],
+        [
+          16.68164825439453,
+          41.13673782348633,
+          1.999998927116394
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.022",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -26.460777282714844,
+          -49.027530670166016,
+          -5.0067901611328125e-06
+        ],
+        [
+          -20.5991268157959,
+          -47.44161605834961,
+          0.5999942421913147
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.023",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -19.858545303344727,
+          -49.299312591552734,
+          -5.125999450683594e-06
+        ],
+        [
+          -13.996895790100098,
+          -47.71339797973633,
+          0.5999941229820251
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.024",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -13.217671394348145,
+          -49.314517974853516,
+          -5.0067901611328125e-06
+        ],
+        [
+          -7.305690765380859,
+          -47.50461196899414,
+          0.5999942421913147
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.025",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -6.280067443847656,
+          -49.36547088623047,
+          -5.0067901611328125e-06
+        ],
+        [
+          -0.4394819736480713,
+          -47.863868713378906,
+          0.5999942421913147
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Cube.005",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          -2.3602757453918457,
+          15.030407905578613,
+          0.0
+        ],
+        [
+          0.2985050678253174,
+          18.82082176208496,
+          1.9999998807907104
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.026",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          45.878868103027344,
+          -35.78506088256836,
+          4.76837158203125e-07
+        ],
+        [
+          48.44683074951172,
+          -27.784854888916016,
+          0.599999725818634
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.027",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          47.68890380859375,
+          -27.000171661376953,
+          -9.5367431640625e-07
+        ],
+        [
+          49.395721435546875,
+          -19.13728141784668,
+          0.5999982953071594
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.028",
+      "type": "MESH",
+      "polygons": 48,
+      "bounds": [
+        [
+          -39.47140884399414,
+          -8.589127540588379,
+          0.9688403606414795
+        ],
+        [
+          -34.7275505065918,
+          -6.768374919891357,
+          1.7688384056091309
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.029",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -19.436355590820312,
+          -17.215282440185547,
+          26.150001525878906
+        ],
+        [
+          -16.800703048706055,
+          -11.193218231201172,
+          26.75
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Planks.030",
+      "type": "MESH",
+      "polygons": 72,
+      "bounds": [
+        [
+          -16.92833137512207,
+          -14.135393142700195,
+          26.150001525878906
+        ],
+        [
+          -14.29267692565918,
+          -8.11332893371582,
+          26.75
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Barrel.019",
+      "type": "MESH",
+      "polygons": 26,
+      "bounds": [
+        [
+          -49.1669807434082,
+          13.049309730529785,
+          9.5367431640625e-07
+        ],
+        [
+          -47.75321960449219,
+          14.463071823120117,
+          1.199997901916504
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Cube.006",
+      "type": "MESH",
+      "polygons": 60,
+      "bounds": [
+        [
+          30.453964233398438,
+          -26.775997161865234,
+          19.75
+        ],
+        [
+          35.505340576171875,
+          -23.962387084960938,
+          21.75
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Box",
+      "type": "MESH",
+      "polygons": 6,
+      "bounds": [
+        [
+          -19.8243408203125,
+          3.617093086242676,
+          35.750003814697266
+        ],
+        [
+          -18.8243408203125,
+          4.617093086242676,
+          36.750003814697266
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Base Truck",
+      "type": "MESH",
+      "polygons": 397,
+      "bounds": [
+        [
+          -1.564911127090454,
+          -3.4842636585235596,
+          -0.04469621181488037
+        ],
+        [
+          1.564911127090454,
+          3.517749786376953,
+          3.152890205383301
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Base Truck Dimensions",
+      "type": "MESH",
+      "polygons": 6,
+      "bounds": [
+        [
+          -1.25,
+          -4.0,
+          0.0
+        ],
+        [
+          1.25,
+          4.0,
+          3.5
+        ]
+      ],
+      "materials": [],
+      "hide_render": false
+    },
+    {
+      "id": "Crane Ground unrotated",
+      "type": "MESH",
+      "polygons": 1039,
+      "bounds": [
+        [
+          -48.34600830078125,
+          9.84603500366211,
+          1.1500002145767212
+        ],
+        [
+          -42.22825241088867,
+          56.07623291015625,
+          55.22588348388672
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "Crane Mounted unrotated",
+      "type": "MESH",
+      "polygons": 1012,
+      "bounds": [
+        [
+          -44.32991409301758,
+          -38.34540557861328,
+          -5.581425666809082
+        ],
+        [
+          -42.218467712402344,
+          3.249664306640625,
+          42.779598236083984
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "BuildingSingleFloor",
+      "type": "MESH",
+      "polygons": 203,
+      "bounds": [
+        [
+          -23.14773941040039,
+          -38.447532653808594,
+          1.1499998569488525
+        ],
+        [
+          38.35226058959961,
+          13.052467346191406,
+          4.750000476837158
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    },
+    {
+      "id": "BuildingSingleSmallFloor",
+      "type": "MESH",
+      "polygons": 171,
+      "bounds": [
+        [
+          -3.147737979888916,
+          -38.447532653808594,
+          39.54999923706055
+        ],
+        [
+          38.35226058959961,
+          13.052467346191406,
+          43.14999771118164
+        ]
+      ],
+      "materials": [
+        "Submission_Diffuse_Shader"
+      ],
+      "hide_render": false
+    }
+  ],
+  "relinked_images": [],
+  "packed_images": 3,
+  "missing_dependencies": [],
+  "modifications": [
+    "Localize linked datablocks; pack textures; duplicate fixed camera poses for two-view review; render at reduced resolution and samples.",
+    "Replaced obsolete Blender Internal illumination with a documented Cycles daylight rig."
+  ],
+  "credits": {},
+  "simplify": {
+    "enabled": false,
+    "subdivision_render": 6,
+    "texture_limit_render": "OFF"
+  }
+}

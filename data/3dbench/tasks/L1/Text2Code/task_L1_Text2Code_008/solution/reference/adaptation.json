@@ -1,0 +1,8 @@
+{
+  "source": "pilot-v2/assemblies/sealed_enclosure",
+  "license": "CC0-1.0",
+  "changes": [
+    "Standoffs extend from the 4.5 mm floor to the lid underside at z=37."
+  ],
+  "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+}

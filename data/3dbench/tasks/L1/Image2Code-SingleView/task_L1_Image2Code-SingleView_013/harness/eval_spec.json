@@ -1,0 +1,594 @@
+{
+  "version": "scalable-v1.1.0",
+  "profile": "L1",
+  "mode": "reference",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "main.png",
+    "README.md"
+  ],
+  "scene": "scene.blend",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "critical_constraints": [
+    "all_seed_quality",
+    "export",
+    "glb_procedural_materials",
+    "main_dimensions",
+    "main_format",
+    "main_loadable",
+    "main_render_consistency",
+    "native_procedural_materials",
+    "native_state_materials",
+    "readme",
+    "real_geometry",
+    "reproducible",
+    "saved_camera",
+    "saved_resolution"
+  ],
+  "tolerances": {
+    "span_m": 0.02
+  },
+  "l1_geometry": {
+    "version": "l1-mesh-v1",
+    "weld_m": 1e-09,
+    "intersection_epsilon_m": 1e-09,
+    "degenerate_area_m2": 1e-18,
+    "max_triangles": 200000,
+    "max_intersection_pairs": 2000000
+  },
+  "render_views": [
+    {
+      "id": "primary",
+      "location": [
+        1,
+        -1,
+        1
+      ],
+      "target": [
+        0,
+        0,
+        0.4
+      ],
+      "ortho_scale": 1.6,
+      "resolution": 128,
+      "frame": 1,
+      "beauty": true,
+      "beauty_resolution": [
+        1000,
+        1000
+      ],
+      "camera_source": "saved"
+    }
+  ],
+  "reference_images": {
+    "primary": "environment/input/reference.png"
+  },
+  "l1_protocol": {
+    "version": "l1-requirements-v1",
+    "requirements": [
+      {
+        "id": "visible_components",
+        "text": "Reconstruct the assembled object using only the single image input/reference.png. No additional views or initial model are supplied. Model the compact central chassis, paired articulated end frames, large cylindrical digging drums with repeated scoops or ribs, tracks or wheel supports visible in the image, and the connecting joints. Preserve symmetry where present, real spaces between arms and chassis, and the repeated drum details around their circumference.",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "尚未接入本题语义部件识别、局部特征与连接判定；不能以非空网格/全图相似度代替。"
+      },
+      {
+        "id": "editable_3d",
+        "text": "真实三维，可分别编辑语义部件；允许对象层级或可分离网格岛；不得用图像平面或不透明无结构块冒充",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "real_geometry",
+          "editable"
+        ],
+        "reason": "只核验非平面网格及基础可编辑性，尚不能识别语义分组或薄壳冒充。"
+      },
+      {
+        "id": "overall_span",
+        "text": "模型最大整体跨度 1000 mm，容差 2%，不计相机/灯光",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "overall_span"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "units_orientation",
+        "text": "米制导出，Z 向上",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "overall_span"
+        ],
+        "reason": "使用经过场景单位转换的真实顶点计算物理跨度，未绑定本题语义朝向。"
+      },
+      {
+        "id": "proportions",
+        "text": "按唯一公开主图保持可见轮廓、比例、遮挡及层次；合理补全背面/底面，不要求隐藏源拓扑",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity"
+        ],
+        "reason": "全图 SSIM 仅作整体外观证据，其他视图/局部比例及三维一致性尚未绑定。"
+      },
+      {
+        "id": "connections",
+        "text": "可见孔隙、薄结构、连接点和重叠层次为真实几何；避免刚性部件严重穿透或悬空，允许设计接头和软线缆",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "未绑定本题部件、孔隙和真实接触/碰撞关系。"
+      },
+      {
+        "id": "materials",
+        "text": "匹配主导材质、颜色及可见表面特征；细微磨损、字体/标记按本题允许范围简化",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity"
+        ],
+        "reason": "主图帧1在基准和每seed按本题粗二维ROI与真实几何掩膜对拍并乘入主分；不证明帧61外观、精确语义分割、厚度/连接或材质与灯光各自正确，其他公开视图和标定仍待完成。"
+      },
+      {
+        "id": "primary_view",
+        "text": "使用与 reference.png 匹配的相机生成 main.png",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity",
+          "saved_camera"
+        ],
+        "reason": "主图帧1在基准和每seed按本题粗二维ROI与真实几何掩膜对拍并乘入主分；不证明帧61外观、精确语义分割、厚度/连接或材质与灯光各自正确，其他公开视图和标定仍待完成。"
+      },
+      {
+        "id": "render_settings",
+        "text": "原生场景保留 1000×1000 有效分辨率、Cycles、AgX、曝光 0",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "saved_resolution",
+          "render_engine",
+          "view_transform",
+          "exposure"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "camera_lighting",
+        "text": "场景保留审阅相机及中性棚拍照明",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "saved_camera"
+        ],
+        "reason": "取证保存相机及可见灯数量；中性照明/环境光的实际外观尚待判定，不把灯对象数量当照明正确性。"
+      },
+      {
+        "id": "main_png",
+        "text": "交付可解码的 PNG 主图，实际像素为 1000×1000",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "main_loadable",
+          "main_dimensions",
+          "main_format",
+          "main_render_consistency"
+        ],
+        "reason": "每次seed保存相机在帧1可信重渲染并核对PNG像素；完整渲染管线与容差标定仍待验收。"
+      },
+      {
+        "id": "state_cycle",
+        "text": "帧 1 装配、帧 61 主要语义组自由爆炸并返回帧 1；零件保形且可恢复",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "reproducible"
+        ],
+        "reason": "已配置题目帧策略与独立 seed 比较；姿态/语义组、可读性、完整保形及材质等价未正式标定。"
+      },
+      {
+        "id": "glb_readable",
+        "text": "scene.glb 可重新导入",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "export"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "glb_equivalence",
+        "text": "原生与 GLB 在交付姿态的几何、尺度和可表达材质一致",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "export",
+          "reproducible"
+        ],
+        "reason": "跨格式诊断已复用，但本题等价阈值和角色/材质映射未标定。"
+      },
+      {
+        "id": "reconstruction",
+        "text": "便携代码在清洁环境重建全部交付；不依赖旧输出、个人路径或外部下载源模型/源视图",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "reproducible"
+        ],
+        "reason": "外层冻结公开输入及源码、禁网执行、重跑已有支持；完整依赖/来源语义和图像与场景一致性仍需验收。"
+      },
+      {
+        "id": "instructions",
+        "text": "README 说明运行与依赖",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "readme"
+        ],
+        "reason": "仅核验可读取，未判定说明内容。"
+      },
+      {
+        "id": "procedural_materials",
+        "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+        "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_procedural_materials",
+          "glb_procedural_materials",
+          "native_state_materials"
+        ],
+        "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+      },
+      {
+        "id": "seed_quality",
+        "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+        "source": "user_goal_2026-10-03 / seed delivery protocol",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "all_seed_quality"
+        ],
+        "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+      }
+    ]
+  },
+  "checks": {
+    "spec": [
+      {
+        "id": "overall_span",
+        "metric": "numeric",
+        "group": "scale",
+        "params": {
+          "path": "/scene/max_span_m",
+          "expected": 1,
+          "tolerance": "span_m"
+        }
+      }
+    ],
+    "geometry": [
+      {
+        "id": "real_geometry",
+        "metric": "equals",
+        "group": "three_dimensional",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        }
+      }
+    ],
+    "structure": [
+      {
+        "id": "editable",
+        "metric": "equals",
+        "group": "editable_components",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "primary_similarity",
+        "metric": "native_image_pair",
+        "group": "reference_appearance",
+        "params": {
+          "view": "primary",
+          "mask_asset": "harness/image_reference/primary_mask.png",
+          "mask_sha256": "78fec28f1b81f16f2bb593bbd4a61f97332ef2131f79a6753916523ada4c2af0",
+          "reference_sha256": "af90725edfe05190eefc0936b3e4d1df7aa796f98b27b8c83230d5435997385f",
+          "regions": {
+            "chassis": [
+              [
+                0.27,
+                0.35,
+                0.68,
+                0.73
+              ]
+            ],
+            "articulated_frames": [
+              [
+                0.2,
+                0.28,
+                0.77,
+                0.68
+              ]
+            ],
+            "rear_drum_ribs": [
+              [
+                0.23,
+                0.25,
+                0.82,
+                0.57
+              ]
+            ],
+            "front_drum_ribs": [
+              [
+                0.14,
+                0.49,
+                0.86,
+                0.81
+              ]
+            ],
+            "wheel_supports": [
+              [
+                0.17,
+                0.62,
+                0.81,
+                0.86
+              ]
+            ]
+          }
+        },
+        "pass_threshold": 0
+      },
+      {
+        "id": "saved_camera",
+        "metric": "equals",
+        "group": "camera",
+        "params": {
+          "path": "/scene/render_settings/has_camera",
+          "expected": true
+        }
+      },
+      {
+        "id": "saved_resolution",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/effective_resolution",
+          "expected": [
+            1000,
+            1000
+          ]
+        }
+      },
+      {
+        "id": "render_engine",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/engine",
+          "expected": "CYCLES"
+        }
+      },
+      {
+        "id": "view_transform",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/view_transform",
+          "expected": "AgX"
+        }
+      },
+      {
+        "id": "exposure",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/exposure",
+          "expected": 0.0
+        }
+      },
+      {
+        "id": "main_dimensions",
+        "metric": "equals",
+        "group": "main_png",
+        "params": {
+          "path": "/artifacts/main.png/validation_io/size",
+          "expected": [
+            1000,
+            1000
+          ]
+        }
+      },
+      {
+        "id": "main_format",
+        "metric": "equals",
+        "group": "main_png",
+        "params": {
+          "path": "/artifacts/main.png/validation_io/format",
+          "expected": "PNG"
+        }
+      },
+      {
+        "id": "native_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "glb_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/artifacts/scene.glb/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "native_state_materials",
+        "metric": "procedural_material_sequence",
+        "group": "declared_state_material_policy",
+        "params": {
+          "path": "/material_sequences/native",
+          "frames": [
+            1,
+            61,
+            1
+          ]
+        }
+      },
+      {
+        "id": "main_render_consistency",
+        "metric": "main_render_consistency",
+        "group": "image_integrity",
+        "params": {
+          "view": "primary",
+          "artifact": "main.png",
+          "mean_tolerance": 0.00784313725490196,
+          "p99_tolerance": 0.0392156862745098
+        }
+      }
+    ],
+    "robust": [
+      {
+        "id": "main_loadable",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/main.png/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "export",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/scene.glb/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "readme",
+        "metric": "equals",
+        "group": "instructions",
+        "params": {
+          "path": "/artifacts/README.md/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "reproducible",
+        "metric": "seed_success",
+        "group": "reproduction"
+      },
+      {
+        "id": "all_seed_quality",
+        "metric": "all_seed_checks",
+        "group": "seed_quality",
+        "params": {
+          "checks": [
+            "export",
+            "glb_procedural_materials",
+            "main_dimensions",
+            "main_format",
+            "main_loadable",
+            "main_render_consistency",
+            "native_procedural_materials",
+            "native_state_materials",
+            "primary_similarity",
+            "readme",
+            "real_geometry",
+            "reproducible",
+            "saved_camera",
+            "saved_resolution"
+          ],
+          "native_frames": [
+            1,
+            61,
+            1
+          ],
+          "glb_frames": [
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "l1_image_quality": {
+    "version": "l1-reference-visual-v2.0.0",
+    "weights": {
+      "main_image": 0.8,
+      "render_validity": 0.2
+    },
+    "method": "native-appearance-v1",
+    "image_checks": [
+      "primary_similarity"
+    ],
+    "system_checks": [
+      "export",
+      "glb_procedural_materials",
+      "main_dimensions",
+      "main_format",
+      "main_loadable",
+      "main_render_consistency",
+      "native_procedural_materials",
+      "native_state_materials",
+      "readme",
+      "real_geometry",
+      "reproducible",
+      "saved_camera",
+      "saved_resolution"
+    ],
+    "scope": "declared_primary_view_only",
+    "seed_aggregation": "minimum"
+  }
+}

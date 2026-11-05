@@ -1,0 +1,49 @@
+{
+  "name": "Chinese Chandelier",
+  "categories": [
+    "lighting",
+    "decorative"
+  ],
+  "type": 2,
+  "tags": [
+    "vintage",
+    "antique",
+    "old",
+    "wooden",
+    "ornate",
+    "traditional",
+    "asian"
+  ],
+  "authors": {
+    "Kirill Sannikov": "All"
+  },
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "polycount": 7828,
+  "texel_density": 3234.5053347007342,
+  "dimensions": [
+    878.3927261829376,
+    878.709465265274,
+    748.2100167544559
+  ],
+  "staging": null,
+  "date_published": 1719964800,
+  "files_hash": "01a9a9868343a7d3629576ac888600cbeeda1e37",
+  "description": "Free 8K model: ornate vintage Chinese wooden chandelier with carved octagonal frame, silk floral panels and red tassels for decorative lighting.",
+  "category_id": "f0e24a22-b694-5cc0-8624-dd68b862c9ef",
+  "category": "Lighting/Ceiling/Chandeliers",
+  "attributes": {
+    "condition": [
+      "worn"
+    ],
+    "material": [
+      "wood",
+      "fabric"
+    ]
+  },
+  "img_version": "8d06f249",
+  "download_count": 9394,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/chinese_chandelier.png?width=256&height=256&v=8d06f249"
+}

@@ -1,0 +1,280 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-e04",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "netted_nursery",
+    "orchard",
+    "pump_house",
+    "reservoir",
+    "sorting_bench",
+    "packing_shelter"
+  ],
+  "initial_state": "Pump off and both valves closed; twelve fruit on plants; two empty six-position crates.",
+  "entities": [
+    {
+      "id": "pump.power",
+      "role": "switch",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "valve.nursery",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "valve.orchard",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_a.01",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to nursery plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_a.02",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to nursery plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_a.03",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to nursery plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_a.04",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to nursery plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_a.05",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to nursery plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_a.06",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to nursery plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_b.01",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to orchard plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_b.02",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to orchard plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_b.03",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to orchard plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_b.04",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to orchard plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_b.05",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to orchard plants",
+      "argument": ""
+    },
+    {
+      "id": "fruit.variety_b.06",
+      "role": "fruit",
+      "actions": [
+        "pick",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "attached to orchard plants",
+      "argument": ""
+    },
+    {
+      "id": "crate.01",
+      "role": "container",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; capacity six fruit each",
+      "argument": ""
+    },
+    {
+      "id": "crate.02",
+      "role": "container",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; capacity six fruit each",
+      "argument": ""
+    },
+    {
+      "id": "cart.produce",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "empty",
+      "argument": ""
+    },
+    {
+      "id": "scale.bench",
+      "role": "scale",
+      "actions": [
+        "weigh"
+      ],
+      "initial": "zero load",
+      "argument": ""
+    },
+    {
+      "id": "door.nursery",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.packing",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

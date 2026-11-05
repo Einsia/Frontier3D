@@ -1,0 +1,440 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_021",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_bars",
+      "label": "渐变琴条面",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.126,
+          0.354
+        ],
+        [
+          0.275,
+          0.278
+        ],
+        [
+          0.832,
+          0.486
+        ],
+        [
+          0.768,
+          0.517
+        ]
+      ]
+    },
+    {
+      "id": "r_tubes",
+      "label": "悬垂共鸣管组",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.201,
+          0.374
+        ],
+        [
+          0.646,
+          0.471
+        ],
+        [
+          0.646,
+          0.503
+        ],
+        [
+          0.204,
+          0.489
+        ]
+      ]
+    },
+    {
+      "id": "r_left",
+      "label": "左端支撑",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.077,
+          0.572
+        ],
+        [
+          0.096,
+          0.365
+        ],
+        [
+          0.109,
+          0.346
+        ],
+        [
+          0.269,
+          0.262
+        ],
+        [
+          0.277,
+          0.279
+        ],
+        [
+          0.138,
+          0.374
+        ],
+        [
+          0.129,
+          0.584
+        ]
+      ]
+    },
+    {
+      "id": "r_right",
+      "label": "右端框架及腿",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.735,
+          0.737
+        ],
+        [
+          0.756,
+          0.512
+        ],
+        [
+          0.84,
+          0.469
+        ],
+        [
+          0.865,
+          0.506
+        ],
+        [
+          0.884,
+          0.691
+        ],
+        [
+          0.872,
+          0.698
+        ],
+        [
+          0.832,
+          0.685
+        ],
+        [
+          0.818,
+          0.539
+        ],
+        [
+          0.8,
+          0.549
+        ],
+        [
+          0.786,
+          0.746
+        ],
+        [
+          0.776,
+          0.75
+        ]
+      ]
+    },
+    {
+      "id": "r_mallets",
+      "label": "琴面上的交叉琴槌",
+      "weight": 0.05,
+      "polygon": [
+        [
+          0.289,
+          0.371
+        ],
+        [
+          0.351,
+          0.337
+        ],
+        [
+          0.349,
+          0.32
+        ],
+        [
+          0.366,
+          0.313
+        ],
+        [
+          0.382,
+          0.326
+        ],
+        [
+          0.397,
+          0.319
+        ],
+        [
+          0.409,
+          0.328
+        ],
+        [
+          0.405,
+          0.343
+        ],
+        [
+          0.384,
+          0.348
+        ],
+        [
+          0.424,
+          0.389
+        ],
+        [
+          0.417,
+          0.395
+        ],
+        [
+          0.369,
+          0.345
+        ],
+        [
+          0.295,
+          0.381
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_bar_assembly",
+      "query": "完整渐变琴条组",
+      "weight": 0.35,
+      "boxes": [
+        [
+          0.126,
+          0.278,
+          0.832,
+          0.517
+        ]
+      ],
+      "boundary_notes": "以整组琴条为一个定位实例，包括暗色侧面；不逐根标注密集琴条，不含端部横梁。"
+    },
+    {
+      "id": "t_tube_assembly",
+      "query": "琴条下方的完整可见共鸣管组",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.202,
+          0.375,
+          0.646,
+          0.503
+        ]
+      ],
+      "boundary_notes": "定位整组可见管体而非单管；包括阴暗管段，不补全被琴面和框架遮挡部分。"
+    },
+    {
+      "id": "t_legs",
+      "query": "可见木制支腿",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.077,
+          0.365,
+          0.144,
+          0.585
+        ],
+        [
+          0.256,
+          0.444,
+          0.307,
+          0.49
+        ],
+        [
+          0.735,
+          0.532,
+          0.803,
+          0.75
+        ],
+        [
+          0.819,
+          0.5,
+          0.884,
+          0.698
+        ]
+      ],
+      "boundary_notes": "四个可分辨支腿的可见范围；左后腿仅标露出的下端，包含暗侧面，不含投影。"
+    },
+    {
+      "id": "t_endrails",
+      "query": "两端抬高的木横梁",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.108,
+          0.262,
+          0.277,
+          0.398
+        ],
+        [
+          0.762,
+          0.469,
+          0.852,
+          0.563
+        ]
+      ],
+      "boundary_notes": "各端横梁独立定位，包含厚度及下垂连接端，不含支腿。"
+    },
+    {
+      "id": "t_mallets",
+      "query": "带浅色槌头和细杆的琴槌",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.349,
+          0.313,
+          0.424,
+          0.395
+        ],
+        [
+          0.289,
+          0.319,
+          0.409,
+          0.382
+        ]
+      ],
+      "boundary_notes": "每把琴槌包括槌头与完整可见细杆；交叉处允许框重叠，不补画遮挡轮廓。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_identity",
+      "source_quote": "Reconstruct the marimba's graduated bars in staggered rows, hanging resonator tubes and supporting frame/legs.",
+      "question": "整体是否呈现参考中的木琴，而非平面琴面或其他乐器？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_rows",
+      "source_quote": "graduated bars in staggered rows",
+      "question": "琴条是否依照参考形成有层次、错列的排列？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_progression",
+      "source_quote": "Preserve the pitch-length progression",
+      "question": "琴条是否保留参考中由长至短的连续长度递变？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_spacing",
+      "source_quote": "spacing between bars",
+      "question": "琴条之间是否保留参考中的独立间隙和排列节奏？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_hanging",
+      "source_quote": "hanging resonator tubes",
+      "question": "共鸣管是否悬垂于琴条下方并沿琴面排列？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_depth",
+      "source_quote": "tube depth",
+      "question": "共鸣管的下垂深度及由深至浅的轮廓是否符合参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_frame",
+      "source_quote": "supporting frame/legs",
+      "question": "是否具有参考中的端部框架、纵向承托及向下支撑的木腿？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_appearance",
+      "source_quote": "They show the same object and pose.",
+      "question": "深棕木质琴条、棕色框腿、浅褐管体及可见纹理的外观是否符合参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_mallets",
+      "source_quote": "They show the same object and pose.",
+      "question": "是否保留琴面长音端附近交叉放置、带浅色槌头的琴槌？",
+      "weight": 0.06
+    },
+    {
+      "id": "s_volume",
+      "source_quote": "Bars and tubes must be distinct three-dimensional elements",
+      "question": "琴条与管体是否均为独立可辨的立体构件，而非贴图或薄壳替代？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_editable",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands",
+      "question": "不同构件是否为可编辑对象或可明确分离的网格岛？",
+      "weight": 0.06
+    },
+    {
+      "id": "s_pose",
+      "source_quote": "export the same pose to scene.glb",
+      "question": "原生场景与导出模型是否保持同一参考静态组装姿态？",
+      "weight": 0.03
+    },
+    {
+      "id": "s_axis",
+      "source_quote": "Use metres, Z up",
+      "question": "场景是否使用米制且以Z轴为上方？",
+      "weight": 0.03
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_bars",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "琴条是否具有参考可见的实体厚度、圆缓倒角及端部轮廓？",
+      "weight": 0.2
+    },
+    {
+      "id": "d_tubes",
+      "source_quote": "hanging resonator tubes",
+      "question": "管体是否保持圆柱曲面、可见端部轮廓及局部环状节点，而非方柱？",
+      "weight": 0.2
+    },
+    {
+      "id": "d_legs",
+      "source_quote": "supporting frame/legs",
+      "question": "支腿是否保留厚板截面、外撇形态及参考可见的局部接缝？",
+      "weight": 0.15
+    },
+    {
+      "id": "d_joints",
+      "source_quote": "connections and occlusions",
+      "question": "端部横梁、纵梁与腿的交接是否具有实体厚度和正确的穿插遮挡？",
+      "weight": 0.15
+    },
+    {
+      "id": "d_cords",
+      "source_quote": "thin structures, connections and occlusions",
+      "question": "琴条上可见的细绳与绕接部位是否保持细长连续形态及贴合连接？",
+      "weight": 0.15
+    },
+    {
+      "id": "d_mallets",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "琴槌是否具有细圆杆、圆缓短柱槌头及杆头连接，而非扁平轮廓？",
+      "weight": 0.15
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标中，排除相机与灯光，对静态组装对象的实际几何求整体轴对齐包围盒，取三个轴向尺寸的最大值，与1.000 m标称值比较；容差字段为原文2%的相对比例。"
+    }
+  ],
+  "limitations": [
+    "未提供候选；本计划不包含候选测量或质量结论。",
+    "主图input/reference.png对应附件原始证据reference/reference-1.png；所有区域与定位框仅冻结于该主图，其他三视图只辅助解释。",
+    "未提供legacy-detail-20261018-v1正文；仅依据本次嵌入契约编制，不补充不可见的旧版规则。",
+    "文字要求staggered rows，但俯视图主要显示连续渐变琴条及穿绳分段；不据此虚构额外琴条排数。",
+    "整体最大跨度按尺度约定解释为最大轴向包围盒尺寸的标称值；原文未明示包围盒算法，而非对象任意两点距离。",
+    "图片不能确定隐蔽管口、内部空腔或背面连接；不规定不可见结构的精确几何。",
+    "琴槌和细绳来自公开参考，相关引用只锚定参考姿态及薄结构保留要求；不将图中推断的构件数量转为精确数值要求。",
+    "帧号、像素尺寸、渲染参数及交付文件要求不作为几何数值质量检查；可编辑性与坐标轴检查需原生场景证据。"
+  ]
+}

@@ -1,0 +1,5 @@
+工业双目显微镜
+Lukas Walzer
+https://polyhaven.com/a/industrial_microscope
+CC0-1.0
+Changes: static display normalization, original studio lighting and cameras. Source meshes may combine multiple physical components; reconstruction must preserve editable semantic parts.

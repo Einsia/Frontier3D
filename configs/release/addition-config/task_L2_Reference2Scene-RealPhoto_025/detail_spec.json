@@ -1,0 +1,176 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2c0c892153c5eb37c248336b87261f0f9322a52f0ec1eb89e74169ce31521906",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "64930d1ee3db4fe201c7dedf8356b4a4fae4a672c96ca5ed2f268dc745a4bd92"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d01",
+      "component": "F",
+      "question": "滤水壶的厚壁、壶口、隆起壶盖、侧把手及内部滤芯体积是否与参考相符？",
+      "units": [
+        "large dark-blue and clear filter pitcher at left"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d02",
+      "component": "F",
+      "question": "木果碗的敞口、弧形碗壁和碗沿厚度是否与参考相符？",
+      "units": [
+        "wooden fruit bowl"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d03",
+      "component": "F",
+      "question": "苹果与柑橘是否具有参考中的饱满体积及各自轮廓，而非平面贴图？",
+      "units": [
+        "fruit volumes"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d04",
+      "component": "F",
+      "question": "前景洋葱的球状主体、收尖颈部和可见根端是否与参考相符？",
+      "units": [
+        "foreground onions"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d05",
+      "component": "F",
+      "question": "金属锅的开口、卷边、内外壁厚及可见环状把手是否与参考相符？",
+      "units": [
+        "cropped metal pot"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d06",
+      "component": "F",
+      "question": "白色储物罐的圆柱罐身、盖部及口沿结构是否与参考相符？",
+      "units": [
+        "white storage jar"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d07",
+      "component": "F",
+      "question": "透明料理机碗的开口、厚边、曲面碗壁及中央轴结构是否与参考相符？",
+      "units": [
+        "clear food-processor bowl"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d08",
+      "component": "F",
+      "question": "蓝色隔热手套的拇指分叉、袖口厚度和表面凸纹是否与参考相符？",
+      "units": [
+        "blue oven mitt"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d09",
+      "component": "F",
+      "question": "擀面杖的圆柱杆身及可见端部曲线是否与参考相符？",
+      "units": [
+        "rolling pin"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d10",
+      "component": "F",
+      "question": "后方托盘的浅盘底、抬起边沿及圆角是否与参考相符？",
+      "units": [
+        "rear tray"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

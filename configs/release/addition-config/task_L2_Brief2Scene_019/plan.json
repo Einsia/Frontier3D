@@ -1,0 +1,430 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/207eb1d8422cea93e096/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/cfe42552934e7e02fd55/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/7477628e893c30aa6441/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在场景原生几何中测量测试区平面长边；按声明的边界定义取端点。",
+      "quantity": "测试区长度",
+      "relation": "equal",
+      "source_quote": "10 x 4 m test area",
+      "target": 10,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在场景原生几何中测量测试区平面短边。",
+      "quantity": "测试区宽度",
+      "relation": "equal",
+      "source_quote": "10 x 4 m test area",
+      "target": 4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 0.02,
+      "id": "N03",
+      "measurement_definition": "沿公开的路线采样点，在垂直于局部行进方向的截面测量标记路线宽度，排除明确较窄的扶手通道；边界线的取边约定需声明。",
+      "quantity": "普通标记路线宽度",
+      "relation": "equal",
+      "source_quote": "The marked course is 1.20 +/-0.02 m wide, except the explicitly narrower handrail passage.",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "以 Z 为竖直方向，计算坡道主要行走平面与水平面的夹角。",
+      "quantity": "坡道倾角",
+      "relation": "equal",
+      "source_quote": "a 15-degree ramp",
+      "target": 15,
+      "unit": "degree",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "按声明的沿斜面或水平投影约定测量坡道纵向长度，并记录采用的定义。",
+      "quantity": "坡道长度",
+      "relation": "equal",
+      "source_quote": "1.50 m long and 1.20 m wide",
+      "target": 1.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "在坡道横向测量两侧实际几何边缘之间的宽度。",
+      "quantity": "坡道宽度",
+      "relation": "equal",
+      "source_quote": "1.50 m long and 1.20 m wide",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "按独立的踏面及其上升级数计数，不按网格对象数量计数。",
+      "quantity": "台阶级数",
+      "relation": "equal",
+      "source_quote": "three steps",
+      "target": 3,
+      "unit": "级",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 0.005,
+      "id": "N08",
+      "measurement_definition": "逐级测量相邻支撑水平面之间的 Z 向高差。",
+      "quantity": "每级台阶高度",
+      "relation": "equal",
+      "source_quote": "each 0.15 +/-0.005 m high",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "逐级沿行进方向测量踏面前后边缘之间的深度。",
+      "quantity": "每级台阶深度",
+      "relation": "equal",
+      "source_quote": "0.30 m deep",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "按声明的宽度轴和倒角边界约定，测量间隙两侧边缘的几何间距。",
+      "quantity": "间隙宽度",
+      "relation": "equal",
+      "source_quote": "a 0.45 m wide, 0.30 m deep gap",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "按声明的深度方向测量间隙对应边界间距，记录采用竖向深度还是平面深度。",
+      "quantity": "间隙深度",
+      "relation": "equal",
+      "source_quote": "a 0.45 m wide, 0.30 m deep gap",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "对间隙之后、扶手通道之前的障碍柱进行语义实例计数，排除灯柱和扶手支柱。",
+      "quantity": "障碍柱数量",
+      "relation": "equal",
+      "source_quote": "five posts",
+      "target": 5,
+      "unit": "根",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "逐根在垂直柱轴的截面测量障碍柱实体直径。",
+      "quantity": "障碍柱直径",
+      "relation": "equal",
+      "source_quote": "0.08 m in diameter",
+      "target": 0.08,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "逐根测量障碍柱底部至顶部的 Z 向高度。",
+      "quantity": "障碍柱高度",
+      "relation": "equal",
+      "source_quote": "0.50 m high",
+      "target": 0.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "在路线局部横向坐标中，按声明的偏移基准测量各柱轴线的偏移或相邻轴线差，并另核对交替方向。",
+      "quantity": "障碍柱横向偏移",
+      "relation": "equal",
+      "source_quote": "alternately offset laterally by 0.40 m",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "沿路线纵向逐对测量相邻障碍柱间距，注明中心距或净距约定。",
+      "quantity": "障碍柱纵向间距",
+      "relation": "equal",
+      "source_quote": "spaced 0.80 m longitudinally",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "沿通道行进方向测量扶手通道起止位置之间的长度。",
+      "quantity": "扶手通道长度",
+      "relation": "equal",
+      "source_quote": "a 2.00 m handrail corridor",
+      "target": 2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "沿通道采样横截面，测量相对的实体内侧及突出物之间的自由净宽；排除被评估机器人，计入其他设施。",
+      "quantity": "扶手通道净宽",
+      "relation": "equal",
+      "source_quote": "0.90 m clear width",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "从通道行走面沿 Z 方向测量栏杆高度，声明采用栏杆轴线还是表面作为高度端点。",
+      "quantity": "栏杆高度",
+      "relation": "equal",
+      "source_quote": "rails at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "在垂直栏杆轴线的截面测量杆件实体直径。",
+      "quantity": "栏杆直径",
+      "relation": "equal",
+      "source_quote": "diameter 0.04 m",
+      "target": 0.04,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "沿扶手逐对测量相邻支柱间距并取最大值，记录中心距或净距约定。",
+      "quantity": "扶手支柱最大间距",
+      "relation": "at_most",
+      "source_quote": "posts no more than 0.80 m apart",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "依据机器人原生部件和关节几何测量声明的身高；说明是直立身高还是冻结姿态高度，不以渲染像素推断。",
+      "quantity": "机器人身高",
+      "relation": "equal",
+      "source_quote": "1.30 m tall",
+      "target": 1.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "依据声明的两侧肩部端点测量肩宽，注明采用关节中心还是肩部外缘。",
+      "quantity": "机器人肩宽",
+      "relation": "equal",
+      "source_quote": "0.40 m shoulder width",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "将前脚脚尖与第一阶踏面边界投影至踏面，沿脚尖朝向测量超出支撑边界的最大距离。",
+      "quantity": "前脚脚尖悬出量",
+      "relation": "at_most",
+      "source_quote": "at most 30 mm toe overhang",
+      "target": 30,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "由髋、膝、踝关节或声明的骨段轴计算膝弯曲角，记录所测腿及角度定义；保留约数属性。",
+      "quantity": "膝弯曲名义角",
+      "relation": "equal",
+      "source_quote": "knee bent about 60 degrees",
+      "target": 60,
+      "unit": "degree",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 2,
+      "id": "N26",
+      "measurement_definition": "按声明的躯干纵轴，测量其在前倾平面内与正 Z 轴的夹角。",
+      "quantity": "躯干前倾角",
+      "relation": "equal",
+      "source_quote": "torso leaning 8 +/-2 degrees",
+      "target": 8,
+      "unit": "degree",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "按独立灯柱实例计数，排除障碍柱和扶手支柱。",
+      "quantity": "补光灯柱数量",
+      "relation": "equal",
+      "source_quote": "three 1.80 m fill-light posts",
+      "target": 3,
+      "unit": "根",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "逐根测量补光灯柱底部至顶部的 Z 向高度，并声明灯具是否计入端点。",
+      "quantity": "补光灯柱高度",
+      "relation": "equal",
+      "source_quote": "three 1.80 m fill-light posts",
+      "target": 1.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "在坡道左右侧分别测量横向无占用安全带宽度，计入其他设施和突出物；记录边界定义。",
+      "quantity": "坡道侧向安全余量",
+      "relation": "equal",
+      "source_quote": "leave 0.30 m safety margins beside the ramp",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "将各台阶前沿投影至水平面，按声明的几何范围计算到路线中心线的横向距离并报告最大值。",
+      "quantity": "台阶前沿距路线中心线",
+      "relation": "at_most",
+      "source_quote": "Step fronts and posts are within 0.60 m of the course centreline.",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "对声明属于该要求的柱类，计算其轴线或实体范围到路线中心线的横向距离并报告最大值；明确范围及距离约定。",
+      "quantity": "柱距路线中心线",
+      "relation": "at_most",
+      "source_quote": "Step fronts and posts are within 0.60 m of the course centreline.",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "对两脚及对应支撑实体做几何相交或有符号距离计算，沿支撑面法向测量最大穿透深度。",
+      "quantity": "脚部最大支撑面穿透",
+      "relation": "at_most",
+      "source_quote": "Foot penetration into support surfaces is at most 3 mm",
+      "target": 3,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 0.05,
+      "id": "N33",
+      "measurement_definition": "沿 Z 方向投影声明的躯干代表几何至前脚支撑平面，计算其超出前脚支撑区域的距离；区域内记零，按明确给出的容差判断。",
+      "quantity": "躯干投影超出前脚支撑区的距离",
+      "relation": "equal",
+      "source_quote": "within the front-foot support region allowing 0.05 m tolerance",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N34",
+      "measurement_definition": "计算前脚底与第一阶踏面的接触集合及最小非负分离距离；零表示接触，另查支撑区域与穿透，不将仅靠近判为接触。",
+      "quantity": "前脚底与第一阶踏面分离距离",
+      "relation": "equal",
+      "source_quote": "on the first step: front sole on the tread",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N35",
+      "measurement_definition": "计算后脚与坡道行走面的接触集合及最小非负分离距离；零表示接触，穿透上限独立检查。",
+      "quantity": "后脚与坡道分离距离",
+      "relation": "equal",
+      "source_quote": "rear foot on the ramp",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

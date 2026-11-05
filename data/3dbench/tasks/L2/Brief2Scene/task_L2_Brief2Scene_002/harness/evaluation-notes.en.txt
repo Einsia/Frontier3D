@@ -1,0 +1,323 @@
+## Numerical geometry protocol (l2-brief-v2.1.0)
+Use solid colors and procedural shading only. Image textures, environment images,
+generated/baked image maps and image-dependent geometry/compositing are prohibited,
+including packed or unused image nodes in used node trees. No private reference is used for scoring.
+Assign bench_role to actual mesh geometry or to a parent grouping the mesh parts
+of one entity. Object names are unrestricted. Roles select measurements and do not
+prove semantics; visual fidelity and local detail are evaluated separately.
+For each route, nominate small endpoint surface patches at road level. All named
+start/goal pairs must connect. Counts group entity parts and reject identical
+co-located copies. Dimensions use complete geometry and world metres; horizontal
+sizes use a minimum-area rotated footprint. Camera heights use actual local ground.
+Opening checks use interior surfaces and bounded through-depth rays. Route checks
+use a 2.5D grid including vertical/thin surfaces, local floor height and low obstacles;
+the ground band defaults to 0.1 m, or the measured vehicle height where specified.
+This is not a general certification of human headroom or arbitrary stacked floors.
+Grid uncertainty or capacity limits produce not_measurable, never an inferred pass.
+Numerical tolerances, route step/slope settings and contact bands are published
+definitions with pending calibration. The JSON below specifies this version exactly.
+
+Roles: apron, apron_edge, crater, hangar_entry, rail, rail_support, rail_vehicle, rocket, rover, site, tank_section.
+
+```json
+[
+  {
+    "id": "site_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "scope": "union",
+      "lower": [
+        32,
+        36,
+        null
+      ],
+      "upper": [
+        32,
+        36,
+        null
+      ],
+      "relative_tolerance": 0.1
+    }
+  },
+  {
+    "id": "rover_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "rover",
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  {
+    "id": "rocket_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "rocket",
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  {
+    "id": "tank_section_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "tank_section",
+      "minimum": 2,
+      "maximum": 2
+    }
+  },
+  {
+    "id": "rail_support_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "rail_support",
+      "minimum": 6
+    }
+  },
+  {
+    "id": "rail_vehicle_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "rail_vehicle",
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  {
+    "id": "crater_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "crater",
+      "minimum": 4
+    }
+  },
+  {
+    "id": "rail_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "rail",
+      "scope": "union",
+      "lower": [
+        null,
+        18,
+        null
+      ],
+      "upper": [
+        null,
+        22,
+        null
+      ],
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "rail_top_level",
+    "metric": "l2_brief_level",
+    "group": "numeric",
+    "params": {
+      "role": "rail",
+      "support_role": "site",
+      "endpoint": "top",
+      "lower": 2.5,
+      "upper": 3,
+      "relative_tolerance": 0.1
+    }
+  },
+  {
+    "id": "apron_clear_route",
+    "metric": "l2_brief_route",
+    "group": "numeric",
+    "params": {
+      "road_role": "apron",
+      "start_role": "hangar_entry",
+      "goal_role": "apron_edge",
+      "min_width": 2,
+      "cell_size": 0.04,
+      "max_snap": 0.5,
+      "clearance_height": 0.1,
+      "surface_epsilon": 0.001,
+      "max_step": 0.02,
+      "max_slope": 0.5,
+      "clearance_roles": [
+        "rover"
+      ]
+    }
+  }
+]
+```
+
+
+## Geometry extension (l2-brief-v2.2.0)
+Cup/crater roles select the actual depressed surface and its rim, grouped per
+entity. Keep flags, poles and unrelated geometry in separate roles. The ground
+outside each oriented footprint must be measurable in the support role. Complete
+world geometry is queried at the public finite positions below. Internal probes
+must lie below surrounding local ground and the rim, and be exposed in the full
+scene; a floor, lid, raised ring or negative-height proxy does not establish a
+real recess. These are opaque geometric queries, not transparency simulation.
+For terrain relief, a uniform grid samples the exposed top surface; selected
+terrain and full-scene top hits must agree within 0.00001 m. Covered terrain does
+not count toward the required surface coverage. Global and
+per-quadrant best-fit planes are removed; a tilted flat floor cannot count as
+undulating ground. Keep the surrounding terrain in site; crater patches may have
+their own role. The millimetre thresholds are published numerical definitions with calibration limits, not
+dimensions specified by the original brief. They require calibration. Finite
+probes do not certify a complete shell, continuous ball path or all terrain detail.
+
+```json
+[
+  {
+    "id": "real_crater_depression",
+    "metric": "l2_surface_depression",
+    "group": "numeric",
+    "params": {
+      "role": "crater",
+      "support_role": "site",
+      "directions": 32,
+      "inner_fraction": 0.25,
+      "rim_fractions": [
+        0.7,
+        0.8,
+        0.9
+      ],
+      "outside_fraction": 1.15,
+      "min_depth_m": 0.001,
+      "min_rim_height_m": 0,
+      "required_fraction": 0.75,
+      "occlusion_tolerance_m": 1e-05
+    }
+  }
+]
+```
+
+
+## Layout and course geometry (l2-brief-v2.3.0)
+This case retains the preceding numerical definitions unchanged.
+
+
+
+## Material rail contact chain (l2-brief-v2.7.1)
+This replaces the v2.7.0 surface-only rail-support contact check. The actual rail,
+six distinct supports, site and whole rail vehicle retain their public roles,
+0.02 m contact tolerance, three-dimensionality and geometric contact requirements.
+Merged meshes, split faces and touching parts are permitted. Names, part tags and
+bounding-box overlap cannot substitute for actual contacts or containment.
+
+Internal contact still uses complete triangle feature distances. When surface
+pieces do not connect, closed nested boundaries may establish a material link:
+the evaluator verifies two oppositely traversed incident faces per edge, one
+manifold vertex-link cycle, nonzero signed volume, and no triangle intersection
+beyond the common topological point or edge. Both enclosing and enclosed shells
+must satisfy these conditions before containment can be inferred. Open or invalid
+shells cannot supply an inferred interior connection; actual surface-connected
+open assemblies retain the earlier contact rule.
+
+All triangles establish separation before a complete winding query classifies
+containment. A box only filters impossible candidates. Consistent nested boundary
+orientation adds or subtracts material occupancy: an oppositely oriented cavity
+wall belongs to the material outside it; a separate object floating in zero-winding
+air does not connect merely because it is enclosed. Same-oriented embedded closed
+pieces inside filled material are allowed. Reversing all boundary normals together
+does not change this interpretation. Nested containment must be unambiguous;
+crossing containment parents, negative material occupancy, or ambiguous winding
+are reported as unmeasurable, never rounded into a pass.
+
+Geometry is measured in world metres. Closed-boundary intersection epsilon is
+1e-9 m (up to 4e-9 m slack at shared topological features), winding tolerance is
+1e-5, and the nonzero signed-volume cutoff is 1e-15 m^3. No positional welding
+or arbitrary scene alignment occurs. Degenerate triangles cannot create links.
+The original limits remain: one million triangles and 128 disconnected pieces
+per selected entity, 128 entities per role, and two million candidate triangle
+pairs for the whole check. Each boundary used for a containment claim additionally
+has a 200,000-triangle limit; its self-intersection pairs count against that same
+whole-check budget. Exceeding capacity requires unmeasurable evidence.
+
+Support bounds equal to six decimal places cannot count as separate supports.
+Above-rail, lateral-guide and attached suspended vehicles are permitted. This
+module does not certify strength, stability, contact area, all shell thickness,
+acceptable penetration or textual/semantic identity. Published geometric
+interpretations and tolerances remain pilot definitions pending accepted real
+boundary examples and human calibration.
+
+```json
+[
+  {
+    "id": "rail_support_contacts",
+    "metric": "l2_material_support_chain",
+    "group": "numeric",
+    "params": {
+      "ground_role": "site",
+      "support_role": "rail_support",
+      "rail_role": "rail",
+      "vehicle_role": "rail_vehicle",
+      "minimum_supports": 6,
+      "contact_tolerance_m": 0.02
+    }
+  }
+]
+```
+
+
+## Complete crater/apron footprint separation (l2-brief-v2.8.0)
+Bind each entire crater patch, including its modeled rim, to the existing crater
+role, and the entire work apron to apron. The evaluator projects all evaluated
+world-space surface triangles onto XY. No crater projection may overlap the
+actual apron projection with positive area. Boundary-only contact is allowed;
+no extra setback distance is required. Actual holes and concave boundaries remain
+empty: object boxes, convex hulls and a finite sampling grid are not the verdict.
+Height does not remove a footprint conflict, including buried apron geometry.
+Annotations select geometry but do not prove its semantic identity.
+
+Meshes may be split under their existing whole-entity role parent or joined
+within that entity. Exact duplicate projections do not add occupied area; neither
+triangle orientation nor triangle numbering changes the relation. Purely vertical
+faces have zero projected area and do not add area. An entirely zero-area selected
+entity is unmeasurable, never accepted as a crater footprint.
+
+The separating-axis predicates use all edges of both projected triangles.
+Numerically ambiguous determinants are resolved exactly for the stored binary
+world coordinates. There is no hidden overlap-area tolerance or minimum setback.
+Consequently geometry rounded by Blender into an actual tiny overlap is rejected,
+not snapped to an intended ideal boundary; keep deliberate clearance if needed.
+The spatial index and triangle boxes only discard impossible pairs, never fill
+holes or supply a pass by sampling. The first positive-area pair is archived as
+an overlap witness. A false result does not estimate overlap volume or area.
+
+There may be at most 128 entities and one million complete triangles per role,
+two million candidate triangle pairs per check, and finite coordinates within
++/-100 million metres. Missing evidence, no projected area, or exceeded capacity
+is unmeasurable. These bounds and the boundary interpretation are published
+rules pending accepted real examples and human review. This check does not certify
+crater semantics, apron/site completeness, other site containment, shell quality,
+physical support, 3D penetration, or full task completion.
+
+```json
+[
+  {
+    "id": "craters_outside_apron",
+    "metric": "l2_projected_disjoint",
+    "group": "numeric",
+    "params": {
+      "role": "crater",
+      "excluded_role": "apron"
+    }
+  }
+]
+```
+
+## Scoring
+
+Final item score: `60% vlm + 30% data + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

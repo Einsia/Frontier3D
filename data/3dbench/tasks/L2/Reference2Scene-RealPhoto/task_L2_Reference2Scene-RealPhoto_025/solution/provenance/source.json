@@ -1,0 +1,22 @@
+{
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 1010,
+  "source_url": "https://jonbarron.info/mipnerf360/",
+  "attribution": "Mip-NeRF 360 project / dataset; Jonathan T. Barron, Ben Mildenhall, Dor Verbin, Pratul P. Srinivasan, Peter Hedman",
+  "original_sha256": "f439a4062bccebe7a29ea3922da12b68c8ec67a0e50661681bf94526b0c480dd",
+  "input_sha256": "64930d1ee3db4fe201c7dedf8356b4a4fae4a672c96ca5ed2f268dc745a4bd92",
+  "input_dimensions": [
+    800,
+    533
+  ],
+  "license": {
+    "label": "User-supplied image for benchmark inclusion; upstream image redistribution license unverified; no blanket public license asserted",
+    "status": "upstream_image_license_unverified"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

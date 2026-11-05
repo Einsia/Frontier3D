@@ -1,0 +1,223 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-r03",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "forecourt",
+    "taxi_rank",
+    "ticket_hall",
+    "waiting_hall",
+    "upper_concourse",
+    "platform_01",
+    "platform_02",
+    "service_yard"
+  ],
+  "initial_state": "Six bags at taxi rank; cart empty; ticket unissued; gates closed; lift ground; lockers empty.",
+  "entities": [
+    {
+      "id": "terminal.ticket",
+      "role": "terminal",
+      "actions": [
+        "issue",
+        "collect"
+      ],
+      "initial": "one available ticket; uncollected",
+      "argument": ""
+    },
+    {
+      "id": "gate.ticket.01",
+      "role": "ticket_gate",
+      "actions": [
+        "validate",
+        "open",
+        "close"
+      ],
+      "initial": "closed; no authorized ticket",
+      "argument": ""
+    },
+    {
+      "id": "gate.ticket.02",
+      "role": "ticket_gate",
+      "actions": [
+        "validate",
+        "open",
+        "close"
+      ],
+      "initial": "closed; no authorized ticket",
+      "argument": ""
+    },
+    {
+      "id": "lift.concourse",
+      "role": "lift",
+      "actions": [
+        "call",
+        "travel"
+      ],
+      "initial": "ground landing",
+      "argument": "landing=ground|upper"
+    },
+    {
+      "id": "lift.door.01",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; landing interlock",
+      "argument": ""
+    },
+    {
+      "id": "lift.door.02",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; landing interlock",
+      "argument": ""
+    },
+    {
+      "id": "cart.luggage",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "empty; taxi rank",
+      "argument": ""
+    },
+    {
+      "id": "bag.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "taxi rank",
+      "argument": ""
+    },
+    {
+      "id": "bag.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "taxi rank",
+      "argument": ""
+    },
+    {
+      "id": "bag.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "taxi rank",
+      "argument": ""
+    },
+    {
+      "id": "bag.04",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "taxi rank",
+      "argument": ""
+    },
+    {
+      "id": "bag.05",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "taxi rank",
+      "argument": ""
+    },
+    {
+      "id": "bag.06",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "taxi rank",
+      "argument": ""
+    },
+    {
+      "id": "locker.01",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    },
+    {
+      "id": "locker.02",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    },
+    {
+      "id": "shutter.service",
+      "role": "shutter",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "bay.platform",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [
+    "ticket"
+  ],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

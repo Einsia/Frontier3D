@@ -1,0 +1,92 @@
+{
+  "protocol": "3dbench-strict-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2",
+  "case_id": "L2/Reference2Scene/task_L2_Reference2Scene-005",
+  "family": "Reference2Scene",
+  "instruction_sha256": "f74961ad6bf721aec77a06312a74e94434240329888024ff27938e8de732f4f9",
+  "reference_policy": "单张公开参考。main 决定原构图；alternate 只核实三维结构。未知背面合理补全，不引入私有真值。",
+  "focus": "俯视城市街区与多层建筑群；只核对公开参考中可见的具体形态和题面明确要求。",
+  "checks": [
+    {
+      "id": "city_layout",
+      "component": "F",
+      "global_weight": 0.3,
+      "question": "参考可见路网与街区组织：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "主要交叉道路的方向与宽窄关系",
+        "街区相对占地与形状",
+        "高低建筑在街区中的具体分布",
+        "前中后景遮挡关系"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "city_buildings",
+      "component": "F",
+      "global_weight": 0.3,
+      "question": "主要建筑的特定体量：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "前景主要建筑的轮廓和高度关系",
+        "中心主要建筑的轮廓和高度关系",
+        "后景主要建筑的轮廓和高度关系",
+        "参考可见的退台及组合体块"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "city_facades",
+      "component": "F",
+      "global_weight": 0.2,
+      "question": "建筑立面结构：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "不同建筑的窗格尺度与组织",
+        "层间线和竖向分隔",
+        "立面凹凸及建筑间差异",
+        "窗格与建筑体量的比例"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "city_roofs",
+      "component": "F",
+      "global_weight": 0.2,
+      "question": "屋顶结构和道路留空：逐项核对所列要求与参考可见特征。尊重题面允许的简化；不要求细针脚、品牌文字、微小划痕/发丝、微小车辆或远处窗格。",
+      "units": [
+        "主要屋顶轮廓及退台",
+        "可见屋顶设施的体积与布局",
+        "建筑之间真实街道留空",
+        "屋顶高度层次及其遮挡"
+      ],
+      "coverage_definition": "以列出的全部特征为固定分母，逐项说明成立和缺失。只计可见成立的具体形状与结构；类别名称、同色、占位或附近出现图元不证明该特征成立。",
+      "deviation_definition": "评价已实现部分相对参考的具体曲率、连续性、比例、厚度、连接和空间组织偏差，明确最大偏差。颜色和材质不参与此形态因子。已缺失部分只降低覆盖，不重复计偏差。无目标分数或排名；按连续观察报告。",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "7b0b7ac1f48438a1e7bc487abab7d9eeae1bd458724bb79a70c9e5eb2dc32a76"
+  },
+  "authoring": "four_task_public_requirement_reference_fidelity_review_model_blind",
+  "formal_score_eligible": false
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-e04",
+  "id": "L3/EmbodiedEnvironment/GreenhouseOrchard",
+  "domain": "embodied",
+  "input_mode": "image",
+  "title": "具身：育苗棚、果园与灌溉服务区",
+  "title_en": "Embodied Environment: Netted Plant Nursery, Orchard and Irrigation",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "../COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "layout": 0.2,
+    "interaction": 0.15,
+    "environment": 0.2,
+    "objects": 0.3,
+    "rubric": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "86da90ef4c82f15fd5dd2efc87fea760051b64fe68af94f594f9662c66f53a61",
+  "chinese_instruction_sha256": "fff81c34521f537273465a5f9e155365baeacfc4519750b853eb375534f1025a",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "pending",
+    "scope": "Task-specific objective test implementation and reference object annotations are separate from generation readiness."
+  }
+}

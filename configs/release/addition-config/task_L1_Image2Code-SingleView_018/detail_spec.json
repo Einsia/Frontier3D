@@ -1,0 +1,128 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+  "family": "Reference2Scene",
+  "instruction_sha256": "6a639e4df46970e7fdcf1afed965af632e44e1e230d55956b397347816c61187",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "69f6994858de43d813ea0d2b7295fce504d15d05350feb280145e0ec3a9fc832"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d01",
+      "component": "F",
+      "question": "口鼻是否保留参考中的前伸、收尖轮廓、鼻端体积和嘴缝？",
+      "units": [
+        "muzzle"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d02",
+      "component": "F",
+      "question": "耳部是否保留可见的薄片厚度、弯折轮廓和耳根连接？",
+      "units": [
+        "ears"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d03",
+      "component": "F",
+      "question": "胸部是否保留隆起体积、颈胸过渡和下缘毛簇轮廓？",
+      "units": [
+        "chest"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d04",
+      "component": "F",
+      "question": "足爪是否具有参考可辨的圆钝末端、趾部起伏和踝爪过渡？",
+      "units": [
+        "paws"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d05",
+      "component": "F",
+      "question": "腿部是否保留弯曲、逐渐收细的体积及关节连接？",
+      "units": [
+        "legs"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d06",
+      "component": "F",
+      "question": "尾部是否保留粗尾根、弯曲蓬松体积及收尖末端？",
+      "units": [
+        "tail"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d07",
+      "component": "F",
+      "question": "胸腹和尾缘是否有可辨的毛簇层次与不规则局部轮廓？",
+      "units": [
+        "Fur may be approximated with layered geometry or local material detail, but must retain the fluffy silhouette"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

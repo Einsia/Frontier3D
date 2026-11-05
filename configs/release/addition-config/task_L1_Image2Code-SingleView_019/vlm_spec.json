@@ -1,0 +1,188 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+  "family": "Reference2Scene",
+  "instruction_sha256": "d5b6d563de75cbaa53fb28c64114ff874ed61b1aa2f9b4dee22aae3c187789c1",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "3939bef39124fe841a6e92fd85be17bf678007ab87b03276a67419490e74dcd4",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-a432377afdf1d382f7395caeb1c251d2a55351eee3a1a6c0b1deee10ff84bc05"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_bird",
+        "query": "完整蓝鸟",
+        "weight": 0.3,
+        "boxes": [
+          [
+            0.132,
+            0.387,
+            0.809,
+            0.846
+          ]
+        ],
+        "boundary_notes": "包括喙、尾尖、双脚及深色爪趾；不含背景。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_beak",
+        "query": "可见鸟喙",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.132,
+            0.489,
+            0.225,
+            0.525
+          ]
+        ],
+        "boundary_notes": "包括浅色上喙及深色下缘，止于头部交界。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_eye",
+        "query": "可见眼睛及眼缘",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.215,
+            0.485,
+            0.268,
+            0.524
+          ]
+        ],
+        "boundary_notes": "仅一个可辨眼，包含黑色眼球与窄眼缘，不推定背面眼的框。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_wing",
+        "query": "可见折叠翼",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.44,
+            0.451,
+            0.703,
+            0.618
+          ],
+          [
+            0.399,
+            0.437,
+            0.47,
+            0.457
+          ]
+        ],
+        "boundary_notes": "第一框为完整近侧翼可见范围，第二框仅为背部露出的远侧翼窄片；不补遮挡部分。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_tail",
+        "query": "伸出的蓝色尾羽",
+        "weight": 0.1,
+        "boxes": [
+          [
+            0.688,
+            0.558,
+            0.809,
+            0.609
+          ]
+        ],
+        "boundary_notes": "仅翼后伸出的尾部可见范围，包含圆钝末端，不含下方腹部。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_feet",
+        "query": "可见腿脚与爪",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.234,
+            0.699,
+            0.415,
+            0.814
+          ],
+          [
+            0.354,
+            0.7,
+            0.54,
+            0.846
+          ]
+        ],
+        "boundary_notes": "分别框住画面左、右腿脚的可见范围，包含深色腿趾及浅色爪尖；不逐一框极小鳞片。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

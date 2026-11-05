@@ -1,0 +1,74 @@
+{
+  "status": "design_only_not_executable",
+  "requirements_source": "instruction.zh.md",
+  "requirements": [
+    {
+      "id": "B11-001",
+      "requirement_zh": "吧台·双臂调酒机器人 设计酒吧吧台后双臂调酒机器人调酒中的场面，采用客侧越过台面的斜上方视角。"
+    },
+    {
+      "id": "B11-002",
+      "requirement_zh": "吧台长 2.40 米、台面高 1.05 米（误差 10 毫米）、深 0.45 米，台面为深色石材并内嵌洗槽与制冰槽（各宽 0.35 米），槽沿低于台面 0.05 米；"
+    },
+    {
+      "id": "B11-003",
+      "requirement_zh": "台前立四只高脚凳，凳面高 0.75 米。"
+    },
+    {
+      "id": "B11-004",
+      "requirement_zh": "吊柜底面离台面 0.35 米，下沿挂一排倒插酒瓶八只，瓶间净距不小于 80 毫米，其中一只被取离挂位。"
+    },
+    {
+      "id": "B11-005",
+      "requirement_zh": "吧台后立双臂调酒机器人：躯干高 1.20 米，双臂臂展各 0.75 米，基座高 0.95 米、间距 0.35 米。"
+    },
+    {
+      "id": "B11-006",
+      "requirement_zh": "冻结在摇酒前一刻：右臂持金属摇酒壶（高 0.22 米、直径 0.08 米），壶口悬在一只威士忌杯口上方 0.03 米，壶身向杯倾斜 15°（±2°），杯内冰球一枚；"
+    },
+    {
+      "id": "B11-007",
+      "requirement_zh": "左臂两指扶住那只取下的倒挂酒瓶瓶身中部，瓶口朝下、塞头朝向摇酒壶，指尖与瓶身接触穿透不超过 2 毫米。"
+    },
+    {
+      "id": "B11-008",
+      "requirement_zh": "台面上四只杯具一字排开，杯距 0.12 米，杯柄统一朝右 45°。"
+    },
+    {
+      "id": "B11-009",
+      "requirement_zh": "可通行验收：吧台后操作通道净宽不小于 0.80 米，双臂摆动包络与吊柜下沿净空不小于 0.15 米。"
+    },
+    {
+      "id": "B11-010",
+      "requirement_zh": "可触及验收：吊柜挂位、洗槽、制冰槽、杯列四点均在任一臂 0.70 米工作球内。"
+    },
+    {
+      "id": "B11-011",
+      "requirement_zh": "可操作验收：摇酒壶轴线延长线穿过杯口中心，偏差不超过 10 毫米；"
+    },
+    {
+      "id": "B11-012",
+      "requirement_zh": "被取酒瓶的挂位空钩朝向与瓶身夹持角一致。"
+    },
+    {
+      "id": "B11-013",
+      "requirement_zh": "使用墨绿瓷砖背墙、黄铜吊灯、暖木吧台与不锈钢壶具，暖光 2800K 加瓶架射灯，酒液用深琥珀色。"
+    },
+    {
+      "id": "B11-014",
+      "requirement_zh": "主视角把双臂、摇酒壶、杯列与吊柜酒排同框。"
+    },
+    {
+      "id": "B11-015",
+      "requirement_zh": "这是可编辑静态场景，不要求酒液流动、冰块物理或人物。"
+    }
+  ],
+  "methods": [
+    "native rerun and render",
+    "world-space vertex dimensions and angles",
+    "signed contact/clearance measurements using geometric surfaces",
+    "sampled free-route widths and service-envelope distances",
+    "semantic object and material review"
+  ],
+  "unimplemented": "No automatic harness, validated reach solver, GT scene, calibrated aggregate score or model results."
+}

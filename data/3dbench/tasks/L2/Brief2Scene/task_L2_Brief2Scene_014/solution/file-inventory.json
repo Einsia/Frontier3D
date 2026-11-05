@@ -1,0 +1,68 @@
+[
+  {
+    "path": "environment/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model_visible": true
+  },
+  {
+    "path": "harness/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model_visible": false
+  },
+  {
+    "path": "instruction.md",
+    "bytes": 3825,
+    "sha256": "7035c663b8f308131414a9fed890e43348401bd131e924271e2f6599eff3fddc",
+    "model_visible": true
+  },
+  {
+    "path": "instruction.zh.md",
+    "bytes": 3795,
+    "sha256": "bb81695f94b140a650edd7711ba882b467db86e4731105cd730d1b4c3c31822b",
+    "model_visible": false
+  },
+  {
+    "path": "README.md",
+    "bytes": 543,
+    "sha256": "4c07e1d51ea06d1f63c734183e55dfacf7da9c700f4b03d7746da8b39c44e0cc",
+    "model_visible": false
+  },
+  {
+    "path": "solution/checklist.json",
+    "bytes": 3245,
+    "sha256": "52588e9bd8e03b35d00a225e05f73772c95785fceab6d5d1f831ee20621f3356",
+    "model_visible": false
+  },
+  {
+    "path": "solution/EVALUATION.md",
+    "bytes": 4143,
+    "sha256": "0f0f67b7fc8406892b33a7f97e13cc64724d4d602f88110ed267faf1e11689a3",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/normalization.json",
+    "bytes": 1027,
+    "sha256": "dc860a7037bc4a90db0702d3df4f25d345473da3efb828fcfad1571dc19c7bd9",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/source-brief.zh.md",
+    "bytes": 1706,
+    "sha256": "700f747cd66cfe563b510708dd40c790d7393c4130ef54f8cb0f16d6ab972e6f",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/source.json",
+    "bytes": 419,
+    "sha256": "eebd8b22a26163216bed5985f878705081c157576ed46e672f083da1b731296d",
+    "model_visible": false
+  },
+  {
+    "path": "task.toml",
+    "bytes": 701,
+    "sha256": "64795e8226059b520ac36c3811e3f1392ef4efa881414e1961b8d44e9b55394a",
+    "model_visible": false
+  }
+]

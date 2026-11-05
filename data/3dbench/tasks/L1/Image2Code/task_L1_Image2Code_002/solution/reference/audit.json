@@ -1,0 +1,88 @@
+{
+  "source": "assets/expansion/polyhaven-models/drill_press_01/original/source.blend",
+  "visible_mesh_objects": 13,
+  "vertices": 31064,
+  "dimensions_m": [
+    0.36586281657218933,
+    0.5987852811813354,
+    0.9015651345252991
+  ],
+  "normalization": {
+    "uniform_scale": 0.9999999834718972,
+    "maximum_extent_m": 0.9015651196241379,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        1.352347731590271,
+        -1.8031302690505981,
+        1.532660722732544
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -9.768106323804204e-09,
+        0.6435010433197021
+      ],
+      "ortho_scale": 1.3072694540023804
+    },
+    "front": {
+      "position": [
+        1.4901161193847656e-08,
+        -2.704695463180542,
+        0.7212520837783813
+      ],
+      "rotation": [
+        1.4711277484893799,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.3072694540023804
+    },
+    "side": {
+      "position": [
+        2.704695463180542,
+        0.0,
+        0.7212520837783813
+      ],
+      "rotation": [
+        1.4711278676986694,
+        9.374965515007716e-08,
+        1.5707966089248657
+      ],
+      "ortho_scale": 1.3072694540023804
+    },
+    "top": {
+      "position": [
+        1.4901161193847656e-08,
+        -0.0009015651885420084,
+        3.155478000640869
+      ],
+      "rotation": [
+        0.0003452669770922512,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.3072694540023804
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "drill_press_01",
+    "drill_press_01_plate",
+    "drill_press_01_catch",
+    "drill_press_01_lid",
+    "drill_press_01_belt",
+    "drill_press_01_gear_b",
+    "drill_press_01_gear_a",
+    "drill_press_01_handle",
+    "drill_press_01_button_a",
+    "drill_press_01_limiter",
+    "drill_press_01_bit",
+    "drill_press_01_plug",
+    "drill_press_01_button_b"
+  ]
+}

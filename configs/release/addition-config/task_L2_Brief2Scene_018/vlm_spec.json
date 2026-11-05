@@ -1,0 +1,415 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_018",
+  "family": "Brief2Scene",
+  "instruction_sha256": "80fbaebdc6944d2ee7426d6de3e6e302fd3eb3a95e0f2f0815e8b36e0c84be38",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否表现停车库中的充电机器人作业车位？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Parking garage: charging robot before insertion."
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "车位地面是否呈深灰色环氧地坪外观？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "with dark-grey epoxy"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "车位是否有白色边线？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "white bay lines"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "车位是否有可辨识的车位号码？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "a bay number"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "地面是否有可辨识的方向箭头？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "directional arrows"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "车位一侧是否设有带防护的柱体？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "One side has a protected pillar"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "柱体是否带有充电标志？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "pillar with charging sign"
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "相邻车位是否停有深色车辆？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "a dark car occupies the neighbouring bay"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "目标车辆是否为银灰色汽车？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "The target silver-grey car"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "目标车车门是否关闭？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "doors closed"
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "开启的充电口盖是否位于目标车左后部？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "left-rear charging flap open"
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "机器人是否位于目标车旁？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Beside it place a 0.60 x 0.50 m four-wheel robot"
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "机器人是否有前轮落在导向标记上？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "with a front wheel on a guide marking"
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "机器人是否具有立柱和位于顶部的关节机械臂？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "1.10 m column and two-joint top arm"
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "机械臂是否持有可辨识的国标直流连接器？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "arm holding a national-standard DC connector"
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "连接器是否接有线缆？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "connector 0.25 m long on a 0.03 m cable"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "连接器是否冻结在尚未插入端口的临近位置？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Freeze just before insertion"
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "连接器与端口的插接轴是否对准？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "axes aligned within 3 degrees"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "连接器锁扣是否朝上？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "latch upward"
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "线缆是否以松弛悬链线悬垂且没有绷紧？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "The cable hangs in a slack catenary from a sliding overhead suspension about 2.40 m high to the gripper, never taut"
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "线缆是否从顶部滑动悬挂延伸至夹持器？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "from a sliding overhead suspension about 2.40 m high to the gripper"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "线缆是否避开车辆并留有净空？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "with at least 0.05 m clearance from the car"
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "后墙是否设有配电箱？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "a rear-wall distribution box"
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "场景是否设有可辨识的急停装置？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "emergency stop"
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "场景是否有蓝色待机灯？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "blue standby light"
+      ]
+    },
+    {
+      "id": "S26",
+      "question": "车位前方是否留有可通行的行车通道？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Keep a 2.40 m front driving aisle"
+      ]
+    },
+    {
+      "id": "S27",
+      "question": "机器人对侧是否留有连续逃生通道？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "a continuous 0.60 m escape passage on the side opposite the robot"
+      ]
+    },
+    {
+      "id": "S28",
+      "question": "开启口盖是否与连接器包络保持分离？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "The open flap stays at least 0.03 m from the connector envelope"
+      ]
+    },
+    {
+      "id": "S29",
+      "question": "连接器导向面是否对应并对准端口导向槽？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "connector guide surfaces align with port grooves"
+      ]
+    },
+    {
+      "id": "S30",
+      "question": "地坪是否具有反射外观？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Use reflective flooring"
+      ]
+    },
+    {
+      "id": "S31",
+      "question": "天花板是否设置冷白色条形灯？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "cool-white ceiling strips"
+      ]
+    },
+    {
+      "id": "S32",
+      "question": "连接器是否带有红色点缀？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "a red connector accent"
+      ]
+    },
+    {
+      "id": "S33",
+      "question": "主视角是否清楚呈现机器人、机械臂与端口的关系？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Frame robot, arm and port relationship."
+      ]
+    },
+    {
+      "id": "S34",
+      "question": "车辆是否保持静止？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "no vehicle motion"
+      ]
+    },
+    {
+      "id": "S35",
+      "question": "场景是否保持插入前静态姿态，没有插接动画？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "no vehicle motion, plugging animation or electrical effects"
+      ]
+    },
+    {
+      "id": "S36",
+      "question": "场景是否没有电气特效？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "no vehicle motion, plugging animation or electrical effects"
+      ]
+    },
+    {
+      "id": "S37",
+      "question": "场景是否由可编辑、可分离且有合理厚度与支承的实体三维构件组成？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support."
+      ]
+    },
+    {
+      "id": "S38",
+      "question": "机器人是否以实体关节和末端执行器表达静态关节姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "A static articulated robot pose is required; no controller, physical dynamics or manipulation trajectory is required. Represent specified joints and end-effectors geometrically."
+      ]
+    },
+    {
+      "id": "S39",
+      "question": "服务点是否与冻结接触关系区分并标注，且没有为服务点复制机器人？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots."
+      ]
+    },
+    {
+      "id": "S40",
+      "question": "第二透视视角是否展示关键接触与净空路线，并与主视角保持相同几何和冻结姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.015,
+      "units": [
+        "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose"
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

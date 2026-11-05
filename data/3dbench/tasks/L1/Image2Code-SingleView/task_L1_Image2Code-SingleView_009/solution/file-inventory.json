@@ -1,0 +1,170 @@
+[
+  {
+    "path": "attribution/input/CREDIT.txt",
+    "bytes": 170,
+    "sha256": "60013ee2930f6b4b3eb26520055f0ebcae682772cd76aeb70b63262bb6ec37d8",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/reference.png",
+    "bytes": 1213859,
+    "sha256": "08b125d69dc1e5a3d1022e2a3051f4fb59463b53513959ead004c0df9cebf44f",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "harness/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "instruction.md",
+    "bytes": 3095,
+    "sha256": "6f8ef834cb80fa9178ee1e531818fada6c46ef9f8dac17909866b5dabb73d2db",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "instruction.zh.md",
+    "bytes": 2615,
+    "sha256": "03a8b8726beca2819c06d49314a4a1e6a5d913862e9252f01de54a681fb53b4a",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "README.md",
+    "bytes": 1557,
+    "sha256": "dc0e352eaceb0c76a34737b992bdc445fea78e3409e25df283c5231ef04d5e51",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/EVALUATION.md",
+    "bytes": 4900,
+    "sha256": "20198d0b0f23b365c07a1af43bc91dfb1f30daa47ac3f75dbf9e0d4f891b8934",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/api-files.json",
+    "bytes": 39124,
+    "sha256": "7a87e977fd54ee62ffe4181ddef901e9d6d8eea9fa5d5f36a8f5332e73decfa0",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/api-info.json",
+    "bytes": 1184,
+    "sha256": "2cf750ca60f46cc0b888c1179250b95feb5c953738ced0a8b4f3477610ba7022",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/publisher.html",
+    "bytes": 201192,
+    "sha256": "411bb51325ce9329c6456b297207a66fd89b94234cd8f4c5e4e962fc17232a0d",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/source.json",
+    "bytes": 2322,
+    "sha256": "c6e7ffe19c83b5b15d047087f75e56ced26ce0482ae099bb393fe51eeee5332f",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/audit.json",
+    "bytes": 1717,
+    "sha256": "49cc91b706037393e0fd797c85ab98ea6208ab8d51195c66f4697399c3d31b55",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/front.png",
+    "bytes": 1153384,
+    "sha256": "7185146bd24426ea3becf84daef45b6112e54cccc9d6f292f28c0249bcd52eb0",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/main.png",
+    "bytes": 1213859,
+    "sha256": "08b125d69dc1e5a3d1022e2a3051f4fb59463b53513959ead004c0df9cebf44f",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.blend",
+    "bytes": 2537573,
+    "sha256": "24a458152f2b7712989d22b48e33698611ecb359ae0aafb189ff6f617b238807",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.glb",
+    "bytes": 5144892,
+    "sha256": "33a1c1a671728cb1327966fd34306182763e60e572c5e4ee2f15ac305fd8611c",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/side.png",
+    "bytes": 1212610,
+    "sha256": "34d55bf39756c7d86a1e65ea7cfe27ddfc672cfecd774ae878ca36178aa1e756",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/top.png",
+    "bytes": 1177671,
+    "sha256": "d8743eab120f4821868eefb87ede0be7b806472826515f3051a2190cbc5a8fd4",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/horse_head.blend",
+    "bytes": 374316,
+    "sha256": "19c30ad74e1c06dcd561dd35939e1d7e8bf8a1ecce8cddab58f7aa551c66faf7",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/horse_head_diff_1k.jpg",
+    "bytes": 511649,
+    "sha256": "bc7409baf955bc970d7397314f2f126862aef5b8c076167902df7b5742694435",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/horse_head_metal_1k.exr",
+    "bytes": 358023,
+    "sha256": "b1e69b5930fc95f913ad9636cdc15b70335b4c77a69734bb47b6c2dd88a783f9",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/horse_head_nor_gl_1k.exr",
+    "bytes": 852117,
+    "sha256": "b03b2c561a88b838a5a7687b2b0c14b7e09f30652c04805e81bb25160667616b",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/horse_head_rough_1k.exr",
+    "bytes": 536575,
+    "sha256": "1cab1bd0d9ccfc6dd57cfb60f6c9e2301b98750a6698bce2544e195903f3a7aa",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "task.toml",
+    "bytes": 751,
+    "sha256": "a876d860302c4264fc78a3371919a9169fda50f5ab07fe95340c7701a250ca7e",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  }
+]

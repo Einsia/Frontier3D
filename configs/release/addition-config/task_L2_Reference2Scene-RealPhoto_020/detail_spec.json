@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+  "family": "Reference2Scene",
+  "instruction_sha256": "9e3a047fd13aeccdfd0d87ab54d1244606c74051b9ddb2bd4346a20c4d2e61b2",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "d96f04c149425286eb36e74fdfc61fa425c2c0f1b09c704c55bf4bf87a3bc586"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "木栈道是否呈现连续铺板及相邻板条的接缝结构？",
+      "units": [
+        "timber waterfront walkway"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "亭顶是否具有参考图中逐层收窄、向上升起的分层坡面？",
+      "units": [
+        "pavilion with layered peaked roof"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "亭顶最高处是否具有参考图中细长尖顶及向下展开的坡面轮廓？",
+      "units": [
+        "pavilion with layered peaked roof"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "各层屋檐是否具有伸出的边缘、可见厚度和暗色底面？",
+      "units": [
+        "roof overhangs"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "屋顶层间是否保留参考图可见的开敞间隙和内部支撑构件？",
+      "units": [
+        "Use geometry for posts, rails and roof layers"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "近处白色立柱是否具有实体截面，并在檐下形成可辨的梁柱及斜撑连接？",
+      "units": [
+        "white posts and railings"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "栈道护栏是否呈现立柱、上扶手及下方多道细横向构件组成的开敞结构？",
+      "units": [
+        "white posts and railings"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "远处栈道下方是否保留可辨的重复支腿及交叉支撑形态？",
+      "units": [
+        "Preserve repeated supports"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

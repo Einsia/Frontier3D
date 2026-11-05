@@ -1,0 +1,1017 @@
+{
+  "objects": {
+    "TaskCamera": {
+      "type": "CAMERA",
+      "matrix": [
+        [
+          0.9999999403953552,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.6292068494294654e-07,
+          -1.0,
+          -9.199999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          -1.6292068494294654e-07,
+          1.399999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false
+    },
+    "hallway 4": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "077a28df8fba5434855f678b043a74574e5b631e289500a1af55ff0d0f1ec87e",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 3": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -12.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "bb311e24ff495f6244d8d346feadc21f529cdb124520a8d03788930f3ecfbe3b",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 1": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -24.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "f8fcd4f5c53a0ab24bbb8e2b237a21b36b60d770070308c3df488ab543e57cbb",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 2": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -18.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "dfa79d1c80c6721e1cddf6bd54e36e12f52203fb7c316ba5366fb148f41b37b3",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "barrel": {
+      "type": "MESH",
+      "matrix": [
+        [
+          0.17499999701976776,
+          0.0,
+          0.0,
+          -29.764986038208008
+        ],
+        [
+          0.0,
+          0.17499999701976776,
+          0.0,
+          -4.465359687805176
+        ],
+        [
+          0.0,
+          0.0,
+          0.30000001192092896,
+          -2.9802322387695312e-08
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "58ffdc13a9a797d4eb9e58a82d327010d6cc977ee461e692cde359d1dc64bbd4",
+      "materials": [
+        "brushed steel",
+        "chrome"
+      ]
+    },
+    "door": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          -36.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3322390913963318
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "0a809d6219d79086772142cc5f70c01ec61ff021610832356b016bb9d988d60f",
+      "materials": [
+        "steel",
+        "light",
+        "blue energy",
+        "chrome"
+      ]
+    },
+    "Cylinder.004": {
+      "type": "MESH",
+      "matrix": [
+        [
+          0.17499999701976776,
+          0.0,
+          0.0,
+          -0.654714822769165
+        ],
+        [
+          0.0,
+          0.17499999701976776,
+          0.0,
+          5.569336414337158
+        ],
+        [
+          0.0,
+          0.0,
+          0.30000001192092896,
+          -2.9802322387695312e-08
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "58ffdc13a9a797d4eb9e58a82d327010d6cc977ee461e692cde359d1dc64bbd4",
+      "materials": [
+        "brushed steel",
+        "chrome"
+      ]
+    },
+    "hallway": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "f8fcd4f5c53a0ab24bbb8e2b237a21b36b60d770070308c3df488ab543e57cbb",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 2.002": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -4.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "077a28df8fba5434855f678b043a74574e5b631e289500a1af55ff0d0f1ec87e",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 3.005": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "bb311e24ff495f6244d8d346feadc21f529cdb124520a8d03788930f3ecfbe3b",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 3.006": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "bb311e24ff495f6244d8d346feadc21f529cdb124520a8d03788930f3ecfbe3b",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "volume": {
+      "type": "MESH",
+      "matrix": [
+        [
+          7.549790126404332e-08,
+          0.0,
+          1.0,
+          -0.02722451090812683
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.684619903564453
+        ],
+        [
+          -1.0,
+          0.0,
+          7.549790126404332e-08,
+          1.026458978652954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "6aaf330f796bc4e7acd9c6d07d2e38a83a8e01b40fc88c57c2d25c188f9894ba",
+      "materials": [
+        "volume"
+      ]
+    },
+    "Armature": {
+      "type": "ARMATURE",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          5.960464477539063e-08
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false
+    },
+    "Cylinder.003": {
+      "type": "MESH",
+      "matrix": [
+        [
+          0.17499999701976776,
+          0.0,
+          0.0,
+          -1.0302568674087524
+        ],
+        [
+          0.0,
+          0.17499999701976776,
+          0.0,
+          5.746413230895996
+        ],
+        [
+          0.0,
+          0.0,
+          0.30000001192092896,
+          -2.9802322387695312e-08
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "58ffdc13a9a797d4eb9e58a82d327010d6cc977ee461e692cde359d1dc64bbd4",
+      "materials": [
+        "brushed steel",
+        "chrome"
+      ]
+    },
+    "hallway 2.001": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          13.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "077a28df8fba5434855f678b043a74574e5b631e289500a1af55ff0d0f1ec87e",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 2.003": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          -8.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "077a28df8fba5434855f678b043a74574e5b631e289500a1af55ff0d0f1ec87e",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 3.002": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "bb311e24ff495f6244d8d346feadc21f529cdb124520a8d03788930f3ecfbe3b",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 3.003": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "dfa79d1c80c6721e1cddf6bd54e36e12f52203fb7c316ba5366fb148f41b37b3",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "hallway 3.004": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0,
+          0.0,
+          17.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.25,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "dfa79d1c80c6721e1cddf6bd54e36e12f52203fb7c316ba5366fb148f41b37b3",
+      "materials": [
+        "steel",
+        "brushed steel",
+        "chrome",
+        "glass",
+        "brushed steel",
+        "dark metal",
+        "light",
+        "blue energy",
+        "orange energy",
+        "red light",
+        "sci fi screen",
+        "touch pad side",
+        "nuclear rode",
+        "chrome"
+      ]
+    },
+    "door.001": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.0,
+          6.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3322390913963318
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "0a809d6219d79086772142cc5f70c01ec61ff021610832356b016bb9d988d60f",
+      "materials": [
+        "steel",
+        "light",
+        "blue energy",
+        "chrome"
+      ]
+    },
+    "door.002": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.0,
+          27.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3322390913963318
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "0a809d6219d79086772142cc5f70c01ec61ff021610832356b016bb9d988d60f",
+      "materials": [
+        "steel",
+        "light",
+        "blue energy",
+        "chrome"
+      ]
+    },
+    "door.003": {
+      "type": "MESH",
+      "matrix": [
+        [
+          1.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.0,
+          -10.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3322390913963318
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hidden": false,
+      "mesh": "0a809d6219d79086772142cc5f70c01ec61ff021610832356b016bb9d988d60f",
+      "materials": [
+        "steel",
+        "light",
+        "blue energy",
+        "chrome"
+      ]
+    }
+  },
+  "materials": {
+    "blue energy": "6131d5afdfe995d658fe94d23319c5d0543313a5c6e10ff652e71d089e439623",
+    "brushed steel": "57d38ebe109586ff8e7892671d8b1f94faad3bf2cdfe62572ff7722c22b82c3a",
+    "chrome": "6df51b08ae8f8e893ccba5e2586ad427b0d558fbfa7f6cef4695146068c12ce2",
+    "dark metal": "478073463e91d72beade829bd078fe95859a18d91f2a5fe5c975adff5eebeed2",
+    "Dots Stroke": "0da48437eb35ea01e37f730c34fa8de0f0cf7e061371eef3eff3615a57860b9f",
+    "glass": "d90babb26dde41e7dd1cff32829736c8ed07fc43d2db61bbea995b59f803da0f",
+    "light": "40631c754f60ffd9eebcc2d7119fe0611babc1081f4ab48dd10440cfa4cc850d",
+    "nuclear rode": "6e4744fce9a1de93cf2b475e204afeffc3ae6e87d7a550d5840a45e508ce9865",
+    "orange energy": "f59a1ac3d373e0fa8d4c84ff9ffd9700a81696cb5b18e25767c8b334249e5658",
+    "red light": "e3be278ea1ff168f6f20933d1e20a45446e633d809a0b99f8a0fc35ba6417a80",
+    "sci fi screen": "4ec3451f9cd236fcde757b7862a440ff5cd9923dfd3c0648fbaaf5825a46c554",
+    "steel": "7bb874405948b776df9498ba4fb20bbd159c60d88f656725259364a330d85d32",
+    "touch pad side": "9dadafdaae2390ac5e2491cca718ae1ceea038f8dc056d02344576f0d43ec8fc",
+    "volume": "5c575daaa50048f3d610a82485afa922b5bfe6d059223a096a173a9043f24140"
+  },
+  "camera": {
+    "matrix": [
+      [
+        0.9999999403953552,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.6292068494294654e-07,
+        -1.0,
+        -9.199999809265137
+      ],
+      [
+        0.0,
+        1.0,
+        -1.6292068494294654e-07,
+        1.399999976158142
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 23.0
+  },
+  "settings": {
+    "frame": 0,
+    "engine": "CYCLES",
+    "resolution": [
+      960,
+      640
+    ],
+    "view": "AgX",
+    "exposure": 0.0
+  }
+}

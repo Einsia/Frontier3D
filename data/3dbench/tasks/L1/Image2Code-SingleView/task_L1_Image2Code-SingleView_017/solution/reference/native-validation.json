@@ -1,0 +1,92 @@
+{
+  "index": 103,
+  "uid": "99af7daa5baf450ea7b809937937e6d5",
+  "source_sha256": "c3fb0ac7a8df8ff5e68094e6d54cd1cf839a297207efbe1adf3fb5c601f65b8c",
+  "native_span_m": 1.000000004995397,
+  "native_bounds": {
+    "1": [
+      [
+        -0.14714112978317312,
+        -0.5000000050734227,
+        2.4492519123953116e-11
+      ],
+      [
+        0.14714113777799576,
+        0.4999999999219744,
+        0.8156033196065375
+      ]
+    ]
+  },
+  "glb_bounds": {
+    "1": [
+      [
+        -0.14714113001464843,
+        -0.4999999854101577,
+        9.48551504269951e-09
+      ],
+      [
+        0.14714113755941483,
+        0.5000000323460285,
+        0.815603352309092
+      ]
+    ]
+  },
+  "max_glb_bounds_error_m": 3.270255444220993e-08,
+  "packed_dependencies": true,
+  "external_libraries": 0,
+  "executable_text_blocks": 0,
+  "mesh_hashes": [
+    {
+      "sha256": "2f449c49f04cb468d419fcbf68e082062a92d4ff0b11f11d0fc3e84a207744eb",
+      "vertices": 9182
+    },
+    {
+      "sha256": "1f0dc990367a44b8d83d36882326dd209f98beee5c981745d062a00490aa9899",
+      "vertices": 9588
+    },
+    {
+      "sha256": "08ecdc72dc54ccd84d60930137d7ce4225c3b85fa33ce12c8695071e72580868",
+      "vertices": 1538
+    }
+  ],
+  "image_hashes": [
+    {
+      "sha256": "8d1152df735fdae56c2e749f5706ac90b9f1c6246252013c62df5ee2ea729494",
+      "bytes": 4389570
+    },
+    {
+      "sha256": "feaa856b8030f215a426133702c3091386cbca43ab9b46d2f95bb9c88755657c",
+      "bytes": 2105592
+    },
+    {
+      "sha256": "e615dd95a31e7110611685999f79ab7ad1aa33f4e62c4d8d0126e4bc31c8592c",
+      "bytes": 5134254
+    },
+    {
+      "sha256": "4e38f3c6897905097c356159a1f3b821754b7063d3f23df0c656f33a3436283e",
+      "bytes": 12209439
+    },
+    {
+      "sha256": "acb01cc89fe36ae12bb4fe56f7ac32a3f9ccf8307a80f33a8eab3a4133d19a25",
+      "bytes": 6334871
+    },
+    {
+      "sha256": "64a874221fee29e10bf333d7bad14494b502f7bb0e8f702ad5ebeeee543d14f2",
+      "bytes": 18469088
+    },
+    {
+      "sha256": "8c40640da5dde227fad45edf3515a4988949a9b36b4edb3ba9b0fd2e7b9c88a6",
+      "bytes": 13719299
+    }
+  ],
+  "motion": {},
+  "reference_files_sha256": {
+    "front.png": "210e59dcaed8b6a161877407b81737f3910bcfc54dec6f61cad9871580653511",
+    "main.png": "be89c2341a4cf6d3728cb8ff96ddb186641dea9b57d8e17b5ac095bd5fbc14e0",
+    "preview.png": "289fe26075117fb989079a0595b4f2b3b21387725fa1030834d105f620399c66",
+    "scene.blend": "491a263eee83d717908bf777a7876fbb1a934d9f44a12f5189271735c64dacf8",
+    "scene.glb": "ea398b4cef406fa1dab46cddeba257ae31977a215e9b4480ceebbce603d5160e",
+    "side.png": "dac9678bd2db4a8538373c1470788bff13d09b1212823595de891eda23d95483",
+    "top.png": "06ffbdb5d90e29f25345a76afdfcd89d9e99b8f2265b671dacf0d5d1832554f2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "uid": "b41079124d1e420d8549d088917b1dff",
+  "name": "Vintage / Old boxing gloves",
+  "source_url": "https://sketchfab.com/3d-models/vintage-old-boxing-gloves-b41079124d1e420d8549d088917b1dff",
+  "author": {
+    "displayName": "maxsbond.work",
+    "profileUrl": "https://sketchfab.com/maxsbond.work"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "14f4f2591c8905181f9ffdb3c710f1f960680b827fae139252b26352ba63a9c9",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

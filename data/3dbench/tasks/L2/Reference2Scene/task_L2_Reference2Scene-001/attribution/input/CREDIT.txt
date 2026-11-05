@@ -1,0 +1,6 @@
+classroom
+Author: Christophe Seux
+Source: https://www.blender.org/download/demo-files/
+License: CC0
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Changes: imported/converted to Blender; rendered for this reconstruction task.

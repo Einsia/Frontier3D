@@ -1,0 +1,17 @@
+{
+  "uid": "62cc563e52514fa9b2e3dfdfc09e5377",
+  "file": "source.glb",
+  "download_filename": "durian_the_king_of_fruits.glb",
+  "bytes": 31519324,
+  "sha256": "e534bd972a3488fe8d841ffa921076ebf47ea20729570f96b6360f34ecae92e1",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Laithai (https://sketchfab.com/serm3d)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/durian-the-king-of-fruits-62cc563e52514fa9b2e3dfdfc09e5377",
+    "title": "Durian The King of Fruits"
+  },
+  "gltf_meshes": 5,
+  "gltf_images": 1,
+  "animations": []
+}

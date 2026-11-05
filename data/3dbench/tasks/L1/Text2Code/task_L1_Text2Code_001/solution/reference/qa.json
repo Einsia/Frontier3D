@@ -1,0 +1,79 @@
+[
+  {
+    "part": "flange_lower",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "flange_upper",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "shaft",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_0",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_1",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_2",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_2",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "bolt_3",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  },
+  {
+    "part": "washer_3",
+    "passed": true,
+    "components": 1,
+    "nonmanifold_edges": 0,
+    "mismatches": 0
+  }
+]

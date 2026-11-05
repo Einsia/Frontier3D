@@ -1,0 +1,90 @@
+{
+  "donated": true,
+  "type": 2,
+  "tags": [
+    "vintage",
+    "victorian",
+    "loom",
+    "fabric",
+    "cloth",
+    "yarn",
+    "village",
+    "wooden",
+    "old"
+  ],
+  "name": "Spinning Wheel 01",
+  "categories": [
+    "props",
+    "tools"
+  ],
+  "date_published": 1633651200,
+  "sponsors": [
+    "68131842"
+  ],
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "polycount": 52023,
+  "texel_density": 7468.031975973728,
+  "dimensions": [
+    489.3998056650162,
+    1024.8570144176483,
+    966.2211883987766
+  ],
+  "files_hash": "752a2a4337f51a3bfe69b4d35cca17cd80839bde",
+  "description": "Free 8K model of a vintage Victorian wooden spinning wheel, with turned legs, spoked wheel, bobbin and worn paint patina, detailed aged wood and metal.",
+  "authors": {
+    "Sofia Pahaoja": "All"
+  },
+  "category_id": "770e3239-035e-5fad-a8b5-fedeb6c26b7f",
+  "category": "Tools & Equipment/Workshop Equipment/Vices & Clamps",
+  "attributes": {
+    "condition": [
+      "worn"
+    ],
+    "material": [
+      "wood",
+      "metal"
+    ]
+  },
+  "img_version": "795da71a",
+  "download_count": 6368,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/spinning_wheel_01.png?width=256&height=256&v=795da71a",
+  "id": "spinning_wheel_01",
+  "source": "https://polyhaven.com/a/spinning_wheel_01",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "downloaded_files": [
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/spinning_wheel_01/spinning_wheel_01_1k.blend",
+      "file": "spinning_wheel_01/original/source.blend",
+      "sha256": "33435265b98708bf231d190e27a7f89e3e04446655f5e9a9617ff72924f4b329",
+      "bytes": 3610347
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/spinning_wheel_01/spinning_wheel_01_diff_1k.jpg",
+      "file": "spinning_wheel_01/original/textures/spinning_wheel_01_diff_1k.jpg",
+      "sha256": "b81f7849d93841e34c68292a26cb7825ceeff204b51717c3703b6c6a0b86450e",
+      "bytes": 233457
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/spinning_wheel_01/spinning_wheel_01_rough_1k.jpg",
+      "file": "spinning_wheel_01/original/textures/spinning_wheel_01_rough_1k.jpg",
+      "sha256": "cf3ea7aecd7904963f73313524e8d3c98f0b7bf4a9e171deb648742ca2b1255a",
+      "bytes": 212530
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/spinning_wheel_01/spinning_wheel_01_nor_gl_1k.exr",
+      "file": "spinning_wheel_01/original/textures/spinning_wheel_01_nor_gl_1k.exr",
+      "sha256": "c46eb295b2d623fe3f03deab445ede9731823359c3c2c1c388e3758eb6b598c3",
+      "bytes": 1864324
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/spinning_wheel_01/spinning_wheel_01_metal_1k.exr",
+      "file": "spinning_wheel_01/original/textures/spinning_wheel_01_metal_1k.exr",
+      "sha256": "0a6b643be00b7e3613b671faeddb950e357c0956c942cbad053797e72555c7bc",
+      "bytes": 45799
+    }
+  ]
+}

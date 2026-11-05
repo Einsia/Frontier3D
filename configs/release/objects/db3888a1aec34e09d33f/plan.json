@@ -1,0 +1,937 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/CodeEdit/task_L1_CodeEdit_001",
+  "title": "烧录夹配合孔与桥接槽改型",
+  "category": "CodeEdit",
+  "profile": "edit-continuous-40-40-20-v1",
+  "weights": {
+    "N": 0.4,
+    "T": 0.4,
+    "K": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "numeric_rear_hole.diameter",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "rear_hole.diameter",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "rear_hole.diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 2.7,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_rear_hole.edge_offset",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "rear_hole.edge_offset",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "rear_hole.edge_offset",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 3,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_rear_hole.pair_spacing",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "rear_hole.pair_spacing",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "rear_hole.pair_spacing",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 10,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_short_jaw.nut_across_flats",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "short_jaw.nut_across_flats",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "short_jaw.nut_across_flats",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 5,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_short_jaw.nut_depth",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "short_jaw.nut_depth",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "short_jaw.nut_depth",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 2.1,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_bridge.counterbore_diameter",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "bridge.counterbore_diameter",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "bridge.counterbore_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 4.6,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_bridge.counterbore_depth",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "bridge.counterbore_depth",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "bridge.counterbore_depth",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 2.1,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_bridge.slot_width",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "bridge.slot_width",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "bridge.slot_width",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 4,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_bridge.slot_depth",
+      "component": "N",
+      "weight": 0.1111111111111111,
+      "question": "bridge.slot_depth",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "bridge.slot_depth",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 5,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.1,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+        "status": "pending_full_measurement_mapping",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "target_surface",
+      "component": "T",
+      "weight": 0.5,
+      "question": "目标局部表面的真实凹腔、轮廓、厚度及修改范围重建",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md",
+      "parameters": {
+        "half_scale_m": 0.0001,
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "scope": "task-defined modified features only; exclude N dimensional residuals from T semantic checks",
+        "target_scene": "solution/reference/scene.blend",
+        "baseline_scene": "environment/input/initial.blend"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "weight": 0.16666666666666666,
+      "question": "Adapt the supplied three-piece programming clip for a narrower bridge opening and a revised pair of captive-nut fasteners. Work from input/initial.blend; input/source.scad is the original parametric design for reference. The long jaw, short jaw and small bridge are arranged separately for printing. Keep that arrangement and keep each piece independently editable.\n\nOnly modify the following features, with all dimensions in millimetres. On the short jaw, identify the rear pair of vertical fastening holes and their hexagonal nut pockets, at the opposite end from the small probe-board holes. Keep their distance along the jaw unchanged. Place each rear hole centre 3.0 from its nearest long side edge of the 16-wide jaw, giving 10.0 centre-to-centre spacing across the jaw. Increase both through-holes to diameter 2.7. Make both hexagonal nut pockets 5.0 across flats and 2.1 deep, opening from the same face as before.\n\nUpdate the matching hole pair in the bridge to the same 3.0 edge offsets and 10.0 centre spacing. Make the through-holes diameter 2.7 and the circular screw-head recesses diameter 4.6 and depth 2.1, opening from their original face. Narrow the bridge's central rectangular opening from 7.0 to 4.0, keep it centred across the bridge, and retain its 5.0 depth and its open ends. Preserve the bridge's outside dimensions and rounded outline. The hole pattern must still correspond to the short jaw when the mating faces are brought together.\n\nLeave the entire long jaw unchanged. On the short jaw preserve the two front probe-board holes, the pivot ears and their holes, the spring seat, the outside contour and thickness, and all geometry outside the rear fastener adaptation. Retain the original materials, orientations, positions and number of pieces. Do not globally scale or stretch the model. Each piece must remain a closed, connected solid with real through-holes and recesses, without loose filler objects or duplicate surfaces. Modified feature dimensions must be within 0.1 mm of the requirements; unaffected surfaces must stay within 0.05 mm of the initial geometry. Keep metres and Z up in the Blender and GLB deliverables. The initial CAD source is optional implementation context; your reproducible submission entry point must run through Blender as specified below and must not depend on a private authoring installation.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "weight": 0.16666666666666666,
+      "question": "本题孔、槽、口袋和相交通道为真实空腔；按题面区分盲孔、贯通与连接，不得封片/填料冒充；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "weight": 0.16666666666666666,
+      "question": "移除/填补题面指定旧特征并保留未指定的细节；不得叠加两套孔/槽或全局拉伸；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "protected_native",
+      "component": "K",
+      "weight": 0.6,
+      "question": "公开初始场景中允许修改区外的表面和姿态",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md",
+      "parameters": {
+        "baseline_scene": "environment/input/initial.blend",
+        "scope_contract": {
+          "l1_edit_quality": {
+            "version": "l1-codeedit-quality-v1.0.0",
+            "weights": {
+              "numeric": 0.4,
+              "target": 0.4,
+              "preservation": 0.2
+            },
+            "numeric_groups": {
+              "piece_count": [
+                "part_count"
+              ],
+              "short_jaw_hole_a": [
+                "short_jaw_hole_a"
+              ],
+              "short_jaw_hole_b": [
+                "short_jaw_hole_b"
+              ],
+              "bridge_hole_a": [
+                "bridge_hole_a"
+              ],
+              "bridge_hole_b": [
+                "bridge_hole_b"
+              ]
+            },
+            "target_checks": [
+              "native_edit_target",
+              "glb_edit_target"
+            ],
+            "preservation_groups": {
+              "preserved_bottom": [
+                "preserved_bottom"
+              ],
+              "preserved_bounds": [
+                "preserved_bounds"
+              ],
+              "sampled_surface": [
+                "native_edit_preservation",
+                "glb_edit_preservation"
+              ]
+            },
+            "system_checks": [
+              "review_valid",
+              "native_procedural_materials",
+              "glb_procedural_materials",
+              "native_state_materials",
+              "reproducible"
+            ],
+            "surface": {
+              "dimension_m": 0.0001,
+              "preserve_m": 5e-05,
+              "samples": 4096
+            },
+            "pending_numeric_requirements": [
+              {
+                "id": "rear_hole.diameter",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 2.7,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "rear_hole.edge_offset",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 3,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "rear_hole.pair_spacing",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 10,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "short_jaw.nut_across_flats",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 5,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "short_jaw.nut_depth",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 2.1,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.counterbore_diameter",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 4.6,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.counterbore_depth",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 2.1,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.slot_width",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 4,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.slot_depth",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 5,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              }
+            ],
+            "scope": "implemented_numeric_checks_and_sampled_edit_surface; full CAD clauses and landmark mapping remain partial"
+          },
+          "l1_geometry": {
+            "version": "l1-mesh-v1",
+            "weld_m": 1e-09,
+            "intersection_epsilon_m": 1e-09,
+            "degenerate_area_m2": 1e-18,
+            "max_triangles": 200000,
+            "max_intersection_pairs": 2000000
+          },
+          "tolerances": {
+            "dimension_m": 0.0001,
+            "bore_radius_m": 5e-05,
+            "preserve_m": 5e-05,
+            "color_proxy": 1e-05
+          }
+        },
+        "half_scale_m": 5e-05,
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "fallback_half_scale": "L2 only: 0.001 * frozen baseline protected-region maximum span",
+        "normalization": "per protected property tolerance; equal required groups; no arbitrary registration",
+        "allowed_induced_changes": "legitimate shadows/reflections from permitted edit"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "protected_properties",
+      "component": "K",
+      "weight": 0.2,
+      "question": "允许修改区外的材质参数、层级及保留相机参数",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "baseline_scene": "environment/input/initial.blend",
+        "scope_contract": {
+          "l1_edit_quality": {
+            "version": "l1-codeedit-quality-v1.0.0",
+            "weights": {
+              "numeric": 0.4,
+              "target": 0.4,
+              "preservation": 0.2
+            },
+            "numeric_groups": {
+              "piece_count": [
+                "part_count"
+              ],
+              "short_jaw_hole_a": [
+                "short_jaw_hole_a"
+              ],
+              "short_jaw_hole_b": [
+                "short_jaw_hole_b"
+              ],
+              "bridge_hole_a": [
+                "bridge_hole_a"
+              ],
+              "bridge_hole_b": [
+                "bridge_hole_b"
+              ]
+            },
+            "target_checks": [
+              "native_edit_target",
+              "glb_edit_target"
+            ],
+            "preservation_groups": {
+              "preserved_bottom": [
+                "preserved_bottom"
+              ],
+              "preserved_bounds": [
+                "preserved_bounds"
+              ],
+              "sampled_surface": [
+                "native_edit_preservation",
+                "glb_edit_preservation"
+              ]
+            },
+            "system_checks": [
+              "review_valid",
+              "native_procedural_materials",
+              "glb_procedural_materials",
+              "native_state_materials",
+              "reproducible"
+            ],
+            "surface": {
+              "dimension_m": 0.0001,
+              "preserve_m": 5e-05,
+              "samples": 4096
+            },
+            "pending_numeric_requirements": [
+              {
+                "id": "rear_hole.diameter",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 2.7,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "rear_hole.edge_offset",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 3,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "rear_hole.pair_spacing",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 10,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "short_jaw.nut_across_flats",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 5,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "short_jaw.nut_depth",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 2.1,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.counterbore_diameter",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 4.6,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.counterbore_depth",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 2.1,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.slot_width",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 4,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              },
+              {
+                "id": "bridge.slot_depth",
+                "quantity": "dimension",
+                "unit": "mm",
+                "public_nominal": 5,
+                "judgement_reference": "public_nominal",
+                "tolerance_mm": 0.1,
+                "tolerance_authority": "instruction_and_EVALUATION",
+                "comparison": "per_dimension_error",
+                "tolerance_quantity": "feature_error",
+                "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+                "status": "pending_full_measurement_mapping"
+              }
+            ],
+            "scope": "implemented_numeric_checks_and_sampled_edit_surface; full CAD clauses and landmark mapping remain partial"
+          },
+          "l1_geometry": {
+            "version": "l1-mesh-v1",
+            "weld_m": 1e-09,
+            "intersection_epsilon_m": 1e-09,
+            "degenerate_area_m2": 1e-18,
+            "max_triangles": 200000,
+            "max_intersection_pairs": 2000000
+          },
+          "tolerances": {
+            "dimension_m": 0.0001,
+            "bore_radius_m": 5e-05,
+            "preserve_m": 5e-05,
+            "color_proxy": 1e-05
+          }
+        },
+        "tolerances": {
+          "dimension_m": 0.0001,
+          "bore_radius_m": 5e-05,
+          "preserve_m": 5e-05,
+          "color_proxy": 1e-05
+        },
+        "normalization": "equal protected property groups; numeric kernels with public tolerance; exact categorical identity where required"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "weight": 0.2,
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "eba035255b5c93e5572e28015faa57a340bf18b328fb865230e51982287ac522",
+    "task.toml": "f8a8f2ae300992837dc64853e0b0e9912be97dea8c716f6bbd8a7d13aa441231",
+    "harness/eval_spec.json": "722b9445febb435658a0597686d767f94bc9d474ecd35dc9d96fe2726f84a9d6",
+    "solution/reference/initial.png": "066d6f450c85523cfbe1b33092b59ea90d5f12f482146bc7b65d64663f4f0bd0",
+    "solution/reference/target.png": "5c288278277c526db9fb61e15c6c26e46c4fde2e65e1d969572b5f99f9de2c19"
+  },
+  "reference_binding_status": "frozen_existing_context",
+  "edit_context": {
+    "before": {
+      "path": "solution/reference/initial.png",
+      "sha256": "066d6f450c85523cfbe1b33092b59ea90d5f12f482146bc7b65d64663f4f0bd0"
+    },
+    "target": {
+      "path": "solution/reference/target.png",
+      "sha256": "5c288278277c526db9fb61e15c6c26e46c4fde2e65e1d969572b5f99f9de2c19"
+    }
+  },
+  "native_edit_context": {
+    "before": "environment/input/initial.blend",
+    "target": "solution/reference/scene.blend"
+  },
+  "native_scope": {
+    "l1_edit_quality": {
+      "version": "l1-codeedit-quality-v1.0.0",
+      "weights": {
+        "numeric": 0.4,
+        "target": 0.4,
+        "preservation": 0.2
+      },
+      "numeric_groups": {
+        "piece_count": [
+          "part_count"
+        ],
+        "short_jaw_hole_a": [
+          "short_jaw_hole_a"
+        ],
+        "short_jaw_hole_b": [
+          "short_jaw_hole_b"
+        ],
+        "bridge_hole_a": [
+          "bridge_hole_a"
+        ],
+        "bridge_hole_b": [
+          "bridge_hole_b"
+        ]
+      },
+      "target_checks": [
+        "native_edit_target",
+        "glb_edit_target"
+      ],
+      "preservation_groups": {
+        "preserved_bottom": [
+          "preserved_bottom"
+        ],
+        "preserved_bounds": [
+          "preserved_bounds"
+        ],
+        "sampled_surface": [
+          "native_edit_preservation",
+          "glb_edit_preservation"
+        ]
+      },
+      "system_checks": [
+        "review_valid",
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials",
+        "reproducible"
+      ],
+      "surface": {
+        "dimension_m": 0.0001,
+        "preserve_m": 5e-05,
+        "samples": 4096
+      },
+      "pending_numeric_requirements": [
+        {
+          "id": "rear_hole.diameter",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 2.7,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "rear_hole.edge_offset",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 3,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "rear_hole.pair_spacing",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 10,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "short_jaw.nut_across_flats",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 5,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "short_jaw.nut_depth",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 2.1,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "bridge.counterbore_diameter",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 4.6,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "bridge.counterbore_depth",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 2.1,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "bridge.slot_width",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 4,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        },
+        {
+          "id": "bridge.slot_depth",
+          "quantity": "dimension",
+          "unit": "mm",
+          "public_nominal": 5,
+          "judgement_reference": "public_nominal",
+          "tolerance_mm": 0.1,
+          "tolerance_authority": "instruction_and_EVALUATION",
+          "comparison": "per_dimension_error",
+          "tolerance_quantity": "feature_error",
+          "datum": "初始世界坐标，不允许配准抹去移动；Code001虚拟配合分析不改变真实保持坐标。",
+          "status": "pending_full_measurement_mapping"
+        }
+      ],
+      "scope": "implemented_numeric_checks_and_sampled_edit_surface; full CAD clauses and landmark mapping remain partial"
+    },
+    "l1_geometry": {
+      "version": "l1-mesh-v1",
+      "weld_m": 1e-09,
+      "intersection_epsilon_m": 1e-09,
+      "degenerate_area_m2": 1e-18,
+      "max_triangles": 200000,
+      "max_intersection_pairs": 2000000
+    },
+    "tolerances": {
+      "dimension_m": 0.0001,
+      "bore_radius_m": 5e-05,
+      "preserve_m": 5e-05,
+      "color_proxy": 1e-05
+    }
+  },
+  "geometry_gt_policy": "Use supplied initial-frame target only within explicit edit scope; fixed format conversions, no fitted registration.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

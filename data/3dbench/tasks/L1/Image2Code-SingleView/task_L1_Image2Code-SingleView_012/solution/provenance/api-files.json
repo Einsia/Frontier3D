@@ -1,0 +1,964 @@
+{
+  "Diffuse": {
+    "8k": {
+      "jpg": {
+        "size": 41851874,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_diff_8k.jpg",
+        "md5": "165dd958490a9cdc8c333aa46d309f73"
+      },
+      "png": {
+        "size": 240427201,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/treasure_chest/treasure_chest_diff_8k.png",
+        "md5": "9412d3621b547d4547aac69c83c2cc7a"
+      },
+      "exr": {
+        "size": 88385610,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_diff_8k.exr",
+        "md5": "3a5079c46abddf226700dc2ee84f8791"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 11027800,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_diff_4k.jpg",
+        "md5": "b9b310b2d1ecf9c9c95848256bb1d507"
+      },
+      "png": {
+        "size": 73923816,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/treasure_chest/treasure_chest_diff_4k.png",
+        "md5": "c60ea33dbf40f50ef62e6ac3567d7099"
+      },
+      "exr": {
+        "size": 20820686,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_diff_4k.exr",
+        "md5": "5d52f4fc661f4064b26b66af4fdc1011"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 2999401,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_diff_2k.jpg",
+        "md5": "b746ad6fb5bd24c8b7027abba607deb7"
+      },
+      "png": {
+        "size": 20240734,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/treasure_chest/treasure_chest_diff_2k.png",
+        "md5": "7d32fb31ba99b61ff199cd131397a772"
+      },
+      "exr": {
+        "size": 5408124,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_diff_2k.exr",
+        "md5": "ce47b4a7b2fafce3f02e2a19126d649b"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 812089,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_diff_1k.jpg",
+        "md5": "59a684377b91eed5cb0cf44fad6b1089"
+      },
+      "png": {
+        "size": 5391397,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/treasure_chest/treasure_chest_diff_1k.png",
+        "md5": "c9456b341fc9bb12da34461c02bc82b1"
+      },
+      "exr": {
+        "size": 1495387,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_diff_1k.exr",
+        "md5": "d089e24908403901b80fe1d3fed56278"
+      }
+    }
+  },
+  "nor_dx": {
+    "8k": {
+      "jpg": {
+        "size": 63804814,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_nor_dx_8k.jpg",
+        "md5": "1c7f7aa8a2eae43fa54e461529ace195"
+      },
+      "png": {
+        "size": 333235398,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/treasure_chest/treasure_chest_nor_dx_8k.png",
+        "md5": "6f4112bee2c332f68e5d0f40ab1d8b90"
+      },
+      "exr": {
+        "size": 126303030,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_nor_dx_8k.exr",
+        "md5": "81492cf390b6ef6e58ec1cecd74b7b68"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 16371699,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_nor_dx_4k.jpg",
+        "md5": "c1d3178581d6cf3508890efd0edc3ef6"
+      },
+      "png": {
+        "size": 87230652,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/treasure_chest/treasure_chest_nor_dx_4k.png",
+        "md5": "5c648c04425d81edf51890efa457ebb8"
+      },
+      "exr": {
+        "size": 34411934,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_nor_dx_4k.exr",
+        "md5": "7212f167cd2c9f74e9b71da7230715b7"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 3800763,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_nor_dx_2k.jpg",
+        "md5": "af6cbc3d92d3749f3ff4703576102b5b"
+      },
+      "png": {
+        "size": 21971892,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/treasure_chest/treasure_chest_nor_dx_2k.png",
+        "md5": "4add2ea15c6f920c428d0ecb6c14dab3"
+      },
+      "exr": {
+        "size": 8385308,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_nor_dx_2k.exr",
+        "md5": "78955236d06492c3a3836e55075d4ce2"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 892043,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_nor_dx_1k.jpg",
+        "md5": "88417a754b9b86ccdf8903e09a7d5981"
+      },
+      "png": {
+        "size": 5516727,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/treasure_chest/treasure_chest_nor_dx_1k.png",
+        "md5": "79d04ed93cd062d6f237ff15fb21428b"
+      },
+      "exr": {
+        "size": 2028562,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_nor_dx_1k.exr",
+        "md5": "1f65db4ef9e07dea1e548468e3a21700"
+      }
+    }
+  },
+  "nor_gl": {
+    "8k": {
+      "jpg": {
+        "size": 63708733,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_nor_gl_8k.jpg",
+        "md5": "3ec18b65158f7f42aed2cdc1f6d5553a"
+      },
+      "png": {
+        "size": 333241855,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/treasure_chest/treasure_chest_nor_gl_8k.png",
+        "md5": "94d8e39f2a7ef6de437f5500aca619ff"
+      },
+      "exr": {
+        "size": 126412047,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_nor_gl_8k.exr",
+        "md5": "29dc6d22a69fc75cf5a647d8d92aed3b"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 16385180,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_nor_gl_4k.jpg",
+        "md5": "618ccf3b5fb0a5cf5e4b6c3fd2093691"
+      },
+      "png": {
+        "size": 87232602,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/treasure_chest/treasure_chest_nor_gl_4k.png",
+        "md5": "667d1a6ca4728e62be4fc493d3daf93f"
+      },
+      "exr": {
+        "size": 34440697,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_nor_gl_4k.exr",
+        "md5": "f652d5767a42e0fbc52e111cd4beb287"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 3805947,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_nor_gl_2k.jpg",
+        "md5": "39086131c399a6b37b081fad215c099e"
+      },
+      "png": {
+        "size": 21972217,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/treasure_chest/treasure_chest_nor_gl_2k.png",
+        "md5": "9171e38586a7d1cf150f4dd06fc9ed82"
+      },
+      "exr": {
+        "size": 8388399,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_nor_gl_2k.exr",
+        "md5": "0aebe5ff75ad9919e529eabfbe3a7393"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 893221,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_nor_gl_1k.jpg",
+        "md5": "5ce2977f7417f17575b92873a56a3c4f"
+      },
+      "png": {
+        "size": 5516783,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/treasure_chest/treasure_chest_nor_gl_1k.png",
+        "md5": "fcf4879daf1462755dbd20a6f4316d5b"
+      },
+      "exr": {
+        "size": 2028681,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_nor_gl_1k.exr",
+        "md5": "4bca1c5e328c3dec0ceada0975671bac"
+      }
+    }
+  },
+  "blend": {
+    "8k": {
+      "blend": {
+        "include": {
+          "textures/treasure_chest_rough_8k.exr": {
+            "size": 47315715,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_rough_8k.exr",
+            "md5": "272dd2d80e70186be33114a33d971a30"
+          },
+          "textures/treasure_chest_diff_8k.jpg": {
+            "size": 41851874,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_diff_8k.jpg",
+            "md5": "165dd958490a9cdc8c333aa46d309f73"
+          },
+          "textures/treasure_chest_nor_gl_8k.exr": {
+            "size": 126412047,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_nor_gl_8k.exr",
+            "md5": "29dc6d22a69fc75cf5a647d8d92aed3b"
+          },
+          "textures/treasure_chest_metal_8k.exr": {
+            "size": 3681295,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_metal_8k.exr",
+            "md5": "e4aa59dac03273b85df4c601091395a7"
+          }
+        },
+        "size": 2621471,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/8k/treasure_chest/treasure_chest_8k.blend",
+        "md5": "614d95e8924018e751e930dfd0c6a004"
+      }
+    },
+    "4k": {
+      "blend": {
+        "include": {
+          "textures/treasure_chest_nor_gl_4k.exr": {
+            "size": 34440697,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_nor_gl_4k.exr",
+            "md5": "f652d5767a42e0fbc52e111cd4beb287"
+          },
+          "textures/treasure_chest_rough_4k.exr": {
+            "size": 15496107,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_rough_4k.exr",
+            "md5": "c4bedad81f15ced20ef355186edb6deb"
+          },
+          "textures/treasure_chest_diff_4k.jpg": {
+            "size": 11027800,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_diff_4k.jpg",
+            "md5": "b9b310b2d1ecf9c9c95848256bb1d507"
+          },
+          "textures/treasure_chest_metal_4k.exr": {
+            "size": 1357527,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_metal_4k.exr",
+            "md5": "2e033d9c643825543e460d9121296719"
+          }
+        },
+        "size": 2621473,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/4k/treasure_chest/treasure_chest_4k.blend",
+        "md5": "b50ec617b62c6a2e00d18628fb2f1446"
+      }
+    },
+    "2k": {
+      "blend": {
+        "include": {
+          "textures/treasure_chest_nor_gl_2k.exr": {
+            "size": 8388399,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_nor_gl_2k.exr",
+            "md5": "0aebe5ff75ad9919e529eabfbe3a7393"
+          },
+          "textures/treasure_chest_rough_2k.exr": {
+            "size": 4420065,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_rough_2k.exr",
+            "md5": "5ef7b80d5abe5f0f6e93c310198101a8"
+          },
+          "textures/treasure_chest_diff_2k.jpg": {
+            "size": 2999401,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_diff_2k.jpg",
+            "md5": "b746ad6fb5bd24c8b7027abba607deb7"
+          },
+          "textures/treasure_chest_metal_2k.exr": {
+            "size": 479504,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_metal_2k.exr",
+            "md5": "761dfccfdd5e486ce92b8ca1a3023ea3"
+          }
+        },
+        "size": 2621579,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/2k/treasure_chest/treasure_chest_2k.blend",
+        "md5": "f41ebf0dc2f792d029f8fbcf9477ccba"
+      }
+    },
+    "1k": {
+      "blend": {
+        "include": {
+          "textures/treasure_chest_metal_1k.exr": {
+            "size": 168816,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_metal_1k.exr",
+            "md5": "fa9c5a1f337c0584e7d486ed035fd972"
+          },
+          "textures/treasure_chest_rough_1k.exr": {
+            "size": 1183153,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_rough_1k.exr",
+            "md5": "0942455c48b69ed25c9012bb09beba98"
+          },
+          "textures/treasure_chest_diff_1k.jpg": {
+            "size": 812089,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_diff_1k.jpg",
+            "md5": "59a684377b91eed5cb0cf44fad6b1089"
+          },
+          "textures/treasure_chest_nor_gl_1k.exr": {
+            "size": 2028681,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_nor_gl_1k.exr",
+            "md5": "4bca1c5e328c3dec0ceada0975671bac"
+          }
+        },
+        "size": 2621706,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/treasure_chest/treasure_chest_1k.blend",
+        "md5": "33c79541634bbb77fdd68035fb036779"
+      }
+    }
+  },
+  "gltf": {
+    "8k": {
+      "gltf": {
+        "include": {
+          "textures/treasure_chest_diff_8k.jpg": {
+            "size": 41851874,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_diff_8k.jpg",
+            "md5": "165dd958490a9cdc8c333aa46d309f73"
+          },
+          "textures/treasure_chest_arm_8k.jpg": {
+            "size": 44387183,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_arm_8k.jpg",
+            "md5": "8a5d9b0d1c4037fdcc92c70898b91711"
+          },
+          "textures/treasure_chest_nor_gl_8k.jpg": {
+            "size": 63708733,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_nor_gl_8k.jpg",
+            "md5": "3ec18b65158f7f42aed2cdc1f6d5553a"
+          },
+          "treasure_chest.bin": {
+            "size": 2811372,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/treasure_chest/treasure_chest.bin",
+            "md5": "c955b1084bb3f7c8cea414bdf1a89845"
+          }
+        },
+        "size": 8584,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/treasure_chest/treasure_chest_8k.gltf",
+        "md5": "f68c0facec2d09146be8bedb58230596"
+      }
+    },
+    "4k": {
+      "gltf": {
+        "include": {
+          "textures/treasure_chest_arm_4k.jpg": {
+            "size": 12079218,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_arm_4k.jpg",
+            "md5": "97d27ef2fde9686841ffd37845634ad5"
+          },
+          "textures/treasure_chest_nor_gl_4k.jpg": {
+            "size": 16385180,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_nor_gl_4k.jpg",
+            "md5": "618ccf3b5fb0a5cf5e4b6c3fd2093691"
+          },
+          "textures/treasure_chest_diff_4k.jpg": {
+            "size": 11027800,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_diff_4k.jpg",
+            "md5": "b9b310b2d1ecf9c9c95848256bb1d507"
+          },
+          "treasure_chest.bin": {
+            "size": 2811372,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/treasure_chest/treasure_chest.bin",
+            "md5": "c955b1084bb3f7c8cea414bdf1a89845"
+          }
+        },
+        "size": 8584,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/treasure_chest/treasure_chest_4k.gltf",
+        "md5": "7ae518cc768545e02af2f819e52e08f3"
+      }
+    },
+    "2k": {
+      "gltf": {
+        "include": {
+          "textures/treasure_chest_arm_2k.jpg": {
+            "size": 3384411,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_arm_2k.jpg",
+            "md5": "f4721e93c7e8e261c14df4364083b81d"
+          },
+          "textures/treasure_chest_diff_2k.jpg": {
+            "size": 2999401,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_diff_2k.jpg",
+            "md5": "b746ad6fb5bd24c8b7027abba607deb7"
+          },
+          "treasure_chest.bin": {
+            "size": 2811372,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/treasure_chest/treasure_chest.bin",
+            "md5": "c955b1084bb3f7c8cea414bdf1a89845"
+          },
+          "textures/treasure_chest_nor_gl_2k.jpg": {
+            "size": 3805947,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_nor_gl_2k.jpg",
+            "md5": "39086131c399a6b37b081fad215c099e"
+          }
+        },
+        "size": 8584,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/treasure_chest/treasure_chest_2k.gltf",
+        "md5": "a11cac9b46a20c2d046d4266a10428d2"
+      }
+    },
+    "1k": {
+      "gltf": {
+        "include": {
+          "textures/treasure_chest_arm_1k.jpg": {
+            "size": 958484,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_arm_1k.jpg",
+            "md5": "ffb1a453af7e91fb63c1ec51da29832a"
+          },
+          "textures/treasure_chest_diff_1k.jpg": {
+            "size": 812089,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_diff_1k.jpg",
+            "md5": "59a684377b91eed5cb0cf44fad6b1089"
+          },
+          "textures/treasure_chest_nor_gl_1k.jpg": {
+            "size": 893221,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_nor_gl_1k.jpg",
+            "md5": "5ce2977f7417f17575b92873a56a3c4f"
+          },
+          "treasure_chest.bin": {
+            "size": 2811372,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/treasure_chest/treasure_chest.bin",
+            "md5": "c955b1084bb3f7c8cea414bdf1a89845"
+          }
+        },
+        "size": 8584,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/treasure_chest/treasure_chest_1k.gltf",
+        "md5": "7bfc4b335cff3e2641c8b9e55dbee0a2"
+      }
+    }
+  },
+  "usd": {
+    "8k": {
+      "usd": {
+        "include": {
+          "textures/treasure_chest_rough_8k.exr": {
+            "size": 47315715,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_rough_8k.exr",
+            "md5": "272dd2d80e70186be33114a33d971a30"
+          },
+          "textures/treasure_chest_diff_8k.jpg": {
+            "size": 41851874,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_diff_8k.jpg",
+            "md5": "165dd958490a9cdc8c333aa46d309f73"
+          },
+          "textures/treasure_chest_nor_gl_8k.exr": {
+            "size": 126412047,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_nor_gl_8k.exr",
+            "md5": "29dc6d22a69fc75cf5a647d8d92aed3b"
+          },
+          "textures/treasure_chest_metal_8k.exr": {
+            "size": 3681295,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_metal_8k.exr",
+            "md5": "e4aa59dac03273b85df4c601091395a7"
+          }
+        },
+        "size": 7342520,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/8k/treasure_chest/treasure_chest_8k.usdc",
+        "md5": "75deceef0d3a5b6f5c2f7935485a463c"
+      }
+    },
+    "4k": {
+      "usd": {
+        "include": {
+          "textures/treasure_chest_nor_gl_4k.exr": {
+            "size": 34440697,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_nor_gl_4k.exr",
+            "md5": "f652d5767a42e0fbc52e111cd4beb287"
+          },
+          "textures/treasure_chest_rough_4k.exr": {
+            "size": 15496107,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_rough_4k.exr",
+            "md5": "c4bedad81f15ced20ef355186edb6deb"
+          },
+          "textures/treasure_chest_diff_4k.jpg": {
+            "size": 11027800,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_diff_4k.jpg",
+            "md5": "b9b310b2d1ecf9c9c95848256bb1d507"
+          },
+          "textures/treasure_chest_metal_4k.exr": {
+            "size": 1357527,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_metal_4k.exr",
+            "md5": "2e033d9c643825543e460d9121296719"
+          }
+        },
+        "size": 7342520,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/4k/treasure_chest/treasure_chest_4k.usdc",
+        "md5": "746f1482d28ca0376ebc3008dc448494"
+      }
+    },
+    "2k": {
+      "usd": {
+        "include": {
+          "textures/treasure_chest_nor_gl_2k.exr": {
+            "size": 8388399,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_nor_gl_2k.exr",
+            "md5": "0aebe5ff75ad9919e529eabfbe3a7393"
+          },
+          "textures/treasure_chest_rough_2k.exr": {
+            "size": 4420065,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_rough_2k.exr",
+            "md5": "5ef7b80d5abe5f0f6e93c310198101a8"
+          },
+          "textures/treasure_chest_diff_2k.jpg": {
+            "size": 2999401,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_diff_2k.jpg",
+            "md5": "b746ad6fb5bd24c8b7027abba607deb7"
+          },
+          "textures/treasure_chest_metal_2k.exr": {
+            "size": 479504,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_metal_2k.exr",
+            "md5": "761dfccfdd5e486ce92b8ca1a3023ea3"
+          }
+        },
+        "size": 7342519,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/2k/treasure_chest/treasure_chest_2k.usdc",
+        "md5": "df4e4e1ce42dd8408550fa88b04fc4b4"
+      }
+    },
+    "1k": {
+      "usd": {
+        "include": {
+          "textures/treasure_chest_metal_1k.exr": {
+            "size": 168816,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_metal_1k.exr",
+            "md5": "fa9c5a1f337c0584e7d486ed035fd972"
+          },
+          "textures/treasure_chest_rough_1k.exr": {
+            "size": 1183153,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_rough_1k.exr",
+            "md5": "0942455c48b69ed25c9012bb09beba98"
+          },
+          "textures/treasure_chest_diff_1k.jpg": {
+            "size": 812089,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_diff_1k.jpg",
+            "md5": "59a684377b91eed5cb0cf44fad6b1089"
+          },
+          "textures/treasure_chest_nor_gl_1k.exr": {
+            "size": 2028681,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_nor_gl_1k.exr",
+            "md5": "4bca1c5e328c3dec0ceada0975671bac"
+          }
+        },
+        "size": 7342519,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/1k/treasure_chest/treasure_chest_1k.usdc",
+        "md5": "e2daab8526f4499211634d9a092c0d87"
+      }
+    }
+  },
+  "Metal": {
+    "8k": {
+      "jpg": {
+        "size": 4215523,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_metal_8k.jpg",
+        "md5": "39c3fdc52b8559018d8f64df80adfc40"
+      },
+      "png": {
+        "size": 3599045,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/treasure_chest/treasure_chest_metal_8k.png",
+        "md5": "de0f6da14fa55c1bf9afa83ebf2042da"
+      },
+      "exr": {
+        "size": 3681295,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_metal_8k.exr",
+        "md5": "e4aa59dac03273b85df4c601091395a7"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 1343328,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_metal_4k.jpg",
+        "md5": "440c2c0b6620cfcc3ceeb8542fc114c0"
+      },
+      "png": {
+        "size": 1442338,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/treasure_chest/treasure_chest_metal_4k.png",
+        "md5": "920aa2af070910d25d7dff5829debced"
+      },
+      "exr": {
+        "size": 1357527,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_metal_4k.exr",
+        "md5": "2e033d9c643825543e460d9121296719"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 470561,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_metal_2k.jpg",
+        "md5": "60de0b2482ad919e69a91707d8e3a77f"
+      },
+      "png": {
+        "size": 518455,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/treasure_chest/treasure_chest_metal_2k.png",
+        "md5": "27b8b81ac7c9601f63c43567cf6ac114"
+      },
+      "exr": {
+        "size": 479504,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_metal_2k.exr",
+        "md5": "761dfccfdd5e486ce92b8ca1a3023ea3"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 173850,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_metal_1k.jpg",
+        "md5": "fab49d0d20867459b0e31385fbb8c95b"
+      },
+      "png": {
+        "size": 180629,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/treasure_chest/treasure_chest_metal_1k.png",
+        "md5": "8c67ffc59bda00ab54bcb7936fa0cd31"
+      },
+      "exr": {
+        "size": 168816,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_metal_1k.exr",
+        "md5": "fa9c5a1f337c0584e7d486ed035fd972"
+      }
+    }
+  },
+  "fbx": {
+    "8k": {
+      "fbx": {
+        "include": {
+          "textures/treasure_chest_rough_8k.exr": {
+            "size": 47315715,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_rough_8k.exr",
+            "md5": "272dd2d80e70186be33114a33d971a30"
+          },
+          "textures/treasure_chest_diff_8k.jpg": {
+            "size": 41851874,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_diff_8k.jpg",
+            "md5": "165dd958490a9cdc8c333aa46d309f73"
+          },
+          "textures/treasure_chest_nor_gl_8k.exr": {
+            "size": 126412047,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_nor_gl_8k.exr",
+            "md5": "29dc6d22a69fc75cf5a647d8d92aed3b"
+          },
+          "textures/treasure_chest_metal_8k.exr": {
+            "size": 3681295,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_metal_8k.exr",
+            "md5": "e4aa59dac03273b85df4c601091395a7"
+          }
+        },
+        "size": 5062700,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/8k/treasure_chest/treasure_chest_8k.fbx",
+        "md5": "1d334c451620df4d2737ef1cfba29a49"
+      }
+    },
+    "4k": {
+      "fbx": {
+        "include": {
+          "textures/treasure_chest_nor_gl_4k.exr": {
+            "size": 34440697,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_nor_gl_4k.exr",
+            "md5": "f652d5767a42e0fbc52e111cd4beb287"
+          },
+          "textures/treasure_chest_rough_4k.exr": {
+            "size": 15496107,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_rough_4k.exr",
+            "md5": "c4bedad81f15ced20ef355186edb6deb"
+          },
+          "textures/treasure_chest_diff_4k.jpg": {
+            "size": 11027800,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_diff_4k.jpg",
+            "md5": "b9b310b2d1ecf9c9c95848256bb1d507"
+          },
+          "textures/treasure_chest_metal_4k.exr": {
+            "size": 1357527,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_metal_4k.exr",
+            "md5": "2e033d9c643825543e460d9121296719"
+          }
+        },
+        "size": 5062700,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/4k/treasure_chest/treasure_chest_4k.fbx",
+        "md5": "d3ff1bd5e2708d66a0e8c57b762213d5"
+      }
+    },
+    "2k": {
+      "fbx": {
+        "include": {
+          "textures/treasure_chest_nor_gl_2k.exr": {
+            "size": 8388399,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_nor_gl_2k.exr",
+            "md5": "0aebe5ff75ad9919e529eabfbe3a7393"
+          },
+          "textures/treasure_chest_rough_2k.exr": {
+            "size": 4420065,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_rough_2k.exr",
+            "md5": "5ef7b80d5abe5f0f6e93c310198101a8"
+          },
+          "textures/treasure_chest_diff_2k.jpg": {
+            "size": 2999401,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_diff_2k.jpg",
+            "md5": "b746ad6fb5bd24c8b7027abba607deb7"
+          },
+          "textures/treasure_chest_metal_2k.exr": {
+            "size": 479504,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_metal_2k.exr",
+            "md5": "761dfccfdd5e486ce92b8ca1a3023ea3"
+          }
+        },
+        "size": 5062700,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/2k/treasure_chest/treasure_chest_2k.fbx",
+        "md5": "16fab9f3151b0c616648333787f21a81"
+      }
+    },
+    "1k": {
+      "fbx": {
+        "include": {
+          "textures/treasure_chest_metal_1k.exr": {
+            "size": 168816,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_metal_1k.exr",
+            "md5": "fa9c5a1f337c0584e7d486ed035fd972"
+          },
+          "textures/treasure_chest_diff_1k.jpg": {
+            "size": 812089,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_diff_1k.jpg",
+            "md5": "59a684377b91eed5cb0cf44fad6b1089"
+          },
+          "textures/treasure_chest_rough_1k.exr": {
+            "size": 1183153,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_rough_1k.exr",
+            "md5": "0942455c48b69ed25c9012bb09beba98"
+          },
+          "textures/treasure_chest_nor_gl_1k.exr": {
+            "size": 2028681,
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_nor_gl_1k.exr",
+            "md5": "4bca1c5e328c3dec0ceada0975671bac"
+          }
+        },
+        "size": 5062700,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/treasure_chest/treasure_chest_1k.fbx",
+        "md5": "e419ca9bc68f48e56771bcc3df3e186a"
+      }
+    }
+  },
+  "arm": {
+    "8k": {
+      "jpg": {
+        "size": 44387183,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_arm_8k.jpg",
+        "md5": "8a5d9b0d1c4037fdcc92c70898b91711"
+      },
+      "png": {
+        "size": 55275664,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/treasure_chest/treasure_chest_arm_8k.png",
+        "md5": "98c809c2abfa951f4633d378704237c7"
+      },
+      "exr": {
+        "size": 94598388,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_arm_8k.exr",
+        "md5": "6082eddb217c1fdc6e86323fbafbe017"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 12079218,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_arm_4k.jpg",
+        "md5": "97d27ef2fde9686841ffd37845634ad5"
+      },
+      "png": {
+        "size": 17032497,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/treasure_chest/treasure_chest_arm_4k.png",
+        "md5": "26422e3587db38c25d267f38191fdec4"
+      },
+      "exr": {
+        "size": 25495646,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_arm_4k.exr",
+        "md5": "578f021adf0e295ba28550c7fcfd6b92"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 3384411,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_arm_2k.jpg",
+        "md5": "f4721e93c7e8e261c14df4364083b81d"
+      },
+      "png": {
+        "size": 4748335,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/treasure_chest/treasure_chest_arm_2k.png",
+        "md5": "888ba5b301b254299f10580bcd67e4ac"
+      },
+      "exr": {
+        "size": 7152587,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_arm_2k.exr",
+        "md5": "01e32ca350851054c84a884e757735fc"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 958484,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_arm_1k.jpg",
+        "md5": "ffb1a453af7e91fb63c1ec51da29832a"
+      },
+      "png": {
+        "size": 1342188,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/treasure_chest/treasure_chest_arm_1k.png",
+        "md5": "e3a0bf1fa1cf7fa660213494d34a25f3"
+      },
+      "exr": {
+        "size": 2024011,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_arm_1k.exr",
+        "md5": "7d6f2f813e7d882ee67a3dca94424dfd"
+      }
+    }
+  },
+  "Rough": {
+    "8k": {
+      "jpg": {
+        "size": 35924400,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_rough_8k.jpg",
+        "md5": "e1b90a656ade5b385cba9ff49623c9b9"
+      },
+      "png": {
+        "size": 46884828,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/treasure_chest/treasure_chest_rough_8k.png",
+        "md5": "b7931e1753f7dea3d289a223cba78ec6"
+      },
+      "exr": {
+        "size": 47315715,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_rough_8k.exr",
+        "md5": "272dd2d80e70186be33114a33d971a30"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 9379003,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_rough_4k.jpg",
+        "md5": "bb998fcd2b198e22975c9fa60b44f582"
+      },
+      "png": {
+        "size": 21393524,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/treasure_chest/treasure_chest_rough_4k.png",
+        "md5": "41a333acfe689c5d7656c09c5e79fab2"
+      },
+      "exr": {
+        "size": 15496107,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_rough_4k.exr",
+        "md5": "c4bedad81f15ced20ef355186edb6deb"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 2517081,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_rough_2k.jpg",
+        "md5": "f434c3f0fa3d597ef6d5988f31de1b78"
+      },
+      "png": {
+        "size": 6412336,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/treasure_chest/treasure_chest_rough_2k.png",
+        "md5": "11a8d0d5e7735708c82354ae53fe10bf"
+      },
+      "exr": {
+        "size": 4420065,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_rough_2k.exr",
+        "md5": "5ef7b80d5abe5f0f6e93c310198101a8"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 673419,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_rough_1k.jpg",
+        "md5": "defbab46774db1a7af09cfc854e090bd"
+      },
+      "png": {
+        "size": 1732381,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/treasure_chest/treasure_chest_rough_1k.png",
+        "md5": "0891e087716783b57e8aa24773b97f4e"
+      },
+      "exr": {
+        "size": 1183153,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_rough_1k.exr",
+        "md5": "0942455c48b69ed25c9012bb09beba98"
+      }
+    }
+  },
+  "AO": {
+    "8k": {
+      "jpg": {
+        "size": 14038791,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/treasure_chest/treasure_chest_ao_8k.jpg",
+        "md5": "e4dd933af1db8a06f1eb8c1e8dd0512d"
+      },
+      "png": {
+        "size": 14888636,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/treasure_chest/treasure_chest_ao_8k.png",
+        "md5": "af5535aabc6974d0f5161ab2c0ce6e5e"
+      },
+      "exr": {
+        "size": 19024501,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/treasure_chest/treasure_chest_ao_8k.exr",
+        "md5": "384d66851ba4ab20bef6563f6166bc7e"
+      }
+    },
+    "4k": {
+      "jpg": {
+        "size": 5125013,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/treasure_chest/treasure_chest_ao_4k.jpg",
+        "md5": "7e939016c6e3bfe9b94d707af6fd4b57"
+      },
+      "png": {
+        "size": 10643519,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/treasure_chest/treasure_chest_ao_4k.png",
+        "md5": "3b7ef12e4daad011b8c4737cfaaf85b3"
+      },
+      "exr": {
+        "size": 8867198,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/treasure_chest/treasure_chest_ao_4k.exr",
+        "md5": "67e117c3a4064113a216a2ffc4da7c34"
+      }
+    },
+    "2k": {
+      "jpg": {
+        "size": 1689168,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/treasure_chest/treasure_chest_ao_2k.jpg",
+        "md5": "642196b5371209ce277cea2dcfb5bfa7"
+      },
+      "png": {
+        "size": 3993951,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/treasure_chest/treasure_chest_ao_2k.png",
+        "md5": "26e5171b0d8bef3051fcf643fb3f86a9"
+      },
+      "exr": {
+        "size": 3040336,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/treasure_chest/treasure_chest_ao_2k.exr",
+        "md5": "6a1a0c65d36d359ec5b4b9d94efdba10"
+      }
+    },
+    "1k": {
+      "jpg": {
+        "size": 558414,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_ao_1k.jpg",
+        "md5": "5d7ee68955f688654a626db8dcae1b4e"
+      },
+      "png": {
+        "size": 1262311,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/treasure_chest/treasure_chest_ao_1k.png",
+        "md5": "178342edb14d60d0dde8224bfff8e83d"
+      },
+      "exr": {
+        "size": 924638,
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_ao_1k.exr",
+        "md5": "42202d30fe0ff7f2ae3df3baffeccaaf"
+      }
+    }
+  }
+}

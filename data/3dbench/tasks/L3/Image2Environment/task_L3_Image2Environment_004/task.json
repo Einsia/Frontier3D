@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-e04",
+  "id": "L3/EmbodiedEnvironment/GreenhouseOrchard",
+  "domain": "embodied",
+  "input_mode": "image",
+  "title": "具身：育苗棚、果园与灌溉服务区",
+  "title_en": "Embodied Environment: Netted Plant Nursery, Orchard and Irrigation",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "7c6fd8e67944fa284d0097eba6ba69c1f01f41ddf7652f3ffe5bd3cea824cd17",
+  "chinese_instruction_sha256": "fff81c34521f537273465a5f9e155365baeacfc4519750b853eb375534f1025a",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "86da90ef4c82f15fd5dd2efc87fea760051b64fe68af94f594f9662c66f53a61",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

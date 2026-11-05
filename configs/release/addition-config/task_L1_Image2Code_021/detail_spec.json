@@ -1,0 +1,133 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_021",
+  "family": "Reference2Scene",
+  "instruction_sha256": "fb6c70bc6cf46acd048966ed23a0e7507368f45a20dab76d58548c689f100e28",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "7edeb36f60893cca90f43ff035d4a19e6151774060601a3097e8b1cbe09b9baf",
+    "reference/reference-1.png": "943b4074c7e669c31fa0dfde463487f2cff5d3f950c9b48c4d67a28cf48179db",
+    "reference/reference-2.png": "9a96b33d7f468ba8ae15b2aeb8fc14c2d8eaeca5b19983fd296df91efc7f4db3",
+    "reference/reference-3.png": "2aa7561b9132d554180d6c7ac62105efb77d35121f3d021d7a99c26ef6fb78b0"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_bars",
+      "component": "F",
+      "question": "琴条是否具有参考可见的实体厚度、圆缓倒角及端部轮廓？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_tubes",
+      "component": "F",
+      "question": "管体是否保持圆柱曲面、可见端部轮廓及局部环状节点，而非方柱？",
+      "units": [
+        "hanging resonator tubes"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_legs",
+      "component": "F",
+      "question": "支腿是否保留厚板截面、外撇形态及参考可见的局部接缝？",
+      "units": [
+        "supporting frame/legs"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_joints",
+      "component": "F",
+      "question": "端部横梁、纵梁与腿的交接是否具有实体厚度和正确的穿插遮挡？",
+      "units": [
+        "connections and occlusions"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_cords",
+      "component": "F",
+      "question": "琴条上可见的细绳与绕接部位是否保持细长连续形态及贴合连接？",
+      "units": [
+        "thin structures, connections and occlusions"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_mallets",
+      "component": "F",
+      "question": "琴槌是否具有细圆杆、圆缓短柱槌头及杆头连接，而非扁平轮廓？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+schema_version = 1
+harness_version = "l1-harness-v0.2.0"
+task_id = "L1/Text2Code"
+level = 1
+
+[generator]
+command = "src.generator"
+runtime = "local"
+model_env = "OPENAI_MODEL"
+reasoning_effort = "max"
+timeout_seconds = 57600
+max_attempts = 1
+max_total_seconds = 115200
+
+[retry_policy]
+retry_timeout = true
+retry_transport_error = true
+retry_empty_output = false
+retry_protocol_error = false
+max_retries = 5
+backoff_seconds = [2]
+
+[workspace]
+environment_files = []
+output_files = ["solution.py", "scene.blend", "scene.glb"]
+entrypoint_policy = "declared_python"
+working_directory_mode = "staged_readonly"
+network = false
+
+[recording]
+save_stdout = true
+save_stderr = true
+save_prompt_hash = true
+save_input_hashes = true
+save_output_hash = true

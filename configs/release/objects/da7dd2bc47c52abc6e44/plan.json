@@ -1,0 +1,1187 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_009",
+  "title": "同轴滤芯壳体",
+  "category": "Text2Code",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "9件独立可编辑部件：housing×1、filter×1、cap×2、seal×2、rod×1、nut×1、washer×1；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_housing",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "轴线Z且XY=0；壳体外径60 mm、孔52 mm、长70 mm，Z=8..78；两端扩孔59.4 mm、深2.1 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_filter",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "内芯外径42 mm、孔14 mm、长62 mm，中心Z=43；保留于原生场景且爆炸态可见；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_caps",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "两端盖外径68 mm、孔10.4 mm、厚8 mm，中心Z=4/82；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_seals",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "两密封环外径59 mm、孔52.6 mm、厚2 mm，中心Z=9/77，放置于端部沉孔；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_tie_rod",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "贯穿拉杆直径10 mm、长90 mm，中心Z=43；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_nut",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "圆螺母外径18 mm、孔10.4 mm、高5 mm，中心Z=90；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_washer",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "底部垫圈外径22 mm、孔10.4 mm、厚2 mm，中心Z=-3；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "壳体和端盖黄铜色、内芯米色、密封圈深色，其他按题面材质类别；无螺纹和耐压机构；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_part_roles",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "9件独立可编辑部件：housing×1、filter×1、cap×2、seal×2、rod×1、nut×1、washer×1",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "part_roles",
+        "public_requirement": "9件独立可编辑部件：housing×1、filter×1、cap×2、seal×2、rod×1、nut×1、washer×1",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "part_count",
+            "metric": "equals",
+            "group": "parts",
+            "params": {
+              "path": "/scene/mesh_count",
+              "expected": 9
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_housing",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "轴线Z且XY=0；壳体外径60 mm、孔52 mm、长70 mm，Z=8..78；两端扩孔59.4 mm、深2.1 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "housing",
+        "public_requirement": "轴线Z且XY=0；壳体外径60 mm、孔52 mm、长70 mm，Z=8..78；两端扩孔59.4 mm、深2.1 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_filter",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "内芯外径42 mm、孔14 mm、长62 mm，中心Z=43；保留于原生场景且爆炸态可见",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "filter",
+        "public_requirement": "内芯外径42 mm、孔14 mm、长62 mm，中心Z=43；保留于原生场景且爆炸态可见",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_caps",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "两端盖外径68 mm、孔10.4 mm、厚8 mm，中心Z=4/82",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "caps",
+        "public_requirement": "两端盖外径68 mm、孔10.4 mm、厚8 mm，中心Z=4/82",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_seals",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "两密封环外径59 mm、孔52.6 mm、厚2 mm，中心Z=9/77，放置于端部沉孔",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "seals",
+        "public_requirement": "两密封环外径59 mm、孔52.6 mm、厚2 mm，中心Z=9/77，放置于端部沉孔",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_tie_rod",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "贯穿拉杆直径10 mm、长90 mm，中心Z=43",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "tie_rod",
+        "public_requirement": "贯穿拉杆直径10 mm、长90 mm，中心Z=43",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_nut",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "圆螺母外径18 mm、孔10.4 mm、高5 mm，中心Z=90",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "nut",
+        "public_requirement": "圆螺母外径18 mm、孔10.4 mm、高5 mm，中心Z=90",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_washer",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "底部垫圈外径22 mm、孔10.4 mm、厚2 mm，中心Z=-3",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "washer",
+        "public_requirement": "底部垫圈外径22 mm、孔10.4 mm、厚2 mm，中心Z=-3",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "housing",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.06,
+                    0.06,
+                    0.07
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "filter",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.042,
+                    0.042,
+                    0.062
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.068,
+                    0.068,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "seal",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.059,
+                    0.059,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "rod",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.01,
+                    0.01,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "nut",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.018,
+                    0.018,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.022,
+                    0.022,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_assembly_clearance",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {
+        "requirement_id": "assembly_clearance",
+        "public_requirement": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+        "legacy_check_bindings": [],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_topology",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "所有零件闭合且分别连通",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_solid_validity",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "有效实体零件",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_units",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "米制导出，X长度/Y宽度/Z向上",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_hierarchy",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "自由描述性名称、独立可编辑部件与清晰组织",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_state_cycle",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_glb_assembled",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "GLB与原生帧1装配态一致",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "bcdb2a81a40ccc307d5372940072481e41c53426f728c1bb34b2ba894338b3ea",
+    "task.toml": "5f4978f682c514d2771f34c0e7b4efa72578806fd96f465c34b957ddfb8e2ee8",
+    "harness/eval_spec.json": "cde780fc79e14ae41efbfbd63f11896f18c9187a221a88523e7fdff7e37ed9a1"
+  },
+  "source_requirement_dispositions": {
+    "part_roles": "Q",
+    "housing": "Q",
+    "filter": "Q",
+    "caps": "Q",
+    "seals": "Q",
+    "tie_rod": "Q",
+    "nut": "Q",
+    "washer": "Q",
+    "assembly_clearance": "Q",
+    "topology": "E",
+    "solid_validity": "E",
+    "units": "E",
+    "hierarchy": "E",
+    "state_cycle": "E",
+    "glb_readable": "system_evidence_only",
+    "glb_assembled": "E",
+    "reconstruction": "system_evidence_only",
+    "instructions": "system_evidence_only",
+    "materials": "Q",
+    "procedural_materials": "system_evidence_only",
+    "seed_quality": "system_evidence_only"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

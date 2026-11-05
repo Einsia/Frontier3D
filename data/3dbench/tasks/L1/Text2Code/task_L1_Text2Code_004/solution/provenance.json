@@ -1,0 +1,25 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/machine_vise",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/machine_vise",
+    "license": "CC0-1.0",
+    "changes": [],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "e826d981790e1ee907838f339f0039137d5818bea57b1018476371959690b3e5",
+    "assembled.png": "d34da9c0e93a1227e1da4882effb9a858b47e70bf476d1e6be157709559d18bf",
+    "exploded.png": "122570e5b74080bab6487604bab0ce877d6b0b42fb73408f44a782a008c8d6ad",
+    "front.png": "67edae6c2bf0aa5529ea402b3d7c6a8c8b85cd335d33de929e7376c3a9b6901f",
+    "geometry.json": "d26aeaad30f236a2df1174e6b287915d5aed4d21848e8c77a76120b62fd8473b",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "0e854ac250c183c8bb7b088c615ec352003e9de28600fa6954e65fb91e26de56",
+    "qa.json": "12368e302953ff7c67816903b9ac6dfb964702c07525068d9cc7eed2d5abeb9c",
+    "scene.blend": "a831568d4a55b61698693c574484c28529e77a1b1a9cff1737f2754cf4d82723",
+    "scene.glb": "3997d922cf4f42a4c3c386b5f58b707cb2866e9cf05ed38598470b23a9497875",
+    "spec.json": "7e6f7bee39f44096fc038aa612ab6879b852f8e3dd6e894c4eea550f4eb10a18",
+    "top.png": "2a9397d69df10a55597ae0d43ebf4c3d96b9fdd8a219492e10e2ff71b2da22eb"
+  }
+}

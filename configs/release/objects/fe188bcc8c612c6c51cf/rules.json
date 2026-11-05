@@ -1,0 +1,589 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "大厅地面是否具有可辨识的石材铺装网格结构？",
+      "source_quote": "polished-stone lobby with a 600 mm floor grid",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "信箱组是否由独立可辨的箱格组成，并具有实体厚度？",
+      "source_quote": "a 12-compartment mailbox bank",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "电梯入口是否形成完整门洞，开启的门体是否退出通行开口？",
+      "source_quote": "Fully open a 0.90 m elevator doorway.",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "门槛是否具有可辨识的沟槽几何及跨接处细节？",
+      "source_quote": "aligned sill grooves within 2 mm",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "轿厢是否由有厚度的地板和围壁构成真实内部空间？",
+      "source_quote": "The car is 1.40 m deep and 1.60 m wide",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "扶手是否具有实体杆件形态和合理支撑？",
+      "source_quote": "handrails on three walls at 0.90 m",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "控制面板与镜面是否具有可辨识的独立构件形态？",
+      "source_quote": "a control panel and a mirror",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "机器人是否具有独立底座、屏幕和层架构件，层架是否有厚度与合理支撑？",
+      "source_quote": "The robot has a 0.50 x 0.45 m base, screen top at 1.20 m, three shelves",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "包裹是否呈实体长方体形态，并具有可辨识的标签表面？",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel on the top tray with label upward",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "机器人关节式姿态是否由实际几何构件表达，而非仅靠贴图暗示？",
+      "source_quote": "A static articulated robot pose is required;",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "本任务仅提供文字，无公共参考图；按文本任务规则将 reference_primary 设为空字符串，regions 与 targets 设为空数组。嵌入 schema 对 reference_primary 的 minLength: 1 与该规则冲突。",
+    "未提供 legacy-detail-20261018-v1 的正文；仅依据本次嵌入的公开协议制定计划，未推断额外旧版约束。",
+    "大厅两条平面尺寸、机器人底座两条尺寸及包裹两条水平尺寸未命名方向；应记录轴向约定，不能额外规定朝向。",
+    "600 mm 地面网格未明确采用缝中心距还是石板净尺寸；应记录测量约定，不从像素推算。",
+    "扶手、顶托盘与控制面板高度的具体锚点未全部定义；屏幕明确采用顶部。其余高度须记录原生几何测量锚点。",
+    "门槛槽对齐的对应槽、测量方向，以及机器人前缘至门槛的门槛基准线未明确；应在 README 中声明一致约定。",
+    "1.50 m turning circle 通常指直径，本计划采用该解释；原文未明确写出 diameter，也未规定圆心位置。",
+    "0.75 m clearance envelope 未规定包络形状与高度；只核查明示横向尺度及两侧余量，不增加隐藏包络几何。",
+    "控制位置至面板的距离未明确使用平面距离或三维距离；本计划采用标记控制位置至服务点的三维距离，并要求记录约定，不据此声称运动学认证。",
+    "包裹居中误差未明确是逐轴偏差还是欧氏距离；本计划采用托盘平面内两中心的欧氏距离，须记录该解释。",
+    "任务要求关节式静态姿态，但未给出关节数量、类型、末端执行器形状或明确冻结接触清单；不得补充这些约束。",
+    "正文要求路径采样坐标与测量约定，但未规定采样间距；连续净空应依据完整几何核查，不能仅凭稀疏采样认定。",
+    "没有候选作品；所有问题与测量定义均为预先冻结的检查计划，不表示任何项目已测量或通过。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中测量大厅地面边界第一条主轴方向的长度，并记录轴向。",
+      "quantity": "大厅第一平面尺寸",
+      "relation": "equal",
+      "source_quote": "3.6 x 2.4 m polished-stone lobby",
+      "target": 3.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "测量大厅地面边界与第一主轴垂直方向的长度。",
+      "quantity": "大厅第二平面尺寸",
+      "relation": "equal",
+      "source_quote": "3.6 x 2.4 m polished-stone lobby",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "按声明的网格基准测量相邻网格线间距，对两个网格方向分别核查。",
+      "quantity": "地面网格间距",
+      "relation": "equal",
+      "source_quote": "a 600 mm floor grid",
+      "target": 600,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "逐一计数信箱组内独立箱格，不以装饰分缝代替箱格。",
+      "quantity": "信箱格数",
+      "relation": "equal",
+      "source_quote": "a 12-compartment mailbox bank",
+      "target": 12,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "测量整个信箱组沿横向的外包络宽度。",
+      "quantity": "信箱组总宽",
+      "relation": "equal",
+      "source_quote": "total width 1.80 m",
+      "target": 1.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "测量信箱组底部至其下方完成地面的垂直距离。",
+      "quantity": "信箱组底部离地高度",
+      "relation": "equal",
+      "source_quote": "bottom 0.30 m above floor",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "在完全开启状态测量入口两侧实体边界之间的通行净宽。",
+      "quantity": "电梯门洞净宽",
+      "relation": "equal",
+      "source_quote": "Fully open a 0.90 m elevator doorway.",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "沿进入方向测量轿厢入口内边界至后壁内表面的深度。",
+      "quantity": "轿厢内部深度",
+      "relation": "equal",
+      "source_quote": "The car is 1.40 m deep",
+      "target": 1.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "测量轿厢两侧壁内表面之间的横向宽度；突出物另纳入净空检查。",
+      "quantity": "轿厢内部宽度",
+      "relation": "equal",
+      "source_quote": "1.60 m wide",
+      "target": 1.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "比较入口两侧相邻完成地面标高，取绝对高差。",
+      "quantity": "大厅与轿厢地面高差",
+      "relation": "at_most",
+      "source_quote": "floor level difference at most 3 mm",
+      "target": 3,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "识别跨门槛的对应槽基准线，按声明方向测量最大对齐偏移。",
+      "quantity": "门槛槽对齐偏差",
+      "relation": "at_most",
+      "source_quote": "aligned sill grooves within 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "计数实际安装扶手的不同轿厢墙面。",
+      "quantity": "设有扶手的墙面数量",
+      "relation": "equal",
+      "source_quote": "handrails on three walls",
+      "target": 3,
+      "unit": "面",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "逐面测量扶手声明基准点相对轿厢完成地面的垂直高度。",
+      "quantity": "扶手高度",
+      "relation": "equal",
+      "source_quote": "handrails on three walls at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "在机器人底座局部水平主轴上测量第一外包络尺寸。",
+      "quantity": "机器人底座第一尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.50 x 0.45 m base",
+      "target": 0.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "在机器人底座另一水平主轴上测量第二外包络尺寸。",
+      "quantity": "机器人底座第二尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.50 x 0.45 m base",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "测量屏幕几何顶部相对机器人所在完成地面的垂直高度。",
+      "quantity": "屏幕顶部高度",
+      "relation": "equal",
+      "source_quote": "screen top at 1.20 m",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "计数机器人上独立承载层架，顶托盘计入层架总数。",
+      "quantity": "机器人层架数量",
+      "relation": "equal",
+      "source_quote": "three shelves",
+      "target": 3,
+      "unit": "层",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "沿包裹局部第一水平轴测量实体外包络。",
+      "quantity": "包裹第一尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "沿包裹局部第二水平轴测量实体外包络。",
+      "quantity": "包裹第二尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel",
+      "target": 0.25,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "测量包裹底面至顶面的高度。",
+      "quantity": "包裹高度",
+      "relation": "equal",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "将机器人前向与朝向门洞的中心线方向投影到水平面，测量最小夹角。",
+      "quantity": "等待姿态朝向偏差",
+      "relation": "at_most",
+      "source_quote": "Face the door centreline within 5 degrees",
+      "target": 5,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "在水平面内测量机器人前缘至声明门槛基准线的垂直距离。",
+      "quantity": "机器人前缘至门槛距离",
+      "relation": "equal",
+      "source_quote": "keep its front edge 1.20 m from the sill",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "读取或拟合原生转向圆标记中心线，测量直径。",
+      "quantity": "转向圆直径",
+      "relation": "equal",
+      "source_quote": "Mark a 1.50 m turning circle",
+      "target": 1.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "沿声明的直线进入路线连续核查可容纳通行带的最小宽度；排除被评估机器人，包含其他家具与突出物。",
+      "quantity": "直线进入路径净宽",
+      "relation": "at_least",
+      "source_quote": "a continuous 0.80 m straight entry path",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "检查轿厢内可放置的保守机器人包络横向宽度，使用文档声明的包络几何。",
+      "quantity": "机器人净空包络宽度",
+      "relation": "at_least",
+      "source_quote": "a conservative 0.75 m robot clearance envelope",
+      "target": 0.75,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "在同一可行包络位置测量包络左侧至最近轿厢实体或突出物的最小横向净距。",
+      "quantity": "轿厢包络左侧余量",
+      "relation": "at_least",
+      "source_quote": "plus 0.30 m at each side",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "在同一可行包络位置测量包络右侧至最近轿厢实体或突出物的最小横向净距。",
+      "quantity": "轿厢包络右侧余量",
+      "relation": "at_least",
+      "source_quote": "plus 0.30 m at each side",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "测量顶托盘承载面相对机器人所在完成地面的垂直高度，并记录锚点。",
+      "quantity": "顶托盘高度",
+      "relation": "equal",
+      "source_quote": "The top tray is 0.85 m high",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "测量控制面板声明基准点相对轿厢完成地面的垂直高度。",
+      "quantity": "控制面板高度",
+      "relation": "equal",
+      "source_quote": "the control panel 1.10 m",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "测量文档标记的进入后控制位置至面板服务点的三维直线距离；障碍物另行核查。",
+      "quantity": "控制位置至面板距离",
+      "relation": "at_most",
+      "source_quote": "within 0.90 m of the panel after entry",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "将包裹底面几何中心与托盘承载面几何中心投影至托盘平面，测量两中心欧氏距离。",
+      "quantity": "包裹居中偏差",
+      "relation": "at_most",
+      "source_quote": "Centre the parcel on the tray within 20 mm",
+      "target": 20,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "读取壁灯光源的色温定义或其明确记录的等效色温，不以成图像素颜色估测。",
+      "quantity": "壁灯色温",
+      "relation": "equal",
+      "source_quote": "Use 3000 K wall lamps",
+      "target": 3000,
+      "unit": "K",
+      "upper": null
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "场景是否呈现公寓电梯厅中等待的配送机器人？",
+      "source_quote": "Apartment elevator lobby: waiting delivery robot.",
+      "weight": 0.04
+    },
+    {
+      "id": "S02",
+      "question": "大厅是否呈现抛光石材表面与地面网格？",
+      "source_quote": "polished-stone lobby with a 600 mm floor grid",
+      "weight": 0.04
+    },
+    {
+      "id": "S03",
+      "question": "大厅是否设有底部离地的多格信箱组？",
+      "source_quote": "a 12-compartment mailbox bank, total width 1.80 m and bottom 0.30 m above floor",
+      "weight": 0.04
+    },
+    {
+      "id": "S04",
+      "question": "电梯门是否完全打开并露出可进入的轿厢空间？",
+      "source_quote": "Fully open a 0.90 m elevator doorway.",
+      "weight": 0.04
+    },
+    {
+      "id": "S05",
+      "question": "大厅与轿厢入口是否表现为平顺衔接且门槛沟槽对齐？",
+      "source_quote": "with floor level difference at most 3 mm, aligned sill grooves within 2 mm",
+      "weight": 0.04
+    },
+    {
+      "id": "S06",
+      "question": "轿厢是否在三个墙面设有扶手？",
+      "source_quote": "handrails on three walls at 0.90 m",
+      "weight": 0.04
+    },
+    {
+      "id": "S07",
+      "question": "轿厢内是否设有可识别的控制面板？",
+      "source_quote": "a control panel",
+      "weight": 0.04
+    },
+    {
+      "id": "S08",
+      "question": "轿厢内是否设有可识别的镜面？",
+      "source_quote": "and a mirror",
+      "weight": 0.04
+    },
+    {
+      "id": "S09",
+      "question": "配送机器人是否具备底座、屏幕和三层承载架？",
+      "source_quote": "The robot has a 0.50 x 0.45 m base, screen top at 1.20 m, three shelves",
+      "weight": 0.04
+    },
+    {
+      "id": "S10",
+      "question": "包裹是否放置并支撑在机器人顶托盘上？",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel on the top tray",
+      "weight": 0.04
+    },
+    {
+      "id": "S11",
+      "question": "包裹标签是否朝上？",
+      "source_quote": "with label upward",
+      "weight": 0.04
+    },
+    {
+      "id": "S12",
+      "question": "机器人是否面向门洞中心线，并在门槛前保持规定等待位置？",
+      "source_quote": "Face the door centreline within 5 degrees and keep its front edge 1.20 m from the sill.",
+      "weight": 0.04
+    },
+    {
+      "id": "S13",
+      "question": "地面是否标出转向圆，且圆内除该机器人外无其他障碍？",
+      "source_quote": "Mark a 1.50 m turning circle, clear except for the robot.",
+      "weight": 0.04
+    },
+    {
+      "id": "S14",
+      "question": "是否存在连续、笔直的进入路径，且净空核查包含其他家具及突出物？",
+      "source_quote": "Navigation clearance refers to the free route excluding the robot being evaluated; include all other furnishings and protrusions.",
+      "weight": 0.04
+    },
+    {
+      "id": "S15",
+      "question": "信箱组是否位于直线进入路径之外？",
+      "source_quote": "Provide a continuous 0.80 m straight entry path with mailbox and fire-hose cabinet outside.",
+      "weight": 0.04
+    },
+    {
+      "id": "S16",
+      "question": "是否设有消防水带柜，且位于直线进入路径之外？",
+      "source_quote": "Provide a continuous 0.80 m straight entry path with mailbox and fire-hose cabinet outside.",
+      "weight": 0.04
+    },
+    {
+      "id": "S17",
+      "question": "轿厢是否同时容纳保守机器人包络与左右两侧所需余量？",
+      "source_quote": "The car must allow a conservative 0.75 m robot clearance envelope plus 0.30 m at each side.",
+      "weight": 0.04
+    },
+    {
+      "id": "S18",
+      "question": "是否记录进入后的可达控制位置，且控制位置到面板之间无遮挡？",
+      "source_quote": "document an unobstructed reachable control position within 0.90 m of the panel after entry",
+      "weight": 0.04
+    },
+    {
+      "id": "S19",
+      "question": "服务点是否在场景或 README 中标明，且未用重复机器人替代等待姿态？",
+      "source_quote": "label service points in the scene/README without placing duplicate robots.",
+      "weight": 0.04
+    },
+    {
+      "id": "S20",
+      "question": "包裹是否在托盘上居中且任何部分都不悬出托盘？",
+      "source_quote": "Centre the parcel on the tray within 20 mm without overhang.",
+      "weight": 0.04
+    },
+    {
+      "id": "S21",
+      "question": "是否设有呈暖色照明的壁灯？",
+      "source_quote": "Use 3000 K wall lamps",
+      "weight": 0.04
+    },
+    {
+      "id": "S22",
+      "question": "轿厢光线是否经打开的门洞溢出？",
+      "source_quote": "light spilling from the car",
+      "weight": 0.04
+    },
+    {
+      "id": "S23",
+      "question": "主视图是否同时呈现机器人、门洞及可辨识的轿厢纵深？",
+      "source_quote": "Frame robot, doorway and cabin depth;",
+      "weight": 0.04
+    },
+    {
+      "id": "S24",
+      "question": "次视图是否暴露关键接触与净空路径，并与主视图保持同一几何和静态关节姿态，无电梯或驾驶动画？",
+      "source_quote": "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose",
+      "weight": 0.04
+    },
+    {
+      "id": "S25",
+      "question": "场景是否采用可编辑、有厚度、支撑合理且语义构件可分离的完整实体三维几何？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.04
+    }
+  ],
+  "targets": []
+}

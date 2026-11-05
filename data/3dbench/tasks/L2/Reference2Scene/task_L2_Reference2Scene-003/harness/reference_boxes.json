@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-reference-localized-v5.2.0",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-003",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "e16b3c830681c363e8ab5c2f6a84eebf02aeef597d37da71b3d400ee11f790d8",
+  "image_size": [
+    1600,
+    900
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "large near concrete column at left",
+      "label": "large near concrete column at left",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.064,
+          0.0,
+          0.228,
+          0.88
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. large near concrete column at left"
+    },
+    {
+      "id": "target_2",
+      "query": "entire right wall window installation",
+      "label": "entire right wall window installation",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.45,
+          0.206,
+          0.932,
+          0.767
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. entire right wall window installation"
+    },
+    {
+      "id": "target_3",
+      "query": "nearest overhead horizontal concrete cross-beam",
+      "label": "nearest overhead horizontal concrete cross-beam",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.209,
+          0.045,
+          0.903,
+          0.466
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. nearest overhead horizontal concrete cross-beam"
+    }
+  ]
+}

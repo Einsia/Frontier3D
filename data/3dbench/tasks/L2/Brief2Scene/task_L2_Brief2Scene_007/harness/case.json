@@ -1,0 +1,283 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_007",
+  "spec_sha256": "d9974542700a5ce53f9f93aeb5af87f608eb40e8ba61637160ceca3592d04b0f",
+  "instruction_sha256": "251a41d2a462bf52ec7eadca2b2497a2ed40f33a0c951e21656181cf79d0e1c4",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Build a calm low-poly coastal lighthouse scene.",
+      "source_quote": "Build a calm low-poly coastal lighthouse scene.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "A white lighthouse with a broad red horizontal band should stand on a small irregular rocky island surrounded by blue water.",
+      "source_quote": "A white lighthouse with a broad red horizontal band should stand on a small irregular rocky island surrounded by blue water.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Make the tower about 30 m tall, tapering gently upward, with a separate dark roof, a band of recessed lantern-room windows, and a projecting ledge or gallery below that room.",
+      "source_quote": "Make the tower about 30 m tall, tapering gently upward, with a separate dark roof, a band of recessed lantern-room windows, and a projecting ledge or gallery below that room.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "The tower must sit on the island rather than float above it.",
+      "source_quote": "The tower must sit on the island rather than float above it.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Give the island a green upper surface and faceted exposed rock sides; its main footprint should be roughly 35–50 m across.",
+      "source_quote": "Give the island a green upper surface and faceted exposed rock sides; its main footprint should be roughly 35–50 m across.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Place six to ten three-dimensional conifers beside the lighthouse at varied heights, with visible trunks and layered foliage.",
+      "source_quote": "Place six to ten three-dimensional conifers beside the lighthouse at varied heights, with visible trunks and layered foliage.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "They must not obscure the lantern or be represented only by camera-facing billboards.",
+      "source_quote": "They must not obscure the lantern or be represented only by camera-facing billboards.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "content_08",
+      "text": "Use readable broad colour areas and a directional daylight shadow over the sea.",
+      "source_quote": "Use readable broad colour areas and a directional daylight shadow over the sea.",
+      "implementation": "manual",
+      "checks": [
+        "content_08"
+      ]
+    },
+    {
+      "id": "content_09",
+      "text": "Frame the entire lighthouse and island with some surrounding water in an elevated three-quarter view.",
+      "source_quote": "Frame the entire lighthouse and island with some surrounding water in an elevated three-quarter view.",
+      "implementation": "manual",
+      "checks": [
+        "content_09"
+      ]
+    },
+    {
+      "id": "content_10",
+      "text": "No nearby town, boats, animated waves or beacon mechanism is required.",
+      "source_quote": "No nearby town, boats, animated waves or beacon mechanism is required.",
+      "implementation": "manual",
+      "checks": [
+        "content_10"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Build a calm low-poly coastal lighthouse scene. A white lighthouse with a broad red horizontal band should stand on a small irregular rocky island surrounded by blue water. Make the tower about 30 m tall, tapering gently upward, with a separate dark roof, a band of recessed lantern-room windows, and a projecting ledge or gallery below that room. The tower must sit on the island rather than float above it. Give the island a green upper surface and faceted exposed rock sides; its main footprint should be roughly 35–50 m across. Place six to ten three-dimensional conifers beside the lighthouse at varied heights, with visible trunks and layered foliage. They must not obscure the lantern or be represented only by camera-facing billboards. Use readable broad colour areas and a directional daylight shadow over the sea. Frame the entire lighthouse and island with some surrounding water in an elevated three-quarter view. No nearby town, boats, animated waves or beacon mechanism is required.\n\nNo reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "explicit_layout_dimensions",
+      "text": "Build a calm low-poly coastal lighthouse scene. A white lighthouse with a broad red horizontal band should stand on a small irregular rocky island surrounded by blue water. Make the tower about 30 m tall, tapering gently upward, with a separate dark roof, a band of recessed lantern-room windows, and a projecting ledge or gallery below that room. The tower must sit on the island rather than float above it. Give the island a green upper surface and faceted exposed rock sides; its main footprint should be roughly 35–50 m across. Place six to ten three-dimensional conifers beside the lighthouse at varied heights, with visible trunks and layered foliage. They must not obscure the lantern or be represented only by camera-facing billboards. Use readable broad colour areas and a directional daylight shadow over the sea. Frame the entire lighthouse and island with some surrounding water in an elevated three-quarter view. No nearby town, boats, animated waves or beacon mechanism is required.",
+      "source_quote": "Build a calm low-poly coastal lighthouse scene. A white lighthouse with a broad red horizontal band should stand on a small irregular rocky island surrounded by blue water. Make the tower about 30 m tall, tapering gently upward, with a separate dark roof, a band of recessed lantern-room windows, and a projecting ledge or gallery below that room. The tower must sit on the island rather than float above it. Give the island a green upper surface and faceted exposed rock sides; its main footprint should be roughly 35–50 m across. Place six to ten three-dimensional conifers beside the lighthouse at varied heights, with visible trunks and layered foliage. They must not obscure the lantern or be represented only by camera-facing billboards. Use readable broad colour areas and a directional daylight shadow over the sea. Frame the entire lighthouse and island with some surrounding water in an elevated three-quarter view. No nearby town, boats, animated waves or beacon mechanism is required.",
+      "implementation": "manual",
+      "checks": [
+        "explicit_layout_dimensions"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Build a calm low-poly coastal lighthouse scene. A white lighthouse with a broad red horizontal band should stand on a small irregular rocky island surrounded by blue water. Make the tower about 30 m tall, tapering gently upward, with a separate dark roof, a band of recessed lantern-room windows, and a projecting ledge or gallery below that room. The tower must sit on the island rather than float above it. Give the island a green upper surface and faceted exposed rock sides; its main footprint should be roughly 35–50 m across. Place six to ten three-dimensional conifers beside the lighthouse at varied heights, with visible trunks and layered foliage. They must not obscure the lantern or be represented only by camera-facing billboards. Use readable broad colour areas and a directional daylight shadow over the sea. Frame the entire lighthouse and island with some surrounding water in an elevated three-quarter view. No nearby town, boats, animated waves or beacon mechanism is required.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Build a calm low-poly coastal lighthouse scene. A white lighthouse with a broad red horizontal band should stand on a small irregular rocky island surrounded by blue water. Make the tower about 30 m tall, tapering gently upward, with a separate dark roof, a band of recessed lantern-room windows, and a projecting ledge or gallery below that room. The tower must sit on the island rather than float above it. Give the island a green upper surface and faceted exposed rock sides; its main footprint should be roughly 35–50 m across. Place six to ten three-dimensional conifers beside the lighthouse at varied heights, with visible trunks and layered foliage. They must not obscure the lantern or be represented only by camera-facing billboards. Use readable broad colour areas and a directional daylight shadow over the sea. Frame the entire lighthouse and island with some surrounding water in an elevated three-quarter view. No nearby town, boats, animated waves or beacon mechanism is required.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "engine",
+      "text": "engine",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "engine"
+      ]
+    },
+    {
+      "id": "view_transform",
+      "text": "view transform",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "view_transform"
+      ]
+    },
+    {
+      "id": "exposure",
+      "text": "exposure",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "exposure"
+      ]
+    },
+    {
+      "id": "gamma",
+      "text": "gamma",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "gamma"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "orbit",
+    "degrees": 25,
+    "tolerance": 0.25
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "native_resolution": [
+    1200,
+    1000
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-brief-vlm-v8.0.0",
+  "dataset_version": "l2-brief-numeric-data-v8",
+  "methods_sha256": "fc5df61418f31b4f83dc259fb925661f021ddf2cc2009076828f5ac0c237f94f",
+  "measurement_profile": "l2-brief-v2.8.0",
+  "automatic_profile": "l2-brief-embodied-v4.0.0"
+}

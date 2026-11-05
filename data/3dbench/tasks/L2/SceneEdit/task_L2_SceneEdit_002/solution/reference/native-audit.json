@@ -1,0 +1,1012 @@
+{
+  "key": "final-cc0-attic-hideout",
+  "path": "assets/cc0-replacements-20260921/attic-hideout/prepared/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    960,
+    640
+  ],
+  "camera": {
+    "name": "main2.fspy",
+    "position": [
+      -1.643311858177185,
+      -14.155211448669434,
+      1.4181139469146729
+    ],
+    "rotation_euler": [
+      1.5437617301940918,
+      0.009815309196710587,
+      -0.18399186432361603
+    ],
+    "lens": 96.28015899658203,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "Cube",
+      "vertices": 48,
+      "polygons": 46,
+      "sha256": "eb639ca5b0a3ab838db8381f3e02726c04a3d6797b168d8ae0a1d327865abec2"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 32,
+      "polygons": 30,
+      "sha256": "978765c20c8f49aceab32c3cedaa806eee8532be0ec7a34b48fd734ca36ac324"
+    },
+    {
+      "name": "Cube.002",
+      "vertices": 18,
+      "polygons": 16,
+      "sha256": "a9eee4e2010895bdcb5a9bffd1e8b2026282a55a02c14abd9702281bccd375fc"
+    },
+    {
+      "name": "Cube.003",
+      "vertices": 66,
+      "polygons": 56,
+      "sha256": "7af17d480e235b62da4479d6c30e163d0985c026b95cf4e949c066cf931abcdd"
+    },
+    {
+      "name": "Cube.004",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "fdacdbf99923050cca42bf9424255783a924d7e3e0528c2562790c0df8127b05"
+    },
+    {
+      "name": "Cube.005",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "fdacdbf99923050cca42bf9424255783a924d7e3e0528c2562790c0df8127b05"
+    },
+    {
+      "name": "Cylinder",
+      "vertices": 416,
+      "polygons": 386,
+      "sha256": "99ef8d6605ffd15b116e9c3d6e038e113a22e29f6c99ab9094e03c69522958da"
+    },
+    {
+      "name": "Cylinder.001",
+      "vertices": 672,
+      "polygons": 582,
+      "sha256": "2bf082e2629db625a2aca608e3fb7b64dabd6cc7e6f00c0bfaad5ed25839df80"
+    },
+    {
+      "name": "Cylinder.002",
+      "vertices": 672,
+      "polygons": 582,
+      "sha256": "2bf082e2629db625a2aca608e3fb7b64dabd6cc7e6f00c0bfaad5ed25839df80"
+    },
+    {
+      "name": "Cylinder.003",
+      "vertices": 181,
+      "polygons": 173,
+      "sha256": "7d8fa5b8e2fdc6c16c157b296bd31f9a38e2f3899d6351507214067e382e34ef"
+    },
+    {
+      "name": "Cylinder.004",
+      "vertices": 181,
+      "polygons": 173,
+      "sha256": "7d8fa5b8e2fdc6c16c157b296bd31f9a38e2f3899d6351507214067e382e34ef"
+    },
+    {
+      "name": "Cylinder.005",
+      "vertices": 1248,
+      "polygons": 1188,
+      "sha256": "8952505b55cff032938d368f14a3724b494809cde4aeb9ee966dc457f6ad9328"
+    },
+    {
+      "name": "Plane",
+      "vertices": 213,
+      "polygons": 189,
+      "sha256": "8140abf0995ea4172ad76428f4445cc3f259885a8332770516982aa974d5d6f0"
+    },
+    {
+      "name": "Plane.001",
+      "vertices": 66,
+      "polygons": 55,
+      "sha256": "cebf0ae0b4b022b519eb21ba85f8a5b28872f629267aa9ffcad5046f4c27f097"
+    },
+    {
+      "name": "Plane.002",
+      "vertices": 131,
+      "polygons": 82,
+      "sha256": "6e227dd7609c2f3152552d730beef14a764073a99114013e7f21d20723aa4980"
+    },
+    {
+      "name": "Plane.003",
+      "vertices": 131,
+      "polygons": 82,
+      "sha256": "6e227dd7609c2f3152552d730beef14a764073a99114013e7f21d20723aa4980"
+    },
+    {
+      "name": "Plane.004",
+      "vertices": 891,
+      "polygons": 704,
+      "sha256": "cc9ce47db81bd2056a733eb19e5de444cc156b55e4a353f0a7a05607d57f76c7"
+    },
+    {
+      "name": "Plane.005",
+      "vertices": 81,
+      "polygons": 64,
+      "sha256": "b797a99f5172f8e3c0de99a9596efd17e222b8017061ebb030193399e807a342"
+    },
+    {
+      "name": "Plane.009",
+      "vertices": 891,
+      "polygons": 704,
+      "sha256": "9a5258b4814abc6f7f6c183c8ec6adec6d1a0179779ac6cb56ceb88ab558fca8"
+    },
+    {
+      "name": "Plane.022",
+      "vertices": 583,
+      "polygons": 432,
+      "sha256": "8c6ab7b5545ae6e6fc47eb89f22603636ce45f0fba6cc1383e638fd42dffb8d1"
+    },
+    {
+      "name": "poster",
+      "vertices": 6,
+      "polygons": 2,
+      "sha256": "265bcf87e2a426a4866725130f86652b05681ff996d0603c4bf4d93d4cb4e5b9"
+    },
+    {
+      "name": "Sphere",
+      "vertices": 1118,
+      "polygons": 1106,
+      "sha256": "957b9c2ea6b7fadd2e19686082687d20e05df07efe0b1cf4858186b5b3dab287"
+    },
+    {
+      "name": "Sphere.001",
+      "vertices": 1118,
+      "polygons": 1106,
+      "sha256": "957b9c2ea6b7fadd2e19686082687d20e05df07efe0b1cf4858186b5b3dab287"
+    }
+  ],
+  "images": [
+    {
+      "name": "bake",
+      "path": "",
+      "packed": true,
+      "dimensions": [
+        3200,
+        3200
+      ],
+      "sha256": "2574f4baf6aea0d8ce0ed4910fed10e9c4f03834fe3bbf91ca4441b14710cd78",
+      "external_exists": null
+    },
+    {
+      "name": "bake.001",
+      "path": "",
+      "packed": true,
+      "dimensions": [
+        2030,
+        2030
+      ],
+      "sha256": "192837ae191a74c301c4d5ad390438d8a819bd9d8dddabd649c33daaac74de65",
+      "external_exists": null
+    },
+    {
+      "name": "bake.002",
+      "path": "",
+      "packed": true,
+      "dimensions": [
+        3020,
+        3020
+      ],
+      "sha256": "1260e6adb86c3632022914779e206cea6525ede97a091cf798ba2349d24d1181",
+      "external_exists": null
+    },
+    {
+      "name": "crt-monitor-2.fspy",
+      "path": "//..\\..\\..\\..\\..\\..\\tmp\\blender_vA2ggh\\fspy-temp-image-daea964084b34ee0a07c4979dcbd5524",
+      "packed": true,
+      "dimensions": [
+        680,
+        339
+      ],
+      "sha256": "bf8588d80342c80a053e88e3f679554d37f91e290175d47b42f31650a7baf6a6",
+      "external_exists": null
+    },
+    {
+      "name": "globe.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\globe\\globe.jpg",
+      "packed": true,
+      "dimensions": [
+        1000,
+        1500
+      ],
+      "sha256": "26b7851ba9c6bd797aa48d325f4a3103f0de079ee71c037c6625001c50b825c7",
+      "external_exists": null
+    },
+    {
+      "name": "main2.fspy",
+      "path": "/tmp\\blender_UYSeZs\\fspy-temp-image-1c4324a0fd5a413ca17a283ec45d4cd4",
+      "packed": true,
+      "dimensions": [
+        4096,
+        3072
+      ],
+      "sha256": "306333188dcc7757fcb9979469ea1eb4e675ab1de4b9032d2f545edc4cdca5cf",
+      "external_exists": null
+    },
+    {
+      "name": "mask.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\mask\\mask.jpg",
+      "packed": true,
+      "dimensions": [
+        225,
+        225
+      ],
+      "sha256": "1130428714e45b6a6fe3b180c3dce6b1db61f8142974edd23d9f56587b128ad9",
+      "external_exists": null
+    },
+    {
+      "name": "paper-2.fspy",
+      "path": "/tmp\\blender_u6BcgR\\fspy-temp-image-27558f0421db48b58b21e49422b01ea7",
+      "packed": true,
+      "dimensions": [
+        1024,
+        681
+      ],
+      "sha256": "a2124d3ebac2725cc61020a130a7e66b63b48d4b5429d395b09c80782edf7c13",
+      "external_exists": null
+    },
+    {
+      "name": "Planks015_2K_Color.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\Planks015_2K-JPG\\Planks015_2K_Color.jpg",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "29f59d651f45c46225adf279cde073987751d2dd6d23fdd00b07eb76ce922d08",
+      "external_exists": null
+    },
+    {
+      "name": "Planks015_2K_Displacement.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\Planks015_2K-JPG\\Planks015_2K_Displacement.jpg",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "543fd69aeb79c48bbe1837bbfcf19d5858cbb946415731f4fed2016a19beef66",
+      "external_exists": null
+    },
+    {
+      "name": "Planks015_2K_Metalness.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\Planks015_2K-JPG\\Planks015_2K_Metalness.jpg",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "072a58274412de1d3c49488cf07185548b0fdd5443d6471d5ced5262cbe11a96",
+      "external_exists": null
+    },
+    {
+      "name": "Planks015_2K_Normal.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\Planks015_2K-JPG\\Planks015_2K_Normal.jpg",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "a9cab309f71d9bb31d7549f524e3e096469409b37419e3d00cc5afa751a027e3",
+      "external_exists": null
+    },
+    {
+      "name": "Planks015_2K_Roughness.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\Planks015_2K-JPG\\Planks015_2K_Roughness.jpg",
+      "packed": true,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "sha256": "5cfc9fb20df31031e4025fedd2c911e7641016f68539076d34d95e7a27d21a22",
+      "external_exists": null
+    },
+    {
+      "name": "poster.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\poster.jpg",
+      "packed": true,
+      "dimensions": [
+        599,
+        900
+      ],
+      "sha256": "0ad5ad01e13b9de911019f2baf031f9adbabe93ff876f9eeaca7696e177afcda",
+      "external_exists": null
+    },
+    {
+      "name": "srcimg.jpg",
+      "path": "//..\\..\\..\\diverse\\subway2\\bullitin\\srcimg.jpg",
+      "packed": true,
+      "dimensions": [
+        800,
+        450
+      ],
+      "sha256": "100107a85a5ab239b0921b8d3613379ae79aacbd31ba1257025df95785e3f6f4",
+      "external_exists": null
+    },
+    {
+      "name": "srcimg.jpg.001",
+      "path": "//..\\..\\..\\diverse\\subway2\\bullitin\\srcimg.jpg",
+      "packed": true,
+      "dimensions": [
+        800,
+        450
+      ],
+      "sha256": "100107a85a5ab239b0921b8d3613379ae79aacbd31ba1257025df95785e3f6f4",
+      "external_exists": null
+    },
+    {
+      "name": "stool.fspy",
+      "path": "//..\\..\\..\\..\\..\\..\\tmp\\blender_x1DxjV\\fspy-temp-image-8a79fa8f40b74ad6b6a97a4b515ad4d9",
+      "packed": true,
+      "dimensions": [
+        612,
+        612
+      ],
+      "sha256": "38c0413f7806c1e1fa24931d96c37831828923e02d2e9eec5d2057b9df984a7c",
+      "external_exists": null
+    },
+    {
+      "name": "telescope.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\telescope\\telescope.jpg",
+      "packed": true,
+      "dimensions": [
+        640,
+        480
+      ],
+      "sha256": "5e0aebd7f3e792383a48a7254b5e026cde71dcfe03bd680887f995ace7fcae12",
+      "external_exists": null
+    },
+    {
+      "name": "Wallpaper-Kemra-Bookshelf-1.jpg",
+      "path": "//..\\..\\..\\diverse\\attic_hideout\\bookshelf\\Wallpaper-Kemra-Bookshelf-1.jpg",
+      "packed": true,
+      "dimensions": [
+        1100,
+        1318
+      ],
+      "sha256": "513a7d6c7fb23c6fc5068a67c9c7a693dfd79d0908752aea66390c84211b9e9f",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Plane.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.5020980834960938,
+        2.31630539894104,
+        0.5192607641220093
+      ],
+      "bounds": [
+        [
+          1.952142596244812,
+          0.3243198096752167,
+          -0.2237691879272461
+        ],
+        [
+          2.4714035987854004,
+          1.8264180421829224,
+          2.092536211013794
+        ]
+      ],
+      "materials": [
+        "Material.006"
+      ]
+    },
+    {
+      "name": "Plane.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.5020980834960938,
+        2.31630539894104,
+        0.5192607641220093
+      ],
+      "bounds": [
+        [
+          1.952142596244812,
+          -5.465139389038086,
+          -0.2237691879272461
+        ],
+        [
+          2.4714035987854004,
+          -3.963041067123413,
+          2.092536211013794
+        ]
+      ],
+      "materials": [
+        "Material.006"
+      ]
+    },
+    {
+      "name": "BezierCurve",
+      "type": "CURVE",
+      "visible_render": true,
+      "dimensions": [
+        4.9833173751831055,
+        6.587555885314941,
+        1.063959002494812
+      ],
+      "bounds": [
+        [
+          -2.8385093212127686,
+          -4.141543388366699,
+          -0.004806572571396828
+        ],
+        [
+          2.144807815551758,
+          2.446012496948242,
+          1.059152364730835
+        ]
+      ],
+      "materials": [
+        "rubber"
+      ]
+    },
+    {
+      "name": "BezierCurve.001",
+      "type": "CURVE",
+      "visible_render": true,
+      "dimensions": [
+        1.4075677394866943,
+        1.1661286354064941,
+        0.14082613587379456
+      ],
+      "bounds": [
+        [
+          -0.505207359790802,
+          1.2850403785705566,
+          0.6284554600715637
+        ],
+        [
+          0.9023604393005371,
+          2.451169013977051,
+          0.7692815661430359
+        ]
+      ],
+      "materials": [
+        "rubber"
+      ]
+    },
+    {
+      "name": "Plane.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.5496327877044678,
+        1.5177379846572876,
+        2.150470018386841
+      ],
+      "bounds": [
+        [
+          -1.9485929012298584,
+          -1.2021465301513672,
+          -0.008102238178253174
+        ],
+        [
+          0.6010397672653198,
+          0.31559139490127563,
+          2.1423678398132324
+        ]
+      ],
+      "materials": [
+        "Material.007"
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.36871764063835144,
+        0.36871764063835144,
+        0.019538434222340584
+      ],
+      "bounds": [
+        [
+          -0.40387165546417236,
+          1.564630150794983,
+          0.741331160068512
+        ],
+        [
+          -0.03515399992465973,
+          1.9333478212356567,
+          0.7608696222305298
+        ]
+      ],
+      "materials": [
+        "Material.008"
+      ]
+    },
+    {
+      "name": "Plane.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6007946133613586,
+        1.152701497077942,
+        0.013722510077059269
+      ],
+      "bounds": [
+        [
+          0.5590923428535461,
+          2.369215488433838,
+          1.77397620677948
+        ],
+        [
+          1.7567577362060547,
+          2.3829386234283447,
+          2.466355323791504
+        ]
+      ],
+      "materials": [
+        "srcimg"
+      ]
+    },
+    {
+      "name": "Plane.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.04888339713215828,
+        2.593785047531128,
+        1.423681616783142
+      ],
+      "bounds": [
+        [
+          2.4080255031585693,
+          -2.9275972843170166,
+          0.6258575320243835
+        ],
+        [
+          2.456908702850342,
+          -0.3338123559951782,
+          2.049539089202881
+        ]
+      ],
+      "materials": [
+        "srcimg.001"
+      ]
+    },
+    {
+      "name": "poster",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8631418347358704,
+        1.2968742847442627,
+        0.12752269208431244
+      ],
+      "bounds": [
+        [
+          -0.6154122352600098,
+          2.3207943439483643,
+          1.6448220014572144
+        ],
+        [
+          0.24772962927818298,
+          2.448317050933838,
+          2.9416964054107666
+        ]
+      ],
+      "materials": [
+        "poster"
+      ]
+    },
+    {
+      "name": "Cylinder.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.22486425936222076,
+        0.06702806800603867,
+        0.2369575947523117
+      ],
+      "bounds": [
+        [
+          0.30883026123046875,
+          1.6405435800552368,
+          1.4564554691314697
+        ],
+        [
+          0.6358516216278076,
+          1.967413306236267,
+          1.5256949663162231
+        ]
+      ],
+      "materials": [
+        "Material.010",
+        "Material.009"
+      ]
+    },
+    {
+      "name": "Cylinder.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3110194504261017,
+        0.09270936995744705,
+        0.3277461528778076
+      ],
+      "bounds": [
+        [
+          -1.168197751045227,
+          1.6254920959472656,
+          0.7371952533721924
+        ],
+        [
+          -0.7158805131912231,
+          2.0775997638702393,
+          0.8329632878303528
+        ]
+      ],
+      "materials": [
+        "Material.010",
+        "Material.009"
+      ]
+    },
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.266462504863739,
+        0.2270432710647583,
+        0.07196493446826935
+      ],
+      "bounds": [
+        [
+          -1.3248355388641357,
+          1.6203221082687378,
+          0.710436224937439
+        ],
+        [
+          -1.088870644569397,
+          1.8867846727371216,
+          0.819901704788208
+        ]
+      ],
+      "materials": [
+        "Material.011"
+      ]
+    },
+    {
+      "name": "Sphere",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.44906312227249146,
+        0.4218699634075165,
+        0.5498421788215637
+      ],
+      "bounds": [
+        [
+          1.8767434358596802,
+          0.4110209047794342,
+          2.091263771057129
+        ],
+        [
+          2.4474263191223145,
+          0.9661015272140503,
+          2.641105890274048
+        ]
+      ],
+      "materials": [
+        "Material.013",
+        "Material.012"
+      ]
+    },
+    {
+      "name": "Sphere.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.3558015525341034,
+        0.3342559039592743,
+        0.43565070629119873
+      ],
+      "bounds": [
+        [
+          -1.182815432548523,
+          1.9318010807037354,
+          0.7462854385375977
+        ],
+        [
+          -0.7028055191040039,
+          2.4053268432617188,
+          1.1819361448287964
+        ]
+      ],
+      "materials": [
+        "Material.013",
+        "Material.012"
+      ]
+    },
+    {
+      "name": "Cylinder.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5516468286514282,
+        0.4809994697570801,
+        0.9396102428436279
+      ],
+      "bounds": [
+        [
+          1.6492762565612793,
+          -0.5824313759803772,
+          -0.1016278862953186
+        ],
+        [
+          2.264443874359131,
+          -0.05417200177907944,
+          0.8867070078849792
+        ]
+      ],
+      "materials": [
+        "Material.014"
+      ]
+    },
+    {
+      "name": "Cylinder.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4227546751499176,
+        0.3686140775680542,
+        0.7200704216957092
+      ],
+      "bounds": [
+        [
+          -1.6623624563217163,
+          0.10909230262041092,
+          -0.042218614369630814
+        ],
+        [
+          -0.8539214730262756,
+          0.7407940030097961,
+          0.3980114758014679
+        ]
+      ],
+      "materials": [
+        "Material.015"
+      ]
+    },
+    {
+      "name": "Cube.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.15760701894760132,
+        1.1412298679351807,
+        0.05945057049393654
+      ],
+      "bounds": [
+        [
+          -1.2854000329971313,
+          0.10862496495246887,
+          -0.0037169423885643482
+        ],
+        [
+          -0.9637159109115601,
+          1.261399507522583,
+          0.1630530208349228
+        ]
+      ],
+      "materials": [
+        "Material"
+      ]
+    },
+    {
+      "name": "Cube.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.15760701894760132,
+        1.1412298679351807,
+        0.05945057421922684
+      ],
+      "bounds": [
+        [
+          -1.8150943517684937,
+          0.42947080731391907,
+          -0.014116435311734676
+        ],
+        [
+          -0.861849308013916,
+          1.3045779466629028,
+          0.21873340010643005
+        ]
+      ],
+      "materials": [
+        "Material"
+      ]
+    },
+    {
+      "name": "Cylinder.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.1589175462722778,
+        0.20453619956970215,
+        1.7535346746444702
+      ],
+      "bounds": [
+        [
+          0.4450407028198242,
+          -6.4410247802734375,
+          -0.16934680938720703
+        ],
+        [
+          1.6076292991638184,
+          -5.8715620040893555,
+          1.5841879844665527
+        ]
+      ],
+      "materials": [
+        "Material.016"
+      ]
+    },
+    {
+      "name": "attic",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.775644302368164,
+        18.982803344726562,
+        7.787268161773682
+      ],
+      "bounds": [
+        [
+          -3.3173727989196777,
+          -16.54320526123047,
+          -0.002351731061935425
+        ],
+        [
+          2.4582715034484863,
+          2.43959903717041,
+          7.784916400909424
+        ]
+      ],
+      "materials": [
+        "Material.001"
+      ]
+    },
+    {
+      "name": "Cube",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8491147756576538,
+        18.034791946411133,
+        0.8831104040145874
+      ],
+      "bounds": [
+        [
+          -1.5080113410949707,
+          -15.267167091369629,
+          2.0673890113830566
+        ],
+        [
+          -0.6588965654373169,
+          2.767624855041504,
+          2.9504992961883545
+        ]
+      ],
+      "materials": [
+        "Material.002"
+      ]
+    },
+    {
+      "name": "Cube.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.5192363262176514,
+        1.193861961364746,
+        0.7689156532287598
+      ],
+      "bounds": [
+        [
+          -1.5647438764572144,
+          1.3263211250305176,
+          -0.02017834782600403
+        ],
+        [
+          0.954492449760437,
+          2.5201830863952637,
+          0.7487373352050781
+        ]
+      ],
+      "materials": [
+        "wood"
+      ]
+    },
+    {
+      "name": "Plane.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6890157461166382,
+        0.570317268371582,
+        0.5782398581504822
+      ],
+      "bounds": [
+        [
+          -0.9685279130935669,
+          1.7216824293136597,
+          0.8910598754882812
+        ],
+        [
+          -0.2795121669769287,
+          2.3719029426574707,
+          1.5345051288604736
+        ]
+      ],
+      "materials": [
+        "Material.003"
+      ]
+    },
+    {
+      "name": "Cube.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7834959030151367,
+        0.32509681582450867,
+        0.7142996191978455
+      ],
+      "bounds": [
+        [
+          0.20972275733947754,
+          1.4884763956069946,
+          0.7423126697540283
+        ],
+        [
+          0.7690187692642212,
+          2.3348562717437744,
+          1.4566123485565186
+        ]
+      ],
+      "materials": [
+        "Material.004"
+      ]
+    },
+    {
+      "name": "Cube.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.32477596402168274,
+        0.3344195485115051,
+        0.1711551994085312
+      ],
+      "bounds": [
+        [
+          1.1775472164154053,
+          1.4634808920277464e-08,
+          0.0013180292444303632
+        ],
+        [
+          1.5023231506347656,
+          0.3344195783138275,
+          0.1724732220172882
+        ]
+      ],
+      "materials": [
+        "Material.005"
+      ]
+    }
+  ]
+}

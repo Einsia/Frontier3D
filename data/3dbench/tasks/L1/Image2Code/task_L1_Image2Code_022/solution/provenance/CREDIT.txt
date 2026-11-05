@@ -1,0 +1,7 @@
+Grand Piano
+Author: farhad.Guli (https://sketchfab.com/farhad.Guli)
+Source: https://sketchfab.com/3d-models/grand-piano-371090c279ff4e77a59acdebc25b5892
+License: CC-BY-4.0
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

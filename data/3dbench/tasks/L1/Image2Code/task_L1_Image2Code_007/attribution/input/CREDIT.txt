@@ -1,0 +1,5 @@
+八角飞檐宫灯
+Kirill Sannikov
+https://polyhaven.com/a/chinese_chandelier
+CC0-1.0
+Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting.

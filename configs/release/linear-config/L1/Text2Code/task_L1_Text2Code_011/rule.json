@@ -1,0 +1,75 @@
+{
+  "task_id": "L1/Text2Code/task_L1_Text2Code_011",
+  "category": "Text2Code",
+  "level": "L1",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {},
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/252e9de954b5c03d6afb/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_part_roles": 0.03333333333333333,
+        "vlm_base": 0.03333333333333333,
+        "vlm_pan_sleeve": 0.03333333333333333,
+        "vlm_spindle": 0.03333333333333333,
+        "vlm_fork_base": 0.03333333333333333,
+        "vlm_uprights": 0.03333333333333333,
+        "vlm_bushings": 0.03333333333333333,
+        "vlm_platform": 0.03333333333333333,
+        "vlm_tilt_pins": 0.03333333333333333,
+        "vlm_fasteners": 0.03333333333333333,
+        "vlm_assembly_clearance": 0.03333333333333333,
+        "vlm_topology": 0.03333333333333333,
+        "vlm_solid_validity": 0.03333333333333333,
+        "vlm_units": 0.03333333333333333,
+        "vlm_hierarchy": 0.03333333333333333,
+        "vlm_state_cycle": 0.03333333333333333,
+        "vlm_glb_assembled": 0.03333333333333333,
+        "vlm_materials": 0.03333333333333333,
+        "vlm_aesthetic_composition": 0.1,
+        "vlm_aesthetic_light_color": 0.1,
+        "vlm_aesthetic_finish": 0.1,
+        "vlm_aesthetic_coherence": 0.1
+      },
+      "detail": {
+        "detail_semantic_base": 0.049999999999999996,
+        "detail_semantic_pan_sleeve": 0.049999999999999996,
+        "detail_semantic_spindle": 0.049999999999999996,
+        "detail_semantic_fork_base": 0.049999999999999996,
+        "detail_semantic_uprights": 0.049999999999999996,
+        "detail_semantic_bushings": 0.049999999999999996,
+        "detail_semantic_platform": 0.049999999999999996,
+        "detail_semantic_tilt_pins": 0.049999999999999996,
+        "detail_semantic_fasteners": 0.049999999999999996
+      },
+      "content": {
+        "detail_semantic_base": 0.049999999999999996,
+        "detail_semantic_pan_sleeve": 0.049999999999999996,
+        "detail_semantic_spindle": 0.049999999999999996,
+        "detail_semantic_fork_base": 0.049999999999999996,
+        "detail_semantic_uprights": 0.049999999999999996,
+        "detail_semantic_bushings": 0.049999999999999996,
+        "detail_semantic_platform": 0.049999999999999996,
+        "detail_semantic_tilt_pins": 0.049999999999999996,
+        "detail_semantic_fasteners": 0.049999999999999996
+      }
+    }
+  }
+}

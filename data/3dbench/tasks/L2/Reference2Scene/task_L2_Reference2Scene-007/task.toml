@@ -1,0 +1,24 @@
+# Metadata only; requirements are in instruction.md.
+version = 1
+id = "L2/Reference2Scene/task_L2_Reference2Scene-007"
+level = 2
+category = "Reference2Scene"
+title = "Charité 手术室与吊臂医疗设备"
+difficulty = "hard"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "implemented"
+resource_family = "sketchfab/9ec46c4d615a4581a235eebfb162f574"
+reference_kind = "rendered_scene_reference"
+environment_files = ["input/reference.png"]
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/main.png", "output/alternate.png", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L2/Reference2Scene/task_L2_Reference2Scene-007"
+release_id = "3DBench-092"

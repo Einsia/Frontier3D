@@ -1,0 +1,27 @@
+schema_version = "1.4"
+[task]
+name = "3dbench/l3-r03"
+description = "现实：县域铁路站前综合交通枢纽"
+keywords = ["3d", "unreal-engine", "l3", "real_world"]
+[metadata]
+release_task_id = "L3/Text2Environment/task_L3_Text2Environment_005"
+release_id = "3DBench-145"
+task_key = "l3-r03"
+level = 3
+category = "Text2Environment"
+source_category = "real_world"
+source_task = "RegionalRailHub"
+difficulty = "hard"
+protocol = "l3-perceptual-quality-v5"
+execution_backend = "provisioned-ue-host"
+requires_external_ue = true
+requires_host_verifier = true
+[agent]
+timeout_sec = 86400
+[verifier]
+timeout_sec = 86400
+[environment]
+build_timeout_sec = 3600
+cpus = 16
+memory_mb = 65536
+storage_mb = 204800

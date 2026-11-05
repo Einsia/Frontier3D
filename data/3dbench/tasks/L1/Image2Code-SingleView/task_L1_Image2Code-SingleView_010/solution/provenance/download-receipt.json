@@ -1,0 +1,17 @@
+{
+  "uid": "39a4d01bef37495cac8d8f0009728871",
+  "file": "source.glb",
+  "download_filename": "david_head.glb",
+  "bytes": 1330444,
+  "sha256": "7587367c8f480b0739d19c1b9d39a1b3c823aac99264838f6962583a6ad585e3",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "1d_inc (https://sketchfab.com/1d_inc)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/david-head-39a4d01bef37495cac8d8f0009728871",
+    "title": "David Head"
+  },
+  "gltf_meshes": 1,
+  "gltf_images": 0,
+  "animations": []
+}

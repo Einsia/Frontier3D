@@ -1,0 +1,7 @@
+Vintage / Old boxing gloves
+Author: maxsbond.work (https://sketchfab.com/maxsbond.work)
+Source: https://sketchfab.com/3d-models/vintage-old-boxing-gloves-b41079124d1e420d8549d088917b1dff
+License: CC-BY-4.0
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

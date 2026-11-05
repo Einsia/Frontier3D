@@ -1,0 +1,458 @@
+{
+  "tasks": [
+    {
+      "id": "L3/GameEnvironment/MinecraftVillage",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "Minecraft：河岸平原村落",
+      "zones": [
+        "村庄街区",
+        "双铁匠铺",
+        "农田与牲畜圈",
+        "水岸与地形"
+      ],
+      "mechanism_families": [
+        "铰链开合与通行",
+        "容器取物",
+        "收获补种",
+        "方块编辑",
+        "加工与库存前置条件"
+      ],
+      "continuous_workflow": "住宅取种子→农田收获补种→铁匠铺加工→仓库取工具→返回检查持久状态",
+      "key": "l3-g01",
+      "level": 3,
+      "category": "GameEnvironment",
+      "title_en": "Minecraft: Riverside Plains Village",
+      "instruction_sha256": "70c2a9bb672d3cc9a3efe474b0c277be1c04b7da0185441e05e5ca77391c5329"
+    },
+    {
+      "id": "L3/GameEnvironment/SekiroCastleKeep",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "只狼：苇名城主楼及相连庭院",
+      "zones": [
+        "outer_courtyard",
+        "entrance_hall",
+        "guard_room",
+        "reception_room",
+        "upper_store",
+        "inner_courtyard"
+      ],
+      "mechanism_families": [
+        "sliding_door",
+        "lift",
+        "gate",
+        "container",
+        "key",
+        "locked_door",
+        "lever",
+        "movable",
+        "ladder"
+      ],
+      "continuous_workflow": "从外庭进入主楼，取得钥匙，利用升降台将箱子送至上层储藏室，启动上层机关，经庭院捷径返回，再查看收纳箱时已取走的钥匙不应重新出现。",
+      "key": "l3-g02",
+      "level": 3,
+      "category": "GameEnvironment",
+      "title_en": "Sekiro: Ashina Castle Keep and Connected Courtyards",
+      "instruction_sha256": "55f80d0db0472999fe6aeb720634aac38c34161b4bba7d552130771652aa7115"
+    },
+    {
+      "id": "L3/GameEnvironment/RDR2FrontierTown",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "荒野大镖客2：瓦伦丁中心街区",
+      "zones": [
+        "main_street",
+        "saloon",
+        "general_store",
+        "store_room",
+        "stable_yard",
+        "freight_yard"
+      ],
+      "mechanism_families": [
+        "swing_door",
+        "door",
+        "gate",
+        "drawer",
+        "cart",
+        "container",
+        "cargo",
+        "receptacle"
+      ],
+      "continuous_workflow": "在货运场取得三类货物并装车，沿街到杂货店开门，将货物卸至对应位置；经马厩院落返回，关上院门，将空车停回货运场。",
+      "key": "l3-g03",
+      "level": 3,
+      "category": "GameEnvironment",
+      "title_en": "Red Dead Redemption 2: Central Valentine District",
+      "instruction_sha256": "744bce7b8b7ad425c4c2ec900947f2a656c75af85a933e476eae7c0b2927fb4b"
+    },
+    {
+      "id": "L3/GameEnvironment/OverwatchHarborDistrict",
+      "domain": "game",
+      "input_mode": "image",
+      "title": "守望先锋：Rialto 运河广场与后勤街区",
+      "zones": [
+        "canal_plaza",
+        "shopping_street",
+        "side_alley",
+        "warehouse",
+        "elevated_walkway",
+        "maintenance_room",
+        "delivery_dock"
+      ],
+      "mechanism_families": [
+        "switch",
+        "shutter",
+        "lift",
+        "door",
+        "cargo",
+        "platform",
+        "gate",
+        "movable",
+        "latch"
+      ],
+      "continuous_workflow": "在检修室恢复电源，开启仓库，使用货梯取下楼上两件货箱，装上街道载货平台，打通路线并运到码头；固定平台、卸下货箱并保留其新位置。",
+      "key": "l3-g04",
+      "level": 3,
+      "category": "GameEnvironment",
+      "title_en": "Overwatch: Rialto Canal Plazas and Service District",
+      "instruction_sha256": "4431a9f5e3d31646cd43c0c0c4e74a9d2126b372d1c2b64971df36277a0fb326"
+    },
+    {
+      "id": "L3/GameEnvironment/OuterWildsHydraulicRuins",
+      "domain": "game",
+      "input_mode": "text",
+      "title": "星际拓荒风格：外星水力遗迹区域",
+      "zones": [
+        "upper_reservoir",
+        "ring_courtyard",
+        "basin_a",
+        "basin_b",
+        "lower_passage",
+        "control_chamber",
+        "observation_terrace",
+        "archive"
+      ],
+      "mechanism_families": [
+        "switch",
+        "valve",
+        "gate",
+        "water",
+        "floating_platform",
+        "door"
+      ],
+      "continuous_workflow": "初始两池均为低水位且水泵关闭。沿下层路线进入控制室，开泵、蓄满 A 池，乘浮台到上层；蓄满 B 池后渡至观测台，从对岸打开 B 池排水闸，经露出的下层通道返回。再次来到 A 池时，其独立设置的水位应保持。",
+      "key": "l3-g05",
+      "level": 3,
+      "category": "GameEnvironment",
+      "title_en": "Outer Wilds-inspired Hydraulic Alien Ruins",
+      "instruction_sha256": "808e6fa5748c6c5bbaea78769bbc39bbf93114f914a9b7e06e1ffb438e7369fa"
+    },
+    {
+      "id": "L3/GameEnvironment/ZeldaFrontierValley",
+      "domain": "game",
+      "input_mode": "text",
+      "title": "旷野之息风格：驿站、废墟与山谷生活区",
+      "zones": [
+        "stable_lodge",
+        "service_room",
+        "river_bridge",
+        "woodland_camp",
+        "ruins",
+        "supply_chamber"
+      ],
+      "mechanism_families": [
+        "container",
+        "tool",
+        "movable",
+        "pressure_plate",
+        "winch",
+        "bridge",
+        "lift",
+        "gate",
+        "cargo",
+        "receptacle"
+      ],
+      "continuous_workflow": "从马厩工具箱取工具，在营地找到配重并放到压板上，降桥后到达遗迹。用升降台运送箱子，收集三件补给装箱，将满箱运回驿站并归还工具，场景保持操作后的状态。",
+      "key": "l3-g06",
+      "level": 3,
+      "category": "GameEnvironment",
+      "title_en": "Breath of the Wild-inspired Frontier Valley",
+      "instruction_sha256": "0d9ed4c95d281812f6ac30856488d11373ecd4753dfeb22409827403432f10d8"
+    },
+    {
+      "id": "L3/EmbodiedEnvironment/DuplexHome",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：精细厨房与家务生活区",
+      "zones": [
+        "kitchen",
+        "dining_corner",
+        "utility_room",
+        "hall",
+        "garden_store"
+      ],
+      "mechanism_families": [
+        "door",
+        "drawer",
+        "cupboard",
+        "appliance",
+        "tap",
+        "movable",
+        "consumable",
+        "tool",
+        "container",
+        "receptacle"
+      ],
+      "continuous_workflow": "从洗衣间取篮子，在洗衣间置物架收集两件衣物，装入并运行洗衣机；把盘子和杯子放入厨房储物区，把园艺工具送到储藏间；返回将洗好的衣物装进篮子。物体身份及操作后的状态应保持一致。",
+      "key": "l3-e01",
+      "level": 3,
+      "category": "EmbodiedEnvironment",
+      "title_en": "Embodied Environment: Furnished Kitchen and Utility Suite",
+      "instruction_sha256": "a66bf56fbc663e34538998f177e86f3a8dad20aa1665830808e95bb3b81afa8c"
+    },
+    {
+      "id": "L3/EmbodiedEnvironment/SupermarketServiceBlock",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：超市营业区、冷库与卸货区",
+      "zones": [
+        "shop_floor",
+        "stockroom",
+        "cold_store",
+        "loading_bay",
+        "returns_counter"
+      ],
+      "mechanism_families": [
+        "door",
+        "container",
+        "cart",
+        "scanner",
+        "cargo",
+        "receptacle"
+      ],
+      "continuous_workflow": "在卸货区接收并扫描十二件货品，将牛奶送到冷库、罐头补至常温货架、瓶装货补至独立陈列架；每类取一件送到退货台，保留剩余库存，再将补货车归还卸货区。",
+      "key": "l3-e02",
+      "level": 3,
+      "category": "EmbodiedEnvironment",
+      "title_en": "Embodied Environment: Supermarket and Service Areas",
+      "instruction_sha256": "d59ca159adb9d652aa8e4a9ce82890b50be05a83ccb557cd8384de02bcefa454"
+    },
+    {
+      "id": "L3/EmbodiedEnvironment/WorkshopLoadingYard",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：维修工坊与室外物流场",
+      "zones": [
+        "parts_store",
+        "workstation_a",
+        "workstation_b",
+        "packing_area",
+        "loading_yard"
+      ],
+      "mechanism_families": [
+        "drawer",
+        "locked_cabinet",
+        "key",
+        "vice",
+        "table",
+        "door",
+        "pallet_truck",
+        "part",
+        "tool",
+        "receptacle",
+        "container"
+      ],
+      "continuous_workflow": "解锁工具柜、取零件、夹紧底座、安装并紧固支架，松开后检查并包装成品，再用托盘车经装卸门运到室外指定货位；归还工具，将托盘车货叉放下后停好。",
+      "key": "l3-e03",
+      "level": 3,
+      "category": "EmbodiedEnvironment",
+      "title_en": "Embodied Environment: Repair Workshop and Loading Yard",
+      "instruction_sha256": "006aec73c895a18bcc36b986ae398901c4c53e55fb727cdf9fbddb5e91b4943c"
+    },
+    {
+      "id": "L3/EmbodiedEnvironment/GreenhouseOrchard",
+      "domain": "embodied",
+      "input_mode": "image",
+      "title": "具身：育苗棚、果园与灌溉服务区",
+      "zones": [
+        "netted_nursery",
+        "orchard",
+        "pump_house",
+        "reservoir",
+        "sorting_bench",
+        "packing_shelter"
+      ],
+      "mechanism_families": [
+        "switch",
+        "valve",
+        "fruit",
+        "container",
+        "cart",
+        "scale",
+        "gate",
+        "door"
+      ],
+      "continuous_workflow": "仅对育苗棚分区灌溉后关泵，采摘两类果实并分装，逐箱称重，用推车运到包装棚，再取出一枚果实复称，显示内容物变化。",
+      "key": "l3-e04",
+      "level": 3,
+      "category": "EmbodiedEnvironment",
+      "title_en": "Embodied Environment: Netted Plant Nursery, Orchard and Irrigation",
+      "instruction_sha256": "86da90ef4c82f15fd5dd2efc87fea760051b64fe68af94f594f9662c66f53a61"
+    },
+    {
+      "id": "L3/EmbodiedEnvironment/ClinicalServiceWard",
+      "domain": "embodied",
+      "input_mode": "text",
+      "title": "具身：病区及物资服务走廊",
+      "zones": [
+        "loop_corridor",
+        "patient_room_01",
+        "patient_room_02",
+        "patient_room_03",
+        "patient_room_04",
+        "patient_room_05",
+        "patient_room_06",
+        "nursing_station",
+        "clean_supply",
+        "utility_room"
+      ],
+      "mechanism_families": [
+        "door",
+        "locked_cabinet",
+        "drawer",
+        "curtain",
+        "cart",
+        "adjustable_bed",
+        "keycard",
+        "cargo",
+        "tap",
+        "receptacle"
+      ],
+      "continuous_workflow": "在护士站取门卡，装载六包毛巾，每间病房床头抽屉放一包；调节 3 号房的空床并打开帘子；从每房取回一个容器送至杂物间，最后归还门卡并停好空车。",
+      "key": "l3-e05",
+      "level": 3,
+      "category": "EmbodiedEnvironment",
+      "title_en": "Embodied Environment: Ward and Supply Corridor",
+      "instruction_sha256": "48d398a1db3111960dadfe08348837405e13d4dedb3c48e8a57252d6532ebb9e"
+    },
+    {
+      "id": "L3/EmbodiedEnvironment/WaterTreatmentFacility",
+      "domain": "embodied",
+      "input_mode": "text",
+      "title": "具身：水处理设施与检修平台",
+      "zones": [
+        "raw_tank",
+        "treatment_line_a",
+        "treatment_line_b",
+        "clean_tank",
+        "pump_house",
+        "control_room",
+        "parts_store",
+        "inspection_platform"
+      ],
+      "mechanism_families": [
+        "switch",
+        "valve",
+        "housing",
+        "filter",
+        "cart",
+        "receptacle"
+      ],
+      "continuous_workflow": "检查指定的一号支路，停泵并隔离该支路；取备用滤芯完成更换，将旧滤芯送回零件库回收位。关闭检修壳体、恢复阀门并开泵，显示恢复进水，二号支路阀门设置不变。",
+      "key": "l3-e06",
+      "level": 3,
+      "category": "EmbodiedEnvironment",
+      "title_en": "Embodied Environment: Water Treatment and Maintenance",
+      "instruction_sha256": "b65571e76aa58239e8ea00f9c97ad0972ac0d5383194744455346e018c9e53d4"
+    },
+    {
+      "id": "L3/RealWorldEnvironment/HengdianPalaceDistrict",
+      "domain": "real_world",
+      "input_mode": "image",
+      "title": "现实：横店秦王宫前广场、宫门和相连院落",
+      "zones": [
+        "main_forecourt",
+        "main_gate",
+        "inner_courtyard",
+        "side_gallery",
+        "service_store"
+      ],
+      "mechanism_families": [
+        "door",
+        "movable",
+        "light",
+        "cart",
+        "container"
+      ],
+      "continuous_workflow": "从后勤库经侧门运出两箱器材，在拍摄区布置围栏，取出附件，打开两组灯并保持第三组关闭；开启主门，再回收附件与围栏、关闭灯光，将器材送回库房。",
+      "key": "l3-r01",
+      "level": 3,
+      "category": "RealWorldEnvironment",
+      "title_en": "Hengdian Qin Palace: Forecourt, Gate and Courtyards",
+      "instruction_sha256": "5ccfb8064a42a8719b9070fecbd7fa1f7ed072b4c5fd5c48935c51c97b367f80"
+    },
+    {
+      "id": "L3/RealWorldEnvironment/CoastalFerryTerminal",
+      "domain": "real_world",
+      "input_mode": "image",
+      "title": "现实：长洲渡轮码头与市场后勤区",
+      "zones": [
+        "waiting_hall",
+        "quay",
+        "fixed_ferry",
+        "market_stalls",
+        "warehouse",
+        "service_lane"
+      ],
+      "mechanism_families": [
+        "gate",
+        "gangway",
+        "shutter",
+        "awning",
+        "cart",
+        "cargo",
+        "receptacle"
+      ],
+      "continuous_workflow": "在仓库装六件货物，开摊位卷帘并展开遮阳棚，每摊送两件。展开舷梯、开启登船通道，走上固定渡船后返回，关闭登船门、收起舷梯，归还空推车。",
+      "key": "l3-r02",
+      "level": 3,
+      "category": "RealWorldEnvironment",
+      "title_en": "Cheung Chau Ferry Terminal and Market Service Area",
+      "instruction_sha256": "1ad6f5e626c473fab7bbc39fdd8144f783b46c7bdfde2b367e79f6befe5de19c"
+    },
+    {
+      "id": "L3/RealWorldEnvironment/RegionalRailHub",
+      "domain": "real_world",
+      "input_mode": "text",
+      "title": "现实：县域铁路站前综合交通枢纽",
+      "zones": [
+        "forecourt",
+        "taxi_rank",
+        "ticket_hall",
+        "waiting_hall",
+        "upper_concourse",
+        "platform_01",
+        "platform_02",
+        "service_yard"
+      ],
+      "mechanism_families": [
+        "terminal",
+        "ticket_gate",
+        "lift",
+        "door",
+        "cart",
+        "cargo",
+        "container",
+        "shutter",
+        "receptacle"
+      ],
+      "continuous_workflow": "在出租车区收集六件行李装车，取得车票，经闸机、电梯和无障碍路线到站台；两件存入柜内、四件送到站台行李位。取回一件已存行李，经后勤路线返回，将车停好且保留车上这件行李。",
+      "key": "l3-r03",
+      "level": 3,
+      "category": "RealWorldEnvironment",
+      "title_en": "Regional Rail Station and Intermodal Forecourt",
+      "instruction_sha256": "5901ef6a6187238782fa99fe544dffe3e998898fb212049ae08143b07f4db984"
+    }
+  ]
+}

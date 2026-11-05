@@ -1,0 +1,157 @@
+{
+  "version": "reference-boxes-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "42178ddfa40f9ab14f36fec7eb1d1fa8e92e62ea3204b046894fb81406a1cce5",
+  "image_size": [
+    800,
+    450
+  ],
+  "detector": {
+    "model": "IDEA-Research/grounding-dino-tiny",
+    "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+    "files": {
+      "README.md": "cf46f74c7b6850f1d5cbe406028324d8798148726016d46a69a365b4a2d3e89f",
+      "added_tokens.json": "909e96cb32d92ce728a01bc99850cbba26196d74115c17ebeb019275412588f2",
+      "config.json": "eec82c5ab66e16df12a9a212e68ac011779927c2536cf9078658e35d85f0c67a",
+      "model.safetensors": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3",
+      "preprocessor_config.json": "8454179ba95e2ad22947835aad7b45862a601fc0055ab88bf1ee70892d3aea60",
+      "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "tokenizer_config.json": "d40ab645b68211910b9170d22433d43186a6ec8ee6fd10ba170524b25bf4fb56",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    "runtime": {
+      "torch": "2.9.1+cpu",
+      "transformers": "4.57.3"
+    },
+    "device": "cpu",
+    "threads": 4,
+    "worker_version": "l2-grounding-dino-v4",
+    "uniform_max_channel_range": 1,
+    "query_mode": "joint_phrases_unique_label",
+    "threshold": 0.25,
+    "text_threshold": 0.25,
+    "use_fast": false,
+    "fingerprint": "1c75179dab5d3635a53e34dd587af9cb18704e23244e174c399790da22dd2608"
+  },
+  "context_queries": [],
+  "targets": [
+    {
+      "id": "arch",
+      "label": "拱门",
+      "query": "archway",
+      "weight": 0.4,
+      "boxes": [
+        [
+          0.328,
+          0.23,
+          0.556,
+          0.71
+        ]
+      ],
+      "review_status": "pending",
+      "review_note": "检测器分别框出拱顶和通道，需统一完整拱门范围。"
+    },
+    {
+      "id": "shelves",
+      "label": "货架",
+      "query": "shelf",
+      "weight": 0.35,
+      "boxes": [
+        [
+          0.21681100845336915,
+          0.31177446153428817,
+          0.309737434387207,
+          0.8333595784505209
+        ],
+        [
+          0.7228715515136719,
+          0.38655198838975696,
+          0.8142098236083984,
+          0.6464143880208333
+        ],
+        [
+          0.8135205841064453,
+          0.42831634521484374,
+          0.9070283508300782,
+          0.6424033610026042
+        ],
+        [
+          0.8789822387695313,
+          0.37166314019097224,
+          1.0,
+          0.9992357042100695
+        ],
+        [
+          0.5907183837890625,
+          0.3780634562174479,
+          0.7311607360839844,
+          0.6694782850477431
+        ],
+        [
+          0.07086615085601806,
+          0.4195560370551215,
+          0.16434389114379883,
+          0.6775057644314236
+        ]
+      ],
+      "review_status": "pending",
+      "review_note": "镜中货架、实体货架和局部立柱的实例粒度待确认。"
+    },
+    {
+      "id": "lamps",
+      "label": "吊灯",
+      "query": "pendant lamp",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.4328006362915039,
+          0.28872233072916664,
+          0.4619336318969727,
+          0.37622399224175346
+        ],
+        [
+          0.614842414855957,
+          0.12179364522298176,
+          0.6603679656982422,
+          0.28292178683810765
+        ],
+        [
+          0.7467101287841796,
+          0.010564885669284397,
+          0.8201314544677735,
+          0.14642593383789063
+        ],
+        [
+          0.036255836486816406,
+          0.13316485087076824,
+          0.12262710571289062,
+          0.3338828870985243
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "参考图逐项核对；只批准可见实例。检测器误检仍需独立样本校准。"
+    }
+  ],
+  "reviewed_by": "assistant_reference_visual_review_2026-10-09",
+  "review_kind": "reference_only_pilot",
+  "proposal_sha256": "820df9a1aa3085f9f598aa6d29bd768d8a73a5673b5086ff16d4e9dff7160eac",
+  "definitions_sha256": "558fa8daf9822182be1997c0a9c8f7f4b3fb775fe2a78cddb698d188d678b4f6",
+  "source_review_directory": "[removed machine-local provenance]",
+  "formal_score_eligible": false,
+  "proposal_detector_fingerprint": "741d93dddea1a9eb00c64f8dac30b978ceddb64c83ce5ab3c60c0e006715e20a",
+  "detector_revision_note": "v4 adds only spatially uniform image rejection; reference boxes and class weights remain fixed from reference-only review."
+}

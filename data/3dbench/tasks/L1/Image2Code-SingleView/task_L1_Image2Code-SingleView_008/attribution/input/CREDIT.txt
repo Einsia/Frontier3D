@@ -1,0 +1,7 @@
+RED Digital Cinema Weapon Dragon 8K Camera
+Author: Christopher Holloway (https://sketchfab.com/cholloway2392)
+Source: https://sketchfab.com/3d-models/red-digital-cinema-weapon-dragon-8k-camera-e1127f2c8d4d4d65b9608ff3714890bc
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Removed only the two display-turntable meshes; camera components retained.
+No endorsement by the original author is implied.

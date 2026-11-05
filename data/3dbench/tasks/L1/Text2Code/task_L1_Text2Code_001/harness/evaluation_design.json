@@ -1,0 +1,1392 @@
+{
+  "version": "l1-evaluation-design-v1",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_001",
+  "category": "Text2Code",
+  "status": "design_with_legacy_partial_implementation",
+  "scoring_profile": "text_numeric",
+  "sources": {
+    "instruction.md": "93b80b7675ac4de4ae72fc06eaa5c31e7ff79b99563077320c7bcd05b00a8c44",
+    "solution/EVALUATION.md": "61d0750f4123752b20f0ad819288b535f404dacd1d1376d362276354bafdb99d",
+    "harness/eval_spec.json": "fbe05c3ffba7a66531bc3aa3e58d0f74189f9703ce1595b6581d10d7f93589a6"
+  },
+  "title": "评测侧说明",
+  "case_focus": "法兰四孔节圆/中心孔、轴/螺栓/垫圈实际截面；2 mm 间隙与穿孔，允许整体平移/绕 Z 旋转",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "line": 7,
+      "source_quote": "| 可执行性 | 固定文件与入口复现 | 清洁环境运行 instruction 中 Blender 命令，打开场景及 GLB；核对依赖不超出工作区。 |",
+      "dimension": "可执行性",
+      "criteria": [
+        "固定文件与入口复现",
+        "清洁环境运行 instruction 中 Blender 命令，打开场景及 GLB；核对依赖不超出工作区。"
+      ],
+      "methods": [
+        "execution",
+        "delivery"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_02",
+      "line": 8,
+      "source_quote": "| 结构 | 11 件独立闭合连通零件 | 根据形状、尺寸和装配关系匹配 2 法兰、1 轴、4 螺栓、4 垫圈；允许同类对称件置换，不依赖私有名称。 |",
+      "dimension": "结构",
+      "criteria": [
+        "11 件独立闭合连通零件",
+        "根据形状、尺寸和装配关系匹配 2 法兰、1 轴、4 螺栓、4 垫圈；允许同类对称件置换，不依赖私有名称。"
+      ],
+      "methods": [
+        "solid",
+        "editable"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_03",
+      "line": 9,
+      "source_quote": "| 几何 | 零件尺寸、孔径、节圆、六角头和厚度 | 几何测量结合横截面与穿孔探针；尺寸容差 0.3 mm。非流形、实体体积与多余组件单列。 |",
+      "dimension": "几何",
+      "criteria": [
+        "零件尺寸、孔径、节圆、六角头和厚度",
+        "几何测量结合横截面与穿孔探针；尺寸容差 0.3 mm。非流形、实体体积与多余组件单列。"
+      ],
+      "methods": [
+        "numeric"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_04",
+      "line": 10,
+      "source_quote": "| 装配 | 同轴、孔轴对齐、2 mm 面间隙、贴合与穿透 | 原点可不同，只允许统一平移及绕竖轴旋转对齐，不允许逐件配准。位置容差 0.3 mm；检查垫圈上下接触和贯穿轴的端部伸出。 |",
+      "dimension": "装配",
+      "criteria": [
+        "同轴、孔轴对齐、2 mm 面间隙、贴合与穿透",
+        "原点可不同，只允许统一平移及绕竖轴旋转对齐，不允许逐件配准。位置容差 0.3 mm；检查垫圈上下接触和贯穿轴的端部伸出。"
+      ],
+      "methods": [
+        "assembly"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_05",
+      "line": 11,
+      "source_quote": "| 状态 | 帧 1 装配、帧 61 爆炸、形状保持 | 帧 61 不比较作者选择的爆炸坐标，只检查间隔可辨、各件形状保持和帧 1 可恢复。GLB 与帧 1 一致。 |",
+      "dimension": "状态",
+      "criteria": [
+        "帧 1 装配、帧 61 爆炸、形状保持",
+        "帧 61 不比较作者选择的爆炸坐标，只检查间隔可辨、各件形状保持和帧 1 可恢复。GLB 与帧 1 一致。"
+      ],
+      "methods": [
+        "state",
+        "delivery",
+        "numeric",
+        "assembly"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_06",
+      "line": 12,
+      "source_quote": "| 视觉 | 材料类别与装配可读性 | 统一视角下检查蓝灰法兰、银色轴螺栓、黄铜垫圈；不把作者渲染相机或背景当作模型隐藏要求。 |",
+      "dimension": "视觉",
+      "criteria": [
+        "材料类别与装配可读性",
+        "统一视角下检查蓝灰法兰、银色轴螺栓、黄铜垫圈；不把作者渲染相机或背景当作模型隐藏要求。"
+      ],
+      "methods": [
+        "assembly",
+        "numeric_material"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_07",
+      "line": 13,
+      "source_quote": "| 效率 | 时间、token、调用和重试 | Harness 记录完整轨迹，包括失败成本。 |",
+      "dimension": "效率",
+      "criteria": [
+        "时间、token、调用和重试",
+        "Harness 记录完整轨迹，包括失败成本。"
+      ],
+      "methods": [
+        "cost",
+        "execution"
+      ],
+      "status": "designed_not_fully_implemented"
+    }
+  ],
+  "method_definitions": {
+    "execution": "外层清洁基准+seed 0/1/2执行；原生/导出独立加载；交付哈希绑定，失败不删除。",
+    "delivery": "独立重新导入GLB比较世界尺度、几何/孔槽/姿态和可表达材质；不可表达的程序化节点单列，不自动烘焙位图。",
+    "solid": "求值世界空间网格；连通、流形、退化、自交、有限正体积；图像扫描/曲面题不强制闭合或固定对象数。",
+    "editable": "检查实际可编辑几何/部件组织及代码重建；对象名、变量名、顶点顺序不作为正确性真值。",
+    "numeric": "按本题数值条款拟合实际平面/圆柱/截面；报告mm误差和容差；孔槽用边界+占用/连通检查，AABB仅作粗筛。",
+    "assembly": "以几何匹配角色/对称置换；一次整体刚体对齐后测轴线、接触、规定间隙和实际实体穿透，禁止逐件配准。",
+    "state": "按本题帧策略比较局部形状、身份和恢复；GLB对帧1；不要求参考的爆炸方向或距离。",
+    "numeric_material": "只检查明确配色/金属度等可测材质参数及实际分配；不以相机、背景、整体文本语义或私有示意图像素相似度给Text2Code评分。",
+    "cost": "保留成功、失败、重试和反馈各轮时间/token/调用；未知token为null；成本与质量分列。"
+  },
+  "public_numeric_clauses": [
+    "Create an editable vertical bolted-flange assembly from the following dimensions. It consists of two identical circular flanges, one through shaft, four hex-head bolts and four washers: 11 separate solid parts. No reference image or initial model is supplied.",
+    "All dimensions below are in millimetres. Each flange has outer diameter 90, thickness 12 and a central through-bore of diameter 20.4. Add four through-holes of diameter 6.4 at equal 90-degree intervals on a 64-diameter pitch circle. The shaft has diameter 20 and length 46. Each bolt has a diameter-6 cylindrical shank 27.5 long and a hexagonal head 4 high with circumcircle diameter 10.8. Each washer has outer diameter 12, inner diameter 6.4 and thickness 1.5. Threads and edge chamfers are not required.",
+    "Use the lower flange's bottom face as height zero. Place the upper flange's bottom face at height 14, leaving a 2 mm gap between the flange faces. Center both flanges on the same vertical axis and align their four bolt holes. Place the shaft center at height 20. Seat each washer on the upper flange, with its bottom at height 26. Each bolt enters from above, its head resting on its washer and its shank extending down through the aligned flange holes to height zero. Keep the shaft, flanges, bolts and washers as independently editable parts. Use blue-gray flange bodies, silver-gray shaft and bolts, and brass-colored washers.",
+    "Use metres and Z up in the exported files. Keep dimensional and assembled-position errors within 0.3 mm. Every part should be closed and connected, with real through-holes and no unwanted solid intersections; small specified shaft and bolt clearances must remain. Show the assembled state at frame 1 and a legible exploded state at frame 61. Choose the explosion directions and distances yourself, preserving each part's shape and allowing the original assembly to be restored. The GLB must represent frame 1. Choose your own descriptive names and a clear assembly hierarchy."
+  ],
+  "local_regions": [],
+  "expected_parts": 11,
+  "frames": {
+    "protocol": "l1-reproduction-frame-policy-v1",
+    "task_id": "L1/Text2Code/task_L1_Text2Code_001",
+    "native_frames": [
+      1,
+      61,
+      1
+    ],
+    "glb_frames": [
+      1
+    ],
+    "cross_format_frames": [
+      1
+    ],
+    "scope": "Native declared states; exported GLB at assembled frame 1 only",
+    "native_inspection": "single_session_with_fixed_identity_return",
+    "limitation": "Return checks do not prove rigid shape preservation during explosion, true separation or complete materials"
+  },
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "README.md"
+  ],
+  "current_tolerances": {
+    "dimension_m": 0.0003
+  },
+  "reference_images": {},
+  "material_policy": {
+    "kind": "procedural_only",
+    "bitmap_inputs": "forbidden",
+    "constant_colors_and_procedural_nodes": "allowed",
+    "apply_bitmap_ban_to_reference_assets": false,
+    "authority": "user_goal_2026-10-03",
+    "requires_public_prompt_override": true
+  },
+  "deferred": [
+    "整体场景是否符合文本描述的ViT/语义评分；不延期明确尺寸、孔槽和装配数值"
+  ],
+  "scope_limits": [
+    "私有solution只供测评端，不进入生成输入",
+    "设计完成不等于算法实现或候选通过；各项原始误差和未实现项保留",
+    "未公开的尺度/距离/图像阈值须pilot校准，不能静默作为硬门槛",
+    "缺件/盲孔/错配合/破坏保护区等反例须先验收，再提升覆盖声明"
+  ],
+  "current_requirements": [
+    {
+      "id": "part_roles",
+      "implementation": "partial",
+      "check_ids": [
+        "part_inventory",
+        "part_count"
+      ],
+      "reason": "尺寸匹配与对象数量只能提供代理证据，尚未识别真实特征及编辑性。"
+    },
+    {
+      "id": "flange_dimensions",
+      "implementation": "partial",
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "包围盒不是圆柱特征测量，不依赖名称但仍需语义绑定。"
+    },
+    {
+      "id": "flange_bores",
+      "implementation": "missing",
+      "check_ids": [],
+      "reason": "共用截面与孔道方法尚未绑定本题孔位、完整厚度及容差。"
+    },
+    {
+      "id": "shaft_dimensions",
+      "implementation": "partial",
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚未用实际轴线与圆形截面验证。"
+    },
+    {
+      "id": "bolt_features",
+      "implementation": "partial",
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尺寸代理不证明分段结构；合法六角转角需要特征测量。"
+    },
+    {
+      "id": "washer_features",
+      "implementation": "partial",
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚未绑定垫圈通孔与厚度测量。"
+    },
+    {
+      "id": "assembly",
+      "implementation": "missing",
+      "check_ids": [],
+      "reason": "位置容差0.3 mm、配合、轴线、接触及整体平移/绕Z旋转归一尚未接入。"
+    },
+    {
+      "id": "clearance",
+      "implementation": "missing",
+      "check_ids": [],
+      "reason": "单件有效性不能代替零件间干涉和间隙判定。"
+    },
+    {
+      "id": "topology",
+      "implementation": "complete",
+      "check_ids": [
+        "closed",
+        "connected"
+      ],
+      "reason": ""
+    },
+    {
+      "id": "solid_validity",
+      "implementation": "complete",
+      "check_ids": [
+        "solid_validity"
+      ],
+      "reason": ""
+    },
+    {
+      "id": "units",
+      "implementation": "partial",
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "仍需跨格式物理尺度、几何轴向及位置验证。"
+    },
+    {
+      "id": "hierarchy",
+      "implementation": "partial",
+      "check_ids": [
+        "hierarchy"
+      ],
+      "reason": "所有零件有父对象不等于合理单根层级。"
+    },
+    {
+      "id": "materials",
+      "implementation": "missing",
+      "check_ids": [],
+      "reason": "现有材质诊断尚未绑定各角色配色与外观。"
+    },
+    {
+      "id": "state_cycle",
+      "implementation": "partial",
+      "check_ids": [
+        "assembled_valid",
+        "exploded_valid",
+        "reproducible"
+      ],
+      "reason": "重现比较与两帧有效性不能证明本题拆分合理；固定诊断视图尚未自适应合法整体位移。"
+    },
+    {
+      "id": "glb_readable",
+      "implementation": "complete",
+      "check_ids": [
+        "export"
+      ],
+      "reason": ""
+    },
+    {
+      "id": "glb_assembled",
+      "implementation": "partial",
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "跨格式诊断已复用，任务级语义阈值仍待标定。"
+    },
+    {
+      "id": "reconstruction",
+      "implementation": "partial",
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "独立基准与全部seed有实际执行及几何比较；完整依赖、材质等价和任务语义尚未覆盖。"
+    },
+    {
+      "id": "instructions",
+      "implementation": "partial",
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "已检查README可读取并收集源码/辅助文件；尚未验证说明语义完整性。"
+    },
+    {
+      "id": "procedural_materials",
+      "implementation": "partial",
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "implementation": "partial",
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "case_blueprint": {
+    "version": "l1-case-blueprint-2026-10-05",
+    "definition_sha256": "636127c6131d0c5d83e4f0fb98a8d262ec38f1b88ba11512c7509023f4a5aab8",
+    "status": "engineering_design_not_full_implementation",
+    "title": "11件法兰装配：2法兰、轴、4螺栓、4垫圈",
+    "source_evaluation_lines": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "parameter_authority": "public_numeric_clauses逐条及instruction全文；摘要不是替代规格，缺参数不得从私有实现静默补充",
+    "groups": [
+      {
+        "id": "dimensions_surfaces",
+        "design": "法兰Ø90/厚12/中心孔Ø20.4；轴Ø20×46；实际圆柱及端面拟合，螺栓六角头按外接圆而非对边距测量。"
+      },
+      {
+        "id": "features_topology",
+        "design": "每法兰4个Ø6.4孔、PCD64、90°分布；两层孔到上下口连续开放，匹配同类孔允许循环置换。"
+      },
+      {
+        "id": "assembly_relationships",
+        "design": "法兰面间隙2、轴中心Z20、垫圈底Z26；检测垫圈贴合、螺栓穿两层孔及规定径向间隙，不以AABB相交认定干涉。"
+      }
+    ],
+    "tolerances": "尺寸与装配位置各0.3 mm；角度误差另报，不杜撰角度容差",
+    "alignment": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。",
+    "measurement_contract": [
+      "角色按实际形状/尺寸/配合联合匹配，允许同类对称置换；缺件、重复件、歧义单列，不读对象名或源变量作为真值。",
+      "实际求值世界网格（m）测量并换算mm；原生与GLB分别取证，绑定资产/指令/规格/设计/参考哈希。",
+      "拟合只确定特征坐标；完整边界/壁面误差界和空域连通证据检出切片间缺陷，不用有限采样通过声明全域正确。",
+      "返回测量值、单位、目标、误差区间、容差、对象/面域、来源和passed/failed/not_measurable/infrastructure_error；超预算不能通过。",
+      "每个seed与基准使用同一质量入口；状态遵循本题帧策略，重现成功不代替质量通过。"
+    ],
+    "positive_controls": [
+      "公开要求生成的正确候选，不加载私有target",
+      "等价重三角化/圆周密度变化与合法同类件置换",
+      "各独立尺寸在容差内且组合同时偏移，不引入隐藏更严门"
+    ],
+    "negative_controls": [
+      "孔数正确但PCD错误",
+      "上法兰单独旋转造成错孔",
+      "垫圈悬空",
+      "螺栓只到第一层孔。"
+    ],
+    "boundary_controls": [
+      "逐尺寸t−ε/t/t+ε（ε大于证明误差），半径和直径不混用",
+      "最后seed单独破坏一项，其余seed正常",
+      "缺证据/来源漂移/预算不足均不能判通过"
+    ],
+    "implementation": {
+      "current_metrics": [
+        "all_seed_checks",
+        "equals",
+        "procedural_material_sequence",
+        "procedural_materials",
+        "render_validity",
+        "seed_success",
+        "semantic_inventory"
+      ],
+      "specialized_metric": null,
+      "specialized_check_ids": [],
+      "status": "已有通用/代理检查；以下专属方法尚未完整实现和验收",
+      "full_task_verified": false
+    },
+    "remaining": [
+      "按三个本题组逐项补测量及以上正反例；已有专项不代表整个组均完成",
+      "实际角色材质参数/赋值与一般程序化材质等价；不以禁位图门替代颜色或保持性",
+      "独立编辑/装配状态、跨格式与完整交付要求；新候选基准及全部seed冻结验收",
+      "容差以题面为准；未规定的连续分归一化/阈值/材料数值需pilot校准"
+    ],
+    "scoring_scope": "任务符合度包含明确尺寸/孔道/装配/材质/状态及编辑保持；不以整体文本或截图judge取代。Text/Code的80/20尚未在本轮激活。"
+  },
+  "measurement_contract": {
+    "version": "l1-text-edit-measurement-contract-v1",
+    "task_id": "L1/Text2Code/task_L1_Text2Code_001",
+    "sources": {
+      "instruction.md": "93b80b7675ac4de4ae72fc06eaa5c31e7ff79b99563077320c7bcd05b00a8c44",
+      "solution/EVALUATION.md": "61d0750f4123752b20f0ad819288b535f404dacd1d1376d362276354bafdb99d",
+      "harness/eval_spec.json": "fbe05c3ffba7a66531bc3aa3e58d0f74189f9703ce1595b6581d10d7f93589a6"
+    },
+    "status": "implementation_contract_design_only",
+    "new_metrics_registered": false,
+    "full_task_verified": false,
+    "score_policy_changed": false,
+    "definition_sha256": {
+      "l1_measurement_contracts.py": "c6ffdab074796fce4437789abc397a0f0d3bc9f60984114b22d0ab11b7e46b46",
+      "l1_case_targets.py": "ffd62964acbbd0454c454c17ce3b1f3b1205b4211c431b7e90e29023d5947ed5"
+    },
+    "roles": {
+      "flange": 2,
+      "shaft": 1,
+      "bolt": 4,
+      "washer": 4
+    },
+    "expected_parts": 11,
+    "landmarks": [
+      {
+        "id": "flange.outer_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 90,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "flange.thickness",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 12,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "flange.bore_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 20.4,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "flange.bolt_hole_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 6.4,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "flange.pitch_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 64,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "shaft.diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 20,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "shaft.length",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 46,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "bolt.shank_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 6,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "bolt.shank_length",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 27.5,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "bolt.head_height",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 4,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "bolt.head_circumdiameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 10.8,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "washer.outer_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 12,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "washer.bore_diameter",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 6.4,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "washer.thickness",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 1.5,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "flange.face_gap",
+        "quantity": "dimension",
+        "unit": "mm",
+        "public_nominal": 2,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_dimension_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "lower_flange.bottom_z",
+        "quantity": "position",
+        "unit": "mm",
+        "public_nominal": 0,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_instance_spatial_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "upper_flange.bottom_z",
+        "quantity": "position",
+        "unit": "mm",
+        "public_nominal": 14,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_instance_spatial_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "shaft.center_z",
+        "quantity": "position",
+        "unit": "mm",
+        "public_nominal": 20,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_instance_spatial_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "washer.bottom_z",
+        "quantity": "position",
+        "unit": "mm",
+        "public_nominal": 26,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_instance_spatial_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      },
+      {
+        "id": "bolt.bottom_z",
+        "quantity": "position",
+        "unit": "mm",
+        "public_nominal": 0,
+        "judgement_reference": "public_nominal",
+        "tolerance_mm": 0.3,
+        "tolerance_authority": "instruction_and_EVALUATION",
+        "comparison": "per_instance_spatial_error",
+        "tolerance_quantity": "feature_error",
+        "datum": "只作EVALUATION允许的一次整体对齐；001限平移/绕Z旋转，015允许自由原点；保留Z向上，不缩放、不逐件配准。"
+      }
+    ],
+    "relationships": [
+      "两法兰中心/轴同轴；四孔按90°空间分布且两层孔对齐",
+      "垫圈贴上法兰、头贴垫圈、杆贯穿两法兰，轴孔/螺栓孔保有规定间隙"
+    ],
+    "landmark_scope": "显式数值锚点不是完整规格；完整要求见requirement_contracts和全部公开条款。剩余位置/特征仍须逐条绑定，不能只实现此表就宣称整题通过。",
+    "requirement_contracts": [
+      {
+        "id": "part_roles",
+        "text": "两个法兰、一根轴、四个六角螺栓、四个垫圈，共11件独立可编辑零件",
+        "source": "instruction.md paragraphs 1, 3",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "editable",
+          "roles"
+        ],
+        "current_check_ids": [
+          "part_inventory",
+          "part_count"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "尺寸匹配与对象数量只能提供代理证据，尚未识别真实特征及编辑性。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "flange_dimensions",
+        "text": "法兰外径90 mm、厚12 mm",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "features",
+          "passages",
+          "roles"
+        ],
+        "current_check_ids": [
+          "part_inventory"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "包围盒不是圆柱特征测量，不依赖名称但仍需语义绑定。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "flange_bores",
+        "text": "中心通孔20.4 mm；四个6.4 mm孔位于64 mm节圆且90度等分",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "features",
+          "passages",
+          "roles"
+        ],
+        "current_check_ids": [],
+        "current_implementation": "missing",
+        "current_limitation": "共用截面与孔道方法尚未绑定本题孔位、完整厚度及容差。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "shaft_dimensions",
+        "text": "轴直径20 mm、长46 mm",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "features",
+          "passages",
+          "roles"
+        ],
+        "current_check_ids": [
+          "part_inventory"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "尚未用实际轴线与圆形截面验证。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "bolt_features",
+        "text": "螺杆直径6 mm、长27.5 mm，六角头高4 mm、外接圆直径10.8 mm",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "features",
+          "passages",
+          "roles"
+        ],
+        "current_check_ids": [
+          "part_inventory"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "尺寸代理不证明分段结构；合法六角转角需要特征测量。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "washer_features",
+        "text": "垫圈外径12 mm、内径6.4 mm、厚1.5 mm",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "features",
+          "passages",
+          "roles"
+        ],
+        "current_check_ids": [
+          "part_inventory"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "尚未绑定垫圈通孔与厚度测量。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "assembly",
+        "text": "法兰底面相对高度0/14 mm、间隙2 mm；轴心20 mm；垫圈底26 mm；螺杆底0 mm，轴孔共轴且贴合",
+        "source": "instruction.md paragraph 3",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "assembly",
+          "features",
+          "passages",
+          "roles"
+        ],
+        "current_check_ids": [],
+        "current_implementation": "missing",
+        "current_limitation": "位置容差0.3 mm、配合、轴线、接触及整体平移/绕Z旋转归一尚未接入。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "clearance",
+        "text": "真实通孔、规定间隙且无非预期实体穿透",
+        "source": "instruction.md paragraph 4",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "assembly",
+          "features",
+          "passages",
+          "roles"
+        ],
+        "current_check_ids": [],
+        "current_implementation": "missing",
+        "current_limitation": "单件有效性不能代替零件间干涉和间隙判定。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "topology",
+        "text": "每件闭合且连通",
+        "source": "instruction.md paragraph 4",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "solid"
+        ],
+        "current_check_ids": [
+          "closed",
+          "connected"
+        ],
+        "current_implementation": "complete",
+        "current_limitation": "",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "solid_validity",
+        "text": "实体有效性",
+        "source": "instruction.md paragraphs 1, 4",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "solid"
+        ],
+        "current_check_ids": [
+          "solid_validity"
+        ],
+        "current_implementation": "complete",
+        "current_limitation": "",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "units",
+        "text": "米制、Z向上及0.3 mm尺寸/位置容差",
+        "source": "instruction.md paragraph 4",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "delivery"
+        ],
+        "current_check_ids": [
+          "part_inventory"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "仍需跨格式物理尺度、几何轴向及位置验证。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "hierarchy",
+        "text": "描述性名称自由、明确装配层级",
+        "source": "instruction.md paragraph 4",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "editable"
+        ],
+        "current_check_ids": [
+          "hierarchy"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "所有零件有父对象不等于合理单根层级。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "materials",
+        "text": "蓝灰法兰、银灰轴与螺栓、黄铜垫圈",
+        "source": "instruction.md paragraph 3",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "materials"
+        ],
+        "current_check_ids": [],
+        "current_implementation": "missing",
+        "current_limitation": "现有材质诊断尚未绑定各角色配色与外观。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "state_cycle",
+        "text": "帧1装配、帧61自由爆炸、保形且可恢复",
+        "source": "instruction.md paragraph 4",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "state"
+        ],
+        "current_check_ids": [
+          "assembled_valid",
+          "exploded_valid",
+          "reproducible"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "重现比较与两帧有效性不能证明本题拆分合理；固定诊断视图尚未自适应合法整体位移。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "glb_readable",
+        "text": "GLB可重新导入",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "delivery"
+        ],
+        "current_check_ids": [
+          "export"
+        ],
+        "current_implementation": "complete",
+        "current_limitation": "",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "glb_assembled",
+        "text": "GLB与原生帧1等价",
+        "source": "instruction.md paragraph 4",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "delivery",
+          "state"
+        ],
+        "current_check_ids": [
+          "export",
+          "reproducible"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "跨格式诊断已复用，任务级语义阈值仍待标定。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "reconstruction",
+        "text": "清洁环境从solution.py重建全部产物，不依赖旧输出或个人路径",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "delivery",
+          "execution"
+        ],
+        "current_check_ids": [
+          "reproducible"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "独立基准与全部seed有实际执行及几何比较；完整依赖、材质等价和任务语义尚未覆盖。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "instructions",
+        "text": "README说明依赖与运行方法，辅助文件便携",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "editable",
+          "execution"
+        ],
+        "current_check_ids": [
+          "readme"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "已检查README可读取并收集源码/辅助文件；尚未验证说明语义完整性。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "procedural_materials",
+        "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+        "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "materials"
+        ],
+        "current_check_ids": [
+          "native_procedural_materials",
+          "glb_procedural_materials",
+          "native_state_materials"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      },
+      {
+        "id": "seed_quality",
+        "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+        "source": "user_goal_2026-10-03 / seed delivery protocol",
+        "required": true,
+        "applicable": true,
+        "methods": [
+          "execution"
+        ],
+        "current_check_ids": [
+          "all_seed_quality"
+        ],
+        "current_implementation": "partial",
+        "current_limitation": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。",
+        "design_status": "specified_not_newly_implemented",
+        "acceptance": "对应方法证据完整，基准/两格式/适用状态/全部seed逐项判定；本题正反例与边界控制通过，才可提升实现声明"
+      }
+    ],
+    "evaluation_contracts": [
+      {
+        "id": "evaluation_01",
+        "line": 7,
+        "methods": [
+          "delivery",
+          "execution"
+        ]
+      },
+      {
+        "id": "evaluation_02",
+        "line": 8,
+        "methods": [
+          "editable",
+          "roles",
+          "solid"
+        ]
+      },
+      {
+        "id": "evaluation_03",
+        "line": 9,
+        "methods": [
+          "features",
+          "passages"
+        ]
+      },
+      {
+        "id": "evaluation_04",
+        "line": 10,
+        "methods": [
+          "assembly",
+          "roles"
+        ]
+      },
+      {
+        "id": "evaluation_05",
+        "line": 11,
+        "methods": [
+          "assembly",
+          "delivery",
+          "features",
+          "passages",
+          "roles",
+          "state"
+        ]
+      },
+      {
+        "id": "evaluation_06",
+        "line": 12,
+        "methods": [
+          "assembly",
+          "materials",
+          "review",
+          "roles"
+        ]
+      },
+      {
+        "id": "evaluation_07",
+        "line": 13,
+        "methods": [
+          "cost",
+          "execution"
+        ]
+      }
+    ],
+    "methods": {
+      "assembly": {
+        "inputs": [
+          "role_to_entities",
+          "world_feature_frames",
+          "public_relationships"
+        ],
+        "algorithm": "在一次允许的整体坐标归一后，按关系测轴线距离、端面间隙、接触面和真实实体穿透；按每实例求最大空间偏差，不累加各零件合法公差。",
+        "outputs": [
+          "relationship_errors_mm",
+          "axis_angles_deg_diagnostic",
+          "contact_domains",
+          "signed_gap_intervals",
+          "penetration_evidence"
+        ],
+        "unknown": "无角色/完整表面证据时不可测；未指定角度阈值不自行新增硬门，孔位空间误差按公开公差。"
+      },
+      "cost": {
+        "inputs": [
+          "harness_attempt_ledger"
+        ],
+        "algorithm": "记录全部成功失败和反馈轮次时间/token/工具/重试；未知token为null，成本不进入质量分。",
+        "outputs": [
+          "wall_seconds",
+          "token_usage_or_null",
+          "tool_calls",
+          "retries",
+          "per_round_cost"
+        ],
+        "unknown": "没有token观测则未知，不编造0；不因为成本未知提升/降低几何分。"
+      },
+      "delivery": {
+        "inputs": [
+          "independently_reopened_native_and_glb",
+          "source_units",
+          "artifact_manifest"
+        ],
+        "algorithm": "两格式各自采集真实世界几何，再比较尺度/姿态/孔槽/角色及可表达材质；约定米制与Z向上，交付元数据不能覆盖真实几何。",
+        "outputs": [
+          "artifact_load_status",
+          "cross_format_geometry_material_errors",
+          "unit_orientation_evidence"
+        ],
+        "unknown": "格式/加载工具故障与候选缺产物区分；缺少等价阈值时保留诊断而非擅自放行。"
+      },
+      "editable": {
+        "inputs": [
+          "native_entities_and_hierarchy",
+          "source_rebuild_outputs"
+        ],
+        "algorithm": "实际部件可选择编辑、无重复/松散填料，关键参数可追溯到重建几何；不要求变量名、固定对象名或作者特征树。",
+        "outputs": [
+          "editable_role_coverage",
+          "hierarchy_diagnostic",
+          "parameter_trace_evidence"
+        ],
+        "unknown": "参数可读性没有自动测量时单列辅助/人工，不用README存在冒充。"
+      },
+      "execution": {
+        "inputs": [
+          "harness_clean_runs",
+          "declared_public_inputs",
+          "source_and_artifact_hashes"
+        ],
+        "algorithm": "清洁目录、冻结公开输入和代码、禁私有GT及旧输出；由Harness管理执行超时重试/全seed，同一测量入口独立检查每次输出。",
+        "outputs": [
+          "run_exit_and_receipts",
+          "dependency_access",
+          "seed_quality_reports",
+          "source_identity",
+          "readme_review"
+        ],
+        "unknown": "工具故障/超时与几何失败区分；不重试测到通过再挑最高分，不递归读取自身全seed总门。"
+      },
+      "features": {
+        "inputs": [
+          "matched_world_meshes",
+          "numeric_landmarks",
+          "full_requirement_text",
+          "case_blueprint"
+        ],
+        "algorithm": "完整面域拟合平面/圆柱/圆弧/六角等，截面环分类内外边界，尺寸与形状残差分别输出；扫描全域或给保守覆盖界，不能用有限截面宣称全壁正确。",
+        "outputs": [
+          "feature_ids",
+          "face_domains",
+          "observed_intervals",
+          "error_intervals_mm",
+          "datum_evidence",
+          "representation_limits"
+        ],
+        "unknown": "特征表示不支持、闭环歧义或区间跨阈值时不可测；明确找到错误尺寸则失败。"
+      },
+      "materials": {
+        "inputs": [
+          "actual_used_material_graphs",
+          "face_assignments",
+          "world_lights_compositor",
+          "public_color_roles_or_initial_materials"
+        ],
+        "algorithm": "位图/HDRI规则与材质正确性分开；取实际有效节点和逐面分配。Text按公开材质角色，Code相对初始；GLB仅比较可表达PBR，非恒定程序化等价不以diffuse_color代替。",
+        "outputs": [
+          "dependency_compliance",
+          "role_color_evidence",
+          "material_parameter_deltas",
+          "assignment_correspondence",
+          "format_limits"
+        ],
+        "unknown": "泛称蓝灰/金属未给唯一RGB或roughness时需公开pilot锚点，不能把私有作者数值做精确硬门。"
+      },
+      "passages": {
+        "inputs": [
+          "trusted_solid_meshes",
+          "expected_ports_and_relations",
+          "case_blueprint"
+        ],
+        "algorithm": "检查完整三角面与连续孔道空域的相交/占用，并证明相邻空域存在开集交叠；检查独立通道的壁面邻接。盲孔另测实体底壁及禁止出口，不用几条射线证明连通。",
+        "outputs": [
+          "ports",
+          "certified_void_domains",
+          "connection_graph",
+          "blind_bottoms",
+          "forbidden_connections",
+          "obstruction_witnesses"
+        ],
+        "unknown": "实体可信性不足或预算/表示无法证明完整空域时不可测；缺预期出口、有封片或非法相通为失败。"
+      },
+      "review": {
+        "inputs": [
+          "trusted_native_review_renders",
+          "public_visual_requirements"
+        ],
+        "algorithm": "重渲染检查指定配色、特征可读性，供辅助诊断；不对Text使用未指定示意图像素排名，不用截图判断精确尺寸/孔道。",
+        "outputs": [
+          "review_views",
+          "visible_feature_notes",
+          "unmeasured_semantics"
+        ],
+        "unknown": "整体文本语义/审美仍延期；不能冒充几何合同完成。"
+      },
+      "roles": {
+        "inputs": [
+          "trusted_world_meshes",
+          "public_role_counts",
+          "feature_and_relation_candidates"
+        ],
+        "algorithm": "先以类型/尺度粗筛，再用真实截面/孔轴/相对关系作二分图匹配；同类对称置换等价。匹配残差不得通过逐件刚体配准消除；不能只凭AABB或对象名确定角色。",
+        "outputs": [
+          "role_to_entities",
+          "missing_roles",
+          "duplicate_roles",
+          "ambiguous_assignments",
+          "feature_evidence"
+        ],
+        "unknown": "不能可靠对应的角色相关测量不可测；匹配歧义如导致不同判定不能任选最高分。"
+      },
+      "solid": {
+        "inputs": [
+          "trusted_world_meshes",
+          "declared_geometry_policy"
+        ],
+        "algorithm": "逐交付实体检查流形、连通分量、退化面、法向、自交和正体积；合法语义零件可接触但不合并；统计只覆盖实际交付几何。",
+        "outputs": [
+          "per_entity_validity",
+          "bad_edges_faces",
+          "components",
+          "signed_volume_m3"
+        ],
+        "unknown": "采集器失败/容量超限不可当候选无效；确定的非流形/自交等另给失败证据。"
+      },
+      "state": {
+        "inputs": [
+          "single_session_native_state_sequence",
+          "persistent_entity_correspondence",
+          "glb_frame_1"
+        ],
+        "algorithm": "逐件局部形状保持与帧1→61→1恢复分开；装配帧按题面关系测，爆炸帧检查部件可辨和保形，不复用装配接触门、不匹配作者爆炸坐标。",
+        "outputs": [
+          "state_identity_map",
+          "shape_preservation_bounds",
+          "return_transform_error",
+          "state_material_results",
+          "readability_diagnostic"
+        ],
+        "unknown": "跟踪失配/未完成恢复不可测；不能用帧1和恢复一致推出中间帧保形。静态题不生成帧61要求。"
+      }
+    },
+    "execution_contract": {
+      "runs": [
+        "baseline",
+        "seed_0",
+        "seed_1",
+        "seed_2"
+      ],
+      "formats": [
+        "native",
+        "glb"
+      ],
+      "native_frames": [
+        1,
+        61,
+        1
+      ],
+      "glb_frames": [
+        1
+      ],
+      "state_semantics": "装配数值仅帧1及返回帧1；帧61只保形/身份/材质/可辨，不强制装配接触；静态题无61",
+      "coordinate_units": "inspector_world_metres_to_report_millimetres_once",
+      "trust": "仅消费测评侧inspector/CPU回执和冻结请求，不读候选自报角色/尺寸/评分JSON",
+      "scheduling": "按实际资产/格式/状态去重作业，复用哈希绑定的角色/截面/完整面域；所有作业受同一父deadline和进程组回收约束",
+      "budget_design": "接新操作拟沿用Code014的共享余量：预留60秒评分发布、每格式最多120秒、内核早5秒退出；复杂装配必须先在原预算控制中验证，不自动放大既有时限",
+      "current_scope": "以上为新接口接入约定；本轮不修改现有collector/worker/seed白名单或Harness超时重试策略"
+    },
+    "result_contract": {
+      "fields": [
+        "task_id",
+        "requirement_id",
+        "run",
+        "format",
+        "frame_occurrence",
+        "role_assignment",
+        "feature_id",
+        "source_hashes",
+        "unit",
+        "expected",
+        "observed_interval",
+        "absolute_error_interval",
+        "tolerance",
+        "method_version",
+        "status",
+        "evidence_domains",
+        "compute_receipt",
+        "reason"
+      ],
+      "statuses": [
+        "passed",
+        "failed",
+        "not_measurable",
+        "infrastructure_error",
+        "not_applicable"
+      ],
+      "decision": "误差上界≤t通过；误差下界>t失败；跨阈值/缺证据/未支持表示不可测；参考/工具故障基础设施错误；不适用须提交前在规格中明示",
+      "aggregation": "先按同一语义要求/实例聚合，全部必需证据保持；缺测不从分母删除，成本/辅助视觉不混入精确数值分。权重和现有S_core不变。"
+    },
+    "acceptance_matrix": {
+      "positive": [
+        "公开要求生成的正确候选，不加载私有target",
+        "等价重三角化/圆周密度变化与合法同类件置换",
+        "各独立尺寸在容差内且组合同时偏移，不引入隐藏更严门"
+      ],
+      "case_negative": [
+        "孔数正确但PCD错误",
+        "上法兰单独旋转造成错孔",
+        "垫圈悬空",
+        "螺栓只到第一层孔。"
+      ],
+      "boundary": [
+        "逐尺寸t−ε/t/t+ε（ε大于证明误差），半径和直径不混用",
+        "最后seed单独破坏一项，其余seed正常",
+        "缺证据/来源漂移/预算不足均不能判通过"
+      ],
+      "source_controls": [
+        "公开输入可重建，不挂载私有target",
+        "伪造证据/损坏哈希/错格式/漏seed/重复frame身份应拒绝"
+      ],
+      "release_condition": "相关回归、真实原生/GLB新候选、全部seed和独立复算均终态；保留失败及不可测，未经校准不启用新总分"
+    },
+    "calibration_pending": [
+      "颜色类别/金属观感数值锚点",
+      "未公开连续形状分归一化和角度阈值",
+      "跨格式程序化材质等价",
+      "参数可读性/爆炸可辨辅助评价",
+      "未支持表示和复杂装配预算性能"
+    ]
+  },
+  "measurement_contract_sha256": "55db2d20c8cb46d5cd928f9e0741ffb3cb8fea56b8b0c97d160b1596998d63f0"
+}

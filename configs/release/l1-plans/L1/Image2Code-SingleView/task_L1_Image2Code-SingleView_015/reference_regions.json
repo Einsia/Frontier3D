@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "b8bb977f23ddfc8ef7cc833a294de053313f1b0a6aa1ac3efa39aa0af1c786d3",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "mesh back",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.29,
+          0.17
+        ],
+        [
+          0.52,
+          0.17
+        ],
+        [
+          0.52,
+          0.46
+        ],
+        [
+          0.29,
+          0.46
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "seat and armrests",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.28,
+          0.32
+        ],
+        [
+          0.69,
+          0.32
+        ],
+        [
+          0.69,
+          0.6
+        ],
+        [
+          0.28,
+          0.6
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "five-star caster base",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.24,
+          0.68
+        ],
+        [
+          0.72,
+          0.68
+        ],
+        [
+          0.72,
+          0.87
+        ],
+        [
+          0.24,
+          0.87
+        ]
+      ]
+    }
+  ]
+}

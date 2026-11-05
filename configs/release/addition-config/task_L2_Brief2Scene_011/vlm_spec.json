@@ -1,0 +1,280 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_011",
+  "family": "Brief2Scene",
+  "instruction_sha256": "234f6f2bdaf0434824855cc7b96deaa19f1b0ab88e026f0f249b3c7a446f7183",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为配有双臂鸡尾酒机器人的吧台？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Bar: dual-arm cocktail robot."
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "主视图是否从顾客侧斜看吧台？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "seen obliquely from the customer side"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "吧台是否采用深色石材？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Use dark stone"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "吧台是否同时设置清洗槽和冰槽？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "with a washing well and ice well"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "吧台是否配有吧凳？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Place four stools"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "储物架是否位于吧台上方，架上酒瓶是否倒置？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "An overhead storage rack, underside 0.35 m above the counter, carries eight inverted bottles"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "机器人是否冻结在调酒前的静态关节姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Freeze the moment before mixing"
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "右夹爪是否实际握持金属摇酒器？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "the right gripper holds a 0.22 m tall, 0.08 m diameter metal shaker"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "摇酒器口是否位于目标威士忌杯沿上方并朝该杯倾斜？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "with mouth 0.03 m above a whisky-glass rim, tilted toward it 15 +/-2 degrees"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "目标威士忌杯内是否放置冰球？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Put one ice sphere in the glass."
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "左夹爪是否在取下酒瓶的中段握持该瓶？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "The left gripper holds the removed bottle at its middle"
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "左手酒瓶是否瓶口朝下？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "mouth downward"
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "瓶塞是否朝向摇酒器？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "stopper toward the shaker"
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "酒杯是否成组排列，适用的杯柄是否朝右？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Arrange four glasses at 0.12 m spacing, handles where applicable facing right 45 degrees."
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "吧台后方是否保留可通行的操作通道？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Keep a 0.80 m rear operating aisle"
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "取瓶位置是否留下空挂钩，且挂钩方向与取下酒瓶的方向匹配？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "the empty bottle hook matches the removed bottle's orientation"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "场景是否使用深绿色瓷砖？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Use dark-green tile"
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "场景是否设置黄铜吊灯？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "brass pendants"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "场景是否使用暖色木材？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "warm wood"
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "场景是否包含不锈钢工具？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "stainless tools"
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "饮品是否呈琥珀色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "amber drink colour"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "场景是否具有暖光及照向瓶架的射灯？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "2800 K light and bottle-rack spots"
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "画面是否包含机械臂、摇酒器、酒杯和酒瓶？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Frame arms, shaker, glasses and bottles."
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "场景是否保持静态且没有液体流动、冰块物理模拟或人物？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Static; no liquid flow, ice physics or people."
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "第二视角是否展示同一几何和冻结姿态，并揭示关键接触及净空路线？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose"
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

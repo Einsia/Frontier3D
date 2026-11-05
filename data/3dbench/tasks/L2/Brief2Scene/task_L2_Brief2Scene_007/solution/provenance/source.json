@@ -1,0 +1,21 @@
+{
+  "id": "lighthouse",
+  "title": "Lighthouse Scene",
+  "title_zh": "海岸灯塔",
+  "category": "waterfront",
+  "provider": "opengameart",
+  "author": "ultr4vis1tor",
+  "source_page": "https://opengameart.org/content/low-poly-lighthouse-scene",
+  "license": "CC0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_status": "verified",
+  "download_url": "https://opengameart.org/sites/default/files/lighthouse_0.blend",
+  "format": "blend",
+  "download_status": "downloaded",
+  "archive": "assets/diverse/lighthouse/source.blend",
+  "archive_sha256": "67cbfc68598652769c463593d047000891088755ce40dcd6f9d5b9cd68cedf6b",
+  "bytes": 1563187,
+  "blend_candidates": [
+    "assets/diverse/lighthouse/source.blend"
+  ]
+}

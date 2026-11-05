@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "082d3a85c019ef945bf7349311cfeb2c024f4b9fe7b01a045e2ea20ef546e763",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "head and hair",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.26,
+          0.18
+        ],
+        [
+          0.68,
+          0.18
+        ],
+        [
+          0.68,
+          0.61
+        ],
+        [
+          0.26,
+          0.61
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "face",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.32,
+          0.39
+        ],
+        [
+          0.62,
+          0.39
+        ],
+        [
+          0.62,
+          0.62
+        ],
+        [
+          0.32,
+          0.62
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "neck and bust base",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.41,
+          0.51
+        ],
+        [
+          0.7,
+          0.51
+        ],
+        [
+          0.7,
+          0.81
+        ],
+        [
+          0.41,
+          0.81
+        ]
+      ]
+    }
+  ]
+}

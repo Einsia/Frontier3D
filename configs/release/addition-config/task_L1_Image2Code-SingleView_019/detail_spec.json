@@ -1,0 +1,128 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+  "family": "Reference2Scene",
+  "instruction_sha256": "d5b6d563de75cbaa53fb28c64114ff874ed61b1aa2f9b4dee22aae3c187789c1",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "3939bef39124fe841a6e92fd85be17bf678007ab87b03276a67419490e74dcd4"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_curves",
+      "component": "F",
+      "question": "头顶、颈部与胸腹是否具有参考中连续圆滑的曲面过渡？",
+      "units": [
+        "Preserve continuous curvature"
+      ],
+      "global_weight": 0.18,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_beak",
+      "component": "F",
+      "question": "喙是否为有厚度的短尖楔形，并保留上下喙的细窄分界？",
+      "units": [
+        "head and beak"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_eye",
+      "component": "F",
+      "question": "眼部是否保留嵌入头部的眼窝过渡与窄眼缘，而非平面贴点？",
+      "units": [
+        "recesses"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_wing",
+      "component": "F",
+      "question": "近侧翼是否有隆起的肩部、圆弧下缘及尾向叠置羽片的局部层次？",
+      "units": [
+        "wings"
+      ],
+      "global_weight": 0.18,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_tail",
+      "component": "F",
+      "question": "尾部是否为有薄厚的收窄羽片形体，并保留纵向分片与圆钝末端？",
+      "units": [
+        "tapered tail"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_toes",
+      "component": "F",
+      "question": "脚部是否具有细腿、分叉弯曲脚趾及逐渐变尖的弯爪？",
+      "units": [
+        "gripping feet where visible"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_gaps",
+      "component": "F",
+      "question": "双脚周围及分叉脚趾间是否保留真实空隙，未被实体填平？",
+      "units": [
+        "the gaps around the feet"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

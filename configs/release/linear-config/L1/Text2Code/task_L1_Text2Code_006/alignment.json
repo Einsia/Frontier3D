@@ -1,0 +1,316 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_006",
+  "category": "Text2Code",
+  "title": "六孔分度转台",
+  "profile": "l1-brief-l2aligned-v1.0.0",
+  "l2_baseline": "l2-brief-vlm-v7.0.0",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "physics": 0.1
+  },
+  "spec_sha256": "8fa9b3e6c2bba8cbc0ced951222a6ca3d19fa444a5fd9d8aec1be5788a205c0d",
+  "sources": {
+    "instruction.md": "2541d3edfbd4228dd87470454bbc0849da79e39698d7e4582c7a45c87224733e",
+    "solution/EVALUATION.md": "7be7d5df541a0ab45cd52f8643879e46ddcd2be0b525b00ceed03846dc8ceecc",
+    "harness/eval_spec.json": "dd93ac2082f2576d419b8ec2e1034f2c1e2e70a4593385b70250c3c18452741d",
+    "harness/evaluation_design.json": "06cf964a68e217297797ff6ff4262b27bf04e976420d748cd767ccfd6c2df77c"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": null,
+  "automatic_checks": [
+    "part_inventory",
+    "closed",
+    "connected",
+    "solid_validity",
+    "base_holes",
+    "base_bore",
+    "disk_holes",
+    "disk_bore",
+    "part_count",
+    "hierarchy"
+  ],
+  "reference_primary": null,
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.26,
+        -0.28,
+        0.22
+      ],
+      "target": [
+        0,
+        0,
+        0.035
+      ],
+      "ortho_scale": 0.28,
+      "resolution": 128,
+      "frame": 1
+    },
+    {
+      "id": "exploded",
+      "location": [
+        0.36,
+        -0.38,
+        0.32
+      ],
+      "target": [
+        0,
+        0,
+        0.06
+      ],
+      "ortho_scale": 0.5,
+      "resolution": 128,
+      "frame": 61
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "part_roles",
+      "text": "14件独立可编辑部件：base×1、sleeve×1、spindle×1、disk×1、pin×1、ring×1、bolt×4、washer×4",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory",
+        "part_count"
+      ],
+      "reason": "件数和包围盒一对一匹配只是尺寸代理，真实角色与编辑性未完整绑定。"
+    },
+    {
+      "id": "base",
+      "text": "底座100×100×8 mm、底Z=0，中心孔16.4 mm；XY=(±40,±40)四孔6.4 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory",
+        "base_holes",
+        "base_bore"
+      ],
+      "reason": "已接入尺寸和多截面/轴向采样诊断；有限采样不证明连续孔道、特征完整性或装配关系。"
+    },
+    {
+      "id": "sleeve",
+      "text": "居中衬套外径28 mm、孔径16.4 mm、高11 mm，Z=8..19",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "spindle",
+      "text": "主轴直径16 mm、长26 mm，中心Z=17",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "disk",
+      "text": "圆盘外径84 mm、厚8 mm、中心Z=23，中心孔16.4 mm；6个6.4 mm通孔在64 mm节圆上，从+X每60度分布",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory",
+        "disk_holes",
+        "disk_bore"
+      ],
+      "reason": "已接入尺寸和多截面/轴向采样诊断；有限采样不证明连续孔道、特征完整性或装配关系。"
+    },
+    {
+      "id": "index_pin",
+      "text": "定位销直径6 mm、长18 mm，中心(32,0,22)，穿过第一个分度孔",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "retaining_ring",
+      "text": "独立挡圈外径26 mm、孔径16.4 mm、厚3 mm、中心Z=30",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "fasteners",
+      "text": "四螺杆直径6 mm、长9.5 mm从Z=0起；垫圈12/6.4/1.5 mm在底座上，六角头高4 mm/外接圆10.8 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "axial_layout",
+      "text": "圆盘在衬套上，保持规定轴向间隙；静态布局，不追加承载锁止结构",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "assembly_clearance",
+      "text": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+      "source": "instruction.md paragraphs 1–2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "共享取证尚未绑定本题装配关系及0.3 mm尺寸/位置容差。"
+    },
+    {
+      "id": "units",
+      "text": "米制导出，X长度/Y宽度/Z向上",
+      "source": "instruction.md paragraphs 2–3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "跨格式物理尺度和实际轴向未完整验证。"
+    },
+    {
+      "id": "hierarchy",
+      "text": "自由描述性名称、独立可编辑部件与清晰组织",
+      "source": "instruction.md paragraphs 2–3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "hierarchy",
+        "part_count"
+      ],
+      "reason": "父节点和件数不是完整语义编辑性证明。"
+    },
+    {
+      "id": "state_cycle",
+      "text": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "assembled_valid",
+        "exploded_valid",
+        "reproducible"
+      ],
+      "reason": "现有重现/视图为诊断；任务拆分、可读性和完整材质保持待验收。"
+    },
+    {
+      "id": "glb_assembled",
+      "text": "GLB与原生帧1装配态一致",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "复用跨格式诊断，任务级等价阈值未标定。"
+    },
+    {
+      "id": "reconstruction",
+      "text": "清洁环境从代码重建，使用便携依赖，不依赖旧产物或个人路径",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "基准/seed和现有比较已接线，复杂诊断可能预算耗尽，完整语义与依赖仍未覆盖。"
+    },
+    {
+      "id": "instructions",
+      "text": "README说明执行方式及依赖",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "仅检查可读取并收集辅助文件，内容语义待验证。"
+    },
+    {
+      "id": "materials",
+      "text": "结构件蓝灰，主轴/销/紧固件银色，衬套/挡圈/垫圈黄铜",
+      "source": "instruction.md paragraphs 1–2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "尚未将有效材质与表面外观诊断绑定到本题角色。"
+    },
+    {
+      "id": "procedural_materials",
+      "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+      "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+      "source": "user_goal_2026-10-03 / seed delivery protocol",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": null,
+  "reference_boxes": null,
+  "vlm_spec_digest": "f20849474c4158b7071f76b6aef534f02799c7377cf073d151cecfad22c04efe",
+  "formal_score_eligible": false,
+  "reference_views": [],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": false,
+  "presentation_policy": "fixed_neutral_studio_intrinsic_object_aesthetics_not_authored_lighting"
+}

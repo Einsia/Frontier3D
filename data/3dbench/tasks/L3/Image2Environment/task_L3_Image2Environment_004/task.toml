@@ -1,0 +1,27 @@
+schema_version = "1.4"
+[task]
+name = "3dbench/l3-e04"
+description = "具身：育苗棚、果园与灌溉服务区"
+keywords = ["3d", "unreal-engine", "l3", "embodied"]
+[metadata]
+release_task_id = "L3/Image2Environment/task_L3_Image2Environment_004"
+release_id = "3DBench-134"
+task_key = "l3-e04"
+level = 3
+category = "Image2Environment"
+source_category = "embodied"
+source_task = "GreenhouseOrchard"
+difficulty = "hard"
+protocol = "l3-perceptual-quality-v5"
+execution_backend = "provisioned-ue-host"
+requires_external_ue = true
+requires_host_verifier = true
+[agent]
+timeout_sec = 86400
+[verifier]
+timeout_sec = 86400
+[environment]
+build_timeout_sec = 3600
+cpus = 16
+memory_mb = 65536
+storage_mb = 204800

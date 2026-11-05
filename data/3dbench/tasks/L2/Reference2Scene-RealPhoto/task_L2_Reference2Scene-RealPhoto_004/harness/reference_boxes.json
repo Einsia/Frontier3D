@@ -1,0 +1,98 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-photo-localized-v5.0.0",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "66c319a491c83acc4000575faee2390d2fac4d141759e787190b09dfe57fb26a",
+  "image_size": [
+    1280,
+    950
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "central pointed stained-glass window",
+      "label": "central pointed stained-glass window",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.458,
+          0.364,
+          0.544,
+          0.735
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. central pointed stained-glass window"
+    },
+    {
+      "id": "target_2",
+      "query": "left altar-end pointed stained-glass window",
+      "label": "left altar-end pointed stained-glass window",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.301,
+          0.31,
+          0.378,
+          0.735
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. left altar-end pointed stained-glass window"
+    },
+    {
+      "id": "target_3",
+      "query": "right altar-end pointed stained-glass window",
+      "label": "right altar-end pointed stained-glass window",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.617,
+          0.31,
+          0.704,
+          0.735
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. right altar-end pointed stained-glass window"
+    },
+    {
+      "id": "target_4",
+      "query": "distant altar installation",
+      "label": "distant altar installation",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.434,
+          0.729,
+          0.577,
+          0.878
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. distant altar installation"
+    }
+  ]
+}

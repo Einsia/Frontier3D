@@ -1,0 +1,7 @@
+Lunar Landscape
+Author: Poly Haven and credited contributing artists
+Original source: https://polyhaven.com/collections
+License: CC0
+https://creativecommons.org/publicdomain/zero/1.0/
+Distribution source: Original publisher
+The original author license applies to scene assets; modifications for benchmark inputs will be documented separately.

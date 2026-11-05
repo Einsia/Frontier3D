@@ -1,0 +1,218 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/fc73ee1110e3c424466f/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/bc5d6f4056b03842de1c/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/34f9ef6a7f885cbfb891/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "牛头及颈部",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.296,
+          0.496
+        ],
+        [
+          0.364,
+          0.365
+        ],
+        [
+          0.416,
+          0.286
+        ],
+        [
+          0.511,
+          0.255
+        ],
+        [
+          0.611,
+          0.292
+        ],
+        [
+          0.66,
+          0.553
+        ],
+        [
+          0.616,
+          0.611
+        ],
+        [
+          0.439,
+          0.664
+        ],
+        [
+          0.331,
+          0.627
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "双角与双耳",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.208,
+          0.286
+        ],
+        [
+          0.282,
+          0.224
+        ],
+        [
+          0.373,
+          0.209
+        ],
+        [
+          0.475,
+          0.261
+        ],
+        [
+          0.594,
+          0.27
+        ],
+        [
+          0.638,
+          0.348
+        ],
+        [
+          0.722,
+          0.402
+        ],
+        [
+          0.722,
+          0.441
+        ],
+        [
+          0.575,
+          0.438
+        ],
+        [
+          0.536,
+          0.32
+        ],
+        [
+          0.416,
+          0.35
+        ],
+        [
+          0.296,
+          0.345
+        ],
+        [
+          0.21,
+          0.329
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "深色多面底座",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.198,
+          0.782
+        ],
+        [
+          0.31,
+          0.647
+        ],
+        [
+          0.423,
+          0.612
+        ],
+        [
+          0.628,
+          0.589
+        ],
+        [
+          0.723,
+          0.612
+        ],
+        [
+          0.857,
+          0.724
+        ],
+        [
+          0.852,
+          0.738
+        ],
+        [
+          0.563,
+          0.89
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n01",
+      "source_quote": "paired curved horns",
+      "quantity": "牛角数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维几何中辨识从头部生长的独立角形结构并计数，不以网格岛数量替代解剖结构数量。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标下，对牛首及底座全部实体几何求整体包围盒，取三个轴向尺寸的最大值；排除相机和灯光。容差为原文2%，在本标称值下为0.02 m。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

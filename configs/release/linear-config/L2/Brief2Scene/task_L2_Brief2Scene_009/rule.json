@@ -1,0 +1,60 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_009",
+  "category": "Brief2Scene",
+  "level": "L2",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {},
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/a89a39d319ba4cba4aaf/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_inventory_terrain": 0.06666666666666667,
+        "vlm_inventory_crater": 0.06666666666666667,
+        "vlm_inventory_small_stones": 0.06666666666666667,
+        "vlm_inventory_large_rocks": 0.06666666666666667,
+        "vlm_inventory_ridges": 0.06666666666666667,
+        "vlm_inventory_earth": 0.06666666666666667,
+        "vlm_relations": 0.06666666666666667,
+        "vlm_appearance": 0.06666666666666667,
+        "vlm_cross_view": 0.06666666666666667,
+        "vlm_aesthetic_composition": 0.1,
+        "vlm_aesthetic_light_color": 0.1,
+        "vlm_aesthetic_finish": 0.1,
+        "vlm_aesthetic_coherence": 0.1
+      },
+      "detail": {
+        "detail_semantic_inventory_terrain": 0.075,
+        "detail_semantic_inventory_crater": 0.075,
+        "detail_semantic_inventory_small_stones": 0.075,
+        "detail_semantic_inventory_large_rocks": 0.075,
+        "detail_semantic_inventory_ridges": 0.075,
+        "detail_semantic_inventory_earth": 0.075
+      },
+      "content": {
+        "vlm_inventory_terrain": 0.06666666666666667,
+        "vlm_inventory_crater": 0.06666666666666667,
+        "vlm_inventory_small_stones": 0.06666666666666667,
+        "vlm_inventory_large_rocks": 0.06666666666666667,
+        "vlm_inventory_ridges": 0.06666666666666667,
+        "vlm_inventory_earth": 0.06666666666666667
+      }
+    }
+  }
+}

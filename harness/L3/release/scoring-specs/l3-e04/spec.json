@@ -1,0 +1,211 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-e04",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "86da90ef4c82f15fd5dd2efc87fea760051b64fe68af94f594f9662c66f53a61",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Preserve the broad, low nursery canopy, repeated pole grid, dense planting blocks and long aisle sightlines shown across all four references.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Maintain extensive planted coverage separated by narrower aisles; alternate weathered hard paths with dark ground sheeting rather than uniform paving.",
+        "id": "env-03"
+      },
+      {
+        "criterion": "Retain surrounding tall palms, dense perimeter greenery and limited distant low structures as context outside the open nursery sides.",
+        "id": "env-05"
+      },
+      {
+        "criterion": "Match softly filtered daylight beneath translucent netting, subdued green foliage, dark ground surfaces and glimpses of pale blue, cloudy sky.",
+        "id": "env-06"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "A broad, nearly level overhead canopy spans many rectangular bays with slight sagging between supports.",
+            "id": "net-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Tall slender dark poles form a repeated grid, with horizontal and diagonal tension lines visible overhead.",
+            "id": "net-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Pale gray translucent mesh filters the sky and silhouettes of palms above the canopy.",
+            "id": "net-03",
+            "kind": "material"
+          }
+        ],
+        "id": "target-01",
+        "importance": "core",
+        "label": "Netted nursery enclosure and support structure",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 25
+      },
+      {
+        "features": [
+          {
+            "criterion": "Dense blocks of branching rose shrubs have irregular rounded crowns and occasional stems projecting into aisles.",
+            "id": "plants-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Individual plants stand in tightly grouped black and white flexible grow bags arranged in repeated rows and beds.",
+            "id": "plants-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Small green leaves surround scattered red, pale pink, white and yellow blossoms, with differing flower colors concentrated in different planting blocks.",
+            "id": "plants-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Plant heights and fullness vary visibly, including smaller sparse plants and fuller flowering shrubs.",
+            "id": "plants-04",
+            "kind": "shape"
+          }
+        ],
+        "id": "target-02",
+        "importance": "core",
+        "label": "Nursery planting rows and containers",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 25
+      },
+      {
+        "features": [
+          {
+            "criterion": "Long main aisles recede between planting blocks, with narrower lateral gaps providing access to individual rows.",
+            "id": "ground-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Dark weed-control sheets cover most growing areas and some aisles, with visible seams, folded edges, wrinkles and displaced patches.",
+            "id": "ground-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Main hard paths have worn tan-gray surfaces, cracks and irregular slab divisions with soil and grass in gaps.",
+            "id": "ground-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Dry leaves, exposed soil and small debris collect naturally along sheet folds and planting edges.",
+            "id": "ground-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-03",
+        "importance": "core",
+        "label": "Paths and nursery ground coverings",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [],
+        "id": "target-04",
+        "importance": "supporting",
+        "label": "Orchard and fruiting plants required by the brief",
+        "references": [
+          "Public brief"
+        ],
+        "weight": 10
+      },
+      {
+        "features": [],
+        "id": "target-05",
+        "importance": "supporting",
+        "label": "Irrigation service area and distribution",
+        "references": [
+          "Public brief"
+        ],
+        "weight": 10
+      },
+      {
+        "features": [],
+        "id": "target-06",
+        "importance": "supporting",
+        "label": "Packing shelter and sorting station",
+        "references": [
+          "Public brief"
+        ],
+        "weight": 8
+      },
+      {
+        "features": [],
+        "id": "target-07",
+        "importance": "supporting",
+        "label": "Produce handling equipment and tools",
+        "references": [
+          "Public brief"
+        ],
+        "weight": 7
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "8dd245cef5dcd650a8da06ee40ac68b4d25164133a4d7f89a52710295eddc6a9",
+    "environment/input/references/reference-03.jpg": "893162e3a21ce5d7ab825506f419c2fadfd8979202d0fdfa493c6c635c92b3ac",
+    "environment/input/references/reference-02.jpg": "0a843c670a2f061700f8da1871720cbee23ff3d994d17dda093556a0dede8d0b",
+    "environment/input/references/reference-04.jpg": "8f40fdebf30cd04ffb8f9dd67e60a1ce9d8f0c16c5a5b0b714b66baba5cc27dc"
+  }
+}

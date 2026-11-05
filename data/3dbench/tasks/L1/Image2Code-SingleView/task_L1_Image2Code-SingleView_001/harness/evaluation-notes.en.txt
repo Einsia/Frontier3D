@@ -1,0 +1,13 @@
+## Materials and measurement scope
+
+Use solid colors and procedural materials only. Reference images, bitmap/HDRI and image/movie inputs must not be used in the rendered scene. Procedural Noise/Bump nodes are allowed. The GLB must be readable and contain geometry. Native/export or cross-seed geometry differences remain diagnostics alongside execution and dependency checks. Use all public views for modeling; additional views enter scoring only where specified by the task contract.
+
+## Scoring
+
+Final item score: `50% main_image + 20% localization + 20% vlm + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.
+
+Task-specific visual components: `main_image = 0.5*shoe_profile + 0.5*shoe_upper; vlm = 1*shoe_laces; detail = 1*shoe_sole`. Localization and the total weights follow the formula above.

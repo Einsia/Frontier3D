@@ -1,0 +1,5 @@
+流鬃马头雕像
+Tina
+https://polyhaven.com/a/horse_head
+CC0-1.0
+Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting.

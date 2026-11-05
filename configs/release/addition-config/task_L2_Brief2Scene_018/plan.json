@@ -1,0 +1,320 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_018",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/5d96de24c6d02899ee0f/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/951031c472c659526fed/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/ea684234173d7beb5e38/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在地面平面测量车位横向边界间距，并报告边线计入约定。",
+      "quantity": "车位宽度",
+      "relation": "equal",
+      "source_quote": "2.50 x 5.30 m parking bay",
+      "target": 2.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在地面平面测量车位纵向边界间距。",
+      "quantity": "车位长度",
+      "relation": "equal",
+      "source_quote": "2.50 x 5.30 m parking bay",
+      "target": 5.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "沿白线局部法向测量两侧实体边界间宽度。",
+      "quantity": "白色车位线宽度",
+      "relation": "equal",
+      "source_quote": "0.12 m white bay lines",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "测量两车相向外表面之间的最小水平净距，报告所含突出部。",
+      "quantity": "两车间距",
+      "relation": "equal",
+      "source_quote": "leaving 0.70 m between cars",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "在目标车局部横轴上测量车辆几何范围，报告后视镜计入约定。",
+      "quantity": "目标车宽度",
+      "relation": "equal",
+      "source_quote": "1.85 m wide",
+      "target": 1.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "在目标车局部纵轴上测量车体前后端间距。",
+      "quantity": "目标车长度",
+      "relation": "equal",
+      "source_quote": "4.80 m long",
+      "target": 4.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "绕充电口盖铰轴测量当前姿态相对闭合姿态的转角。",
+      "quantity": "充电口盖开启角",
+      "relation": "equal",
+      "source_quote": "left-rear charging flap open 60 degrees",
+      "target": 60,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "沿声明的机器人第一水平尺寸轴测量底盘占地范围，并报告车轮突出部计入约定。",
+      "quantity": "机器人第一占地尺寸",
+      "relation": "equal",
+      "source_quote": "0.60 x 0.50 m four-wheel robot",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "沿与第一水平尺寸轴正交的轴测量机器人占地范围。",
+      "quantity": "机器人第二占地尺寸",
+      "relation": "equal",
+      "source_quote": "0.60 x 0.50 m four-wheel robot",
+      "target": 0.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "按独立轮体及轮轴结构计数机器人车轮，排除装饰圆片。",
+      "quantity": "机器人车轮数",
+      "relation": "equal",
+      "source_quote": "four-wheel robot",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "计算前轮轮胎地面接触区域与导向标记区域的最小平面距离；相交记为零。",
+      "quantity": "前轮与导向标记接触区域间距",
+      "relation": "equal",
+      "source_quote": "a front wheel on a guide marking",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "沿 Z 轴测量立柱底端至顶端的高度，并报告端点定义。",
+      "quantity": "立柱高度",
+      "relation": "equal",
+      "source_quote": "1.10 m column",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "计数顶部机械臂中以实体连接结构表达的独立关节。",
+      "quantity": "顶部机械臂关节数",
+      "relation": "equal",
+      "source_quote": "two-joint top arm",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "沿连接器自身纵轴测量前端至后端长度，不包含线缆。",
+      "quantity": "连接器长度",
+      "relation": "equal",
+      "source_quote": "connector 0.25 m long",
+      "target": 0.25,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "在垂直线缆中心线的截面上测量声明的截面尺度；记录将原文尺度解释为直径或其他尺度的约定。",
+      "quantity": "线缆截面尺度",
+      "relation": "equal",
+      "source_quote": "a 0.03 m cable",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "计算连接器插接尖端至充电口端口平面的垂直距离，并确认尖端位于未插入侧。",
+      "quantity": "插接尖端至端口平面距离",
+      "relation": "equal",
+      "source_quote": "connector tip is 0.02 m from the port plane",
+      "target": 0.02,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "由连接器插入轴和充电口配合轴计算方向偏差角。",
+      "quantity": "插接轴线角度偏差",
+      "relation": "at_most",
+      "source_quote": "axes aligned within 3 degrees",
+      "target": 3,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "测量地面至顶部滑动悬挂线缆支承位置的 Z 高度；仅报告相对名义值偏差，不自设近似容差。",
+      "quantity": "顶部悬挂名义高度",
+      "relation": "equal",
+      "source_quote": "a sliding overhead suspension about 2.40 m high",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "计算整段线缆实体外表面与目标车辆实体外表面之间的最小三维距离。",
+      "quantity": "线缆对车净距",
+      "relation": "at_least",
+      "source_quote": "at least 0.05 m clearance from the car",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "沿前方行车通道路线测量横向无障碍净宽；排除被评估机器人，纳入其余家具和突出物。",
+      "quantity": "前方行车通道宽度",
+      "relation": "equal",
+      "source_quote": "a 2.40 m front driving aisle",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "沿机器人对侧连续逃生路线测量横向无障碍净宽并检查瓶颈；排除被评估机器人，纳入其余家具和突出物。",
+      "quantity": "侧方逃生通道宽度",
+      "relation": "equal",
+      "source_quote": "a continuous 0.60 m escape passage",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "测量充电口中心相对地面的 Z 高度。",
+      "quantity": "充电口中心高度",
+      "relation": "equal",
+      "source_quote": "Port centre is at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "将端口中心相对地面的 Z 高度与工作高度区间上下界比较。",
+      "quantity": "端口中心工作高度范围",
+      "relation": "range",
+      "source_quote": "inside the 0.60-1.20 m working-height band",
+      "target": 0.6,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "将端口中心与机械臂基座参考点投影到 XY 平面，计算两点欧氏距离并记录基座参考点。",
+      "quantity": "端口至机械臂基座水平距离",
+      "relation": "at_most",
+      "source_quote": "within 0.80 m horizontal distance of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "在冻结姿态下计算开启口盖实体与连接器几何包络之间的最小三维距离。",
+      "quantity": "开启口盖对连接器包络净距",
+      "relation": "at_least",
+      "source_quote": "The open flap stays at least 0.03 m from the connector envelope",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

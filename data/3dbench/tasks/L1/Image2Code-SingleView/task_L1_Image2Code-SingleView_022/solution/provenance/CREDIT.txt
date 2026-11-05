@@ -1,0 +1,7 @@
+Stuffed Baby Giraffe
+Author: Andrei Alexandrescu (https://sketchfab.com/Andrei_Alexandrescu)
+Source: https://sketchfab.com/3d-models/stuffed-baby-giraffe-8fb84d65e39f4dadbd8de3a84f00e6e5
+License: CC-BY-NC-SA-4.0
+http://creativecommons.org/licenses/by-nc-sa/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

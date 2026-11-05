@@ -1,0 +1,171 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_017",
+  "family": "Reference2Scene",
+  "instruction_sha256": "3a9c08db725c82d0e8e95604c20693a12fc8d273db19581e1ac1b5670ad807e7",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "0980d12f11f988056b03aa3ca07acac6ff3ae726d8272b2c1577c723f51e4c41",
+    "reference/reference-1.png": "bf9f6ce2e6b1ae1085fc49fca818566a67e85baab2cff21a8f911b688a86cbb0",
+    "reference/reference-2.png": "24edf7eb23e92d003fd6c0ab85e1db0cb84b9bf08ec0290206dfa9e285332815",
+    "reference/reference-3.png": "d9901f01134a11c0910c602e2a468d968f321df3ef23451794898c0aa691b561"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d01",
+      "component": "F",
+      "question": "机鼻的圆滑收束、筒状机身与渐细尾锥是否形成连续立体曲面？",
+      "units": [
+        "long fuselage"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d02",
+      "component": "F",
+      "question": "机翼是否保留参考中的展向弯曲和向细长翼尖的平滑收束？",
+      "units": [
+        "Preserve wing curvature"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d03",
+      "component": "F",
+      "question": "机翼和尾翼是否具有可见的薄翼剖面厚度，而非无厚度平面？",
+      "units": [
+        "thickness"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d04",
+      "component": "F",
+      "question": "短舱端部是否具有环状唇口和向内延伸的开口深度，而非平面黑贴片？",
+      "units": [
+        "nacelle openings"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d05",
+      "component": "F",
+      "question": "短舱是否保留鼓起的外壳、收缩尾段及参考可见的锯齿状尾缘？",
+      "units": [
+        "twin engine nacelles"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d06",
+      "component": "F",
+      "question": "翼根、短舱吊挂及尾翼根部是否具有实体连接，并保留参考中的局部遮挡？",
+      "units": [
+        "connections and occlusions"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d07",
+      "component": "F",
+      "question": "垂尾和水平尾翼是否具有后掠轮廓、渐缩尖端及平滑根部过渡？",
+      "units": [
+        "tail surfaces"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d08",
+      "component": "F",
+      "question": "参考中可辨识的短舱内凹结构与机翼后缘细小突出结构是否保留立体形态？",
+      "units": [
+        "recesses, openings, thin structures"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

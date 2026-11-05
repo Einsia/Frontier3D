@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+  "family": "Reference2Scene",
+  "instruction_sha256": "fd808dde3e2e95be9e16eba4cface381547e92d638ec71e36913d86e0d8936a2",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "5ee27640ccad7381850df5b0c33f9dde6698b58293a9248364921592f26cfb90"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d01",
+      "component": "F",
+      "question": "可见前轮的胎体厚度、轮毂开口与辐条形状是否贴合参考？",
+      "units": [
+        "two wheels"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d02",
+      "component": "F",
+      "question": "发动机的散热片、圆形侧盖和相互叠置的机械部件是否形成参考中的局部结构？",
+      "units": [
+        "engine"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d03",
+      "component": "F",
+      "question": "座椅的下凹骑乘面、抬高后座、边缘厚度与分段接缝是否符合参考？",
+      "units": [
+        "seat"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d04",
+      "component": "F",
+      "question": "车把弯曲走向、握把、控制件及后视镜支杆的连接形态是否符合参考？",
+      "units": [
+        "bars"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d05",
+      "component": "F",
+      "question": "排气管的弯折、管径厚度与沿车身下部延伸的结构是否符合参考？",
+      "units": [
+        "exhaust"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d06",
+      "component": "F",
+      "question": "油箱的鼓起曲面、收窄端部及顶部仪表组件是否保持参考的局部形态？",
+      "units": [
+        "Match the visible side-view motorcycle silhouette"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d07",
+      "component": "F",
+      "question": "侧箱的圆角壳体、盖缝以及挡泥板包覆车轮的曲面是否符合可见参考？",
+      "units": [
+        "Match the visible side-view motorcycle silhouette"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d08",
+      "component": "F",
+      "question": "货架是否具有可辨的层板厚度、竖向支撑与层间开口？",
+      "units": [
+        "the surrounding dark accessory shelves"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

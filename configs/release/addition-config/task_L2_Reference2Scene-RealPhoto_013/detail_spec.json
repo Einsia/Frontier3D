@@ -1,0 +1,144 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+  "family": "Reference2Scene",
+  "instruction_sha256": "d5daec0fcc0b7c8fe4804b97600a7da6ccfb4212b5f06c5a2ec4b4be842f86c8",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "64503d869c6dce4bacf2ae834a299fd170adfcf7cef9c06efd65954f6e9a6a0f"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "盘沿是否呈现参考中宽阔、连续且缓缓下凹的曲面？",
+      "units": [
+        "plate rim"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "面条是否具有可辨截面和厚度，而非扁平贴图？",
+      "units": [
+        "Pasta strands and cut chicken pieces must have volume"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "面条是否形成参考中的盘绕、垂落弧线及条间空隙？",
+      "units": [
+        "Pasta strands"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "鸡肉切块是否具有厚实切面和不规则外轮廓？",
+      "units": [
+        "cut chicken pieces must have volume"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "鸡肉表皮与内部肉层是否形成参考可见的层次及切块接缝？",
+      "units": [
+        "sliced browned chicken"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "可辨蘑菇是否保留弧形切片轮廓及露出酱汁的厚度？",
+      "units": [
+        "mushrooms"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "顶部绿叶是否具有参考中的折叠、弯曲和叶缘轮廓？",
+      "units": [
+        "green garnish"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "酱汁边缘是否呈现薄层铺展的不规则轮廓及绕过食材的局部形状？",
+      "units": [
+        "creamy sauce"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

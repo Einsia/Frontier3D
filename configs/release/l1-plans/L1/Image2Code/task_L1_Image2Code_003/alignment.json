@@ -1,0 +1,201 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_003",
+  "category": "Image2Code",
+  "title": "管风琴",
+  "profile": "l1-reference-l2aligned-v1.0.0",
+  "l2_baseline": "l2-reference-localized-vlm-v7.1.0",
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "physics": 0.1,
+    "vlm": 0.2
+  },
+  "spec_sha256": "644b514445671854cf54de3f69120bac7070374b701e090ac5c149e45dec9eb7",
+  "sources": {
+    "instruction.md": "317094fa87ee94d127f961b3fa3b2988c04d156d65cd2a2f1b36093a378561be",
+    "solution/EVALUATION.md": "1616e567e309fa89b80cf8613e29394b7096b6f5e41088e7f17965ab00a1bf14",
+    "harness/eval_spec.json": "2deb9f7e7be1983e1c9071b66143a2f7cfacf66169862dd2220358e4700df1da",
+    "harness/evaluation_design.json": "58d6f6e4e5431863cdef77606d843fc90ee556ae8788ceecf851ec6c5f88a992",
+    "environment/input/reference.png": "ceb4356b36a9c632a9168239b6ad423a8cac2aa7735d900a5a60be9937022430",
+    "environment/input/front.png": "581d283b312a3ed84a0a1415b0b5d1ff36fcbbaf24f124b2292f583fa00e4c33",
+    "environment/input/side.png": "11653647670ffc3269b0221aa19678ee0c6d331477f1858fc6285863dce128eb",
+    "environment/input/top.png": "ccf966f66b13e0863a5fbaaddd562a41e7d121f7d42ff698058777b827b09419"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "automatic_checks": [],
+  "reference_primary": "environment/input/reference.png",
+  "render_views": [
+    {
+      "id": "primary",
+      "location": [
+        1.0,
+        -1.0,
+        1.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ortho_scale": 1.6,
+      "resolution": 128,
+      "frame": 1,
+      "beauty": true,
+      "beauty_resolution": [
+        1000,
+        1000
+      ],
+      "camera_source": "saved"
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "public_clause_02",
+      "text": "Reconstruct the pipe organ: its tall wooden enclosure, grouped metal pipes with stepped lengths, repeated decorative framing, keyboard console with black and white keys, stops or controls visible in the images, and lower pedal assembly. Preserve pipe spacing, the hierarchy of pipe groups and the depths of the console and cabinet. Match wood and metal materials. No sound synthesis or playable instrument implementation is required.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_03",
+      "text": "Use real editable three-dimensional geometry. Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions. Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous. Exact source topology, vertex count and object names are not required. Image planes or camera-facing shells are not substitutes for full geometry.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_04",
+      "text": "Use metres, Z up, and a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights. This is a task scale convention, not a real-world measurement. Infer other proportions from the images.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_05",
+      "text": "Save the final static pose at frame 1 and export the same pose to scene.glb. Animation, exploded views and simulation are not required.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "native_state_materials"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+    },
+    {
+      "id": "public_clause_06",
+      "text": "Render main.png at 1000 x 1000 pixels from a camera matching input/reference.png, using neutral studio lighting, Cycles, AgX and exposure 0. Retain the camera and lighting in scene.blend.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "saved_camera",
+        "saved_resolution",
+        "main_render_consistency"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "delivery",
+      "text": "Required native/GLB/image/source/README outputs and clean rebuild",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "main_loadable",
+        "main_dimensions",
+        "main_format",
+        "readme",
+        "reproducible"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "procedural_materials",
+      "text": "Existing pilot: no bitmap inputs; pure colour and procedural nodes allowed",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "seed_quality",
+      "text": "Baseline and seed 0/1/2 independently inspected; minimum native image score",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": "b270ddce5caae775b8fed9ed1098c5b323e0685cd4e8e83ce3b9081bf9b3846e",
+  "reference_boxes": "ffc5d95986a5b85031dfce45450529f07d9a9f6094d4a88425a7f28f64ca5495",
+  "vlm_spec_digest": "297575d30a5936b376fbead4fb0c31ef07c953a54a04d8e45b8e6ff1e0658adf",
+  "formal_score_eligible": false,
+  "reference_views": [
+    "environment/input/reference.png",
+    "environment/input/front.png",
+    "environment/input/side.png",
+    "environment/input/top.png"
+  ],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": true,
+  "calibration_exposure": "reference_only_draft"
+}

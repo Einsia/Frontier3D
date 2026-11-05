@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "600bbccbb2ee42b22008d4c073f915b570840dab32c7a525a5a6386d9c11e897",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "radio body 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.383,
+          0.489
+        ],
+        [
+          0.794,
+          0.489
+        ],
+        [
+          0.794,
+          0.783
+        ],
+        [
+          0.383,
+          0.783
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "antenna 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.287,
+          0.198
+        ],
+        [
+          0.443,
+          0.198
+        ],
+        [
+          0.443,
+          0.666
+        ],
+        [
+          0.287,
+          0.666
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "microphone 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.59,
+          0.603
+        ],
+        [
+          0.693,
+          0.603
+        ],
+        [
+          0.693,
+          0.849
+        ],
+        [
+          0.59,
+          0.849
+        ]
+      ]
+    }
+  ]
+}

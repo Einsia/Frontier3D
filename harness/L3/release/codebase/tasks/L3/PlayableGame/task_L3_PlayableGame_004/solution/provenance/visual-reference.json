@@ -1,0 +1,11 @@
+{
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "quality": "high",
+  "prompt_sha256": "4f7048b9cab02ee281f98f09bf840f74750cec1060c81e6fa5925b5ad0758595",
+  "endpoint": "https://sbtunnel.xiaoaojianghu.fun",
+  "generated_at_unix": 1790055003.356171,
+  "kind": "generated_visual_direction_not_implementation",
+  "model_visible_path": "input/reference.png",
+  "image_sha256": "c995c9ffe03770086b381ff0da82c1c3a39de6a9d7a5304eda7cb6a8f3cde3b7"
+}

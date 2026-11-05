@@ -1,0 +1,223 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002",
+  "family": "Reference2Scene-RealPhoto",
+  "instruction_sha256": "ff486178a8573da1b57eac39dfe5056550c04f508175fe204c6f721ef5850fc4",
+  "reference_policy": "Public originals only. reference-0 -> main; alternate is a geometry diagnostic.",
+  "focus": "White counter with thickness, inset dark sink and black cooktop edge. Overhead oblique view; sink at rear, plate at lower left, purple mug on board upper center, tilted mugs to the right, black cooktop crossing the lower right. White reflective counter and ceramic surfaces, dark blue plate and mug, purple and pale blue mugs, warm wood and soft overhead highlights. Small logos and distant furniture may simplify.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "reference_feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: White counter with thickness, inset dark sink and black cooktop edge. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Dark blue deep plate with real hollow interior, rim and base. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Upright purple mug and white dish on round wooden board. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: White mug on its side, tilted light blue mug and dark blue mug on its side, with hollow walls and handles. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Wooden spoon, round board thickness and the actual spacing, overlaps and support contacts. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "dimension": "reference_layout",
+      "weight": 0.2,
+      "question": "Overhead oblique view; sink at rear, plate at lower left, purple mug on board upper center, tilted mugs to the right, black cooktop crossing the lower right. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.1,
+      "question": "Compare every supplied original and every required authored view for coherent real 3D structure, thickness and attachments. Use native inspection for suspected flat photographic substitutes; wrong/absent required geometry earns zero on its feature. Do not infer unseen reference geometry. Alternate has no reference pixel target.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials_colors",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original material/color fidelity: White reflective counter and ceramic surfaces, dark blue plate and mug, purple and pale blue mugs, warm wood and soft overhead highlights. Small logos and distant furniture may simplify.",
+      "units": [
+        "materials_colors"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_atmosphere",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original light direction, contrast, exposure, shadows and atmosphere: White reflective counter and ceramic surfaces, dark blue plate and mug, purple and pale blue mugs, warm wood and soft overhead highlights. Small logos and distant furniture may simplify.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "59825bae8701075f58075afe9f8e269e24ce0ec6863f9b75e2d4e3585b2b3ce5",
+    "image_size": [
+      960,
+      720
+    ],
+    "detector": {
+      "method": "vlm-boxes-v2",
+      "model": "strict-agentic-judge",
+      "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+    },
+    "context_queries": [],
+    "review_kind": "primary_assistant_reference_only_ai_draft",
+    "human_reviewed": false,
+    "formal_score_eligible": false,
+    "targets": [
+      {
+        "id": "target_1",
+        "query": "dark blue deep plate including its rim",
+        "label": "dark blue deep plate including its rim",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.233,
+            0.469,
+            0.502,
+            0.827
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. dark blue deep plate including its rim"
+      },
+      {
+        "id": "target_2",
+        "query": "upright purple mug including its visible rim",
+        "label": "upright purple mug including its visible rim",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.501,
+            0.215,
+            0.623,
+            0.417
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. upright purple mug including its visible rim"
+      },
+      {
+        "id": "target_3",
+        "query": "dark sink basin and outer rim",
+        "label": "dark sink basin and outer rim",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.189,
+            0.0,
+            0.679,
+            0.261
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. dark sink basin and outer rim"
+      }
+    ]
+  },
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

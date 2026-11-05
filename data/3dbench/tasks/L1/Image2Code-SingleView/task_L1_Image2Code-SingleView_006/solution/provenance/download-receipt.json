@@ -1,0 +1,17 @@
+{
+  "uid": "9cb04641558e40dbbee9f61ac55fdcb5",
+  "file": "source.glb",
+  "download_filename": "gym_trainer.glb",
+  "bytes": 1524064,
+  "sha256": "2142078b73fad9542aba418296ea5aa6f1f68cb36595ced383b060f646b20532",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Gerhald (https://sketchfab.com/Gerhald)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/gym-trainer-9cb04641558e40dbbee9f61ac55fdcb5",
+    "title": "Gym Trainer"
+  },
+  "gltf_meshes": 42,
+  "gltf_images": 0,
+  "animations": []
+}

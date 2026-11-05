@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "5ce137f14dd65dd7af1b5a7b89fa7bc0e7e9f8a73f6f8dcdbad28a16ae125d14",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "cabinet carcass",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.24,
+          0.18
+        ],
+        [
+          0.93,
+          0.18
+        ],
+        [
+          0.93,
+          0.73
+        ],
+        [
+          0.24,
+          0.73
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "open framed door",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.08,
+          0.26
+        ],
+        [
+          0.8,
+          0.26
+        ],
+        [
+          0.8,
+          0.54
+        ],
+        [
+          0.08,
+          0.54
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "cabinet cavity",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.26,
+          0.35
+        ],
+        [
+          0.79,
+          0.35
+        ],
+        [
+          0.79,
+          0.71
+        ],
+        [
+          0.26,
+          0.71
+        ]
+      ]
+    }
+  ]
+}

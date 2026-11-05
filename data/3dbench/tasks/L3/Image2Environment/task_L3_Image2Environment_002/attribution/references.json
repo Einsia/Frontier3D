@@ -1,0 +1,30 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "626bf908e4021ded8113469177cf3f43e34f520562b6541bdad03839769f4850",
+      "width": 1600,
+      "height": 1150,
+      "provenance": {
+        "task": "l3-e02",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-e02/Supermarket_shelves.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Supermarket_shelves.jpg",
+        "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Supermarket_shelves.jpg",
+        "sha256": "8941c9fb579abc5b5b345628447c68eea915180da360084aa85a65c261762729",
+        "license_urls": [
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "author": "Frankie Fouganthin",
+        "kind": "photograph",
+        "license": "CC-BY-SA-4.0"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

@@ -1,0 +1,373 @@
+{
+  "version": "l2-method-plan-v1",
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_004",
+  "category": "SceneEdit",
+  "sources": {
+    "instruction.md": "847ea6017ef49d96d3a9b59464e25cca1050a3ec58da8ae524836dff899784cd",
+    "solution/EVALUATION.md": "ebb145d69cfb1dab2146dabbb09ecd77001e0121c5509445a7923dc277f61024"
+  },
+  "evaluation_title": "评测接口：铁匠铺：恢复炉台与锻造设备",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "dimension": "文件与可执行性",
+      "description": [
+        "固定输出齐全；脚本能从干净输入执行；无缺失依赖",
+        "按 instruction 命令执行，离线重开 scene.blend 并重新渲染两张图；核对提交图来自该工程。"
+      ],
+      "source_quote": "| 文件与可执行性 | 固定输出齐全；脚本能从干净输入执行；无缺失依赖 | 按 instruction 命令执行，离线重开 scene.blend 并重新渲染两张图；核对提交图来自该工程。 |",
+      "methods": [
+        "execution_and_native_rerender",
+        "dependency_integrity"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_02",
+      "dimension": "需求覆盖",
+      "description": [
+        "上述语义结构和明确尺寸/编辑范围",
+        "将题面清单映射为评测侧区域或几何测量，不依赖模型自取对象名。"
+      ],
+      "source_quote": "| 需求覆盖 | 上述语义结构和明确尺寸/编辑范围 | 将题面清单映射为评测侧区域或几何测量，不依赖模型自取对象名。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "target_geometry_and_contacts"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_03",
+      "dimension": "几何与空间",
+      "description": [
+        "有体积的结构、开口与厚度、支撑/接触、穿透和空间层次",
+        "表面采样、BVH 和连通/间距测量。根据完整参考按可见目标分区，避免全图平均掩盖局部失误。"
+      ],
+      "source_quote": "| 几何与空间 | 有体积的结构、开口与厚度、支撑/接触、穿透和空间层次 | 表面采样、BVH 和连通/间距测量。根据完整参考按可见目标分区，避免全图平均掩盖局部失误。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "target_geometry_and_contacts"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_04",
+      "dimension": "视觉",
+      "description": [
+        "构图、轮廓、材质颜色、受光和阴影层次",
+        "使用提交工程重渲染；分别报告区域轮廓、Lab 色彩及亮暗分布。允许简化的文字或小细节不按像素硬判。"
+      ],
+      "source_quote": "| 视觉 | 构图、轮廓、材质颜色、受光和阴影层次 | 使用提交工程重渲染；分别报告区域轮廓、Lab 色彩及亮暗分布。允许简化的文字或小细节不按像素硬判。 |",
+      "methods": [
+        "main_view_image_comparison",
+        "reviewed_regions_and_landmarks"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_05",
+      "dimension": "非目标保持",
+      "description": [
+        "保留对象、几何、变换、材质、相机及灯的非允许参数",
+        "先对 initial.blend 和 annotations/preserved-baseline.json 做哈希粗查，再检查语义等价。允许目标编辑引起的自然反射和阴影变化；不能把它算成改了保留资产。"
+      ],
+      "source_quote": "| 非目标保持 | 保留对象、几何、变换、材质、相机及灯的非允许参数 | 先对 initial.blend 和 annotations/preserved-baseline.json 做哈希粗查，再检查语义等价。允许目标编辑引起的自然反射和阴影变化；不能把它算成改了保留资产。 |",
+      "methods": [
+        "non_target_surface_and_shading_preservation"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_06",
+      "dimension": "可复现与可编辑",
+      "description": [
+        "重复执行稳定、主要结构可编辑、资产自包含",
+        "第二次从干净目录执行，比较场景结构及渲染；不能读取私有 solution 或从网络取回源工程。"
+      ],
+      "source_quote": "| 可复现与可编辑 | 重复执行稳定、主要结构可编辑、资产自包含 | 第二次从干净目录执行，比较场景结构及渲染；不能读取私有 solution 或从网络取回源工程。 |",
+      "methods": [
+        "camera_relationship",
+        "same_seed_reproduction"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_07",
+      "dimension": "效率",
+      "description": [
+        "时间、token、调用次数、失败重试",
+        "Harness 统一采集，和质量分开汇报。"
+      ],
+      "source_quote": "| 效率 | 时间、token、调用次数、失败重试 | Harness 统一采集，和质量分开汇报。 |",
+      "methods": [
+        "cost_accounting_separate"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    }
+  ],
+  "public_numeric_clauses": [
+    "Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png."
+  ],
+  "public_render_contract": {},
+  "material_policy": {
+    "image_textures": false,
+    "procedural_shading": true,
+    "solid_color": true,
+    "scope": [
+      "materials",
+      "nested_node_groups",
+      "world",
+      "lights",
+      "geometry_node_image_inputs",
+      "legacy_modifier_textures",
+      "compositor_images"
+    ],
+    "edit_baseline": "Converted baseline and reference; native render regenerated, visual review pending"
+  },
+  "scoring": {
+    "evaluation_mode": "system_validity_with_physical_quality",
+    "component_weights": {
+      "numeric": 0.18,
+      "target": 0.54,
+      "preservation": 0.18,
+      "physics": 0.1
+    },
+    "physics_weight": 0.1,
+    "minimum_quality": null,
+    "weights_status": "pilot_not_calibrated"
+  },
+  "ground_truth": {
+    "use_private_example_for_brief": false,
+    "alternate_view_pixel_gt": false,
+    "hidden_dimensions_or_object_names_as_requirements": false,
+    "main_image": "public_reference",
+    "private_target_index": "evaluator_localization_only"
+  },
+  "mvp_status": "not_run",
+  "implementation_status": "five_case_regional_controls_pending",
+  "target": "锻造设备",
+  "target_features": [
+    "炉台真实凹腔及口沿",
+    "风箱",
+    "铁砧尖角及收腰",
+    "支座固定",
+    "操作净空",
+    "两件热铁"
+  ],
+  "case_measurements": "炉台真实凹腔及口沿；风箱；铁砧尖角及收腰；支座固定；操作净空；两件热铁",
+  "numeric_method": "Localize reference target using private index; compare submitted geometry in the visible target region without requiring original names/splits. Measure cavity, thickness, contacts and route where specified; preserve non-target surfaces using global scene coordinates and shading, allowing equivalent remeshing.",
+  "deferred": [],
+  "human_assistance": [
+    "Review procedural palette/opacity/normal replacements and matching reference images",
+    "Confirm visible target and semantic region correspondence",
+    "Calibrate shape and lighting thresholds using accepted examples"
+  ],
+  "dataset_version": "l2-edit-procedural-data-v1",
+  "edit_measurement_mode": "geometry",
+  "reference_target": {
+    "scene": "solution/reference/scene.blend",
+    "objects": [
+      "Forge",
+      "Bellow",
+      "Anvil",
+      "AnvilBolts",
+      "AnvilStand",
+      "IronHotEdge1",
+      "IronHotEdge2"
+    ],
+    "files": [
+      "solution/reference/scene.blend",
+      "solution/annotations/pair-audit.json"
+    ]
+  },
+  "active_checks": [
+    {
+      "id": "alternate_relationship",
+      "existing_check": "alternate_relationship",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "main_camera_preserved",
+      "existing_check": "main_camera_preserved",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "main_native_size",
+      "existing_check": "main_native_size",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "main_png",
+      "existing_check": "main_png",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "alternate_native_size",
+      "existing_check": "alternate_native_size",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "alternate_png",
+      "existing_check": "alternate_png",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_engine",
+      "existing_check": "preserve_engine",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_view_transform",
+      "existing_check": "preserve_view_transform",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_look",
+      "existing_check": "preserve_look",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_exposure",
+      "existing_check": "preserve_exposure",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_gamma",
+      "existing_check": "preserve_gamma",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_resolution",
+      "existing_check": "preserve_resolution",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_resolution_percentage",
+      "existing_check": "preserve_resolution_percentage",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_unit_system",
+      "existing_check": "preserve_unit_system",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "preserve_unit_scale",
+      "existing_check": "preserve_unit_scale",
+      "source": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly."
+    },
+    {
+      "id": "editable",
+      "existing_check": "editable",
+      "source": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```"
+    }
+  ],
+  "remaining_engineering": [
+    "Continuous shells, part contacts/support and task-specific clearances",
+    "Equivalent remeshing and surface-shading preservation where valid",
+    "Task-specific openings, internal spaces and structural part correspondence",
+    "Occluded anvil, stand and heated pieces; furnace cavity and working clearance",
+    "Exact semantic counts marked pending in numeric_requirements",
+    "Target material appearance similarity"
+  ],
+  "edit_structure": {
+    "thickness": true,
+    "open_cavity": false
+  },
+  "edit_regions": [
+    {
+      "id": "furnace",
+      "objects": [
+        "Forge"
+      ],
+      "source_quote": "the visible furnace basin with its rim and recessed working area"
+    },
+    {
+      "id": "bellows",
+      "objects": [
+        "Bellow"
+      ],
+      "source_quote": "the bellows beside it"
+    }
+  ],
+  "eligibility_scope": "System validity only; all content checks affect quality, not eligibility",
+  "numeric_requirements": [
+    {
+      "id": "alternate_translation_m",
+      "method": "camera_local_translation",
+      "expected": 0.3,
+      "unit": "m",
+      "tolerance": 0.003,
+      "source_quote": "Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png."
+    },
+    {
+      "id": "heated_iron_count",
+      "method": "pending_geometry_count",
+      "expected": 2,
+      "unit": "count",
+      "tolerance": 0,
+      "source_quote": "the two small heated iron pieces"
+    }
+  ],
+  "base_scoring": {
+    "profile": "edit_target",
+    "text_semantics": "separate_from_image_metric",
+    "vit_enabled": false,
+    "cost_in_quality_score": false,
+    "main_image_weight": 0.0,
+    "weights_status": "pilot_definition_not_calibrated",
+    "invalid_input_has_model_score": false,
+    "evaluation_mode": "native_edit_target_quality",
+    "minimum_quality": null,
+    "target_weight": 0.8,
+    "numeric_weight": 0.2,
+    "similarity_weight": 0.6,
+    "preservation_weight": 0.2,
+    "geometry_weights": {
+      "surface": 0.6,
+      "regions": 0.25,
+      "structure": 0.15
+    }
+  },
+  "base_scoring_profile": "l2-edit-target-v4.0.0",
+  "physics": {
+    "version": "physical-context-v1",
+    "scope": "edit_delta",
+    "edit_mode": "geometry",
+    "contact_tolerance_m": 0.02
+  },
+  "vlm_judge": {
+    "version": "l2-vlm-judge-v3",
+    "mode": "interactive",
+    "spec_path": "harness/vlm_spec.json",
+    "spec_sha256": "7ce6ee92b71ee2e0e9ae7e6eb46036b1e1ef396dd7a5ad3855b7e36dc1647380",
+    "component_weights": {
+      "numeric": 0.2,
+      "target": 0.3,
+      "preservation": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+    "edit_context": {
+      "before": {
+        "path": "harness/vlm_context/before.png",
+        "sha256": "f9469c9cd197c45712ae9dd60e4b68451ce63e3cc942c3e77413b7f01a7cde4e",
+        "scene_sha256": "4f0e1cb88a58b16df83603ecaf4377fa7e458cd4c546cc4558a98caa1b13d681"
+      },
+      "target": {
+        "path": "harness/vlm_context/target.png",
+        "sha256": "089f868a2334e2ecb2d8c1af999ff27e482da7ff251a83a715482e2244f6a43a",
+        "scene_sha256": "bcfcd5c70a6bbf6f82d933a19abd9a01003306d9a95d43cbf57faf4da85a0213"
+      }
+    }
+  },
+  "score_aggregation_note": "## 当前复评口径：v8 / Strict fidelity review\n\n仅复评原作品，未改动原生成题面。逐题原图/文本特征；主视图必查，跨视图项必须核对所有公开原图和候选双视图。\n每项列出达成、差异和严重度后评0–4级；主要缺陷最多2级，主体错误/缺失0级，不能因制作精致掩盖不忠于参考。\n保持原总权重及自动/物理测量：Brief VLM60/测量30/物理10；Edit 数值20/目标30/保持20/物理10/VLM20；Reference 图像50/定位20/物理10/VLM20。\n定位沿用原冻结参考框及公式，重新独立识别候选框。禁止任意配准。未展示仅扣对应项；技术失败不补零。\n机器草案和裁判尚待人工校准，不声称人工认证。详见 harness/vlm_spec.json。\n"
+}

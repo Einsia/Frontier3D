@@ -1,0 +1,126 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L2/SceneEdit/task_L2_SceneEdit_002",
+  "family": "SceneEdit",
+  "instruction_sha256": "99d46c2a7e6666f634a6b2b221dee88a8c55b478a23ae6a480dca09b8f57c712",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "阁楼工作室：补回望远镜；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Restore the long tilted telescope tube at the right attic location. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Include wider front rim and identifiable eyepiece end. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Connect the tube to its pivot/mount with coherent support. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "edit_effect_4",
+      "component": "T",
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Provide a slender tripod assembly contacting the floor. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "edit_effect_5",
+      "component": "T",
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Maintain the reference narrow dark silhouette and relation to nearby furniture; do not invent exact hidden support details. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_5"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "units": [
+        "protected_appearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/before.png": "27c18497c0bb9cdb4bc4d0046b98fd1285bcc6d119280dcaeed941bb39565b6e",
+    "reference/target.png": "c62ee6b18b2a3a756e2b310215b2583422e0c3ac1f5e75a1468a032c92cac3b1",
+    "reference/reference-0.png": "21f88631aeb4787a7814f80a05d954ec2bf1be1d8d89d839c8c5c471614c1651"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

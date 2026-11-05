@@ -1,0 +1,300 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_019",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/73aa7be390b2f7c6b569/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/2b92384e83f036eb5c44/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/cdd75340f2b42c4f7f3c/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "前轮与前悬挂",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.642,
+          0.557
+        ],
+        [
+          0.78,
+          0.553
+        ],
+        [
+          0.841,
+          0.649
+        ],
+        [
+          0.845,
+          0.744
+        ],
+        [
+          0.795,
+          0.784
+        ],
+        [
+          0.706,
+          0.761
+        ],
+        [
+          0.65,
+          0.692
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "后轮、排气与驻车架",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.13,
+          0.602
+        ],
+        [
+          0.227,
+          0.559
+        ],
+        [
+          0.225,
+          0.464
+        ],
+        [
+          0.281,
+          0.407
+        ],
+        [
+          0.369,
+          0.408
+        ],
+        [
+          0.448,
+          0.513
+        ],
+        [
+          0.462,
+          0.611
+        ],
+        [
+          0.378,
+          0.655
+        ],
+        [
+          0.302,
+          0.683
+        ],
+        [
+          0.136,
+          0.624
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "车尾与座椅",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.205,
+          0.419
+        ],
+        [
+          0.231,
+          0.327
+        ],
+        [
+          0.273,
+          0.27
+        ],
+        [
+          0.381,
+          0.3
+        ],
+        [
+          0.431,
+          0.333
+        ],
+        [
+          0.482,
+          0.414
+        ],
+        [
+          0.443,
+          0.458
+        ],
+        [
+          0.331,
+          0.399
+        ]
+      ]
+    },
+    {
+      "id": "r04",
+      "label": "油箱与侧整流罩",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.439,
+          0.416
+        ],
+        [
+          0.482,
+          0.374
+        ],
+        [
+          0.55,
+          0.36
+        ],
+        [
+          0.627,
+          0.375
+        ],
+        [
+          0.675,
+          0.482
+        ],
+        [
+          0.747,
+          0.548
+        ],
+        [
+          0.653,
+          0.7
+        ],
+        [
+          0.526,
+          0.666
+        ],
+        [
+          0.429,
+          0.602
+        ]
+      ]
+    },
+    {
+      "id": "r05",
+      "label": "车头、风挡与操纵部件",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.577,
+          0.462
+        ],
+        [
+          0.62,
+          0.387
+        ],
+        [
+          0.678,
+          0.35
+        ],
+        [
+          0.744,
+          0.417
+        ],
+        [
+          0.789,
+          0.36
+        ],
+        [
+          0.821,
+          0.374
+        ],
+        [
+          0.799,
+          0.423
+        ],
+        [
+          0.804,
+          0.524
+        ],
+        [
+          0.773,
+          0.552
+        ],
+        [
+          0.63,
+          0.53
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n01",
+      "source_quote": "two wheels",
+      "quantity": "摩托车主车轮数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维场景中按独立轮轴及轮辋轮胎装配识别主车轮；不计制动盘和驻车架滚轮。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "以米读取最终静态姿态的世界空间几何，包含驻车架，排除相机与灯光；计算整体轴对齐包围盒各轴跨度并取最大值，与1.000 m名义值比较。explicit_tolerance为原文2%的相对容差，不是米值。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

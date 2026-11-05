@@ -1,0 +1,310 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_003",
+  "category": "Text2Code",
+  "title": "丝杠驱动滑台",
+  "profile": "l1-brief-l2aligned-v1.0.0",
+  "l2_baseline": "l2-brief-vlm-v7.0.0",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "physics": 0.1
+  },
+  "spec_sha256": "78b73df230e6612ddcd6838f13c2e7534fcc66886a922f8ea7b2402d0ef07dee",
+  "sources": {
+    "instruction.md": "d0edf49a1c035685592e7583d5fb65dc1c2170a05bc64e64e98b805675c51ad7",
+    "solution/EVALUATION.md": "8c467ef3ca5be0960f553154b809f66ce2f065b9892d183c1aa7593a73067ede",
+    "harness/eval_spec.json": "4bbd7c287100cdc7662bdf4449f0bde19904112ffd7b577d5f0e8bb75a03bc07",
+    "harness/evaluation_design.json": "1b0362b1a762804dba4f12a49c5a7384b044b80aa34913dbde7bf449ec25d7b4"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": null,
+  "automatic_checks": [
+    "part_inventory",
+    "closed",
+    "connected",
+    "solid_validity",
+    "part_count",
+    "hierarchy"
+  ],
+  "reference_primary": null,
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.26,
+        -0.28,
+        0.22
+      ],
+      "target": [
+        0,
+        0,
+        0.026
+      ],
+      "ortho_scale": 0.25,
+      "resolution": 128,
+      "frame": 1
+    },
+    {
+      "id": "exploded",
+      "location": [
+        0.36,
+        -0.38,
+        0.32
+      ],
+      "target": [
+        0,
+        0,
+        0.06
+      ],
+      "ortho_scale": 0.45,
+      "resolution": 128,
+      "frame": 61
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "part_roles",
+      "text": "底座1、导杆2、衬套2、光滑丝杆1、螺母块1、平台1、端支座2、手轮1，共11件独立可编辑零件",
+      "source": "instruction.md paragraphs 1–2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory",
+        "part_count"
+      ],
+      "reason": "尺寸清单及件数为代理；角色、特征和可编辑性未完整绑定。"
+    },
+    {
+      "id": "base",
+      "text": "底座170×100×6 mm，平面居中且底Z=0",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际基准、位置及形状特征验证。"
+    },
+    {
+      "id": "guide_rods",
+      "text": "导杆直径8 mm、长150 mm，沿X，Y=±30/Z=26 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚未测量实际轴线、圆柱截面及装配位置。"
+    },
+    {
+      "id": "guide_sleeves",
+      "text": "各衬套长40 mm、外径18 mm、孔径8.4 mm且沿导杆居中",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "包围盒不证明孔道、圆柱轮廓及相对位置。"
+    },
+    {
+      "id": "lead_rod",
+      "text": "光滑丝杆直径10 mm、长182 mm，X轴向，Y=0/Z=26 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "仍缺圆柱轴线及位置测量；不额外要求螺纹。"
+    },
+    {
+      "id": "nut_block",
+      "text": "螺母块24×22×18 mm，中心(0,0,26)，X向孔直径10.4 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚未绑定孔径、贯通及中心基准。"
+    },
+    {
+      "id": "platform",
+      "text": "平台58×86×6 mm，中心(0,0,38)，下表面贴合螺母块与衬套",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尺寸代理不证明底面接触、支撑和位置。"
+    },
+    {
+      "id": "end_supports",
+      "text": "端支座12×90×36 mm，中心(±76,0,24)；Z=26的X向三孔在Y=-30/0/+30，孔径8.4/10.4/8.4 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "需测真实孔径、完整孔道、孔位和支撑关系。"
+    },
+    {
+      "id": "handwheel",
+      "text": "手轮中心(88,0,26)，法向X，外径36 mm、孔径10.4 mm、宽6 mm，丝杆伸至其外面",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "包围盒不证明孔或轴向接触及伸出量。"
+    },
+    {
+      "id": "assembly_clearance",
+      "text": "规定轴线、贴合与间隙；尺寸及位置误差≤0.3 mm，保留真实孔道且不添加未要求结构",
+      "source": "instruction.md paragraphs 1–2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "尚未将截面、孔轴、接触和干涉接口绑定本题。"
+    },
+    {
+      "id": "units",
+      "text": "米制导出，X长度/Y宽度/Z向上",
+      "source": "instruction.md paragraphs 2–3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "跨格式物理尺度和实际轴向未完整验证。"
+    },
+    {
+      "id": "hierarchy",
+      "text": "自由描述性名称、独立可编辑部件与清晰组织",
+      "source": "instruction.md paragraphs 2–3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "hierarchy",
+        "part_count"
+      ],
+      "reason": "父节点和件数不是完整语义编辑性证明。"
+    },
+    {
+      "id": "materials",
+      "text": "结构件蓝灰、轴类银色、衬套黄铜色；未指明部分按题面材料类别处理",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "尚未绑定角色材质及实际表面外观。"
+    },
+    {
+      "id": "state_cycle",
+      "text": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "assembled_valid",
+        "exploded_valid",
+        "reproducible"
+      ],
+      "reason": "现有重现/视图为诊断；任务拆分、可读性和完整材质保持待验收。"
+    },
+    {
+      "id": "glb_assembled",
+      "text": "GLB与原生帧1装配态一致",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "复用跨格式诊断，任务级等价阈值未标定。"
+    },
+    {
+      "id": "reconstruction",
+      "text": "清洁环境从代码重建，使用便携依赖，不依赖旧产物或个人路径",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "基准/seed和现有比较已接线，复杂诊断可能预算耗尽，完整语义与依赖仍未覆盖。"
+    },
+    {
+      "id": "instructions",
+      "text": "README说明执行方式及依赖",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "仅检查可读取并收集辅助文件，内容语义待验证。"
+    },
+    {
+      "id": "procedural_materials",
+      "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+      "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+      "source": "user_goal_2026-10-03 / seed delivery protocol",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": null,
+  "reference_boxes": null,
+  "vlm_spec_digest": "1e7096a64723a85716099299c620c23014a7e319ebdb6e8915798c0690f9150f",
+  "formal_score_eligible": false,
+  "reference_views": [],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": false,
+  "presentation_policy": "fixed_neutral_studio_intrinsic_object_aesthetics_not_authored_lighting"
+}

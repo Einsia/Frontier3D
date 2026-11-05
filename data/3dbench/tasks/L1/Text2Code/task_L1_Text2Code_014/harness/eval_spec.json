@@ -1,0 +1,544 @@
+{
+  "version": "scalable-v1.1.0",
+  "profile": "L1",
+  "mode": "text",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "README.md"
+  ],
+  "scene": "scene.blend",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "critical_constraints": [
+    "all_seed_quality",
+    "closed",
+    "connected",
+    "export",
+    "glb_procedural_materials",
+    "glb_sweep_section_dimensions",
+    "glb_sweep_solid",
+    "glb_sweep_surface",
+    "native_procedural_materials",
+    "native_state_materials",
+    "native_sweep_section_dimensions",
+    "native_sweep_solid",
+    "native_sweep_surface",
+    "part_count",
+    "solid_validity"
+  ],
+  "tolerances": {
+    "dimension_m": 0.00015
+  },
+  "l1_geometry": {
+    "version": "l1-mesh-v1",
+    "weld_m": 1e-09,
+    "intersection_epsilon_m": 1e-09,
+    "degenerate_area_m2": 1e-18,
+    "max_triangles": 200000,
+    "max_intersection_pairs": 2000000
+  },
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.13,
+        -0.16,
+        0.12
+      ],
+      "target": [
+        0.012,
+        0,
+        0.022
+      ],
+      "ortho_scale": 0.075,
+      "resolution": 128,
+      "frame": 1
+    }
+  ],
+  "l1_protocol": {
+    "version": "l1-requirements-v1",
+    "requirements": [
+      {
+        "id": "editable_part",
+        "text": "一件闭合、连通、独立可编辑真实三维零件，不要求装配或爆炸动画",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "glb_sweep_solid",
+          "native_sweep_solid",
+          "part_count",
+          "real_geometry"
+        ],
+        "reason": "实体数量/非平面检查不能证明完整编辑结构。"
+      },
+      {
+        "id": "interpolated_path",
+        "text": "中心线位于XZ平面，按顺序插值(0,0,0)/(0,0,10.348767)/(11.4975,0,20.995524)/(15.5835,0,21.221145)/(16.821,0,42.57) mm；非周期C2、弦长参数、无指定端切线，OCC GeomAPI_Interpolate容差0.000001 mm",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "glb_sweep_section_dimensions",
+          "glb_sweep_surface",
+          "native_sweep_section_dimensions",
+          "native_sweep_surface"
+        ],
+        "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+      },
+      {
+        "id": "rectangular_section",
+        "text": "沿路径扫掠9.3×6.9 mm居中矩形，起始位于原点XY面，9.3沿X/6.9沿Y；截面深度始终平行Y",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "glb_sweep_section_dimensions",
+          "glb_sweep_surface",
+          "native_sweep_section_dimensions",
+          "native_sweep_surface",
+          "section_depth"
+        ],
+        "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+      },
+      {
+        "id": "sweep_transport",
+        "text": "采用corrected-Frenet传输且无附加扭转，保留四条纵向锐边、无圆角、封闭两端；不以多个长方块串接替代",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "glb_sweep_section_dimensions",
+          "glb_sweep_surface",
+          "native_sweep_section_dimensions",
+          "native_sweep_surface"
+        ],
+        "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+      },
+      {
+        "id": "surface_accuracy",
+        "text": "全部尺寸和表面位置误差≤0.15 mm；中间近邻插值点造成的弯曲须保留",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "glb_sweep_section_dimensions",
+          "glb_sweep_surface",
+          "native_sweep_section_dimensions",
+          "native_sweep_surface"
+        ],
+        "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+      },
+      {
+        "id": "topology",
+        "text": "所有零件闭合且分别连通",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "closed",
+          "connected"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "solid_validity",
+        "text": "有效实体零件",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "solid_validity"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "glb_readable",
+        "text": "GLB可重新导入",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "export"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "glb_assembled",
+        "text": "GLB与原生静态实体的几何、单位及可表达材质一致",
+        "source": "instruction.md paragraph 3",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "export",
+          "reproducible"
+        ],
+        "reason": "复用跨格式诊断，任务级等价阈值未标定。"
+      },
+      {
+        "id": "reconstruction",
+        "text": "清洁环境从代码重建，使用便携依赖，不依赖旧产物或个人路径",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "reproducible"
+        ],
+        "reason": "基准/seed和现有比较已接线，复杂诊断可能预算耗尽，完整语义与依赖仍未覆盖。"
+      },
+      {
+        "id": "instructions",
+        "text": "README说明执行方式及依赖",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "readme"
+        ],
+        "reason": "仅检查可读取并收集辅助文件，内容语义待验证。"
+      },
+      {
+        "id": "units",
+        "text": "米制导出、Z向上；按本题0.15 mm尺寸/表面位置容差判定",
+        "source": "instruction.md paragraph 2",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "glb_sweep_section_dimensions",
+          "glb_sweep_surface",
+          "native_sweep_section_dimensions",
+          "native_sweep_surface",
+          "section_depth"
+        ],
+        "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+      },
+      {
+        "id": "materials",
+        "text": "蓝灰金属材料；相机和背景不作为隐藏匹配目标",
+        "source": "instruction.md paragraph 1",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "有效材质/表面外观尚未正式绑定。"
+      },
+      {
+        "id": "review_view",
+        "text": "保存可供审阅的真实三维原生场景",
+        "source": "instruction.md Submission contract",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "assembled_valid"
+        ],
+        "reason": "固定诊断视图只验证非空，未自动适配视角及材质。"
+      },
+      {
+        "id": "procedural_materials",
+        "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+        "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_procedural_materials",
+          "glb_procedural_materials",
+          "native_state_materials"
+        ],
+        "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+      },
+      {
+        "id": "seed_quality",
+        "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+        "source": "user_goal_2026-10-03 / seed delivery protocol",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "all_seed_quality"
+        ],
+        "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+      }
+    ]
+  },
+  "checks": {
+    "spec": [
+      {
+        "id": "section_depth",
+        "metric": "dimension_match",
+        "group": "dimensions",
+        "params": {
+          "path": "/scene/dimensions",
+          "axes": [
+            1
+          ],
+          "expected": [
+            0.0069
+          ],
+          "tolerance": "dimension_m"
+        }
+      }
+    ],
+    "geometry": [
+      {
+        "id": "closed",
+        "metric": "equals",
+        "group": "topology",
+        "params": {
+          "path": "/scene/all_closed",
+          "expected": true
+        }
+      },
+      {
+        "id": "connected",
+        "metric": "equals",
+        "group": "connectivity",
+        "params": {
+          "path": "/scene/all_connected",
+          "expected": true
+        }
+      },
+      {
+        "id": "solid_validity",
+        "metric": "equals",
+        "group": "solid",
+        "params": {
+          "path": "/scene/all_valid_solids",
+          "expected": true
+        }
+      },
+      {
+        "id": "real_geometry",
+        "metric": "equals",
+        "group": "volume",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        }
+      },
+      {
+        "id": "native_sweep_solid",
+        "metric": "swept_bar",
+        "group": "sweep_solid",
+        "params": {
+          "path": "/numeric_checks/native_sweep",
+          "scene": "/scene",
+          "design": {
+            "width_m": 0.0093,
+            "depth_m": 0.0069,
+            "tolerance_m": 0.00015,
+            "reference_path": "harness/sweep_reference/reference_v1.json",
+            "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+          },
+          "feature": "solid"
+        },
+        "pass_threshold": 1.0
+      },
+      {
+        "id": "native_sweep_surface",
+        "metric": "swept_bar",
+        "group": "sweep_surface",
+        "params": {
+          "path": "/numeric_checks/native_sweep",
+          "scene": "/scene",
+          "design": {
+            "width_m": 0.0093,
+            "depth_m": 0.0069,
+            "tolerance_m": 0.00015,
+            "reference_path": "harness/sweep_reference/reference_v1.json",
+            "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+          },
+          "feature": "surface"
+        },
+        "pass_threshold": 1.0
+      },
+      {
+        "id": "native_sweep_section_dimensions",
+        "metric": "swept_bar",
+        "group": "sweep_section_dimensions",
+        "params": {
+          "path": "/numeric_checks/native_sweep",
+          "scene": "/scene",
+          "design": {
+            "width_m": 0.0093,
+            "depth_m": 0.0069,
+            "tolerance_m": 0.00015,
+            "reference_path": "harness/sweep_reference/reference_v1.json",
+            "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+          },
+          "feature": "section_dimensions"
+        },
+        "pass_threshold": 1.0
+      },
+      {
+        "id": "glb_sweep_solid",
+        "metric": "swept_bar",
+        "group": "sweep_solid",
+        "params": {
+          "path": "/numeric_checks/glb_sweep",
+          "scene": "/artifacts/scene.glb/scene",
+          "design": {
+            "width_m": 0.0093,
+            "depth_m": 0.0069,
+            "tolerance_m": 0.00015,
+            "reference_path": "harness/sweep_reference/reference_v1.json",
+            "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+          },
+          "feature": "solid"
+        },
+        "pass_threshold": 1.0
+      },
+      {
+        "id": "glb_sweep_surface",
+        "metric": "swept_bar",
+        "group": "sweep_surface",
+        "params": {
+          "path": "/numeric_checks/glb_sweep",
+          "scene": "/artifacts/scene.glb/scene",
+          "design": {
+            "width_m": 0.0093,
+            "depth_m": 0.0069,
+            "tolerance_m": 0.00015,
+            "reference_path": "harness/sweep_reference/reference_v1.json",
+            "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+          },
+          "feature": "surface"
+        },
+        "pass_threshold": 1.0
+      },
+      {
+        "id": "glb_sweep_section_dimensions",
+        "metric": "swept_bar",
+        "group": "sweep_section_dimensions",
+        "params": {
+          "path": "/numeric_checks/glb_sweep",
+          "scene": "/artifacts/scene.glb/scene",
+          "design": {
+            "width_m": 0.0093,
+            "depth_m": 0.0069,
+            "tolerance_m": 0.00015,
+            "reference_path": "harness/sweep_reference/reference_v1.json",
+            "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+          },
+          "feature": "section_dimensions"
+        },
+        "pass_threshold": 1.0
+      }
+    ],
+    "structure": [
+      {
+        "id": "part_count",
+        "metric": "equals",
+        "group": "parts",
+        "params": {
+          "path": "/scene/mesh_count",
+          "expected": 1
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "assembled_valid",
+        "metric": "render_validity",
+        "group": "assembled",
+        "params": {
+          "view": "assembled"
+        }
+      },
+      {
+        "id": "native_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "glb_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/artifacts/scene.glb/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "native_state_materials",
+        "metric": "procedural_material_sequence",
+        "group": "declared_state_material_policy",
+        "params": {
+          "path": "/material_sequences/native",
+          "frames": [
+            1
+          ]
+        }
+      }
+    ],
+    "robust": [
+      {
+        "id": "export",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/scene.glb/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "readme",
+        "metric": "equals",
+        "group": "instructions",
+        "params": {
+          "path": "/artifacts/README.md/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "reproducible",
+        "metric": "seed_success",
+        "group": "reproduction"
+      },
+      {
+        "id": "all_seed_quality",
+        "metric": "all_seed_checks",
+        "group": "seed_quality",
+        "params": {
+          "checks": [
+            "glb_procedural_materials",
+            "glb_sweep_section_dimensions",
+            "glb_sweep_solid",
+            "glb_sweep_surface",
+            "native_procedural_materials",
+            "native_state_materials",
+            "native_sweep_section_dimensions",
+            "native_sweep_solid",
+            "native_sweep_surface"
+          ],
+          "native_frames": [
+            1
+          ],
+          "glb_frames": [
+            1
+          ]
+        }
+      }
+    ]
+  }
+}

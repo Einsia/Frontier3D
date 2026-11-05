@@ -1,0 +1,240 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "linear-visual-20261018-v1",
+  "case_id": "L2/Reference2Scene/task_L2_Reference2Scene-006",
+  "family": "Reference2Scene",
+  "instruction_sha256": "411774537583e16a14f8ca8ea1095993ec9aa6e34f485c3a03b0b2f9aa26bbbd",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "现代卧室的床铺、照明与软装；精确数值由程序测量；Dark bed fills right foreground, bright window near center, storage left and narrow room depth.\nLow bed with thick layered dark bedding and separate pillows. Dark bed fills right foreground, bright window near center, storage left and narrow room depth. Very low-key warm interior against bright cool daylight, soft textile folds and large dark wall/bed regions; do not brighten into a generic bedroom.",
+  "checks": [
+    {
+      "id": "vlm_reference_feature_1",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Low bed with thick layered dark bedding and separate pillows. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_2",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Dark headboard wall and contrasting vertical wood panel. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_3",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Bright central window framed by dark curtains. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_4",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Upholstered chair beside the window. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_5",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Left wall storage, artwork and small candle/tabletop grouping. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_composition_fidelity",
+      "component": "Q",
+      "question": "Dark bed fills right foreground, bright window near center, storage left and narrow room depth. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_cross_view",
+      "component": "Q",
+      "question": "Compare every supplied original and every required authored view for coherent real 3D structure, thickness and attachments. Use native inspection for suspected flat photographic substitutes; wrong/absent required geometry earns zero on its feature. Do not infer unseen reference geometry. Alternate has no reference pixel target. 核对参考可见的具体形状与部件关系；具备体积和多视角稳定性仅能证明相关性质，不能替代参考形状符合度。",
+      "units": [
+        "cross_view"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_materials_colors",
+      "component": "Q",
+      "question": "Compare original material/color fidelity: Very low-key warm interior against bright cool daylight, soft textile folds and large dark wall/bed regions; do not brighten into a generic bedroom.",
+      "units": [
+        "materials_colors"
+      ],
+      "global_weight": 0.06,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_lighting_atmosphere",
+      "component": "Q",
+      "question": "Compare original light direction, contrast, exposure, shadows and atmosphere: Very low-key warm interior against bright cool daylight, soft textile folds and large dark wall/bed regions; do not brighten into a generic bedroom.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "global_weight": 0.06,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "detail_detail_1",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Low bed with thick layered dark bedding and separate pillows。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_2",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Dark headboard wall and contrasting vertical wood panel。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_3",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Bright central window framed by dark curtains。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_4",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Upholstered chair beside the window。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_5",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Left wall storage, artwork and small candle/tabletop grouping。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_5"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "5a58618af17dc53f36bcd0e87d39c902896c5fe9b9d900606a1276d1584d4651"
+  },
+  "authoring": "fixed_public_features_linear_fidelity_independent_dimensions",
+  "formal_score_eligible": false
+}

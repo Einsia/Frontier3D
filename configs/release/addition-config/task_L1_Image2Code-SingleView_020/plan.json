@@ -1,0 +1,287 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/49386fb2b294a205d505/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/7a419d16751c654cfc05/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/c8028e04848381f2a27f/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_bracelet",
+      "label": "弯曲金属链带",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.163,
+          0.474
+        ],
+        [
+          0.179,
+          0.354
+        ],
+        [
+          0.278,
+          0.244
+        ],
+        [
+          0.436,
+          0.174
+        ],
+        [
+          0.529,
+          0.17
+        ],
+        [
+          0.662,
+          0.211
+        ],
+        [
+          0.741,
+          0.295
+        ],
+        [
+          0.795,
+          0.398
+        ],
+        [
+          0.709,
+          0.442
+        ],
+        [
+          0.632,
+          0.33
+        ],
+        [
+          0.499,
+          0.259
+        ],
+        [
+          0.351,
+          0.25
+        ],
+        [
+          0.286,
+          0.342
+        ],
+        [
+          0.275,
+          0.494
+        ],
+        [
+          0.326,
+          0.635
+        ],
+        [
+          0.437,
+          0.724
+        ],
+        [
+          0.559,
+          0.764
+        ],
+        [
+          0.689,
+          0.73
+        ],
+        [
+          0.727,
+          0.753
+        ],
+        [
+          0.64,
+          0.818
+        ],
+        [
+          0.552,
+          0.85
+        ],
+        [
+          0.431,
+          0.844
+        ],
+        [
+          0.293,
+          0.786
+        ],
+        [
+          0.211,
+          0.681
+        ],
+        [
+          0.168,
+          0.554
+        ]
+      ]
+    },
+    {
+      "id": "r_case",
+      "label": "表壳与表圈",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.646,
+          0.397
+        ],
+        [
+          0.715,
+          0.39
+        ],
+        [
+          0.789,
+          0.384
+        ],
+        [
+          0.836,
+          0.414
+        ],
+        [
+          0.861,
+          0.49
+        ],
+        [
+          0.854,
+          0.589
+        ],
+        [
+          0.815,
+          0.678
+        ],
+        [
+          0.751,
+          0.728
+        ],
+        [
+          0.701,
+          0.759
+        ],
+        [
+          0.645,
+          0.753
+        ],
+        [
+          0.621,
+          0.644
+        ],
+        [
+          0.617,
+          0.555
+        ],
+        [
+          0.636,
+          0.465
+        ]
+      ]
+    },
+    {
+      "id": "r_dial",
+      "label": "蓝色表盘与可见指示件",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.706,
+          0.495
+        ],
+        [
+          0.741,
+          0.449
+        ],
+        [
+          0.78,
+          0.426
+        ],
+        [
+          0.807,
+          0.442
+        ],
+        [
+          0.83,
+          0.488
+        ],
+        [
+          0.83,
+          0.556
+        ],
+        [
+          0.81,
+          0.619
+        ],
+        [
+          0.774,
+          0.668
+        ],
+        [
+          0.738,
+          0.691
+        ],
+        [
+          0.711,
+          0.676
+        ],
+        [
+          0.693,
+          0.638
+        ],
+        [
+          0.691,
+          0.57
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "物体最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "以米为单位，将静态姿态下所有腕表几何变换到世界坐标，排除相机与灯光，计算整体世界坐标包围盒三个轴向跨度的最大值，与标称1.000 m比较；explicit_tolerance为原文2%的相对容差。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

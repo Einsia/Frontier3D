@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "e2f2111e52cf6160ec5b6b6a56431dd29af5d45edd42bd97a399472fd3a5fd7c",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "handbag body 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.175,
+          0.318
+        ],
+        [
+          0.839,
+          0.318
+        ],
+        [
+          0.839,
+          0.889
+        ],
+        [
+          0.175,
+          0.889
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "arched handles 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.402,
+          0.188
+        ],
+        [
+          0.621,
+          0.188
+        ],
+        [
+          0.621,
+          0.497
+        ],
+        [
+          0.402,
+          0.497
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "front clasp and straps 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.28,
+          0.411
+        ],
+        [
+          0.689,
+          0.411
+        ],
+        [
+          0.689,
+          0.58
+        ],
+        [
+          0.28,
+          0.58
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-e03",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "parts_store",
+    "workstation_a",
+    "workstation_b",
+    "packing_area",
+    "loading_yard"
+  ],
+  "initial_state": "Tool cabinet locked; key at entry; vice open; parts separate; loading door closed.",
+  "entities": [
+    {
+      "id": "drawer.01",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "drawer.02",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "cabinet.tools",
+      "role": "locked_cabinet",
+      "actions": [
+        "open",
+        "close",
+        "unlock"
+      ],
+      "initial": "locked",
+      "argument": ""
+    },
+    {
+      "id": "key.cabinet",
+      "role": "key",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "collect",
+        "return"
+      ],
+      "initial": "entry hook",
+      "argument": ""
+    },
+    {
+      "id": "vice.bench",
+      "role": "vice",
+      "actions": [
+        "clamp",
+        "release"
+      ],
+      "initial": "open",
+      "argument": "base entity ID"
+    },
+    {
+      "id": "table.adjustable",
+      "role": "table",
+      "actions": [
+        "set_value"
+      ],
+      "initial": "low",
+      "argument": "height_cm"
+    },
+    {
+      "id": "door.loading",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "truck.pallet",
+      "role": "pallet_truck",
+      "actions": [
+        "engage",
+        "release",
+        "raise",
+        "lower"
+      ],
+      "initial": "forks lowered",
+      "argument": ""
+    },
+    {
+      "id": "part.base",
+      "role": "part",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "parts store",
+      "argument": ""
+    },
+    {
+      "id": "part.bracket",
+      "role": "part",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "fit"
+      ],
+      "initial": "parts store",
+      "argument": "fit: base entity ID"
+    },
+    {
+      "id": "part.fastener.01",
+      "role": "part",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "fasten"
+      ],
+      "initial": "parts store",
+      "argument": "fasten: bracket entity ID"
+    },
+    {
+      "id": "part.fastener.02",
+      "role": "part",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "fasten"
+      ],
+      "initial": "parts store",
+      "argument": "fasten: bracket entity ID"
+    },
+    {
+      "id": "tool.driver",
+      "role": "tool",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "locked cabinet",
+      "argument": ""
+    },
+    {
+      "id": "pallet",
+      "role": "receptacle",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "packing area",
+      "argument": ""
+    },
+    {
+      "id": "packing.box",
+      "role": "container",
+      "actions": [
+        "open",
+        "close",
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [
+    "cabinet_key"
+  ],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

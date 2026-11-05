@@ -1,0 +1,32 @@
+{
+  "schema_version": "l3-harbor-package-v1",
+  "task_key": "l3-r03",
+  "files": {
+    "COMMON.md": "78d4196dd2cff45c7223103b01324f0f4bf3f3314e0214ed634e46af6b44f1cf",
+    "PROMPT.md": "b45ff5f49aa52cd66bef3a7a4443f83fac3cf7b71e0ecf3aeddb14d3c2bee008",
+    "README.md": "85e1063df74905edea0b94a8d5e158762830a85b764c4cc4e2629cee915bfaeb",
+    "attribution/REFERENCES.md": "cdb9fe336019874977c3e7991cc249f311a5ff219fd0f8455da471a48128f89c",
+    "attribution/references.json": "1f899862b0e2e769908ea979aeee58885c9fdbcd1114501e06cd8244e74078b5",
+    "environment/Dockerfile": "c72897ae890cbdf330a11fa9b261174bf3bf2ecc44008b187f233f7942cffddf",
+    "environment/input/ASSETS.md": "4ec6687018d5d3f5321a5178f10d5daa9b2e5b036538b5c1f236210c9eb2330d",
+    "environment/input/BenchEntity.h": "a3c73e5e2590a39080e869005e1fd1d102d97a0d45fdcd772601d677ebd29142",
+    "environment/input/BenchInventory.h": "030174129da5e7b412e1a2066bf524f5600855f5b06dc64b6c28cf1bb469f329",
+    "environment/input/BenchObserver.h": "845d665abc9d7e96dde8bcbb7d218a5c0b4837cc1ebc8b158329f3edd8472ebb",
+    "environment/input/CONTRACT.md": "78d4196dd2cff45c7223103b01324f0f4bf3f3314e0214ed634e46af6b44f1cf",
+    "environment/input/INTEGRATION.md": "e82cdd560ff53633e2a025401de49bf2766a612c754fea2b194c22da610e7792",
+    "environment/input/REFERENCES.md": "c497f59cf77860dac3926bbbf6c4ad98d43eb6b6c679c0dff1008c1f244d763e",
+    "environment/input/REQUIREMENTS.md": "5901ef6a6187238782fa99fe544dffe3e998898fb212049ae08143b07f4db984",
+    "environment/input/asset-selection.json": "76cb1a0a2b7657e6563f683211a46679de351045f1d8477b616f6eea7ac1ceea",
+    "environment/input/interaction-contract.json": "b8447872671db352b685ca59142fd0fe98cc3243525ebaf17edd51d68dcecb4c",
+    "environment/input/references.json": "a1935729452e6fb5032c7894281af725ee09c3cca1c9777bfabb85251078be47",
+    "instruction.md": "19183c1181693485ba3e54dfaac478d827159989511cc7ebab1266483c2d3c06",
+    "instruction.source.md": "5901ef6a6187238782fa99fe544dffe3e998898fb212049ae08143b07f4db984",
+    "instruction.zh.md": "d65dcb87e352f529bcc7f43f1e92af06f110f0968eca2cef00a6dcea89f035ea",
+    "package-manifest.source.json": "cc161de09a1a1166dc0a9232a51d6cbaddeea7e93c2114708c8357eb5817a9dd",
+    "reference_plan.json": "558f702f2c97ec1690b76935ce629655008b8618d9cb2b17a0125677e6b030b5",
+    "runtime.json": "7870743c4ec0ed9b5c06135fafcc02d12eda365c96833dbb44d0f038e9598486",
+    "task.json": "b5141cb6164c861845667683168d5d06f8a7677cfa3277fa494a82d564656b33",
+    "task.toml": "e9500a5dc972be3e3b6c777381a0a20ebde535b10d5256dd761c34edfb3c8cbe",
+    "tests/test.sh": "0d809fe62e2445deb8932feb1999634fb5a461bd7e67a18d35c10670a418fe7d"
+  }
+}

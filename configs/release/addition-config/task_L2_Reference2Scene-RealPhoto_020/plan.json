@@ -1,0 +1,265 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/046a2684e3e72b0df864/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/2c0c7749fca2aee50352/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/128b7b863ebd500949c1/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "近景亭顶及分层屋檐",
+      "polygon": [
+        [
+          0,
+          0.22
+        ],
+        [
+          0.098,
+          0.222
+        ],
+        [
+          0.166,
+          0.024
+        ],
+        [
+          0.239,
+          0.232
+        ],
+        [
+          0.396,
+          0.247
+        ],
+        [
+          0.37,
+          0.304
+        ],
+        [
+          0.52,
+          0.328
+        ],
+        [
+          0.516,
+          0.354
+        ],
+        [
+          0.443,
+          0.397
+        ],
+        [
+          0.791,
+          0.461
+        ],
+        [
+          0.788,
+          0.494
+        ],
+        [
+          0.548,
+          0.545
+        ],
+        [
+          0,
+          0.559
+        ]
+      ],
+      "weight": 0.35
+    },
+    {
+      "id": "R02",
+      "label": "向远处收束的木栈道",
+      "polygon": [
+        [
+          0,
+          0.705
+        ],
+        [
+          0.101,
+          0.707
+        ],
+        [
+          0.326,
+          0.789
+        ],
+        [
+          0.349,
+          0.831
+        ],
+        [
+          0.598,
+          0.915
+        ],
+        [
+          0.608,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R03",
+      "label": "近景白色亭柱与护栏",
+      "polygon": [
+        [
+          0.344,
+          0.52
+        ],
+        [
+          0.546,
+          0.522
+        ],
+        [
+          0.549,
+          0.754
+        ],
+        [
+          0.654,
+          0.792
+        ],
+        [
+          0.739,
+          0.953
+        ],
+        [
+          0.836,
+          0.961
+        ],
+        [
+          0.829,
+          1
+        ],
+        [
+          0.603,
+          1
+        ],
+        [
+          0.596,
+          0.91
+        ],
+        [
+          0.507,
+          0.904
+        ],
+        [
+          0.508,
+          0.82
+        ],
+        [
+          0.342,
+          0.838
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "右侧蓝色水面",
+      "polygon": [
+        [
+          0.76,
+          0.692
+        ],
+        [
+          0.868,
+          0.687
+        ],
+        [
+          1,
+          0.699
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0.866,
+          1
+        ],
+        [
+          0.866,
+          0.969
+        ],
+        [
+          0.746,
+          0.952
+        ],
+        [
+          0.663,
+          0.789
+        ],
+        [
+          0.658,
+          0.733
+        ]
+      ],
+      "weight": 0.15
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中按米读取世界坐标，沿 Z 轴测量栈道局部步行面至对应护栏上扶手顶面的距离；逐段核验用作尺度约定的栈道护栏。",
+      "quantity": "栈道护栏高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.05 m walkway railing height as the task scale convention",
+      "target": 1.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两相机世界位置，计算备用相机相对主相机的位移向量，并与主相机旋转所定义的局部正 X 单位向量乘以 0.30 m 比较，以检验方向及距离。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

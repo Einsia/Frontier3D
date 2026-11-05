@@ -1,0 +1,35 @@
+{
+  "index": 2,
+  "key": "grange",
+  "title": "The Grange Dining Room",
+  "source_url": "https://sketchfab.com/3d-models/the-grange-dining-room-c8d7eead749a4bda987a392eef95b532",
+  "slot": 10,
+  "excluded": false,
+  "source_file": "sources/grange/the_grange_dining_room.glb",
+  "sha256": "04a65070f4c613b9a12044d29f60a2c9ad2e7a472a740d4ba8b42f4a26c7e549",
+  "bytes": 35440440,
+  "task_path": "tasks/L2/Reference2Scene/task_L2_Reference2Scene-010",
+  "embedded_attribution": {
+    "author": "artfletch (https://sketchfab.com/artfletch)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/the-grange-dining-room-c8d7eead749a4bda987a392eef95b532",
+    "title": "The Grange Dining Room"
+  },
+  "uid": "c8d7eead749a4bda987a392eef95b532",
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "author": {
+    "displayName": "artfletch",
+    "profileUrl": "https://sketchfab.com/artfletch",
+    "username": "artfletch"
+  },
+  "resource_family": "sketchfab/c8d7eead749a4bda987a392eef95b532",
+  "author_name": "artfletch",
+  "preparation": "../../../../../../curation/l2-refresh-20261011/authoring/build_scene.py"
+}

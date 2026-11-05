@@ -1,0 +1,479 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_025",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "把手与仪表区域",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.468,
+          0.147
+        ],
+        [
+          0.643,
+          0.156
+        ],
+        [
+          0.728,
+          0.218
+        ],
+        [
+          0.724,
+          0.253
+        ],
+        [
+          0.549,
+          0.29
+        ],
+        [
+          0.533,
+          0.208
+        ],
+        [
+          0.468,
+          0.183
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "转向柱及外露线缆",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.551,
+          0.236
+        ],
+        [
+          0.655,
+          0.234
+        ],
+        [
+          0.65,
+          0.696
+        ],
+        [
+          0.593,
+          0.685
+        ],
+        [
+          0.578,
+          0.409
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "前轮与悬挂附件",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.581,
+          0.532
+        ],
+        [
+          0.679,
+          0.53
+        ],
+        [
+          0.725,
+          0.588
+        ],
+        [
+          0.724,
+          0.674
+        ],
+        [
+          0.664,
+          0.706
+        ],
+        [
+          0.621,
+          0.676
+        ]
+      ]
+    },
+    {
+      "id": "r04",
+      "label": "踏板",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.474,
+          0.701
+        ],
+        [
+          0.552,
+          0.663
+        ],
+        [
+          0.608,
+          0.664
+        ],
+        [
+          0.641,
+          0.687
+        ],
+        [
+          0.636,
+          0.718
+        ],
+        [
+          0.486,
+          0.804
+        ],
+        [
+          0.453,
+          0.778
+        ]
+      ]
+    },
+    {
+      "id": "r05",
+      "label": "货箱、后架与后轮",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.23,
+          0.717
+        ],
+        [
+          0.276,
+          0.624
+        ],
+        [
+          0.336,
+          0.607
+        ],
+        [
+          0.479,
+          0.641
+        ],
+        [
+          0.492,
+          0.813
+        ],
+        [
+          0.423,
+          0.842
+        ],
+        [
+          0.407,
+          0.872
+        ],
+        [
+          0.313,
+          0.861
+        ],
+        [
+          0.28,
+          0.815
+        ],
+        [
+          0.229,
+          0.79
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t01",
+      "query": "车轮",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.635,
+          0.582,
+          0.72,
+          0.7
+        ],
+        [
+          0.284,
+          0.754,
+          0.424,
+          0.87
+        ]
+      ],
+      "boundary_notes": "分别框选前后轮的可见轮胎和轮毂，包括深色表面；不补全遮挡部分，不含悬挂。"
+    },
+    {
+      "id": "t02",
+      "query": "蓝色货箱模块",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.275,
+          0.622,
+          0.419,
+          0.755
+        ],
+        [
+          0.369,
+          0.628,
+          0.481,
+          0.718
+        ]
+      ],
+      "boundary_notes": "两个可辨别箱体，包含箱盖和可见侧壁；不含跨接线缆、黄色固定带和后架。"
+    },
+    {
+      "id": "t03",
+      "query": "把手与仪表总成",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.47,
+          0.149,
+          0.725,
+          0.25
+        ]
+      ],
+      "boundary_notes": "包含两端握把、刹车杆、中央仪表壳及其暗色边缘；不含下方转向柱。"
+    },
+    {
+      "id": "t04",
+      "query": "转向柱",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.58,
+          0.204,
+          0.632,
+          0.675
+        ]
+      ],
+      "boundary_notes": "包含立柱上段包覆和下段管体的可见范围，不含侧向线缆和横向灯架。"
+    },
+    {
+      "id": "t05",
+      "query": "踏板",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.467,
+          0.663,
+          0.64,
+          0.802
+        ]
+      ],
+      "boundary_notes": "包含可见踏面及深色厚度边沿；左端遮挡处不推测隐藏轮廓。"
+    },
+    {
+      "id": "t06",
+      "query": "后部承载框架",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.231,
+          0.687,
+          0.493,
+          0.828
+        ]
+      ],
+      "boundary_notes": "包含黄色上横梁、暗色支腿和底框，不含后轮、尾灯及悬垂线缆；框内空隙仍保留。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "source_quote": "Reconstruct the cyberpunk scooter shown",
+      "question": "整体是否为参考所示工业赛博朋克滑板车形态？",
+      "weight": 0.08
+    },
+    {
+      "id": "s02",
+      "source_quote": "including both wheels",
+      "question": "前后车轮的形态和相对布置是否对应参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s03",
+      "source_quote": "deck and cargo modules",
+      "question": "低位长踏板的形态与前后连接布局是否对应参考？",
+      "weight": 0.07
+    },
+    {
+      "id": "s04",
+      "source_quote": "deck and cargo modules",
+      "question": "后轮上方的蓝色货箱模块及承载架布局是否对应参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s05",
+      "source_quote": "steering column and handlebars",
+      "question": "高立柱与顶部横向把手、中央仪表的形态和布局是否对应参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s06",
+      "source_quote": "lights",
+      "question": "前部圆形灯具与后部红色尾灯是否保留并位于参考位置？",
+      "weight": 0.07
+    },
+    {
+      "id": "s07",
+      "source_quote": "visible mechanical attachments",
+      "question": "外露线缆、悬挂、刹车杆和安装支架是否按参考布置？",
+      "weight": 0.08
+    },
+    {
+      "id": "s08",
+      "source_quote": "Preserve the wheelbase",
+      "question": "前后轮轴间距相对整车比例是否与参考一致？",
+      "weight": 0.06
+    },
+    {
+      "id": "s09",
+      "source_quote": "wheel clearances",
+      "question": "车轮与踏板、货架及前叉之间的可见空隙是否保留？",
+      "weight": 0.06
+    },
+    {
+      "id": "s10",
+      "source_quote": "surface color regions",
+      "question": "黑灰车体、蓝色箱体和仪表、红色线缆与尾灯、黄色固定件和弹簧的色区是否对应参考？",
+      "weight": 0.08
+    },
+    {
+      "id": "s11",
+      "source_quote": "Reconstruct the cyberpunk scooter shown",
+      "question": "表面磨损、掉漆与踏板白色磨痕的整体观感是否接近参考？",
+      "weight": 0.06
+    },
+    {
+      "id": "s12",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "主体是否为可编辑的完整三维几何，而非图像平面或面向相机的壳片？",
+      "weight": 0.06
+    },
+    {
+      "id": "s13",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands",
+      "question": "独立部件是否可作为对象或清晰分离的网格岛编辑？",
+      "weight": 0.04
+    },
+    {
+      "id": "s14",
+      "source_quote": "connections and occlusions",
+      "question": "部件连接与相互遮挡是否符合各参考视图？",
+      "weight": 0.04
+    },
+    {
+      "id": "s15",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "question": "第1帧和导出场景是否保留参考的同一静态姿态？",
+      "weight": 0.04
+    },
+    {
+      "id": "s16",
+      "source_quote": "Use metres, Z up",
+      "question": "场景是否采用米制且以Z轴为上方向？",
+      "weight": 0.02
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d01",
+      "source_quote": "both wheels",
+      "question": "轮胎是否具有连续圆弧、实体宽度及内凹轮毂，后胎可见折线胎纹是否保留？",
+      "weight": 0.12
+    },
+    {
+      "id": "d02",
+      "source_quote": "deck",
+      "question": "踏板是否保留薄而有厚度的板体、圆转边缘及后端连接过渡？",
+      "weight": 0.1
+    },
+    {
+      "id": "d03",
+      "source_quote": "cargo modules",
+      "question": "货箱是否保留箱盖凸缘、面板凹层及顶部接线端子的局部构造？",
+      "weight": 0.1
+    },
+    {
+      "id": "d04",
+      "source_quote": "steering column",
+      "question": "立柱是否保留细长管体、上段包覆的轮廓变化及底部连接套？",
+      "weight": 0.08
+    },
+    {
+      "id": "d05",
+      "source_quote": "handlebars",
+      "question": "把手是否保留圆柱握把、端部结构及细弯刹车杆？",
+      "weight": 0.08
+    },
+    {
+      "id": "d06",
+      "source_quote": "recesses, openings",
+      "question": "中央仪表是否具有圆角凹面与有厚度的包围边框？",
+      "weight": 0.08
+    },
+    {
+      "id": "d07",
+      "source_quote": "lights",
+      "question": "圆形前灯是否具有筒形外壳和镜面边缘，尾灯是否具有圆角矩形外壳与支座？",
+      "weight": 0.08
+    },
+    {
+      "id": "d08",
+      "source_quote": "visible mechanical attachments",
+      "question": "前后悬挂是否保留螺旋弹簧、轴接头及前部横向管状连接件？",
+      "weight": 0.1
+    },
+    {
+      "id": "d09",
+      "source_quote": "thin supports",
+      "question": "后货架是否保留细支腿、横梁和梁间贯通空隙？",
+      "weight": 0.1
+    },
+    {
+      "id": "d10",
+      "source_quote": "panel layering",
+      "question": "货箱、固定带、托板与下方车架的叠层厚度和分界是否清楚？",
+      "weight": 0.08
+    },
+    {
+      "id": "d11",
+      "source_quote": "thin structures",
+      "question": "立柱及货箱外露线缆是否具有细圆截面、连续弯曲和可辨别的端部连接？",
+      "weight": 0.08
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n01",
+      "source_quote": "both wheels",
+      "quantity": "车轮数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维场景中按独立轮轴对应的完整车轮总成计数，轮胎与轮毂不分别计数。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整车最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在静态姿态下取得车辆几何的世界坐标包围盒，取三个轴向尺寸最大值；排除相机和照明对象，保留车辆实体灯壳。explicit_tolerance以任务单位表示名义值的2%，即0.02 m；此项为待测量要求。"
+    }
+  ],
+  "limitations": [
+    "未提供候选，所有区域和框仅冻结于主参考原图，不推断任何候选属性。",
+    "主参考input/reference.png对应附件证据reference/reference-1.png；其余附件仅用于补充观察，不用于冻结定位几何。",
+    "所述legacy-detail-20261018-v1的独立文本未附带；本计划仅落实本次提供的合同和检查规则。",
+    "图像比例、轮间隙、板厚、弹簧圈数与接线端子数量未给出精确数值，不将视觉估计转为数值门槛。",
+    "最大整体跨度未明确采用轴向包围盒还是任意方向直径；本计划声明采用世界轴向包围盒最大尺寸的尺度约定。",
+    "被遮挡的连接与箱体内部没有完整证据，不规定隐藏拓扑；细小标签允许简化。",
+    "可编辑性、完整三维结构、单位与导出姿态需要场景证据，不能仅凭单张渲染判定；帧号不作为几何数值检查。",
+    "渲染尺寸、引擎、曝光及交付脚本等属于输出合同，不纳入内容质量测量。"
+  ]
+}

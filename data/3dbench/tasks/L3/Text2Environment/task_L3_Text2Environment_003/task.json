@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-g05",
+  "id": "L3/GameEnvironment/OuterWildsHydraulicRuins",
+  "domain": "game",
+  "input_mode": "text",
+  "title": "星际拓荒风格：外星水力遗迹区域",
+  "title_en": "Outer Wilds-inspired Hydraulic Alien Ruins",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "9531a48236dcf693e9c3aa2ada9c32cbf8d0f1d11d821451ec66b1e7f2dc69c9",
+  "chinese_instruction_sha256": "fa05cc5fca46d3704a2f82d3b79e52b91df80122b998c343c8e3184986f899f4",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "808e6fa5748c6c5bbaea78769bbc39bbf93114f914a9b7e06e1ffb438e7369fa",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

@@ -1,0 +1,6 @@
+Kitchen
+Author: Jay-Artist
+Source: https://blendswap.com/blend/5156
+License: CC BY 3.0
+License reference: https://creativecommons.org/licenses/by/3.0/
+Changes: imported/packed in Blender 5.2.1; camera and render setup; texture path repair where recorded in audit.json. Original download preserved privately.

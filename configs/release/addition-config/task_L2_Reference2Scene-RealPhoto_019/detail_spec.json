@@ -1,0 +1,176 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+  "family": "Reference2Scene",
+  "instruction_sha256": "d9ab0a52961ac07fff3a282719780537f6d6ec470700f2ed92c31d6be4ca2fd6",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "e8a00a6c8fe6d95371cb8ab84c20a810059a25acae5555fe22adc5fc728b6617"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "餐椅靠背是否保留宽曲面顶板、下缘拱形缺口与竖向细杆？",
+      "units": [
+        "Reconstruct the wooden dining furniture"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "餐桌是否具有实体桌板边缘及合理的下部支撑？",
+      "units": [
+        "frames and furniture require thickness"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "彩玻璃面板是否保留有厚度的外围木框和横竖分格条？",
+      "units": [
+        "left stained-glass panel"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "中央门扇是否保留圆拱顶玻璃开口及其宽木质边框？",
+      "units": [
+        "central arched wooden doorway"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "门内玻璃区域是否保留交叉斜条构成的菱形分格？",
+      "units": [
+        "central arched wooden doorway"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "上部墙面饰条是否具有叠层凸缘、凹槽和可见截面厚度？",
+      "units": [
+        "upper wall trim"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "餐边柜是否保留凸出的台面、柜门嵌板和分层底座？",
+      "units": [
+        "sideboard with bust and plant"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "餐边柜右侧是否保留细长立柱的转折、环节和端部支撑结构？",
+      "units": [
+        "sideboard with bust and plant"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D09",
+      "component": "F",
+      "question": "可见胸像是否具有立体卷发、五官、颈部及各自不同的胸肩或底座轮廓？",
+      "units": [
+        "bust"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D10",
+      "component": "F",
+      "question": "柜旁盆栽是否保留独立盆口、盆体及从枝茎伸出的叶片层次？",
+      "units": [
+        "plant"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+  "spec_sha256": "52aa984443cf8e2af6aa3d44be7ecf4c40c5f45049f57cf11489d84fbae43d63",
+  "instruction_sha256": "947a9f48f9bcf356bdc695f13500f8764893a7c482e71bedc1ca66fe5db56222",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Reconstruct the classroom in input/reference.png.",
+      "source_quote": "Reconstruct the classroom in input/reference.png.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Build the rows of individual desks and chairs, the broad front chalkboard and its timber surround, wall notices and clock, ceiling lights and conduits, the windows and radiator, and the smaller classroom objects visible between the furniture.",
+      "source_quote": "Build the rows of individual desks and chairs, the broad front chalkboard and its timber surround, wall notices and clock, ceiling lights and conduits, the windows and radiator, and the smaller classroom objects visible between the furniture.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Preserve the staggered perspective of the desk rows and the open walking spaces.",
+      "source_quote": "Preserve the staggered perspective of the desk rows and the open walking spaces.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Desks need tabletops, storage or lower frames where visible, and separate legs; chairs need shaped seats, backs and supporting frames.",
+      "source_quote": "Desks need tabletops, storage or lower frames where visible, and separate legs; chairs need shaped seats, backs and supporting frames.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Model the chalkboard ledge, window recesses and raised wall trim.",
+      "source_quote": "Model the chalkboard ledge, window recesses and raised wall trim.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Match the warm, worn materials and the strong daylight across the floor and furniture.",
+      "source_quote": "Match the warm, worn materials and the strong daylight across the floor and furniture.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "Chalk markings and paper contents may be simplified; the placement and proportions of these surfaces still matter.",
+      "source_quote": "Chalk markings and paper contents may be simplified; the placement and proportions of these surfaces still matter.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "main_projection",
+      "text": "main projection",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "main_projection"
+      ]
+    },
+    {
+      "id": "scale_convention",
+      "text": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "source_quote": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "implementation": "manual",
+      "checks": [
+        "scale_convention"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Reconstruct the classroom in input/reference.png. Build the rows of individual desks and chairs, the broad front chalkboard and its timber surround, wall notices and clock, ceiling lights and conduits, the windows and radiator, and the smaller classroom objects visible between the furniture. Preserve the staggered perspective of the desk rows and the open walking spaces. Desks need tabletops, storage or lower frames where visible, and separate legs; chairs need shaped seats, backs and supporting frames. Model the chalkboard ledge, window recesses and raised wall trim. Match the warm, worn materials and the strong daylight across the floor and furniture. Chalk markings and paper contents may be simplified; the placement and proportions of these surfaces still matter.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "main_reference_similarity",
+      "text": "SSIM appearance proxy; not a semantic or hidden-geometry verdict",
+      "source_quote": "Reconstruct the classroom in input/reference.png. Build the rows of individual desks and chairs, the broad front chalkboard and its timber surround, wall notices and clock, ceiling lights and conduits, the windows and radiator, and the smaller classroom objects visible between the furniture. Preserve the staggered perspective of the desk rows and the open walking spaces. Desks need tabletops, storage or lower frames where visible, and separate legs; chairs need shaped seats, backs and supporting frames. Model the chalkboard ledge, window recesses and raised wall trim. Match the warm, worn materials and the strong daylight across the floor and furniture. Chalk markings and paper contents may be simplified; the placement and proportions of these surfaces still matter.",
+      "implementation": "partial",
+      "checks": [
+        "main_reference_similarity"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Reconstruct the classroom in input/reference.png. Build the rows of individual desks and chairs, the broad front chalkboard and its timber surround, wall notices and clock, ceiling lights and conduits, the windows and radiator, and the smaller classroom objects visible between the furniture. Preserve the staggered perspective of the desk rows and the open walking spaces. Desks need tabletops, storage or lower frames where visible, and separate legs; chairs need shaped seats, backs and supporting frames. Model the chalkboard ledge, window recesses and raised wall trim. Match the warm, worn materials and the strong daylight across the floor and furniture. Chalk markings and paper contents may be simplified; the placement and proportions of these surfaces still matter.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "engine",
+      "text": "engine",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "engine"
+      ]
+    },
+    {
+      "id": "view_transform",
+      "text": "view transform",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "view_transform"
+      ]
+    },
+    {
+      "id": "exposure",
+      "text": "exposure",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "exposure"
+      ]
+    },
+    {
+      "id": "gamma",
+      "text": "gamma",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "complete",
+      "checks": [
+        "gamma"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "source_quote": "Set the foreground desk tabletop height to 0.75 m. This is the task's scale convention, not a measured claim about the source scene. Infer the rest of the dimensions from the image. Use metres and Z up. Match the visible composition, materials and lighting; complete unseen areas plausibly. Keep major objects independently editable and pack texture dependencies. Build genuine geometry, not a single image plane. No original asset, exact mesh topology, object names or hidden dimensions are required.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    },
+    {
+      "id": "public_qualifications_02",
+      "text": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "source_quote": "Choose a perspective main camera to match the supplied view. Create an alternate camera by translating it 0.30 m along its local positive X axis, keeping lens and rotation unchanged. Both cameras and both renders must use the same scene. Render 800 by 450 pixels with Cycles, Standard view transform, exposure 0 and gamma 1. The alternate view has no target image; it checks three-dimensional consistency.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_02"
+      ]
+    },
+    {
+      "id": "public_qualifications_03",
+      "text": "Use only the supplied task inputs to establish this particular scene. Do not retrieve its original source model, an untouched copy of the source scene, or additional source views from the internet.",
+      "source_quote": "Use only the supplied task inputs to establish this particular scene. Do not retrieve its original source model, an untouched copy of the source scene, or additional source views from the internet.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_03"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "local_translation",
+    "delta_m": 0.3,
+    "tolerance": 0.003
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "view_transform": "Standard",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "native_resolution": [
+    800,
+    450
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-reference-localized-vlm-v8.0.0",
+  "methods_sha256": "ec82be0da52de898a2bac22ee4b4a87ca1d682a3e059446c2cd66ce157534db8",
+  "automatic_profile": "l2-reference-localized-v5.2.0"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "藏书客厅、沙发与落地窗",
+  "source_urls": [
+    "https://pixabay.com/images/download/bedrck-interior-1961070_1920.jpg"
+  ],
+  "document_revision": 902,
+  "license": {
+    "label": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "6205fbe47445ddc6be04271788ad2d2dee22c55685259344862e9e81ad55b96c",
+      "size": [
+        1280,
+        854
+      ],
+      "original_document_token": "Vo4ib3AUEojwLjx2v1HcR5iZnVe"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

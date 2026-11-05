@@ -1,0 +1,3 @@
+# Compatibility entry point for evaluator deployments; evaluator dependencies
+# are included in the main lock range so the documented end-to-end command works.
+-r requirements.txt

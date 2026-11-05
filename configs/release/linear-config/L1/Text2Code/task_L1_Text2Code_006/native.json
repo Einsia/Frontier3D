@@ -1,0 +1,434 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "linear-visual-20261018-v1",
+  "case_id": "L1/Text2Code/task_L1_Text2Code_006",
+  "family": "Brief2Scene",
+  "instruction_sha256": "e26240b731c218f3f0dbbee73456fc950729db4d4a1e8ac47f5d70c09991b0bb",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "六孔分度转台；精确数值由程序测量；\nL1 object/assembly task. Do not require a room or scene population. Exact tolerances remain automatic. Use authored appearance for aesthetics, not diagnostic silhouette masks. 每项按题面独立检查零件、加工特征和装配关系。不存在私有参考造型约束。不可凭物体名确认孔道、尺寸或材质。 本题不要求提交相机或灯光；全部候选使用同一固定中性摄影棚呈现。只评价模型自身的构成、角色配色、表面质量和可读性，不把测评器的相机/灯光成果奖励给候选，也不因未创作相机/灯光扣分。",
+  "checks": [
+    {
+      "id": "vlm_part_roles",
+      "component": "Q",
+      "question": "14件独立可编辑部件：base×1、sleeve×1、spindle×1、disk×1、pin×1、ring×1、bolt×4、washer×4 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "part_roles"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_base",
+      "component": "Q",
+      "question": "底座100×100×8 mm、底Z=0，中心孔16.4 mm；XY=(±40,±40)四孔6.4 mm Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "base"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_sleeve",
+      "component": "Q",
+      "question": "居中衬套外径28 mm、孔径16.4 mm、高11 mm，Z=8..19 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "sleeve"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_spindle",
+      "component": "Q",
+      "question": "主轴直径16 mm、长26 mm，中心Z=17 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "spindle"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_disk",
+      "component": "Q",
+      "question": "圆盘外径84 mm、厚8 mm、中心Z=23，中心孔16.4 mm；6个6.4 mm通孔在64 mm节圆上，从+X每60度分布 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "disk"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_index_pin",
+      "component": "Q",
+      "question": "定位销直径6 mm、长18 mm，中心(32,0,22)，穿过第一个分度孔 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "index_pin"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_retaining_ring",
+      "component": "Q",
+      "question": "独立挡圈外径26 mm、孔径16.4 mm、厚3 mm、中心Z=30 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "retaining_ring"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_fasteners",
+      "component": "Q",
+      "question": "四螺杆直径6 mm、长9.5 mm从Z=0起；垫圈12/6.4/1.5 mm在底座上，六角头高4 mm/外接圆10.8 mm Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "fasteners"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_axial_layout",
+      "component": "Q",
+      "question": "圆盘在衬套上，保持规定轴向间隙；静态布局，不追加承载锁止结构 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "axial_layout"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_assembly_clearance",
+      "component": "Q",
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "assembly_clearance"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_topology",
+      "component": "Q",
+      "question": "所有零件闭合且分别连通 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "topology"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_solid_validity",
+      "component": "Q",
+      "question": "有效实体零件 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "solid_validity"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_units",
+      "component": "Q",
+      "question": "米制导出，X长度/Y宽度/Z向上 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "units"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_hierarchy",
+      "component": "Q",
+      "question": "自由描述性名称、独立可编辑部件与清晰组织 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "hierarchy"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_state_cycle",
+      "component": "Q",
+      "question": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "state_cycle"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_glb_assembled",
+      "component": "Q",
+      "question": "GLB与原生帧1装配态一致 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "glb_assembled"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_materials",
+      "component": "Q",
+      "question": "结构件蓝灰，主轴/销/紧固件银色，衬套/挡圈/垫圈黄铜 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "materials"
+      ],
+      "global_weight": 0.01411764705882353,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_composition",
+      "component": "Q",
+      "question": "在统一诊断视图下评价零件构成、装配层级和主体可读性；不评价测评器控制的取景。",
+      "units": [
+        "aesthetic_composition"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_light_color",
+      "component": "Q",
+      "question": "评价题面允许的角色配色、材质反射层次与色彩协调；统一灯光由测评器提供，不作为候选创作能力。",
+      "units": [
+        "aesthetic_light_color"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_finish",
+      "component": "Q",
+      "question": "Grade visible shape/material finish, clean joins, proportions and intentional detail; complexity alone earns nothing.",
+      "units": [
+        "aesthetic_finish"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_aesthetic_coherence",
+      "component": "Q",
+      "question": "Grade coherent overall design and presentation; allow every design satisfying the written brief.",
+      "units": [
+        "aesthetic_coherence"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "detail_semantic_base",
+      "component": "F",
+      "question": "底座100×100×8 mm、底Z=0，中心孔16.4 mm；XY=(±40,±40)四孔6.4 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_base"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.057142857142857155,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_sleeve",
+      "component": "F",
+      "question": "居中衬套外径28 mm、孔径16.4 mm、高11 mm，Z=8..19；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_sleeve"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.057142857142857155,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_spindle",
+      "component": "F",
+      "question": "主轴直径16 mm、长26 mm，中心Z=17；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_spindle"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.057142857142857155,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_disk",
+      "component": "F",
+      "question": "圆盘外径84 mm、厚8 mm、中心Z=23，中心孔16.4 mm；6个6.4 mm通孔在64 mm节圆上，从+X每60度分布；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_disk"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.057142857142857155,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_index_pin",
+      "component": "F",
+      "question": "定位销直径6 mm、长18 mm，中心(32,0,22)，穿过第一个分度孔；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_index_pin"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.057142857142857155,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_retaining_ring",
+      "component": "F",
+      "question": "独立挡圈外径26 mm、孔径16.4 mm、厚3 mm、中心Z=30；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_retaining_ring"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.057142857142857155,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    },
+    {
+      "id": "detail_semantic_fasteners",
+      "component": "F",
+      "question": "四螺杆直径6 mm、长9.5 mm从Z=0起；垫圈12/6.4/1.5 mm在底座上，六角头高4 mm/外接圆10.8 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "units": [
+        "semantic_fasteners"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.057142857142857155,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png"
+      ]
+    }
+  ],
+  "reference_bindings": {},
+  "authoring": "fixed_public_features_linear_fidelity_independent_dimensions",
+  "formal_score_eligible": false
+}

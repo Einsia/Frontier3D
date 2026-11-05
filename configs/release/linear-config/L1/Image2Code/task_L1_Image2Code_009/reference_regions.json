@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_009",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "b1669a437645f7004baa3ee33fc0148192f481d10688a24df88876e61b4cdc1f",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "central robot sphere 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.19,
+          0.185
+        ],
+        [
+          0.65,
+          0.185
+        ],
+        [
+          0.65,
+          0.553
+        ],
+        [
+          0.19,
+          0.553
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "left curved claw 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.065,
+          0.449
+        ],
+        [
+          0.174,
+          0.449
+        ],
+        [
+          0.174,
+          0.829
+        ],
+        [
+          0.065,
+          0.829
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "right curved claw 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.737,
+          0.465
+        ],
+        [
+          0.891,
+          0.465
+        ],
+        [
+          0.891,
+          0.8
+        ],
+        [
+          0.737,
+          0.8
+        ]
+      ]
+    }
+  ]
+}

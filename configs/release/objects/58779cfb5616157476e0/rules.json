@@ -1,0 +1,463 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+  "detail_checks": [
+    {
+      "id": "d01",
+      "question": "前景车轮是否具有可辨的轮胎厚度、轮圈内孔、轮毂和辐条结构？",
+      "source_quote": "foreground wheels, frames and supports require real geometry.",
+      "weight": 0.125
+    },
+    {
+      "id": "d02",
+      "question": "前景自行车的车架管件、连接节点与架内空隙是否符合参考中的局部形态？",
+      "source_quote": "Preserve the foreground bicycle geometry",
+      "weight": 0.125
+    },
+    {
+      "id": "d03",
+      "question": "前景自行车的前叉、转向立管和弯折车把是否具有对应的立体连接结构？",
+      "source_quote": "foreground wheels, frames and supports require real geometry.",
+      "weight": 0.125
+    },
+    {
+      "id": "d04",
+      "question": "前景自行车的坐垫支杆、曲柄脚踏、后架和可见支撑脚是否保留相应局部形态？",
+      "source_quote": "Preserve the foreground bicycle geometry",
+      "weight": 0.125
+    },
+    {
+      "id": "d05",
+      "question": "前景后货筐及右侧车篮是否保留敞口、边框厚度和可辨网格结构？",
+      "source_quote": "Preserve the foreground bicycle geometry",
+      "weight": 0.125
+    },
+    {
+      "id": "d06",
+      "question": "栏杆是否具有独立横杆、细竖杆、杆间开口及立柱连接，而非实心平板？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.125
+    },
+    {
+      "id": "d07",
+      "question": "桥梁是否保留梁体截面厚度、交接层次以及参考中可辨的悬吊杆和托件？",
+      "source_quote": "with yellow/green overhead beams",
+      "weight": 0.125
+    },
+    {
+      "id": "d08",
+      "question": "支柱是否保留有厚度的柱身、可见侧面及与上部梁体相接的结构？",
+      "source_quote": "pale support columns",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划不陈述任何候选属性或测量结果。",
+    "未提供 legacy-detail-20261018-v1 的正文；本计划仅依据嵌入的合同、清单和公开参考制定。",
+    "主参考路径采用 instruction.md 中的 input/reference.png，其公开附件映射为 reference/reference-0.png；所有区域与定位框均固定于该原始图像。",
+    "单张照片不提供标定相机、深度或隐藏几何；除明确的尺度约定外，不从像素估计生成精确尺寸要求。",
+    "1.1 m 是行人栏杆的任务尺度约定，不是真实现场测量值；图中存在浅色栏杆和深色扶手或远处栏杆，不能将全部栏杆统一改为深色作为通过条件。",
+    "远处自行车和树叶允许简化；局部细节检查集中于可辨前景结构，不要求恢复不可见或不可分辨的零件。",
+    "独立编辑性、真实厚度、隐藏表面、相机变换与精确尺寸需要原生场景检查；仅凭渲染图不能确定。",
+    "未规定尺寸容差、其他构件尺寸、杆件数量或固定间距；不追加此类精确约束。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "n01",
+      "measurement_definition": "在原生场景中，以米为单位，沿世界 Z 轴测量作为尺度基准的行人栏杆从其所在步行地面到顶部的高度；不得以图像像素高度代替。",
+      "quantity": "行人栏杆尺度基准高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.1 m pedestrian railing height as the task scale convention",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n02",
+      "measurement_definition": "读取两台相机的世界位置，将备用相机位置减去主相机位置所得位移投影到主相机局部正 X 轴，检查该有符号分量；位移方向、旋转和镜头保持另作语义检查。",
+      "quantity": "备用相机沿主相机局部正 X 轴的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n03",
+      "measurement_definition": "在原生场景中计数用于主视图及平移备用视图且被保留的相机对象；仅计该指定相机对，不限制其他辅助相机。",
+      "quantity": "保留的指定视图相机数量",
+      "relation": "equal",
+      "source_quote": "retain both cameras",
+      "target": 2,
+      "unit": "台",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "左下前景自行车及后货筐",
+      "polygon": [
+        [
+          0,
+          0.565
+        ],
+        [
+          0.175,
+          0.559
+        ],
+        [
+          0.255,
+          0.605
+        ],
+        [
+          0.444,
+          0.587
+        ],
+        [
+          0.505,
+          0.629
+        ],
+        [
+          0.452,
+          0.788
+        ],
+        [
+          0.158,
+          0.819
+        ],
+        [
+          0,
+          0.829
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "r02",
+      "label": "右侧近景自行车",
+      "polygon": [
+        [
+          0.651,
+          0.522
+        ],
+        [
+          0.815,
+          0.531
+        ],
+        [
+          0.867,
+          0.567
+        ],
+        [
+          0.872,
+          0.658
+        ],
+        [
+          0.747,
+          0.721
+        ],
+        [
+          0.655,
+          0.71
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r03",
+      "label": "顶部桥梁与梁间结构",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.43
+        ],
+        [
+          0.81,
+          0.425
+        ],
+        [
+          0.758,
+          0.34
+        ],
+        [
+          0.55,
+          0.29
+        ],
+        [
+          0,
+          0.197
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "r04",
+      "label": "中央主要支柱",
+      "polygon": [
+        [
+          0.559,
+          0.291
+        ],
+        [
+          0.647,
+          0.299
+        ],
+        [
+          0.638,
+          0.691
+        ],
+        [
+          0.596,
+          0.697
+        ],
+        [
+          0.557,
+          0.677
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r05",
+      "label": "前景栏杆与扶手",
+      "polygon": [
+        [
+          0,
+          0.537
+        ],
+        [
+          0.58,
+          0.525
+        ],
+        [
+          0.586,
+          0.689
+        ],
+        [
+          0,
+          0.782
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r06",
+      "label": "桥外树木",
+      "polygon": [
+        [
+          0,
+          0.202
+        ],
+        [
+          0.556,
+          0.296
+        ],
+        [
+          0.555,
+          0.405
+        ],
+        [
+          0.415,
+          0.444
+        ],
+        [
+          0.354,
+          0.514
+        ],
+        [
+          0.126,
+          0.541
+        ],
+        [
+          0,
+          0.523
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "question": "主体是否为桥下自行车停车区，自行车位于桥梁覆盖的空间内？",
+      "source_quote": "Reconstruct the bicycle parking area under the bridge",
+      "weight": 0.0625
+    },
+    {
+      "id": "s02",
+      "question": "上方是否呈现参考中的黄色与绿色梁体及其交错走向？",
+      "source_quote": "with yellow/green overhead beams",
+      "weight": 0.0625
+    },
+    {
+      "id": "s03",
+      "question": "浅色支撑柱是否按参考排列并支承上方桥体？",
+      "source_quote": "pale support columns",
+      "weight": 0.0625
+    },
+    {
+      "id": "s04",
+      "question": "是否保留参考中的深色扶手或栏杆及其沿停车区边界的布置？",
+      "source_quote": "dark railings",
+      "weight": 0.0625
+    },
+    {
+      "id": "s05",
+      "question": "停车区地面是否呈参考中的灰色外观？",
+      "source_quote": "gray ground",
+      "weight": 0.0625
+    },
+    {
+      "id": "s06",
+      "question": "桥外是否存在参考所示的树木与树冠背景？",
+      "source_quote": "outside trees",
+      "weight": 0.0625
+    },
+    {
+      "id": "s07",
+      "question": "前景自行车是否保留参考中的整体形态、朝向、相对位置及主要附件？",
+      "source_quote": "Preserve the foreground bicycle geometry",
+      "weight": 0.0625
+    },
+    {
+      "id": "s08",
+      "question": "是否沿停车区保留重复出现的停放自行车组及其远近层次？",
+      "source_quote": "repeated parked-bike groups",
+      "weight": 0.0625
+    },
+    {
+      "id": "s09",
+      "question": "桥梁、支柱和停车区是否向右侧远处延伸，呈现参考的纵深与弯曲走势？",
+      "source_quote": "bridge depth",
+      "weight": 0.0625
+    },
+    {
+      "id": "s10",
+      "question": "前景车轮、车架和支撑是否由真实三维几何构成？",
+      "source_quote": "foreground wheels, frames and supports require real geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s11",
+      "question": "主要构件是否可独立编辑，并具有实际厚度、支承关系和合理间隔？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s12",
+      "question": "场景是否使用三维结构，而非以完整参考图平面或单相机投影替代？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s13",
+      "question": "其他尺寸是否与栏杆尺度协调，隐藏表面是否作合理补全？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s14",
+      "question": "主视图是否采用与参考构图和透视相符的透视相机？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.0625
+    },
+    {
+      "id": "s15",
+      "question": "备用视图是否来自同一场景的相机副本，仅沿局部正 X 方向右移，并保持旋转和镜头不变？",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.0625
+    },
+    {
+      "id": "s16",
+      "question": "原生场景是否以米为单位并以 Z 轴为竖直方向？",
+      "source_quote": "Use metres and Z up.",
+      "weight": 0.0625
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "仅定位三个可清楚分辨的近景自行车；每框包含该车可见车轮、车把、车架、坐垫、支撑及附属货筐或车篮，包含深色表面，不包含地面阴影。左侧自行车按图像边缘截断。右上远处拥挤且局部被裁切的小车群不属于此类。",
+      "boxes": [
+        [
+          0,
+          0.561,
+          0.501,
+          0.823
+        ],
+        [
+          0.653,
+          0.524,
+          0.774,
+          0.715
+        ],
+        [
+          0.747,
+          0.533,
+          0.867,
+          0.661
+        ]
+      ],
+      "id": "t01",
+      "query": "可辨的近景自行车及其附属载物部件",
+      "weight": 0.5
+    },
+    {
+      "boundary_notes": "定位左下自行车后架上的单个蓝色敞口货筐，包含全部可见外壁、深色内壁和上缘，不纳入自行车后轮或投影。",
+      "boxes": [
+        [
+          0.352,
+          0.591,
+          0.501,
+          0.698
+        ]
+      ],
+      "id": "t02",
+      "query": "前景自行车后架上的敞口货筐",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "定位四根具有可辨独立柱身的主要支撑柱，包含亮面和阴暗侧面；按可见柱身的外接框处理栏杆及自行车遮挡，不推断隐藏延伸。排除远处无法可靠区分的细小或重度遮挡构件。",
+      "boxes": [
+        [
+          0.558,
+          0.291,
+          0.647,
+          0.696
+        ],
+        [
+          0.466,
+          0.441,
+          0.495,
+          0.572
+        ],
+        [
+          0.65,
+          0.417,
+          0.688,
+          0.568
+        ],
+        [
+          0.757,
+          0.38,
+          0.805,
+          0.608
+        ]
+      ],
+      "id": "t03",
+      "query": "桥下可辨的主要竖直支撑柱",
+      "weight": 0.3
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+  "category": "Image2Code",
+  "level": "L1",
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "reference_images": {
+    "reference/reference-0.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-1.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/solution/reference/closed.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-2.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-3.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/solution/reference/half_open.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-4.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-5.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  },
+  "edit_context": {},
+  "native_atoms": [
+    {
+      "id": "hinge_kinematics",
+      "component": "F",
+      "weight": 0.2,
+      "question": "1/31/61/91/121帧门轴转动、撑杆端点保持连接、轴向伸缩及刚性保形",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "frames": [
+          1,
+          31,
+          61,
+          91,
+          121
+        ],
+        "extra_frames": [
+          1,
+          11,
+          21,
+          31,
+          41,
+          51,
+          61,
+          71,
+          81,
+          91,
+          101,
+          111,
+          121
+        ],
+        "motion_source": "environment/input/motion.json",
+        "point_error_half_scale_over_span": 0.01,
+        "rigid_shape_half_scale_over_span": 0.005,
+        "physics_simulation": false
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/2ed7973e6887c8491291/native.json",
+      "sha256": "@recompute"
+    },
+    "export": {
+      "path": "@resource/objects/51707a7a8d0fb2957a79/export.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_feature_1": 0.08,
+        "vlm_feature_2": 0.08,
+        "vlm_feature_3": 0.08,
+        "vlm_feature_4": 0.08,
+        "vlm_feature_5": 0.08,
+        "vlm_primary_layout": 0.15,
+        "vlm_cross_view": 0.15,
+        "vlm_material_color": 0.15,
+        "vlm_lighting": 0.1,
+        "vlm_surface_finish": 0.05
+      },
+      "detail": {
+        "detail_detail_1": 0.26666666666666666,
+        "detail_detail_2": 0.26666666666666666,
+        "detail_detail_3": 0.26666666666666666
+      },
+      "content": {
+        "vlm_feature_1": 0.08,
+        "vlm_feature_2": 0.08,
+        "vlm_feature_3": 0.08,
+        "vlm_feature_4": 0.08,
+        "vlm_feature_5": 0.08
+      }
+    },
+    "export": {
+      "vlm": {},
+      "detail": {
+        "detail_detail_1": 0.26666666666666666,
+        "detail_detail_2": 0.26666666666666666,
+        "detail_detail_3": 0.26666666666666666
+      },
+      "content": {}
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "tasks": [
+    {
+      "key": "l3-g02",
+      "title": "只狼：苇名城主楼及相连庭院",
+      "input_mode": "image",
+      "path": "tasks/L3/SekiroCastleKeep",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 3,
+      "entity_count": 14,
+      "package_manifest_sha256": "5debfd284e8229c8ef89726228588a623659f58445982828526e18cd72da253c"
+    },
+    {
+      "key": "l3-g03",
+      "title": "荒野大镖客2：瓦伦丁中心街区",
+      "input_mode": "image",
+      "path": "tasks/L3/RDR2FrontierTown",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 1,
+      "entity_count": 17,
+      "package_manifest_sha256": "2fc439d217b8e6e0db129ffec87494cf5ff423887102474467f7a75d8dc8e521"
+    },
+    {
+      "key": "l3-g04",
+      "title": "守望先锋：Rialto 运河广场与后勤街区",
+      "input_mode": "image",
+      "path": "tasks/L3/OverwatchHarborDistrict",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 2,
+      "entity_count": 12,
+      "package_manifest_sha256": "606d071fbdd3a7d360a1c81e7af0d7e3aa14efa7c42c7156bac3259e69ef263a"
+    },
+    {
+      "key": "l3-g05",
+      "title": "星际拓荒风格：外星水力遗迹区域",
+      "input_mode": "text",
+      "path": "tasks/L3/OuterWildsHydraulicRuins",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 0,
+      "entity_count": 10,
+      "package_manifest_sha256": "7b64f22c05eb78493d14b2201ac2f97adb889adff8bc966be61d728e01b55716"
+    },
+    {
+      "key": "l3-g06",
+      "title": "旷野之息风格：驿站、废墟与山谷生活区",
+      "input_mode": "text",
+      "path": "tasks/L3/ZeldaFrontierValley",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 0,
+      "entity_count": 13,
+      "package_manifest_sha256": "dde7f09c8b7a8ebd21b2f73bf1a52e65afe25093960bc36c38005a271374cbee"
+    },
+    {
+      "key": "l3-e01",
+      "title": "具身：精细厨房与家务生活区",
+      "input_mode": "image",
+      "path": "tasks/L3/DuplexHome",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 4,
+      "entity_count": 19,
+      "package_manifest_sha256": "2f069a73a5525a9058850b486e27392f08ef8ad12b91b41f1e7f629764c74690"
+    },
+    {
+      "key": "l3-e02",
+      "title": "具身：超市营业区、冷库与卸货区",
+      "input_mode": "image",
+      "path": "tasks/L3/SupermarketServiceBlock",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 1,
+      "entity_count": 21,
+      "package_manifest_sha256": "2f70bb4d89c8b448afcc66b6b89df3151dc80cb37a551dcdb739e090fe2aa12b"
+    },
+    {
+      "key": "l3-e03",
+      "title": "具身：维修工坊与室外物流场",
+      "input_mode": "image",
+      "path": "tasks/L3/WorkshopLoadingYard",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 4,
+      "entity_count": 15,
+      "package_manifest_sha256": "9125bfe2caffb126206921d53f323793e3a150698ffc2462579fa1bf46e065ff"
+    },
+    {
+      "key": "l3-e04",
+      "title": "具身：育苗棚、果园与灌溉服务区",
+      "input_mode": "image",
+      "path": "tasks/L3/GreenhouseOrchard",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 4,
+      "entity_count": 21,
+      "package_manifest_sha256": "515882fe2177d4fafef60279ba17f786a11aaebda96f7f98c32ac6326f66616a"
+    },
+    {
+      "key": "l3-e05",
+      "title": "具身：病区及物资服务走廊",
+      "input_mode": "text",
+      "path": "tasks/L3/ClinicalServiceWard",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 0,
+      "entity_count": 33,
+      "package_manifest_sha256": "c7d26200baeef2251196298104c04f8c025d7ae483d01d8c7efd6ccbf19340e0"
+    },
+    {
+      "key": "l3-e06",
+      "title": "具身：水处理设施与检修平台",
+      "input_mode": "text",
+      "path": "tasks/L3/WaterTreatmentFacility",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 0,
+      "entity_count": 12,
+      "package_manifest_sha256": "0ee19a203d74f90f3af8c66c5f56d08dd8d66a45680a51ca9dfbb2f2ef6ef995"
+    },
+    {
+      "key": "l3-r01",
+      "title": "现实：横店秦王宫前广场、宫门和相连院落",
+      "input_mode": "image",
+      "path": "tasks/L3/HengdianPalaceDistrict",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 3,
+      "entity_count": 16,
+      "package_manifest_sha256": "d7d2089ef93bd75bc067ed039d1b966af9da2dc56f5b5a79634bdb57f723e163"
+    },
+    {
+      "key": "l3-r02",
+      "title": "现实：长洲渡轮码头与市场后勤区",
+      "input_mode": "image",
+      "path": "tasks/L3/CoastalFerryTerminal",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 1,
+      "entity_count": 18,
+      "package_manifest_sha256": "156e8d442127d7ce103158d982214df0a23a5658f2f6cc7a70069dec632bf8e5"
+    },
+    {
+      "key": "l3-r03",
+      "title": "现实：县域铁路站前综合交通枢纽",
+      "input_mode": "text",
+      "path": "tasks/L3/RegionalRailHub",
+      "statement_status": "ready",
+      "execution_status": "generation_ready",
+      "reference_count": 0,
+      "entity_count": 17,
+      "package_manifest_sha256": "2bf4f778a3a6920450b9bc44a5ebcdd3758af3ee81cfea9068bcced66a8fe366"
+    }
+  ],
+  "existing_mc_task": "MinecraftVillage",
+  "distribution": {
+    "game": {
+      "image": 4,
+      "text": 2
+    },
+    "embodied": {
+      "image": 4,
+      "text": 2
+    },
+    "real": {
+      "image": 2,
+      "text": 1
+    }
+  },
+  "actual_input_language": "en",
+  "reference_packages_pending": 0,
+  "formal_scores": null,
+  "material_library_sets": 869,
+  "model_library_models": 1015
+}

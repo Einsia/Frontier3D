@@ -1,0 +1,76 @@
+{
+  "source": "assets/expansion/polyhaven-models/spinning_wheel_01/original/source.blend",
+  "visible_mesh_objects": 1,
+  "vertices": 26548,
+  "dimensions_m": [
+    0.489399790763855,
+    1.0248570442199707,
+    0.9662212133407593
+  ],
+  "normalization": {
+    "uniform_scale": 0.9999999709205079,
+    "maximum_extent_m": 1.0248570144176483,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        1.537285566329956,
+        -2.0497140884399414,
+        1.7129390239715576
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -5.995953955562072e-08,
+        0.6435010433197021
+      ],
+      "ortho_scale": 1.4860426187515259
+    },
+    "front": {
+      "position": [
+        0.0,
+        -3.074571132659912,
+        0.7905677556991577
+      ],
+      "rotation": [
+        1.4711276292800903,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.4860426187515259
+    },
+    "side": {
+      "position": [
+        3.074571132659912,
+        0.0,
+        0.7905677556991577
+      ],
+      "rotation": [
+        1.4711277484893799,
+        -5.938254332704673e-09,
+        1.570796251296997
+      ],
+      "ortho_scale": 1.4860426187515259
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.0010248570470139384,
+        3.5576817989349365
+      ],
+      "rotation": [
+        0.0003452669770922512,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.4860426187515259
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "spinning_wheel_01"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "source": "pilot-v2/assemblies/rotary_table",
+  "license": "CC0-1.0",
+  "changes": [
+    "Sleeve supports disk underside at z=19."
+  ],
+  "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+}

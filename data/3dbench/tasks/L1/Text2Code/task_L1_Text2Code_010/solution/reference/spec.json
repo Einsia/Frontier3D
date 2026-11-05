@@ -1,0 +1,457 @@
+{
+  "family": "telescopic_tube",
+  "title_zh": "伸缩方管锁紧总成",
+  "title_en": "Lockable telescopic square tube",
+  "description_zh": "内外方管以间隙配合，两个导向环、末端堵头和横向锁紧销限制运动。",
+  "description_en": "Fit an inner square tube inside an outer tube with clearance; use two guide rings, an end plug and a transverse locking pin to constrain motion.",
+  "parts": [
+    {
+      "id": "outer_tube",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            44,
+            44,
+            80
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "box",
+          "size": [
+            36,
+            36,
+            86
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 50,
+          "at": [
+            0,
+            0,
+            26
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        40
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        0,
+        60
+      ]
+    },
+    {
+      "id": "inner_tube",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            32,
+            32,
+            90
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "box",
+          "size": [
+            26,
+            26,
+            96
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 40,
+          "at": [
+            0,
+            0,
+            -19
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        85
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -27.5,
+        0,
+        72
+      ]
+    },
+    {
+      "id": "guide_0",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            35.6,
+            35.6,
+            8
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "box",
+          "size": [
+            32.4,
+            32.4,
+            12
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        8
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        0,
+        84
+      ]
+    },
+    {
+      "id": "guide_1",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            35.6,
+            35.6,
+            8
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "box",
+          "size": [
+            32.4,
+            32.4,
+            12
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 42,
+          "at": [
+            0,
+            0,
+            -4
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        70
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        82.5,
+        0,
+        96
+      ]
+    },
+    {
+      "id": "bottom_plug",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            43,
+            43,
+            5
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        -2.5
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        38,
+        108
+      ]
+    },
+    {
+      "id": "top_cap",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            34,
+            34,
+            4
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        132
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -27.5,
+        38,
+        120
+      ]
+    },
+    {
+      "id": "locking_pin",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 58,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        66
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        27.5,
+        38,
+        132
+      ]
+    },
+    {
+      "id": "pin_retainer_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 2,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 6,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        -30,
+        0,
+        66
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        82.5,
+        38,
+        144
+      ]
+    },
+    {
+      "id": "pin_retainer_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 2,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 6,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        30,
+        0,
+        66
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        76,
+        156
+      ]
+    }
+  ],
+  "mates": [],
+  "level": 1,
+  "kind": "assembly",
+  "units": "millimetres",
+  "tolerance_mm": 0.3,
+  "part_count": 9
+}

@@ -1,0 +1,625 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "机鼻的圆钝端部、下颌收拢及向前机身过渡的曲面是否对应参考？",
+      "source_quote": "visible aircraft nose and forward fuselage",
+      "weight": 0.125
+    },
+    {
+      "id": "D02",
+      "question": "驾驶舱窗的分片轮廓、倾斜边缘及窗间隔条是否对应参考？",
+      "source_quote": "window bands",
+      "weight": 0.125
+    },
+    {
+      "id": "D03",
+      "question": "登机桥接机端的折叠褶皱、厚度及包围机身的边缘形状是否对应参考？",
+      "source_quote": "beside the jet bridge",
+      "weight": 0.125
+    },
+    {
+      "id": "D04",
+      "question": "前起落架的支柱、轮轴、轮胎体积及连接结构是否对应参考？",
+      "source_quote": "landing support",
+      "weight": 0.125
+    },
+    {
+      "id": "D05",
+      "question": "可见发动机的进气口、厚唇口、内腔及短舱曲面是否对应参考？",
+      "source_quote": "Reconstruct the visible aircraft nose and forward fuselage beside the jet bridge, apron service vehicles and terminal backdrop.",
+      "weight": 0.125
+    },
+    {
+      "id": "D06",
+      "question": "配餐升降车的箱体、剪叉支架、底盘及接机平台是否具有参考中的结构形态？",
+      "source_quote": "apron service vehicles",
+      "weight": 0.125
+    },
+    {
+      "id": "D07",
+      "question": "前景装载设备的滚轮平台、升降支撑、梯子和护栏是否对应参考？",
+      "source_quote": "apron service vehicles",
+      "weight": 0.125
+    },
+    {
+      "id": "D08",
+      "question": "航站楼的波浪屋檐厚度、上层弧形体块及玻璃立面分格是否对应参考？",
+      "source_quote": "terminal roof silhouette",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "仅使用所附原始参考图和 instruction.md；未提供候选作品，所有条目均为待执行检查。",
+    "input/reference.png 对应附件证据路径 reference/reference-0.png；区域和框均固定在该原图的归一化坐标中。",
+    "未附 legacy-detail-20261018-v1 的独立正文，按本次嵌入的合同与清单编制，不能核实未提供的旧版附加规则。",
+    "execution.json 未提供，且本次禁止工具调用；不能诊断先前的运行时失败。",
+    "单张照片未提供深度、原始模型或标定相机；除明确规定的机身直径外，不把照片估计尺寸作为精确数值要求。",
+    "5.5 m 是任务尺度约定，并非对真实飞机尺寸的测量；原文未规定截面的具体纵向位置或非圆截面的直径定义。",
+    "画外和遮挡表面只要求合理补全；细小标志及远处人物可简化，不冻结其数量或文字。",
+    "区域和定位框是参考图中的检查范围，不构成模型尺寸公差；支撑、厚度和间距未给出数值阈值。",
+    "玻璃反射、阴影及模糊远景小物不作为独立定位实例；后方车辆只覆盖可辨认的可见部分。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中按米读取前机身主体外壳的横截面，截面垂直于机身纵轴；测量外表面直径，排除机翼、支架和局部附件。截面位置歧义需记录，不以二维像素宽度代替。",
+      "quantity": "前机身外径",
+      "relation": "equal",
+      "source_quote": "Use a 5.5 m forward-fuselage external diameter as the task scale convention",
+      "target": 5.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两台相机的世界位置，用主相机旋转矩阵的逆将位置差变换到主相机局部坐标，测量局部正 X 方向的位移分量；其余方向及姿态保持关系另行检查。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "机鼻及前机身",
+      "polygon": [
+        [
+          0.646,
+          0.63
+        ],
+        [
+          0.65,
+          0.53
+        ],
+        [
+          0.725,
+          0.46
+        ],
+        [
+          0.895,
+          0.39
+        ],
+        [
+          0.981,
+          0.399
+        ],
+        [
+          1,
+          0.46
+        ],
+        [
+          1,
+          0.694
+        ],
+        [
+          0.933,
+          0.769
+        ],
+        [
+          0.85,
+          0.793
+        ],
+        [
+          0.721,
+          0.777
+        ],
+        [
+          0.672,
+          0.716
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R02",
+      "label": "右侧登机桥接机端",
+      "polygon": [
+        [
+          0.864,
+          0.496
+        ],
+        [
+          1,
+          0.46
+        ],
+        [
+          1,
+          0.664
+        ],
+        [
+          0.96,
+          0.653
+        ],
+        [
+          0.937,
+          0.565
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R03",
+      "label": "可见发动机",
+      "polygon": [
+        [
+          0.362,
+          0.548
+        ],
+        [
+          0.488,
+          0.545
+        ],
+        [
+          0.545,
+          0.578
+        ],
+        [
+          0.532,
+          0.648
+        ],
+        [
+          0.467,
+          0.666
+        ],
+        [
+          0.382,
+          0.652
+        ],
+        [
+          0.355,
+          0.604
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R04",
+      "label": "前起落架",
+      "polygon": [
+        [
+          0.779,
+          0.78
+        ],
+        [
+          0.83,
+          0.783
+        ],
+        [
+          0.853,
+          0.871
+        ],
+        [
+          0.849,
+          0.905
+        ],
+        [
+          0.763,
+          0.905
+        ],
+        [
+          0.757,
+          0.864
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R05",
+      "label": "航站楼屋顶与立面",
+      "polygon": [
+        [
+          0.444,
+          0.351
+        ],
+        [
+          0.556,
+          0.323
+        ],
+        [
+          0.681,
+          0.335
+        ],
+        [
+          0.678,
+          0.301
+        ],
+        [
+          0.735,
+          0.289
+        ],
+        [
+          0.85,
+          0.291
+        ],
+        [
+          0.878,
+          0.32
+        ],
+        [
+          0.937,
+          0.315
+        ],
+        [
+          1,
+          0.325
+        ],
+        [
+          1,
+          0.397
+        ],
+        [
+          0.477,
+          0.4
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R06",
+      "label": "前景配餐升降车",
+      "polygon": [
+        [
+          0.251,
+          0.46
+        ],
+        [
+          0.57,
+          0.46
+        ],
+        [
+          0.57,
+          0.453
+        ],
+        [
+          0.681,
+          0.453
+        ],
+        [
+          0.681,
+          0.548
+        ],
+        [
+          0.533,
+          0.551
+        ],
+        [
+          0.534,
+          0.716
+        ],
+        [
+          0.261,
+          0.713
+        ],
+        [
+          0.264,
+          0.666
+        ],
+        [
+          0.348,
+          0.66
+        ],
+        [
+          0.369,
+          0.553
+        ],
+        [
+          0.254,
+          0.551
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R07",
+      "label": "前景货物装载平台",
+      "polygon": [
+        [
+          0.257,
+          0.739
+        ],
+        [
+          0.495,
+          0.739
+        ],
+        [
+          0.495,
+          0.622
+        ],
+        [
+          0.651,
+          0.605
+        ],
+        [
+          0.667,
+          0.699
+        ],
+        [
+          0.723,
+          0.767
+        ],
+        [
+          0.714,
+          0.802
+        ],
+        [
+          0.258,
+          0.794
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R08",
+      "label": "左下牵引车",
+      "polygon": [
+        [
+          0.08,
+          0.792
+        ],
+        [
+          0.118,
+          0.765
+        ],
+        [
+          0.151,
+          0.745
+        ],
+        [
+          0.204,
+          0.746
+        ],
+        [
+          0.232,
+          0.77
+        ],
+        [
+          0.226,
+          0.805
+        ],
+        [
+          0.18,
+          0.837
+        ],
+        [
+          0.084,
+          0.834
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否重建参考中的大型客机机鼻和前机身，并保留其主体形态？",
+      "source_quote": "Reconstruct the visible aircraft nose and forward fuselage",
+      "weight": 0.1
+    },
+    {
+      "id": "S02",
+      "question": "飞机与右侧登机桥的位置、衔接及遮挡关系是否对应参考？",
+      "source_quote": "Preserve aircraft-to-bridge placement",
+      "weight": 0.1
+    },
+    {
+      "id": "S03",
+      "question": "机坪服务车辆的类型、相对位置和遮挡层次是否对应参考？",
+      "source_quote": "apron service vehicles",
+      "weight": 0.1
+    },
+    {
+      "id": "S04",
+      "question": "后方航站楼及其起伏屋顶轮廓是否对应参考？",
+      "source_quote": "terminal backdrop",
+      "weight": 0.1
+    },
+    {
+      "id": "S05",
+      "question": "机窗带的位置、走向及深色外观是否对应参考？",
+      "source_quote": "window bands",
+      "weight": 0.1
+    },
+    {
+      "id": "S06",
+      "question": "前起落架在机鼻下方的位置和落地支撑关系是否对应参考？",
+      "source_quote": "landing support",
+      "weight": 0.1
+    },
+    {
+      "id": "S07",
+      "question": "机坪导引线、停机标记及其与飞机的位置关系是否对应参考？",
+      "source_quote": "apron markings",
+      "weight": 0.05
+    },
+    {
+      "id": "S08",
+      "question": "飞机延伸到画外的构图是否保留，画外补全部分是否合理？",
+      "source_quote": "The aircraft extends outside the image; unseen sections need only be plausible.",
+      "weight": 0.05
+    },
+    {
+      "id": "S09",
+      "question": "主要组件是否可独立编辑？",
+      "source_quote": "Keep major components independently editable",
+      "weight": 0.05
+    },
+    {
+      "id": "S10",
+      "question": "主要组件是否具有可信的厚度、支撑和空间间隔？",
+      "source_quote": "with thickness, support and meaningful spacing.",
+      "weight": 0.05
+    },
+    {
+      "id": "S11",
+      "question": "场景是否具有真实三维结构，且备用视角能显示合理的体积与遮挡变化？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.05
+    },
+    {
+      "id": "S12",
+      "question": "主透视相机的视角、取景和主体投影比例是否匹配参考？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.05
+    },
+    {
+      "id": "S13",
+      "question": "备用相机是否仅沿主相机局部右向平移，并保持相同旋转和镜头参数？",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens",
+      "weight": 0.05
+    },
+    {
+      "id": "S14",
+      "question": "飞机、桥体、车辆和航站楼的主要表面明暗与材质外观是否对应参考？",
+      "source_quote": "Reconstruct the visible aircraft nose and forward fuselage beside the jet bridge, apron service vehicles and terminal backdrop.",
+      "weight": 0.05
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "仅定位主飞机可见机鼻和前机身外壳，包括驾驶舱及暗色窗面；排除机翼、发动机、起落架、尾翼和桥体。右边界受原图裁切。",
+      "boxes": [
+        [
+          0.645,
+          0.388,
+          1,
+          0.794
+        ]
+      ],
+      "id": "T01",
+      "query": "主飞机机鼻及前机身",
+      "weight": 0.25
+    },
+    {
+      "boundary_notes": "定位右侧接机端可见折叠桥体，包含深色褶皱和外框；不含投在飞机上的阴影，右侧截于图边。",
+      "boxes": [
+        [
+          0.864,
+          0.46,
+          1,
+          0.665
+        ]
+      ],
+      "id": "T02",
+      "query": "右侧登机桥折叠接机端",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "定位前景主飞机唯一清晰可辨的发动机，覆盖短舱和深色进气内腔；遮挡处不补画范围。远景小飞机发动机不属本类。",
+      "boxes": [
+        [
+          0.357,
+          0.546,
+          0.549,
+          0.666
+        ]
+      ],
+      "id": "T03",
+      "query": "主飞机可见发动机",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "覆盖前起落架可见支柱、轮轴和两侧轮胎；不含地面阴影、轮挡及散布地面的软管。",
+      "boxes": [
+        [
+          0.763,
+          0.785,
+          0.852,
+          0.905
+        ]
+      ],
+      "id": "T04",
+      "query": "主飞机前起落架总成",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "覆盖背景航站楼可辨认的波浪屋顶、上层弧形体块和立面；不含灯杆、施工吊机及前方登机桥。",
+      "boxes": [
+        [
+          0.441,
+          0.289,
+          1,
+          0.422
+        ]
+      ],
+      "id": "T05",
+      "query": "背景航站楼",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "两辆清晰可辨的配餐升降车分别定位。前车包括箱体、伸出平台、剪叉和底盘；后车仅以露出的箱体及平台为可见范围，不推测被遮挡底盘。",
+      "boxes": [
+        [
+          0.251,
+          0.452,
+          0.684,
+          0.716
+        ],
+        [
+          0.574,
+          0.425,
+          0.756,
+          0.478
+        ]
+      ],
+      "id": "T06",
+      "query": "配餐升降服务车",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "覆盖前景蓝色装载设备及其黄色梯子、护栏、滚轮平台和升降结构；排除后方配餐车支架及左侧独立拖盘。",
+      "boxes": [
+        [
+          0.257,
+          0.604,
+          0.723,
+          0.802
+        ]
+      ],
+      "id": "T07",
+      "query": "前景货物装载平台",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "仅定位左下清晰的黄色牵引车主体，包含座椅、车轮和深色底盘；排除后方拖盘。远处车辆过小，不纳入此局部类别。",
+      "boxes": [
+        [
+          0.08,
+          0.744,
+          0.233,
+          0.838
+        ]
+      ],
+      "id": "T08",
+      "query": "左下前景黄色牵引车",
+      "weight": 0.1
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+  "detail_checks": [
+    {
+      "id": "d01",
+      "question": "可见前轮的胎体厚度、轮毂开口与辐条形状是否贴合参考？",
+      "source_quote": "two wheels",
+      "weight": 0.15
+    },
+    {
+      "id": "d02",
+      "question": "发动机的散热片、圆形侧盖和相互叠置的机械部件是否形成参考中的局部结构？",
+      "source_quote": "engine",
+      "weight": 0.15
+    },
+    {
+      "id": "d03",
+      "question": "座椅的下凹骑乘面、抬高后座、边缘厚度与分段接缝是否符合参考？",
+      "source_quote": "seat",
+      "weight": 0.15
+    },
+    {
+      "id": "d04",
+      "question": "车把弯曲走向、握把、控制件及后视镜支杆的连接形态是否符合参考？",
+      "source_quote": "bars",
+      "weight": 0.1
+    },
+    {
+      "id": "d05",
+      "question": "排气管的弯折、管径厚度与沿车身下部延伸的结构是否符合参考？",
+      "source_quote": "exhaust",
+      "weight": 0.15
+    },
+    {
+      "id": "d06",
+      "question": "油箱的鼓起曲面、收窄端部及顶部仪表组件是否保持参考的局部形态？",
+      "source_quote": "Match the visible side-view motorcycle silhouette",
+      "weight": 0.1
+    },
+    {
+      "id": "d07",
+      "question": "侧箱的圆角壳体、盖缝以及挡泥板包覆车轮的曲面是否符合可见参考？",
+      "source_quote": "Match the visible side-view motorcycle silhouette",
+      "weight": 0.1
+    },
+    {
+      "id": "d08",
+      "question": "货架是否具有可辨的层板厚度、竖向支撑与层间开口？",
+      "source_quote": "the surrounding dark accessory shelves",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划不陈述任何候选属性或测量结果。",
+    "主参考采用任务指定路径 input/reference.png，对应附件证据 reference/reference-0.png；坐标仅根据原始附件冻结。",
+    "参考为俯视斜侧透视，文字中的 side-view 不解释为严格正交侧视。",
+    "后轮大部分被侧箱和车身遮挡；两轮数量与尺度应检查原生场景，不臆造不可见轮廓或为后轮冻结定位框。",
+    "0.65 m 是任务尺度约定而非照片实测值；其余尺寸仅要求比例合理，未提供数值容差。",
+    "货架边缘商品有遮挡和裁切，允许简化；人物、屏幕内容和细小标签不设独立复原要求。",
+    "隐藏表面只检查合理的三维补全，不要求唯一恢复真实结构。",
+    "没有提供 legacy-detail-20261018-v1 的额外正文；仅按本次嵌入的合同与检查规则扩展。",
+    "相机位移列为原生几何检查；渲染引擎、色彩管理、输出分辨率及提交文件不作为内容质量检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "n01",
+      "measurement_definition": "在原生场景中识别摩托车前后轮总成并计数；遮挡不改变计数，轮胎与轮毂不重复计为不同车轮。",
+      "quantity": "摩托车车轮数量",
+      "relation": "equal",
+      "source_quote": "two wheels",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n02",
+      "measurement_definition": "应用对象变换后，在各车轮自身轮平面内测量轮胎外缘通过轮轴的外径，以场景米制长度逐轮核验尺度约定。",
+      "quantity": "摩托车车轮外径",
+      "relation": "equal",
+      "source_quote": "Use a 0.65 m outer motorcycle-wheel diameter as the task scale convention",
+      "target": 0.65,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n03",
+      "measurement_definition": "读取两相机世界位置，以主相机局部正 X 轴变换到世界空间所得单位向量乘以 0.30 m，核验该向量等于备用相机位置减主相机位置。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "摩托车整体可见主体",
+      "polygon": [
+        [
+          0.267,
+          0.773
+        ],
+        [
+          0.268,
+          0.597
+        ],
+        [
+          0.32,
+          0.48
+        ],
+        [
+          0.44,
+          0.445
+        ],
+        [
+          0.608,
+          0.455
+        ],
+        [
+          0.669,
+          0.347
+        ],
+        [
+          0.66,
+          0.237
+        ],
+        [
+          0.695,
+          0.226
+        ],
+        [
+          0.751,
+          0.284
+        ],
+        [
+          0.836,
+          0.341
+        ],
+        [
+          0.886,
+          0.284
+        ],
+        [
+          0.944,
+          0.3
+        ],
+        [
+          0.941,
+          0.447
+        ],
+        [
+          0.918,
+          0.477
+        ],
+        [
+          0.925,
+          0.552
+        ],
+        [
+          0.867,
+          0.637
+        ],
+        [
+          0.735,
+          0.681
+        ],
+        [
+          0.519,
+          0.734
+        ],
+        [
+          0.36,
+          0.779
+        ]
+      ],
+      "weight": 0.4
+    },
+    {
+      "id": "r02",
+      "label": "发动机与下部排气结构",
+      "polygon": [
+        [
+          0.522,
+          0.593
+        ],
+        [
+          0.601,
+          0.535
+        ],
+        [
+          0.75,
+          0.512
+        ],
+        [
+          0.767,
+          0.627
+        ],
+        [
+          0.713,
+          0.687
+        ],
+        [
+          0.553,
+          0.71
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "r03",
+      "label": "绿色展示垫",
+      "polygon": [
+        [
+          0.225,
+          0.999
+        ],
+        [
+          0.277,
+          0.667
+        ],
+        [
+          0.857,
+          0.603
+        ],
+        [
+          0.999,
+          0.755
+        ],
+        [
+          0.999,
+          0.805
+        ],
+        [
+          0.514,
+          0.999
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r04",
+      "label": "左侧头盔货架",
+      "polygon": [
+        [
+          0.143,
+          0.001
+        ],
+        [
+          0.388,
+          0.001
+        ],
+        [
+          0.434,
+          0.433
+        ],
+        [
+          0.234,
+          0.468
+        ],
+        [
+          0.17,
+          0.174
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r05",
+      "label": "中后方配件小货架",
+      "polygon": [
+        [
+          0.486,
+          0.272
+        ],
+        [
+          0.633,
+          0.264
+        ],
+        [
+          0.636,
+          0.448
+        ],
+        [
+          0.498,
+          0.472
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "question": "主体是否为参考中的摩托车，并匹配其可见斜侧轮廓、朝向及整体外观？",
+      "source_quote": "Match the visible side-view motorcycle silhouette",
+      "weight": 0.12
+    },
+    {
+      "id": "s02",
+      "question": "摩托车是否放置在绿色矩形展示垫上？",
+      "source_quote": "the motorcycle on the rectangular green display mat",
+      "weight": 0.08
+    },
+    {
+      "id": "s03",
+      "question": "展示垫周围是否呈现参考中的橙色店铺地面？",
+      "source_quote": "the orange shop floor",
+      "weight": 0.06
+    },
+    {
+      "id": "s04",
+      "question": "周围是否有与参考布局及深色外观一致的配件货架？",
+      "source_quote": "the surrounding dark accessory shelves",
+      "weight": 0.08
+    },
+    {
+      "id": "s05",
+      "question": "摩托车与货架是否保持参考中的空间分离？",
+      "source_quote": "its separation from the shelving",
+      "weight": 0.06
+    },
+    {
+      "id": "s06",
+      "question": "前后车轮是否构成合理的摩托车布局，并保留参考中的可见与遮挡关系？",
+      "source_quote": "two wheels",
+      "weight": 0.06
+    },
+    {
+      "id": "s07",
+      "question": "发动机是否位于参考对应的车身中下部，并保持其可辨外观？",
+      "source_quote": "engine",
+      "weight": 0.05
+    },
+    {
+      "id": "s08",
+      "question": "座椅是否位于参考对应的车身上部，并保持其外观和轮廓？",
+      "source_quote": "seat",
+      "weight": 0.05
+    },
+    {
+      "id": "s09",
+      "question": "车把是否处于参考对应的车头位置并保持其姿态？",
+      "source_quote": "bars",
+      "weight": 0.05
+    },
+    {
+      "id": "s10",
+      "question": "排气系统是否沿参考对应的车身侧下方布置？",
+      "source_quote": "exhaust",
+      "weight": 0.05
+    },
+    {
+      "id": "s11",
+      "question": "周边商品是否保留可区分的形状与陈列关系，允许简化且不要求小标签可读？",
+      "source_quote": "Peripheral merchandise can be simplified into distinct shapes; tiny labels need not be readable.",
+      "weight": 0.06
+    },
+    {
+      "id": "s12",
+      "question": "主要组件是否可独立编辑，并具有厚度、支撑与合理间距？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.07
+    },
+    {
+      "id": "s13",
+      "question": "主体是否由真实三维几何构成，且备用视角仍呈现连贯结构？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.07
+    },
+    {
+      "id": "s14",
+      "question": "其他尺寸是否按参考比例推断，隐藏表面是否合理补全？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.05
+    },
+    {
+      "id": "s15",
+      "question": "主透视相机是否匹配参考构图，备用相机是否保留相同旋转与镜头，且两相机均保留在同一场景？",
+      "source_quote": "Create a perspective camera matching the input and render main.png. Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.06
+    },
+    {
+      "id": "s16",
+      "question": "场景是否采用米制并以 Z 轴为上方向？",
+      "source_quote": "Use metres and Z up.",
+      "weight": 0.03
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "包含主体车身、前轮、侧箱、可见排气、车把及后视镜的全部可见范围；不含背景另一车辆、商品、地面阴影或反射。",
+      "boxes": [
+        [
+          0.267,
+          0.234,
+          0.942,
+          0.786
+        ]
+      ],
+      "id": "t01",
+      "query": "前景展示摩托车",
+      "weight": 0.3
+    },
+    {
+      "boundary_notes": "仅定位可辨前轮的可见胎体与轮毂，包含暗部；遮挡的后轮不单独冻结框，不包含挡泥板和投影。",
+      "boxes": [
+        [
+          0.753,
+          0.47,
+          0.904,
+          0.64
+        ]
+      ],
+      "id": "t02",
+      "query": "摩托车可辨车轮",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "包含连续的黑色骑乘座与抬高后座；排除下方挡泥板、侧箱和油箱。",
+      "boxes": [
+        [
+          0.37,
+          0.452,
+          0.629,
+          0.602
+        ]
+      ],
+      "id": "t03",
+      "query": "摩托车座椅总成",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "包含浅色油箱壳体与顶部可见仪表饰板；排除后座及车把。",
+      "boxes": [
+        [
+          0.614,
+          0.343,
+          0.8,
+          0.519
+        ]
+      ],
+      "id": "t04",
+      "query": "摩托车油箱总成",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "包含前景近侧硬壳侧箱的完整可见壳体与暗色底缘；远侧不清晰箱体不另计。",
+      "boxes": [
+        [
+          0.27,
+          0.559,
+          0.532,
+          0.758
+        ]
+      ],
+      "id": "t05",
+      "query": "摩托车近侧硬壳侧箱",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "包含左侧主要头盔货架及中后方独立小配件货架的可见结构、暗色背板和陈列内容；上方裁切按图像边界截断。不将右侧被人物及车辆大幅遮挡的壁面陈列和左侧服装挂架混为此类。",
+      "boxes": [
+        [
+          0.142,
+          0.0,
+          0.435,
+          0.467
+        ],
+        [
+          0.486,
+          0.263,
+          0.637,
+          0.473
+        ]
+      ],
+      "id": "t06",
+      "query": "可辨独立深色配件货架",
+      "weight": 0.15
+    }
+  ]
+}

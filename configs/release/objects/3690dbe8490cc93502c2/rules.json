@@ -1,0 +1,391 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "蛋体是否呈柔软圆隆、边缘不规则下垂的实体轮廓？",
+      "source_quote": "the soft egg silhouette",
+      "weight": 0.2
+    },
+    {
+      "id": "D02",
+      "question": "面包底座是否具有可见侧壁厚度、圆弧外缘和承托上层的顶面？",
+      "source_quote": "Preserve stacked thickness",
+      "weight": 0.2
+    },
+    {
+      "id": "D03",
+      "question": "肉层是否具有参考中可见的纤维、褶皱及不规则伸出边缘？",
+      "source_quote": "meat layers",
+      "weight": 0.2
+    },
+    {
+      "id": "D04",
+      "question": "脆培根是否具有薄片厚度、卷曲折返、翘起边缘及片间空隙？",
+      "source_quote": "curled crisp bacon",
+      "weight": 0.2
+    },
+    {
+      "id": "D05",
+      "question": "绿色装饰是否保留参考中可辨的细茎与叶片形态？",
+      "source_quote": "green garnish",
+      "weight": 0.2
+    }
+  ],
+  "limitations": [
+    "未提供 legacy-detail-20261018-v1 的正文；本计划仅依据本次嵌入的合同、说明与公开参考，不推定旧协议的额外条款。",
+    "坐标仅冻结于原始参考图；input/reference.png 对应公开证据 reference/reference-0.png。区域与定位框是参考内容索引，不是精确尺寸要求。",
+    "单张照片无法唯一确定背面、底面、遮挡处或真实相机参数；隐藏表面仅要求合理补全。",
+    "盘子在图像边缘被裁切，0.26 m 是指定尺度约定，不能作为从照片测得的真实直径。",
+    "主体尺寸比例、层间间距及局部厚度没有明确数值或容差，不增设数值阈值。",
+    "培根条相互交叠且部分被画面裁切，不冻结其条数；小碎屑可省略。",
+    "几何独立编辑性、真实厚度和相机变换需由原生场景检查；仅凭渲染图不能完整判定。",
+    "没有候选作品，本计划不包含候选属性推断或已完成测量的声明。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中识别由面包底座和上方蛋体组成的独立食物堆叠，统计份数。",
+      "quantity": "蛋与面包组合份数",
+      "relation": "equal",
+      "source_quote": "the two egg-and-bread portions",
+      "target": 2,
+      "unit": "份",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在米制世界坐标中检查盘子完整外缘几何，在盘面内测量通过中心的外径；使用完整模型而非照片可见裁切范围。",
+      "quantity": "盘子直径",
+      "relation": "equal",
+      "source_quote": "Use a 0.26 m plate diameter as the task scale convention",
+      "target": 0.26,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "取两相机世界位置之差，变换至主相机局部坐标，测量沿局部正 X 的有符号位移；其余平移方向由对应语义检查核验。",
+      "quantity": "备用相机向右位移",
+      "relation": "equal",
+      "source_quote": "translate 0.03 m to its right along local X",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "检查原生场景中是否同时保留用于主视图及平移视图的两个指定相机对象；不限制无关辅助相机。",
+      "quantity": "指定保留相机数",
+      "relation": "equal",
+      "source_quote": "retain both cameras",
+      "target": 2,
+      "unit": "台",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "后方蛋与面包堆叠主体",
+      "polygon": [
+        [
+          0.071,
+          0.185
+        ],
+        [
+          0.137,
+          0.125
+        ],
+        [
+          0.267,
+          0.035
+        ],
+        [
+          0.445,
+          0.016
+        ],
+        [
+          0.577,
+          0.06
+        ],
+        [
+          0.651,
+          0.179
+        ],
+        [
+          0.654,
+          0.301
+        ],
+        [
+          0.504,
+          0.38
+        ],
+        [
+          0.388,
+          0.47
+        ],
+        [
+          0.203,
+          0.429
+        ],
+        [
+          0.091,
+          0.334
+        ]
+      ],
+      "weight": 0.35
+    },
+    {
+      "id": "R02",
+      "label": "前方蛋与面包堆叠主体",
+      "polygon": [
+        [
+          0.419,
+          0.303
+        ],
+        [
+          0.583,
+          0.307
+        ],
+        [
+          0.756,
+          0.385
+        ],
+        [
+          0.887,
+          0.464
+        ],
+        [
+          0.94,
+          0.595
+        ],
+        [
+          0.896,
+          0.793
+        ],
+        [
+          0.796,
+          0.874
+        ],
+        [
+          0.563,
+          0.893
+        ],
+        [
+          0.369,
+          0.862
+        ],
+        [
+          0.26,
+          0.776
+        ],
+        [
+          0.243,
+          0.622
+        ],
+        [
+          0.289,
+          0.477
+        ]
+      ],
+      "weight": 0.45
+    },
+    {
+      "id": "R03",
+      "label": "两份之间向上伸展的卷曲脆片",
+      "polygon": [
+        [
+          0.815,
+          0.0
+        ],
+        [
+          0.906,
+          0.0
+        ],
+        [
+          0.801,
+          0.093
+        ],
+        [
+          0.651,
+          0.168
+        ],
+        [
+          0.598,
+          0.232
+        ],
+        [
+          0.638,
+          0.314
+        ],
+        [
+          0.516,
+          0.335
+        ],
+        [
+          0.398,
+          0.419
+        ],
+        [
+          0.29,
+          0.456
+        ],
+        [
+          0.271,
+          0.393
+        ],
+        [
+          0.407,
+          0.315
+        ],
+        [
+          0.465,
+          0.228
+        ],
+        [
+          0.491,
+          0.14
+        ],
+        [
+          0.559,
+          0.081
+        ],
+        [
+          0.657,
+          0.108
+        ]
+      ],
+      "weight": 0.2
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否呈现两份蛋与面包组合，并保留参考中后左、前右的排列及遮挡关系？",
+      "source_quote": "Reconstruct the two egg-and-bread portions",
+      "weight": 0.1
+    },
+    {
+      "id": "S02",
+      "question": "两份食物是否共同置于白色盘子上？",
+      "source_quote": "on a white plate",
+      "weight": 0.1
+    },
+    {
+      "id": "S03",
+      "question": "是否有覆盖蛋体并沿堆叠表面流下的黄色酱汁，外观与参考一致？",
+      "source_quote": "with yellow sauce",
+      "weight": 0.1
+    },
+    {
+      "id": "S04",
+      "question": "蛋与面包之间是否可辨肉层，并保留参考中的褐色外观及铺叠关系？",
+      "source_quote": "meat layers",
+      "weight": 0.1
+    },
+    {
+      "id": "S05",
+      "question": "是否保留参考中的卷曲脆培根及其与柔软蛋体的形态对比？",
+      "source_quote": "curled crisp bacon",
+      "weight": 0.1
+    },
+    {
+      "id": "S06",
+      "question": "是否保留参考中的绿色装饰及其在食物周围的分布？",
+      "source_quote": "green garnish",
+      "weight": 0.1
+    },
+    {
+      "id": "S07",
+      "question": "各层是否保留堆叠厚度、相互重叠、合理承托与有意义的间距，主要部件可独立编辑？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.1
+    },
+    {
+      "id": "S08",
+      "question": "菜品是否为真实立体结构，隐藏表面补全合理，且没有用整张参考平面或单相机投影替代几何？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.1
+    },
+    {
+      "id": "S09",
+      "question": "主相机是否为透视相机，视角与构图是否匹配参考？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.1
+    },
+    {
+      "id": "S10",
+      "question": "备用相机是否由主相机仅沿局部正 X 平移，保持旋转与镜头参数，并从同一场景展示合理的三维视差？",
+      "source_quote": "Copy it and translate 0.03 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.1
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "每框对应一份完整堆叠的可见主体，包括蛋、肉、面包和贴附酱汁；排除向外独立伸展的脆片、散落装饰和投影。后方主体的遮挡边界以可见范围为准，不补估隐藏底座。",
+      "boxes": [
+        [
+          0.07,
+          0.018,
+          0.662,
+          0.475
+        ],
+        [
+          0.23,
+          0.305,
+          0.939,
+          0.892
+        ]
+      ],
+      "id": "T01",
+      "query": "蛋与面包堆叠主体",
+      "weight": 0.4
+    },
+    {
+      "boundary_notes": "定位被黄色酱汁覆盖的蛋体，包含可辨白色蛋缘；不纳入向肉层或面包延伸的酱汁流挂、顶上脆片或投影。覆盖关系使蛋与酱汁边界存在视觉不确定性。",
+      "boxes": [
+        [
+          0.202,
+          0.019,
+          0.66,
+          0.318
+        ],
+        [
+          0.407,
+          0.305,
+          0.849,
+          0.653
+        ]
+      ],
+      "id": "T02",
+      "query": "酱汁覆盖的柔软蛋体",
+      "weight": 0.35
+    },
+    {
+      "boundary_notes": "每框包围对应堆叠中全部可辨肉层，包括深褐色纤维与伸出的肉边；框内可能含遮挡物和空隙，不将其判为肉。忽略无法分辨的小碎屑，不包含投影。",
+      "boxes": [
+        [
+          0.071,
+          0.138,
+          0.418,
+          0.474
+        ],
+        [
+          0.27,
+          0.427,
+          0.938,
+          0.81
+        ]
+      ],
+      "id": "T03",
+      "query": "褐色纤维状肉层",
+      "weight": 0.25
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/fe188bcc8c612c6c51cf/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/5cb401ac09e557682236/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/2b85e041cc42ac3880e9/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中测量大厅地面边界第一条主轴方向的长度，并记录轴向。",
+      "quantity": "大厅第一平面尺寸",
+      "relation": "equal",
+      "source_quote": "3.6 x 2.4 m polished-stone lobby",
+      "target": 3.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "测量大厅地面边界与第一主轴垂直方向的长度。",
+      "quantity": "大厅第二平面尺寸",
+      "relation": "equal",
+      "source_quote": "3.6 x 2.4 m polished-stone lobby",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "按声明的网格基准测量相邻网格线间距，对两个网格方向分别核查。",
+      "quantity": "地面网格间距",
+      "relation": "equal",
+      "source_quote": "a 600 mm floor grid",
+      "target": 600,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "逐一计数信箱组内独立箱格，不以装饰分缝代替箱格。",
+      "quantity": "信箱格数",
+      "relation": "equal",
+      "source_quote": "a 12-compartment mailbox bank",
+      "target": 12,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "测量整个信箱组沿横向的外包络宽度。",
+      "quantity": "信箱组总宽",
+      "relation": "equal",
+      "source_quote": "total width 1.80 m",
+      "target": 1.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "测量信箱组底部至其下方完成地面的垂直距离。",
+      "quantity": "信箱组底部离地高度",
+      "relation": "equal",
+      "source_quote": "bottom 0.30 m above floor",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "在完全开启状态测量入口两侧实体边界之间的通行净宽。",
+      "quantity": "电梯门洞净宽",
+      "relation": "equal",
+      "source_quote": "Fully open a 0.90 m elevator doorway.",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "沿进入方向测量轿厢入口内边界至后壁内表面的深度。",
+      "quantity": "轿厢内部深度",
+      "relation": "equal",
+      "source_quote": "The car is 1.40 m deep",
+      "target": 1.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "测量轿厢两侧壁内表面之间的横向宽度；突出物另纳入净空检查。",
+      "quantity": "轿厢内部宽度",
+      "relation": "equal",
+      "source_quote": "1.60 m wide",
+      "target": 1.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "比较入口两侧相邻完成地面标高，取绝对高差。",
+      "quantity": "大厅与轿厢地面高差",
+      "relation": "at_most",
+      "source_quote": "floor level difference at most 3 mm",
+      "target": 3,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "识别跨门槛的对应槽基准线，按声明方向测量最大对齐偏移。",
+      "quantity": "门槛槽对齐偏差",
+      "relation": "at_most",
+      "source_quote": "aligned sill grooves within 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "计数实际安装扶手的不同轿厢墙面。",
+      "quantity": "设有扶手的墙面数量",
+      "relation": "equal",
+      "source_quote": "handrails on three walls",
+      "target": 3,
+      "unit": "面",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "逐面测量扶手声明基准点相对轿厢完成地面的垂直高度。",
+      "quantity": "扶手高度",
+      "relation": "equal",
+      "source_quote": "handrails on three walls at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "在机器人底座局部水平主轴上测量第一外包络尺寸。",
+      "quantity": "机器人底座第一尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.50 x 0.45 m base",
+      "target": 0.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "在机器人底座另一水平主轴上测量第二外包络尺寸。",
+      "quantity": "机器人底座第二尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.50 x 0.45 m base",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "测量屏幕几何顶部相对机器人所在完成地面的垂直高度。",
+      "quantity": "屏幕顶部高度",
+      "relation": "equal",
+      "source_quote": "screen top at 1.20 m",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "计数机器人上独立承载层架，顶托盘计入层架总数。",
+      "quantity": "机器人层架数量",
+      "relation": "equal",
+      "source_quote": "three shelves",
+      "target": 3,
+      "unit": "层",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "沿包裹局部第一水平轴测量实体外包络。",
+      "quantity": "包裹第一尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "沿包裹局部第二水平轴测量实体外包络。",
+      "quantity": "包裹第二尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel",
+      "target": 0.25,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "测量包裹底面至顶面的高度。",
+      "quantity": "包裹高度",
+      "relation": "equal",
+      "source_quote": "a 0.35 x 0.25 x 0.15 m parcel",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "将机器人前向与朝向门洞的中心线方向投影到水平面，测量最小夹角。",
+      "quantity": "等待姿态朝向偏差",
+      "relation": "at_most",
+      "source_quote": "Face the door centreline within 5 degrees",
+      "target": 5,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "在水平面内测量机器人前缘至声明门槛基准线的垂直距离。",
+      "quantity": "机器人前缘至门槛距离",
+      "relation": "equal",
+      "source_quote": "keep its front edge 1.20 m from the sill",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "读取或拟合原生转向圆标记中心线，测量直径。",
+      "quantity": "转向圆直径",
+      "relation": "equal",
+      "source_quote": "Mark a 1.50 m turning circle",
+      "target": 1.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "沿声明的直线进入路线连续核查可容纳通行带的最小宽度；排除被评估机器人，包含其他家具与突出物。",
+      "quantity": "直线进入路径净宽",
+      "relation": "at_least",
+      "source_quote": "a continuous 0.80 m straight entry path",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "检查轿厢内可放置的保守机器人包络横向宽度，使用文档声明的包络几何。",
+      "quantity": "机器人净空包络宽度",
+      "relation": "at_least",
+      "source_quote": "a conservative 0.75 m robot clearance envelope",
+      "target": 0.75,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "在同一可行包络位置测量包络左侧至最近轿厢实体或突出物的最小横向净距。",
+      "quantity": "轿厢包络左侧余量",
+      "relation": "at_least",
+      "source_quote": "plus 0.30 m at each side",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "在同一可行包络位置测量包络右侧至最近轿厢实体或突出物的最小横向净距。",
+      "quantity": "轿厢包络右侧余量",
+      "relation": "at_least",
+      "source_quote": "plus 0.30 m at each side",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "测量顶托盘承载面相对机器人所在完成地面的垂直高度，并记录锚点。",
+      "quantity": "顶托盘高度",
+      "relation": "equal",
+      "source_quote": "The top tray is 0.85 m high",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "测量控制面板声明基准点相对轿厢完成地面的垂直高度。",
+      "quantity": "控制面板高度",
+      "relation": "equal",
+      "source_quote": "the control panel 1.10 m",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "测量文档标记的进入后控制位置至面板服务点的三维直线距离；障碍物另行核查。",
+      "quantity": "控制位置至面板距离",
+      "relation": "at_most",
+      "source_quote": "within 0.90 m of the panel after entry",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "将包裹底面几何中心与托盘承载面几何中心投影至托盘平面，测量两中心欧氏距离。",
+      "quantity": "包裹居中偏差",
+      "relation": "at_most",
+      "source_quote": "Centre the parcel on the tray within 20 mm",
+      "target": 20,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "读取壁灯光源的色温定义或其明确记录的等效色温，不以成图像素颜色估测。",
+      "quantity": "壁灯色温",
+      "relation": "equal",
+      "source_quote": "Use 3000 K wall lamps",
+      "target": 3000,
+      "unit": "K",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

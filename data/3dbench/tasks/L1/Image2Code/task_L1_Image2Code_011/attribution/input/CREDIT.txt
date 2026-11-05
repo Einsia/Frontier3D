@@ -1,0 +1,5 @@
+多轮行星探索车
+NASA and NASA 3D Resources contributors
+https://github.com/nasa/NASA-3D-Resources/tree/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Space%20Exploration%20Vehicle
+NASA public media (upstream: free and without copyright)
+Changes: static display normalization, original studio lighting and cameras. Source meshes may combine multiple physical components; reconstruction must preserve editable semantic parts.

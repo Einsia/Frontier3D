@@ -1,0 +1,31 @@
+{
+  "uid": "c646531de6a3494faeaf2d3ce91b9dd2",
+  "name": "Eastern Blue Bird",
+  "source_url": "https://sketchfab.com/3d-models/eastern-blue-bird-c646531de6a3494faeaf2d3ce91b9dd2",
+  "author": {
+    "displayName": "kenchoo",
+    "profileUrl": "https://sketchfab.com/kenchoo"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "4e2f4c2e62d29ec09a3b1eecd21ccaba1701defba4fa10b2466e54af6fe7d489",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Baked the evaluated source pose at frame 1; source animation omitted from the static task. Excluded importer-generated armature custom display shapes before pose baking; these objects are absent from the original GLB mesh nodes. Recomputed normalization and reference cameras from real source geometry.",
+  "addition": true,
+  "excluded_importer_helpers": [
+    {
+      "name": "Icosphere",
+      "vertices": 42,
+      "faces": 80,
+      "reason": "Importer-generated armature custom display shape"
+    }
+  ]
+}

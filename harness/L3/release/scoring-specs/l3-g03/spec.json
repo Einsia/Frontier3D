@@ -1,0 +1,262 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-g03",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "744bce7b8b7ad425c4c2ec900947f2a656c75af85a933e476eae7c0b2927fb4b",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Preserve the broad dirt street descending into the distance, with a dense storefront edge on the left and a more open right side.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Keep buildings predominantly one to two stories, with believable door, balcony, wagon and street proportions.",
+        "id": "env-03"
+      },
+      {
+        "criterion": "Frame the town with sparse trees, dry vegetation and distant hazy hills rather than an isolated architectural backdrop.",
+        "id": "env-05"
+      },
+      {
+        "criterion": "Match warm, low-angle daylight, long directional shadows, shaded porches and a softly clouded, atmospheric distance.",
+        "id": "env-06"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "Large two-story rectangular timber frontage dominates the left foreground, with a tall flat parapet and projecting cornice.",
+            "id": "frontage-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "A continuous upper balcony spans the frontage above a deeply shaded ground-floor porch.",
+            "id": "frontage-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Slender square posts support the balcony; closely spaced vertical balusters line its outer edge.",
+            "id": "frontage-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Upper doors and windows have projecting timber trim; broad sign panels occupy the wall and balcony face without requiring readable lettering.",
+            "id": "frontage-04",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Horizontal siding, decking and rails show faded gray-brown timber, uneven discoloration and worn edges.",
+            "id": "frontage-05",
+            "kind": "material"
+          }
+        ],
+        "id": "target-01",
+        "importance": "core",
+        "label": "Dominant timber shop frontage and balcony",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 30
+      },
+      {
+        "features": [
+          {
+            "criterion": "A narrow two-story frontage rises beside the large balcony building, with a tall decorative false front concealing a lower sloping roof.",
+            "id": "office-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The parapet has a heavy cap, raised end blocks and a row of recessed rectangular ornaments.",
+            "id": "office-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Two tall arched upper windows sit beneath a broad framed sign panel.",
+            "id": "office-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Pale weathered timber siding and trim contrast with the darker neighboring facade and roof.",
+            "id": "office-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-02",
+        "importance": "core",
+        "label": "Narrow law-office frontage",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [
+          {
+            "criterion": "A receding sequence of narrow commercial buildings steps down the street with varied facade heights.",
+            "id": "row-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Flat false fronts alternate with visible pitched roofs, parapet trim and occasional chimneys.",
+            "id": "row-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Porch awnings, posts, raised platforms and a farther upper balcony create layered edges along the street.",
+            "id": "row-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Muted tan and gray timber surfaces carry sun fading and weathering consistent with the foreground buildings.",
+            "id": "row-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-03",
+        "importance": "core",
+        "label": "Connected secondary storefront row",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 20
+      },
+      {
+        "features": [
+          {
+            "criterion": "The broad unpaved roadway slopes gently away and has irregular edges against raised wooden walks.",
+            "id": "street-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Shallow wheel ruts and overlapping tracks run along the direction of travel.",
+            "id": "street-02",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Boardwalk platforms and short stair runs bridge the height difference between storefront entrances and road.",
+            "id": "street-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Compacted brown earth mixes with loose dirt, scattered straw and darker worn patches.",
+            "id": "street-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-04",
+        "importance": "core",
+        "label": "Sloping main street and boardwalk system",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 20
+      },
+      {
+        "features": [
+          {
+            "criterion": "The foreground coach has a tall enclosed rectangular passenger body, a sloped rear luggage section and an elevated front driving seat.",
+            "id": "coach-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Large rear wheels and smaller front wheels have thin rims, radial wooden spokes and prominent hubs.",
+            "id": "coach-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Open side apertures reveal seating; framing, undercarriage and a light roof luggage rail remain visibly distinct.",
+            "id": "coach-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The body combines worn burgundy panels, brown timber framing and restrained faded gold trim.",
+            "id": "coach-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-05",
+        "importance": "supporting",
+        "label": "Foreground stagecoach",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 7
+      },
+      {
+        "features": [
+          {
+            "criterion": "Tall timber utility poles recur along the street, with crossarms and sagging overhead wires.",
+            "id": "context-01",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Simple hitching rails and low fences punctuate the open street margins without enclosing the main route.",
+            "id": "context-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Sparse trees and layered mountain silhouettes remain visible beyond the thinning town buildings.",
+            "id": "context-03",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Dry verge vegetation and weathered unpainted wood share the street's subdued brown and gray palette.",
+            "id": "context-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-06",
+        "importance": "supporting",
+        "label": "Town margins and countryside context",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 8
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "f6f4b4e0c2d4a444e6d3c64a5666a99085c45b8e91b647d6e0313f5401b8f279"
+  }
+}

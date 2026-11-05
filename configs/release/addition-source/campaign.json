@@ -1,0 +1,1211 @@
+{
+  "records": [
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016",
+      "title": "人体心脏",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "d6aa60a1e38695833bae26888690037cd2149f84bf9198909ba22cbbd337035c",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_016/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_016/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017",
+      "title": "骆驼",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "88c299c1dafce4c2bf03b077da7466bc9e9a7d8d14ec677232273bdd685880e2",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_017/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_017/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+      "title": "边境牧羊犬",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "f331eec253c41f5784ca51d3b8cc26e1b4c91ea46ad2c824433b6369809ff6f7",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_018/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_018/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+      "title": "东蓝鸲",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "756be02bbaa972f0ba1ec3146e40bebaa16bb2dfbf5d26d1b4b04f0dd3a0663b",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_019/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_019/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+      "title": "Tag Heuer 手表",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "c8028e04848381f2a27f3270f365ba3a154be6bb69f090602e9bafc2d5673208",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_020/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_020/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+      "title": "复古拳击手套",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "5f160e0b20768e96a2d1abc7a8426fa274faf7cde0a4af10a4b0cbc1ed28d611",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_021/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_021/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+      "title": "长颈鹿毛绒玩具",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "417e215c30e553371b9102714688be85bda69dd7bd3c4b7a988b95dd33233bca",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_022/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_022/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+      "title": "圆明园牛首",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "34f9ef6a7f885cbfb891bcfed32776473ff0f48b68286aeaf5f39bf5a1f75634",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_023/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_023/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+      "title": "YSL 高跟鞋",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "f79446fd0754655dd6eb687d1ef6ccad5ef19e40caddf1403a6b4249f3cb47f8",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_024/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_024/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025",
+      "title": "Balenciaga 墨镜",
+      "category": "Image2Code-SingleView",
+      "level": 1,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "947d08547f6e941bfe5be1d98fc9d81e3f8b49f713383df8bb97bbeb05a5f7b8",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code-SingleView_025/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code-SingleView_025/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_016",
+      "title": "茶具托盘套装",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "599884fde34d7002ca0581eee4033e24c0fd23d58d4247b2264b57030481a29a",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_016",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_016/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_016/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_017",
+      "title": "波音 787-9 客机",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "5a73d7da8da42c87c80b15d9fa0691741f9bb015c7da7b587397ace5613df7e9",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_017/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_017/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_018",
+      "title": "星形发动机",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "961e560084c9c0785cb4bc9fb25abe6cbc45a5fa9f0d4f4f87f6244059897874",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_018",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_018/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_018/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_019",
+      "title": "雅马哈 YZF-R1 摩托车",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "cdd75340f2b42c4f7f3c3f643a4aa6ecd161a6d3fdd214c211094d898e356552",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_019/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_019/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_020",
+      "title": "圆号",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "76df00bc9d7232e0bdc3aca2c6ed3403012b2f6c7cfc4cdfa38c065ce54ed1d6",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_020/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_020/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_021",
+      "title": "马林巴琴",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "189c5d3c071003874b95adf39e2da94b2068a8dd3987bd3c7adc89b477511448",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_021/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_021/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_022",
+      "title": "三角钢琴",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "4f84062a31e2fa020f87c6b2ace2cc8575abf1a869c166b1212f524f92e23872",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_022/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_022/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_023",
+      "title": "R2-D2",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "1272895a406290e4cd36511ed44dfe237887d348fa7aee8a4af7ec098c4c85a8",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_023/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_023/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_024",
+      "title": "刹车盘与卡钳",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "327861e138f87808f76ef4ce729b30d94263abc625a7e75fce23975c3779f40c",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_024/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_024/visual_spec.json"
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_025",
+      "title": "赛博朋克踏板车",
+      "category": "Image2Code",
+      "level": 1,
+      "public_reference_paths": [
+        "input/front.png",
+        "input/reference.png",
+        "input/side.png",
+        "input/top.png"
+      ],
+      "instruction_sha256": "1ca0d8bb06d314c9e350170988eca932158898115ec1bca40b1c602d98b4c9f1",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "cross_format_geometry"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "calibrated visible-surface distance and local masks"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025",
+      "rule": "@resource/addition-source/rules/task_L1_Image2Code_025/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L1_Image2Code_025/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_011",
+      "title": "吧台·双臂调酒机器人",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "e037ecc1be467237c3e8375dfb4dd2137ff513114065aaee9b5c3b406264635a",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_011",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_011/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_011/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_012",
+      "title": "温室·番茄采摘机器人",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "724a9fc19579d0b6a030b54a8b44738e3c29622e44fc8705a819baea9c33e0c7",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_012",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_012/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_012/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+      "title": "公寓楼道·配送机器人等电梯",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "2b85e041cc42ac3880e9bc60a59b89310be3004f71d562b338b2124a81047cbe",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_013",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_013/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_013/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_014",
+      "title": "图书馆·高层取书",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "7035c663b8f308131414a9fed890e43348401bd131e924271e2f6599eff3fddc",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_014",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_014/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_014/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+      "title": "工具间·挂板取工具",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "509a935864c2ec9ef8135097687be0812c5d1f9277f7dbd883c87e6f48e44ff2",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_015",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_015/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_015/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_016",
+      "title": "洗衣房·折叠工作站",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "1cea150836f6eb8709e1e4b61fee016003a4d99a8514d188e728c1ade39374f5",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_016",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_016/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_016/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_017",
+      "title": "咖啡站·拉花中段",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "3f2f2bb81115949fed0ab99c67551009bd17a6f081bca9e06f60a9b4ad0b758c",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_017",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_017/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_017/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_018",
+      "title": "停车场·充电机器人插枪",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "ea684234173d7beb5e38b8a2ced4dc705f63d6b3167b74326226eb57248fda5d",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_018",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_018/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_018/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+      "title": "人形测试场·障碍段中途",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "7477628e893c30aa6441e867cd234575df28585b48637b4928df64647a37701e",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_019",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_019/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_019/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+      "title": "无人机机巢·换电中段",
+      "category": "Brief2Scene",
+      "level": 2,
+      "public_reference_paths": [],
+      "instruction_sha256": "b42f7f8523e8efa887ed268275567256ceec9ddf159250f859d4b0117d03e985",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "exact semantic dimensions, contacts, clearance and reach-envelope requirements"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_020",
+      "rule": "@resource/addition-source/rules/task_L2_Brief2Scene_020/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Brief2Scene_020/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+      "title": "香港机场机坪与登机桥",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "960f034309e909bbad0a38e9ac079e5c207689e0ceb29a5dc94ad58962dfec4b",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_010/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_010/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+      "title": "海湾停泊船只",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "9c0e0ed901ad7649ea07ab67111b92ed943ccf4f638009eece1568895f033290",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_011/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_011/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+      "title": "哈雷摩托车店陈列",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "c679e0f04443f87d730a24662435322ee7d217824587ccb150981bf74a770b0b",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_012/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_012/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+      "title": "鸡肉意面餐盘",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "d36f80b27147b2e7763f4e21298167b36a75196863f644b3c9c06c24b69ff82b",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_013/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_013/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+      "title": "班尼迪克蛋餐盘",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "14356b5396e2f24ff02e357c2d6265dfdefb67a2e59b0a3d23c1f77059e3d405",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_014/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_014/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015",
+      "title": "汉堡薯条餐盘",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "a747bc323f531e942aec554512b2f3a48b9cd8e1e302422a49513914c5e12425",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_015/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_015/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+      "title": "水果生日蛋糕",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "8da64235b5ffd77d3577f9e14c0e9b806f41153fcba5a04c1475f7ef254ca9e3",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_016/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_016/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+      "title": "切片牛排餐盘",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "7366bef167153e2d349533de05273f9bcc4a976c7efbb4e8a71b5a2da497a18e",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_017/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_017/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+      "title": "万丽酒店客房",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "6c18aa0748c31cc01a9577f3543276e1d797ba5569f023dfd46c5b2245b8d11c",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_018/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_018/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+      "title": "彩玻璃木饰餐厅",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "5c249129766a0fe887c641daf3c08fb5ad25dfd0bcb59d5480ac02fd0640920a",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_019/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_019/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+      "title": "仙本那水屋步道",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "128b7b863ebd500949c1a4843f5e24d4888fd2defab0a2bc870d7a16fc7886ad",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_020/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_020/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021",
+      "title": "国科大艺术与科学大楼",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "e166e7a394c08b20d407eddbeb72f4a14a27ffc6ab1aee6651ec870187117b11",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_021/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_021/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+      "title": "日落购物广场",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "3090753a3754746afa732498dfbc1b74f170c725cc49ba64e71bc18a38bd64dd",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_022/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_022/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023",
+      "title": "木饰休息厅与楼梯口",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "f0fc746b54fc74442a7d2a2f0b671ff40c4e008a510cf8565fc6231ad9ab8562",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_023/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_023/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+      "title": "高架桥下自行车停车区",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "187be1d36f2aac77dc5efcc72e26ee0e34bb3dc998d2b6e08a6e763036c719b8",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_024/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_024/visual_spec.json"
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+      "title": "Mip-NeRF 360 Counter：厨房台面",
+      "category": "Reference2Scene-RealPhoto",
+      "level": 2,
+      "public_reference_paths": [
+        "input/reference.png"
+      ],
+      "instruction_sha256": "969f88fee172ad03a266eb55846ae844f75cfc1686c18d70a3a3d80e481b5844",
+      "native_checks": [
+        "clean_execution",
+        "required_artifacts",
+        "editable_geometry",
+        "render_contract",
+        "native_rerender",
+        "repeat_execution",
+        "two_retained_cameras"
+      ],
+      "score_scope": "visual_requirements_diagnostic",
+      "unvalidated_scope": [
+        "unobserved real-world surfaces and calibrated scale correspondence"
+      ],
+      "task_root": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+      "rule": "@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_025/visual_spec.json",
+      "rule_sha256": "@filehash:@resource/addition-source/rules/task_L2_Reference2Scene-RealPhoto_025/visual_spec.json"
+    }
+  ],
+  "task_count": 54
+}

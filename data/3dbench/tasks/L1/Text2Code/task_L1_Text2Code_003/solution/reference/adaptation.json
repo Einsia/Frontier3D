@@ -1,0 +1,9 @@
+{
+  "source": "pilot-v2/assemblies/lead_screw_stage",
+  "license": "CC0-1.0",
+  "changes": [
+    "Lead rod extended to 182 mm to enter the handwheel.",
+    "Guide sleeve OD increased to 18 mm so the sleeves support the platform underside at z=35."
+  ],
+  "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+}

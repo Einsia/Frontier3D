@@ -1,0 +1,223 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-r02",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "waiting_hall",
+    "quay",
+    "fixed_ferry",
+    "market_stalls",
+    "warehouse",
+    "service_lane"
+  ],
+  "initial_state": "Ferry fixed at berth; gangway stowed, boarding gates and stall shutters closed; cargo in warehouse.",
+  "entities": [
+    {
+      "id": "boarding.gate.01",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; gangway interlock",
+      "argument": ""
+    },
+    {
+      "id": "boarding.gate.02",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; gangway interlock",
+      "argument": ""
+    },
+    {
+      "id": "gangway",
+      "role": "gangway",
+      "actions": [
+        "deploy",
+        "stow"
+      ],
+      "initial": "stowed",
+      "argument": ""
+    },
+    {
+      "id": "stall.shutter.01",
+      "role": "shutter",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "stall.shutter.02",
+      "role": "shutter",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "stall.shutter.03",
+      "role": "shutter",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "stall.awning.01",
+      "role": "awning",
+      "actions": [
+        "extend",
+        "retract"
+      ],
+      "initial": "retracted",
+      "argument": ""
+    },
+    {
+      "id": "stall.awning.02",
+      "role": "awning",
+      "actions": [
+        "extend",
+        "retract"
+      ],
+      "initial": "retracted",
+      "argument": ""
+    },
+    {
+      "id": "cart.delivery",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "empty; warehouse",
+      "argument": ""
+    },
+    {
+      "id": "cargo.01",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "warehouse",
+      "argument": ""
+    },
+    {
+      "id": "cargo.02",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "warehouse",
+      "argument": ""
+    },
+    {
+      "id": "cargo.03",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "warehouse",
+      "argument": ""
+    },
+    {
+      "id": "cargo.04",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "warehouse",
+      "argument": ""
+    },
+    {
+      "id": "cargo.05",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "warehouse",
+      "argument": ""
+    },
+    {
+      "id": "cargo.06",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "warehouse",
+      "argument": ""
+    },
+    {
+      "id": "stall.storage.01",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; assigned two cargo units per stall",
+      "argument": ""
+    },
+    {
+      "id": "stall.storage.02",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; assigned two cargo units per stall",
+      "argument": ""
+    },
+    {
+      "id": "stall.storage.03",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; assigned two cargo units per stall",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

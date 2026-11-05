@@ -1,0 +1,1025 @@
+{
+  "family": "sliding_latch",
+  "title_zh": "滑动门闩总成",
+  "title_en": "Sliding bolt latch",
+  "description_zh": "门闩穿过两个导向座并进入接收座，拉手、限位环及安装板单独建模。",
+  "description_en": "Pass the sliding bolt through two guides into a receiver; model the handle, stop rings and mounting plate separately.",
+  "parts": [
+    {
+      "id": "mount",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            150,
+            50,
+            5
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -68,
+            -19,
+            0.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            68,
+            -19,
+            0.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -68,
+            19,
+            0.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            68,
+            19,
+            0.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        2.5
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        0,
+        60
+      ]
+    },
+    {
+      "id": "guide_0",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            14,
+            26,
+            25
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 18,
+          "at": [
+            0,
+            0,
+            3
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -23,
+            -19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            113,
+            -19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -23,
+            19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            113,
+            19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -45,
+        0,
+        17.5
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -27.5,
+        0,
+        72
+      ]
+    },
+    {
+      "id": "guide_1",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            14,
+            26,
+            25
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 18,
+          "at": [
+            0,
+            0,
+            3
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -73,
+            -19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            63,
+            -19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -73,
+            19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            63,
+            19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        5,
+        0,
+        17.5
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        27.5,
+        0,
+        84
+      ]
+    },
+    {
+      "id": "guide_2",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            14,
+            26,
+            25
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 18,
+          "at": [
+            0,
+            0,
+            3
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -123,
+            -19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            13,
+            -19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            -123,
+            19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 400,
+          "at": [
+            13,
+            19,
+            -15.0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        55,
+        0,
+        17.5
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        82.5,
+        0,
+        96
+      ]
+    },
+    {
+      "id": "bolt",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 5,
+          "height": 118,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        5,
+        0,
+        20.5
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -82.5,
+        38,
+        108
+      ]
+    },
+    {
+      "id": "handle",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 24,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -15,
+        0,
+        37.5
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -27.5,
+        38,
+        120
+      ]
+    },
+    {
+      "id": "grip",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 7,
+          "height": 10,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -15,
+        0,
+        54.5
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        27.5,
+        38,
+        132
+      ]
+    },
+    {
+      "id": "stop_ring_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 8,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 8,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        -30,
+        0,
+        20.5
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        82.5,
+        38,
+        144
+      ]
+    },
+    {
+      "id": "stop_ring_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 8,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 8,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        25,
+        0,
+        20.5
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        76,
+        156
+      ]
+    },
+    {
+      "id": "bolt_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 6.5,
+          "at": [
+            0,
+            0,
+            0.75
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.4,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            6.0
+          ],
+          "op": "union",
+          "vertices": 6,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -68,
+        -19,
+        2.5
+      ],
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "explode": [
+        -27.5,
+        76,
+        168
+      ]
+    },
+    {
+      "id": "washer_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 1.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 5.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -68,
+        -19,
+        5.75
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        76,
+        180
+      ]
+    },
+    {
+      "id": "bolt_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 6.5,
+          "at": [
+            0,
+            0,
+            0.75
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.4,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            6.0
+          ],
+          "op": "union",
+          "vertices": 6,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        68,
+        -19,
+        2.5
+      ],
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "explode": [
+        82.5,
+        76,
+        192
+      ]
+    },
+    {
+      "id": "washer_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 1.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 5.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        68,
+        -19,
+        5.75
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        114,
+        204
+      ]
+    },
+    {
+      "id": "bolt_2",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 6.5,
+          "at": [
+            0,
+            0,
+            0.75
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.4,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            6.0
+          ],
+          "op": "union",
+          "vertices": 6,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -68,
+        19,
+        2.5
+      ],
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "explode": [
+        -27.5,
+        114,
+        216
+      ]
+    },
+    {
+      "id": "washer_2",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 1.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 5.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -68,
+        19,
+        5.75
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        114,
+        228
+      ]
+    },
+    {
+      "id": "bolt_3",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 6.5,
+          "at": [
+            0,
+            0,
+            0.75
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.4,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            6.0
+          ],
+          "op": "union",
+          "vertices": 6,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        68,
+        19,
+        2.5
+      ],
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "explode": [
+        82.5,
+        114,
+        240
+      ]
+    },
+    {
+      "id": "washer_3",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 1.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 5.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        68,
+        19,
+        5.75
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        152,
+        252
+      ]
+    }
+  ],
+  "mates": [
+    {
+      "type": "coaxial",
+      "a": "bolt",
+      "b": "guide_0",
+      "axis": "x",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "bolt",
+      "b": "guide_1",
+      "axis": "x",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "bolt",
+      "b": "guide_2",
+      "axis": "x",
+      "radial_clearance_mm": 0.2
+    }
+  ],
+  "level": 1,
+  "kind": "assembly",
+  "units": "millimetres",
+  "tolerance_mm": 0.3,
+  "part_count": 17
+}

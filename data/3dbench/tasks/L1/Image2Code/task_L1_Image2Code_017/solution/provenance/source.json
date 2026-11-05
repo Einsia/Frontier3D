@@ -1,0 +1,19 @@
+{
+  "uid": "4b061566dc5a4495bff5e8c7e911ec4e",
+  "name": "Boeing 787-9 Qantas Centenary",
+  "source_url": "https://sketchfab.com/3d-models/boeing-787-9-qantas-centenary-4b061566dc5a4495bff5e8c7e911ec4e",
+  "author": {
+    "displayName": "mudkipz321",
+    "profileUrl": "https://sketchfab.com/mudkipz321"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "3b4e93983cf177f6e7f840b5a0842f0ff490f07a4b58db6f692a170c1a230ad5",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Baked the evaluated source pose at frame 1; source animation omitted from the static task.",
+  "addition": true
+}

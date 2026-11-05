@@ -1,0 +1,32 @@
+{
+  "title": "MessyKitchens：水槽旁杂乱杯碟重建",
+  "source_urls": [
+    "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  ],
+  "document_revision": 1080,
+  "document_label": "MessyKitchens",
+  "retrieved_at": "2026-10-29",
+  "license": {
+    "label": "User-provided; upstream dataset identity and redistribution license unverified",
+    "status": "pending_source_and_license_confirmation"
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "59825bae8701075f58075afe9f8e269e24ce0ec6863f9b75e2d4e3585b2b3ce5",
+      "size": [
+        960,
+        720
+      ],
+      "original_document_token": "U2Epb6f9sow5YVxnc0BcPEajnde",
+      "original_document_block": "JL03dRbwro9G8wxYxzXcUhDSnYf"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

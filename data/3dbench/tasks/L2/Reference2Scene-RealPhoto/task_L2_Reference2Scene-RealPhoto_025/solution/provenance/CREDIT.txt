@@ -1,0 +1,7 @@
+Mip-NeRF 360 Counter：厨房台面
+Source document: https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug
+Revision: 1010
+Project: https://jonbarron.info/mipnerf360/
+Attribution: Mip-NeRF 360 project / dataset; Jonathan T. Barron, Ben Mildenhall, Dor Verbin, Pratul P. Srinivasan, Peter Hedman
+Usage: User-supplied image for benchmark inclusion; upstream image redistribution license unverified; no blanket public license asserted
+Changes: metadata-free RGB PNG; original dimensions retained; no crop or generated content.

@@ -1,0 +1,32 @@
+{
+  "jobs": [
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001",
+      "spec": {
+        "path": "@resource/objects/86676695a9f4121f4469/judge_spec.json",
+        "sha256": "@recompute"
+      }
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009",
+      "spec": {
+        "path": "@resource/objects/73a92670e041c1449eeb/judge_spec.json",
+        "sha256": "@recompute"
+      }
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010",
+      "spec": {
+        "path": "@resource/objects/da553481df02b1645c6b/judge_spec.json",
+        "sha256": "@recompute"
+      }
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-005",
+      "spec": {
+        "path": "@resource/objects/30907a7591e684e66d95/judge_spec.json",
+        "sha256": "@recompute"
+      }
+    }
+  ]
+}

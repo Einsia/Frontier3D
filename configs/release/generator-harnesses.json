@@ -1,0 +1,61 @@
+{
+  "version": "model-list-harness-runtime-v1",
+  "default": "codex",
+  "model_prefixes": {
+    "gpt-": "codex",
+    "claude": "claude-code",
+    "MiniMax": "claude-code",
+    "doubao": "claude-code",
+    "qwen": "claude-code",
+    "glm": "zcode",
+    "kimi": "kimi-codecli",
+    "deepseek": "deepseek-harness",
+    "gemini": "gemini-cli"
+  },
+  "native_names": {
+    "codex": "codex",
+    "claude-code": "claude",
+    "zcode": "zcode",
+    "kimi-codecli": "kimi",
+    "deepseek-harness": "dsh",
+    "gemini-cli": "gemini"
+  },
+  "cli": {
+    "codex": {
+      "package": "@openai/codex",
+      "version": "0.163.0",
+      "binary": "codex",
+      "env": "GENERATOR_CODEX_BIN"
+    },
+    "claude-code": {
+      "package": "@anthropic-ai/claude-code",
+      "version": "2.1.268",
+      "binary": "claude",
+      "env": "GENERATOR_CLAUDE_BIN"
+    },
+    "zcode": {
+      "package": "zcode-app-cli",
+      "version": "3.16.3-40",
+      "binary": "zcode",
+      "env": "GENERATOR_ZCODE_BIN"
+    },
+    "kimi-codecli": {
+      "package": "@moonshot-ai/kimi-code",
+      "version": "2.3.2",
+      "binary": "kimi",
+      "env": "GENERATOR_KIMI_BIN"
+    },
+    "deepseek-harness": {
+      "package": "@deepseek-ai/dsh",
+      "version": "0.2.1-rc.2",
+      "binary": "dsh",
+      "env": "GENERATOR_DSH_BIN"
+    },
+    "gemini-cli": {
+      "package": "@google/gemini-cli",
+      "version": "0.67.0",
+      "binary": "gemini",
+      "env": "GENERATOR_GEMINI_BIN"
+    }
+  }
+}

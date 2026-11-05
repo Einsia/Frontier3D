@@ -1,0 +1,30 @@
+{
+  "title": "柏林车站玻璃拱顶与站台",
+  "source_urls": [
+    "https://pixabay.com/images/download/morgengry-berlin-5010635_1920.jpg"
+  ],
+  "document_revision": 902,
+  "license": {
+    "label": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "be24d4b037ff2a794cae34f16e5bfce9562adf48ee1dd5f82b334e48978c35ff",
+      "size": [
+        1280,
+        853
+      ],
+      "original_document_token": "QJoPbN3bEoAF8wxuDNfc4y9Vnwy"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

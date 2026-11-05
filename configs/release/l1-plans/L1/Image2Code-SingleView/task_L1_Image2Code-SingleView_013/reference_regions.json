@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "af90725edfe05190eefc0936b3e4d1df7aa796f98b27b8c83230d5435997385f",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "lower drums",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.15,
+          0.45
+        ],
+        [
+          0.86,
+          0.45
+        ],
+        [
+          0.86,
+          0.72
+        ],
+        [
+          0.15,
+          0.72
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "upper toothed wheels",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.29,
+          0.22
+        ],
+        [
+          0.77,
+          0.22
+        ],
+        [
+          0.77,
+          0.58
+        ],
+        [
+          0.29,
+          0.58
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "central linkage",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.31,
+          0.38
+        ],
+        [
+          0.66,
+          0.38
+        ],
+        [
+          0.66,
+          0.64
+        ],
+        [
+          0.31,
+          0.64
+        ]
+      ]
+    }
+  ]
+}

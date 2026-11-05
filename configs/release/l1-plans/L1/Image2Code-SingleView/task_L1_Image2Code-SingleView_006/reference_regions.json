@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "648a88470396d0d1aaf21c2ae545a1ec1a14af3984e957eeb91e40192ff59deb",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "gym frame",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.26,
+          0.17
+        ],
+        [
+          0.79,
+          0.17
+        ],
+        [
+          0.79,
+          0.9
+        ],
+        [
+          0.26,
+          0.9
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "seat and backrest",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.41,
+          0.43
+        ],
+        [
+          0.63,
+          0.43
+        ],
+        [
+          0.63,
+          0.72
+        ],
+        [
+          0.41,
+          0.72
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "weight stack",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.65,
+          0.66
+        ],
+        [
+          0.78,
+          0.66
+        ],
+        [
+          0.78,
+          0.89
+        ],
+        [
+          0.65,
+          0.89
+        ]
+      ]
+    }
+  ]
+}

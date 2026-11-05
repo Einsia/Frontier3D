@@ -1,0 +1,227 @@
+[
+  {
+    "task_key": "l3-e01",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_001",
+    "title": "具身：精细厨房与家务生活区",
+    "category": "Image2Environment",
+    "instruction_sha256": "41dcd7fcb7387507e091f6372685e14a49b4cf422f4e2d305d7061daeba00366",
+    "source_instruction_sha256": "a66bf56fbc663e34538998f177e86f3a8dad20aa1665830808e95bb3b81afa8c",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_001",
+    "release_id": "3DBench-131",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_001",
+      "L3/Unified/l3-e01"
+    ],
+    "source_category": "embodied"
+  },
+  {
+    "task_key": "l3-e02",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_002",
+    "title": "具身：超市营业区、冷库与卸货区",
+    "category": "Image2Environment",
+    "instruction_sha256": "e4d6de56b69159eb0fbf1793f27c5c21e846114181c13911ac6063ad899cf0d4",
+    "source_instruction_sha256": "d59ca159adb9d652aa8e4a9ce82890b50be05a83ccb557cd8384de02bcefa454",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_002",
+    "release_id": "3DBench-132",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_002",
+      "L3/Unified/l3-e02"
+    ],
+    "source_category": "embodied"
+  },
+  {
+    "task_key": "l3-e03",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_003",
+    "title": "具身：维修工坊与室外物流场",
+    "category": "Image2Environment",
+    "instruction_sha256": "41f0666369febe7fae684fad94eba1eb43005e15d5c67986eb20305c71c1638f",
+    "source_instruction_sha256": "006aec73c895a18bcc36b986ae398901c4c53e55fb727cdf9fbddb5e91b4943c",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_003",
+    "release_id": "3DBench-133",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_003",
+      "L3/Unified/l3-e03"
+    ],
+    "source_category": "embodied"
+  },
+  {
+    "task_key": "l3-e04",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_004",
+    "title": "具身：育苗棚、果园与灌溉服务区",
+    "category": "Image2Environment",
+    "instruction_sha256": "7c6fd8e67944fa284d0097eba6ba69c1f01f41ddf7652f3ffe5bd3cea824cd17",
+    "source_instruction_sha256": "86da90ef4c82f15fd5dd2efc87fea760051b64fe68af94f594f9662c66f53a61",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_004",
+    "release_id": "3DBench-134",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_004",
+      "L3/Unified/l3-e04"
+    ],
+    "source_category": "embodied"
+  },
+  {
+    "task_key": "l3-e05",
+    "path": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_001",
+    "title": "具身：病区及物资服务走廊",
+    "category": "Text2Environment",
+    "instruction_sha256": "fa1f21a319310cf9003d9e869aacd83e131c2b96a3183d418d5577292b13a2ee",
+    "source_instruction_sha256": "48d398a1db3111960dadfe08348837405e13d4dedb3c48e8a57252d6532ebb9e",
+    "release_task_id": "L3/Text2Environment/task_L3_Text2Environment_001",
+    "release_id": "3DBench-135",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_005",
+      "L3/Unified/l3-e05"
+    ],
+    "source_category": "embodied"
+  },
+  {
+    "task_key": "l3-e06",
+    "path": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_002",
+    "title": "具身：水处理设施与检修平台",
+    "category": "Text2Environment",
+    "instruction_sha256": "47aed18f2afc51af91572b3d09e275a114e427634916494f1d638e1e1e81cfa3",
+    "source_instruction_sha256": "b65571e76aa58239e8ea00f9c97ad0972ac0d5383194744455346e018c9e53d4",
+    "release_task_id": "L3/Text2Environment/task_L3_Text2Environment_002",
+    "release_id": "3DBench-136",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_006",
+      "L3/Unified/l3-e06"
+    ],
+    "source_category": "embodied"
+  },
+  {
+    "task_key": "l3-g01",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_005",
+    "title": "Minecraft Open-World Village",
+    "category": "Image2Environment",
+    "instruction_sha256": "cf78623bedfb29ddb710c71ed6506285389f4107f17786533fa1c2b763f127e6",
+    "source_instruction_sha256": "02ae47c3add3cd53e8356555be4cbee717e953c4e720239fbbaeb675a53e56aa",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_005",
+    "release_id": "3DBench-137",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_007",
+      "L3/Unified/l3-g01"
+    ],
+    "source_category": "game"
+  },
+  {
+    "task_key": "l3-g02",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_006",
+    "title": "只狼：苇名城主楼及相连庭院",
+    "category": "Image2Environment",
+    "instruction_sha256": "3785508e3d29606dea5da85c1cea0fe1a49acc0c05c30931c3d0f5d14f2b1f6c",
+    "source_instruction_sha256": "55f80d0db0472999fe6aeb720634aac38c34161b4bba7d552130771652aa7115",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_006",
+    "release_id": "3DBench-138",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_008",
+      "L3/Unified/l3-g02"
+    ],
+    "source_category": "game"
+  },
+  {
+    "task_key": "l3-g03",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_007",
+    "title": "荒野大镖客2：瓦伦丁中心街区",
+    "category": "Image2Environment",
+    "instruction_sha256": "45ec0518cd00708a368e7481de3029430f8a47d124c2ab27fa3c8de157d1fd7a",
+    "source_instruction_sha256": "744bce7b8b7ad425c4c2ec900947f2a656c75af85a933e476eae7c0b2927fb4b",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_007",
+    "release_id": "3DBench-139",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_009",
+      "L3/Unified/l3-g03"
+    ],
+    "source_category": "game"
+  },
+  {
+    "task_key": "l3-g04",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_008",
+    "title": "守望先锋：Rialto 运河广场与后勤街区",
+    "category": "Image2Environment",
+    "instruction_sha256": "678e3e3ddf1088af13f4527ba43ddfd18005091f447b9d1d925fd301a22c42da",
+    "source_instruction_sha256": "4431a9f5e3d31646cd43c0c0c4e74a9d2126b372d1c2b64971df36277a0fb326",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_008",
+    "release_id": "3DBench-140",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_010",
+      "L3/Unified/l3-g04"
+    ],
+    "source_category": "game"
+  },
+  {
+    "task_key": "l3-g05",
+    "path": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_003",
+    "title": "星际拓荒风格：外星水力遗迹区域",
+    "category": "Text2Environment",
+    "instruction_sha256": "9531a48236dcf693e9c3aa2ada9c32cbf8d0f1d11d821451ec66b1e7f2dc69c9",
+    "source_instruction_sha256": "808e6fa5748c6c5bbaea78769bbc39bbf93114f914a9b7e06e1ffb438e7369fa",
+    "release_task_id": "L3/Text2Environment/task_L3_Text2Environment_003",
+    "release_id": "3DBench-141",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_011",
+      "L3/Unified/l3-g05"
+    ],
+    "source_category": "game"
+  },
+  {
+    "task_key": "l3-g06",
+    "path": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_004",
+    "title": "旷野之息风格：驿站、废墟与山谷生活区",
+    "category": "Text2Environment",
+    "instruction_sha256": "44566323770499e81cc01a1699ecc21551687feab733cf170b2235d922e6fe75",
+    "source_instruction_sha256": "0d9ed4c95d281812f6ac30856488d11373ecd4753dfeb22409827403432f10d8",
+    "release_task_id": "L3/Text2Environment/task_L3_Text2Environment_004",
+    "release_id": "3DBench-142",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_012",
+      "L3/Unified/l3-g06"
+    ],
+    "source_category": "game"
+  },
+  {
+    "task_key": "l3-r01",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_009",
+    "title": "现实：横店秦王宫前广场、宫门和相连院落",
+    "category": "Image2Environment",
+    "instruction_sha256": "8e579c52b213e229127d5607feac7ee101fc3e303970f71122d61cf6a6edc832",
+    "source_instruction_sha256": "5ccfb8064a42a8719b9070fecbd7fa1f7ed072b4c5fd5c48935c51c97b367f80",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_009",
+    "release_id": "3DBench-143",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_013",
+      "L3/Unified/l3-r01"
+    ],
+    "source_category": "real_world"
+  },
+  {
+    "task_key": "l3-r02",
+    "path": "data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_010",
+    "title": "现实：长洲渡轮码头与市场后勤区",
+    "category": "Image2Environment",
+    "instruction_sha256": "e14a0d4bb333747b81f007a513db92364f4bb31d77508b7f4614fcf6a792cadd",
+    "source_instruction_sha256": "1ad6f5e626c473fab7bbc39fdd8144f783b46c7bdfde2b367e79f6befe5de19c",
+    "release_task_id": "L3/Image2Environment/task_L3_Image2Environment_010",
+    "release_id": "3DBench-144",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_014",
+      "L3/Unified/l3-r02"
+    ],
+    "source_category": "real_world"
+  },
+  {
+    "task_key": "l3-r03",
+    "path": "data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_005",
+    "title": "现实：县域铁路站前综合交通枢纽",
+    "category": "Text2Environment",
+    "instruction_sha256": "19183c1181693485ba3e54dfaac478d827159989511cc7ebab1266483c2d3c06",
+    "source_instruction_sha256": "5901ef6a6187238782fa99fe544dffe3e998898fb212049ae08143b07f4db984",
+    "release_task_id": "L3/Text2Environment/task_L3_Text2Environment_005",
+    "release_id": "3DBench-145",
+    "legacy_task_ids": [
+      "L3/Unified/task_L3_Unified_015",
+      "L3/Unified/l3-r03"
+    ],
+    "source_category": "real_world"
+  }
+]

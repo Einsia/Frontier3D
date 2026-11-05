@@ -1,0 +1,17 @@
+{
+  "uid": "227e1cfecce148318531bc1b157192d7",
+  "file": "source.glb",
+  "download_filename": "baguette_basket.glb",
+  "bytes": 19440624,
+  "sha256": "04deef430a3f6f9acf9afe2c11b127f04c9d4da5520ee77d547483fa6e8caa70",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Armin Rezaei (https://sketchfab.com/Armin2am)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/baguette-basket-227e1cfecce148318531bc1b157192d7",
+    "title": "Baguette Basket"
+  },
+  "gltf_meshes": 12,
+  "gltf_images": 7,
+  "animations": []
+}

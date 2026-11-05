@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "task_id": "L2/Reference2Scene",
+  "spec_sha256": "cf2a78d64bddcb541f3adede1c521deea80cf87aa38e5334d0f3056e25423373",
+  "instruction_sha256": "8de1f13acf28165a4445c7491f3a7da4891f6a1efc58edbbc7a4306d5a905d20",
+  "checks": {
+    "ground_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "bed_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "cabinetry_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "lamp_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "wall_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "window_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "main_camera": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "alternate_camera": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "scene_collision_budget": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "no_unsupported_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "supported_furniture": {
+      "source_kind": "instruction",
+      "source_quote": "Create a complete, editable three-dimensional bedroom from the two supplied reference images. Focus on the bed and bedding, bedside area, cabinetry, lamps, window-side space, wall layers and circulation. Match the furniture proportions, relative placement and overall character of the room.\n\nTreat the images as different views of the same space. The bed, cabinetry and walls must remain coherent as the viewpoint changes. Ground furniture plausibly and give fabric, wood, walls and glass appropriate material properties. Build actual three-dimensional structures rather than placing the whole reference image on a plane to stand in for the room.\n\nModel in metres with Z up. Set up and retain two cameras, matching the viewing position, direction and composition of each reference image as closely as possible. Start with a 30 mm lens and adjust framing to suit the references. Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1. Submit reproducible modeling code, scene.blend with complete textures, and main.png and alternate.png corresponding to the reference views. Render both outputs from the same scene.",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "render_main": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "image_validity uses a fixed luminance/visible-pixel fraction threshold (2/255 and 0.001). This is a blank-image heuristic, not a task-stated quality threshold; calibrate bright/dark positive and negative images.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "render_alternate": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "image_validity uses a fixed luminance/visible-pixel fraction threshold (2/255 and 0.001). This is a blank-image heuristic, not a task-stated quality threshold; calibrate bright/dark positive and negative images.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "reference_main_similarity": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "reference_alternate_similarity": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "main_native_size": {
+      "source_kind": "instruction",
+      "source_quote": "Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "alternate_native_size": {
+      "source_kind": "instruction",
+      "source_quote": "Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "editable_scene": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "metric_units": {
+      "source_kind": "instruction",
+      "source_quote": "Build actual three-dimensional structures rather than placing the whole reference image on a plane to stand in for the room.\n\nModel in metres with Z up",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "no_billboards": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "render_engine": {
+      "source_kind": "instruction",
+      "source_quote": "Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "view_transform": {
+      "source_kind": "instruction",
+      "source_quote": "Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "render_look": {
+      "source_kind": "instruction",
+      "source_quote": "Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "render_exposure": {
+      "source_kind": "instruction",
+      "source_quote": "Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "render_gamma": {
+      "source_kind": "instruction",
+      "source_quote": "Render two 669×1000 images using Cycles, Filmic, High Contrast, exposure 0 and gamma 1",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "seed_reproducibility": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "delivery_main": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "delivery_alternate": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    }
+  },
+  "manual_requirements": [
+    {
+      "id": "semantic_identity",
+      "question": "Do the visible entities and their parts match the requested object categories, rather than labels alone?",
+      "evidence_needed": "Both renders, entity inventory, and geometry diagnostics."
+    },
+    {
+      "id": "materials_style",
+      "question": "Do the requested wood, upholstery, glass and other materials visually match the task/references?",
+      "evidence_needed": "Both renders and reference/target crops where available."
+    },
+    {
+      "id": "layout_views",
+      "question": "Do silhouette, relative proportions, occlusion and composition agree with both references?",
+      "evidence_needed": "Paired reference/candidate views; reviewer-defined target regions and landmarks."
+    },
+    {
+      "id": "reference_annotations",
+      "question": "Are the two-view target regions, silhouettes and landmark correspondences correctly annotated?",
+      "evidence_needed": "Human-reviewed normalized ROI/landmark/mask annotations bound to each reference image hash."
+    }
+  ],
+  "visual_regions": []
+}

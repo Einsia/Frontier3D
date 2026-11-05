@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=80,<81", "wheel>=0.45,<1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "3dbench"
+version = "0.1.0"
+description = "Reproducible Blender generation and geometry/visual evaluation benchmark"
+requires-python = ">=3.13"
+license = {text = "Apache-2.0"}
+dependencies = [
+  "python-dotenv>=1.0,<2", "jsonschema>=4.23,<5",
+  "numpy>=2.1,<3", "Pillow>=11,<12", "scikit-image>=0.25,<1",
+  "scipy>=1.14,<2", "shapely==2.1.2", "manifold3d==3.5.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.8,<1"]
+detector = ["torch>=2.6", "transformers>=4.49,<5"]
+
+[project.scripts]
+3dbench = "benchmark.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["benchmark*", "orchestrator*", "src*", "harness*", "tools*"]
+exclude = ["tests*", "data*", "experimental*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

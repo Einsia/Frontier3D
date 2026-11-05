@@ -1,0 +1,17 @@
+{
+  "id": "rassor",
+  "author": "NASA and NASA 3D Resources contributors",
+  "source": "https://github.com/nasa/NASA-3D-Resources/tree/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Regolith%20Advanced%20Surface%20Systems%20Operations%20Robot%20%28RASSOR%29",
+  "commit": "11ebb4ee043715aefbba6aeec8a61746fad67fa7",
+  "rights": "NASA media usage guidelines; not relabelled CC0",
+  "rights_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "downloaded_files": [
+    {
+      "source_path": "3D Models/Regolith Advanced Surface Systems Operations Robot (RASSOR)/Regolith Advanced Surface Systems Operations Robot (RASSOR).glb",
+      "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Regolith%20Advanced%20Surface%20Systems%20Operations%20Robot%20%28RASSOR%29/Regolith%20Advanced%20Surface%20Systems%20Operations%20Robot%20%28RASSOR%29.glb",
+      "sha256": "87792d6778a755031e82a6db7af71613fc9e2442ddd042cc5fdaddca15efa385",
+      "bytes": 6283464,
+      "local": "assets/expansion/nasa-assemblies/rassor/source.glb"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/rotary_table",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/rotary_table",
+    "license": "CC0-1.0",
+    "changes": [
+      "Sleeve supports disk underside at z=19."
+    ],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "1a9f6aa4465642e49c97db1ad152161e5dbf753f1c1d5f5b81a65b274ba42d3c",
+    "assembled.png": "9d3c4363be899d77a232fb7856f69419ef4c859ddd28659db99735b8b3ff1e76",
+    "exploded.png": "15e319fd999c416d72d91141ae3183ae4953319fd35a333a5f6fe036726e65b5",
+    "front.png": "6c8ffa8646327f07c8221544497d3676a4c6a68b6159d5a0b29ae92b63845abb",
+    "geometry.json": "9cf5ee45ede3e7c91081d7c4b5b462cff50a3c876bb22417e892ab1a0918996d",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "c4f10ac9cfd893441212eae763b74bf7993b590607d06389134540f2190d25c6",
+    "qa.json": "8cf6749c69f810f4beb7a951e686944e672b78a4958c4c8736a01d3bd28de919",
+    "scene.blend": "a3c0159405f81ff76601ff5990b4681c675c1c238f75138257baf7d38233e5f1",
+    "scene.glb": "1bbcd2002787ac1ae44b9a8429af6ec8197fb73978af31e2f3861814d3d69551",
+    "spec.json": "86ff74555302799ebc60bd7d8179d5ee880086b87b5073e5941120a7acbb6b62",
+    "top.png": "e8f6d1a2e8d61b5ac17ecbd90c3d2908781b928fbb756a2c42f1aef93026ffe7"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "treasure_chest",
+  "source_url": "https://polyhaven.com/a/treasure_chest",
+  "author": "Rico Cilliers",
+  "title": "Treasure Chest",
+  "license": "CC0-1.0",
+  "license_evidence": "publisher.html",
+  "files": [
+    {
+      "path": "treasure_chest/original/treasure_chest.blend",
+      "size": 2621706,
+      "sha256": "a1100399b814d8f06590fe067ab93f9395f7b0ebf9fd49b27b77d32ae8ae4dd4",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/treasure_chest/treasure_chest_1k.blend"
+    },
+    {
+      "path": "treasure_chest/original/textures/treasure_chest_metal_1k.exr",
+      "size": 168816,
+      "sha256": "77301e2eb6a7b9225284207a70c569951b8ab5b0843d0b79f6268bd7ededfa18",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_metal_1k.exr"
+    },
+    {
+      "path": "treasure_chest/original/textures/treasure_chest_rough_1k.exr",
+      "size": 1183153,
+      "sha256": "0d456f1597ffaa1c5caa43023cd5f60bf386753d008153f4cdc78509673ea0f2",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_rough_1k.exr"
+    },
+    {
+      "path": "treasure_chest/original/textures/treasure_chest_diff_1k.jpg",
+      "size": 812089,
+      "sha256": "4a2ee3b53835e7d4a3e411863c7829f37df1221aeb1cd78d89e24239cf8bbd0b",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/treasure_chest/treasure_chest_diff_1k.jpg"
+    },
+    {
+      "path": "treasure_chest/original/textures/treasure_chest_nor_gl_1k.exr",
+      "size": 2028681,
+      "sha256": "8c7920313b200ca71f906f82c99fda3aa461f8d924873c571fabeca19153ba07",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/treasure_chest/treasure_chest_nor_gl_1k.exr"
+    }
+  ],
+  "preview": {
+    "path": "treasure_chest/publisher-preview.png",
+    "size": 815846,
+    "sha256": "0d996989a1dbaad0e3882026ee1cbcd47a4eda1b4fb35df3f89076728f57c190",
+    "url": "https://cdn.polyhaven.com/asset_img/thumbs/treasure_chest.png?width=768&height=768&v=0a748403"
+  },
+  "source_type": "publisher Blender asset",
+  "declared_triangles": 103330,
+  "changes": "Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting.",
+  "candidate": "S12",
+  "replaced_title": "分块主镜与多层遮阳板望远镜",
+  "source_original_sha256": "a1100399b814d8f06590fe067ab93f9395f7b0ebf9fd49b27b77d32ae8ae4dd4",
+  "raw_upstream_redistributed": true
+}

@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-photo-localized-v5.0.0",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "761589699c2d192e426fd8a745b13a054f0ab76a0c6d3ac14c343779d660269b",
+  "image_size": [
+    1280,
+    960
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "largest cropped foreground carousel horse at right",
+      "label": "largest cropped foreground carousel horse at right",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.744,
+          0.439,
+          1.0,
+          1.0
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. largest cropped foreground carousel horse at right"
+    },
+    {
+      "id": "target_2",
+      "query": "complete nearest carousel horse left of image center",
+      "label": "complete nearest carousel horse left of image center",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.044,
+          0.413,
+          0.337,
+          1.0
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. complete nearest carousel horse left of image center"
+    },
+    {
+      "id": "target_3",
+      "query": "red decorative rear panel with central oval mirror",
+      "label": "red decorative rear panel with central oval mirror",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.661,
+          0.085,
+          0.822,
+          0.54
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. red decorative rear panel with central oval mirror"
+    }
+  ]
+}

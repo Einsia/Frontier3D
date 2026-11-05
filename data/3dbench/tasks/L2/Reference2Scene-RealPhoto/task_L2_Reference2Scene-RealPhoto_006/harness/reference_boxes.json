@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-photo-localized-v5.0.0",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "500e52bc6d5a3e65921c9eeef6cde68b4d93a711538fa9135216c80151d49fe8",
+  "image_size": [
+    1280,
+    853
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "blue-framed chalkboard",
+      "label": "blue-framed chalkboard",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.466,
+          0.234,
+          0.751,
+          0.465
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. blue-framed chalkboard"
+    },
+    {
+      "id": "target_2",
+      "query": "front-facing book display",
+      "label": "front-facing book display",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.652,
+          0.488,
+          0.908,
+          0.91
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. front-facing book display"
+    },
+    {
+      "id": "target_3",
+      "query": "red play structure including platform",
+      "label": "red play structure including platform",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.198,
+          0.065,
+          0.499,
+          0.837
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. red play structure including platform"
+    }
+  ]
+}

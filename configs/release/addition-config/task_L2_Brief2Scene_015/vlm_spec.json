@@ -1,0 +1,280 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+  "family": "Brief2Scene",
+  "instruction_sha256": "0eb5e4c857eb663d2f3c4cf606fc84665b6234dc64f142eaea252325413e41a5",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为带穿孔墙板的工具室？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Create a 3.0 x 2.4 m tool room with perforated wall panels"
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "主视角是否从工作台一侧上方观察？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "viewed above one side of the workbench"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "工作台是否具有钢制台面？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "The steel-topped bench"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "台面是否具有布局标记？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "with layout marks"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "台钳是否位于工作台左端？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "A left-end vise"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "台钳是否与法兰形成真实夹持接触且实体不交叠？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "A left-end vise grips a flange 0.12 m in diameter and 0.03 m thick without intersection."
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "洞洞板是否位于工作台上方？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "A 1.20 x 0.80 m pegboard starts 0.10 m above the bench."
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "工具板是否包含扳手及其对应轮廓位置？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Outline five wrenches"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "工具板是否包含螺丝刀及其对应轮廓位置？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "four screwdrivers"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "工具板是否包含钳子及其对应轮廓位置？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "two pliers"
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "双端梅花扳手是否已从板上取走，留下完整且与所持扳手完全匹配的空轮廓？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "the double-ended ring wrench is removed, leaving its complete matching outline."
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "固定机械臂是否位于工作台后方中央？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "A fixed arm at the rear-centre"
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "双指夹爪是否接触并夹持扳手手柄中部？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Its two-finger gripper holds the wrench at mid-handle"
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "扳手工作环端是否朝向法兰？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "working ring end aimed toward the flange"
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "场景是否具有要求添加的螺栓？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Add three bolts"
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "场景是否具有抹布？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a rag"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "场景是否具有零件托盘？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a parts tray"
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "台前是否保留操作空间，侧面是否形成连续可通行路线？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Keep at least 0.80 m operating depth in front and a continuous 0.90 m side passage."
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "板上剩余工具是否均不侵入相邻工具位置？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "remaining tools do not overlap neighbouring positions"
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "墙板是否呈灰白色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "grey-white wall panels"
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "工具轮廓是否呈橙色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "orange tool outlines"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "机械臂是否呈深灰色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a dark-grey arm"
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "照明是否呈冷白色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "cool-white light"
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "构图是否同时展示机械臂、所持扳手和空轮廓？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Frame arm, wrench and empty outline"
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "机器人是否保持关节式静态姿态，且无工具使用或装配动画？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Static; no tool-use or assembly animation."
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

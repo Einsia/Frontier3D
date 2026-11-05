@@ -1,0 +1,35 @@
+{
+  "index": 4,
+  "key": "surgical",
+  "title": "Surgical Room",
+  "source_url": "https://sketchfab.com/3d-models/charite-university-hospital-operating-room-9ec46c4d615a4581a235eebfb162f574",
+  "slot": 7,
+  "excluded": false,
+  "source_file": "sources/surgical/charite_university_hospital_-_operating_room.glb",
+  "sha256": "63322de4231d814259b88c3089a5eb67118ee2dfa22c13a2a4ca074b390a4743",
+  "bytes": 46555604,
+  "task_path": "tasks/L2/Reference2Scene/task_L2_Reference2Scene-007",
+  "embedded_attribution": {
+    "author": "ChrisRE (https://sketchfab.com/ChrisRE)",
+    "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+    "source": "https://sketchfab.com/3d-models/charite-university-hospital-operating-room-9ec46c4d615a4581a235eebfb162f574",
+    "title": "Charité University Hospital - Operating Room"
+  },
+  "uid": "9ec46c4d615a4581a235eebfb162f574",
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/bbfe3f7dbcdd4122b966b85b9786a989",
+    "label": "CC Attribution-NonCommercial",
+    "fullName": "Creative Commons Attribution-NonCommercial",
+    "requirements": "Author must be credited. No commercial use.",
+    "url": "http://creativecommons.org/licenses/by-nc/4.0/",
+    "slug": "by-nc"
+  },
+  "author": {
+    "displayName": "ChrisRE",
+    "profileUrl": "https://sketchfab.com/ChrisRE",
+    "username": "ChrisRE"
+  },
+  "resource_family": "sketchfab/9ec46c4d615a4581a235eebfb162f574",
+  "author_name": "ChrisRE",
+  "preparation": "../../../../../../curation/l2-refresh-20261011/authoring/build_scene.py"
+}

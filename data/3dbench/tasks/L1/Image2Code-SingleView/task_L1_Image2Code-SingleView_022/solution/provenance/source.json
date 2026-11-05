@@ -1,0 +1,19 @@
+{
+  "uid": "8fb84d65e39f4dadbd8de3a84f00e6e5",
+  "name": "Stuffed Baby Giraffe",
+  "source_url": "https://sketchfab.com/3d-models/stuffed-baby-giraffe-8fb84d65e39f4dadbd8de3a84f00e6e5",
+  "author": {
+    "displayName": "Andrei Alexandrescu",
+    "profileUrl": "https://sketchfab.com/Andrei_Alexandrescu"
+  },
+  "license": {
+    "label": "CC-BY-NC-SA-4.0",
+    "url": "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "dcaa12778e007f12832c0255a0bdda5f86504e01c7190c3d2b87b71280f515d4",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

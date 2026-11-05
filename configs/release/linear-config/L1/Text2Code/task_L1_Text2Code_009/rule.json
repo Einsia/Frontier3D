@@ -1,0 +1,69 @@
+{
+  "task_id": "L1/Text2Code/task_L1_Text2Code_009",
+  "category": "Text2Code",
+  "level": "L1",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {},
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/f9220b47abdac63f32fa/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_part_roles": 0.0375,
+        "vlm_housing": 0.0375,
+        "vlm_filter": 0.0375,
+        "vlm_caps": 0.0375,
+        "vlm_seals": 0.0375,
+        "vlm_tie_rod": 0.0375,
+        "vlm_nut": 0.0375,
+        "vlm_washer": 0.0375,
+        "vlm_assembly_clearance": 0.0375,
+        "vlm_topology": 0.0375,
+        "vlm_solid_validity": 0.0375,
+        "vlm_units": 0.0375,
+        "vlm_hierarchy": 0.0375,
+        "vlm_state_cycle": 0.0375,
+        "vlm_glb_assembled": 0.0375,
+        "vlm_materials": 0.0375,
+        "vlm_aesthetic_composition": 0.1,
+        "vlm_aesthetic_light_color": 0.1,
+        "vlm_aesthetic_finish": 0.1,
+        "vlm_aesthetic_coherence": 0.1
+      },
+      "detail": {
+        "detail_semantic_housing": 0.06,
+        "detail_semantic_filter": 0.06,
+        "detail_semantic_caps": 0.06,
+        "detail_semantic_seals": 0.06,
+        "detail_semantic_tie_rod": 0.06,
+        "detail_semantic_nut": 0.06,
+        "detail_semantic_washer": 0.06
+      },
+      "content": {
+        "detail_semantic_housing": 0.06,
+        "detail_semantic_filter": 0.06,
+        "detail_semantic_caps": 0.06,
+        "detail_semantic_seals": 0.06,
+        "detail_semantic_tie_rod": 0.06,
+        "detail_semantic_nut": 0.06,
+        "detail_semantic_washer": 0.06
+      }
+    }
+  }
+}

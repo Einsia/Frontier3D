@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-r03",
+  "id": "L3/RealWorldEnvironment/RegionalRailHub",
+  "domain": "real_world",
+  "input_mode": "text",
+  "title": "现实：县域铁路站前综合交通枢纽",
+  "title_en": "Regional Rail Station and Intermodal Forecourt",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "19183c1181693485ba3e54dfaac478d827159989511cc7ebab1266483c2d3c06",
+  "chinese_instruction_sha256": "d65dcb87e352f529bcc7f43f1e92af06f110f0968eca2cef00a6dcea89f035ea",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "5901ef6a6187238782fa99fe544dffe3e998898fb212049ae08143b07f4db984",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

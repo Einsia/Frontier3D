@@ -1,0 +1,384 @@
+{
+  "version": "l1-evaluation-design-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_010",
+  "category": "Image2Code",
+  "status": "design_with_legacy_partial_implementation",
+  "scoring_profile": "image_reference",
+  "sources": {
+    "instruction.md": "67107387635c1866665e79ec015f14f0cb7ad10a4a7d25e1261d4ca7e2a1082b",
+    "solution/EVALUATION.md": "88a31daa8303d354efa68a1ac4eed6edc880e3668eff90058bee5a74d1ec5474",
+    "harness/eval_spec.json": "3a70682950e0358b44340a8a93d109bb19dddd5859f9bab5ce9b26e09d89b6ce"
+  },
+  "title": "评测接口：双翼科学着陆器",
+  "case_focus": "重点结构：中央仪器甲板与设备箱、三组着陆腿脚垫、两片大型分扇区圆形太阳翼、铰接支架及可见传感器和仪器结构。圆翼为薄型框架组件而非厚圆盘，并与中央平台连接。 输入共 4 个视图，私有 reference/scene.blend 只作为可见几何和材质参考。源网格可能是合并、开面或扫描网格，因此不能要求提交逐顶点一致，也不能以原网格缺陷作为通过标准。",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "line": 7,
+      "source_quote": "| 可执行性 | 入口运行、固定产物有效、原生重渲染 | 清洁环境中执行约定命令；打开 Blender 和 GLB，不接受只有预渲染图。 |",
+      "dimension": "可执行性",
+      "criteria": [
+        "入口运行、固定产物有效、原生重渲染",
+        "清洁环境中执行约定命令；打开 Blender 和 GLB，不接受只有预渲染图。"
+      ],
+      "methods": [
+        "execution",
+        "delivery"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_02",
+      "line": 8,
+      "source_quote": "| 部件结构 | 题面语义部件覆盖、可编辑分组 | 评测侧按形体标注部件，用几何与空间关系匹配，不依赖源或提交对象名。通用螺丝等允许实例。 |",
+      "dimension": "部件结构",
+      "criteria": [
+        "题面语义部件覆盖、可编辑分组",
+        "评测侧按形体标注部件，用几何与空间关系匹配，不依赖源或提交对象名。通用螺丝等允许实例。"
+      ],
+      "methods": [
+        "editable"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_03",
+      "line": 9,
+      "source_quote": "| 形状 | 可见表面距离、各视角轮廓 IoU、薄结构及孔隙 | 先统一尺度并做整体刚体对齐，不逐件独立配准；以各给定相机可见表面并集为范围。单视图隐藏形状允许合理歧义。 |",
+      "dimension": "形状",
+      "criteria": [
+        "可见表面距离、各视角轮廓 IoU、薄结构及孔隙",
+        "先统一尺度并做整体刚体对齐，不逐件独立配准；以各给定相机可见表面并集为范围。单视图隐藏形状允许合理歧义。"
+      ],
+      "methods": [
+        "editable",
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_04",
+      "line": 10,
+      "source_quote": "| 尺度 | 最大跨度误差 | 目标 1000.000 mm，容差 2%；其他可见比例连续评分，不加入隐藏尺寸门槛。 |",
+      "dimension": "尺度",
+      "criteria": [
+        "最大跨度误差",
+        "目标 1000.000 mm，容差 2%；其他可见比例连续评分，不加入隐藏尺寸门槛。"
+      ],
+      "methods": [
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_05",
+      "line": 11,
+      "source_quote": "| 装配 | 对齐、接触、支撑、穿透与缝隙 | 按题面部件关系建立探针，BVH/截面检测；允许设计接合，不把所有表面重叠一概判错。 |",
+      "dimension": "装配",
+      "criteria": [
+        "对齐、接触、支撑、穿透与缝隙",
+        "按题面部件关系建立探针，BVH/截面检测；允许设计接合，不把所有表面重叠一概判错。"
+      ],
+      "methods": [
+        "assembly"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_06",
+      "line": 12,
+      "source_quote": "| 双状态 | 帧 1/61 可逆、几何保持、GLB 对齐 | 爆炸位移不匹配作者选择；只验证主要分组能分开、形状不变、回帧恢复。GLB 与帧 1 同形。 |",
+      "dimension": "双状态",
+      "criteria": [
+        "帧 1/61 可逆、几何保持、GLB 对齐",
+        "爆炸位移不匹配作者选择；只验证主要分组能分开、形状不变、回帧恢复。GLB 与帧 1 同形。"
+      ],
+      "methods": [
+        "state",
+        "delivery",
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_07",
+      "line": 13,
+      "source_quote": "| 视觉 | 主材质类别、配色、表面特征及主视图构图 | 从提交原生场景重渲染并按语义区域比较；细字、标志、细微磨损不做硬指标。 |",
+      "dimension": "视觉",
+      "criteria": [
+        "主材质类别、配色、表面特征及主视图构图",
+        "从提交原生场景重渲染并按语义区域比较；细字、标志、细微磨损不做硬指标。"
+      ],
+      "methods": [
+        "image_pair"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_08",
+      "line": 14,
+      "source_quote": "| 稳定与效率 | 重复运行一致、时间/token/调用/重试 | 同输入重复运行，质量与资源成本分开记录。 |",
+      "dimension": "稳定与效率",
+      "criteria": [
+        "重复运行一致、时间/token/调用/重试",
+        "同输入重复运行，质量与资源成本分开记录。"
+      ],
+      "methods": [
+        "execution",
+        "delivery",
+        "cost"
+      ],
+      "status": "designed_not_fully_implemented"
+    }
+  ],
+  "method_definitions": {
+    "execution": "外层清洁基准+seed 0/1/2执行；原生/导出独立加载；交付哈希绑定，失败不删除。",
+    "delivery": "独立重新导入GLB比较世界尺度、几何/孔槽/姿态和可表达材质；不可表达的程序化节点单列，不自动烘焙位图。",
+    "editable": "检查实际可编辑几何/部件组织及代码重建；对象名、变量名、顶点顺序不作为正确性真值。",
+    "numeric": "按本题数值条款拟合实际平面/圆柱/截面；报告mm误差和容差；孔槽用边界+占用/连通检查，AABB仅作粗筛。",
+    "visible_geometry": "仅公开视角可见面并集做精确GT；统一整体配准、独立尺度门、逐图轮廓/可见面距离/法线；局部区域宏平均，未知背面仅检查合理性。",
+    "assembly": "以几何匹配角色/对称置换；一次整体刚体对齐后测轴线、接触、规定间隙和实际实体穿透，禁止逐件配准。",
+    "state": "按本题帧策略比较局部形状、身份和恢复；GLB对帧1；不要求参考的爆炸方向或距离。",
+    "image_pair": "从提交原生场景重渲染，再与本题公开参考图比较；前景轮廓、区域色差/结构和相机误差分报，进入主评分；提交PNG与重渲染须一致。全图SSIM不独立决定达标。",
+    "cost": "保留成功、失败、重试和反馈各轮时间/token/调用；未知token为null；成本与质量分列。"
+  },
+  "public_numeric_clauses": [
+    "Use a maximum overall span of 1000.000 mm as the task scale convention, with a 2% tolerance. This is a reconstruction scale, not a claim about the real product's measured size. Infer the remaining proportions from the provided images. Export in metres with Z up. Keep rigid components free of gross intersections and floating attachments, while allowing intended joints and flexible cables. Match the dominant materials, colours and visible surface character; fine wear may be simplified without losing material identity.",
+    "At frame 1 save the assembled pose. At frame 61 provide a readable exploded arrangement separating the major semantic groups without changing their geometry; choose useful directions and spacing yourself. Returning to frame 1 must restore the assembly. Export scene.glb in the assembled state. Render main.png at 1000 by 1000 pixels using a camera matching the supplied primary image, with neutral studio lighting, Cycles, AgX and exposure 0. Keep the view and lighting in scene.blend. Do not retrieve the source model or any additional source views from the internet."
+  ],
+  "local_regions": [],
+  "expected_parts": null,
+  "frames": {
+    "protocol": "l1-reproduction-frame-policy-v1",
+    "task_id": "L1/Image2Code/task_L1_Image2Code_010",
+    "native_frames": [
+      1,
+      61,
+      1
+    ],
+    "glb_frames": [
+      1
+    ],
+    "cross_format_frames": [
+      1
+    ],
+    "scope": "Native declared states; exported GLB at assembled frame 1 only",
+    "native_inspection": "single_session_with_fixed_identity_return",
+    "limitation": "Return checks do not prove rigid shape preservation during explosion, true separation or complete materials"
+  },
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "main.png",
+    "README.md"
+  ],
+  "current_tolerances": {
+    "span_m": 0.02
+  },
+  "reference_images": {
+    "input/reference.png": "6a9f2a63fa3caea6a738b78f048aadaa09dc2600d381eb00e61cf3fb3c504d20",
+    "input/front.png": "d6525d1aa3fcc9cb0c50c1178b2397daa969f764b258b6e32be45a512eda6dbc",
+    "input/side.png": "2fd3000f0f7489ce3c605f8e52423a106da047254f36b3db523e49b5c4d20f82",
+    "input/top.png": "694ac114cab8e149ff648c8bade75be5f31bbe7a77b78d0551a23ff5b40f0763"
+  },
+  "material_policy": {
+    "kind": "procedural_only",
+    "bitmap_inputs": "forbidden",
+    "constant_colors_and_procedural_nodes": "allowed",
+    "apply_bitmap_ban_to_reference_assets": false,
+    "authority": "user_goal_2026-10-03",
+    "requires_public_prompt_override": true
+  },
+  "deferred": [],
+  "scope_limits": [
+    "私有solution只供测评端，不进入生成输入",
+    "设计完成不等于算法实现或候选通过；各项原始误差和未实现项保留",
+    "未公开的尺度/距离/图像阈值须pilot校准，不能静默作为硬门槛",
+    "缺件/盲孔/错配合/破坏保护区等反例须先验收，再提升覆盖声明"
+  ],
+  "current_requirements": [
+    {
+      "id": "visible_components",
+      "implementation": "missing",
+      "check_ids": [],
+      "reason": "尚未接入本题语义部件识别、局部特征与连接判定；不能以非空网格/全图相似度代替。"
+    },
+    {
+      "id": "editable_3d",
+      "implementation": "partial",
+      "check_ids": [
+        "real_geometry",
+        "editable"
+      ],
+      "reason": "只核验非平面网格及基础可编辑性，尚不能识别语义分组或薄壳冒充。"
+    },
+    {
+      "id": "overall_span",
+      "implementation": "complete",
+      "check_ids": [
+        "overall_span"
+      ],
+      "reason": ""
+    },
+    {
+      "id": "units_orientation",
+      "implementation": "partial",
+      "check_ids": [
+        "overall_span"
+      ],
+      "reason": "使用经过场景单位转换的真实顶点计算物理跨度，未绑定本题语义朝向。"
+    },
+    {
+      "id": "proportions",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "全图 SSIM 仅作整体外观证据，其他视图/局部比例及三维一致性尚未绑定。"
+    },
+    {
+      "id": "connections",
+      "implementation": "missing",
+      "check_ids": [],
+      "reason": "未绑定本题部件、孔隙和真实接触/碰撞关系。"
+    },
+    {
+      "id": "materials",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "主图帧1在基准和每seed按本题粗二维ROI与真实几何掩膜对拍并乘入主分；不证明帧61外观、精确语义分割、厚度/连接或材质与灯光各自正确，其他公开视图和标定仍待完成。"
+    },
+    {
+      "id": "primary_view",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity",
+        "saved_camera"
+      ],
+      "reason": "主图帧1在基准和每seed按本题粗二维ROI与真实几何掩膜对拍并乘入主分；不证明帧61外观、精确语义分割、厚度/连接或材质与灯光各自正确，其他公开视图和标定仍待完成。"
+    },
+    {
+      "id": "render_settings",
+      "implementation": "complete",
+      "check_ids": [
+        "saved_resolution",
+        "render_engine",
+        "view_transform",
+        "exposure"
+      ],
+      "reason": ""
+    },
+    {
+      "id": "camera_lighting",
+      "implementation": "partial",
+      "check_ids": [
+        "saved_camera"
+      ],
+      "reason": "取证保存相机及可见灯数量；中性照明/环境光的实际外观尚待判定，不把灯对象数量当照明正确性。"
+    },
+    {
+      "id": "main_png",
+      "implementation": "partial",
+      "check_ids": [
+        "main_loadable",
+        "main_dimensions",
+        "main_format",
+        "main_render_consistency"
+      ],
+      "reason": "每次seed保存相机在帧1可信重渲染并核对PNG像素；完整渲染管线与容差标定仍待验收。"
+    },
+    {
+      "id": "state_cycle",
+      "implementation": "partial",
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "已配置题目帧策略与独立 seed 比较；姿态/语义组、可读性、完整保形及材质等价未正式标定。"
+    },
+    {
+      "id": "glb_readable",
+      "implementation": "complete",
+      "check_ids": [
+        "export"
+      ],
+      "reason": ""
+    },
+    {
+      "id": "glb_equivalence",
+      "implementation": "partial",
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "跨格式诊断已复用，但本题等价阈值和角色/材质映射未标定。"
+    },
+    {
+      "id": "reconstruction",
+      "implementation": "partial",
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "外层冻结公开输入及源码、禁网执行、重跑已有支持；完整依赖/来源语义和图像与场景一致性仍需验收。"
+    },
+    {
+      "id": "instructions",
+      "implementation": "partial",
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "仅核验可读取，未判定说明内容。"
+    },
+    {
+      "id": "procedural_materials",
+      "implementation": "partial",
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "implementation": "partial",
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "image_quality": {
+    "version": "l1-reference-visual-v2.0.0",
+    "weights": {
+      "main_image": 0.8,
+      "render_validity": 0.2
+    },
+    "method": "native-appearance-v1",
+    "image_checks": [
+      "primary_similarity"
+    ],
+    "system_checks": [
+      "export",
+      "glb_procedural_materials",
+      "main_dimensions",
+      "main_format",
+      "main_loadable",
+      "main_render_consistency",
+      "native_procedural_materials",
+      "native_state_materials",
+      "readme",
+      "real_geometry",
+      "reproducible",
+      "saved_camera",
+      "saved_resolution"
+    ],
+    "scope": "declared_primary_view_only",
+    "seed_aggregation": "minimum"
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_004",
+  "spec_sha256": "d9974542700a5ce53f9f93aeb5af87f608eb40e8ba61637160ceca3592d04b0f",
+  "instruction_sha256": "0b1ff4b26bd19280cd42271d4e7db471a837b822eae03e1ee6fe60ecd31a27cb",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Design a colourful low-poly castle on a roughly 29 by 28 metre grassy base.",
+      "source_quote": "Design a colourful low-poly castle on a roughly 29 by 28 metre grassy base.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Enclose a courtyard roughly 18 m square with thick crenellated walls and four taller corner towers.",
+      "source_quote": "Enclose a courtyard roughly 18 m square with thick crenellated walls and four taller corner towers.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "The wall runs must meet the towers without open corner gaps.",
+      "source_quote": "The wall runs must meet the towers without open corner gaps.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "At the centre of the front wall, build an open gateway at least 2 m wide and 2.5 m high, with a visibly lowered timber drawbridge leading into it.",
+      "source_quote": "At the centre of the front wall, build an open gateway at least 2 m wide and 2.5 m high, with a visibly lowered timber drawbridge leading into it.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "A visitor must have an unobstructed route from the bridge, through the gateway, into the courtyard; do not fill the opening with a wall or closed gate.",
+      "source_quote": "A visitor must have an unobstructed route from the bridge, through the gateway, into the courtyard; do not fill the opening with a wall or closed gate.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Place a taller roofed keep toward the rear of the courtyard, a stone stair, one small wooden catapult and a tree to one side, preserving a clear central area.",
+      "source_quote": "Place a taller roofed keep toward the rear of the courtyard, a stone stair, one small wooden catapult and a tree to one side, preserving a clear central area.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "Walls and towers need visible thickness, battlements, projecting ledges and readable openings; roofs should have a distinct silhouette and overhang.",
+      "source_quote": "Walls and towers need visible thickness, battlements, projecting ledges and readable openings; roofs should have a distinct silhouette and overhang.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "content_08",
+      "text": "Use warm gray stone, dark red roofs, timber details and green ground.",
+      "source_quote": "Use warm gray stone, dark red roofs, timber details and green ground.",
+      "implementation": "manual",
+      "checks": [
+        "content_08"
+      ]
+    },
+    {
+      "id": "content_09",
+      "text": "Show the gate, inner courtyard and keep in an elevated three-quarter composition.",
+      "source_quote": "Show the gate, inner courtyard and keep in an elevated three-quarter composition.",
+      "implementation": "manual",
+      "checks": [
+        "content_09"
+      ]
+    },
+    {
+      "id": "content_10",
+      "text": "No combat systems, rigging or playable navigation are required, but the geometrical path must be clear.",
+      "source_quote": "No combat systems, rigging or playable navigation are required, but the geometrical path must be clear.",
+      "implementation": "manual",
+      "checks": [
+        "content_10"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Design a colourful low-poly castle on a roughly 29 by 28 metre grassy base. Enclose a courtyard roughly 18 m square with thick crenellated walls and four taller corner towers. The wall runs must meet the towers without open corner gaps. At the centre of the front wall, build an open gateway at least 2 m wide and 2.5 m high, with a visibly lowered timber drawbridge leading into it. A visitor must have an unobstructed route from the bridge, through the gateway, into the courtyard; do not fill the opening with a wall or closed gate. Place a taller roofed keep toward the rear of the courtyard, a stone stair, one small wooden catapult and a tree to one side, preserving a clear central area. Walls and towers need visible thickness, battlements, projecting ledges and readable openings; roofs should have a distinct silhouette and overhang. Use warm gray stone, dark red roofs, timber details and green ground. Show the gate, inner courtyard and keep in an elevated three-quarter composition. No combat systems, rigging or playable navigation are required, but the geometrical path must be clear.\n\nNo reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "explicit_layout_dimensions",
+      "text": "Design a colourful low-poly castle on a roughly 29 by 28 metre grassy base. Enclose a courtyard roughly 18 m square with thick crenellated walls and four taller corner towers. The wall runs must meet the towers without open corner gaps. At the centre of the front wall, build an open gateway at least 2 m wide and 2.5 m high, with a visibly lowered timber drawbridge leading into it. A visitor must have an unobstructed route from the bridge, through the gateway, into the courtyard; do not fill the opening with a wall or closed gate. Place a taller roofed keep toward the rear of the courtyard, a stone stair, one small wooden catapult and a tree to one side, preserving a clear central area. Walls and towers need visible thickness, battlements, projecting ledges and readable openings; roofs should have a distinct silhouette and overhang. Use warm gray stone, dark red roofs, timber details and green ground. Show the gate, inner courtyard and keep in an elevated three-quarter composition. No combat systems, rigging or playable navigation are required, but the geometrical path must be clear.",
+      "source_quote": "Design a colourful low-poly castle on a roughly 29 by 28 metre grassy base. Enclose a courtyard roughly 18 m square with thick crenellated walls and four taller corner towers. The wall runs must meet the towers without open corner gaps. At the centre of the front wall, build an open gateway at least 2 m wide and 2.5 m high, with a visibly lowered timber drawbridge leading into it. A visitor must have an unobstructed route from the bridge, through the gateway, into the courtyard; do not fill the opening with a wall or closed gate. Place a taller roofed keep toward the rear of the courtyard, a stone stair, one small wooden catapult and a tree to one side, preserving a clear central area. Walls and towers need visible thickness, battlements, projecting ledges and readable openings; roofs should have a distinct silhouette and overhang. Use warm gray stone, dark red roofs, timber details and green ground. Show the gate, inner courtyard and keep in an elevated three-quarter composition. No combat systems, rigging or playable navigation are required, but the geometrical path must be clear.",
+      "implementation": "manual",
+      "checks": [
+        "explicit_layout_dimensions"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Design a colourful low-poly castle on a roughly 29 by 28 metre grassy base. Enclose a courtyard roughly 18 m square with thick crenellated walls and four taller corner towers. The wall runs must meet the towers without open corner gaps. At the centre of the front wall, build an open gateway at least 2 m wide and 2.5 m high, with a visibly lowered timber drawbridge leading into it. A visitor must have an unobstructed route from the bridge, through the gateway, into the courtyard; do not fill the opening with a wall or closed gate. Place a taller roofed keep toward the rear of the courtyard, a stone stair, one small wooden catapult and a tree to one side, preserving a clear central area. Walls and towers need visible thickness, battlements, projecting ledges and readable openings; roofs should have a distinct silhouette and overhang. Use warm gray stone, dark red roofs, timber details and green ground. Show the gate, inner courtyard and keep in an elevated three-quarter composition. No combat systems, rigging or playable navigation are required, but the geometrical path must be clear.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Design a colourful low-poly castle on a roughly 29 by 28 metre grassy base. Enclose a courtyard roughly 18 m square with thick crenellated walls and four taller corner towers. The wall runs must meet the towers without open corner gaps. At the centre of the front wall, build an open gateway at least 2 m wide and 2.5 m high, with a visibly lowered timber drawbridge leading into it. A visitor must have an unobstructed route from the bridge, through the gateway, into the courtyard; do not fill the opening with a wall or closed gate. Place a taller roofed keep toward the rear of the courtyard, a stone stair, one small wooden catapult and a tree to one side, preserving a clear central area. Walls and towers need visible thickness, battlements, projecting ledges and readable openings; roofs should have a distinct silhouette and overhang. Use warm gray stone, dark red roofs, timber details and green ground. Show the gate, inner courtyard and keep in an elevated three-quarter composition. No combat systems, rigging or playable navigation are required, but the geometrical path must be clear.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "engine",
+      "text": "engine",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "engine"
+      ]
+    },
+    {
+      "id": "view_transform",
+      "text": "view transform",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "view_transform"
+      ]
+    },
+    {
+      "id": "exposure",
+      "text": "exposure",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "exposure"
+      ]
+    },
+    {
+      "id": "gamma",
+      "text": "gamma",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "gamma"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "orbit",
+    "degrees": 25,
+    "tolerance": 0.25
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "native_resolution": [
+    1200,
+    1000
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-brief-vlm-v8.0.0",
+  "dataset_version": "l2-brief-numeric-data-v8",
+  "methods_sha256": "3e521461c617614ed41f61fa2ea28acd7a642cddb084f00e811df3ef6d1db4a3",
+  "measurement_profile": "l2-brief-v2.8.0",
+  "automatic_profile": "l2-brief-embodied-v4.0.0"
+}

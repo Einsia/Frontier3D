@@ -1,0 +1,1219 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_010",
+  "title": "伸缩方管锁销总成",
+  "category": "Text2Code",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "9件独立可编辑部件：outer_tube×1、inner_tube×1、guide×2、plug×1、cap×1、pin×1、retainer×2；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_outer_tube",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "竖直外方管外44×44 mm、开口36×36 mm、长80 mm，Z=0..80；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inner_tube",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "内方管外32×32 mm、开口26×26 mm、长90 mm，Z=40..130，和外管同轴；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_guides",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "两个方导环外35.6×35.6 mm、开口32.4×32.4 mm、高8 mm，中心Z=8/70；下环位于内管下方并为空；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_plug",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "底塞43×43×5 mm，中心Z=-2.5；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_cap",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "顶盖34×34×4 mm，中心Z=132；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_pin",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "锁销直径6 mm、长58 mm，沿X，Y=0/Z=66；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_pin_clearance",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "两管对齐X向孔6.4 mm，并切去上导环相交的下缘以供锁销通过；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_retainers",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "两个销挡圈外径12 mm、孔6.4 mm、X宽2 mm，中心X=±30且位于销轴线上；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "weight": 0.05454545454545454,
+      "question": "方管/盖板蓝灰、锁销银色、独立导环与挡圈黄铜；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_part_roles",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "9件独立可编辑部件：outer_tube×1、inner_tube×1、guide×2、plug×1、cap×1、pin×1、retainer×2",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "part_roles",
+        "public_requirement": "9件独立可编辑部件：outer_tube×1、inner_tube×1、guide×2、plug×1、cap×1、pin×1、retainer×2",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "part_count",
+            "metric": "equals",
+            "group": "parts",
+            "params": {
+              "path": "/scene/mesh_count",
+              "expected": 9
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_outer_tube",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "竖直外方管外44×44 mm、开口36×36 mm、长80 mm，Z=0..80",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "outer_tube",
+        "public_requirement": "竖直外方管外44×44 mm、开口36×36 mm、长80 mm，Z=0..80",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_inner_tube",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "内方管外32×32 mm、开口26×26 mm、长90 mm，Z=40..130，和外管同轴",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "inner_tube",
+        "public_requirement": "内方管外32×32 mm、开口26×26 mm、长90 mm，Z=40..130，和外管同轴",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_guides",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "两个方导环外35.6×35.6 mm、开口32.4×32.4 mm、高8 mm，中心Z=8/70；下环位于内管下方并为空",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "guides",
+        "public_requirement": "两个方导环外35.6×35.6 mm、开口32.4×32.4 mm、高8 mm，中心Z=8/70；下环位于内管下方并为空",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_plug",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "底塞43×43×5 mm，中心Z=-2.5",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "plug",
+        "public_requirement": "底塞43×43×5 mm，中心Z=-2.5",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_cap",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "顶盖34×34×4 mm，中心Z=132",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "cap",
+        "public_requirement": "顶盖34×34×4 mm，中心Z=132",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_pin",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "锁销直径6 mm、长58 mm，沿X，Y=0/Z=66",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "pin",
+        "public_requirement": "锁销直径6 mm、长58 mm，沿X，Y=0/Z=66",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_pin_clearance",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "两管对齐X向孔6.4 mm，并切去上导环相交的下缘以供锁销通过",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "pin_clearance",
+        "public_requirement": "两管对齐X向孔6.4 mm，并切去上导环相交的下缘以供锁销通过",
+        "legacy_check_bindings": [],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_retainers",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "两个销挡圈外径12 mm、孔6.4 mm、X宽2 mm，中心X=±30且位于销轴线上",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "retainers",
+        "public_requirement": "两个销挡圈外径12 mm、孔6.4 mm、X宽2 mm，中心X=±30且位于销轴线上",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "outer_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.044,
+                    0.044,
+                    0.08
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "inner_tube",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.032,
+                    0.032,
+                    0.09
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "guide",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.0356,
+                    0.0356,
+                    0.008
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "plug",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.043,
+                    0.043,
+                    0.005
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "cap",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.034,
+                    0.034,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "pin",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.058,
+                    0.006,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "retainer",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.002,
+                    0.012,
+                    0.012
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_assembly_clearance",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {
+        "requirement_id": "assembly_clearance",
+        "public_requirement": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+        "legacy_check_bindings": [],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_topology",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "所有零件闭合且分别连通",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_solid_validity",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "有效实体零件",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_units",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "米制导出，X长度/Y宽度/Z向上",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_hierarchy",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "自由描述性名称、独立可编辑部件与清晰组织",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_state_cycle",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_glb_assembled",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "GLB与原生帧1装配态一致",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "f139d5e57154723cd7064ea1cc78a7514abb3ec6098f3a3913db6205fea5bc92",
+    "task.toml": "18e586878de202b961c8962500141114cc7fe9a2550e3da1b3e64958ca588f22",
+    "harness/eval_spec.json": "df534022d7ab051e720de0db496f93cf449fc50e8f09aeaa25c7e83dabf87e32"
+  },
+  "source_requirement_dispositions": {
+    "part_roles": "Q",
+    "outer_tube": "Q",
+    "inner_tube": "Q",
+    "guides": "Q",
+    "plug": "Q",
+    "cap": "Q",
+    "pin": "Q",
+    "pin_clearance": "Q",
+    "retainers": "Q",
+    "assembly_clearance": "Q",
+    "topology": "E",
+    "solid_validity": "E",
+    "units": "E",
+    "hierarchy": "E",
+    "state_cycle": "E",
+    "glb_readable": "system_evidence_only",
+    "glb_assembled": "E",
+    "reconstruction": "system_evidence_only",
+    "instructions": "system_evidence_only",
+    "materials": "Q",
+    "procedural_materials": "system_evidence_only",
+    "seed_quality": "system_evidence_only"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

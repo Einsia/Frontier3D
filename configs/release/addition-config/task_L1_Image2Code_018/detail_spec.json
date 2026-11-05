@@ -1,0 +1,171 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_018",
+  "family": "Reference2Scene",
+  "instruction_sha256": "5c89be87dc109fd8c621059d4c57861e56e1e382926c7349c8e540372fe4f929",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "d3ad8e54300475bcaa5231c8d021d0d0ba2949fde0ad90283dce5b76803733e4",
+    "reference/reference-1.png": "62340c057e1fe9497b7901df76bb9c3051381536a9be0b0d90bf6af8ba4ca819",
+    "reference/reference-2.png": "1eb5f8c519183444f18b4be378c569517dc19ac59306e6607b61a4f91026f0ae",
+    "reference/reference-3.png": "ccadb0e4524bf913ab10e5e314868353528cc7d2142725a5cf2ea1acffd67868"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "中央曲轴箱是否保留鼓起的曲面壳体、边缘法兰及周向紧固件？",
+      "units": [
+        "central crankcase"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "前端轴毂是否具有伸出的轴段、薄圆盘法兰及贯通孔？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "气缸是否保留筒状主体、根部连接座及外端缸头的形状层次？",
+      "units": [
+        "cylinders arranged around the central crankcase"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "散热片是否为具有薄边、层间凹槽和连续环绕轮廓的重复片层？",
+      "units": [
+        "cooling fins"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "推杆组件是否保留细长杆体、端部接头及沿气缸连接缸头与箱体的结构？",
+      "units": [
+        "pushrod/tube assemblies"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "D06",
+      "component": "F",
+      "question": "缸头局部是否保留可见摇臂、支点、弹簧及其连接结构？",
+      "units": [
+        "Reconstruct the radial engine as displayed"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "D07",
+      "component": "F",
+      "question": "深色弯管及外围环状结构是否保留圆管厚度、连续弯曲、分支接头与管箍？",
+      "units": [
+        "the surrounding visible frame"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "D08",
+      "component": "F",
+      "question": "侧视与顶视中可见的管端是否具有真实开口、管壁及内腔？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

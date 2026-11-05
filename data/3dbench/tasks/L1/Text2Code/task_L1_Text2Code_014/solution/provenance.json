@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/jacobjennings/CadQuarry/blob/543b067ea9e416bc2e9587cb8775e012480b70ee/sample/demo-1k/parts/swept_498d67a9_0179.py",
+  "commit": "543b067ea9e416bc2e9587cb8775e012480b70ee",
+  "license": "CC0-1.0",
+  "author": "Jacob Jennings / CadQuarry",
+  "modifications": "SI Blender conversion and original review camera/material; source shape unchanged.",
+  "files": {
+    "LICENSE.txt": "b59daeb26e90f7cf189fdb887995e1abcf3b52de8b452cf6fedb090b6fa05338",
+    "target.blend": "8d8bcd732f6dda2c7802da18c5389584868c2cbc4005bae314b18b80c0863d09",
+    "target.glb": "fcdd755ae79f1b5d459018e61519b0e02962bc74ab49def4e754ff2fbfe1c987",
+    "target.png": "a810b81663e79679b23ea55206d640de410109228f3d46ab741a708700b4f97e",
+    "target.py": "9bae751eaa4e399aa50807b82036ff09533a05be13580bc57b40490461c67a92",
+    "target.step": "f60282efbc64cc429bfc7049e5fb705ada9d77d4e7f2d6bffacd0d536d3bed78",
+    "validation.json": "9dc8865f886c15d15291f2e49f8a685de21ee9989aede29c0a4d704cbb7c37d3"
+  }
+}

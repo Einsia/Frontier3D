@@ -1,0 +1,611 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_017",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "台面是否具有实体厚度及合理承托结构？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "咖啡机的冲煮头与其下方锁入的手柄是否为可辨识的独立结构？",
+      "source_quote": "with a portafilter locked beneath the group",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "压力表是否具有可辨识的刻度与指针结构？",
+      "source_quote": "pressure needle mid-scale",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "磨豆机是否具有容纳豆粒的料斗及可辨识的出粉口？",
+      "source_quote": "a grinder with transparent hopper and beans",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "压粉器与接粉杯支架是否各有符合其用途的实体形态？",
+      "source_quote": "a tamper and dosing-cup holder",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "后方搁架、杯架及沥水架是否具有可辨识的承托构件和实体厚度？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "咖啡袋是否具有可辨识的袋体体积，而非平面替代物？",
+      "source_quote": "Rear shelving holds three coffee bags and a cup rack.",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "机械臂是否以几何结构表达关节及抓持末端？",
+      "source_quote": "Represent specified joints and end-effectors geometrically.",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "奶缸是否具有容器内腔、实体壁厚及可辨识的壶嘴？",
+      "source_quote": "gripping a 0.35-litre stainless milk pitcher. Its spout",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "拿铁杯是否具有杯腔、杯壁及独立可辨识的杯把？",
+      "source_quote": "cup handle points right 45 degrees.",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "本任务仅提供文字，没有公共参考图；按文本任务规则将 reference_primary 置空，regions 与 targets 置空。嵌入的 judge_spec 对 reference_primary 的非空限制与该规则冲突。",
+    "未提供 legacy-detail-20261018-v1 的独立文本；本计划仅依据所嵌入的协议与 instruction.md，不推断额外旧版要求。",
+    "未提供候选作品，所有条目均为待执行的测量或检查，不代表已测结果。",
+    "台面长度、设备宽度按各自本体轴测量；原文未定义全局水平轴、杯把角度零轴、奶缸倾斜轴及压力表刻度的线性方式，执行时须记录约定，不能增加隐藏方向要求。",
+    "壶嘴高于杯子 0.03 m 的杯端基准未明确为杯口或液面；应报告所用基准及另一基准下的结果，不擅自固定隐藏基准。",
+    "前排杯间距未明确为中心距或边缘净距；两种读数应分别报告。拿铁杯是否计入前排四杯也未明确。",
+    "机械臂 reach 未指定是最大伸展长度还是工作包络半径；臂基座高度的参考点、后方工作深度的边界及臂扫掠包络的关节范围也未给定，应使用可追溯的场景定义，不推断运动轨迹。",
+    "服务点在冲煮头及出粉口上的精确位置、杯排端点是杯中心还是外缘均未指定；应核对 README 的定义与实际几何，不允许任意移动服务点来满足距离要求。",
+    "奶缸及拿铁杯的容量未说明采用满口容量还是额定工作容量；应分别说明内腔容积及所声明容量的含义。",
+    "奶缸最低点可能不唯一；净距测量须覆盖所有同高最低点。原文仅约束最低点与搁架及其他杯子的距离，不能扩展为未规定的整壶净距阈值。",
+    "未指定关节数量、叶片数量、杯架形制、厚度数值或导航路线最小宽度；不得新增数值要求。导航路线只检查其自由路径定义是否排除被评估机械臂且包含其他家具和突出物。",
+    "仅奶缸倾角给出显式容差；其余数值均不添加容差。原生几何计算精度应与验收容差区分。",
+    "接触检查中的零间距是对明确锁合、抓持和承托关系的几何表达，不要求未指定的接触面积、夹紧力、逆运动学或动力学可行性。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在台面本体长度轴上计算实体投影跨度。",
+      "quantity": "台面长度",
+      "relation": "equal",
+      "source_quote": "a 1.80 m counter",
+      "target": 1.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "以地面为高度基准，沿 Z 测量台面工作上表面高度。",
+      "quantity": "台面高度",
+      "relation": "equal",
+      "source_quote": "0.95 m high",
+      "target": 0.95,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "在台面本体前后轴上计算实体投影跨度。",
+      "quantity": "台面深度",
+      "relation": "equal",
+      "source_quote": "0.60 m deep",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "统计咖啡机独立冲煮组数量。",
+      "quantity": "冲煮组数量",
+      "relation": "equal",
+      "source_quote": "single-group espresso machine",
+      "target": 1,
+      "unit": "组",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "沿咖啡机本体左右轴测量完整设备实体的投影宽度。",
+      "quantity": "咖啡机宽度",
+      "relation": "equal",
+      "source_quote": "0.55 m wide",
+      "target": 0.55,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "计算咖啡机本体实体的最大 Z 与最小 Z 之差。",
+      "quantity": "咖啡机高度",
+      "relation": "equal",
+      "source_quote": "0.45 m high",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "统计后方搁架上独立咖啡袋实体。",
+      "quantity": "咖啡袋数量",
+      "relation": "equal",
+      "source_quote": "three coffee bags",
+      "target": 3,
+      "unit": "袋",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "按已声明的基座参考点，测量其相对地面的 Z 高度。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "base height 1.00 m",
+      "target": 1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "根据场景声明的 reach 定义核查机械臂几何伸展长度或基座中心包络半径；不据此推断动力学可行性。",
+      "quantity": "机械臂伸达尺度",
+      "relation": "equal",
+      "source_quote": "reach 0.85 m",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "由奶缸内壁和声明的容量液位封闭内腔，积分其体积并以原任务单位报告。",
+      "quantity": "奶缸容量",
+      "relation": "equal",
+      "source_quote": "0.35-litre stainless milk pitcher",
+      "target": 0.35,
+      "unit": "litre",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "由拿铁杯内壁和声明的容量液位封闭内腔，积分其体积并以原任务单位报告。",
+      "quantity": "拿铁杯容量",
+      "relation": "equal",
+      "source_quote": "a 250 ml latte cup",
+      "target": 250,
+      "unit": "ml",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "沿 Z 计算壶嘴出液端与已声明杯端基准的高度差，同时记录杯口及液面的基准歧义。",
+      "quantity": "壶嘴高于杯子的距离",
+      "relation": "equal",
+      "source_quote": "Its spout is 0.03 m above a 250 ml latte cup",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 2,
+      "id": "N13",
+      "measurement_definition": "测量奶缸本体竖直轴相对世界 Z 轴的夹角，并记录本体轴定义。",
+      "quantity": "奶缸倾角",
+      "relation": "equal",
+      "source_quote": "pitcher tilted 20 +/-2 degrees",
+      "target": 20,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "将壶嘴延伸方向与液面求交；沿已声明的前后轴，以液面前缘为 0、后缘为 1，测量交点归一化位置并确认交点位于液面内。",
+      "quantity": "壶嘴瞄准点的液面纵向位置",
+      "relation": "range",
+      "source_quote": "spout extension aimed toward the rear third of the liquid surface",
+      "target": 0.6666666666666666,
+      "unit": "液面前后跨度比例",
+      "upper": 1
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "将杯中心至杯把中心的方向投影到水平面，按声明的正面零轴测量向右方位角。",
+      "quantity": "杯把向右角度",
+      "relation": "equal",
+      "source_quote": "cup handle points right 45 degrees",
+      "target": 45,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "统计前方杯排中的独立杯实体。",
+      "quantity": "前排杯数量",
+      "relation": "equal",
+      "source_quote": "Four cups line the front",
+      "target": 4,
+      "unit": "杯",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "逐一测量前排每对相邻杯的间距；分别记录中心距和边缘净距，不以平均值替代逐对结果。",
+      "quantity": "前排相邻杯间距",
+      "relation": "equal",
+      "source_quote": "at 0.15 m spacing",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "统计前排杯中杯口朝下且放置在沥水架上的杯。",
+      "quantity": "沥水架上倒置杯数量",
+      "relation": "equal",
+      "source_quote": "one inverted on a draining rack",
+      "target": 1,
+      "unit": "杯",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "沿声明的后方工作方向，测量工作区前后边界间的自由深度；记录边界和障碍物范围。",
+      "quantity": "后方工作深度",
+      "relation": "equal",
+      "source_quote": "Keep a 0.80 m rear working depth",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "计算声明的机械臂扫掠几何包络与搁架下表面之间的最小表面距离。",
+      "quantity": "机械臂扫掠与搁架下表面净距",
+      "relation": "at_least",
+      "source_quote": "at least 0.15 m between the arm sweep and shelf underside",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "计算冲煮头服务点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "冲煮头服务点至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "计算磨豆机出粉口服务点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "出粉口服务点至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "计算杯排左端代表点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "杯排左端至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "计算杯排右端代表点与机械臂基座参考点的三维欧氏距离。",
+      "quantity": "杯排右端至基座距离",
+      "relation": "at_most",
+      "source_quote": "The brewing head, grinder outlet and two representative cup-row endpoints must be within 0.80 m of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "读取冲煮头服务点相对地面的 Z 高度。",
+      "quantity": "冲煮头服务点高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "读取磨豆机出粉口服务点相对地面的 Z 高度。",
+      "quantity": "出粉口服务点高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "读取杯排左端代表点相对地面的 Z 高度。",
+      "quantity": "杯排左端高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "读取杯排右端代表点相对地面的 Z 高度。",
+      "quantity": "杯排右端高度",
+      "relation": "range",
+      "source_quote": "at heights 0.90-1.40 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": 1.4
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "统计与杯排两个不同端部对应的代表服务点，排除同一端点的重复标签。",
+      "quantity": "杯排代表端点数量",
+      "relation": "equal",
+      "source_quote": "two representative cup-row endpoints",
+      "target": 2,
+      "unit": "点",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "识别奶缸实体全部最低点，计算这些点到所有搁架实体表面的最小距离。",
+      "quantity": "奶缸最低点至搁架净距",
+      "relation": "at_least",
+      "source_quote": "keep its lowest point at least 0.05 m clear of shelves and other cups",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "识别奶缸实体全部最低点，计算这些点到目标拿铁杯之外其他杯实体表面的最小距离。",
+      "quantity": "奶缸最低点至其他杯净距",
+      "relation": "at_least",
+      "source_quote": "keep its lowest point at least 0.05 m clear of shelves and other cups",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "在指定锁合界面计算手柄与冲煮组的表面间距，并结合结构检查确认锁入关系。",
+      "quantity": "手柄与冲煮组锁合接触间距",
+      "relation": "equal",
+      "source_quote": "a portafilter locked beneath the group",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N33",
+      "measurement_definition": "在声明的抓持界面计算末端执行器与奶缸的表面间距，并检查是否构成抓持接触。",
+      "quantity": "机械臂与奶缸抓持接触间距",
+      "relation": "equal",
+      "source_quote": "gripping a 0.35-litre stainless milk pitcher",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N34",
+      "measurement_definition": "计算倒置杯的承托部位与沥水架承托表面的最小间距。",
+      "quantity": "倒置杯与沥水架承托接触间距",
+      "relation": "equal",
+      "source_quote": "one inverted on a draining rack",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "场景是否呈现拉花进行中的咖啡工作站？",
+      "source_quote": "Coffee station: midway through latte art.",
+      "weight": 0.04
+    },
+    {
+      "id": "S02",
+      "question": "是否以略俯视近景展示浅色木质台面？",
+      "source_quote": "Create a close elevated view of a 1.80 m counter, 0.95 m high and 0.60 m deep, in pale wood.",
+      "weight": 0.04
+    },
+    {
+      "id": "S03",
+      "question": "咖啡机、磨豆机、压粉器与接粉杯支架是否按要求从左向右排列？",
+      "source_quote": "From left to right place a single-group espresso machine, 0.55 m wide and 0.45 m high, with a portafilter locked beneath the group and pressure needle mid-scale; a grinder with transparent hopper and beans; a tamper and dosing-cup holder.",
+      "weight": 0.04
+    },
+    {
+      "id": "S04",
+      "question": "咖啡机手柄是否锁在冲煮组下方？",
+      "source_quote": "with a portafilter locked beneath the group",
+      "weight": 0.04
+    },
+    {
+      "id": "S05",
+      "question": "压力表指针是否位于刻度中段？",
+      "source_quote": "pressure needle mid-scale",
+      "weight": 0.04
+    },
+    {
+      "id": "S06",
+      "question": "磨豆机是否具有透明料斗，且料斗内有咖啡豆？",
+      "source_quote": "a grinder with transparent hopper and beans",
+      "weight": 0.04
+    },
+    {
+      "id": "S07",
+      "question": "后方搁架是否承放咖啡袋和杯架？",
+      "source_quote": "Rear shelving holds three coffee bags and a cup rack.",
+      "weight": 0.04
+    },
+    {
+      "id": "S08",
+      "question": "机械臂是否位于后方中央？",
+      "source_quote": "A rear-centre arm",
+      "weight": 0.04
+    },
+    {
+      "id": "S09",
+      "question": "机械臂是否实际抓持不锈钢奶缸？",
+      "source_quote": "gripping a 0.35-litre stainless milk pitcher",
+      "weight": 0.04
+    },
+    {
+      "id": "S10",
+      "question": "奶缸是否倾斜，壶嘴位于拿铁杯上方并瞄准液面后部？",
+      "source_quote": "Its spout is 0.03 m above a 250 ml latte cup, pitcher tilted 20 +/-2 degrees, spout extension aimed toward the rear third of the liquid surface.",
+      "weight": 0.04
+    },
+    {
+      "id": "S11",
+      "question": "液面是否以局部纹理或浅浮雕呈现静态叶形奶泡底纹？",
+      "source_quote": "Show a static leaf-pattern milk-foam base using local texture or shallow relief",
+      "weight": 0.04
+    },
+    {
+      "id": "S12",
+      "question": "拿铁杯把是否朝向右侧？",
+      "source_quote": "cup handle points right 45 degrees.",
+      "weight": 0.04
+    },
+    {
+      "id": "S13",
+      "question": "杯子是否沿台面前方排列？",
+      "source_quote": "Four cups line the front",
+      "weight": 0.04
+    },
+    {
+      "id": "S14",
+      "question": "是否有前排杯倒置并由沥水架承托？",
+      "source_quote": "one inverted on a draining rack.",
+      "weight": 0.04
+    },
+    {
+      "id": "S15",
+      "question": "奶缸倾斜方向是否与杯把朝向相反？",
+      "source_quote": "Tilt the pitcher opposite the cup-handle direction",
+      "weight": 0.04
+    },
+    {
+      "id": "S16",
+      "question": "木材是否呈暖色观感？",
+      "source_quote": "Use warm wood",
+      "weight": 0.04
+    },
+    {
+      "id": "S17",
+      "question": "设备是否呈黑色外观？",
+      "source_quote": "black equipment",
+      "weight": 0.04
+    },
+    {
+      "id": "S18",
+      "question": "是否具有黄铜细节？",
+      "source_quote": "brass details",
+      "weight": 0.04
+    },
+    {
+      "id": "S19",
+      "question": "杯子是否呈象牙白色？",
+      "source_quote": "ivory cups",
+      "weight": 0.04
+    },
+    {
+      "id": "S20",
+      "question": "是否具有暖色侧窗光？",
+      "source_quote": "warm side-window light",
+      "weight": 0.04
+    },
+    {
+      "id": "S21",
+      "question": "台面是否有局部聚光照明？",
+      "source_quote": "counter spots",
+      "weight": 0.04
+    },
+    {
+      "id": "S22",
+      "question": "浅景深近景是否同时构入奶缸、拿铁液面与冲煮头？",
+      "source_quote": "Frame pitcher, latte surface and brewing head in a shallow-depth-of-field close view.",
+      "weight": 0.04
+    },
+    {
+      "id": "S23",
+      "question": "场景是否静止且没有奶流、蒸汽喷流或杯子运动？",
+      "source_quote": "Static; no milk stream, steam jet or cup movement.",
+      "weight": 0.04
+    },
+    {
+      "id": "S24",
+      "question": "是否具有静态关节式机器人姿态，且完整场景由可编辑、可分离、有厚度并合理支承的实体三维构件组成？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support. A static articulated robot pose is required",
+      "weight": 0.04
+    },
+    {
+      "id": "S25",
+      "question": "冻结接触是否与其他服务目标清楚区分，且未为服务点放置重复机器人？",
+      "source_quote": "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots.",
+      "weight": 0.04
+    }
+  ],
+  "targets": []
+}

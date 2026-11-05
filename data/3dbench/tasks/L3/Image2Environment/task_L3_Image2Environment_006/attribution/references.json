@@ -1,0 +1,66 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "23dcd6784c27f46caac367b734d7f366ae701542ecb9a0abf88c9071051b1282",
+      "width": 1600,
+      "height": 900,
+      "provenance": {
+        "task": "l3-g02",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-g02/castle-142.jpg",
+        "source": "https://godeaterlove.blog.fc2.com/blog-entry-871.html",
+        "download_url": "https://blog-imgs-125.fc2.com/g/o/d/godeaterlove/sekiro142.jpg",
+        "sha256": "64a817542ca535ceb7ec2829110c515cc02d63d6c137b45e2f1f26c16693e4cd",
+        "copyright": "FromSoftware / Activision; screenshot source godeaterlove",
+        "license": "copyrighted_game_screenshot",
+        "usage": "visual_reference_only",
+        "kind": "game_screenshot"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-02",
+      "path": "references/reference-02.jpg",
+      "sha256": "66a800f7936eba0484bf734103c5cab309a345e6b5fc0478e1b6d9af2da8c2a0",
+      "width": 1600,
+      "height": 900,
+      "provenance": {
+        "task": "l3-g02",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-g02/castle-156.jpg",
+        "source": "https://godeaterlove.blog.fc2.com/blog-entry-871.html",
+        "download_url": "https://blog-imgs-125.fc2.com/g/o/d/godeaterlove/sekiro156.jpg",
+        "sha256": "a05e8f7e6fdfeb55b717aa6c4fb31f6516e82c89a9f1b0686708d14ebeba30c3",
+        "copyright": "FromSoftware / Activision; screenshot source godeaterlove",
+        "license": "copyrighted_game_screenshot",
+        "usage": "visual_reference_only",
+        "kind": "game_screenshot"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-03",
+      "path": "references/reference-03.jpg",
+      "sha256": "e24bcdb7aa3e50c0120e7a1abbb59012712623710f45b9c015afa90a7758e863",
+      "width": 1016,
+      "height": 576,
+      "provenance": {
+        "task": "l3-g02",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-g02/candidate-07.jpg",
+        "source": "https://www.powerpyx.com/sekiro-shadows-die-twice-ashina-castle-walkthrough/",
+        "download_url": "https://www.powerpyx.com/wp-content/uploads/Sekiro-Shadows-Die-Twice-Ashina-Castle-7.jpg",
+        "sha256": "2d3d285796ebffe0a2f515898298cc18b6b254c9cfae58bad9c96e2b766b5e0a",
+        "copyright": "FromSoftware / Activision; screenshot source PowerPyx",
+        "license": "copyrighted_game_screenshot",
+        "usage": "visual_reference_only",
+        "kind": "game_screenshot"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

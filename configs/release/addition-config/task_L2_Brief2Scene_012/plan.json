@@ -1,0 +1,386 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_012",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/12022df9d7f4e2f6775f/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/33afa7c5b4ab1ac92e14/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/724a9fc19579d0b6a030/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景水平面内测量温室纵向跨度，记录所用结构边界。",
+      "quantity": "温室长度",
+      "relation": "equal",
+      "source_quote": "Create a 12 x 5 m greenhouse",
+      "target": 12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在原生场景水平面内测量温室横向跨度，记录所用结构边界。",
+      "quantity": "温室宽度",
+      "relation": "equal",
+      "source_quote": "Create a 12 x 5 m greenhouse",
+      "target": 5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "沿温室纵向逐对测量相邻拱架的对应基准面间距。",
+      "quantity": "拱架间距",
+      "relation": "equal",
+      "source_quote": "arch frames every 2 m",
+      "target": 2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "按语义完整槽体计数，不将同一槽体的网格零件重复计入。",
+      "quantity": "种植槽数量",
+      "relation": "equal",
+      "source_quote": "Two parallel planting troughs",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "分别测量每个种植槽从支承地面至槽顶的竖向高度。",
+      "quantity": "种植槽高度",
+      "relation": "equal",
+      "source_quote": "Two parallel planting troughs are 0.55 m high and 0.40 m wide.",
+      "target": 0.55,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "分别测量每个槽体垂直于纵轴的外部横向宽度。",
+      "quantity": "种植槽宽度",
+      "relation": "equal",
+      "source_quote": "Two parallel planting troughs are 0.55 m high and 0.40 m wide.",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "排除被评机器人，沿行间路线测量横向自由宽度并确定瓶颈；纳入其他障碍及突出物。",
+      "quantity": "行间走廊净宽",
+      "relation": "equal",
+      "source_quote": "Keep a 1.50 m clear inter-row corridor",
+      "target": 1.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "对各指定步行路线计算横向自由宽度的最小值，排除被评机器人，纳入其他障碍。",
+      "quantity": "指定步行路线最小净宽",
+      "relation": "at_least",
+      "source_quote": "at least 0.45 m clear on designated walking routes",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "沿 Z 方向测量藤蔓所攀个体绳的指定攀爬终点相对地面的高度。",
+      "quantity": "攀爬高度",
+      "relation": "equal",
+      "source_quote": "Vines climb taut individual strings to 2.20 m.",
+      "target": 2.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "计数指定果串内独立番茄实体，篮内果实不计入。",
+      "quantity": "指定果串番茄数量",
+      "relation": "equal",
+      "source_quote": "One bunch has six tomatoes",
+      "target": 6,
+      "unit": "颗",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "逐颗测量指定果串的果实体直径，排除果梗，报告非球形果实所用直径定义。",
+      "quantity": "果串番茄直径",
+      "relation": "range",
+      "source_quote": "six tomatoes of 0.05-0.07 m diameter",
+      "target": 0.05,
+      "unit": "m",
+      "upper": 0.07
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "依据公开标识的果串轴与倾角参考方向测量向下倾角，报告轴的定义。",
+      "quantity": "果串轴向下倾角",
+      "relation": "equal",
+      "source_quote": "a cluster axis tilted downward 20 degrees",
+      "target": 20,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "测量履带横向实体跨度；明确报告采用单条宽度或总占宽的解释。",
+      "quantity": "履带宽度",
+      "relation": "equal",
+      "source_quote": "The robot has 0.60 m wide tracks",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "求履带与地面接触段在行进方向上的跨度，不以整条履带包围盒长度代替。",
+      "quantity": "履带接地长度",
+      "relation": "equal",
+      "source_quote": "0.90 m ground-contact length",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "依据关节和轴线几何计数机械臂轴，不以对象数量或命名替代。",
+      "quantity": "机械臂轴数",
+      "relation": "equal",
+      "source_quote": "a six-axis arm",
+      "target": 6,
+      "unit": "轴",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "以臂基座为中心，依据连杆和关节几何核查声明的可达包络半径；冻结姿态末端距离不等同于最大臂展。",
+      "quantity": "机械臂可达半径",
+      "relation": "equal",
+      "source_quote": "a six-axis arm of 0.90 m reach",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "在冻结姿态中检测吸盘接触环与指定第二果实表面的接触或允许的浅穿透，测量未闭合的正间隙。",
+      "quantity": "吸盘与目标果实接触间隙",
+      "relation": "equal",
+      "source_quote": "Its suction cup touches the second fruit",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "对接触环采样并结合表面相交求其进入果实实体的最大深度，以 mm 报告。",
+      "quantity": "接触环最大穿透",
+      "relation": "at_most",
+      "source_quote": "contact-ring penetration at most 3 mm",
+      "target": 3,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "从目标果实的几何中心向吸盘轴线作垂线，求点到轴线距离。",
+      "quantity": "吸盘轴线偏离果心距离",
+      "relation": "equal",
+      "source_quote": "axis through the fruit centre",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "在剪刀运动平面内测量两刀片工作方向的张开夹角。",
+      "quantity": "剪刀张开角",
+      "relation": "equal",
+      "source_quote": "Electric shear blades open 15 degrees",
+      "target": 15,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "按公开声明的果梗后方方向，测量刀片工作位置相对果梗基准的有向偏移。",
+      "quantity": "刀片位于果梗后方的距离",
+      "relation": "equal",
+      "source_quote": "sit 0.02 m behind the stem",
+      "target": 0.02,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "在篮口平面内测量开口两相对内边缘间的第一方向净跨度。",
+      "quantity": "篮口第一尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.40 x 0.30 m opening",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "在篮口平面内测量开口另一方向两相对内边缘间的净跨度。",
+      "quantity": "篮口第二尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.40 x 0.30 m opening",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "测量篮口声明的基准平面或边缘相对地面的 Z 高度。",
+      "quantity": "篮口高度",
+      "relation": "equal",
+      "source_quote": "opening at 0.40 m height",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "计数被采收篮内腔容纳的独立果实体。",
+      "quantity": "篮内果实数量",
+      "relation": "equal",
+      "source_quote": "contains three fruits",
+      "target": 3,
+      "unit": "颗",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "在冻结姿态中分别求每条履带边缘与各槽体外表面的最小水平间隔，报告最小值。",
+      "quantity": "履带边缘到槽体净距",
+      "relation": "at_least",
+      "source_quote": "Keep each track edge at least 0.20 m from the troughs",
+      "target": 0.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "求公开标识的目标果实服务点到臂基座点的三维欧氏距离，记录服务点定义。",
+      "quantity": "目标果实到臂基座距离",
+      "relation": "at_most",
+      "source_quote": "Target fruit, cluster-top fruit and nearby corridor centre must be within 0.85 m of the arm base",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "求公开标识的果串顶部果实服务点到同一臂基座点的三维欧氏距离。",
+      "quantity": "果串顶部果实到臂基座距离",
+      "relation": "at_most",
+      "source_quote": "Target fruit, cluster-top fruit and nearby corridor centre must be within 0.85 m of the arm base",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "求公开标识的附近走廊中心服务点到同一臂基座点的三维欧氏距离，不事后移动服务点。",
+      "quantity": "附近走廊中心到臂基座距离",
+      "relation": "at_most",
+      "source_quote": "Target fruit, cluster-top fruit and nearby corridor centre must be within 0.85 m of the arm base",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "求目标果实声明的高度基准相对地面的 Z 高度，并记录基准定义。",
+      "quantity": "目标果实高度",
+      "relation": "range",
+      "source_quote": "target height is 0.80-1.60 m",
+      "target": 0.8,
+      "unit": "m",
+      "upper": 1.6
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "在同时保持吸附接触与剪切对准的冻结姿态中，分别求目标果实、吸盘和剪刀对邻果表面的最短距离，以 mm 报告并注明间隙对象解释。",
+      "quantity": "与邻果的净间隙",
+      "relation": "at_least",
+      "source_quote": "with at least 10 mm gap to neighbouring fruit",
+      "target": 10,
+      "unit": "mm",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

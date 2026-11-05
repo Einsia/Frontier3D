@@ -1,0 +1,240 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "linear-visual-20261018-v1",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004",
+  "family": "Reference2Scene-RealPhoto",
+  "instruction_sha256": "f300f36c13537c7754479db5d9a7f7992e8ae0e16111c3d7b51ccbba30a95e4a",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "教堂肋拱、长椅与祭坛；精确数值由程序测量；Symmetrical vertical cathedral view, central red aisle converging on altar, high rib intersections above.\nTall clustered columns. Symmetrical vertical cathedral view, central red aisle converging on altar, high rib intersections above. Warm golden stone, dark pews, red aisle and colored luminous glass; sacred pictures and fine ornament may simplify.",
+  "checks": [
+    {
+      "id": "vlm_reference_feature_1",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Tall clustered columns. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_2",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Curving ribs meeting across vaulted ceiling. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_3",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Three prominent pointed stained-glass windows at altar end. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_4",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Rows of pews beside central aisle. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_reference_feature_5",
+      "component": "Q",
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Distant raised bright altar. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "global_weight": 0.032,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_composition_fidelity",
+      "component": "Q",
+      "question": "Symmetrical vertical cathedral view, central red aisle converging on altar, high rib intersections above. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_cross_view",
+      "component": "Q",
+      "question": "Compare every supplied original and every required authored view for coherent real 3D structure, thickness and attachments. Use native inspection for suspected flat photographic substitutes; wrong/absent required geometry earns zero on its feature. Do not infer unseen reference geometry. Alternate has no reference pixel target. 核对参考可见的具体形状与部件关系；具备体积和多视角稳定性仅能证明相关性质，不能替代参考形状符合度。",
+      "units": [
+        "cross_view"
+      ],
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_materials_colors",
+      "component": "Q",
+      "question": "Compare original material/color fidelity: Warm golden stone, dark pews, red aisle and colored luminous glass; sacred pictures and fine ornament may simplify.",
+      "units": [
+        "materials_colors"
+      ],
+      "global_weight": 0.06,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "vlm_lighting_atmosphere",
+      "component": "Q",
+      "question": "Compare original light direction, contrast, exposure, shadows and atmosphere: Warm golden stone, dark pews, red aisle and colored luminous glass; sacred pictures and fine ornament may simplify.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "global_weight": 0.06,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ],
+      "coverage_definition": "逐项列出本条要求的具体结构/关系/外观特征，以完整要求为分母；缺失留在分母。仅有类别、名称、色块或包围框不能证明特征完整。",
+      "deviation_definition": "评价已实现部分相对原参考或公开要求的形态、比例、连接、纹理与外观偏差。使用连续值，逐项说明最大偏差。缺失仅计入覆盖。"
+    },
+    {
+      "id": "detail_detail_1",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Tall clustered columns。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_2",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Curving ribs meeting across vaulted ceiling。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_3",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Three prominent pointed stained-glass windows at altar end。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_4",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Rows of pews beside central aisle。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_4"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_detail_5",
+      "component": "F",
+      "question": "公开参考各视角可见局部结构：Distant raised bright altar。比较曲面、凹凸、孔槽、层次与连接；同一特征跨视图合并观察，颜色不贡献本项。",
+      "units": [
+        "detail_5"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。 列出本条具体可见子结构及缺失项；简单占位与重复图元仅按真正匹配的结构计覆盖。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。 特别核对曲面连续性、具体轮廓、局部凹凸、真实厚度及组织方式；仅有大类相似允许较大偏差。",
+      "global_weight": 0.08000000000000002,
+      "required_evidence": [
+        "candidate/alternate.png",
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/reference-0.png": "66c319a491c83acc4000575faee2390d2fac4d141759e787190b09dfe57fb26a"
+  },
+  "authoring": "fixed_public_features_linear_fidelity_independent_dimensions",
+  "formal_score_eligible": false
+}

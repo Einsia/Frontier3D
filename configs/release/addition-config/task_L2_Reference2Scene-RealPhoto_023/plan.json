@@ -1,0 +1,200 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/1e24b2ce23d6c5f5cf3e/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/022c667459cc8f9c5102/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/f0fc746b54fc74442a7d/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "前景楼梯开口与下降梯段",
+      "polygon": [
+        [
+          0.272,
+          0.556
+        ],
+        [
+          0.438,
+          0.608
+        ],
+        [
+          0.997,
+          0.587
+        ],
+        [
+          0.997,
+          0.997
+        ],
+        [
+          0.286,
+          0.997
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R02",
+      "label": "中景横向护栏与红色通道",
+      "polygon": [
+        [
+          0.0,
+          0.446
+        ],
+        [
+          0.966,
+          0.386
+        ],
+        [
+          0.94,
+          0.597
+        ],
+        [
+          0.0,
+          0.705
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R03",
+      "label": "窗前曲线长凳",
+      "polygon": [
+        [
+          0.55,
+          0.306
+        ],
+        [
+          0.651,
+          0.305
+        ],
+        [
+          0.659,
+          0.42
+        ],
+        [
+          0.563,
+          0.442
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "左侧木墙与金属墙板",
+      "polygon": [
+        [
+          0.0,
+          0.061
+        ],
+        [
+          0.287,
+          0.068
+        ],
+        [
+          0.436,
+          0.123
+        ],
+        [
+          0.479,
+          0.328
+        ],
+        [
+          0.332,
+          0.472
+        ],
+        [
+          0.0,
+          0.522
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R05",
+      "label": "后方窗墙及其与走廊的连接",
+      "polygon": [
+        [
+          0.5,
+          0.121
+        ],
+        [
+          0.999,
+          0.119
+        ],
+        [
+          0.999,
+          0.312
+        ],
+        [
+          0.502,
+          0.31
+        ]
+      ],
+      "weight": 0.2
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中，以楼梯开口上层完成地面为基准，沿世界 Z 轴测量对应水平护栏扶手顶部高度；按场景米制单位核验约定值，不以照片像素估算。",
+      "quantity": "楼梯开口护栏高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.05 m stair-opening railing height as the task scale convention, not a measured real-world dimension.",
+      "target": 1.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两个保留相机的世界位置，将备用相机减主相机的位置差投影到主相机局部正 X 单位轴，核验右移距离；另检查位移方向与该轴一致。",
+      "quantity": "备用相机沿主相机局部正 X 轴的平移距离",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

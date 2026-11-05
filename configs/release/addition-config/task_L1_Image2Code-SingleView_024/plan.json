@@ -1,0 +1,305 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/2d9086aebd46783791c1/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/dfcd15706d74b7270c71/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/f79446fd0754655dd6eb/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "region_full_footwear",
+      "label": "完整高跟鞋可见主体轮廓",
+      "polygon": [
+        [
+          0.25,
+          0.145
+        ],
+        [
+          0.46,
+          0.143
+        ],
+        [
+          0.69,
+          0.18
+        ],
+        [
+          0.735,
+          0.39
+        ],
+        [
+          0.703,
+          0.55
+        ],
+        [
+          0.701,
+          0.75
+        ],
+        [
+          0.63,
+          0.793
+        ],
+        [
+          0.58,
+          0.862
+        ],
+        [
+          0.39,
+          0.89
+        ],
+        [
+          0.25,
+          0.86
+        ],
+        [
+          0.255,
+          0.75
+        ],
+        [
+          0.36,
+          0.65
+        ],
+        [
+          0.46,
+          0.48
+        ],
+        [
+          0.46,
+          0.27
+        ]
+      ],
+      "weight": 0.28
+    },
+    {
+      "id": "region_open_toe_front",
+      "label": "前部露趾区域与前带",
+      "polygon": [
+        [
+          0.253,
+          0.745
+        ],
+        [
+          0.316,
+          0.725
+        ],
+        [
+          0.47,
+          0.742
+        ],
+        [
+          0.541,
+          0.783
+        ],
+        [
+          0.535,
+          0.85
+        ],
+        [
+          0.461,
+          0.882
+        ],
+        [
+          0.305,
+          0.876
+        ],
+        [
+          0.25,
+          0.853
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "region_insole_upper",
+      "label": "弯曲鞋垫和鞋面区域",
+      "polygon": [
+        [
+          0.465,
+          0.242
+        ],
+        [
+          0.594,
+          0.216
+        ],
+        [
+          0.676,
+          0.267
+        ],
+        [
+          0.681,
+          0.397
+        ],
+        [
+          0.638,
+          0.564
+        ],
+        [
+          0.59,
+          0.724
+        ],
+        [
+          0.524,
+          0.812
+        ],
+        [
+          0.431,
+          0.815
+        ],
+        [
+          0.365,
+          0.75
+        ],
+        [
+          0.447,
+          0.606
+        ],
+        [
+          0.488,
+          0.439
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "region_ankle_strap",
+      "label": "踝部环带与扣件",
+      "polygon": [
+        [
+          0.458,
+          0.167
+        ],
+        [
+          0.578,
+          0.145
+        ],
+        [
+          0.665,
+          0.166
+        ],
+        [
+          0.69,
+          0.218
+        ],
+        [
+          0.659,
+          0.257
+        ],
+        [
+          0.558,
+          0.257
+        ],
+        [
+          0.464,
+          0.231
+        ]
+      ],
+      "weight": 0.12
+    },
+    {
+      "id": "region_sculptural_heel",
+      "label": "雕塑性后跟和负空间",
+      "polygon": [
+        [
+          0.604,
+          0.481
+        ],
+        [
+          0.674,
+          0.473
+        ],
+        [
+          0.702,
+          0.531
+        ],
+        [
+          0.674,
+          0.613
+        ],
+        [
+          0.698,
+          0.636
+        ],
+        [
+          0.669,
+          0.69
+        ],
+        [
+          0.684,
+          0.724
+        ],
+        [
+          0.629,
+          0.745
+        ],
+        [
+          0.594,
+          0.711
+        ],
+        [
+          0.624,
+          0.651
+        ],
+        [
+          0.598,
+          0.595
+        ]
+      ],
+      "weight": 0.2
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": 0.02,
+      "id": "num_max_overall_span",
+      "measurement_definition": "对场景中所有目标几何求轴对齐包围盒，取三轴尺寸中的最大值；排除摄像机和灯光。",
+      "quantity": "整体最大跨度",
+      "relation": "at_most",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights.",
+      "target": 1.0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

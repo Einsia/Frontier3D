@@ -1,0 +1,16 @@
+Task: L2/Reference2Scene/task_L2_Reference2Scene-002
+Original source task ID: L2/Reference2Scene/task_L2_Reference2Scene-002
+
+Original source notice (environment/input/CREDIT.txt):
+
+Seven Stars Brick Lane
+Author: artfletch
+Source: https://sketchfab.com/3d-models/seven-stars-brick-lane-9a16438ddcd34a51a9e3b04e0ab04be7
+License: CC Attribution
+License reference: http://creativecommons.org/licenses/by/4.0/
+Changes: imported/packed in Blender 5.2.1; camera and render setup; texture path repair where recorded in audit.json. Original download preserved privately.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

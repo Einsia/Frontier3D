@@ -1,0 +1,70 @@
+{
+  "status": "design_only_not_executable",
+  "requirements_source": "instruction.zh.md",
+  "requirements": [
+    {
+      "id": "B18-001",
+      "requirement_zh": "停车场·充电机器人插枪 设计地下停车场里充电机器人正在插枪的场景，采用车位侧斜上方视角。"
+    },
+    {
+      "id": "B18-002",
+      "requirement_zh": "车位约 2.50 × 5.30 米，地面深灰环氧并施划 0.12 米宽白色车位线，车位号与地面导向箭头可见；"
+    },
+    {
+      "id": "B18-003",
+      "requirement_zh": "车位一侧为立柱（柱面贴防撞条与充电指示牌），另一侧相邻车位停一辆深色轿车，两车侧距 0.70 米。"
+    },
+    {
+      "id": "B18-004",
+      "requirement_zh": "目标车位内停一台银灰轿车：车宽 1.85 米、车长 4.80 米，车门全关，左后翼子板处设充电口盖（已翻开 60°）。"
+    },
+    {
+      "id": "B18-005",
+      "requirement_zh": "充电机器人停在车侧：底盘 0.60 × 0.50 米、四轮中前轮压在导向标线上，机身立柱高 1.10 米，顶部二自由度臂持国标直流充电枪（枪体长 0.25 米、缆径 0.03 米）；"
+    },
+    {
+      "id": "B18-006",
+      "requirement_zh": "冻结在插入前一刻：枪头距充电口平面 0.02 米，枪体轴线与充电口轴线对中偏差不超过 3°，枪头锁扣朝上；"
+    },
+    {
+      "id": "B18-007",
+      "requirement_zh": "充电缆线自车位上方约 2.40 米的滑轨吊点自然悬垂成悬链到机器人持枪手，全程不得直线绷紧，缆线与车身最近净距不小于 0.05 米。"
+    },
+    {
+      "id": "B18-008",
+      "requirement_zh": "车位后墙上配电箱与急停按钮可见，指示灯为蓝光待机色。"
+    },
+    {
+      "id": "B18-009",
+      "requirement_zh": "可通行验收：车位前通道净宽不小于 2.40 米，机器人对侧车身与立柱之间留出不小于 0.60 米的撤离通道且连续。"
+    },
+    {
+      "id": "B18-010",
+      "requirement_zh": "可触及验收：充电口中心高度 0.90 米，落在机器人臂 0.60–1.20 米作业带内，臂基座至充电口水平距离不超过 0.80 米。"
+    },
+    {
+      "id": "B18-011",
+      "requirement_zh": "可操作验收：翻开的口盖与枪体运动路径无干涉（口盖最大开角处与枪体外缘净空不小于 0.03 米），枪头导向斜面与口内导向槽方位一致。"
+    },
+    {
+      "id": "B18-012",
+      "requirement_zh": "使用环氧反光地面、顶棚日光灯带与冷白照明，枪身留一点红色细节。"
+    },
+    {
+      "id": "B18-013",
+      "requirement_zh": "主视角同框机器人、持枪手臂与充电口近景关系。"
+    },
+    {
+      "id": "B18-014",
+      "requirement_zh": "这是可编辑静态场景，不要求车辆移动、插拔动作或电流特效。"
+    }
+  ],
+  "methods": [
+    "native rerun and render",
+    "world-space vertex dimensions and angles",
+    "signed contact/clearance measurements using geometric surfaces",
+    "sampled free-route widths and service-envelope distances",
+    "semantic object and material review"
+  ],
+  "unimplemented": "No automatic harness, validated reach solver, GT scene, calibrated aggregate score or model results."
+}

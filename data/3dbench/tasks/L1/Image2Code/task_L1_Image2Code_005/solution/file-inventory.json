@@ -1,0 +1,134 @@
+[
+  {
+    "path": "attribution/input/CREDIT.txt",
+    "bytes": 426,
+    "sha256": "8fdc1d0544c793dfed25a3f5897d5ffe11d4b2f2b1049d56fc4a96cd1acc894e",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/front.png",
+    "bytes": 1151871,
+    "sha256": "08cbba60c0b4043209469d32b7c7061d4814e2d6ba00c25c2624c2a471c042cb",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/reference.png",
+    "bytes": 1177929,
+    "sha256": "957c062dbd17827220f40911780cde0c8215911f1af782afb135d45238c5331e",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/side.png",
+    "bytes": 1018045,
+    "sha256": "a5281958a9a380adfc35d876cb25d530e24930f7b7b6dcd50143f6111ad1b5de",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/top.png",
+    "bytes": 1295342,
+    "sha256": "ddfa101ba8103c107b9517be44f8f7205aa9006a72b15f11bad39e4858c1c7ea",
+    "model_visible": true
+  },
+  {
+    "path": "harness/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model_visible": false
+  },
+  {
+    "path": "instruction.md",
+    "bytes": 2597,
+    "sha256": "fe273e051af57795fc4bb60b59ddfc2e55b3dc3d3cd53205704defd92bbfaec2",
+    "model_visible": true
+  },
+  {
+    "path": "instruction.zh.md",
+    "bytes": 2152,
+    "sha256": "bfab20eab071e9b1ed43baea4485028d56fa90128919934525c8e88b1c261cb5",
+    "model_visible": false
+  },
+  {
+    "path": "README.md",
+    "bytes": 1191,
+    "sha256": "64a27f65135d18e0cb70ae02946e14ebaf33fde93ea9fdfccd016adea3ce5019",
+    "model_visible": false
+  },
+  {
+    "path": "solution/EVALUATION.md",
+    "bytes": 2771,
+    "sha256": "0cac4af2fc606a7ca13ea3885cea77918dba2d7776ce9a468de97843f8c99cd9",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/CREDIT.txt",
+    "bytes": 426,
+    "sha256": "8fdc1d0544c793dfed25a3f5897d5ffe11d4b2f2b1049d56fc4a96cd1acc894e",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/download-receipt.json",
+    "bytes": 645,
+    "sha256": "83fe5517bc2087b1d8a0d2a71294154aca52a982b0ccc36b7b43734b8900cd0d",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/source.json",
+    "bytes": 1188,
+    "sha256": "25cb1c7e3bdb89c399d6685b061f91d70a92ca6c40029387a5d93a4651b7c2f3",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/audit.json",
+    "bytes": 3148,
+    "sha256": "462a8722b6721378c5ad7a71a1c13711bc770610ab19777597a76ffd3743dcca",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/front.png",
+    "bytes": 1151871,
+    "sha256": "08cbba60c0b4043209469d32b7c7061d4814e2d6ba00c25c2624c2a471c042cb",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/main.png",
+    "bytes": 1177929,
+    "sha256": "957c062dbd17827220f40911780cde0c8215911f1af782afb135d45238c5331e",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.blend",
+    "bytes": 23946438,
+    "sha256": "4f3cb0c9f39531fd2214be89e92df142b8273a514f6f9697ad9687f164d0c13c",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.glb",
+    "bytes": 23968444,
+    "sha256": "428fea296ec0ce8cd099017e9115970af1e21a748d4cb691b7b02d7ce8d4115b",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/side.png",
+    "bytes": 1018045,
+    "sha256": "a5281958a9a380adfc35d876cb25d530e24930f7b7b6dcd50143f6111ad1b5de",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/top.png",
+    "bytes": 1295342,
+    "sha256": "ddfa101ba8103c107b9517be44f8f7205aa9006a72b15f11bad39e4858c1c7ea",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/model.glb",
+    "bytes": 24158944,
+    "sha256": "f0dabc8f7053fd42552a7284f8ca4c1182c20aedf14ba30c87286cf05873aea8",
+    "model_visible": false
+  },
+  {
+    "path": "task.toml",
+    "bytes": 766,
+    "sha256": "bca8911fc081d60ab219eadbaca71cc27ea5f74591e9919325485ccfd6e31d45",
+    "model_visible": false
+  }
+]

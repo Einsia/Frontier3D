@@ -1,0 +1,1504 @@
+{
+  "key": "castle-kit",
+  "path": "assets/expansion/kenney/castle-kit/review/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      35.0,
+      -44.0,
+      37.0
+    ],
+    "rotation_euler": [
+      1.040027141571045,
+      4.938264908105339e-09,
+      0.6719632148742676
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "bridge-draw",
+      "vertices": 68,
+      "polygons": 40,
+      "sha256": "a2434ee4395644cb09703330bab6f4a2208fc37e842d4973470d4aefda04d40f"
+    },
+    {
+      "name": "catapult",
+      "vertices": 88,
+      "polygons": 52,
+      "sha256": "4f2a186da0839064f6cd126aab2342eef7bbe21752763ad8b9dc87676bfda1fb"
+    },
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "fb1eab918133e4a876e97cd10629696d7deded89cc3b3783b3dd63d52c3302ed"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "43eb2f132b789402172c9c03c13bd43856ae63c31e56662146a9679d4f06946f"
+    },
+    {
+      "name": "gate",
+      "vertices": 244,
+      "polygons": 146,
+      "sha256": "2344d583bc6e99efc14c0ff9e0fc1585872a60206eea6a303a8958b58a4cf351"
+    },
+    {
+      "name": "siege-catapult",
+      "vertices": 966,
+      "polygons": 564,
+      "sha256": "89cded3b657b1b1e34e38935623a24c1ed5c3cbfb27e03f239793ea978865c82"
+    },
+    {
+      "name": "stairs-stone",
+      "vertices": 162,
+      "polygons": 104,
+      "sha256": "e8347cc110e5431e7f76e6a9a9bd2e3e8a80328f3ae47efabb233d7aa70e15f8"
+    },
+    {
+      "name": "tower-square-base",
+      "vertices": 56,
+      "polygons": 28,
+      "sha256": "4eb6ae5f11b6d51c8966f7aa621a4d2a79a3512bac323f57d0d7f82a8ddcb72b"
+    },
+    {
+      "name": "tower-square-base.001",
+      "vertices": 56,
+      "polygons": 28,
+      "sha256": "4eb6ae5f11b6d51c8966f7aa621a4d2a79a3512bac323f57d0d7f82a8ddcb72b"
+    },
+    {
+      "name": "tower-square-base.002",
+      "vertices": 56,
+      "polygons": 28,
+      "sha256": "4eb6ae5f11b6d51c8966f7aa621a4d2a79a3512bac323f57d0d7f82a8ddcb72b"
+    },
+    {
+      "name": "tower-square-base.003",
+      "vertices": 56,
+      "polygons": 28,
+      "sha256": "4eb6ae5f11b6d51c8966f7aa621a4d2a79a3512bac323f57d0d7f82a8ddcb72b"
+    },
+    {
+      "name": "tower-square-base.004",
+      "vertices": 56,
+      "polygons": 28,
+      "sha256": "4eb6ae5f11b6d51c8966f7aa621a4d2a79a3512bac323f57d0d7f82a8ddcb72b"
+    },
+    {
+      "name": "tower-square-mid",
+      "vertices": 120,
+      "polygons": 76,
+      "sha256": "c7ecb58485c1c3cb8798791655f31a87733036d4151cc72fa88ad2ed5f92bd06"
+    },
+    {
+      "name": "tower-square-mid.001",
+      "vertices": 120,
+      "polygons": 76,
+      "sha256": "c7ecb58485c1c3cb8798791655f31a87733036d4151cc72fa88ad2ed5f92bd06"
+    },
+    {
+      "name": "tower-square-mid.002",
+      "vertices": 120,
+      "polygons": 76,
+      "sha256": "c7ecb58485c1c3cb8798791655f31a87733036d4151cc72fa88ad2ed5f92bd06"
+    },
+    {
+      "name": "tower-square-mid.003",
+      "vertices": 120,
+      "polygons": 76,
+      "sha256": "c7ecb58485c1c3cb8798791655f31a87733036d4151cc72fa88ad2ed5f92bd06"
+    },
+    {
+      "name": "tower-square-mid.004",
+      "vertices": 120,
+      "polygons": 76,
+      "sha256": "c7ecb58485c1c3cb8798791655f31a87733036d4151cc72fa88ad2ed5f92bd06"
+    },
+    {
+      "name": "tower-square-roof",
+      "vertices": 248,
+      "polygons": 144,
+      "sha256": "7a8af4957214646bbd1a51f106bb26f82702677c81db5be2f189453497515b2c"
+    },
+    {
+      "name": "tower-square-top",
+      "vertices": 232,
+      "polygons": 148,
+      "sha256": "eb544f60c827da5bcedf09001369ae749b6e3ec14e89a17283a1cfbb0e80138c"
+    },
+    {
+      "name": "tower-square-top.001",
+      "vertices": 232,
+      "polygons": 148,
+      "sha256": "eb544f60c827da5bcedf09001369ae749b6e3ec14e89a17283a1cfbb0e80138c"
+    },
+    {
+      "name": "tower-square-top.002",
+      "vertices": 232,
+      "polygons": 148,
+      "sha256": "eb544f60c827da5bcedf09001369ae749b6e3ec14e89a17283a1cfbb0e80138c"
+    },
+    {
+      "name": "tower-square-top.003",
+      "vertices": 232,
+      "polygons": 148,
+      "sha256": "eb544f60c827da5bcedf09001369ae749b6e3ec14e89a17283a1cfbb0e80138c"
+    },
+    {
+      "name": "tree-large",
+      "vertices": 377,
+      "polygons": 229,
+      "sha256": "4cae5adeba67957697e92fa13b4b8979f984a91a9626d98975d104edfedf9856"
+    },
+    {
+      "name": "wall",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall-doorway",
+      "vertices": 684,
+      "polygons": 500,
+      "sha256": "74c6fe57008d67e0a097cd3c6072089e93b9e3f6f0bc8db345caadd1ef628a0d"
+    },
+    {
+      "name": "wall.001",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.002",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.003",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.004",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.005",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.006",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.007",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.008",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.009",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.010",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.011",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.012",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.013",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.014",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.015",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.016",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.017",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wall.018",
+      "vertices": 288,
+      "polygons": 178,
+      "sha256": "18da74976e170e731cf96db8c97d0f606f697db427691d33e18501c1e03c5f31"
+    },
+    {
+      "name": "wheel",
+      "vertices": 120,
+      "polygons": 78,
+      "sha256": "18eaae1a20e43b6c5f60f91436a400810f99d5e54ef74e7ca30d39118ee334d7"
+    },
+    {
+      "name": "wheel.001",
+      "vertices": 120,
+      "polygons": 78,
+      "sha256": "bbc9263bf6a89bf910430dea93fad505b198a19d30ded263d380ee6b9eef1ce7"
+    },
+    {
+      "name": "wheel.002",
+      "vertices": 120,
+      "polygons": 78,
+      "sha256": "f7d7e0d28eb9c7fe6ea1c81adb264bf8001c79efae00ce380b5fea0e8811c3b9"
+    },
+    {
+      "name": "wheel.003",
+      "vertices": 120,
+      "polygons": 78,
+      "sha256": "c143a8ba9d7ced43761184f02e509b949214c648560dd7811d5279068f0950d3"
+    }
+  ],
+  "images": [
+    {
+      "name": "colormap",
+      "path": "//..\\original\\Models\\GLB format\\Textures\\colormap.png",
+      "packed": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Castle island",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        29.0,
+        28.0,
+        0.699999988079071
+      ],
+      "bounds": [
+        [
+          -14.5,
+          -14.0,
+          -0.699999988079071
+        ],
+        [
+          14.5,
+          14.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "Original site grass"
+      ]
+    },
+    {
+      "name": "Courtyard",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        17.0,
+        17.0,
+        0.10000000149011612
+      ],
+      "bounds": [
+        [
+          -8.5,
+          -8.5,
+          -0.030000001192092896
+        ],
+        [
+          8.5,
+          8.5,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "wall",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -10.5,
+          -7.5,
+          0.0
+        ],
+        [
+          -7.5,
+          -4.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap"
+      ]
+    },
+    {
+      "name": "wall.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          7.5,
+          -7.5,
+          0.0
+        ],
+        [
+          10.5,
+          -4.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.001"
+      ]
+    },
+    {
+      "name": "wall.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -10.5,
+          -4.5,
+          0.0
+        ],
+        [
+          -7.5,
+          -1.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.002"
+      ]
+    },
+    {
+      "name": "wall.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          7.5,
+          -4.5,
+          0.0
+        ],
+        [
+          10.5,
+          -1.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.003"
+      ]
+    },
+    {
+      "name": "wall.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -10.5,
+          -1.5,
+          0.0
+        ],
+        [
+          -7.5,
+          1.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "wall.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          7.5,
+          -1.5,
+          0.0
+        ],
+        [
+          10.5,
+          1.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.005"
+      ]
+    },
+    {
+      "name": "wall.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -10.5,
+          1.5,
+          0.0
+        ],
+        [
+          -7.5,
+          4.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.006"
+      ]
+    },
+    {
+      "name": "wall.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          7.5,
+          1.5,
+          0.0
+        ],
+        [
+          10.5,
+          4.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.007"
+      ]
+    },
+    {
+      "name": "wall.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -10.5,
+          4.5,
+          0.0
+        ],
+        [
+          -7.5,
+          7.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.008"
+      ]
+    },
+    {
+      "name": "wall.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          7.5,
+          4.5,
+          0.0
+        ],
+        [
+          10.5,
+          7.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.009"
+      ]
+    },
+    {
+      "name": "wall.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -7.500000476837158,
+          7.499999523162842,
+          0.0
+        ],
+        [
+          -4.499999523162842,
+          10.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.010"
+      ]
+    },
+    {
+      "name": "wall.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -4.500000476837158,
+          7.499999523162842,
+          0.0
+        ],
+        [
+          -1.499999761581421,
+          10.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.011"
+      ]
+    },
+    {
+      "name": "wall.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -1.500000238418579,
+          7.499999523162842,
+          0.0
+        ],
+        [
+          1.500000238418579,
+          10.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.012"
+      ]
+    },
+    {
+      "name": "wall.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          1.499999761581421,
+          7.499999523162842,
+          0.0
+        ],
+        [
+          4.500000476837158,
+          10.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.013"
+      ]
+    },
+    {
+      "name": "wall.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          4.499999523162842,
+          7.499999523162842,
+          0.0
+        ],
+        [
+          7.500000476837158,
+          10.5,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.014"
+      ]
+    },
+    {
+      "name": "wall.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -7.500000476837158,
+          -10.5,
+          0.0
+        ],
+        [
+          -4.499999523162842,
+          -7.499999523162842,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.015"
+      ]
+    },
+    {
+      "name": "wall.016",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -4.500000476837158,
+          -10.5,
+          0.0
+        ],
+        [
+          -1.499999761581421,
+          -7.499999523162842,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.016"
+      ]
+    },
+    {
+      "name": "wall.017",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          1.499999761581421,
+          -10.5,
+          0.0
+        ],
+        [
+          4.500000476837158,
+          -7.499999523162842,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.017"
+      ]
+    },
+    {
+      "name": "wall.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          4.499999523162842,
+          -10.5,
+          0.0
+        ],
+        [
+          7.500000476837158,
+          -7.499999523162842,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.018"
+      ]
+    },
+    {
+      "name": "wall-doorway",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.5,
+        3.0,
+        3.929999828338623
+      ],
+      "bounds": [
+        [
+          -1.500000238418579,
+          -9.75,
+          0.0
+        ],
+        [
+          1.5,
+          -8.25,
+          3.929999828338623
+        ]
+      ],
+      "materials": [
+        "colormap.019"
+      ]
+    },
+    {
+      "name": "gate",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.454800009727478,
+        1.9864528179168701,
+        2.731015682220459
+      ],
+      "bounds": [
+        [
+          -0.9932264685630798,
+          -9.227399826049805,
+          0.05000000074505806
+        ],
+        [
+          0.9932264685630798,
+          -8.772600173950195,
+          2.781015634536743
+        ]
+      ],
+      "materials": [
+        "colormap.020"
+      ]
+    },
+    {
+      "name": "bridge-draw",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0062177181243896,
+        2.4932262897491455,
+        0.30000001192092896
+      ],
+      "bounds": [
+        [
+          -1.246613621711731,
+          -13.303109169006348,
+          0.05000000074505806
+        ],
+        [
+          1.2466132640838623,
+          -10.296891212463379,
+          0.3500000238418579
+        ]
+      ],
+      "materials": [
+        "colormap.021"
+      ]
+    },
+    {
+      "name": "tower-square-base",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          -10.5,
+          -10.5,
+          0.0
+        ],
+        [
+          -7.5,
+          -7.5,
+          3.0299999713897705
+        ]
+      ],
+      "materials": [
+        "colormap.022"
+      ]
+    },
+    {
+      "name": "tower-square-mid",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.7899999618530273,
+        2.7899999618530273,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          -10.395000457763672,
+          -10.395000457763672,
+          3.0
+        ],
+        [
+          -7.605000019073486,
+          -7.605000019073486,
+          6.029999732971191
+        ]
+      ],
+      "materials": [
+        "colormap.023"
+      ]
+    },
+    {
+      "name": "tower-square-top",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        0.9000000357627869
+      ],
+      "bounds": [
+        [
+          -10.5,
+          -10.5,
+          6.0
+        ],
+        [
+          -7.5,
+          -7.5,
+          6.900000095367432
+        ]
+      ],
+      "materials": [
+        "colormap.024"
+      ]
+    },
+    {
+      "name": "tower-square-base.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          -10.5,
+          7.5,
+          0.0
+        ],
+        [
+          -7.5,
+          10.5,
+          3.0299999713897705
+        ]
+      ],
+      "materials": [
+        "colormap.025"
+      ]
+    },
+    {
+      "name": "tower-square-mid.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.7899999618530273,
+        2.7899999618530273,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          -10.395000457763672,
+          7.605000019073486,
+          3.0
+        ],
+        [
+          -7.605000019073486,
+          10.395000457763672,
+          6.029999732971191
+        ]
+      ],
+      "materials": [
+        "colormap.026"
+      ]
+    },
+    {
+      "name": "tower-square-top.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        0.9000000357627869
+      ],
+      "bounds": [
+        [
+          -10.5,
+          7.5,
+          6.0
+        ],
+        [
+          -7.5,
+          10.5,
+          6.900000095367432
+        ]
+      ],
+      "materials": [
+        "colormap.027"
+      ]
+    },
+    {
+      "name": "tower-square-base.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          7.5,
+          -10.5,
+          0.0
+        ],
+        [
+          10.5,
+          -7.5,
+          3.0299999713897705
+        ]
+      ],
+      "materials": [
+        "colormap.028"
+      ]
+    },
+    {
+      "name": "tower-square-mid.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.7899999618530273,
+        2.7899999618530273,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          7.605000019073486,
+          -10.395000457763672,
+          3.0
+        ],
+        [
+          10.395000457763672,
+          -7.605000019073486,
+          6.029999732971191
+        ]
+      ],
+      "materials": [
+        "colormap.029"
+      ]
+    },
+    {
+      "name": "tower-square-top.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        0.9000000357627869
+      ],
+      "bounds": [
+        [
+          7.5,
+          -10.5,
+          6.0
+        ],
+        [
+          10.5,
+          -7.5,
+          6.900000095367432
+        ]
+      ],
+      "materials": [
+        "colormap.030"
+      ]
+    },
+    {
+      "name": "tower-square-base.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          7.5,
+          7.5,
+          0.0
+        ],
+        [
+          10.5,
+          10.5,
+          3.0299999713897705
+        ]
+      ],
+      "materials": [
+        "colormap.031"
+      ]
+    },
+    {
+      "name": "tower-square-mid.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.7899999618530273,
+        2.7899999618530273,
+        3.0299999713897705
+      ],
+      "bounds": [
+        [
+          7.605000019073486,
+          7.605000019073486,
+          3.0
+        ],
+        [
+          10.395000457763672,
+          10.395000457763672,
+          6.029999732971191
+        ]
+      ],
+      "materials": [
+        "colormap.032"
+      ]
+    },
+    {
+      "name": "tower-square-top.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.0,
+        0.9000000357627869
+      ],
+      "bounds": [
+        [
+          7.5,
+          7.5,
+          6.0
+        ],
+        [
+          10.5,
+          10.5,
+          6.900000095367432
+        ]
+      ],
+      "materials": [
+        "colormap.033"
+      ]
+    },
+    {
+      "name": "tower-square-base.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        4.039999961853027
+      ],
+      "bounds": [
+        [
+          -2.0,
+          2.0,
+          0.0
+        ],
+        [
+          2.0,
+          6.0,
+          4.039999961853027
+        ]
+      ],
+      "materials": [
+        "colormap.034"
+      ]
+    },
+    {
+      "name": "tower-square-mid.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.7200000286102295,
+        3.7200000286102295,
+        4.039999961853027
+      ],
+      "bounds": [
+        [
+          -1.8600000143051147,
+          2.1399998664855957,
+          4.0
+        ],
+        [
+          1.8600000143051147,
+          5.860000133514404,
+          8.039999961853027
+        ]
+      ],
+      "materials": [
+        "colormap.035"
+      ]
+    },
+    {
+      "name": "tower-square-roof",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        4.0,
+        8.039999961853027
+      ],
+      "bounds": [
+        [
+          -2.0,
+          2.0,
+          8.0
+        ],
+        [
+          2.0,
+          6.0,
+          16.040000915527344
+        ]
+      ],
+      "materials": [
+        "colormap.036"
+      ]
+    },
+    {
+      "name": "stairs-stone",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9300000071525574,
+        3.2760000228881836,
+        2.6999998092651367
+      ],
+      "bounds": [
+        [
+          -6.465000152587891,
+          2.361999988555908,
+          0.0
+        ],
+        [
+          -5.534999847412109,
+          5.638000011444092,
+          2.6999998092651367
+        ]
+      ],
+      "materials": [
+        "colormap.037"
+      ]
+    },
+    {
+      "name": "siege-catapult",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.935295820236206,
+        1.886975646018982,
+        2.361311912536621
+      ],
+      "bounds": [
+        [
+          1.5962116718292236,
+          -4.222052097320557,
+          0.3779720067977905
+        ],
+        [
+          4.919874668121338,
+          -1.6396632194519043,
+          2.739284038543701
+        ]
+      ],
+      "materials": [
+        "colormap.038"
+      ]
+    },
+    {
+      "name": "catapult",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.8405957221984863,
+        0.4361637234687805,
+        0.1802329570055008
+      ],
+      "bounds": [
+        [
+          1.2678744792938232,
+          -3.6596486568450928,
+          0.642351508140564
+        ],
+        [
+          4.124566555023193,
+          -2.5031466484069824,
+          0.8225845098495483
+        ]
+      ],
+      "materials": [
+        "colormap.038"
+      ]
+    },
+    {
+      "name": "wheel",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8056078553199768,
+        0.2663649916648865,
+        0.8056079745292664
+      ],
+      "bounds": [
+        [
+          1.8470120429992676,
+          -2.313699245452881,
+          0.08000001311302185
+        ],
+        [
+          2.6941099166870117,
+          -1.8479037284851074,
+          0.8856079578399658
+        ]
+      ],
+      "materials": [
+        "colormap.038"
+      ]
+    },
+    {
+      "name": "wheel.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8056078553199768,
+        0.2663649916648865,
+        0.8056079745292664
+      ],
+      "bounds": [
+        [
+          3.4671709537506104,
+          -1.8795790672302246,
+          0.08000001311302185
+        ],
+        [
+          4.314268589019775,
+          -1.4137835502624512,
+          0.8856079578399658
+        ]
+      ],
+      "materials": [
+        "colormap.038"
+      ]
+    },
+    {
+      "name": "wheel.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8056078553199768,
+        0.2663649916648865,
+        0.8056079745292664
+      ],
+      "bounds": [
+        [
+          2.4043376445770264,
+          -4.393666744232178,
+          0.08000001311302185
+        ],
+        [
+          3.2514355182647705,
+          -3.9278712272644043,
+          0.8856079578399658
+        ]
+      ],
+      "materials": [
+        "colormap.038"
+      ]
+    },
+    {
+      "name": "wheel.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.8056078553199768,
+        0.2663649916648865,
+        0.8056079745292664
+      ],
+      "bounds": [
+        [
+          4.024496555328369,
+          -3.9595465660095215,
+          0.08000001311302185
+        ],
+        [
+          4.871593952178955,
+          -3.493751049041748,
+          0.8856079578399658
+        ]
+      ],
+      "materials": [
+        "colormap.038"
+      ]
+    },
+    {
+      "name": "tree-large",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.7773308753967285,
+        1.7795637845993042,
+        3.6984000205993652
+      ],
+      "bounds": [
+        [
+          -5.888665199279785,
+          -2.889781951904297,
+          0.07999999821186066
+        ],
+        [
+          -4.111334800720215,
+          -1.1102180480957031,
+          3.77839994430542
+        ]
+      ],
+      "materials": [
+        "colormap.039"
+      ]
+    }
+  ]
+}

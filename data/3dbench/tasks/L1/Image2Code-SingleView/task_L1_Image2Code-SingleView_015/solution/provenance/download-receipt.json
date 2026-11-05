@@ -1,0 +1,17 @@
+{
+  "uid": "cd5ef0305d8545dd8cd934ebb99cf7d5",
+  "file": "source.glb",
+  "download_filename": "ergonomic_mesh_office_chair.glb",
+  "bytes": 5629600,
+  "sha256": "7993ae470d5516d92da97b1aaed7c18f1c16e3bccfb226084a3ce0274a311d7f",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "guillaumecrz (https://sketchfab.com/guillaumecrz)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/ergonomic-mesh-office-chair-cd5ef0305d8545dd8cd934ebb99cf7d5",
+    "title": "Ergonomic mesh office chair"
+  },
+  "gltf_meshes": 46,
+  "gltf_images": 0,
+  "animations": []
+}

@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_014",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "ba82b1559e1433e444eda1a74e94d8b6a365dae2724f5a02f1c71f21d4862045",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "race car body",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.12,
+          0.34
+        ],
+        [
+          0.88,
+          0.34
+        ],
+        [
+          0.88,
+          0.76
+        ],
+        [
+          0.12,
+          0.76
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "rear wing",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.58,
+          0.22
+        ],
+        [
+          0.91,
+          0.22
+        ],
+        [
+          0.91,
+          0.36
+        ],
+        [
+          0.58,
+          0.36
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "visible wheels",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.46,
+          0.44
+        ],
+        [
+          0.87,
+          0.44
+        ],
+        [
+          0.87,
+          0.74
+        ],
+        [
+          0.46,
+          0.74
+        ]
+      ]
+    }
+  ]
+}

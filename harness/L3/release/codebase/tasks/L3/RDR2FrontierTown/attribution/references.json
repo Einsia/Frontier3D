@@ -1,0 +1,28 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "f6f4b4e0c2d4a444e6d3c64a5666a99085c45b8e91b647d6e0313f5401b8f279",
+      "width": 1500,
+      "height": 844,
+      "provenance": {
+        "task": "l3-g03",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-g03/street.jpg",
+        "source": "https://www.ireddead.com/rdr2/images/busy-valentine-street-1573",
+        "download_url": "https://www.ireddead.com/content/images/busy-valentine-street-1573.jpg",
+        "sha256": "e52e8fa42e816113ddaa39cdc6e47b3ceb5406ebee4d5f65637fd9ca4a1d8fdd",
+        "copyright": "Rockstar Games; official screenshot mirrored by iRedDead",
+        "license": "copyrighted_game_screenshot",
+        "usage": "visual_reference_only",
+        "kind": "game_screenshot"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

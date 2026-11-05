@@ -1,0 +1,207 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-g03",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "main_street",
+    "saloon",
+    "general_store",
+    "store_room",
+    "stable_yard",
+    "freight_yard"
+  ],
+  "initial_state": "Cargo in the freight yard, cart empty, doors and stable gate closed.",
+  "entities": [
+    {
+      "id": "door.saloon.01",
+      "role": "swing_door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.saloon.02",
+      "role": "swing_door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.store.01",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.store.02",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "gate.stable",
+      "role": "gate",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "drawer.01",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "drawer.02",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "cart.freight",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "empty; at freight yard",
+      "argument": ""
+    },
+    {
+      "id": "crate.01",
+      "role": "container",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; one cargo type in each",
+      "argument": ""
+    },
+    {
+      "id": "crate.02",
+      "role": "container",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; one cargo type in each",
+      "argument": ""
+    },
+    {
+      "id": "crate.03",
+      "role": "container",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; one cargo type in each",
+      "argument": ""
+    },
+    {
+      "id": "cargo.flour",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "freight yard crate",
+      "argument": ""
+    },
+    {
+      "id": "cargo.tools",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "freight yard crate",
+      "argument": ""
+    },
+    {
+      "id": "cargo.bottles",
+      "role": "cargo",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "freight yard crate",
+      "argument": ""
+    },
+    {
+      "id": "storage.01",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; flour/tools/bottles marked separately",
+      "argument": ""
+    },
+    {
+      "id": "storage.02",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; flour/tools/bottles marked separately",
+      "argument": ""
+    },
+    {
+      "id": "storage.03",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty; flour/tools/bottles marked separately",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

@@ -1,0 +1,454 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+  "detail_checks": [
+    {
+      "id": "d01",
+      "question": "口鼻是否保留参考中的前伸、收尖轮廓、鼻端体积和嘴缝？",
+      "source_quote": "muzzle",
+      "weight": 0.15
+    },
+    {
+      "id": "d02",
+      "question": "耳部是否保留可见的薄片厚度、弯折轮廓和耳根连接？",
+      "source_quote": "ears",
+      "weight": 0.15
+    },
+    {
+      "id": "d03",
+      "question": "胸部是否保留隆起体积、颈胸过渡和下缘毛簇轮廓？",
+      "source_quote": "chest",
+      "weight": 0.15
+    },
+    {
+      "id": "d04",
+      "question": "足爪是否具有参考可辨的圆钝末端、趾部起伏和踝爪过渡？",
+      "source_quote": "paws",
+      "weight": 0.15
+    },
+    {
+      "id": "d05",
+      "question": "腿部是否保留弯曲、逐渐收细的体积及关节连接？",
+      "source_quote": "legs",
+      "weight": 0.15
+    },
+    {
+      "id": "d06",
+      "question": "尾部是否保留粗尾根、弯曲蓬松体积及收尖末端？",
+      "source_quote": "tail",
+      "weight": 0.15
+    },
+    {
+      "id": "d07",
+      "question": "胸腹和尾缘是否有可辨的毛簇层次与不规则局部轮廓？",
+      "source_quote": "Fur may be approximated with layered geometry or local material detail, but must retain the fluffy silhouette",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "主参考使用图像映射中的 input/reference.png；附件证据路径 reference/reference-0.png 对应同一原始图像。",
+    "仅有单视图；背侧、腹底及被遮挡部位无法确定，只评估合理补全，不规定隐藏拓扑或内部结构。",
+    "深色毛面中的细小眼部、耳内及趾缝边界不完全清晰；不将无法分辨的微小结构设为独立定位实例。",
+    "最大整体跨度按世界坐标包围盒三个轴向尺寸的最大值解释；原文未进一步定义跨度算法。2% 为相对名义尺寸的显式容差。",
+    "区域与框仅依据原始参考冻结；不表示候选已符合任何要求。",
+    "真实体积、组件可编辑性、坐标轴和保存姿态需检查原生场景及导出几何，单张渲染无法独立确认。",
+    "未提供 legacy-detail-20261018-v1 的额外正文；本计划仅使用所附合同、指令与图像，不补充未知规则。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": 0.02,
+      "id": "n01",
+      "measurement_definition": "以米读取最终静态姿态的对象几何，应用世界变换，排除相机和灯光；计算完整对象世界坐标包围盒的 X、Y、Z 尺寸并取最大值，与名义值 1.000 m 比较。explicit_tolerance 为相对比例，即原文 2%。",
+      "quantity": "最大整体跨度",
+      "relation": "equal",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "target": 1.0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "头部与耳鼻",
+      "polygon": [
+        [
+          0.145,
+          0.39
+        ],
+        [
+          0.245,
+          0.388
+        ],
+        [
+          0.295,
+          0.426
+        ],
+        [
+          0.291,
+          0.489
+        ],
+        [
+          0.219,
+          0.533
+        ],
+        [
+          0.167,
+          0.525
+        ],
+        [
+          0.167,
+          0.438
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "r02",
+      "label": "胸颈与躯干",
+      "polygon": [
+        [
+          0.24,
+          0.389
+        ],
+        [
+          0.307,
+          0.389
+        ],
+        [
+          0.378,
+          0.416
+        ],
+        [
+          0.478,
+          0.371
+        ],
+        [
+          0.527,
+          0.395
+        ],
+        [
+          0.575,
+          0.522
+        ],
+        [
+          0.483,
+          0.52
+        ],
+        [
+          0.421,
+          0.573
+        ],
+        [
+          0.31,
+          0.609
+        ],
+        [
+          0.238,
+          0.602
+        ],
+        [
+          0.215,
+          0.504
+        ],
+        [
+          0.286,
+          0.485
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "r03",
+      "label": "腿与足爪",
+      "polygon": [
+        [
+          0.242,
+          0.568
+        ],
+        [
+          0.35,
+          0.577
+        ],
+        [
+          0.465,
+          0.517
+        ],
+        [
+          0.565,
+          0.494
+        ],
+        [
+          0.626,
+          0.555
+        ],
+        [
+          0.628,
+          0.593
+        ],
+        [
+          0.584,
+          0.598
+        ],
+        [
+          0.54,
+          0.548
+        ],
+        [
+          0.529,
+          0.638
+        ],
+        [
+          0.493,
+          0.64
+        ],
+        [
+          0.466,
+          0.567
+        ],
+        [
+          0.331,
+          0.622
+        ],
+        [
+          0.255,
+          0.704
+        ],
+        [
+          0.208,
+          0.716
+        ],
+        [
+          0.203,
+          0.674
+        ],
+        [
+          0.217,
+          0.615
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "r04",
+      "label": "上扬蓬松尾部",
+      "polygon": [
+        [
+          0.488,
+          0.374
+        ],
+        [
+          0.536,
+          0.348
+        ],
+        [
+          0.603,
+          0.338
+        ],
+        [
+          0.657,
+          0.325
+        ],
+        [
+          0.672,
+          0.332
+        ],
+        [
+          0.655,
+          0.368
+        ],
+        [
+          0.629,
+          0.401
+        ],
+        [
+          0.593,
+          0.42
+        ],
+        [
+          0.544,
+          0.414
+        ],
+        [
+          0.519,
+          0.399
+        ]
+      ],
+      "weight": 0.15
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "question": "主体是否为完整、可辨识的边境牧羊犬？",
+      "source_quote": "Reconstruct the border collie",
+      "weight": 0.1
+    },
+    {
+      "id": "s02",
+      "question": "犬的腾跃姿态、头身朝向与四肢相对布局是否匹配参考？",
+      "source_quote": "in its displayed pose",
+      "weight": 0.1
+    },
+    {
+      "id": "s03",
+      "question": "口鼻是否位于头部前下方并朝向参考中的方向？",
+      "source_quote": "muzzle",
+      "weight": 0.06
+    },
+    {
+      "id": "s04",
+      "question": "耳部是否位于头顶两侧并保持参考中的姿态？",
+      "source_quote": "ears",
+      "weight": 0.06
+    },
+    {
+      "id": "s05",
+      "question": "胸部是否连接颈部、躯干和前肢，且位置与参考一致？",
+      "source_quote": "chest",
+      "weight": 0.06
+    },
+    {
+      "id": "s06",
+      "question": "各可见足爪是否位于对应腿末端并匹配参考布局？",
+      "source_quote": "paws",
+      "weight": 0.06
+    },
+    {
+      "id": "s07",
+      "question": "前后腿的伸屈方向及相互遮挡是否匹配参考？",
+      "source_quote": "legs",
+      "weight": 0.06
+    },
+    {
+      "id": "s08",
+      "question": "尾部是否从臀部延伸并向画面右上方扬起？",
+      "source_quote": "tail",
+      "weight": 0.06
+    },
+    {
+      "id": "s09",
+      "question": "黑白毛色分区是否匹配参考中的面部白纹、白胸颈、白色肢端及深色躯干？",
+      "source_quote": "with the characteristic black-and-white coat regions",
+      "weight": 0.1
+    },
+    {
+      "id": "s10",
+      "question": "毛发整体是否保留蓬松剪影？",
+      "source_quote": "must retain the fluffy silhouette",
+      "weight": 0.06
+    },
+    {
+      "id": "s11",
+      "question": "毛发下是否有连贯完整的犬体？",
+      "source_quote": "Retain a coherent body beneath the fur.",
+      "weight": 0.06
+    },
+    {
+      "id": "s12",
+      "question": "未见表面是否合理补全且未添加内部机械？",
+      "source_quote": "complete unseen surfaces plausibly without inventing internal machinery",
+      "weight": 0.04
+    },
+    {
+      "id": "s13",
+      "question": "主体是否使用真实可编辑的完整三维几何，而非平面照片或朝向相机的壳？",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "weight": 0.06
+    },
+    {
+      "id": "s14",
+      "question": "独立组件是否可单独编辑或分离为网格岛，并允许有机表面连续？",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "weight": 0.03
+    },
+    {
+      "id": "s15",
+      "question": "场景是否以米为单位并以 Z 轴向上？",
+      "source_quote": "Use metres, Z up",
+      "weight": 0.03
+    },
+    {
+      "id": "s16",
+      "question": "最终静态姿态是否保存于第 1 帧，且 scene.glb 保持同一姿态？",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "weight": 0.06
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "包含犬体全部可见毛缘、耳、口鼻、四肢和尾部，包含深色表面；不包含背景与阴影。",
+      "boxes": [
+        [
+          0.146,
+          0.326,
+          0.671,
+          0.715
+        ]
+      ],
+      "id": "t01",
+      "query": "完整边境牧羊犬",
+      "weight": 0.4
+    },
+    {
+      "boundary_notes": "包括可见双耳、头颅、面颊、口鼻和下颌；止于头颈连接处，不把白色胸颈毛领计入头部。",
+      "boxes": [
+        [
+          0.146,
+          0.391,
+          0.284,
+          0.531
+        ]
+      ],
+      "id": "t02",
+      "query": "犬头及耳口鼻",
+      "weight": 0.25
+    },
+    {
+      "boundary_notes": "从可辨的臀尾连接处到白色尾尖，包含黑色尾毛的完整可见轮廓；尾根与臀部交界存在自然连续性。",
+      "boxes": [
+        [
+          0.49,
+          0.326,
+          0.671,
+          0.42
+        ]
+      ],
+      "id": "t03",
+      "query": "上扬的蓬松尾巴",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "框住四个可辨足爪的可见末端体积；前足彼此重叠，框允许重叠。只覆盖可见足爪，不推定被遮住的轮廓，不将单个脚趾作为实例。",
+      "boxes": [
+        [
+          0.207,
+          0.674,
+          0.24,
+          0.715
+        ],
+        [
+          0.22,
+          0.66,
+          0.261,
+          0.701
+        ],
+        [
+          0.494,
+          0.583,
+          0.526,
+          0.636
+        ],
+        [
+          0.586,
+          0.55,
+          0.625,
+          0.593
+        ]
+      ],
+      "id": "t04",
+      "query": "可见足爪",
+      "weight": 0.15
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_021",
+  "family": "Reference2Scene",
+  "instruction_sha256": "fb6c70bc6cf46acd048966ed23a0e7507368f45a20dab76d58548c689f100e28",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_021",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "7edeb36f60893cca90f43ff035d4a19e6151774060601a3097e8b1cbe09b9baf",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-4d08b9b4bb021ca2a19e11d06a79b6d26ebcc65b3d3c33a29864e0cb23263a5a"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_bar_assembly",
+        "query": "完整渐变琴条组",
+        "weight": 0.35,
+        "boxes": [
+          [
+            0.126,
+            0.278,
+            0.832,
+            0.517
+          ]
+        ],
+        "boundary_notes": "以整组琴条为一个定位实例，包括暗色侧面；不逐根标注密集琴条，不含端部横梁。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_tube_assembly",
+        "query": "琴条下方的完整可见共鸣管组",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.202,
+            0.375,
+            0.646,
+            0.503
+          ]
+        ],
+        "boundary_notes": "定位整组可见管体而非单管；包括阴暗管段，不补全被琴面和框架遮挡部分。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_legs",
+        "query": "可见木制支腿",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.077,
+            0.365,
+            0.144,
+            0.585
+          ],
+          [
+            0.256,
+            0.444,
+            0.307,
+            0.49
+          ],
+          [
+            0.735,
+            0.532,
+            0.803,
+            0.75
+          ],
+          [
+            0.819,
+            0.5,
+            0.884,
+            0.698
+          ]
+        ],
+        "boundary_notes": "四个可分辨支腿的可见范围；左后腿仅标露出的下端，包含暗侧面，不含投影。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_endrails",
+        "query": "两端抬高的木横梁",
+        "weight": 0.1,
+        "boxes": [
+          [
+            0.108,
+            0.262,
+            0.277,
+            0.398
+          ],
+          [
+            0.762,
+            0.469,
+            0.852,
+            0.563
+          ]
+        ],
+        "boundary_notes": "各端横梁独立定位，包含厚度及下垂连接端，不含支腿。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_mallets",
+        "query": "带浅色槌头和细杆的琴槌",
+        "weight": 0.1,
+        "boxes": [
+          [
+            0.349,
+            0.313,
+            0.424,
+            0.395
+          ],
+          [
+            0.289,
+            0.319,
+            0.409,
+            0.382
+          ]
+        ],
+        "boundary_notes": "每把琴槌包括槌头与完整可见细杆；交叉处允许框重叠，不补画遮挡轮廓。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

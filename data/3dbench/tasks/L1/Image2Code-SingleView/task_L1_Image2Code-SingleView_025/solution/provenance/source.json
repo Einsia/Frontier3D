@@ -1,0 +1,19 @@
+{
+  "uid": "cda3e70d71c54d12898c81531550be4c",
+  "name": "Balenciaga Sunglasses",
+  "source_url": "https://sketchfab.com/3d-models/balenciaga-sunglasses-cda3e70d71c54d12898c81531550be4c",
+  "author": {
+    "displayName": "redizajnd",
+    "profileUrl": "https://sketchfab.com/bojansolar"
+  },
+  "license": {
+    "label": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 1010,
+  "source_sha256": "cb91ca47ae1a8536d8c51fe2d51266147d4b011f935545c13a6cf319996922df",
+  "download_method": "User browser download; original bytes retained",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

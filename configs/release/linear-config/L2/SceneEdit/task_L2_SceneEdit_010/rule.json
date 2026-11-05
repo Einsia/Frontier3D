@@ -1,0 +1,69 @@
+{
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_010",
+  "category": "SceneEdit",
+  "level": "L2",
+  "weights": {
+    "numeric": 0.2,
+    "preservation": 0.2,
+    "vlm": 0.2,
+    "target": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {
+    "reference/reference-0.png": {
+      "path": "@repo/data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_010/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  },
+  "edit_context": {
+    "before": {
+      "path": "@repo/data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_010/harness/vlm_context/before.png",
+      "sha256": "@recompute"
+    },
+    "target": {
+      "path": "@repo/data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_010/harness/vlm_context/target.png",
+      "sha256": "@recompute"
+    }
+  },
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/549d3a04affc0e638db0/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_edit_feature_1": 0.1,
+        "vlm_edit_feature_2": 0.1,
+        "vlm_edit_feature_3": 0.1,
+        "vlm_edit_feature_4": 0.1,
+        "vlm_edit_feature_5": 0.1,
+        "vlm_edited_part_appearance": 0.2,
+        "vlm_cross_view": 0.1,
+        "vlm_unrelated_preservation": 0.2
+      },
+      "detail": {
+        "detail_edit_effect_1": 0.1,
+        "detail_edit_effect_2": 0.1,
+        "detail_edit_effect_3": 0.1,
+        "detail_edit_effect_4": 0.1,
+        "detail_edit_effect_5": 0.1
+      },
+      "content": {
+        "detail_edit_effect_1": 0.1,
+        "detail_edit_effect_2": 0.1,
+        "detail_edit_effect_3": 0.1,
+        "detail_edit_effect_4": 0.1,
+        "detail_edit_effect_5": 0.1
+      }
+    }
+  }
+}

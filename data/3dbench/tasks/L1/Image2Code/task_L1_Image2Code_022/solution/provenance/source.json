@@ -1,0 +1,19 @@
+{
+  "uid": "371090c279ff4e77a59acdebc25b5892",
+  "name": "Grand Piano",
+  "source_url": "https://sketchfab.com/3d-models/grand-piano-371090c279ff4e77a59acdebc25b5892",
+  "author": {
+    "displayName": "farhad.Guli",
+    "profileUrl": "https://sketchfab.com/farhad.Guli"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "09627e34106e4e558bc9785f129fe9cb82e1fa5722613a8186dbd64cc6778e39",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

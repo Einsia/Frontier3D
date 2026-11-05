@@ -1,0 +1,20 @@
+{
+  "index": 8,
+  "key": "drone_city",
+  "title": "Drone City",
+  "source_url": "https://blendswap.com/blend/27360",
+  "slot": 5,
+  "excluded": false,
+  "source_file": "sources/drone_city/drone City.blend",
+  "sha256": "98ae05638fb19a06f91984a130a9de82d1d6b6a5a6f1d88028c2de6b57c4b557",
+  "bytes": 48140640,
+  "task_path": "tasks/L2/Reference2Scene/task_L2_Reference2Scene-005",
+  "resource_family": "blendswap/27360",
+  "blend_file": "sources/drone_city/drone City.blend",
+  "author_name": "Voxelatio",
+  "license": {
+    "label": "CC0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "preparation": "../../../../../../curation/l2-refresh-20261011/authoring/build_scene.py"
+}

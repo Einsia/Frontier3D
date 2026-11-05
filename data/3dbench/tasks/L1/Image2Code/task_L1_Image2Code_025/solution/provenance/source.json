@@ -1,0 +1,19 @@
+{
+  "uid": "1381b799cab24733b0871d40c106232c",
+  "name": "Cyberpunk Scooter",
+  "source_url": "https://sketchfab.com/3d-models/cyberpunk-scooter-1381b799cab24733b0871d40c106232c",
+  "author": {
+    "displayName": "Berk Gedik",
+    "profileUrl": "https://sketchfab.com/berkgedik"
+  },
+  "license": {
+    "label": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 1010,
+  "source_sha256": "4573eb9ab6273a0c5d334a74d4b709755233146a2a433724e880118d42ff551a",
+  "download_method": "User browser download; original bytes retained",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

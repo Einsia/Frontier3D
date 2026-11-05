@@ -1,0 +1,6 @@
+Hintze Hall
+Author: artfletch
+Source: https://sketchfab.com/3d-models/hintze-hall-45f5e56887f44075bbf283977c99541f
+License: CC Attribution
+License reference: http://creativecommons.org/licenses/by/4.0/
+Changes: imported/packed in Blender 5.2.1; camera and render setup; texture path repair where recorded in audit.json. Original download preserved privately.

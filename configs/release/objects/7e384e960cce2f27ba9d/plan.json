@@ -1,0 +1,180 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_005",
+  "title": "雪原骑士：恢复阴云日光层次",
+  "category": "SceneEdit",
+  "profile": "edit-continuous-80-20-v1",
+  "weights": {
+    "T": 0.8,
+    "K": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "0d9ca50f25a5c0ac244f66ae1a1d24ff6802e8a0bfc437717de3ce5621bbacdf"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "weight": 0.2,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Correct lighting toward the supplied subdued snow-rider target, not generic bright white daylight. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "weight": 0.2,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Restore readable rider and horse foreground form without silhouette collapse. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "weight": 0.2,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Retain target-consistent snow relief and directional long shadow contrast. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_4",
+      "component": "T",
+      "weight": 0.2,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Keep distant fortress, mountain and sky separated at the target relative brightness. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_5",
+      "component": "T",
+      "weight": 0.2,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Demonstrate changes through permitted light color/energy and world strength, without compensating through new lights or exposure; exact controls are automatic. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "protected_native",
+      "component": "K",
+      "weight": 0.8,
+      "question": "非目标对象的几何、姿态、材质、层级及保留相机参数",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "baseline_scene": "environment/input/initial.blend",
+        "scope_contract": {
+          "target": "灯光和world强度",
+          "target_features": [
+            "只改已有灯颜色/能量及world背景强度",
+            "骑士/雪面/远山/云隙区域对比",
+            "高光裁切与阴影",
+            "体积设置和其余内容保持"
+          ],
+          "case_measurements": "只改已有灯颜色/能量及world背景强度；骑士/雪面/远山/云隙区域对比；高光裁切与阴影；体积设置和其余内容保持",
+          "edit_structure": null,
+          "edit_regions": null,
+          "reference_target": {
+            "scene": "solution/reference/scene.blend",
+            "objects": [],
+            "files": [
+              "solution/reference/scene.blend"
+            ]
+          }
+        },
+        "half_scale_m": null,
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "fallback_half_scale": "L2 only: 0.001 * frozen baseline protected-region maximum span",
+        "normalization": "per protected property tolerance; equal required groups; no arbitrary registration",
+        "allowed_induced_changes": "legitimate shadows/reflections from permitted edit"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "weight": 0.2,
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "85be40e72f0f2041f5c0d7bdcd00aa21f38b55a981cf0b684c2aabc4d90632d1",
+    "task.toml": "f2ad709ec613fa6e20167606a813cce6c65a980075c7414a171efc3152ea2656",
+    "harness/eval_spec.json": "15eaf42a95326cb9afdc4b381081cfae8215a03550df74358b374fa9ba2c9a31",
+    "harness/methods.json": "925a5bc957e4798f9ff9b20ee3f5af98b576c1d474338ef9b9ef915665e25da8",
+    "harness/vlm_context/before.png": "705ed06f4bac6e2a2d13242846e5e3d294c04eb8da48a1a1747fa663d8ccbc34",
+    "harness/vlm_context/target.png": "07ac96c2038901133a7e0124adccc8d4f385311fb9220e0287f5ee56ef5ba887",
+    "harness/vlm_spec.json": "31ae6e60d00c838d260233b0c815e51417e9a8b9ed60d22a0d0f858dda92ecaf"
+  },
+  "edit_context": {
+    "before": {
+      "path": "harness/vlm_context/before.png",
+      "sha256": "705ed06f4bac6e2a2d13242846e5e3d294c04eb8da48a1a1747fa663d8ccbc34",
+      "scene_sha256": "fca890dbe38448020431555a2e995648a3aad6a0f9c003315c3a5f2ceb48806c"
+    },
+    "target": {
+      "path": "harness/vlm_context/target.png",
+      "sha256": "07ac96c2038901133a7e0124adccc8d4f385311fb9220e0287f5ee56ef5ba887",
+      "scene_sha256": "f3881ae3d6b58b0f036e1e57617f92d719bb8046a2719d833b1f926320c789b3"
+    }
+  },
+  "reference_binding_status": "frozen_existing_context",
+  "native_scope": {
+    "target": "灯光和world强度",
+    "target_features": [
+      "只改已有灯颜色/能量及world背景强度",
+      "骑士/雪面/远山/云隙区域对比",
+      "高光裁切与阴影",
+      "体积设置和其余内容保持"
+    ],
+    "case_measurements": "只改已有灯颜色/能量及world背景强度；骑士/雪面/远山/云隙区域对比；高光裁切与阴影；体积设置和其余内容保持",
+    "edit_structure": null,
+    "edit_regions": null,
+    "reference_target": {
+      "scene": "solution/reference/scene.blend",
+      "objects": [],
+      "files": [
+        "solution/reference/scene.blend"
+      ]
+    }
+  },
+  "geometry_gt_policy": "Use supplied initial-frame target only within explicit edit scope; fixed format conversions, no fitted registration.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

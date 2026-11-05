@@ -1,0 +1,282 @@
+{
+  "pack": "city-kit-suburban",
+  "license": "CC0-1.0",
+  "source": "https://kenney.nl/assets/city-kit-suburban",
+  "used_assets": {
+    "building-type-a": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/building-type-a.glb",
+      "sha256": "49f32e20b9dcd24b1c8f6d6488807b8c8cb684cbb595bfb0bb36ad903e470faa"
+    },
+    "planter": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/planter.glb",
+      "sha256": "a876e87d908f0397dcaf94b7705835447825c4c5b39195319535415386542c17"
+    },
+    "tree-small": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/tree-small.glb",
+      "sha256": "5f63359e5f392609d7617cc98070855ca1ffd4f4b4bc3978a5ff56ece88a58d6"
+    },
+    "building-type-b": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/building-type-b.glb",
+      "sha256": "a964a10c51bb334be677657fd8fa483531974dd15b4243575990192818e2300e"
+    },
+    "building-type-g": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/building-type-g.glb",
+      "sha256": "f497a7bc3a8e6b6273ba99f090042d1cfb3141da57d3c51998c57a479a0ece11"
+    },
+    "building-type-j": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/building-type-j.glb",
+      "sha256": "fbdce9cb6bb6cf60a861bab36a896403aff604afbf2cb2b86676ae6f49fa2de3"
+    },
+    "building-type-o": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/building-type-o.glb",
+      "sha256": "aa256fa55613bb4c5fbdf379123454e4f98cde4d07a68bc826bb143d287ae0c1"
+    },
+    "building-type-u": {
+      "path": "assets/expansion/kenney/city-kit-suburban/original/Models/GLB format/building-type-u.glb",
+      "sha256": "fb259246fc73bdce626eed8b7167d5e97bd63651890551661ec4507311eba279"
+    }
+  },
+  "placements": [
+    {
+      "asset": "building-type-a",
+      "ground_position": [
+        -9,
+        -10,
+        0
+      ],
+      "uniform_scale": 4.5,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "planter",
+      "ground_position": [
+        -5,
+        -8,
+        0.12
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        -13.6,
+        -13.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        -13.6,
+        -6.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "building-type-b",
+      "ground_position": [
+        -9,
+        0,
+        0
+      ],
+      "uniform_scale": 4.5,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "planter",
+      "ground_position": [
+        -5,
+        2,
+        0.12
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        -13.6,
+        -3.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        -13.6,
+        3.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "building-type-g",
+      "ground_position": [
+        -9,
+        10,
+        0
+      ],
+      "uniform_scale": 4.5,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "planter",
+      "ground_position": [
+        -5,
+        12,
+        0.12
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        -13.6,
+        6.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        -13.6,
+        13.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "building-type-j",
+      "ground_position": [
+        9,
+        -10,
+        0
+      ],
+      "uniform_scale": 4.5,
+      "yaw_degrees": -90
+    },
+    {
+      "asset": "planter",
+      "ground_position": [
+        5,
+        -8,
+        0.12
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        13.6,
+        -13.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        13.6,
+        -6.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "building-type-o",
+      "ground_position": [
+        9,
+        0,
+        0
+      ],
+      "uniform_scale": 4.5,
+      "yaw_degrees": -90
+    },
+    {
+      "asset": "planter",
+      "ground_position": [
+        5,
+        2,
+        0.12
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        13.6,
+        -3.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        13.6,
+        3.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "building-type-u",
+      "ground_position": [
+        9,
+        10,
+        0
+      ],
+      "uniform_scale": 4.5,
+      "yaw_degrees": -90
+    },
+    {
+      "asset": "planter",
+      "ground_position": [
+        5,
+        12,
+        0.12
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        13.6,
+        6.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tree-small",
+      "ground_position": [
+        13.6,
+        13.5,
+        0
+      ],
+      "uniform_scale": 5,
+      "yaw_degrees": 0
+    }
+  ],
+  "modifications": "Original scene composition, procedural ground/roads/piers, imported licensed asset geometry. Example for text brief review only; not a pixel-exact ground truth."
+}

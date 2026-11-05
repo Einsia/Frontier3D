@@ -1,0 +1,690 @@
+{
+  "family": "roller_guide",
+  "title_zh": "四滚轮导向夹具",
+  "title_en": "Four-roller guide fixture",
+  "description_zh": "四个滚轮围绕中央方形工件，轴套、轴销和支架独立；工作间隙在四侧一致。",
+  "description_en": "Place four rollers around a central square workpiece, with separate bushings, pins and supports. Maintain equal working clearance on all four sides.",
+  "parts": [
+    {
+      "id": "base",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            120,
+            120,
+            8
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 4,
+          "at": [
+            -28,
+            0,
+            3
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 4,
+          "at": [
+            28,
+            0,
+            3
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 4,
+          "at": [
+            0,
+            -28,
+            3
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 4,
+          "at": [
+            0,
+            28,
+            3
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        4
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        0,
+        60
+      ]
+    },
+    {
+      "id": "workpiece",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            30,
+            30,
+            50
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        33
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -27.5,
+        0,
+        72
+      ]
+    },
+    {
+      "id": "roller_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 12.5,
+          "height": 28,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 32,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -28,
+        0,
+        35
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        0,
+        84
+      ]
+    },
+    {
+      "id": "pin_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 46,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -28,
+        0,
+        29
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        82.5,
+        0,
+        96
+      ]
+    },
+    {
+      "id": "spacer_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 7,
+          "height": 13,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 17,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -28,
+        0,
+        14.5
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        38,
+        108
+      ]
+    },
+    {
+      "id": "roller_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 12.5,
+          "height": 28,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 32,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        28,
+        0,
+        35
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -27.5,
+        38,
+        120
+      ]
+    },
+    {
+      "id": "pin_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 46,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        28,
+        0,
+        29
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        27.5,
+        38,
+        132
+      ]
+    },
+    {
+      "id": "spacer_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 7,
+          "height": 13,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 17,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        28,
+        0,
+        14.5
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        82.5,
+        38,
+        144
+      ]
+    },
+    {
+      "id": "roller_2",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 12.5,
+          "height": 28,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 32,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        -28,
+        35
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        76,
+        156
+      ]
+    },
+    {
+      "id": "pin_2",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 46,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        -28,
+        29
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -27.5,
+        76,
+        168
+      ]
+    },
+    {
+      "id": "spacer_2",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 7,
+          "height": 13,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 17,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        -28,
+        14.5
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        76,
+        180
+      ]
+    },
+    {
+      "id": "roller_3",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 12.5,
+          "height": 28,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 32,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        28,
+        35
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        82.5,
+        76,
+        192
+      ]
+    },
+    {
+      "id": "pin_3",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 46,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        28,
+        29
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -82.5,
+        114,
+        204
+      ]
+    },
+    {
+      "id": "spacer_3",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 7,
+          "height": 13,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 17,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        28,
+        14.5
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -27.5,
+        114,
+        216
+      ]
+    }
+  ],
+  "mates": [
+    {
+      "type": "coaxial",
+      "a": "roller_0",
+      "b": "pin_0",
+      "axis": "z",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "roller_1",
+      "b": "pin_1",
+      "axis": "z",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "roller_2",
+      "b": "pin_2",
+      "axis": "z",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "roller_3",
+      "b": "pin_3",
+      "axis": "z",
+      "radial_clearance_mm": 0.2
+    }
+  ],
+  "level": 1,
+  "kind": "assembly",
+  "units": "millimetres",
+  "tolerance_mm": 0.3,
+  "part_count": 14
+}

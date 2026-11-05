@@ -1,0 +1,30 @@
+{
+  "schema_version": "l3-harbor-package-v1",
+  "task_key": "l3-g01",
+  "files": {
+    "COMMON.md": "78d4196dd2cff45c7223103b01324f0f4bf3f3314e0214ed634e46af6b44f1cf",
+    "PROMPT.md": "f11a297891014c933772e41e2c384d461d0585630e06486800430fe7b4d96d5d",
+    "README.md": "9deb9e6d73239c9176ae439cc829299a68c9daecd4084576ce7714b8f577309f",
+    "attribution/references.json": "d40f704df07103a1861a50f5964786d0f2cdba3f014a14580e6856cdea61839d",
+    "environment/Dockerfile": "c72897ae890cbdf330a11fa9b261174bf3bf2ecc44008b187f233f7942cffddf",
+    "environment/input/ASSETS.md": "19665181d58382ce878a176f3db6464c015559e69e535b32e81998243bccf4cb",
+    "environment/input/BenchEntity.h": "a3c73e5e2590a39080e869005e1fd1d102d97a0d45fdcd772601d677ebd29142",
+    "environment/input/BenchInventory.h": "030174129da5e7b412e1a2066bf524f5600855f5b06dc64b6c28cf1bb469f329",
+    "environment/input/BenchObserver.h": "e0f52996afa8dfdd6dfef6f9bcb3312009034a422687dd5b01d1cb8fa67a5d64",
+    "environment/input/INTEGRATION.md": "ce4046d1b20aeba439b1a2708ea4cae36f8ddda7d0f7c04748099fa8c0bcaadf",
+    "environment/input/INTERFACE.md": "5f7be5cc3bfeab6cf86ab9ff08f3c5037d5a828f106cc72aed8efc601a60de2a",
+    "environment/input/REQUIREMENTS.md": "add5bbb6b351df777d1b23c41d6d83567b64318651808e0f80881623aa1cfa9a",
+    "environment/input/reference.jpg": "8d86ab55f1ddb532f2c051a84396316677898e71fbf7cdbd9a23a6eb127f5a18",
+    "environment/input/references.json": "3ba91ecf54d257b02575b0c0c5610cb12c528dc16cc92172da68503bb130100f",
+    "input-provenance.json": "f96d1b07692c7c293266b1dc7bd5b2453f7827a39b9bbb7c95599b177eff3992",
+    "instruction.md": "cf78623bedfb29ddb710c71ed6506285389f4107f17786533fa1c2b763f127e6",
+    "instruction.source.md": "02ae47c3add3cd53e8356555be4cbee717e953c4e720239fbbaeb675a53e56aa",
+    "instruction.zh.md": "a1c3f2695e4ea58b30bbfc253825f1c7b4e511ba55ae71ca4cf2b544c29d51ac",
+    "package-manifest.source.json": "b3c464ee43d71841bf750d19fbfa46e6602a99337a0e6c78c640fd4c1003b7c5",
+    "reference_provenance.json": "0703e7cc46f0b8906239f32ebe55bcec8c8a38ce84ab27c723ae0964f0319308",
+    "runtime.json": "e793ca79750a709385d8205c3a8c4df1024671754b8205dd3b7e4d1b591fccbc",
+    "task.json": "4b28c658f017cb4ac3d9bf6d6f3510a1b82d668d2a59b35a17ce2cdce289d1ef",
+    "task.toml": "423c262241490c2e802891e93adb018485c2c114af3c76855d0c2fa94eaf6318",
+    "tests/test.sh": "32b01359272b990be4a2ecb285c23e561da356b2b6c9cf1d06c0aa2d5e03ceae"
+  }
+}

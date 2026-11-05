@@ -1,0 +1,25 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/bearing_cartridge",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/bearing_cartridge",
+    "license": "CC0-1.0",
+    "changes": [],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "c3327058ea723b2d5159af39dded0cd5f0dbd972a7be34de67fd96d6c0f50ec3",
+    "assembled.png": "ace475d5a8c3f03035987d43ce3cd46abf49e0bca6d4ce95ce42e32e52e2f087",
+    "exploded.png": "d2fddec6d9b98c04e1d255b95c71c79b98bf11a745440dd4d1dbdb3c033c92a9",
+    "front.png": "2be0a4be717163dde373f8fd55bfbd4fd4e049967579b0d9bad22585f30a8dbb",
+    "geometry.json": "336ee657a35934b23799d0ae51e4bc76f6fc0259321f581b3d9b4a5b45ead8c3",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "b8f7ef0f7923105d37ec58d30910194652ac97203c40453ebc8251b3c7742492",
+    "qa.json": "fe9bdf678dd71f859770e179661e237ae906da1cd74bb4e2f88efb0d4bc55cce",
+    "scene.blend": "7388e68484467c58a8b915e64f38f5e315fa07131a14e9377e4d01eea51a01b9",
+    "scene.glb": "8cc09d9951a04d36cb9c537b667c132a5004627d1d7be219d03c40f6aa03a8ba",
+    "spec.json": "82e25f66a96a4df47e71e36b0c371c9ea7d74a8f1a4088dca91e0531acd8cca4",
+    "top.png": "990aa4ab661721ee0fbfdc6a5dd2ae60acbe2d40f0fd13f2c84a64f917e01606"
+  }
+}

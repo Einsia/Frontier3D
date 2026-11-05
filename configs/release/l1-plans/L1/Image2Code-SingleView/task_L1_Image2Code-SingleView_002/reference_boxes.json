@@ -1,0 +1,76 @@
+{
+  "version": "reference-boxes-v1",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "18ee23d5bbbd53cb6f64736af8a0fefc6719371d1046fd70466699f5e31ee2ec",
+  "image_size": [
+    1000,
+    1000
+  ],
+  "detector": {
+    "fingerprint": "l1-ai-reference-only-draft-20261011"
+  },
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "targets": [
+    {
+      "id": "part_1",
+      "query": "chair upholstery",
+      "boxes": [
+        [
+          0.39,
+          0.07,
+          0.82,
+          0.58
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_2",
+      "query": "footrest",
+      "boxes": [
+        [
+          0.24,
+          0.62,
+          0.56,
+          0.87
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_3",
+      "query": "hydraulic base",
+      "boxes": [
+        [
+          0.39,
+          0.63,
+          0.75,
+          0.88
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    }
+  ]
+}

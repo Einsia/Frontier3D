@@ -1,0 +1,301 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_001",
+  "spec_sha256": "a5991838d5d4959e4de8ac7d1486e2bac8abd3357ef6ebfae907165015515a71",
+  "instruction_sha256": "2bbae3b3aba20b1b584f00dc61dfedc2204d1cfceffb898c74909278655a1b8f",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle.",
+      "source_quote": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right.",
+      "source_quote": "Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water.",
+      "source_quote": "A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Keep a continuous walking route at least 1.2 m wide from the shore to the docking end.",
+      "source_quote": "Keep a continuous walking route at least 1.2 m wide from the shore to the docking end.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby.",
+      "source_quote": "Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient.",
+      "source_quote": "The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "Its hull must sit partly below the water while its accessible deck is above it.",
+      "source_quote": "Its hull must sit partly below the water while its accessible deck is above it.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "content_08",
+      "text": "On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area.",
+      "source_quote": "On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area.",
+      "implementation": "manual",
+      "checks": [
+        "content_08"
+      ]
+    },
+    {
+      "id": "content_09",
+      "text": "Arrange the loading area without blocking the pier connection.",
+      "source_quote": "Arrange the loading area without blocking the pier connection.",
+      "implementation": "manual",
+      "checks": [
+        "content_09"
+      ]
+    },
+    {
+      "id": "content_10",
+      "text": "Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes.",
+      "source_quote": "Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes.",
+      "implementation": "manual",
+      "checks": [
+        "content_10"
+      ]
+    },
+    {
+      "id": "content_11",
+      "text": "Keep the full ship, shoreline and pier visible in the primary view.",
+      "source_quote": "Keep the full ship, shoreline and pier visible in the primary view.",
+      "implementation": "manual",
+      "checks": [
+        "content_11"
+      ]
+    },
+    {
+      "id": "content_12",
+      "text": "This is an editable static scene; no sailing simulation or characters are needed.",
+      "source_quote": "This is an editable static scene; no sailing simulation or characters are needed.",
+      "implementation": "manual",
+      "checks": [
+        "content_12"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed.\n\nNo reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "explicit_layout_dimensions",
+      "text": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed.",
+      "source_quote": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed.",
+      "implementation": "manual",
+      "checks": [
+        "explicit_layout_dimensions"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "engine",
+      "text": "engine",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "engine"
+      ]
+    },
+    {
+      "id": "view_transform",
+      "text": "view transform",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "view_transform"
+      ]
+    },
+    {
+      "id": "exposure",
+      "text": "exposure",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "exposure"
+      ]
+    },
+    {
+      "id": "gamma",
+      "text": "gamma",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "gamma"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "orbit",
+    "degrees": 25,
+    "tolerance": 0.25
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "native_resolution": [
+    1200,
+    1000
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-brief-vlm-v8.0.0",
+  "dataset_version": "l2-brief-numeric-data-v8",
+  "methods_sha256": "731b3085402b7b52e09bc56be062a443f947c5889bb3676215108e820be84356",
+  "measurement_profile": "l2-brief-v2.8.0",
+  "automatic_profile": "l2-brief-embodied-v4.0.0"
+}

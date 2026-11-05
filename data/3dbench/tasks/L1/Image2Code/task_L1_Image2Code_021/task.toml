@@ -1,0 +1,23 @@
+# Task metadata; requirements live in instruction.md.
+version = 1
+id = "L1/Image2Code/task_L1_Image2Code_021"
+level = 1
+category = "Image2Code"
+title = "马林巴琴"
+difficulty = "hard"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "not_implemented"
+resource_family = "sketchfab/f0829ad13fb4423b9539cc3ba0d13b9e"
+environment_files = ["input/reference.png", "input/front.png", "input/side.png", "input/top.png"]
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/scene.glb", "output/main.png", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L1/Image2Code/task_L1_Image2Code_024"
+release_id = "3DBench-036"

@@ -1,0 +1,1226 @@
+{
+  "key": "lighthouse",
+  "path": "assets/diverse/lighthouse/blender/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 29,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      36.2725830078125,
+      -89.6951675415039,
+      49.676124572753906
+    ],
+    "rotation_euler": [
+      1.1349891424179077,
+      -5.963304516853896e-09,
+      0.6823166012763977
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "Cone",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "a0166196dac042945813a68937ebaef62246db39da01e2380b0ea574d9f839e4"
+    },
+    {
+      "name": "Cone.001",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "9f65bad300c1805fb2897637c1e59637029d758a2ef7adf49f93c65efbdc21c5"
+    },
+    {
+      "name": "Cone.002",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "a64f3fbfea492daed83055556f8bb802175363a47b9155a06dff0702ec8ea359"
+    },
+    {
+      "name": "Cone.003",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "50ea0dd3be905e49e15667c264582467541def609a03aeb3b2db9026bd81bbc2"
+    },
+    {
+      "name": "Cone.004",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "49313ca416e93efe03389fff6dcf52d32fb034a21c691770e8f4f806b0e7f2f1"
+    },
+    {
+      "name": "Cone.005",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "c5fed852c76fbc7343efd6c14fa568736f05b3c6287ec7194fc8fe251946e97f"
+    },
+    {
+      "name": "Cone.006",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "f805c95fe3207693e18438a95ece77b7e98a3aa3dc5ed7243fd3930a7d87ff5e"
+    },
+    {
+      "name": "Cone.007",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "d5ac565fb3ddf6990fe3c9c7543c248f34b54019cf16410b305b2d2beb793edf"
+    },
+    {
+      "name": "Cone.008",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "a7f6e6352fa8ea3d72bd4311b213b7020577a0707ba4a7bdbebb929109aed0cf"
+    },
+    {
+      "name": "Cone.009",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "5a1be7278a29e7b06b0d631a530e4d8c09d6b1e120b19b3724811807bd00477e"
+    },
+    {
+      "name": "Cone.010",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "8063b70ff41dd05cdb2ee8eef821f2b7c5b8560eb55abb8f1d3834d4c321a391"
+    },
+    {
+      "name": "Cone.011",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "32cb4ee0f37d6b1540657c66c6646616c856989092f3b6afa7c7c3ad1b262fe8"
+    },
+    {
+      "name": "Cone.012",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "99cb5be4269e1429cc6b03203457d8d6148c52b0d2e7de5045c73a423e709c60"
+    },
+    {
+      "name": "Cone.013",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "87619f8270a2a4c14010e0850c35c61e076db6d9d0eae3a4fefe0f830db4a05f"
+    },
+    {
+      "name": "Cone.014",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "7356c22e866472d34817b3d4207a283c94c0f5b824b95d3723f6a70d2bcd6ebb"
+    },
+    {
+      "name": "Cone.015",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "2c4f2aeffe20db76891da80095724b10c431b281346a895b4b5a7db591c854ff"
+    },
+    {
+      "name": "Cone.016",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "9f90e127515fae17d526229814292037bc4214ea798de43c8bb66b6dc3576d84"
+    },
+    {
+      "name": "Cone.017",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "94d3dec00c88325d2bd8e79ad31f92510f64e2efa58506f28a9685d3ee3a8a15"
+    },
+    {
+      "name": "Cone.018",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "dacfe9d0c2af1c3aeefb13f09acfe16971270f1787ded46d9025fa22599d0d9d"
+    },
+    {
+      "name": "Cone.019",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "6a005af386e45955a65ec0cb06656b58f9409977e2db52d5e50ac962d31076a0"
+    },
+    {
+      "name": "Cone.020",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "f269e50b27f4ff4d22247f75c5a24eaec20f7008d6612743be3a3f80471325eb"
+    },
+    {
+      "name": "Cone.021",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "12e75e7f83443ee2b9e578bb60148dd76a8a1e301e35cf312bee6a3387b2207d"
+    },
+    {
+      "name": "Cone.022",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "445db2240001efebeb413e2f1c3323da25cb81319e816e34f302c4caa0ba9a31"
+    },
+    {
+      "name": "Cone.023",
+      "vertices": 9,
+      "polygons": 9,
+      "sha256": "7e10fea1bdacb64ccad265551589d86f8881a82cc465d3b40f0fcfd4d1988d80"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 350,
+      "polygons": 341,
+      "sha256": "844facd05de3b431b518d1905c429b40838f306b75977f7a8cd11a3fe98d1f5b"
+    },
+    {
+      "name": "Cube.034",
+      "vertices": 115,
+      "polygons": 123,
+      "sha256": "8150b41bcc9c13cc7954e98880b8b18cdb6f01915599f0966565a6857ec8f72b"
+    },
+    {
+      "name": "Cube.035",
+      "vertices": 115,
+      "polygons": 123,
+      "sha256": "8150b41bcc9c13cc7954e98880b8b18cdb6f01915599f0966565a6857ec8f72b"
+    },
+    {
+      "name": "Cylinder",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "1aae8fc3ca1d3f81c6a61e3cd7e48b5e26cae8357f8fde05e699bc197faadee1"
+    },
+    {
+      "name": "Cylinder.001",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "aa75a7b8cd7c2d94e050395da3ea7dc1bb20e058847bacc89f5f707c6278b66b"
+    },
+    {
+      "name": "Cylinder.002",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "e95b31ba80f5626e8dd66baf1eca246c0edf2758d8b796403373ebdd26dd12a3"
+    },
+    {
+      "name": "Cylinder.003",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "36f3f9566c19c3e58804f097a00e9f056cbd9636e56c07d33c134a436f870449"
+    },
+    {
+      "name": "Cylinder.004",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "36fa20d3f0dd64142a6f45c0175145f984c14d4064155e25104477a84632a40c"
+    },
+    {
+      "name": "Cylinder.005",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "e3758cd3c1c9475c39e443815aa44236de3047afea8926f4abe849b65827e5ca"
+    },
+    {
+      "name": "Cylinder.006",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "0524bc8fb32ac682b876e78519f4a36b213f5711e493a8a1930aed699774be42"
+    },
+    {
+      "name": "Cylinder.007",
+      "vertices": 16,
+      "polygons": 10,
+      "sha256": "0a0c546ac3894b16855c3631ed9cf7dc77c9d33115ca986b6c7c50f880aaa705"
+    },
+    {
+      "name": "Plane",
+      "vertices": 74,
+      "polygons": 98,
+      "sha256": "a90b5eb0f51588cebec86794dbdf2701b869d4d88c16f6d351100ef73779bddf"
+    },
+    {
+      "name": "Plane.001",
+      "vertices": 74,
+      "polygons": 97,
+      "sha256": "d5a160a50797a8c3042176392119c33b9dd0ad315921b47087cbc5b6c64cc5ac"
+    },
+    {
+      "name": "Plane.002",
+      "vertices": 81,
+      "polygons": 64,
+      "sha256": "d8cb994849d4d6bac6355d77821e35b28a1f1d7edd69348ac1cd5de1817c24f8"
+    }
+  ],
+  "images": [],
+  "objects": [
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        47.06761169433594,
+        43.826053619384766,
+        24.84120750427246
+      ],
+      "bounds": [
+        [
+          -189.21051025390625,
+          -129.1909942626953,
+          -7.506037712097168
+        ],
+        [
+          -129.8524169921875,
+          -68.22041320800781,
+          17.335168838500977
+        ]
+      ],
+      "materials": [
+        "Original grey cliff",
+        "Original coastal grass"
+      ]
+    },
+    {
+      "name": "Plane.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        23.703218460083008,
+        32.49244689941406,
+        18.70110321044922
+      ],
+      "bounds": [
+        [
+          -40.57902908325195,
+          -25.941389083862305,
+          -16.521074295043945
+        ],
+        [
+          -16.875808715820312,
+          6.551054954528809,
+          2.1800289154052734
+        ]
+      ],
+      "materials": [
+        "Original grey cliff",
+        "Original coastal grass"
+      ]
+    },
+    {
+      "name": "Plane.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1728.2344970703125,
+        1728.2344970703125,
+        0.0
+      ],
+      "bounds": [
+        [
+          -893.548583984375,
+          -880.1605224609375,
+          -2.0691146850585938
+        ],
+        [
+          834.6859130859375,
+          848.073974609375,
+          -2.0691146850585938
+        ]
+      ],
+      "materials": [
+        "Original blue sea"
+      ]
+    },
+    {
+      "name": "Cube",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.965718746185303,
+        5.965719223022461,
+        30.667673110961914
+      ],
+      "bounds": [
+        [
+          -30.899227142333984,
+          -10.369701385498047,
+          -10.794351577758789
+        ],
+        [
+          -22.53305435180664,
+          -2.003526449203491,
+          19.873321533203125
+        ]
+      ],
+      "materials": [
+        "Original tower plaster",
+        "Original tower red",
+        "Original dark metal",
+        "Original lantern glow"
+      ]
+    },
+    {
+      "name": "Cube.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.20874370634555817,
+        0.9536991715431213,
+        0.350024551153183
+      ],
+      "bounds": [
+        [
+          -24.57338523864746,
+          -5.7084059715271,
+          2.924255132675171
+        ],
+        [
+          -24.030027389526367,
+          -5.370014190673828,
+          3.925112724304199
+        ]
+      ],
+      "materials": [
+        "Original tower plaster",
+        "Original tower red",
+        "Original dark metal",
+        "Original lantern glow",
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cube.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.20874370634555817,
+        0.9536991715431213,
+        0.350024551153183
+      ],
+      "bounds": [
+        [
+          -26.255056381225586,
+          -8.87736701965332,
+          2.9395081996917725
+        ],
+        [
+          -25.91078758239746,
+          -8.333226203918457,
+          3.940365791320801
+        ]
+      ],
+      "materials": [
+        "Original tower plaster",
+        "Original tower red",
+        "Original dark metal",
+        "Original lantern glow",
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.638292133808136,
+        0.638292133808136,
+        4.061859130859375
+      ],
+      "bounds": [
+        [
+          -31.445938110351562,
+          -16.462051391601562,
+          0.47382092475891113
+        ],
+        [
+          -30.807647705078125,
+          -15.823760032653809,
+          4.535679817199707
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.2552900314331055,
+        3.2552900314331055,
+        2.9013278484344482
+      ],
+      "bounds": [
+        [
+          -32.75443649291992,
+          -17.770551681518555,
+          1.3442193269729614
+        ],
+        [
+          -29.499147415161133,
+          -14.515260696411133,
+          4.245547294616699
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.6808269023895264,
+        2.6808269023895264,
+        2.9013278484344482
+      ],
+      "bounds": [
+        [
+          -32.46720504760742,
+          -17.483320236206055,
+          2.5047507286071777
+        ],
+        [
+          -29.786378860473633,
+          -14.80249309539795,
+          5.406078338623047
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.9148764610290527,
+        1.9148764610290527,
+        2.9013278484344482
+      ],
+      "bounds": [
+        [
+          -32.084232330322266,
+          -17.100343704223633,
+          3.6652817726135254
+        ],
+        [
+          -30.169355392456055,
+          -15.185467720031738,
+          6.566609859466553
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cylinder.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.4008468687534332,
+        0.4008468687534332,
+        2.5508437156677246
+      ],
+      "bounds": [
+        [
+          -32.866939544677734,
+          -12.372347831726074,
+          1.3544507026672363
+        ],
+        [
+          -32.46609115600586,
+          -11.971501350402832,
+          3.905294418334961
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0443191528320312,
+        2.0443191528320312,
+        1.8220312595367432
+      ],
+      "bounds": [
+        [
+          -33.68867492675781,
+          -13.194084167480469,
+          1.9010599851608276
+        ],
+        [
+          -31.64435577392578,
+          -11.149765014648438,
+          3.7230911254882812
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.6835569143295288,
+        1.6835569143295288,
+        1.8220312595367432
+      ],
+      "bounds": [
+        [
+          -33.50829315185547,
+          -13.013703346252441,
+          2.6298727989196777
+        ],
+        [
+          -31.824737548828125,
+          -11.330145835876465,
+          4.451903820037842
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.202540636062622,
+        1.202540636062622,
+        1.8220312595367432
+      ],
+      "bounds": [
+        [
+          -33.267784118652344,
+          -12.773195266723633,
+          3.3586854934692383
+        ],
+        [
+          -32.06524658203125,
+          -11.570653915405273,
+          5.180716514587402
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cylinder.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5294080972671509,
+        0.5294080972671509,
+        3.3689606189727783
+      ],
+      "bounds": [
+        [
+          -29.74686622619629,
+          -12.134963989257812,
+          -0.27995729446411133
+        ],
+        [
+          -29.217458724975586,
+          -11.60555648803711,
+          3.089003324508667
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.699981212615967,
+        2.699981212615967,
+        2.406400442123413
+      ],
+      "bounds": [
+        [
+          -30.8321533203125,
+          -13.220251083374023,
+          0.4419628381729126
+        ],
+        [
+          -28.132171630859375,
+          -10.520269393920898,
+          2.8483633995056152
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.2235140800476074,
+        2.2235140800476074,
+        2.406400442123413
+      ],
+      "bounds": [
+        [
+          -30.59391975402832,
+          -12.982017517089844,
+          1.4045230150222778
+        ],
+        [
+          -28.370405197143555,
+          -10.758502960205078,
+          3.8109235763549805
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.5882242918014526,
+        1.5882242918014526,
+        2.406400442123413
+      ],
+      "bounds": [
+        [
+          -30.276273727416992,
+          -12.664372444152832,
+          2.3670830726623535
+        ],
+        [
+          -28.688051223754883,
+          -11.07614803314209,
+          4.773483753204346
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cylinder.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.5481617450714111,
+        0.5481617450714111,
+        3.488302230834961
+      ],
+      "bounds": [
+        [
+          -31.219728469848633,
+          -10.999367713928223,
+          0.3224806785583496
+        ],
+        [
+          -30.671567916870117,
+          -10.451205253601074,
+          3.8107829093933105
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.7956249713897705,
+        2.7956249713897705,
+        2.4916443824768066
+      ],
+      "bounds": [
+        [
+          -32.34346008300781,
+          -12.123099327087402,
+          1.0699739456176758
+        ],
+        [
+          -29.547836303710938,
+          -9.327473640441895,
+          3.5616183280944824
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.302279472351074,
+        2.302279472351074,
+        2.4916443824768066
+      ],
+      "bounds": [
+        [
+          -32.09678649902344,
+          -11.876426696777344,
+          2.06663179397583
+        ],
+        [
+          -29.79450798034668,
+          -9.574146270751953,
+          4.558276176452637
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.6444852352142334,
+        1.6444852352142334,
+        2.4916443824768066
+      ],
+      "bounds": [
+        [
+          -31.76789093017578,
+          -11.547529220581055,
+          3.0632894039154053
+        ],
+        [
+          -30.12340545654297,
+          -9.903043746948242,
+          5.554933547973633
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cylinder.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.40618568658828735,
+        0.40618568658828735,
+        2.584817886352539
+      ],
+      "bounds": [
+        [
+          -29.009836196899414,
+          -16.4300537109375,
+          1.439605474472046
+        ],
+        [
+          -28.60365104675293,
+          -16.023868560791016,
+          4.024423599243164
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.071547031402588,
+        2.071547031402588,
+        1.8462985754013062
+      ],
+      "bounds": [
+        [
+          -29.842517852783203,
+          -17.26273536682129,
+          1.993494987487793
+        ],
+        [
+          -27.77096939086914,
+          -15.191187858581543,
+          3.8397936820983887
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.705979824066162,
+        1.705979824066162,
+        1.8462985754013062
+      ],
+      "bounds": [
+        [
+          -29.659732818603516,
+          -17.0799503326416,
+          2.7320144176483154
+        ],
+        [
+          -27.953754425048828,
+          -15.373970985412598,
+          4.578312873840332
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.2185571193695068,
+        1.2185571193695068,
+        1.8462985754013062
+      ],
+      "bounds": [
+        [
+          -29.4160213470459,
+          -16.836238861083984,
+          3.470534086227417
+        ],
+        [
+          -28.197465896606445,
+          -15.617682456970215,
+          5.316832542419434
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cylinder.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.35162094235420227,
+        0.35162094235420227,
+        2.2375876903533936
+      ],
+      "bounds": [
+        [
+          -28.245222091674805,
+          -13.660795211791992,
+          0.46279728412628174
+        ],
+        [
+          -27.89360237121582,
+          -13.309173583984375,
+          2.700385093688965
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.793266773223877,
+        1.793266773223877,
+        1.598276972770691
+      ],
+      "bounds": [
+        [
+          -28.966045379638672,
+          -14.381617546081543,
+          0.9422803521156311
+        ],
+        [
+          -27.172779083251953,
+          -12.588351249694824,
+          2.540557384490967
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.016",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.476807951927185,
+        1.476807951927185,
+        1.598276972770691
+      ],
+      "bounds": [
+        [
+          -28.807815551757812,
+          -14.223388671875,
+          1.5815911293029785
+        ],
+        [
+          -27.331008911132812,
+          -12.746580123901367,
+          3.179868221282959
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.017",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0548628568649292,
+        1.0548628568649292,
+        1.598276972770691
+      ],
+      "bounds": [
+        [
+          -28.596843719482422,
+          -14.012415885925293,
+          2.2209019660949707
+        ],
+        [
+          -27.541980743408203,
+          -12.957552909851074,
+          3.819179058074951
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cylinder.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.40188005566596985,
+        0.40188005566596985,
+        2.5574185848236084
+      ],
+      "bounds": [
+        [
+          -27.61572265625,
+          -16.025402069091797,
+          0.1391756534576416
+        ],
+        [
+          -27.213844299316406,
+          -15.623522758483887,
+          2.69659423828125
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.049588203430176,
+        2.049588203430176,
+        1.8267275094985962
+      ],
+      "bounds": [
+        [
+          -28.439577102661133,
+          -16.84925651550293,
+          0.6871939301490784
+        ],
+        [
+          -26.389989852905273,
+          -14.79966926574707,
+          2.5139214992523193
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.019",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.6878962516784668,
+        1.6878962516784668,
+        1.8267275094985962
+      ],
+      "bounds": [
+        [
+          -28.258731842041016,
+          -16.668411254882812,
+          1.4178850650787354
+        ],
+        [
+          -26.57083511352539,
+          -14.980514526367188,
+          3.244612455368042
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.020",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.205640196800232,
+        1.205640196800232,
+        1.8267275094985962
+      ],
+      "bounds": [
+        [
+          -28.017602920532227,
+          -16.427282333374023,
+          2.148576021194458
+        ],
+        [
+          -26.81196403503418,
+          -15.22164249420166,
+          3.9753034114837646
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cylinder.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6254871487617493,
+        0.6254871487617493,
+        3.980372905731201
+      ],
+      "bounds": [
+        [
+          -31.95646095275879,
+          -14.826695442199707,
+          1.0505750179290771
+        ],
+        [
+          -31.33097267150879,
+          -14.20120906829834,
+          5.030947685241699
+        ]
+      ],
+      "materials": [
+        "Original bark brown"
+      ]
+    },
+    {
+      "name": "Cone.021",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.1899845600128174,
+        3.1899845600128174,
+        2.843123435974121
+      ],
+      "bounds": [
+        [
+          -33.23870849609375,
+          -16.108943939208984,
+          1.9035120010375977
+        ],
+        [
+          -30.048725128173828,
+          -12.918959617614746,
+          4.746635437011719
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.022",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.6270461082458496,
+        2.6270461082458496,
+        2.843123435974121
+      ],
+      "bounds": [
+        [
+          -32.95724105834961,
+          -15.827475547790527,
+          3.0407614707946777
+        ],
+        [
+          -30.3301944732666,
+          -13.20042896270752,
+          5.883884906768799
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    },
+    {
+      "name": "Cone.023",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.8764615058898926,
+        1.8764615058898926,
+        2.843123435974121
+      ],
+      "bounds": [
+        [
+          -32.581947326660156,
+          -15.45218276977539,
+          4.178010940551758
+        ],
+        [
+          -30.705486297607422,
+          -13.575721740722656,
+          7.021134376525879
+        ]
+      ],
+      "materials": [
+        "Original conifer green"
+      ]
+    }
+  ]
+}

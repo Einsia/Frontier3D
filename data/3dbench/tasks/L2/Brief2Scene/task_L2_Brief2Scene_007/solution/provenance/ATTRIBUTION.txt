@@ -1,0 +1,7 @@
+Lighthouse Scene
+Author: ultr4vis1tor
+Original source: https://opengameart.org/content/low-poly-lighthouse-scene
+License: CC0
+https://creativecommons.org/publicdomain/zero/1.0/
+Distribution source: Original publisher
+The original author license applies to scene assets; modifications for benchmark inputs will be documented separately.

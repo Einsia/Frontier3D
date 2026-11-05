@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_005",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "957c062dbd17827220f40911780cde0c8215911f1af782afb135d45238c5331e",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "typewriter 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.125,
+          0.207
+        ],
+        [
+          0.837,
+          0.207
+        ],
+        [
+          0.837,
+          0.804
+        ],
+        [
+          0.125,
+          0.804
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "round keyboard 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.187,
+          0.507
+        ],
+        [
+          0.553,
+          0.507
+        ],
+        [
+          0.553,
+          0.745
+        ],
+        [
+          0.187,
+          0.745
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "paper and platen 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.335,
+          0.207
+        ],
+        [
+          0.837,
+          0.207
+        ],
+        [
+          0.837,
+          0.554
+        ],
+        [
+          0.335,
+          0.554
+        ]
+      ]
+    }
+  ]
+}

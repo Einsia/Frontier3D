@@ -1,0 +1,480 @@
+{
+  "family": "machine_vise",
+  "title_zh": "小型机用虎钳",
+  "title_en": "Compact machine vise",
+  "description_zh": "固定钳口与移动钳口、双导杆和驱动丝杠组成夹持机构；钳口衬片独立，行程方向一致。",
+  "description_en": "Assemble fixed and moving jaws, twin guide rods and a drive screw. Keep jaw liners separate and align the direction of travel.",
+  "parts": [
+    {
+      "id": "base",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            160,
+            90,
+            10
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        5
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        0,
+        60
+      ]
+    },
+    {
+      "id": "jaw_0",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            18,
+            76,
+            50
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 24,
+          "at": [
+            0,
+            -25,
+            -8
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 24,
+          "at": [
+            0,
+            0,
+            -8
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 24,
+          "at": [
+            0,
+            25,
+            -8
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        -60,
+        0,
+        35
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -27.5,
+        0,
+        72
+      ]
+    },
+    {
+      "id": "liner_0",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            3,
+            76,
+            20
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        -49.5,
+        0,
+        50
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.7
+      ],
+      "explode": [
+        27.5,
+        0,
+        84
+      ]
+    },
+    {
+      "id": "jaw_1",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            18,
+            76,
+            50
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 24,
+          "at": [
+            0,
+            -25,
+            -8
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 24,
+          "at": [
+            0,
+            0,
+            -8
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 4.2,
+          "height": 24,
+          "at": [
+            0,
+            25,
+            -8
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        20,
+        0,
+        35
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        82.5,
+        0,
+        96
+      ]
+    },
+    {
+      "id": "liner_1",
+      "operations": [
+        {
+          "shape": "box",
+          "size": [
+            3,
+            76,
+            20
+          ],
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "label": ""
+        }
+      ],
+      "at": [
+        9.5,
+        0,
+        50
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.7
+      ],
+      "explode": [
+        -82.5,
+        38,
+        108
+      ]
+    },
+    {
+      "id": "guide_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 130,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        -25,
+        27
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -27.5,
+        38,
+        120
+      ]
+    },
+    {
+      "id": "guide_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 4,
+          "height": 130,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        25,
+        27
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        27.5,
+        38,
+        132
+      ]
+    },
+    {
+      "id": "screw",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 5,
+          "height": 150,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        27
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        82.5,
+        38,
+        144
+      ]
+    },
+    {
+      "id": "handle_hub",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 10,
+          "height": 12,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.2,
+          "height": 16,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "x",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 26,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "y",
+          "label": ""
+        }
+      ],
+      "at": [
+        81,
+        0,
+        27
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -82.5,
+        76,
+        156
+      ]
+    },
+    {
+      "id": "handle_bar",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 70,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "y",
+          "label": ""
+        }
+      ],
+      "at": [
+        81,
+        0,
+        27
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -27.5,
+        76,
+        168
+      ]
+    }
+  ],
+  "mates": [
+    {
+      "type": "coaxial",
+      "a": "screw",
+      "b": "jaw_1",
+      "axis": "x",
+      "radial_clearance_mm": 0.2
+    }
+  ],
+  "level": 1,
+  "kind": "assembly",
+  "units": "millimetres",
+  "tolerance_mm": 0.3,
+  "part_count": 10
+}

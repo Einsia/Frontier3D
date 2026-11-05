@@ -1,0 +1,76 @@
+{
+  "version": "reference-boxes-v1",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "task_id": "L1/Image2Code/task_L1_Image2Code_015",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "8f185382e6090ef31b0bb6fb659e19e6fc298bc9ed58677cff2d25b412ec70e8",
+  "image_size": [
+    1000,
+    1000
+  ],
+  "detector": {
+    "fingerprint": "l1-ai-reference-only-draft-20261011"
+  },
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "targets": [
+    {
+      "id": "part_1",
+      "query": "front fan intake",
+      "boxes": [
+        [
+          0.6,
+          0.46,
+          0.9,
+          0.75
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_2",
+      "query": "engine core and pipes",
+      "boxes": [
+        [
+          0.31,
+          0.32,
+          0.71,
+          0.64
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_3",
+      "query": "rear exhaust cone",
+      "boxes": [
+        [
+          0.08,
+          0.24,
+          0.42,
+          0.55
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    }
+  ]
+}

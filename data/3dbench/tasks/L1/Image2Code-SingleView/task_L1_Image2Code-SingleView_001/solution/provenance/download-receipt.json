@@ -1,0 +1,17 @@
+{
+  "uid": "00fd99e778c244c3bd3b65f99dad7cb2",
+  "file": "source.glb",
+  "download_filename": "nike_air_zoom_pegasus_36.glb",
+  "bytes": 14954276,
+  "sha256": "d81874d66f97b013841368c35ac663e8434634a8e71be759b72a4566a669d424",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "quaz30 (https://sketchfab.com/quaz30)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/nike-air-zoom-pegasus-36-00fd99e778c244c3bd3b65f99dad7cb2",
+    "title": "Nike Air Zoom Pegasus 36"
+  },
+  "gltf_meshes": 1,
+  "gltf_images": 3,
+  "animations": []
+}

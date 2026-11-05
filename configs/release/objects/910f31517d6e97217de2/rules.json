@@ -1,0 +1,710 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "牛排切片是否具有参考中的厚实截面、弯曲外缘及焦壳包边？",
+      "source_quote": "Preserve the sequence of steak slices, visible cut faces",
+      "weight": 0.125
+    },
+    {
+      "id": "D02",
+      "question": "相邻牛排片是否形成可辨的分界、错层及遮挡，而非连成平坦表面？",
+      "source_quote": "Preserve the sequence of steak slices, visible cut faces",
+      "weight": 0.125
+    },
+    {
+      "id": "D03",
+      "question": "烤番茄是否保留饱满曲面、顶部凹陷及突出的星状萼片？",
+      "source_quote": "roasted tomato",
+      "weight": 0.125
+    },
+    {
+      "id": "D04",
+      "question": "芦笋是否具有圆柱状茎体、可见切断端面及渐尖的梢部？",
+      "source_quote": "asparagus",
+      "weight": 0.125
+    },
+    {
+      "id": "D05",
+      "question": "土豆配菜是否保留可见团块的圆鼓体积、不规则轮廓及表面起伏？",
+      "source_quote": "potato garnish",
+      "weight": 0.125
+    },
+    {
+      "id": "D06",
+      "question": "酱汁是否保留参考中连贯的薄层形态及不规则圆滑边缘？",
+      "source_quote": "sauce on the plate",
+      "weight": 0.125
+    },
+    {
+      "id": "D07",
+      "question": "盘子是否具有浅凹盘心、向外升起的宽盘沿及实体边缘厚度？",
+      "source_quote": "plate rim",
+      "weight": 0.125
+    },
+    {
+      "id": "D08",
+      "question": "可见叶状配饰是否具有分裂叶缘、细茎及离开盘面的起伏？",
+      "source_quote": "food thickness and raised garnishes must be geometric",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划只冻结公开参考与文字要求，不包含候选判断或已测量结果。",
+    "input/reference.png 对应公开附件 reference/reference-0.png；所有坐标均基于该原始图像，按宽高归一化。",
+    "未附 legacy-detail-20261018-v1 的额外协议正文；本计划仅采用本次嵌入的合同和检查规则。",
+    "单张图像存在遮挡，无法唯一确定牛排切片总数、隐藏表面或真实食材尺寸；不将视觉估计转成精确数值要求。",
+    "土豆配菜类别包含右下棕色团块及番茄后方深色团块；后者的食材身份不能仅凭图像完全确认，定位保留其深色可见表面。",
+    "牛排定位类别以整组切片序列为单位；叶状配饰以连贯可见簇为单位，不据遮挡关系推定隐藏实例。",
+    "盘子在图像边缘被裁切，定位仅覆盖可见范围；0.28 m 是任务约定的完整盘径，不是照片实测尺寸。",
+    "除盘径与相机位移外，文字未规定食物数量、厚度、间隙、角度或接触点的精确数值，也未给出数值容差。",
+    "细烤纹和碎屑允许简化，不作为必须逐一恢复的细节。渲染设置、图像尺寸及交付文件不作为内容质量检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在场景原生几何中识别盘子的完整外缘，在盘面内测量外径，并使用场景单位读取米制长度；不从图像像素估算。",
+      "quantity": "盘子直径",
+      "relation": "equal",
+      "source_quote": "Use a 0.28 m plate diameter as the task scale convention",
+      "target": 0.28,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取主相机与备用相机的世界位置，将位置差转换到主相机局部坐标系，测量沿局部正 X 方向的位移；方向保持与旋转、镜头一致性另行检查。",
+      "quantity": "备用相机沿主相机局部正 X 的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.03 m to its right along local X",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "盘子可见盘面与盘沿",
+      "polygon": [
+        [
+          0.001,
+          0.29
+        ],
+        [
+          0.16,
+          0.122
+        ],
+        [
+          0.36,
+          0.051
+        ],
+        [
+          0.63,
+          0.061
+        ],
+        [
+          0.85,
+          0.184
+        ],
+        [
+          0.979,
+          0.365
+        ],
+        [
+          0.999,
+          0.52
+        ],
+        [
+          0.999,
+          0.863
+        ],
+        [
+          0.932,
+          0.999
+        ],
+        [
+          0.028,
+          0.999
+        ],
+        [
+          0.001,
+          0.958
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R02",
+      "label": "牛排切片序列",
+      "polygon": [
+        [
+          0.351,
+          0.004
+        ],
+        [
+          0.469,
+          0.027
+        ],
+        [
+          0.499,
+          0.112
+        ],
+        [
+          0.591,
+          0.151
+        ],
+        [
+          0.6,
+          0.311
+        ],
+        [
+          0.57,
+          0.404
+        ],
+        [
+          0.617,
+          0.53
+        ],
+        [
+          0.587,
+          0.734
+        ],
+        [
+          0.537,
+          0.925
+        ],
+        [
+          0.32,
+          0.953
+        ],
+        [
+          0.292,
+          0.879
+        ],
+        [
+          0.296,
+          0.666
+        ],
+        [
+          0.255,
+          0.514
+        ],
+        [
+          0.302,
+          0.424
+        ],
+        [
+          0.278,
+          0.227
+        ],
+        [
+          0.32,
+          0.154
+        ],
+        [
+          0.316,
+          0.067
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R03",
+      "label": "烤番茄",
+      "polygon": [
+        [
+          0.649,
+          0.236
+        ],
+        [
+          0.697,
+          0.182
+        ],
+        [
+          0.788,
+          0.17
+        ],
+        [
+          0.851,
+          0.214
+        ],
+        [
+          0.871,
+          0.303
+        ],
+        [
+          0.849,
+          0.407
+        ],
+        [
+          0.791,
+          0.46
+        ],
+        [
+          0.712,
+          0.454
+        ],
+        [
+          0.655,
+          0.409
+        ],
+        [
+          0.638,
+          0.319
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R04",
+      "label": "芦笋",
+      "polygon": [
+        [
+          0.589,
+          0.657
+        ],
+        [
+          0.701,
+          0.507
+        ],
+        [
+          0.859,
+          0.345
+        ],
+        [
+          0.885,
+          0.306
+        ],
+        [
+          0.903,
+          0.309
+        ],
+        [
+          0.903,
+          0.357
+        ],
+        [
+          0.977,
+          0.312
+        ],
+        [
+          0.902,
+          0.441
+        ],
+        [
+          0.81,
+          0.538
+        ],
+        [
+          0.744,
+          0.689
+        ],
+        [
+          0.693,
+          0.796
+        ],
+        [
+          0.652,
+          0.773
+        ],
+        [
+          0.67,
+          0.699
+        ],
+        [
+          0.615,
+          0.725
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R05",
+      "label": "右下土豆配菜",
+      "polygon": [
+        [
+          0.708,
+          0.548
+        ],
+        [
+          0.75,
+          0.504
+        ],
+        [
+          0.815,
+          0.5
+        ],
+        [
+          0.855,
+          0.54
+        ],
+        [
+          0.885,
+          0.613
+        ],
+        [
+          0.871,
+          0.692
+        ],
+        [
+          0.819,
+          0.734
+        ],
+        [
+          0.754,
+          0.717
+        ],
+        [
+          0.716,
+          0.656
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R06",
+      "label": "左侧酱汁",
+      "polygon": [
+        [
+          0.085,
+          0.589
+        ],
+        [
+          0.115,
+          0.403
+        ],
+        [
+          0.148,
+          0.343
+        ],
+        [
+          0.213,
+          0.31
+        ],
+        [
+          0.268,
+          0.319
+        ],
+        [
+          0.314,
+          0.391
+        ],
+        [
+          0.32,
+          0.45
+        ],
+        [
+          0.258,
+          0.509
+        ],
+        [
+          0.296,
+          0.579
+        ],
+        [
+          0.293,
+          0.704
+        ],
+        [
+          0.315,
+          0.744
+        ],
+        [
+          0.269,
+          0.865
+        ],
+        [
+          0.214,
+          0.891
+        ],
+        [
+          0.134,
+          0.877
+        ],
+        [
+          0.086,
+          0.771
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R07",
+      "label": "肉与蔬菜之间的叶状配饰",
+      "polygon": [
+        [
+          0.531,
+          0.354
+        ],
+        [
+          0.579,
+          0.376
+        ],
+        [
+          0.645,
+          0.345
+        ],
+        [
+          0.66,
+          0.473
+        ],
+        [
+          0.689,
+          0.553
+        ],
+        [
+          0.72,
+          0.641
+        ],
+        [
+          0.672,
+          0.724
+        ],
+        [
+          0.657,
+          0.699
+        ],
+        [
+          0.67,
+          0.629
+        ],
+        [
+          0.601,
+          0.646
+        ],
+        [
+          0.601,
+          0.538
+        ],
+        [
+          0.648,
+          0.483
+        ],
+        [
+          0.593,
+          0.476
+        ],
+        [
+          0.564,
+          0.438
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "主体是否为参考中的成组切片牛排，保留焦褐外表与可见肉色切面？",
+      "source_quote": "Reconstruct the sliced steak",
+      "weight": 0.0625
+    },
+    {
+      "id": "S02",
+      "question": "是否重建参考中饱满、红亮的烤番茄？",
+      "source_quote": "roasted tomato",
+      "weight": 0.0625
+    },
+    {
+      "id": "S03",
+      "question": "是否重建参考中浅绿色长茎状芦笋？",
+      "source_quote": "asparagus",
+      "weight": 0.0625
+    },
+    {
+      "id": "S04",
+      "question": "是否重建参考中的烤制土豆配菜及其可见深浅表面？",
+      "source_quote": "potato garnish",
+      "weight": 0.0625
+    },
+    {
+      "id": "S05",
+      "question": "是否保留牛排左侧棕色、有光泽的酱汁区域？",
+      "source_quote": "sauce on the plate",
+      "weight": 0.0625
+    },
+    {
+      "id": "S06",
+      "question": "是否保留承载全部食物的浅色圆盘与宽盘沿？",
+      "source_quote": "plate rim",
+      "weight": 0.0625
+    },
+    {
+      "id": "S07",
+      "question": "牛排是否沿参考中的前后方向连续排列，保持切片顺序与切面朝向？",
+      "source_quote": "Preserve the sequence of steak slices, visible cut faces",
+      "weight": 0.0625
+    },
+    {
+      "id": "S08",
+      "question": "是否保持牛排居中偏左、番茄在右后、芦笋斜置右侧及土豆分布于右侧的关系？",
+      "source_quote": "food-group placement",
+      "weight": 0.0625
+    },
+    {
+      "id": "S09",
+      "question": "食物组之间及食物与盘沿之间的可见留白是否对应参考？",
+      "source_quote": "plate rim and gaps",
+      "weight": 0.0625
+    },
+    {
+      "id": "S10",
+      "question": "食物厚度与包括叶状配饰在内的凸起配菜是否由立体几何形成？",
+      "source_quote": "food thickness and raised garnishes must be geometric",
+      "weight": 0.0625
+    },
+    {
+      "id": "S11",
+      "question": "主要组件是否可独立编辑？",
+      "source_quote": "Keep major components independently editable",
+      "weight": 0.0625
+    },
+    {
+      "id": "S12",
+      "question": "食物是否具有合理支撑与间距，避免悬空或不合理穿插？",
+      "source_quote": "with thickness, support and meaningful spacing",
+      "weight": 0.0625
+    },
+    {
+      "id": "S13",
+      "question": "场景是否具有真实三维结构，而非整张参考贴在平面上或依赖单视角投影？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S14",
+      "question": "其他尺寸是否按参考比例推定，隐藏表面是否合理闭合补全？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S15",
+      "question": "主视图是否通过透视相机匹配参考的观察方向、构图与透视关系？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.0625
+    },
+    {
+      "id": "S16",
+      "question": "备用视图是否来自同一场景的复制相机，仅沿局部 X 向右平移并保持旋转和镜头不变？",
+      "source_quote": "Copy it and translate 0.03 m to its right along local X without changing rotation or lens",
+      "weight": 0.0625
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "覆盖图内可见盘子全部外缘；盘子在左、右及下边缘被裁切，不外推完整圆形，不计桌布和投影。",
+      "boxes": [
+        [
+          0,
+          0.045,
+          1,
+          1
+        ]
+      ],
+      "id": "T01",
+      "query": "浅色餐盘的可见整体",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "以完整切片序列为一个组目标，包括全部可见切面和深色焦壳；不按遮挡猜测切片实例，不包含酱汁、叶片和阴影。",
+      "boxes": [
+        [
+          0.254,
+          0.003,
+          0.618,
+          0.952
+        ]
+      ],
+      "id": "T02",
+      "query": "成组排列的全部牛排切片",
+      "weight": 0.3
+    },
+    {
+      "boundary_notes": "包含番茄完整可见果体及顶部深色萼片；排除后方深色配菜和盘面投影。",
+      "boxes": [
+        [
+          0.638,
+          0.169,
+          0.871,
+          0.465
+        ]
+      ],
+      "id": "T03",
+      "query": "带萼片的烤番茄",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "分别定位两根可辨芦笋，框覆盖各自可见切口至梢部；遮挡处不推定额外实例，排除叶状配饰和投影。",
+      "boxes": [
+        [
+          0.589,
+          0.307,
+          0.979,
+          0.726
+        ],
+        [
+          0.651,
+          0.305,
+          0.906,
+          0.798
+        ]
+      ],
+      "id": "T04",
+      "query": "芦笋茎与梢部",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "定位右下棕色团块和番茄后方深色团块的可见范围；包含深色实体表面，排除阴影，身份不确定性见 limitations。",
+      "boxes": [
+        [
+          0.704,
+          0.497,
+          0.887,
+          0.736
+        ],
+        [
+          0.616,
+          0.12,
+          0.741,
+          0.28
+        ]
+      ],
+      "id": "T05",
+      "query": "可见土豆配菜团块",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "仅覆盖盘面上左侧连贯酱汁区域；包含光亮和较暗的汁液表面，不纳入牛排及其阴影。",
+      "boxes": [
+        [
+          0.081,
+          0.309,
+          0.323,
+          0.895
+        ]
+      ],
+      "id": "T06",
+      "query": "左侧棕色酱汁",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "作为一个相连的叶茎簇定位，包含可辨叶缘与茎段；不将被食物遮挡的部分补作可见范围，不计零散微小碎屑。",
+      "boxes": [
+        [
+          0.531,
+          0.344,
+          0.722,
+          0.726
+        ]
+      ],
+      "id": "T07",
+      "query": "牛排右侧的绿色叶状配饰",
+      "weight": 0.1
+    }
+  ]
+}

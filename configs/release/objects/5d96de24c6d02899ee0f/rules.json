@@ -1,0 +1,601 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_018",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "柱体是否具有可辨识的实体防护构件？",
+      "source_quote": "a protected pillar",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "目标车是否具有实体车身、闭合车门及可区分的左后充电口盖？",
+      "source_quote": "The target silver-grey car is 1.85 m wide and 4.80 m long, doors closed and left-rear charging flap open 60 degrees.",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "机器人底盘与四个车轮是否分别建模，前轮可辨识？",
+      "source_quote": "a 0.60 x 0.50 m four-wheel robot with a front wheel on a guide marking",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "立柱、顶部机械臂及两个关节是否具有可辨识的实体结构？",
+      "source_quote": "1.10 m column and two-joint top arm",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "夹持器是否具有实际夹持连接器的末端结构？",
+      "source_quote": "to the gripper",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "直流连接器是否具有可辨识的插接端、锁扣和导向面？",
+      "source_quote": "connector guide surfaces align with port grooves",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "充电口是否具有实体开口及与连接器对应的导向槽？",
+      "source_quote": "connector guide surfaces align with port grooves",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "线缆是否具有实体截面及松弛悬链线曲率？",
+      "source_quote": "The cable hangs in a slack catenary",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "顶部悬挂是否具有可辨识的滑动支承构件？",
+      "source_quote": "a sliding overhead suspension",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "配电箱、急停和待机灯是否为可区分、有厚度且有合理支承的实体部件？",
+      "source_quote": "Add a rear-wall distribution box, emergency stop and blue standby light.",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "本任务仅有文字，没有公共参考图；依照文字任务规则，reference_primary 为空，regions 与 targets 为空。嵌入的 judge_spec 对 reference_primary 的非空限制与此规则冲突。",
+    "未提供 legacy-detail-20261018-v1 的独立定义；本计划仅采用当前消息中明确给出的协议，不推断其他旧版约束。",
+    "无候选作品，本计划只定义待执行的检查，不声称任何尺寸、形态或合规性已经测得。",
+    "车位尺寸是否包含白线、车辆宽度是否包含后视镜、机器人尺寸是否包含车轮突出部，以及立柱高度起点均未明确；应记录原生几何测量约定，不暗加边界标准。",
+    "0.03 m cable 未明确指直径还是其他截面尺度；数值检查保留原值，截面解释须显式报告。",
+    "悬挂高度使用 about 2.40 m，但没有明确数值容差；保留名义值，不自行设定容差或把近似措辞解释为零误差要求。",
+    "working-height band 未明确要求额外显示工作带；按端口中心的高度范围检查。未指定伸达球尺寸或额外服务点，不新增此类几何要求。",
+    "national-standard DC connector 未指定标准编号、接口版本或针脚细节；仅检查可辨识的国标直流连接器形态，不添加标准中的未述尺寸。",
+    "没有给出后墙附件间布局、箭头数量、车位号码内容、柱体防护形式、线缆弧垂量或通道采样间距，不将这些作为隐藏要求。",
+    "前轮在导向标记上按轮胎地面接触区域与标记区域相交操作化；原文未要求接触区域中心重合、完全包含或特定接触面积。",
+    "导航净宽须排除被评估机器人，但包括其余家具与突出物；路线坐标和测量约定应来自场景及 README，不能仅用图像像素判断。",
+    "渲染器、曝光、分辨率、文件布局及脚本运行方式不作为内容质量检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在地面平面测量车位横向边界间距，并报告边线计入约定。",
+      "quantity": "车位宽度",
+      "relation": "equal",
+      "source_quote": "2.50 x 5.30 m parking bay",
+      "target": 2.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在地面平面测量车位纵向边界间距。",
+      "quantity": "车位长度",
+      "relation": "equal",
+      "source_quote": "2.50 x 5.30 m parking bay",
+      "target": 5.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "沿白线局部法向测量两侧实体边界间宽度。",
+      "quantity": "白色车位线宽度",
+      "relation": "equal",
+      "source_quote": "0.12 m white bay lines",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "测量两车相向外表面之间的最小水平净距，报告所含突出部。",
+      "quantity": "两车间距",
+      "relation": "equal",
+      "source_quote": "leaving 0.70 m between cars",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "在目标车局部横轴上测量车辆几何范围，报告后视镜计入约定。",
+      "quantity": "目标车宽度",
+      "relation": "equal",
+      "source_quote": "1.85 m wide",
+      "target": 1.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "在目标车局部纵轴上测量车体前后端间距。",
+      "quantity": "目标车长度",
+      "relation": "equal",
+      "source_quote": "4.80 m long",
+      "target": 4.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "绕充电口盖铰轴测量当前姿态相对闭合姿态的转角。",
+      "quantity": "充电口盖开启角",
+      "relation": "equal",
+      "source_quote": "left-rear charging flap open 60 degrees",
+      "target": 60,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "沿声明的机器人第一水平尺寸轴测量底盘占地范围，并报告车轮突出部计入约定。",
+      "quantity": "机器人第一占地尺寸",
+      "relation": "equal",
+      "source_quote": "0.60 x 0.50 m four-wheel robot",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "沿与第一水平尺寸轴正交的轴测量机器人占地范围。",
+      "quantity": "机器人第二占地尺寸",
+      "relation": "equal",
+      "source_quote": "0.60 x 0.50 m four-wheel robot",
+      "target": 0.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "按独立轮体及轮轴结构计数机器人车轮，排除装饰圆片。",
+      "quantity": "机器人车轮数",
+      "relation": "equal",
+      "source_quote": "four-wheel robot",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "计算前轮轮胎地面接触区域与导向标记区域的最小平面距离；相交记为零。",
+      "quantity": "前轮与导向标记接触区域间距",
+      "relation": "equal",
+      "source_quote": "a front wheel on a guide marking",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "沿 Z 轴测量立柱底端至顶端的高度，并报告端点定义。",
+      "quantity": "立柱高度",
+      "relation": "equal",
+      "source_quote": "1.10 m column",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "计数顶部机械臂中以实体连接结构表达的独立关节。",
+      "quantity": "顶部机械臂关节数",
+      "relation": "equal",
+      "source_quote": "two-joint top arm",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "沿连接器自身纵轴测量前端至后端长度，不包含线缆。",
+      "quantity": "连接器长度",
+      "relation": "equal",
+      "source_quote": "connector 0.25 m long",
+      "target": 0.25,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "在垂直线缆中心线的截面上测量声明的截面尺度；记录将原文尺度解释为直径或其他尺度的约定。",
+      "quantity": "线缆截面尺度",
+      "relation": "equal",
+      "source_quote": "a 0.03 m cable",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "计算连接器插接尖端至充电口端口平面的垂直距离，并确认尖端位于未插入侧。",
+      "quantity": "插接尖端至端口平面距离",
+      "relation": "equal",
+      "source_quote": "connector tip is 0.02 m from the port plane",
+      "target": 0.02,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "由连接器插入轴和充电口配合轴计算方向偏差角。",
+      "quantity": "插接轴线角度偏差",
+      "relation": "at_most",
+      "source_quote": "axes aligned within 3 degrees",
+      "target": 3,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "测量地面至顶部滑动悬挂线缆支承位置的 Z 高度；仅报告相对名义值偏差，不自设近似容差。",
+      "quantity": "顶部悬挂名义高度",
+      "relation": "equal",
+      "source_quote": "a sliding overhead suspension about 2.40 m high",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "计算整段线缆实体外表面与目标车辆实体外表面之间的最小三维距离。",
+      "quantity": "线缆对车净距",
+      "relation": "at_least",
+      "source_quote": "at least 0.05 m clearance from the car",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "沿前方行车通道路线测量横向无障碍净宽；排除被评估机器人，纳入其余家具和突出物。",
+      "quantity": "前方行车通道宽度",
+      "relation": "equal",
+      "source_quote": "a 2.40 m front driving aisle",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "沿机器人对侧连续逃生路线测量横向无障碍净宽并检查瓶颈；排除被评估机器人，纳入其余家具和突出物。",
+      "quantity": "侧方逃生通道宽度",
+      "relation": "equal",
+      "source_quote": "a continuous 0.60 m escape passage",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "测量充电口中心相对地面的 Z 高度。",
+      "quantity": "充电口中心高度",
+      "relation": "equal",
+      "source_quote": "Port centre is at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "将端口中心相对地面的 Z 高度与工作高度区间上下界比较。",
+      "quantity": "端口中心工作高度范围",
+      "relation": "range",
+      "source_quote": "inside the 0.60-1.20 m working-height band",
+      "target": 0.6,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "将端口中心与机械臂基座参考点投影到 XY 平面，计算两点欧氏距离并记录基座参考点。",
+      "quantity": "端口至机械臂基座水平距离",
+      "relation": "at_most",
+      "source_quote": "within 0.80 m horizontal distance of the arm base",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "在冻结姿态下计算开启口盖实体与连接器几何包络之间的最小三维距离。",
+      "quantity": "开启口盖对连接器包络净距",
+      "relation": "at_least",
+      "source_quote": "The open flap stays at least 0.03 m from the connector envelope",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "场景是否表现停车库中的充电机器人作业车位？",
+      "source_quote": "Parking garage: charging robot before insertion.",
+      "weight": 0.025
+    },
+    {
+      "id": "S02",
+      "question": "车位地面是否呈深灰色环氧地坪外观？",
+      "source_quote": "with dark-grey epoxy",
+      "weight": 0.025
+    },
+    {
+      "id": "S03",
+      "question": "车位是否有白色边线？",
+      "source_quote": "white bay lines",
+      "weight": 0.025
+    },
+    {
+      "id": "S04",
+      "question": "车位是否有可辨识的车位号码？",
+      "source_quote": "a bay number",
+      "weight": 0.025
+    },
+    {
+      "id": "S05",
+      "question": "地面是否有可辨识的方向箭头？",
+      "source_quote": "directional arrows",
+      "weight": 0.025
+    },
+    {
+      "id": "S06",
+      "question": "车位一侧是否设有带防护的柱体？",
+      "source_quote": "One side has a protected pillar",
+      "weight": 0.025
+    },
+    {
+      "id": "S07",
+      "question": "柱体是否带有充电标志？",
+      "source_quote": "pillar with charging sign",
+      "weight": 0.025
+    },
+    {
+      "id": "S08",
+      "question": "相邻车位是否停有深色车辆？",
+      "source_quote": "a dark car occupies the neighbouring bay",
+      "weight": 0.025
+    },
+    {
+      "id": "S09",
+      "question": "目标车辆是否为银灰色汽车？",
+      "source_quote": "The target silver-grey car",
+      "weight": 0.025
+    },
+    {
+      "id": "S10",
+      "question": "目标车车门是否关闭？",
+      "source_quote": "doors closed",
+      "weight": 0.025
+    },
+    {
+      "id": "S11",
+      "question": "开启的充电口盖是否位于目标车左后部？",
+      "source_quote": "left-rear charging flap open",
+      "weight": 0.025
+    },
+    {
+      "id": "S12",
+      "question": "机器人是否位于目标车旁？",
+      "source_quote": "Beside it place a 0.60 x 0.50 m four-wheel robot",
+      "weight": 0.025
+    },
+    {
+      "id": "S13",
+      "question": "机器人是否有前轮落在导向标记上？",
+      "source_quote": "with a front wheel on a guide marking",
+      "weight": 0.025
+    },
+    {
+      "id": "S14",
+      "question": "机器人是否具有立柱和位于顶部的关节机械臂？",
+      "source_quote": "1.10 m column and two-joint top arm",
+      "weight": 0.025
+    },
+    {
+      "id": "S15",
+      "question": "机械臂是否持有可辨识的国标直流连接器？",
+      "source_quote": "arm holding a national-standard DC connector",
+      "weight": 0.025
+    },
+    {
+      "id": "S16",
+      "question": "连接器是否接有线缆？",
+      "source_quote": "connector 0.25 m long on a 0.03 m cable",
+      "weight": 0.025
+    },
+    {
+      "id": "S17",
+      "question": "连接器是否冻结在尚未插入端口的临近位置？",
+      "source_quote": "Freeze just before insertion",
+      "weight": 0.025
+    },
+    {
+      "id": "S18",
+      "question": "连接器与端口的插接轴是否对准？",
+      "source_quote": "axes aligned within 3 degrees",
+      "weight": 0.025
+    },
+    {
+      "id": "S19",
+      "question": "连接器锁扣是否朝上？",
+      "source_quote": "latch upward",
+      "weight": 0.025
+    },
+    {
+      "id": "S20",
+      "question": "线缆是否以松弛悬链线悬垂且没有绷紧？",
+      "source_quote": "The cable hangs in a slack catenary from a sliding overhead suspension about 2.40 m high to the gripper, never taut",
+      "weight": 0.025
+    },
+    {
+      "id": "S21",
+      "question": "线缆是否从顶部滑动悬挂延伸至夹持器？",
+      "source_quote": "from a sliding overhead suspension about 2.40 m high to the gripper",
+      "weight": 0.025
+    },
+    {
+      "id": "S22",
+      "question": "线缆是否避开车辆并留有净空？",
+      "source_quote": "with at least 0.05 m clearance from the car",
+      "weight": 0.025
+    },
+    {
+      "id": "S23",
+      "question": "后墙是否设有配电箱？",
+      "source_quote": "a rear-wall distribution box",
+      "weight": 0.025
+    },
+    {
+      "id": "S24",
+      "question": "场景是否设有可辨识的急停装置？",
+      "source_quote": "emergency stop",
+      "weight": 0.025
+    },
+    {
+      "id": "S25",
+      "question": "场景是否有蓝色待机灯？",
+      "source_quote": "blue standby light",
+      "weight": 0.025
+    },
+    {
+      "id": "S26",
+      "question": "车位前方是否留有可通行的行车通道？",
+      "source_quote": "Keep a 2.40 m front driving aisle",
+      "weight": 0.025
+    },
+    {
+      "id": "S27",
+      "question": "机器人对侧是否留有连续逃生通道？",
+      "source_quote": "a continuous 0.60 m escape passage on the side opposite the robot",
+      "weight": 0.025
+    },
+    {
+      "id": "S28",
+      "question": "开启口盖是否与连接器包络保持分离？",
+      "source_quote": "The open flap stays at least 0.03 m from the connector envelope",
+      "weight": 0.025
+    },
+    {
+      "id": "S29",
+      "question": "连接器导向面是否对应并对准端口导向槽？",
+      "source_quote": "connector guide surfaces align with port grooves",
+      "weight": 0.025
+    },
+    {
+      "id": "S30",
+      "question": "地坪是否具有反射外观？",
+      "source_quote": "Use reflective flooring",
+      "weight": 0.025
+    },
+    {
+      "id": "S31",
+      "question": "天花板是否设置冷白色条形灯？",
+      "source_quote": "cool-white ceiling strips",
+      "weight": 0.025
+    },
+    {
+      "id": "S32",
+      "question": "连接器是否带有红色点缀？",
+      "source_quote": "a red connector accent",
+      "weight": 0.025
+    },
+    {
+      "id": "S33",
+      "question": "主视角是否清楚呈现机器人、机械臂与端口的关系？",
+      "source_quote": "Frame robot, arm and port relationship.",
+      "weight": 0.025
+    },
+    {
+      "id": "S34",
+      "question": "车辆是否保持静止？",
+      "source_quote": "no vehicle motion",
+      "weight": 0.025
+    },
+    {
+      "id": "S35",
+      "question": "场景是否保持插入前静态姿态，没有插接动画？",
+      "source_quote": "no vehicle motion, plugging animation or electrical effects",
+      "weight": 0.025
+    },
+    {
+      "id": "S36",
+      "question": "场景是否没有电气特效？",
+      "source_quote": "no vehicle motion, plugging animation or electrical effects",
+      "weight": 0.025
+    },
+    {
+      "id": "S37",
+      "question": "场景是否由可编辑、可分离且有合理厚度与支承的实体三维构件组成？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.025
+    },
+    {
+      "id": "S38",
+      "question": "机器人是否以实体关节和末端执行器表达静态关节姿态？",
+      "source_quote": "A static articulated robot pose is required; no controller, physical dynamics or manipulation trajectory is required. Represent specified joints and end-effectors geometrically.",
+      "weight": 0.025
+    },
+    {
+      "id": "S39",
+      "question": "服务点是否与冻结接触关系区分并标注，且没有为服务点复制机器人？",
+      "source_quote": "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots.",
+      "weight": 0.025
+    },
+    {
+      "id": "S40",
+      "question": "第二透视视角是否展示关键接触与净空路线，并与主视角保持相同几何和冻结姿态？",
+      "source_quote": "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose",
+      "weight": 0.025
+    }
+  ],
+  "targets": []
+}

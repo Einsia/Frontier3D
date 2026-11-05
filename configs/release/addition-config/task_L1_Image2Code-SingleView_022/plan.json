@@ -1,0 +1,325 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/048b09a0ed3c4b038ec9/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/c976d032e74cead81a85/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/417e215c30e553371b91/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_head",
+      "label": "头部、耳与小角",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.529,
+          0.294
+        ],
+        [
+          0.641,
+          0.267
+        ],
+        [
+          0.662,
+          0.322
+        ],
+        [
+          0.671,
+          0.366
+        ],
+        [
+          0.698,
+          0.399
+        ],
+        [
+          0.685,
+          0.434
+        ],
+        [
+          0.652,
+          0.44
+        ],
+        [
+          0.576,
+          0.396
+        ],
+        [
+          0.533,
+          0.37
+        ]
+      ]
+    },
+    {
+      "id": "r_neck_body",
+      "label": "长颈、鬃毛与躯干",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.591,
+          0.275
+        ],
+        [
+          0.626,
+          0.301
+        ],
+        [
+          0.58,
+          0.396
+        ],
+        [
+          0.548,
+          0.476
+        ],
+        [
+          0.55,
+          0.553
+        ],
+        [
+          0.511,
+          0.612
+        ],
+        [
+          0.379,
+          0.619
+        ],
+        [
+          0.321,
+          0.571
+        ],
+        [
+          0.322,
+          0.484
+        ],
+        [
+          0.361,
+          0.459
+        ],
+        [
+          0.442,
+          0.46
+        ],
+        [
+          0.456,
+          0.408
+        ],
+        [
+          0.502,
+          0.33
+        ],
+        [
+          0.551,
+          0.288
+        ]
+      ]
+    },
+    {
+      "id": "r_legs",
+      "label": "四肢与深色足端",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.32,
+          0.551
+        ],
+        [
+          0.535,
+          0.546
+        ],
+        [
+          0.571,
+          0.653
+        ],
+        [
+          0.604,
+          0.731
+        ],
+        [
+          0.604,
+          0.759
+        ],
+        [
+          0.564,
+          0.775
+        ],
+        [
+          0.532,
+          0.763
+        ],
+        [
+          0.531,
+          0.804
+        ],
+        [
+          0.504,
+          0.82
+        ],
+        [
+          0.472,
+          0.813
+        ],
+        [
+          0.456,
+          0.746
+        ],
+        [
+          0.4,
+          0.741
+        ],
+        [
+          0.395,
+          0.771
+        ],
+        [
+          0.354,
+          0.776
+        ],
+        [
+          0.337,
+          0.756
+        ],
+        [
+          0.328,
+          0.658
+        ]
+      ]
+    },
+    {
+      "id": "r_base",
+      "label": "木纹圆形展示底座",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.213,
+          0.744
+        ],
+        [
+          0.245,
+          0.701
+        ],
+        [
+          0.314,
+          0.666
+        ],
+        [
+          0.422,
+          0.642
+        ],
+        [
+          0.551,
+          0.643
+        ],
+        [
+          0.65,
+          0.657
+        ],
+        [
+          0.728,
+          0.692
+        ],
+        [
+          0.779,
+          0.735
+        ],
+        [
+          0.789,
+          0.769
+        ],
+        [
+          0.759,
+          0.815
+        ],
+        [
+          0.687,
+          0.852
+        ],
+        [
+          0.574,
+          0.874
+        ],
+        [
+          0.438,
+          0.876
+        ],
+        [
+          0.323,
+          0.853
+        ],
+        [
+          0.249,
+          0.813
+        ],
+        [
+          0.215,
+          0.777
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_leg_count",
+      "source_quote": "four legs",
+      "quantity": "腿的数量",
+      "unit": "条",
+      "relation": "equal",
+      "target": 4,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在完整三维几何中按从躯干延伸至足端的独立肢体分支计数，不以对象数或单视图可见块数代替。"
+    },
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标中合并玩偶与展示底座的几何包围范围，取X、Y、Z三轴跨度的最大值，与1.000 m比较；排除相机与灯光。explicit_tolerance以相对比例记录原文2%。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

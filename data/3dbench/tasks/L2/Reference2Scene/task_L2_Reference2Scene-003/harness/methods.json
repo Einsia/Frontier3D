@@ -1,0 +1,234 @@
+{
+  "version": "l2-method-plan-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-003",
+  "category": "Reference2Scene",
+  "sources": {
+    "instruction.md": "0dda9bd0892a890360a88300101c7db6d37f240aef21c8189bc07a232984006c",
+    "solution/EVALUATION.md": "4938de9d52e5b4ef79747826801b310b696072a5706dfd9cd6d2120a57406089"
+  },
+  "evaluation_title": "评测设计：废弃仓库的梁柱与破损围护",
+  "evaluation_rows": [
+    {
+      "id": "public_contract",
+      "dimension": "题包逐题要求",
+      "source_quote": "# 评测设计：废弃仓库的梁柱与破损围护",
+      "description": [
+        "Repeated deep concrete column bays. Very low oblique camera along the open floor, large near column left, repeated bright right windows. Worn gray masonry/concrete, dark roof, broken bright windows and directional floor light; no textured-box replacement."
+      ],
+      "methods": [
+        "strict_fidelity",
+        "native_appearance",
+        "reference_boxes",
+        "static_support"
+      ]
+    }
+  ],
+  "active_checks": [
+    {
+      "id": "real_geometry",
+      "existing_check": "real_geometry",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_relationship",
+      "existing_check": "alternate_relationship",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_projection",
+      "existing_check": "main_projection",
+      "source": "instruction.md"
+    },
+    {
+      "id": "support_geometry_available",
+      "existing_check": "support_geometry_available",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_native_size",
+      "existing_check": "main_native_size",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_png",
+      "existing_check": "main_png",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_native_size",
+      "existing_check": "alternate_native_size",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_png",
+      "existing_check": "alternate_png",
+      "source": "instruction.md"
+    },
+    {
+      "id": "engine",
+      "existing_check": "engine",
+      "source": "instruction.md"
+    },
+    {
+      "id": "view_transform",
+      "existing_check": "view_transform",
+      "source": "instruction.md"
+    },
+    {
+      "id": "exposure",
+      "existing_check": "exposure",
+      "source": "instruction.md"
+    },
+    {
+      "id": "gamma",
+      "existing_check": "gamma",
+      "source": "instruction.md"
+    },
+    {
+      "id": "metres",
+      "existing_check": "metres",
+      "source": "instruction.md"
+    },
+    {
+      "id": "unit_scale",
+      "existing_check": "unit_scale",
+      "source": "instruction.md"
+    },
+    {
+      "id": "editable",
+      "existing_check": "editable",
+      "source": "instruction.md"
+    },
+    {
+      "id": "seed_execution",
+      "existing_check": "seed_execution",
+      "source": "instruction.md"
+    }
+  ],
+  "material_policy": {
+    "image_textures": true,
+    "packed_dependencies": true,
+    "whole_reference_projection": false
+  },
+  "scoring": {
+    "component_weights": {
+      "main_image": 0.5,
+      "localization": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "weights_status": "pilot_human_calibration_pending"
+  },
+  "appearance_views": [
+    {
+      "artifact": "main.png",
+      "reference_key": "main",
+      "reference_path": "environment/input/reference.png",
+      "reference_sha256": "e16b3c830681c363e8ab5c2f6a84eebf02aeef597d37da71b3d400ee11f790d8",
+      "method": "reference-regions-v1",
+      "annotation": {
+        "version": "reference-regions-v1",
+        "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-003",
+        "reference_path": "environment/input/reference.png",
+        "reference_sha256": "e16b3c830681c363e8ab5c2f6a84eebf02aeef597d37da71b3d400ee11f790d8",
+        "regions": [
+          {
+            "id": "region_1",
+            "label": "large near concrete column at left",
+            "weight": 0.3333333333333333,
+            "polygon": [
+              [
+                0.064,
+                0.0
+              ],
+              [
+                0.228,
+                0.0
+              ],
+              [
+                0.228,
+                0.88
+              ],
+              [
+                0.064,
+                0.88
+              ]
+            ]
+          },
+          {
+            "id": "region_2",
+            "label": "entire right wall window installation",
+            "weight": 0.3333333333333333,
+            "polygon": [
+              [
+                0.45,
+                0.206
+              ],
+              [
+                0.932,
+                0.206
+              ],
+              [
+                0.932,
+                0.767
+              ],
+              [
+                0.45,
+                0.767
+              ]
+            ]
+          },
+          {
+            "id": "region_3",
+            "label": "nearest overhead horizontal concrete cross-beam",
+            "weight": 0.3333333333333333,
+            "polygon": [
+              [
+                0.209,
+                0.045
+              ],
+              [
+                0.903,
+                0.045
+              ],
+              [
+                0.903,
+                0.466
+              ],
+              [
+                0.209,
+                0.466
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "physics": {
+    "method": "static-support-v1",
+    "gravity": "down_z",
+    "ground_mode": "scene",
+    "contact_tolerance_m": 0.02,
+    "ground_lower_fraction": 0.35,
+    "minimum_ground_area_fraction": 0.15
+  },
+  "vlm_judge": {
+    "version": "l2-vlm-judge-v3",
+    "mode": "interactive",
+    "spec_path": "harness/vlm_spec.json",
+    "spec_sha256": "4fe2663b57978c11ccd08c777d40dd6d5f34d5793b356ad7fb7ace130ddcddd4",
+    "component_weights": {
+      "main_image": 0.5,
+      "localization": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication"
+  },
+  "score_aggregation_note": "\n## Frozen evaluator protocol (L2 refresh v9, 2026-10-14)\n\nThe valid-scene score retains 50% reference appearance, 20% key-object image-plane\nlocalization, 10% static support and 20% strict task-specific visual fidelity.\nLocal textures and packed dependencies are allowed. Complete-reference planes or\ncamera projections cannot replace genuine scene geometry. Execution, complete\ndeliverables and native rerendering remain validity checks, not quality bonuses.\nNo candidate-fitted alignment, cropping, rescaling or pose registration is used.\nFor two-input tasks, main and alternate are compared with their corresponding\npublic originals with equal image weights; frozen static regions exclude action\nstate differences. Localization uses the first view. Novel is independently\nrerendered and checked for 3D consistency, not pixel-compared with a private photo.\nSingle-input alternates have no pixel target. Small explicitly permitted details\nremain optional. Reference annotations and ordinal VLM grades are AI-authored pilot\nmeasurements awaiting human calibration, not certified 3D ground truth.\n",
+  "remaining_engineering": [
+    "人工校准参考框及视觉等级",
+    "尺度实体自动对应尚为诊断，不推断隐藏真实尺寸"
+  ]
+}

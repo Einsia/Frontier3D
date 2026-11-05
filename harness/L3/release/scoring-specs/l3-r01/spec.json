@@ -1,0 +1,260 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-r01",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "5ccfb8064a42a8719b9070fecbd7fa1f7ed072b4c5fd5c48935c51c97b367f80",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Arrange the forecourt, successive gates and principal hall courtyard along a coherent central processional axis, preserving the frontal symmetry of the reference views.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Maintain monumental proportions: tall defensive walls, deep gate openings, expansive courts and a broad stair ascent beneath the dominant palace hall.",
+        "id": "env-02"
+      },
+      {
+        "criterion": "Keep courtyard centers broad and predominantly paved, with ornament concentrated along approach edges and stair landings; preserve the sparse visible vegetation.",
+        "id": "env-04"
+      },
+      {
+        "criterion": "Match clear blue sky, strong daylight and directional shadows, with weathered ochre masonry, muted gray paving and roofs, and restrained red timber accents.",
+        "id": "env-05"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "A broad crenellated wall centers on one tall rectangular entrance, flanked by two enormous symmetrical horned mask reliefs.",
+            "id": "outer-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "A red colonnaded pavilion with two stacked tiled roof levels rises above the wall, with smaller elevated towers at both sides.",
+            "id": "outer-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The entrance has a thick dark ornamental surround, red inner jambs and a rectangular framed plaque above.",
+            "id": "outer-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Rough ochre stone contrasts with charcoal reliefs, faded red structural members and gray roof tiles.",
+            "id": "outer-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-01",
+        "importance": "core",
+        "label": "Outer forecourt gate and mask wall",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 24
+      },
+      {
+        "features": [
+          {
+            "criterion": "A massive crenellated wall contains three openings, with the central passage taller and wider than the flanking passages.",
+            "id": "inner-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Each passage has angular clipped upper corners and a heavy dark frame surrounding a visibly deep interior.",
+            "id": "inner-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "A central pavilion has three progressively smaller roof tiers, broad upturned eaves and a short projecting balustraded balcony.",
+            "id": "inner-03",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Weathered yellow-gray wall surfaces surround dark timber pavilion bays and closely ribbed gray tiled roofs.",
+            "id": "inner-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-02",
+        "importance": "core",
+        "label": "Three-passage inner palace gate",
+        "references": [
+          "reference-02"
+        ],
+        "weight": 22
+      },
+      {
+        "features": [
+          {
+            "criterion": "The principal hall presents a very wide symmetrical facade beneath three long stacked roof tiers with gently rising corners.",
+            "id": "hall-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "A monumental central stone staircase spans much of the hall frontage, accompanied by narrower lateral stair flights.",
+            "id": "hall-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Repeated red columns and projecting brackets support the deep front eaves above recessed dark door bays.",
+            "id": "hall-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Pale balustrades border terraces and stairs, contrasting with dark gray steps, gray tiles, ochre wall panels and red timber.",
+            "id": "hall-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-03",
+        "importance": "core",
+        "label": "Principal palace hall and stair terraces",
+        "references": [
+          "reference-03"
+        ],
+        "weight": 28
+      },
+      {
+        "features": [
+          {
+            "criterion": "Lower galleries frame the main approaches, while taller square towers punctuate the gate flanks.",
+            "id": "gallery-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Gallery roofs form long low tiled runs with projecting eaves; tower roofs cap stacked open balcony levels.",
+            "id": "gallery-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Gray roof tiles, muted red posts, pale railings and warm plaster panels repeat the principal buildings' palette.",
+            "id": "gallery-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-04",
+        "importance": "supporting",
+        "label": "Flanking towers and side galleries",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 12
+      },
+      {
+        "features": [
+          {
+            "criterion": "Expansive level courts create long unobstructed approaches to the centered gateways and staircase.",
+            "id": "paving-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Rectangular paving modules form regular axial rows with repeated shallow geometric surface patterns.",
+            "id": "paving-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Raised curbs and narrow pale gravel strips border the inner gate approach; linear edge channels remain subordinate to the paving.",
+            "id": "paving-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Paving has a worn gray-beige stone appearance with visible joints and subtle tonal variation.",
+            "id": "paving-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-05",
+        "importance": "supporting",
+        "label": "Courtyard paving and approach edges",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 9
+      },
+      {
+        "features": [
+          {
+            "criterion": "Paired dark sculptural beasts or birds stand on plinths beside gateways and stair approaches.",
+            "id": "ornament-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The hall staircase is accented by guardian figures on tall square pedestals bearing large carved relief panels.",
+            "id": "ornament-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Tall crossbar standards carry narrow purple banners near the inner gate, while elongated red lantern standards line the hall approach.",
+            "id": "ornament-03",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Dark weathered sculptural surfaces and carved stone bases contrast with red and purple hanging fabric.",
+            "id": "ornament-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-06",
+        "importance": "detail",
+        "label": "Ceremonial sculpture and approach standards",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 5
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "76ab108535f892f632240c4108c8d2cd9460b2593120d57dad49ed76c733931c",
+    "environment/input/references/reference-03.jpg": "6a44fd857a8c16abe659e25c05946e458f9d75ec82131f7e78a5aea13876eebe",
+    "environment/input/references/reference-02.jpg": "9388d345241c0ed84b97a12696e484f1c9165626f675afae0c5521dc68304328"
+  }
+}

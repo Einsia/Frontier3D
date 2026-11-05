@@ -1,0 +1,177 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_017",
+  "family": "Reference2Scene",
+  "instruction_sha256": "3a9c08db725c82d0e8e95604c20693a12fc8d273db19581e1ac1b5670ad807e7",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_017",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "0980d12f11f988056b03aa3ca07acac6ff3ae726d8272b2c1577c723f51e4c41",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-e18912c91a2a6a6b90ddc84b3a953374366a8e3714d56765d711b29a0a08c78c"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t01",
+        "query": "机身主体",
+        "weight": 0.3,
+        "boxes": [
+          [
+            0.257,
+            0.448,
+            0.736,
+            0.603
+          ]
+        ],
+        "boundary_notes": "包含机鼻、机腹暗面与尾锥；排除机翼、尾翼和发动机。遮挡部分不补画隐藏轮廓。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t02",
+        "query": "主机翼",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.476,
+            0.435,
+            0.784,
+            0.529
+          ],
+          [
+            0.399,
+            0.526,
+            0.512,
+            0.635
+          ]
+        ],
+        "boundary_notes": "分别框定远侧和近侧可见机翼，包含翼尖、后缘突出结构与暗色厚度边缘；不包含发动机。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t03",
+        "query": "发动机短舱",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.355,
+            0.54,
+            0.41,
+            0.584
+          ],
+          [
+            0.47,
+            0.481,
+            0.523,
+            0.5
+          ]
+        ],
+        "boundary_notes": "近侧包含暗色尾部及开口边缘；远侧仅框定机身与机翼上方露出的短舱部分，不推断被遮挡范围。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t04",
+        "query": "垂直尾翼",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.607,
+            0.498,
+            0.736,
+            0.591
+          ]
+        ],
+        "boundary_notes": "包含红色垂尾及其可见根部，不把机身上的红色涂装延伸区视为垂尾。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t05",
+        "query": "水平尾翼",
+        "weight": 0.1,
+        "boxes": [
+          [
+            0.659,
+            0.581,
+            0.717,
+            0.621
+          ],
+          [
+            0.706,
+            0.554,
+            0.799,
+            0.594
+          ]
+        ],
+        "boundary_notes": "分别框定两侧可见水平尾翼，包含薄边暗面；排除尾锥及投影。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

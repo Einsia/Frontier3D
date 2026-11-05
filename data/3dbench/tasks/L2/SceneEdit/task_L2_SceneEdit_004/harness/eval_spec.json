@@ -1,0 +1,385 @@
+{
+  "version": "l2-v2.2.0",
+  "profile": "L2",
+  "mode": "edit",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "main.png",
+    "alternate.png",
+    "README.md"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "checks": {
+    "content": [
+      {
+        "id": "content_01",
+        "metric": "equals",
+        "group": "content_01",
+        "params": {
+          "path": "/manual/content_01",
+          "expected": true
+        },
+        "role": "target",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_02",
+        "metric": "equals",
+        "group": "content_02",
+        "params": {
+          "path": "/manual/content_02",
+          "expected": true
+        },
+        "role": "target",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_03",
+        "metric": "equals",
+        "group": "content_03",
+        "params": {
+          "path": "/manual/content_03",
+          "expected": true
+        },
+        "role": "target",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_04",
+        "metric": "equals",
+        "group": "content_04",
+        "params": {
+          "path": "/manual/content_04",
+          "expected": true
+        },
+        "role": "target",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_05",
+        "metric": "equals",
+        "group": "content_05",
+        "params": {
+          "path": "/manual/content_05",
+          "expected": true
+        },
+        "role": "target",
+        "pass_threshold": 1
+      },
+      {
+        "id": "retained_scene",
+        "metric": "equals",
+        "group": "retained_scene",
+        "params": {
+          "path": "/case/preservation",
+          "expected": true
+        },
+        "role": "preserve",
+        "pass_threshold": 1
+      },
+      {
+        "id": "target_added_geometry",
+        "metric": "equals",
+        "group": "target_added_geometry",
+        "params": {
+          "path": "/case/edit_target_added",
+          "expected": true
+        },
+        "role": "target",
+        "pass_threshold": 1
+      }
+    ],
+    "spatial": [
+      {
+        "id": "alternate_relationship",
+        "metric": "l2_case_camera_pair",
+        "group": "alternate_relationship",
+        "params": {
+          "mode": "local_translation",
+          "delta_m": 0.3,
+          "tolerance": 0.003
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "main_camera_preserved",
+        "metric": "l2_camera_delta",
+        "group": "main_camera_preserved",
+        "params": {
+          "camera": "__main",
+          "baseline_camera": "__main",
+          "max_location_delta": 1e-05,
+          "max_rotation_delta": 1e-05,
+          "max_lens_delta": 1e-05
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "layout_relative_scale",
+        "metric": "equals",
+        "group": "layout_relative_scale",
+        "params": {
+          "path": "/manual/layout_relative_scale",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "physics": [
+      {
+        "id": "support_clearance",
+        "metric": "equals",
+        "group": "support_clearance",
+        "params": {
+          "path": "/manual/support_clearance",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "visual": [
+      {
+        "id": "main_native_size",
+        "metric": "equals",
+        "group": "main_native_size",
+        "params": {
+          "path": "/artifacts/main.png/size",
+          "reference_path": "/baseline/cameras/__main/resolution"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "main_png",
+        "metric": "equals",
+        "group": "main_png",
+        "params": {
+          "path": "/artifacts/main.png/format",
+          "expected": "PNG"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "alternate_native_size",
+        "metric": "equals",
+        "group": "alternate_native_size",
+        "params": {
+          "path": "/artifacts/alternate.png/size",
+          "reference_path": "/baseline/cameras/__main/resolution"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "alternate_png",
+        "metric": "equals",
+        "group": "alternate_png",
+        "params": {
+          "path": "/artifacts/alternate.png/format",
+          "expected": "PNG"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "main_reference_similarity",
+        "metric": "image_ssim",
+        "group": "main_reference_similarity",
+        "params": {
+          "candidate": "/artifacts/main.png/path",
+          "reference": "/reference_images/main/path"
+        },
+        "role": "standard",
+        "pass_threshold": 0.8
+      },
+      {
+        "id": "appearance",
+        "metric": "equals",
+        "group": "appearance",
+        "params": {
+          "path": "/manual/appearance",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "structure": [
+      {
+        "id": "preserve_engine",
+        "metric": "equals",
+        "group": "preserve_engine",
+        "params": {
+          "path": "/scene/render/engine",
+          "reference_path": "/baseline/render/engine"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_view_transform",
+        "metric": "equals",
+        "group": "preserve_view_transform",
+        "params": {
+          "path": "/scene/render/view_transform",
+          "reference_path": "/baseline/render/view_transform"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_look",
+        "metric": "equals",
+        "group": "preserve_look",
+        "params": {
+          "path": "/scene/render/look",
+          "reference_path": "/baseline/render/look"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_exposure",
+        "metric": "equals",
+        "group": "preserve_exposure",
+        "params": {
+          "path": "/scene/render/exposure",
+          "reference_path": "/baseline/render/exposure"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_gamma",
+        "metric": "equals",
+        "group": "preserve_gamma",
+        "params": {
+          "path": "/scene/render/gamma",
+          "reference_path": "/baseline/render/gamma"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_resolution",
+        "metric": "equals",
+        "group": "preserve_resolution",
+        "params": {
+          "path": "/scene/render/resolution",
+          "reference_path": "/baseline/render/resolution"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_resolution_percentage",
+        "metric": "equals",
+        "group": "preserve_resolution_percentage",
+        "params": {
+          "path": "/scene/render/resolution_percentage",
+          "reference_path": "/baseline/render/resolution_percentage"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_unit_system",
+        "metric": "equals",
+        "group": "preserve_unit_system",
+        "params": {
+          "path": "/scene/unit_system",
+          "reference_path": "/baseline/unit_system"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "preserve_unit_scale",
+        "metric": "equals",
+        "group": "preserve_unit_scale",
+        "params": {
+          "path": "/scene/unit_scale",
+          "reference_path": "/baseline/unit_scale"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "editable",
+        "metric": "equals",
+        "group": "editable",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "public_qualifications_01",
+        "metric": "equals",
+        "group": "public_qualifications_01",
+        "params": {
+          "path": "/manual/public_qualifications_01",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "public_qualifications_02",
+        "metric": "equals",
+        "group": "public_qualifications_02",
+        "params": {
+          "path": "/manual/public_qualifications_02",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "robust": [
+      {
+        "id": "seed_execution",
+        "metric": "seed_success",
+        "group": "seed_execution",
+        "params": {},
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ]
+  },
+  "reference_images": {
+    "main": "environment/input/reference.png"
+  },
+  "critical_constraints": [
+    "alternate_relationship",
+    "main_camera_preserved",
+    "main_native_size",
+    "main_png",
+    "alternate_native_size",
+    "alternate_png",
+    "preserve_engine",
+    "preserve_view_transform",
+    "preserve_look",
+    "preserve_exposure",
+    "preserve_gamma",
+    "preserve_resolution",
+    "preserve_resolution_percentage",
+    "preserve_unit_system",
+    "preserve_unit_scale"
+  ],
+  "baseline_scene": "environment/input/initial.blend",
+  "scene": "scene.blend",
+  "render_views": []
+}

@@ -1,0 +1,24 @@
+# L2 refreshed reference evaluator
+
+
+## Reference views and materials
+
+Local textures and packed dependencies are allowed. Complete-reference planes or
+camera projections cannot replace genuine scene geometry. Execution, complete
+deliverables and native rerendering remain validity checks, not quality bonuses.
+No candidate-fitted alignment, cropping, rescaling or pose registration is used.
+For two-input tasks, main and alternate are compared with their corresponding
+public originals with equal image weights; frozen static regions exclude action
+state differences. Localization uses the first view. Novel is independently
+rerendered and checked for 3D consistency, not pixel-compared with a private photo.
+Single-input alternates have no pixel target. Small explicitly permitted details
+remain optional. Reference annotations and ordinal VLM grades are AI-authored
+measurements with pending human calibration, not certified 3D ground truth.
+
+## Scoring
+
+Final item score: `50% main_image + 20% localization + 20% vlm + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

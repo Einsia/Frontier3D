@@ -1,0 +1,171 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_016",
+  "family": "Reference2Scene",
+  "instruction_sha256": "5f44361e5faf1d96d452e57edc18168244ba879867c991d79bb96cea5cb90677",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "7752f72eab7ae61534be3b6a636dbf54cff665823d16e53345c974c05579c425",
+    "reference/reference-1.png": "c5ccad5f855a7220741a3d8ce48b06cdfc961e1a50c60b3cfd947c9638a0aff9",
+    "reference/reference-2.png": "b167cfb9120523b11b7669207d8f687c798c9888d3fc1694e26a2146c213410b",
+    "reference/reference-3.png": "c953fabb6f9744f5675ea777417caa34f2665fefeb3b0f2398a44f5667aeaf3c"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_tray_rim",
+      "component": "F",
+      "question": "托盘是否具有浅凹盘面、连续薄盘沿和向下延伸的侧壁厚度？",
+      "units": [
+        "the tray rim and handles"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_tray_handles",
+      "component": "F",
+      "question": "两端把手是否形成镂空拱形握持空间，并以装饰性弯曲端部连接盘沿？",
+      "units": [
+        "the tray rim and handles"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_teapot_body",
+      "component": "F",
+      "question": "茶壶圆腹至收窄颈部、底足的曲面是否连续，环形把手是否在上下连接处自然接合？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_spout",
+      "component": "F",
+      "question": "壶嘴是否由腹部连续弯曲上扬，末端具有真实开口和可见壁厚？",
+      "units": [
+        "teapot with lid, spout and handle"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_lids",
+      "component": "F",
+      "question": "茶壶及小罐的盖是否具有隆起盖面、外缘台阶、收颈盖钮和与器口接合的层次？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_cups",
+      "component": "F",
+      "question": "茶杯是否具有薄口沿、下凹内腔、收窄杯底和带通孔且连接杯壁的弯曲把手？",
+      "units": [
+        "thin walls, hollow openings"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_saucers_vessel",
+      "component": "F",
+      "question": "浅碟是否保留薄而上翘的边缘及承杯凹部？",
+      "units": [
+        "saucers and small vessels visible in the supplied views"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_small_vessel",
+      "component": "F",
+      "question": "小罐是否保留鼓腹、收窄底足、器口台阶及短小侧耳的局部结构？",
+      "units": [
+        "small vessels visible in the supplied views"
+      ],
+      "global_weight": 0.125,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

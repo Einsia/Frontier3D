@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-reference-localized-v5.2.0",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-002",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "8f660d0cedd10f8ab2ddcc3287eae5780f3cdafa8bb0a324c99a8925b48e3b79",
+  "image_size": [
+    1600,
+    900
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "main two-face corner building excluding pavement and separate foreground right wall",
+      "label": "main two-face corner building excluding pavement and separate foreground right wall",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.053,
+          0.0,
+          0.882,
+          0.93
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. main two-face corner building excluding pavement and separate foreground right wall"
+    },
+    {
+      "id": "target_2",
+      "query": "ground-floor front doorway",
+      "label": "ground-floor front doorway",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.112,
+          0.406,
+          0.236,
+          0.833
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. ground-floor front doorway"
+    },
+    {
+      "id": "target_3",
+      "query": "upper left facade window nearest building corner",
+      "label": "upper left facade window nearest building corner",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.334,
+          0.006,
+          0.412,
+          0.343
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. upper left facade window nearest building corner"
+    }
+  ]
+}

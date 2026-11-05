@@ -1,0 +1,30 @@
+{
+  "title": "幼儿园活动室与低矮家具",
+  "source_urls": [
+    "https://pixabay.com/images/download/brendacfeyc-kindergarden-569198_1920.jpg"
+  ],
+  "document_revision": 902,
+  "license": {
+    "label": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "500e52bc6d5a3e65921c9eeef6cde68b4d93a711538fa9135216c80151d49fe8",
+      "size": [
+        1280,
+        853
+      ],
+      "original_document_token": "Vfmebpp8fobXlHxY1ULcl9iTn9c"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

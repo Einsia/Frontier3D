@@ -1,0 +1,129 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "8dd245cef5dcd650a8da06ee40ac68b4d25164133a4d7f89a52710295eddc6a9",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "cloudy_netted_nursery",
+        "source": "https://polyhaven.com/a/cloudy_netted_nursery",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/cloudy_netted_nursery.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/cloudy_netted_nursery/view-01.jpg",
+        "sha256": "6bf6927e4c7e0ba89c7f42843f45d8bf8f36e876ddda87379bbba11ce752aedb",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 0,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 0,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "9dfa830dc54f34f4aaba7d46546340683939666f9149fb51d91d81663df7e1e3"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-02",
+      "path": "references/reference-02.jpg",
+      "sha256": "0a843c670a2f061700f8da1871720cbee23ff3d994d17dda093556a0dede8d0b",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "cloudy_netted_nursery",
+        "source": "https://polyhaven.com/a/cloudy_netted_nursery",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/cloudy_netted_nursery.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/cloudy_netted_nursery/view-02.jpg",
+        "sha256": "db46ea3bede560e6835de367222542720d276aa510fee0033c994bc04d6df99a",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 90,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 90,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "9dfa830dc54f34f4aaba7d46546340683939666f9149fb51d91d81663df7e1e3"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-03",
+      "path": "references/reference-03.jpg",
+      "sha256": "893162e3a21ce5d7ab825506f419c2fadfd8979202d0fdfa493c6c635c92b3ac",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "cloudy_netted_nursery",
+        "source": "https://polyhaven.com/a/cloudy_netted_nursery",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/cloudy_netted_nursery.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/cloudy_netted_nursery/view-03.jpg",
+        "sha256": "781b7d535f4c6fb50d489a08b26cb2b8955df2ef32e97bc9e5412c2ed9d47b47",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 180,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 180,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "9dfa830dc54f34f4aaba7d46546340683939666f9149fb51d91d81663df7e1e3"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-04",
+      "path": "references/reference-04.jpg",
+      "sha256": "8f40fdebf30cd04ffb8f9dd67e60a1ce9d8f0c16c5a5b0b714b66baba5cc27dc",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "cloudy_netted_nursery",
+        "source": "https://polyhaven.com/a/cloudy_netted_nursery",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/cloudy_netted_nursery.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/cloudy_netted_nursery/view-04.jpg",
+        "sha256": "52afd6fc68d297718cfcc0f45ad94eea7dd076e924c99efea3bc9f8ea41134ce",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 270,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 270,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "9dfa830dc54f34f4aaba7d46546340683939666f9149fb51d91d81663df7e1e3"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

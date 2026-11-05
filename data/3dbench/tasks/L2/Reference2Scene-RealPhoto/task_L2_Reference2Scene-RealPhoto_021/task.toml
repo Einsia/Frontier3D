@@ -1,0 +1,24 @@
+# Metadata only; requirements are in instruction.md.
+version = 1
+id = "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021"
+level = 2
+category = "Reference2Scene-RealPhoto"
+title = "国科大艺术与科学大楼"
+difficulty = "hard"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "not_implemented"
+resource_family = "user-provided/feishu-new-20261016-photo-13"
+reference_kind = "single_real_photo"
+environment_files = ["input/reference.png"]
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/main.png", "output/alternate.png", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024"
+release_id = "3DBench-116"

@@ -1,0 +1,588 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+  "detail_checks": [
+    {
+      "id": "d01",
+      "question": "滤水壶的厚壁、壶口、隆起壶盖、侧把手及内部滤芯体积是否与参考相符？",
+      "source_quote": "large dark-blue and clear filter pitcher at left",
+      "weight": 0.1
+    },
+    {
+      "id": "d02",
+      "question": "木果碗的敞口、弧形碗壁和碗沿厚度是否与参考相符？",
+      "source_quote": "wooden fruit bowl",
+      "weight": 0.1
+    },
+    {
+      "id": "d03",
+      "question": "苹果与柑橘是否具有参考中的饱满体积及各自轮廓，而非平面贴图？",
+      "source_quote": "fruit volumes",
+      "weight": 0.1
+    },
+    {
+      "id": "d04",
+      "question": "前景洋葱的球状主体、收尖颈部和可见根端是否与参考相符？",
+      "source_quote": "foreground onions",
+      "weight": 0.1
+    },
+    {
+      "id": "d05",
+      "question": "金属锅的开口、卷边、内外壁厚及可见环状把手是否与参考相符？",
+      "source_quote": "cropped metal pot",
+      "weight": 0.1
+    },
+    {
+      "id": "d06",
+      "question": "白色储物罐的圆柱罐身、盖部及口沿结构是否与参考相符？",
+      "source_quote": "white storage jar",
+      "weight": 0.1
+    },
+    {
+      "id": "d07",
+      "question": "透明料理机碗的开口、厚边、曲面碗壁及中央轴结构是否与参考相符？",
+      "source_quote": "clear food-processor bowl",
+      "weight": 0.1
+    },
+    {
+      "id": "d08",
+      "question": "蓝色隔热手套的拇指分叉、袖口厚度和表面凸纹是否与参考相符？",
+      "source_quote": "blue oven mitt",
+      "weight": 0.1
+    },
+    {
+      "id": "d09",
+      "question": "擀面杖的圆柱杆身及可见端部曲线是否与参考相符？",
+      "source_quote": "rolling pin",
+      "weight": 0.1
+    },
+    {
+      "id": "d10",
+      "question": "后方托盘的浅盘底、抬起边沿及圆角是否与参考相符？",
+      "source_quote": "rear tray",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划不推断任何候选属性或测量结果。",
+    "未提供 legacy-detail-20261018-v1 的正文；仅依据本次嵌入的合同编制扩展检查。",
+    "reference_primary 使用输入映射中以 reference.png 结尾的路径；实际附图证据为 reference/reference-0.png，两者对应同一原始图像。",
+    "单张照片未提供深度或标定相机；除约定的滤水壶高度外，其他尺寸只作比例判断，不设数值目标。",
+    "遮挡后的形状、画外物体范围和真实背面结构无法唯一恢复；仅要求合理补全，不冻结隐藏几何。",
+    "参考中前景锅具互相遮挡；定位框覆盖可分辨的可见锅体及把手，不推断完整画外轮廓。",
+    "手套存在叠放和遮挡；定位以可分辨的两层手套可见范围为准。",
+    "台面边缘的可见范围有限；其结构检查不得推断照片未显示的精确厚度。",
+    "照片中的植物叶片部分被画框裁切；植物定位包括可见叶片、枝干和盆，不包含背景杂物。",
+    "原文未给出任何数值容差；数值检查的容差均为空。渲染分辨率、引擎与色彩管理不列为内容质量测量。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "n01",
+      "measurement_definition": "在场景世界坐标中，取大滤水壶全部实体部件的最高与最低 Z 坐标之差，以场景米制单位读取整体高度。",
+      "quantity": "大滤水壶整体高度",
+      "relation": "equal",
+      "source_quote": "Use a 0.30 m overall height for the large filter pitcher",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n02",
+      "measurement_definition": "取备用相机与主相机的世界位置差，将该向量投影至主相机局部正 X 轴，读取有符号位移；位移方向与其他相机属性另作关系检查。",
+      "quantity": "备用相机沿主相机局部正 X 轴的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "滤水壶",
+      "polygon": [
+        [
+          0.163,
+          0.304
+        ],
+        [
+          0.498,
+          0.304
+        ],
+        [
+          0.498,
+          0.942
+        ],
+        [
+          0.163,
+          0.942
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "r02",
+      "label": "木果碗与碗内水果",
+      "polygon": [
+        [
+          0,
+          0.424
+        ],
+        [
+          0.213,
+          0.424
+        ],
+        [
+          0.213,
+          0.822
+        ],
+        [
+          0,
+          0.822
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r03",
+      "label": "前景洋葱与右侧锅具",
+      "polygon": [
+        [
+          0.706,
+          0.685
+        ],
+        [
+          1,
+          0.685
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0.706,
+          1
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r04",
+      "label": "前景大金属锅",
+      "polygon": [
+        [
+          0.446,
+          0.764
+        ],
+        [
+          0.942,
+          0.764
+        ],
+        [
+          0.942,
+          1
+        ],
+        [
+          0.446,
+          1
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r05",
+      "label": "储物罐与后方托盘",
+      "polygon": [
+        [
+          0.499,
+          0.259
+        ],
+        [
+          0.774,
+          0.259
+        ],
+        [
+          0.774,
+          0.512
+        ],
+        [
+          0.499,
+          0.512
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r06",
+      "label": "料理机碗",
+      "polygon": [
+        [
+          0.324,
+          0.199
+        ],
+        [
+          0.536,
+          0.199
+        ],
+        [
+          0.536,
+          0.403
+        ],
+        [
+          0.324,
+          0.403
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r07",
+      "label": "隔热手套与擀面杖",
+      "polygon": [
+        [
+          0.423,
+          0.443
+        ],
+        [
+          0.934,
+          0.443
+        ],
+        [
+          0.934,
+          0.756
+        ],
+        [
+          0.423,
+          0.756
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r08",
+      "label": "后方盆栽",
+      "polygon": [
+        [
+          0.055,
+          0
+        ],
+        [
+          0.361,
+          0
+        ],
+        [
+          0.361,
+          0.439
+        ],
+        [
+          0.127,
+          0.439
+        ],
+        [
+          0.079,
+          0.21
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "question": "场景是否表现参考中的厨房台面？",
+      "source_quote": "Reconstruct the kitchen-counter scene in the supplied photograph.",
+      "weight": 0.04
+    },
+    {
+      "id": "s02",
+      "question": "是否保留深色台面的外观与范围？",
+      "source_quote": "Preserve the dark counter",
+      "weight": 0.04
+    },
+    {
+      "id": "s03",
+      "question": "后墙与窗户的相对布置是否符合参考？",
+      "source_quote": "rear wall/window arrangement",
+      "weight": 0.04
+    },
+    {
+      "id": "s04",
+      "question": "左侧是否有大型深蓝与透明材质组合的滤水壶？",
+      "source_quote": "large dark-blue and clear filter pitcher at left",
+      "weight": 0.04
+    },
+    {
+      "id": "s05",
+      "question": "是否有参考中的木质果碗？",
+      "source_quote": "wooden fruit bowl",
+      "weight": 0.04
+    },
+    {
+      "id": "s06",
+      "question": "木果碗中是否放有苹果？",
+      "source_quote": "wooden fruit bowl with apples and citrus",
+      "weight": 0.04
+    },
+    {
+      "id": "s07",
+      "question": "木果碗中是否放有柑橘？",
+      "source_quote": "wooden fruit bowl with apples and citrus",
+      "weight": 0.04
+    },
+    {
+      "id": "s08",
+      "question": "洋葱是否位于参考所示前景？",
+      "source_quote": "foreground onions",
+      "weight": 0.04
+    },
+    {
+      "id": "s09",
+      "question": "是否保留被画框裁切的金属锅？",
+      "source_quote": "cropped metal pot",
+      "weight": 0.04
+    },
+    {
+      "id": "s10",
+      "question": "是否有参考中的白色储物罐？",
+      "source_quote": "white storage jar",
+      "weight": 0.04
+    },
+    {
+      "id": "s11",
+      "question": "是否有参考中的透明料理机碗？",
+      "source_quote": "clear food-processor bowl",
+      "weight": 0.04
+    },
+    {
+      "id": "s12",
+      "question": "是否有参考中的蓝色隔热手套？",
+      "source_quote": "blue oven mitt",
+      "weight": 0.04
+    },
+    {
+      "id": "s13",
+      "question": "是否保留参考中的擀面杖？",
+      "source_quote": "rolling pin",
+      "weight": 0.04
+    },
+    {
+      "id": "s14",
+      "question": "是否保留后方托盘及其位置？",
+      "source_quote": "rear tray",
+      "weight": 0.04
+    },
+    {
+      "id": "s15",
+      "question": "是否保留参考中的盆栽及其可见形态？",
+      "source_quote": "plant",
+      "weight": 0.04
+    },
+    {
+      "id": "s16",
+      "question": "主要物体的相对大小是否符合参考？",
+      "source_quote": "Match their relative size",
+      "weight": 0.04
+    },
+    {
+      "id": "s17",
+      "question": "主要物体之间的间距是否符合参考？",
+      "source_quote": "spacing",
+      "weight": 0.04
+    },
+    {
+      "id": "s18",
+      "question": "主要物体的前后遮挡关系是否符合参考？",
+      "source_quote": "overlap",
+      "weight": 0.04
+    },
+    {
+      "id": "s19",
+      "question": "主视图的透视相机视角是否匹配参考？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.04
+    },
+    {
+      "id": "s20",
+      "question": "细小标签与背景杂物是否保留足以识别构图的近似表现？",
+      "source_quote": "Approximate tiny labels and background clutter",
+      "weight": 0.04
+    },
+    {
+      "id": "s21",
+      "question": "远处环境是否足以解释参考中可见的空间构图？",
+      "source_quote": "Keep distant surroundings sufficient to explain the visible composition.",
+      "weight": 0.04
+    },
+    {
+      "id": "s22",
+      "question": "主要部件是否可独立编辑，并有实体厚度、合理支撑及空间间隔？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.04
+    },
+    {
+      "id": "s23",
+      "question": "场景是否采用真实三维结构，隐藏表面合理补全，台面边缘有实体结构？",
+      "source_quote": "Model substantial container walls, rims, handles, fruit volumes and the countertop edge.",
+      "weight": 0.04
+    },
+    {
+      "id": "s24",
+      "question": "是否避免用完整参考图平面或单相机投影替代三维场景？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.04
+    },
+    {
+      "id": "s25",
+      "question": "备用视图是否来自同一场景的复制相机，仅沿其局部正 X 轴平移，保持旋转与镜头不变并保留两个相机？",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.04
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "覆盖可见壶盖、透明壶身、内部结构及左侧深色把手；包含深色表面，不包含台面投影。",
+      "boxes": [
+        [
+          0.166,
+          0.306,
+          0.496,
+          0.94
+        ]
+      ],
+      "id": "t01",
+      "query": "大型滤水壶",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "框定木碗可见外缘；左侧按原图裁切，碗中水果不另作本类实例。",
+      "boxes": [
+        [
+          0,
+          0.428,
+          0.212,
+          0.82
+        ]
+      ],
+      "id": "t02",
+      "query": "木质果碗",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "覆盖右前方四个可分辨洋葱的可见部分，包括右缘裁切的深色洋葱；不把底缘难以解析的细小碎片列为实例。",
+      "boxes": [
+        [
+          0.71,
+          0.722,
+          0.819,
+          0.854
+        ],
+        [
+          0.78,
+          0.69,
+          0.879,
+          0.835
+        ],
+        [
+          0.828,
+          0.805,
+          0.946,
+          0.966
+        ],
+        [
+          0.939,
+          0.854,
+          1,
+          0.985
+        ]
+      ],
+      "id": "t03",
+      "query": "前景洋葱",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "分别覆盖前景大锅及右侧承装洋葱的可见锅具；右侧框包括上伸的环状把手；画外部分不补框，反光不另计实例。",
+      "boxes": [
+        [
+          0.448,
+          0.767,
+          0.924,
+          1
+        ],
+        [
+          0.818,
+          0.718,
+          1,
+          1
+        ]
+      ],
+      "id": "t04",
+      "query": "金属锅具",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "仅指托盘前的带盖白色储物罐，覆盖罐盖及罐身；不将前景无明确类别的白色柱状物归入此类。",
+      "boxes": [
+        [
+          0.522,
+          0.295,
+          0.623,
+          0.507
+        ]
+      ],
+      "id": "t05",
+      "query": "白色储物罐",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "覆盖后方透明碗的可见外缘及中央轴；前方被滤水壶遮挡处不推断隐藏轮廓，不包含后方包装盒或下方独立透明盖。",
+      "boxes": [
+        [
+          0.324,
+          0.203,
+          0.534,
+          0.401
+        ]
+      ],
+      "id": "t06",
+      "query": "透明料理机碗",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "分别框定上层完整手套和下层露出的手套；上层包括黑色袖口，下层仅覆盖可辨露出部分，不推断遮挡后的完整轮廓。",
+      "boxes": [
+        [
+          0.552,
+          0.446,
+          0.932,
+          0.647
+        ],
+        [
+          0.594,
+          0.593,
+          0.84,
+          0.675
+        ]
+      ],
+      "id": "t07",
+      "query": "蓝色隔热手套",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "覆盖单株盆栽的可见叶片、枝干及花盆；顶部按画框裁切，包含深色叶片，排除旁边包装袋。",
+      "boxes": [
+        [
+          0.055,
+          0,
+          0.358,
+          0.437
+        ]
+      ],
+      "id": "t08",
+      "query": "后方盆栽",
+      "weight": 0.1
+    }
+  ]
+}

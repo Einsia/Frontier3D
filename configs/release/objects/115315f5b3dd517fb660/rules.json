@@ -1,0 +1,588 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_016",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "洗衣机是否具有前开门机体和实际门洞结构？",
+      "source_quote": "three front-loading washers",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "中间洗衣机的打开门体与内部滚筒是否为可区分的立体部件？",
+      "source_quote": "Open the middle door 130 degrees, exposing its drum",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "篮子是否具有有厚度的容器壁和容纳空间？",
+      "source_quote": "put a basket on each machine",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "储物柜是否以实体隔板形成独立隔间？",
+      "source_quote": "Opposite storage has four compartments",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "洗涤剂瓶是否具有可辨识的立体瓶身形态？",
+      "source_quote": "four differently coloured detergent bottles",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "叠放毛巾是否呈现折叠层次和实体厚度？",
+      "source_quote": "towel stacks",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "折叠桌是否具有有厚度的桌板和合理支撑结构？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "机械臂是否以实体关节和末端夹爪构成可辨识的铰接结构？",
+      "source_quote": "Represent specified joints and end-effectors geometrically.",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "后方框架与机械臂基座是否具有合理的实体连接和支撑？",
+      "source_quote": "Two arms on a rear frame",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "悬挂毛巾的垂边是否形成自然曲线而非僵直边线？",
+      "source_quote": "hanging edges form natural curves, not rigid straight edges.",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "仅提供文本，无公共参考图；依文本任务规则，reference_primary 为空，regions 与 targets 为空。嵌入的 schema 对 reference_primary 的非空约束与此规则冲突，采用明确的文本任务规则。",
+    "未提供 legacy-detail-20261018-v1 的独立正文；本计划仅依据本次嵌入的完整协议和 instruction.md，不推定额外规则或候选属性。",
+    "房间尺寸写为 roughly 4.2 x 3.6 m，未给精确容差；作为近似语义要求，不列为精确数值判据。",
+    "未指定机械臂关节数量、轴向、连杆尺寸、夹爪类型、篮子细部、瓶盖结构或毛巾堆内部件数，不补充这些要求。",
+    "0.70 x 1.40 m 毛巾的尺寸未明确指展开材料尺寸还是当前姿态投影；优先采用可编辑材料展开尺寸，并记录测量约定，不将曲面投影自动等同于材料尺寸。",
+    "毛巾高于桌面 0.15 m 未指定参考点；计划采用被拉平主体的代表平面，排除自然下垂边缘，并要求报告该约定。",
+    "门开启角的零位、基座高度参考点、滚筒开口及毛巾隔间的服务点位置未被完全定义；测量须披露参考点，不引入隐藏目标几何。",
+    "桌面中心线对齐未给独立角度容差；采用纵向中心线的最大横向偏离评估 20 mm 要求，不另设角度阈值。",
+    "连续 0.90 m 环路按可容纳该宽度的净空路线检查，不要求通道恰好等宽；采样应辅以连续几何净空检查，不能仅凭稀疏采样证明。",
+    "触点要求为夹爪与对应角点实际接触，但没有正间隙容差；数值检查只枚举明确的一角一夹爪关系及穿透上限，不发明接触容差。",
+    "可达性仅检查固定基座的几何包络，不推断逆运动学、关节限位或动态可行性；不要求机械臂触及洗衣机或储物柜服务点。",
+    "本计划未接收或测量候选场景；所有问题和几何操作均为预先冻结的检查定义。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "按独立语义机体计数前开门洗衣机。",
+      "quantity": "洗衣机数量",
+      "relation": "equal",
+      "source_quote": "three front-loading washers",
+      "target": 3,
+      "unit": "台",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "逐台在机体局部横向测量实体外包尺寸，打开门体另行记录。",
+      "quantity": "每台洗衣机宽度",
+      "relation": "equal",
+      "source_quote": "each 0.60 x 0.60 m",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "逐台在机体局部前后轴测量机体深度，不将打开门的伸出量当作机体深度。",
+      "quantity": "每台洗衣机深度",
+      "relation": "equal",
+      "source_quote": "each 0.60 x 0.60 m",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "逐台测量支承地面至机体顶部的 Z 向距离，不含顶部篮子。",
+      "quantity": "每台洗衣机高度",
+      "relation": "equal",
+      "source_quote": "0.85 m tall",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "以闭合门姿态为零位，绕实际铰链轴测量中间门的开启角。",
+      "quantity": "中间洗衣机门开启角",
+      "relation": "equal",
+      "source_quote": "Open the middle door 130 degrees",
+      "target": 130,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "计数中间洗衣机开门区域所呈现的独立待处理织物。",
+      "quantity": "待处理织物数量",
+      "relation": "equal",
+      "source_quote": "two waiting textiles",
+      "target": 2,
+      "unit": "件",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "逐台计数放置在其顶部的独立篮子。",
+      "quantity": "每台洗衣机顶部篮子数量",
+      "relation": "equal",
+      "source_quote": "put a basket on each machine",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "计数对面储物柜由实体边界形成的独立隔间。",
+      "quantity": "储物隔间数量",
+      "relation": "equal",
+      "source_quote": "four compartments",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "计数储物柜内独立的洗涤剂瓶实体。",
+      "quantity": "洗涤剂瓶数量",
+      "relation": "equal",
+      "source_quote": "four differently coloured detergent bottles",
+      "target": 4,
+      "unit": "瓶",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "沿桌面局部长轴测量桌板边界长度。",
+      "quantity": "桌面长度",
+      "relation": "equal",
+      "source_quote": "1.60 x 0.80 m",
+      "target": 1.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "沿桌面局部短轴测量桌板边界宽度。",
+      "quantity": "桌面宽度",
+      "relation": "equal",
+      "source_quote": "1.60 x 0.80 m",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "测量地面至桌面工作表面的 Z 向高度。",
+      "quantity": "桌面高度",
+      "relation": "equal",
+      "source_quote": "at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "计数后方框架上具有独立基座与末端执行器的机械臂。",
+      "quantity": "机械臂数量",
+      "relation": "equal",
+      "source_quote": "Two arms on a rear frame",
+      "target": 2,
+      "unit": "条",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "分别测量固定基座参考点相对地面的 Z 高度，参考点须在场景或 README 中明确。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "bases at 1.15 m",
+      "target": 1.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "测量两个固定基座参考点之间的欧氏距离。",
+      "quantity": "基座间距",
+      "relation": "equal",
+      "source_quote": "0.30 m apart",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "逐臂核对以固定基座为中心的声明几何可达包络半径；不以当前伸展长度替代包络半径。",
+      "quantity": "每条机械臂可达包络半径",
+      "relation": "equal",
+      "source_quote": "0.70 m reach each",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "在毛巾材料展开坐标或可恢复的未变形几何中测量短边尺寸，并记录约定。",
+      "quantity": "被夹持毛巾短边尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.70 x 1.40 m towel",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "在毛巾材料展开坐标或可恢复的未变形几何中测量长边尺寸，并记录约定。",
+      "quantity": "被夹持毛巾长边尺寸",
+      "relation": "equal",
+      "source_quote": "a 0.70 x 1.40 m towel",
+      "target": 1.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "测量毛巾被拉平主体代表平面相对桌面工作表面的竖直偏移，明确代表平面的选取。",
+      "quantity": "毛巾离桌面高度",
+      "relation": "equal",
+      "source_quote": "stretched 0.15 m above the table",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "识别毛巾各材料角点，计算最高角点 Z 减最低角点 Z。",
+      "quantity": "毛巾角点高度差",
+      "relation": "at_most",
+      "source_quote": "at most 0.05 m corner-height variation",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "将毛巾纵向中心线投影到桌面平面，计算其在毛巾长度范围内相对桌面长轴的最大横向距离，以 mm 报告。",
+      "quantity": "毛巾中心线对齐偏差",
+      "relation": "at_most",
+      "source_quote": "its centreline matches the table's long axis within 20 mm",
+      "target": 20,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "分别在两处夹持区域对实体夹爪与毛巾执行相交或有符号距离分析，报告最大穿透深度。",
+      "quantity": "夹爪穿透深度",
+      "relation": "at_most",
+      "source_quote": "Gripper penetration is at most 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "计数位于桌面下方的独立篮子实体。",
+      "quantity": "桌下篮子数量",
+      "relation": "equal",
+      "source_quote": "Put two baskets beneath the table",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "计数桌旁空间上独立的折叠织物堆，不以堆内层数代替堆数。",
+      "quantity": "桌旁折叠堆数量",
+      "relation": "equal",
+      "source_quote": "three folded stacks beside it",
+      "target": 3,
+      "unit": "堆",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "在地面导航平面检查绕桌闭合自由路径及其最小净宽；排除被评估机器人，计入其余家具、打开门和突出物，结合路线坐标验证连续性。",
+      "quantity": "绕桌连续路线净宽",
+      "relation": "at_least",
+      "source_quote": "Provide a continuous 0.90 m loop around the table",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "逐台沿洗衣机前方服务区域测量至障碍物的最小自由通行净距，计入当前打开门和其他突出物，排除被评估机器人。",
+      "quantity": "洗衣机前方净空",
+      "relation": "at_least",
+      "source_quote": "at least 0.70 m clear in front of the washers",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "逐一计算当前毛巾抓取接触点到对应固定机械臂基座参考点的欧氏距离，不移动基座。",
+      "quantity": "当前抓取点至对应基座距离",
+      "relation": "at_most",
+      "source_quote": "Each current towel grasp must be within its corresponding fixed arm's 0.70 m reach.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "对标记的滚筒开口人工交接服务点测量相对地面的 Z 高度，披露点位选择。",
+      "quantity": "滚筒开口服务高度",
+      "relation": "range",
+      "source_quote": "Drum opening, towel compartment and table service heights are 0.40-1.20 m for human transfer",
+      "target": 0.4,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "对标记的毛巾隔间人工交接服务点测量相对地面的 Z 高度，披露点位选择。",
+      "quantity": "毛巾隔间服务高度",
+      "relation": "range",
+      "source_quote": "Drum opening, towel compartment and table service heights are 0.40-1.20 m for human transfer",
+      "target": 0.4,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "对标记的桌面人工交接服务点测量相对地面的 Z 高度。",
+      "quantity": "桌面服务高度",
+      "relation": "range",
+      "source_quote": "Drum opening, towel compartment and table service heights are 0.40-1.20 m for human transfer",
+      "target": 0.4,
+      "unit": "m",
+      "upper": 1.2
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "建立每个被夹持角点与实际接触夹爪的对应表，逐角计数对应夹爪。",
+      "quantity": "每个被夹持角点对应的夹爪数量",
+      "relation": "equal",
+      "source_quote": "Each held corner corresponds to one gripper",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "将中间门实体绕其铰链从闭合位置扫至指定开启姿态形成体积，计算该体积与两条机械臂完整实体表面的最小距离。",
+      "quantity": "机械臂至洗衣机门扫掠体积净距",
+      "relation": "at_least",
+      "source_quote": "keep at least 0.10 m between arms and the washer door's swept volume",
+      "target": 0.1,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为约 4.2 × 3.6 m 的洗衣房？",
+      "source_quote": "Create a roughly 4.2 x 3.6 m laundry room",
+      "weight": 0.04
+    },
+    {
+      "id": "S02",
+      "question": "房间是否采用浅灰色瓷砖？",
+      "source_quote": "with pale-grey tiles",
+      "weight": 0.04
+    },
+    {
+      "id": "S03",
+      "question": "前开门洗衣机是否沿一面墙排列？",
+      "source_quote": "three front-loading washers along a wall",
+      "weight": 0.04
+    },
+    {
+      "id": "S04",
+      "question": "中间洗衣机门是否打开并露出滚筒？",
+      "source_quote": "Open the middle door 130 degrees, exposing its drum",
+      "weight": 0.04
+    },
+    {
+      "id": "S05",
+      "question": "开门处是否呈现待处理织物？",
+      "source_quote": "exposing its drum and two waiting textiles",
+      "weight": 0.04
+    },
+    {
+      "id": "S06",
+      "question": "每台洗衣机上是否放有篮子？",
+      "source_quote": "put a basket on each machine",
+      "weight": 0.04
+    },
+    {
+      "id": "S07",
+      "question": "储物柜是否位于洗衣机对面并设有隔间？",
+      "source_quote": "Opposite storage has four compartments",
+      "weight": 0.04
+    },
+    {
+      "id": "S08",
+      "question": "储物柜内的洗涤剂瓶是否颜色各异？",
+      "source_quote": "four differently coloured detergent bottles",
+      "weight": 0.04
+    },
+    {
+      "id": "S09",
+      "question": "储物柜内是否放有毛巾堆？",
+      "source_quote": "Opposite storage has four compartments with four differently coloured detergent bottles and towel stacks.",
+      "weight": 0.04
+    },
+    {
+      "id": "S10",
+      "question": "折叠桌是否位于中央并具有防滑工作表面？",
+      "source_quote": "A central non-slip folding table",
+      "weight": 0.04
+    },
+    {
+      "id": "S11",
+      "question": "机械臂是否安装在桌后框架的固定基座上？",
+      "source_quote": "Two arms on a rear frame have bases",
+      "weight": 0.04
+    },
+    {
+      "id": "S12",
+      "question": "冻结姿态是否表现夹爪实际握住同一毛巾的相对角并将其拉平悬于桌上？",
+      "source_quote": "Freeze flattening: their grippers hold opposite corners of a 0.70 x 1.40 m towel, stretched 0.15 m above the table.",
+      "weight": 0.04
+    },
+    {
+      "id": "S13",
+      "question": "毛巾主体是否近乎水平？",
+      "source_quote": "Its plane is nearly horizontal",
+      "weight": 0.04
+    },
+    {
+      "id": "S14",
+      "question": "毛巾纵向中心线是否与桌面长轴对齐？",
+      "source_quote": "its centreline matches the table's long axis within 20 mm",
+      "weight": 0.04
+    },
+    {
+      "id": "S15",
+      "question": "桌下是否放有篮子？",
+      "source_quote": "Put two baskets beneath the table",
+      "weight": 0.04
+    },
+    {
+      "id": "S16",
+      "question": "桌旁是否放有独立的折叠织物堆？",
+      "source_quote": "three folded stacks beside it",
+      "weight": 0.04
+    },
+    {
+      "id": "S17",
+      "question": "桌周是否有连续闭合通路？",
+      "source_quote": "Provide a continuous 0.90 m loop around the table",
+      "weight": 0.04
+    },
+    {
+      "id": "S18",
+      "question": "洗衣机前方是否保留可通行净空？",
+      "source_quote": "at least 0.70 m clear in front of the washers",
+      "weight": 0.04
+    },
+    {
+      "id": "S19",
+      "question": "两夹爪是否各对应一个被握角点且没有交叉手位？",
+      "source_quote": "Each held corner corresponds to one gripper without crossed hands",
+      "weight": 0.04
+    },
+    {
+      "id": "S20",
+      "question": "墙裙是否采用白色瓷砖？",
+      "source_quote": "Use white tile wainscot",
+      "weight": 0.04
+    },
+    {
+      "id": "S21",
+      "question": "储物柜是否呈浅色木材外观？",
+      "source_quote": "light timber storage",
+      "weight": 0.04
+    },
+    {
+      "id": "S22",
+      "question": "篮子是否呈彩色外观？",
+      "source_quote": "coloured baskets",
+      "weight": 0.04
+    },
+    {
+      "id": "S23",
+      "question": "照明是否以冷白光为主并在滚筒处加入暖色重点光？",
+      "source_quote": "cool-white light plus a warm drum accent",
+      "weight": 0.04
+    },
+    {
+      "id": "S24",
+      "question": "主视图是否同时突出机械臂、悬挂毛巾和开门洗衣机？",
+      "source_quote": "Frame arms, suspended towel and open washer.",
+      "weight": 0.04
+    },
+    {
+      "id": "S25",
+      "question": "场景是否呈静态铰接机械臂姿态且没有水或滚筒旋转？",
+      "source_quote": "Static; no cloth solver, water or drum rotation.",
+      "weight": 0.04
+    }
+  ],
+  "targets": []
+}

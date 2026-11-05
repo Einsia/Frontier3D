@@ -1,0 +1,19 @@
+{
+  "uid": "user-yuanmingyuan-ox-head",
+  "name": "Yuanmingyuan Ox Head",
+  "source_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "author": {
+    "displayName": "User-provided original model",
+    "profileUrl": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "license": {
+    "label": "User-contributed, permission for inclusion in this benchmark per conversation; no public license asserted",
+    "url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "ca8257f618bbf62640a0751063568c707460122cdb6c74d62f1f15887adbb7fc",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

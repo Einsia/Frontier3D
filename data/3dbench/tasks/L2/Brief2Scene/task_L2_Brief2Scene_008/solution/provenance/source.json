@@ -1,0 +1,13 @@
+{
+  "id": "canyon",
+  "source_page": "https://opengameart.org/content/canyon-terrain-asset",
+  "download_url": "https://opengameart.org/sites/default/files/canyonterrain_blend_fbx_glb.zip",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "author": "loafbrr_1",
+  "archive_sha256": "90a59ca7d7cfcdd6b73b464c9ee8ed50fd1857a105c9a5e7ef2c85b562d5d00a",
+  "archive": "assets\\cc0-replacements-20260921\\canyon\\canyonterrain_blend_fbx_glb.zip",
+  "resource_family": "upstream/canyon",
+  "packaged_scene_sha256": "bf98a75f96fd3a30cb3cb0e21246cc194c938ae3ef4b8c530ff9744531468a77",
+  "changes": "Author geometry/layout retained; render normalization and documented exclusions of shared resources. SceneEdit additionally removes listed target objects or perturbs existing lighting. No generated replacement assets."
+}

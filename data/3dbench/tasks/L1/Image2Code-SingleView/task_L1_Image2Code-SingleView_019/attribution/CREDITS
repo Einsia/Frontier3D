@@ -1,0 +1,18 @@
+Task: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019
+Original source task ID: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020
+
+Original source notice (environment/input/CREDIT.txt):
+
+Eastern Blue Bird
+Author: kenchoo (https://sketchfab.com/kenchoo)
+Source: https://sketchfab.com/3d-models/eastern-blue-bird-c646531de6a3494faeaf2d3ce91b9dd2
+License: CC Attribution
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Baked the evaluated source pose at frame 1; source animation omitted from the static task.
+Excluded importer-generated armature custom display shapes before pose baking; these objects are absent from the original GLB mesh nodes. Recomputed normalization and reference cameras from real source geometry.
+No endorsement by the original author is implied.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

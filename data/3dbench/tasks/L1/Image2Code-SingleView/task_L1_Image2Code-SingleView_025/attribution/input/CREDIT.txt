@@ -1,0 +1,7 @@
+Balenciaga Sunglasses
+Author: redizajnd (https://sketchfab.com/bojansolar)
+Source: https://sketchfab.com/3d-models/balenciaga-sunglasses-cda3e70d71c54d12898c81531550be4c
+License: CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

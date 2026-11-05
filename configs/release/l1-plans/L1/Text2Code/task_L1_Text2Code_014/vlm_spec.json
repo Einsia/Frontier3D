@@ -1,0 +1,154 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Text2Code/task_L1_Text2Code_014",
+  "family": "Brief2Scene",
+  "instruction_sha256": "4cb6589b32912506c63e2d7b973465e8a32eb3ff673c779c6e0d18bdb3479c6c",
+  "reference_policy": "Written brief only; NEVER show a private reference design to the text judge.",
+  "focus": "L1 object/assembly task. Do not require a room or scene population. Exact tolerances remain automatic. Use authored appearance for aesthetics, not diagnostic silhouette masks. 每项按题面独立检查零件、加工特征和装配关系。不存在私有参考造型约束。不可凭物体名确认孔道、尺寸或材质。 本题不要求提交相机或灯光；全部候选使用同一固定中性摄影棚呈现。只评价模型自身的构成、角色配色、表面质量和可读性，不把测评器的相机/灯光成果奖励给候选，也不因未创作相机/灯光扣分。",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "editable_part",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "一件闭合、连通、独立可编辑真实三维零件，不要求装配或爆炸动画 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "editable_part"
+      ]
+    },
+    {
+      "id": "interpolated_path",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "中心线位于XZ平面，按顺序插值(0,0,0)/(0,0,10.348767)/(11.4975,0,20.995524)/(15.5835,0,21.221145)/(16.821,0,42.57) mm；非周期C2、弦长参数、无指定端切线，OCC GeomAPI_Interpolate容差0.000001 mm Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "interpolated_path"
+      ]
+    },
+    {
+      "id": "rectangular_section",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "沿路径扫掠9.3×6.9 mm居中矩形，起始位于原点XY面，9.3沿X/6.9沿Y；截面深度始终平行Y Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "rectangular_section"
+      ]
+    },
+    {
+      "id": "sweep_transport",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "采用corrected-Frenet传输且无附加扭转，保留四条纵向锐边、无圆角、封闭两端；不以多个长方块串接替代 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "sweep_transport"
+      ]
+    },
+    {
+      "id": "surface_accuracy",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "全部尺寸和表面位置误差≤0.15 mm；中间近邻插值点造成的弯曲须保留 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "surface_accuracy"
+      ]
+    },
+    {
+      "id": "topology",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "所有零件闭合且分别连通 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "topology"
+      ]
+    },
+    {
+      "id": "solid_validity",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "有效实体零件 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "solid_validity"
+      ]
+    },
+    {
+      "id": "glb_assembled",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "GLB与原生静态实体的几何、单位及可表达材质一致 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "glb_assembled"
+      ]
+    },
+    {
+      "id": "units",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "米制导出、Z向上；按本题0.15 mm尺寸/表面位置容差判定 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "units"
+      ]
+    },
+    {
+      "id": "materials",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "蓝灰金属材料；相机和背景不作为隐藏匹配目标 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "materials"
+      ]
+    },
+    {
+      "id": "review_view",
+      "dimension": "instruction_following",
+      "weight": 0.05454545454545454,
+      "question": "保存可供审阅的真实三维原生场景 Evaluate visible fulfilment only; exact dimensions and hidden geometry require independent measurements, not pixel guesses.",
+      "units": [
+        "review_view"
+      ]
+    },
+    {
+      "id": "aesthetic_composition",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "在统一诊断视图下评价零件构成、装配层级和主体可读性；不评价测评器控制的取景。",
+      "units": [
+        "aesthetic_composition"
+      ]
+    },
+    {
+      "id": "aesthetic_light_color",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "评价题面允许的角色配色、材质反射层次与色彩协调；统一灯光由测评器提供，不作为候选创作能力。",
+      "units": [
+        "aesthetic_light_color"
+      ]
+    },
+    {
+      "id": "aesthetic_finish",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade visible shape/material finish, clean joins, proportions and intentional detail; complexity alone earns nothing.",
+      "units": [
+        "aesthetic_finish"
+      ]
+    },
+    {
+      "id": "aesthetic_coherence",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "question": "Grade coherent overall design and presentation; allow every design satisfying the written brief.",
+      "units": [
+        "aesthetic_coherence"
+      ]
+    }
+  ],
+  "localization": null
+}

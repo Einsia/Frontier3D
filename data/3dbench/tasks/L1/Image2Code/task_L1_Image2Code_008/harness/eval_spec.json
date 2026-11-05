@@ -1,0 +1,453 @@
+{
+  "version": "scalable-v1.1.0",
+  "profile": "L1",
+  "mode": "reference",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "main.png",
+    "README.md"
+  ],
+  "scene": "scene.blend",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "critical_constraints": [
+    "all_seed_quality",
+    "export",
+    "glb_procedural_materials",
+    "main_dimensions",
+    "main_format",
+    "main_loadable",
+    "main_render_consistency",
+    "native_procedural_materials",
+    "native_state_materials",
+    "readme",
+    "real_geometry",
+    "reproducible",
+    "saved_camera",
+    "saved_resolution"
+  ],
+  "tolerances": {
+    "span_m": 0.02
+  },
+  "l1_geometry": {
+    "version": "l1-mesh-v1",
+    "weld_m": 1e-09,
+    "intersection_epsilon_m": 1e-09,
+    "degenerate_area_m2": 1e-18,
+    "max_triangles": 200000,
+    "max_intersection_pairs": 2000000
+  },
+  "render_views": [
+    {
+      "id": "primary",
+      "location": [
+        1.0,
+        -1.0,
+        1.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ortho_scale": 1.6,
+      "resolution": 128,
+      "frame": 61,
+      "beauty": true,
+      "beauty_resolution": [
+        1000,
+        1000
+      ],
+      "camera_source": "saved"
+    }
+  ],
+  "reference_images": {
+    "primary": "environment/input/reference.png"
+  },
+  "l1_protocol": {
+    "version": "l1-requirements-v1",
+    "requirements": [
+      {
+        "id": "public_clause_02",
+        "text": "Reconstruct the wall cabinet with its upward-opening framed door, two top hinges, and the two articulated telescoping support struts. Retain the cabinet cavity, thin panels, door frame and translucent infill. The door must rotate about its upper hinge axis; each strut must pivot at its cabinet and door attachments and slide along its own axis while remaining attached. Do not fake opening by translating the entire door or stretching rigid parts. No pressure or spring-force simulation is required.",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity",
+          "native_state_materials"
+        ],
+        "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+      },
+      {
+        "id": "public_clause_03",
+        "text": "Use real editable three-dimensional geometry. Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions. Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous. Exact source topology, vertex count and object names are not required. Image planes or camera-facing shells are not substitutes for full geometry.",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity"
+        ],
+        "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+      },
+      {
+        "id": "public_clause_04",
+        "text": "Use metres, Z up, and a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights. This is a task scale convention, not a real-world measurement. Infer other proportions from the images.",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity"
+        ],
+        "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+      },
+      {
+        "id": "public_clause_05",
+        "text": "The four main views show the open pose. input/closed.png and input/half_open.png use the same primary camera to show the closed and intermediate poses. Follow input/motion.json at 24 fps: frame 1 closed, 31 half open, 61 open, 91 half closed and 121 closed again. Animate continuously through the cycle; match the visible poses, attachment relationships and rotation direction rather than the exact source easing. Measure the 1 m span at frame 1. Keep rigid component shape and scale constant. Save the Blender scene at frame 61 for inspection; preserve the full 1–121 animation in Blender and GLB. Render main.png at frame 61. An exploded view is not required.",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity",
+          "native_state_materials"
+        ],
+        "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+      },
+      {
+        "id": "public_clause_06",
+        "text": "Render main.png at 1000 x 1000 pixels from a camera matching input/reference.png, using neutral studio lighting, Cycles, AgX and exposure 0. Retain the camera and lighting in scene.blend.",
+        "source": "instruction.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "primary_similarity",
+          "saved_camera",
+          "saved_resolution",
+          "main_render_consistency"
+        ],
+        "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+      },
+      {
+        "id": "delivery",
+        "text": "Required native/GLB/image/source/README outputs and clean rebuild",
+        "source": "harness/README.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "export",
+          "main_loadable",
+          "main_dimensions",
+          "main_format",
+          "readme",
+          "reproducible"
+        ],
+        "reason": "Current visual pilot only; not full EVALUATION coverage."
+      },
+      {
+        "id": "procedural_materials",
+        "text": "Existing pilot: no bitmap inputs; pure colour and procedural nodes allowed",
+        "source": "harness/README.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_procedural_materials",
+          "glb_procedural_materials",
+          "native_state_materials"
+        ],
+        "reason": "Current visual pilot only; not full EVALUATION coverage."
+      },
+      {
+        "id": "seed_quality",
+        "text": "Baseline and seed 0/1/2 independently inspected; minimum native image score",
+        "source": "harness/README.md",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "all_seed_quality"
+        ],
+        "reason": "Current visual pilot only; not full EVALUATION coverage."
+      }
+    ]
+  },
+  "checks": {
+    "spec": [
+      {
+        "id": "overall_span",
+        "metric": "numeric",
+        "group": "scale",
+        "params": {
+          "path": "/scene/max_span_m",
+          "expected": 1.0,
+          "tolerance": "span_m"
+        }
+      }
+    ],
+    "geometry": [
+      {
+        "id": "real_geometry",
+        "metric": "equals",
+        "group": "three_dimensional",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        }
+      }
+    ],
+    "structure": [
+      {
+        "id": "editable",
+        "metric": "equals",
+        "group": "editable_components",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "primary_similarity",
+        "metric": "native_image_pair",
+        "group": "reference_appearance",
+        "params": {
+          "view": "primary",
+          "mask_asset": "harness/image_reference/primary_mask.png",
+          "mask_sha256": "fca95cfedd5cd0e511b427287a19292f5c98b50996266f2eabfcb33fcb3e7b75",
+          "reference_sha256": "5ce137f14dd65dd7af1b5a7b89fa7bc0e7e9f8a73f6f8dcdbad28a16ae125d14",
+          "regions": {
+            "whole_image_diagnostic_only": [
+              [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ]
+            ]
+          }
+        },
+        "pass_threshold": 0
+      },
+      {
+        "id": "saved_camera",
+        "metric": "equals",
+        "group": "camera",
+        "params": {
+          "path": "/scene/render_settings/has_camera",
+          "expected": true
+        }
+      },
+      {
+        "id": "saved_resolution",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/effective_resolution",
+          "expected": [
+            1000,
+            1000
+          ]
+        }
+      },
+      {
+        "id": "render_engine",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/engine",
+          "expected": "CYCLES"
+        }
+      },
+      {
+        "id": "view_transform",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/view_transform",
+          "expected": "AgX"
+        }
+      },
+      {
+        "id": "exposure",
+        "metric": "equals",
+        "group": "render_settings",
+        "params": {
+          "path": "/scene/render_settings/exposure",
+          "expected": 0.0
+        }
+      },
+      {
+        "id": "main_dimensions",
+        "metric": "equals",
+        "group": "main_png",
+        "params": {
+          "path": "/artifacts/main.png/validation_io/size",
+          "expected": [
+            1000,
+            1000
+          ]
+        }
+      },
+      {
+        "id": "main_format",
+        "metric": "equals",
+        "group": "main_png",
+        "params": {
+          "path": "/artifacts/main.png/validation_io/format",
+          "expected": "PNG"
+        }
+      },
+      {
+        "id": "native_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "glb_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/artifacts/scene.glb/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "native_state_materials",
+        "metric": "procedural_material_sequence",
+        "group": "declared_state_material_policy",
+        "params": {
+          "path": "/material_sequences/native",
+          "frames": [
+            1,
+            31,
+            61,
+            91,
+            121,
+            1
+          ]
+        }
+      },
+      {
+        "id": "main_render_consistency",
+        "metric": "main_render_consistency",
+        "group": "image_integrity",
+        "params": {
+          "view": "primary",
+          "artifact": "main.png",
+          "mean_tolerance": 0.00784313725490196,
+          "p99_tolerance": 0.0392156862745098
+        }
+      }
+    ],
+    "robust": [
+      {
+        "id": "main_loadable",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/main.png/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "export",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/scene.glb/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "readme",
+        "metric": "equals",
+        "group": "instructions",
+        "params": {
+          "path": "/artifacts/README.md/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "reproducible",
+        "metric": "seed_success",
+        "group": "reproduction"
+      },
+      {
+        "id": "all_seed_quality",
+        "metric": "all_seed_checks",
+        "group": "seed_quality",
+        "params": {
+          "checks": [
+            "export",
+            "glb_procedural_materials",
+            "main_dimensions",
+            "main_format",
+            "main_loadable",
+            "main_render_consistency",
+            "native_procedural_materials",
+            "native_state_materials",
+            "primary_similarity",
+            "readme",
+            "real_geometry",
+            "reproducible",
+            "saved_camera",
+            "saved_resolution"
+          ],
+          "native_frames": [
+            1,
+            31,
+            61,
+            91,
+            121,
+            1
+          ],
+          "glb_frames": [
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "l1_image_quality": {
+    "version": "l1-reference-visual-v2.0.0",
+    "weights": {
+      "main_image": 0.8,
+      "render_validity": 0.2
+    },
+    "method": "native-appearance-v1",
+    "image_checks": [
+      "primary_similarity"
+    ],
+    "system_checks": [
+      "export",
+      "glb_procedural_materials",
+      "main_dimensions",
+      "main_format",
+      "main_loadable",
+      "main_render_consistency",
+      "native_procedural_materials",
+      "native_state_materials",
+      "readme",
+      "real_geometry",
+      "reproducible",
+      "saved_camera",
+      "saved_resolution"
+    ],
+    "scope": "declared_primary_view_only",
+    "seed_aggregation": "minimum"
+  }
+}

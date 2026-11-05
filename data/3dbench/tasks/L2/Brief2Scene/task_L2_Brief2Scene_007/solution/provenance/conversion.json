@@ -1,0 +1,12 @@
+{
+  "modifications": [
+    "Retained upstream CC0 lighthouse, land and prop geometry.",
+    "Removed all unavailable external image dependencies; replaced surface materials with original simple node materials.",
+    "Replaced eight billboard trees with original volumetric conifers at their existing positions.",
+    "Original daylight and orthographic review camera; no inherited image/compositor overlays."
+  ],
+  "tree_count": 8,
+  "external_images": 0,
+  "blender_version": "5.2.1 LTS",
+  "scope": "Illustrative text-to-scene example, not exact target."
+}

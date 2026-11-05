@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "08b125d69dc1e5a3d1022e2a3051f4fb59463b53513959ead004c0df9cebf44f",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "horse head 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.296,
+          0.166
+        ],
+        [
+          0.534,
+          0.166
+        ],
+        [
+          0.534,
+          0.499
+        ],
+        [
+          0.296,
+          0.499
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "neck bust 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.382,
+          0.219
+        ],
+        [
+          0.725,
+          0.219
+        ],
+        [
+          0.725,
+          0.782
+        ],
+        [
+          0.382,
+          0.782
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "plinth 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.286,
+          0.654
+        ],
+        [
+          0.838,
+          0.654
+        ],
+        [
+          0.838,
+          0.93
+        ],
+        [
+          0.286,
+          0.93
+        ]
+      ]
+    }
+  ]
+}

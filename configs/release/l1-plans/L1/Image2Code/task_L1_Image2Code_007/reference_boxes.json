@@ -1,0 +1,76 @@
+{
+  "version": "reference-boxes-v1",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "task_id": "L1/Image2Code/task_L1_Image2Code_007",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "a7c4979ee9a3a231ae2e58fec2fe621ddb3941041949d60796c8b9a9d2a756cd",
+  "image_size": [
+    1000,
+    1000
+  ],
+  "detector": {
+    "fingerprint": "l1-ai-reference-only-draft-20261011"
+  },
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "targets": [
+    {
+      "id": "part_1",
+      "query": "octagonal lantern",
+      "boxes": [
+        [
+          0.12,
+          0.13,
+          0.88,
+          0.93
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_2",
+      "query": "panel body",
+      "boxes": [
+        [
+          0.22,
+          0.39,
+          0.77,
+          0.89
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    },
+    {
+      "id": "part_3",
+      "query": "roof and eaves",
+      "boxes": [
+        [
+          0.12,
+          0.13,
+          0.88,
+          0.48
+        ]
+      ],
+      "weight": 0.3333333333333333,
+      "review_status": "approved",
+      "review_kind": "ai_draft",
+      "boundary_notes": "Recognizable complete visible named component, excluding detached fragments and background."
+    }
+  ]
+}

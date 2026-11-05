@@ -1,0 +1,2 @@
+# Install the public repository dependencies from this directory.
+-r ../../../../requirements.txt

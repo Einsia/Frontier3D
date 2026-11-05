@@ -1,0 +1,17 @@
+{
+  "uid": "e174a002d60d4926a08aa675b80be255",
+  "file": "source.glb",
+  "download_filename": "786242_ampollo_osgona_chandelier.glb",
+  "bytes": 44935020,
+  "sha256": "7f64621eda1d2f80b104b5a0f7836cca317de2aee6785eca0c6a1f6386ab497d",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "LIGHTSTAR GROUP (https://sketchfab.com/LIGHT_STAR_GROUP)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/786242-ampollo-osgona-chandelier-e174a002d60d4926a08aa675b80be255",
+    "title": "786242 Ampollo Osgona chandelier"
+  },
+  "gltf_meshes": 19,
+  "gltf_images": 0,
+  "animations": []
+}

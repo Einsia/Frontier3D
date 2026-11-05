@@ -1,0 +1,648 @@
+{
+  "version": "scalable-v1.1.0",
+  "profile": "L1",
+  "mode": "edit",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "README.md"
+  ],
+  "scene": "scene.blend",
+  "baseline_scene": "fixture-baseline.blend",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "critical_constraints": [
+    "closed",
+    "connected",
+    "solid_validity",
+    "part_count",
+    "editable",
+    "export",
+    "native_procedural_materials",
+    "glb_procedural_materials",
+    "native_state_materials",
+    "all_seed_quality"
+  ],
+  "tolerances": {
+    "dimension_m": 0.0001,
+    "bore_radius_m": 5e-05,
+    "preserve_m": 5e-05,
+    "color_proxy": 1e-05
+  },
+  "l1_geometry": {
+    "version": "l1-mesh-v1",
+    "weld_m": 1e-09,
+    "intersection_epsilon_m": 1e-09,
+    "degenerate_area_m2": 1e-18,
+    "max_triangles": 200000,
+    "max_intersection_pairs": 2000000
+  },
+  "render_views": [
+    {
+      "id": "review",
+      "location": [
+        0.10800000429153443,
+        -0.10800000578165055,
+        0.07348765311762691
+      ],
+      "target": [
+        0.030000001192092896,
+        -0.012000001966953278,
+        0.007487650495022535
+      ],
+      "ortho_scale": 0.10200000405311584,
+      "resolution": 128,
+      "frame": 1
+    }
+  ],
+  "l1_protocol": {
+    "version": "l1-requirements-v1",
+    "requirements": [
+      {
+        "id": "target_features",
+        "text": "Synthetic unit-test requirement: target_features",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "short_jaw_hole_a",
+          "short_jaw_hole_b",
+          "bridge_hole_a",
+          "bridge_hole_b",
+          "bridge_opening"
+        ],
+        "reason": "本题特定的截面半径、有限点占据或边界尺寸代理；尚未完整证明轮廓、局部尺寸、全厚度孔道及所有题面特征。"
+      },
+      {
+        "id": "passage_continuity",
+        "text": "Synthetic unit-test requirement: passage_continuity",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "short_jaw_hole_a",
+          "short_jaw_hole_b",
+          "bridge_hole_a",
+          "bridge_hole_b",
+          "bridge_opening"
+        ],
+        "reason": "有限截面/占据采样不证明全路径连通、孔轴/圆度、肩面精度或没有薄片。"
+      },
+      {
+        "id": "obsolete_features",
+        "text": "Synthetic unit-test requirement: obsolete_features",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "尚未绑定完整允许修改区及新增/删除实体差分。"
+      },
+      {
+        "id": "protected_surfaces",
+        "text": "Synthetic unit-test requirement: protected_surfaces",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "preserved_bottom",
+          "preserved_bounds"
+        ],
+        "reason": "世界包围盒/孔采样只是必要条件，不能证明保护区完整表面距离；不存在目标参考模型的隐式要求。"
+      },
+      {
+        "id": "world_pose",
+        "text": "Synthetic unit-test requirement: world_pose",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "preserved_bottom"
+        ],
+        "reason": "比较真实世界边界，不强制对象矩阵相同；完整姿态仍需保护区配准。"
+      },
+      {
+        "id": "material_preservation",
+        "text": "Synthetic unit-test requirement: material_preservation",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "missing",
+        "check_ids": [],
+        "reason": "三件角色材质映射尚未接入。"
+      },
+      {
+        "id": "part_structure",
+        "text": "Synthetic unit-test requirement: part_structure",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "part_count",
+          "editable"
+        ],
+        "reason": "件数和基础可编辑性已检查，角色及完整编辑结构仍待验证。"
+      },
+      {
+        "id": "topology",
+        "text": "Synthetic unit-test requirement: topology",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "closed",
+          "connected"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "solid_validity",
+        "text": "Synthetic unit-test requirement: solid_validity",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "solid_validity"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "units_orientation",
+        "text": "Synthetic unit-test requirement: units_orientation",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "preserved_bottom"
+        ],
+        "reason": "世界几何已转换到米，实际语义轴向/跨格式单位仍待逐题绑定。"
+      },
+      {
+        "id": "input_reconstruction",
+        "text": "Synthetic unit-test requirement: input_reconstruction",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "reproducible"
+        ],
+        "reason": "公开输入白名单、基准/seed 和来源哈希已接线；输入利用、依赖与全部语义一致性仍需验收。"
+      },
+      {
+        "id": "glb_readable",
+        "text": "Synthetic unit-test requirement: glb_readable",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "complete",
+        "check_ids": [
+          "export"
+        ],
+        "reason": ""
+      },
+      {
+        "id": "glb_equivalence",
+        "text": "Synthetic unit-test requirement: glb_equivalence",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "export",
+          "reproducible"
+        ],
+        "reason": "共用跨格式/重现诊断存在，逐题语义阈值未标定。"
+      },
+      {
+        "id": "instructions",
+        "text": "Synthetic unit-test requirement: instructions",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "readme"
+        ],
+        "reason": "仅验证文本可读，尚未评价内容。"
+      },
+      {
+        "id": "procedural_materials",
+        "text": "Synthetic unit-test requirement: procedural_materials",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "native_procedural_materials",
+          "glb_procedural_materials",
+          "native_state_materials"
+        ],
+        "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+      },
+      {
+        "id": "seed_quality",
+        "text": "Synthetic unit-test requirement: seed_quality",
+        "source": "unit fixture",
+        "required": true,
+        "applicable": true,
+        "implementation": "partial",
+        "check_ids": [
+          "all_seed_quality"
+        ],
+        "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+      }
+    ]
+  },
+  "checks": {
+    "spec": [
+      {
+        "id": "short_jaw_hole_a",
+        "metric": "hole_profile",
+        "role": "target",
+        "group": "machining",
+        "params": {
+          "center": [
+            0.055,
+            -0.018
+          ],
+          "z_values": [
+            0.001,
+            0.002
+          ],
+          "radius": 0.00135,
+          "tolerance": "bore_radius_m",
+          "angular_samples": 64
+        }
+      },
+      {
+        "id": "short_jaw_hole_b",
+        "metric": "hole_profile",
+        "role": "target",
+        "group": "machining",
+        "params": {
+          "center": [
+            0.055,
+            -0.008
+          ],
+          "z_values": [
+            0.001,
+            0.002
+          ],
+          "radius": 0.00135,
+          "tolerance": "bore_radius_m",
+          "angular_samples": 64
+        }
+      },
+      {
+        "id": "bridge_hole_a",
+        "metric": "hole_profile",
+        "role": "target",
+        "group": "machining",
+        "params": {
+          "center": [
+            0.055,
+            -0.027
+          ],
+          "z_values": [
+            0.003,
+            0.004
+          ],
+          "radius": 0.00135,
+          "tolerance": "bore_radius_m",
+          "angular_samples": 64
+        }
+      },
+      {
+        "id": "bridge_hole_b",
+        "metric": "hole_profile",
+        "role": "target",
+        "group": "machining",
+        "params": {
+          "center": [
+            0.055,
+            -0.037
+          ],
+          "z_values": [
+            0.003,
+            0.004
+          ],
+          "radius": 0.00135,
+          "tolerance": "bore_radius_m",
+          "angular_samples": 64
+        }
+      },
+      {
+        "id": "bridge_opening",
+        "metric": "occupancy",
+        "role": "target",
+        "group": "machining",
+        "params": {
+          "points": [
+            [
+              0.049,
+              -0.032,
+              0.003
+            ],
+            [
+              0.049,
+              -0.03475,
+              0.003
+            ],
+            [
+              0.049,
+              -0.02925,
+              0.003
+            ]
+          ],
+          "inside": [
+            false,
+            true,
+            true
+          ]
+        }
+      },
+      {
+        "id": "preserved_bottom",
+        "metric": "numeric",
+        "role": "preserve",
+        "group": "pose",
+        "params": {
+          "path": "/scene/bounds/0/2",
+          "reference_path": "/baseline/bounds/0/2",
+          "tolerance": "preserve_m"
+        }
+      },
+      {
+        "id": "preserved_bounds",
+        "metric": "numeric",
+        "role": "preserve",
+        "group": "outer_shape",
+        "params": {
+          "path": "/scene/bounds",
+          "reference_path": "/baseline/bounds",
+          "tolerance": "preserve_m"
+        }
+      },
+      {
+        "id": "native_edit_target",
+        "metric": "edit_surface",
+        "role": "target",
+        "group": "sampled_edit_target",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/edit_surface/native",
+          "feature": "target"
+        }
+      },
+      {
+        "id": "native_edit_preservation",
+        "metric": "edit_surface",
+        "role": "preserve",
+        "group": "sampled_edit_preservation",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/edit_surface/native",
+          "feature": "preservation"
+        }
+      },
+      {
+        "id": "glb_edit_target",
+        "metric": "edit_surface",
+        "role": "target",
+        "group": "sampled_edit_target",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/edit_surface/glb",
+          "feature": "target"
+        }
+      },
+      {
+        "id": "glb_edit_preservation",
+        "metric": "edit_surface",
+        "role": "preserve",
+        "group": "sampled_edit_preservation",
+        "pass_threshold": 1,
+        "params": {
+          "path": "/edit_surface/glb",
+          "feature": "preservation"
+        }
+      }
+    ],
+    "geometry": [
+      {
+        "id": "closed",
+        "metric": "equals",
+        "group": "topology",
+        "params": {
+          "path": "/scene/all_closed",
+          "expected": true
+        }
+      },
+      {
+        "id": "connected",
+        "metric": "equals",
+        "group": "connectivity",
+        "params": {
+          "path": "/scene/all_connected",
+          "expected": true
+        }
+      },
+      {
+        "id": "solid_validity",
+        "metric": "equals",
+        "group": "solid_validity",
+        "params": {
+          "path": "/scene/all_valid_solids",
+          "expected": true
+        }
+      }
+    ],
+    "structure": [
+      {
+        "id": "part_count",
+        "metric": "equals",
+        "group": "parts",
+        "params": {
+          "path": "/scene/mesh_count",
+          "expected": 3
+        }
+      },
+      {
+        "id": "editable",
+        "metric": "equals",
+        "group": "editing",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "review_valid",
+        "metric": "render_validity",
+        "group": "review",
+        "params": {
+          "view": "review"
+        }
+      },
+      {
+        "id": "native_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "glb_procedural_materials",
+        "metric": "procedural_materials",
+        "group": "material_policy",
+        "params": {
+          "path": "/artifacts/scene.glb/scene/procedural_materials"
+        }
+      },
+      {
+        "id": "native_state_materials",
+        "metric": "procedural_material_sequence",
+        "group": "declared_state_material_policy",
+        "params": {
+          "path": "/material_sequences/native",
+          "frames": [
+            1
+          ]
+        }
+      }
+    ],
+    "robust": [
+      {
+        "id": "export",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/scene.glb/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "readme",
+        "metric": "equals",
+        "group": "instructions",
+        "params": {
+          "path": "/artifacts/README.md/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "reproducible",
+        "metric": "seed_success",
+        "group": "reconstruction"
+      },
+      {
+        "id": "all_seed_quality",
+        "metric": "all_seed_checks",
+        "group": "seed_quality",
+        "params": {
+          "checks": [
+            "bridge_hole_a",
+            "bridge_hole_b",
+            "glb_edit_preservation",
+            "glb_edit_target",
+            "glb_procedural_materials",
+            "native_edit_preservation",
+            "native_edit_target",
+            "native_procedural_materials",
+            "native_state_materials",
+            "part_count",
+            "preserved_bottom",
+            "preserved_bounds",
+            "reproducible",
+            "review_valid",
+            "short_jaw_hole_a",
+            "short_jaw_hole_b"
+          ],
+          "native_frames": [
+            1
+          ],
+          "glb_frames": [
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "reference_scene": "fixture-target.blend",
+  "l1_edit_quality": {
+    "version": "l1-codeedit-quality-v1.0.0",
+    "weights": {
+      "numeric": 0.4,
+      "target": 0.4,
+      "preservation": 0.2
+    },
+    "numeric_groups": {
+      "piece_count": [
+        "part_count"
+      ],
+      "short_jaw_hole_a": [
+        "short_jaw_hole_a"
+      ],
+      "short_jaw_hole_b": [
+        "short_jaw_hole_b"
+      ],
+      "bridge_hole_a": [
+        "bridge_hole_a"
+      ],
+      "bridge_hole_b": [
+        "bridge_hole_b"
+      ]
+    },
+    "target_checks": [
+      "native_edit_target",
+      "glb_edit_target"
+    ],
+    "preservation_groups": {
+      "preserved_bottom": [
+        "preserved_bottom"
+      ],
+      "preserved_bounds": [
+        "preserved_bounds"
+      ],
+      "sampled_surface": [
+        "native_edit_preservation",
+        "glb_edit_preservation"
+      ]
+    },
+    "system_checks": [
+      "review_valid",
+      "native_procedural_materials",
+      "glb_procedural_materials",
+      "native_state_materials",
+      "reproducible"
+    ],
+    "surface": {
+      "dimension_m": 0.0001,
+      "preserve_m": 5e-05,
+      "samples": 4096
+    },
+    "pending_numeric_requirements": [
+      {
+        "id": "synthetic_unmapped_feature",
+        "status": "pending_full_measurement_mapping"
+      }
+    ],
+    "scope": "implemented_numeric_checks_and_sampled_edit_surface; full CAD clauses and landmark mapping remain partial"
+  }
+}

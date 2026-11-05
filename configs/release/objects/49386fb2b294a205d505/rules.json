@@ -1,0 +1,412 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_bracelet",
+      "label": "弯曲金属链带",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.163,
+          0.474
+        ],
+        [
+          0.179,
+          0.354
+        ],
+        [
+          0.278,
+          0.244
+        ],
+        [
+          0.436,
+          0.174
+        ],
+        [
+          0.529,
+          0.17
+        ],
+        [
+          0.662,
+          0.211
+        ],
+        [
+          0.741,
+          0.295
+        ],
+        [
+          0.795,
+          0.398
+        ],
+        [
+          0.709,
+          0.442
+        ],
+        [
+          0.632,
+          0.33
+        ],
+        [
+          0.499,
+          0.259
+        ],
+        [
+          0.351,
+          0.25
+        ],
+        [
+          0.286,
+          0.342
+        ],
+        [
+          0.275,
+          0.494
+        ],
+        [
+          0.326,
+          0.635
+        ],
+        [
+          0.437,
+          0.724
+        ],
+        [
+          0.559,
+          0.764
+        ],
+        [
+          0.689,
+          0.73
+        ],
+        [
+          0.727,
+          0.753
+        ],
+        [
+          0.64,
+          0.818
+        ],
+        [
+          0.552,
+          0.85
+        ],
+        [
+          0.431,
+          0.844
+        ],
+        [
+          0.293,
+          0.786
+        ],
+        [
+          0.211,
+          0.681
+        ],
+        [
+          0.168,
+          0.554
+        ]
+      ]
+    },
+    {
+      "id": "r_case",
+      "label": "表壳与表圈",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.646,
+          0.397
+        ],
+        [
+          0.715,
+          0.39
+        ],
+        [
+          0.789,
+          0.384
+        ],
+        [
+          0.836,
+          0.414
+        ],
+        [
+          0.861,
+          0.49
+        ],
+        [
+          0.854,
+          0.589
+        ],
+        [
+          0.815,
+          0.678
+        ],
+        [
+          0.751,
+          0.728
+        ],
+        [
+          0.701,
+          0.759
+        ],
+        [
+          0.645,
+          0.753
+        ],
+        [
+          0.621,
+          0.644
+        ],
+        [
+          0.617,
+          0.555
+        ],
+        [
+          0.636,
+          0.465
+        ]
+      ]
+    },
+    {
+      "id": "r_dial",
+      "label": "蓝色表盘与可见指示件",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.706,
+          0.495
+        ],
+        [
+          0.741,
+          0.449
+        ],
+        [
+          0.78,
+          0.426
+        ],
+        [
+          0.807,
+          0.442
+        ],
+        [
+          0.83,
+          0.488
+        ],
+        [
+          0.83,
+          0.556
+        ],
+        [
+          0.81,
+          0.619
+        ],
+        [
+          0.774,
+          0.668
+        ],
+        [
+          0.738,
+          0.691
+        ],
+        [
+          0.711,
+          0.676
+        ],
+        [
+          0.693,
+          0.638
+        ],
+        [
+          0.691,
+          0.57
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_bracelet",
+      "query": "完整可见金属链带",
+      "weight": 0.35,
+      "boxes": [
+        [
+          0.164,
+          0.17,
+          0.795,
+          0.851
+        ]
+      ],
+      "boundary_notes": "作为一个弯曲链带总成定位，包含亮面、暗面和可见内侧；框内中央为空洞，不把空洞当实体。不逐个定位小链节。"
+    },
+    {
+      "id": "t_case",
+      "query": "表壳及上下表耳总成",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.616,
+          0.384,
+          0.861,
+          0.76
+        ]
+      ],
+      "boundary_notes": "包含可见侧壁、前部和连接表耳的完整投影；不包括链带和背景阴影。"
+    },
+    {
+      "id": "t_bezel",
+      "query": "蓝色刻度表圈及金属外缘",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.666,
+          0.389,
+          0.86,
+          0.727
+        ]
+      ],
+      "boundary_notes": "定位整个环形部件，框内表盘并非表圈实体；包含外缘暗面。"
+    },
+    {
+      "id": "t_dial",
+      "query": "可见表盘面",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.69,
+          0.426,
+          0.832,
+          0.694
+        ]
+      ],
+      "boundary_notes": "包含内侧刻度环、指针、时标及日期窗，排除外围蓝色表圈。文字和细小刻度不另设定位类别；表冠未清楚显露，不冻结其框。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_case",
+      "source_quote": "Reconstruct the wristwatch's round case, bezel, visible dial face and controls, and linked metal bracelet.",
+      "question": "是否重建了圆形腕表表壳，且侧视厚度与参考一致？",
+      "weight": 0.12
+    },
+    {
+      "id": "s_bezel",
+      "source_quote": "bezel",
+      "question": "表圈是否围绕表盘，呈参考中的蓝色刻度环与银色外缘？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_dial",
+      "source_quote": "visible dial face",
+      "question": "表盘是否具有参考中的蓝色盘面、浅色时标、指针、日期窗及文字标识布局？",
+      "weight": 0.14
+    },
+    {
+      "id": "s_controls",
+      "source_quote": "Model the case, links and crown in three dimensions",
+      "question": "是否包含三维表冠及腕表控制部件，而非仅以图案代替？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_bracelet",
+      "source_quote": "linked metal bracelet",
+      "question": "是否存在与表壳相连的银色金属链带，且链节排列与参考一致？",
+      "weight": 0.12
+    },
+    {
+      "id": "s_curve",
+      "source_quote": "Preserve the bracelet curvature",
+      "question": "链带是否保持参考中向左后方弯成环状、表头位于右侧的姿态？",
+      "weight": 0.12
+    },
+    {
+      "id": "s_completion",
+      "source_quote": "Match visible surfaces; complete unseen surfaces plausibly without inventing internal machinery.",
+      "question": "可见表面是否匹配参考，遮挡面是否合理补全且未虚构内部机械？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_geometry",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "腕表是否由可编辑的完整三维几何构成，而非图像平面或面向相机的薄壳？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_components",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands",
+      "question": "表壳、链节和表冠等独立部件是否可单独编辑或作为清晰可分离的网格岛？",
+      "weight": 0.06
+    },
+    {
+      "id": "s_occlusion",
+      "source_quote": "connections and occlusions",
+      "question": "表壳、表耳与链带之间的连接和前后遮挡关系是否符合参考？",
+      "weight": 0.06
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_links",
+      "source_quote": "individual link rhythm",
+      "question": "链带是否保留宽中央链节与两侧短链节交错衔接的重复结构？",
+      "weight": 0.2
+    },
+    {
+      "id": "d_link_edges",
+      "source_quote": "Model the case, links and crown in three dimensions",
+      "question": "链节是否有参考可见的厚度、圆角端部和弧面，而非扁平条片？",
+      "weight": 0.16
+    },
+    {
+      "id": "d_case",
+      "source_quote": "case thickness",
+      "question": "表壳侧壁是否有连续鼓曲轮廓、明确厚度及向表耳过渡的曲面？",
+      "weight": 0.16
+    },
+    {
+      "id": "d_openings",
+      "source_quote": "openings",
+      "question": "链带内环、链节间隙及表耳连接处是否保留可见开口而未被填实？",
+      "weight": 0.15
+    },
+    {
+      "id": "d_bezel",
+      "source_quote": "bezel",
+      "question": "表圈是否有高于盘面的环状层级及外缘可见的分段凹凸细节？",
+      "weight": 0.13
+    },
+    {
+      "id": "d_dial",
+      "source_quote": "visible dial face and controls",
+      "question": "盘面是否保留细长指针、条形时标、大数字时标及矩形日期窗的局部形状？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_joints",
+      "source_quote": "thin structures, connections",
+      "question": "表耳与端链是否形成有实体厚度的连接，细小间隙及链节接缝是否清晰？",
+      "weight": 0.08
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "物体最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "以米为单位，将静态姿态下所有腕表几何变换到世界坐标，排除相机与灯光，计算整体世界坐标包围盒三个轴向跨度的最大值，与标称1.000 m比较；explicit_tolerance为原文2%的相对容差。"
+    }
+  ],
+  "limitations": [
+    "主参考采用任务路径input/reference.png；所附原始证据reference/reference-0.png通过公开映射对应此路径，所有定位均冻结在该原始图像上。",
+    "仅有单视图，背面、内部及被遮挡的表冠形状无法从图像确定；不规定隐藏机械或隐藏部件的精确形状。",
+    "文字及细刻度允许局部纹理，不要求逐笔建模；参考中的数字不是额外几何计数或尺寸要求。",
+    "原文未定义最大整体跨度的几何算法；本计划采用世界坐标包围盒最大轴向跨度解释尺度约定，不将其解释为真实腕表尺寸。",
+    "编辑性、完整三维几何及隐藏表面补全需检查原生场景，不能仅凭单张渲染判断。",
+    "Z向上和米制为场景约定；帧号、导出文件、渲染设置及图像分辨率不作为内容质量的几何数值检查。"
+  ]
+}

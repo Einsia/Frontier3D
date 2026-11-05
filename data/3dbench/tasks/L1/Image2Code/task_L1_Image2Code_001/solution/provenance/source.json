@@ -1,0 +1,88 @@
+{
+  "type": 2,
+  "name": "Industrial Microscope",
+  "categories": [
+    "collection: project_lighthouse",
+    "industrial",
+    "tools",
+    "appliances"
+  ],
+  "tags": [
+    "lab",
+    "laboratory",
+    "science",
+    "testing",
+    "equipment",
+    "optical"
+  ],
+  "description": "Free 4K model of a vintage industrial microscope with binocular head, triple objective turret, textured cast-metal body, worn paint, and detailed knobs.",
+  "authors": {
+    "Lukas Walzer": "All"
+  },
+  "donated": true,
+  "max_resolution": [
+    4096,
+    4096
+  ],
+  "polycount": 16598,
+  "files_hash": "8a478e01a8143546913bb0c48712bdd06dcac2ee",
+  "texel_density": 4232.65922982601,
+  "dimensions": [
+    214.53481912612915,
+    498.0906546115875,
+    461.7440301226452
+  ],
+  "date_published": 1781913600,
+  "category_id": "dc601232-ec2d-56d2-80de-c9acac17b25a",
+  "category": "Electronics & Appliances/Devices & Instruments/Optical Instruments",
+  "collections": [
+    "project_lighthouse"
+  ],
+  "attributes": {
+    "condition": [
+      "worn"
+    ],
+    "material": [
+      "metal"
+    ]
+  },
+  "img_version": "da69bccf",
+  "download_count": 785,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/industrial_microscope.png?width=256&height=256&v=da69bccf",
+  "id": "industrial_microscope",
+  "source": "https://polyhaven.com/a/industrial_microscope",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "downloaded_files": [
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/industrial_microscope/industrial_microscope_1k.blend",
+      "file": "industrial_microscope/original/source.blend",
+      "sha256": "e94fc3f7fb2866559e3fd2caad1a2a8d4ef383283b51949590e92ad8bb4db4c0",
+      "bytes": 478847
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/industrial_microscope/industrial_microscope_diff_1k.jpg",
+      "file": "industrial_microscope/original/textures/industrial_microscope_diff_1k.jpg",
+      "sha256": "a870e4533ae2f24c217c0744097436e7914946ffbda88ee054d0ee5c03054973",
+      "bytes": 508322
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/industrial_microscope/industrial_microscope_metal_1k.exr",
+      "file": "industrial_microscope/original/textures/industrial_microscope_metal_1k.exr",
+      "sha256": "fa92c2ec29b7ee0287c0b34bdc26bf6f20648a6e8aa48b104d700558ab2f3efb",
+      "bytes": 571081
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/industrial_microscope/industrial_microscope_nor_gl_1k.exr",
+      "file": "industrial_microscope/original/textures/industrial_microscope_nor_gl_1k.exr",
+      "sha256": "4ee3c5ea4a5e62b4cd41dd16f3908664e56831dddbca18f35f871daf1f1f5111",
+      "bytes": 1121805
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/industrial_microscope/industrial_microscope_rough_1k.exr",
+      "file": "industrial_microscope/original/textures/industrial_microscope_rough_1k.exr",
+      "sha256": "851b56fe401f1d5257cb080e0a084622e2e81869b450748e5b3399f981b01628",
+      "bytes": 691373
+    }
+  ]
+}

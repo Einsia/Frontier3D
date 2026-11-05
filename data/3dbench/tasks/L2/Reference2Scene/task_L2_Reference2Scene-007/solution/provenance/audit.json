@@ -1,0 +1,81 @@
+{
+  "key": "surgical",
+  "source_sha256": "63322de4231d814259b88c3089a5eb67118ee2dfa22c13a2a4ca074b390a4743",
+  "camera_mapping": "Interior camera selected after rendering inspection; location (2,-2,1.7), target (-1,1,1.1), lens 18 mm",
+  "texture_path_repairs": [],
+  "packed_image_count": 4,
+  "executable_texts": 0,
+  "external_libraries": 0,
+  "frame": 1,
+  "resolution": [
+    1600,
+    900
+  ],
+  "alternate_local_x_offset_m": 0.3,
+  "cameras": {
+    "Task_main": {
+      "matrix_world": [
+        [
+          0.7071067094802856,
+          -0.09901472181081772,
+          0.700140118598938,
+          2.0
+        ],
+        [
+          0.7071068286895752,
+          0.09901472181081772,
+          -0.7001399993896484,
+          -2.0
+        ],
+        [
+          -1.3367358775440152e-08,
+          0.9901475310325623,
+          0.1400279551744461,
+          1.7000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 18.0,
+      "sensor_fit": "VERTICAL",
+      "sensor_width": 36.0,
+      "sensor_height": 24.0
+    },
+    "Task_alternate": {
+      "matrix_world": [
+        [
+          0.7071067094802856,
+          -0.09901463240385056,
+          0.700140118598938,
+          2.212131977081299
+        ],
+        [
+          0.7071068286895752,
+          0.09901463985443115,
+          -0.7001399993896484,
+          -1.7878679037094116
+        ],
+        [
+          -1.5034622435905476e-08,
+          0.990147590637207,
+          0.14002783596515656,
+          1.7000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 18.0,
+      "sensor_fit": "VERTICAL",
+      "sensor_width": 36.0,
+      "sensor_height": 24.0
+    }
+  }
+}

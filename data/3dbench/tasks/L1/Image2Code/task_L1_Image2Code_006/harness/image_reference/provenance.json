@@ -1,0 +1,29 @@
+{
+  "protocol": "l1-reference-geometry-mask-v1",
+  "mask_sha256": "b0d03a618306874b0d9583ea8f0ee8c4baa033620ace0e0f770e7ead8a7fb958",
+  "reference_image_sha256": "ea058ad3cad8ee20c06cc1c6d5f917652557d6e52ce069e153c307b75eeb6677",
+  "reference_scene_sha256": "db388bb3a28cfb69027da73e27d2bc4ef0ac9be1084ea8cfe514eb75e8baf7f4",
+  "camera_audit_sha256": "9d4283241a88868ef4f15c90faf23f901a71793144c42522d52983d415b2c647",
+  "camera": {
+    "position": [
+      1.537285566329956,
+      -2.0497140884399414,
+      1.7129390239715576
+    ],
+    "rotation": [
+      1.1232763528823853,
+      -5.995953955562072e-08,
+      0.6435010433197021
+    ],
+    "ortho_scale": 1.4860426187515259
+  },
+  "renderer_sha256": "1151c89d593b30b1c63698cca04f1669567b6ee949c681bc755f490dadedd392",
+  "authoring_script_sha256": "8a83cd7154315e3301333539fbfa7c6247dee59a414c177e946e71c614f05db1",
+  "resolution": [
+    1000,
+    1000
+  ],
+  "frame": 1,
+  "scope": "Main public view only; opaque evaluated geometry alpha, not semantic regions",
+  "blender_version": "5.2.1 LTS"
+}

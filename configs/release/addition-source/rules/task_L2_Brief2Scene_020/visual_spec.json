@@ -1,0 +1,74 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "new-tasks-20261019-v1",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+  "family": "Brief2Scene",
+  "instruction_sha256": "2fa9be608caeda231ad3d57e28ed1fa7009c34cac252efa706fe71b6c7f8f0e8",
+  "reference_policy": "All and only supplied public images; text briefs have no target image. Invisible private surfaces are not targets.",
+  "focus": "Visual requirement diagnostic. Exact numerical requirements need native measurement; never infer numerical compliance from perspective images. Do not add physics or hidden shape requirements.",
+  "reference_bindings": {},
+  "authoring": "public_contract_only_frozen_before_generation_pending_calibration",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "form",
+      "component": "H",
+      "global_weight": 0.45,
+      "question": "逐项检查题面所需场景、家具、机器人、工具和物体的可辨识形体与布局。文字允许多种实现。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "features",
+      "component": "F",
+      "global_weight": 0.35,
+      "question": "检查题面的静态机器人姿势、抓持关系、服务目标及路径的可见实现。不能从图片估计毫米级接触、间距、角度或可达性合规。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials",
+      "component": "M",
+      "global_weight": 0.1,
+      "question": "公开要求的主要材质、颜色和作者光照，不在形体项重复计入。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "composition",
+      "component": "Q",
+      "global_weight": 0.1,
+      "question": "主图的相机、构图、遮挡和对象取景，辅助图只诊断三维真实性。",
+      "units": [
+        "Every applicable visible requirement in instruction.md"
+      ],
+      "coverage_definition": "Fraction of distinct required visible features actually implemented, with concrete per-feature observations. Missing features lower coverage once.",
+      "deviation_definition": "Geometric/appearance deviation only within implemented features; at zero coverage use zero deviation. No score bins, caps or whole-task multiplier.",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png"
+      ]
+    }
+  ]
+}

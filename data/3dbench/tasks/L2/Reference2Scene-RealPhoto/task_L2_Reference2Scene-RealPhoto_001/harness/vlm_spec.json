@@ -1,0 +1,223 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001",
+  "family": "Reference2Scene-RealPhoto",
+  "instruction_sha256": "8ebf41073126ee743b3baedc3a4f49d6ac7760360781a3cafe05c1b2558a121b",
+  "reference_policy": "Public originals only. reference-0 -> main; alternate is a geometry diagnostic.",
+  "focus": "Dark rectangular table with thickness, supports, blue mats and surrounding chairs. Oblique crowded tabletop; ironing board behind left, watering can behind center, dish rack right, pan and utensils across the foreground. Preserve visible overlaps and supporting contacts. Dark table, blue mats and colander, turquoise can, white rack, green brush and plant; pale room with soft directional highlights. Packaging text and tiny bristles may simplify.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "reference_feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Dark rectangular table with thickness, supports, blue mats and surrounding chairs. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Blue slotted colander and turquoise watering can with hollow body, handle and spout. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: White open dish rack with cups and green cleaning brush. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Stacked containers, cutting boards and the frying pan with walls and handle. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Plant, cork trivet, mugs, knives, spatula, cleaning brushes and ironing board. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "dimension": "reference_layout",
+      "weight": 0.2,
+      "question": "Oblique crowded tabletop; ironing board behind left, watering can behind center, dish rack right, pan and utensils across the foreground. Preserve visible overlaps and supporting contacts. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.1,
+      "question": "Compare every supplied original and every required authored view for coherent real 3D structure, thickness and attachments. Use native inspection for suspected flat photographic substitutes; wrong/absent required geometry earns zero on its feature. Do not infer unseen reference geometry. Alternate has no reference pixel target.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials_colors",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original material/color fidelity: Dark table, blue mats and colander, turquoise can, white rack, green brush and plant; pale room with soft directional highlights. Packaging text and tiny bristles may simplify.",
+      "units": [
+        "materials_colors"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_atmosphere",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original light direction, contrast, exposure, shadows and atmosphere: Dark table, blue mats and colander, turquoise can, white rack, green brush and plant; pale room with soft directional highlights. Packaging text and tiny bristles may simplify.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "9039a7bac3dba37f65fea5c876c998770086bdd089e29d351045d1468df27533",
+    "image_size": [
+      1439,
+      1079
+    ],
+    "detector": {
+      "method": "vlm-boxes-v2",
+      "model": "strict-agentic-judge",
+      "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+    },
+    "context_queries": [],
+    "review_kind": "primary_assistant_reference_only_ai_draft",
+    "human_reviewed": false,
+    "formal_score_eligible": false,
+    "targets": [
+      {
+        "id": "target_1",
+        "query": "turquoise watering can including handle and spout",
+        "label": "turquoise watering can including handle and spout",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.445,
+            0.19,
+            0.655,
+            0.418
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. turquoise watering can including handle and spout"
+      },
+      {
+        "id": "target_2",
+        "query": "blue colander including its visible side handles",
+        "label": "blue colander including its visible side handles",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.223,
+            0.313,
+            0.398,
+            0.486
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. blue colander including its visible side handles"
+      },
+      {
+        "id": "target_3",
+        "query": "white dish rack including its rim and visible supports",
+        "label": "white dish rack including its rim and visible supports",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.574,
+            0.232,
+            0.896,
+            0.527
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. white dish rack including its rim and visible supports"
+      }
+    ]
+  },
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

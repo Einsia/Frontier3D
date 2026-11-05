@@ -1,0 +1,26 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+runs/
+data/task_runs/
+data/output_script/
+artifacts/
+logs/
+third_party/
+*.sqlite3*
+*.blend1
+*.blend2
+
+# Private L3 trials, providers and local runtime state.
+.config/
+.native/
+.private/
+harness/L3/release/codebase/data/l3/

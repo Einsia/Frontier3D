@@ -1,0 +1,23 @@
+{
+  "uid": "516a1a06c6f248b6b8c28801eb1397ac",
+  "name": "border collie dog(mesh hair)",
+  "source_url": "https://sketchfab.com/3d-models/border-collie-dogmesh-hair-516a1a06c6f248b6b8c28801eb1397ac",
+  "author": {
+    "displayName": "imdjs",
+    "profileUrl": "https://sketchfab.com/imdjs"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "4679de8157d3e6cbb4da41e483e2c962769ffacf760667f7962b6c0c0c444c92",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Increased Cycles transparent_max_bounces to 128 for the source layered mesh fur; original materials and geometry retained.",
+  "addition": true
+}

@@ -1,0 +1,182 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+  "family": "Reference2Scene",
+  "instruction_sha256": "fd808dde3e2e95be9e16eba4cface381547e92d638ec71e36913d86e0d8936a2",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "5ee27640ccad7381850df5b0c33f9dde6698b58293a9248364921592f26cfb90",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-15810184688a563a9fd2588e5e95fb375f709dfe6c104c64801b73ec5b31b5d3"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "包含主体车身、前轮、侧箱、可见排气、车把及后视镜的全部可见范围；不含背景另一车辆、商品、地面阴影或反射。",
+        "boxes": [
+          [
+            0.267,
+            0.234,
+            0.942,
+            0.786
+          ]
+        ],
+        "id": "t01",
+        "query": "前景展示摩托车",
+        "weight": 0.3,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "仅定位可辨前轮的可见胎体与轮毂，包含暗部；遮挡的后轮不单独冻结框，不包含挡泥板和投影。",
+        "boxes": [
+          [
+            0.753,
+            0.47,
+            0.904,
+            0.64
+          ]
+        ],
+        "id": "t02",
+        "query": "摩托车可辨车轮",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含连续的黑色骑乘座与抬高后座；排除下方挡泥板、侧箱和油箱。",
+        "boxes": [
+          [
+            0.37,
+            0.452,
+            0.629,
+            0.602
+          ]
+        ],
+        "id": "t03",
+        "query": "摩托车座椅总成",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含浅色油箱壳体与顶部可见仪表饰板；排除后座及车把。",
+        "boxes": [
+          [
+            0.614,
+            0.343,
+            0.8,
+            0.519
+          ]
+        ],
+        "id": "t04",
+        "query": "摩托车油箱总成",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含前景近侧硬壳侧箱的完整可见壳体与暗色底缘；远侧不清晰箱体不另计。",
+        "boxes": [
+          [
+            0.27,
+            0.559,
+            0.532,
+            0.758
+          ]
+        ],
+        "id": "t05",
+        "query": "摩托车近侧硬壳侧箱",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含左侧主要头盔货架及中后方独立小配件货架的可见结构、暗色背板和陈列内容；上方裁切按图像边界截断。不将右侧被人物及车辆大幅遮挡的壁面陈列和左侧服装挂架混为此类。",
+        "boxes": [
+          [
+            0.142,
+            0.0,
+            0.435,
+            0.467
+          ],
+          [
+            0.486,
+            0.263,
+            0.637,
+            0.473
+          ]
+        ],
+        "id": "t06",
+        "query": "可辨独立深色配件货架",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+# Task metadata; requirements live in instruction.md.
+version = 1
+id = "L1/Image2Code/task_L1_Image2Code_005"
+level = 1
+category = "Image2Code"
+title = "复古机械打字机"
+difficulty = "hard"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "mvp"
+resource_family = "sketchfab/4954fbf220d748ecbd82005f31d29f15"
+environment_files = ["input/reference.png", "input/front.png", "input/side.png", "input/top.png"]
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/scene.glb", "output/main.png", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L1/Image2Code/task_L1_Image2Code_005"
+release_id = "3DBench-020"

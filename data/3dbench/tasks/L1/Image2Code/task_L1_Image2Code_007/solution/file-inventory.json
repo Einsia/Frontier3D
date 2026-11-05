@@ -1,0 +1,191 @@
+[
+  {
+    "path": "attribution/input/CREDIT.txt",
+    "bytes": 189,
+    "sha256": "f7c4ea6cdafbf8463328674bf16e1dc5b3b6a49dfb989b85140856b06b4f4796",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/front.png",
+    "bytes": 1156264,
+    "sha256": "643fa498604c40d906c1aa4cc9d38d84169672d9a40cebed00b80f8433ab2b10",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/reference.png",
+    "bytes": 1240484,
+    "sha256": "a7c4979ee9a3a231ae2e58fec2fe621ddb3941041949d60796c8b9a9d2a756cd",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/side.png",
+    "bytes": 1151452,
+    "sha256": "58f3186d3d3fd2b03776a665b278e2f589efdbfce997a7e7ca0cab38c3569ecb",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/top.png",
+    "bytes": 1177034,
+    "sha256": "1218ea21ad7e53833782b13550527763efe4cc08503599253b0c8d7c6db8c7ae",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "harness/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "instruction.md",
+    "bytes": 3237,
+    "sha256": "f91744207ecac56d0587687154a783465103701fa67cdba78105d5beaf40b165",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "instruction.zh.md",
+    "bytes": 2734,
+    "sha256": "56f9480ecefadc19d46e41e819cfeafdbffec72dd429e81083f3b00f7ccae81f",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "README.md",
+    "bytes": 1729,
+    "sha256": "8efc629d1c44e249b7b18000693d1731283ca64ab015f67bf8861012ad667d18",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/EVALUATION.md",
+    "bytes": 4825,
+    "sha256": "30583406eeb8728bba98533eef2ab365555b55554017fc61907705b565100961",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/api-files.json",
+    "bytes": 42254,
+    "sha256": "b8601a1805938af3b2c69caa316f8b983d97dca18a58752e5be447619670e208",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/api-info.json",
+    "bytes": 1182,
+    "sha256": "05b049cabd472b9080a8e1a997b55e22c7d09901cba1ecdc7bd3baa8e6071967",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/publisher.html",
+    "bytes": 204641,
+    "sha256": "65c5c7d15aca595c14d63b5fe5bf6015a9fd7a0cca88034ef7cfc0527378d9b8",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/source.json",
+    "bytes": 2539,
+    "sha256": "6a041c98764a26d1ddc8a6ee670d298d36fab6f38fd23e96efcc20c969d894b1",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/audit.json",
+    "bytes": 1787,
+    "sha256": "48b49f0b9c83f0e911883a15b3fcb9a17bf15643a7e047d654478da11fb49594",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/front.png",
+    "bytes": 1156264,
+    "sha256": "643fa498604c40d906c1aa4cc9d38d84169672d9a40cebed00b80f8433ab2b10",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/main.png",
+    "bytes": 1240484,
+    "sha256": "a7c4979ee9a3a231ae2e58fec2fe621ddb3941041949d60796c8b9a9d2a756cd",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.blend",
+    "bytes": 2816418,
+    "sha256": "fd23be29cfdd3759c68feb888c590a0d9909b1aecf6cc8235d5f33160df2379e",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.glb",
+    "bytes": 5233124,
+    "sha256": "ee97751edcbe5129ab20fd9c0e0ef1accc66b714c1982d260edd644195ea8018",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/side.png",
+    "bytes": 1151452,
+    "sha256": "58f3186d3d3fd2b03776a665b278e2f589efdbfce997a7e7ca0cab38c3569ecb",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/top.png",
+    "bytes": 1177034,
+    "sha256": "1218ea21ad7e53833782b13550527763efe4cc08503599253b0c8d7c6db8c7ae",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/chinese_chandelier.blend",
+    "bytes": 323264,
+    "sha256": "8e4762ef6f0d8e365fabe98515c46fd1d1c494d9baf6976c408623dd8ecd798d",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/chinese_chandelier_diff_1k.jpg",
+    "bytes": 534740,
+    "sha256": "439a768d90e36e5d64701d50da1152da4da06df9593cf2c7ce44b1a57c3859a0",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/chinese_chandelier_metal_1k.exr",
+    "bytes": 124068,
+    "sha256": "af4442a1ddd5ee485a1ea4f6c4de8721cc157d6294148b83f999e8225c51d8d7",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/chinese_chandelier_nor_gl_1k.exr",
+    "bytes": 1460048,
+    "sha256": "1bdee38929493ef2c2df9796944678d19075a44081f349780c1c4c2e505b5c73",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/source/textures/chinese_chandelier_rough_1k.exr",
+    "bytes": 460321,
+    "sha256": "e6bb09bc1f666ad3916042055a824d32db83ac6b9e52bdbd4a1c69f037d9ccd4",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "task.toml",
+    "bytes": 780,
+    "sha256": "661a1aea7dcf0e4943854701f744183edc6825700d94126d8c128ac44e4f5ee7",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  }
+]

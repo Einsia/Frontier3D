@@ -1,0 +1,435 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "蛋糕侧面的横向糖霜层带是否具有参考中的弧形接缝、厚度和抹刀起伏？",
+      "source_quote": "white cylindrical birthday cake with layered icing",
+      "weight": 0.125
+    },
+    {
+      "id": "D02",
+      "question": "数字蜡烛是否保留“2”和“3”的粗圆截面、内侧凹口、弯曲轮廓及顶部烛芯？",
+      "source_quote": "metallic numeral candles",
+      "weight": 0.125
+    },
+    {
+      "id": "D03",
+      "question": "草莓是否具有渐尖果体、表面籽窝，以及参考中可见的切面和叶萼？",
+      "source_quote": "fruit toppings",
+      "weight": 0.125
+    },
+    {
+      "id": "D04",
+      "question": "覆盆子是否表现出颗粒聚合的果体及前侧果实可见的中央空腔？",
+      "source_quote": "fruit toppings",
+      "weight": 0.125
+    },
+    {
+      "id": "D05",
+      "question": "蓝莓是否保留近球形果体和可见的顶部冠状凹口？",
+      "source_quote": "fruit toppings",
+      "weight": 0.125
+    },
+    {
+      "id": "D06",
+      "question": "顶部带长梗的红色果实是否具有圆润果体、梗根凹陷和细长弯梗？",
+      "source_quote": "fruit toppings",
+      "weight": 0.125
+    },
+    {
+      "id": "D07",
+      "question": "顶部红绿块状装饰是否保留不规则切块轮廓、断面孔隙和碎屑边缘？",
+      "source_quote": "Reconstruct the white cylindrical birthday cake with layered icing, fruit toppings, powdered surface detail and metallic numeral candles.",
+      "weight": 0.125
+    },
+    {
+      "id": "D08",
+      "question": "蛋糕底缘的碎片装饰是否形成由不规则薄片和碎屑组成的立体边带？",
+      "source_quote": "Reconstruct the white cylindrical birthday cake with layered icing, fruit toppings, powdered surface detail and metallic numeral candles.",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "本计划只依据 instruction.md 和公开参考图制定，未提供或检查任何候选作品。",
+    "主图使用任务路径 input/reference.png，对应公开证据 reference/reference-0.png；所有区域和框均固定在该原始图像上。",
+    "未提供 legacy-detail-20261018-v1 的独立文本；此处仅按本次嵌入的合同和检查规则扩展。",
+    "单张图像无法确定遮挡部分、真实材质配方及实际尺寸；隐藏表面只检查合理补全，不规定不可见几何。",
+    "0.20 m 是任务约定尺度；其余比例、厚度、支撑和间距没有明确数值或容差。",
+    "图中块状装饰、底缘碎片及圆牌按可见形态描述，不推断其具体原料或品牌；圆牌文字不作为指令或精确转写要求。",
+    "粉末可通过允许的局部材质纹理表现，不要求每颗粉末独立建模。",
+    "定位类别有意选取可清晰界定的蛋糕主体、数字蜡烛及圆牌；不将遮挡严重的小碎屑或模糊背景物件列为实例。",
+    "相机平移属于明确的场景几何检查；渲染器、分辨率、色彩管理及提交文件不作为内容质量检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中应用对象变换后，测量蛋糕圆柱主体在水平面内的直径；不把顶部配料、蜡烛或底缘外伸碎片计入主体直径。",
+      "quantity": "蛋糕主体直径",
+      "relation": "equal",
+      "source_quote": "Use a 0.20 m cake diameter as the task scale convention",
+      "target": 0.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两台相机的世界坐标位置，将备用相机位置减去主相机位置所得向量变换到主相机局部坐标系；检查其沿正 X 方向的平移量，并结合语义检查确认平移方向及其余相机属性。",
+      "quantity": "备用相机沿主相机局部正 X 的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.03 m to its right along local X",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "白色圆柱蛋糕及层状糖霜",
+      "polygon": [
+        [
+          0.075,
+          0.549
+        ],
+        [
+          0.885,
+          0.549
+        ],
+        [
+          0.868,
+          0.812
+        ],
+        [
+          0.801,
+          0.9
+        ],
+        [
+          0.621,
+          0.951
+        ],
+        [
+          0.369,
+          0.95
+        ],
+        [
+          0.188,
+          0.894
+        ],
+        [
+          0.108,
+          0.793
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R02",
+      "label": "顶部水果与粉末装饰群",
+      "polygon": [
+        [
+          0.054,
+          0.39
+        ],
+        [
+          0.3,
+          0.248
+        ],
+        [
+          0.538,
+          0.258
+        ],
+        [
+          0.673,
+          0.264
+        ],
+        [
+          0.907,
+          0.365
+        ],
+        [
+          0.928,
+          0.49
+        ],
+        [
+          0.843,
+          0.61
+        ],
+        [
+          0.586,
+          0.679
+        ],
+        [
+          0.272,
+          0.657
+        ],
+        [
+          0.067,
+          0.572
+        ]
+      ],
+      "weight": 0.35
+    },
+    {
+      "id": "R03",
+      "label": "银色数字蜡烛",
+      "polygon": [
+        [
+          0.1,
+          0.079
+        ],
+        [
+          0.228,
+          0.079
+        ],
+        [
+          0.306,
+          0.193
+        ],
+        [
+          0.394,
+          0.139
+        ],
+        [
+          0.415,
+          0.139
+        ],
+        [
+          0.522,
+          0.22
+        ],
+        [
+          0.514,
+          0.408
+        ],
+        [
+          0.451,
+          0.447
+        ],
+        [
+          0.31,
+          0.433
+        ],
+        [
+          0.279,
+          0.372
+        ],
+        [
+          0.124,
+          0.364
+        ],
+        [
+          0.099,
+          0.214
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R04",
+      "label": "蛋糕底缘碎片边带",
+      "polygon": [
+        [
+          0.095,
+          0.79
+        ],
+        [
+          0.164,
+          0.866
+        ],
+        [
+          0.325,
+          0.928
+        ],
+        [
+          0.571,
+          0.947
+        ],
+        [
+          0.774,
+          0.895
+        ],
+        [
+          0.869,
+          0.795
+        ],
+        [
+          0.874,
+          0.852
+        ],
+        [
+          0.802,
+          0.921
+        ],
+        [
+          0.642,
+          0.976
+        ],
+        [
+          0.403,
+          0.991
+        ],
+        [
+          0.207,
+          0.946
+        ],
+        [
+          0.109,
+          0.866
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "主体是否为参考所示的白色圆柱生日蛋糕？",
+      "source_quote": "white cylindrical birthday cake",
+      "weight": 0.1
+    },
+    {
+      "id": "S02",
+      "question": "蛋糕侧面是否呈现参考中的层状糖霜外观？",
+      "source_quote": "layered icing",
+      "weight": 0.07
+    },
+    {
+      "id": "S03",
+      "question": "顶部是否包含参考可见的草莓、覆盆子、蓝莓和带梗红色果实？",
+      "source_quote": "fruit toppings",
+      "weight": 0.1
+    },
+    {
+      "id": "S04",
+      "question": "顶部水果与块状装饰表面是否有参考所示的不均匀白色粉末覆盖？",
+      "source_quote": "powdered surface detail",
+      "weight": 0.07
+    },
+    {
+      "id": "S05",
+      "question": "蜡烛是否呈银色金属质感，数字从左到右为“2”“3”？",
+      "source_quote": "metallic numeral candles",
+      "weight": 0.1
+    },
+    {
+      "id": "S06",
+      "question": "蛋糕主体与顶部水果、装饰及蜡烛的相对尺度是否符合参考？",
+      "source_quote": "Preserve the cake-to-topping proportions",
+      "weight": 0.08
+    },
+    {
+      "id": "S07",
+      "question": "水果是否保持参考中密集成簇、相互遮挡的分布关系？",
+      "source_quote": "fruit clusters",
+      "weight": 0.08
+    },
+    {
+      "id": "S08",
+      "question": "两支数字蜡烛是否保持参考中的顶部位置、高低关系及相互遮挡？",
+      "source_quote": "candle positions",
+      "weight": 0.08
+    },
+    {
+      "id": "S09",
+      "question": "顶部红绿块状装饰、后右侧圆牌和底缘褐色碎片带是否保留参考中的位置与外观？",
+      "source_quote": "Reconstruct the white cylindrical birthday cake with layered icing, fruit toppings, powdered surface detail and metallic numeral candles.",
+      "weight": 0.06
+    },
+    {
+      "id": "S10",
+      "question": "背景是否作为模糊或简化环境呈现，而非复用整张参考照片？",
+      "source_quote": "The blurred background may be a simplified room; do not reproduce it as the complete reference photograph.",
+      "weight": 0.04
+    },
+    {
+      "id": "S11",
+      "question": "主要部件是否可独立编辑，并具有合理厚度、支撑和间距？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.06
+    },
+    {
+      "id": "S12",
+      "question": "主体是否为真实三维几何，能在第二视角中呈现合理体积与遮挡变化？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.06
+    },
+    {
+      "id": "S13",
+      "question": "未见表面是否以合理方式补全，其他尺寸是否与参考比例协调？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.03
+    },
+    {
+      "id": "S14",
+      "question": "主视角是否使用透视相机并匹配参考的观察方向和构图？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.03
+    },
+    {
+      "id": "S15",
+      "question": "备用相机是否由主相机复制并仅沿局部正 X 平移，保持旋转和镜头参数不变，且两台相机均保留？",
+      "source_quote": "Copy it and translate 0.03 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.02
+    },
+    {
+      "id": "S16",
+      "question": "两幅视图是否来自同一场景中的指定相机？",
+      "source_quote": "All images must come from the same scene and specified cameras",
+      "weight": 0.02
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "仅框白色圆柱主体的可见范围，包含较暗的侧面糖霜；排除顶部配料、底缘外伸碎屑及投影。",
+      "boxes": [
+        [
+          0.079,
+          0.543,
+          0.887,
+          0.945
+        ]
+      ],
+      "id": "T01",
+      "query": "白色圆柱蛋糕主体",
+      "weight": 0.45
+    },
+    {
+      "boundary_notes": "分别框数字 2 和 3 的完整可见蜡烛范围，包含烛芯、可辨识的底部支杆和金属暗面；不延伸推测被水果遮住的部分，不包含投影。",
+      "boxes": [
+        [
+          0.101,
+          0.079,
+          0.33,
+          0.404
+        ],
+        [
+          0.285,
+          0.14,
+          0.518,
+          0.452
+        ]
+      ],
+      "id": "T02",
+      "query": "银色数字蜡烛",
+      "weight": 0.4
+    },
+    {
+      "boundary_notes": "仅框水果后方圆牌的可见部分，包含边缘和暗部；不补出被前方水果遮挡的下半部，不把印刷文字拆成实例。",
+      "boxes": [
+        [
+          0.649,
+          0.274,
+          0.818,
+          0.365
+        ]
+      ],
+      "id": "T03",
+      "query": "顶部浅色圆形装饰牌",
+      "weight": 0.15
+    }
+  ]
+}

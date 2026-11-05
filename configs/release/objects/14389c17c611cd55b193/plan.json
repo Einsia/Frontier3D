@@ -1,0 +1,1099 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_002",
+  "title": "双支座轴承总成",
+  "category": "Text2Code",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "底座1、支座2、衬套2、轴环2、轴1、螺栓4、垫圈4，共16件独立可编辑零件；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_base",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "底座140×70×6 mm，底面Z=0且XY中心为0；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_blocks",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "支座18×48×42 mm，X=±42 mm，底面位于底座上；横向孔直径24.4 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_sleeves",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "衬套长18 mm、外径24 mm、内径16.4 mm，平齐装在各支座内；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_shaft",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "轴直径16 mm、长130 mm，沿X且中心X=0，轴线Y=0/Z=34 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_collars",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "两轴环外径24 mm、孔径16.4 mm、宽5 mm，X=±56 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_mounting_passages",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "每支座Y=±18 mm处有直径6.4 mm竖向孔且连续穿过底座；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_fasteners",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "螺杆直径6 mm、长49.5 mm、底Z=0；垫圈12/6.4/1.5 mm、底Z=48 mm；六角头外接圆10.8 mm、高4 mm且坐在垫圈上；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "同轴安装、规定间隙、真实孔道及无额外机械结构，尺寸/位置误差≤0.3 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "结构件蓝灰、轴与螺栓银色、衬套/轴环/垫圈黄铜色；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_part_roles",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "底座1、支座2、衬套2、轴环2、轴1、螺栓4、垫圈4，共16件独立可编辑零件",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {
+        "requirement_id": "part_roles",
+        "public_requirement": "底座1、支座2、衬套2、轴环2、轴1、螺栓4、垫圈4，共16件独立可编辑零件",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.14,
+                    0.07,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bearing_block",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.048,
+                    0.042
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "collar",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.005,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "shaft",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.13,
+                    0.016,
+                    0.016
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009353,
+                    0.0108,
+                    0.0535
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "part_count",
+            "metric": "equals",
+            "group": "parts",
+            "params": {
+              "path": "/scene/mesh_count",
+              "expected": 16
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_base",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "底座140×70×6 mm，底面Z=0且XY中心为0",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "base",
+        "public_requirement": "底座140×70×6 mm，底面Z=0且XY中心为0",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.14,
+                    0.07,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bearing_block",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.048,
+                    0.042
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "collar",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.005,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "shaft",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.13,
+                    0.016,
+                    0.016
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009353,
+                    0.0108,
+                    0.0535
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_blocks",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "支座18×48×42 mm，X=±42 mm，底面位于底座上；横向孔直径24.4 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "blocks",
+        "public_requirement": "支座18×48×42 mm，X=±42 mm，底面位于底座上；横向孔直径24.4 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.14,
+                    0.07,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bearing_block",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.048,
+                    0.042
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "collar",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.005,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "shaft",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.13,
+                    0.016,
+                    0.016
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009353,
+                    0.0108,
+                    0.0535
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_sleeves",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "衬套长18 mm、外径24 mm、内径16.4 mm，平齐装在各支座内",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "sleeves",
+        "public_requirement": "衬套长18 mm、外径24 mm、内径16.4 mm，平齐装在各支座内",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.14,
+                    0.07,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bearing_block",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.048,
+                    0.042
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "collar",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.005,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "shaft",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.13,
+                    0.016,
+                    0.016
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009353,
+                    0.0108,
+                    0.0535
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_shaft",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "轴直径16 mm、长130 mm，沿X且中心X=0，轴线Y=0/Z=34 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "shaft",
+        "public_requirement": "轴直径16 mm、长130 mm，沿X且中心X=0，轴线Y=0/Z=34 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.14,
+                    0.07,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bearing_block",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.048,
+                    0.042
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "collar",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.005,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "shaft",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.13,
+                    0.016,
+                    0.016
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009353,
+                    0.0108,
+                    0.0535
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_collars",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "两轴环外径24 mm、孔径16.4 mm、宽5 mm，X=±56 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "collars",
+        "public_requirement": "两轴环外径24 mm、孔径16.4 mm、宽5 mm，X=±56 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.14,
+                    0.07,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bearing_block",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.048,
+                    0.042
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "collar",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.005,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "shaft",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.13,
+                    0.016,
+                    0.016
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009353,
+                    0.0108,
+                    0.0535
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_mounting_passages",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "每支座Y=±18 mm处有直径6.4 mm竖向孔且连续穿过底座",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "mounting_passages",
+        "public_requirement": "每支座Y=±18 mm处有直径6.4 mm竖向孔且连续穿过底座",
+        "legacy_check_bindings": [],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_fasteners",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "螺杆直径6 mm、长49.5 mm、底Z=0；垫圈12/6.4/1.5 mm、底Z=48 mm；六角头外接圆10.8 mm、高4 mm且坐在垫圈上",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "fasteners",
+        "public_requirement": "螺杆直径6 mm、长49.5 mm、底Z=0；垫圈12/6.4/1.5 mm、底Z=48 mm；六角头外接圆10.8 mm、高4 mm且坐在垫圈上",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "base",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.14,
+                    0.07,
+                    0.006
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bearing_block",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.048,
+                    0.042
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "sleeve",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.018,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "collar",
+                  "type": "MESH",
+                  "count": 2,
+                  "dimensions": [
+                    0.005,
+                    0.024,
+                    0.024
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "shaft",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.13,
+                    0.016,
+                    0.016
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "bolt",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009353,
+                    0.0108,
+                    0.0535
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.012,
+                    0.012,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_assembly_clearance",
+      "component": "Q",
+      "weight": 0.044444444444444446,
+      "question": "同轴安装、规定间隙、真实孔道及无额外机械结构，尺寸/位置误差≤0.3 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {
+        "requirement_id": "assembly_clearance",
+        "public_requirement": "同轴安装、规定间隙、真实孔道及无额外机械结构，尺寸/位置误差≤0.3 mm",
+        "legacy_check_bindings": [],
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_topology",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "每件闭合且单独连通",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_solid_validity",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "有效实体零件",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_units",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "米制导出、X长度/Y宽度/Z向上",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_hierarchy",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "自由描述性命名和清晰可编辑结构",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_state_cycle",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "帧1装配、帧61自由爆炸、保形且返回帧1恢复；相机与爆炸距离自由",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_glb_assembled",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "GLB为原生帧1装配结果",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "52e39240e0c9547fbebf076cfa565219cf655d3e1e252296e61ce1e198ee0e65",
+    "task.toml": "93ad49b4c8ccdad230d2f0a40cf1aef0db06f90cd6374d6813c9e96a11290f1e",
+    "harness/eval_spec.json": "e1ee4c5bfc8b220b90d7d090330ffd9b169d5c58616a1712fdd3aa41700935a3"
+  },
+  "source_requirement_dispositions": {
+    "part_roles": "Q",
+    "base": "Q",
+    "blocks": "Q",
+    "sleeves": "Q",
+    "shaft": "Q",
+    "collars": "Q",
+    "mounting_passages": "Q",
+    "fasteners": "Q",
+    "assembly_clearance": "Q",
+    "topology": "E",
+    "solid_validity": "E",
+    "units": "E",
+    "hierarchy": "E",
+    "materials": "Q",
+    "state_cycle": "E",
+    "glb_readable": "system_evidence_only",
+    "glb_assembled": "E",
+    "reconstruction": "system_evidence_only",
+    "instructions": "system_evidence_only",
+    "procedural_materials": "system_evidence_only",
+    "seed_quality": "system_evidence_only"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

@@ -1,0 +1,310 @@
+{
+  "pack": "pirate-kit",
+  "license": "CC0-1.0",
+  "source": "https://kenney.nl/assets/pirate-kit",
+  "used_assets": {
+    "structure-platform-dock": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/structure-platform-dock.glb",
+      "sha256": "bf64343d37b5570cb78cf0918e3eeb98f96f9b2c69b3f16d103c61ebc8f063f7"
+    },
+    "ship-large": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/ship-large.glb",
+      "sha256": "270fff44a9c97f0f5038b0776f9a9b661961ff2098109a9ce614b645cc5e0d20"
+    },
+    "boat-row-large": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/boat-row-large.glb",
+      "sha256": "b496c0d5f9053ebc7e9b9a39a4770d5ccaff5510c51b7c72c1b8391442e61d0f"
+    },
+    "structure": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/structure.glb",
+      "sha256": "b82b2f949063fc418576dc14fcaedf407db6badf87dc529a33114e2f62606f9a"
+    },
+    "structure-roof": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/structure-roof.glb",
+      "sha256": "d7518ffa7cf209b91dc07920e762f28706a367742edc45c27ae45c434b089329"
+    },
+    "tower-complete-small": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/tower-complete-small.glb",
+      "sha256": "0932848a81ecf78c6dcfd1f54440ff802e024cd744ef255aaf0c05d05a7d8699"
+    },
+    "palm-detailed-bend": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/palm-detailed-bend.glb",
+      "sha256": "9bc339e2942d6fba9007caa9fa4301a6a08f4b134511bea65ce236ba2910e7f8"
+    },
+    "barrel": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/barrel.glb",
+      "sha256": "7616dedf7c1023afa6ecd3c52a4609460aae0e582dee14e60ec5e47c1174793b"
+    },
+    "crate": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/crate.glb",
+      "sha256": "b525674e07c8b83667512a8dd93be0d7684358347d0e64d2bb16b156ac382ed1"
+    },
+    "rocks-sand-a": {
+      "path": "assets/expansion/kenney/pirate-kit/original/Models/GLB format/rocks-sand-a.glb",
+      "sha256": "bde0570946080d6f2dafd63a34be640d5c3713abd4559d6a9d689ce63f74113f"
+    }
+  },
+  "placements": [
+    {
+      "asset": "structure-platform-dock",
+      "ground_position": [
+        1,
+        -10,
+        -0.5
+      ],
+      "uniform_scale": 1.5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "structure-platform-dock",
+      "ground_position": [
+        1,
+        -5,
+        -0.5
+      ],
+      "uniform_scale": 1.5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "structure-platform-dock",
+      "ground_position": [
+        1,
+        0,
+        -0.5
+      ],
+      "uniform_scale": 1.5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "structure-platform-dock",
+      "ground_position": [
+        1,
+        5,
+        -0.5
+      ],
+      "uniform_scale": 1.5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "ship-large",
+      "ground_position": [
+        -7,
+        4,
+        -0.7
+      ],
+      "uniform_scale": 1,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "boat-row-large",
+      "ground_position": [
+        -7,
+        -10,
+        -0.3
+      ],
+      "uniform_scale": 1.1,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "structure",
+      "ground_position": [
+        9,
+        5,
+        0.5
+      ],
+      "uniform_scale": 2,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "structure-roof",
+      "ground_position": [
+        9,
+        5,
+        4.9
+      ],
+      "uniform_scale": 2,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-complete-small",
+      "ground_position": [
+        11,
+        -7,
+        0.5
+      ],
+      "uniform_scale": 1,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "palm-detailed-bend",
+      "ground_position": [
+        13,
+        10,
+        0.5
+      ],
+      "uniform_scale": 1.1,
+      "yaw_degrees": 260
+    },
+    {
+      "asset": "palm-detailed-bend",
+      "ground_position": [
+        12,
+        -11,
+        0.5
+      ],
+      "uniform_scale": 1.1,
+      "yaw_degrees": 240
+    },
+    {
+      "asset": "palm-detailed-bend",
+      "ground_position": [
+        6,
+        11,
+        0.5
+      ],
+      "uniform_scale": 1.1,
+      "yaw_degrees": 120
+    },
+    {
+      "asset": "palm-detailed-bend",
+      "ground_position": [
+        5,
+        -9,
+        0.5
+      ],
+      "uniform_scale": 1.1,
+      "yaw_degrees": 100
+    },
+    {
+      "asset": "barrel",
+      "ground_position": [
+        4.0,
+        0,
+        0.5
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crate",
+      "ground_position": [
+        4.0,
+        -1.6,
+        0.5
+      ],
+      "uniform_scale": 0.8,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "barrel",
+      "ground_position": [
+        5.1,
+        0,
+        0.5
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crate",
+      "ground_position": [
+        5.1,
+        -1.6,
+        0.5
+      ],
+      "uniform_scale": 0.8,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "barrel",
+      "ground_position": [
+        6.2,
+        0,
+        0.5
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crate",
+      "ground_position": [
+        6.2,
+        -1.6,
+        0.5
+      ],
+      "uniform_scale": 0.8,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "barrel",
+      "ground_position": [
+        7.300000000000001,
+        0,
+        0.5
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crate",
+      "ground_position": [
+        7.300000000000001,
+        -1.6,
+        0.5
+      ],
+      "uniform_scale": 0.8,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "barrel",
+      "ground_position": [
+        8.4,
+        0,
+        0.5
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "crate",
+      "ground_position": [
+        8.4,
+        -1.6,
+        0.5
+      ],
+      "uniform_scale": 0.8,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rocks-sand-a",
+      "ground_position": [
+        -1,
+        11,
+        -0.1
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rocks-sand-a",
+      "ground_position": [
+        5,
+        -12,
+        -0.1
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "rocks-sand-a",
+      "ground_position": [
+        14,
+        -3,
+        -0.1
+      ],
+      "uniform_scale": 0.7,
+      "yaw_degrees": 0
+    }
+  ],
+  "modifications": "Original scene composition, procedural ground/roads/piers, imported licensed asset geometry. Example for text brief review only; not a pixel-exact ground truth."
+}

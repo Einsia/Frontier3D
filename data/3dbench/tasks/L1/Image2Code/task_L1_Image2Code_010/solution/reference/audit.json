@@ -1,0 +1,175 @@
+{
+  "source": "assets/expansion/nasa-assemblies/insight/source.glb",
+  "visible_mesh_objects": 100,
+  "vertices": 174239,
+  "dimensions_m": [
+    1.0,
+    0.46548548340797424,
+    0.27537021040916443
+  ],
+  "normalization": {
+    "uniform_scale": 0.16281831507291744,
+    "maximum_extent_m": 1.0,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        1.5,
+        -2.0,
+        1.3376851081848145
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -6.614462222387374e-08,
+        0.6435011625289917
+      ],
+      "ortho_scale": 1.4500000476837158
+    },
+    "front": {
+      "position": [
+        0.0,
+        -3.0,
+        0.43768513202667236
+      ],
+      "rotation": [
+        1.4711276292800903,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.4500000476837158
+    },
+    "side": {
+      "position": [
+        3.0,
+        0.0,
+        0.43768513202667236
+      ],
+      "rotation": [
+        1.4711277484893799,
+        -5.938254332704673e-09,
+        1.570796251296997
+      ],
+      "ortho_scale": 1.4500000476837158
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.0010000000474974513,
+        3.1376850605010986
+      ],
+      "rotation": [
+        0.0003452669770922512,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.4500000476837158
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "cable_02",
+    "deck",
+    "arm_01",
+    "arm_02",
+    "arm_03",
+    "grapple",
+    "claw_01",
+    "claw_02",
+    "claw_03",
+    "claw_04",
+    "claw_05",
+    "IDC",
+    "knob",
+    "lens_cap_IDC",
+    "shovel",
+    "ICC",
+    "leg_b",
+    "leg_l",
+    "leg_r",
+    "lens_cap_ICC",
+    "panel_l_rod",
+    "panel_l_root",
+    "Cube.046",
+    "panel_l.004",
+    "panel_l.019",
+    "Cube.001",
+    "Cube.047",
+    "Cube.048",
+    "panel_l.020",
+    "Cube.049",
+    "Cube.050",
+    "panel_l.021",
+    "Cube.051",
+    "Cube.052",
+    "panel_l.031",
+    "Cube.056",
+    "Cube.057",
+    "panel_l.032",
+    "Cube.054",
+    "Cube.055",
+    "panel_l.033",
+    "Cube.053",
+    "panel_l.034",
+    "Cube.064",
+    "Cube.065",
+    "panel_l.035",
+    "Cube.062",
+    "Cube.063",
+    "panel_l.036",
+    "Cube.060",
+    "Cube.061",
+    "panel_l.037",
+    "Cube.058",
+    "Cube.059",
+    "panel_r_rod",
+    "panel_r_root",
+    "Cube.026",
+    "Cube.071",
+    "Cube.002",
+    "Cube.070",
+    "Cube.069",
+    "Cube.068",
+    "Cube.067",
+    "Cube.079",
+    "Cube.080",
+    "Cube.081",
+    "Cube.082",
+    "Cube.083",
+    "Cube.084",
+    "Cube.085",
+    "Cube.086",
+    "Cube.072",
+    "Cube.073",
+    "Cube.074",
+    "Cube.075",
+    "Cube.066",
+    "Cube.097",
+    "Cube.095",
+    "Cube.096",
+    "Cube.093",
+    "Cube.094",
+    "Cube.091",
+    "Cube.092",
+    "Cube.089",
+    "Cube.090",
+    "Cube.087",
+    "Cube.088",
+    "Cube.078",
+    "pressure_inlet",
+    "RISE_antennas",
+    "TWINS",
+    "SEIS",
+    "WTS",
+    "WTS_boot",
+    "WTS_leg_front",
+    "WTS_leg_left",
+    "WTS_leg_right",
+    "HP3_v3d_baked",
+    "cable_01",
+    "UHF_antenna"
+  ]
+}

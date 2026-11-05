@@ -1,0 +1,68 @@
+## Measured edit protocol
+The evaluator checks visible target silhouette/depth against the reference and separately checks preservation. Target names and mesh splits are unrestricted; retain actual editable 3D geometry.
+Use both native views from the same saved scene. Appearance, shape and lighting tolerances remain published definitions with pending calibration.
+
+## Structural geometry protocol
+Geometry targets must have real nonzero thickness. Up to 48 visible target
+locations with an observable reference back surface are probed along their
+inward surface normal; at least four locations are needed and at least 90%
+must have an oppositely facing back surface. Numerical ray epsilon is the larger
+of 0.0000001 m and 0.0000001 times the reference target diagonal. The private
+reference thickness is not required. Names and mesh splits are unrestricted.
+These finite probes do not certify complete shells, watertightness or support.
+
+The open-topped cavity is also measured at 32 directions and three inner radial
+positions (10%, 25%, 40% of the reference target's oriented horizontal half-size).
+A broad rim annulus is searched from 45% to 105% of that half-size. At least
+eight directions must expose a reference bottom; retained occluders are excluded.
+At least 90% of those locations must have a real added bottom below a rim and
+an unobstructed opening prism. The prism ends 5% of the target diagonal above
+the reference rim, so unrelated room ceilings are excluded. Minimum nonzero
+depth is max(0.00001 m, 0.00001 times the reference diagonal). Hidden bottom
+depth need not equal the reference. Ground underneath cannot replace a missing
+target bottom. Finite probes do not prove every wall or a watertight vessel.
+
+## Required visible regions
+The required regions below are checked independently. Each must cover at least
+80% of its visible reference samples with actual added surface geometry at the
+corresponding pixel. Depth tolerance is 3% of that region's visible 3D diagonal
+(minimum 0.0000001 m); at least eight observable reference samples are needed.
+Reference regions select visible geometry only: your object names and mesh splits
+are unrestricted. An unobservable required region is reported as not measurable.
+The global target silhouette still checks excess geometry. A large correct region
+cannot compensate for a missing smaller region. These published thresholds with calibration limits
+require calibration and do not certify hidden part counts, contacts or semantics.
+
+Required visible groups: cargo_box, visible_wheelsets.
+Coordinates refer to pixel centres, with (0,0) at the top-left and (1,1) at the bottom-right. Only visible reference target surfaces inside a box contribute. Hidden or out-of-frame features are not certified by these regional probes.
+The two visible wheelsets share nine reference samples and are checked together; omitting either wheelset must fail the combined 80% coverage requirement. This does not certify hidden wheel count or wheel-rail contact.
+
+## Native edit measurements
+
+Public numerical requirements are listed separately from private reference similarity.
+The alternate camera translation is 0.30 m along local positive X (0.003 m tolerance).
+Implemented exact counts require the stated integer; visual region coverage alone
+does not prove a count. Unimplemented counts are explicitly reported as pending,
+not satisfied, and are excluded from the implemented numerical mean. The result
+remains provisional until numerical coverage and perceptual calibration are complete.
+
+Geometry similarity compares the missing target's native visible surface, silhouette,
+required regions and implemented thickness/cavity probes. Object names and mesh
+splits are not answers; hidden geometry need not copy the private reference exactly.
+The native geometry target term does not measure material appearance; the visual terms cover appearance. Do not change the supplied main camera.
+
+Lighting similarity directly compares saved light energy and linear RGB color with
+the reference scene; world background strength is included only where permitted.
+Position, direction, type, dimensions, exposure, node links and other forbidden edits
+affect preservation. Compare energy only within the same light type. Zero energy,
+missing lights and wrong types cannot receive full target credit. Different light
+parameters giving similar rendered pixels can still receive different scores.
+No reference image metric is computed for lighting. Retain original lights and names.
+
+## Scoring
+
+Final item score: `20% numeric + 20% preservation + 20% vlm + 30% target + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

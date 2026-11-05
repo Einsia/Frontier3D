@@ -1,0 +1,238 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-g01",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "02ae47c3add3cd53e8356555be4cbee717e953c4e720239fbbaeb675a53e56aa",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "The village forms a loose diagonal chain across the central landscape, with an isolated house branching toward the lower left and a larger building cluster toward the lower right.",
+        "id": "env_layout"
+      },
+      {
+        "criterion": "Open grassland occupies most of the scene and continues into distant rolling hills; the village remains the focal area within this broad landscape.",
+        "id": "env_coverage"
+      },
+      {
+        "criterion": "Buildings, paths, trees and terrain share a consistent cubic block scale, with stepped edges and visibly pixelated surfaces.",
+        "id": "env_scale"
+      },
+      {
+        "criterion": "Buildings sit grounded on terrain, and connected paths negotiate elevation changes with coherent block steps and clear approaches to visible entrances.",
+        "id": "env_grounding"
+      },
+      {
+        "criterion": "Bright daylight, a predominantly fresh green palette and directional tree and building shadows establish the sunny, open countryside atmosphere.",
+        "id": "env_atmosphere"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "Small detached rectangular houses have varied footprints and predominantly steep, stepped gable roofs.",
+            "id": "village_shape",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Roof ridges, overhanging eaves and repeated horizontal stair courses create the distinctive block-built roof profiles.",
+            "id": "village_roofs",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Low doorway and window openings punctuate simple walls, with visible timber corner framing on several houses.",
+            "id": "village_openings",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Pale golden wood roofs contrast with gray stone walls and bases, using coarse pixel textures.",
+            "id": "village_material",
+            "kind": "material"
+          },
+          {
+            "criterion": "Gray flat-topped stone sections among the upper village buildings and a low tiered wooden form in the lower-right cluster interrupt the repeated gabled silhouettes.",
+            "id": "village_variation",
+            "kind": "shape"
+          }
+        ],
+        "id": "village",
+        "importance": "core",
+        "label": "Village buildings",
+        "references": [
+          "输入参考图"
+        ],
+        "weight": 40
+      },
+      {
+        "features": [
+          {
+            "criterion": "Broad rolling slopes are built from densely repeated block-height terraces with angular, irregular contour lines.",
+            "id": "terrain_shape",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Steep banks and shallow gullies interrupt flatter village clearings, especially along the left side.",
+            "id": "terrain_relief",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Green grass caps sit over exposed brown dirt faces along terrace edges.",
+            "id": "terrain_layers",
+            "kind": "material"
+          },
+          {
+            "criterion": "Localized dark openings and exposed gray stone cuts break the grassy slopes on the right.",
+            "id": "terrain_cuts",
+            "kind": "construction"
+          }
+        ],
+        "id": "terrain",
+        "importance": "core",
+        "label": "Terraced grassland terrain",
+        "references": [
+          "输入参考图"
+        ],
+        "weight": 30
+      },
+      {
+        "features": [
+          {
+            "criterion": "Scattered trees have narrow upright trunks and irregular crowns composed of stacked cubic leaf masses.",
+            "id": "vegetation_shape",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Broad low crowns mix with occasional taller narrow crowns across the hills.",
+            "id": "vegetation_variation",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Trees remain widely spaced, leaving extensive open pasture and clear village approaches.",
+            "id": "vegetation_spacing",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Mottled dark-green foliage and brown trunks contrast with lighter ground grass; small grass tufts cover much of the terrain.",
+            "id": "vegetation_material",
+            "kind": "material"
+          }
+        ],
+        "id": "vegetation",
+        "importance": "core",
+        "label": "Trees and grass cover",
+        "references": [
+          "输入参考图"
+        ],
+        "weight": 12
+      },
+      {
+        "features": [
+          {
+            "criterion": "Narrow ochre paths form an irregular branching network through the building clusters.",
+            "id": "paths_shape",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Path edges turn in square block increments and widen locally beside houses and junctions.",
+            "id": "paths_edges",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The southwest branch descends across terraces toward the detached lower-left house.",
+            "id": "paths_branch",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Flat sandy-tan pixelated surfaces remain clearly distinct from surrounding green grass.",
+            "id": "paths_material",
+            "kind": "material"
+          }
+        ],
+        "id": "paths",
+        "importance": "supporting",
+        "label": "Village paths",
+        "references": [
+          "输入参考图"
+        ],
+        "weight": 10
+      },
+      {
+        "features": [],
+        "id": "crops",
+        "importance": "supporting",
+        "label": "Cultivated plot",
+        "references": [
+          "输入参考图"
+        ],
+        "weight": 5
+      },
+      {
+        "features": [
+          {
+            "criterion": "Blue water enters the landscape at both lower corners, with a larger visible expanse at the lower right.",
+            "id": "water_shape",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Shorelines follow angular block steps beneath grassy banks, with pale sand visible at the lower-left inlet.",
+            "id": "water_shores",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Saturated blue, subtly pixel-patterned water contrasts strongly with green banks and pale sand.",
+            "id": "water_material",
+            "kind": "material"
+          }
+        ],
+        "id": "water",
+        "importance": "supporting",
+        "label": "Peripheral water and shorelines",
+        "references": [
+          "输入参考图"
+        ],
+        "weight": 3
+      }
+    ]
+  },
+  "reference_sha256": {}
+}

@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_005",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "957c062dbd17827220f40911780cde0c8215911f1af782afb135d45238c5331e",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "typewriter",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.12,
+          0.2
+        ],
+        [
+          0.84,
+          0.2
+        ],
+        [
+          0.84,
+          0.81
+        ],
+        [
+          0.12,
+          0.81
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "round keyboard",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.15,
+          0.52
+        ],
+        [
+          0.64,
+          0.52
+        ],
+        [
+          0.64,
+          0.78
+        ],
+        [
+          0.15,
+          0.78
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "paper and platen",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.33,
+          0.2
+        ],
+        [
+          0.84,
+          0.2
+        ],
+        [
+          0.84,
+          0.6
+        ],
+        [
+          0.33,
+          0.6
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+  "spec_sha256": "09f331916cc641569a70ac8f0204b49b07b41d623fa169eb87dfa391944e0432",
+  "instruction_sha256": "d933e5fe3b472c5943a458e80d031ac0d288e0acdecae9b6c4f3db82761bc3a0",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Reconstruct the antique shop in input/reference.png.",
+      "source_quote": "Reconstruct the antique shop in input/reference.png.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts.",
+      "source_quote": "Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room.",
+      "source_quote": "Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Shelves need open gaps and real thickness; arches need curved openings and masonry depth.",
+      "source_quote": "Shelves need open gaps and real thickness; arches need curved openings and masonry depth.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter.",
+      "source_quote": "Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Match warm light, worn timber and the contrast between the bright rear room and darker foreground.",
+      "source_quote": "Match warm light, worn timber and the contrast between the bright rear room and darker foreground.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "Set the arch opening height to 2.4 m as a scale convention.",
+      "source_quote": "Set the arch opening height to 2.4 m as a scale convention.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "content_08",
+      "text": "Small labels and picture subjects may be simplified.",
+      "source_quote": "Small labels and picture subjects may be simplified.",
+      "implementation": "manual",
+      "checks": [
+        "content_08"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Reconstruct the antique shop in input/reference.png. Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts. Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room. Shelves need open gaps and real thickness; arches need curved openings and masonry depth. Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter. Match warm light, worn timber and the contrast between the bright rear room and darker foreground. Set the arch opening height to 2.4 m as a scale convention. Small labels and picture subjects may be simplified.\n\nUse metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.\n\nUse only supplied inputs to establish this scene. Do not retrieve the original complete model or additional views online. Do not replace three-dimensional structures with the entire reference projected onto planes.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "main_projection",
+      "text": "main projection",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "main_projection"
+      ]
+    },
+    {
+      "id": "scale_convention",
+      "text": "Reconstruct the antique shop in input/reference.png. Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts. Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room. Shelves need open gaps and real thickness; arches need curved openings and masonry depth. Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter. Match warm light, worn timber and the contrast between the bright rear room and darker foreground. Set the arch opening height to 2.4 m as a scale convention. Small labels and picture subjects may be simplified.",
+      "source_quote": "Reconstruct the antique shop in input/reference.png. Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts. Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room. Shelves need open gaps and real thickness; arches need curved openings and masonry depth. Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter. Match warm light, worn timber and the contrast between the bright rear room and darker foreground. Set the arch opening height to 2.4 m as a scale convention. Small labels and picture subjects may be simplified.",
+      "implementation": "manual",
+      "checks": [
+        "scale_convention"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Reconstruct the antique shop in input/reference.png. Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts. Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room. Shelves need open gaps and real thickness; arches need curved openings and masonry depth. Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter. Match warm light, worn timber and the contrast between the bright rear room and darker foreground. Set the arch opening height to 2.4 m as a scale convention. Small labels and picture subjects may be simplified.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "main_reference_similarity",
+      "text": "SSIM appearance proxy; not a semantic or hidden-geometry verdict",
+      "source_quote": "Reconstruct the antique shop in input/reference.png. Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts. Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room. Shelves need open gaps and real thickness; arches need curved openings and masonry depth. Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter. Match warm light, worn timber and the contrast between the bright rear room and darker foreground. Set the arch opening height to 2.4 m as a scale convention. Small labels and picture subjects may be simplified.",
+      "implementation": "partial",
+      "checks": [
+        "main_reference_similarity"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Reconstruct the antique shop in input/reference.png. Build the timber floor and beams, brick columns and archway, tall open display shelving, rear cabinetry, wall pictures and clocks, rugs, barrels and boxes, lamps, pots, vessels and busts. Preserve the foreground shelving occlusion, central route through the arch and the deeper adjoining room. Shelves need open gaps and real thickness; arches need curved openings and masonry depth. Use varied genuine three-dimensional objects to recover the dense but grouped display, rather than flat textures of clutter. Match warm light, worn timber and the contrast between the bright rear room and darker foreground. Set the arch opening height to 2.4 m as a scale convention. Small labels and picture subjects may be simplified.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "engine",
+      "text": "engine",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "engine"
+      ]
+    },
+    {
+      "id": "view_transform",
+      "text": "view transform",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "view_transform"
+      ]
+    },
+    {
+      "id": "exposure",
+      "text": "exposure",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "exposure"
+      ]
+    },
+    {
+      "id": "gamma",
+      "text": "gamma",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "gamma"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "source_quote": "Use metres and Z up. The stated size is a task convention, not a measurement of the author scene. Keep main objects independently editable and pack texture dependencies. Complete unseen areas plausibly; exact source object names, hidden dimensions and topology are not required. Match the supplied composition with a perspective main camera. Duplicate it and translate it 0.30 m along local positive X, retaining projection, lens/orthographic scale and rotation, to make an alternate camera. Keep both cameras and render both views from the same scene at 800 by 450 pixels with Cycles, Filmic, exposure 0, gamma 1. The alternate view has no target image and checks 3D consistency.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    },
+    {
+      "id": "public_qualifications_02",
+      "text": "Use only supplied inputs to establish this scene. Do not retrieve the original complete model or additional views online. Do not replace three-dimensional structures with the entire reference projected onto planes.",
+      "source_quote": "Use only supplied inputs to establish this scene. Do not retrieve the original complete model or additional views online. Do not replace three-dimensional structures with the entire reference projected onto planes.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_02"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "local_translation",
+    "delta_m": 0.3,
+    "tolerance": 0.003
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "view_transform": "Filmic",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "native_resolution": [
+    800,
+    450
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-reference-localized-vlm-v8.0.0",
+  "methods_sha256": "c92f872ec147c6bfc6056664cf520ab3e2bb4d2c89ffed39dc11892aadc3a8f6",
+  "automatic_profile": "l2-reference-localized-v5.2.0"
+}

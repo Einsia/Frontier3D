@@ -1,0 +1,5 @@
+花纹浮雕宝箱
+Rico Cilliers
+https://polyhaven.com/a/treasure_chest
+CC0-1.0
+Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting.

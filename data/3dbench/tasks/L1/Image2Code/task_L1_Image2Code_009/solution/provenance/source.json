@@ -1,0 +1,33 @@
+{
+  "slug": "ba-2-blast-all-bot-mark-2",
+  "title": "BA-2 (Blast All Bot Mark 2) | OpenGameArt.org",
+  "author": "Quandtum",
+  "source_url": "https://opengameart.org/content/ba-2-blast-all-bot-mark-2",
+  "license": "CC0-1.0",
+  "license_evidence": "publisher.html",
+  "files": [
+    {
+      "path": "ba-2-blast-all-bot-mark-2/Quandtum_BA-2_v1_1.zip",
+      "size": 16379378,
+      "sha256": "e73d1d6e52697315405c75dea4d530a6ffa1910288b40e150cda25adb031c893",
+      "url": "https://opengameart.org/sites/default/files/Quandtum_BA-2_v1_1.zip"
+    }
+  ],
+  "archive_files": [
+    "Preview.jpg",
+    "Quandtum_BA-2_v1_1.blend",
+    "readme.txt"
+  ],
+  "preview": {
+    "path": "ba-2-blast-all-bot-mark-2/publisher-preview.jpg",
+    "size": 124123,
+    "sha256": "e05c89449ee521cc5fd12ef9f132865445619b0f5032d0982cdbf0899676d403",
+    "url": "https://opengameart.org/sites/default/files/Preview_14.jpg"
+  },
+  "source_type": "author Blender archive",
+  "changes": "Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting. All inherited texture maps removed because the author identifies third-party texture samples without their licenses. Plain olive material created for this task. No upstream textured .blend or archive redistributed.",
+  "candidate": "S07",
+  "replaced_title": "四足月面着陆器",
+  "source_original_sha256": "2658e174f982a4b46227db6b2d25825864812a561db8b32c495a4657405ca44d",
+  "raw_upstream_redistributed": false
+}

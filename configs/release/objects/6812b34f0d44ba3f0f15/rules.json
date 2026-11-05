@@ -1,0 +1,566 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "餐椅靠背是否保留宽曲面顶板、下缘拱形缺口与竖向细杆？",
+      "source_quote": "Reconstruct the wooden dining furniture",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "餐桌是否具有实体桌板边缘及合理的下部支撑？",
+      "source_quote": "frames and furniture require thickness",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "彩玻璃面板是否保留有厚度的外围木框和横竖分格条？",
+      "source_quote": "left stained-glass panel",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "中央门扇是否保留圆拱顶玻璃开口及其宽木质边框？",
+      "source_quote": "central arched wooden doorway",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "门内玻璃区域是否保留交叉斜条构成的菱形分格？",
+      "source_quote": "central arched wooden doorway",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "上部墙面饰条是否具有叠层凸缘、凹槽和可见截面厚度？",
+      "source_quote": "upper wall trim",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "餐边柜是否保留凸出的台面、柜门嵌板和分层底座？",
+      "source_quote": "sideboard with bust and plant",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "餐边柜右侧是否保留细长立柱的转折、环节和端部支撑结构？",
+      "source_quote": "sideboard with bust and plant",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "可见胸像是否具有立体卷发、五官、颈部及各自不同的胸肩或底座轮廓？",
+      "source_quote": "bust",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "柜旁盆栽是否保留独立盆口、盆体及从枝茎伸出的叶片层次？",
+      "source_quote": "plant",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划不推断候选内容，也不声称已完成任何测量。",
+    "主参考采用输入映射路径 input/reference.png，对应附件原始证据 reference/reference-0.png；区域及框均冻结在该原始图像上。",
+    "未提供 legacy-detail-20261018-v1 的完整文本；这里只执行本次嵌入的合同、清单和输出结构，无法验证未公开的旧版条款。",
+    "单张照片不能确定隐藏表面、真实深度或唯一相机标定；隐藏结构仅检查合理性，不设置未给出的尺寸或目标几何。",
+    "0.45 m 是任务尺度约定，并非照片中家具的实测尺寸；其他尺寸只作比例和视觉判断。",
+    "独立编辑性、真实厚度、隐藏支撑和相机变换需要原生场景证据；仅凭主视图不能充分判定。",
+    "文字中的 bust 和 plant 未明确数量；参考中可辨的两个胸像和三组主要盆栽用于视觉覆盖，不转化为明文精确数量要求。",
+    "前景木椅靠背定位类限定为三个主体清晰的大靠背；远处重叠靠背、左边缘碎片和底边截断木条不属于该定位类。",
+    "彩玻璃分格图案和门内反射不可当作额外场景物体；允许局部材质纹理，不要求从反射恢复隐藏物体。",
+    "图像区域坐标只是参考定位标注，不是物理尺寸、容差或候选拟合结果。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中按米读取餐椅座面与其局部支承地面之间沿世界 Z 轴的高度差；以座面承坐表面为基准，不以椅背或软物顶部为基准。",
+      "quantity": "餐椅座面高度尺度约定",
+      "relation": "equal",
+      "source_quote": "Use a 0.45 m dining-chair seat height as the task scale convention",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取主相机与备用相机的世界位置，将位置差投影到主相机局部 X 正向的世界单位向量，测量向右位移；纯局部 X 平移及旋转、镜头保持另作结构检查。",
+      "quantity": "备用相机沿主相机局部 X 向右平移距离",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "前景餐桌与木椅遮挡区",
+      "polygon": [
+        [
+          0,
+          0.692
+        ],
+        [
+          0.543,
+          0.692
+        ],
+        [
+          0.783,
+          0.838
+        ],
+        [
+          0.799,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R02",
+      "label": "左侧彩玻璃及木框",
+      "polygon": [
+        [
+          0.002,
+          0.359
+        ],
+        [
+          0.341,
+          0.359
+        ],
+        [
+          0.341,
+          0.685
+        ],
+        [
+          0.002,
+          0.685
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R03",
+      "label": "中央拱形木门",
+      "polygon": [
+        [
+          0.354,
+          0.402
+        ],
+        [
+          0.663,
+          0.402
+        ],
+        [
+          0.663,
+          0.844
+        ],
+        [
+          0.354,
+          0.844
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "上方叠层木质饰条",
+      "polygon": [
+        [
+          0.007,
+          0.041
+        ],
+        [
+          1,
+          0.045
+        ],
+        [
+          1,
+          0.134
+        ],
+        [
+          0.007,
+          0.131
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R05",
+      "label": "右侧餐边柜",
+      "polygon": [
+        [
+          0.735,
+          0.655
+        ],
+        [
+          1,
+          0.66
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0.916,
+          0.984
+        ],
+        [
+          0.735,
+          0.895
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R06",
+      "label": "左侧较高胸像",
+      "polygon": [
+        [
+          0.742,
+          0.472
+        ],
+        [
+          0.825,
+          0.472
+        ],
+        [
+          0.854,
+          0.528
+        ],
+        [
+          0.843,
+          0.662
+        ],
+        [
+          0.755,
+          0.668
+        ],
+        [
+          0.742,
+          0.605
+        ]
+      ],
+      "weight": 0.07
+    },
+    {
+      "id": "R07",
+      "label": "右侧近处胸像",
+      "polygon": [
+        [
+          0.876,
+          0.486
+        ],
+        [
+          0.956,
+          0.486
+        ],
+        [
+          1,
+          0.507
+        ],
+        [
+          1,
+          0.652
+        ],
+        [
+          0.886,
+          0.652
+        ],
+        [
+          0.872,
+          0.574
+        ]
+      ],
+      "weight": 0.07
+    },
+    {
+      "id": "R08",
+      "label": "门柜之间的盆栽组",
+      "polygon": [
+        [
+          0.651,
+          0.584
+        ],
+        [
+          0.753,
+          0.584
+        ],
+        [
+          0.777,
+          0.78
+        ],
+        [
+          0.834,
+          0.824
+        ],
+        [
+          0.811,
+          0.923
+        ],
+        [
+          0.741,
+          0.921
+        ],
+        [
+          0.661,
+          0.781
+        ]
+      ],
+      "weight": 0.06
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否重建了参考中的木质餐桌？",
+      "source_quote": "wooden dining furniture",
+      "weight": 0.0625
+    },
+    {
+      "id": "S02",
+      "question": "是否重建了参考中具有曲面靠背的木质餐椅群？",
+      "source_quote": "wooden dining furniture",
+      "weight": 0.0625
+    },
+    {
+      "id": "S03",
+      "question": "左侧是否有与参考相符的彩玻璃面板及其彩色图案外观？",
+      "source_quote": "left stained-glass panel",
+      "weight": 0.0625
+    },
+    {
+      "id": "S04",
+      "question": "中央是否有参考所示的木质门体和拱形玻璃开口？",
+      "source_quote": "central arched wooden doorway",
+      "weight": 0.0625
+    },
+    {
+      "id": "S05",
+      "question": "上部墙面是否保留横向木质饰条及其深浅层次？",
+      "source_quote": "upper wall trim",
+      "weight": 0.0625
+    },
+    {
+      "id": "S06",
+      "question": "右侧是否有与参考位置、体量和木质外观相符的餐边柜？",
+      "source_quote": "sideboard",
+      "weight": 0.0625
+    },
+    {
+      "id": "S07",
+      "question": "餐边柜上是否呈现参考中白色古典胸像的形态与摆放关系？",
+      "source_quote": "sideboard with bust and plant",
+      "weight": 0.0625
+    },
+    {
+      "id": "S08",
+      "question": "餐边柜靠门一侧是否保留参考中的绿色盆栽及其上下分布？",
+      "source_quote": "sideboard with bust and plant",
+      "weight": 0.0625
+    },
+    {
+      "id": "S09",
+      "question": "前景家具、门区和后方室内是否保持参考中的分层纵深？",
+      "source_quote": "Preserve the layered depth",
+      "weight": 0.0625
+    },
+    {
+      "id": "S10",
+      "question": "前景桌椅之间及其对后方门柜的遮挡是否与参考相符？",
+      "source_quote": "foreground table/chair occlusion",
+      "weight": 0.0625
+    },
+    {
+      "id": "S11",
+      "question": "主要部件是否可独立编辑？",
+      "source_quote": "Keep major components independently editable",
+      "weight": 0.0625
+    },
+    {
+      "id": "S12",
+      "question": "主要部件是否具有实体厚度、合理支撑和有意义的间距？",
+      "source_quote": "with thickness, support and meaningful spacing",
+      "weight": 0.0625
+    },
+    {
+      "id": "S13",
+      "question": "场景是否采用真实三维结构，并在侧移视角中呈现合理视差？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S14",
+      "question": "其余尺寸是否与餐椅尺度成比例，隐藏表面是否得到合理补全？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S15",
+      "question": "主视角是否采用与参考构图和透视相符的透视相机？",
+      "source_quote": "Create a perspective camera matching the input",
+      "weight": 0.0625
+    },
+    {
+      "id": "S16",
+      "question": "备用视角是否来自同一场景，并仅将主相机沿局部 X 向右平移而保持旋转和镜头不变？",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens",
+      "weight": 0.0625
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "仅定位三个前景主体清晰的大木椅靠背，框包含顶板与可见竖杆或侧杆，止于座面遮挡处；包含深色木面，不包含投影。其余远处重叠和边缘碎片不纳入此类。",
+      "boxes": [
+        [
+          0.157,
+          0.74,
+          0.472,
+          0.855
+        ],
+        [
+          0.121,
+          0.836,
+          0.718,
+          0.969
+        ],
+        [
+          0.647,
+          0.768,
+          0.777,
+          0.969
+        ]
+      ],
+      "id": "T01",
+      "query": "前景主体清晰的木椅靠背",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "包含彩玻璃和其外围、内部木框；不含上方宽墙梁与下方木墙裙，左侧以图像裁切边界为限。",
+      "boxes": [
+        [
+          0.002,
+          0.36,
+          0.34,
+          0.684
+        ]
+      ],
+      "id": "T02",
+      "query": "左侧带木框的彩玻璃面板",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "定位中央门扇及紧邻门框，包含暗木表面和拱顶玻璃区域；不包括上方出口标识。被桌椅遮挡的底部不推测补框。",
+      "boxes": [
+        [
+          0.356,
+          0.404,
+          0.663,
+          0.844
+        ]
+      ],
+      "id": "T03",
+      "query": "中央具有拱顶玻璃开口的木门",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "定位图像上部贯穿左右的宽木梁与其下叠层饰条，包含暗色凹槽；不包含梁上屋顶和悬挂轨道。",
+      "boxes": [
+        [
+          0.006,
+          0.041,
+          1,
+          0.134
+        ]
+      ],
+      "id": "T04",
+      "query": "顶部横向叠层木质饰条",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "包含柜体、台面、嵌板、底座和右侧结构柱的可见范围；右端由图像裁切，排除台上胸像、瓶子和地面投影。",
+      "boxes": [
+        [
+          0.735,
+          0.655,
+          1,
+          1
+        ]
+      ],
+      "id": "T05",
+      "query": "右侧木质餐边柜",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "分别定位两尊白色胸像，包含可见头发、面部、颈肩和底座；框覆盖被前方物品分割的可见整体范围，不包含背后画框。",
+      "boxes": [
+        [
+          0.741,
+          0.472,
+          0.852,
+          0.668
+        ],
+        [
+          0.872,
+          0.485,
+          1,
+          0.653
+        ]
+      ],
+      "id": "T06",
+      "query": "餐边柜上的白色古典胸像",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "分别定位柜旁上、中、下三组主要盆栽的可见叶片、枝茎和花盆；不包含白色支架、邻近垂穗和投影，不为难辨小叶另建实例。",
+      "boxes": [
+        [
+          0.652,
+          0.585,
+          0.753,
+          0.702
+        ],
+        [
+          0.66,
+          0.718,
+          0.761,
+          0.776
+        ],
+        [
+          0.722,
+          0.78,
+          0.833,
+          0.924
+        ]
+      ],
+      "id": "T07",
+      "query": "门与餐边柜之间的主要盆栽",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "定位底部大餐桌可见桌板范围，包含暗色桌面及前缘；不把椅背、餐具或遮挡后不可见桌角作为桌板边界。",
+      "boxes": [
+        [
+          0,
+          0.851,
+          0.727,
+          0.978
+        ]
+      ],
+      "id": "T08",
+      "query": "最前方大餐桌的桌板",
+      "weight": 0.05
+    }
+  ]
+}

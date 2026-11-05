@@ -1,0 +1,272 @@
+{
+  "pack": "minigolf-kit",
+  "license": "CC0-1.0",
+  "source": "https://kenney.nl/assets/minigolf-kit",
+  "used_assets": {
+    "start": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/start.glb",
+      "sha256": "97995260cf02910b459541846c23375713bbb91dba35f9fa6b2ada0cf5d5f79c"
+    },
+    "straight": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/straight.glb",
+      "sha256": "bac7537b2ef4ea22439a5b88126f9c2f5eeed2a9eda00bf7ad7142aab2b38e7a"
+    },
+    "obstacle-diamond": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/obstacle-diamond.glb",
+      "sha256": "01d1bb45d2412d843f4160528461f238f98ac08974e952ec9a9cf9bd180cd123"
+    },
+    "hole-round": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/hole-round.glb",
+      "sha256": "732c5aec724a13d20f2826c2a5030fa62bf6b749883c2117e6d38bca8e1cd343"
+    },
+    "windmill": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/windmill.glb",
+      "sha256": "26481a9811ad5aba42a46dc1848ec6021c22b6f70d6b2109039a8c176d32ab10"
+    },
+    "flag-red": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/flag-red.glb",
+      "sha256": "8ecd3bda0bf3908b1e4cad753a79be815083ef1c2cf2bec0856ab59e89542167"
+    },
+    "ball-red": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/ball-red.glb",
+      "sha256": "37f1d03972f29dcba708f6fcf2fbc186292200fd8774ca1fee85ffbb266a53be"
+    },
+    "castle": {
+      "path": "assets/expansion/kenney/minigolf-kit/original/Models/GLB format/castle.glb",
+      "sha256": "3dbbaeab03f4e82cbd4f04a845c8553092a5b86318f0e5bdfb6423a5afe3a470"
+    }
+  },
+  "placements": [
+    {
+      "asset": "start",
+      "ground_position": [
+        -7,
+        -8,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "straight",
+      "ground_position": [
+        -7,
+        -4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "straight",
+      "ground_position": [
+        -7,
+        0,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "obstacle-diamond",
+      "ground_position": [
+        -7,
+        4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "hole-round",
+      "ground_position": [
+        -7,
+        8,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 180
+    },
+    {
+      "asset": "windmill",
+      "ground_position": [
+        -7,
+        0,
+        0.02
+      ],
+      "uniform_scale": 2.4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "flag-red",
+      "ground_position": [
+        -7,
+        8,
+        0.35
+      ],
+      "uniform_scale": 1.6,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "ball-red",
+      "ground_position": [
+        -7,
+        -8,
+        0.36
+      ],
+      "uniform_scale": 1.5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "start",
+      "ground_position": [
+        0,
+        -8,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "straight",
+      "ground_position": [
+        0,
+        -4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "straight",
+      "ground_position": [
+        0,
+        0,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "obstacle-diamond",
+      "ground_position": [
+        0,
+        4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "hole-round",
+      "ground_position": [
+        0,
+        8,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 180
+    },
+    {
+      "asset": "castle",
+      "ground_position": [
+        0,
+        -3,
+        0.02
+      ],
+      "uniform_scale": 2.8,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "flag-red",
+      "ground_position": [
+        0,
+        8,
+        0.35
+      ],
+      "uniform_scale": 1.6,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "ball-red",
+      "ground_position": [
+        0,
+        -8,
+        0.36
+      ],
+      "uniform_scale": 1.5,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "start",
+      "ground_position": [
+        7,
+        -8,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "straight",
+      "ground_position": [
+        7,
+        -4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "straight",
+      "ground_position": [
+        7,
+        0,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "obstacle-diamond",
+      "ground_position": [
+        7,
+        4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "hole-round",
+      "ground_position": [
+        7,
+        8,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 180
+    },
+    {
+      "asset": "flag-red",
+      "ground_position": [
+        7,
+        8,
+        0.35
+      ],
+      "uniform_scale": 1.6,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "ball-red",
+      "ground_position": [
+        7,
+        -8,
+        0.36
+      ],
+      "uniform_scale": 1.5,
+      "yaw_degrees": 0
+    }
+  ],
+  "modifications": "Original scene composition, procedural ground/roads/piers, imported licensed asset geometry. Example for text brief review only; not a pixel-exact ground truth."
+}

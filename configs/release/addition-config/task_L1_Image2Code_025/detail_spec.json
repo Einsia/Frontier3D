@@ -1,0 +1,228 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_025",
+  "family": "Reference2Scene",
+  "instruction_sha256": "93ae2854c8ac462a1b405558bdcd1af56f58c5a81a7a9992d70b3d6763d2b9e1",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "e20d67606b3d7cd8cb031a440522a785b39f87f6f7a38ee565b8e21a493a5ffa",
+    "reference/reference-1.png": "d441dadbadfcd87f5c70158c4ac572e4ca2ebecb9aae0b0133649fac2dc393de",
+    "reference/reference-2.png": "f212159da585928f73604ad87f03c663e7a4366161e9faead88371185dbc9279",
+    "reference/reference-3.png": "5aaaed5bb631e07cfbf7b89c0e3bf3ece1b79af7145f6813c0fff5e29a66c205"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d01",
+      "component": "F",
+      "question": "轮胎是否具有连续圆弧、实体宽度及内凹轮毂，后胎可见折线胎纹是否保留？",
+      "units": [
+        "both wheels"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d02",
+      "component": "F",
+      "question": "踏板是否保留薄而有厚度的板体、圆转边缘及后端连接过渡？",
+      "units": [
+        "deck"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d03",
+      "component": "F",
+      "question": "货箱是否保留箱盖凸缘、面板凹层及顶部接线端子的局部构造？",
+      "units": [
+        "cargo modules"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d04",
+      "component": "F",
+      "question": "立柱是否保留细长管体、上段包覆的轮廓变化及底部连接套？",
+      "units": [
+        "steering column"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d05",
+      "component": "F",
+      "question": "把手是否保留圆柱握把、端部结构及细弯刹车杆？",
+      "units": [
+        "handlebars"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d06",
+      "component": "F",
+      "question": "中央仪表是否具有圆角凹面与有厚度的包围边框？",
+      "units": [
+        "recesses, openings"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d07",
+      "component": "F",
+      "question": "圆形前灯是否具有筒形外壳和镜面边缘，尾灯是否具有圆角矩形外壳与支座？",
+      "units": [
+        "lights"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d08",
+      "component": "F",
+      "question": "前后悬挂是否保留螺旋弹簧、轴接头及前部横向管状连接件？",
+      "units": [
+        "visible mechanical attachments"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d09",
+      "component": "F",
+      "question": "后货架是否保留细支腿、横梁和梁间贯通空隙？",
+      "units": [
+        "thin supports"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d10",
+      "component": "F",
+      "question": "货箱、固定带、托板与下方车架的叠层厚度和分界是否清楚？",
+      "units": [
+        "panel layering"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d11",
+      "component": "F",
+      "question": "立柱及货箱外露线缆是否具有细圆截面、连续弯曲和可辨别的端部连接？",
+      "units": [
+        "thin structures"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

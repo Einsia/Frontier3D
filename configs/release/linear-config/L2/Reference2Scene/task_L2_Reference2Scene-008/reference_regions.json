@@ -1,0 +1,101 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+  "reviewed_by": "assistant_visual_review_2026-10-08",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "42178ddfa40f9ab14f36fec7eb1d1fa8e92e62ea3204b046894fb81406a1cce5",
+  "regions": [
+    {
+      "id": "arch",
+      "label": "拱门和纵深通道",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.27,
+          0.16
+        ],
+        [
+          0.62,
+          0.16
+        ],
+        [
+          0.62,
+          0.77
+        ],
+        [
+          0.27,
+          0.77
+        ]
+      ]
+    },
+    {
+      "id": "shelves_left",
+      "label": "左侧陈列架",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.01,
+          0.19
+        ],
+        [
+          0.31,
+          0.19
+        ],
+        [
+          0.31,
+          0.87
+        ],
+        [
+          0.01,
+          0.87
+        ]
+      ]
+    },
+    {
+      "id": "shelves_right",
+      "label": "右侧展柜与杂物",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.61,
+          0.35
+        ],
+        [
+          0.99,
+          0.35
+        ],
+        [
+          0.99,
+          0.99
+        ],
+        [
+          0.61,
+          0.99
+        ]
+      ]
+    },
+    {
+      "id": "beams",
+      "label": "天花木梁和吊灯",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.07,
+          0.01
+        ],
+        [
+          0.98,
+          0.01
+        ],
+        [
+          0.98,
+          0.26
+        ],
+        [
+          0.07,
+          0.26
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+schema_version = 1
+harness_version = "l3-harness-v0.1.0"
+task_id = "L3/VoxelSandbox"
+level = 3
+
+[generator]
+command = "src.generator"
+runtime = "local"
+model_env = "OPENAI_MODEL"
+reasoning_effort = "medium"
+timeout_seconds = 1200
+max_total_seconds = 4800
+
+[retry_policy]
+retry_timeout = true
+retry_transport_error = true
+retry_empty_output = false
+retry_protocol_error = false
+max_retries = 2
+backoff_seconds = [5, 15]
+
+[workspace]
+environment_files = []
+output_files = ["project", "package"]
+working_directory_mode = "staged_readonly"
+network = false

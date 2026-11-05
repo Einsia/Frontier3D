@@ -1,0 +1,22 @@
+{
+  "schema": "l3-generation-runtime-v1",
+  "engine": "UE5 5.8.3 Linux",
+  "models": [
+    "gpt-6-luna",
+    "gpt-6-astra"
+  ],
+  "input_language": "en",
+  "target_generation_seconds": 3600,
+  "time_limit_seconds": null,
+  "completion_policy": "complete_delivery",
+  "service_error_policy": "resume same session after explicit transient failure; retain all attempts and token accounting",
+  "cpus": 16,
+  "memory_gib": 64,
+  "gpus": 1,
+  "network": "model-service-only",
+  "material_manifest": "@assets/polyhaven-2k-2026-10-16/manifest.json",
+  "model_manifest": "@assets/kenney-suite-20261023/manifest.json",
+  "starter": "tools/prepare_l3_trial.py",
+  "runner": "tools/run_l3_trial.py",
+  "reasoning_effort": "high"
+}

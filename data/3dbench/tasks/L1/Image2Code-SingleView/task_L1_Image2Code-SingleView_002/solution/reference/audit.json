@@ -1,0 +1,76 @@
+{
+  "source": "assets/expansion/polyhaven-models/BarberShopChair_01/original/source.blend",
+  "visible_mesh_objects": 1,
+  "vertices": 2386,
+  "dimensions_m": [
+    0.7565155029296875,
+    1.3279063701629639,
+    1.489005208015442
+  ],
+  "normalization": {
+    "uniform_scale": 1.0000000369652338,
+    "maximum_extent_m": 1.4890052630568675,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        2.2335078716278076,
+        -2.978010416030884,
+        2.531308889389038
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -6.614462222387374e-08,
+        0.6435011625289917
+      ],
+      "ortho_scale": 2.1590576171875
+    },
+    "front": {
+      "position": [
+        0.0,
+        -4.467015743255615,
+        1.1912041902542114
+      ],
+      "rotation": [
+        1.4711275100708008,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 2.1590576171875
+    },
+    "side": {
+      "position": [
+        4.467015743255615,
+        0.0,
+        1.1912041902542114
+      ],
+      "rotation": [
+        1.4711277484893799,
+        5.062325669769052e-08,
+        1.570796251296997
+      ],
+      "ortho_scale": 2.1590576171875
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.001489005284383893,
+        5.211518287658691
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 2.1590576171875
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "BarberShopChair_01"
+  ]
+}

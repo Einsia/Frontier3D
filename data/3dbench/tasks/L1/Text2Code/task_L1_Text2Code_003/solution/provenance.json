@@ -1,0 +1,28 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/lead_screw_stage",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/lead_screw_stage",
+    "license": "CC0-1.0",
+    "changes": [
+      "Lead rod extended to 182 mm to enter the handwheel.",
+      "Guide sleeve OD increased to 18 mm so the sleeves support the platform underside at z=35."
+    ],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "e5e8ab407ad4c59eee478e2e1f9fcc6da426cd6e80d53ce1f877f1b8d91e97c4",
+    "assembled.png": "c8e200645df3eab68cdd7e10127cc89a2d260b0c833e442b029246d6104bd423",
+    "exploded.png": "ed7e1426c83c0afb02da0a29716b88ac6d46089ccbbf7dea0120c9ae2909052d",
+    "front.png": "e73b5469ee1760b728d4dbdd707d71063d9efddaf496f4556743d1b73ea6c454",
+    "geometry.json": "275c99cfa4a1f831f59552548e13e3c0e4c62252c2fca127e0ad6f75487bd707",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "de1a82a13411ec7c93a273d5c0cbf06df9fa7b02e1187e790e8bb5f9168097c3",
+    "qa.json": "fee4298218dec90b408312f391020137418f4c72ddb59543936eeba33717e9cd",
+    "scene.blend": "f13362208b66d3f5e637ecaa42978c9a33a23cc579b545f2dfb998583272ee6f",
+    "scene.glb": "1feaeb90b0b9fa70a50ebb1731e22096ccc427fddde3e5d32d95225efcce203b",
+    "spec.json": "fe92660a2e1711fcd30a76c0fab9e62704cac2fd57f242e8aa5bb99584d49db9",
+    "top.png": "01c619261e4e73e066a0a7cf59d9d82ccf4d04a41c2c53c21f8faea9fcfae316"
+  }
+}

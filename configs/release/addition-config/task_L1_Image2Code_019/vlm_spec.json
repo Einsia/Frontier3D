@@ -1,0 +1,182 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_019",
+  "family": "Reference2Scene",
+  "instruction_sha256": "dd5b3167a7aeda013eb692507224568eb4368c1031847b40ce660ba3e0c92873",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_019",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "5398833d8f2d589d23e80805216af31589e80371b6b54e4dd57d0689e4bdf1f5",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-2cea517599b02084d7579b77ed168238b24d8bf051392dae3d26faedb91450ae"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t01",
+        "query": "含轮胎和轮辋的车轮",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.229,
+            0.408,
+            0.428,
+            0.642
+          ],
+          [
+            0.651,
+            0.585,
+            0.84,
+            0.779
+          ]
+        ],
+        "boundary_notes": "分别框后轮与前轮的可见外缘；包括暗色轮胎，不补全被车身遮挡部分，不含驻车架小轮。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t02",
+        "query": "后轮驻车架",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.134,
+            0.537,
+            0.312,
+            0.68
+          ]
+        ],
+        "boundary_notes": "包括可见管架、支臂及底部小轮，不包含后轮或背景。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t03",
+        "query": "侧面排气消声器",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.269,
+            0.451,
+            0.377,
+            0.583
+          ]
+        ],
+        "boundary_notes": "限定银灰色斜置消声器及可见端部，不将遮挡后的管路推断为框内范围。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t04",
+        "query": "燃油箱",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.453,
+            0.36,
+            0.635,
+            0.482
+          ]
+        ],
+        "boundary_notes": "包括油箱盖及深色油箱曲面；不把高光单独视为物体。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t05",
+        "query": "主骑乘座垫",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.343,
+            0.335,
+            0.477,
+            0.435
+          ]
+        ],
+        "boundary_notes": "仅主座垫可见范围；不含后方上翘尾壳及尾部靠垫。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t06",
+        "query": "前部透明风挡",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.618,
+            0.352,
+            0.76,
+            0.465
+          ]
+        ],
+        "boundary_notes": "包括透明风挡的完整可见边缘和暗色透明区域，不包含后视镜或下方车头壳。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,2372 @@
+{
+  "key": "graveyard-kit",
+  "path": "assets/expansion/kenney/graveyard-kit/review/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      31.0,
+      -37.0,
+      29.0
+    ],
+    "rotation_euler": [
+      1.0451605319976807,
+      2.7691307025179412e-08,
+      0.6973907947540283
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "crypt-large",
+      "vertices": 1028,
+      "polygons": 626,
+      "sha256": "95923a0080bce9564a4b70f7e0ccda822a2e0a9ee1a6ed54a7cceba2218714e2"
+    },
+    {
+      "name": "crypt-large-roof",
+      "vertices": 654,
+      "polygons": 406,
+      "sha256": "64732c247a9fd4b31a7974feee774ba2c09cb463ca4f40b710279ffec01ff550"
+    },
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "a4d07ba28b29b15bc05d4b07b5b086fbb3ea4e93008ed3da0019faf41a9940ee"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "c8b20cf5f7082e13d66a3acb0879c2e16afcd2edfbd3d69b0d325e1eea88be79"
+    },
+    {
+      "name": "door",
+      "vertices": 308,
+      "polygons": 200,
+      "sha256": "eafd5bd717ba924d4a9f0afd314c344a26b75012dce2b85d1dc2a2aca4847a97"
+    },
+    {
+      "name": "grave",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.001",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.002",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.003",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.004",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.005",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.006",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.007",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.008",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.009",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.010",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "grave.011",
+      "vertices": 452,
+      "polygons": 256,
+      "sha256": "3c58a2b106b33f89bce83926605d263e6e46d2be0ef727d4c39fcc272853d14a"
+    },
+    {
+      "name": "gravestone-cross",
+      "vertices": 364,
+      "polygons": 222,
+      "sha256": "40d5cff0e54799dd5a817be0fdb0bfa5dbe6a718f89377c50141acf42b1265d9"
+    },
+    {
+      "name": "gravestone-cross.001",
+      "vertices": 364,
+      "polygons": 222,
+      "sha256": "40d5cff0e54799dd5a817be0fdb0bfa5dbe6a718f89377c50141acf42b1265d9"
+    },
+    {
+      "name": "gravestone-cross.002",
+      "vertices": 364,
+      "polygons": 222,
+      "sha256": "40d5cff0e54799dd5a817be0fdb0bfa5dbe6a718f89377c50141acf42b1265d9"
+    },
+    {
+      "name": "gravestone-cross.003",
+      "vertices": 364,
+      "polygons": 222,
+      "sha256": "40d5cff0e54799dd5a817be0fdb0bfa5dbe6a718f89377c50141acf42b1265d9"
+    },
+    {
+      "name": "gravestone-cross.004",
+      "vertices": 364,
+      "polygons": 222,
+      "sha256": "40d5cff0e54799dd5a817be0fdb0bfa5dbe6a718f89377c50141acf42b1265d9"
+    },
+    {
+      "name": "gravestone-cross.005",
+      "vertices": 364,
+      "polygons": 222,
+      "sha256": "40d5cff0e54799dd5a817be0fdb0bfa5dbe6a718f89377c50141acf42b1265d9"
+    },
+    {
+      "name": "gravestone-round",
+      "vertices": 292,
+      "polygons": 178,
+      "sha256": "6f664d74c668771ad73c287fa58585f62f049962eb7e2959b0faa01f5209deb6"
+    },
+    {
+      "name": "gravestone-round.001",
+      "vertices": 292,
+      "polygons": 178,
+      "sha256": "6f664d74c668771ad73c287fa58585f62f049962eb7e2959b0faa01f5209deb6"
+    },
+    {
+      "name": "gravestone-round.002",
+      "vertices": 292,
+      "polygons": 178,
+      "sha256": "6f664d74c668771ad73c287fa58585f62f049962eb7e2959b0faa01f5209deb6"
+    },
+    {
+      "name": "gravestone-round.003",
+      "vertices": 292,
+      "polygons": 178,
+      "sha256": "6f664d74c668771ad73c287fa58585f62f049962eb7e2959b0faa01f5209deb6"
+    },
+    {
+      "name": "gravestone-round.004",
+      "vertices": 292,
+      "polygons": 178,
+      "sha256": "6f664d74c668771ad73c287fa58585f62f049962eb7e2959b0faa01f5209deb6"
+    },
+    {
+      "name": "gravestone-round.005",
+      "vertices": 292,
+      "polygons": 178,
+      "sha256": "6f664d74c668771ad73c287fa58585f62f049962eb7e2959b0faa01f5209deb6"
+    },
+    {
+      "name": "iron-fence",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence-border-gate",
+      "vertices": 480,
+      "polygons": 256,
+      "sha256": "cfb431f39fb6e8fe961f275d17af2ebf24e679aea735db506fd5a21f6c3d9373"
+    },
+    {
+      "name": "iron-fence.001",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.002",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.003",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.004",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.005",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.006",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.007",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.008",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.009",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.010",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.011",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.012",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.013",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.014",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.015",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.016",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.017",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.018",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.019",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.020",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.021",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.022",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.023",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.024",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.025",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.026",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.027",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.028",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.029",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.030",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.031",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.032",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.033",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.034",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.035",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.036",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "iron-fence.037",
+      "vertices": 720,
+      "polygons": 376,
+      "sha256": "df63c25dab38d59a103b520d726f578a913aafcbf5bcd97d1bf90d9c9c34e85a"
+    },
+    {
+      "name": "lightpost-single",
+      "vertices": 636,
+      "polygons": 352,
+      "sha256": "1e16ca15ddd2861da3c7fd2129c40327a410096682fda3b309ae0a9b30ff893a"
+    },
+    {
+      "name": "lightpost-single.001",
+      "vertices": 636,
+      "polygons": 352,
+      "sha256": "1e16ca15ddd2861da3c7fd2129c40327a410096682fda3b309ae0a9b30ff893a"
+    },
+    {
+      "name": "lightpost-single.002",
+      "vertices": 636,
+      "polygons": 352,
+      "sha256": "1e16ca15ddd2861da3c7fd2129c40327a410096682fda3b309ae0a9b30ff893a"
+    },
+    {
+      "name": "pine-crooked",
+      "vertices": 668,
+      "polygons": 336,
+      "sha256": "2e3d5d47c97148a6a491cdd2fffdbaac851c50babc678e6f624fccd7381e0e83"
+    },
+    {
+      "name": "pine-crooked.001",
+      "vertices": 668,
+      "polygons": 336,
+      "sha256": "2e3d5d47c97148a6a491cdd2fffdbaac851c50babc678e6f624fccd7381e0e83"
+    },
+    {
+      "name": "pine-crooked.002",
+      "vertices": 668,
+      "polygons": 336,
+      "sha256": "2e3d5d47c97148a6a491cdd2fffdbaac851c50babc678e6f624fccd7381e0e83"
+    },
+    {
+      "name": "pine-crooked.003",
+      "vertices": 668,
+      "polygons": 336,
+      "sha256": "2e3d5d47c97148a6a491cdd2fffdbaac851c50babc678e6f624fccd7381e0e83"
+    }
+  ],
+  "images": [
+    {
+      "name": "colormap",
+      "path": "//..\\original\\Models\\GLB format\\Textures\\colormap.png",
+      "packed": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "a94b4dc4f77a4b8aec96bde94f63912a1ce12aa98eec2c1e9a37c89e20a5f091",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Graveyard site",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        24.0,
+        24.0,
+        0.4000000059604645
+      ],
+      "bounds": [
+        [
+          -12.0,
+          -12.0,
+          -0.4000000059604645
+        ],
+        [
+          12.0,
+          12.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "Original ground"
+      ]
+    },
+    {
+      "name": "Central path",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.799999952316284,
+        22.0,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -1.399999976158142,
+          -12.0,
+          -0.029999999329447746
+        ],
+        [
+          1.399999976158142,
+          10.0,
+          0.04999999701976776
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "grave",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          -7.50668478012085,
+          -7.868664741516113,
+          0.019999999552965164
+        ],
+        [
+          -6.49331521987915,
+          -6.131335258483887,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap"
+      ]
+    },
+    {
+      "name": "gravestone-round",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.42500001192092896,
+        0.9775000214576721
+      ],
+      "bounds": [
+        [
+          -7.382500171661377,
+          -6.512500286102295,
+          0.07999999821186066
+        ],
+        [
+          -6.617499828338623,
+          -6.087500095367432,
+          1.0575000047683716
+        ]
+      ],
+      "materials": [
+        "colormap.001"
+      ]
+    },
+    {
+      "name": "grave.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          -7.50668478012085,
+          -3.868664503097534,
+          0.019999999552965164
+        ],
+        [
+          -6.49331521987915,
+          -2.131335496902466,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.002"
+      ]
+    },
+    {
+      "name": "gravestone-round.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.42500001192092896,
+        0.9775000214576721
+      ],
+      "bounds": [
+        [
+          -7.382500171661377,
+          -2.512500047683716,
+          0.07999999821186066
+        ],
+        [
+          -6.617499828338623,
+          -2.0874998569488525,
+          1.0575000047683716
+        ]
+      ],
+      "materials": [
+        "colormap.003"
+      ]
+    },
+    {
+      "name": "grave.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          -7.50668478012085,
+          0.13133543729782104,
+          0.019999999552965164
+        ],
+        [
+          -6.49331521987915,
+          1.8686645030975342,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "gravestone-round.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.42500001192092896,
+        0.9775000214576721
+      ],
+      "bounds": [
+        [
+          -7.382500171661377,
+          1.4874999523162842,
+          0.07999999821186066
+        ],
+        [
+          -6.617499828338623,
+          1.9125001430511475,
+          1.0575000047683716
+        ]
+      ],
+      "materials": [
+        "colormap.005"
+      ]
+    },
+    {
+      "name": "grave.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          -4.50668478012085,
+          -7.868664741516113,
+          0.019999999552965164
+        ],
+        [
+          -3.4933152198791504,
+          -6.131335258483887,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.006"
+      ]
+    },
+    {
+      "name": "gravestone-round.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.42500001192092896,
+        0.9775000214576721
+      ],
+      "bounds": [
+        [
+          -4.382500171661377,
+          -6.512500286102295,
+          0.07999999821186066
+        ],
+        [
+          -3.617500066757202,
+          -6.087500095367432,
+          1.0575000047683716
+        ]
+      ],
+      "materials": [
+        "colormap.007"
+      ]
+    },
+    {
+      "name": "grave.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          -4.50668478012085,
+          -3.868664503097534,
+          0.019999999552965164
+        ],
+        [
+          -3.4933152198791504,
+          -2.131335496902466,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.008"
+      ]
+    },
+    {
+      "name": "gravestone-round.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.42500001192092896,
+        0.9775000214576721
+      ],
+      "bounds": [
+        [
+          -4.382500171661377,
+          -2.512500047683716,
+          0.07999999821186066
+        ],
+        [
+          -3.617500066757202,
+          -2.0874998569488525,
+          1.0575000047683716
+        ]
+      ],
+      "materials": [
+        "colormap.009"
+      ]
+    },
+    {
+      "name": "grave.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          -4.50668478012085,
+          0.13133543729782104,
+          0.019999999552965164
+        ],
+        [
+          -3.4933152198791504,
+          1.8686645030975342,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.010"
+      ]
+    },
+    {
+      "name": "gravestone-round.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.42500001192092896,
+        0.9775000214576721
+      ],
+      "bounds": [
+        [
+          -4.382500171661377,
+          1.4874999523162842,
+          0.07999999821186066
+        ],
+        [
+          -3.617500066757202,
+          1.9125001430511475,
+          1.0575000047683716
+        ]
+      ],
+      "materials": [
+        "colormap.011"
+      ]
+    },
+    {
+      "name": "grave.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          3.4933152198791504,
+          -7.868664741516113,
+          0.019999999552965164
+        ],
+        [
+          4.50668478012085,
+          -6.131335258483887,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.012"
+      ]
+    },
+    {
+      "name": "gravestone-cross",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.5609999895095825,
+        1.555492639541626
+      ],
+      "bounds": [
+        [
+          3.617500066757202,
+          -6.58050012588501,
+          0.07999999821186066
+        ],
+        [
+          4.382500171661377,
+          -6.019500255584717,
+          1.6354926824569702
+        ]
+      ],
+      "materials": [
+        "colormap.013"
+      ]
+    },
+    {
+      "name": "grave.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          3.4933152198791504,
+          -3.868664503097534,
+          0.019999999552965164
+        ],
+        [
+          4.50668478012085,
+          -2.131335496902466,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.014"
+      ]
+    },
+    {
+      "name": "gravestone-cross.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.5609999895095825,
+        1.555492639541626
+      ],
+      "bounds": [
+        [
+          3.617500066757202,
+          -2.5804998874664307,
+          0.07999999821186066
+        ],
+        [
+          4.382500171661377,
+          -2.0195000171661377,
+          1.6354926824569702
+        ]
+      ],
+      "materials": [
+        "colormap.015"
+      ]
+    },
+    {
+      "name": "grave.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          3.4933152198791504,
+          0.13133543729782104,
+          0.019999999552965164
+        ],
+        [
+          4.50668478012085,
+          1.8686645030975342,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.016"
+      ]
+    },
+    {
+      "name": "gravestone-cross.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.5609999895095825,
+        1.555492639541626
+      ],
+      "bounds": [
+        [
+          3.617500066757202,
+          1.4194999933242798,
+          0.07999999821186066
+        ],
+        [
+          4.382500171661377,
+          1.9805001020431519,
+          1.6354926824569702
+        ]
+      ],
+      "materials": [
+        "colormap.017"
+      ]
+    },
+    {
+      "name": "grave.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          6.49331521987915,
+          -7.868664741516113,
+          0.019999999552965164
+        ],
+        [
+          7.50668478012085,
+          -6.131335258483887,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.018"
+      ]
+    },
+    {
+      "name": "gravestone-cross.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.5609999895095825,
+        1.555492639541626
+      ],
+      "bounds": [
+        [
+          6.617499828338623,
+          -6.58050012588501,
+          0.07999999821186066
+        ],
+        [
+          7.382500171661377,
+          -6.019500255584717,
+          1.6354926824569702
+        ]
+      ],
+      "materials": [
+        "colormap.019"
+      ]
+    },
+    {
+      "name": "grave.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          6.49331521987915,
+          -3.868664503097534,
+          0.019999999552965164
+        ],
+        [
+          7.50668478012085,
+          -2.131335496902466,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.020"
+      ]
+    },
+    {
+      "name": "gravestone-cross.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.5609999895095825,
+        1.555492639541626
+      ],
+      "bounds": [
+        [
+          6.617499828338623,
+          -2.5804998874664307,
+          0.07999999821186066
+        ],
+        [
+          7.382500171661377,
+          -2.0195000171661377,
+          1.6354926824569702
+        ]
+      ],
+      "materials": [
+        "colormap.021"
+      ]
+    },
+    {
+      "name": "grave.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.0133694410324097,
+        1.737329125404358,
+        0.15960000455379486
+      ],
+      "bounds": [
+        [
+          6.49331521987915,
+          0.13133543729782104,
+          0.019999999552965164
+        ],
+        [
+          7.50668478012085,
+          1.8686645030975342,
+          0.17960000038146973
+        ]
+      ],
+      "materials": [
+        "colormap.022"
+      ]
+    },
+    {
+      "name": "gravestone-cross.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.7649999856948853,
+        0.5609999895095825,
+        1.555492639541626
+      ],
+      "bounds": [
+        [
+          6.617499828338623,
+          1.4194999933242798,
+          0.07999999821186066
+        ],
+        [
+          7.382500171661377,
+          1.9805001020431519,
+          1.6354926824569702
+        ]
+      ],
+      "materials": [
+        "colormap.023"
+      ]
+    },
+    {
+      "name": "crypt-large",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.070000171661377,
+        5.280386447906494,
+        2.200000047683716
+      ],
+      "bounds": [
+        [
+          -2.0350000858306885,
+          4.359807014465332,
+          0.0
+        ],
+        [
+          2.0350000858306885,
+          9.640192985534668,
+          2.200000047683716
+        ]
+      ],
+      "materials": [
+        "colormap.024"
+      ]
+    },
+    {
+      "name": "crypt-large-roof",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.3489203453063965,
+        5.363656044006348,
+        1.670230507850647
+      ],
+      "bounds": [
+        [
+          -2.1744601726531982,
+          4.318172454833984,
+          2.200000047683716
+        ],
+        [
+          2.174459934234619,
+          9.681827545166016,
+          3.8702306747436523
+        ]
+      ],
+      "materials": [
+        "colormap.025"
+      ]
+    },
+    {
+      "name": "door",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3859999179840088,
+        0.2969999611377716,
+        1.6260038614273071
+      ],
+      "bounds": [
+        [
+          -0.707538902759552,
+          3.9925827980041504,
+          0.019999999552965164
+        ],
+        [
+          0.7075387835502625,
+          4.647418022155762,
+          1.6460038423538208
+        ]
+      ],
+      "materials": [
+        "colormap.026"
+      ]
+    },
+    {
+      "name": "iron-fence",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -10.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          -8.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.027"
+      ]
+    },
+    {
+      "name": "iron-fence.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          -10.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          -8.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.028"
+      ]
+    },
+    {
+      "name": "iron-fence.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          -10.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          -8.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.029"
+      ]
+    },
+    {
+      "name": "iron-fence.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -10.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          -8.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.030"
+      ]
+    },
+    {
+      "name": "iron-fence.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -8.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          -6.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.031"
+      ]
+    },
+    {
+      "name": "iron-fence.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          -8.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          -6.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.032"
+      ]
+    },
+    {
+      "name": "iron-fence.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          -8.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          -6.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.033"
+      ]
+    },
+    {
+      "name": "iron-fence.007",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -8.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          -6.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.034"
+      ]
+    },
+    {
+      "name": "iron-fence.008",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -6.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          -4.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.035"
+      ]
+    },
+    {
+      "name": "iron-fence.009",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          -6.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          -3.999999761581421,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.036"
+      ]
+    },
+    {
+      "name": "iron-fence.010",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          -6.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          -3.999999761581421,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.037"
+      ]
+    },
+    {
+      "name": "iron-fence.011",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -6.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          -4.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.038"
+      ]
+    },
+    {
+      "name": "iron-fence.012",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -4.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          -2.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.039"
+      ]
+    },
+    {
+      "name": "iron-fence.013",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          -4.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          -1.9999998807907104,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.040"
+      ]
+    },
+    {
+      "name": "iron-fence.014",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          -4.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          -1.9999998807907104,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.041"
+      ]
+    },
+    {
+      "name": "iron-fence.015",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -4.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          -2.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.042"
+      ]
+    },
+    {
+      "name": "iron-fence.016",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -2.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          0.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.043"
+      ]
+    },
+    {
+      "name": "iron-fence.017",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          -1.9999998807907104,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          1.4797745961914188e-07,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.044"
+      ]
+    },
+    {
+      "name": "iron-fence.018",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          -1.9999998807907104,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          1.4797745961914188e-07,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.045"
+      ]
+    },
+    {
+      "name": "iron-fence.019",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          0.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          2.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.046"
+      ]
+    },
+    {
+      "name": "iron-fence.020",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          4.553722732225651e-08,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          2.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.047"
+      ]
+    },
+    {
+      "name": "iron-fence.021",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          4.553722732225651e-08,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          2.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.048"
+      ]
+    },
+    {
+      "name": "iron-fence.022",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          2.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          4.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.049"
+      ]
+    },
+    {
+      "name": "iron-fence.023",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          2.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          4.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.050"
+      ]
+    },
+    {
+      "name": "iron-fence.024",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          2.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          4.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.051"
+      ]
+    },
+    {
+      "name": "iron-fence.025",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          2.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          4.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.052"
+      ]
+    },
+    {
+      "name": "iron-fence.026",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          4.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          6.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.053"
+      ]
+    },
+    {
+      "name": "iron-fence.027",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          4.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          6.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.054"
+      ]
+    },
+    {
+      "name": "iron-fence.028",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          4.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          6.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.055"
+      ]
+    },
+    {
+      "name": "iron-fence.029",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          4.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          6.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.056"
+      ]
+    },
+    {
+      "name": "iron-fence.030",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          6.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          8.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.057"
+      ]
+    },
+    {
+      "name": "iron-fence.031",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          6.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          8.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.058"
+      ]
+    },
+    {
+      "name": "iron-fence.032",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          6.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          8.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.059"
+      ]
+    },
+    {
+      "name": "iron-fence.033",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          6.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          8.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.060"
+      ]
+    },
+    {
+      "name": "iron-fence.034",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          8.0,
+          10.890000343322754,
+          0.0
+        ],
+        [
+          10.0,
+          11.110000610351562,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.061"
+      ]
+    },
+    {
+      "name": "iron-fence.035",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          -11.110000610351562,
+          8.0,
+          0.0
+        ],
+        [
+          -10.890000343322754,
+          10.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.062"
+      ]
+    },
+    {
+      "name": "iron-fence.036",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          10.889999389648438,
+          8.0,
+          0.0
+        ],
+        [
+          11.109999656677246,
+          10.0,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.063"
+      ]
+    },
+    {
+      "name": "iron-fence.037",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.2200000286102295,
+        1.7578001022338867
+      ],
+      "bounds": [
+        [
+          8.0,
+          -11.109999656677246,
+          0.0
+        ],
+        [
+          10.0,
+          -10.889999389648438,
+          1.7578001022338867
+        ]
+      ],
+      "materials": [
+        "colormap.064"
+      ]
+    },
+    {
+      "name": "iron-fence-border-gate",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.0,
+        0.44300007820129395,
+        1.5199999809265137
+      ],
+      "bounds": [
+        [
+          -1.0,
+          -11.2214994430542,
+          0.0
+        ],
+        [
+          1.0,
+          -10.778499603271484,
+          1.5199999809265137
+        ]
+      ],
+      "materials": [
+        "colormap.065"
+      ]
+    },
+    {
+      "name": "pine-crooked",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.591599941253662,
+        2.936026096343994,
+        4.637908935546875
+      ],
+      "bounds": [
+        [
+          -9.29580020904541,
+          5.531987190246582,
+          0.0
+        ],
+        [
+          -6.704200267791748,
+          8.468012809753418,
+          4.637908935546875
+        ]
+      ],
+      "materials": [
+        "colormap.066"
+      ]
+    },
+    {
+      "name": "pine-crooked.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.591599941253662,
+        2.936026096343994,
+        4.637908935546875
+      ],
+      "bounds": [
+        [
+          6.70419979095459,
+          5.531987190246582,
+          0.0
+        ],
+        [
+          9.295799255371094,
+          8.468012809753418,
+          4.637908935546875
+        ]
+      ],
+      "materials": [
+        "colormap.067"
+      ]
+    },
+    {
+      "name": "pine-crooked.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.591599941253662,
+        2.936026096343994,
+        4.637908935546875
+      ],
+      "bounds": [
+        [
+          -10.29580020904541,
+          -10.468012809753418,
+          0.0
+        ],
+        [
+          -7.704200267791748,
+          -7.531987190246582,
+          4.637908935546875
+        ]
+      ],
+      "materials": [
+        "colormap.068"
+      ]
+    },
+    {
+      "name": "pine-crooked.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.591599941253662,
+        2.936026096343994,
+        4.637908935546875
+      ],
+      "bounds": [
+        [
+          7.70419979095459,
+          -10.468012809753418,
+          0.0
+        ],
+        [
+          10.295799255371094,
+          -7.531987190246582,
+          4.637908935546875
+        ]
+      ],
+      "materials": [
+        "colormap.069"
+      ]
+    },
+    {
+      "name": "lightpost-single",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.41759997606277466,
+        0.929703414440155,
+        2.5331878662109375
+      ],
+      "bounds": [
+        [
+          -2.108799934387207,
+          -8.464851379394531,
+          0.0
+        ],
+        [
+          -1.6912000179290771,
+          -7.5351481437683105,
+          2.5331878662109375
+        ]
+      ],
+      "materials": [
+        "colormap.070"
+      ]
+    },
+    {
+      "name": "lightpost-single.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.41759997606277466,
+        0.929703414440155,
+        2.5331878662109375
+      ],
+      "bounds": [
+        [
+          -2.108799934387207,
+          -2.4648518562316895,
+          0.0
+        ],
+        [
+          -1.6912000179290771,
+          -1.5351483821868896,
+          2.5331878662109375
+        ]
+      ],
+      "materials": [
+        "colormap.071"
+      ]
+    },
+    {
+      "name": "lightpost-single.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.41759997606277466,
+        0.929703414440155,
+        2.5331878662109375
+      ],
+      "bounds": [
+        [
+          -2.108799934387207,
+          3.5351486206054688,
+          0.0
+        ],
+        [
+          -1.6912000179290771,
+          4.4648518562316895,
+          2.5331878662109375
+        ]
+      ],
+      "materials": [
+        "colormap.072"
+      ]
+    }
+  ]
+}

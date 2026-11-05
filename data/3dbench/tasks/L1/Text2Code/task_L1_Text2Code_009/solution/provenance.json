@@ -1,0 +1,25 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/filter_cartridge",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/filter_cartridge",
+    "license": "CC0-1.0",
+    "changes": [],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "fcec4a58da5e48ee826388daa4f0fc0aad4817fbd67a8f58815f7ca5d0e963f6",
+    "assembled.png": "992451f5ec9423bfdf89fc0011ee80ca7f003e8164646d50475048d009fc6ee9",
+    "exploded.png": "697c0c4ee39912d5a4f25791810da552c8c6d6b5208447a4fea0c18e59148a6e",
+    "front.png": "5a363b357efa2cafe88aec2a8cf7cbdaa7c872b0f90b80a45e0e26422df7a2c3",
+    "geometry.json": "2cff76ce9ed43b333a447cd5519c347f7df2c023ef80787c212b60af858e8d77",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "4ad14e219fee3ac2c115afa66bb034a36a6324acbd88e25150ff53fa1382cb34",
+    "qa.json": "ec0b4300d3e6eb6b5013983f8d5f53d5c09ab516ac186e4ce97a2d7f42f18a7d",
+    "scene.blend": "4c298db28c7995108bacb4b2103d0cb3e485b388dc1a25ecb98fee37162c2b96",
+    "scene.glb": "022d226345e773285d03255abf9e1f09d261c9b343af369881c99ca2a6f9b450",
+    "spec.json": "c55665e7cc1d738ead0488a245d2cabcfdbbb7f66cf93e428502a7af94f03700",
+    "top.png": "0275f8658ec018ae8fbd84f8e9a0d58a57a696d5d7675b58a017eb2d9123dfad"
+  }
+}

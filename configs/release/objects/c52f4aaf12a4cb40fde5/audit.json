@@ -1,0 +1,77 @@
+{
+  "source": "assets/expansion/polyhaven-models/industrial_microscope/original/source.blend",
+  "visible_mesh_objects": 2,
+  "vertices": 8773,
+  "dimensions_m": [
+    0.21453481912612915,
+    0.4980906546115875,
+    0.4617440402507782
+  ],
+  "normalization": {
+    "uniform_scale": 1.0,
+    "maximum_extent_m": 0.4980906546115875,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        0.7471359968185425,
+        -0.996181309223175,
+        0.8285808563232422
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -4.2214843176680006e-08,
+        0.6435012221336365
+      ],
+      "ortho_scale": 0.7222314476966858
+    },
+    "front": {
+      "position": [
+        0.0,
+        -1.494271993637085,
+        0.3802992105484009
+      ],
+      "rotation": [
+        1.4711276292800903,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 0.7222314476966858
+    },
+    "side": {
+      "position": [
+        1.494271993637085,
+        0.0,
+        0.3802992105484009
+      ],
+      "rotation": [
+        1.4711277484893799,
+        -5.938254332704673e-09,
+        1.570796251296997
+      ],
+      "ortho_scale": 0.7222314476966858
+    },
+    "top": {
+      "position": [
+        0.0,
+        -0.0004980906960554421,
+        1.7251440286636353
+      ],
+      "rotation": [
+        0.0003452669770922512,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 0.7222314476966858
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "industrial_microscope_cable",
+    "industrial_microscope"
+  ]
+}

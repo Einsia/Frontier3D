@@ -1,0 +1,293 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_023",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/a754cb863d3cd23f3592/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/b057e2ac19ad7673e421/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/1272895a406290e4cd36/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_head",
+      "label": "穹顶头部与环带",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.395,
+          0.313
+        ],
+        [
+          0.414,
+          0.245
+        ],
+        [
+          0.457,
+          0.193
+        ],
+        [
+          0.507,
+          0.166
+        ],
+        [
+          0.573,
+          0.166
+        ],
+        [
+          0.649,
+          0.193
+        ],
+        [
+          0.68,
+          0.247
+        ],
+        [
+          0.691,
+          0.309
+        ],
+        [
+          0.679,
+          0.374
+        ]
+      ]
+    },
+    {
+      "id": "r_body",
+      "label": "圆柱躯干及底部结构",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.396,
+          0.316
+        ],
+        [
+          0.679,
+          0.374
+        ],
+        [
+          0.615,
+          0.554
+        ],
+        [
+          0.595,
+          0.684
+        ],
+        [
+          0.542,
+          0.714
+        ],
+        [
+          0.34,
+          0.658
+        ],
+        [
+          0.313,
+          0.609
+        ]
+      ]
+    },
+    {
+      "id": "r_near_leg",
+      "label": "近侧腿足",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.627,
+          0.379
+        ],
+        [
+          0.695,
+          0.395
+        ],
+        [
+          0.714,
+          0.491
+        ],
+        [
+          0.697,
+          0.552
+        ],
+        [
+          0.71,
+          0.672
+        ],
+        [
+          0.731,
+          0.704
+        ],
+        [
+          0.788,
+          0.773
+        ],
+        [
+          0.656,
+          0.856
+        ],
+        [
+          0.564,
+          0.818
+        ],
+        [
+          0.583,
+          0.745
+        ],
+        [
+          0.585,
+          0.681
+        ],
+        [
+          0.626,
+          0.651
+        ],
+        [
+          0.611,
+          0.552
+        ],
+        [
+          0.591,
+          0.497
+        ],
+        [
+          0.595,
+          0.419
+        ]
+      ]
+    },
+    {
+      "id": "r_center_support",
+      "label": "中央支撑与中央足",
+      "weight": 0.12,
+      "polygon": [
+        [
+          0.405,
+          0.671
+        ],
+        [
+          0.544,
+          0.711
+        ],
+        [
+          0.464,
+          0.76
+        ],
+        [
+          0.51,
+          0.81
+        ],
+        [
+          0.404,
+          0.879
+        ],
+        [
+          0.323,
+          0.844
+        ],
+        [
+          0.379,
+          0.764
+        ],
+        [
+          0.398,
+          0.731
+        ]
+      ]
+    },
+    {
+      "id": "r_far_leg",
+      "label": "远侧腿足可见部分",
+      "weight": 0.08,
+      "polygon": [
+        [
+          0.372,
+          0.301
+        ],
+        [
+          0.4,
+          0.308
+        ],
+        [
+          0.371,
+          0.414
+        ],
+        [
+          0.355,
+          0.47
+        ],
+        [
+          0.335,
+          0.459
+        ],
+        [
+          0.327,
+          0.368
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在最终静态姿态中，对排除相机和灯光后的模型几何应用世界变换，计算世界坐标轴对齐包围盒的X、Y、Z跨度并取最大值，与1.000 m比较；0.02表示原文2%的相对容差，非已测结果。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

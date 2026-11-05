@@ -1,0 +1,1698 @@
+{
+  "version": "release145-no-codeedit-20261104-attribution-v1",
+  "scope": "130 active L1/L2 tasks; original source IDs resolved using configs/release/task-id-map.json",
+  "task_count": 130,
+  "tasks": [
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_001",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_001",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_001/attribution/CREDITS",
+      "sha256": "bdcecc72588472813849ab4286bfcf8bc0313fad4f80193cf06b93006639f5f2",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_001/solution/provenance.json",
+          "sha256": "e3722bba8a67e0c4f16cf386f880c5b2c06aea4d4666a20588a1af782d3c466f",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_002",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_002",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_002/attribution/CREDITS",
+      "sha256": "a94bd6d25747422ce1641cd6fb0321396b416af886ce3dd9973b2227d45448ce",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_002/solution/provenance.json",
+          "sha256": "31e230ec6d847c1a008d0320912d57613a0ad93f7635b5943110d5169e03faad",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_003",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_003",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_003/attribution/CREDITS",
+      "sha256": "df898a422a6e4452fe98ab85e64a24ad620a2ae3daece7d474e8fddb1273e36b",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_003/solution/provenance.json",
+          "sha256": "7f7a3a30238fa07266ce5ed04609f6e41f54ac1af94f2d4e10155d4937c9b944",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_004",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_004",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_004/attribution/CREDITS",
+      "sha256": "b6f5dc2e5f6d6c879814a2eee506fa4ee0e465562c4757acdf4d8e509fd81bce",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_004/solution/provenance.json",
+          "sha256": "98d04ccde5d7e89d8e33edf6ccd8e3abde19ba4ec179386eb30d5ce63e8aeb72",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_005",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_005",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_005/attribution/CREDITS",
+      "sha256": "b31ef1ee89b4923b197a21178a2d0e67f164db3ef7c39493c81e7cdca498810c",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_005/solution/provenance.json",
+          "sha256": "1e4fed007160361a5fef44e85fe7e0d0d944edc473a3d05fd0a95d3eb2f95c6c",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_006",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_006",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_006/attribution/CREDITS",
+      "sha256": "d10862d3bfed902f58906a0c2ae7f96886febd4ce5ccea9547d628a52c649400",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_006/solution/provenance.json",
+          "sha256": "00ba712947b45b0be6af21d507ad495a51d908cb3e4a44ec4763fd2fef0dfc8e",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_007",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_007",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_007/attribution/CREDITS",
+      "sha256": "fb96614cb222f848f3f1fc2fae625e3f2138927480b82c880f5873770dc53cdc",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_007/solution/provenance.json",
+          "sha256": "e23e302710351375af1730a63cb004fcc5075e76cf15eeae1d0db2ada8ec871b",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_008",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_008",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_008/attribution/CREDITS",
+      "sha256": "82627145c2b405c4e2825446abf07541301b1d54715a9ff87d12dd35516ad892",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_008/solution/provenance.json",
+          "sha256": "7f1df0b8ca7d1b711cf7b3eacdcae73672908ba37fc3a98cf4a7c6b2e4d025c3",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_009",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_009",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_009/attribution/CREDITS",
+      "sha256": "f4a9521e11bda046f3610124b7b4f49a9e90490fdccd8f336c4020cfc05ebdda",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_009/solution/provenance.json",
+          "sha256": "df50db39d8b9e115fce91f187ec990ebbc37b749d8294532b80c9d03e1a620d0",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_010",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_010",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_010/attribution/CREDITS",
+      "sha256": "b46e8a0deb14e77fd7471fbecb15920f4936da0f734800190cac650d9b47051f",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_010/solution/provenance.json",
+          "sha256": "f5fd52d86a02775354749457e1e1cbf3d041344751951f83e9cdd115966f155b",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_011",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_011",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_011/attribution/CREDITS",
+      "sha256": "3aa918f7904c43bfa674b26a230fc284d496bde14168c8cf455f8abd14d84f1c",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_011/solution/provenance.json",
+          "sha256": "5a4fd0de690919b92141b501bc4ef978cf63cd817a0563544724ab96d5b84c18",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_012",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_012",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_012/attribution/CREDITS",
+      "sha256": "5e3e75fa17bfb070dbc2a2b87b7747b294b657f89a781a12c4daa4317d7566a8",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_012/solution/provenance.json",
+          "sha256": "49b82176ec381f0b3b723f1c142e4ff989e86e789be62d1a805b55c4bf0e31b5",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_013",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_013",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_013/attribution/CREDITS",
+      "sha256": "c26fd251f2672475111472ea41214db984a1438c3cf8ce744ce84551bb37619c",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_013/solution/provenance.json",
+          "sha256": "f826b07ac55d9cad4a92eafdbad35c4d900b31ab49d243cf1d1c3df48f426d77",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_014",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_014",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_014/attribution/CREDITS",
+      "sha256": "bc190680482dfed301c4c31f4c77937cfbc1d0b1378fca8c4d489250dd5d1672",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_014/solution/provenance.json",
+          "sha256": "9a6a02f47f0a4af0363e4c6db1b58e5c2a991e299f71206e6777b6e103c62715",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Text2Code/task_L1_Text2Code_015",
+      "source_task_id": "L1/Text2Code/task_L1_Text2Code_015",
+      "credits": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_015/attribution/CREDITS",
+      "sha256": "5e6a4785dadd9dde7d06a78b9e0282584f19589183ec5a77b00d076c18ada367",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_015/solution/provenance/LICENSE-DATA.md",
+          "sha256": "42b6253cbedc1b88046eb40bc33410a577cd6c6868bf69da4e11a21b9ef56b1b",
+          "use": "original_data_declaration"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_001",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_001",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_001/attribution/CREDITS",
+      "sha256": "8ee46686ee271d8c30ef83a48a99dd345b7ad0545f456c93a83fcf5c0a008686",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_001/attribution/input/CREDIT.txt",
+          "sha256": "8fdc9abb72f4f663d372f3145bc227f1187765377566cf3956e57000ddceabd1",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_002",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_002",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_002/attribution/CREDITS",
+      "sha256": "0a2a057f3d23ee0b2bf35adcbd494e7572458675ee2500d49a490f668a513c40",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_002/attribution/input/CREDIT.txt",
+          "sha256": "51128a8b615ba2ff664aa9aa6376f34545d5d1d1ee60f050f891d024ccae2ef1",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_003",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_003",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_003/attribution/CREDITS",
+      "sha256": "aa3e3d1d7e6028d9e362085678610a63993ee974316d91c977c0b5d7f115a7a2",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_003/attribution/input/CREDIT.txt",
+          "sha256": "608c73ef75f108c0561c3000d5e665053d088abdc5e33e696d99902a231ac150",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_004",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_004",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_004/attribution/CREDITS",
+      "sha256": "ef0892f7698aeca8d557b554ab91c33bde7b32bfa1b3a7293cc904c2f062c63d",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_004/attribution/input/CREDIT.txt",
+          "sha256": "1b86c15e52a52079c15171d9253c5f73c86471fdc5e92923bb6b20fa401dda1f",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_005",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_005",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_005/attribution/CREDITS",
+      "sha256": "45abd6bee852a23990c3ce67171bd073e504b08e02ae9ef225a824ccb99173cc",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_005/attribution/input/CREDIT.txt",
+          "sha256": "8fdc1d0544c793dfed25a3f5897d5ffe11d4b2f2b1049d56fc4a96cd1acc894e",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_006",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_006",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_006/attribution/CREDITS",
+      "sha256": "bbfb344077ab83b0d544ac644b5d4276a7f8c0c5aa794f68b898eccf24e664b2",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_006/attribution/input/CREDIT.txt",
+          "sha256": "3b149025600bb73b116e37dcf4e3ecf680972694d8e55069c33be4c1b8900cd4",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_007",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_007",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_007/attribution/CREDITS",
+      "sha256": "75630083b10812f940e1f1327397e777196dee8e9a2bb60bff190d0d93ac9bda",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_007/attribution/input/CREDIT.txt",
+          "sha256": "f7c4ea6cdafbf8463328674bf16e1dc5b3b6a49dfb989b85140856b06b4f4796",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_008",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_008",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/attribution/CREDITS",
+      "sha256": "e978baded97190dcddef93ce0edf99f2ac5963e53fee1435ba6e65d6d37be4c8",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/attribution/input/CREDIT.txt",
+          "sha256": "a1f349b1d39ab880d73bf20b3ba498d74c53c6bdae298c5234d489225cf75f63",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_009",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_009",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_009/attribution/CREDITS",
+      "sha256": "43c56e761d3d30a03d3ec31266cff476230c425c5d840280dfdd85d24ea24ae2",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_009/attribution/input/CREDIT.txt",
+          "sha256": "4c0c22bc255a9a59d65cbb74f26a6309f36679cad82ea0bf46434ec58cb3d713",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_010",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_010",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_010/attribution/CREDITS",
+      "sha256": "4d50086b9eebad9fd641a56585d0c54350d28e75471d9d1594f8b469cd395b32",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_010/attribution/input/CREDIT.txt",
+          "sha256": "2b2fbae6dbd7a4d1157ef6c3996c235383b4686ee710916f4b78979c8b2a3356",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_011",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_011",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_011/attribution/CREDITS",
+      "sha256": "421d1f35b6b493c0ff94509c4009493aef1e5c5d907d5485a4ba1fc160abe639",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_011/attribution/input/CREDIT.txt",
+          "sha256": "10aae356f5ba28f01746719ad88b0eb696aafce5567442800943a0c677aa9c6b",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_012",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_012",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/attribution/CREDITS",
+      "sha256": "50362c165d5c83dce18a1bf2a77c7c292195f788a67124d2da0902be21536e96",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/attribution/input/CREDIT.txt",
+          "sha256": "df379158fce28259fb748716e7f0a96f1613f8875eb08019c0a6e146bf6cc8bd",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_013",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_013",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_013/attribution/CREDITS",
+      "sha256": "9eea1fea887b180e52fc12f258f7dbb428e196d371027a2e11a65321d68b7866",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_013/attribution/input/CREDIT.txt",
+          "sha256": "e200c956b325f311fb49e9d15b758f9c004ee585432dc9327453989ae2cfa864",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_014",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_014",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_014/attribution/CREDITS",
+      "sha256": "af44d6b99c53df2a99f5a7c4feb77295e1bb3c106bc414428e95d601da645d5d",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_014/attribution/input/CREDIT.txt",
+          "sha256": "ce601c5bd757523101b1409114b398c541d890fbb1aa0b8514a7582010d3bcc3",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_015",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_015",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_015/attribution/CREDITS",
+      "sha256": "de2cb5866e2c7818150eeeb816eb4861e7452bb41ab6440eb3389aff4771b7a2",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_015/attribution/input/CREDIT.txt",
+          "sha256": "0572d756c1e65cc11c82a1873bdda0908ad46d50ae2806166c227a5e004512a2",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_016",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_018",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_016/attribution/CREDITS",
+      "sha256": "33350041098aa0d43552107ae5f2bab4922cdf769d8313ab6e314234b6c203c0",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_016/attribution/input/CREDIT.txt",
+          "sha256": "daa775e394256414a3674ddc47a7867e5748665199c1f2fbf786fda2cb45d6b6",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_017",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_019",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/attribution/CREDITS",
+      "sha256": "1f27c845fa1067493bf0ed99b788a357bfe6b569627daeceadfe80f979095651",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/attribution/input/CREDIT.txt",
+          "sha256": "150ed8d5a1747376c6bef6bd915aabca3eab12ee77bc4ba9835e97455f31bf82",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_018",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_020",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_018/attribution/CREDITS",
+      "sha256": "2ed521779f256f6fdd3b4b77c61582e1aa0a3740a20355db3a23e02501f755f9",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_018/attribution/input/CREDIT.txt",
+          "sha256": "08ad2b059a6e751dbd3ffdffe198013128af863458ff3f3c57ae727cf59b1af1",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_019",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_022",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/attribution/CREDITS",
+      "sha256": "9ac05332236f071648df0fc531d1ea9d7112e85a217c77eb903355e3d6247462",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/attribution/input/CREDIT.txt",
+          "sha256": "59714d86564b379aafa069039f877fb0a542e0404dff74795345b855b0a5940f",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_020",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_023",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/attribution/CREDITS",
+      "sha256": "65f48f0869eb3d10ad6a16fb7b76168ed9b8893390fc4956f703d1cbf093442c",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/attribution/input/CREDIT.txt",
+          "sha256": "c55187db37928ce8c2b41cbb4c03b77a4b45643ca6a8992abe7288d2629933d7",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_021",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_024",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/attribution/CREDITS",
+      "sha256": "556f731d0aabfecd0827a79493fdee917d24e0f3e2e7713a359080c9375dabb9",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/attribution/input/CREDIT.txt",
+          "sha256": "d073dc671097f87fed160590c1da41125763ea920c3eefcb718ef53b40d92fd8",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_022",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_025",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/attribution/CREDITS",
+      "sha256": "9b53654a1265398e8b93ce387005a16727cab537ec3e0046b5d19ee2f1a535c6",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/attribution/input/CREDIT.txt",
+          "sha256": "b5484940f74b315ef476a17560b233f07c5340137fdab1f6baf4e75aa48871df",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_023",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_026",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/attribution/CREDITS",
+      "sha256": "65a8bee7f0fb0b285582803ef476ab295d8be8996a3a9bd6741c4467ec27ec30",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/attribution/input/CREDIT.txt",
+          "sha256": "bfc7be1eab86141607bb1734255148cb35f2d4edbbd936ee75141975dce0d42f",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_024",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_027",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/attribution/CREDITS",
+      "sha256": "fa70c0414c66a3d55e57dda120c7e2fdad3ef72ef7300e9a51714e07204a9bee",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/attribution/input/CREDIT.txt",
+          "sha256": "ce8a1ca73a317b0f53af845b61eb23dd648787349f50555938b249f65a62dc50",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code/task_L1_Image2Code_025",
+      "source_task_id": "L1/Image2Code/task_L1_Image2Code_029",
+      "credits": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/attribution/CREDITS",
+      "sha256": "29413c39ced54c9d78edbfb759dd41a96a743794d5a1a1c26a2a60c131cb6031",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/attribution/input/CREDIT.txt",
+          "sha256": "71be7af0a53613c5f86e9c07f03a8bd480b6455ccca4ee7e68a6db8f38256ebb",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001/attribution/CREDITS",
+      "sha256": "36dcb606c133e3676b67333aa675963cf156b2d8e7ca09f8f9bebd4933f3da50",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001/attribution/input/CREDIT.txt",
+          "sha256": "ecb5693829085f6cc48f6c274a7846847f418d8b68e3bd6bd15812c18097c8fd",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002/attribution/CREDITS",
+      "sha256": "f707208e0a340a7597be57e7712f901206c2093a38cb448d2d0e554820f05bd8",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002/attribution/input/CREDIT.txt",
+          "sha256": "d58d1f37c0257177aa9b8a724a5b7207d8cc5cff803ea9b285dd5d5deb89b532",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003/attribution/CREDITS",
+      "sha256": "e44ed7561dae596cfa522b3d8d54df138cdb0d98a4ed162a8e2dbadded8458f9",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003/attribution/input/CREDIT.txt",
+          "sha256": "7b9723754269af7a145a6e0f74763b72b5c6daf1f48bb2fcd96ef0a2d8b01a4d",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004/attribution/CREDITS",
+      "sha256": "25ac6a21b245a9549552a90b17709a2dabff4fe276dc727b5f489b98a74d13b1",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004/attribution/input/CREDIT.txt",
+          "sha256": "3c5fb34fbb6110f063b7c28836e41450af5333acbeedc94d5dcd2763cf84e6a2",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005/attribution/CREDITS",
+      "sha256": "390fe2127349cd50580e2cc042aa25030df8244388cf23ebee47bf85bfde1fbd",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005/attribution/input/CREDIT.txt",
+          "sha256": "1eaa60eb842607ce95cc5a1c1a04c3cf842bdfeafaf7d8b8a279101548f50231",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006/attribution/CREDITS",
+      "sha256": "d3e59d00b7074a00ecb89b75b95b9886be1518e890b31ccad349c609009ef133",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006/attribution/input/CREDIT.txt",
+          "sha256": "a954695259c21c4e4d61b394ce964f95c473d5be9d5275593b91251f67d3bce1",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007/attribution/CREDITS",
+      "sha256": "473f5190d6a10b71c9f8340392f67f0995929fcb28fc57bfadc254e33c016bf8",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007/attribution/input/CREDIT.txt",
+          "sha256": "9cef65d7cbcd6e23e5ff4c8ea23d2520bc7ca871fcbf6166264e62a3b65b35d6",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008/attribution/CREDITS",
+      "sha256": "c512ad70113df988c453045aec4a02ed586d03521512a20643b37f78725c274f",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008/attribution/input/CREDIT.txt",
+          "sha256": "e21186ccfb652254e181dd3c5d6123108c4bdb7fbe2d4498fd3e49bb16b00090",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009/attribution/CREDITS",
+      "sha256": "09f74ea4e201b95feb2cd9d90f432a0f1580f5364c0d7d4c8e2580fc92ea5814",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009/attribution/input/CREDIT.txt",
+          "sha256": "60013ee2930f6b4b3eb26520055f0ebcae682772cd76aeb70b63262bb6ec37d8",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010/attribution/CREDITS",
+      "sha256": "52fd4bb3b7452ea94afb69d78332120ec211f43d89b782ad0c3d239714e4895d",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010/attribution/input/CREDIT.txt",
+          "sha256": "30a33c5fe68767cb6c480496e0c20f3b574bd2cbc95454fde729fc3af379b088",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011/attribution/CREDITS",
+      "sha256": "1af9ee7174829fac5ae8f19dbf7267e4c342234a699c54784ea98b42a56176e0",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011/attribution/input/CREDIT.txt",
+          "sha256": "46766621787de83192ba1c1713b85755205618006c60537c39e3cc26fd9e1bec",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012/attribution/CREDITS",
+      "sha256": "842ed0dbe30a74c7e61ce91e9461d021f30675b404bea90e99384b89dfc7373e",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012/attribution/input/CREDIT.txt",
+          "sha256": "f64c4dcbc29ac709ee19cd65060796eb750739b3f95063657551c539c719572b",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013/attribution/CREDITS",
+      "sha256": "01165c4aa76f0da789f8689f996a6b21dd220709fd6732f9bc4fe08458fe9366",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013/attribution/input/CREDIT.txt",
+          "sha256": "2d51361ef0103d5777462c5c814204eff3e3931e6b8e2657380cf5777f9e7ad8",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014/attribution/CREDITS",
+      "sha256": "0ef2295a2a3a7f86bb7b6205a3e672703d27c60418925d845312bb24078555ea",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014/attribution/input/CREDIT.txt",
+          "sha256": "53e330d4c1d5a6e26c01effdab5b213334a6251250d9d25094d0b03cde5332b3",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015/attribution/CREDITS",
+      "sha256": "105fbc30f30838e5cdbeee4060a652b2734684b017211ad66176bfa21ba627b4",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015/attribution/input/CREDIT.txt",
+          "sha256": "651b655995e309d1db1d45e5bf202422e86743fee51c29a0e9caa15b9ac877ce",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016/attribution/CREDITS",
+      "sha256": "49ed7fe1617a7c2abad0dec30e2bf604de710ea0e47de873c247ba6c452d6758",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016/attribution/input/CREDIT.txt",
+          "sha256": "c10c53d2ef4a42c857bcb4ef4ba4adf677a47d892a9e09de1bfa6c2ff9d28027",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017/attribution/CREDITS",
+      "sha256": "15f881983133e666d1ed70807329077dbd7e7b4bb4c2fc7e38b28881a0e1212f",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017/attribution/input/CREDIT.txt",
+          "sha256": "a2f6d89f94b947859803200054767be73cc2538190c05dd4d856fa51a3fc74c6",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018/attribution/CREDITS",
+      "sha256": "0a8ce6841b2806c07cc927bba12f362bb8dec91dae32f83c45b02dacee4528df",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018/attribution/input/CREDIT.txt",
+          "sha256": "df4b0baed5ff31dcc3df81eb74af830b5f6ba2d1987df33cda19951a0cd133ea",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019/attribution/CREDITS",
+      "sha256": "08f048514c5afa51b8ff65c03862f9f9c7e9cad8a33bce98e88600985cfe20e4",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019/attribution/input/CREDIT.txt",
+          "sha256": "c799b83171c67124362d300c93b1ee9919b875ac56c3d76039c9edaa7b643020",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020/attribution/CREDITS",
+      "sha256": "46af76b95f25f3df7e13a291f1fce1270ecdf988f060ab74a91b511b7e19b9d0",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020/attribution/input/CREDIT.txt",
+          "sha256": "c7a963f1d9deefab465729c83e2f2ee187f09b8d76e8f8fde75d3fbea238c2c8",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021/attribution/CREDITS",
+      "sha256": "64419376acc1fcd46d2491b3813e7d8317087bf2bb053b361d176ca9867f1ce6",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021/attribution/input/CREDIT.txt",
+          "sha256": "37b6e6ca6fdbc9a0a1b09769b7b6a10321856a070f8c0567bfa160f9c93139de",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022/attribution/CREDITS",
+      "sha256": "9636ea3bf021c2787e117f8718cad71bb6b67200a9881f92ca30eb0ef2ffc5b7",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022/attribution/input/CREDIT.txt",
+          "sha256": "2ccb2edb8bea012d21524fccddb6b6692d4470a17e255691bdd90647d61be0a9",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_026",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023/attribution/CREDITS",
+      "sha256": "9decaa384234e41d2cf7ae2774801a8e26135464b070006f3530bd75bdf39c5a",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023/attribution/input/CREDIT.txt",
+          "sha256": "c6524164b73bed181b0961a4ca9ce92d6d6b06d788fb8e931df00c1ad73159fa",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_027",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024/attribution/CREDITS",
+      "sha256": "656ccb0261fe50c782192410ab025b8976612d213d8ac0543e90b512916e6b62",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024/attribution/input/CREDIT.txt",
+          "sha256": "fce1843e6d41c16cfab46106166085398ef90a5fbcbeae56a8fec25f5c05f882",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025",
+      "source_task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_028",
+      "credits": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025/attribution/CREDITS",
+      "sha256": "5f353f406b40f5a62a75297dedb7056985ae088c51eb68ff26f234fe6b834553",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025/attribution/input/CREDIT.txt",
+          "sha256": "43d0569c21f999b7fa6b5fe29fa24cdf26c93664a60ed89d822d93651205603b",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_001",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_001",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_001/attribution/CREDITS",
+      "sha256": "8531eefc45c1c1be2c123838709a36c70024098f48762d3e162c6d3a5b9c2a17",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_001/solution/provenance/CREDIT.txt",
+          "sha256": "a37b1e2c247202cbbc8375d7c54d46dc2d718cf1bfe491bd1da8c06d89973a06",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_002",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_002",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_002/attribution/CREDITS",
+      "sha256": "e46a71b36ac34b04e7057ddbfb9799f7efbe97aa4087411d8b8ac37f7ce7c21a",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_002/solution/provenance/CREDIT.txt",
+          "sha256": "d2fa5a13ecc0a1e5561283e9140d1645c6f4e58b83f548fcc40a429f8375b5e2",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_003",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_003",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_003/attribution/CREDITS",
+      "sha256": "aeff36c806b5e83b295146f22e32644ff8bcb4be4c3aa5a5b6624c8cebfd5732",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_003/solution/provenance/CREDIT.txt",
+          "sha256": "82a118c321a0baee368f8ff57ccb70b31695fbf22f4896272c0ede3b0e62d6bd",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_004",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_004",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_004/attribution/CREDITS",
+      "sha256": "26961a86f5eea97b6cb623d3d93a2a8a6808c405cdacb916732f13fa056e5147",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_004/solution/provenance/CREDIT.txt",
+          "sha256": "0d099b6ab7663d5a8c29a4cb9deba38253fcb104cc5e66a33e55c42f17dbf981",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_005",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_005",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_005/attribution/CREDITS",
+      "sha256": "99a3d7380a00a878feca4bdc48c03545e8b966d48e20f6c91514189015653ea8",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_005/solution/provenance/CREDIT.txt",
+          "sha256": "4dffd5476eb164bdcbade866811bd3150d4a92d34ad1fb8e0584e6ff4bb5599b",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_006",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_006",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_006/attribution/CREDITS",
+      "sha256": "4f0242e9b59ea4962ea0b0c7f58e15eb7b6bf55b295a520e5796b2f5a41c490e",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_006/solution/provenance/CREDIT.txt",
+          "sha256": "e442ec49c85d713f72b85ca04cb96d8fdfcb6a49e31c3936f20c7e513a0d5899",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_007",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_007",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_007/attribution/CREDITS",
+      "sha256": "83a85680678f480320ae62b1fff61821a2c85bbeb06cb07cc1d6fd181c8f280d",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_007/solution/provenance/CREDIT.txt",
+          "sha256": "f7dd61583dab903be6d4c37b8e669e1b20e7ca939548febf4c4572b608724e0a",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_008",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_008",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_008/attribution/CREDITS",
+      "sha256": "fb4a101b95dcd78b83c2977f48aeb9efe7c42fa32b27dc5f67319ea1fb78d962",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_008/solution/provenance/source.json",
+          "sha256": "ec368cb743b8307444b8aaf79080245c2c018b2119d2bc1a97cb75bee47e4af8",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_009",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_009",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_009/attribution/CREDITS",
+      "sha256": "5bdbcc7544bda14b9895068ae869423a1c0dda0d7be1a63bef6d35d707e7043c",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_009/solution/provenance/CREDIT.txt",
+          "sha256": "ccae667687f6b8b04b7e822fe57dba19ec7d8e557d06dc2a95d8cee2a921384b",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_010",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_010",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_010/attribution/CREDITS",
+      "sha256": "2a2fef418ac3673c16af730e8b383677ba5094282ff80329c65c349bd42a5993",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_010/solution/provenance/source.json",
+          "sha256": "f07d39c3a929d95357e900ff89f32ee3c7ac8cc9c9b4be1793da5f6a03945eb4",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_011",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_011",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_011/attribution/CREDITS",
+      "sha256": "78834e08e062c05719c62f479aa14acef69e808e12759ccf42f870ddddefceb0",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_011/solution/provenance/source.json",
+          "sha256": "91eeb7b77e1757d7b0ce159a1af42394ebbd372e19ff06b5de430317b7aae5a4",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_012",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_012",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_012/attribution/CREDITS",
+      "sha256": "06e57c9580604f7e2a297c5b23894091962ab0619650457a29b7518c76eaeec6",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_012/solution/provenance/source.json",
+          "sha256": "05755c1e04baad181949cf91b1219cdd0909d71ca7f5941a233e6fd42157bb41",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_013/attribution/CREDITS",
+      "sha256": "7389ea4485468a20dfa05d98a53a8263c274634aa401d1188999c215bd353738",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_013/solution/provenance/source.json",
+          "sha256": "c6a4ccb294fb97525e73390283738f86d7a4fca479d2a152642529b4887b10fb",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_014",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_014",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_014/attribution/CREDITS",
+      "sha256": "48e13923d8a3b4104f6c7f6ebe3dc8bc484a7ea9a09ac4ac5f0db8d932351200",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_014/solution/provenance/source.json",
+          "sha256": "eebd8b22a26163216bed5985f878705081c157576ed46e672f083da1b731296d",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_015/attribution/CREDITS",
+      "sha256": "ad1d8a319f627473f339496b08a23059f61d3a07bf5cf23392b9cee6801fd7b0",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_015/solution/provenance/source.json",
+          "sha256": "140a047c0f0481ce93d11698e2d653da859e8c9c660f9e95cded6fbe79ad1188",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_016",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_016",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_016/attribution/CREDITS",
+      "sha256": "4994dea6b933c32e2d25f0cdfcfd0ca5b071a33de9234c6507d5462b1d876776",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_016/solution/provenance/source.json",
+          "sha256": "8f94763b25d070099a26c55603c702729fdcac006dbbe1fec889f66713d6a83f",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_017",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_017",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_017/attribution/CREDITS",
+      "sha256": "836b0976d1a7150f97ddc887ffb066b479a4cf085cb24ba6c8f431f50bdfa71c",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_017/solution/provenance/source.json",
+          "sha256": "d5fff38e8219b5fe90bf6ac22a645ce8c45f4283fe9c66391d3108d4466ef9b1",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_018",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_018",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_018/attribution/CREDITS",
+      "sha256": "4a163b2af6a23456f065abc42dc4703d4dc438935c77ae8a34a27e6806eb6d35",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_018/solution/provenance/source.json",
+          "sha256": "00fd69c1d3c1c1de9c6b813fc1d372c26244bd74e9da7c8bc5ac3150fb2d4844",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_019/attribution/CREDITS",
+      "sha256": "3f4e9ff20639f967f14870ecb1deb7a58b0fa94306438834e682c669a68ec382",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_019/solution/provenance/source.json",
+          "sha256": "bd1fde4307a3f2abe0f59cb5dfdc9a71bd9a2f5fddb067172f841138c8b58e96",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+      "source_task_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+      "credits": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_020/attribution/CREDITS",
+      "sha256": "87bfc36c84e294dbeddf8da481adde7c45e2a0554b5546ecfffd3441e8ce372d",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_020/solution/provenance/source.json",
+          "sha256": "56621015d785779a38542f8651ff91611059c4c02bd7c412705ad7c2eacbfaee",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-001/attribution/CREDITS",
+      "sha256": "57c4a28f77b3eea4ffe9ae933a1721eb83fb6033b46f13248955ee59eb032296",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-001/attribution/input/CREDIT.txt",
+          "sha256": "b3e1aef8138b3b8370dbc133e9785aae8a807c66e973109930b58b951c67cdeb",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-002",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-002",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-002/attribution/CREDITS",
+      "sha256": "6507807d18850d3f9bcdffef1549b2ce4ebec9472294e90f0f70a256151e23ea",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-002/attribution/input/CREDIT.txt",
+          "sha256": "b075a04ca406e2fe9bd6865ea6e20e65c9daa62be94f86dff64219af676885a2",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-003",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-003",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-003/attribution/CREDITS",
+      "sha256": "f09db182abea63a2d03aa22eba6e42abd2e305e7ce204a11909d179c06dd4c75",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-003/attribution/input/CREDIT.txt",
+          "sha256": "ed62c78e13057e22f32ccec76a24cfdbf44f2a32d144e998d0d80ed9fa735d89",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-004",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-004",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-004/attribution/CREDITS",
+      "sha256": "5d98d7a27c02ea45dc0313afa1b4def39b33446c8ef6abb66b0c74de5799d4ee",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-004/attribution/input/CREDIT.txt",
+          "sha256": "b6b22272ddb457159c6bf72e46c5952e064bb2da01845fa8f283302ff4f4200a",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-005",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-005",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-005/attribution/CREDITS",
+      "sha256": "62509854ee9b693618bc66557483061f589c4fef444a5f78bc5ef58f79fd464c",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-005/attribution/input/CREDIT.txt",
+          "sha256": "9196cb756c7fde3c416539717c948241a04f52f08df05ae0f92eb1cd4e71efe5",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-006",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-006",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-006/attribution/CREDITS",
+      "sha256": "8913e396de6fbcd9c2f74bdedc39d57bb33424d7bbf414058e2c5f564dbf78dc",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-006/attribution/input/CREDIT.txt",
+          "sha256": "a8cc23e2167ff099f3880f068ed5ac44c413fb5221086d5defed1a74ea539a74",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-007",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-007",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-007/attribution/CREDITS",
+      "sha256": "fb6745b623bd6ab8df00b8cc70d333b89564bbf556d142c45b9d616a3cbec261",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-007/attribution/input/CREDIT.txt",
+          "sha256": "d91983f0b59179ee8a4332d40972f73af501c293a8338f1296aca0d6c704b0d8",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-008/attribution/CREDITS",
+      "sha256": "ecf57e6d001608120188842cef2b8006d3008acd22678e111275c68922f80b29",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-008/attribution/input/SOURCE.txt",
+          "sha256": "ec4f637bbeb3dd594fd681b1b8226ba5e43d95b42101cca377e04f94698871e8",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-009",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-009",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-009/attribution/CREDITS",
+      "sha256": "7be5d282f92abcf3790f9dd8fee71db20eb6d950716e67c6c2cc831669397f9f",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-009/attribution/input/CREDIT.txt",
+          "sha256": "e75de8124872ae36023775e0b747f6d2c915be93774b753126f62c19e3d1185b",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-010",
+      "source_task_id": "L2/Reference2Scene/task_L2_Reference2Scene-010",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-010/attribution/CREDITS",
+      "sha256": "d4197ee7cd151d5f6157bd11b02d2a06ff5e153ed7879291d7633d0fa91051d7",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-010/attribution/input/CREDIT.txt",
+          "sha256": "c1774db0cc0ca5cfc30db3edf0df7fa40f1c8b89292520711cd5ad66c06c9277",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001/attribution/CREDITS",
+      "sha256": "b1ab491af9a4a00b5ba1b0f2e5e20f420073c142afdc7f3abbf0ae07b5a1dbbf",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001/attribution/input/CREDIT.txt",
+          "sha256": "20c6055327b7f34ed06981a34e15af4baefc76b72a8d10347bc8ed1f72188442",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002/attribution/CREDITS",
+      "sha256": "7fe53d5120732a2d4f85fb2025cec6e2d8a8779346cd5863a0edcf41f3200c4e",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002/attribution/input/CREDIT.txt",
+          "sha256": "358e0f125a4d44966b7f97a63f1cc220950a8e747c0b75cb463a93d2c59def51",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003/attribution/CREDITS",
+      "sha256": "9bca6c2ad112f13b6b9ee6a3f5e9575360f532dff77cbb9b368878f5b7822668",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003/attribution/input/CREDIT.txt",
+          "sha256": "d096ccadde49925b9a502f4744092ae71189612f0c25fe7f12166fe908a2e2be",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004/attribution/CREDITS",
+      "sha256": "f01608d60ba070a1ee6a8d53b782fc71dff6af92ccdccfe97d6a696aa33fc462",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004/attribution/input/CREDIT.txt",
+          "sha256": "0225c548d21df685ed63e545de741ab375247c1bb3bf24ca69b8222801058a2b",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005/attribution/CREDITS",
+      "sha256": "e4052a5daf9e193c0f17c48bd4ef7a6007e6f3af3674c1b6e0760b07cc0ef5ea",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005/attribution/input/CREDIT.txt",
+          "sha256": "0fc8706d5db44aed60eeebeed849e280a61bc01842c2b98bc28910c15021dcf1",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006/attribution/CREDITS",
+      "sha256": "a068ee1342872b43c40660af3f433193b64d4345fd39b367627e7c69cc668dca",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006/attribution/input/CREDIT.txt",
+          "sha256": "da985069c548fe4fa403bc7740462d0ad7d53b7d01609eaf2c5976ac47f29503",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007/attribution/CREDITS",
+      "sha256": "7d2ec9730fb31f813f262fdd8537c082a484ac0a56cf486240f60e548bca677e",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007/attribution/input/CREDIT.txt",
+          "sha256": "687a0d338d93d5287aa17c9de2893507ae3ce6a0b5e09f8c97bc5903ad14f2ad",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008/attribution/CREDITS",
+      "sha256": "70d9902eb16b26c2bb9bf898f6e336f2df4bc0090da30c1849abed9ab21186c5",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008/attribution/input/CREDIT.txt",
+          "sha256": "e8bea7172c309d33d01c4f0a4fdff96e57d3471016f772a79b2ef9efa2ebe0c0",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009/attribution/CREDITS",
+      "sha256": "996298078abf749e369e40495b27a065210bf172a9a4a4c3fea9e1f2aef220c3",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009/attribution/input/CREDIT.txt",
+          "sha256": "93cce67720d47e3c4a2fc22927ea176aa62f3a160509e09c1597d33f20e76da8",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010/attribution/CREDITS",
+      "sha256": "b82d77622e95742ed256f1fae72c13c1563e35112cf376b3e2269c0d0ec527d5",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010/attribution/input/CREDIT.txt",
+          "sha256": "f273919f1b49961e11ac1c3790380f02e28b6eacbba335af7f3bf584c6abe3b6",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011/attribution/CREDITS",
+      "sha256": "9a0153a7c5e8e798618f5af399473936d0c4ec59be7bb39a4cabf034de4c66d4",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011/attribution/input/CREDIT.txt",
+          "sha256": "2e847bac8df92875cf2138fd2420987b6dc2444a26f903a2209dbdc07e5d82e9",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012/attribution/CREDITS",
+      "sha256": "ef6f4a8d13749a5104bafbe6add46acc083b72c57db6d936ada230b2871e4a21",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012/attribution/input/CREDIT.txt",
+          "sha256": "2c5562c8f22aa4fb9f2bd75e1cccf0d101be7ea8affaea9da5a91c24eedc2927",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013/attribution/CREDITS",
+      "sha256": "8f465c6e0159aa5174b25fc9eb10e46f763147f08a9ceb669085de6a76ed611a",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013/attribution/input/CREDIT.txt",
+          "sha256": "3ced72b970e8ff0902a51e0390059ef44b18e96c3daf9bb796a530ae675ba0d3",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014/attribution/CREDITS",
+      "sha256": "05f666736747ca5a7ccd345aabcf0fffaf73a18c61a3fc48f8335c658bc07bc7",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014/attribution/input/CREDIT.txt",
+          "sha256": "9e01cc322f2e7f62650eaa3942f191dced86dac9d788f681ba76823785e7695c",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015/attribution/CREDITS",
+      "sha256": "12dfe11690d19b2358baf26d725e2fce11948f01a5a1986fd7fa75254cb903f2",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015/attribution/input/CREDIT.txt",
+          "sha256": "669dd50a781f3db4f7ef082ab389a262b42cdf7717739d3e3ca338a4eb5b0a3a",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016/attribution/CREDITS",
+      "sha256": "a421d91a47bb7f479a2727684ba183e4c5c4c17bea8a44e654204d7fa98f7537",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016/attribution/input/CREDIT.txt",
+          "sha256": "5e47483c48f7d31c1f0a2419ac771706028c569dff4a2ce19c81afb5f78b232a",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017/attribution/CREDITS",
+      "sha256": "e1318da56d3f515b9059edc07aea1800d21640609373a3d1e8855beeb75456e6",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017/attribution/input/CREDIT.txt",
+          "sha256": "0428881d8683db5d5b04f0d570640c930912b0ee7c945b6c6c92098c5b9b236c",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018/attribution/CREDITS",
+      "sha256": "f7e95b19489d2da7072fcc3e8f944ebac6badc6650f5c2469b0ea70641ee1a75",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018/attribution/input/CREDIT.txt",
+          "sha256": "8ab8122a5f092e11f3f4ccf90cddf5262cf0b74b6de78ba8fc85c9f257346663",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019/attribution/CREDITS",
+      "sha256": "8eb98abc7eb75283803ca59caad6bc1de8c21d4ce8b548cf218ec5019499e51a",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019/attribution/input/CREDIT.txt",
+          "sha256": "6ddafdaea37d1c9518c94d82b38d75e3cf77ca5e7c76dadcf7b9d4f9663d296f",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020/attribution/CREDITS",
+      "sha256": "5395a8e8fc542450949a1e3ed3a9d631cc14ee23a2dd69932946448914f21a41",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020/attribution/input/CREDIT.txt",
+          "sha256": "c10147d7b998a310dc2854e4cb7a58323512da1398051f1a11a05a9e8eec03bb",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021/attribution/CREDITS",
+      "sha256": "0732032e610d55c4bd8b1d333ae3673f6e1f5789c951e71cafa2af56454a30a5",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021/attribution/input/CREDIT.txt",
+          "sha256": "9d7103bef3a32bb418bc1a67761ebcd37f5da14674b33f9015d41eb225c5be33",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022/attribution/CREDITS",
+      "sha256": "eeb7a6795f12b1e7b50393d0958aeff6e874a8cf1bd5c0f623a8835748bda453",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022/attribution/input/CREDIT.txt",
+          "sha256": "d86c5101bc58aa4596a5fc5670e82e0049bd7b0dff0f09d4ea12368cc65711df",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_026",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023/attribution/CREDITS",
+      "sha256": "bcec4091e393c9a13b247934c78ef6919c35cf75d0c88c4a1702fc8b466e1263",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023/attribution/input/CREDIT.txt",
+          "sha256": "75cb197b2620b6e84d8720bb38ac07379063bcd06ee1ced55404be3e62fe29cb",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_027",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024/attribution/CREDITS",
+      "sha256": "170563e7bd2ee5f3c7842d09454cf10851d723731c4a3e7779fc05b64648b6f0",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024/attribution/input/CREDIT.txt",
+          "sha256": "99426a622b64528156b847871a4de62721816130f0ce350dca90fb4502fb60bc",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+      "source_task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_028",
+      "credits": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025/attribution/CREDITS",
+      "sha256": "4b6ff8f18bf306483cf9c7d47e845a64ecac75f42367b1c87157feae1ed9129e",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025/attribution/input/CREDIT.txt",
+          "sha256": "403813bb91d98c8e8c735b34dfdc478189368c2f6994e2d1167df9849da286c2",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_001",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_001",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_001/attribution/CREDITS",
+      "sha256": "9819ed63bf3e23b79c743d17ddb083267a84b5338c2edc987b48fd8f96fc9f97",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_001/solution/provenance/source.json",
+          "sha256": "86efe9e88270c461e2b02ff81e63bf83fbd8cf9b3b0abd5583477611a824de68",
+          "use": "attribution_fields"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_002",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_002",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_002/attribution/CREDITS",
+      "sha256": "25bc644a21a153983ebf1f7a1bbdba0027e4b6d4b3ae35740ce1db69ae42d783",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_002/attribution/input/SOURCE.txt",
+          "sha256": "d3b1f559d0e19980a1b34d3bbc35ebe3412a002026a419e999cad008d72a4782",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_003",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_003",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_003/attribution/CREDITS",
+      "sha256": "f8331438285d3a273a234ce39671de0d724cceac84cae3f1cbccada854bdfa48",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_003/attribution/input/SOURCE.txt",
+          "sha256": "9f12af59f51c295d19361c12534f9581f1cd0bb3e26878827e3737f427649419",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_004",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_004",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_004/attribution/CREDITS",
+      "sha256": "5e93e4edc96223299320bdd7869faf56c0e6e114e1313aae79fe25a170e3c6a8",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_004/attribution/input/SOURCE.txt",
+          "sha256": "4b19c10822d5854f237135ff7ff0722007d18408bfc5b8e6ce3951a12cbcd009",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_005",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_005",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_005/attribution/CREDITS",
+      "sha256": "8ce650661e36a381b2552f67e23966d12089d30517b64ee2c6a6955f57de5897",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_005/attribution/input/SOURCE.txt",
+          "sha256": "e901492ece3e466c117e3e34205164edbbb75c90dd368bc8d1229e126676aaf7",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_006",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_006",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_006/attribution/CREDITS",
+      "sha256": "714caeeb135ce1e205ceb08c2707861713ce6b1461e2d4eb02f122034d76cae4",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_006/attribution/input/SOURCE.txt",
+          "sha256": "f877fc8099ac390241c0bf678461084eba20f3099338fc6c65aa82c0acd19e51",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_007",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_007",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_007/attribution/CREDITS",
+      "sha256": "5dbfbd2588a9819c4d22464346efeb1c01782cae1c15b27dae4d72bf3aa91d28",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_007/attribution/input/CREDIT.txt",
+          "sha256": "193cfbdbdaff9cb46fe62ba13467fdcf0155bc4460ed88244c2d14cb63409f27",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_008",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_008",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_008/attribution/CREDITS",
+      "sha256": "9a81e8529c0a816673a3f492ce67699bb9a2bc9dcbeb035a438d4309da555576",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_008/attribution/input/CREDIT.txt",
+          "sha256": "95ae764dd05ff047872bc9827b9f0410585103342955e1b15746b2c424072dc4",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_009",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_009",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_009/attribution/CREDITS",
+      "sha256": "98864dcffc2c95e29dae46b4e993ec7af9a054e3bd44d63dec3631efbb6c87ed",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_009/attribution/input/CREDIT.txt",
+          "sha256": "f4aecc97cffd0b9c32309a534674772d7f51a45c2fc8d9e0c39516f9ad999b11",
+          "use": "verbatim_notice"
+        }
+      ]
+    },
+    {
+      "task_id": "L2/SceneEdit/task_L2_SceneEdit_010",
+      "source_task_id": "L2/SceneEdit/task_L2_SceneEdit_010",
+      "credits": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_010/attribution/CREDITS",
+      "sha256": "f9b13772f1ea8ca5db5a82bb9d821a3fc0663e363509e63b374f3e196ccc29e7",
+      "sources": [
+        {
+          "path": "data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_010/attribution/input/SOURCE.txt",
+          "sha256": "3db119db053933b42869230a6faa6680f26ea426c0e5cf05514d20e6c7414c46",
+          "use": "verbatim_notice"
+        }
+      ]
+    }
+  ],
+  "license_summary_sha256": "f26cfb9d9c412d3d2172743689e27010fdc7f308583c75551e7a57cf12a76d7f"
+}

@@ -1,0 +1,19 @@
+{
+  "uid": "eee62b16cd534d7b802aa3bb069e8b0f",
+  "name": "Radial engine",
+  "source_url": "https://sketchfab.com/3d-models/radial-engine-eee62b16cd534d7b802aa3bb069e8b0f",
+  "author": {
+    "displayName": "DmitriusRus",
+    "profileUrl": "https://sketchfab.com/DmitriusRus"
+  },
+  "license": {
+    "label": "CC-BY-NC-4.0",
+    "url": "http://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "45df5dbd127d146a031b8021627a6afcfb984ed11593f85089449de4375a6c90",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

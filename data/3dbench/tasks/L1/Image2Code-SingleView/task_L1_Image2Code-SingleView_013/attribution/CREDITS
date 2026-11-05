@@ -1,0 +1,15 @@
+Task: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013
+Original source task ID: L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013
+
+Original source notice (environment/input/CREDIT.txt):
+
+双端滚筒采掘机器人
+NASA and NASA 3D Resources contributors
+https://github.com/nasa/NASA-3D-Resources/tree/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Regolith%20Advanced%20Surface%20Systems%20Operations%20Robot%20%28RASSOR%29
+NASA public media (upstream: free and without copyright)
+Changes: static display normalization, original studio lighting and cameras. Source meshes may combine multiple physical components; reconstruction must preserve editable semantic parts.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

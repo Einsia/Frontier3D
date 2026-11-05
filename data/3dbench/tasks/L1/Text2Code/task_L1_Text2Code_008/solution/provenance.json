@@ -1,0 +1,27 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/sealed_enclosure",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/sealed_enclosure",
+    "license": "CC0-1.0",
+    "changes": [
+      "Standoffs extend from the 4.5 mm floor to the lid underside at z=37."
+    ],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "d236828c8bf9b02a3ec473e3307ee887ae5ace8fa8f2682091eeb1c45fb29001",
+    "assembled.png": "9e52542eaa4cbd6280d6498b85208790368331df6a5b56a6cc0fbba7f88ada97",
+    "exploded.png": "62c99e98a461882b6ec6fa502f4671f8c629f78b704ba66a17e0b5dfcf34a149",
+    "front.png": "4e98e1951f4864ba5f560d0c953381511162a5550c535007cbece55830d86856",
+    "geometry.json": "0a5328e195deb8e0e0b3c96d09113eada81d246e1f76fd879b36b556b4f383fc",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "605d22dc6a1a0165e5d52ea5c9c9d4c01b6898d23ff3cf24321fb373654a341e",
+    "qa.json": "737f06431419bc4c5c79327d8b1b7b03d4fb5235a80ccc6b3aedaa1e141d414d",
+    "scene.blend": "f42ec470df35729a3a7e7f4dc69526fc0b7aa30f01e11c6f0ad7afa5f4e002c3",
+    "scene.glb": "954f42129c000c0fa3104d1b92fb18c2e88d73a0c40149a03e53fd2cb95d5288",
+    "spec.json": "254cf513130181dd7d6366d38d19e7a2902e6aad782c3a1c7fbc029b60b72ffe",
+    "top.png": "2849cfcf33575409cc32c3dcdb25591d4bb988ea36238defcc640cbf5265a953"
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "篷膜是否保留高低尖角、中央下垂曲面及弧形张拉边缘？",
+      "source_quote": "Preserve plaza levels, canopy curvature, circulation space and warm/cool light contrast.",
+      "weight": 0.2
+    },
+    {
+      "id": "D02",
+      "question": "篷体支撑是否具有可辨的斜柱、分叉支架和连接篷角的细拉索？",
+      "source_quote": "white tensile canopy with posts/cables",
+      "weight": 0.2
+    },
+    {
+      "id": "D03",
+      "question": "露台边缘、平台底面及右侧阶梯是否具有实体厚度和明确的高差连接？",
+      "source_quote": "canopy supports and level changes require geometry.",
+      "weight": 0.2
+    },
+    {
+      "id": "D04",
+      "question": "玻璃建筑立面是否保留窗框分格、楼层横向构件及转角的局部结构？",
+      "source_quote": "glass-fronted building",
+      "weight": 0.2
+    },
+    {
+      "id": "D05",
+      "question": "公共露台栏杆是否具有连续扶手、分段立柱和板面组成的可辨结构？",
+      "source_quote": "public-terrace railing",
+      "weight": 0.2
+    }
+  ],
+  "limitations": [
+    "本计划仅依据给定文字与原始参考图制定；未提供、检查或推断任何候选产物。",
+    "主参考采用输入路径 input/reference.png，对应公开证据 reference/reference-0.png；所有区域和框均固定在该原图的归一化坐标中。",
+    "未提供 legacy-detail-20261018-v1 的独立协议正文；仅能依据本次嵌入的合同与检查规则扩展计划。",
+    "单张未标定照片不能确定真实深度、隐藏表面或唯一相机参数；其他尺寸只按比例判断，不从像素估计生成精确数值要求。",
+    "1.1 m 是任务规定的栏杆尺度约定，不是真实场地测量值；文字未指定具体栏杆段，应以公共露台的代表性栏杆判断。",
+    "文字未规定篷柱、拉索、台阶、窗格或店招的精确数量，也未规定厚度、曲率或净空数值；这些只作语义或局部形态检查。",
+    "天际线与小店招允许简化，不要求恢复准确文字或不可辨的远处结构。",
+    "独立可编辑性、实体厚度、隐藏表面、尺度及相机变换需检查原生场景，不能仅凭单张渲染证明。",
+    "渲染器、色彩管理、曝光、输出尺寸及提交文件规则不作为内容质量检查；相机平移作为明确的几何关系单独列入数值检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景按米读取公共露台代表性栏杆，沿世界 Z 轴测量相邻完成面至栏杆顶部的高度。",
+      "quantity": "公共露台栏杆高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.1 m public-terrace railing height as the task scale convention, not a measured real-world dimension.",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两个保留相机的世界位置，以主相机局部正 X 轴的世界单位向量为方向，验证备用相机位置等于主相机位置加该方向乘 0.30 m。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens;",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "张拉篷膜及支撑范围",
+      "polygon": [
+        [
+          0.164,
+          0.347
+        ],
+        [
+          0.482,
+          0.342
+        ],
+        [
+          0.591,
+          0.499
+        ],
+        [
+          0.588,
+          0.587
+        ],
+        [
+          0.193,
+          0.584
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R02",
+      "label": "上层平台与前沿栏杆",
+      "polygon": [
+        [
+          0.054,
+          0.569
+        ],
+        [
+          0.607,
+          0.575
+        ],
+        [
+          0.819,
+          0.648
+        ],
+        [
+          0.819,
+          0.713
+        ],
+        [
+          0.054,
+          0.689
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R03",
+      "label": "下层广场铺地与通行空间",
+      "polygon": [
+        [
+          0.062,
+          0.719
+        ],
+        [
+          0.494,
+          0.718
+        ],
+        [
+          0.499,
+          0.952
+        ],
+        [
+          0.846,
+          0.957
+        ],
+        [
+          0.908,
+          0.899
+        ],
+        [
+          0.965,
+          1
+        ],
+        [
+          0.069,
+          1
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "右侧玻璃商业建筑",
+      "polygon": [
+        [
+          0.849,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.691
+        ],
+        [
+          0.862,
+          0.637
+        ],
+        [
+          0.806,
+          0.482
+        ],
+        [
+          0.818,
+          0.195
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R05",
+      "label": "日落天空与远处城市山脊",
+      "polygon": [
+        [
+          0.044,
+          0.219
+        ],
+        [
+          0.815,
+          0.219
+        ],
+        [
+          0.815,
+          0.407
+        ],
+        [
+          0.686,
+          0.389
+        ],
+        [
+          0.497,
+          0.377
+        ],
+        [
+          0.475,
+          0.342
+        ],
+        [
+          0.216,
+          0.387
+        ],
+        [
+          0.044,
+          0.382
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "主体是否为具有上下层关系的室外购物广场？",
+      "source_quote": "Reconstruct the stepped outdoor shopping plaza",
+      "weight": 0.1
+    },
+    {
+      "id": "S02",
+      "question": "白色张拉篷是否位于画面中部的上层广场，并保留参考的整体曲面轮廓？",
+      "source_quote": "white tensile canopy with posts/cables",
+      "weight": 0.1
+    },
+    {
+      "id": "S03",
+      "question": "篷柱与拉索是否作为可见支撑连接篷体和平台？",
+      "source_quote": "white tensile canopy with posts/cables",
+      "weight": 0.1
+    },
+    {
+      "id": "S04",
+      "question": "右侧是否保留参考中带玻璃立面、深色墙面与店面的商业建筑？",
+      "source_quote": "glass-fronted building",
+      "weight": 0.1
+    },
+    {
+      "id": "S05",
+      "question": "背景是否呈现日落天空、远处楼群与山脊形成的天际线？",
+      "source_quote": "sunset skyline",
+      "weight": 0.1
+    },
+    {
+      "id": "S06",
+      "question": "上层露台、下层广场和右侧连接路径的高低与前后关系是否符合参考？",
+      "source_quote": "Preserve plaza levels",
+      "weight": 0.1
+    },
+    {
+      "id": "S07",
+      "question": "篷下、平台及下层广场是否保留参考中的通行空间和合理构件间距？",
+      "source_quote": "Preserve plaza levels, canopy curvature, circulation space and warm/cool light contrast.",
+      "weight": 0.1
+    },
+    {
+      "id": "S08",
+      "question": "暖色日落与人工灯光是否和冷色暮空、暗部形成参考中的明暗及冷暖对比？",
+      "source_quote": "warm/cool light contrast",
+      "weight": 0.1
+    },
+    {
+      "id": "S09",
+      "question": "店面是否保留可辨的小型招牌元素，允许简化其文字与图案？",
+      "source_quote": "Distant skyline and small storefront signs may be simplified;",
+      "weight": 0.05
+    },
+    {
+      "id": "S10",
+      "question": "主要构件是否可独立编辑，并以有厚度、支撑和间距的三维结构构成场景？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.05
+    },
+    {
+      "id": "S11",
+      "question": "场景是否具有真实体积而非整图平面或单视角投影，且隐藏表面得到合理补全？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry. Local material textures are allowed.\n\nNo original 3D model, depth map or calibrated camera is supplied. Use a 1.1 m public-terrace railing height as the task scale convention, not a measured real-world dimension. Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.05
+    },
+    {
+      "id": "S12",
+      "question": "主透视相机是否匹配参考构图，且保留的备用相机与其旋转和镜头一致、共同观察同一三维场景？",
+      "source_quote": "Create a perspective camera matching the input and render main.png. Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras. This second view checks real three-dimensional structure;",
+      "weight": 0.05
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "将中央连续白色篷膜作为一个实例，包含亮边、暗面和全部可见尖角；不包含外伸拉索、柱脚、阴影或背景。",
+      "boxes": [
+        [
+          0.167,
+          0.348,
+          0.582,
+          0.521
+        ]
+      ],
+      "id": "T01",
+      "query": "中央白色张拉篷膜",
+      "weight": 0.35
+    },
+    {
+      "boundary_notes": "定位右侧连续商业建筑主体，包含深色立面、玻璃、突出檐口和底层店面；按图像边界截断，不包含左侧反射玻璃或独立室外楼梯。",
+      "boxes": [
+        [
+          0.804,
+          0,
+          1,
+          0.698
+        ]
+      ],
+      "id": "T02",
+      "query": "右侧玻璃立面商业建筑",
+      "weight": 0.25
+    },
+    {
+      "boundary_notes": "定位上层平台面向前景的连续栏杆总成，包含横向扶手、立柱和暗色玻璃板；右端止于其转入楼梯栏杆处，不分别计数细小板格。",
+      "boxes": [
+        [
+          0.052,
+          0.579,
+          0.82,
+          0.707
+        ]
+      ],
+      "id": "T03",
+      "query": "上层露台前沿玻璃栏杆总成",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "定位右侧连接上层露台和下层广场的外部楼梯总成，包含可见踏步、侧墙及两侧栏杆的完整范围；不包含建筑上的扶梯、地面投影或反射。",
+      "boxes": [
+        [
+          0.812,
+          0.616,
+          1,
+          0.879
+        ]
+      ],
+      "id": "T04",
+      "query": "右侧室外层间楼梯",
+      "weight": 0.2
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Baguette Basket
+Author: Armin Rezaei (https://sketchfab.com/Armin2am)
+Source: https://sketchfab.com/3d-models/baguette-basket-227e1cfecce148318531bc1b157192d7
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

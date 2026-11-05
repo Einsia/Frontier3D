@@ -1,0 +1,454 @@
+{
+  "pack": "castle-kit",
+  "license": "CC0-1.0",
+  "source": "https://kenney.nl/assets/castle-kit",
+  "used_assets": {
+    "wall": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/wall.glb",
+      "sha256": "b2ea00acbf4ba91ff0d4b8b942edf9fa12d821abd0b2c945c57a2b9b3153cfe3"
+    },
+    "wall-doorway": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/wall-doorway.glb",
+      "sha256": "8daf5cccceace888d51d74b0e0254e192004faf926e07f1b28e94191879af3a6"
+    },
+    "gate": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/gate.glb",
+      "sha256": "fdc3d5b07f619dcacbf2af36024dc9a356696e541f6ce409a5305be782665ec9"
+    },
+    "bridge-draw": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/bridge-draw.glb",
+      "sha256": "9fbf9a309fed2063be177ef9518dd707787f8fa2b48d2eda8a52e59bb8829265"
+    },
+    "tower-square-base": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/tower-square-base.glb",
+      "sha256": "996887e98957eeea2ba7b5d14f0d17877c91e4e99e1c5b8ee57d87b7f7c9d5e8"
+    },
+    "tower-square-mid": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/tower-square-mid.glb",
+      "sha256": "34a43b162b0984df0c691cb12fcd169ff374412deca0de5fdfdd702a9fa0c98f"
+    },
+    "tower-square-top": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/tower-square-top.glb",
+      "sha256": "5e98cdf2bf4d885edc3fa514719f80d63872e11c54ee629c11859223dad8489c"
+    },
+    "tower-square-roof": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/tower-square-roof.glb",
+      "sha256": "94215209b27f5274188d70906d2a4df357529abd878b6b916bfb61ac5e64d1c8"
+    },
+    "stairs-stone": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/stairs-stone.glb",
+      "sha256": "ec21b1d65c04ba6384734c31ac542bb4015541e652c411796fd7bcf292e6413c"
+    },
+    "siege-catapult": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/siege-catapult.glb",
+      "sha256": "35a7484ff74630228e474fae885bdc9176c30e0af0d94def80307bdbc87b7583"
+    },
+    "tree-large": {
+      "path": "assets/expansion/kenney/castle-kit/original/Models/GLB format/tree-large.glb",
+      "sha256": "a72a7c237857a9fb04d51b05e3513e97a4d5d5572a709b3251f96b5bffd0a5ab"
+    }
+  },
+  "placements": [
+    {
+      "asset": "wall",
+      "ground_position": [
+        -9,
+        -6,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        9,
+        -6,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -9,
+        -3,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        9,
+        -3,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -9,
+        0,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        9,
+        0,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -9,
+        3,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        9,
+        3,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -9,
+        6,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        9,
+        6,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -6,
+        9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -3,
+        9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        0,
+        9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        3,
+        9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        6,
+        9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -6,
+        -9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        -3,
+        -9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        3,
+        -9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall",
+      "ground_position": [
+        6,
+        -9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "wall-doorway",
+      "ground_position": [
+        0,
+        -9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "gate",
+      "ground_position": [
+        0,
+        -9,
+        0.05
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "bridge-draw",
+      "ground_position": [
+        0,
+        -11.8,
+        0.05
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 90
+    },
+    {
+      "asset": "tower-square-base",
+      "ground_position": [
+        -9,
+        -9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-mid",
+      "ground_position": [
+        -9,
+        -9,
+        3.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-top",
+      "ground_position": [
+        -9,
+        -9,
+        6.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-base",
+      "ground_position": [
+        -9,
+        9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-mid",
+      "ground_position": [
+        -9,
+        9,
+        3.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-top",
+      "ground_position": [
+        -9,
+        9,
+        6.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-base",
+      "ground_position": [
+        9,
+        -9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-mid",
+      "ground_position": [
+        9,
+        -9,
+        3.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-top",
+      "ground_position": [
+        9,
+        -9,
+        6.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-base",
+      "ground_position": [
+        9,
+        9,
+        0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-mid",
+      "ground_position": [
+        9,
+        9,
+        3.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-top",
+      "ground_position": [
+        9,
+        9,
+        6.0
+      ],
+      "uniform_scale": 3,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-base",
+      "ground_position": [
+        0,
+        4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-mid",
+      "ground_position": [
+        0,
+        4,
+        4
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "tower-square-roof",
+      "ground_position": [
+        0,
+        4,
+        8
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 0
+    },
+    {
+      "asset": "stairs-stone",
+      "ground_position": [
+        -6,
+        4,
+        0
+      ],
+      "uniform_scale": 4,
+      "yaw_degrees": 180
+    },
+    {
+      "asset": "siege-catapult",
+      "ground_position": [
+        3,
+        -3,
+        0.08
+      ],
+      "uniform_scale": 2,
+      "yaw_degrees": 15
+    },
+    {
+      "asset": "tree-large",
+      "ground_position": [
+        -5,
+        -2,
+        0.08
+      ],
+      "uniform_scale": 2,
+      "yaw_degrees": 0
+    }
+  ],
+  "modifications": "Original scene composition, procedural ground/roads/piers, imported licensed asset geometry. Example for text brief review only; not a pixel-exact ground truth."
+}

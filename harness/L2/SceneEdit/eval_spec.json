@@ -1,0 +1,393 @@
+{
+  "version": "l2-v2.2.0",
+  "profile": "L2",
+  "mode": "edit",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "main.png",
+    "alternate.png"
+  ],
+  "scene": "scene.blend",
+  "baseline_scene": "environment/input/initial.blend",
+  "reference_images": {
+    "main": "environment/input/reference_main.png",
+    "alternate": "environment/input/reference_alternate.png"
+  },
+  "critical_constraints": [
+    "chair_geometry",
+    "ground_geometry",
+    "preserve_objects",
+    "main_camera",
+    "alternate_camera",
+    "no_unsupported_geometry",
+    "chair_support",
+    "render_main",
+    "preserve_resolution",
+    "preserve_engine",
+    "preserve_view_transform",
+    "main_native_size",
+    "alternate_native_size",
+    "main_camera_preserved",
+    "alternate_camera_offset",
+    "render_alternate",
+    "editable_scene",
+    "metric_units",
+    "chair_materials",
+    "delivery_main",
+    "delivery_alternate"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tolerances": {
+    "ground_contact_m": 0.08,
+    "baseline_count": 2,
+    "scene_preserve_m": 0.001
+  },
+  "render_views": [],
+  "checks": {
+    "content": [
+      {
+        "id": "chair_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "chair",
+          "min_dimensions": [
+            0.4,
+            0.4,
+            0.8
+          ],
+          "max_dimensions": [
+            1.5,
+            1.6,
+            2
+          ],
+          "min_volume": 0.005,
+          "parts": [
+            "frame",
+            "upholstery"
+          ],
+          "target_bounds": [
+            [
+              -0.528,
+              2.12,
+              0.023
+            ],
+            [
+              0.351,
+              3.061,
+              1.55
+            ]
+          ],
+          "bound_tolerance": 0.3,
+          "max_fill": 0.65
+        },
+        "role": "target"
+      },
+      {
+        "id": "ground_geometry",
+        "metric": "l2_entity",
+        "group": "entities",
+        "params": {
+          "role": "ground",
+          "min_dimensions": [
+            0.2,
+            0.2,
+            0
+          ],
+          "max_dimensions": [
+            100,
+            100,
+            10
+          ],
+          "min_volume": 0
+        },
+        "role": "preserve"
+      },
+      {
+        "id": "preserve_objects",
+        "metric": "scene_preservation",
+        "group": "baseline_content",
+        "role": "preserve",
+        "importance": "high",
+        "params": {
+          "fields": [
+            "location",
+            "rotation",
+            "scale",
+            "dimensions",
+            "visible_render",
+            "materials"
+          ],
+          "tolerance": "scene_preserve_m",
+          "ignore_patterns": [
+            "^__"
+          ]
+        }
+      }
+    ],
+    "spatial": [
+      {
+        "id": "main_camera",
+        "metric": "camera_config",
+        "group": "cameras",
+        "importance": "high",
+        "params": {
+          "camera": "Camera_Main",
+          "projection": "PERSP",
+          "resolution": [
+            960,
+            540
+          ]
+        }
+      },
+      {
+        "id": "alternate_camera",
+        "metric": "camera_config",
+        "group": "cameras",
+        "importance": "high",
+        "params": {
+          "camera": "Camera_Alternate",
+          "projection": "PERSP",
+          "resolution": [
+            960,
+            540
+          ]
+        }
+      }
+    ],
+    "physics": [
+      {
+        "id": "scene_collision_budget",
+        "metric": "collision_free",
+        "group": "collision",
+        "params": {
+          "max_pairs": 6000
+        }
+      },
+      {
+        "id": "no_unsupported_geometry",
+        "metric": "equals",
+        "group": "geometry_support",
+        "params": {
+          "path": "/scene/unsupported_geometry",
+          "expected": []
+        }
+      },
+      {
+        "id": "chair_support",
+        "metric": "l2_support",
+        "group": "support",
+        "params": {
+          "roles": [
+            "chair"
+          ],
+          "max_gap": 0.08,
+          "max_penetration": 0.05
+        },
+        "role": "standard"
+      }
+    ],
+    "visual": [
+      {
+        "id": "render_main",
+        "metric": "image_validity",
+        "group": "renders",
+        "role": "target",
+        "params": {
+          "path": "/artifacts/main.png/path"
+        }
+      },
+      {
+        "id": "reference_main_similarity",
+        "metric": "image_ssim",
+        "group": "target_view",
+        "role": "target",
+        "params": {
+          "candidate": "/artifacts/main.png/path",
+          "reference": "/reference_images/main/path"
+        }
+      },
+      {
+        "id": "reference_alternate_similarity",
+        "metric": "image_ssim",
+        "group": "target_view",
+        "role": "target",
+        "params": {
+          "candidate": "/artifacts/alternate.png/path",
+          "reference": "/reference_images/alternate/path"
+        }
+      },
+      {
+        "id": "preserve_resolution",
+        "metric": "equals",
+        "group": "source_settings",
+        "role": "preserve",
+        "params": {
+          "path": "/scene/render/resolution",
+          "reference_path": "/baseline/render/resolution"
+        }
+      },
+      {
+        "id": "preserve_engine",
+        "metric": "equals",
+        "group": "source_settings",
+        "role": "preserve",
+        "params": {
+          "path": "/scene/render/engine",
+          "reference_path": "/baseline/render/engine"
+        }
+      },
+      {
+        "id": "preserve_view_transform",
+        "metric": "equals",
+        "group": "source_settings",
+        "role": "preserve",
+        "params": {
+          "path": "/scene/render/view_transform",
+          "reference_path": "/baseline/render/view_transform"
+        }
+      },
+      {
+        "id": "main_native_size",
+        "metric": "equals",
+        "group": "render_dimensions",
+        "role": "target",
+        "params": {
+          "path": "/artifacts/main.png/size",
+          "expected": [
+            960,
+            540
+          ]
+        }
+      },
+      {
+        "id": "alternate_native_size",
+        "metric": "equals",
+        "group": "render_dimensions",
+        "role": "target",
+        "params": {
+          "path": "/artifacts/alternate.png/size",
+          "expected": [
+            960,
+            540
+          ]
+        }
+      },
+      {
+        "id": "main_camera_preserved",
+        "metric": "l2_camera_delta",
+        "group": "source_camera",
+        "role": "preserve",
+        "importance": "high",
+        "params": {
+          "camera": "Camera_Main",
+          "baseline_camera": "Camera_Main",
+          "max_location_delta": 0.01,
+          "max_rotation_delta": 0.01,
+          "max_lens_delta": 0.01
+        }
+      },
+      {
+        "id": "alternate_camera_offset",
+        "metric": "l2_camera_delta",
+        "group": "target_camera",
+        "role": "target",
+        "importance": "high",
+        "params": {
+          "camera": "Camera_Alternate",
+          "reference_camera": "Camera_Main",
+          "expected_local_delta": [
+            0.28,
+            0.0,
+            0.0
+          ],
+          "max_location_delta": 0.01,
+          "max_rotation_delta": 0.01,
+          "max_lens_delta": 0.01
+        }
+      },
+      {
+        "id": "render_alternate",
+        "metric": "image_validity",
+        "group": "renders",
+        "params": {
+          "path": "/artifacts/alternate.png/path"
+        },
+        "role": "target"
+      }
+    ],
+    "structure": [
+      {
+        "id": "editable_scene",
+        "metric": "equals",
+        "group": "editable",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        }
+      },
+      {
+        "id": "metric_units",
+        "metric": "equals",
+        "group": "units",
+        "params": {
+          "path": "/scene/unit_system",
+          "expected": "METRIC"
+        }
+      },
+      {
+        "id": "no_billboards",
+        "metric": "billboard_free",
+        "group": "anti_cheating",
+        "params": {
+          "max_suspects": 0
+        },
+        "applicable": false,
+        "reason": "当前 worker 的低面数图片纹理启发式会误报场景中的合法平面，待任务级反作弊审计器接入后启用。"
+      },
+      {
+        "id": "chair_materials",
+        "metric": "l2_part_materials",
+        "group": "target_materials",
+        "params": {
+          "role": "chair",
+          "parts": [
+            "frame",
+            "upholstery"
+          ]
+        },
+        "role": "standard"
+      }
+    ],
+    "robust": [
+      {
+        "id": "seed_reproducibility",
+        "metric": "seed_success",
+        "group": "reruns"
+      },
+      {
+        "id": "delivery_main",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/main.png/loadable",
+          "expected": true
+        }
+      },
+      {
+        "id": "delivery_alternate",
+        "metric": "equals",
+        "group": "delivery",
+        "params": {
+          "path": "/artifacts/alternate.png/loadable",
+          "expected": true
+        }
+      }
+    ]
+  }
+}

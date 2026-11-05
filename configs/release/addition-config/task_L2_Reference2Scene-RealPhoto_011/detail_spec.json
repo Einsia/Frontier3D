@@ -1,0 +1,96 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+  "family": "Reference2Scene",
+  "instruction_sha256": "09181e30bc77a6d3a38f230208d0ca829ff0a53f8b5f54aef485baf7652ed736",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "0f402af6cd1b3853dac943e45429968cdd1ad2ccf179715b20712082c89ff3aa"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "D01",
+      "component": "F",
+      "question": "主要船体的尖艏、弯曲舷缘、外张侧壁及向下收拢的体积是否对应参考？",
+      "units": [
+        "Hulls, cabins and rails require geometry"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "component": "F",
+      "question": "中央封闭船舱是否具有倾斜前壁、分隔前窗、侧窗及突出的顶缘？",
+      "units": [
+        "cabins"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "component": "F",
+      "question": "左船与右侧开敞船的篷顶轮廓、薄厚、支柱和下方开放空间是否对应参考？",
+      "units": [
+        "Keep major components independently editable, with thickness, support and meaningful spacing."
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D04",
+      "component": "F",
+      "question": "栏杆是否具有可辨认的细杆截面、立柱、连接处及沿船艏弯折的结构？",
+      "units": [
+        "railings"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "D05",
+      "component": "F",
+      "question": "船舷、甲板边缘与舱壁是否具有实体厚度，支撑件之间是否保留可见间隙？",
+      "units": [
+        "with thickness, support and meaningful spacing"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

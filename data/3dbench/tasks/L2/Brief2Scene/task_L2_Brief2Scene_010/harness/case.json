@@ -1,0 +1,240 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_010",
+  "spec_sha256": "df2c05c2b28123da4a3a4ebd94a906677c3ec3f54cda3baebcaac41c386a44d3",
+  "instruction_sha256": "24fe75796ec57daa962b2729463860d9767652df99570227cb6d9ecd8a2eb7ca",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Create from scratch a cartoon construction site suitable for a top-down management game.",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate.",
+      "source_quote": "Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Connect the entrance to the work zone with a road providing at least 4 m of clear width.",
+      "source_quote": "Connect the entrance to the work zone with a road providing at least 4 m of clear width.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Keep materials off the road and give vehicles and equipment plausible ground contact and support.",
+      "source_quote": "Keep materials off the road and give vehicles and equipment plausible ground contact and support.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable.",
+      "source_quote": "Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene.",
+      "source_quote": "Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "No reference image or initial model is provided; design the building forms, palette and layout yourself.",
+      "source_quote": "No reference image or initial model is provided; design the building forms, palette and layout yourself.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "content_08",
+      "text": "Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene.",
+      "source_quote": "Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene.",
+      "implementation": "manual",
+      "checks": [
+        "content_08"
+      ]
+    },
+    {
+      "id": "content_09",
+      "text": "Use metres, Z up, and seed 20260914.",
+      "source_quote": "Use metres, Z up, and seed 20260914.",
+      "implementation": "manual",
+      "checks": [
+        "content_09"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "main_elevation",
+      "text": "Approximately 60 degrees: diagnostic +/-10% proxy; tolerance needs review",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "partial",
+      "checks": [
+        "main_elevation"
+      ]
+    },
+    {
+      "id": "main_projection",
+      "text": "main projection",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "complete",
+      "checks": [
+        "main_projection"
+      ]
+    },
+    {
+      "id": "explicit_layout_dimensions",
+      "text": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "manual",
+      "checks": [
+        "explicit_layout_dimensions"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "Create from scratch a cartoon construction site suitable for a top-down management game. Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate. Connect the entrance to the work zone with a road providing at least 4 m of clear width. Keep materials off the road and give vehicles and equipment plausible ground contact and support. Use low-poly forms, simple color blocks and consistent proportions so that work, transport and storage areas are immediately readable. Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene. No reference image or initial model is provided; design the building forms, palette and layout yourself. Submit the fixed `output/` files required by the submission contract and retain both final cameras in the native scene. Use metres, Z up, and seed 20260914.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "different_azimuth"
+  },
+  "render_settings": {},
+  "native_resolution": [
+    1280,
+    960
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-brief-vlm-v8.0.0",
+  "dataset_version": "l2-brief-numeric-data-v8",
+  "methods_sha256": "aff6912ceb31bb3afe55c6ab8fcadcb8756f9080af4d268f3b54eb91034ca069",
+  "measurement_profile": "l2-brief-v2.8.0",
+  "automatic_profile": "l2-brief-embodied-v4.0.0"
+}

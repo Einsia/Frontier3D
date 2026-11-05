@@ -1,0 +1,100 @@
+{
+  "donated": true,
+  "date_published": 1661904000,
+  "sponsors": [
+    "78546118"
+  ],
+  "name": "Desk Lamp Arm 01",
+  "type": 2,
+  "authors": {
+    "Yann Kervran": "Rigging",
+    "Kuutti Siitonen": "Modeling & texturing"
+  },
+  "categories": [
+    "lighting",
+    "rigged",
+    "collection: the_shed"
+  ],
+  "tags": [
+    "industrial",
+    "lamp",
+    "mounted",
+    "fixed",
+    "desk",
+    "table",
+    "light",
+    "arm"
+  ],
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "polycount": 25710,
+  "texel_density": 12269.918886366604,
+  "dimensions": [
+    617.3093914985657,
+    408.02252292633057,
+    879.0190517902374
+  ],
+  "files_hash": "e15dd68e575e78092f99c7179cd031525428bbc1",
+  "description": "Free 8K model of an industrial, rigged desk lamp arm - clamp-mounted, articulated with springs, vintage workshop style.",
+  "category_id": "afb5f7d4-b1db-5b32-8850-edd6ccf20b24",
+  "category": "Lighting/Floor & Desk/Desk Lamps",
+  "collections": [
+    "the_shed"
+  ],
+  "attributes": {
+    "condition": [
+      "worn"
+    ],
+    "material": [
+      "metal"
+    ],
+    "rigged": true
+  },
+  "img_version": "59bbc8e7",
+  "download_count": 21132,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/desk_lamp_arm_01.png?width=256&height=256&v=59bbc8e7",
+  "id": "desk_lamp_arm_01",
+  "source": "https://polyhaven.com/a/desk_lamp_arm_01",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "downloaded_files": [
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/desk_lamp_arm_01/desk_lamp_arm_01_1k.blend",
+      "file": "desk_lamp_arm_01/original/source.blend",
+      "sha256": "349d75e41809bf21a8c863510144eb0bc318aef00e66aece0bd229d7301965ec",
+      "bytes": 806566
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/desk_lamp_arm_01/desk_lamp_arm_01_metal_1k.exr",
+      "file": "desk_lamp_arm_01/original/textures/desk_lamp_arm_01_metal_1k.exr",
+      "sha256": "8b0dfec9d8c40825b1aca08114fcdc38bb6f1a4fba497b4e7cd696219a63b622",
+      "bytes": 911353
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/desk_lamp_arm_01/desk_lamp_arm_01_mask01_1k.png",
+      "file": "desk_lamp_arm_01/original/textures/desk_lamp_arm_01_mask01_1k.png",
+      "sha256": "07b5669cc5366ccff274f4abcab98af4e938a0b7ff3ca04a475436f2c8e8fcb3",
+      "bytes": 8742
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/desk_lamp_arm_01/desk_lamp_arm_01_rough_1k.exr",
+      "file": "desk_lamp_arm_01/original/textures/desk_lamp_arm_01_rough_1k.exr",
+      "sha256": "61adadb0fa119dc20a7c730820bbbd6c3a16cfe21fd1599194c7fe112cf1167d",
+      "bytes": 1236466
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/desk_lamp_arm_01/desk_lamp_arm_01_diff_1k.jpg",
+      "file": "desk_lamp_arm_01/original/textures/desk_lamp_arm_01_diff_1k.jpg",
+      "sha256": "159eb178aba3271bd555cbe07ca36431d8af9a006f0b8e9d8c67030cbdc9e4d3",
+      "bytes": 702522
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/desk_lamp_arm_01/desk_lamp_arm_01_nor_gl_1k.exr",
+      "file": "desk_lamp_arm_01/original/textures/desk_lamp_arm_01_nor_gl_1k.exr",
+      "sha256": "83d10fa9bb42c3f34ff2b32b9643ebcd9278e40f3e93632b21935efae839c658",
+      "bytes": 1392656
+    }
+  ]
+}

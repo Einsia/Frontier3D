@@ -1,0 +1,88 @@
+{
+  "type": 2,
+  "name": "Drill Press 01",
+  "categories": [
+    "collection: project_lighthouse",
+    "appliances",
+    "electronics",
+    "industrial",
+    "tools"
+  ],
+  "tags": [
+    "machinery",
+    "workshop",
+    "chuck",
+    "garage",
+    "construction"
+  ],
+  "description": "Free 8K model of a vintage green drill press with open belt-drive pulleys, metal chuck, worn paint, spec plates, cord, slotted adjustable table and cast base.",
+  "authors": {
+    "Viktor": "All"
+  },
+  "donated": true,
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "polycount": 58526,
+  "files_hash": "f3eb9da047d02b6a02c34286c4cd12008418fccc",
+  "texel_density": 4981.121286679955,
+  "dimensions": [
+    365.8628612756729,
+    598.7853109836578,
+    901.5651196241379
+  ],
+  "date_published": 1781913600,
+  "category_id": "c539b1a1-c96b-539c-9568-4fa2ee590a07",
+  "category": "Tools & Equipment/Power Tools/Workshop Machines",
+  "collections": [
+    "project_lighthouse"
+  ],
+  "attributes": {
+    "condition": [
+      "worn"
+    ],
+    "material": [
+      "metal"
+    ]
+  },
+  "img_version": "bc4d0607",
+  "download_count": 366,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/drill_press_01.png?width=256&height=256&v=bc4d0607",
+  "id": "drill_press_01",
+  "source": "https://polyhaven.com/a/drill_press_01",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "downloaded_files": [
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/drill_press_01/drill_press_01_1k.blend",
+      "file": "drill_press_01/original/source.blend",
+      "sha256": "883531a15ebf6e8506d4185b33a27c45999832e4440f7fec1a2f3a205520a5f9",
+      "bytes": 1509130
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/drill_press_01/drill_press_01_diff_1k.jpg",
+      "file": "drill_press_01/original/textures/drill_press_01_diff_1k.jpg",
+      "sha256": "bc0971499313e295fa25279a41c3f0891df644c1d09bdefee0c7bbe9407c5aaf",
+      "bytes": 610938
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/drill_press_01/drill_press_01_metal_1k.exr",
+      "file": "drill_press_01/original/textures/drill_press_01_metal_1k.exr",
+      "sha256": "e77a97cf3a9395b8fc7167a3064aa4cf41a36f2f08de63b159e2fd2811e96f3c",
+      "bytes": 342772
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/drill_press_01/drill_press_01_nor_gl_1k.exr",
+      "file": "drill_press_01/original/textures/drill_press_01_nor_gl_1k.exr",
+      "sha256": "d1788b3b95594d3151b754d5f068c6e0ead6fa5b448af8cc72759b398f864080",
+      "bytes": 1485999
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/drill_press_01/drill_press_01_rough_1k.exr",
+      "file": "drill_press_01/original/textures/drill_press_01_rough_1k.exr",
+      "sha256": "7191b18ec2e68ea087d693b5caaf803636c1e8ea2eca66f8dc747f10582272aa",
+      "bytes": 694841
+    }
+  ]
+}

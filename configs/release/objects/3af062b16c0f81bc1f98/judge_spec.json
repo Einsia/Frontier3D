@@ -1,0 +1,85 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "continuous-20261016-v2",
+  "case_id": "L1/CodeEdit/task_L1_CodeEdit_007",
+  "family": "SceneEdit",
+  "instruction_sha256": "1da2b298b6a1472ffbe3abf91c7818275b1c7633d2d2113e6f4949d3dd5d3530",
+  "reference_policy": "No private text-task shape target; images compare public visible content; edits compare frozen before/target within permitted scope.",
+  "focus": "薄壁盒体与内置安装柱；精确数值由程序测量；",
+  "checks": [
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "question": "Revise the supplied open-top enclosure. Keep its outer 41.62 × 23.6 × 39.2 mm box and world pose, and reduce the inward side-wall and floor thickness from 4.2 to 2.5 mm. Add four cylindrical mounting bosses on the inside floor, each outside diameter 7.0 mm and height 6.0 mm above the new inner floor. Their centres coincide with the four existing hole axes: X = ±14.567 mm and Y = ±8.26 mm relative to the box centre. Each boss must fuse naturally into the floor and any wall it overlaps, and contain a diameter-3.2 mm through-hole continuing through the floor. Retain the original hole centres and open top. Do not leave separate intersecting shells, plugged holes or an extra lid.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_1"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "question": "本题孔、槽、口袋和相交通道为真实空腔；按题面区分盲孔、贯通与连接，不得封片/填料冒充；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_2"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "question": "移除/填补题面指定旧特征并保留未指定的细节；不得叠加两套孔/槽或全局拉伸；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "units": [
+        "edit_effect_3"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.06666666666666667,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "units": [
+        "protected_appearance"
+      ],
+      "coverage_definition": "以本条声明视角中参考可见或题面明确要求的内容为分母，估计实际实现比例；遮挡且未要求的隐藏细节排除。",
+      "deviation_definition": "仅评价已实现内容的形态/语义/外观偏差；缺失部分仅减少覆盖。精确数值留给原生测量。",
+      "global_weight": 0.04000000000000001,
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    }
+  ],
+  "reference_bindings": {
+    "reference/before.png": "b3c8686035ec85a27d730ce767d4231f8d29b2e02ee0f75ac3a35b14bab4c066",
+    "reference/target.png": "769e75714f49965a76480e6a28f0e4e4162dad282b1544ef00b6f1500dede3d3"
+  },
+  "authoring": "frozen_public_contract_and_reference_only_drafts_continuous_redesign_human_calibration_pending",
+  "formal_score_eligible": false
+}

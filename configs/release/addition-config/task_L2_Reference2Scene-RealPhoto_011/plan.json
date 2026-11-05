@@ -1,0 +1,295 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/1390f50e26fe5113baed/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/2dc406f3aec69b19172d/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/9c0e0ed901ad7649ea07/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "左侧横向开敞船",
+      "polygon": [
+        [
+          0.183,
+          0.418
+        ],
+        [
+          0.376,
+          0.418
+        ],
+        [
+          0.447,
+          0.515
+        ],
+        [
+          0.447,
+          0.585
+        ],
+        [
+          0.19,
+          0.55
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R02",
+      "label": "中央白色封闭舱船",
+      "polygon": [
+        [
+          0.505,
+          0.556
+        ],
+        [
+          0.533,
+          0.454
+        ],
+        [
+          0.571,
+          0.415
+        ],
+        [
+          0.641,
+          0.385
+        ],
+        [
+          0.686,
+          0.399
+        ],
+        [
+          0.691,
+          0.526
+        ],
+        [
+          0.653,
+          0.61
+        ],
+        [
+          0.557,
+          0.663
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R03",
+      "label": "中央右侧窄开敞船",
+      "polygon": [
+        [
+          0.679,
+          0.533
+        ],
+        [
+          0.702,
+          0.398
+        ],
+        [
+          0.791,
+          0.395
+        ],
+        [
+          0.811,
+          0.54
+        ],
+        [
+          0.787,
+          0.579
+        ],
+        [
+          0.739,
+          0.598
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "最右侧开敞船",
+      "polygon": [
+        [
+          0.796,
+          0.401
+        ],
+        [
+          0.884,
+          0.381
+        ],
+        [
+          0.949,
+          0.425
+        ],
+        [
+          0.975,
+          0.539
+        ],
+        [
+          0.934,
+          0.612
+        ],
+        [
+          0.826,
+          0.551
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R05",
+      "label": "远处小船",
+      "polygon": [
+        [
+          0.61,
+          0.319
+        ],
+        [
+          0.643,
+          0.318
+        ],
+        [
+          0.646,
+          0.34
+        ],
+        [
+          0.62,
+          0.35
+        ],
+        [
+          0.612,
+          0.344
+        ]
+      ],
+      "weight": 0.05
+    },
+    {
+      "id": "R06",
+      "label": "主要远岛轮廓",
+      "polygon": [
+        [
+          0.365,
+          0.309
+        ],
+        [
+          0.409,
+          0.267
+        ],
+        [
+          0.43,
+          0.26
+        ],
+        [
+          0.454,
+          0.272
+        ],
+        [
+          0.486,
+          0.265
+        ],
+        [
+          0.511,
+          0.278
+        ],
+        [
+          0.562,
+          0.269
+        ],
+        [
+          0.583,
+          0.266
+        ],
+        [
+          0.601,
+          0.279
+        ],
+        [
+          0.619,
+          0.265
+        ],
+        [
+          0.64,
+          0.272
+        ],
+        [
+          0.655,
+          0.26
+        ],
+        [
+          0.694,
+          0.265
+        ],
+        [
+          0.727,
+          0.276
+        ],
+        [
+          0.734,
+          0.293
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生三维场景中识别中央白色封闭舱船，沿船体纵轴测量艏至艉的长度，以场景米制读取；记录端点及突出附件的纳入范围，不从图像像素推算绝对长度。",
+      "quantity": "中央船长度",
+      "relation": "equal",
+      "source_quote": "Use a 8 m length for the central boat as the task scale convention",
+      "target": 8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两台保留相机的世界位置，将备用相机减主相机的位置差变换到主相机局部坐标系，读取局部 X 分量；是否仅沿该轴移动另由相机关系检查确认。",
+      "quantity": "备用相机沿主相机局部正 X 的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

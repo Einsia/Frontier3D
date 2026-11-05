@@ -1,0 +1,7 @@
+border collie dog(mesh hair)
+Author: imdjs (https://sketchfab.com/imdjs)
+Source: https://sketchfab.com/3d-models/border-collie-dogmesh-hair-516a1a06c6f248b6b8c28801eb1397ac
+License: CC Attribution
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Increased Cycles transparent_max_bounces to 128 for the source layered mesh fur; original materials and geometry retained.
+No endorsement by the original author is implied.

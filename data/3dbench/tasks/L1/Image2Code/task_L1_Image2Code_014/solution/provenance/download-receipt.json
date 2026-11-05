@@ -1,0 +1,17 @@
+{
+  "uid": "c368cc22dcb8480e9e942e57fb63c635",
+  "file": "source.glb",
+  "download_filename": "2020_mclaren_720s_gt3.glb",
+  "bytes": 47269040,
+  "sha256": "aef85fd9e90310e42ed13b37dec20775a2949c5f12c0cef0bec1796d3c6129e1",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Dave Love SketchFab (https://sketchfab.com/Tyler_Dave)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/2020-mclaren-720s-gt3-c368cc22dcb8480e9e942e57fb63c635",
+    "title": "2020 McLaren 720S GT3"
+  },
+  "gltf_meshes": 169,
+  "gltf_images": 54,
+  "animations": []
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "l3-package-hashes-v1",
+  "task_key": "l3-g05",
+  "files": {
+    "instruction.md": "808e6fa5748c6c5bbaea78769bbc39bbf93114f914a9b7e06e1ffb438e7369fa",
+    "README.md": "1cf31654823e8a215480b2ad532a5e048b288ecab3891ef7e6b2bdcb893a7da8",
+    "PROMPT.md": "6096e7b4dc598816f7fe4075f6b18d074b5c0f3ba128411961c0cb36df1bc6f5",
+    "runtime.json": "7870743c4ec0ed9b5c06135fafcc02d12eda365c96833dbb44d0f038e9598486",
+    "reference_plan.json": "558f702f2c97ec1690b76935ce629655008b8618d9cb2b17a0125677e6b030b5",
+    "task.json": "70843a58542c2c014bc59fa9e32b8fbad2d5b61920b3f69731bb2df3f35e13a5",
+    "instruction.zh.md": "fa05cc5fca46d3704a2f82d3b79e52b91df80122b998c343c8e3184986f899f4",
+    "environment/input/asset-selection.json": "2275ee47be69780f5813f9aba8c19ae0597aea29e3b6c447eebf7270f3192978",
+    "environment/input/interaction-contract.json": "711f045278cff60667866489aa8e31d000df096b1b2fa082632d52db8009d48f",
+    "environment/input/REQUIREMENTS.md": "808e6fa5748c6c5bbaea78769bbc39bbf93114f914a9b7e06e1ffb438e7369fa",
+    "environment/input/REFERENCES.md": "a9871fa9f9dcdc3ab7f3b174f9278fde7ec6d9814077c7b4ccf1113e5724512a",
+    "environment/input/references.json": "a1935729452e6fb5032c7894281af725ee09c3cca1c9777bfabb85251078be47",
+    "environment/input/BenchEntity.h": "a3c73e5e2590a39080e869005e1fd1d102d97a0d45fdcd772601d677ebd29142",
+    "environment/input/BenchInventory.h": "030174129da5e7b412e1a2066bf524f5600855f5b06dc64b6c28cf1bb469f329",
+    "environment/input/ASSETS.md": "4ec6687018d5d3f5321a5178f10d5daa9b2e5b036538b5c1f236210c9eb2330d",
+    "environment/input/BenchObserver.h": "845d665abc9d7e96dde8bcbb7d218a5c0b4837cc1ebc8b158329f3edd8472ebb",
+    "environment/input/INTEGRATION.md": "e82cdd560ff53633e2a025401de49bf2766a612c754fea2b194c22da610e7792",
+    "environment/input/CONTRACT.md": "78d4196dd2cff45c7223103b01324f0f4bf3f3314e0214ed634e46af6b44f1cf"
+  },
+  "libraries": {
+    "materials": "14d62e1c63a8a1b5a6a2286707fa89bb772859058199ef8918892ab735705e05",
+    "models": "2a53433384384d8e2d57af7bf931db0a189bc26f59caeffe06cc094db97d52bf"
+  }
+}

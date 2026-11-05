@@ -1,0 +1,82 @@
+{
+  "status": "design_only_not_executable",
+  "requirements_source": "instruction.zh.md",
+  "requirements": [
+    {
+      "id": "B16-001",
+      "requirement_zh": "洗衣房·折叠工作站 设计公用洗衣房里双臂折叠织物的场景，采用折叠台侧斜上方视角。"
+    },
+    {
+      "id": "B16-002",
+      "requirement_zh": "洗衣房约 4.2 × 3.6 米，地面浅灰地砖。"
+    },
+    {
+      "id": "B16-003",
+      "requirement_zh": "沿墙布置三台滚筒洗衣机：机身 0.60 × 0.60 米、高 0.85 米，中间一台舱门全开 130°，舱内滚筒可见并叠放两件待取织物；"
+    },
+    {
+      "id": "B16-004",
+      "requirement_zh": "机顶各放洗衣篮一只。"
+    },
+    {
+      "id": "B16-005",
+      "requirement_zh": "对面立置物架一层四格，放洗涤剂四瓶（瓶身色彩区分）与叠好的毛巾堆。"
+    },
+    {
+      "id": "B16-006",
+      "requirement_zh": "中央折叠台 1.60 × 0.80 米、高 0.90 米，台面为防滑垫面。"
+    },
+    {
+      "id": "B16-007",
+      "requirement_zh": "双臂机械装在台后立架上：基座高 1.15 米、间距 0.30 米，臂展各 0.70 米。"
+    },
+    {
+      "id": "B16-008",
+      "requirement_zh": "冻结在抖平阶段：两臂夹爪分别夹住一条 0.70 × 1.40 米毛巾的两个对角，毛巾被拉开悬在台面上方 0.15 米，毛巾平面接近水平、四角高差不超过 0.05 米，毛巾中线与台面长轴中线对齐偏差不超过 20 毫米；"
+    },
+    {
+      "id": "B16-009",
+      "requirement_zh": "夹爪指面与毛巾角部贴合穿透不超过 2 毫米，毛巾悬垂边自然下垂成弧、不用直线硬边。"
+    },
+    {
+      "id": "B16-010",
+      "requirement_zh": "台面下层格内放周转篮两只，台侧放已叠好的织物三摞。"
+    },
+    {
+      "id": "B16-011",
+      "requirement_zh": "可通行验收：折叠台四周操作环路净宽不小于 0.90 米，机前取放位净宽不小于 0.70 米，环线连续。"
+    },
+    {
+      "id": "B16-012",
+      "requirement_zh": "可触及验收：当前两处毛巾夹持目标分别在对应固定臂 0.70 米包络内；"
+    },
+    {
+      "id": "B16-013",
+      "requirement_zh": "开舱洗衣机滚筒口、置物架毛巾格、台面服务高度为 0.40–1.20 米，供人工转运，不要求固定双臂跨过 0.90 米环路触及机器与对面架子。"
+    },
+    {
+      "id": "B16-014",
+      "requirement_zh": "可操作验收：毛巾两角与两爪一一对应、无交叉换手，开舱门的行程范围内与双臂净空不小于 0.10 米。"
+    },
+    {
+      "id": "B16-015",
+      "requirement_zh": "使用白瓷墙裙、浅木置物架与彩色洗衣篮，冷白荧光加舱口一点暖光。"
+    },
+    {
+      "id": "B16-016",
+      "requirement_zh": "主视角同框双臂、悬平毛巾与开舱洗衣机。"
+    },
+    {
+      "id": "B16-017",
+      "requirement_zh": "这是可编辑静态场景，不要求布料解算、水或滚筒转动。"
+    }
+  ],
+  "methods": [
+    "native rerun and render",
+    "world-space vertex dimensions and angles",
+    "signed contact/clearance measurements using geometric surfaces",
+    "sampled free-route widths and service-envelope distances",
+    "semantic object and material review"
+  ],
+  "unimplemented": "No automatic harness, validated reach solver, GT scene, calibrated aggregate score or model results."
+}

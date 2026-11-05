@@ -1,0 +1,427 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_front_glove",
+      "label": "前方偏右手套",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.437,
+          0.465
+        ],
+        [
+          0.614,
+          0.415
+        ],
+        [
+          0.642,
+          0.524
+        ],
+        [
+          0.66,
+          0.563
+        ],
+        [
+          0.669,
+          0.735
+        ],
+        [
+          0.651,
+          0.791
+        ],
+        [
+          0.599,
+          0.832
+        ],
+        [
+          0.538,
+          0.842
+        ],
+        [
+          0.485,
+          0.818
+        ],
+        [
+          0.455,
+          0.776
+        ],
+        [
+          0.458,
+          0.744
+        ],
+        [
+          0.415,
+          0.729
+        ],
+        [
+          0.401,
+          0.694
+        ],
+        [
+          0.422,
+          0.607
+        ],
+        [
+          0.459,
+          0.566
+        ]
+      ]
+    },
+    {
+      "id": "r_rear_glove",
+      "label": "后方偏左手套可见部分",
+      "weight": 0.35,
+      "polygon": [
+        [
+          0.418,
+          0.362
+        ],
+        [
+          0.462,
+          0.365
+        ],
+        [
+          0.558,
+          0.386
+        ],
+        [
+          0.59,
+          0.402
+        ],
+        [
+          0.587,
+          0.419
+        ],
+        [
+          0.442,
+          0.467
+        ],
+        [
+          0.453,
+          0.552
+        ],
+        [
+          0.425,
+          0.609
+        ],
+        [
+          0.408,
+          0.695
+        ],
+        [
+          0.414,
+          0.734
+        ],
+        [
+          0.464,
+          0.748
+        ],
+        [
+          0.459,
+          0.798
+        ],
+        [
+          0.419,
+          0.79
+        ],
+        [
+          0.377,
+          0.765
+        ],
+        [
+          0.351,
+          0.723
+        ],
+        [
+          0.352,
+          0.69
+        ],
+        [
+          0.387,
+          0.641
+        ],
+        [
+          0.362,
+          0.646
+        ],
+        [
+          0.341,
+          0.634
+        ],
+        [
+          0.327,
+          0.607
+        ],
+        [
+          0.336,
+          0.568
+        ],
+        [
+          0.374,
+          0.506
+        ],
+        [
+          0.401,
+          0.481
+        ],
+        [
+          0.418,
+          0.429
+        ]
+      ]
+    },
+    {
+      "id": "r_cords",
+      "label": "悬挂绳索及顶部绳结",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.435,
+          0.419
+        ],
+        [
+          0.516,
+          0.243
+        ],
+        [
+          0.516,
+          0.207
+        ],
+        [
+          0.532,
+          0.196
+        ],
+        [
+          0.548,
+          0.207
+        ],
+        [
+          0.553,
+          0.246
+        ],
+        [
+          0.55,
+          0.286
+        ],
+        [
+          0.538,
+          0.283
+        ],
+        [
+          0.541,
+          0.422
+        ],
+        [
+          0.489,
+          0.439
+        ],
+        [
+          0.469,
+          0.437
+        ]
+      ]
+    },
+    {
+      "id": "r_support",
+      "label": "顶部斜向细支撑杆",
+      "weight": 0.05,
+      "polygon": [
+        [
+          0.507,
+          0.224
+        ],
+        [
+          0.514,
+          0.235
+        ],
+        [
+          0.66,
+          0.154
+        ],
+        [
+          0.657,
+          0.147
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_gloves",
+      "query": "完整可见范围的拳击手套",
+      "weight": 0.75,
+      "boxes": [
+        [
+          0.328,
+          0.361,
+          0.591,
+          0.8
+        ],
+        [
+          0.403,
+          0.415,
+          0.668,
+          0.84
+        ]
+      ],
+      "boundary_notes": "分别框后方左手套与前方右手套，包含各自可见拇指、袖口、暗色内壁及拳垫；不推测遮挡部分，不包含悬绳。框因遮挡可重叠。"
+    },
+    {
+      "id": "t_cords",
+      "query": "悬挂绳索与绳结整体",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.434,
+          0.197,
+          0.552,
+          0.441
+        ]
+      ],
+      "boundary_notes": "将多股相连悬绳、顶部缠绕绳结和短垂尾作为一个可辨组件；不强行拆分细小交叉绳段，不含支撑杆。"
+    },
+    {
+      "id": "t_support",
+      "query": "斜向细支撑杆",
+      "weight": 0.05,
+      "boxes": [
+        [
+          0.507,
+          0.148,
+          0.659,
+          0.236
+        ]
+      ],
+      "boundary_notes": "包含绳结两侧可见杆体及左下暗色端头，排除悬绳；此类仅定位参考中可见物，不另设隐藏结构要求。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_identity",
+      "source_quote": "paired vintage boxing gloves",
+      "question": "主体是否为参考所示的一对复古拳击手套？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_suspension",
+      "source_quote": "suspended by their visible cords",
+      "question": "手套是否由可见绳索连接并悬挂，保持参考的下垂姿态？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_padding",
+      "source_quote": "rounded knuckle padding",
+      "question": "两只手套是否具有圆润、饱满的拳峰衬垫形态？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_thumbs",
+      "source_quote": "bent thumbs",
+      "question": "两只手套是否保留参考中的弯曲拇指形态？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_cuffs",
+      "source_quote": "cuffs",
+      "question": "两只手套是否具有参考所示的上端宽袖口？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_leather",
+      "source_quote": "worn leather surfaces",
+      "question": "表面是否呈现参考中的深棕旧皮革、磨损和不均匀光泽？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_overlap",
+      "source_quote": "Preserve the relative overlap",
+      "question": "是否保留右侧手套在前、左侧手套在后的相对遮挡关系？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_asymmetry",
+      "source_quote": "asymmetry",
+      "question": "是否保留两只手套的高低、朝向和轮廓不对称，而非镜像并排？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_space",
+      "source_quote": "empty space between gloves and cords",
+      "question": "手套和绳索之间的开放负空间是否与参考一致？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_volume",
+      "source_quote": "Match visible surfaces; complete unseen surfaces plausibly without inventing internal machinery.",
+      "question": "是否以完整三维体积匹配可见表面，并合理补全背面而不添加内部机械？",
+      "weight": 0.1
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_padding",
+      "source_quote": "the gloves need real padded volume",
+      "question": "拳垫是否有真实厚度、连续鼓起的曲面及底部圆弧，而非薄壳轮廓？",
+      "weight": 0.2
+    },
+    {
+      "id": "d_thumb",
+      "source_quote": "bent thumbs",
+      "question": "拇指是否形成弯曲的独立鼓包，并保留与拳体交界的凹沟和连接过渡？",
+      "weight": 0.2
+    },
+    {
+      "id": "d_cuff",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings",
+      "question": "袖口是否保留斜椭圆开口、可见内壁、边缘厚度及下缘束带式转折？",
+      "weight": 0.2
+    },
+    {
+      "id": "d_cord",
+      "source_quote": "thin structures, connections and occlusions",
+      "question": "细绳是否有连续截面，保留顶部绕结、短尾及通向袖口的连接和交叉遮挡？",
+      "weight": 0.2
+    },
+    {
+      "id": "d_seams",
+      "source_quote": "Seams and wear may use local textures",
+      "question": "是否保留拇指边缘接缝、袖口下缘接缝及拳体底部收拢褶皱等局部结构？",
+      "weight": 0.2
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_glove_count",
+      "source_quote": "paired vintage boxing gloves",
+      "quantity": "手套数量",
+      "unit": "只",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维场景中按完整手套主体计数；各自的拇指、袖口及分离网格不另算手套。"
+    },
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制原生场景中对全部对象几何应用世界变换，排除相机和灯光，求整体世界轴对齐包围盒三轴长度的最大值，与标称1.000 m比较；容差字段表示原文2%的相对容差。"
+    }
+  ],
+  "limitations": [
+    "input/reference.png为公开映射后的主参考路径；实际附图原始证据路径为reference/reference-0.png。所有区域及框仅冻结于该原始图像。",
+    "单视图不能确定背面、内部深度或被遮挡连接；仅检查合理补全，不冻结隐藏几何。",
+    "绳索交叉处和袖口内的细小连接难以逐段辨识，定位按可见绳索组件整体处理。",
+    "整体最大跨度按世界轴对齐包围盒最大边操作化；原文未明确包围盒与最大点间距离的选择。1.000 m按缩放约定的标称最大尺寸处理。",
+    "可编辑实体、组件可分离性及隐藏面的完整性需要原生几何检查，不能仅靠渲染图确认。",
+    "Z向上是坐标约定；帧号、导出文件、渲染分辨率与渲染设置不作为图像内容质量或几何数值检查。",
+    "未提供legacy-detail-20261018-v1的额外文本；本计划仅依据本次公开合同、说明和参考冻结检查，不假定其未公开规则。"
+  ]
+}

@@ -1,0 +1,625 @@
+{
+  "version": "l2-method-plan-v1",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_001",
+  "category": "Brief2Scene",
+  "sources": {
+    "instruction.md": "2bbae3b3aba20b1b584f00dc61dfedc2204d1cfceffb898c74909278655a1b8f",
+    "solution/EVALUATION.md": "644efaa89e380153cb91216761bec5bade17fa4803da279aead8083690824f18"
+  },
+  "evaluation_title": "评测接口：帆船港口与岸边货运区",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "dimension": "运行有效性",
+      "description": [
+        "固定文件完整、入口成功、原生重渲染、缺失依赖数",
+        "仅挂载空 input 与英文题面，在清洁工作区运行约定命令；检查所有输出均在 output 内，禁止读取 solution。"
+      ],
+      "source_quote": "| 运行有效性 | 固定文件完整、入口成功、原生重渲染、缺失依赖数 | 仅挂载空 input 与英文题面，在清洁工作区运行约定命令；检查所有输出均在 output 内，禁止读取 solution。 |",
+      "methods": [
+        "execution_and_native_rerender",
+        "dependency_integrity"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_02",
+      "dimension": "需求覆盖",
+      "description": [
+        "题面列出的设施、数量、范围、视图要求满足率",
+        "将英文题面的每个可验证要求拆为评测侧清单；数量按语义实例计数而非 Blender 对象数，不依赖对象名称。未要求的装饰不扣分。"
+      ],
+      "source_quote": "| 需求覆盖 | 题面列出的设施、数量、范围、视图要求满足率 | 将英文题面的每个可验证要求拆为评测侧清单；数量按语义实例计数而非 Blender 对象数，不依赖对象名称。未要求的装饰不扣分。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "geometry_selection_without_semantic_score"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_03",
+      "dimension": "几何与布局",
+      "description": [
+        "支撑、连接、空隙、遮挡、明确尺度约束",
+        "从 evaluated mesh 世界坐标测量；题面明确的最小值和范围为约束，使用 1% 数值容差；“约”尺寸允许 ±10%。只对题面提及的关系设硬门槛。"
+      ],
+      "source_quote": "| 几何与布局 | 支撑、连接、空隙、遮挡、明确尺度约束 | 从 evaluated mesh 世界坐标测量；题面明确的最小值和范围为约束，使用 1% 数值容差；“约”尺寸允许 ±10%。只对题面提及的关系设硬门槛。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "geometry_selection_without_semantic_score"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_04",
+      "dimension": "空间合理性",
+      "description": [
+        "穿插体积、悬浮距离、通路连通性",
+        "几何采样和 BVH 检测主要刚性构件；地形、埋入岩块和接合结构按语义排除预期相交。题面要求通路时做平面占据图及连通性检查，按题面净宽膨胀障碍。"
+      ],
+      "source_quote": "| 空间合理性 | 穿插体积、悬浮距离、通路连通性 | 几何采样和 BVH 检测主要刚性构件；地形、埋入岩块和接合结构按语义排除预期相交。题面要求通路时做平面占据图及连通性检查，按题面净宽膨胀障碍。 |",
+      "methods": [
+        "explicit_numeric_geometry",
+        "geometry_selection_without_semantic_score"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_05",
+      "dimension": "形态与材质",
+      "description": [
+        "主要结构具有体积、材质类别及照明要求",
+        "重新渲染深度/法线/实例遮罩；检查视差和轮廓。低多边形或写实要求按题面分别检查，不要求原作者拓扑或原资产识别。"
+      ],
+      "source_quote": "| 形态与材质 | 主要结构具有体积、材质类别及照明要求 | 重新渲染深度/法线/实例遮罩；检查视差和轮廓。低多边形或写实要求按题面分别检查，不要求原作者拓扑或原资产识别。 |",
+      "methods": [
+        "deferred_text_semantics"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_06",
+      "dimension": "双视图一致性",
+      "description": [
+        "相机变化符合题面、两图同一几何",
+        "读取相机变换并重渲染；备用相机无目标图，不和私有示例任意相机逐像素比较。"
+      ],
+      "source_quote": "| 双视图一致性 | 相机变化符合题面、两图同一几何 | 读取相机变换并重渲染；备用相机无目标图，不和私有示例任意相机逐像素比较。 |",
+      "methods": [
+        "camera_relationship",
+        "same_seed_reproduction"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_07",
+      "dimension": "可复现与编辑",
+      "description": [
+        "入口二次运行一致、主要结构可编辑、资源自包含",
+        "同种子运行两次；比较几何/材质摘要。允许实例和程序修改器，不强制每个小零件独立对象。"
+      ],
+      "source_quote": "| 可复现与编辑 | 入口二次运行一致、主要结构可编辑、资源自包含 | 同种子运行两次；比较几何/材质摘要。允许实例和程序修改器，不强制每个小零件独立对象。 |",
+      "methods": [
+        "camera_relationship",
+        "same_seed_reproduction"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    },
+    {
+      "id": "evaluation_08",
+      "dimension": "效率",
+      "description": [
+        "时间、token、工具调用、失败次数",
+        "Harness 统一记录，质量和成本分开报告。"
+      ],
+      "source_quote": "| 效率 | 时间、token、工具调用、失败次数 | Harness 统一记录，质量和成本分开报告。 |",
+      "methods": [
+        "cost_accounting_separate"
+      ],
+      "status": "designed",
+      "source": "solution/EVALUATION.md"
+    }
+  ],
+  "public_numeric_clauses": [
+    "Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right.",
+    "Keep a continuous walking route at least 1.2 m wide from the shore to the docking end.",
+    "Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point.",
+    "Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1."
+  ],
+  "public_render_contract": {
+    "engine": "CYCLES",
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "material_policy": {
+    "image_textures": false,
+    "procedural_shading": true,
+    "solid_color": true,
+    "scope": [
+      "materials",
+      "nested_node_groups",
+      "world",
+      "lights",
+      "geometry_node_image_inputs",
+      "legacy_modifier_textures",
+      "compositor_images"
+    ],
+    "edit_baseline": "Image-textured original inputs require a versioned procedural baseline and matching reference; never silently exempt inherited image textures"
+  },
+  "scoring": {
+    "evaluation_mode": "system_validity_with_physical_quality",
+    "component_weights": {
+      "data": 0.9,
+      "physics": 0.1
+    },
+    "physics_weight": 0.1,
+    "minimum_quality": null,
+    "weights_status": "pilot_not_calibrated"
+  },
+  "ground_truth": {
+    "use_private_example_for_brief": false,
+    "alternate_view_pixel_gt": false,
+    "hidden_dimensions_or_object_names_as_requirements": false,
+    "main_image": null,
+    "private_target_index": null
+  },
+  "mvp_status": "not_run",
+  "implementation_status": "brief_projected_separation_controls_pending",
+  "case_measurements": "场地约 34×32 m；接岸至码头净宽≥1.2 m；1 大船/1 小船；棚架4支撑；棕榈≥4、桶≥5、箱≥5；船体吃水与甲板高度",
+  "numeric_method": "Measure selected evaluated geometry in world metres: minimum-area footprint, ray-cast local ground, component grouping, BVH clearance and swept route. Entity selectors are separate from semantic correctness; neither labels nor AABBs alone prove content or openings.",
+  "deferred": [
+    "text-to-scene semantic/style fidelity",
+    "ViT/VLM judging"
+  ],
+  "human_assistance": [
+    "Resolve ambiguous geometry/entity bindings when needed",
+    "Accept calibration examples and thresholds; text semantics do not require manual scores"
+  ],
+  "active_checks": [
+    {
+      "id": "real_geometry",
+      "existing_check": "real_geometry",
+      "source": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed.\n\nNo reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "alternate_relationship",
+      "existing_check": "alternate_relationship",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "main_native_size",
+      "existing_check": "main_native_size",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "main_png",
+      "existing_check": "main_png",
+      "source": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```"
+    },
+    {
+      "id": "alternate_native_size",
+      "existing_check": "alternate_native_size",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "alternate_png",
+      "existing_check": "alternate_png",
+      "source": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```"
+    },
+    {
+      "id": "engine",
+      "existing_check": "engine",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "view_transform",
+      "existing_check": "view_transform",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "exposure",
+      "existing_check": "exposure",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "gamma",
+      "existing_check": "gamma",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "metres",
+      "existing_check": "metres",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "unit_scale",
+      "existing_check": "unit_scale",
+      "source": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer."
+    },
+    {
+      "id": "editable",
+      "existing_check": "editable",
+      "source": "Design a cheerful low-poly island harbour, viewed from an elevated three-quarter angle. Use a roughly 34 by 32 metre site, with open blue water on the left and a sandy quay on the right. A timber pier must reach the shore and branch into a docking finger, with visible piles supporting it above the water. Keep a continuous walking route at least 1.2 m wide from the shore to the docking end. Place one substantial two-masted sailing ship beside the pier, and a smaller rowing boat nearby. The ship needs a shaped hull, deck, raised stern cabin, railings, masts, curved sails and supporting rigging; a box with sail triangles is insufficient. Its hull must sit partly below the water while its accessible deck is above it. On land, include a raised open-sided hut with four supports and a pitched or hipped roof, a separate small stone lookout tower with crenellations, at least four bent palms, and at least five barrels and five crates grouped as a loading area. Arrange the loading area without blocking the pier connection. Use warm timber, cream sails, sandy ground and turquoise water, with clear soft daylight and readable silhouettes. Keep the full ship, shoreline and pier visible in the primary view. This is an editable static scene; no sailing simulation or characters are needed."
+    },
+    {
+      "id": "site_dimensions",
+      "source": "instruction.md: roughly 34 by 32 metre",
+      "check": {
+        "id": "site_dimensions",
+        "metric": "l2_brief_dimensions",
+        "group": "numeric",
+        "params": {
+          "role": "site",
+          "scope": "union",
+          "lower": [
+            32,
+            34,
+            null
+          ],
+          "upper": [
+            32,
+            34,
+            null
+          ],
+          "relative_tolerance": 0.1
+        }
+      }
+    },
+    {
+      "id": "ship_hull_count",
+      "source": "instruction.md: one substantial two-masted sailing ship",
+      "check": {
+        "id": "ship_hull_count",
+        "metric": "l2_brief_count",
+        "group": "numeric",
+        "params": {
+          "role": "ship_hull",
+          "minimum": 1,
+          "maximum": 1
+        }
+      }
+    },
+    {
+      "id": "rowing_boat_count",
+      "source": "instruction.md: a smaller rowing boat",
+      "check": {
+        "id": "rowing_boat_count",
+        "metric": "l2_brief_count",
+        "group": "numeric",
+        "params": {
+          "role": "rowing_boat",
+          "minimum": 1,
+          "maximum": 1
+        }
+      }
+    },
+    {
+      "id": "mast_count",
+      "source": "instruction.md: two-masted",
+      "check": {
+        "id": "mast_count",
+        "metric": "l2_brief_count",
+        "group": "numeric",
+        "params": {
+          "role": "mast",
+          "minimum": 2,
+          "maximum": 2
+        }
+      }
+    },
+    {
+      "id": "hut_support_count",
+      "source": "instruction.md: four supports",
+      "check": {
+        "id": "hut_support_count",
+        "metric": "l2_brief_count",
+        "group": "numeric",
+        "params": {
+          "role": "hut_support",
+          "minimum": 4,
+          "maximum": 4
+        }
+      }
+    },
+    {
+      "id": "palm_count",
+      "source": "instruction.md: at least four bent palms",
+      "check": {
+        "id": "palm_count",
+        "metric": "l2_brief_count",
+        "group": "numeric",
+        "params": {
+          "role": "palm",
+          "minimum": 4
+        }
+      }
+    },
+    {
+      "id": "barrel_count",
+      "source": "instruction.md: at least five barrels",
+      "check": {
+        "id": "barrel_count",
+        "metric": "l2_brief_count",
+        "group": "numeric",
+        "params": {
+          "role": "barrel",
+          "minimum": 5
+        }
+      }
+    },
+    {
+      "id": "crate_count",
+      "source": "instruction.md: five crates",
+      "check": {
+        "id": "crate_count",
+        "metric": "l2_brief_count",
+        "group": "numeric",
+        "params": {
+          "role": "crate",
+          "minimum": 5
+        }
+      }
+    },
+    {
+      "id": "pier_clear_route",
+      "source": "instruction.md: continuous walking route at least 1.2 m wide",
+      "check": {
+        "id": "pier_clear_route",
+        "metric": "l2_brief_route",
+        "group": "numeric",
+        "params": {
+          "road_role": "pier",
+          "start_role": "shore",
+          "goal_role": "docking_end",
+          "min_width": 1.2,
+          "cell_size": 0.04,
+          "max_snap": 0.3,
+          "clearance_height": 0.1,
+          "surface_epsilon": 0.001,
+          "max_step": 0.02,
+          "max_slope": 0.5
+        }
+      }
+    },
+    {
+      "id": "ship_waterline",
+      "source": "instruction.md: Its hull must sit partly below the water while its accessible deck is above it.",
+      "check": {
+        "id": "ship_waterline",
+        "metric": "l2_brief_waterline",
+        "group": "numeric",
+        "params": {
+          "hull_role": "ship_hull",
+          "deck_role": "ship_deck",
+          "water_role": "water"
+        }
+      }
+    }
+  ],
+  "numeric_definition": {
+    "checks": [
+      {
+        "id": "site_dimensions",
+        "source": "instruction.md: roughly 34 by 32 metre",
+        "check": {
+          "id": "site_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "site",
+            "scope": "union",
+            "lower": [
+              32,
+              34,
+              null
+            ],
+            "upper": [
+              32,
+              34,
+              null
+            ],
+            "relative_tolerance": 0.1
+          }
+        }
+      },
+      {
+        "id": "ship_hull_count",
+        "source": "instruction.md: one substantial two-masted sailing ship",
+        "check": {
+          "id": "ship_hull_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "ship_hull",
+            "minimum": 1,
+            "maximum": 1
+          }
+        }
+      },
+      {
+        "id": "rowing_boat_count",
+        "source": "instruction.md: a smaller rowing boat",
+        "check": {
+          "id": "rowing_boat_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "rowing_boat",
+            "minimum": 1,
+            "maximum": 1
+          }
+        }
+      },
+      {
+        "id": "mast_count",
+        "source": "instruction.md: two-masted",
+        "check": {
+          "id": "mast_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "mast",
+            "minimum": 2,
+            "maximum": 2
+          }
+        }
+      },
+      {
+        "id": "hut_support_count",
+        "source": "instruction.md: four supports",
+        "check": {
+          "id": "hut_support_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "hut_support",
+            "minimum": 4,
+            "maximum": 4
+          }
+        }
+      },
+      {
+        "id": "palm_count",
+        "source": "instruction.md: at least four bent palms",
+        "check": {
+          "id": "palm_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "palm",
+            "minimum": 4
+          }
+        }
+      },
+      {
+        "id": "barrel_count",
+        "source": "instruction.md: at least five barrels",
+        "check": {
+          "id": "barrel_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "barrel",
+            "minimum": 5
+          }
+        }
+      },
+      {
+        "id": "crate_count",
+        "source": "instruction.md: five crates",
+        "check": {
+          "id": "crate_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "crate",
+            "minimum": 5
+          }
+        }
+      },
+      {
+        "id": "pier_clear_route",
+        "source": "instruction.md: continuous walking route at least 1.2 m wide",
+        "check": {
+          "id": "pier_clear_route",
+          "metric": "l2_brief_route",
+          "group": "numeric",
+          "params": {
+            "road_role": "pier",
+            "start_role": "shore",
+            "goal_role": "docking_end",
+            "min_width": 1.2,
+            "cell_size": 0.04,
+            "max_snap": 0.3,
+            "clearance_height": 0.1,
+            "surface_epsilon": 0.001,
+            "max_step": 0.02,
+            "max_slope": 0.5
+          }
+        }
+      },
+      {
+        "id": "ship_waterline",
+        "source": "instruction.md: Its hull must sit partly below the water while its accessible deck is above it.",
+        "check": {
+          "id": "ship_waterline",
+          "metric": "l2_brief_waterline",
+          "group": "numeric",
+          "params": {
+            "hull_role": "ship_hull",
+            "deck_role": "ship_deck",
+            "water_role": "water"
+          }
+        }
+      }
+    ],
+    "roles": [
+      "barrel",
+      "crate",
+      "docking_end",
+      "hut_support",
+      "mast",
+      "palm",
+      "pier",
+      "rowing_boat",
+      "ship_deck",
+      "ship_hull",
+      "shore",
+      "site",
+      "water"
+    ],
+    "remaining_numerical_engineering": [
+      "pier-pile and hut structural support; complete main-view framing"
+    ]
+  },
+  "remaining_engineering": [
+    "pier-pile and hut structural support; complete main-view framing"
+  ],
+  "eligibility_scope": "System validity only; all content checks affect quality, not eligibility",
+  "base_scoring": {
+    "profile": "brief_numeric",
+    "text_semantics": "deferred_not_in_denominator",
+    "vit_enabled": false,
+    "cost_in_quality_score": false,
+    "main_image_weight": 0.0,
+    "weights_status": "pilot_definition_not_calibrated",
+    "invalid_input_has_model_score": false,
+    "evaluation_mode": "system_validity_content_quality",
+    "minimum_quality": null
+  },
+  "base_scoring_profile": "l2-brief-quality-v3.0.0",
+  "physics": {
+    "version": "physical-context-v1",
+    "scope": "scene",
+    "policy": {
+      "method": "static-support-v1",
+      "gravity": "down_z",
+      "ground_mode": "diorama_platform",
+      "contact_tolerance_m": 0.02,
+      "ground_lower_fraction": 0.35,
+      "minimum_ground_area_fraction": 0.15
+    },
+    "sky_sphere_exception": false
+  },
+  "vlm_judge": {
+    "version": "l2-vlm-judge-v3",
+    "mode": "interactive",
+    "spec_path": "harness/vlm_spec.json",
+    "spec_sha256": "340d41f4354b942149a4cb586fb3fd9b0f8843f47b764a31a9b3c68178276eff",
+    "component_weights": {
+      "vlm": 0.6,
+      "data": 0.3,
+      "physics": 0.1
+    },
+    "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication"
+  },
+  "score_aggregation_note": "## 当前复评口径：v8 / Strict fidelity review\n\n仅复评原作品，未改动原生成题面。逐题原图/文本特征；主视图必查，跨视图项必须核对所有公开原图和候选双视图。\n每项列出达成、差异和严重度后评0–4级；主要缺陷最多2级，主体错误/缺失0级，不能因制作精致掩盖不忠于参考。\n保持原总权重及自动/物理测量：Brief VLM60/测量30/物理10；Edit 数值20/目标30/保持20/物理10/VLM20；Reference 图像50/定位20/物理10/VLM20。\n定位沿用原冻结参考框及公式，重新独立识别候选框。禁止任意配准。未展示仅扣对应项；技术失败不补零。\n机器草案和裁判尚待人工校准，不声称人工认证。详见 harness/vlm_spec.json。\n"
+}

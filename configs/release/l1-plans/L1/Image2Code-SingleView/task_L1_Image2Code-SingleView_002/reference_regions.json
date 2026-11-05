@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "18ee23d5bbbd53cb6f64736af8a0fefc6719371d1046fd70466699f5e31ee2ec",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "chair upholstery",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.39,
+          0.07
+        ],
+        [
+          0.82,
+          0.07
+        ],
+        [
+          0.82,
+          0.58
+        ],
+        [
+          0.39,
+          0.58
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "footrest",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.24,
+          0.62
+        ],
+        [
+          0.56,
+          0.62
+        ],
+        [
+          0.56,
+          0.87
+        ],
+        [
+          0.24,
+          0.87
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "hydraulic base",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.39,
+          0.63
+        ],
+        [
+          0.75,
+          0.63
+        ],
+        [
+          0.75,
+          0.88
+        ],
+        [
+          0.39,
+          0.88
+        ]
+      ]
+    }
+  ]
+}

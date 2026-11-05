@@ -1,0 +1,155 @@
+## Numerical geometry protocol (l2-brief-v2.1.0)
+Use solid colors and procedural shading only. Image textures, environment images,
+generated/baked image maps and image-dependent geometry/compositing are prohibited,
+including packed or unused image nodes in used node trees. No private reference is used for scoring.
+Assign bench_role to actual mesh geometry or to a parent grouping the mesh parts
+of one entity. Object names are unrestricted. Roles select measurements and do not
+prove semantics; visual fidelity and local detail are evaluated separately.
+For each route, nominate small endpoint surface patches at road level. All named
+start/goal pairs must connect. Counts group entity parts and reject identical
+co-located copies. Dimensions use complete geometry and world metres; horizontal
+sizes use a minimum-area rotated footprint. Camera heights use actual local ground.
+Opening checks use interior surfaces and bounded through-depth rays. Route checks
+use a 2.5D grid including vertical/thin surfaces, local floor height and low obstacles;
+the ground band defaults to 0.1 m, or the measured vehicle height where specified.
+This is not a general certification of human headroom or arbitrary stacked floors.
+Grid uncertainty or capacity limits produce not_measurable, never an inferred pass.
+Numerical tolerances, route step/slope settings and contact bands are published
+definitions with pending calibration. The JSON below specifies this version exactly.
+
+Roles: barrel, crate, docking_end, hut_support, mast, palm, pier, rowing_boat, ship_deck, ship_hull, shore, site, water.
+
+```json
+[
+  {
+    "id": "site_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "scope": "union",
+      "lower": [
+        32,
+        34,
+        null
+      ],
+      "upper": [
+        32,
+        34,
+        null
+      ],
+      "relative_tolerance": 0.1
+    }
+  },
+  {
+    "id": "ship_hull_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "ship_hull",
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  {
+    "id": "rowing_boat_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "rowing_boat",
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  {
+    "id": "mast_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "mast",
+      "minimum": 2,
+      "maximum": 2
+    }
+  },
+  {
+    "id": "hut_support_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "hut_support",
+      "minimum": 4,
+      "maximum": 4
+    }
+  },
+  {
+    "id": "palm_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "palm",
+      "minimum": 4
+    }
+  },
+  {
+    "id": "barrel_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "barrel",
+      "minimum": 5
+    }
+  },
+  {
+    "id": "crate_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "crate",
+      "minimum": 5
+    }
+  },
+  {
+    "id": "pier_clear_route",
+    "metric": "l2_brief_route",
+    "group": "numeric",
+    "params": {
+      "road_role": "pier",
+      "start_role": "shore",
+      "goal_role": "docking_end",
+      "min_width": 1.2,
+      "cell_size": 0.04,
+      "max_snap": 0.3,
+      "clearance_height": 0.1,
+      "surface_epsilon": 0.001,
+      "max_step": 0.02,
+      "max_slope": 0.5
+    }
+  },
+  {
+    "id": "ship_waterline",
+    "metric": "l2_brief_waterline",
+    "group": "numeric",
+    "params": {
+      "hull_role": "ship_hull",
+      "deck_role": "ship_deck",
+      "water_role": "water"
+    }
+  }
+]
+```
+
+
+## Geometry extension (l2-brief-v2.2.0)
+This case retains the preceding numeric definitions unchanged. This native geometry channel does not measure text semantics; semantic fidelity is evaluated separately.
+
+
+## Layout and course geometry (l2-brief-v2.3.0)
+This case retains the preceding numerical definitions unchanged.
+
+## Scoring
+
+Final item score: `60% vlm + 30% data + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

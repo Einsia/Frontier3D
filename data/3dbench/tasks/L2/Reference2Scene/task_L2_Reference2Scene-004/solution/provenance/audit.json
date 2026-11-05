@@ -1,0 +1,197 @@
+{
+  "key": "kitchen",
+  "source_sha256": "f50b086860784a070e78940f8ada568db76a94382e33ce4966f5fe81b8c01274",
+  "camera_mapping": "Original authored camera at frame 1",
+  "texture_path_repairs": [
+    {
+      "image": "bread-bin-front-bump.png",
+      "resolved": "unpacked/bread-bin-front-bump.png"
+    },
+    {
+      "image": "Chopping-Board.jpg",
+      "resolved": "unpacked/Chopping-Board.jpg"
+    },
+    {
+      "image": "cushion-bump.jpg",
+      "resolved": "unpacked/cushion-bump.jpg"
+    },
+    {
+      "image": "cushion-red.jpg",
+      "resolved": "unpacked/cushion-red.jpg"
+    },
+    {
+      "image": "Kitchen-book-leftpage",
+      "resolved": "unpacked/Kitchen-book-leftpage.jpg"
+    },
+    {
+      "image": "Kitchen-book-leftpage.jpg",
+      "resolved": "unpacked/Kitchen-book-leftpage.jpg"
+    },
+    {
+      "image": "Kitchen-bookpage-larg",
+      "resolved": "unpacked/Kitchen-bookpage-large.jpg"
+    },
+    {
+      "image": "Kitchen-bookpage-large.jpg",
+      "resolved": "unpacked/Kitchen-bookpage-large.jpg"
+    },
+    {
+      "image": "Kitchen-carrot-uv.png",
+      "resolved": "unpacked/Kitchen-carrot-uv.png"
+    },
+    {
+      "image": "Kitchen-carrot-uv.png.001",
+      "resolved": "unpacked/Kitchen-carrot-uv.png"
+    },
+    {
+      "image": "Kitchen-mushroom-text",
+      "resolved": "unpacked/Kitchen-mushroom-texture.png"
+    },
+    {
+      "image": "Kitchen-mushroom-texture.png",
+      "resolved": "unpacked/Kitchen-mushroom-texture.png"
+    },
+    {
+      "image": "radio-dial-idea.jpg.001",
+      "resolved": "unpacked/radio-dial-idea.jpg"
+    },
+    {
+      "image": "Tabletop-light.jpg",
+      "resolved": "unpacked/Tabletop-light.jpg"
+    },
+    {
+      "image": "Tea-Towel.jpg",
+      "resolved": "unpacked/Tea-Towel.jpg"
+    },
+    {
+      "image": "view-overexposed5a.jpg",
+      "resolved": "unpacked/view-overexposed5a.jpg"
+    },
+    {
+      "image": "wood-floorboards-texture-softer-bump.jpg",
+      "resolved": "unpacked/wood-floorboards-texture-softer-bump.jpg"
+    },
+    {
+      "image": "wood-floorboards-texture-softer.jpg",
+      "resolved": "unpacked/wood-floorboards-texture-softer.jpg"
+    },
+    {
+      "image": "Worktopt-light.jpg",
+      "resolved": "unpacked/Worktopt-light.jpg"
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-breadbin-fron"
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-breadbin-side"
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-breadbin-top."
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-breadboard.pn"
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-PEPPER-RED.pn"
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-table-cross-u"
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-table-top-uv."
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-worktop-small"
+    },
+    {
+      "removed_unused_legacy_image": "Kitchen-worktops-uv.p"
+    },
+    {
+      "removed_unused_legacy_image": "radio-dial-idea.jpg"
+    },
+    {
+      "removed_unused_legacy_image": "snowsheff1a1.jpg"
+    },
+    {
+      "removed_unused_legacy_image": "WoodFine0033_15_S.jpg"
+    },
+    {
+      "removed_unused_legacy_image": "WoodFine0038_1_S.jpg"
+    }
+  ],
+  "packed_image_count": 19,
+  "executable_texts": 0,
+  "external_libraries": 0,
+  "frame": 1,
+  "resolution": [
+    1600,
+    900
+  ],
+  "alternate_local_x_offset_m": 0.3,
+  "cameras": {
+    "Task_main": {
+      "matrix_world": [
+        [
+          0.9074714183807373,
+          -0.00909454096108675,
+          0.4200153648853302,
+          0.5344620943069458
+        ],
+        [
+          0.42011383175849915,
+          0.019465822726488113,
+          -0.9072626233100891,
+          -2.9520881175994873
+        ],
+        [
+          7.519200153183192e-05,
+          0.9997691512107849,
+          0.02148541994392872,
+          1.6229829788208008
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 24.0,
+      "sensor_fit": "AUTO",
+      "sensor_width": 32.0,
+      "sensor_height": 18.0
+    },
+    "Task_alternate": {
+      "matrix_world": [
+        [
+          0.9074714183807373,
+          -0.00909455306828022,
+          0.4200153648853302,
+          0.8067035675048828
+        ],
+        [
+          0.42011383175849915,
+          0.019465817138552666,
+          -0.9072626233100891,
+          -2.8260538578033447
+        ],
+        [
+          7.520555664086714e-05,
+          0.9997691512107849,
+          0.02148541994392872,
+          1.6230055093765259
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 24.0,
+      "sensor_fit": "AUTO",
+      "sensor_width": 32.0,
+      "sensor_height": 18.0
+    }
+  }
+}

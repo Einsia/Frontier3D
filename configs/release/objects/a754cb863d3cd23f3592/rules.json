@@ -1,0 +1,481 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_023",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_head",
+      "label": "穹顶头部与环带",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.395,
+          0.313
+        ],
+        [
+          0.414,
+          0.245
+        ],
+        [
+          0.457,
+          0.193
+        ],
+        [
+          0.507,
+          0.166
+        ],
+        [
+          0.573,
+          0.166
+        ],
+        [
+          0.649,
+          0.193
+        ],
+        [
+          0.68,
+          0.247
+        ],
+        [
+          0.691,
+          0.309
+        ],
+        [
+          0.679,
+          0.374
+        ]
+      ]
+    },
+    {
+      "id": "r_body",
+      "label": "圆柱躯干及底部结构",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.396,
+          0.316
+        ],
+        [
+          0.679,
+          0.374
+        ],
+        [
+          0.615,
+          0.554
+        ],
+        [
+          0.595,
+          0.684
+        ],
+        [
+          0.542,
+          0.714
+        ],
+        [
+          0.34,
+          0.658
+        ],
+        [
+          0.313,
+          0.609
+        ]
+      ]
+    },
+    {
+      "id": "r_near_leg",
+      "label": "近侧腿足",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.627,
+          0.379
+        ],
+        [
+          0.695,
+          0.395
+        ],
+        [
+          0.714,
+          0.491
+        ],
+        [
+          0.697,
+          0.552
+        ],
+        [
+          0.71,
+          0.672
+        ],
+        [
+          0.731,
+          0.704
+        ],
+        [
+          0.788,
+          0.773
+        ],
+        [
+          0.656,
+          0.856
+        ],
+        [
+          0.564,
+          0.818
+        ],
+        [
+          0.583,
+          0.745
+        ],
+        [
+          0.585,
+          0.681
+        ],
+        [
+          0.626,
+          0.651
+        ],
+        [
+          0.611,
+          0.552
+        ],
+        [
+          0.591,
+          0.497
+        ],
+        [
+          0.595,
+          0.419
+        ]
+      ]
+    },
+    {
+      "id": "r_center_support",
+      "label": "中央支撑与中央足",
+      "weight": 0.12,
+      "polygon": [
+        [
+          0.405,
+          0.671
+        ],
+        [
+          0.544,
+          0.711
+        ],
+        [
+          0.464,
+          0.76
+        ],
+        [
+          0.51,
+          0.81
+        ],
+        [
+          0.404,
+          0.879
+        ],
+        [
+          0.323,
+          0.844
+        ],
+        [
+          0.379,
+          0.764
+        ],
+        [
+          0.398,
+          0.731
+        ]
+      ]
+    },
+    {
+      "id": "r_far_leg",
+      "label": "远侧腿足可见部分",
+      "weight": 0.08,
+      "polygon": [
+        [
+          0.372,
+          0.301
+        ],
+        [
+          0.4,
+          0.308
+        ],
+        [
+          0.371,
+          0.414
+        ],
+        [
+          0.355,
+          0.47
+        ],
+        [
+          0.335,
+          0.459
+        ],
+        [
+          0.327,
+          0.368
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_head",
+      "query": "完整可见穹顶头部，含端口及底部环带",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.395,
+          0.165,
+          0.691,
+          0.375
+        ]
+      ],
+      "boundary_notes": "包括顶部小突起、黑色光学表面及头部环带；不含躯干。"
+    },
+    {
+      "id": "t_body",
+      "query": "圆柱躯干及其底部外壳",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.313,
+          0.315,
+          0.676,
+          0.716
+        ]
+      ],
+      "boundary_notes": "以可见外壳为界，包括下沿肋条和暗色开口；排除侧腿及独立中央支撑。"
+    },
+    {
+      "id": "t_side_legs",
+      "query": "两侧腿的可见结构，不含足底",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.326,
+          0.301,
+          0.4,
+          0.471
+        ],
+        [
+          0.582,
+          0.379,
+          0.729,
+          0.787
+        ],
+        [
+          0.345,
+          0.666,
+          0.403,
+          0.738
+        ]
+      ],
+      "boundary_notes": "远腿被躯干遮挡，上部与下部按可辨识可见片段分别框定，并非额外腿；近腿包括肩壳、细长杆及踝连接。"
+    },
+    {
+      "id": "t_feet",
+      "query": "楔形足部",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.308,
+          0.669,
+          0.438,
+          0.778
+        ],
+        [
+          0.323,
+          0.748,
+          0.51,
+          0.879
+        ],
+        [
+          0.563,
+          0.702,
+          0.789,
+          0.856
+        ]
+      ],
+      "boundary_notes": "包含各足可见底板、斜面及贴附软管，保留暗面；远足仅框可见范围，不补全遮挡。"
+    },
+    {
+      "id": "t_front_vents",
+      "query": "躯干正面上下排列的圆角格栅",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.394,
+          0.423,
+          0.455,
+          0.486
+        ],
+        [
+          0.379,
+          0.481,
+          0.434,
+          0.545
+        ]
+      ],
+      "boundary_notes": "含金属边框、内部横片和黑色凹腔，不含周围大面板。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_identity",
+      "source_quote": "Reconstruct R2-D2",
+      "question": "整体是否可辨识为参考中的R2-D2？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_body",
+      "source_quote": "cylindrical body",
+      "question": "躯干是否保持参考中的圆柱形体？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_head",
+      "source_quote": "domed head",
+      "question": "头部是否呈参考中的圆顶形体？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_panels",
+      "source_quote": "blue-and-white panel layout",
+      "question": "蓝白面板的分布、分区与参考是否一致？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_optics",
+      "source_quote": "optical ports",
+      "question": "光学端口的类型、位置及朝向是否与参考一致？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_legs",
+      "source_quote": "side legs and feet",
+      "question": "两侧腿与足的配置、相对位置是否符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_center",
+      "source_quote": "central support where visible",
+      "question": "参考可见的中央支撑是否存在并位于躯干下方？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_proportion",
+      "source_quote": "Preserve the head-to-body proportions",
+      "question": "头部与躯干的相对比例是否保留？",
+      "weight": 0.1
+    },
+    {
+      "id": "s_pose",
+      "source_quote": "They show the same object and pose.",
+      "question": "躯干倾斜、腿足支撑及相互遮挡是否保持参考的静态姿态？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_geometry",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "主体是否为完整可编辑立体几何，而非图像平面或朝向相机的薄壳？",
+      "weight": 0.08
+    },
+    {
+      "id": "s_components",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands",
+      "question": "独立部件是否为可编辑对象或可清楚分离的网格岛？",
+      "weight": 0.04
+    },
+    {
+      "id": "s_up",
+      "source_quote": "Use metres, Z up",
+      "question": "原生场景是否采用米制并以Z轴为上方向？",
+      "weight": 0.04
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_curvature",
+      "source_quote": "Preserve continuous curvature",
+      "question": "头顶与躯干的曲面是否连续，头部底缘环带是否保留弧形截面？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_panels",
+      "source_quote": "recessed panels",
+      "question": "躯干面板边缘、长槽及凹入层级是否具有真实局部深度？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_ports",
+      "source_quote": "optical ports",
+      "question": "黑色镜头、环形端口边框与突出短筒是否保留各自曲面及厚度？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_grilles",
+      "source_quote": "openings",
+      "question": "正面圆角格栅与侧面通风口是否保留边框、隔片和后方凹腔？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_connections",
+      "source_quote": "leg connections",
+      "question": "肩部圆弧壳、关节孔及踝部横向连接件是否保持参考的局部结构？",
+      "weight": 0.12
+    },
+    {
+      "id": "d_gaps",
+      "source_quote": "three-dimensional gaps",
+      "question": "腿与躯干、踝杆与足部之间是否保留可见穿透间隙？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_feet",
+      "source_quote": "side legs and feet",
+      "question": "足部是否保留楔形斜面、厚底板及侧面弧形构件？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_thin",
+      "source_quote": "thin structures",
+      "question": "足部弯曲软管与腿部细杆是否具有独立截面、弯曲及连接端？",
+      "weight": 0.1
+    },
+    {
+      "id": "d_center",
+      "source_quote": "central support where visible",
+      "question": "中央支撑的叉形连接、轴件与中央足的连接是否保留？",
+      "weight": 0.05
+    },
+    {
+      "id": "d_bottom",
+      "source_quote": "thickness",
+      "question": "躯干下沿是否保留厚边、分隔肋及支撑上方凹腔？",
+      "weight": 0.05
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在最终静态姿态中，对排除相机和灯光后的模型几何应用世界变换，计算世界坐标轴对齐包围盒的X、Y、Z跨度并取最大值，与1.000 m比较；0.02表示原文2%的相对容差，非已测结果。"
+    }
+  ],
+  "limitations": [
+    "主图为input/reference.png，对应原始附件reference/reference-1.png；所有冻结坐标仅来自此图，其他三图仅辅助形态理解。",
+    "未提供候选作品，未进行候选测量或推断。",
+    "legacy-detail-20261018-v1的完整内容未附；本计划仅依据本次给出的合同和检查规则。",
+    "图像未给出其余精确尺寸、部件计数或角度；可见结构数量与比例仅作参考形态证据，不转为精确数值要求。",
+    "最大整体跨度按世界轴对齐包围盒最长边操作化；原文未进一步定义跨度算法。",
+    "遮挡部分不补造隐藏目标边界；远侧腿的上下可见片段在定位中分开记录。",
+    "帧号、输出分辨率、渲染设置及交付文件约定不作为内容质量数值检查；细小印刷标记允许简化，运动与内部机构不要求。"
+  ]
+}

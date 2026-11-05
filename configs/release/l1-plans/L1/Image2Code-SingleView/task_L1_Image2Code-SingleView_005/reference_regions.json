@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "55352d8fc5d239e8e835b3f67a704343513bba0aadcb1e2918be2d6cf9f3c255",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "baguettes",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.24,
+          0.18
+        ],
+        [
+          0.64,
+          0.18
+        ],
+        [
+          0.64,
+          0.66
+        ],
+        [
+          0.24,
+          0.66
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "woven basket",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.26,
+          0.45
+        ],
+        [
+          0.64,
+          0.45
+        ],
+        [
+          0.64,
+          0.77
+        ],
+        [
+          0.26,
+          0.77
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "front bread and wrapper",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.22,
+          0.73
+        ],
+        [
+          0.76,
+          0.73
+        ],
+        [
+          0.76,
+          0.85
+        ],
+        [
+          0.22,
+          0.85
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+## Numerical geometry protocol (l2-brief-v2.1.0)
+Use solid colors and procedural shading only. Image textures, environment images,
+generated/baked image maps and image-dependent geometry/compositing are prohibited,
+including packed or unused image nodes in used node trees. No private reference is used for scoring.
+Assign bench_role to actual mesh geometry or to a parent grouping the mesh parts
+of one entity. Object names are unrestricted. Roles select measurements and do not
+prove semantics; visual fidelity and local detail are evaluated separately.
+For each route, nominate small endpoint surface patches at road level. All named
+start/goal pairs must connect. Counts group entity parts and reject identical
+co-located copies. Dimensions use complete geometry and world metres; horizontal
+sizes use a minimum-area rotated footprint. Camera heights use actual local ground.
+Opening checks use interior surfaces and bounded through-depth rays. Route checks
+use a 2.5D grid including vertical/thin surfaces, local floor height and low obstacles;
+the ground band defaults to 0.1 m, or the measured vehicle height where specified.
+This is not a general certification of human headroom or arbitrary stacked floors.
+Grid uncertainty or capacity limits produce not_measurable, never an inferred pass.
+Numerical tolerances, route step/slope settings and contact bands are published
+definitions with pending calibration. The JSON below specifies this version exactly.
+
+Roles: crypt_entry, entrance, grave, light_post, path, site, tree.
+
+```json
+[
+  {
+    "id": "site_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "scope": "union",
+      "lower": [
+        24,
+        24,
+        null
+      ],
+      "upper": [
+        24,
+        24,
+        null
+      ],
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "grave_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "grave",
+      "minimum": 12,
+      "maximum": 12
+    }
+  },
+  {
+    "id": "tree_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "tree",
+      "minimum": 4,
+      "maximum": 4
+    }
+  },
+  {
+    "id": "light_post_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "light_post",
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  {
+    "id": "path_clear_route",
+    "metric": "l2_brief_route",
+    "group": "numeric",
+    "params": {
+      "road_role": "path",
+      "start_role": "entrance",
+      "goal_role": "crypt_entry",
+      "min_width": 2,
+      "cell_size": 0.04,
+      "max_snap": 0.5,
+      "clearance_height": 0.1,
+      "surface_epsilon": 0.001,
+      "max_step": 0.02,
+      "max_slope": 0.5
+    }
+  }
+]
+```
+
+
+## Geometry extension (l2-brief-v2.2.0)
+This case retains the preceding numeric definitions unchanged. This native geometry channel does not measure text semantics; semantic fidelity is evaluated separately.
+
+
+## Layout and course geometry (l2-brief-v2.3.0)
+Sides and rows are measured relative to the actual straight path/road geometry,
+not global X/Y or object names. All selected entity geometry must remain outside
+the road/path's transverse interval. A row is a longitudinal center band spanning
+at most 0.25 m; no equal row spacing or equal number per row is required.
+For mini-golf, each lane must geometrically contain exactly one ball, cup and
+diamond obstacle; lanes must be parallel within 2 degrees. Ball and cup occupy
+opposite 15-percent end regions, and the diamond is at least 60 percent of the
+way from ball to cup. These percentages and tolerances are published definitions
+interpretations of start/far-end, not original hidden dimensions.
+Each ball-to-cup path uses only that lane and its actual cup geometry. Start is
+the ball's actual ground position and the goals are sampled actual cup-rim points.
+Cup-to-lane connection is checked along 32 radial bands with 33 samples each.
+Route clearance uses a conservative upright cylinder containing a 0.1 m ball,
+not rolling dynamics. The 0.02 m grid has a reported width uncertainty; ambiguous
+clearance produces not_measurable. These finite tests do not certify arbitrary
+stacked surfaces, curved swept volumes, complete shells or text semantics.
+All thresholds require calibration on accepted examples before formal release.
+
+```json
+[
+  {
+    "id": "grave_side_rows",
+    "metric": "l2_side_layout",
+    "group": "numeric",
+    "params": {
+      "role": "grave",
+      "axis_role": "path",
+      "per_side": 6,
+      "rows_per_side": 3,
+      "row_tolerance_m": 0.25
+    }
+  }
+]
+```
+
+
+## Geometric assemblies (l2-brief-v2.4.0)
+Whole-entity roles remain public geometry selectors, not semantic answers.
+No private example shapes, dimensions or images are used. All thresholds below
+are finite published definitions requiring accepted boundary examples and calibration.
+
+For houses, additionally select chimney geometry with bench_role="chimney".
+The evaluator derives attachment to a house from geometry, not parenting or names.
+At least two distinct houses must have attached chimney geometry. Each chimney
+needs a unique matching house. At least 80% of its valid footprint sections must
+touch or intersect that house's top surface within 0.02 m, extend at least 0.1 m
+above it, and have at most half the chimney's height embedded below it.
+Sections use a 5x5 grid over the middle 80% of each oriented footprint; at least
+half the positions must have actual upper/lower intersections separated by more
+than 0.00001 m. Multiple chimneys on the same house do not add distinct houses.
+
+For graves, select each whole grave as one bench_role="grave" entity. Bed and
+marker may be separate meshes or joined; bench_part names are not answers.
+The evaluator searches horizontal surface levels (Z variation <= 0.00001 m,
+at most 128 levels) for a broad lower bed and a nearby upright upper volume.
+Bed height must be positive and no more than half its short horizontal span.
+At the candidate top level, actual horizontal area must cover at least 25% of
+its oriented bounding rectangle. At least half the 5x5 footprint positions must
+show nonzero bed thickness. The upper geometry must be non-coplanar, rise at
+least 0.1 m above that level, and its height must be at least half its longest
+horizontal span. It must start within 0.02 m of the bed-top level and remain
+within the bed footprint expanded by 25% of the bed's longest horizontal span.
+This permits a marker beside a bed, including a common joined mesh. Missing
+parts, relabelled copies and lying plates cannot establish the required geometry.
+
+These checks do not classify chimney/marker semantics, rounded/cross symbolism,
+facade style, continuous arbitrary curved beds, complete connectivity, ground
+support, entrances or perimeter closure. Those are separate engineering scopes;
+textual semantics and ViT remain excluded from scores.
+
+```json
+[
+  {
+    "id": "grave_bed_and_upright_marker",
+    "metric": "l2_entity_part_geometry",
+    "group": "numeric",
+    "params": {
+      "role": "grave",
+      "grid_size": 5,
+      "max_gap_m": 0.02,
+      "min_protrusion_m": 0.1,
+      "horizontal_max_height_ratio": 0.5,
+      "upright_min_height_ratio": 0.5,
+      "minimum_bed_area_fraction": 0.25,
+      "maximum_part_offset_fraction": 0.25
+    }
+  }
+]
+```
+
+## Scoring
+
+Final item score: `60% vlm + 30% data + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

@@ -1,0 +1,261 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/9ce332de21de9aa90da9/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/91c6962ceb0cb8c53344/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/969f88fee172ad03a266/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "滤水壶",
+      "polygon": [
+        [
+          0.163,
+          0.304
+        ],
+        [
+          0.498,
+          0.304
+        ],
+        [
+          0.498,
+          0.942
+        ],
+        [
+          0.163,
+          0.942
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "r02",
+      "label": "木果碗与碗内水果",
+      "polygon": [
+        [
+          0,
+          0.424
+        ],
+        [
+          0.213,
+          0.424
+        ],
+        [
+          0.213,
+          0.822
+        ],
+        [
+          0,
+          0.822
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r03",
+      "label": "前景洋葱与右侧锅具",
+      "polygon": [
+        [
+          0.706,
+          0.685
+        ],
+        [
+          1,
+          0.685
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0.706,
+          1
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r04",
+      "label": "前景大金属锅",
+      "polygon": [
+        [
+          0.446,
+          0.764
+        ],
+        [
+          0.942,
+          0.764
+        ],
+        [
+          0.942,
+          1
+        ],
+        [
+          0.446,
+          1
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r05",
+      "label": "储物罐与后方托盘",
+      "polygon": [
+        [
+          0.499,
+          0.259
+        ],
+        [
+          0.774,
+          0.259
+        ],
+        [
+          0.774,
+          0.512
+        ],
+        [
+          0.499,
+          0.512
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r06",
+      "label": "料理机碗",
+      "polygon": [
+        [
+          0.324,
+          0.199
+        ],
+        [
+          0.536,
+          0.199
+        ],
+        [
+          0.536,
+          0.403
+        ],
+        [
+          0.324,
+          0.403
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r07",
+      "label": "隔热手套与擀面杖",
+      "polygon": [
+        [
+          0.423,
+          0.443
+        ],
+        [
+          0.934,
+          0.443
+        ],
+        [
+          0.934,
+          0.756
+        ],
+        [
+          0.423,
+          0.756
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "r08",
+      "label": "后方盆栽",
+      "polygon": [
+        [
+          0.055,
+          0
+        ],
+        [
+          0.361,
+          0
+        ],
+        [
+          0.361,
+          0.439
+        ],
+        [
+          0.127,
+          0.439
+        ],
+        [
+          0.079,
+          0.21
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "n01",
+      "measurement_definition": "在场景世界坐标中，取大滤水壶全部实体部件的最高与最低 Z 坐标之差，以场景米制单位读取整体高度。",
+      "quantity": "大滤水壶整体高度",
+      "relation": "equal",
+      "source_quote": "Use a 0.30 m overall height for the large filter pitcher",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n02",
+      "measurement_definition": "取备用相机与主相机的世界位置差，将该向量投影至主相机局部正 X 轴，读取有符号位移；位移方向与其他相机属性另作关系检查。",
+      "quantity": "备用相机沿主相机局部正 X 轴的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "baseline_trial": "historical-source:data/l3/minecraft/openworld-astra-20261022-003",
+  "baseline_prompt_sha256": "70c2a9bb672d3cc9a3efe474b0c277be1c04b7da0185441e05e5ca77391c5329",
+  "input_hashes": {
+    "input/REQUIREMENTS.md": "add5bbb6b351df777d1b23c41d6d83567b64318651808e0f80881623aa1cfa9a",
+    "input/INTERFACE.md": "5f7be5cc3bfeab6cf86ab9ff08f3c5037d5a828f106cc72aed8efc601a60de2a",
+    "input/BenchEntity.h": "a3c73e5e2590a39080e869005e1fd1d102d97a0d45fdcd772601d677ebd29142",
+    "input/BenchInventory.h": "030174129da5e7b412e1a2066bf524f5600855f5b06dc64b6c28cf1bb469f329",
+    "input/ASSETS.md": "19665181d58382ce878a176f3db6464c015559e69e535b32e81998243bccf4cb",
+    "input/BenchObserver.h": "e0f52996afa8dfdd6dfef6f9bcb3312009034a422687dd5b01d1cb8fa67a5d64",
+    "input/INTEGRATION.md": "ce4046d1b20aeba439b1a2708ea4cae36f8ddda7d0f7c04748099fa8c0bcaadf",
+    "input/reference.jpg": "8d86ab55f1ddb532f2c051a84396316677898e71fbf7cdbd9a23a6eb127f5a18"
+  },
+  "material_libraries": [
+    "kenney-voxel-1.0-tiles",
+    "polyhaven-2k-2026-10-16"
+  ],
+  "time_limit_seconds": null,
+  "completion_policy": "complete_delivery",
+  "prompt_scope": "entire open-world environment, with detailed village interaction",
+  "candidate_files_included": false
+}

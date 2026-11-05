@@ -1,0 +1,19 @@
+{
+  "uid": "90cd992fa19a491f902595ad1b4eade9",
+  "name": "French Horn",
+  "source_url": "https://sketchfab.com/3d-models/french-horn-90cd992fa19a491f902595ad1b4eade9",
+  "author": {
+    "displayName": "Bethanycrandallart",
+    "profileUrl": "https://sketchfab.com/Bethanycrandallart"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "7d3817775414f91b785cdde537209d8c7fd7121c7d310e238e5b4dd6d1b5e6b2",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

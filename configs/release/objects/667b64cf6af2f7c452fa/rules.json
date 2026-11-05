@@ -1,0 +1,517 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_022",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "琴壳弯腰与圆尾是否连续平滑，并保留有厚度的内外壁和下凹琴腔？",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "开启的琴盖是否具有薄板厚度、分层边缘及可见的连接部位？",
+      "source_quote": "open lid and support",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "琴盖支撑杆是否细长，且两端分别连接琴盖与琴体？",
+      "source_quote": "open lid and support",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "键盘是否保留逐键间隙、黑键凸起与前后错落的键体结构？",
+      "source_quote": "key spacing",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "键盘两端是否保留弯曲侧颊、台阶轮廓和包围键床的厚边？",
+      "source_quote": "keyboard",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "内部框架是否保留可见的圆形孔口、孔缘厚度及横纵肋条？",
+      "source_quote": "internal visible structure",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "琴弦是否形成细长线束，并保留参考中的分区走向？",
+      "source_quote": "Fine strings can be simplified while retaining their directional structure",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "琴腿是否具有收窄腿身、下端块状脚座及可见轮组件？",
+      "source_quote": "legs",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "踏板组件是否保留悬挂竖杆、开放间隙、底座、伸出的踏板及斜撑？",
+      "source_quote": "pedal assembly",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "键盘后方谱架是否保留薄板厚度、倾斜板面和折线顶缘？",
+      "source_quote": "internal visible structure",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划仅冻结参考区域、定位范围和待检查问题，不包含候选判断或已测量结果。",
+    "主图使用指令路径 input/reference.png，对应附件原始证据路径 reference/reference-1.png；其他参考证据为 reference/reference-0.png、reference/reference-2.png 和 reference/reference-3.png。",
+    "未附 legacy-detail-20261018-v1 的完整正文；本计划依据本次嵌入的合同与检查规则，不推断未公开的旧版要求。",
+    "区域和框仅依据主图原始可见内容冻结；遮挡部分不补画，暗色表面纳入，阴影和反射不纳入。定位框不是精确几何测量。",
+    "琴盖角度、键距、腿数、踏板数和孔口数均未以精确数值规定；按参考形态检查，不从像素估计生成数值约束。",
+    "maximum overall span 未明确采用世界轴包围盒最长边还是最大点对距离；本计划采用世界轴包围盒最长边，并将此解释显式记录。",
+    "2% 为明确给出的相对容差，numeric_checks 中以 0.02 表示；1.000 m 作为尺度约定的名义最长跨度。",
+    "可编辑性、完整三维结构、Z 向上及导出姿态一致性须检查原生场景或导出几何，单张渲染不能证实。",
+    "参考未显示的底面、内部机械和连接细节不设隐藏几何要求；细弦允许简化，不要求演奏机械。",
+    "帧 1 是姿态保存要求；像素尺寸、渲染器、曝光和提交文件结构不作为内容质量数值检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": 0.02,
+      "id": "N01",
+      "measurement_definition": "在最终静态姿态中，将乐器几何应用对象变换后汇总到世界坐标，以米读取其 X、Y、Z 包围盒边长并取最大值；排除相机与灯光。与名义值 1.000 m 比较，使用原文给出的相对容差 2%。",
+      "quantity": "乐器整体最大跨度",
+      "relation": "equal",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "target": 1,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "开启琴盖及薄边",
+      "polygon": [
+        [
+          0.183,
+          0.533
+        ],
+        [
+          0.278,
+          0.473
+        ],
+        [
+          0.694,
+          0.269
+        ],
+        [
+          0.709,
+          0.272
+        ],
+        [
+          0.576,
+          0.355
+        ],
+        [
+          0.205,
+          0.544
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R02",
+      "label": "弯曲琴壳与内部琴腔",
+      "polygon": [
+        [
+          0.131,
+          0.579
+        ],
+        [
+          0.538,
+          0.359
+        ],
+        [
+          0.594,
+          0.359
+        ],
+        [
+          0.702,
+          0.389
+        ],
+        [
+          0.735,
+          0.414
+        ],
+        [
+          0.735,
+          0.488
+        ],
+        [
+          0.578,
+          0.598
+        ],
+        [
+          0.597,
+          0.63
+        ],
+        [
+          0.597,
+          0.688
+        ],
+        [
+          0.453,
+          0.763
+        ],
+        [
+          0.109,
+          0.627
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R03",
+      "label": "键盘与前部键床",
+      "polygon": [
+        [
+          0.106,
+          0.585
+        ],
+        [
+          0.477,
+          0.68
+        ],
+        [
+          0.498,
+          0.737
+        ],
+        [
+          0.449,
+          0.775
+        ],
+        [
+          0.088,
+          0.668
+        ],
+        [
+          0.089,
+          0.635
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "琴盖支撑杆",
+      "polygon": [
+        [
+          0.446,
+          0.409
+        ],
+        [
+          0.456,
+          0.411
+        ],
+        [
+          0.576,
+          0.635
+        ],
+        [
+          0.563,
+          0.64
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R05",
+      "label": "前侧琴腿与轮脚",
+      "polygon": [
+        [
+          0.451,
+          0.754
+        ],
+        [
+          0.5,
+          0.748
+        ],
+        [
+          0.49,
+          0.834
+        ],
+        [
+          0.493,
+          0.859
+        ],
+        [
+          0.499,
+          0.878
+        ],
+        [
+          0.482,
+          0.887
+        ],
+        [
+          0.46,
+          0.876
+        ],
+        [
+          0.455,
+          0.84
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R06",
+      "label": "悬挂踏板组件",
+      "polygon": [
+        [
+          0.318,
+          0.733
+        ],
+        [
+          0.399,
+          0.755
+        ],
+        [
+          0.382,
+          0.811
+        ],
+        [
+          0.36,
+          0.824
+        ],
+        [
+          0.301,
+          0.809
+        ],
+        [
+          0.312,
+          0.792
+        ]
+      ],
+      "weight": 0.15
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "主体是否为参考所示的三角钢琴，整体比例与同一静态姿态是否一致？",
+      "source_quote": "They show the same object and pose.",
+      "weight": 0.1
+    },
+    {
+      "id": "S02",
+      "question": "琴壳是否保留长直侧、内凹弯腰和圆尾构成的不对称轮廓？",
+      "source_quote": "Preserve the case outline",
+      "weight": 0.1
+    },
+    {
+      "id": "S03",
+      "question": "琴盖是否向上开启，倾角及其与琴体的关系是否符合参考？",
+      "source_quote": "lid angle",
+      "weight": 0.08
+    },
+    {
+      "id": "S04",
+      "question": "是否存在位于琴腔上方、支住开启琴盖的斜杆？",
+      "source_quote": "open lid and support",
+      "weight": 0.06
+    },
+    {
+      "id": "S05",
+      "question": "黑白键盘是否横置于琴体前端，排列节奏与键距是否符合参考？",
+      "source_quote": "keyboard",
+      "weight": 0.08
+    },
+    {
+      "id": "S06",
+      "question": "开启琴盖下是否可见框架、音板、弦区及前部谱架，位置与遮挡是否符合参考？",
+      "source_quote": "internal visible structure",
+      "weight": 0.08
+    },
+    {
+      "id": "S07",
+      "question": "琴腿是否位于参考中的支撑位置，并保留可见轮脚？",
+      "source_quote": "legs",
+      "weight": 0.06
+    },
+    {
+      "id": "S08",
+      "question": "踏板组件是否悬挂于键盘下方，位置和朝向是否符合参考？",
+      "source_quote": "pedal assembly",
+      "weight": 0.06
+    },
+    {
+      "id": "S09",
+      "question": "琴体下方由腿与踏板分隔的开放负空间是否保留？",
+      "source_quote": "negative space beneath the instrument",
+      "weight": 0.08
+    },
+    {
+      "id": "S10",
+      "question": "简化后的琴弦是否仍保留参考中的方向性分布？",
+      "source_quote": "Fine strings can be simplified while retaining their directional structure",
+      "weight": 0.05
+    },
+    {
+      "id": "S11",
+      "question": "外观是否呈现参考中的深色外壳、暖色琴腔、黑白键及金属色踏板和轮脚？",
+      "source_quote": "Reconstruct the grand piano",
+      "weight": 0.07
+    },
+    {
+      "id": "S12",
+      "question": "主体是否为具有完整空间体积的可编辑三维几何？",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "weight": 0.05
+    },
+    {
+      "id": "S13",
+      "question": "不同组件是否为独立可编辑对象或可清楚分离的网格岛？",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "weight": 0.05
+    },
+    {
+      "id": "S14",
+      "question": "场景是否采用米制且以 Z 轴向上？",
+      "source_quote": "Use metres, Z up",
+      "weight": 0.04
+    },
+    {
+      "id": "S15",
+      "question": "帧 1 保存的最终静态姿态是否与 scene.glb 中的姿态一致？",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "weight": 0.04
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "依据 reference/reference-1.png；包含完整可见暗色琴壳、前部键床及曲面侧壁，不含琴盖、腿和投影。框内因曲面轮廓而存在背景。",
+      "boxes": [
+        [
+          0.088,
+          0.358,
+          0.736,
+          0.775
+        ]
+      ],
+      "id": "T01",
+      "query": "三角钢琴琴壳与键床",
+      "weight": 0.2
+    },
+    {
+      "boundary_notes": "包含开启盖板的暗色表面、远端尖部与亮色薄边；不包含支撑杆。主图呈近乎侧视的狭长轮廓。",
+      "boxes": [
+        [
+          0.184,
+          0.269,
+          0.709,
+          0.546
+        ]
+      ],
+      "id": "T02",
+      "query": "开启的琴盖",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "仅框住斜向支撑杆的可见全段；端部被盖板和琴壳遮挡处不补全。",
+      "boxes": [
+        [
+          0.445,
+          0.409,
+          0.576,
+          0.641
+        ]
+      ],
+      "id": "T03",
+      "query": "琴盖支撑杆",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "将整排黑白键作为一个可辨组件定位，覆盖可见键面和前缘；不将细小单键分别列为实例。",
+      "boxes": [
+        [
+          0.132,
+          0.64,
+          0.439,
+          0.745
+        ]
+      ],
+      "id": "T04",
+      "query": "黑白键盘",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "三个框分别覆盖左前腿、右前腿及后方部分可见腿，均包括脚座和金属色轮组件；不推断被琴体遮挡的长度。",
+      "boxes": [
+        [
+          0.128,
+          0.677,
+          0.171,
+          0.788
+        ],
+        [
+          0.452,
+          0.753,
+          0.499,
+          0.886
+        ],
+        [
+          0.603,
+          0.56,
+          0.636,
+          0.607
+        ]
+      ],
+      "id": "T05",
+      "query": "带轮脚的琴腿",
+      "weight": 0.15
+    },
+    {
+      "boundary_notes": "整体框覆盖可见竖杆、斜撑、底座和踏板端部；将组件作为单实例，不把细小踏板分别定位。",
+      "boxes": [
+        [
+          0.301,
+          0.733,
+          0.4,
+          0.824
+        ]
+      ],
+      "id": "T06",
+      "query": "悬挂踏板组件",
+      "weight": 0.1
+    },
+    {
+      "boundary_notes": "仅覆盖键盘后方可见的深色倾斜谱板，包括全部板面和薄边，不含下方键床。",
+      "boxes": [
+        [
+          0.219,
+          0.553,
+          0.418,
+          0.659
+        ]
+      ],
+      "id": "T07",
+      "query": "谱架板",
+      "weight": 0.05
+    },
+    {
+      "boundary_notes": "定位琴腔内可见的框架、音板和弦区整体；边界止于内侧琴缘。支撑杆和谱架遮挡造成的空缺不补全为独立实例，细弦及小孔不单列。",
+      "boxes": [
+        [
+          0.139,
+          0.378,
+          0.721,
+          0.662
+        ]
+      ],
+      "id": "T08",
+      "query": "可见内部结构总成",
+      "weight": 0.1
+    }
+  ]
+}

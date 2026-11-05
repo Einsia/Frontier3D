@@ -1,0 +1,20 @@
+{
+  "index": 6,
+  "key": "bedroom",
+  "title": "Bedroom",
+  "source_url": "https://blendswap.com/blend/30190",
+  "slot": 6,
+  "excluded": false,
+  "source_file": "sources/bedroom/bedroom.blend",
+  "sha256": "acdfd636083b852c2d4b59d394b69436afb625aadf81d029ad5566d89a113bb5",
+  "bytes": 121128040,
+  "task_path": "tasks/L2/Reference2Scene/task_L2_Reference2Scene-006",
+  "resource_family": "blendswap/30190",
+  "blend_file": "sources/bedroom/bedroom.blend",
+  "author_name": "amaryase",
+  "license": {
+    "label": "CC BY-SA (version not stated on inspected listing)",
+    "url": "https://blendswap.com/blend/30190"
+  },
+  "preparation": "../../../../../../curation/l2-refresh-20261011/authoring/build_scene.py"
+}

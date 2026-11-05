@@ -1,0 +1,430 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_011",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/7abbd2e7e1deb4ebfa33/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/752be74590929c57dc00/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/e037ecc1be467237c3e8/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中沿吧台长度轴测量实体吧台的两端距离。",
+      "quantity": "吧台长度",
+      "relation": "equal",
+      "source_quote": "Create a 2.40 m bar counter",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "测量地面至台面顶面的 Z 高度，计算其相对原文标称 1.05 m 的绝对偏差，并以 mm 报告。",
+      "quantity": "吧台高度相对 1.05 m 的偏差",
+      "relation": "at_most",
+      "source_quote": "at 1.05 m height, within 10 mm",
+      "target": 10,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "沿吧台前后方向测量实体台面的深度。",
+      "quantity": "吧台深度",
+      "relation": "equal",
+      "source_quote": "0.45 m depth",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "沿已记录的槽宽方向测量清洗槽开口宽度。",
+      "quantity": "清洗槽宽度",
+      "relation": "equal",
+      "source_quote": "a washing well and ice well, each 0.35 m wide",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "沿已记录的槽宽方向测量冰槽开口宽度。",
+      "quantity": "冰槽宽度",
+      "relation": "equal",
+      "source_quote": "a washing well and ice well, each 0.35 m wide",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "测量台面顶面与清洗槽内部底面之间的 Z 向高差；记录槽底面的选取约定。",
+      "quantity": "清洗槽下沉深度",
+      "relation": "equal",
+      "source_quote": "each 0.35 m wide and 0.05 m below the surface",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "测量台面顶面与冰槽内部底面之间的 Z 向高差；记录槽底面的选取约定。",
+      "quantity": "冰槽下沉深度",
+      "relation": "equal",
+      "source_quote": "each 0.35 m wide and 0.05 m below the surface",
+      "target": 0.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "按语义实体统计吧凳，不按网格零件计数。",
+      "quantity": "吧凳数量",
+      "relation": "equal",
+      "source_quote": "Place four stools",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "逐凳测量当地地面至座面顶面的 Z 向高度。",
+      "quantity": "每个吧凳座高",
+      "relation": "equal",
+      "source_quote": "0.75 m seat height",
+      "target": 0.75,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "测量台面顶面至上方储物架下表面的 Z 向距离。",
+      "quantity": "储物架底部距台面高度",
+      "relation": "equal",
+      "source_quote": "underside 0.35 m above the counter",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "统计储物架系统的酒瓶实体，包括已取下的一瓶；同时报告架上数量以保留原文歧义。",
+      "quantity": "酒瓶数量",
+      "relation": "equal",
+      "source_quote": "carries eight inverted bottles",
+      "target": 8,
+      "unit": "瓶",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "统计从储物架取下并由左夹爪持有的酒瓶实体。",
+      "quantity": "取下酒瓶数量",
+      "relation": "equal",
+      "source_quote": "one removed",
+      "target": 1,
+      "unit": "瓶",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "对架上相邻瓶逐对测量间距；分别记录实体表面净距及中心距，注明所用解释。",
+      "quantity": "架上瓶间最小间距",
+      "relation": "at_least",
+      "source_quote": "at least 80 mm between them",
+      "target": 80,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "按记录的躯干端点测量躯干自身 Z 向尺寸，排除机械臂及其他独立构件。",
+      "quantity": "机器人躯干尺寸",
+      "relation": "equal",
+      "source_quote": "a 1.20 m torso",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "按连接到躯干的独立机械臂组件计数。",
+      "quantity": "机械臂数量",
+      "relation": "equal",
+      "source_quote": "two arms",
+      "target": 2,
+      "unit": "条",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "逐臂使用记录的基座点、末端参考点及连杆几何测定可达半径；不以冻结姿态的基座至末端直线距离替代最大 reach。",
+      "quantity": "每臂几何可达距离",
+      "relation": "equal",
+      "source_quote": "two arms of 0.75 m reach",
+      "target": 0.75,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "逐臂测量记录的基座参考点相对地面的 Z 高度。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "bases at 0.95 m",
+      "target": 0.95,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "测量两臂基座参考点之间的距离，并记录中心距或其他端点约定。",
+      "quantity": "机械臂基座间距",
+      "relation": "equal",
+      "source_quote": "0.35 m apart",
+      "target": 0.35,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "沿摇酒器自身纵轴测量底部至顶部的尺寸，不使用倾斜后的世界 Z 包围盒高度。",
+      "quantity": "摇酒器高度",
+      "relation": "equal",
+      "source_quote": "0.22 m tall",
+      "target": 0.22,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "在摇酒器轴线垂直截面测量外径；若外径变化，记录取样截面。",
+      "quantity": "摇酒器直径",
+      "relation": "equal",
+      "source_quote": "0.08 m diameter metal shaker",
+      "target": 0.08,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "在冻结姿态下测量摇酒器口部参考点与目标杯沿参考面的 Z 向高差，记录口部参考点约定。",
+      "quantity": "摇酒器口高于杯沿的距离",
+      "relation": "equal",
+      "source_quote": "mouth 0.03 m above a whisky-glass rim",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 2,
+      "id": "N22",
+      "measurement_definition": "测量摇酒器轴线相对已记录基准方向朝目标杯倾斜的角度；单独核查倾斜方向。",
+      "quantity": "摇酒器倾角",
+      "relation": "equal",
+      "source_quote": "tilted toward it 15 +/-2 degrees",
+      "target": 15,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "统计目标威士忌杯内部的独立球形冰块实体。",
+      "quantity": "杯中冰球数量",
+      "relation": "equal",
+      "source_quote": "Put one ice sphere in the glass.",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "在冻结姿态下计算相关接触物体实体边界的最大穿透深度，分别报告左夹爪与瓶身、瓶塞与摇酒器的结果；不强制后者接触。",
+      "quantity": "取瓶相关接触穿透深度",
+      "relation": "at_most",
+      "source_quote": "with at most 2 mm penetration",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "按语义杯实体计数，并明确目标威士忌杯是否包含在内。",
+      "quantity": "酒杯数量",
+      "relation": "equal",
+      "source_quote": "Arrange four glasses",
+      "target": 4,
+      "unit": "只",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "沿杯子排列顺序逐对测量相邻杯间距，并记录中心距或净距约定。",
+      "quantity": "相邻杯间距",
+      "relation": "equal",
+      "source_quote": "at 0.12 m spacing",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "仅对有柄杯，依据记录的参考平面及右向基准，测量杯心至把手方向的角度。",
+      "quantity": "适用杯柄朝右角度",
+      "relation": "equal",
+      "source_quote": "handles where applicable facing right 45 degrees",
+      "target": 45,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "沿后方通行路线及其采样点测量横向自由宽度，排除被评估机器人，包含其他家具及突出部件，并检查采样点之间的瓶颈。",
+      "quantity": "后方操作通道宽度",
+      "relation": "equal",
+      "source_quote": "Keep a 0.80 m rear operating aisle",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "使用记录的机械臂几何扫掠包络，计算其与储物架下表面的最小表面间距。",
+      "quantity": "臂扫掠包络与架底净距",
+      "relation": "at_least",
+      "source_quote": "at least 0.15 m between arm sweep and storage underside",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "测量拾瓶服务点至各臂已记录工作球球心的欧氏距离，取最小值；与冻结持瓶接触点分开记录。",
+      "quantity": "拾瓶服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "测量清洗槽服务点至各臂已记录工作球球心的欧氏距离，取最小值。",
+      "quantity": "清洗槽服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "测量冰槽服务点至各臂已记录工作球球心的欧氏距离，取最小值。",
+      "quantity": "冰槽服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N33",
+      "measurement_definition": "测量目标杯服务点至各臂已记录工作球球心的欧氏距离，取最小值；不得用其他杯替代。",
+      "quantity": "目标杯服务点工作半径",
+      "relation": "at_most",
+      "source_quote": "Bottle pickup, washing well, ice well and target glass must each lie within a 0.70 m working sphere of at least one arm.",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N34",
+      "measurement_definition": "将摇酒器轴线延长至目标杯开口平面，计算交点与开口几何中心的平面内距离；轴线不与该平面相交时不满足。",
+      "quantity": "摇酒器轴线对杯口中心偏差",
+      "relation": "at_most",
+      "source_quote": "The shaker-axis extension crosses the glass opening centre within 10 mm",
+      "target": 10,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N35",
+      "measurement_definition": "检查承担指定暖光的光源色温参数或可追溯的色温颜色定义，不从渲染像素估计。",
+      "quantity": "指定照明色温",
+      "relation": "equal",
+      "source_quote": "2800 K light",
+      "target": 2800,
+      "unit": "K",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

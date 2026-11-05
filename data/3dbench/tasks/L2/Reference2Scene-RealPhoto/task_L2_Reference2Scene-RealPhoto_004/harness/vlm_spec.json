@@ -1,0 +1,239 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004",
+  "family": "Reference2Scene-RealPhoto",
+  "instruction_sha256": "f300f36c13537c7754479db5d9a7f7992e8ae0e16111c3d7b51ccbba30a95e4a",
+  "reference_policy": "Public originals only. reference-0 -> main; alternate is a geometry diagnostic.",
+  "focus": "Tall clustered columns. Symmetrical vertical cathedral view, central red aisle converging on altar, high rib intersections above. Warm golden stone, dark pews, red aisle and colored luminous glass; sacred pictures and fine ornament may simplify.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "reference_feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Tall clustered columns. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Curving ribs meeting across vaulted ceiling. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Three prominent pointed stained-glass windows at altar end. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Rows of pews beside central aisle. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Distant raised bright altar. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "dimension": "reference_layout",
+      "weight": 0.2,
+      "question": "Symmetrical vertical cathedral view, central red aisle converging on altar, high rib intersections above. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.1,
+      "question": "Compare every supplied original and every required authored view for coherent real 3D structure, thickness and attachments. Use native inspection for suspected flat photographic substitutes; wrong/absent required geometry earns zero on its feature. Do not infer unseen reference geometry. Alternate has no reference pixel target.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials_colors",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original material/color fidelity: Warm golden stone, dark pews, red aisle and colored luminous glass; sacred pictures and fine ornament may simplify.",
+      "units": [
+        "materials_colors"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_atmosphere",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original light direction, contrast, exposure, shadows and atmosphere: Warm golden stone, dark pews, red aisle and colored luminous glass; sacred pictures and fine ornament may simplify.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "66c319a491c83acc4000575faee2390d2fac4d141759e787190b09dfe57fb26a",
+    "image_size": [
+      1280,
+      950
+    ],
+    "detector": {
+      "method": "vlm-boxes-v2",
+      "model": "strict-agentic-judge",
+      "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+    },
+    "context_queries": [],
+    "review_kind": "primary_assistant_reference_only_ai_draft",
+    "human_reviewed": false,
+    "formal_score_eligible": false,
+    "targets": [
+      {
+        "id": "target_1",
+        "query": "central pointed stained-glass window",
+        "label": "central pointed stained-glass window",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.458,
+            0.364,
+            0.544,
+            0.735
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. central pointed stained-glass window"
+      },
+      {
+        "id": "target_2",
+        "query": "left altar-end pointed stained-glass window",
+        "label": "left altar-end pointed stained-glass window",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.301,
+            0.31,
+            0.378,
+            0.735
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. left altar-end pointed stained-glass window"
+      },
+      {
+        "id": "target_3",
+        "query": "right altar-end pointed stained-glass window",
+        "label": "right altar-end pointed stained-glass window",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.617,
+            0.31,
+            0.704,
+            0.735
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. right altar-end pointed stained-glass window"
+      },
+      {
+        "id": "target_4",
+        "query": "distant altar installation",
+        "label": "distant altar installation",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.434,
+            0.729,
+            0.577,
+            0.878
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. distant altar installation"
+      }
+    ]
+  },
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

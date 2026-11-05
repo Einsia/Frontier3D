@@ -1,0 +1,76 @@
+{
+  "source": "assets/expansion/nasa-assemblies/rassor/source.glb",
+  "visible_mesh_objects": 1,
+  "vertices": 2085277,
+  "dimensions_m": [
+    0.5118720531463623,
+    1.0,
+    0.5661966800689697
+  ],
+  "normalization": {
+    "uniform_scale": 0.6034751838458784,
+    "maximum_extent_m": 1.0,
+    "note": "Poly Haven physical dimension metadata; NASA display replica normalized to 1 m maximum span.",
+    "bounds_note": "Use dimensions_m for the normalized reference extent; pre-normalization translation is not recorded."
+  },
+  "cameras": {
+    "main": {
+      "position": [
+        1.5,
+        -2.0,
+        1.4830983877182007
+      ],
+      "rotation": [
+        1.1232763528823853,
+        -6.614462222387374e-08,
+        0.6435011625289917
+      ],
+      "ortho_scale": 1.4500000476837158
+    },
+    "front": {
+      "position": [
+        1.4901161193847656e-08,
+        -3.0,
+        0.5830983519554138
+      ],
+      "rotation": [
+        1.4711276292800903,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.4500000476837158
+    },
+    "side": {
+      "position": [
+        3.0,
+        0.0,
+        0.5830983519554138
+      ],
+      "rotation": [
+        1.4711277484893799,
+        -5.938254332704673e-09,
+        1.570796251296997
+      ],
+      "ortho_scale": 1.4500000476837158
+    },
+    "top": {
+      "position": [
+        1.4901161193847656e-08,
+        -0.0010000000474974513,
+        3.2830982208251953
+      ],
+      "rotation": [
+        0.0003452669770922512,
+        -0.0,
+        0.0
+      ],
+      "ortho_scale": 1.4500000476837158
+    }
+  },
+  "missing_active_images": [],
+  "external_libraries": 0,
+  "script_autoexecution": false,
+  "mesh_names": [
+    "rassor_shrinkwrap"
+  ]
+}

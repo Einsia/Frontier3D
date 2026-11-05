@@ -1,0 +1,280 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_017",
+  "family": "Brief2Scene",
+  "instruction_sha256": "097b866ce698ba6b1c60535d8b6da38b59f64861b50bbe7bd1fefb5c154391ca",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否呈现拉花进行中的咖啡工作站？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Coffee station: midway through latte art."
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "是否以略俯视近景展示浅色木质台面？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Create a close elevated view of a 1.80 m counter, 0.95 m high and 0.60 m deep, in pale wood."
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "咖啡机、磨豆机、压粉器与接粉杯支架是否按要求从左向右排列？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "From left to right place a single-group espresso machine, 0.55 m wide and 0.45 m high, with a portafilter locked beneath the group and pressure needle mid-scale; a grinder with transparent hopper and beans; a tamper and dosing-cup holder."
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "咖啡机手柄是否锁在冲煮组下方？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "with a portafilter locked beneath the group"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "压力表指针是否位于刻度中段？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "pressure needle mid-scale"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "磨豆机是否具有透明料斗，且料斗内有咖啡豆？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a grinder with transparent hopper and beans"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "后方搁架是否承放咖啡袋和杯架？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Rear shelving holds three coffee bags and a cup rack."
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "机械臂是否位于后方中央？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "A rear-centre arm"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "机械臂是否实际抓持不锈钢奶缸？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "gripping a 0.35-litre stainless milk pitcher"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "奶缸是否倾斜，壶嘴位于拿铁杯上方并瞄准液面后部？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Its spout is 0.03 m above a 250 ml latte cup, pitcher tilted 20 +/-2 degrees, spout extension aimed toward the rear third of the liquid surface."
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "液面是否以局部纹理或浅浮雕呈现静态叶形奶泡底纹？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Show a static leaf-pattern milk-foam base using local texture or shallow relief"
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "拿铁杯把是否朝向右侧？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "cup handle points right 45 degrees."
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "杯子是否沿台面前方排列？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Four cups line the front"
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "是否有前排杯倒置并由沥水架承托？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "one inverted on a draining rack."
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "奶缸倾斜方向是否与杯把朝向相反？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Tilt the pitcher opposite the cup-handle direction"
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "木材是否呈暖色观感？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Use warm wood"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "设备是否呈黑色外观？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "black equipment"
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "是否具有黄铜细节？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "brass details"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "杯子是否呈象牙白色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "ivory cups"
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "是否具有暖色侧窗光？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "warm side-window light"
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "台面是否有局部聚光照明？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "counter spots"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "浅景深近景是否同时构入奶缸、拿铁液面与冲煮头？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Frame pitcher, latte surface and brewing head in a shallow-depth-of-field close view."
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "场景是否静止且没有奶流、蒸汽喷流或杯子运动？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Static; no milk stream, steam jet or cup movement."
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "是否具有静态关节式机器人姿态，且完整场景由可编辑、可分离、有厚度并合理支承的实体三维构件组成？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support. A static articulated robot pose is required"
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "冻结接触是否与其他服务目标清楚区分，且未为服务点放置重复机器人？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots."
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

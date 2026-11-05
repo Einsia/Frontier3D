@@ -1,0 +1,280 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_013",
+  "family": "Brief2Scene",
+  "instruction_sha256": "57437486cb068e02a79240d378801dd1c089885c67be20b8af8c5bd0fd1a7a43",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否呈现公寓电梯厅中等待的配送机器人？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Apartment elevator lobby: waiting delivery robot."
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "大厅是否呈现抛光石材表面与地面网格？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "polished-stone lobby with a 600 mm floor grid"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "大厅是否设有底部离地的多格信箱组？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a 12-compartment mailbox bank, total width 1.80 m and bottom 0.30 m above floor"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "电梯门是否完全打开并露出可进入的轿厢空间？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Fully open a 0.90 m elevator doorway."
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "大厅与轿厢入口是否表现为平顺衔接且门槛沟槽对齐？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "with floor level difference at most 3 mm, aligned sill grooves within 2 mm"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "轿厢是否在三个墙面设有扶手？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "handrails on three walls at 0.90 m"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "轿厢内是否设有可识别的控制面板？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a control panel"
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "轿厢内是否设有可识别的镜面？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "and a mirror"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "配送机器人是否具备底座、屏幕和三层承载架？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "The robot has a 0.50 x 0.45 m base, screen top at 1.20 m, three shelves"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "包裹是否放置并支撑在机器人顶托盘上？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a 0.35 x 0.25 x 0.15 m parcel on the top tray"
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "包裹标签是否朝上？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "with label upward"
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "机器人是否面向门洞中心线，并在门槛前保持规定等待位置？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Face the door centreline within 5 degrees and keep its front edge 1.20 m from the sill."
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "地面是否标出转向圆，且圆内除该机器人外无其他障碍？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Mark a 1.50 m turning circle, clear except for the robot."
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "是否存在连续、笔直的进入路径，且净空核查包含其他家具及突出物？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Navigation clearance refers to the free route excluding the robot being evaluated; include all other furnishings and protrusions."
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "信箱组是否位于直线进入路径之外？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Provide a continuous 0.80 m straight entry path with mailbox and fire-hose cabinet outside."
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "是否设有消防水带柜，且位于直线进入路径之外？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Provide a continuous 0.80 m straight entry path with mailbox and fire-hose cabinet outside."
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "轿厢是否同时容纳保守机器人包络与左右两侧所需余量？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "The car must allow a conservative 0.75 m robot clearance envelope plus 0.30 m at each side."
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "是否记录进入后的可达控制位置，且控制位置到面板之间无遮挡？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "document an unobstructed reachable control position within 0.90 m of the panel after entry"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "服务点是否在场景或 README 中标明，且未用重复机器人替代等待姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "label service points in the scene/README without placing duplicate robots."
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "包裹是否在托盘上居中且任何部分都不悬出托盘？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Centre the parcel on the tray within 20 mm without overhang."
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "是否设有呈暖色照明的壁灯？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Use 3000 K wall lamps"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "轿厢光线是否经打开的门洞溢出？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "light spilling from the car"
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "主视图是否同时呈现机器人、门洞及可辨识的轿厢纵深？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Frame robot, doorway and cabin depth;"
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "次视图是否暴露关键接触与净空路径，并与主视图保持同一几何和静态关节姿态，无电梯或驾驶动画？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose"
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "场景是否采用可编辑、有厚度、支撑合理且语义构件可分离的完整实体三维几何？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support."
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

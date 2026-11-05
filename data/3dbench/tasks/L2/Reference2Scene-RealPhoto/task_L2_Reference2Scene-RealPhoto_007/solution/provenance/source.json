@@ -1,0 +1,30 @@
+{
+  "title": "木梁餐厅与棋盘格过道",
+  "source_urls": [
+    "https://pixabay.com/images/download/pexels-restaurant-1837150_1920.jpg"
+  ],
+  "document_revision": 902,
+  "license": {
+    "label": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "486a515a275b6420ac34d1cc415c498c445302f746b6cbe8e2e90b2830316868",
+      "size": [
+        1280,
+        853
+      ],
+      "original_document_token": "Eij7b7WR0opwmjxFKQIcJfkKnfc"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

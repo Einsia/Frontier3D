@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-photo-localized-v5.0.0",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "486a515a275b6420ac34d1cc415c498c445302f746b6cbe8e2e90b2830316868",
+  "image_size": [
+    1280,
+    853
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "nearest large central timber column",
+      "label": "nearest large central timber column",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.466,
+          0.093,
+          0.541,
+          0.824
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. nearest large central timber column"
+    },
+    {
+      "id": "target_2",
+      "query": "foreground pale round wooden table",
+      "label": "foreground pale round wooden table",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.035,
+          0.729,
+          0.242,
+          0.979
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. foreground pale round wooden table"
+    },
+    {
+      "id": "target_3",
+      "query": "large upper-left exposed round ventilation duct",
+      "label": "large upper-left exposed round ventilation duct",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.481,
+          0.387
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. large upper-left exposed round ventilation duct"
+    }
+  ]
+}

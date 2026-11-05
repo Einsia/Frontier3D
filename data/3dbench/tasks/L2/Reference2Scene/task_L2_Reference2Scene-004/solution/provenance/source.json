@@ -1,0 +1,20 @@
+{
+  "index": 7,
+  "key": "kitchen",
+  "title": "Kitchen",
+  "source_url": "https://blendswap.com/blend/5156",
+  "slot": 4,
+  "excluded": false,
+  "source_file": "sources/kitchen/Country-Kitchen  Cycles.zip",
+  "sha256": "f50b086860784a070e78940f8ada568db76a94382e33ce4966f5fe81b8c01274",
+  "bytes": 7129701,
+  "task_path": "tasks/L2/Reference2Scene/task_L2_Reference2Scene-004",
+  "resource_family": "blendswap/5156",
+  "blend_file": "sources/kitchen/unpacked/Country-Kitchen.blend",
+  "author_name": "Jay-Artist",
+  "license": {
+    "label": "CC BY 3.0",
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "preparation": "../../../../../../curation/l2-refresh-20261011/authoring/build_scene.py"
+}

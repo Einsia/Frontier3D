@@ -1,0 +1,343 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+  "family": "Brief2Scene",
+  "instruction_sha256": "0411d1ec72c32f526468334816e0e8dd1ee52f9b0be4cf6897fe5a5d72b656ac",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为人形机器人正在通过障碍的测试场？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Humanoid test track: midway through obstacles."
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "测试区是否采用蓝色运动地面？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "blue sports flooring"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "测试区是否具有清晰的白色边界线？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "white boundary lines"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "路线是否依次经过坡道、台阶、间隙、交替障碍柱和扶手通道？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "In sequence, add a 15-degree ramp 1.50 m long and 1.20 m wide with anti-slip stripes; three steps each 0.15 +/-0.005 m high and 0.30 m deep; a 0.45 m wide, 0.30 m deep gap with bevelled yellow edges; five posts 0.08 m in diameter and 0.50 m high, alternately offset laterally by 0.40 m and spaced 0.80 m longitudinally; then a 2.00 m handrail corridor"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "坡道是否显示防滑条纹？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "with anti-slip stripes"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "间隙倒角边缘是否为黄色？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "with bevelled yellow edges"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "障碍柱是否沿行进方向左右交替错开？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "alternately offset laterally by 0.40 m and spaced 0.80 m longitudinally"
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "扶手是否形成比普通标记路线更窄的通道？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "except the explicitly narrower handrail passage"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "人形机器人是否冻结在第一阶，前脚底支撑于踏面？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Freeze a humanoid, 1.30 m tall and 0.40 m shoulder width, on the first step: front sole on the tread"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "机器人的后脚是否支撑在坡道上？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "rear foot on the ramp"
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "冻结姿态是否具有弯膝动作？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "knee bent about 60 degrees"
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "冻结姿态的躯干是否前倾？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "torso leaning 8 +/-2 degrees"
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "双臂是否呈相反方向的摆臂姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Swing arms oppositely"
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "头部相机是否朝向下一阶台阶？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "point head camera toward the next step"
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "补光灯柱是否设置在路线外？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Add three 1.80 m fill-light posts, a tripod camera and start/end signs outside the route."
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "三脚架相机是否设置在路线外？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "a tripod camera and start/end signs outside the route"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "是否有路线外的起点标牌？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "start/end signs outside the route"
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "是否有路线外的终点标牌？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "start/end signs outside the route"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "标记路线内是否排除了未设计的额外障碍？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Exclude undesigned obstacles from the marked lane"
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "坡道两侧是否保留安全空间？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "leave 0.30 m safety margins beside the ramp"
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "机器人主体是否为灰黑色？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Use grey-black body"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "机器人关节是否为橙色？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "orange joints"
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "围挡是否采用朴素外观？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "plain barriers"
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "场景是否呈现均匀的高位照明与补光？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "even high-bay/fill lighting"
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "主视图是否同时展现坡道、踏阶机器人和后续路线纵深？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Frame ramp, stepping robot and subsequent course depth."
+      ]
+    },
+    {
+      "id": "S26",
+      "question": "场景是否为静态关节姿态，且无步态模拟、跌倒或传感器可视化？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Static; no gait simulation, falls or sensor visualization."
+      ]
+    },
+    {
+      "id": "S27",
+      "question": "躯干竖直投影是否被明确声明为几何平衡代理，而非动态稳定性结论？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "use the torso vertical projection as a declared geometric balance proxy, within the front-foot support region allowing 0.05 m tolerance, not a dynamic stability claim"
+      ]
+    },
+    {
+      "id": "S28",
+      "question": "场景是否以可编辑实体三维部件构成，未用照片或广告板代替完整场景？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Do not use rendered photographs or billboards as substitutes for the complete scene."
+      ]
+    },
+    {
+      "id": "S29",
+      "question": "已指定的冻结接触是否与其他服务目标区分，服务点是否标注且未为此复制机器人？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots."
+      ]
+    },
+    {
+      "id": "S30",
+      "question": "净空测量是否排除被评估机器人、计入其他设施和突出物，并提供路线采样坐标与测量约定？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Navigation clearance refers to the free route excluding the robot being evaluated; include all other furnishings and protrusions. Provide route sample coordinates and the measurement conventions in README."
+      ]
+    },
+    {
+      "id": "S31",
+      "question": "第二视角是否揭示关键接触和净空路线，并与主视角保持相同几何及冻结姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose"
+      ]
+    },
+    {
+      "id": "S32",
+      "question": "几何是否采用米制和 Z 向上；若使用可达球，是否仅作为几何包络而非运动学或动力学认证？",
+      "dimension": "instruction_following",
+      "weight": 0.01875,
+      "units": [
+        "Use metres and Z up. Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support. A static articulated robot pose is required; no controller, physical dynamics or manipulation trajectory is required. Represent specified joints and end-effectors geometrically. Reach spheres are geometric envelope checks, not certification of inverse-kinematic or dynamic feasibility."
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

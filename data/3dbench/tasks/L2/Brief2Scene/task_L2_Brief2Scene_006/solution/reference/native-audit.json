@@ -1,0 +1,946 @@
+{
+  "key": "minigolf-kit",
+  "path": "assets/expansion/kenney/minigolf-kit/review/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      32.0,
+      -39.0,
+      33.0
+    ],
+    "rotation_euler": [
+      0.9984896183013916,
+      -5.669513569728224e-08,
+      0.6871241927146912
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "ball-red",
+      "vertices": 1104,
+      "polygons": 572,
+      "sha256": "f69520a49ac32aa9586ef3f40b694c9718677b70cc5ff4ff4b78e27aa53c3701"
+    },
+    {
+      "name": "ball-red.001",
+      "vertices": 1104,
+      "polygons": 572,
+      "sha256": "f69520a49ac32aa9586ef3f40b694c9718677b70cc5ff4ff4b78e27aa53c3701"
+    },
+    {
+      "name": "ball-red.002",
+      "vertices": 1104,
+      "polygons": 572,
+      "sha256": "f69520a49ac32aa9586ef3f40b694c9718677b70cc5ff4ff4b78e27aa53c3701"
+    },
+    {
+      "name": "blades",
+      "vertices": 288,
+      "polygons": 170,
+      "sha256": "9a3ffa56c99d3b70532edd064cd99634868b321487edd55a331c7d6d264abaad"
+    },
+    {
+      "name": "castle",
+      "vertices": 290,
+      "polygons": 180,
+      "sha256": "669440be9d69ed8bffb23219cb9764719e9b6cd7dd818082d2d9c2a4134b5666"
+    },
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "3d2507f43250dcb3a7ce0ee2648db24e2af1dc7c91ab33e933386ac79b4550ed"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "667b87b93688da943c05e530a4dffc0a4460385bbae90172878335b5e23f31a6"
+    },
+    {
+      "name": "Cube.002",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "667b87b93688da943c05e530a4dffc0a4460385bbae90172878335b5e23f31a6"
+    },
+    {
+      "name": "Cube.003",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "667b87b93688da943c05e530a4dffc0a4460385bbae90172878335b5e23f31a6"
+    },
+    {
+      "name": "Cube.004",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "6b0aef5d154163832495004d20a51480af1553a20e5cc954b38b3a152ed84f50"
+    },
+    {
+      "name": "flag-red",
+      "vertices": 152,
+      "polygons": 86,
+      "sha256": "371e83e3c7bf81e35503507289f9c511cf43ad6a2629770e3ce31b1c2b2e18b6"
+    },
+    {
+      "name": "flag-red.001",
+      "vertices": 152,
+      "polygons": 86,
+      "sha256": "371e83e3c7bf81e35503507289f9c511cf43ad6a2629770e3ce31b1c2b2e18b6"
+    },
+    {
+      "name": "flag-red.002",
+      "vertices": 152,
+      "polygons": 86,
+      "sha256": "371e83e3c7bf81e35503507289f9c511cf43ad6a2629770e3ce31b1c2b2e18b6"
+    },
+    {
+      "name": "hole-round",
+      "vertices": 228,
+      "polygons": 148,
+      "sha256": "b31baf4d27575ec88205043c3b95768588104844ab85d4a6701bd85eb7416e07"
+    },
+    {
+      "name": "hole-round.001",
+      "vertices": 228,
+      "polygons": 148,
+      "sha256": "b31baf4d27575ec88205043c3b95768588104844ab85d4a6701bd85eb7416e07"
+    },
+    {
+      "name": "hole-round.002",
+      "vertices": 228,
+      "polygons": 148,
+      "sha256": "b31baf4d27575ec88205043c3b95768588104844ab85d4a6701bd85eb7416e07"
+    },
+    {
+      "name": "obstacle-diamond",
+      "vertices": 64,
+      "polygons": 34,
+      "sha256": "bf046299bc436f4e2ea566be018fdd3bbeb74e52656d91d9935d04db3a6cc371"
+    },
+    {
+      "name": "obstacle-diamond.001",
+      "vertices": 64,
+      "polygons": 34,
+      "sha256": "bf046299bc436f4e2ea566be018fdd3bbeb74e52656d91d9935d04db3a6cc371"
+    },
+    {
+      "name": "obstacle-diamond.002",
+      "vertices": 64,
+      "polygons": 34,
+      "sha256": "bf046299bc436f4e2ea566be018fdd3bbeb74e52656d91d9935d04db3a6cc371"
+    },
+    {
+      "name": "start",
+      "vertices": 68,
+      "polygons": 40,
+      "sha256": "c4c3f69c4f30420cf4a13a014f3dfb8641a0a31a828b1d8a06ba181d6d932323"
+    },
+    {
+      "name": "start.001",
+      "vertices": 68,
+      "polygons": 40,
+      "sha256": "c4c3f69c4f30420cf4a13a014f3dfb8641a0a31a828b1d8a06ba181d6d932323"
+    },
+    {
+      "name": "start.002",
+      "vertices": 68,
+      "polygons": 40,
+      "sha256": "c4c3f69c4f30420cf4a13a014f3dfb8641a0a31a828b1d8a06ba181d6d932323"
+    },
+    {
+      "name": "straight",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "0d597010a3ecff0fe07e6497cc507c9add1890e35c423e0e1127aa1c86ee67ce"
+    },
+    {
+      "name": "straight.001",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "0d597010a3ecff0fe07e6497cc507c9add1890e35c423e0e1127aa1c86ee67ce"
+    },
+    {
+      "name": "straight.002",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "0d597010a3ecff0fe07e6497cc507c9add1890e35c423e0e1127aa1c86ee67ce"
+    },
+    {
+      "name": "straight.003",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "0d597010a3ecff0fe07e6497cc507c9add1890e35c423e0e1127aa1c86ee67ce"
+    },
+    {
+      "name": "straight.004",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "0d597010a3ecff0fe07e6497cc507c9add1890e35c423e0e1127aa1c86ee67ce"
+    },
+    {
+      "name": "straight.005",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "0d597010a3ecff0fe07e6497cc507c9add1890e35c423e0e1127aa1c86ee67ce"
+    },
+    {
+      "name": "windmill",
+      "vertices": 182,
+      "polygons": 112,
+      "sha256": "f89f3328692b07691958b88aff7f2a4c3bcb11697d1a6623fc6bd98052f0c269"
+    }
+  ],
+  "images": [
+    {
+      "name": "colormap",
+      "path": "//..\\original\\Models\\GLB format\\Textures\\colormap.png",
+      "packed": true,
+      "dimensions": [
+        512,
+        512
+      ],
+      "sha256": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e",
+      "external_exists": null
+    }
+  ],
+  "objects": [
+    {
+      "name": "Minigolf park",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        25.0,
+        26.0,
+        0.5
+      ],
+      "bounds": [
+        [
+          -12.5,
+          -13.0,
+          -0.5
+        ],
+        [
+          12.5,
+          13.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "Original site grass"
+      ]
+    },
+    {
+      "name": "start",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -8.999799728393555,
+          -9.999799728393555,
+          0.0
+        ],
+        [
+          -5.000200271606445,
+          -6.000200271606445,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap"
+      ]
+    },
+    {
+      "name": "straight",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -8.999799728393555,
+          -5.999799728393555,
+          0.0
+        ],
+        [
+          -5.000200271606445,
+          -2.000200033187866,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.001"
+      ]
+    },
+    {
+      "name": "straight.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -8.999799728393555,
+          -1.9997999668121338,
+          0.0
+        ],
+        [
+          -5.000200271606445,
+          1.9997999668121338,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.002"
+      ]
+    },
+    {
+      "name": "obstacle-diamond",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -8.999799728393555,
+          2.000200033187866,
+          0.0
+        ],
+        [
+          -5.000200271606445,
+          5.999799728393555,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.003"
+      ]
+    },
+    {
+      "name": "hole-round",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -8.999800682067871,
+          6.000199794769287,
+          0.0
+        ],
+        [
+          -5.000199794769287,
+          9.999800682067871,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.004"
+      ]
+    },
+    {
+      "name": "windmill",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.3997600078582764,
+        2.3997600078582764,
+        2.834317684173584
+      ],
+      "bounds": [
+        [
+          -8.19987964630127,
+          -1.1998800039291382,
+          0.019999999552965164
+        ],
+        [
+          -5.800119876861572,
+          1.1998800039291382,
+          2.8543176651000977
+        ]
+      ],
+      "materials": [
+        "colormap.005"
+      ]
+    },
+    {
+      "name": "blades",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.8906538486480713,
+        0.2199840098619461,
+        2.8906538486480713
+      ],
+      "bounds": [
+        [
+          -8.445326805114746,
+          0.9599040746688843,
+          0.8706295490264893
+        ],
+        [
+          -5.554673194885254,
+          1.1798880100250244,
+          3.7612833976745605
+        ]
+      ],
+      "materials": [
+        "colormap.005"
+      ]
+    },
+    {
+      "name": "flag-red",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6328838467597961,
+        0.1249023899435997,
+        1.6398319005966187
+      ],
+      "bounds": [
+        [
+          -7.316442012786865,
+          7.937548637390137,
+          0.3499999940395355
+        ],
+        [
+          -6.683557987213135,
+          8.062451362609863,
+          1.9898319244384766
+        ]
+      ],
+      "materials": [
+        "colormap.006"
+      ]
+    },
+    {
+      "name": "ball-red",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10491485148668289,
+        0.10491485148668289,
+        0.10454381257295609
+      ],
+      "bounds": [
+        [
+          -7.052457332611084,
+          -8.052457809448242,
+          0.36000001430511475
+        ],
+        [
+          -6.947542667388916,
+          -7.947542667388916,
+          0.46454381942749023
+        ]
+      ],
+      "materials": [
+        "colormap.007"
+      ]
+    },
+    {
+      "name": "Entry paving",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        1.600000023841858,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -9.0,
+          -11.600000381469727,
+          -0.019999999552965164
+        ],
+        [
+          -5.0,
+          -10.0,
+          0.05999999865889549
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "start.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -1.9997999668121338,
+          -9.999799728393555,
+          0.0
+        ],
+        [
+          1.9997999668121338,
+          -6.000200271606445,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.008"
+      ]
+    },
+    {
+      "name": "straight.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -1.9997999668121338,
+          -5.999799728393555,
+          0.0
+        ],
+        [
+          1.9997999668121338,
+          -2.000200033187866,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.009"
+      ]
+    },
+    {
+      "name": "straight.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -1.9997999668121338,
+          -1.9997999668121338,
+          0.0
+        ],
+        [
+          1.9997999668121338,
+          1.9997999668121338,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.010"
+      ]
+    },
+    {
+      "name": "obstacle-diamond.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -1.9997999668121338,
+          2.000200033187866,
+          0.0
+        ],
+        [
+          1.9997999668121338,
+          5.999799728393555,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.011"
+      ]
+    },
+    {
+      "name": "hole-round.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          -1.9998003244400024,
+          6.000199794769287,
+          0.0
+        ],
+        [
+          1.9998003244400024,
+          9.999800682067871,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.012"
+      ]
+    },
+    {
+      "name": "castle",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.79971981048584,
+        2.79971981048584,
+        1.8228800296783447
+      ],
+      "bounds": [
+        [
+          -1.39985990524292,
+          -4.39985990524292,
+          0.019999999552965164
+        ],
+        [
+          1.39985990524292,
+          -1.60014009475708,
+          1.8428800106048584
+        ]
+      ],
+      "materials": [
+        "colormap.013"
+      ]
+    },
+    {
+      "name": "flag-red.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6328838467597961,
+        0.1249023899435997,
+        1.6398319005966187
+      ],
+      "bounds": [
+        [
+          -0.31644192337989807,
+          7.937548637390137,
+          0.3499999940395355
+        ],
+        [
+          0.31644192337989807,
+          8.062451362609863,
+          1.9898319244384766
+        ]
+      ],
+      "materials": [
+        "colormap.014"
+      ]
+    },
+    {
+      "name": "ball-red.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10491485148668289,
+        0.10491485148668289,
+        0.10454381257295609
+      ],
+      "bounds": [
+        [
+          -0.052457425743341446,
+          -8.052457809448242,
+          0.36000001430511475
+        ],
+        [
+          0.052457425743341446,
+          -7.947542667388916,
+          0.46454381942749023
+        ]
+      ],
+      "materials": [
+        "colormap.015"
+      ]
+    },
+    {
+      "name": "Entry paving.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        1.600000023841858,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -2.0,
+          -11.600000381469727,
+          -0.019999999552965164
+        ],
+        [
+          2.0,
+          -10.0,
+          0.05999999865889549
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "start.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          5.000200271606445,
+          -9.999799728393555,
+          0.0
+        ],
+        [
+          8.999799728393555,
+          -6.000200271606445,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.016"
+      ]
+    },
+    {
+      "name": "straight.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          5.000200271606445,
+          -5.999799728393555,
+          0.0
+        ],
+        [
+          8.999799728393555,
+          -2.000200033187866,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.017"
+      ]
+    },
+    {
+      "name": "straight.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          5.000200271606445,
+          -1.9997999668121338,
+          0.0
+        ],
+        [
+          8.999799728393555,
+          1.9997999668121338,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.018"
+      ]
+    },
+    {
+      "name": "obstacle-diamond.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          5.000200271606445,
+          2.000200033187866,
+          0.0
+        ],
+        [
+          8.999799728393555,
+          5.999799728393555,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.019"
+      ]
+    },
+    {
+      "name": "hole-round.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.9995999336242676,
+        3.9995999336242676,
+        0.5866079926490784
+      ],
+      "bounds": [
+        [
+          5.000199794769287,
+          6.000199794769287,
+          0.0
+        ],
+        [
+          8.999800682067871,
+          9.999800682067871,
+          0.5866079926490784
+        ]
+      ],
+      "materials": [
+        "colormap.020"
+      ]
+    },
+    {
+      "name": "flag-red.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6328838467597961,
+        0.1249023899435997,
+        1.6398319005966187
+      ],
+      "bounds": [
+        [
+          6.683557987213135,
+          7.937548637390137,
+          0.3499999940395355
+        ],
+        [
+          7.316442012786865,
+          8.062451362609863,
+          1.9898319244384766
+        ]
+      ],
+      "materials": [
+        "colormap.021"
+      ]
+    },
+    {
+      "name": "ball-red.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.10491485148668289,
+        0.10491485148668289,
+        0.10454381257295609
+      ],
+      "bounds": [
+        [
+          6.947542667388916,
+          -8.052457809448242,
+          0.36000001430511475
+        ],
+        [
+          7.052457332611084,
+          -7.947542667388916,
+          0.46454381942749023
+        ]
+      ],
+      "materials": [
+        "colormap.022"
+      ]
+    },
+    {
+      "name": "Entry paving.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        4.0,
+        1.600000023841858,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          5.0,
+          -11.600000381469727,
+          -0.019999999552965164
+        ],
+        [
+          9.0,
+          -10.0,
+          0.05999999865889549
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "Visitor path",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        24.0,
+        1.2000000476837158,
+        0.07999999821186066
+      ],
+      "bounds": [
+        [
+          -12.0,
+          -12.800000190734863,
+          -0.019999999552965164
+        ],
+        [
+          12.0,
+          -11.59999942779541,
+          0.05999999865889549
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    }
+  ]
+}

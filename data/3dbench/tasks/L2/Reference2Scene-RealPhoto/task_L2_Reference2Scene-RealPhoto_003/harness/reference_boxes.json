@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-photo-localized-v5.0.0",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "6205fbe47445ddc6be04271788ad2d2dee22c55685259344862e9e81ad55b96c",
+  "image_size": [
+    1280,
+    854
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "entire built-in bookcase including lower cabinets",
+      "label": "entire built-in bookcase including lower cabinets",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.582,
+          0.722
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. entire built-in bookcase including lower cabinets"
+    },
+    {
+      "id": "target_2",
+      "query": "central coffee table including supports",
+      "label": "central coffee table including supports",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.467,
+          0.554,
+          0.898,
+          0.962
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. central coffee table including supports"
+    },
+    {
+      "id": "target_3",
+      "query": "left foreground lamp including shade and base",
+      "label": "left foreground lamp including shade and base",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.0,
+          0.419,
+          0.208,
+          1.0
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. left foreground lamp including shade and base"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-e03",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "006aec73c895a18bcc36b986ae398901c4c53e55fb727cdf9fbddb5e91b4943c",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Preserve the tall, open workshop volume, perimeter equipment bays and central islands of benches, with broad circulation space between them.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Maintain credible relative scale among the high walls, loading opening, tall storage racks, standing-height benches and industrial machinery.",
+        "id": "env-03"
+      },
+      {
+        "criterion": "Match the utilitarian atmosphere: daylight patches, fluorescent fixtures, muted gray surfaces, warm timber, orange shelving and localized red equipment.",
+        "id": "env-05"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "Tall rectangular hall with exposed roof framing and extensive uninterrupted floor space.",
+            "id": "shell-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Visible blockwork courses, steel columns and pale roof beams beneath corrugated roof panels.",
+            "id": "shell-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Gray masonry and dusty concrete floor show stains, scuffs and uneven coloration.",
+            "id": "shell-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Wall-mounted strip lights, surface conduits and horizontal timber mounting rails follow the equipment perimeter.",
+            "id": "shell-04",
+            "kind": "construction"
+          }
+        ],
+        "id": "shell",
+        "importance": "core",
+        "label": "Workshop architectural shell",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 16
+      },
+      {
+        "features": [
+          {
+            "criterion": "A row of tall, narrow bandsaws contrasts with broad, low woodworking machines and their projecting tables.",
+            "id": "machines-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Bandsaws have upper box housings, slender cutting openings, small horizontal tables and enclosed pedestal bases.",
+            "id": "machines-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The large saw station has an extended sliding table, guide rails and a raised blade guard.",
+            "id": "machines-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Off-white and gray painted housings combine with dark tables, exposed metal rails and small colored controls.",
+            "id": "machines-04",
+            "kind": "material"
+          }
+        ],
+        "id": "machines",
+        "importance": "core",
+        "label": "Perimeter woodworking machinery bays",
+        "references": [
+          "reference-01",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 18
+      },
+      {
+        "features": [
+          {
+            "criterion": "High open shelving frames the storage corner, with upright timber clustered between and beside racks.",
+            "id": "storage-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Perforated gray steel uprights carry orange horizontal beams and several open shelf levels.",
+            "id": "storage-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Long boards lie horizontally overhead; mixed narrow offcuts stand vertically and large sheets lean nearby.",
+            "id": "storage-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Pale unfinished wood, rough sheet goods, cardboard cartons and colored parts bins form a varied storage palette.",
+            "id": "storage-04",
+            "kind": "material"
+          }
+        ],
+        "id": "storage",
+        "importance": "core",
+        "label": "Material racks and parts storage",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 14
+      },
+      {
+        "features": [
+          {
+            "criterion": "Two distinct working stations sit within a broader arrangement of central bench islands and wall-side work surfaces.",
+            "id": "stations-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Reference benches combine thick timber tops with either substantial wooden legs and stretchers or slender dark metal frames.",
+            "id": "stations-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Worn timber surfaces, painted cabinet bodies and metal fixtures retain the workshop's practical, used appearance.",
+            "id": "stations-05",
+            "kind": "material"
+          }
+        ],
+        "id": "stations",
+        "importance": "core",
+        "label": "Assembly workstations and tool furniture",
+        "references": [
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 16
+      },
+      {
+        "features": [
+          {
+            "criterion": "A tall, broad loading opening occupies the masonry wall and meets the workshop floor.",
+            "id": "loading-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The photographed door has vertically divided gray metal panels with prominent repeated diagonal lattice bracing.",
+            "id": "loading-02",
+            "kind": "construction"
+          }
+        ],
+        "id": "loading",
+        "importance": "core",
+        "label": "Loading door and connected outdoor bay",
+        "references": [
+          "reference-02"
+        ],
+        "weight": 12
+      },
+      {
+        "features": [
+          {
+            "criterion": "Large cylindrical ducts run overhead and along the machinery wall, branching into vertical drops.",
+            "id": "extraction-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Segmented elbows, junctions and ribbed flexible hoses visibly connect the duct network to equipment.",
+            "id": "extraction-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "A tall rectangular extraction enclosure anchors the corner behind the large saw station.",
+            "id": "extraction-03",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Reflective galvanized metal contrasts with translucent pale hoses and the dull masonry background.",
+            "id": "extraction-04",
+            "kind": "material"
+          }
+        ],
+        "id": "extraction",
+        "importance": "supporting",
+        "label": "Dust extraction network",
+        "references": [
+          "reference-01",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 10
+      },
+      {
+        "features": [
+          {
+            "criterion": "The reference handling vehicle has a compact red lower body, very tall narrow mast and two long low forward prongs.",
+            "id": "truck-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "A rear tiller handle, paired fork assembly and small floor-level wheels make its handling purpose legible.",
+            "id": "truck-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Red painted bodywork contrasts with black lower trim, dark mast components and worn metal forks.",
+            "id": "truck-03",
+            "kind": "material"
+          }
+        ],
+        "id": "truck",
+        "importance": "supporting",
+        "label": "Pallet handling equipment",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 8
+      },
+      {
+        "features": [],
+        "id": "packing",
+        "importance": "supporting",
+        "label": "Packing and pallet staging",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 6
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "ab46432af8a566598456d6eecf0f5a32a912c0014fc5c249d42fcf904cdedf4b",
+    "environment/input/references/reference-03.jpg": "aafc2318189fb8531e4b4645ed1d637b5a5b79dbae145c316185dd8482eb58cd",
+    "environment/input/references/reference-02.jpg": "a2204a70e08ee06c8e36c252e426b91ebafedc47aced1d6361a78b249f97d5b7",
+    "environment/input/references/reference-04.jpg": "bbe4a41aa32ae6fbfb313a28cc05e2ad1c89c8885b6c1e874d19d5dc8d71efd5"
+  }
+}

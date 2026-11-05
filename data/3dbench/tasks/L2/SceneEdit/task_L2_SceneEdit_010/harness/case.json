@@ -1,0 +1,306 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_010",
+  "spec_sha256": "bdcb144c0902dd09ad466ee8cb572ab65ff8942c7b796204257e23e470ed6e61",
+  "instruction_sha256": "826b10c6c44a99b200141b0b67542c44310781dbd620171f907a65eb23d25fe1",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "The near cargo group on the right side of the spaceship corridor has been removed.",
+      "source_quote": "The near cargo group on the right side of the spaceship corridor has been removed.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png.",
+      "source_quote": "Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support.",
+      "source_quote": "Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers.",
+      "source_quote": "Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Match the metal and fabric appearance under the existing lighting.",
+      "source_quote": "Match the metal and fabric appearance under the existing lighting.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "source_quote": "Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "retained_scene",
+      "text": "Unchanged baseline signature proxy; equivalent renamed/reordered geometry needs review",
+      "source_quote": "The near cargo group on the right side of the spaceship corridor has been removed. Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png. Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support. Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers. Match the metal and fabric appearance under the existing lighting. Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "implementation": "partial",
+      "checks": [
+        "retained_scene"
+      ]
+    },
+    {
+      "id": "target_added_geometry",
+      "text": "New visible mesh geometry exists; category/parts are reviewed separately",
+      "source_quote": "The near cargo group on the right side of the spaceship corridor has been removed. Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png. Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support. Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers. Match the metal and fabric appearance under the existing lighting. Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "implementation": "partial",
+      "checks": [
+        "target_added_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "main_camera_preserved",
+      "text": "main camera preserved",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "main_camera_preserved"
+      ]
+    },
+    {
+      "id": "layout_relative_scale",
+      "text": "Visible proportions, placement, depth ordering and public scale context",
+      "source_quote": "The near cargo group on the right side of the spaceship corridor has been removed. Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png. Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support. Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers. Match the metal and fabric appearance under the existing lighting. Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "implementation": "manual",
+      "checks": [
+        "layout_relative_scale"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "The near cargo group on the right side of the spaceship corridor has been removed. Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png. Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support. Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers. Match the metal and fabric appearance under the existing lighting. Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "main_reference_similarity",
+      "text": "SSIM appearance proxy; not a semantic or hidden-geometry verdict",
+      "source_quote": "The near cargo group on the right side of the spaceship corridor has been removed. Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png. Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support. Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers. Match the metal and fabric appearance under the existing lighting. Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "implementation": "partial",
+      "checks": [
+        "main_reference_similarity"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "The near cargo group on the right side of the spaceship corridor has been removed. Restore the three compact cylindrical containers and the cloth draped over them as shown in input/reference.png. Recreate the rims, side bands and visible openings or caps, preserve the staggered arrangement, and give the cloth thickness and folds that follow its support. Keep the center walkway open, ground each barrel and avoid cloth intersecting its supporting containers. Match the metal and fabric appearance under the existing lighting. Leave the corridor panels, pipes, doors, remaining distant barrels, atmosphere and lighting unchanged.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "preserve_engine",
+      "text": "preserve engine",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_engine"
+      ]
+    },
+    {
+      "id": "preserve_view_transform",
+      "text": "preserve view transform",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_view_transform"
+      ]
+    },
+    {
+      "id": "preserve_look",
+      "text": "preserve look",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_look"
+      ]
+    },
+    {
+      "id": "preserve_exposure",
+      "text": "preserve exposure",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_exposure"
+      ]
+    },
+    {
+      "id": "preserve_gamma",
+      "text": "preserve gamma",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_gamma"
+      ]
+    },
+    {
+      "id": "preserve_resolution",
+      "text": "preserve resolution",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_resolution"
+      ]
+    },
+    {
+      "id": "preserve_resolution_percentage",
+      "text": "preserve resolution percentage",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_resolution_percentage"
+      ]
+    },
+    {
+      "id": "preserve_unit_system",
+      "text": "preserve unit system",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_unit_system"
+      ]
+    },
+    {
+      "id": "preserve_unit_scale",
+      "text": "preserve unit scale",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "source_quote": "Start from input/initial.blend. Use the single reference image. Preserve all scene data outside the changes explicitly allowed above, including cameras and render/color settings. Render main.png from the supplied camera. Duplicate that camera and move it 0.30 m along its local positive X axis without changing lens or rotation to render alternate.png. Keep both cameras in the same edited scene. Pack all dependencies. Hidden details may be completed plausibly.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    },
+    {
+      "id": "public_qualifications_02",
+      "text": "Use only supplied inputs to establish this scene. Do not retrieve the original complete model or additional views online. Do not replace three-dimensional structures with the entire reference projected onto planes.",
+      "source_quote": "Use only supplied inputs to establish this scene. Do not retrieve the original complete model or additional views online. Do not replace three-dimensional structures with the entire reference projected onto planes.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_02"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "local_translation",
+    "delta_m": 0.3,
+    "tolerance": 0.003
+  },
+  "render_settings": {},
+  "native_resolution": null,
+  "edit_policy": {
+    "mode": "geometry",
+    "light_color_energy": false,
+    "world_background_strength": false
+  },
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "dataset_version": "l2-edit-procedural-data-v1",
+  "scoring_profile": "l2-edit-vlm-v8.0.0",
+  "methods_sha256": "3df3d0633bd99794d7eef7f859f70b9b60d18c9f5022fb6ab9280bed5eb8786e",
+  "measurement_profile": "l2-edit-v2.4.1",
+  "automatic_profile": "l2-edit-embodied-v5.0.0"
+}

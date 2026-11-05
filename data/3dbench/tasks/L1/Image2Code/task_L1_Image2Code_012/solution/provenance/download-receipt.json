@@ -1,0 +1,17 @@
+{
+  "uid": "200bac005a2e42458e64060d9719cd06",
+  "file": "source.glb",
+  "download_filename": "cologne_cathedral.glb",
+  "bytes": 72669632,
+  "sha256": "602b06f4b774982de487c7fb016bed021cfae062e4e54362e9b98ac716ac512c",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Shahriar Shahrabi (https://sketchfab.com/shahriyarshahrabi)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/cologne-cathedral-200bac005a2e42458e64060d9719cd06",
+    "title": "Cologne Cathedral"
+  },
+  "gltf_meshes": 17,
+  "gltf_images": 1,
+  "animations": []
+}

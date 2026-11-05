@@ -1,0 +1,844 @@
+{
+  "scope": "Packaged reference/input asset validation, NOT candidate evaluation",
+  "records": [
+    {
+      "file": "tasks/L1/Text2Code/solution/scene.blend",
+      "blender_version": "5.2.1 LTS",
+      "opened": true,
+      "libraries": [],
+      "images": [],
+      "mesh_count": 11,
+      "objects": {
+        "hub_0": {
+          "vertices": 1348,
+          "polygons": 686,
+          "local_vertices_sha256": "d5de93b8b381e1de5640dcb59f63c28ac771adbd146e3b1b1f26172e6c8ad44c",
+          "topology_sha256": "a5cfae67082b320618333057073bbd0f3a367f41777a80ec58926fd234599ee6",
+          "uv_sha256": "1231f31f837efae3ad750ceed5140fcd7dd5b8f9239ccf787a7476b063328c99",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.010000000707805157
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.027000000700354576,
+              -0.027000000700354576,
+              0.0010000001639127731
+            ],
+            [
+              0.027000000700354576,
+              0.027000000700354576,
+              0.01900000125169754
+            ]
+          ],
+          "materials": [
+            "hub_0_407aa6"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.8258211971508716e-05
+        },
+        "shaft_0": {
+          "vertices": 192,
+          "polygons": 98,
+          "local_vertices_sha256": "cf142f10a9fa9d12b67bb44a97947e757222059ad2ec2f684a628566b2425523",
+          "topology_sha256": "2eafecb1c98a0cf94c1bd92518c6b5ddcf389d104fc168e25d393f71b45c0cd5",
+          "uv_sha256": "7d834944d69595c697e5d97c2aa18cb0a9066fded6b52deaa5b51b99d6024a03",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.01100000087171793
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.00800000037997961,
+              -0.00800000037997961,
+              -0.023000001907348633
+            ],
+            [
+              0.00800000037997961,
+              0.00800000037997961,
+              0.0009999992325901985
+            ]
+          ],
+          "materials": [
+            "shaft_0_a6adb8"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 4.8220423494590435e-06
+        },
+        "hub_1": {
+          "vertices": 1348,
+          "polygons": 686,
+          "local_vertices_sha256": "d5de93b8b381e1de5640dcb59f63c28ac771adbd146e3b1b1f26172e6c8ad44c",
+          "topology_sha256": "a5cfae67082b320618333057073bbd0f3a367f41777a80ec58926fd234599ee6",
+          "uv_sha256": "1231f31f837efae3ad750ceed5140fcd7dd5b8f9239ccf787a7476b063328c99",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.03200000151991844
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.027000000700354576,
+              -0.027000000700354576,
+              0.023000001907348633
+            ],
+            [
+              0.027000000700354576,
+              0.027000000700354576,
+              0.04100000113248825
+            ]
+          ],
+          "materials": [
+            "hub_1_407aa6"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.8258211971508716e-05
+        },
+        "shaft_1": {
+          "vertices": 192,
+          "polygons": 98,
+          "local_vertices_sha256": "cf142f10a9fa9d12b67bb44a97947e757222059ad2ec2f684a628566b2425523",
+          "topology_sha256": "2eafecb1c98a0cf94c1bd92518c6b5ddcf389d104fc168e25d393f71b45c0cd5",
+          "uv_sha256": "7d834944d69595c697e5d97c2aa18cb0a9066fded6b52deaa5b51b99d6024a03",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.05300000309944153
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.00800000037997961,
+              -0.00800000037997961,
+              0.04100000113248825
+            ],
+            [
+              0.00800000037997961,
+              0.00800000037997961,
+              0.0650000050663948
+            ]
+          ],
+          "materials": [
+            "shaft_1_a6adb8"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 4.8220423494590435e-06
+        },
+        "bolt_0": {
+          "vertices": 204,
+          "polygons": 106,
+          "local_vertices_sha256": "ab990ecc491f89caca29cab4703b766a1211bcb9b395039ba9433d8b0c6918e9",
+          "topology_sha256": "8b37972547f0f75df1af21ca2f84d1e282f7e42c012bc41773c1bb54bfcfbd58",
+          "uv_sha256": "62bc1297881207e419d25d40c0ac48b4e710be05178a53deeb7fd81d02922672",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.020000001415610313
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.021000001579523087
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              0.015323463827371597,
+              -0.005400000140070915,
+              0.006000000983476639
+            ],
+            [
+              0.02467653900384903,
+              0.005400000140070915,
+              0.04150000214576721
+            ]
+          ],
+          "materials": [
+            "bolt_0_8c949e"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.1930455196418457e-06
+        },
+        "washer_0": {
+          "vertices": 384,
+          "polygons": 196,
+          "local_vertices_sha256": "833ae3de31b3a1f4f3b349532bef80c8b6529a8547bfafef282430e6b46a684b",
+          "topology_sha256": "605ec6e4d448cd5bd64ccb431b87bd8ec11be5a6d6a0ae0793c28ffbebf92e61",
+          "uv_sha256": "ce2e0b82073066c419dbb56deb8c9b086373c3a8a9e8cd214ac31d8ebb540d12",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.020000001415610313
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.03674999997019768
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              0.01400000136345625,
+              -0.006000000052154064,
+              0.035999998450279236
+            ],
+            [
+              0.026000000536441803,
+              0.006000000052154064,
+              0.03750000149011612
+            ]
+          ],
+          "materials": [
+            "washer_0_cc9433"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.213044977535802e-07
+        },
+        "bolt_1": {
+          "vertices": 204,
+          "polygons": 106,
+          "local_vertices_sha256": "ab990ecc491f89caca29cab4703b766a1211bcb9b395039ba9433d8b0c6918e9",
+          "topology_sha256": "8b37972547f0f75df1af21ca2f84d1e282f7e42c012bc41773c1bb54bfcfbd58",
+          "uv_sha256": "62bc1297881207e419d25d40c0ac48b4e710be05178a53deeb7fd81d02922672",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.010000000707805157
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.017320509999990463
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.021000001579523087
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.014676537364721298,
+              0.011920509859919548,
+              0.006000000983476639
+            ],
+            [
+              -0.005323463585227728,
+              0.02272051014006138,
+              0.04150000214576721
+            ]
+          ],
+          "materials": [
+            "bolt_1_8c949e"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.1930455196418457e-06
+        },
+        "washer_1": {
+          "vertices": 384,
+          "polygons": 196,
+          "local_vertices_sha256": "833ae3de31b3a1f4f3b349532bef80c8b6529a8547bfafef282430e6b46a684b",
+          "topology_sha256": "605ec6e4d448cd5bd64ccb431b87bd8ec11be5a6d6a0ae0793c28ffbebf92e61",
+          "uv_sha256": "ce2e0b82073066c419dbb56deb8c9b086373c3a8a9e8cd214ac31d8ebb540d12",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.010000000707805157
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.017320509999990463
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.03674999997019768
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.01600000075995922,
+              0.011320509947836399,
+              0.035999998450279236
+            ],
+            [
+              -0.0040000006556510925,
+              0.023320510983467102,
+              0.03750000149011612
+            ]
+          ],
+          "materials": [
+            "washer_1_cc9433"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.213044977535802e-07
+        },
+        "bolt_2": {
+          "vertices": 204,
+          "polygons": 106,
+          "local_vertices_sha256": "ab990ecc491f89caca29cab4703b766a1211bcb9b395039ba9433d8b0c6918e9",
+          "topology_sha256": "8b37972547f0f75df1af21ca2f84d1e282f7e42c012bc41773c1bb54bfcfbd58",
+          "uv_sha256": "62bc1297881207e419d25d40c0ac48b4e710be05178a53deeb7fd81d02922672",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.010000000707805157
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.017320509999990463
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.021000001579523087
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.014676537364721298,
+              -0.02272051014006138,
+              0.006000000983476639
+            ],
+            [
+              -0.005323463585227728,
+              -0.011920509859919548,
+              0.04150000214576721
+            ]
+          ],
+          "materials": [
+            "bolt_2_8c949e"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.1930455196418457e-06
+        },
+        "washer_2": {
+          "vertices": 384,
+          "polygons": 196,
+          "local_vertices_sha256": "833ae3de31b3a1f4f3b349532bef80c8b6529a8547bfafef282430e6b46a684b",
+          "topology_sha256": "605ec6e4d448cd5bd64ccb431b87bd8ec11be5a6d6a0ae0793c28ffbebf92e61",
+          "uv_sha256": "ce2e0b82073066c419dbb56deb8c9b086373c3a8a9e8cd214ac31d8ebb540d12",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.010000000707805157
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.017320509999990463
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.03674999997019768
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.01600000075995922,
+              -0.023320510983467102,
+              0.035999998450279236
+            ],
+            [
+              -0.0040000006556510925,
+              -0.011320509947836399,
+              0.03750000149011612
+            ]
+          ],
+          "materials": [
+            "washer_2_cc9433"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.213044977535802e-07
+        },
+        "spacer": {
+          "vertices": 384,
+          "polygons": 196,
+          "local_vertices_sha256": "692bf050877f4de04e248d3b9c20b495fdd93df278c7409e445c0ab7a56162b6",
+          "topology_sha256": "a608ad9fc7580b200ac9612930b73c9fd209a26f5bda45a9354b2bd35186aa03",
+          "uv_sha256": "61a19b5cd6b1adfc36ad0c134f3de14c2b7c7f74e8cf3ff399b15879e1bcbb4d",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.021000001579523087
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -0.014000000432133675,
+              -0.014000000432133675,
+              0.0195000022649765
+            ],
+            [
+              0.014000000432133675,
+              0.014000000432133675,
+              0.02250000089406967
+            ]
+          ],
+          "materials": [
+            "spacer_cc9433"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": "Assembly",
+          "nonmanifold_edges": 0,
+          "volume_local_m3": 1.1814004480164487e-06
+        }
+      },
+      "cameras": {
+        "AssemblyCamera": {
+          "matrix_world": [
+            [
+              0.7893522381782532,
+              -0.28590619564056396,
+              0.5433053374290466,
+              0.12320000678300858
+            ],
+            [
+              0.6139405369758606,
+              0.36759382486343384,
+              -0.6985354423522949,
+              -0.1584000140428543
+            ],
+            [
+              -7.19538562066191e-08,
+              0.8849477171897888,
+              0.4656904339790344,
+              0.1266000121831894
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "type": "ORTHO",
+          "lens_mm": 50.0
+        }
+      },
+      "active_camera": "AssemblyCamera",
+      "render": {
+        "engine": "BLENDER_WORKBENCH",
+        "resolution": [
+          960,
+          720
+        ],
+        "percentage": 100,
+        "view_transform": "AgX",
+        "look": "None",
+        "exposure": 0.0
+      },
+      "materials": {
+        "bolt_0_8c949e": {
+          "diffuse": [
+            0.550000011920929,
+            0.5799999833106995,
+            0.6200000047683716,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "bolt_1_8c949e": {
+          "diffuse": [
+            0.550000011920929,
+            0.5799999833106995,
+            0.6200000047683716,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "bolt_2_8c949e": {
+          "diffuse": [
+            0.550000011920929,
+            0.5799999833106995,
+            0.6200000047683716,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "hub_0_407aa6": {
+          "diffuse": [
+            0.25,
+            0.47999998927116394,
+            0.6499999761581421,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "hub_1_407aa6": {
+          "diffuse": [
+            0.25,
+            0.47999998927116394,
+            0.6499999761581421,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "shaft_0_a6adb8": {
+          "diffuse": [
+            0.6499999761581421,
+            0.6800000071525574,
+            0.7200000286102295,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "shaft_1_a6adb8": {
+          "diffuse": [
+            0.6499999761581421,
+            0.6800000071525574,
+            0.7200000286102295,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "spacer_cc9433": {
+          "diffuse": [
+            0.800000011920929,
+            0.5799999833106995,
+            0.20000000298023224,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "washer_0_cc9433": {
+          "diffuse": [
+            0.800000011920929,
+            0.5799999833106995,
+            0.20000000298023224,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "washer_1_cc9433": {
+          "diffuse": [
+            0.800000011920929,
+            0.5799999833106995,
+            0.20000000298023224,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        },
+        "washer_2_cc9433": {
+          "diffuse": [
+            0.800000011920929,
+            0.5799999833106995,
+            0.20000000298023224,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ]
+          ]
+        }
+      },
+      "input_sanitization": null
+    }
+  ],
+  "repair_pair_check": null
+}

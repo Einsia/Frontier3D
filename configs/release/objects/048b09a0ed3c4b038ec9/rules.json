@@ -1,0 +1,494 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r_head",
+      "label": "头部、耳与小角",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.529,
+          0.294
+        ],
+        [
+          0.641,
+          0.267
+        ],
+        [
+          0.662,
+          0.322
+        ],
+        [
+          0.671,
+          0.366
+        ],
+        [
+          0.698,
+          0.399
+        ],
+        [
+          0.685,
+          0.434
+        ],
+        [
+          0.652,
+          0.44
+        ],
+        [
+          0.576,
+          0.396
+        ],
+        [
+          0.533,
+          0.37
+        ]
+      ]
+    },
+    {
+      "id": "r_neck_body",
+      "label": "长颈、鬃毛与躯干",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.591,
+          0.275
+        ],
+        [
+          0.626,
+          0.301
+        ],
+        [
+          0.58,
+          0.396
+        ],
+        [
+          0.548,
+          0.476
+        ],
+        [
+          0.55,
+          0.553
+        ],
+        [
+          0.511,
+          0.612
+        ],
+        [
+          0.379,
+          0.619
+        ],
+        [
+          0.321,
+          0.571
+        ],
+        [
+          0.322,
+          0.484
+        ],
+        [
+          0.361,
+          0.459
+        ],
+        [
+          0.442,
+          0.46
+        ],
+        [
+          0.456,
+          0.408
+        ],
+        [
+          0.502,
+          0.33
+        ],
+        [
+          0.551,
+          0.288
+        ]
+      ]
+    },
+    {
+      "id": "r_legs",
+      "label": "四肢与深色足端",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.32,
+          0.551
+        ],
+        [
+          0.535,
+          0.546
+        ],
+        [
+          0.571,
+          0.653
+        ],
+        [
+          0.604,
+          0.731
+        ],
+        [
+          0.604,
+          0.759
+        ],
+        [
+          0.564,
+          0.775
+        ],
+        [
+          0.532,
+          0.763
+        ],
+        [
+          0.531,
+          0.804
+        ],
+        [
+          0.504,
+          0.82
+        ],
+        [
+          0.472,
+          0.813
+        ],
+        [
+          0.456,
+          0.746
+        ],
+        [
+          0.4,
+          0.741
+        ],
+        [
+          0.395,
+          0.771
+        ],
+        [
+          0.354,
+          0.776
+        ],
+        [
+          0.337,
+          0.756
+        ],
+        [
+          0.328,
+          0.658
+        ]
+      ]
+    },
+    {
+      "id": "r_base",
+      "label": "木纹圆形展示底座",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.213,
+          0.744
+        ],
+        [
+          0.245,
+          0.701
+        ],
+        [
+          0.314,
+          0.666
+        ],
+        [
+          0.422,
+          0.642
+        ],
+        [
+          0.551,
+          0.643
+        ],
+        [
+          0.65,
+          0.657
+        ],
+        [
+          0.728,
+          0.692
+        ],
+        [
+          0.779,
+          0.735
+        ],
+        [
+          0.789,
+          0.769
+        ],
+        [
+          0.759,
+          0.815
+        ],
+        [
+          0.687,
+          0.852
+        ],
+        [
+          0.574,
+          0.874
+        ],
+        [
+          0.438,
+          0.876
+        ],
+        [
+          0.323,
+          0.853
+        ],
+        [
+          0.249,
+          0.813
+        ],
+        [
+          0.215,
+          0.777
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t_giraffe",
+      "query": "完整毛绒幼年长颈鹿",
+      "weight": 0.4,
+      "boxes": [
+        [
+          0.252,
+          0.268,
+          0.696,
+          0.819
+        ]
+      ],
+      "boundary_notes": "包含所有可见耳角、深色鬃毛、尾端及足端；不含底座和投影。"
+    },
+    {
+      "id": "t_head",
+      "query": "长颈鹿头部及耳角",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.536,
+          0.268,
+          0.696,
+          0.439
+        ]
+      ],
+      "boundary_notes": "包括口鼻和头顶附属结构；下界按头颈过渡处划分，不延伸至长颈或颈后鬃毛。"
+    },
+    {
+      "id": "t_tail",
+      "query": "向后下垂的尾巴与深色尾穗",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.252,
+          0.469,
+          0.34,
+          0.601
+        ]
+      ],
+      "boundary_notes": "仅框可辨识的尾根、弯曲尾杆与完整深色尾端；与臀部连接处边界存在自然过渡。"
+    },
+    {
+      "id": "t_base",
+      "query": "圆形木纹展示底座",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.212,
+          0.642,
+          0.789,
+          0.877
+        ]
+      ],
+      "boundary_notes": "按可见圆盘外缘取框，包含被足部遮挡之间的底座表面，不含背景与投影；不推定隐藏厚度。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s_identity",
+      "source_quote": "Reconstruct the stuffed baby giraffe",
+      "question": "主体是否为参考中的毛绒幼年长颈鹿，而非写实动物？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_base",
+      "source_quote": "and its visible display base",
+      "question": "是否保留位于玩偶下方的圆形木纹展示底座？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_neck",
+      "source_quote": "including the long neck",
+      "question": "长颈是否从躯干向上前方延伸并支撑头部？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_horns",
+      "source_quote": "small horns",
+      "question": "头顶是否具有参考所示的小角？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_ears",
+      "source_quote": "and ears",
+      "question": "耳朵是否位于头部上侧并保持参考的朝向？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_muzzle",
+      "source_quote": "soft muzzle",
+      "question": "头部前端是否具有柔软、圆钝的口鼻？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_legs",
+      "source_quote": "four legs",
+      "question": "四肢是否从躯干下方伸出，呈参考的站立与前后遮挡关系？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_tail",
+      "source_quote": "and tail",
+      "question": "臀后是否有向后下垂、带深色尾端的尾巴？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_fabric",
+      "source_quote": "Match the patterned fabric regions",
+      "question": "黄褐色斑块、浅色分隔纹、浅色小腿及深色足端等布料区域是否匹配参考？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_proportions",
+      "source_quote": "and soft toy proportions",
+      "question": "头、长颈、短躯干与粗软四肢的相对比例是否符合参考玩偶？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_silhouette",
+      "source_quote": "retain the rounded plush silhouette",
+      "question": "整体是否保持饱满圆润的毛绒轮廓？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_contact",
+      "source_quote": "stable contact with the base",
+      "question": "玩偶是否以稳定站姿接触底座，没有明显悬浮或穿插？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_surface",
+      "source_quote": "Match visible surfaces",
+      "question": "可见眼睛、鼻部和颈后深色鬃毛的外观与位置是否匹配参考？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_completion",
+      "source_quote": "complete unseen surfaces plausibly without inventing internal machinery",
+      "question": "不可见面是否合理补全，且未添加无依据的内部机械结构？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_geometry",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "主体与底座是否使用可编辑的完整三维几何，而非图像平面或朝向相机的薄壳？",
+      "weight": 0.0625
+    },
+    {
+      "id": "s_components",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "独立组件是否可分别编辑或分离，同时允许有机表面连续连接？",
+      "weight": 0.0625
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d_neck",
+      "source_quote": "including the long neck",
+      "question": "颈部是否呈有厚度的圆润渐变形，并在肩部和头部平滑衔接？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_horns",
+      "source_quote": "small horns",
+      "question": "可见小角是否具有短粗杆部和圆钝端部，而非尖锐锥体？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_ears",
+      "source_quote": "and ears",
+      "question": "耳片是否保留圆钝外缘、厚度与内侧凹曲形态？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_muzzle",
+      "source_quote": "soft muzzle",
+      "question": "口鼻是否向前鼓出并圆滑收拢，保留鼻端与下颌的局部轮廓？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_legs",
+      "source_quote": "four legs",
+      "question": "腿部是否为粗软柱状，足端加宽圆钝，并保留腿间可见空隙？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_tail",
+      "source_quote": "and tail",
+      "question": "尾巴是否具有弯曲的细尾杆、连续尾根及膨大的圆软尾穗？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_mane",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "question": "颈后鬃毛是否沿颈脊形成连续凸起，并保留可见起伏轮廓？",
+      "weight": 0.125
+    },
+    {
+      "id": "d_base",
+      "source_quote": "and its visible display base",
+      "question": "底座是否保持平坦承托面及连续圆弧外缘，而非方形板或不规则地面？",
+      "weight": 0.125
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n_leg_count",
+      "source_quote": "four legs",
+      "quantity": "腿的数量",
+      "unit": "条",
+      "relation": "equal",
+      "target": 4,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在完整三维几何中按从躯干延伸至足端的独立肢体分支计数，不以对象数或单视图可见块数代替。"
+    },
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标中合并玩偶与展示底座的几何包围范围，取X、Y、Z三轴跨度的最大值，与1.000 m比较；排除相机与灯光。explicit_tolerance以相对比例记录原文2%。"
+    }
+  ],
+  "limitations": [
+    "本计划未接收或测量任何候选作品。",
+    "主参考input/reference.png对应公开附件原始证据路径reference/reference-0.png；所有区域和框均固定于该原图。",
+    "单视图无法确定背面、底面、内部构造及隐藏连接；不得将合理补全面当作唯一隐藏目标。",
+    "耳角相互遮挡且毛绒边界柔软；不从图像估计其精确数量、尺寸或厚度要求。",
+    "底座可见侧缘很薄，无法据此规定精确厚度。",
+    "最大跨度按轴对齐整体包围范围的最长边操作化；原文未进一步定义跨度算法。2%为原文相对容差，不另设容差。",
+    "Z向上和静态姿态的原生场景一致性可检查，但帧号、导出文件及渲染设置不作为内容几何数值指标。",
+    "稳定接触为显式关系要求，但原文未指定接触面积、间隙数值或接触点数量，因此不设置额外数值阈值。"
+  ]
+}

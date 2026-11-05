@@ -1,0 +1,146 @@
+task_id,level,category,title,harness_status,manifest
+L1/Text2Code/task_L1_Text2Code_001,1,Text2Code,螺栓法兰总成,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_001/task.toml
+L1/Text2Code/task_L1_Text2Code_002,1,Text2Code,双支座轴承总成,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_002/task.toml
+L1/Text2Code/task_L1_Text2Code_003,1,Text2Code,丝杠驱动滑台,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_003/task.toml
+L1/Text2Code/task_L1_Text2Code_004,1,Text2Code,小型机用虎钳,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_004/task.toml
+L1/Text2Code/task_L1_Text2Code_005,1,Text2Code,滑轮叉架总成,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_005/task.toml
+L1/Text2Code/task_L1_Text2Code_006,1,Text2Code,六孔分度转台,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_006/task.toml
+L1/Text2Code/task_L1_Text2Code_007,1,Text2Code,滑动门闩总成,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_007/task.toml
+L1/Text2Code/task_L1_Text2Code_008,1,Text2Code,密封电子盒总成,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_008/task.toml
+L1/Text2Code/task_L1_Text2Code_009,1,Text2Code,同轴滤芯壳体,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_009/task.toml
+L1/Text2Code/task_L1_Text2Code_010,1,Text2Code,伸缩方管锁销总成,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_010/task.toml
+L1/Text2Code/task_L1_Text2Code_011,1,Text2Code,双轴相机托架,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_011/task.toml
+L1/Text2Code/task_L1_Text2Code_012,1,Text2Code,四滚轮导向夹具,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_012/task.toml
+L1/Text2Code/task_L1_Text2Code_013,1,Text2Code,环槽回转套筒,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_013/task.toml
+L1/Text2Code/task_L1_Text2Code_014,1,Text2Code,平面曲线矩形扫掠件,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_014/task.toml
+L1/Text2Code/task_L1_Text2Code_015,1,Text2Code,Text2Code：文字重建,native,data/3dbench/tasks/L1/Text2Code/task_L1_Text2Code_015/task.toml
+L1/Image2Code/task_L1_Image2Code_001,1,Image2Code,工业双目显微镜,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_001/task.toml
+L1/Image2Code/task_L1_Image2Code_002,1,Image2Code,开盖台式钻床,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_002/task.toml
+L1/Image2Code/task_L1_Image2Code_003,1,Image2Code,管风琴,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_003/task.toml
+L1/Image2Code/task_L1_Image2Code_004,1,Image2Code,老旧风力涡轮塔,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_004/task.toml
+L1/Image2Code/task_L1_Image2Code_005,1,Image2Code,复古机械打字机,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_005/task.toml
+L1/Image2Code/task_L1_Image2Code_006,1,Image2Code,木制脚踏纺车,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_006/task.toml
+L1/Image2Code/task_L1_Image2Code_007,1,Image2Code,八角飞檐宫灯,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_007/task.toml
+L1/Image2Code/task_L1_Image2Code_008,1,Image2Code,可动上翻柜门铰链与伸缩撑杆,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_008/task.toml
+L1/Image2Code/task_L1_Image2Code_009,1,Image2Code,球壳悬浮机器人,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_009/task.toml
+L1/Image2Code/task_L1_Image2Code_010,1,Image2Code,双翼科学着陆器,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_010/task.toml
+L1/Image2Code/task_L1_Image2Code_011,1,Image2Code,多轮行星探索车,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_011/task.toml
+L1/Image2Code/task_L1_Image2Code_012,1,Image2Code,科隆大教堂微缩模型,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/task.toml
+L1/Image2Code/task_L1_Image2Code_013,1,Image2Code,枝状水晶吊灯,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_013/task.toml
+L1/Image2Code/task_L1_Image2Code_014,1,Image2Code,McLaren 720S GT3 赛车,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_014/task.toml
+L1/Image2Code/task_L1_Image2Code_015,1,Image2Code,涡扇喷气发动机,native,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_015/task.toml
+L1/Image2Code/task_L1_Image2Code_016,1,Image2Code,茶具托盘套装,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_016/task.toml
+L1/Image2Code/task_L1_Image2Code_017,1,Image2Code,波音 787-9 客机,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_017/task.toml
+L1/Image2Code/task_L1_Image2Code_018,1,Image2Code,星形发动机,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_018/task.toml
+L1/Image2Code/task_L1_Image2Code_019,1,Image2Code,雅马哈 YZF-R1 摩托车,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_019/task.toml
+L1/Image2Code/task_L1_Image2Code_020,1,Image2Code,圆号,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/task.toml
+L1/Image2Code/task_L1_Image2Code_021,1,Image2Code,马林巴琴,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_021/task.toml
+L1/Image2Code/task_L1_Image2Code_022,1,Image2Code,三角钢琴,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_022/task.toml
+L1/Image2Code/task_L1_Image2Code_023,1,Image2Code,R2-D2,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_023/task.toml
+L1/Image2Code/task_L1_Image2Code_024,1,Image2Code,刹车盘与卡钳,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/task.toml
+L1/Image2Code/task_L1_Image2Code_025,1,Image2Code,赛博朋克踏板车,extension,data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_025/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001,1,Image2Code-SingleView,Nike Pegasus 36 运动鞋,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002,1,Image2Code-SingleView,液压理发椅,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_002/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003,1,Image2Code-SingleView,榴莲,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004,1,Image2Code-SingleView,多连杆夹持台灯,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005,1,Image2Code-SingleView,法棍面包篮,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_005/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006,1,Image2Code-SingleView,综合力量训练器,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_006/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007,1,Image2Code-SingleView,便携无线电收发机,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_007/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008,1,Image2Code-SingleView,RED 8K 摄影机,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009,1,Image2Code-SingleView,流鬃马头雕像,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_009/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010,1,Image2Code-SingleView,大卫头像,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_010/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011,1,Image2Code-SingleView,DJI Mavic 3 无人机,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_011/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012,1,Image2Code-SingleView,花纹浮雕宝箱,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_012/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013,1,Image2Code-SingleView,双端滚筒采掘机器人,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_013/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014,1,Image2Code-SingleView,Birkin 手袋,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_014/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015,1,Image2Code-SingleView,人体工学网椅,native,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016,1,Image2Code-SingleView,人体心脏,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017,1,Image2Code-SingleView,骆驼,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_017/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018,1,Image2Code-SingleView,边境牧羊犬,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019,1,Image2Code-SingleView,东蓝鸲,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020,1,Image2Code-SingleView,Tag Heuer 手表,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021,1,Image2Code-SingleView,复古拳击手套,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022,1,Image2Code-SingleView,长颈鹿毛绒玩具,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_022/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023,1,Image2Code-SingleView,圆明园牛首,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024,1,Image2Code-SingleView,YSL 高跟鞋,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024/task.toml
+L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025,1,Image2Code-SingleView,Balenciaga 墨镜,extension,data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_001,2,Brief2Scene,帆船港口与岸边货运区,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_001/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_002,2,Brief2Scene,行星基地与高架试验轨道,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_002/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_003,2,Brief2Scene,双向道路与六户住宅街区,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_003/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_004,2,Brief2Scene,四角塔楼与可通行城堡庭院,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_004/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_005,2,Brief2Scene,中央步道与小型纪念墓园,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_005/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_006,2,Brief2Scene,三道微型高尔夫练习场,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_006/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_007,2,Brief2Scene,岩礁灯塔与海岸植被,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_007/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_008,2,Brief2Scene,砂岩峡谷通道与荒漠植被,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_008/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_009,2,Brief2Scene,低角度光照下的月表景观,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_009/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_010,2,Brief2Scene,Brief2Scene：俯视卡通工地,native,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_010/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_011,2,Brief2Scene,吧台·双臂调酒机器人,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_011/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_012,2,Brief2Scene,温室·番茄采摘机器人,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_012/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_013,2,Brief2Scene,公寓楼道·配送机器人等电梯,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_013/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_014,2,Brief2Scene,图书馆·高层取书,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_014/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_015,2,Brief2Scene,工具间·挂板取工具,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_015/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_016,2,Brief2Scene,洗衣房·折叠工作站,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_016/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_017,2,Brief2Scene,咖啡站·拉花中段,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_017/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_018,2,Brief2Scene,停车场·充电机器人插枪,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_018/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_019,2,Brief2Scene,人形测试场·障碍段中途,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_019/task.toml
+L2/Brief2Scene/task_L2_Brief2Scene_020,2,Brief2Scene,无人机机巢·换电中段,extension,data/3dbench/tasks/L2/Brief2Scene/task_L2_Brief2Scene_020/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-001,2,Reference2Scene,日照教室与成排课桌,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-001/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-002,2,Reference2Scene,Seven Stars 街角立面与狭巷,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-002/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-003,2,Reference2Scene,废弃仓库的梁柱与破损围护,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-003/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-004,2,Reference2Scene,乡村厨房的橱柜、料理台与窗边餐桌,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-004/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-005,2,Reference2Scene,俯视城市街区与多层建筑群,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-005/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-006,2,Reference2Scene,现代卧室的床铺、照明与软装,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-006/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-007,2,Reference2Scene,Charité 手术室与吊臂医疗设备,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-007/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-008,2,Reference2Scene,砖拱旧货店与密集陈列,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-008/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-009,2,Reference2Scene,Hintze Hall 中庭、拱廊与悬挂鲸骨,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-009/task.toml
+L2/Reference2Scene/task_L2_Reference2Scene-010,2,Reference2Scene,Grange 木饰面餐厅与长桌,native,data/3dbench/tasks/L2/Reference2Scene/task_L2_Reference2Scene-010/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001,2,Reference2Scene-RealPhoto,RoboCup@Home：杂物桌面与厨具重建,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_001/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002,2,Reference2Scene-RealPhoto,MessyKitchens：水槽旁杂乱杯碟重建,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_002/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003,2,Reference2Scene-RealPhoto,藏书客厅、沙发与落地窗,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004,2,Reference2Scene-RealPhoto,教堂肋拱、长椅与祭坛,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_004/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005,2,Reference2Scene-RealPhoto,商用厨房的炉灶与不锈钢工作台,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_005/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006,2,Reference2Scene-RealPhoto,幼儿园活动室与低矮家具,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_006/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007,2,Reference2Scene-RealPhoto,木梁餐厅与棋盘格过道,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_007/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008,2,Reference2Scene-RealPhoto,柏林车站玻璃拱顶与站台,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_008/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009,2,Reference2Scene-RealPhoto,旋转木马的马匹、立杆与灯饰,native,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_009/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010,2,Reference2Scene-RealPhoto,香港机场机坪与登机桥,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_010/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011,2,Reference2Scene-RealPhoto,海湾停泊船只,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012,2,Reference2Scene-RealPhoto,哈雷摩托车店陈列,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_012/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013,2,Reference2Scene-RealPhoto,鸡肉意面餐盘,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_013/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014,2,Reference2Scene-RealPhoto,班尼迪克蛋餐盘,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_014/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015,2,Reference2Scene-RealPhoto,汉堡薯条餐盘,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_015/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016,2,Reference2Scene-RealPhoto,水果生日蛋糕,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_016/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017,2,Reference2Scene-RealPhoto,切片牛排餐盘,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018,2,Reference2Scene-RealPhoto,万丽酒店客房,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_018/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019,2,Reference2Scene-RealPhoto,彩玻璃木饰餐厅,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020,2,Reference2Scene-RealPhoto,仙本那水屋步道,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_020/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021,2,Reference2Scene-RealPhoto,国科大艺术与科学大楼,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022,2,Reference2Scene-RealPhoto,日落购物广场,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_022/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023,2,Reference2Scene-RealPhoto,木饰休息厅与楼梯口,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_023/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024,2,Reference2Scene-RealPhoto,高架桥下自行车停车区,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024/task.toml
+L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025,2,Reference2Scene-RealPhoto,Mip-NeRF 360 Counter：厨房台面,extension,data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_025/task.toml
+L2/SceneEdit/task_L2_SceneEdit_001,2,SceneEdit,现代浴室：补建浴缸,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_001/task.toml
+L2/SceneEdit/task_L2_SceneEdit_002,2,SceneEdit,阁楼工作室：补回望远镜,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_002/task.toml
+L2/SceneEdit/task_L2_SceneEdit_003,2,SceneEdit,石砌地牢：恢复拱道照明,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_003/task.toml
+L2/SceneEdit/task_L2_SceneEdit_004,2,SceneEdit,铁匠铺：恢复炉台与锻造设备,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_004/task.toml
+L2/SceneEdit/task_L2_SceneEdit_005,2,SceneEdit,雪原骑士：恢复阴云日光层次,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_005/task.toml
+L2/SceneEdit/task_L2_SceneEdit_006,2,SceneEdit,科幻走廊：补回两处霓虹轮廓灯,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_006/task.toml
+L2/SceneEdit/task_L2_SceneEdit_007,2,SceneEdit,卡通咖啡馆：补回吧台与咖啡机,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_007/task.toml
+L2/SceneEdit/task_L2_SceneEdit_008,2,SceneEdit,赛车场：补建维修站与带顶看台,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_008/task.toml
+L2/SceneEdit/task_L2_SceneEdit_009,2,SceneEdit,货运站：恢复敞口货车厢,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_009/task.toml
+L2/SceneEdit/task_L2_SceneEdit_010,2,SceneEdit,飞船通道：补回覆布货桶组,native,data/3dbench/tasks/L2/SceneEdit/task_L2_SceneEdit_010/task.toml
+L3/Image2Environment/task_L3_Image2Environment_001,3,Image2Environment,具身：精细厨房与家务生活区,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_001/task.toml
+L3/Image2Environment/task_L3_Image2Environment_002,3,Image2Environment,具身：超市营业区、冷库与卸货区,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_002/task.toml
+L3/Image2Environment/task_L3_Image2Environment_003,3,Image2Environment,具身：维修工坊与室外物流场,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_003/task.toml
+L3/Image2Environment/task_L3_Image2Environment_004,3,Image2Environment,具身：育苗棚、果园与灌溉服务区,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_004/task.toml
+L3/Text2Environment/task_L3_Text2Environment_001,3,Text2Environment,具身：病区及物资服务走廊,native,data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_001/task.toml
+L3/Text2Environment/task_L3_Text2Environment_002,3,Text2Environment,具身：水处理设施与检修平台,native,data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_002/task.toml
+L3/Image2Environment/task_L3_Image2Environment_005,3,Image2Environment,Minecraft Open-World Village,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_005/task.toml
+L3/Image2Environment/task_L3_Image2Environment_006,3,Image2Environment,只狼：苇名城主楼及相连庭院,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_006/task.toml
+L3/Image2Environment/task_L3_Image2Environment_007,3,Image2Environment,荒野大镖客2：瓦伦丁中心街区,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_007/task.toml
+L3/Image2Environment/task_L3_Image2Environment_008,3,Image2Environment,守望先锋：Rialto 运河广场与后勤街区,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_008/task.toml
+L3/Text2Environment/task_L3_Text2Environment_003,3,Text2Environment,星际拓荒风格：外星水力遗迹区域,native,data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_003/task.toml
+L3/Text2Environment/task_L3_Text2Environment_004,3,Text2Environment,旷野之息风格：驿站、废墟与山谷生活区,native,data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_004/task.toml
+L3/Image2Environment/task_L3_Image2Environment_009,3,Image2Environment,现实：横店秦王宫前广场、宫门和相连院落,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_009/task.toml
+L3/Image2Environment/task_L3_Image2Environment_010,3,Image2Environment,现实：长洲渡轮码头与市场后勤区,native,data/3dbench/tasks/L3/Image2Environment/task_L3_Image2Environment_010/task.toml
+L3/Text2Environment/task_L3_Text2Environment_005,3,Text2Environment,现实：县域铁路站前综合交通枢纽,native,data/3dbench/tasks/L3/Text2Environment/task_L3_Text2Environment_005/task.toml

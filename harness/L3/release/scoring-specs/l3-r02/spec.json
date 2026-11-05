@@ -1,0 +1,226 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-r02",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "1ad6f5e626c473fab7bbc39fdd8144f783b46c7bdfde2b367e79f6befe5de19c",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Preserve the layered waterfront composition: boats and water in front, a long terminal at the quay, and densely packed buildings rising behind.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Keep the terminal predominantly low and horizontal, with its taller boarding tower offset to the right and neighboring waterfront buildings of varied heights.",
+        "id": "env-02"
+      },
+      {
+        "criterion": "Carry the dense coastal setting beyond the focal terminal with adjoining buildings, hillside vegetation and sheltered harbor water rather than isolated architecture.",
+        "id": "env-05"
+      },
+      {
+        "criterion": "Match the clear daylight, pale blue hazy sky, subdued cream and gray buildings, dark waterfront recesses, green boats and small red accents.",
+        "id": "env-06"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "Long, low rectangular terminal with an almost continuous flat roof and a taller boxlike volume right of center.",
+            "id": "terminal-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Waterfront elevation divided into repeated vertical concrete bays with broad horizontal openings and dark recessed sections.",
+            "id": "terminal-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Thin metal railings trace the roof terrace and upper edges.",
+            "id": "terminal-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Off-white and pale gray concrete contrasts with dark glazing, shadowed interiors and weathered lower surfaces.",
+            "id": "terminal-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-terminal",
+        "importance": "core",
+        "label": "Terminal and waiting hall",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 30
+      },
+      {
+        "features": [
+          {
+            "criterion": "Raised quay forms a continuous horizontal boundary above the water, with a dark vertical support zone below.",
+            "id": "quay-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Tall boarding opening beneath the raised terminal volume contains a dark blue framed structure with rust-red horizontal elements.",
+            "id": "quay-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Vertical piles and hanging black tire fenders repeat along the waterline.",
+            "id": "quay-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Concrete quay edges, dark marine supports and painted boarding metal show coastal staining and wear.",
+            "id": "quay-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-quay",
+        "importance": "core",
+        "label": "Quay and boarding connection",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 20
+      },
+      {
+        "features": [],
+        "id": "target-market",
+        "importance": "core",
+        "label": "Adjacent market stalls and canopies",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [],
+        "id": "target-warehouse",
+        "importance": "core",
+        "label": "Warehouse and delivery service lane",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 10
+      },
+      {
+        "features": [
+          {
+            "criterion": "Foreground harbor contains closely packed low working boats with elongated hulls and boxy cabins or covered decks.",
+            "id": "vessels-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Boat decks carry lightweight canopy frames, tarpaulin covers, poles and mooring ropes.",
+            "id": "vessels-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Dark green painted hulls, cream cabins and blue-green tarpaulins dominate, with red flags providing narrow vertical accents.",
+            "id": "vessels-03",
+            "kind": "material"
+          }
+        ],
+        "id": "target-vessels",
+        "importance": "core",
+        "label": "Docked ferry and working harbor boats",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 15
+      },
+      {
+        "features": [
+          {
+            "criterion": "Dense stepped backdrop of low-rise buildings follows a gently rising, tree-covered hillside.",
+            "id": "backdrop-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Flat roofs, rooftop additions, balconies and occasional pitched canopy roofs create an irregular skyline.",
+            "id": "backdrop-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Cream, white, dusty pink and brown facades alternate with deep green trees and shaded gaps.",
+            "id": "backdrop-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Buildings remain visually close behind the terminal, with vegetation interspersed between structures.",
+            "id": "backdrop-04",
+            "kind": "construction"
+          }
+        ],
+        "id": "target-backdrop",
+        "importance": "supporting",
+        "label": "Waterfront neighborhood and hillside",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 7
+      },
+      {
+        "features": [
+          {
+            "criterion": "Painted metal, worn cargo surfaces and weathered rope match the harbor's utilitarian coastal character.",
+            "id": "furnishings-03",
+            "kind": "material"
+          }
+        ],
+        "id": "target-furnishings",
+        "importance": "detail",
+        "label": "Passenger and harbor furnishings",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 3
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "8da56115df2dbdfdbea357732ccff3f31ea893d52959cec27c06901dfd4ab238"
+  }
+}

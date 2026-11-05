@@ -1,0 +1,16 @@
+{
+  "engine": "licensed UE 5.8.3; external",
+  "gpu": "NVIDIA Vulkan",
+  "offline_libraries": [
+    "kenney-voxel-1.0-tiles",
+    "kenney-suite-20261023",
+    "polyhaven-2k-2026-10-16"
+  ],
+  "host_provider": "root OPENAI_*/VLM_* or explicit private L3 provider JSON",
+  "runtime_options": "root .env.example (L3_* settings)",
+  "offline_library_root": "L3_ASSET_ROOT",
+  "python": "3.13; public root requirements.txt",
+  "codex_cli": "0.163.0",
+  "default_agent_image": "3dbench-l3-agent:ue5.8.3-codex0.163.0",
+  "fresh_runner": "python -m benchmark run/generate/evaluate --level 3"
+}

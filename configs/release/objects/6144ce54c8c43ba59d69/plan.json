@@ -1,0 +1,445 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_002",
+  "title": "阁楼工作室：补回望远镜",
+  "category": "SceneEdit",
+  "profile": "edit-continuous-40-40-20-v1",
+  "weights": {
+    "N": 0.4,
+    "T": 0.4,
+    "K": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [
+    {
+      "path": "environment/input/reference.png",
+      "sha256": "21f88631aeb4787a7814f80a05d954ec2bf1be1d8d89d839c8c5c471614c1651"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "numeric_tripod_leg_count",
+      "component": "N",
+      "weight": 1.0,
+      "question": "slender three-legged support",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "id": "tripod_leg_count",
+        "method": "pending_geometry_count",
+        "expected": 3,
+        "unit": "count",
+        "tolerance": 0,
+        "source_quote": "slender three-legged support",
+        "normalization": "error outside public tolerance divided by same positive tolerance; semantic count half-scale=1"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "target_surface",
+      "component": "T",
+      "weight": 0.5,
+      "question": "目标局部表面的真实凹腔、轮廓、厚度及修改范围重建",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md",
+      "parameters": {
+        "target": {
+          "scene": "solution/reference/scene.blend",
+          "objects": [
+            "Cylinder.005"
+          ],
+          "files": [
+            "solution/reference/scene.blend",
+            "solution/annotations/pair-audit.json"
+          ]
+        },
+        "edit_structure": {
+          "thickness": true,
+          "open_cavity": false
+        },
+        "edit_regions": [
+          {
+            "id": "front_rim",
+            "objects": [
+              "Cylinder.005"
+            ],
+            "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+            "image_box": [
+              0.715,
+              0.29,
+              0.8,
+              0.405
+            ]
+          },
+          {
+            "id": "optical_tube",
+            "objects": [
+              "Cylinder.005"
+            ],
+            "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+            "image_box": [
+              0.76,
+              0.365,
+              1.0,
+              0.63
+            ]
+          },
+          {
+            "id": "visible_mount_support",
+            "objects": [
+              "Cylinder.005"
+            ],
+            "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+            "image_box": [
+              0.83,
+              0.6,
+              0.93,
+              1.0
+            ]
+          }
+        ],
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "half_scale": "0.01 * frozen target-region maximum span; baseline coordinates unchanged"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "edit_effect_1",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Restore the long tilted telescope tube at the right attic location. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_2",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Include wider front rim and identifiable eyepiece end. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_3",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Connect the tube to its pivot/mount with coherent support. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_4",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Provide a slender tripod assembly contacting the floor. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "edit_effect_5",
+      "component": "T",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Maintain the reference narrow dark silhouette and relation to nearby furniture; do not invent exact hidden support details. Unchanged missing/wrong target content earns zero for this feature.；按本题允许修改范围检查形态或照明变化，N中已计的尺寸/数量不在此重复计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "protected_native",
+      "component": "K",
+      "weight": 0.6,
+      "question": "公开初始场景中允许修改区外的表面和姿态",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md",
+      "parameters": {
+        "baseline_scene": "environment/input/initial.blend",
+        "scope_contract": {
+          "target": "望远镜",
+          "target_features": [
+            "长倾斜镜筒",
+            "镜口和目镜",
+            "安装关节",
+            "三脚架三足落地",
+            "镜筒-关节-支架连续连接"
+          ],
+          "case_measurements": "长倾斜镜筒；镜口和目镜；安装关节；三脚架三足落地；镜筒-关节-支架连续连接",
+          "edit_structure": {
+            "thickness": true,
+            "open_cavity": false
+          },
+          "edit_regions": [
+            {
+              "id": "front_rim",
+              "objects": [
+                "Cylinder.005"
+              ],
+              "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+              "image_box": [
+                0.715,
+                0.29,
+                0.8,
+                0.405
+              ]
+            },
+            {
+              "id": "optical_tube",
+              "objects": [
+                "Cylinder.005"
+              ],
+              "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+              "image_box": [
+                0.76,
+                0.365,
+                1.0,
+                0.63
+              ]
+            },
+            {
+              "id": "visible_mount_support",
+              "objects": [
+                "Cylinder.005"
+              ],
+              "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+              "image_box": [
+                0.83,
+                0.6,
+                0.93,
+                1.0
+              ]
+            }
+          ],
+          "reference_target": {
+            "scene": "solution/reference/scene.blend",
+            "objects": [
+              "Cylinder.005"
+            ],
+            "files": [
+              "solution/reference/scene.blend",
+              "solution/annotations/pair-audit.json"
+            ]
+          }
+        },
+        "half_scale_m": null,
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "fallback_half_scale": "L2 only: 0.001 * frozen baseline protected-region maximum span",
+        "normalization": "per protected property tolerance; equal required groups; no arbitrary registration",
+        "allowed_induced_changes": "legitimate shadows/reflections from permitted edit"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "protected_properties",
+      "component": "K",
+      "weight": 0.2,
+      "question": "允许修改区外的材质参数、层级及保留相机参数",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "baseline_scene": "environment/input/initial.blend",
+        "scope_contract": {
+          "target": "望远镜",
+          "target_features": [
+            "长倾斜镜筒",
+            "镜口和目镜",
+            "安装关节",
+            "三脚架三足落地",
+            "镜筒-关节-支架连续连接"
+          ],
+          "case_measurements": "长倾斜镜筒；镜口和目镜；安装关节；三脚架三足落地；镜筒-关节-支架连续连接",
+          "edit_structure": {
+            "thickness": true,
+            "open_cavity": false
+          },
+          "edit_regions": [
+            {
+              "id": "front_rim",
+              "objects": [
+                "Cylinder.005"
+              ],
+              "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+              "image_box": [
+                0.715,
+                0.29,
+                0.8,
+                0.405
+              ]
+            },
+            {
+              "id": "optical_tube",
+              "objects": [
+                "Cylinder.005"
+              ],
+              "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+              "image_box": [
+                0.76,
+                0.365,
+                1.0,
+                0.63
+              ]
+            },
+            {
+              "id": "visible_mount_support",
+              "objects": [
+                "Cylinder.005"
+              ],
+              "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+              "image_box": [
+                0.83,
+                0.6,
+                0.93,
+                1.0
+              ]
+            }
+          ],
+          "reference_target": {
+            "scene": "solution/reference/scene.blend",
+            "objects": [
+              "Cylinder.005"
+            ],
+            "files": [
+              "solution/reference/scene.blend",
+              "solution/annotations/pair-audit.json"
+            ]
+          }
+        },
+        "tolerances": {},
+        "normalization": "equal protected property groups; numeric kernels with public tolerance; exact categorical identity where required"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "protected_appearance",
+      "component": "K",
+      "weight": 0.2,
+      "question": "对照修改前、目标和候选核对非目标内容保留；允许编辑引发的合理阴影反射变化",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "ce9d56c632c09592acea92ce67b2b0efe9a8334b3cfd3cd47b17a0fd9fb035dc",
+    "task.toml": "cb67755359390d427378df11ae875e7227502000c9757e56ef33e63e97626408",
+    "harness/eval_spec.json": "8fcbf7ee0bd6ea5a12d7864697c9f59d097a77193e76f7eff0594fd1e1558977",
+    "harness/methods.json": "0ad0417860695b11fb828398f998a31f40e3e64e34fa33fcbe1bfb2637f6938d",
+    "harness/vlm_context/before.png": "27c18497c0bb9cdb4bc4d0046b98fd1285bcc6d119280dcaeed941bb39565b6e",
+    "harness/vlm_context/target.png": "c62ee6b18b2a3a756e2b310215b2583422e0c3ac1f5e75a1468a032c92cac3b1",
+    "harness/vlm_spec.json": "fc15736848b92bb6b531d6d694f9da508ae14de6c5fa9f94636ac28c144a0b0f"
+  },
+  "edit_context": {
+    "before": {
+      "path": "harness/vlm_context/before.png",
+      "sha256": "27c18497c0bb9cdb4bc4d0046b98fd1285bcc6d119280dcaeed941bb39565b6e",
+      "scene_sha256": "c3127ed68a020e05b7bd518a6f8943f3927213f237f20cec1be6a534bb3bd863"
+    },
+    "target": {
+      "path": "harness/vlm_context/target.png",
+      "sha256": "c62ee6b18b2a3a756e2b310215b2583422e0c3ac1f5e75a1468a032c92cac3b1",
+      "scene_sha256": "e863c430bcf887c9f3071bfd48b3b88b0c946d8336d827942c547491d6b59b82"
+    }
+  },
+  "reference_binding_status": "frozen_existing_context",
+  "native_scope": {
+    "target": "望远镜",
+    "target_features": [
+      "长倾斜镜筒",
+      "镜口和目镜",
+      "安装关节",
+      "三脚架三足落地",
+      "镜筒-关节-支架连续连接"
+    ],
+    "case_measurements": "长倾斜镜筒；镜口和目镜；安装关节；三脚架三足落地；镜筒-关节-支架连续连接",
+    "edit_structure": {
+      "thickness": true,
+      "open_cavity": false
+    },
+    "edit_regions": [
+      {
+        "id": "front_rim",
+        "objects": [
+          "Cylinder.005"
+        ],
+        "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+        "image_box": [
+          0.715,
+          0.29,
+          0.8,
+          0.405
+        ]
+      },
+      {
+        "id": "optical_tube",
+        "objects": [
+          "Cylinder.005"
+        ],
+        "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+        "image_box": [
+          0.76,
+          0.365,
+          1.0,
+          0.63
+        ]
+      },
+      {
+        "id": "visible_mount_support",
+        "objects": [
+          "Cylinder.005"
+        ],
+        "source_quote": "the long tilted optical tube, larger front rim, eyepiece end, mounting joint and slender three-legged support",
+        "image_box": [
+          0.83,
+          0.6,
+          0.93,
+          1.0
+        ]
+      }
+    ],
+    "reference_target": {
+      "scene": "solution/reference/scene.blend",
+      "objects": [
+        "Cylinder.005"
+      ],
+      "files": [
+        "solution/reference/scene.blend",
+        "solution/annotations/pair-audit.json"
+      ]
+    }
+  },
+  "geometry_gt_policy": "Use supplied initial-frame target only within explicit edit scope; fixed format conversions, no fitted registration.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

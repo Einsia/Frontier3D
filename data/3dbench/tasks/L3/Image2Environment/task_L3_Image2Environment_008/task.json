@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-g04",
+  "id": "L3/GameEnvironment/OverwatchHarborDistrict",
+  "domain": "game",
+  "input_mode": "image",
+  "title": "守望先锋：Rialto 运河广场与后勤街区",
+  "title_en": "Overwatch: Rialto Canal Plazas and Service District",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "678e3e3ddf1088af13f4527ba43ddfd18005091f447b9d1d925fd301a22c42da",
+  "chinese_instruction_sha256": "e6e1d978ca5b8c8c01ac9ed1e52413fcb6f265ab17d7e516a9fb2afc7cd10d9f",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "4431a9f5e3d31646cd43c0c0c4e74a9d2126b372d1c2b64971df36277a0fb326",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

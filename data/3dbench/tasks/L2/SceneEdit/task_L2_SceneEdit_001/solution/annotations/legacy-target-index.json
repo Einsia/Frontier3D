@@ -1,0 +1,37 @@
+{
+  "targets": [
+    {
+      "id": "Bathtube_0001",
+      "bounds": [
+        [
+          -2.4135799407958984,
+          0.1870100200176239,
+          0.1350509226322174
+        ],
+        [
+          -0.7829130291938782,
+          0.9520920515060425,
+          0.59961998462677
+        ]
+      ],
+      "material": "BathtubeBSDF"
+    },
+    {
+      "id": "Bathtube_0002",
+      "bounds": [
+        [
+          -2.4083480834960938,
+          0.19287800788879395,
+          0.12696193158626556
+        ],
+        [
+          -0.7881439924240112,
+          0.94622403383255,
+          0.5991700291633606
+        ]
+      ],
+      "material": "BathtubeBSDF"
+    }
+  ],
+  "preserve": "All remaining geometry, transforms, materials, lights, cameras and render settings."
+}

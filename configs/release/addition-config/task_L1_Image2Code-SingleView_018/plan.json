@@ -1,0 +1,274 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/417664f0d884a488bfb3/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/cd6333a0f51ca68f2faa/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/f331eec253c41f5784ca/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_018/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "头部与耳鼻",
+      "polygon": [
+        [
+          0.145,
+          0.39
+        ],
+        [
+          0.245,
+          0.388
+        ],
+        [
+          0.295,
+          0.426
+        ],
+        [
+          0.291,
+          0.489
+        ],
+        [
+          0.219,
+          0.533
+        ],
+        [
+          0.167,
+          0.525
+        ],
+        [
+          0.167,
+          0.438
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "r02",
+      "label": "胸颈与躯干",
+      "polygon": [
+        [
+          0.24,
+          0.389
+        ],
+        [
+          0.307,
+          0.389
+        ],
+        [
+          0.378,
+          0.416
+        ],
+        [
+          0.478,
+          0.371
+        ],
+        [
+          0.527,
+          0.395
+        ],
+        [
+          0.575,
+          0.522
+        ],
+        [
+          0.483,
+          0.52
+        ],
+        [
+          0.421,
+          0.573
+        ],
+        [
+          0.31,
+          0.609
+        ],
+        [
+          0.238,
+          0.602
+        ],
+        [
+          0.215,
+          0.504
+        ],
+        [
+          0.286,
+          0.485
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "r03",
+      "label": "腿与足爪",
+      "polygon": [
+        [
+          0.242,
+          0.568
+        ],
+        [
+          0.35,
+          0.577
+        ],
+        [
+          0.465,
+          0.517
+        ],
+        [
+          0.565,
+          0.494
+        ],
+        [
+          0.626,
+          0.555
+        ],
+        [
+          0.628,
+          0.593
+        ],
+        [
+          0.584,
+          0.598
+        ],
+        [
+          0.54,
+          0.548
+        ],
+        [
+          0.529,
+          0.638
+        ],
+        [
+          0.493,
+          0.64
+        ],
+        [
+          0.466,
+          0.567
+        ],
+        [
+          0.331,
+          0.622
+        ],
+        [
+          0.255,
+          0.704
+        ],
+        [
+          0.208,
+          0.716
+        ],
+        [
+          0.203,
+          0.674
+        ],
+        [
+          0.217,
+          0.615
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "r04",
+      "label": "上扬蓬松尾部",
+      "polygon": [
+        [
+          0.488,
+          0.374
+        ],
+        [
+          0.536,
+          0.348
+        ],
+        [
+          0.603,
+          0.338
+        ],
+        [
+          0.657,
+          0.325
+        ],
+        [
+          0.672,
+          0.332
+        ],
+        [
+          0.655,
+          0.368
+        ],
+        [
+          0.629,
+          0.401
+        ],
+        [
+          0.593,
+          0.42
+        ],
+        [
+          0.544,
+          0.414
+        ],
+        [
+          0.519,
+          0.399
+        ]
+      ],
+      "weight": 0.15
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": 0.02,
+      "id": "n01",
+      "measurement_definition": "以米读取最终静态姿态的对象几何，应用世界变换，排除相机和灯光；计算完整对象世界坐标包围盒的 X、Y、Z 尺寸并取最大值，与名义值 1.000 m 比较。explicit_tolerance 为相对比例，即原文 2%。",
+      "quantity": "最大整体跨度",
+      "relation": "equal",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "target": 1.0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

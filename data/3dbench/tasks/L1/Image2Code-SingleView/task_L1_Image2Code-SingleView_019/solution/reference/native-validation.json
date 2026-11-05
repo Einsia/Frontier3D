@@ -1,0 +1,72 @@
+{
+  "index": 105,
+  "uid": "c646531de6a3494faeaf2d3ce91b9dd2",
+  "source_sha256": "4e2f4c2e62d29ec09a3b1eecd21ccaba1701defba4fa10b2466e54af6fe7d489",
+  "native_span_m": 0.9999999340938359,
+  "native_bounds": {
+    "1": [
+      [
+        -0.2095205408285743,
+        -0.4999999764766301,
+        9.101669418143388e-11
+      ],
+      [
+        0.20952054113083207,
+        0.49999995761720584,
+        0.5425293851716049
+      ]
+    ]
+  },
+  "glb_bounds": {
+    "1": [
+      [
+        -0.2095205408285743,
+        -0.4999999186731827,
+        1.1562487078897732e-09
+      ],
+      [
+        0.20952054113083207,
+        0.49999978800076406,
+        0.5425292628548561
+      ]
+    ]
+  },
+  "max_glb_bounds_error_m": 1.696164417808177e-07,
+  "packed_dependencies": true,
+  "external_libraries": 0,
+  "executable_text_blocks": 0,
+  "mesh_hashes": [
+    {
+      "sha256": "24869dd2c7f408638d338cbd9c6b4bbbb36dd003e83a62776fae31b36cc85dac",
+      "vertices": 65532
+    },
+    {
+      "sha256": "06430ad7f4070e8fde9f8678aa983e454552df2ff6f3d84eaedbe888090be1f9",
+      "vertices": 1956
+    }
+  ],
+  "image_hashes": [
+    {
+      "sha256": "8ce53da7f161806e892f5b36deb64fc12ab89d9801086d7b0ec823bad84deffa",
+      "bytes": 494754
+    },
+    {
+      "sha256": "6318ad53203d7cd29c38a646dad1c425f46aaa3441db266558a1859cda617ff7",
+      "bytes": 2159
+    },
+    {
+      "sha256": "dcbb52f0320bae7cba8136cada3fb5f8a365adc58f841a193c3ee52db66c412c",
+      "bytes": 426897
+    }
+  ],
+  "motion": {},
+  "reference_files_sha256": {
+    "front.png": "cf63325ac9a1a782d8941efd2e06d6985a28ff620e7d925a9bfeb8b4dd3bd994",
+    "main.png": "3939bef39124fe841a6e92fd85be17bf678007ab87b03276a67419490e74dcd4",
+    "preview.png": "bc488abd90c3bbd22c0485ca794d0c814bbee78dee9d19739a99dac9491f6bf4",
+    "scene.blend": "0fcf86397033d6a9ac45051a78c20b8a25fc368d1cc137d85505d418199ef676",
+    "scene.glb": "ea8e78be8990412e876e853a53dd6cc1b78b65ecb359266b6fddaea9d4978555",
+    "side.png": "1a4f97b71469477e17f928f91a4e3670680fa9bbd177376895f0895ed9e1737a",
+    "top.png": "4ef5f7fd4071636e418dd74e59d012602c544d876ad167b0a9c990342dba84d8"
+  }
+}

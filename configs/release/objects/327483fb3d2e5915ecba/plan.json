@@ -1,0 +1,416 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_010",
+  "title": "Brief2Scene：俯视卡通工地",
+  "category": "Brief2Scene",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_inventory_building",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required building objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_building",
+      "parameters": {
+        "units": [
+          "building"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_crane",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required crane objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_crane",
+      "parameters": {
+        "units": [
+          "crane"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_mixer_truck",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required mixer_truck objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_mixer_truck",
+      "parameters": {
+        "units": [
+          "mixer_truck"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_dump_truck",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required dump_truck objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_dump_truck",
+      "parameters": {
+        "units": [
+          "dump_truck"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_materials",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required materials objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_materials",
+      "parameters": {
+        "units": [
+          "materials"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_road",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required road objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_road",
+      "parameters": {
+        "units": [
+          "road"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_fence",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required fence objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_fence",
+      "parameters": {
+        "units": [
+          "fence"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_gate",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Are the required gate objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_gate",
+      "parameters": {
+        "units": [
+          "gate"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_relations",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Verify each named layout/connection/access relation against the brief. Allow alternative layouts meeting the contract; check entrances, paths, occlusion, grouping and ground contact. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#relations",
+      "parameters": {
+        "units": [
+          "entrance_work_route",
+          "material_road_clearance",
+          "vehicle_grounding",
+          "work_transport_storage_zones"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_appearance",
+      "component": "Q",
+      "weight": 0.06,
+      "question": "Do materials/colors, style and lighting match the explicit brief? Reference styling is illustrative. Ignore differences the written contract allows. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#appearance",
+      "parameters": {
+        "units": [
+          "materials_colors",
+          "style",
+          "lighting"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_site_dimensions",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "instruction.md: approximately 40 m × 30 m",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/site_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "site_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "site",
+            "scope": "union",
+            "lower": [
+              30,
+              40,
+              null
+            ],
+            "upper": [
+              30,
+              40,
+              null
+            ],
+            "relative_tolerance": 0.1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_mixer_truck_count",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "instruction.md: a concrete mixer truck",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/mixer_truck_count",
+      "parameters": {
+        "native_check": {
+          "id": "mixer_truck_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "mixer_truck",
+            "minimum": 1,
+            "maximum": 1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_dump_truck_count",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "instruction.md: a dump truck",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/dump_truck_count",
+      "parameters": {
+        "native_check": {
+          "id": "dump_truck_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "dump_truck",
+            "minimum": 1,
+            "maximum": 1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_road_clear_route",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "instruction.md: at least 4 m of clear width",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/road_clear_route",
+      "parameters": {
+        "native_check": {
+          "id": "road_clear_route",
+          "metric": "l2_brief_route",
+          "group": "numeric",
+          "params": {
+            "road_role": "road",
+            "start_role": "entrance",
+            "goal_role": "work_zone",
+            "min_width": 4,
+            "cell_size": 0.04,
+            "max_snap": 1.0,
+            "clearance_height": 0.1,
+            "surface_epsilon": 0.001,
+            "max_step": 0.02,
+            "max_slope": 0.5,
+            "clearance_roles": [
+              "mixer_truck",
+              "dump_truck"
+            ]
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_mixer_truck_bottom_level",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "instruction.md: plausible ground contact and support",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/mixer_truck_bottom_level",
+      "parameters": {
+        "native_check": {
+          "id": "mixer_truck_bottom_level",
+          "metric": "l2_brief_level",
+          "group": "numeric",
+          "params": {
+            "role": "mixer_truck",
+            "support_role": "site",
+            "endpoint": "bottom",
+            "lower": -0.02,
+            "upper": 0.02,
+            "relative_tolerance": 0
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_dump_truck_bottom_level",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "instruction.md: plausible ground contact and support",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/dump_truck_bottom_level",
+      "parameters": {
+        "native_check": {
+          "id": "dump_truck_bottom_level",
+          "metric": "l2_brief_level",
+          "group": "numeric",
+          "params": {
+            "role": "dump_truck",
+            "support_role": "site",
+            "endpoint": "bottom",
+            "lower": -0.02,
+            "upper": 0.02,
+            "relative_tolerance": 0
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "editable_structure",
+      "component": "E",
+      "weight": 0.5,
+      "question": "主要结构可独立编辑，允许实例和程序修改器；按主要语义部件的可编辑比例检查",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "population": "public major structures; no object-name constraint"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "view_consistency",
+      "component": "E",
+      "weight": 0.5,
+      "question": "规定相机关系、两张提交图与同一原生场景的几何/状态一致性",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "camera_checks": [
+          {
+            "id": "alternate_relationship",
+            "metric": "l2_case_camera_pair",
+            "group": "alternate_relationship",
+            "params": {
+              "mode": "different_azimuth"
+            },
+            "role": "standard",
+            "pass_threshold": 1
+          },
+          {
+            "id": "main_elevation",
+            "metric": "camera_config",
+            "group": "main_elevation",
+            "params": {
+              "camera": "__main",
+              "projection": "ORTHO",
+              "elevation": [
+                54,
+                66
+              ]
+            },
+            "role": "standard",
+            "pass_threshold": 1
+          }
+        ],
+        "image_error_half_scale": 0.01
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "24fe75796ec57daa962b2729463860d9767652df99570227cb6d9ecd8a2eb7ca",
+    "task.toml": "3684d2c14b7b61739ee08ea52192ef8d01d7b557df2169507cf8ff91a5eaf6bd",
+    "harness/eval_spec.json": "2f33535da19ee6ae3113620135a55182d411f17e88dbcd1e93c32a8ffa8686ea",
+    "harness/methods.json": "aff6912ceb31bb3afe55c6ab8fcadcb8756f9080af4d268f3b54eb91034ca069",
+    "harness/vlm_spec.json": "a1c048fa394053465dd9edb6f740d5c261659f38cf03c4177678cb28c4febdf9"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

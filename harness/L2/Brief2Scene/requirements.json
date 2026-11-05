@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "task_id": "L2/Brief2Scene",
+  "spec_sha256": "d203ed34c21342eaa0f2ac7449d1d6107856f974c82936211b26dbdbe787fafa",
+  "instruction_sha256": "41a309e72d9bc1f73284f51e0e0ffcaf3519a1da66fec1b674822ee1cbfb758d",
+  "checks": {
+    "ground_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "building_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "tower_crane_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "mixer_truck_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "dump_truck_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "material_storage_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "road_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "gate_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "fence_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "work_zone_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "scene_extent": {
+      "source_kind": "instruction",
+      "source_quote": "Use a site approximately 40 m × 30 m containing an unfinished building, a tower crane, a concrete mixer truck, a dump truck, material storage, temporary roads, and a perimeter fence with a gate",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "main_camera": {
+      "source_kind": "instruction",
+      "source_quote": "Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "alternate_camera": {
+      "source_kind": "instruction",
+      "source_quote": "Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "clear_entrance_route": {
+      "source_kind": "instruction",
+      "source_quote": "Connect the entrance to the work zone with a road providing at least 4 m of clear width",
+      "rationale": "The 4 m clear width is explicit. Grid approximation, snapping and clearance height require calibration; the route result is advisory in public feedback.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "alternate_azimuth": {
+      "source_kind": "instruction",
+      "source_quote": "Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "collision_budget": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "supported_equipment": {
+      "source_kind": "instruction",
+      "source_quote": "Keep materials off the road and give vehicles and equipment plausible ground contact and support",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "render_main": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "image_validity uses a fixed luminance/visible-pixel fraction threshold (2/255 and 0.001). This is a blank-image heuristic, not a task-stated quality threshold; calibrate bright/dark positive and negative images.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "render_alternate": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "image_validity uses a fixed luminance/visible-pixel fraction threshold (2/255 and 0.001). This is a blank-image heuristic, not a task-stated quality threshold; calibrate bright/dark positive and negative images.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "main_native_size": {
+      "source_kind": "instruction",
+      "source_quote": "Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "alternate_native_size": {
+      "source_kind": "instruction",
+      "source_quote": "Use an orthographic main camera at approximately 60° elevation and render at 1280×960; choose another azimuth to show the same scene",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "editable_scene": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "scene_units": {
+      "source_kind": "instruction",
+      "source_quote": "Use metres, Z up, and seed 20260914.",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "no_billboards": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "seed_reproducibility": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "delivery_main": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "delivery_alternate": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    }
+  },
+  "manual_requirements": [
+    {
+      "id": "semantic_identity",
+      "question": "Do the visible entities and their parts match the requested object categories, rather than labels alone?",
+      "evidence_needed": "Both renders, entity inventory, and geometry diagnostics."
+    },
+    {
+      "id": "materials_style",
+      "question": "Are the construction site low-poly forms, simple color blocks and consistent proportions readable?",
+      "evidence_needed": "Both renders and reference/target crops where available."
+    },
+    {
+      "id": "layout_views",
+      "question": "Are work, transport and storage areas readable with plausible proportions?",
+      "evidence_needed": "Paired reference/candidate views; reviewer-defined target regions and landmarks."
+    }
+  ],
+  "visual_regions": []
+}

@@ -1,0 +1,302 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-g04",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "4431a9f5e3d31646cd43c0c0c4e74a9d2126b372d1c2b64971df36277a0fb326",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Preserve the enclosure of pedestrian spaces by closely spaced multistorey buildings, with narrow gaps revealing additional architecture and the distant bell tower.",
+        "id": "env-02"
+      },
+      {
+        "criterion": "Maintain pedestrian scale through doors, shallow steps, balconies, benches and canal posts; surrounding buildings rise several storeys above these elements.",
+        "id": "env-03"
+      },
+      {
+        "criterion": "Match the warm coral, ochre and cream architecture, terracotta roofs, green shutters, blue accents and dark teal canal water, with clearly separated stylized materials.",
+        "id": "env-05"
+      },
+      {
+        "criterion": "Use bright warm daylight, a cyan sky with soft pale clouds, strong directional shadows and restrained surface weathering consistent with the sunny references.",
+        "id": "env-06"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "A low canal-front shop row sits beside a taller coral building, producing a stepped roofline along the water.",
+            "id": "canal-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Broad green shop awnings include a raised curved central section above large glazed frontage.",
+            "id": "canal-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Upper windows have dark green shutters and pale surrounds; the taller facade includes a triple-arched window with flowers.",
+            "id": "canal-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Terracotta tiled roofs, projecting eaves and tall chimney pots articulate the upper silhouette.",
+            "id": "canal-04",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Exposed red brick and muted coral plaster contrast with pale stone bands and dark storefront glazing.",
+            "id": "canal-05",
+            "kind": "material"
+          }
+        ],
+        "id": "target-01",
+        "importance": "core",
+        "label": "Canal-front shops and adjoining coral residence",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 22
+      },
+      {
+        "features": [
+          {
+            "criterion": "A tall coral corner building dominates the raised plaza, with two visible facades and a broad projecting roof cornice.",
+            "id": "corner-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Stacked rectangular windows combine green shutters, pale stone frames and shallow balconies with dark metal railings.",
+            "id": "corner-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The ground storey forms a substantial exposed-brick base separated from upper plaster by a continuous pale band.",
+            "id": "corner-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Coral plaster has irregular pale worn patches; flower boxes and climbing foliage punctuate the window grid.",
+            "id": "corner-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-02",
+        "importance": "core",
+        "label": "Plaza corner residence",
+        "references": [
+          "reference-02"
+        ],
+        "weight": 25
+      },
+      {
+        "features": [
+          {
+            "criterion": "A narrow canal borders a broad stone promenade that bends between buildings into a tighter passage.",
+            "id": "routes-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The second plaza is raised on broad shallow steps, with pedestrian lanes continuing around its edges.",
+            "id": "routes-02",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Small arched bridges and pale parapets connect passages through the surrounding building gaps.",
+            "id": "routes-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Pale stone coping defines the canal boundary, while rectangular paving courses distinguish walks and steps.",
+            "id": "routes-04",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Warm beige paving and reddish side-lane surfaces contrast with dark teal water and subtle reflections.",
+            "id": "routes-05",
+            "kind": "material"
+          }
+        ],
+        "id": "target-03",
+        "importance": "core",
+        "label": "Canal, stepped plazas and connecting routes",
+        "references": [
+          "reference-01",
+          "reference-02"
+        ],
+        "weight": 23
+      },
+      {
+        "features": [
+          {
+            "criterion": "Narrow cream, ochre and blush buildings enclose the plazas with varied heights and terracotta rooflines.",
+            "id": "surrounds-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "An ochre towerlike facade beside the planted plaza connects to its neighbor through an elevated enclosed span over an arched passage.",
+            "id": "surrounds-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Paired pointed or scalloped window arches, small balconies and horizontal stone bands distinguish the plaza's surrounding facades.",
+            "id": "surrounds-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Receding canal-side buildings retain shutters, awnings, tiled roofs and pale window trim at smaller apparent scale.",
+            "id": "surrounds-04",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Light plaster, restrained exposed brick and pale stone trim give neighboring buildings distinct but coordinated surfaces.",
+            "id": "surrounds-05",
+            "kind": "material"
+          }
+        ],
+        "id": "target-04",
+        "importance": "supporting",
+        "label": "Surrounding palazzi and elevated architectural connection",
+        "references": [
+          "reference-01",
+          "reference-02"
+        ],
+        "weight": 10
+      },
+      {
+        "features": [
+          {
+            "criterion": "A slender bell tower rises well above the canal-side rooftops, terminating in a steep pyramidal spire.",
+            "id": "tower-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The brick shaft supports a pale framed belfry with repeated arched openings and stacked projecting cornices.",
+            "id": "tower-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Warm red masonry contrasts with pale stone detailing and a muted green spire.",
+            "id": "tower-03",
+            "kind": "material"
+          }
+        ],
+        "id": "target-05",
+        "importance": "supporting",
+        "label": "Distant bell tower",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 8
+      },
+      {
+        "features": [
+          {
+            "criterion": "A tall facade closely bounds the right side of the canal promenade, with a recessed ground-level doorway.",
+            "id": "blue-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Heavy pale stone framing outlines the doorway, building corner and division between upper and lower facade.",
+            "id": "blue-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The lower wall carries saturated blue panels with a repeating gold diagonal lattice pattern.",
+            "id": "blue-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "The upper facade has a warm cream-and-salmon geometric surface and projecting dark window surrounds.",
+            "id": "blue-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-06",
+        "importance": "supporting",
+        "label": "Blue patterned promenade facade",
+        "references": [
+          "reference-01"
+        ],
+        "weight": 7
+      },
+      {
+        "features": [
+          {
+            "criterion": "An ornate low stone wellhead occupies the canal promenade, with a broad circular rim, faceted body and stepped base.",
+            "id": "furnishings-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Large square stone planters frame the plaza steps around a leafy tree in a low polygonal planting bed.",
+            "id": "furnishings-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Blue-and-white striped mooring posts mark the shop-side canal edge, while a pale bench sits against the blue facade.",
+            "id": "furnishings-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Pale carved stone furnishings contrast with dense green shrubs, trailing ivy and small pink-purple flowers.",
+            "id": "furnishings-04",
+            "kind": "material"
+          }
+        ],
+        "id": "target-07",
+        "importance": "detail",
+        "label": "Plaza planting and canal furnishings",
+        "references": [
+          "reference-01",
+          "reference-02"
+        ],
+        "weight": 5
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "ccc09171fc711b319caaf09b33bebb9dea908b58c294350fbdcf8e0f232bf1b0",
+    "environment/input/references/reference-02.jpg": "d1e4fa1a1e57db85dedd848e943578112bb508806a6491ff4f71cafd9b3bd8d2"
+  }
+}

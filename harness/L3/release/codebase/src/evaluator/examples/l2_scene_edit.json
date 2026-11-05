@@ -1,0 +1,46 @@
+{
+  "version": "scalable-v1.0.0",
+  "profile": "L2",
+  "mode": "edit",
+  "required_artifacts": ["solution.py", "scene.blend", "main.png", "alternate.png"],
+  "scene": "scene.blend",
+  "baseline_scene": "environment/input/initial.blend",
+  "reference_images": {"main": "environment/input/reference_main.png", "alternate": "environment/input/reference_alternate.png"},
+  "critical_constraints": ["chair_parts", "main_camera", "render_main"],
+  "seeds": [0, 1, 2],
+  "tolerances": {"ground_contact_m": 0.08, "baseline_count": 2},
+  "render_views": [],
+  "checks": {
+    "content": [
+      {"id": "chair_parts", "metric": "object_coverage", "group": "target_chair", "role": "target", "importance": "high", "params": {"rules": [
+        {"pattern": "seat|Seat|cushion|Cushion", "min_count": 1},
+        {"pattern": "leg|Leg|stretcher|Stretcher|apron|Apron|back|Back|crest|Crest", "min_count": 2}
+      ]}},
+      {"id": "preserve_content", "metric": "numeric", "group": "baseline_content", "role": "preserve", "params": {"path": "/scene/mesh_count", "reference_path": "/baseline/mesh_count", "tolerance": "baseline_count"}}
+    ],
+    "spatial": [
+      {"id": "chair_grounded", "metric": "ground_contact", "group": "support", "params": {"selector": {"pattern": "seat|Seat|cushion|Cushion|leg|Leg"}, "max_height": "ground_contact_m"}},
+      {"id": "main_camera", "metric": "camera_config", "group": "cameras", "params": {"camera": "Camera_Main", "projection": "PERSP", "resolution": [960, 540]}},
+      {"id": "alternate_camera", "metric": "camera_config", "group": "cameras", "params": {"camera": "Camera_Alternate", "projection": "PERSP", "resolution": [960, 540]}}
+    ],
+    "physics": [
+      {"id": "scene_collision_budget", "metric": "collision_free", "group": "collision", "params": {"max_pairs": 6000}},
+      {"id": "no_unsupported_geometry", "metric": "equals", "group": "geometry_support", "params": {"path": "/scene/unsupported_geometry", "expected": []}}
+    ],
+    "visual": [
+      {"id": "render_main", "metric": "image_validity", "group": "renders", "role": "target", "params": {"path": "/artifacts/main.png/path"}},
+      {"id": "reference_main_similarity", "metric": "image_ssim", "group": "target_view", "role": "target", "params": {"candidate": "/artifacts/main.png/path", "reference": "/reference_images/main/path"}},
+      {"id": "reference_alternate_similarity", "metric": "image_ssim", "group": "target_view", "role": "target", "params": {"candidate": "/artifacts/alternate.png/path", "reference": "/reference_images/alternate/path"}},
+      {"id": "preserve_resolution", "metric": "numeric", "group": "source_settings", "role": "preserve", "params": {"path": "/scene/render/resolution", "reference_path": "/baseline/render/resolution", "tolerance": "baseline_count"}}
+    ],
+    "structure": [
+      {"id": "editable_scene", "metric": "equals", "group": "editable", "params": {"path": "/scene/all_editable", "expected": true}},
+      {"id": "metric_units", "metric": "equals", "group": "units", "params": {"path": "/scene/unit_system", "expected": "METRIC"}}
+    ],
+    "robust": [
+      {"id": "seed_reproducibility", "metric": "seed_success", "group": "reruns"},
+      {"id": "delivery_main", "metric": "equals", "group": "delivery", "params": {"path": "/artifacts/main.png/loadable", "expected": true}},
+      {"id": "delivery_alternate", "metric": "equals", "group": "delivery", "params": {"path": "/artifacts/alternate.png/loadable", "expected": true}}
+    ]
+  }
+}

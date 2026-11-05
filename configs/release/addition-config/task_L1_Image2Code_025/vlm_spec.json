@@ -1,0 +1,188 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_025",
+  "family": "Reference2Scene",
+  "instruction_sha256": "93ae2854c8ac462a1b405558bdcd1af56f58c5a81a7a9992d70b3d6763d2b9e1",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_025",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "e20d67606b3d7cd8cb031a440522a785b39f87f6f7a38ee565b8e21a493a5ffa",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-584c87361f6d1fa9463ed899acce29f8539ecf1b2b6110e54e92f10ef7ad0287"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t01",
+        "query": "车轮",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.635,
+            0.582,
+            0.72,
+            0.7
+          ],
+          [
+            0.284,
+            0.754,
+            0.424,
+            0.87
+          ]
+        ],
+        "boundary_notes": "分别框选前后轮的可见轮胎和轮毂，包括深色表面；不补全遮挡部分，不含悬挂。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t02",
+        "query": "蓝色货箱模块",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.275,
+            0.622,
+            0.419,
+            0.755
+          ],
+          [
+            0.369,
+            0.628,
+            0.481,
+            0.718
+          ]
+        ],
+        "boundary_notes": "两个可辨别箱体，包含箱盖和可见侧壁；不含跨接线缆、黄色固定带和后架。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t03",
+        "query": "把手与仪表总成",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.47,
+            0.149,
+            0.725,
+            0.25
+          ]
+        ],
+        "boundary_notes": "包含两端握把、刹车杆、中央仪表壳及其暗色边缘；不含下方转向柱。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t04",
+        "query": "转向柱",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.58,
+            0.204,
+            0.632,
+            0.675
+          ]
+        ],
+        "boundary_notes": "包含立柱上段包覆和下段管体的可见范围，不含侧向线缆和横向灯架。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t05",
+        "query": "踏板",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.467,
+            0.663,
+            0.64,
+            0.802
+          ]
+        ],
+        "boundary_notes": "包含可见踏面及深色厚度边沿；左端遮挡处不推测隐藏轮廓。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t06",
+        "query": "后部承载框架",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.231,
+            0.687,
+            0.493,
+            0.828
+          ]
+        ],
+        "boundary_notes": "包含黄色上横梁、暗色支腿和底框，不含后轮、尾灯及悬垂线缆；框内空隙仍保留。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

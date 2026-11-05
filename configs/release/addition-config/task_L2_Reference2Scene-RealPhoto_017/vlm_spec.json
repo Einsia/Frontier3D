@@ -1,0 +1,205 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+  "family": "Reference2Scene",
+  "instruction_sha256": "531c3f6f9e56352cbbae1887bb9bfab31777ff4cd6a06c9f32c0fddff91e3b90",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-photo-localized-v5.0.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "6dd7c0d7092ae6c57d781e8bcc3efc96e3e99aa49f209a08047e9773ead3fe05",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-dc128ee2751e6dbceb72eb8f0d79935103a8480dc74a69fdcc9596d67428ef73"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "覆盖图内可见盘子全部外缘；盘子在左、右及下边缘被裁切，不外推完整圆形，不计桌布和投影。",
+        "boxes": [
+          [
+            0,
+            0.045,
+            1,
+            1
+          ]
+        ],
+        "id": "T01",
+        "query": "浅色餐盘的可见整体",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "以完整切片序列为一个组目标，包括全部可见切面和深色焦壳；不按遮挡猜测切片实例，不包含酱汁、叶片和阴影。",
+        "boxes": [
+          [
+            0.254,
+            0.003,
+            0.618,
+            0.952
+          ]
+        ],
+        "id": "T02",
+        "query": "成组排列的全部牛排切片",
+        "weight": 0.3,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "包含番茄完整可见果体及顶部深色萼片；排除后方深色配菜和盘面投影。",
+        "boxes": [
+          [
+            0.638,
+            0.169,
+            0.871,
+            0.465
+          ]
+        ],
+        "id": "T03",
+        "query": "带萼片的烤番茄",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "分别定位两根可辨芦笋，框覆盖各自可见切口至梢部；遮挡处不推定额外实例，排除叶状配饰和投影。",
+        "boxes": [
+          [
+            0.589,
+            0.307,
+            0.979,
+            0.726
+          ],
+          [
+            0.651,
+            0.305,
+            0.906,
+            0.798
+          ]
+        ],
+        "id": "T04",
+        "query": "芦笋茎与梢部",
+        "weight": 0.15,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "定位右下棕色团块和番茄后方深色团块的可见范围；包含深色实体表面，排除阴影，身份不确定性见 limitations。",
+        "boxes": [
+          [
+            0.704,
+            0.497,
+            0.887,
+            0.736
+          ],
+          [
+            0.616,
+            0.12,
+            0.741,
+            0.28
+          ]
+        ],
+        "id": "T05",
+        "query": "可见土豆配菜团块",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "仅覆盖盘面上左侧连贯酱汁区域；包含光亮和较暗的汁液表面，不纳入牛排及其阴影。",
+        "boxes": [
+          [
+            0.081,
+            0.309,
+            0.323,
+            0.895
+          ]
+        ],
+        "id": "T06",
+        "query": "左侧棕色酱汁",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "作为一个相连的叶茎簇定位，包含可辨叶缘与茎段；不将被食物遮挡的部分补作可见范围，不计零散微小碎屑。",
+        "boxes": [
+          [
+            0.531,
+            0.344,
+            0.722,
+            0.726
+          ]
+        ],
+        "id": "T07",
+        "query": "牛排右侧的绿色叶状配饰",
+        "weight": 0.1,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

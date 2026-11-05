@@ -1,0 +1,19 @@
+{
+  "uid": "9f7c5266f7da43d6bbd5a881d49f57aa",
+  "name": "YSL High Heels",
+  "source_url": "https://sketchfab.com/3d-models/ysl-high-heels-9f7c5266f7da43d6bbd5a881d49f57aa",
+  "author": {
+    "displayName": "hiirusama",
+    "profileUrl": "https://sketchfab.com/hiirusama"
+  },
+  "license": {
+    "label": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 1010,
+  "source_sha256": "0f5af284d122c4aabc7a1868a5c6a3aa56695edfbfe71d1c4054359d9f738e30",
+  "download_method": "User browser download; original bytes retained",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

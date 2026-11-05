@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-g03",
+  "id": "L3/GameEnvironment/RDR2FrontierTown",
+  "domain": "game",
+  "input_mode": "image",
+  "title": "荒野大镖客2：瓦伦丁中心街区",
+  "title_en": "Red Dead Redemption 2: Central Valentine District",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "45ec0518cd00708a368e7481de3029430f8a47d124c2ab27fa3c8de157d1fd7a",
+  "chinese_instruction_sha256": "ef6cc731f8f4d96465664b8126f9c18af54190e8efffbe3d020fd31f72da1252",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "744bce7b8b7ad425c4c2ec900947f2a656c75af85a933e476eae7c0b2927fb4b",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

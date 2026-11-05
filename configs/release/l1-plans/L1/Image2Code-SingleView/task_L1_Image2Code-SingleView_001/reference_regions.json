@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "5450cb16d71a02ff3468f90ebaad3d0e10ccc9f2ef9249dbf128830489cef8e2",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "shoe upper",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.2,
+          0.34
+        ],
+        [
+          0.83,
+          0.34
+        ],
+        [
+          0.83,
+          0.74
+        ],
+        [
+          0.2,
+          0.74
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "white sole",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.18,
+          0.56
+        ],
+        [
+          0.84,
+          0.56
+        ],
+        [
+          0.84,
+          0.83
+        ],
+        [
+          0.18,
+          0.83
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "collar and tongue",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.23,
+          0.34
+        ],
+        [
+          0.56,
+          0.34
+        ],
+        [
+          0.56,
+          0.61
+        ],
+        [
+          0.23,
+          0.61
+        ]
+      ]
+    }
+  ]
+}

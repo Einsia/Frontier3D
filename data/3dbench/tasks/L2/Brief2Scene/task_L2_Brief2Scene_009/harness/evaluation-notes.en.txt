@@ -1,0 +1,147 @@
+## Numerical geometry protocol (l2-brief-v2.1.0)
+Use solid colors and procedural shading only. Image textures, environment images,
+generated/baked image maps and image-dependent geometry/compositing are prohibited,
+including packed or unused image nodes in used node trees. No private reference is used for scoring.
+Assign bench_role to actual mesh geometry or to a parent grouping the mesh parts
+of one entity. Object names are unrestricted. Roles select measurements and do not
+prove semantics; visual fidelity and local detail are evaluated separately.
+For each route, nominate small endpoint surface patches at road level. All named
+start/goal pairs must connect. Counts group entity parts and reject identical
+co-located copies. Dimensions use complete geometry and world metres; horizontal
+sizes use a minimum-area rotated footprint. Camera heights use actual local ground.
+Opening checks use interior surfaces and bounded through-depth rays. Route checks
+use a 2.5D grid including vertical/thin surfaces, local floor height and low obstacles;
+the ground band defaults to 0.1 m, or the measured vehicle height where specified.
+This is not a general certification of human headroom or arbitrary stacked floors.
+Grid uncertainty or capacity limits produce not_measurable, never an inferred pass.
+Numerical tolerances, route step/slope settings and contact bands are published
+definitions with pending calibration. The JSON below specifies this version exactly.
+
+Roles: crater, rock, site.
+
+```json
+[
+  {
+    "id": "site_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "scope": "union",
+      "lower": [
+        80,
+        80,
+        null
+      ],
+      "upper": [
+        null,
+        null,
+        null
+      ],
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "crater_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "crater",
+      "minimum": 3
+    }
+  },
+  {
+    "id": "rock_size_range",
+    "metric": "l2_brief_diameter_range",
+    "group": "numeric",
+    "params": {
+      "role": "rock",
+      "lower": 0.05,
+      "upper": 1.0,
+      "relative_tolerance": 0.1,
+      "require_endpoints": true
+    }
+  },
+  {
+    "id": "main_ground_height",
+    "metric": "l2_brief_camera_ground",
+    "group": "numeric",
+    "params": {
+      "camera": "__main",
+      "support_role": "site",
+      "lower": 1.6,
+      "upper": 1.6,
+      "relative_tolerance": 0.1
+    }
+  }
+]
+```
+
+
+## Geometry extension (l2-brief-v2.2.0)
+Cup/crater roles select the actual depressed surface and its rim, grouped per
+entity. Keep flags, poles and unrelated geometry in separate roles. The ground
+outside each oriented footprint must be measurable in the support role. Complete
+world geometry is queried at the public finite positions below. Internal probes
+must lie below surrounding local ground and the rim, and be exposed in the full
+scene; a floor, lid, raised ring or negative-height proxy does not establish a
+real recess. These are opaque geometric queries, not transparency simulation.
+For terrain relief, a uniform grid samples the exposed top surface; selected
+terrain and full-scene top hits must agree within 0.00001 m. Covered terrain does
+not count toward the required surface coverage. Global and
+per-quadrant best-fit planes are removed; a tilted flat floor cannot count as
+undulating ground. Keep the surrounding terrain in site; crater patches may have
+their own role. The millimetre thresholds are published numerical definitions with calibration limits, not
+dimensions specified by the original brief. They require calibration. Finite
+probes do not certify a complete shell, continuous ball path or all terrain detail.
+
+```json
+[
+  {
+    "id": "real_crater_depression",
+    "metric": "l2_surface_depression",
+    "group": "numeric",
+    "params": {
+      "role": "crater",
+      "support_role": "site",
+      "directions": 32,
+      "inner_fraction": 0.25,
+      "rim_fractions": [
+        0.7,
+        0.8,
+        0.9
+      ],
+      "outside_fraction": 1.15,
+      "min_depth_m": 0.001,
+      "min_rim_height_m": 0.001,
+      "required_fraction": 0.75,
+      "occlusion_tolerance_m": 1e-05
+    }
+  },
+  {
+    "id": "real_terrain_relief",
+    "metric": "l2_terrain_relief",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "grid_size": 33,
+      "min_coverage": 0.95,
+      "min_rms_m": 0.01,
+      "min_quadrant_rms_m": 0.005,
+      "required_quadrants": 2
+    }
+  }
+]
+```
+
+
+## Layout and course geometry (l2-brief-v2.3.0)
+This case retains the preceding numerical definitions unchanged.
+
+## Scoring
+
+Final item score: `60% vlm + 30% data + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

@@ -1,0 +1,70 @@
+{
+  "task_id": "L1/Text2Code/task_L1_Text2Code_010",
+  "category": "Text2Code",
+  "level": "L1",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {},
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/4322e236e8edfb49e35c/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_part_roles": 0.03529411764705882,
+        "vlm_outer_tube": 0.03529411764705882,
+        "vlm_inner_tube": 0.03529411764705882,
+        "vlm_guides": 0.03529411764705882,
+        "vlm_plug": 0.03529411764705882,
+        "vlm_cap": 0.03529411764705882,
+        "vlm_pin": 0.03529411764705882,
+        "vlm_pin_clearance": 0.03529411764705882,
+        "vlm_retainers": 0.03529411764705882,
+        "vlm_assembly_clearance": 0.03529411764705882,
+        "vlm_topology": 0.03529411764705882,
+        "vlm_solid_validity": 0.03529411764705882,
+        "vlm_units": 0.03529411764705882,
+        "vlm_hierarchy": 0.03529411764705882,
+        "vlm_state_cycle": 0.03529411764705882,
+        "vlm_glb_assembled": 0.03529411764705882,
+        "vlm_materials": 0.03529411764705882,
+        "vlm_aesthetic_composition": 0.1,
+        "vlm_aesthetic_light_color": 0.1,
+        "vlm_aesthetic_finish": 0.1,
+        "vlm_aesthetic_coherence": 0.1
+      },
+      "detail": {
+        "detail_semantic_outer_tube": 0.05454545454545454,
+        "detail_semantic_inner_tube": 0.05454545454545454,
+        "detail_semantic_guides": 0.05454545454545454,
+        "detail_semantic_plug": 0.05454545454545454,
+        "detail_semantic_cap": 0.05454545454545454,
+        "detail_semantic_pin": 0.05454545454545454,
+        "detail_semantic_retainers": 0.05454545454545454
+      },
+      "content": {
+        "detail_semantic_outer_tube": 0.05454545454545454,
+        "detail_semantic_inner_tube": 0.05454545454545454,
+        "detail_semantic_guides": 0.05454545454545454,
+        "detail_semantic_plug": 0.05454545454545454,
+        "detail_semantic_cap": 0.05454545454545454,
+        "detail_semantic_pin": 0.05454545454545454,
+        "detail_semantic_retainers": 0.05454545454545454
+      }
+    }
+  }
+}

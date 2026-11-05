@@ -1,0 +1,7 @@
+{
+  "status": "acquired",
+  "package": "environment/input/references.json",
+  "image_count": 0,
+  "annotation_status": "not_applicable",
+  "scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions."
+}

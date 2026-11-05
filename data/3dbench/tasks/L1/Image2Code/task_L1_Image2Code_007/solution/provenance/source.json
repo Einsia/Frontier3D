@@ -1,0 +1,53 @@
+{
+  "slug": "chinese_chandelier",
+  "source_url": "https://polyhaven.com/a/chinese_chandelier",
+  "author": "Kirill Sannikov",
+  "title": "Chinese Chandelier",
+  "license": "CC0-1.0",
+  "license_evidence": "publisher.html",
+  "files": [
+    {
+      "path": "chinese_chandelier/original/chinese_chandelier.blend",
+      "size": 323264,
+      "sha256": "8e4762ef6f0d8e365fabe98515c46fd1d1c494d9baf6976c408623dd8ecd798d",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/chinese_chandelier/chinese_chandelier_1k.blend"
+    },
+    {
+      "path": "chinese_chandelier/original/textures/chinese_chandelier_metal_1k.exr",
+      "size": 124068,
+      "sha256": "af4442a1ddd5ee485a1ea4f6c4de8721cc157d6294148b83f999e8225c51d8d7",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_metal_1k.exr"
+    },
+    {
+      "path": "chinese_chandelier/original/textures/chinese_chandelier_rough_1k.exr",
+      "size": 460321,
+      "sha256": "e6bb09bc1f666ad3916042055a824d32db83ac6b9e52bdbd4a1c69f037d9ccd4",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_rough_1k.exr"
+    },
+    {
+      "path": "chinese_chandelier/original/textures/chinese_chandelier_nor_gl_1k.exr",
+      "size": 1460048,
+      "sha256": "1bdee38929493ef2c2df9796944678d19075a44081f349780c1c4c2e505b5c73",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/chinese_chandelier/chinese_chandelier_nor_gl_1k.exr"
+    },
+    {
+      "path": "chinese_chandelier/original/textures/chinese_chandelier_diff_1k.jpg",
+      "size": 534740,
+      "sha256": "439a768d90e36e5d64701d50da1152da4da06df9593cf2c7ce44b1a57c3859a0",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/chinese_chandelier/chinese_chandelier_diff_1k.jpg"
+    }
+  ],
+  "preview": {
+    "path": "chinese_chandelier/publisher-preview.png",
+    "size": 667292,
+    "sha256": "c470e88c8b3c86b08130ed2fd93dcc03f23a2e0a9423d3bd3bdf1ff2bb4a0b4f",
+    "url": "https://cdn.polyhaven.com/asset_img/thumbs/chinese_chandelier.png?width=768&height=768&v=8d06f249"
+  },
+  "source_type": "publisher Blender asset",
+  "declared_triangles": 7828,
+  "changes": "Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting.",
+  "candidate": "S11",
+  "replaced_title": "旁轴相机与镜头组件",
+  "source_original_sha256": "8e4762ef6f0d8e365fabe98515c46fd1d1c494d9baf6976c408623dd8ecd798d",
+  "raw_upstream_redistributed": true
+}

@@ -1,0 +1,293 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/6812b34f0d44ba3f0f15/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/3bbd773de8605bc6e108/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/5c249129766a0fe887c6/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_019/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "前景餐桌与木椅遮挡区",
+      "polygon": [
+        [
+          0,
+          0.692
+        ],
+        [
+          0.543,
+          0.692
+        ],
+        [
+          0.783,
+          0.838
+        ],
+        [
+          0.799,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R02",
+      "label": "左侧彩玻璃及木框",
+      "polygon": [
+        [
+          0.002,
+          0.359
+        ],
+        [
+          0.341,
+          0.359
+        ],
+        [
+          0.341,
+          0.685
+        ],
+        [
+          0.002,
+          0.685
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R03",
+      "label": "中央拱形木门",
+      "polygon": [
+        [
+          0.354,
+          0.402
+        ],
+        [
+          0.663,
+          0.402
+        ],
+        [
+          0.663,
+          0.844
+        ],
+        [
+          0.354,
+          0.844
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "上方叠层木质饰条",
+      "polygon": [
+        [
+          0.007,
+          0.041
+        ],
+        [
+          1,
+          0.045
+        ],
+        [
+          1,
+          0.134
+        ],
+        [
+          0.007,
+          0.131
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R05",
+      "label": "右侧餐边柜",
+      "polygon": [
+        [
+          0.735,
+          0.655
+        ],
+        [
+          1,
+          0.66
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0.916,
+          0.984
+        ],
+        [
+          0.735,
+          0.895
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R06",
+      "label": "左侧较高胸像",
+      "polygon": [
+        [
+          0.742,
+          0.472
+        ],
+        [
+          0.825,
+          0.472
+        ],
+        [
+          0.854,
+          0.528
+        ],
+        [
+          0.843,
+          0.662
+        ],
+        [
+          0.755,
+          0.668
+        ],
+        [
+          0.742,
+          0.605
+        ]
+      ],
+      "weight": 0.07
+    },
+    {
+      "id": "R07",
+      "label": "右侧近处胸像",
+      "polygon": [
+        [
+          0.876,
+          0.486
+        ],
+        [
+          0.956,
+          0.486
+        ],
+        [
+          1,
+          0.507
+        ],
+        [
+          1,
+          0.652
+        ],
+        [
+          0.886,
+          0.652
+        ],
+        [
+          0.872,
+          0.574
+        ]
+      ],
+      "weight": 0.07
+    },
+    {
+      "id": "R08",
+      "label": "门柜之间的盆栽组",
+      "polygon": [
+        [
+          0.651,
+          0.584
+        ],
+        [
+          0.753,
+          0.584
+        ],
+        [
+          0.777,
+          0.78
+        ],
+        [
+          0.834,
+          0.824
+        ],
+        [
+          0.811,
+          0.923
+        ],
+        [
+          0.741,
+          0.921
+        ],
+        [
+          0.661,
+          0.781
+        ]
+      ],
+      "weight": 0.06
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生场景中按米读取餐椅座面与其局部支承地面之间沿世界 Z 轴的高度差；以座面承坐表面为基准，不以椅背或软物顶部为基准。",
+      "quantity": "餐椅座面高度尺度约定",
+      "relation": "equal",
+      "source_quote": "Use a 0.45 m dining-chair seat height as the task scale convention",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取主相机与备用相机的世界位置，将位置差投影到主相机局部 X 正向的世界单位向量，测量向右位移；纯局部 X 平移及旋转、镜头保持另作结构检查。",
+      "quantity": "备用相机沿主相机局部 X 向右平移距离",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

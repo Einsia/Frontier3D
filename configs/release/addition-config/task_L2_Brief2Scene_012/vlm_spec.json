@@ -1,0 +1,280 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_012",
+  "family": "Brief2Scene",
+  "instruction_sha256": "913cb37d731a5051f9eafbb7a46cf94dbba32b12ebfd5b3a5e10fb5b04bf8b90",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否明确表现温室中的番茄采摘机器人？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Greenhouse: tomato-picking robot."
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "温室是否有沿长度方向规律排列的拱架及覆盖层？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Create a 12 x 5 m greenhouse with arch frames every 2 m, a cover"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "覆盖层是否表现约四成透光的效果？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a cover transmitting about 40% light"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "地面是否铺有具有反光表现的织物？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "reflective ground fabric"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "种植槽是否相互平行排列，并形成行间走廊？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Two parallel planting troughs are 0.55 m high and 0.40 m wide. Keep a 1.50 m clear inter-row corridor"
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "行间走廊与指定步行路线是否保持连续可通行？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "continuously traversable, and at least 0.45 m clear on designated walking routes"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "藤蔓是否沿各自拉紧的绳向上攀爬？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Vines climb taut individual strings to 2.20 m."
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "叶片是否形成具有体积感的低多边形叶簇？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Build volumetric clusters of low-poly leaves, not one crossed billboard."
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "指定番茄串是否向下倾斜，且各果梗连接同一主梗？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a cluster axis tilted downward 20 degrees and stems joining a main stalk"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "机器人是否具有履带底盘和关节机械臂？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "The robot has 0.60 m wide tracks, 0.90 m ground-contact length and a six-axis arm of 0.90 m reach."
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "吸盘是否接触明确标识的第二颗果实，并朝向其果心？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Its suction cup touches the second fruit, contact-ring penetration at most 3 mm and axis through the fruit centre."
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "张开的电剪是否位于果梗后方，刀片分列待剪横截面两侧？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Electric shear blades open 15 degrees, sit 0.02 m behind the stem and straddle its cross-section."
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "采收篮是否位于机器人前方且内有果实？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "A front harvest basket has a 0.40 x 0.30 m opening at 0.40 m height and contains three fruits."
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "履带与槽体之间是否留有间隔？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Keep each track edge at least 0.20 m from the troughs"
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "通行路线是否没有垂挂藤蔓侵入？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "exclude hanging vines from the route"
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "目标果实、果串顶部果实和附近走廊中心是否作为同一机械臂的独立服务目标呈现？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Target fruit, cluster-top fruit and nearby corridor centre must be within 0.85 m of the arm base"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "同一冻结姿态是否同时保持吸附接触和剪切对准，并避开邻果？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Maintain simultaneous suction contact and cutting alignment, with at least 10 mm gap to neighbouring fruit."
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "叶片是否为绿色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Use green foliage"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "果实是否为红色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "red fruit"
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "种植槽是否为象牙色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "ivory troughs"
+      ]
+    },
+    {
+      "id": "S21",
+      "question": "机器人是否为银灰色？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "a silver-grey robot"
+      ]
+    },
+    {
+      "id": "S22",
+      "question": "光照是否表现清晨的网格状阴影？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "morning grid shadows"
+      ]
+    },
+    {
+      "id": "S23",
+      "question": "主视图是否框入机械臂、果串及走廊，第二视图是否揭示关键接触和净空路线且保持相同几何与姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Render main.png from the primary view described above. Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose"
+      ]
+    },
+    {
+      "id": "S24",
+      "question": "场景是否保持静态关节姿态，无果实脱离、汁液或藤蔓生长动画？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Static; no detachment, juice or vine-growth animation."
+      ]
+    },
+    {
+      "id": "S25",
+      "question": "服务点是否有明确标识，并与冻结接触区分，且没有为服务点复制机器人？",
+      "dimension": "instruction_following",
+      "weight": 0.024,
+      "units": [
+        "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots."
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

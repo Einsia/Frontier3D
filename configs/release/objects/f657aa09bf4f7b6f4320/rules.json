@@ -1,0 +1,544 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "墙板是否具有实际穿孔结构？",
+      "source_quote": "perforated wall panels",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "工作台是否具有实体台面厚度和可信的支撑结构？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "台钳是否具有能夹持法兰的实体钳口结构？",
+      "source_quote": "A left-end vise grips a flange",
+      "weight": 0.08
+    },
+    {
+      "id": "D04",
+      "question": "法兰是否呈具有直径和轴向厚度的实体形态？",
+      "source_quote": "a flange 0.12 m in diameter and 0.03 m thick",
+      "weight": 0.08
+    },
+    {
+      "id": "D05",
+      "question": "洞洞板是否具有板体厚度、孔洞和可信的安装支撑？",
+      "source_quote": "A 1.20 x 0.80 m pegboard",
+      "weight": 0.08
+    },
+    {
+      "id": "D06",
+      "question": "被夹持扳手是否具有双端闭合环孔及连接两端的手柄？",
+      "source_quote": "the double-ended ring wrench",
+      "weight": 0.08
+    },
+    {
+      "id": "D07",
+      "question": "螺丝刀是否具有可辨识的手柄、杆部和工作端？",
+      "source_quote": "four screwdrivers",
+      "weight": 0.08
+    },
+    {
+      "id": "D08",
+      "question": "钳子是否具有可辨识的钳口、连接部和握柄？",
+      "source_quote": "two pliers",
+      "weight": 0.08
+    },
+    {
+      "id": "D09",
+      "question": "机械臂是否以实体构件表达基座、关节和双指末端夹具？",
+      "source_quote": "Represent specified joints and end-effectors geometrically.",
+      "weight": 0.08
+    },
+    {
+      "id": "D10",
+      "question": "螺栓是否具有可辨识的头部和杆部实体形态？",
+      "source_quote": "Add three bolts",
+      "weight": 0.08
+    },
+    {
+      "id": "D11",
+      "question": "抹布是否具有布片形态和实体厚度？",
+      "source_quote": "a rag",
+      "weight": 0.08
+    },
+    {
+      "id": "D12",
+      "question": "零件托盘是否具有底部和围合容纳空间的边缘？",
+      "source_quote": "a parts tray",
+      "weight": 0.08
+    }
+  ],
+  "limitations": [
+    "本任务仅有文本，无公开参考图或候选；按文本任务规则将 reference_primary 设为空字符串、regions 和 targets 设为空数组。嵌入的 judge_spec 对 reference_primary 的非空限制与该规则冲突。",
+    "未提供 legacy-detail-20261018-v1 的独立正文；本计划仅依据本轮给定协议和 instruction.md，不补充隐藏规则。",
+    "所有检查均为待执行的候选盲测量定义，未声称任何候选属性或测量结果。",
+    "房间两条平面边的方向、洞洞板尺寸的轴向和房间高度未明确；不增设高度或隐藏几何。",
+    "机械臂基座距离参考点、基座高度对应部位、各工具拾取点和侧通道所在侧未完全定义；应读取场景标注及 README 测量约定，披露歧义，不按候选结果调整判据。",
+    "扳手高于台面的测量部位未明确；建议以明确标注的手柄中部夹持点测量，并报告所用约定。工作环端的朝向轴和法兰目标点同样须披露。",
+    "接触穿透上限未明确列出全部接触对；其紧邻夹爪持扳手描述，因此优先检查夹指与扳手，并单独检查台钳与法兰的无交叠夹持，不推定扳手必须接触法兰。",
+    "轮廓完全匹配未规定投影平面或线宽处理；应在洞洞板平面比较对应扳手的完整形状，披露配准约定，不设自创误差阈值。",
+    "未指定扳手其他型号、螺丝刀头型、钳子细分类型、法兰孔阵列、螺栓螺纹参数、机器人关节数量或数值厚度；局部形态检查不添加这些要求。",
+    "明确数值独立列于 numeric_checks；无明示公差时为 null。定性接触、无交叠和完全匹配不擅自改写为新增数值容差。",
+    "不将渲染引擎、色彩管理参数、图像像素数、脚本执行或交付文件结构作为内容质量检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在场景原生几何中测量房间地面平面第一条规定边的长度，记录边界约定。",
+      "quantity": "房间第一边长度",
+      "relation": "equal",
+      "source_quote": "3.0 x 2.4 m tool room",
+      "target": 3.0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在场景原生几何中测量房间地面平面另一条规定边的长度。",
+      "quantity": "房间第二边长度",
+      "relation": "equal",
+      "source_quote": "3.0 x 2.4 m tool room",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "沿工作台台面长轴测量实体台面的外缘跨度。",
+      "quantity": "工作台长度",
+      "relation": "equal",
+      "source_quote": "1.50 x 0.70 m",
+      "target": 1.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "沿工作台台面前后方向测量实体台面的外缘跨度。",
+      "quantity": "工作台深度",
+      "relation": "equal",
+      "source_quote": "1.50 x 0.70 m",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "沿 Z 轴测量地面至台面上表面的高度。",
+      "quantity": "工作台高度",
+      "relation": "equal",
+      "source_quote": "at 0.90 m height",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "在法兰自身径向平面测量其实体外圆直径。",
+      "quantity": "法兰直径",
+      "relation": "equal",
+      "source_quote": "0.12 m in diameter",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "沿法兰轴线测量两端实体表面之间的厚度。",
+      "quantity": "法兰厚度",
+      "relation": "equal",
+      "source_quote": "0.03 m thick",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "在洞洞板自身平面测量第一条规定边的完整外缘跨度。",
+      "quantity": "洞洞板第一边长度",
+      "relation": "equal",
+      "source_quote": "A 1.20 x 0.80 m pegboard",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "在洞洞板自身平面测量第二条规定边的完整外缘跨度。",
+      "quantity": "洞洞板第二边长度",
+      "relation": "equal",
+      "source_quote": "A 1.20 x 0.80 m pegboard",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "沿 Z 轴测量洞洞板下缘与工作台上表面的高差。",
+      "quantity": "洞洞板下缘距台面高度",
+      "relation": "equal",
+      "source_quote": "starts 0.10 m above the bench",
+      "target": 0.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "按独立工具位置统计洞洞板上扳手轮廓，包含被取走扳手的空轮廓。",
+      "quantity": "扳手轮廓数量",
+      "relation": "equal",
+      "source_quote": "Outline five wrenches",
+      "target": 5,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "按独立工具位置统计螺丝刀及其对应轮廓，不把同一位置的工具和轮廓重复计数。",
+      "quantity": "螺丝刀位置数量",
+      "relation": "equal",
+      "source_quote": "four screwdrivers",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "按独立工具位置统计钳子及其对应轮廓。",
+      "quantity": "钳子位置数量",
+      "relation": "equal",
+      "source_quote": "two pliers",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "以地面为高度基准，沿 Z 轴测量并报告所标注机械臂基座参考部位的高度。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "base height 0.95 m",
+      "target": 0.95,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "检查以声明基座参考点为中心的几何可达包络半径；不把该半径解释为逆运动学或动力学认证。",
+      "quantity": "机械臂可达半径",
+      "relation": "equal",
+      "source_quote": "reach 0.85 m",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "统计末端夹具上承担夹持的独立指部，不把关节或指垫重复计数。",
+      "quantity": "夹爪指部数量",
+      "relation": "equal",
+      "source_quote": "two-finger gripper",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "测量声明的扳手夹持参考点与工作台上表面的 Z 高差，并记录参考点约定。",
+      "quantity": "被持扳手距台面高度",
+      "relation": "equal",
+      "source_quote": "0.30 m above the worktop",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "在三维空间计算工作环端朝向向量与指向法兰目标点的向量之间夹角，记录方向轴及目标点定义。",
+      "quantity": "工作环端朝向法兰的偏角",
+      "relation": "at_most",
+      "source_quote": "working ring end aimed toward the flange within 5 degrees",
+      "target": 5,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "对冻结夹持状态的夹指与扳手实体接触面计算最大穿透深度，以原文单位报告。",
+      "quantity": "夹持接触最大穿透",
+      "relation": "at_most",
+      "source_quote": "contact penetration at most 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "按语义独立实体统计场景中要求添加的螺栓。",
+      "quantity": "螺栓数量",
+      "relation": "equal",
+      "source_quote": "Add three bolts",
+      "target": 3,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "按语义独立物体统计要求添加的抹布。",
+      "quantity": "抹布数量",
+      "relation": "equal",
+      "source_quote": "a rag",
+      "target": 1,
+      "unit": "块",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "按语义独立物体统计要求添加的零件托盘。",
+      "quantity": "零件托盘数量",
+      "relation": "equal",
+      "source_quote": "a parts tray",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "在工作台前方声明的操作区域测量前后方向最小自由深度，排除被评估机器人但计入其他家具及突出部。",
+      "quantity": "台前操作净深",
+      "relation": "at_least",
+      "source_quote": "Keep at least 0.80 m operating depth in front",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "沿声明的连续侧通道测量最窄自由横截面宽度，使用路线采样坐标并检查采样间连续性；排除被评估机器人，计入其他家具及突出部。",
+      "quantity": "连续侧通道净宽",
+      "relation": "at_least",
+      "source_quote": "a continuous 0.90 m side passage",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "统计独立标注的工具拾取位置，包含被取走扳手留下的空位置。",
+      "quantity": "工具拾取位置总数",
+      "relation": "equal",
+      "source_quote": "All eleven tool pickup positions, including the empty wrench position",
+      "target": 11,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "逐一计算所有拾取点至同一机械臂基座参考点的三维欧氏距离，取最大值。",
+      "quantity": "拾取点最大基座距离",
+      "relation": "at_most",
+      "source_quote": "must be within 0.85 m of the arm base",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "逐一测量所有拾取点相对地面的 Z 高度，要求每个位置均落在规定闭区间内。",
+      "quantity": "拾取点高度范围",
+      "relation": "range",
+      "source_quote": "in the 0.95-1.75 m height band",
+      "target": 0.95,
+      "unit": "m",
+      "upper": 1.75
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为带穿孔墙板的工具室？",
+      "source_quote": "Create a 3.0 x 2.4 m tool room with perforated wall panels",
+      "weight": 0.04
+    },
+    {
+      "id": "S02",
+      "question": "主视角是否从工作台一侧上方观察？",
+      "source_quote": "viewed above one side of the workbench",
+      "weight": 0.04
+    },
+    {
+      "id": "S03",
+      "question": "工作台是否具有钢制台面？",
+      "source_quote": "The steel-topped bench",
+      "weight": 0.04
+    },
+    {
+      "id": "S04",
+      "question": "台面是否具有布局标记？",
+      "source_quote": "with layout marks",
+      "weight": 0.04
+    },
+    {
+      "id": "S05",
+      "question": "台钳是否位于工作台左端？",
+      "source_quote": "A left-end vise",
+      "weight": 0.04
+    },
+    {
+      "id": "S06",
+      "question": "台钳是否与法兰形成真实夹持接触且实体不交叠？",
+      "source_quote": "A left-end vise grips a flange 0.12 m in diameter and 0.03 m thick without intersection.",
+      "weight": 0.04
+    },
+    {
+      "id": "S07",
+      "question": "洞洞板是否位于工作台上方？",
+      "source_quote": "A 1.20 x 0.80 m pegboard starts 0.10 m above the bench.",
+      "weight": 0.04
+    },
+    {
+      "id": "S08",
+      "question": "工具板是否包含扳手及其对应轮廓位置？",
+      "source_quote": "Outline five wrenches",
+      "weight": 0.04
+    },
+    {
+      "id": "S09",
+      "question": "工具板是否包含螺丝刀及其对应轮廓位置？",
+      "source_quote": "four screwdrivers",
+      "weight": 0.04
+    },
+    {
+      "id": "S10",
+      "question": "工具板是否包含钳子及其对应轮廓位置？",
+      "source_quote": "two pliers",
+      "weight": 0.04
+    },
+    {
+      "id": "S11",
+      "question": "双端梅花扳手是否已从板上取走，留下完整且与所持扳手完全匹配的空轮廓？",
+      "source_quote": "the double-ended ring wrench is removed, leaving its complete matching outline.",
+      "weight": 0.04
+    },
+    {
+      "id": "S12",
+      "question": "固定机械臂是否位于工作台后方中央？",
+      "source_quote": "A fixed arm at the rear-centre",
+      "weight": 0.04
+    },
+    {
+      "id": "S13",
+      "question": "双指夹爪是否接触并夹持扳手手柄中部？",
+      "source_quote": "Its two-finger gripper holds the wrench at mid-handle",
+      "weight": 0.04
+    },
+    {
+      "id": "S14",
+      "question": "扳手工作环端是否朝向法兰？",
+      "source_quote": "working ring end aimed toward the flange",
+      "weight": 0.04
+    },
+    {
+      "id": "S15",
+      "question": "场景是否具有要求添加的螺栓？",
+      "source_quote": "Add three bolts",
+      "weight": 0.04
+    },
+    {
+      "id": "S16",
+      "question": "场景是否具有抹布？",
+      "source_quote": "a rag",
+      "weight": 0.04
+    },
+    {
+      "id": "S17",
+      "question": "场景是否具有零件托盘？",
+      "source_quote": "a parts tray",
+      "weight": 0.04
+    },
+    {
+      "id": "S18",
+      "question": "台前是否保留操作空间，侧面是否形成连续可通行路线？",
+      "source_quote": "Keep at least 0.80 m operating depth in front and a continuous 0.90 m side passage.",
+      "weight": 0.04
+    },
+    {
+      "id": "S19",
+      "question": "板上剩余工具是否均不侵入相邻工具位置？",
+      "source_quote": "remaining tools do not overlap neighbouring positions",
+      "weight": 0.04
+    },
+    {
+      "id": "S20",
+      "question": "墙板是否呈灰白色？",
+      "source_quote": "grey-white wall panels",
+      "weight": 0.04
+    },
+    {
+      "id": "S21",
+      "question": "工具轮廓是否呈橙色？",
+      "source_quote": "orange tool outlines",
+      "weight": 0.04
+    },
+    {
+      "id": "S22",
+      "question": "机械臂是否呈深灰色？",
+      "source_quote": "a dark-grey arm",
+      "weight": 0.04
+    },
+    {
+      "id": "S23",
+      "question": "照明是否呈冷白色？",
+      "source_quote": "cool-white light",
+      "weight": 0.04
+    },
+    {
+      "id": "S24",
+      "question": "构图是否同时展示机械臂、所持扳手和空轮廓？",
+      "source_quote": "Frame arm, wrench and empty outline",
+      "weight": 0.04
+    },
+    {
+      "id": "S25",
+      "question": "机器人是否保持关节式静态姿态，且无工具使用或装配动画？",
+      "source_quote": "Static; no tool-use or assembly animation.",
+      "weight": 0.04
+    }
+  ],
+  "targets": []
+}

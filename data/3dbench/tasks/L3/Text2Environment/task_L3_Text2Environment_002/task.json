@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-e06",
+  "id": "L3/EmbodiedEnvironment/WaterTreatmentFacility",
+  "domain": "embodied",
+  "input_mode": "text",
+  "title": "具身：水处理设施与检修平台",
+  "title_en": "Embodied Environment: Water Treatment and Maintenance",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "47aed18f2afc51af91572b3d09e275a114e427634916494f1d638e1e1e81cfa3",
+  "chinese_instruction_sha256": "7531cf21d6fe54fa00d62dd0aa9928007e2f168eb6c037de54df4d1ea03a214b",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "b65571e76aa58239e8ea00f9c97ad0972ac0d5383194744455346e018c9e53d4",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

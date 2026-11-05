@@ -1,0 +1,90 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_012",
+  "category": "Image2Code",
+  "level": "L1",
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "reference_images": {
+    "reference/reference-0.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-1.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-2.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    "reference/reference-3.png": {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_012/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  },
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/68557faff5ae65f4faaf/native.json",
+      "sha256": "@recompute"
+    },
+    "export": {
+      "path": "@resource/objects/7ac8a7e915021feefdf6/export.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_feature_1": 0.08,
+        "vlm_feature_2": 0.08,
+        "vlm_feature_3": 0.08,
+        "vlm_feature_4": 0.08,
+        "vlm_feature_5": 0.08,
+        "vlm_primary_layout": 0.15,
+        "vlm_cross_view": 0.15,
+        "vlm_material_color": 0.15,
+        "vlm_lighting": 0.1,
+        "vlm_surface_finish": 0.05
+      },
+      "detail": {
+        "detail_detail_1": 0.25,
+        "detail_detail_2": 0.25,
+        "detail_detail_3": 0.25,
+        "detail_detail_4": 0.25
+      },
+      "content": {
+        "vlm_feature_1": 0.08,
+        "vlm_feature_2": 0.08,
+        "vlm_feature_3": 0.08,
+        "vlm_feature_4": 0.08,
+        "vlm_feature_5": 0.08
+      }
+    },
+    "export": {
+      "vlm": {},
+      "detail": {
+        "detail_detail_1": 0.25,
+        "detail_detail_2": 0.25,
+        "detail_detail_3": 0.25,
+        "detail_detail_4": 0.25
+      },
+      "content": {}
+    }
+  }
+}

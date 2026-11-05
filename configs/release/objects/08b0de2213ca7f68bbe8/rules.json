@@ -1,0 +1,364 @@
+{
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "心室局部是否呈饱满弧面，并向下方圆钝心尖连续收拢？",
+      "source_quote": "including the ventricles",
+      "weight": 0.125
+    },
+    {
+      "id": "D02",
+      "question": "左侧可见心耳是否具有宽厚垂瓣、卷曲边缘与表面褶皱？",
+      "source_quote": "atrial appendages",
+      "weight": 0.125
+    },
+    {
+      "id": "D03",
+      "question": "右侧可见心耳是否保留狭长垂瓣、圆钝末端及局部折痕？",
+      "source_quote": "atrial appendages",
+      "weight": 0.125
+    },
+    {
+      "id": "D04",
+      "question": "大血管是否保留参考中的弯曲管身、侧向分支与平滑分叉过渡？",
+      "source_quote": "branching great vessels",
+      "weight": 0.125
+    },
+    {
+      "id": "D05",
+      "question": "可见血管口是否具有环形口沿、可见壁厚和向内延伸的凹腔？",
+      "source_quote": "Preserve organic curvature, vessel openings",
+      "weight": 0.125
+    },
+    {
+      "id": "D06",
+      "question": "冠状血管是否呈贴附心表的细圆管，并保留渐细分支与汇接结构？",
+      "source_quote": "surface coronary vessels",
+      "weight": 0.125
+    },
+    {
+      "id": "D07",
+      "question": "大血管之间及心耳下缘的局部沟隙、凹陷和遮挡边界是否保留？",
+      "source_quote": "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions.",
+      "weight": 0.125
+    },
+    {
+      "id": "D08",
+      "question": "心表是否保留可见的细肌纹与脂肪区团块状起伏？",
+      "source_quote": "Match visible surfaces",
+      "weight": 0.125
+    }
+  ],
+  "limitations": [
+    "仅有单张参考图；背面、遮挡区域和血管腔深处无法据图确定，只检查合理补全，不设隐藏目标形状。",
+    "主参考采用公开映射后的 input/reference.png，对应附件原始证据 reference/reference-0.png；坐标均冻结于该原始图像。",
+    "图中结构名称仅用于视觉分区，不据此要求医学诊断级解剖准确性或额外内部结构。",
+    "“maximum overall span”未明确计算方式；本计划采用世界坐标包围盒最长边，并将1.000 m视为尺度标称值，2%视为相对容差。",
+    "局部形状和定位坐标属于参考视觉证据，不是精确尺寸、开口数量或血管分支数量要求。",
+    "真实体积、可编辑性、分离组件、坐标轴和导出姿态需检查三维文件；单张渲染无法独立验证。",
+    "未提供 legacy-detail-20261018-v1 的其他条文；本计划仅依据本次嵌入的契约和公开证据。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": 2,
+      "id": "N01",
+      "measurement_definition": "在静态姿态下，将全部重建对象的实际几何变换到以米为单位的世界坐标，排除相机与灯光，求联合轴对齐包围盒的X、Y、Z跨度并取最大值。与标称1.000 m比较；explicit_tolerance中的2表示原文2%的相对容差，非2 m。此项为待执行测量。",
+      "quantity": "对象整体最大跨度",
+      "relation": "equal",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "target": 1,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "上部大血管群",
+      "polygon": [
+        [
+          0.315,
+          0.16
+        ],
+        [
+          0.537,
+          0.16
+        ],
+        [
+          0.55,
+          0.328
+        ],
+        [
+          0.665,
+          0.343
+        ],
+        [
+          0.66,
+          0.46
+        ],
+        [
+          0.592,
+          0.518
+        ],
+        [
+          0.443,
+          0.522
+        ],
+        [
+          0.303,
+          0.46
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R02",
+      "label": "左侧宽大心耳",
+      "polygon": [
+        [
+          0.292,
+          0.445
+        ],
+        [
+          0.373,
+          0.435
+        ],
+        [
+          0.478,
+          0.485
+        ],
+        [
+          0.481,
+          0.539
+        ],
+        [
+          0.417,
+          0.602
+        ],
+        [
+          0.327,
+          0.651
+        ],
+        [
+          0.283,
+          0.612
+        ],
+        [
+          0.273,
+          0.533
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R03",
+      "label": "右侧狭长心耳",
+      "polygon": [
+        [
+          0.593,
+          0.393
+        ],
+        [
+          0.631,
+          0.414
+        ],
+        [
+          0.648,
+          0.478
+        ],
+        [
+          0.661,
+          0.527
+        ],
+        [
+          0.645,
+          0.544
+        ],
+        [
+          0.608,
+          0.537
+        ],
+        [
+          0.583,
+          0.501
+        ],
+        [
+          0.583,
+          0.443
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R04",
+      "label": "心室及表面冠状血管",
+      "polygon": [
+        [
+          0.447,
+          0.52
+        ],
+        [
+          0.585,
+          0.518
+        ],
+        [
+          0.642,
+          0.544
+        ],
+        [
+          0.691,
+          0.645
+        ],
+        [
+          0.685,
+          0.731
+        ],
+        [
+          0.65,
+          0.804
+        ],
+        [
+          0.604,
+          0.834
+        ],
+        [
+          0.52,
+          0.821
+        ],
+        [
+          0.423,
+          0.783
+        ],
+        [
+          0.364,
+          0.727
+        ],
+        [
+          0.338,
+          0.645
+        ],
+        [
+          0.414,
+          0.596
+        ]
+      ],
+      "weight": 0.4
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "主体是否为完整的人类心脏外观模型，整体轮廓与参考一致？",
+      "source_quote": "Reconstruct the external human-heart model",
+      "weight": 0.0625
+    },
+    {
+      "id": "S02",
+      "question": "是否呈现占据下部主体的心室及其参考比例？",
+      "source_quote": "including the ventricles",
+      "weight": 0.0625
+    },
+    {
+      "id": "S03",
+      "question": "是否呈现位于主体两侧、形态不对称的可见心耳？",
+      "source_quote": "atrial appendages",
+      "weight": 0.0625
+    },
+    {
+      "id": "S04",
+      "question": "上部是否呈现参考所示的分支大血管群及其相对朝向？",
+      "source_quote": "branching great vessels",
+      "weight": 0.0625
+    },
+    {
+      "id": "S05",
+      "question": "心室表面是否分布参考所示的冠状血管网络？",
+      "source_quote": "surface coronary vessels",
+      "weight": 0.0625
+    },
+    {
+      "id": "S06",
+      "question": "肌肉与脂肪是否具有参考所示的不同颜色及分区分布？",
+      "source_quote": "the distinct muscle/fat color regions",
+      "weight": 0.0625
+    },
+    {
+      "id": "S07",
+      "question": "整体表面是否保持自然有机曲率与参考中的柔和体积感？",
+      "source_quote": "Preserve organic curvature",
+      "weight": 0.0625
+    },
+    {
+      "id": "S08",
+      "question": "可见大血管端部是否呈开放管口？",
+      "source_quote": "vessel openings",
+      "weight": 0.0625
+    },
+    {
+      "id": "S09",
+      "question": "组件间的连接、前后层次与遮挡关系是否匹配参考？",
+      "source_quote": "connections and occlusions",
+      "weight": 0.0625
+    },
+    {
+      "id": "S10",
+      "question": "未见表面是否合理补全为完整外形，且未添加臆造内部机构？",
+      "source_quote": "complete unseen surfaces plausibly without inventing internal machinery",
+      "weight": 0.0625
+    },
+    {
+      "id": "S11",
+      "question": "是否保持外部重建，未添加剖切展示或内部解剖结构？",
+      "source_quote": "Do not invent a cutaway or internal anatomy",
+      "weight": 0.0625
+    },
+    {
+      "id": "S12",
+      "question": "主体是否使用真实、可编辑的完整三维几何？",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S13",
+      "question": "独立组件是否为可编辑对象或可明确分离的网格岛，并允许有机表面连续？",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S14",
+      "question": "是否未以图像平面或朝向相机的薄壳代替完整几何？",
+      "source_quote": "Image planes or camera-facing shells are not substitutes for full geometry.",
+      "weight": 0.0625
+    },
+    {
+      "id": "S15",
+      "question": "模型是否以米为单位并采用Z轴向上？",
+      "source_quote": "Use metres, Z up",
+      "weight": 0.0625
+    },
+    {
+      "id": "S16",
+      "question": "最终静态姿态是否保存在第1帧，且scene.glb采用相同姿态？",
+      "source_quote": "Save the final static pose at frame 1 and export the same pose to scene.glb.",
+      "weight": 0.0625
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "定位完整可见心脏，包括顶部开放大血管、两侧心耳、心室和最外侧冠状血管；包含底部暗色实体表面，排除灰色背景及投影。不将细小血管分叉或难以分辨的后方结构另作实例。",
+      "boxes": [
+        [
+          0.273,
+          0.159,
+          0.692,
+          0.834
+        ]
+      ],
+      "id": "T01",
+      "query": "完整外部人类心脏模型",
+      "weight": 1
+    }
+  ]
+}

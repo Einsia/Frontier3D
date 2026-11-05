@@ -1,0 +1,299 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_009",
+  "category": "Text2Code",
+  "title": "同轴滤芯壳体",
+  "profile": "l1-brief-l2aligned-v1.0.0",
+  "l2_baseline": "l2-brief-vlm-v7.0.0",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "physics": 0.1
+  },
+  "spec_sha256": "5e63ce60f8ecca8321cf2ceb2c13782d552f58b104be633e2c11b143b9f3458b",
+  "sources": {
+    "instruction.md": "bcdb2a81a40ccc307d5372940072481e41c53426f728c1bb34b2ba894338b3ea",
+    "solution/EVALUATION.md": "8965f0362176f0d90b5c9a65943317355be22ddc12ae5a988971a1b9622c5014",
+    "harness/eval_spec.json": "cde780fc79e14ae41efbfbd63f11896f18c9187a221a88523e7fdff7e37ed9a1",
+    "harness/evaluation_design.json": "1c31052652b20677967b41ba17c90412e3b390cf871cad89e194d721b23c8d8e"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": null,
+  "automatic_checks": [
+    "part_inventory",
+    "closed",
+    "connected",
+    "solid_validity",
+    "part_count",
+    "hierarchy"
+  ],
+  "reference_primary": null,
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.26,
+        -0.28,
+        0.22
+      ],
+      "target": [
+        0,
+        0,
+        0.035
+      ],
+      "ortho_scale": 0.28,
+      "resolution": 128,
+      "frame": 1
+    },
+    {
+      "id": "exploded",
+      "location": [
+        0.36,
+        -0.38,
+        0.32
+      ],
+      "target": [
+        0,
+        0,
+        0.06
+      ],
+      "ortho_scale": 0.5,
+      "resolution": 128,
+      "frame": 61
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "part_roles",
+      "text": "9件独立可编辑部件：housing×1、filter×1、cap×2、seal×2、rod×1、nut×1、washer×1",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory",
+        "part_count"
+      ],
+      "reason": "件数和包围盒一对一匹配只是尺寸代理，真实角色与编辑性未完整绑定。"
+    },
+    {
+      "id": "housing",
+      "text": "轴线Z且XY=0；壳体外径60 mm、孔52 mm、长70 mm，Z=8..78；两端扩孔59.4 mm、深2.1 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "filter",
+      "text": "内芯外径42 mm、孔14 mm、长62 mm，中心Z=43；保留于原生场景且爆炸态可见",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "caps",
+      "text": "两端盖外径68 mm、孔10.4 mm、厚8 mm，中心Z=4/82",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "seals",
+      "text": "两密封环外径59 mm、孔52.6 mm、厚2 mm，中心Z=9/77，放置于端部沉孔",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "tie_rod",
+      "text": "贯穿拉杆直径10 mm、长90 mm，中心Z=43",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "nut",
+      "text": "圆螺母外径18 mm、孔10.4 mm、高5 mm，中心Z=90",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "washer",
+      "text": "底部垫圈外径22 mm、孔10.4 mm、厚2 mm，中心Z=-3",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "尚缺实际轮廓、孔道、轴线、位置或接触的任务级取证；尺寸代理不构成完整判定。"
+    },
+    {
+      "id": "assembly_clearance",
+      "text": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+      "source": "instruction.md paragraphs 1–2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "共享取证尚未绑定本题装配关系及0.3 mm尺寸/位置容差。"
+    },
+    {
+      "id": "units",
+      "text": "米制导出，X长度/Y宽度/Z向上",
+      "source": "instruction.md paragraphs 2–3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "part_inventory"
+      ],
+      "reason": "跨格式物理尺度和实际轴向未完整验证。"
+    },
+    {
+      "id": "hierarchy",
+      "text": "自由描述性名称、独立可编辑部件与清晰组织",
+      "source": "instruction.md paragraphs 2–3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "hierarchy",
+        "part_count"
+      ],
+      "reason": "父节点和件数不是完整语义编辑性证明。"
+    },
+    {
+      "id": "state_cycle",
+      "text": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "assembled_valid",
+        "exploded_valid",
+        "reproducible"
+      ],
+      "reason": "现有重现/视图为诊断；任务拆分、可读性和完整材质保持待验收。"
+    },
+    {
+      "id": "glb_assembled",
+      "text": "GLB与原生帧1装配态一致",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "复用跨格式诊断，任务级等价阈值未标定。"
+    },
+    {
+      "id": "reconstruction",
+      "text": "清洁环境从代码重建，使用便携依赖，不依赖旧产物或个人路径",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "基准/seed和现有比较已接线，复杂诊断可能预算耗尽，完整语义与依赖仍未覆盖。"
+    },
+    {
+      "id": "instructions",
+      "text": "README说明执行方式及依赖",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "仅检查可读取并收集辅助文件，内容语义待验证。"
+    },
+    {
+      "id": "materials",
+      "text": "壳体和端盖黄铜色、内芯米色、密封圈深色，其他按题面材质类别；无螺纹和耐压机构",
+      "source": "instruction.md paragraphs 1–2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "尚未将有效材质与表面外观诊断绑定到本题角色。"
+    },
+    {
+      "id": "procedural_materials",
+      "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+      "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+      "source": "user_goal_2026-10-03 / seed delivery protocol",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": null,
+  "reference_boxes": null,
+  "vlm_spec_digest": "c164b2fc90fff3828c22d1cfc33de73d1ef5ffad5f814ba0fd5f2ea0960738bd",
+  "formal_score_eligible": false,
+  "reference_views": [],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": false,
+  "presentation_policy": "fixed_neutral_studio_intrinsic_object_aesthetics_not_authored_lighting"
+}

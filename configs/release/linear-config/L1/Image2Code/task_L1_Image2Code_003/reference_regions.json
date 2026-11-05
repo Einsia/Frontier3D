@@ -1,0 +1,101 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_003",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "ceb4356b36a9c632a9168239b6ad423a8cac2aa7735d900a5a60be9937022430",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "organ cabinet 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.179,
+          0.086
+        ],
+        [
+          0.815,
+          0.086
+        ],
+        [
+          0.815,
+          0.913
+        ],
+        [
+          0.179,
+          0.913
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "silver pipe arrays 1",
+      "weight": 0.16666666666666666,
+      "polygon": [
+        [
+          0.269,
+          0.338
+        ],
+        [
+          0.386,
+          0.338
+        ],
+        [
+          0.386,
+          0.645
+        ],
+        [
+          0.269,
+          0.645
+        ]
+      ]
+    },
+    {
+      "id": "part_2_2",
+      "label": "silver pipe arrays 2",
+      "weight": 0.16666666666666666,
+      "polygon": [
+        [
+          0.558,
+          0.293
+        ],
+        [
+          0.736,
+          0.293
+        ],
+        [
+          0.736,
+          0.618
+        ],
+        [
+          0.558,
+          0.618
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "keyboard and pedals 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.558,
+          0.653
+        ],
+        [
+          0.707,
+          0.653
+        ],
+        [
+          0.707,
+          0.854
+        ],
+        [
+          0.558,
+          0.854
+        ]
+      ]
+    }
+  ]
+}

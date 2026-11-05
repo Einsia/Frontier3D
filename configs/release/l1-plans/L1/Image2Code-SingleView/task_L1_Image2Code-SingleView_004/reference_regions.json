@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_004",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "443a9fa1c7f1e401222d3e8b3be1fb9993d875cce1082af0d177359fcb381084",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "lamp shade",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.28,
+          0.2
+        ],
+        [
+          0.46,
+          0.2
+        ],
+        [
+          0.46,
+          0.38
+        ],
+        [
+          0.28,
+          0.38
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "upper arm",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.4,
+          0.29
+        ],
+        [
+          0.78,
+          0.29
+        ],
+        [
+          0.78,
+          0.54
+        ],
+        [
+          0.4,
+          0.54
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "lower arm and clamp",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.48,
+          0.5
+        ],
+        [
+          0.77,
+          0.5
+        ],
+        [
+          0.77,
+          0.8
+        ],
+        [
+          0.48,
+          0.8
+        ]
+      ]
+    }
+  ]
+}

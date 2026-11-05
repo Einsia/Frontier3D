@@ -1,0 +1,19 @@
+{
+  "id": "bathroom",
+  "title": "Contemporary Bathroom",
+  "author": "Mareck",
+  "curator": "Benedikt Bitterli; Mitsuba 3 conversion by Sébastien Speierer",
+  "source_page": "https://benedikt-bitterli.me/resources/",
+  "original_page": "https://www.blendswap.com/blends/view/75302",
+  "download_url": "https://benedikt-bitterli.me/resources/mitsuba/bathroom.zip",
+  "archive": "assets/interiors/bathroom/source.zip",
+  "archive_sha256": "59cf1c96e916d6873c0a421cd54b2be55b4da68f5f25720525f75d9afdbea562",
+  "bytes": 26111702,
+  "license_files": [
+    "assets/interiors/bathroom/original/bathroom/LICENSE.txt"
+  ],
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "modifications": "Mitsuba converted to Blender; two bathtub shell meshes removed for input; camera field of view widened and tilted downward to show the target at 1200x800; full reference and incomplete input use the same reframed camera; non-target geometry unchanged; input orphans and embedded texts removed; textures packed.",
+  "resource_family": "bitterli/bathroom"
+}

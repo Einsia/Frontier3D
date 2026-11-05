@@ -1,0 +1,131 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025",
+  "family": "Reference2Scene",
+  "instruction_sha256": "00fb8b84ca0f65edf399ad2480d76c74824ee05192a05e58c449f659bad69218",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "d21b37e40132c1b92a52594396e12106d5c389d32becdabd019db3be34835c00",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-01a64f24d87af2d52d948282567192fdc1f97ac629e901297f400e1757960179"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t01",
+        "query": "完整太阳镜",
+        "weight": 0.4,
+        "boxes": [
+          [
+            0.171,
+            0.367,
+            0.92,
+            0.759
+          ]
+        ],
+        "boundary_notes": "包括深色镜片、框缘、鼻桥及两条可见镜腿的全部外轮廓；不包括背景。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t02",
+        "query": "可见镜腿",
+        "weight": 0.35,
+        "boxes": [
+          [
+            0.209,
+            0.373,
+            0.469,
+            0.495
+          ],
+          [
+            0.659,
+            0.511,
+            0.92,
+            0.669
+          ]
+        ],
+        "boundary_notes": "分别框定后方和右侧镜腿的可见范围，包含宽根部、弯曲末端与连接处；不外推遮挡部分。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t03",
+        "query": "连续外观的前部镜片与框缘总成",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.171,
+            0.367,
+            0.683,
+            0.759
+          ]
+        ],
+        "boundary_notes": "包括暗色前表面、细框缘与鼻部凹口边缘。参考中两镜片的独立分界不清晰，不人为拆出隐藏边界。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

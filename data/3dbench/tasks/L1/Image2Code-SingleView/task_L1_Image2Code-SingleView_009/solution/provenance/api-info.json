@@ -1,0 +1,50 @@
+{
+  "type": 2,
+  "name": "Horse Head",
+  "categories": [
+    "decorative"
+  ],
+  "tags": [
+    "old",
+    "vintage",
+    "antique",
+    "ornate",
+    "sculpture",
+    "artwork",
+    "art",
+    "statue",
+    "ornamental"
+  ],
+  "authors": {
+    "Tina": "All"
+  },
+  "donated": true,
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "polycount": 12068,
+  "texel_density": 11536.403494938666,
+  "dimensions": [
+    214.92592990398407,
+    334.1144993901253,
+    418.6776154820109
+  ],
+  "date_published": 1739750400,
+  "staging": null,
+  "files_hash": "e57f384475e832c0bcbd230230ad778073b959bf",
+  "description": "Free 8K model of an antique bronze horse head bust with flowing mane, ornate sculptural details and worn patina on a square plinth.",
+  "category_id": "7640f984-6f63-523f-8953-8ddc8f33d39a",
+  "category": "Decor & Art/Sculptures & Figurines/Animal Figures",
+  "attributes": {
+    "condition": [
+      "worn"
+    ],
+    "material": [
+      "metal"
+    ]
+  },
+  "img_version": "271665b3",
+  "download_count": 7588,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=256&height=256&v=271665b3"
+}

@@ -1,0 +1,17 @@
+{
+  "uid": "74c6aceed86b4a41aaad3b93afc3e262",
+  "file": "source.glb",
+  "download_filename": "turbine__turbofan_engine__jet_engine.glb",
+  "bytes": 11173636,
+  "sha256": "4d92315e4a915f55172600f40858b0a9e39cb2b685d3be8313634c529d491877",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "blenderbirb (https://sketchfab.com/blenderbirb)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/turbine-turbofan-engine-jet-engine-74c6aceed86b4a41aaad3b93afc3e262",
+    "title": "Turbine | Turbofan Engine | Jet Engine"
+  },
+  "gltf_meshes": 19,
+  "gltf_images": 0,
+  "animations": []
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "path": "attribution/input/CREDIT.txt",
+    "bytes": 415,
+    "sha256": "4c0c22bc255a9a59d65cbb74f26a6309f36679cad82ea0bf46434ec58cb3d713",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/front.png",
+    "bytes": 880323,
+    "sha256": "af76594f6464203f5144ae6ad6c61f1e60f1c3ba2d742db7dfd8da5ed48ca83d",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/reference.png",
+    "bytes": 880714,
+    "sha256": "b1669a437645f7004baa3ee33fc0148192f481d10688a24df88876e61b4cdc1f",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/side.png",
+    "bytes": 851803,
+    "sha256": "65de4a6468ae41f2d2d662cd46560a11ebf6edef8ea07228bbbc243c8a5c1aba",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "environment/input/top.png",
+    "bytes": 855495,
+    "sha256": "525f86e6ca521f3a8f83ace578f5bcea8f8be5ccb66daca93b3441c770951692",
+    "hash_format": "raw",
+    "model_visible": true
+  },
+  {
+    "path": "harness/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "instruction.md",
+    "bytes": 3138,
+    "sha256": "3bb67325a4875b918462536519be059cfa42790655c3810d91ae19df76806d96",
+    "hash_format": "utf8_lf",
+    "model_visible": true
+  },
+  {
+    "path": "instruction.zh.md",
+    "bytes": 2656,
+    "sha256": "30a286db13dc82476df9f32781f00f410cf9ae7ccf4f46926fc5df24f70b4474",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "README.md",
+    "bytes": 1872,
+    "sha256": "7ba141fb90f056faa3506d58e046d066fab5a65c8dd0f55e78fb2727a13a0141",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/EVALUATION.md",
+    "bytes": 4941,
+    "sha256": "0ef79f3b8fc852993100a5e0a54d625036e7c3933effc55c0a4e89a97dda727c",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/publisher.html",
+    "bytes": 45302,
+    "sha256": "31bfb43261713ef51d1f3065849251b39cd337f85a7e39abdb239a9c286dbf83",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/source.json",
+    "bytes": 1483,
+    "sha256": "53297207173f7249e1f53bb6c08e437d566f0f75aa59b57af5ba861158d4b612",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/provenance/upstream-readme.txt",
+    "bytes": 1133,
+    "sha256": "883fc51dc6b0948570b97f179269c5f5e0dece401a72f8cf5cfc0b0eee9e0a57",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/audit.json",
+    "bytes": 1925,
+    "sha256": "4909d652bfed7f1611a2aae30fdef02e5f03d26daadc8a0756ed6d1834506851",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/front.png",
+    "bytes": 880323,
+    "sha256": "af76594f6464203f5144ae6ad6c61f1e60f1c3ba2d742db7dfd8da5ed48ca83d",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/main.png",
+    "bytes": 880714,
+    "sha256": "b1669a437645f7004baa3ee33fc0148192f481d10688a24df88876e61b4cdc1f",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.blend",
+    "bytes": 1472017,
+    "sha256": "b7941a9c8a26ba1de5e0f9bec7cd0139f7922692bd31226c078910dbb6fa8931",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/scene.glb",
+    "bytes": 215960,
+    "sha256": "628d378c77a713039abc13ec33bd4fc8e17039ee78127ef701bcdaa469812983",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/side.png",
+    "bytes": 851803,
+    "sha256": "65de4a6468ae41f2d2d662cd46560a11ebf6edef8ea07228bbbc243c8a5c1aba",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "solution/reference/top.png",
+    "bytes": 855495,
+    "sha256": "525f86e6ca521f3a8f83ace578f5bcea8f8be5ccb66daca93b3441c770951692",
+    "hash_format": "raw",
+    "model_visible": false
+  },
+  {
+    "path": "task.toml",
+    "bytes": 783,
+    "sha256": "00e6bdaae98996da6d1245458fbe3b5cb6ed7c94c3cf6d0936fcad7f4497429e",
+    "hash_format": "utf8_lf",
+    "model_visible": false
+  }
+]

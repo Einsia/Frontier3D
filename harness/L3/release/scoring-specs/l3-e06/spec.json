@@ -1,0 +1,100 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-e06",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "b65571e76aa58239e8ea00f9c97ad0972ac0d5383194744455346e018c9e53d4",
+  "reference_features": {
+    "public_entities": [
+      {
+        "id": "pump.power",
+        "role": "switch"
+      },
+      {
+        "id": "line.a.inlet",
+        "role": "valve"
+      },
+      {
+        "id": "line.a.outlet",
+        "role": "valve"
+      },
+      {
+        "id": "line.b.inlet",
+        "role": "valve"
+      },
+      {
+        "id": "line.b.outlet",
+        "role": "valve"
+      },
+      {
+        "id": "housing.a",
+        "role": "housing"
+      },
+      {
+        "id": "housing.b",
+        "role": "housing"
+      },
+      {
+        "id": "filter.a",
+        "role": "filter"
+      },
+      {
+        "id": "filter.b",
+        "role": "filter"
+      },
+      {
+        "id": "filter.spare",
+        "role": "filter"
+      },
+      {
+        "id": "cart.service",
+        "role": "cart"
+      },
+      {
+        "id": "return.bin",
+        "role": "receptacle"
+      }
+    ],
+    "scope": "public semantic requirements; do not infer invisible physical behavior"
+  },
+  "reference_sha256": {}
+}

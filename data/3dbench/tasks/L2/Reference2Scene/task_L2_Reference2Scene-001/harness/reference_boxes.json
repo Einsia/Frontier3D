@@ -1,0 +1,238 @@
+{
+  "version": "reference-boxes-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-001",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "ca15493df21dd517175f58f30bf888ed0dca73f3d2554eeb40054e18613b547e",
+  "image_size": [
+    800,
+    450
+  ],
+  "detector": {
+    "model": "IDEA-Research/grounding-dino-tiny",
+    "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+    "files": {
+      "README.md": "cf46f74c7b6850f1d5cbe406028324d8798148726016d46a69a365b4a2d3e89f",
+      "added_tokens.json": "909e96cb32d92ce728a01bc99850cbba26196d74115c17ebeb019275412588f2",
+      "config.json": "eec82c5ab66e16df12a9a212e68ac011779927c2536cf9078658e35d85f0c67a",
+      "model.safetensors": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3",
+      "preprocessor_config.json": "8454179ba95e2ad22947835aad7b45862a601fc0055ab88bf1ee70892d3aea60",
+      "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "tokenizer_config.json": "d40ab645b68211910b9170d22433d43186a6ec8ee6fd10ba170524b25bf4fb56",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    "runtime": {
+      "torch": "2.9.1+cpu",
+      "transformers": "4.57.3"
+    },
+    "device": "cpu",
+    "threads": 4,
+    "worker_version": "l2-grounding-dino-v5",
+    "uniform_max_channel_range": 1,
+    "query_mode": "joint_phrase_spans_argmax",
+    "threshold": 0.25,
+    "text_threshold": 0.25,
+    "use_fast": false,
+    "short_edges": [
+      800
+    ],
+    "fingerprint": "009b5156445bf55a45637133525eb97fa724bd1f9c298973ba3500a996938cfe"
+  },
+  "context_queries": [
+    "desk",
+    "door",
+    "bulletin board",
+    "map",
+    "alphabet chart"
+  ],
+  "targets": [
+    {
+      "id": "board",
+      "label": "黑板",
+      "query": "chalkboard",
+      "weight": 0.3,
+      "boxes": [
+        [
+          0.425,
+          0.35,
+          0.65,
+          0.573
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "单个完整书写黑板，排除地图、字母条和公告栏。"
+    },
+    {
+      "id": "chairs",
+      "label": "椅子",
+      "query": "chair",
+      "weight": 0.3,
+      "boxes": [
+        [
+          0.33917415618896485,
+          0.6373150634765625,
+          0.4841977310180664,
+          0.998394300672743
+        ],
+        [
+          0.14213037490844727,
+          0.6896329074435764,
+          0.37689884185791017,
+          0.9982908799913195
+        ],
+        [
+          0.6937419891357421,
+          0.5508152940538195,
+          0.7464066314697265,
+          0.5788375515407986
+        ],
+        [
+          0.3994507598876953,
+          0.58806884765625,
+          0.47499752044677734,
+          0.640645005967882
+        ],
+        [
+          0.07428835391998291,
+          0.566251458062066,
+          0.12547256469726562,
+          0.6339414469401041
+        ],
+        [
+          0.0004315003752708435,
+          0.6227977837456597,
+          0.13548785209655761,
+          0.9966758897569444
+        ],
+        [
+          0.12385961532592774,
+          0.5823770480685764,
+          0.17987800598144532,
+          0.6301931423611111
+        ],
+        [
+          0.25330772399902346,
+          0.5673733520507812,
+          0.3424198150634766,
+          0.8156637234157986
+        ],
+        [
+          0.7065815734863281,
+          0.6504895697699653,
+          0.7796849060058594,
+          0.6887044949001736
+        ],
+        [
+          0.00010314211249351501,
+          0.5776320393880209,
+          0.01517557978630066,
+          0.6073935953776042
+        ],
+        [
+          0.0740270471572876,
+          0.5667398071289063,
+          0.12556068420410157,
+          0.742014634874132
+        ],
+        [
+          0.45622249603271486,
+          0.5748209635416667,
+          0.5217279052734375,
+          0.616079847547743
+        ],
+        [
+          0.6815607452392578,
+          0.5952790662977431,
+          0.7944698333740234,
+          0.6319334581163194
+        ]
+      ],
+      "review_status": "pending",
+      "review_note": "保留 13 个候选可见实例供复核；检测仍把椅背/整椅分开或把相邻椅子合并，未确认完整实例数，不计总分。"
+    },
+    {
+      "id": "windows",
+      "label": "窗户",
+      "query": "window",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.816,
+          0,
+          0.855,
+          0.553
+        ],
+        [
+          0.855,
+          0,
+          0.934,
+          0.575
+        ],
+        [
+          0.948,
+          0,
+          1.0,
+          0.599
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "三组可见完整窗洞，框到图片边界；上窗扇不另计实例。"
+    },
+    {
+      "id": "lights",
+      "label": "顶灯",
+      "query": "ceiling light",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.09319148063659669,
+          0.01901966306898329,
+          0.16946571350097656,
+          0.17708224826388888
+        ],
+        [
+          0.5969681167602539,
+          0.1371602545844184,
+          0.6478522491455078,
+          0.25592068142361113
+        ],
+        [
+          0.28355491638183594,
+          0.1748344251844618,
+          0.33423702239990233,
+          0.28247172037760415
+        ],
+        [
+          0.5404975891113282,
+          0.0016313642925686307,
+          0.6181395721435546,
+          0.11977281358506944
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "参考图逐项核对；只批准可见实例。检测器误检仍需独立样本校准。"
+    }
+  ],
+  "reviewed_by": "assistant_reference_visual_review_2026-10-09_refinement",
+  "review_kind": "reference_only_refinement_pilot",
+  "proposal_sha256": "820df9a1aa3085f9f598aa6d29bd768d8a73a5673b5086ff16d4e9dff7160eac",
+  "definitions_sha256": "558fa8daf9822182be1997c0a9c8f7f4b3fb775fe2a78cddb698d188d678b4f6",
+  "formal_score_eligible": false,
+  "proposal_detector_fingerprint": "741d93dddea1a9eb00c64f8dac30b978ceddb64c83ce5ab3c60c0e006715e20a",
+  "detector_revision_note": "Explicit mean token scores over frozen phrases with class/context competition. Single scale; larger detector and two-scale alternatives were rejected after reference-only review.",
+  "scoring_profile": "l2-reference-localized-v5.2.0",
+  "previous_annotation_sha256": "408864fbaa2d3050c9f7d0b884ea8f7cea09478f4fd03f3b0dadea604263ce1a",
+  "public_scope": "Reference boxes cover visible image extents, not inferred hidden geometry. Only the listed key objects enter localization; other scene content remains in the appearance component. Blackboard excludes the map, alphabet strip and bulletin boards. Windows are three visible full-height openings, not separate upper panes. Chair instance annotation/detection remains pending."
+}

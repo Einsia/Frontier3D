@@ -1,0 +1,318 @@
+{
+  "version": "l1-evaluation-design-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_003",
+  "category": "Image2Code",
+  "status": "design_with_legacy_partial_implementation",
+  "scoring_profile": "image_reference",
+  "sources": {
+    "instruction.md": "317094fa87ee94d127f961b3fa3b2988c04d156d65cd2a2f1b36093a378561be",
+    "solution/EVALUATION.md": "1616e567e309fa89b80cf8613e29394b7096b6f5e41088e7f17965ab00a1bf14",
+    "harness/eval_spec.json": "2deb9f7e7be1983e1c9071b66143a2f7cfacf66169862dd2220358e4700df1da"
+  },
+  "title": "评测接口：管风琴",
+  "case_focus": "本题为多视图静态重建。重点为：高箱框、管群层级、管长与间距、键盘琴台、控制件与装饰、踏板总成。",
+  "evaluation_rows": [
+    {
+      "id": "evaluation_01",
+      "line": 15,
+      "source_quote": "| 执行与交付 | 干净 workspace 按题面命令运行；五个固定产物均有效；打开 Blender 和 GLB，原生重渲染 | 只交图片、缺几何或依赖已有输出不能通过交付检查 |",
+      "dimension": "执行与交付",
+      "criteria": [
+        "干净 workspace 按题面命令运行；五个固定产物均有效；打开 Blender 和 GLB，原生重渲染",
+        "只交图片、缺几何或依赖已有输出不能通过交付检查"
+      ],
+      "methods": [
+        "execution",
+        "delivery",
+        "state"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_02",
+      "line": 16,
+      "source_quote": "| 尺度与比例 | 世界坐标真实顶点的包围盒最大跨度；目标 1 m、容差 2%；比较主体与附件比例 | 排除相机灯光；在静态第 1 帧测量；形状对齐不能用额外缩放掩盖尺度错误 |",
+      "dimension": "尺度与比例",
+      "criteria": [
+        "世界坐标真实顶点的包围盒最大跨度；目标 1 m、容差 2%；比较主体与附件比例",
+        "排除相机灯光；在静态第 1 帧测量；形状对齐不能用额外缩放掩盖尺度错误"
+      ],
+      "methods": [
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_03",
+      "line": 17,
+      "source_quote": "| 三维形体 | 给定相机轮廓 IoU、可见表面双向采样距离、法线角差 | 只做整体刚体对齐，不逐件独立配准；不要求源拓扑或源网格缺陷 |",
+      "dimension": "三维形体",
+      "criteria": [
+        "给定相机轮廓 IoU、可见表面双向采样距离、法线角差",
+        "只做整体刚体对齐，不逐件独立配准；不要求源拓扑或源网格缺陷"
+      ],
+      "methods": [
+        "numeric",
+        "editable"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_04",
+      "line": 18,
+      "source_quote": "| 结构与编辑性 | 逐区域检查厚度、凹凸、孔隙、连接和可分离语义部件；BVH/截面探针 | 有机表面允许单一连续网格，不能按对象名或对象数评分 |",
+      "dimension": "结构与编辑性",
+      "criteria": [
+        "逐区域检查厚度、凹凸、孔隙、连接和可分离语义部件；BVH/截面探针",
+        "有机表面允许单一连续网格，不能按对象名或对象数评分"
+      ],
+      "methods": [
+        "editable"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_05",
+      "line": 19,
+      "source_quote": "| 细节覆盖 | 下方语义区域分别记录可见形状与关系覆盖，然后宏平均 | 防止大面片淹没小部件；题面允许简化的细字与微小磨损不设硬门槛 |",
+      "dimension": "细节覆盖",
+      "criteria": [
+        "下方语义区域分别记录可见形状与关系覆盖，然后宏平均",
+        "防止大面片淹没小部件；题面允许简化的细字与微小磨损不设硬门槛"
+      ],
+      "methods": [
+        "numeric",
+        "visible_geometry",
+        "assembly"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_06",
+      "line": 20,
+      "source_quote": "| 材质与构图 | 从原生场景重渲染，比较主要区域颜色、材质类别、曲面明暗与视图 | 不能以像素总分替代几何测量；须考虑光照与材质格式差异 |",
+      "dimension": "材质与构图",
+      "criteria": [
+        "从原生场景重渲染，比较主要区域颜色、材质类别、曲面明暗与视图",
+        "不能以像素总分替代几何测量；须考虑光照与材质格式差异"
+      ],
+      "methods": [
+        "image_pair"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_07",
+      "line": 21,
+      "source_quote": "| 跨格式一致 | 独立导入 GLB，比较各要求姿态的包围盒和采样几何；main.png 对照原生重渲染 | 不能用不同模型分别交图片、Blender 与 GLB |",
+      "dimension": "跨格式一致",
+      "criteria": [
+        "独立导入 GLB，比较各要求姿态的包围盒和采样几何；main.png 对照原生重渲染",
+        "不能用不同模型分别交图片、Blender 与 GLB"
+      ],
+      "methods": [
+        "state",
+        "delivery",
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    },
+    {
+      "id": "evaluation_08",
+      "line": 22,
+      "source_quote": "| 重复性与成本 | 两次干净运行，记录几何/图像差异、时间、token、工具调用与重试 | 质量和成本分开；不比较 Blender 二进制字节是否相同 |",
+      "dimension": "重复性与成本",
+      "criteria": [
+        "两次干净运行，记录几何/图像差异、时间、token、工具调用与重试",
+        "质量和成本分开；不比较 Blender 二进制字节是否相同"
+      ],
+      "methods": [
+        "execution",
+        "delivery",
+        "cost",
+        "numeric",
+        "visible_geometry"
+      ],
+      "status": "designed_not_fully_implemented"
+    }
+  ],
+  "method_definitions": {
+    "execution": "外层清洁基准+seed 0/1/2执行；原生/导出独立加载；交付哈希绑定，失败不删除。",
+    "delivery": "独立重新导入GLB比较世界尺度、几何/孔槽/姿态和可表达材质；不可表达的程序化节点单列，不自动烘焙位图。",
+    "state": "Declared frames: no-bitmap audit only. Motion/rigidity/attachments and animated GLB equivalence remain unmeasured.",
+    "numeric": "按本题数值条款拟合实际平面/圆柱/截面；报告mm误差和容差；孔槽用边界+占用/连通检查，AABB仅作粗筛。",
+    "visible_geometry": "仅公开视角可见面并集做精确GT；统一整体配准、独立尺度门、逐图轮廓/可见面距离/法线；局部区域宏平均，未知背面仅检查合理性。",
+    "editable": "检查实际可编辑几何/部件组织及代码重建；对象名、变量名、顶点顺序不作为正确性真值。",
+    "assembly": "以几何匹配角色/对称置换；一次整体刚体对齐后测轴线、接触、规定间隙和实际实体穿透，禁止逐件配准。",
+    "image_pair": "从提交原生场景重渲染，再与本题公开参考图比较；前景轮廓、区域色差/结构和相机误差分报，进入主评分；提交PNG与重渲染须一致。全图SSIM不独立决定达标。",
+    "cost": "保留成功、失败、重试和反馈各轮时间/token/调用；未知token为null；成本与质量分列。"
+  },
+  "public_numeric_clauses": [
+    "Use metres, Z up, and a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights. This is a task scale convention, not a real-world measurement. Infer other proportions from the images.",
+    "Save the final static pose at frame 1 and export the same pose to scene.glb. Animation, exploded views and simulation are not required.",
+    "Render main.png at 1000 x 1000 pixels from a camera matching input/reference.png, using neutral studio lighting, Cycles, AgX and exposure 0. Retain the camera and lighting in scene.blend."
+  ],
+  "local_regions": [
+    "高箱框",
+    "管群层级",
+    "管长与间距",
+    "键盘琴台",
+    "控制件与装饰",
+    "踏板总成"
+  ],
+  "expected_parts": null,
+  "frames": {
+    "protocol": "l1-reproduction-frame-policy-v1",
+    "task_id": "L1/Image2Code/task_L1_Image2Code_003",
+    "native_frames": [
+      1
+    ],
+    "glb_frames": [
+      1
+    ],
+    "cross_format_frames": [],
+    "scope": "Visual v2 native material states; GLB readability only, no animation equality",
+    "native_inspection": "single_session_material_audit",
+    "limitation": "No motion, rigid shape, attachment or GLB animation quality claim"
+  },
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "scene.glb",
+    "main.png",
+    "README.md"
+  ],
+  "current_tolerances": {
+    "span_m": 0.02
+  },
+  "reference_images": {
+    "input/reference.png": "ceb4356b36a9c632a9168239b6ad423a8cac2aa7735d900a5a60be9937022430",
+    "input/front.png": "581d283b312a3ed84a0a1415b0b5d1ff36fcbbaf24f124b2292f583fa00e4c33",
+    "input/side.png": "11653647670ffc3269b0221aa19678ee0c6d331477f1858fc6285863dce128eb",
+    "input/top.png": "ccf966f66b13e0863a5fbaaddd562a41e7d121f7d42ff698058777b827b09419"
+  },
+  "material_policy": {
+    "kind": "procedural_only",
+    "bitmap_inputs": "forbidden",
+    "constant_colors_and_procedural_nodes": "allowed",
+    "apply_bitmap_ban_to_reference_assets": false,
+    "authority": "user_goal_2026-10-03",
+    "requires_public_prompt_override": true
+  },
+  "deferred": [],
+  "scope_limits": [
+    "私有solution只供测评端，不进入生成输入",
+    "设计完成不等于算法实现或候选通过；各项原始误差和未实现项保留",
+    "未公开的尺度/距离/图像阈值须pilot校准，不能静默作为硬门槛",
+    "缺件/盲孔/错配合/破坏保护区等反例须先验收，再提升覆盖声明",
+    "Refreshed 20261010 asset; no old slot geometry/count/regions retained.",
+    "Visual v2 only: no exact CAD or motion score; full_task_verified=false."
+  ],
+  "current_requirements": [
+    {
+      "id": "public_clause_02",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_03",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_04",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_05",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity",
+        "native_state_materials"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+    },
+    {
+      "id": "public_clause_06",
+      "implementation": "partial",
+      "check_ids": [
+        "primary_similarity",
+        "saved_camera",
+        "saved_resolution",
+        "main_render_consistency"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "delivery",
+      "implementation": "partial",
+      "check_ids": [
+        "export",
+        "main_loadable",
+        "main_dimensions",
+        "main_format",
+        "readme",
+        "reproducible"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "procedural_materials",
+      "implementation": "partial",
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "seed_quality",
+      "implementation": "partial",
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    }
+  ],
+  "image_quality": {
+    "version": "l1-reference-visual-v2.0.0",
+    "weights": {
+      "main_image": 0.8,
+      "render_validity": 0.2
+    },
+    "method": "native-appearance-v1",
+    "image_checks": [
+      "primary_similarity"
+    ],
+    "system_checks": [
+      "export",
+      "glb_procedural_materials",
+      "main_dimensions",
+      "main_format",
+      "main_loadable",
+      "main_render_consistency",
+      "native_procedural_materials",
+      "native_state_materials",
+      "readme",
+      "real_geometry",
+      "reproducible",
+      "saved_camera",
+      "saved_resolution"
+    ],
+    "scope": "declared_primary_view_only",
+    "seed_aggregation": "minimum"
+  }
+}

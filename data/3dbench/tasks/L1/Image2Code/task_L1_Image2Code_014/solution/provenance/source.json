@@ -1,0 +1,27 @@
+{
+  "uid": "c368cc22dcb8480e9e942e57fb63c635",
+  "name": "2020 McLaren 720S GT3",
+  "source_url": "https://sketchfab.com/3d-models/2020-mclaren-720s-gt3-c368cc22dcb8480e9e942e57fb63c635",
+  "author": {
+    "username": "Tyler_Dave",
+    "displayName": "Dave Love SketchFab",
+    "profileUrl": "https://sketchfab.com/Tyler_Dave"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/SYI2wkBS0iV0a2kil7HcBs7un4b",
+  "document_revision": 647,
+  "source_sha256": "aef85fd9e90310e42ed13b37dec20775a2949c5f12c0cef0bec1796d3c6129e1",
+  "download_method": "User browser download; identity verified from embedded glTF asset.extras",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "replaces": {
+    "title": "阶梯式航天相机模块",
+    "resource_family": "nasa-assemblies/widefield"
+  }
+}

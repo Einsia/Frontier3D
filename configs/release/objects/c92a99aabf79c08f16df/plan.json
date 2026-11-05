@@ -1,0 +1,1046 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_008",
+  "title": "密封电子盒总成",
+  "category": "Text2Code",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_part_roles",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "15件独立可编辑部件：body×1、gasket×1、lid×1、standoff×4、screw×4、washer×4；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_body",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "盒体100×70×35 mm，底Z=0；上开口居中腔92×62 mm、底厚4.5 mm、壁厚4 mm；底板XY=(±40,±25)孔径4.4 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_gasket",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "独立深色矩形密封圈外100×70 mm、开口92×62 mm、厚2 mm，Z=35..37；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_lid",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "独立盒盖100×70×4 mm，Z=37..41，XY=(±40,±25)四孔4.4 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_standoffs",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "四金属立柱外径9 mm、孔径4.4 mm、长32.5 mm，XY=(±40,±25)，Z=4.5..37，立于内底面；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_screws",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "四螺杆直径4 mm、长13.5 mm，Z=29..42.5；六角头高4 mm、外接圆7.2 mm，无螺纹；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_washers",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "四垫圈外径8 mm、孔径4.4 mm、厚1.5 mm，在盒盖上方且在螺钉头下方；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_assembly_clearance",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "weight": 0.06666666666666667,
+      "question": "盒体/盒盖蓝灰，密封圈深色，立柱金属，螺钉银色，垫圈黄铜；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_part_roles",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "15件独立可编辑部件：body×1、gasket×1、lid×1、standoff×4、screw×4、washer×4",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "part_roles",
+        "public_requirement": "15件独立可编辑部件：body×1、gasket×1、lid×1、standoff×4、screw×4、washer×4",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "body",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.035
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "gasket",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "lid",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "standoff",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009,
+                    0.009,
+                    0.0325
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "screw",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0072,
+                    0.006235383,
+                    0.0175
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.008,
+                    0.008,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "part_count",
+            "metric": "equals",
+            "group": "parts",
+            "params": {
+              "path": "/scene/mesh_count",
+              "expected": 15
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_body",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "盒体100×70×35 mm，底Z=0；上开口居中腔92×62 mm、底厚4.5 mm、壁厚4 mm；底板XY=(±40,±25)孔径4.4 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "body",
+        "public_requirement": "盒体100×70×35 mm，底Z=0；上开口居中腔92×62 mm、底厚4.5 mm、壁厚4 mm；底板XY=(±40,±25)孔径4.4 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "body",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.035
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "gasket",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "lid",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "standoff",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009,
+                    0.009,
+                    0.0325
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "screw",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0072,
+                    0.006235383,
+                    0.0175
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.008,
+                    0.008,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_gasket",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "独立深色矩形密封圈外100×70 mm、开口92×62 mm、厚2 mm，Z=35..37",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "gasket",
+        "public_requirement": "独立深色矩形密封圈外100×70 mm、开口92×62 mm、厚2 mm，Z=35..37",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "body",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.035
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "gasket",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "lid",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "standoff",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009,
+                    0.009,
+                    0.0325
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "screw",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0072,
+                    0.006235383,
+                    0.0175
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.008,
+                    0.008,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_lid",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "独立盒盖100×70×4 mm，Z=37..41，XY=(±40,±25)四孔4.4 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "lid",
+        "public_requirement": "独立盒盖100×70×4 mm，Z=37..41，XY=(±40,±25)四孔4.4 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "body",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.035
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "gasket",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "lid",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "standoff",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009,
+                    0.009,
+                    0.0325
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "screw",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0072,
+                    0.006235383,
+                    0.0175
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.008,
+                    0.008,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          },
+          {
+            "id": "lid_holes",
+            "metric": "hole_pattern",
+            "group": "part_features",
+            "importance": "high",
+            "params": {
+              "object_dimensions": [
+                0.1,
+                0.07,
+                0.004
+              ],
+              "object_dimension_tolerance": "dimension_m",
+              "centers": [
+                [
+                  -0.04,
+                  -0.025
+                ],
+                [
+                  -0.04,
+                  0.025
+                ],
+                [
+                  0.04,
+                  -0.025
+                ],
+                [
+                  0.04,
+                  0.025
+                ]
+              ],
+              "z_values": [
+                0.0006,
+                0.002,
+                0.0034
+              ],
+              "radius": 0.0022,
+              "tolerance": "bore_radius_m",
+              "angular_samples": 32,
+              "axis_samples": 9,
+              "relative_to_object": true
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_standoffs",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "四金属立柱外径9 mm、孔径4.4 mm、长32.5 mm，XY=(±40,±25)，Z=4.5..37，立于内底面",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "standoffs",
+        "public_requirement": "四金属立柱外径9 mm、孔径4.4 mm、长32.5 mm，XY=(±40,±25)，Z=4.5..37，立于内底面",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "body",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.035
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "gasket",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "lid",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "standoff",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009,
+                    0.009,
+                    0.0325
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "screw",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0072,
+                    0.006235383,
+                    0.0175
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.008,
+                    0.008,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_screws",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "四螺杆直径4 mm、长13.5 mm，Z=29..42.5；六角头高4 mm、外接圆7.2 mm，无螺纹",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "screws",
+        "public_requirement": "四螺杆直径4 mm、长13.5 mm，Z=29..42.5；六角头高4 mm、外接圆7.2 mm，无螺纹",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "body",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.035
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "gasket",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "lid",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "standoff",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009,
+                    0.009,
+                    0.0325
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "screw",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0072,
+                    0.006235383,
+                    0.0175
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.008,
+                    0.008,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_washers",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "四垫圈外径8 mm、孔径4.4 mm、厚1.5 mm，在盒盖上方且在螺钉头下方",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "washers",
+        "public_requirement": "四垫圈外径8 mm、孔径4.4 mm、厚1.5 mm，在盒盖上方且在螺钉头下方",
+        "legacy_check_bindings": [
+          {
+            "id": "part_inventory",
+            "metric": "semantic_inventory",
+            "group": "parts",
+            "importance": "high",
+            "params": {
+              "parts": [
+                {
+                  "id": "body",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.035
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "gasket",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.002
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "lid",
+                  "type": "MESH",
+                  "count": 1,
+                  "dimensions": [
+                    0.1,
+                    0.07,
+                    0.004
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "standoff",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.009,
+                    0.009,
+                    0.0325
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "screw",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.0072,
+                    0.006235383,
+                    0.0175
+                  ],
+                  "tolerance": "dimension_m"
+                },
+                {
+                  "id": "washer",
+                  "type": "MESH",
+                  "count": 4,
+                  "dimensions": [
+                    0.008,
+                    0.008,
+                    0.0015
+                  ],
+                  "tolerance": "dimension_m"
+                }
+              ]
+            }
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_assembly_clearance",
+      "component": "Q",
+      "weight": 0.05,
+      "question": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 1–2",
+      "parameters": {
+        "requirement_id": "assembly_clearance",
+        "public_requirement": "验证全部题面位置、同轴/贴合/支撑和规定间隙；真实孔道、无非预期穿透，不增加未要求螺纹/倒角/隐藏机构",
+        "legacy_check_bindings": [],
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_topology",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "所有零件闭合且分别连通",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_solid_validity",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "有效实体零件",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_units",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "米制导出，X长度/Y宽度/Z向上",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_hierarchy",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "自由描述性名称、独立可编辑部件与清晰组织",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md paragraphs 2–3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_state_cycle",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "帧1装配、帧61自由爆炸，保形并可恢复，审阅相机和爆炸距离自由",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_glb_assembled",
+      "component": "E",
+      "weight": 0.16666666666666666,
+      "question": "GLB与原生帧1装配态一致",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.0003,
+          "bore_radius_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "adef415a6e89e5ab8cf93b01fc0309c63e9c4535fc7d88d01626e82c4d91ac93",
+    "task.toml": "a0ebf5d3e99ee247170b5e5328a42a42daf5381ea90badf454a0d675d7f6b607",
+    "harness/eval_spec.json": "1c4c66a6049fad6850fb4cdf1b290db4ce5a184b93f0c4e719d3ff5900b449d7"
+  },
+  "source_requirement_dispositions": {
+    "part_roles": "Q",
+    "body": "Q",
+    "gasket": "Q",
+    "lid": "Q",
+    "standoffs": "Q",
+    "screws": "Q",
+    "washers": "Q",
+    "assembly_clearance": "Q",
+    "topology": "E",
+    "solid_validity": "E",
+    "units": "E",
+    "hierarchy": "E",
+    "state_cycle": "E",
+    "glb_readable": "system_evidence_only",
+    "glb_assembled": "E",
+    "reconstruction": "system_evidence_only",
+    "instructions": "system_evidence_only",
+    "materials": "Q",
+    "procedural_materials": "system_evidence_only",
+    "seed_quality": "system_evidence_only"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

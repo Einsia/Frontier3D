@@ -1,0 +1,128 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_020",
+  "family": "Reference2Scene",
+  "instruction_sha256": "25af8a6d70a9bfd36d5f4fd4d6668deb22556286e1c1075c2fbc0055ff2d6a22",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "20b45eb39f53410b601c9817e473c28b88e7b00b83f5fa0aa4edf6e9d0550da6"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_links",
+      "component": "F",
+      "question": "链带是否保留宽中央链节与两侧短链节交错衔接的重复结构？",
+      "units": [
+        "individual link rhythm"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_link_edges",
+      "component": "F",
+      "question": "链节是否有参考可见的厚度、圆角端部和弧面，而非扁平条片？",
+      "units": [
+        "Model the case, links and crown in three dimensions"
+      ],
+      "global_weight": 0.16,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_case",
+      "component": "F",
+      "question": "表壳侧壁是否有连续鼓曲轮廓、明确厚度及向表耳过渡的曲面？",
+      "units": [
+        "case thickness"
+      ],
+      "global_weight": 0.16,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_openings",
+      "component": "F",
+      "question": "链带内环、链节间隙及表耳连接处是否保留可见开口而未被填实？",
+      "units": [
+        "openings"
+      ],
+      "global_weight": 0.15,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_bezel",
+      "component": "F",
+      "question": "表圈是否有高于盘面的环状层级及外缘可见的分段凹凸细节？",
+      "units": [
+        "bezel"
+      ],
+      "global_weight": 0.13,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_dial",
+      "component": "F",
+      "question": "盘面是否保留细长指针、条形时标、大数字时标及矩形日期窗的局部形状？",
+      "units": [
+        "visible dial face and controls"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "d_joints",
+      "component": "F",
+      "question": "表耳与端链是否形成有实体厚度的连接，细小间隙及链节接缝是否清晰？",
+      "units": [
+        "thin structures, connections"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

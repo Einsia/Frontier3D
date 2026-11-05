@@ -1,0 +1,27 @@
+{
+  "id": "attic_hideout",
+  "title": "Attic Hideout",
+  "title_zh": "阁楼工作室",
+  "category": "interior",
+  "provider": "blendswap",
+  "author": "levigibson",
+  "source_page": "https://blendswap.com/blend/26212",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_status": "verified",
+  "download_url": "https://huggingface.co/datasets/sjijs/VPhotoBench/resolve/main/assets/blender/037_attic_hideout/attic-hideout.blend",
+  "mirror": "VPhotoBench scene distribution; original upstream source retained; no VPhotoBench tasks or scoring used",
+  "expected_sha256": "a7aefc59686ce9d147de46a293912cd14c7f0c22626148b664881530b5ce2a3a",
+  "format": "blend",
+  "download_status": "downloaded",
+  "archive": "assets/diverse/attic_hideout/source.blend",
+  "archive_sha256": "a7aefc59686ce9d147de46a293912cd14c7f0c22626148b664881530b5ce2a3a",
+  "bytes": 50999262,
+  "blend_candidates": [
+    "assets/diverse/attic_hideout/source.blend"
+  ],
+  "license_correction_note": "Old URL 25057 points to a different CC-BY scene; matching Attic Hideout title, author preview and 48.6 MB source file is 26212.",
+  "resource_family": "upstream/attic-hideout",
+  "packaged_scene_sha256": "6b4d4b23f03788961f9b8de59e4dabf6df86ce05e7ce9976da293f9f6c3e87a5",
+  "changes": "Author geometry/layout retained; render normalization and documented exclusions of shared resources. SceneEdit additionally removes listed target objects or perturbs existing lighting. No generated replacement assets."
+}

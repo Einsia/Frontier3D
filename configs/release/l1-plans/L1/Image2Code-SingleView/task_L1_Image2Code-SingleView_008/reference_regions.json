@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "7a1867ea8965470fb3620a306c5dbf6966e6fd870eb8fef0f06f6cf59a3e0575",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "matte box",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.07,
+          0.38
+        ],
+        [
+          0.47,
+          0.38
+        ],
+        [
+          0.47,
+          0.87
+        ],
+        [
+          0.07,
+          0.87
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "lens barrel",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.25,
+          0.39
+        ],
+        [
+          0.63,
+          0.39
+        ],
+        [
+          0.63,
+          0.68
+        ],
+        [
+          0.25,
+          0.68
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "camera body and handle",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.51,
+          0.14
+        ],
+        [
+          0.94,
+          0.14
+        ],
+        [
+          0.94,
+          0.7
+        ],
+        [
+          0.51,
+          0.7
+        ]
+      ]
+    }
+  ]
+}

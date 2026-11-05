@@ -1,0 +1,286 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/fc2806f3ea63c4899f84/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/3f6f9625787f745270f7/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/947d08547f6e941bfe5b/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_025/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "包覆式前部镜片与镜框",
+      "weight": 0.5,
+      "polygon": [
+        [
+          0.181,
+          0.367
+        ],
+        [
+          0.216,
+          0.391
+        ],
+        [
+          0.285,
+          0.515
+        ],
+        [
+          0.322,
+          0.544
+        ],
+        [
+          0.477,
+          0.489
+        ],
+        [
+          0.57,
+          0.483
+        ],
+        [
+          0.663,
+          0.52
+        ],
+        [
+          0.682,
+          0.621
+        ],
+        [
+          0.664,
+          0.677
+        ],
+        [
+          0.572,
+          0.725
+        ],
+        [
+          0.449,
+          0.761
+        ],
+        [
+          0.405,
+          0.746
+        ],
+        [
+          0.356,
+          0.659
+        ],
+        [
+          0.319,
+          0.606
+        ],
+        [
+          0.299,
+          0.611
+        ],
+        [
+          0.268,
+          0.685
+        ],
+        [
+          0.243,
+          0.702
+        ],
+        [
+          0.214,
+          0.678
+        ],
+        [
+          0.182,
+          0.606
+        ],
+        [
+          0.171,
+          0.478
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "画面右侧镜腿及连接",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.659,
+          0.519
+        ],
+        [
+          0.841,
+          0.511
+        ],
+        [
+          0.875,
+          0.522
+        ],
+        [
+          0.92,
+          0.574
+        ],
+        [
+          0.912,
+          0.596
+        ],
+        [
+          0.898,
+          0.598
+        ],
+        [
+          0.874,
+          0.572
+        ],
+        [
+          0.863,
+          0.541
+        ],
+        [
+          0.839,
+          0.534
+        ],
+        [
+          0.811,
+          0.544
+        ],
+        [
+          0.751,
+          0.612
+        ],
+        [
+          0.664,
+          0.668
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "后方镜腿",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.209,
+          0.385
+        ],
+        [
+          0.308,
+          0.382
+        ],
+        [
+          0.378,
+          0.373
+        ],
+        [
+          0.409,
+          0.378
+        ],
+        [
+          0.433,
+          0.397
+        ],
+        [
+          0.469,
+          0.438
+        ],
+        [
+          0.456,
+          0.463
+        ],
+        [
+          0.438,
+          0.451
+        ],
+        [
+          0.418,
+          0.431
+        ],
+        [
+          0.412,
+          0.408
+        ],
+        [
+          0.399,
+          0.398
+        ],
+        [
+          0.38,
+          0.399
+        ],
+        [
+          0.348,
+          0.418
+        ],
+        [
+          0.299,
+          0.473
+        ],
+        [
+          0.267,
+          0.495
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n01",
+      "source_quote": "both lenses",
+      "quantity": "镜片数量",
+      "unit": "片",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "检查原生三维几何中的左右镜片构成，统计两个镜片区域；连续外观不要求通过人为可见接缝表达，不能仅按对象数量计数。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights.",
+      "quantity": "最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界空间中汇总静态主体几何，排除相机与灯光，计算整体包围盒三个轴向尺寸的最大值，与1.000 m比较；0.02表示原文2%的相对容差。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

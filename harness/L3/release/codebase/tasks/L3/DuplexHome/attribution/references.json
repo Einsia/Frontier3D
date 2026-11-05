@@ -1,0 +1,129 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "2be1467da7a6d8f039914952bdd781f376489a05eec0966254d634efb5d1fe64",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "blinds",
+        "source": "https://polyhaven.com/a/blinds",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/blinds.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/blinds/view-01.jpg",
+        "sha256": "ec5c9149d2df9603421f506a18712567434d1b730d470a4db6710ec2eeccc865",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 0,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 0,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "8dca0a1bb0342b34b11efe80df9ccc71cfe4e0cbba36d45c30c21ef84b82a575"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-02",
+      "path": "references/reference-02.jpg",
+      "sha256": "607d9cef530ef99c322151492a7b622adc8f2202e3ae7db541fe2b796f3ca17f",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "blinds",
+        "source": "https://polyhaven.com/a/blinds",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/blinds.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/blinds/view-02.jpg",
+        "sha256": "15ca4fdc19a462edce5bec6a9011a6893c4752e09a712e2e7fa7006142dfc4bf",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 90,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 90,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "8dca0a1bb0342b34b11efe80df9ccc71cfe4e0cbba36d45c30c21ef84b82a575"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-03",
+      "path": "references/reference-03.jpg",
+      "sha256": "d588003b8971dfa668689f008ed9b5a24c8c1b5a4e663968f64801e03a5cd47b",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "blinds",
+        "source": "https://polyhaven.com/a/blinds",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/blinds.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/blinds/view-03.jpg",
+        "sha256": "00345494ae9b017b3874c4ff8a1370e026b795609f5ec2f38ba4bf1ac80afb92",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 180,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 180,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "8dca0a1bb0342b34b11efe80df9ccc71cfe4e0cbba36d45c30c21ef84b82a575"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-04",
+      "path": "references/reference-04.jpg",
+      "sha256": "e84a95bf15125f57b335456ac6ab529fce37020602c058f4f8ba59a97b33d195",
+      "width": 1280,
+      "height": 800,
+      "provenance": {
+        "id": "blinds",
+        "source": "https://polyhaven.com/a/blinds",
+        "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/blinds.jpg",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/panoramas/blinds/view-04.jpg",
+        "sha256": "28702d9e2f763e8c382a6b95938323a25603475f83f288c52b1158af218ce258",
+        "license": "CC0-1.0",
+        "license_url": "https://polyhaven.com/license",
+        "method": "photographic_equirectangular_panorama",
+        "yaw_deg": 270,
+        "pitch_deg": -10,
+        "horizontal_fov_deg": 90,
+        "width": 1280,
+        "height": 800,
+        "kind": "photographic_panorama_projection",
+        "projection": {
+          "yaw_deg": 270,
+          "pitch_deg": -10,
+          "horizontal_fov_deg": 90
+        },
+        "panorama_sha256": "8dca0a1bb0342b34b11efe80df9ccc71cfe4e0cbba36d45c30c21ef84b82a575"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

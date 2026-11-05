@@ -1,0 +1,964 @@
+{
+  "blend": {
+    "1k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/horse_head/horse_head_1k.blend",
+        "md5": "e8d7fbeaf0da9e7054d2c4a1c49c25c0",
+        "size": 374316,
+        "include": {
+          "textures/horse_head_diff_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_diff_1k.jpg",
+            "md5": "0dc78f41f6272eecc6cbddb937e1a3c2",
+            "size": 511649
+          },
+          "textures/horse_head_metal_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_metal_1k.exr",
+            "md5": "57c13d6c295d74dd35d08de980dcb9c8",
+            "size": 358023
+          },
+          "textures/horse_head_nor_gl_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_nor_gl_1k.exr",
+            "md5": "b1fe07e23bec34e831e93669fdfc5107",
+            "size": 852117
+          },
+          "textures/horse_head_rough_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_rough_1k.exr",
+            "md5": "426850ee4ca8856fd90da1e1d45ed4d1",
+            "size": 536575
+          }
+        }
+      }
+    },
+    "2k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/2k/horse_head/horse_head_2k.blend",
+        "md5": "808da670a6bdc3363c040e9a05f3c761",
+        "size": 374452,
+        "include": {
+          "textures/horse_head_diff_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_diff_2k.jpg",
+            "md5": "c04db00a476b9f9b7333fe99012fef0d",
+            "size": 1795897
+          },
+          "textures/horse_head_metal_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_metal_2k.exr",
+            "md5": "fd38f5fc7b899094a6156c4ea503c04d",
+            "size": 1151382
+          },
+          "textures/horse_head_nor_gl_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_nor_gl_2k.exr",
+            "md5": "a6e4406866895c0843f7412566ef2762",
+            "size": 2551474
+          },
+          "textures/horse_head_rough_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_rough_2k.exr",
+            "md5": "3335d8a1d7ccfad71436c7df5bbfff0a",
+            "size": 1890798
+          }
+        }
+      }
+    },
+    "4k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/4k/horse_head/horse_head_4k.blend",
+        "md5": "589ff374f755f17a18d2dd08a28faf9c",
+        "size": 374613,
+        "include": {
+          "textures/horse_head_diff_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_diff_4k.jpg",
+            "md5": "fc06cd2d590bda194f8846bd9973af1f",
+            "size": 6509055
+          },
+          "textures/horse_head_metal_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_metal_4k.exr",
+            "md5": "432d20b6baaa2de949d9b943f030df53",
+            "size": 3867054
+          },
+          "textures/horse_head_nor_gl_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_nor_gl_4k.exr",
+            "md5": "d87cf37e6576246e00ae085a4b008327",
+            "size": 8632895
+          },
+          "textures/horse_head_rough_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_rough_4k.exr",
+            "md5": "7df4902409d35b1e79827582c1feb3ec",
+            "size": 6857196
+          }
+        }
+      }
+    },
+    "8k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/8k/horse_head/horse_head_8k.blend",
+        "md5": "629def1153a57b119724d58a7e24214e",
+        "size": 374351,
+        "include": {
+          "textures/horse_head_diff_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_diff_8k.jpg",
+            "md5": "42d425d9b0ef6afd1a531e43992ce2f5",
+            "size": 25687646
+          },
+          "textures/horse_head_metal_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_metal_8k.exr",
+            "md5": "aa4ed6ee0f6ddffc0d244561af4c5a6d",
+            "size": 14243278
+          },
+          "textures/horse_head_nor_gl_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_nor_gl_8k.exr",
+            "md5": "3734a49cbde8d3bdc9054b530e794194",
+            "size": 29264970
+          },
+          "textures/horse_head_rough_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_rough_8k.exr",
+            "md5": "0ba5e0a40fcd12297147c66b493b78ee",
+            "size": 26300453
+          }
+        }
+      }
+    }
+  },
+  "AO": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_ao_1k.exr",
+        "md5": "6e9ee3e188a1bd96e3bcbe64820fa5dc",
+        "size": 302406
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_ao_1k.jpg",
+        "md5": "a031257ca6b454e06e13e1b0b93ba883",
+        "size": 289295
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/horse_head/horse_head_ao_1k.png",
+        "md5": "fbc9f56d94aaa1a117e4c4d2e20aaeac",
+        "size": 1269916
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_ao_2k.exr",
+        "md5": "13aead9080f15b4f3ec359f1ec234c9f",
+        "size": 995193
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_ao_2k.jpg",
+        "md5": "93ca6ff5d55bdd16e3b43c8fa6fad5b1",
+        "size": 1090773
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/horse_head/horse_head_ao_2k.png",
+        "md5": "972e7c3acab8bb5f3fc75900f4c260cf",
+        "size": 4197597
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_ao_4k.exr",
+        "md5": "45c41c9348e31ec9427157e986aa78fa",
+        "size": 4696712
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_ao_4k.jpg",
+        "md5": "eb6477250e758d62b96d57c292272807",
+        "size": 4837295
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/horse_head/horse_head_ao_4k.png",
+        "md5": "0468218eae8039169f04cdae3bba61d3",
+        "size": 12404830
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_ao_8k.exr",
+        "md5": "b02875c476af56cff1ee29be3ff1444e",
+        "size": 22732307
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_ao_8k.jpg",
+        "md5": "446f4f34aa1af60df04e4fabdea596d5",
+        "size": 22677509
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/horse_head/horse_head_ao_8k.png",
+        "md5": "bd5b8874edf4b175a47c18d09640b880",
+        "size": 28948397
+      }
+    }
+  },
+  "arm": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_arm_1k.exr",
+        "md5": "87855a8bda71df33a385da857ae0fe8a",
+        "size": 1229528
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_arm_1k.jpg",
+        "md5": "ef29c3831aa2640ba941d31c5e44f711",
+        "size": 520190
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/horse_head/horse_head_arm_1k.png",
+        "md5": "8391ca2a9e1bd44c3d81ea51390cc4fc",
+        "size": 4328821
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_arm_2k.exr",
+        "md5": "512ef65c3a2dd3ba5cd51024266cf675",
+        "size": 4313363
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_arm_2k.jpg",
+        "md5": "d754d218921f67c92acab2ce7df171dd",
+        "size": 1864250
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/horse_head/horse_head_arm_2k.png",
+        "md5": "a18399d9f92c0d3141e03ed0483e77cc",
+        "size": 14591793
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_arm_4k.exr",
+        "md5": "ddbcf6a1a50b0cf95251a19df6d1940e",
+        "size": 15648922
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_arm_4k.jpg",
+        "md5": "59680e566d79ecce8fd7c267f2ff48d6",
+        "size": 6670969
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/horse_head/horse_head_arm_4k.png",
+        "md5": "6e024a52fdf9ff5964f395faf8a47f6d",
+        "size": 41614621
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_arm_8k.exr",
+        "md5": "d5b897dc35f30d57b9542aca7e9c8dbf",
+        "size": 59854600
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_arm_8k.jpg",
+        "md5": "c6d57ed944ad0a1f3327e501f25d1a24",
+        "size": 24214422
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/horse_head/horse_head_arm_8k.png",
+        "md5": "19c38a7575d7cd13dbf3284f7aa8eb63",
+        "size": 87759209
+      }
+    }
+  },
+  "Diffuse": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_diff_1k.exr",
+        "md5": "1290ec11e67773b0fea3db29bbb6387a",
+        "size": 787585
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_diff_1k.jpg",
+        "md5": "0dc78f41f6272eecc6cbddb937e1a3c2",
+        "size": 511649
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/horse_head/horse_head_diff_1k.png",
+        "md5": "d03e305fc0b26abebe5880543f901dfb",
+        "size": 4622288
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_diff_2k.exr",
+        "md5": "d16e63a842ec8ece24cbeecea43c8929",
+        "size": 2683859
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_diff_2k.jpg",
+        "md5": "c04db00a476b9f9b7333fe99012fef0d",
+        "size": 1795897
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/horse_head/horse_head_diff_2k.png",
+        "md5": "da4026b7d019a6dea1e7bc61806b7169",
+        "size": 17292542
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_diff_4k.exr",
+        "md5": "3735d01c3e6bead704daee5333b876de",
+        "size": 9620323
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_diff_4k.jpg",
+        "md5": "fc06cd2d590bda194f8846bd9973af1f",
+        "size": 6509055
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/horse_head/horse_head_diff_4k.png",
+        "md5": "8f4d2d560679a26a7f472df6c71d09dc",
+        "size": 62169838
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_diff_8k.exr",
+        "md5": "e2ec9865932d2317457053e95d40176e",
+        "size": 40901768
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_diff_8k.jpg",
+        "md5": "42d425d9b0ef6afd1a531e43992ce2f5",
+        "size": 25687646
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/horse_head/horse_head_diff_8k.png",
+        "md5": "1b1ccd1065a5d10e987291893ea68f8b",
+        "size": 186023265
+      }
+    }
+  },
+  "Metal": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_metal_1k.exr",
+        "md5": "57c13d6c295d74dd35d08de980dcb9c8",
+        "size": 358023
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_metal_1k.jpg",
+        "md5": "8d38fee5f36babcdc38523df844327f1",
+        "size": 336380
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/horse_head/horse_head_metal_1k.png",
+        "md5": "42eb6037ef2d47c6a62be1d6a9fc9447",
+        "size": 1282859
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_metal_2k.exr",
+        "md5": "fd38f5fc7b899094a6156c4ea503c04d",
+        "size": 1151382
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_metal_2k.jpg",
+        "md5": "45e32847ad37457b696d65c39cbcd6af",
+        "size": 1133193
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/horse_head/horse_head_metal_2k.png",
+        "md5": "cc954682970defbf756cbab5adc85687",
+        "size": 3949516
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_metal_4k.exr",
+        "md5": "432d20b6baaa2de949d9b943f030df53",
+        "size": 3867054
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_metal_4k.jpg",
+        "md5": "73e99b635bd28b6c432b5bb1e715f1ea",
+        "size": 3907041
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/horse_head/horse_head_metal_4k.png",
+        "md5": "371bf25f29536f38addac8ec4664f69d",
+        "size": 10524695
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_metal_8k.exr",
+        "md5": "aa4ed6ee0f6ddffc0d244561af4c5a6d",
+        "size": 14243278
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_metal_8k.jpg",
+        "md5": "1047a559d264d7b4642885fe3671636d",
+        "size": 14572220
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/horse_head/horse_head_metal_8k.png",
+        "md5": "fc8dd258095ae3d1dffbd3da247aee18",
+        "size": 22201945
+      }
+    }
+  },
+  "nor_dx": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_nor_dx_1k.exr",
+        "md5": "4b375cf29b81ab7c5dc9d2329a5e889b",
+        "size": 850764
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_nor_dx_1k.jpg",
+        "md5": "c46a64e7568f734cfe0417df5c71ee0d",
+        "size": 447247
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/horse_head/horse_head_nor_dx_1k.png",
+        "md5": "08b5809aec9b2cca91d4b3d636500934",
+        "size": 4281435
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_nor_dx_2k.exr",
+        "md5": "0cf7981dbd10a1ace182a5708e85598f",
+        "size": 2542001
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_nor_dx_2k.jpg",
+        "md5": "618b5ab255ebee8a023dae12c3c0a40d",
+        "size": 1400308
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/horse_head/horse_head_nor_dx_2k.png",
+        "md5": "f56e260509e06f9bce0c0976328f21db",
+        "size": 15856233
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_nor_dx_4k.exr",
+        "md5": "fcbdf8b5b1e561df1767bcfd4d04e14d",
+        "size": 8794283
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_nor_dx_4k.jpg",
+        "md5": "e182537d6a80ab00e94b1670c816907c",
+        "size": 4651148
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/horse_head/horse_head_nor_dx_4k.png",
+        "md5": "217413970b67fb99eb0537917011205d",
+        "size": 55724107
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_nor_dx_8k.exr",
+        "md5": "c7c6355f76b74ac8970c57a4edbe1b39",
+        "size": 29559084
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_nor_dx_8k.jpg",
+        "md5": "c5f0c63849837f00132e788e2d354558",
+        "size": 16380864
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/horse_head/horse_head_nor_dx_8k.png",
+        "md5": "413572c8e3ea79be7302a2282435710d",
+        "size": 172035622
+      }
+    }
+  },
+  "nor_gl": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_nor_gl_1k.exr",
+        "md5": "b1fe07e23bec34e831e93669fdfc5107",
+        "size": 852117
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_nor_gl_1k.jpg",
+        "md5": "6ae8e9adab4865c46047a44a8287d902",
+        "size": 437446
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/horse_head/horse_head_nor_gl_1k.png",
+        "md5": "44f86af88db8dee5a10f198ad1cfce2f",
+        "size": 4281944
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_nor_gl_2k.exr",
+        "md5": "a6e4406866895c0843f7412566ef2762",
+        "size": 2551474
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_nor_gl_2k.jpg",
+        "md5": "b30c00d97d46030bfd6cd83f4b777c12",
+        "size": 1413531
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/horse_head/horse_head_nor_gl_2k.png",
+        "md5": "27230b75886f886361bc1100a79354ee",
+        "size": 15859519
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_nor_gl_4k.exr",
+        "md5": "d87cf37e6576246e00ae085a4b008327",
+        "size": 8632895
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_nor_gl_4k.jpg",
+        "md5": "68c00348a547b31a81bb6798ea2fa5fe",
+        "size": 5057947
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/horse_head/horse_head_nor_gl_4k.png",
+        "md5": "5c56bd24938481077681fcb2e43f9251",
+        "size": 55740462
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_nor_gl_8k.exr",
+        "md5": "3734a49cbde8d3bdc9054b530e794194",
+        "size": 29264970
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_nor_gl_8k.jpg",
+        "md5": "a60829601e19a5ad66c981d7856e7971",
+        "size": 16672573
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/horse_head/horse_head_nor_gl_8k.png",
+        "md5": "5a3dbc553324798e53a798e96b1de2f9",
+        "size": 172143873
+      }
+    }
+  },
+  "Rough": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_rough_1k.exr",
+        "md5": "426850ee4ca8856fd90da1e1d45ed4d1",
+        "size": 536575
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_rough_1k.jpg",
+        "md5": "ab0f0df136134caf215aa85aad7e48b4",
+        "size": 443603
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/horse_head/horse_head_rough_1k.png",
+        "md5": "8ee64b8c944c63f14257d34db87680b9",
+        "size": 1565947
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_rough_2k.exr",
+        "md5": "3335d8a1d7ccfad71436c7df5bbfff0a",
+        "size": 1890798
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_rough_2k.jpg",
+        "md5": "3f3e337620ddbca12a9009bf94ecfca7",
+        "size": 1625731
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/horse_head/horse_head_rough_2k.png",
+        "md5": "079975bd08e93c0183e031c2a62ec281",
+        "size": 5556537
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_rough_4k.exr",
+        "md5": "7df4902409d35b1e79827582c1feb3ec",
+        "size": 6857196
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_rough_4k.jpg",
+        "md5": "175127e8bc577257b6318aa1f8f3186f",
+        "size": 6001339
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/4k/horse_head/horse_head_rough_4k.png",
+        "md5": "25f8c8099d9f9564b35faae64790a317",
+        "size": 15915003
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_rough_8k.exr",
+        "md5": "0ba5e0a40fcd12297147c66b493b78ee",
+        "size": 26300453
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_rough_8k.jpg",
+        "md5": "53934e13560b55ee86e05a5161bafe60",
+        "size": 22850566
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/8k/horse_head/horse_head_rough_8k.png",
+        "md5": "ed0dad8ae2599632738eccb5f9132c6b",
+        "size": 29350402
+      }
+    }
+  },
+  "fbx": {
+    "1k": {
+      "fbx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/horse_head/horse_head_1k.fbx",
+        "md5": "4a6e89e318e599b671cfe2cf1565858f",
+        "size": 367868,
+        "include": {
+          "textures/horse_head_diff_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_diff_1k.jpg",
+            "md5": "0dc78f41f6272eecc6cbddb937e1a3c2",
+            "size": 511649
+          },
+          "textures/horse_head_metal_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_metal_1k.exr",
+            "md5": "57c13d6c295d74dd35d08de980dcb9c8",
+            "size": 358023
+          },
+          "textures/horse_head_nor_gl_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_nor_gl_1k.exr",
+            "md5": "b1fe07e23bec34e831e93669fdfc5107",
+            "size": 852117
+          },
+          "textures/horse_head_rough_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_rough_1k.exr",
+            "md5": "426850ee4ca8856fd90da1e1d45ed4d1",
+            "size": 536575
+          }
+        }
+      }
+    },
+    "2k": {
+      "fbx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/2k/horse_head/horse_head_2k.fbx",
+        "md5": "bc0e89b051f1d86624dc43f784f51ee6",
+        "size": 367868,
+        "include": {
+          "textures/horse_head_diff_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_diff_2k.jpg",
+            "md5": "c04db00a476b9f9b7333fe99012fef0d",
+            "size": 1795897
+          },
+          "textures/horse_head_metal_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_metal_2k.exr",
+            "md5": "fd38f5fc7b899094a6156c4ea503c04d",
+            "size": 1151382
+          },
+          "textures/horse_head_nor_gl_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_nor_gl_2k.exr",
+            "md5": "a6e4406866895c0843f7412566ef2762",
+            "size": 2551474
+          },
+          "textures/horse_head_rough_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_rough_2k.exr",
+            "md5": "3335d8a1d7ccfad71436c7df5bbfff0a",
+            "size": 1890798
+          }
+        }
+      }
+    },
+    "4k": {
+      "fbx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/4k/horse_head/horse_head_4k.fbx",
+        "md5": "db25264200b99ad8677ff9fd1eebedd1",
+        "size": 367868,
+        "include": {
+          "textures/horse_head_diff_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_diff_4k.jpg",
+            "md5": "fc06cd2d590bda194f8846bd9973af1f",
+            "size": 6509055
+          },
+          "textures/horse_head_metal_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_metal_4k.exr",
+            "md5": "432d20b6baaa2de949d9b943f030df53",
+            "size": 3867054
+          },
+          "textures/horse_head_nor_gl_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_nor_gl_4k.exr",
+            "md5": "d87cf37e6576246e00ae085a4b008327",
+            "size": 8632895
+          },
+          "textures/horse_head_rough_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_rough_4k.exr",
+            "md5": "7df4902409d35b1e79827582c1feb3ec",
+            "size": 6857196
+          }
+        }
+      }
+    },
+    "8k": {
+      "fbx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/8k/horse_head/horse_head_8k.fbx",
+        "md5": "b0e4343f6d58a9eb6f74200ada108038",
+        "size": 367868,
+        "include": {
+          "textures/horse_head_diff_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_diff_8k.jpg",
+            "md5": "42d425d9b0ef6afd1a531e43992ce2f5",
+            "size": 25687646
+          },
+          "textures/horse_head_metal_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_metal_8k.exr",
+            "md5": "aa4ed6ee0f6ddffc0d244561af4c5a6d",
+            "size": 14243278
+          },
+          "textures/horse_head_nor_gl_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_nor_gl_8k.exr",
+            "md5": "3734a49cbde8d3bdc9054b530e794194",
+            "size": 29264970
+          },
+          "textures/horse_head_rough_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_rough_8k.exr",
+            "md5": "0ba5e0a40fcd12297147c66b493b78ee",
+            "size": 26300453
+          }
+        }
+      }
+    }
+  },
+  "gltf": {
+    "1k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/horse_head/horse_head_1k.gltf",
+        "md5": "a7449aef8ccad7c8e270250985f73b72",
+        "size": 2755,
+        "include": {
+          "textures/horse_head_nor_gl_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_nor_gl_1k.jpg",
+            "md5": "6ae8e9adab4865c46047a44a8287d902",
+            "size": 437446
+          },
+          "textures/horse_head_diff_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_diff_1k.jpg",
+            "md5": "0dc78f41f6272eecc6cbddb937e1a3c2",
+            "size": 511649
+          },
+          "textures/horse_head_arm_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_arm_1k.jpg",
+            "md5": "ef29c3831aa2640ba941d31c5e44f711",
+            "size": 520190
+          },
+          "horse_head.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/horse_head/horse_head.bin",
+            "md5": "77d4dfede2ae9275084d5161dabb2cd9",
+            "size": 293272
+          }
+        }
+      }
+    },
+    "2k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/horse_head/horse_head_2k.gltf",
+        "md5": "2791e4dbda0f624b7fd583bb08466a9c",
+        "size": 2755,
+        "include": {
+          "textures/horse_head_nor_gl_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_nor_gl_2k.jpg",
+            "md5": "b30c00d97d46030bfd6cd83f4b777c12",
+            "size": 1413531
+          },
+          "textures/horse_head_diff_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_diff_2k.jpg",
+            "md5": "c04db00a476b9f9b7333fe99012fef0d",
+            "size": 1795897
+          },
+          "textures/horse_head_arm_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_arm_2k.jpg",
+            "md5": "d754d218921f67c92acab2ce7df171dd",
+            "size": 1864250
+          },
+          "horse_head.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/horse_head/horse_head.bin",
+            "md5": "77d4dfede2ae9275084d5161dabb2cd9",
+            "size": 293272
+          }
+        }
+      }
+    },
+    "4k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/horse_head/horse_head_4k.gltf",
+        "md5": "7d9bfcb1c335eaf53b36cc2d46918ee0",
+        "size": 2755,
+        "include": {
+          "textures/horse_head_nor_gl_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_nor_gl_4k.jpg",
+            "md5": "68c00348a547b31a81bb6798ea2fa5fe",
+            "size": 5057947
+          },
+          "textures/horse_head_diff_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_diff_4k.jpg",
+            "md5": "fc06cd2d590bda194f8846bd9973af1f",
+            "size": 6509055
+          },
+          "textures/horse_head_arm_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_arm_4k.jpg",
+            "md5": "59680e566d79ecce8fd7c267f2ff48d6",
+            "size": 6670969
+          },
+          "horse_head.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/horse_head/horse_head.bin",
+            "md5": "77d4dfede2ae9275084d5161dabb2cd9",
+            "size": 293272
+          }
+        }
+      }
+    },
+    "8k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/horse_head/horse_head_8k.gltf",
+        "md5": "bbf9657c35a3d3f1171071c35f155e99",
+        "size": 2755,
+        "include": {
+          "textures/horse_head_nor_gl_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_nor_gl_8k.jpg",
+            "md5": "a60829601e19a5ad66c981d7856e7971",
+            "size": 16672573
+          },
+          "textures/horse_head_diff_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_diff_8k.jpg",
+            "md5": "42d425d9b0ef6afd1a531e43992ce2f5",
+            "size": 25687646
+          },
+          "textures/horse_head_arm_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_arm_8k.jpg",
+            "md5": "c6d57ed944ad0a1f3327e501f25d1a24",
+            "size": 24214422
+          },
+          "horse_head.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/horse_head/horse_head.bin",
+            "md5": "77d4dfede2ae9275084d5161dabb2cd9",
+            "size": 293272
+          }
+        }
+      }
+    }
+  },
+  "usd": {
+    "1k": {
+      "usd": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/1k/horse_head/horse_head_1k.usdc",
+        "md5": "e411c1992983932de86ecdd694277858",
+        "size": 603131,
+        "include": {
+          "textures/horse_head_diff_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_diff_1k.jpg",
+            "md5": "0dc78f41f6272eecc6cbddb937e1a3c2",
+            "size": 511649
+          },
+          "textures/horse_head_metal_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_metal_1k.exr",
+            "md5": "57c13d6c295d74dd35d08de980dcb9c8",
+            "size": 358023
+          },
+          "textures/horse_head_nor_gl_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_nor_gl_1k.exr",
+            "md5": "b1fe07e23bec34e831e93669fdfc5107",
+            "size": 852117
+          },
+          "textures/horse_head_rough_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_rough_1k.exr",
+            "md5": "426850ee4ca8856fd90da1e1d45ed4d1",
+            "size": 536575
+          }
+        }
+      }
+    },
+    "2k": {
+      "usd": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/2k/horse_head/horse_head_2k.usdc",
+        "md5": "d23822b83d3b37f886f3e2830f29da1f",
+        "size": 603143,
+        "include": {
+          "textures/horse_head_diff_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/horse_head/horse_head_diff_2k.jpg",
+            "md5": "c04db00a476b9f9b7333fe99012fef0d",
+            "size": 1795897
+          },
+          "textures/horse_head_metal_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_metal_2k.exr",
+            "md5": "fd38f5fc7b899094a6156c4ea503c04d",
+            "size": 1151382
+          },
+          "textures/horse_head_nor_gl_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_nor_gl_2k.exr",
+            "md5": "a6e4406866895c0843f7412566ef2762",
+            "size": 2551474
+          },
+          "textures/horse_head_rough_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/2k/horse_head/horse_head_rough_2k.exr",
+            "md5": "3335d8a1d7ccfad71436c7df5bbfff0a",
+            "size": 1890798
+          }
+        }
+      }
+    },
+    "4k": {
+      "usd": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/4k/horse_head/horse_head_4k.usdc",
+        "md5": "230a51fb225495f7ef5797e42e892ae5",
+        "size": 603131,
+        "include": {
+          "textures/horse_head_diff_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/4k/horse_head/horse_head_diff_4k.jpg",
+            "md5": "fc06cd2d590bda194f8846bd9973af1f",
+            "size": 6509055
+          },
+          "textures/horse_head_metal_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_metal_4k.exr",
+            "md5": "432d20b6baaa2de949d9b943f030df53",
+            "size": 3867054
+          },
+          "textures/horse_head_nor_gl_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_nor_gl_4k.exr",
+            "md5": "d87cf37e6576246e00ae085a4b008327",
+            "size": 8632895
+          },
+          "textures/horse_head_rough_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/4k/horse_head/horse_head_rough_4k.exr",
+            "md5": "7df4902409d35b1e79827582c1feb3ec",
+            "size": 6857196
+          }
+        }
+      }
+    },
+    "8k": {
+      "usd": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/8k/horse_head/horse_head_8k.usdc",
+        "md5": "d8436f5a7068fcad96f8d1cf3c86669d",
+        "size": 603131,
+        "include": {
+          "textures/horse_head_diff_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/8k/horse_head/horse_head_diff_8k.jpg",
+            "md5": "42d425d9b0ef6afd1a531e43992ce2f5",
+            "size": 25687646
+          },
+          "textures/horse_head_metal_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_metal_8k.exr",
+            "md5": "aa4ed6ee0f6ddffc0d244561af4c5a6d",
+            "size": 14243278
+          },
+          "textures/horse_head_nor_gl_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_nor_gl_8k.exr",
+            "md5": "3734a49cbde8d3bdc9054b530e794194",
+            "size": 29264970
+          },
+          "textures/horse_head_rough_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/8k/horse_head/horse_head_rough_8k.exr",
+            "md5": "0ba5e0a40fcd12297147c66b493b78ee",
+            "size": 26300453
+          }
+        }
+      }
+    }
+  }
+}

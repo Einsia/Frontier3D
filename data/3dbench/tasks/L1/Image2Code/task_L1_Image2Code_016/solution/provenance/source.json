@@ -1,0 +1,19 @@
+{
+  "uid": "3330b99f8c45438ca658b8ae6f352335",
+  "name": "Madame’s Tea Tray - salon de l’Echo",
+  "source_url": "https://sketchfab.com/3d-models/madames-tea-tray-salon-de-lecho-3330b99f8c45438ca658b8ae6f352335",
+  "author": {
+    "displayName": "Wataha Blanche",
+    "profileUrl": "https://sketchfab.com/Wataha_Blanche"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "886aca9f5f4c6e9df062a81ae739b0b67a7fcc75d6ed07c65469ad22c84c9709",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}

@@ -1,0 +1,5 @@
+液压理发椅
+Fernando Quinn
+https://polyhaven.com/a/BarberShopChair_01
+CC0-1.0
+Changes: static display normalization, original studio lighting and cameras. Source meshes may combine multiple physical components; reconstruction must preserve editable semantic parts.

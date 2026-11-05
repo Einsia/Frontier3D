@@ -1,0 +1,206 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_001",
+  "category": "Image2Code-SingleView",
+  "title": "Nike Pegasus 36 运动鞋",
+  "profile": "l1-reference-l2aligned-v1.0.0",
+  "l2_baseline": "l2-reference-localized-vlm-v7.1.0",
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "physics": 0.1,
+    "vlm": 0.2
+  },
+  "spec_sha256": "017fa6c6fc39bcdeb95cd69168790b77758533317cd5416a8a221f2b0b805098",
+  "sources": {
+    "instruction.md": "033b79cf04b9e711d2dd4c0b006624c323c00086e281b54d5af66388c2557a5a",
+    "solution/EVALUATION.md": "d1e978081a3f844ecbf28dd7cfd7aa367c60a4a8dd1e1a7b6358a688b10d4058",
+    "harness/eval_spec.json": "0d865720bc37f05700896ecc53faeef634c94fa2abfb6777ab53e825d95584da",
+    "harness/evaluation_design.json": "d9669cc3a6c6f55127a72c699792cfc4c49cc012e3068f9d4ab129f1f46517dd",
+    "environment/input/reference.png": "5450cb16d71a02ff3468f90ebaad3d0e10ccc9f2ef9249dbf128830489cef8e2"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "automatic_checks": [],
+  "reference_primary": "environment/input/reference.png",
+  "render_views": [
+    {
+      "id": "primary",
+      "location": [
+        1.0,
+        -1.0,
+        1.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ortho_scale": 1.6,
+      "resolution": 128,
+      "frame": 1,
+      "beauty": true,
+      "beauty_resolution": [
+        1000,
+        1000
+      ],
+      "camera_source": "saved"
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "public_clause_01",
+      "text": "Use only input/reference.png to reconstruct a complete three-dimensional object. Match visible surfaces; complete unseen surfaces plausibly without inventing internal machinery. No additional view or initial mesh is supplied.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_02",
+      "text": "Reconstruct the running shoe: the curved textile upper, open collar and padded heel, tongue, laces through their eyelets, layered midsole and outsole, and the main side-panel shapes. Preserve the toe taper, sole thickness changes and the real gaps beneath crossing laces. Match the grey knit, dark accents and sole materials. Tiny knit stitches, exact brand lettering and tread hidden from the supplied view are not exact targets.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_03",
+      "text": "Use real editable three-dimensional geometry. Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions. Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous. Exact source topology, vertex count and object names are not required. Image planes or camera-facing shells are not substitutes for full geometry.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_04",
+      "text": "Use metres, Z up, and a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights. This is a task scale convention, not a real-world measurement. Infer other proportions from the images.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_05",
+      "text": "Save the final static pose at frame 1 and export the same pose to scene.glb. Animation, exploded views and simulation are not required.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "native_state_materials"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+    },
+    {
+      "id": "public_clause_06",
+      "text": "Render main.png at 1000 x 1000 pixels from a camera matching input/reference.png, using neutral studio lighting, Cycles, AgX and exposure 0. Retain the camera and lighting in scene.blend.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "saved_camera",
+        "saved_resolution",
+        "main_render_consistency"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "delivery",
+      "text": "Required native/GLB/image/source/README outputs and clean rebuild",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "main_loadable",
+        "main_dimensions",
+        "main_format",
+        "readme",
+        "reproducible"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "procedural_materials",
+      "text": "Existing pilot: no bitmap inputs; pure colour and procedural nodes allowed",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "seed_quality",
+      "text": "Baseline and seed 0/1/2 independently inspected; minimum native image score",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": "5ab2b93f2f4cf35ffda26cc980f93b33c0f5481b61d8373f9ff949ec21ae7ee4",
+  "reference_boxes": "12f51054a27c19232116417404736869b3f8af1c30b200516e1ad9019d3bb761",
+  "vlm_spec_digest": "88053d36ab50a77eef6bdc93a2ee09d67edcfb264caaa8418fc2f6337da43716",
+  "formal_score_eligible": false,
+  "reference_views": [
+    "environment/input/reference.png"
+  ],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": true,
+  "calibration_exposure": "reported Luna failure previously viewed; reference-derived criteria, no score target"
+}

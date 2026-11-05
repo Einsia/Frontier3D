@@ -1,0 +1,168 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-e06",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "raw_tank",
+    "treatment_line_a",
+    "treatment_line_b",
+    "clean_tank",
+    "pump_house",
+    "control_room",
+    "parts_store",
+    "inspection_platform"
+  ],
+  "initial_state": "Pump running; both lines connected, filters fitted and housings latched. Replace line A filter while preserving line B settings.",
+  "entities": [
+    {
+      "id": "pump.power",
+      "role": "switch",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "on",
+      "argument": ""
+    },
+    {
+      "id": "line.a.inlet",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "open",
+      "argument": ""
+    },
+    {
+      "id": "line.a.outlet",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "open",
+      "argument": ""
+    },
+    {
+      "id": "line.b.inlet",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "open",
+      "argument": ""
+    },
+    {
+      "id": "line.b.outlet",
+      "role": "valve",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "open",
+      "argument": ""
+    },
+    {
+      "id": "housing.a",
+      "role": "housing",
+      "actions": [
+        "open",
+        "close",
+        "latch",
+        "unlatch"
+      ],
+      "initial": "closed; latched; filter installed",
+      "argument": ""
+    },
+    {
+      "id": "housing.b",
+      "role": "housing",
+      "actions": [
+        "open",
+        "close",
+        "latch",
+        "unlatch"
+      ],
+      "initial": "closed; latched; filter installed",
+      "argument": ""
+    },
+    {
+      "id": "filter.a",
+      "role": "filter",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "remove",
+        "install"
+      ],
+      "initial": "installed in line A",
+      "argument": ""
+    },
+    {
+      "id": "filter.b",
+      "role": "filter",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "remove",
+        "install"
+      ],
+      "initial": "installed in line B",
+      "argument": ""
+    },
+    {
+      "id": "filter.spare",
+      "role": "filter",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out",
+        "install"
+      ],
+      "initial": "parts store",
+      "argument": ""
+    },
+    {
+      "id": "cart.service",
+      "role": "cart",
+      "actions": [
+        "engage",
+        "release"
+      ],
+      "initial": "empty; parts store",
+      "argument": ""
+    },
+    {
+      "id": "return.bin",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "parts store; empty",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

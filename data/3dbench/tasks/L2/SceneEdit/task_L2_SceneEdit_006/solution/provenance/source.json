@@ -1,0 +1,15 @@
+{
+  "id": "frosty-cyberpunk",
+  "source_page": "https://rbduck.itch.io/cold-cyberpunk-asset-pack",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "author": "rubberduck",
+  "archive": "assets\\cc0-replacements-20260921\\frosty-cyberpunk\\FrostyCybrpack_DemoScenes.zip",
+  "archive_sha256": "9975feb50e2b0d412ce8435d385828d967d29edd597efb9f8ced0af7c8f1e7f7",
+  "upstream_filename": "FrostyCybrpack_DemoScenes.zip",
+  "upload_id": "15252743",
+  "asset_origin": "Downloaded author scene; no generative synthesis",
+  "resource_family": "upstream/frosty-cyberpunk",
+  "packaged_scene_sha256": "121ad68c727fc193449ef8500a44c8a08802fee4dbfe3b75e41e726005154bdb",
+  "changes": "Author geometry/layout retained; render normalization and documented exclusions of shared resources. SceneEdit additionally removes listed target objects or perturbs existing lighting. No generated replacement assets."
+}

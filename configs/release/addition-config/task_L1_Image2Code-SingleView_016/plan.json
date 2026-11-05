@@ -1,0 +1,238 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/08b0de2213ca7f68bbe8/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/ee373ee0f1986c3efb72/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/d6aa60a1e38695833bae/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_016/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "上部大血管群",
+      "polygon": [
+        [
+          0.315,
+          0.16
+        ],
+        [
+          0.537,
+          0.16
+        ],
+        [
+          0.55,
+          0.328
+        ],
+        [
+          0.665,
+          0.343
+        ],
+        [
+          0.66,
+          0.46
+        ],
+        [
+          0.592,
+          0.518
+        ],
+        [
+          0.443,
+          0.522
+        ],
+        [
+          0.303,
+          0.46
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R02",
+      "label": "左侧宽大心耳",
+      "polygon": [
+        [
+          0.292,
+          0.445
+        ],
+        [
+          0.373,
+          0.435
+        ],
+        [
+          0.478,
+          0.485
+        ],
+        [
+          0.481,
+          0.539
+        ],
+        [
+          0.417,
+          0.602
+        ],
+        [
+          0.327,
+          0.651
+        ],
+        [
+          0.283,
+          0.612
+        ],
+        [
+          0.273,
+          0.533
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R03",
+      "label": "右侧狭长心耳",
+      "polygon": [
+        [
+          0.593,
+          0.393
+        ],
+        [
+          0.631,
+          0.414
+        ],
+        [
+          0.648,
+          0.478
+        ],
+        [
+          0.661,
+          0.527
+        ],
+        [
+          0.645,
+          0.544
+        ],
+        [
+          0.608,
+          0.537
+        ],
+        [
+          0.583,
+          0.501
+        ],
+        [
+          0.583,
+          0.443
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R04",
+      "label": "心室及表面冠状血管",
+      "polygon": [
+        [
+          0.447,
+          0.52
+        ],
+        [
+          0.585,
+          0.518
+        ],
+        [
+          0.642,
+          0.544
+        ],
+        [
+          0.691,
+          0.645
+        ],
+        [
+          0.685,
+          0.731
+        ],
+        [
+          0.65,
+          0.804
+        ],
+        [
+          0.604,
+          0.834
+        ],
+        [
+          0.52,
+          0.821
+        ],
+        [
+          0.423,
+          0.783
+        ],
+        [
+          0.364,
+          0.727
+        ],
+        [
+          0.338,
+          0.645
+        ],
+        [
+          0.414,
+          0.596
+        ]
+      ],
+      "weight": 0.4
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": 2,
+      "id": "N01",
+      "measurement_definition": "在静态姿态下，将全部重建对象的实际几何变换到以米为单位的世界坐标，排除相机与灯光，求联合轴对齐包围盒的X、Y、Z跨度并取最大值。与标称1.000 m比较；explicit_tolerance中的2表示原文2%的相对容差，非2 m。此项为待执行测量。",
+      "quantity": "对象整体最大跨度",
+      "relation": "equal",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "target": 1,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

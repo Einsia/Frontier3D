@@ -1,0 +1,145 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/SceneEdit/task_L2_SceneEdit_002",
+  "family": "SceneEdit",
+  "instruction_sha256": "99d46c2a7e6666f634a6b2b221dee88a8c55b478a23ae6a480dca09b8f57c712",
+  "reference_policy": "reference/before.png = native input before editing; reference/target.png = native target; reference/reference-0.* = public target/context. Compare all against candidate. No whole-image pixel-equality requirement.",
+  "focus": "Restore the long tilted telescope tube at the right attic location; Include wider front rim and identifiable eyepiece end; Connect the tube to its pivot/mount with coherent support; Provide a slender tripod assembly contacting the floor; Maintain the reference narrow dark silhouette and relation to nearby furniture; do not invent exact hidden support details. Read the original edit scope. Existing background defects are not new edit defects. Exact dimensions and light controls remain automatic.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "edit_feature_1",
+      "dimension": "edit_fulfilment",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Restore the long tilted telescope tube at the right attic location. Unchanged missing/wrong target content earns zero for this feature.",
+      "units": [
+        "edit_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_feature_2",
+      "dimension": "edit_fulfilment",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Include wider front rim and identifiable eyepiece end. Unchanged missing/wrong target content earns zero for this feature.",
+      "units": [
+        "edit_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_feature_3",
+      "dimension": "edit_fulfilment",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Connect the tube to its pivot/mount with coherent support. Unchanged missing/wrong target content earns zero for this feature.",
+      "units": [
+        "edit_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_feature_4",
+      "dimension": "edit_fulfilment",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Provide a slender tripod assembly contacting the floor. Unchanged missing/wrong target content earns zero for this feature.",
+      "units": [
+        "edit_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edit_feature_5",
+      "dimension": "edit_fulfilment",
+      "weight": 0.1,
+      "question": "Explicit BEFORE -> CANDIDATE versus TARGET/public requested delta: Maintain the reference narrow dark silhouette and relation to nearby furniture; do not invent exact hidden support details. Unchanged missing/wrong target content earns zero for this feature.",
+      "units": [
+        "edit_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "edited_part_appearance",
+      "dimension": "target_similarity",
+      "weight": 0.2,
+      "question": "Compare the requested edited part/effect with the native target and public image: identifying shape, local materials/lighting and fit. Background similarity cannot substitute for a missing edit.",
+      "units": [
+        "edited_part_appearance"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "target_similarity",
+      "weight": 0.1,
+      "question": "Compare BOTH authored candidate views for consistent meaningful 3D structure, thickness and attachments of the required subjects. Compare ALL supplied original reference views where present. Do not infer an unseen original backside or count a reflection as another object. For lighting edits compare the requested scene-wide lighting correction, not pre-existing object quality.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "unrelated_preservation",
+      "dimension": "preservation",
+      "weight": 0.2,
+      "question": "Compare BEFORE, TARGET and CANDIDATE outside the permitted edit: preserve pre-existing objects, layout and appearance. Allow induced shadows/reflections and explicit lighting changes; do not reward unchanged missing target geometry here as edit completion.",
+      "units": [
+        "unrelated_preservation"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "reference/before.png",
+        "reference/target.png"
+      ]
+    }
+  ],
+  "localization": null,
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

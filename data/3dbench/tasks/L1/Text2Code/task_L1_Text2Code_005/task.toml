@@ -1,0 +1,24 @@
+# Task metadata only; all model requirements are in instruction.md.
+version = 1
+id = "L1/Text2Code/task_L1_Text2Code_005"
+level = 1
+category = "Text2Code"
+title = "滑轮叉架总成"
+difficulty = "medium"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "mvp"
+resource_family = "original/pulley_axle"
+reference_kind = "exact_procedural_geometry"
+environment_files = []
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/scene.glb", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L1/Text2Code/task_L1_Text2Code_005"
+release_id = "3DBench-005"

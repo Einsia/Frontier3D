@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_003",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "b39da4dbe6857507ede1dbb3af7fca98b50ab6740276bdb3b4dfd56d02757118",
+  "annotation_origin": "AI visual reference draft; not human ground truth",
+  "regions": [
+    {
+      "id": "part_1",
+      "label": "durian body",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.25,
+          0.28
+        ],
+        [
+          0.73,
+          0.28
+        ],
+        [
+          0.73,
+          0.79
+        ],
+        [
+          0.25,
+          0.79
+        ]
+      ]
+    },
+    {
+      "id": "part_2",
+      "label": "durian stem",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.47,
+          0.21
+        ],
+        [
+          0.56,
+          0.21
+        ],
+        [
+          0.56,
+          0.35
+        ],
+        [
+          0.47,
+          0.35
+        ]
+      ]
+    },
+    {
+      "id": "part_3",
+      "label": "spiky rind",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.27,
+          0.35
+        ],
+        [
+          0.7,
+          0.35
+        ],
+        [
+          0.7,
+          0.73
+        ],
+        [
+          0.27,
+          0.73
+        ]
+      ]
+    }
+  ]
+}

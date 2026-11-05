@@ -1,0 +1,20 @@
+# Task metadata only; all model requirements are in instruction.md.
+version = 1
+id = "L3/PlayableGame/task_L3_PlayableGame_003"
+level = 3
+category = "PlayableGame"
+title = "轨道工程沙盒"
+difficulty = "hard"
+status = "design_ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "not_implemented"
+resource_family = "self-authored-game-design"
+reference_kind = "none"
+environment_files = ["input/reference.png", "input/PROJECT_LAYOUT.md"]
+submission_root = "output"
+submission_files = ["output/ue5_project/3DBenchGame.uproject", "output/README.md"]
+entrypoint = "output/ue5_project/3DBenchGame.uproject"

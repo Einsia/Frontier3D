@@ -1,0 +1,283 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_006",
+  "spec_sha256": "d9974542700a5ce53f9f93aeb5af87f608eb40e8ba61637160ceca3592d04b0f",
+  "instruction_sha256": "a90971cd4d1573769fb11b28c536c985662080e8eb33ddee014b4b6903a2bb30",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Design a cheerful static mini-golf park with three parallel lanes on a roughly 25 by 26 metre rectangular site.",
+      "source_quote": "Design a cheerful static mini-golf park with three parallel lanes on a roughly 25 by 26 metre rectangular site.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Each lane should be about 4 m wide and 20 m long, with a marked starting area, continuous green playing surface, low raised side rails and a rounded far end containing a real recessed cup and flag.",
+      "source_quote": "Each lane should be about 4 m wide and 20 m long, with a marked starting area, continuous green playing surface, low raised side rails and a rounded far end containing a real recessed cup and flag.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Keep the playing surface continuous all the way to the cup, without disconnected endpoint tiles or gaps that a ball would fall through.",
+      "source_quote": "Keep the playing surface continuous all the way to the cup, without disconnected endpoint tiles or gaps that a ball would fall through.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane, each with an opening through which a ball of diameter 0.1 m can pass.",
+      "source_quote": "Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane, each with an opening through which a ball of diameter 0.1 m can pass.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Add one low diamond-shaped obstacle near the far end of every lane, with room to pass it on at least one side.",
+      "source_quote": "Add one low diamond-shaped obstacle near the far end of every lane, with room to pass it on at least one side.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Place one ball at each start.",
+      "source_quote": "Place one ball at each start.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes.",
+      "source_quote": "Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "content_08",
+      "text": "Use green turf, warm terracotta rails, cream obstacle walls and soft sunny lighting.",
+      "source_quote": "Use green turf, warm terracotta rails, cream obstacle walls and soft sunny lighting.",
+      "implementation": "manual",
+      "checks": [
+        "content_08"
+      ]
+    },
+    {
+      "id": "content_09",
+      "text": "Choose an elevated oblique camera showing all three courses and their cups.",
+      "source_quote": "Choose an elevated oblique camera showing all three courses and their cups.",
+      "implementation": "manual",
+      "checks": [
+        "content_09"
+      ]
+    },
+    {
+      "id": "content_10",
+      "text": "This task produces a scene only; moving windmill blades, scoring and ball physics are not required.",
+      "source_quote": "This task produces a scene only; moving windmill blades, scoring and ball physics are not required.",
+      "implementation": "manual",
+      "checks": [
+        "content_10"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Design a cheerful static mini-golf park with three parallel lanes on a roughly 25 by 26 metre rectangular site. Each lane should be about 4 m wide and 20 m long, with a marked starting area, continuous green playing surface, low raised side rails and a rounded far end containing a real recessed cup and flag. Keep the playing surface continuous all the way to the cup, without disconnected endpoint tiles or gaps that a ball would fall through. Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane, each with an opening through which a ball of diameter 0.1 m can pass. Add one low diamond-shaped obstacle near the far end of every lane, with room to pass it on at least one side. Place one ball at each start. Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes. Use green turf, warm terracotta rails, cream obstacle walls and soft sunny lighting. Choose an elevated oblique camera showing all three courses and their cups. This task produces a scene only; moving windmill blades, scoring and ball physics are not required.\n\nNo reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "explicit_layout_dimensions",
+      "text": "Design a cheerful static mini-golf park with three parallel lanes on a roughly 25 by 26 metre rectangular site. Each lane should be about 4 m wide and 20 m long, with a marked starting area, continuous green playing surface, low raised side rails and a rounded far end containing a real recessed cup and flag. Keep the playing surface continuous all the way to the cup, without disconnected endpoint tiles or gaps that a ball would fall through. Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane, each with an opening through which a ball of diameter 0.1 m can pass. Add one low diamond-shaped obstacle near the far end of every lane, with room to pass it on at least one side. Place one ball at each start. Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes. Use green turf, warm terracotta rails, cream obstacle walls and soft sunny lighting. Choose an elevated oblique camera showing all three courses and their cups. This task produces a scene only; moving windmill blades, scoring and ball physics are not required.",
+      "source_quote": "Design a cheerful static mini-golf park with three parallel lanes on a roughly 25 by 26 metre rectangular site. Each lane should be about 4 m wide and 20 m long, with a marked starting area, continuous green playing surface, low raised side rails and a rounded far end containing a real recessed cup and flag. Keep the playing surface continuous all the way to the cup, without disconnected endpoint tiles or gaps that a ball would fall through. Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane, each with an opening through which a ball of diameter 0.1 m can pass. Add one low diamond-shaped obstacle near the far end of every lane, with room to pass it on at least one side. Place one ball at each start. Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes. Use green turf, warm terracotta rails, cream obstacle walls and soft sunny lighting. Choose an elevated oblique camera showing all three courses and their cups. This task produces a scene only; moving windmill blades, scoring and ball physics are not required.",
+      "implementation": "manual",
+      "checks": [
+        "explicit_layout_dimensions"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Design a cheerful static mini-golf park with three parallel lanes on a roughly 25 by 26 metre rectangular site. Each lane should be about 4 m wide and 20 m long, with a marked starting area, continuous green playing surface, low raised side rails and a rounded far end containing a real recessed cup and flag. Keep the playing surface continuous all the way to the cup, without disconnected endpoint tiles or gaps that a ball would fall through. Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane, each with an opening through which a ball of diameter 0.1 m can pass. Add one low diamond-shaped obstacle near the far end of every lane, with room to pass it on at least one side. Place one ball at each start. Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes. Use green turf, warm terracotta rails, cream obstacle walls and soft sunny lighting. Choose an elevated oblique camera showing all three courses and their cups. This task produces a scene only; moving windmill blades, scoring and ball physics are not required.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Design a cheerful static mini-golf park with three parallel lanes on a roughly 25 by 26 metre rectangular site. Each lane should be about 4 m wide and 20 m long, with a marked starting area, continuous green playing surface, low raised side rails and a rounded far end containing a real recessed cup and flag. Keep the playing surface continuous all the way to the cup, without disconnected endpoint tiles or gaps that a ball would fall through. Put a small windmill obstacle on the left lane and a miniature castle arch on the middle lane, each with an opening through which a ball of diameter 0.1 m can pass. Add one low diamond-shaped obstacle near the far end of every lane, with room to pass it on at least one side. Place one ball at each start. Connect all three starts to a common visitor path at least 1.2 m wide, outside the lanes. Use green turf, warm terracotta rails, cream obstacle walls and soft sunny lighting. Choose an elevated oblique camera showing all three courses and their cups. This task produces a scene only; moving windmill blades, scoring and ball physics are not required.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "engine",
+      "text": "engine",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "engine"
+      ]
+    },
+    {
+      "id": "view_transform",
+      "text": "view transform",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "view_transform"
+      ]
+    },
+    {
+      "id": "exposure",
+      "text": "exposure",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "exposure"
+      ]
+    },
+    {
+      "id": "gamma",
+      "text": "gamma",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "gamma"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "orbit",
+    "degrees": 25,
+    "tolerance": 0.25
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "native_resolution": [
+    1200,
+    1000
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-brief-vlm-v8.0.0",
+  "dataset_version": "l2-brief-numeric-data-v8",
+  "methods_sha256": "ad17d740377c9b5e74c4cc75f31004254f2731d1c202d437fc70362e998762b5",
+  "measurement_profile": "l2-brief-v2.8.0",
+  "automatic_profile": "l2-brief-embodied-v4.0.0"
+}

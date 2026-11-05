@@ -1,0 +1,282 @@
+{
+  "protocol": "l3-perceptual-quality-v5",
+  "task_key": "l3-e01",
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "checks": {
+    "shape_construction": [
+      "visual_quality",
+      "Believable task-specific proportions, silhouettes, construction, joins and object anatomy. Generic boxes, disconnected pipes, floating parts and unclosed architectural gaps are substantive defects. Judge intended stylization, not polygon count."
+    ],
+    "materials": [
+      "visual_quality",
+      "Appropriate authored material vocabulary, scale, surface differentiation and consistency. Default/checker surfaces, indiscriminate tiling and texture pasted over primitive geometry do not establish finish. Do not demand wear where not requested."
+    ],
+    "lighting": [
+      "visual_quality",
+      "Exposure, readable surfaces, shadow depth, light/material relationships across all important zones. Burnt-out whites, persistent darkness, flat unreadable surfaces and pervasive glare lower quality even if objects exist."
+    ],
+    "composition": [
+      "visual_quality",
+      "Spatial hierarchy, focal readability, coherent massing and purposeful distribution at overview, street/room and close scales. Empty space is not inherently bad; unjustified barren requested working or inhabited zones are."
+    ],
+    "detail": [
+      "visual_quality",
+      "Meaningful task-specific equipment, furnishing and environmental detail at large/medium/small scales. Repeated colored boxes, labels and token props cannot stand in for differentiated functional objects or rich requested spaces."
+    ],
+    "style": [
+      "visual_quality",
+      "Match the requested/reference visual language across all zones. Real environments require plausible construction and material treatment; voxel/game styles require intentional resolved abstraction. Do not penalize coherent low-poly/voxel design for not being photorealistic."
+    ],
+    "scene_coverage": [
+      "task_fidelity",
+      "Substantive realization of the public brief and reference scene extent, connected zones, context and principal architectural/environmental features. Judge the realized scene, not merely presence counts or labels. Avoid requiring identical camera or incidental photograph clutter."
+    ],
+    "functional_identity": [
+      "task_fidelity",
+      "Visible differentiation and credible furnishing of required functional areas and mechanisms. A named room with token objects is partial credit. Compare defining reference features when supplied. Do not infer actual interactive success from appearance."
+    ]
+  },
+  "formula": "continuous quality anchored to visible completion; coverage and deviation retained separately as diagnostics",
+  "public_task_sha256": "a66bf56fbc663e34538998f177e86f3a8dad20aa1665830808e95bb3b81afa8c",
+  "reference_features": {
+    "environment": [
+      {
+        "criterion": "Reconcile all four references as one compact kitchen, preserving the relationships between the window worktop, cooking corner, refrigerator wall, dining corner and doorway.",
+        "id": "env-01"
+      },
+      {
+        "criterion": "Match the strong warm daylight filtered through orange-red blinds, with narrow striped shadows, bright window-side surfaces and substantially darker interior corners.",
+        "id": "env-05"
+      }
+    ],
+    "targets": [
+      {
+        "features": [
+          {
+            "criterion": "Tall tiled walls, substantial doorway reveals and a narrow recessed area frame the compact kitchen.",
+            "id": "architecture-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Wall tiling uses elongated rectangular units in alternating vertical arrangements; the floor uses smaller staggered rectangular tiles.",
+            "id": "architecture-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "A doorway beside the appliance wall includes a pale vertical-bar security gate and a small upper glazed opening.",
+            "id": "architecture-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Cream-to-ochre wall tiles, tan floor tiles, dark brown skirting and pale ceiling trim establish the room's finishes.",
+            "id": "architecture-04",
+            "kind": "material"
+          }
+        ],
+        "id": "architecture",
+        "importance": "core",
+        "label": "Kitchen enclosure and openings",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 17
+      },
+      {
+        "features": [
+          {
+            "criterion": "A long window-side worktop turns into the cooking corner, with base cupboards below and upper cupboards concentrated around the cooking area.",
+            "id": "cabinetry-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The opposite wall combines a tall oven housing, a short counter beneath a microwave recess and tall storage beside the refrigerator.",
+            "id": "cabinetry-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Flat pale cabinet fronts have narrow darker edging and small curved brown handles, with horizontal drawer fronts among taller doors.",
+            "id": "cabinetry-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Glossy honey-brown wood-grain worktops contrast with cream cabinet faces and darker recessed plinths.",
+            "id": "cabinetry-04",
+            "kind": "material"
+          }
+        ],
+        "id": "cabinetry",
+        "importance": "core",
+        "label": "Fitted cabinets and worktops",
+        "references": [
+          "reference-01",
+          "reference-02"
+        ],
+        "weight": 24
+      },
+      {
+        "features": [
+          {
+            "criterion": "A broad rectangular window dominates the wall above the worktop and dining corner.",
+            "id": "window-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Closely spaced horizontal Venetian slats span the glazing, with visible vertical cords and a slim pale surround.",
+            "id": "window-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Orange-red slats transmit intense warm light through narrow gaps.",
+            "id": "window-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Decorative metal security grille curves remain partially visible behind the blinds.",
+            "id": "window-04",
+            "kind": "construction"
+          }
+        ],
+        "id": "window",
+        "importance": "core",
+        "label": "Window, blinds and security grille",
+        "references": [
+          "reference-01",
+          "reference-04"
+        ],
+        "weight": 12
+      },
+      {
+        "features": [
+          {
+            "criterion": "A tall white refrigerator has two stacked doors, broad horizontal handles and an irregular scatter of magnets and paper notes.",
+            "id": "appliances-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "The cooking counter contains a dark four-ring electric hob beneath a projecting angular dark extractor hood.",
+            "id": "appliances-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Two stacked black glazed appliance fronts occupy the tall left housing; a separate microwave sits in an open recess near the refrigerator.",
+            "id": "appliances-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "White countertop appliance bodies, stainless vessels and black glass provide distinct finishes against the pale cabinetry.",
+            "id": "appliances-04",
+            "kind": "material"
+          }
+        ],
+        "id": "appliances",
+        "importance": "core",
+        "label": "Refrigerator and kitchen appliances",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03"
+        ],
+        "weight": 18
+      },
+      {
+        "features": [
+          {
+            "criterion": "A compact rectangular wooden table occupies the window-side dining corner.",
+            "id": "dining-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "Chairs have thick cylindrical upright posts and broad curved horizontal back rails.",
+            "id": "dining-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Warm reddish-brown polished timber and patterned upholstered seats distinguish the dining furniture.",
+            "id": "dining-03",
+            "kind": "material"
+          },
+          {
+            "criterion": "Checked cloths drape over chair backs, with a dark green bag hanging from another chair.",
+            "id": "dining-04",
+            "kind": "construction"
+          }
+        ],
+        "id": "dining",
+        "importance": "core",
+        "label": "Dining table and substantial wooden chairs",
+        "references": [
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 12
+      },
+      {
+        "features": [
+          {
+            "criterion": "Condiment jars and cylindrical containers cluster along the window-side worktop rather than forming evenly spaced decoration.",
+            "id": "household-01",
+            "kind": "shape"
+          },
+          {
+            "criterion": "A dark rectangular electric tray with a loose cord and a red patterned mat occupy the counter beside the hob.",
+            "id": "household-02",
+            "kind": "construction"
+          },
+          {
+            "criterion": "Hanging mugs beneath the microwave and suspended cooking utensils beside the hob reinforce the crowded working kitchen.",
+            "id": "household-03",
+            "kind": "construction"
+          },
+          {
+            "criterion": "The dining tabletop holds a tissue box, a large clear jar with a dark lid, a shallow dish and assorted small containers.",
+            "id": "household-04",
+            "kind": "material"
+          },
+          {
+            "criterion": "Yellow and pale lidded buckets sit at floor level in the recessed passage area.",
+            "id": "household-05",
+            "kind": "shape"
+          }
+        ],
+        "id": "household",
+        "importance": "detail",
+        "label": "Characteristic household clutter",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 7
+      },
+      {
+        "features": [],
+        "id": "extension",
+        "importance": "supporting",
+        "label": "Connected utility and storage extension",
+        "references": [
+          "reference-01",
+          "reference-02",
+          "reference-03",
+          "reference-04"
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "reference_sha256": {
+    "environment/input/references/reference-01.jpg": "2be1467da7a6d8f039914952bdd781f376489a05eec0966254d634efb5d1fe64",
+    "environment/input/references/reference-03.jpg": "d588003b8971dfa668689f008ed9b5a24c8c1b5a4e663968f64801e03a5cd47b",
+    "environment/input/references/reference-02.jpg": "607d9cef530ef99c322151492a7b622adc8f2202e3ae7db541fe2b796f3ca17f",
+    "environment/input/references/reference-04.jpg": "e84a95bf15125f57b335456ac6ab529fce37020602c058f4f8ba59a97b33d195"
+  }
+}

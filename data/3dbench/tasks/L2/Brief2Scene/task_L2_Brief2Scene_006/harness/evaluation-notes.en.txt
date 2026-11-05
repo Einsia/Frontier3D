@@ -1,0 +1,364 @@
+## Numerical geometry protocol (l2-brief-v2.1.0)
+Use solid colors and procedural shading only. Image textures, environment images,
+generated/baked image maps and image-dependent geometry/compositing are prohibited,
+including packed or unused image nodes in used node trees. No private reference is used for scoring.
+Assign bench_role to actual mesh geometry or to a parent grouping the mesh parts
+of one entity. Object names are unrestricted. Roles select measurements and do not
+prove semantics; visual fidelity and local detail are evaluated separately.
+For each route, nominate small endpoint surface patches at road level. All named
+start/goal pairs must connect. Counts group entity parts and reject identical
+co-located copies. Dimensions use complete geometry and world metres; horizontal
+sizes use a minimum-area rotated footprint. Camera heights use actual local ground.
+Opening checks use interior surfaces and bounded through-depth rays. Route checks
+use a 2.5D grid including vertical/thin surfaces, local floor height and low obstacles;
+the ground band defaults to 0.1 m, or the measured vehicle height where specified.
+This is not a general certification of human headroom or arbitrary stacked floors.
+Grid uncertainty or capacity limits produce not_measurable, never an inferred pass.
+Numerical tolerances, route step/slope settings and contact bands are published
+definitions with pending calibration. The JSON below specifies this version exactly.
+
+Roles: ball, castle_arch, cup, diamond_obstacle, lane, site, visitor_path, windmill.
+
+```json
+[
+  {
+    "id": "site_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "scope": "union",
+      "lower": [
+        25,
+        26,
+        null
+      ],
+      "upper": [
+        25,
+        26,
+        null
+      ],
+      "relative_tolerance": 0.1
+    }
+  },
+  {
+    "id": "lane_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "lane",
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  {
+    "id": "cup_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "cup",
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  {
+    "id": "ball_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "ball",
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  {
+    "id": "diamond_obstacle_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "diamond_obstacle",
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  {
+    "id": "lane_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "lane",
+      "scope": "each",
+      "lower": [
+        4,
+        20,
+        null
+      ],
+      "upper": [
+        4,
+        20,
+        null
+      ],
+      "relative_tolerance": 0.1
+    }
+  },
+  {
+    "id": "windmill_opening",
+    "metric": "l2_brief_opening",
+    "group": "numeric",
+    "params": {
+      "role": "windmill",
+      "support_role": "site",
+      "min_width": 0.1,
+      "min_height": 0.1,
+      "passage_shape": "ball",
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "castle_arch_opening",
+    "metric": "l2_brief_opening",
+    "group": "numeric",
+    "params": {
+      "role": "castle_arch",
+      "support_role": "site",
+      "min_width": 0.1,
+      "min_height": 0.1,
+      "passage_shape": "ball",
+      "relative_tolerance": 0.01
+    }
+  }
+]
+```
+
+
+## Geometry extension (l2-brief-v2.2.0)
+Cup/crater roles select the actual depressed surface and its rim, grouped per
+entity. Keep flags, poles and unrelated geometry in separate roles. The ground
+outside each oriented footprint must be measurable in the support role. Complete
+world geometry is queried at the public finite positions below. Internal probes
+must lie below surrounding local ground and the rim, and be exposed in the full
+scene; a floor, lid, raised ring or negative-height proxy does not establish a
+real recess. These are opaque geometric queries, not transparency simulation.
+For terrain relief, a uniform grid samples the exposed top surface; selected
+terrain and full-scene top hits must agree within 0.00001 m. Covered terrain does
+not count toward the required surface coverage. Global and
+per-quadrant best-fit planes are removed; a tilted flat floor cannot count as
+undulating ground. Keep the surrounding terrain in site; crater patches may have
+their own role. The millimetre thresholds are published numerical definitions with calibration limits, not
+dimensions specified by the original brief. They require calibration. Finite
+probes do not certify a complete shell, continuous ball path or all terrain detail.
+
+```json
+[
+  {
+    "id": "real_cup_depression",
+    "metric": "l2_surface_depression",
+    "group": "numeric",
+    "params": {
+      "role": "cup",
+      "support_role": "lane",
+      "directions": 32,
+      "inner_fraction": 0.25,
+      "rim_fractions": [
+        0.7,
+        0.8,
+        0.9
+      ],
+      "outside_fraction": 1.15,
+      "min_depth_m": 0.001,
+      "min_rim_height_m": 0,
+      "required_fraction": 0.75,
+      "occlusion_tolerance_m": 1e-05
+    }
+  }
+]
+```
+
+The following aperture definitions replace the earlier ones: measure from the actual lane surface, not a construction base below the lanes.
+
+```json
+[
+  {
+    "id": "windmill_opening",
+    "metric": "l2_brief_opening",
+    "group": "numeric",
+    "params": {
+      "role": "windmill",
+      "support_role": "lane",
+      "min_width": 0.1,
+      "min_height": 0.1,
+      "passage_shape": "ball",
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "castle_arch_opening",
+    "metric": "l2_brief_opening",
+    "group": "numeric",
+    "params": {
+      "role": "castle_arch",
+      "support_role": "lane",
+      "min_width": 0.1,
+      "min_height": 0.1,
+      "passage_shape": "ball",
+      "relative_tolerance": 0.01
+    }
+  }
+]
+```
+
+
+## Layout and course geometry (l2-brief-v2.3.0)
+Sides and rows are measured relative to the actual straight path/road geometry,
+not global X/Y or object names. All selected entity geometry must remain outside
+the road/path's transverse interval. A row is a longitudinal center band spanning
+at most 0.25 m; no equal row spacing or equal number per row is required.
+For mini-golf, each lane must geometrically contain exactly one ball, cup and
+diamond obstacle; lanes must be parallel within 2 degrees. Ball and cup occupy
+opposite 15-percent end regions, and the diamond is at least 60 percent of the
+way from ball to cup. These percentages and tolerances are published definitions
+interpretations of start/far-end, not original hidden dimensions.
+Each ball-to-cup path uses only that lane and its actual cup geometry. Start is
+the ball's actual ground position and the goals are sampled actual cup-rim points.
+Cup-to-lane connection is checked along 32 radial bands with 33 samples each.
+Route clearance uses a conservative upright cylinder containing a 0.1 m ball,
+not rolling dynamics. The 0.02 m grid has a reported width uncertainty; ambiguous
+clearance produces not_measurable. These finite tests do not certify arbitrary
+stacked surfaces, curved swept volumes, complete shells or text semantics.
+All thresholds require calibration on accepted examples before formal release.
+
+```json
+[
+  {
+    "id": "lane_entity_correspondence",
+    "metric": "l2_course_correspondence",
+    "group": "numeric",
+    "params": {
+      "lane_role": "lane",
+      "ball_role": "ball",
+      "cup_role": "cup",
+      "obstacle_role": "diamond_obstacle",
+      "contact_tolerance_m": 0.01,
+      "parallel_tolerance_degrees": 2.0,
+      "end_fraction": 0.15,
+      "obstacle_min_progress": 0.6
+    }
+  },
+  {
+    "id": "ball_diameter",
+    "metric": "l2_brief_diameter_range",
+    "group": "numeric",
+    "params": {
+      "role": "ball",
+      "lower": 0.1,
+      "upper": 0.1,
+      "relative_tolerance": 0.01,
+      "require_endpoints": false
+    }
+  },
+  {
+    "id": "lane_ball_routes",
+    "metric": "l2_ball_course",
+    "group": "numeric",
+    "params": {
+      "lane_role": "lane",
+      "ball_role": "ball",
+      "cup_role": "cup",
+      "obstacle_role": "diamond_obstacle",
+      "contact_tolerance_m": 0.01,
+      "parallel_tolerance_degrees": 2.0,
+      "end_fraction": 0.15,
+      "obstacle_min_progress": 0.6,
+      "ball_diameter_m": 0.1,
+      "cell_size": 0.02,
+      "max_step": 0.002,
+      "max_slope": 0.5,
+      "surface_epsilon": 0.0005,
+      "seam_directions": 32,
+      "seam_samples": 33,
+      "seam_max_jump_m": 0.002
+    }
+  }
+]
+```
+
+
+## Actual course access (l2-brief-v2.5.0)
+This version replaces the old visitor_path_clear_route check. lane_start and
+visitor_entry tags are no longer required or used as route endpoints.
+Actual ball-to-cup assignments determine each start and the playing direction.
+Left/right means looking from the common ball-start direction towards the cups;
+inconsistent playing directions make that order not measurable. The windmill
+must have its actual lowest geometry on the left lane and the castle arch on
+the middle lane, each uniquely assigned by full base vertices within 0.01 m
+of a lane's surface. Names and parent relationships do not determine placement.
+
+The common visitor network must reach all three actual ball-start ground points
+with at least 1.2 m clear width. It uses visitor_path geometry and only each
+lane's first 15-percent end region, extended by a half-width plus the grid
+uncertainty to avoid an artificial clearance wall at the clipping boundary.
+Balls are excluded as occupants of the intended endpoints. Other geometry is
+an obstacle. The visitor path itself must remain outside full lane projections,
+except for a 0.02 m overlap at the start seam; this uses complete projected
+triangle intersections, not vertex-only or endpoint-tag comparisons.
+
+The 0.04 m height-field grid uses 1.8 m standing clearance, 0.02 m maximum steps,
+0.5 maximum rise/run and 0.001 m surface coincidence tolerance. The 1.2 m width
+has 1% numerical tolerance; the raster width uncertainty is 2*sqrt(2)*0.04 m.
+Borderline widths are not measurable, rather than rounded up. Full 3D movement,
+sub-grid discontinuities, rolling dynamics, complete rail/shell topology and
+semantic windmill/castle appearance are not certified. These finite public
+definitions require boundary examples and threshold calibration before release.
+
+```json
+[
+  {
+    "id": "actual_start_visitor_route",
+    "metric": "l2_course_visitor_route",
+    "group": "numeric",
+    "params": {
+      "lane_role": "lane",
+      "ball_role": "ball",
+      "cup_role": "cup",
+      "obstacle_role": "diamond_obstacle",
+      "contact_tolerance_m": 0.01,
+      "parallel_tolerance_degrees": 2.0,
+      "end_fraction": 0.15,
+      "obstacle_min_progress": 0.6,
+      "visitor_role": "visitor_path",
+      "min_width": 1.2,
+      "cell_size": 0.04,
+      "max_step": 0.02,
+      "max_slope": 0.5,
+      "surface_epsilon": 0.001,
+      "clearance_height": 1.8,
+      "seam_overlap_m": 0.02
+    }
+  },
+  {
+    "id": "specified_obstacle_lanes",
+    "metric": "l2_course_obstacle_placement",
+    "group": "numeric",
+    "params": {
+      "lane_role": "lane",
+      "ball_role": "ball",
+      "cup_role": "cup",
+      "obstacle_role": "diamond_obstacle",
+      "contact_tolerance_m": 0.01,
+      "parallel_tolerance_degrees": 2.0,
+      "end_fraction": 0.15,
+      "obstacle_min_progress": 0.6,
+      "windmill_role": "windmill",
+      "castle_role": "castle_arch"
+    }
+  }
+]
+```
+
+## Scoring
+
+Final item score: `60% vlm + 30% data + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

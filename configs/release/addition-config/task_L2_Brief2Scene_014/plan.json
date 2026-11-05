@@ -1,0 +1,397 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_014",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/b70af42dc9ee94d7966c/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/3e5f786e85c2f5e5d272/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/7035c663b8f308131414/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "测量图书馆区域沿长轴的原生几何跨度。",
+      "quantity": "区域长度",
+      "relation": "equal",
+      "source_quote": "Create a 4.8 x 1.2 m library section",
+      "target": 4.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "测量图书馆区域沿短轴的原生几何跨度。",
+      "quantity": "区域宽度",
+      "relation": "equal",
+      "source_quote": "Create a 4.8 x 1.2 m library section",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "测量书架实体沿书架长轴的完整跨度。",
+      "quantity": "书架长度",
+      "relation": "equal",
+      "source_quote": "A one-sided steel shelf is 4.80 m long and 0.30 m deep",
+      "target": 4.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "测量书架实体垂直于前沿方向的深度。",
+      "quantity": "书架深度",
+      "relation": "equal",
+      "source_quote": "A one-sided steel shelf is 4.80 m long and 0.30 m deep",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "统计可承放书籍的独立层级，不把支撑梁作为层级。",
+      "quantity": "书架层数",
+      "relation": "equal",
+      "source_quote": "with six levels",
+      "target": 6,
+      "unit": "层",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 10,
+      "id": "N06",
+      "measurement_definition": "按记录的层板基准测量第一层相对地面的 Z 高度；名义值单位 m，显式容差单位 mm。",
+      "quantity": "第一层高度",
+      "relation": "equal",
+      "source_quote": "at 0.30, 0.68, 1.06, 1.44, 1.82 and 2.20 m, within 10 mm",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 10,
+      "id": "N07",
+      "measurement_definition": "按相同层板基准测量第二层相对地面的 Z 高度；名义值单位 m，显式容差单位 mm。",
+      "quantity": "第二层高度",
+      "relation": "equal",
+      "source_quote": "at 0.30, 0.68, 1.06, 1.44, 1.82 and 2.20 m, within 10 mm",
+      "target": 0.68,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 10,
+      "id": "N08",
+      "measurement_definition": "按相同层板基准测量第三层相对地面的 Z 高度；名义值单位 m，显式容差单位 mm。",
+      "quantity": "第三层高度",
+      "relation": "equal",
+      "source_quote": "at 0.30, 0.68, 1.06, 1.44, 1.82 and 2.20 m, within 10 mm",
+      "target": 1.06,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 10,
+      "id": "N09",
+      "measurement_definition": "按相同层板基准测量第四层相对地面的 Z 高度；名义值单位 m，显式容差单位 mm。",
+      "quantity": "第四层高度",
+      "relation": "equal",
+      "source_quote": "at 0.30, 0.68, 1.06, 1.44, 1.82 and 2.20 m, within 10 mm",
+      "target": 1.44,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 10,
+      "id": "N10",
+      "measurement_definition": "按相同层板基准测量第五层相对地面的 Z 高度；名义值单位 m，显式容差单位 mm。",
+      "quantity": "第五层高度",
+      "relation": "equal",
+      "source_quote": "at 0.30, 0.68, 1.06, 1.44, 1.82 and 2.20 m, within 10 mm",
+      "target": 1.82,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 10,
+      "id": "N11",
+      "measurement_definition": "按相同层板基准测量第六层相对地面的 Z 高度；名义值单位 m，显式容差单位 mm。",
+      "quantity": "第六层高度",
+      "relation": "equal",
+      "source_quote": "at 0.30, 0.68, 1.06, 1.44, 1.82 and 2.20 m, within 10 mm",
+      "target": 2.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "逐本测量书体沿自身竖直轴的底部至顶部距离。",
+      "quantity": "书籍高度",
+      "relation": "range",
+      "source_quote": "books of 0.24-0.32 m height",
+      "target": 0.24,
+      "unit": "m",
+      "upper": 0.32
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "识别明确关联目标书的顶层书脊间隙，在书脊横向测量其两边界距离并记录边界定义。",
+      "quantity": "目标书关联书脊间隙",
+      "relation": "equal",
+      "source_quote": "On the top level show a 0.03 m spine gap associated with the target book.",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "沿底座局部第一主轴测量外包跨度，并记录保险杠是否包含。",
+      "quantity": "底座第一边尺寸",
+      "relation": "equal",
+      "source_quote": "0.55 x 0.50 m bumper-equipped base",
+      "target": 0.55,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "沿底座局部第二主轴测量外包跨度，并记录保险杠是否包含。",
+      "quantity": "底座第二边尺寸",
+      "relation": "equal",
+      "source_quote": "0.55 x 0.50 m bumper-equipped base",
+      "target": 0.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "测量冻结姿态中升降柱顶部相对地面的 Z 高度。",
+      "quantity": "升降柱顶高",
+      "relation": "equal",
+      "source_quote": "column top at 2.05 m",
+      "target": 2.05,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "统计夹持目标书的独立夹指几何部件。",
+      "quantity": "夹指数量",
+      "relation": "equal",
+      "source_quote": "two-finger gripper",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 5,
+      "id": "N18",
+      "measurement_definition": "沿书架前沿法向，测量目标书向外书脊面超出书架前沿平面的距离。",
+      "quantity": "目标书抽出距离",
+      "relation": "equal",
+      "source_quote": "extracts the book 40 +/-5 mm beyond the shelf front",
+      "target": 40,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "比较目标书与各相邻书的竖直方向轴，取最大夹角。",
+      "quantity": "目标书相对邻书倾角",
+      "relation": "at_most",
+      "source_quote": "preserving its upright orientation within 2 degrees of neighbouring books",
+      "target": 2,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "将托盘开口几何中心和目标书几何中心投影到 XY 平面，测量两投影点距离。",
+      "quantity": "托盘与书中心水平偏差",
+      "relation": "at_most",
+      "source_quote": "its opening centre aligned beneath the book centre within 5 mm",
+      "target": 5,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "测量目标书中心与托盘开口中心的 Z 坐标差，并确认托盘在下方。",
+      "quantity": "书与托盘中心垂直间隔",
+      "relation": "equal",
+      "source_quote": "its opening centre aligned beneath the book centre within 5 mm and separated vertically by 1.10 m",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 0.03,
+      "id": "N22",
+      "measurement_definition": "在记录的路线采样位置测量横向自由通道宽度；排除被评机器人，纳入其他家具与凸出物，逐点判定。",
+      "quantity": "通道净宽",
+      "relation": "equal",
+      "source_quote": "Keep the aisle 0.85 +/-0.03 m clear",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "沿所记录路线的弧长核对常规相邻采样站间距，记录闭合接缝或端部余段，不将余段强制等同常规间距。",
+      "quantity": "通道检查采样间距",
+      "relation": "equal",
+      "source_quote": "checked every 0.25 m",
+      "target": 0.25,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "排除目标抽出书，逐本测量普通书沿前沿外法向的最大超出距离。",
+      "quantity": "普通书最大突出量",
+      "relation": "at_most",
+      "source_quote": "ordinary books protrude at most 5 mm",
+      "target": 5,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "测量底座含保险杠与书架实体之间的最小净距，记录平面或三维距离约定。",
+      "quantity": "底座到书架净距",
+      "relation": "at_least",
+      "source_quote": "keep at least 0.15 m base-to-shelf clearance",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "根据升降轴、参考点和几何限位求出可用升降位置区间，分别核对区间两端是否为给定下限和上限；不要求动画。",
+      "quantity": "升降参考位置范围",
+      "relation": "range",
+      "source_quote": "Use a 0.15-2.05 m lift stroke",
+      "target": 0.15,
+      "unit": "m",
+      "upper": 2.05
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "测量工具参考点相对声明的升降参考点的向上 Z 偏移，并核对该偏移固定。",
+      "quantity": "工具参考点向上偏移",
+      "relation": "equal",
+      "source_quote": "a fixed 0.15 m upward tool-reference offset",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "以书底为取书参考，测量顶层目标服务点的 Z 高度，并用升降范围与偏移核对几何覆盖。",
+      "quantity": "顶部取书参考高度",
+      "relation": "equal",
+      "source_quote": "reach both the 2.20 m top target and 0.30 m bottom return position",
+      "target": 2.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "以书底为还书参考，测量底层返回服务点的 Z 高度，并用升降范围与偏移核对几何覆盖。",
+      "quantity": "底部还书参考高度",
+      "relation": "equal",
+      "source_quote": "reach both the 2.20 m top target and 0.30 m bottom return position",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "在实际接触处测量各夹指与目标书实体沿接触法向的最大穿入深度；无接触不能由本项单独判为夹持成立。",
+      "quantity": "夹爪接触穿透深度",
+      "relation": "at_most",
+      "source_quote": "Gripper contact penetration is at most 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "在抽出冻结姿态中求目标书与左侧相邻书实体表面的最小间距。",
+      "quantity": "目标书左邻间隙",
+      "relation": "equal",
+      "source_quote": "the extracted book has 2 mm clearance from both neighbours",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "在抽出冻结姿态中求目标书与右侧相邻书实体表面的最小间距。",
+      "quantity": "目标书右邻间隙",
+      "relation": "equal",
+      "source_quote": "the extracted book has 2 mm clearance from both neighbours",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

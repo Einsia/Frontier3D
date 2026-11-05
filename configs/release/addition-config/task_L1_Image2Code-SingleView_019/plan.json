@@ -1,0 +1,330 @@
+{
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code-SingleView",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/df03ddbecd7eccc19583/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/9f14c7628723690fbf95/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/756be02bbaa972f0ba1e/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_019/solution/reference/main.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_head",
+      "label": "头部、可见眼与喙",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.132,
+          0.517
+        ],
+        [
+          0.178,
+          0.486
+        ],
+        [
+          0.177,
+          0.458
+        ],
+        [
+          0.204,
+          0.414
+        ],
+        [
+          0.252,
+          0.387
+        ],
+        [
+          0.307,
+          0.39
+        ],
+        [
+          0.355,
+          0.419
+        ],
+        [
+          0.404,
+          0.447
+        ],
+        [
+          0.448,
+          0.543
+        ],
+        [
+          0.361,
+          0.568
+        ],
+        [
+          0.223,
+          0.535
+        ]
+      ]
+    },
+    {
+      "id": "r_body",
+      "label": "圆润躯干与胸腹",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.225,
+          0.528
+        ],
+        [
+          0.361,
+          0.422
+        ],
+        [
+          0.486,
+          0.451
+        ],
+        [
+          0.618,
+          0.512
+        ],
+        [
+          0.704,
+          0.566
+        ],
+        [
+          0.623,
+          0.642
+        ],
+        [
+          0.54,
+          0.698
+        ],
+        [
+          0.424,
+          0.709
+        ],
+        [
+          0.314,
+          0.677
+        ],
+        [
+          0.261,
+          0.622
+        ]
+      ]
+    },
+    {
+      "id": "r_wing_tail",
+      "label": "近侧翼与尾部",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.44,
+          0.454
+        ],
+        [
+          0.51,
+          0.461
+        ],
+        [
+          0.607,
+          0.509
+        ],
+        [
+          0.7,
+          0.554
+        ],
+        [
+          0.782,
+          0.574
+        ],
+        [
+          0.81,
+          0.594
+        ],
+        [
+          0.806,
+          0.607
+        ],
+        [
+          0.776,
+          0.606
+        ],
+        [
+          0.701,
+          0.585
+        ],
+        [
+          0.624,
+          0.614
+        ],
+        [
+          0.546,
+          0.617
+        ],
+        [
+          0.493,
+          0.59
+        ],
+        [
+          0.462,
+          0.546
+        ]
+      ]
+    },
+    {
+      "id": "r_feet",
+      "label": "双腿、抓握脚趾与爪",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.234,
+          0.777
+        ],
+        [
+          0.27,
+          0.752
+        ],
+        [
+          0.316,
+          0.747
+        ],
+        [
+          0.339,
+          0.715
+        ],
+        [
+          0.378,
+          0.696
+        ],
+        [
+          0.541,
+          0.691
+        ],
+        [
+          0.533,
+          0.731
+        ],
+        [
+          0.49,
+          0.759
+        ],
+        [
+          0.519,
+          0.76
+        ],
+        [
+          0.499,
+          0.782
+        ],
+        [
+          0.471,
+          0.797
+        ],
+        [
+          0.458,
+          0.846
+        ],
+        [
+          0.447,
+          0.819
+        ],
+        [
+          0.37,
+          0.845
+        ],
+        [
+          0.353,
+          0.826
+        ],
+        [
+          0.384,
+          0.792
+        ],
+        [
+          0.425,
+          0.789
+        ],
+        [
+          0.447,
+          0.753
+        ],
+        [
+          0.413,
+          0.73
+        ],
+        [
+          0.365,
+          0.759
+        ],
+        [
+          0.336,
+          0.787
+        ],
+        [
+          0.309,
+          0.814
+        ],
+        [
+          0.304,
+          0.791
+        ],
+        [
+          0.261,
+          0.814
+        ],
+        [
+          0.272,
+          0.784
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "物体最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在米制世界坐标下，排除相机和灯光，对完整主体求世界轴对齐包围盒，取X、Y、Z三个跨度中的最大值；按名义1.000 m及其2%相对容差判定。explicit_tolerance以相对比例表示。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

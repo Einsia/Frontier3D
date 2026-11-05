@@ -1,0 +1,25 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/telescopic_tube",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/telescopic_tube",
+    "license": "CC0-1.0",
+    "changes": [],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "457b1148ab9b7fc166e20c4b4e731fee771b65c0c51283410b8b1ef758ec1c81",
+    "assembled.png": "d9dd39b45db718bba076d00ced4538e2fd57e6e74c34a54f07ecb834c3fee909",
+    "exploded.png": "8e997bff0c69a7c20a72624bd2f027bb485241d9fcb3fbb97cb03eb0f1e73976",
+    "front.png": "c72433f0e2aefe3b94027043902f2d8fb544997b5479d9fd647c5dfdc57addbf",
+    "geometry.json": "a470bd62382dcf5c8951b48317351e4538f81ebab972acf85e3331831d261cc8",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "48dff072f6a92cb84cfebc96ce1199fe5803dbc4cb4ff43fdc916a2ee5a027b2",
+    "qa.json": "12912afef4ac3ad45eb06f35ab2bd26a7e963d0d705fb07f8f0fe7d5bc88ec1f",
+    "scene.blend": "f7e9d33cbf1bee58c747354213d0af9c2933e91b2d62d41f1675c3c3265441f0",
+    "scene.glb": "60c4691d6462b90474602a0fa759821aa5d02472127110cbb9c70d2fec14d2e7",
+    "spec.json": "80c127e64b902f6107418250bed511aeba9cb4f322adc987c0e6a071c990543a",
+    "top.png": "23824023184b4b24bc6b7301afbf89a5123fb4a1a2c5f9dfe553f3fae53397e3"
+  }
+}

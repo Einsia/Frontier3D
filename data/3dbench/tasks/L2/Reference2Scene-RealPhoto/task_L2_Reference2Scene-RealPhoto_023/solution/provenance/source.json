@@ -1,0 +1,24 @@
+{
+  "title": "Lounge (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 21,
+  "original_sha256": "268c83b242544661f5cdefa5a807cdee857e16f1961d30fb0bc26ac2fc9ec5a5",
+  "input_sha256": "1faba7df7a0191e5633ee77f593011b04544db654711fa3119cf7059a8c94b2d",
+  "input_dimensions": [
+    1600,
+    1200
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

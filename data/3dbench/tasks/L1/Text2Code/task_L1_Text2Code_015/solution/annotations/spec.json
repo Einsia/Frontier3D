@@ -1,0 +1,642 @@
+{
+  "family": "shaft_coupling",
+  "title_zh": "双半联轴器",
+  "title_en": "Two-hub shaft coupling",
+  "description_zh": "两个带凸缘的半联轴器通过螺栓相连，中心分别容纳驱动轴和从动轴，并保留端面间隙。",
+  "description_en": "Connect two flanged coupling halves with bolts. Their bores hold separate driving and driven shafts, with an axial face gap.",
+  "parts": [
+    {
+      "id": "hub_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 27,
+          "height": 8,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 12,
+          "height": 18,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 8.2,
+          "height": 24,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 24,
+          "at": [
+            20.0,
+            0.0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 24,
+          "at": [
+            -9.999999999999996,
+            17.320508075688775,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 24,
+          "at": [
+            -10.000000000000009,
+            -17.32050807568877,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        10
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        -82.5,
+        0,
+        60
+      ]
+    },
+    {
+      "id": "shaft_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 8,
+          "height": 24,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        -11
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        -27.5,
+        0,
+        72
+      ]
+    },
+    {
+      "id": "hub_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 27,
+          "height": 8,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 12,
+          "height": 18,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 8.2,
+          "height": 24,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 24,
+          "at": [
+            20.0,
+            0.0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 24,
+          "at": [
+            -9.999999999999996,
+            17.320508075688775,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 24,
+          "at": [
+            -10.000000000000009,
+            -17.32050807568877,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        32
+      ],
+      "color": [
+        0.25,
+        0.48,
+        0.65
+      ],
+      "explode": [
+        27.5,
+        0,
+        84
+      ]
+    },
+    {
+      "id": "shaft_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 8,
+          "height": 24,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        53
+      ],
+      "color": [
+        0.65,
+        0.68,
+        0.72
+      ],
+      "explode": [
+        82.5,
+        0,
+        96
+      ]
+    },
+    {
+      "id": "bolt_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 31.5,
+          "at": [
+            0,
+            0,
+            0.75
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.4,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            18.5
+          ],
+          "op": "union",
+          "vertices": 6,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        20.0,
+        0.0,
+        21
+      ],
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "explode": [
+        -82.5,
+        38,
+        108
+      ]
+    },
+    {
+      "id": "washer_0",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 1.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 5.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        20.0,
+        0.0,
+        36.75
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -27.5,
+        38,
+        120
+      ]
+    },
+    {
+      "id": "bolt_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 31.5,
+          "at": [
+            0,
+            0,
+            0.75
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.4,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            18.5
+          ],
+          "op": "union",
+          "vertices": 6,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -9.999999999999996,
+        17.320508075688775,
+        21
+      ],
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "explode": [
+        27.5,
+        38,
+        132
+      ]
+    },
+    {
+      "id": "washer_1",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 1.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 5.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -9.999999999999996,
+        17.320508075688775,
+        36.75
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        82.5,
+        38,
+        144
+      ]
+    },
+    {
+      "id": "bolt_2",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 3,
+          "height": 31.5,
+          "at": [
+            0,
+            0,
+            0.75
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 5.4,
+          "height": 4,
+          "at": [
+            0,
+            0,
+            18.5
+          ],
+          "op": "union",
+          "vertices": 6,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -10.000000000000009,
+        -17.32050807568877,
+        21
+      ],
+      "color": [
+        0.55,
+        0.58,
+        0.62
+      ],
+      "explode": [
+        -82.5,
+        76,
+        156
+      ]
+    },
+    {
+      "id": "washer_2",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 6,
+          "height": 1.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 3.2,
+          "height": 5.5,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        -10.000000000000009,
+        -17.32050807568877,
+        36.75
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        -27.5,
+        76,
+        168
+      ]
+    },
+    {
+      "id": "spacer",
+      "operations": [
+        {
+          "shape": "cylinder",
+          "radius": 14,
+          "height": 3,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "union",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        },
+        {
+          "shape": "cylinder",
+          "radius": 8.4,
+          "height": 7,
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "op": "difference",
+          "vertices": 96,
+          "axis": "z",
+          "label": ""
+        }
+      ],
+      "at": [
+        0,
+        0,
+        21
+      ],
+      "color": [
+        0.8,
+        0.58,
+        0.2
+      ],
+      "explode": [
+        27.5,
+        76,
+        180
+      ]
+    }
+  ],
+  "mates": [
+    {
+      "type": "coaxial",
+      "a": "shaft_0",
+      "b": "hub_0",
+      "axis": "z",
+      "radial_clearance_mm": 0.2
+    },
+    {
+      "type": "coaxial",
+      "a": "shaft_1",
+      "b": "hub_1",
+      "axis": "z",
+      "radial_clearance_mm": 0.2
+    }
+  ],
+  "level": 1,
+  "kind": "assembly",
+  "units": "millimetres",
+  "tolerance_mm": 0.3,
+  "part_count": 11
+}

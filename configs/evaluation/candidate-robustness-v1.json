@@ -1,0 +1,11 @@
+{
+  "version": "candidate-robustness-v1",
+  "enabled": true,
+  "scope": "Affected checks or components only; preserve measured partial credit and frozen weights",
+  "excluded": [
+    "API failures",
+    "filesystem failures",
+    "source/provenance mismatch",
+    "live or interrupted infrastructure"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_015",
+  "category": "Image2Code-SingleView",
+  "title": "人体工学网椅",
+  "profile": "l1-reference-l2aligned-v1.0.0",
+  "l2_baseline": "l2-reference-localized-vlm-v7.1.0",
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "physics": 0.1,
+    "vlm": 0.2
+  },
+  "spec_sha256": "c4603ca5b308cc44ae159d7700d5984cf547c00495810c556254a4f2138df3d4",
+  "sources": {
+    "instruction.md": "4588b0626c027c1ab96ab0ec937d89b56fa6b5a9069c7e41b21f5139b3ed5453",
+    "solution/EVALUATION.md": "b9feeb6d81c1df737993415497c4511206b12a8f5f787de2d70b70b162b43248",
+    "harness/eval_spec.json": "eb1146ed79d779278b3770973d61befbb682540b693d7453e1ca909124b1f130",
+    "harness/evaluation_design.json": "2b6c3d44262a7f0d36b58125fc9acb9e9596e660ff0c4e553cef2a8910d1fefe",
+    "environment/input/reference.png": "b8bb977f23ddfc8ef7cc833a294de053313f1b0a6aa1ac3efa39aa0af1c786d3"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "automatic_checks": [],
+  "reference_primary": "environment/input/reference.png",
+  "render_views": [
+    {
+      "id": "primary",
+      "location": [
+        1.0,
+        -1.0,
+        1.0
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ortho_scale": 1.6,
+      "resolution": 128,
+      "frame": 1,
+      "beauty": true,
+      "beauty_resolution": [
+        1000,
+        1000
+      ],
+      "camera_source": "saved"
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "public_clause_01",
+      "text": "Use only input/reference.png to reconstruct a complete three-dimensional object. Match visible surfaces; complete unseen surfaces plausibly without inventing internal machinery. No additional view or initial mesh is supplied.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_02",
+      "text": "Reconstruct the ergonomic mesh chair: curved back and headrest, mesh seat with its support frame, lumbar support, two armrests and their brackets, central pedestal and adjustment hardware, and five-spoke base with casters. Keep the openings beneath the seat and between the back supports. Match the dark mesh and frame materials. This source is an imagined visual design: do not require engineering feasibility, load bearing or a functioning recline mechanism.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "native_state_materials"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+    },
+    {
+      "id": "public_clause_03",
+      "text": "Use real editable three-dimensional geometry. Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions. Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous. Exact source topology, vertex count and object names are not required. Image planes or camera-facing shells are not substitutes for full geometry.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_04",
+      "text": "Use metres, Z up, and a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights. This is a task scale convention, not a real-world measurement. Infer other proportions from the images.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "public_clause_05",
+      "text": "Save the final static pose at frame 1 and export the same pose to scene.glb. Animation, exploded views and simulation are not required.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "native_state_materials"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified. Declared frames receive no-bitmap audits only; motion/attachments/rigidity are not measured."
+    },
+    {
+      "id": "public_clause_06",
+      "text": "Render main.png at 1000 x 1000 pixels from a camera matching input/reference.png, using neutral studio lighting, Cycles, AgX and exposure 0. Retain the camera and lighting in scene.blend.",
+      "source": "instruction.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "primary_similarity",
+        "saved_camera",
+        "saved_resolution",
+        "main_render_consistency"
+      ],
+      "reason": "Only native primary appearance is measured; semantic geometry/visible-surface/region completeness is not verified."
+    },
+    {
+      "id": "delivery",
+      "text": "Required native/GLB/image/source/README outputs and clean rebuild",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "main_loadable",
+        "main_dimensions",
+        "main_format",
+        "readme",
+        "reproducible"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "procedural_materials",
+      "text": "Existing pilot: no bitmap inputs; pure colour and procedural nodes allowed",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    },
+    {
+      "id": "seed_quality",
+      "text": "Baseline and seed 0/1/2 independently inspected; minimum native image score",
+      "source": "harness/README.md",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "Current visual pilot only; not full EVALUATION coverage."
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": "f3cc23d3e04613987cb8fea2cf590a79e7a2300a3bdd90b269c223452fc364ed",
+  "reference_boxes": "aea1371fc458c4a097fc8d2a7745e40494d60f86fcdfb07f02d5e8bcd7b69fd8",
+  "vlm_spec_digest": "a25ac467f277577b850282a7e3d5ffa2c74801d7a7fb670245220007b65d399d",
+  "formal_score_eligible": false,
+  "reference_views": [
+    "environment/input/reference.png"
+  ],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": true,
+  "calibration_exposure": "reference_only_draft"
+}

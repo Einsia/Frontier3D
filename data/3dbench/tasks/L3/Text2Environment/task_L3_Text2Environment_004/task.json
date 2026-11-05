@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-g06",
+  "id": "L3/GameEnvironment/ZeldaFrontierValley",
+  "domain": "game",
+  "input_mode": "text",
+  "title": "旷野之息风格：驿站、废墟与山谷生活区",
+  "title_en": "Breath of the Wild-inspired Frontier Valley",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "44566323770499e81cc01a1699ecc21551687feab733cf170b2235d922e6fe75",
+  "chinese_instruction_sha256": "dd9656031d0682c32786eb27f941d22b47aa82800f0fa317ae8118ff70189492",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "0d9ed4c95d281812f6ac30856488d11373ecd4753dfeb22409827403432f10d8",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

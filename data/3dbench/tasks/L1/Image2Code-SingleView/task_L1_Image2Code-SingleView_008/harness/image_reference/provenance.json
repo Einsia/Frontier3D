@@ -1,0 +1,61 @@
+{
+  "protocol": "l1-refresh-geometry-mask-v1",
+  "source_sha256": {
+    "solution/reference/scene.blend": "6fccf4c2d15d9164528acb579716d141fe44c402f1318a464a6968b61634b121",
+    "solution/reference/audit.json": "4a6262daa2904e497ab5664b6c8a80f5e7bf8df865633289a0abda210a6f86be",
+    "environment/input/reference.png": "7a1867ea8965470fb3620a306c5dbf6966e6fd870eb8fef0f06f6cf59a3e0575",
+    "instruction.md": "c8174286dfd15ca69cf40f7495bb53d472fe4ca25ede04b65f403fdc3fc787a5",
+    "solution/EVALUATION.md": "066ea476dbacbd8426fc213ce957c22e5879c444a5591fb1038cf042083b56db"
+  },
+  "frame": 1,
+  "resolution": [
+    1000,
+    1000
+  ],
+  "camera": {
+    "matrix_world": [
+      [
+        -4.371138828673793e-08,
+        0.4819187521934509,
+        -0.876215934753418,
+        -2.628647565841675
+      ],
+      [
+        -1.0,
+        -1.2223438261571573e-07,
+        -1.7342360436600757e-08,
+        0.0
+      ],
+      [
+        -1.1546131872819387e-07,
+        0.876215934753418,
+        0.4819187521934509,
+        1.714011788368225
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "ortho_scale": 1.1800001859664917
+  },
+  "mask_sha256": "77353d882babae450fac888e3acccd34706034d3fb6979f72af86457a53d109b",
+  "renderer_sha256": "466b2ba889bb04a5387f1a134bba4633d632c4c9f39195e178550178471e7df5",
+  "authoring_sha256": "74b841157c1c829b523123edb0a60a0f0ee390d904e4ba150ff5db3852d60927",
+  "scope": "Opaque real geometry only, no semantic regions or motion validation",
+  "blender_version": "5.2.1 LTS",
+  "render_source_sha256": {
+    "solution/reference/scene.blend": "6fccf4c2d15d9164528acb579716d141fe44c402f1318a464a6968b61634b121",
+    "solution/reference/audit.json": "4a6262daa2904e497ab5664b6c8a80f5e7bf8df865633289a0abda210a6f86be",
+    "environment/input/reference.png": "7a1867ea8965470fb3620a306c5dbf6966e6fd870eb8fef0f06f6cf59a3e0575",
+    "instruction.md": "c859c9e487f9a09e9af844ee170419ec3c5030d087a815d7400cedf7ef49d159",
+    "solution/EVALUATION.md": "9036d6a7dbf82ffb60090b7659ff309d3b4da0b14893ff1c192858d198f4279d"
+  },
+  "scoring_overlay": {
+    "profile": "l1-reference-visual-v2.0.0",
+    "upstream_commit": "846e4d74a45504050ef89b2f7aa3a7abaa4a5c2e",
+    "reference_pixels_unchanged": true
+  }
+}

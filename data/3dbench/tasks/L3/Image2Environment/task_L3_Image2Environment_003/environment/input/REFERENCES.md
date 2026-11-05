@@ -1,0 +1,8 @@
+# Visual references
+
+Use the supplied local images as the visual target. Match the visible layout, proportions, materials and atmosphere. Complete unseen spaces coherently according to the task brief. Incidental people, game HUD and watermarks are not required.
+
+- `references/reference-01.jpg`: 1280 × 800 pixels.
+- `references/reference-02.jpg`: 1280 × 800 pixels.
+- `references/reference-03.jpg`: 1280 × 800 pixels.
+- `references/reference-04.jpg`: 1280 × 800 pixels.

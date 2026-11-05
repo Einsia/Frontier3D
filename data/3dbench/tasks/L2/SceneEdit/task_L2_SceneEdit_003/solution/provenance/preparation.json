@@ -1,0 +1,19 @@
+{
+  "key": "medieval-dungeon-interior",
+  "source_file": "assets\\cc0-replacements-20260921\\medieval-dungeon-interior\\original\\dungeon\\blender\\demo_scene.blend",
+  "modifications": [
+    "Camera from author saved viewport; no geometry added.",
+    "Camera framed inside the author demo layout; geometry not moved or added.",
+    "Neutral ceiling illumination added to otherwise unlit source geometry."
+  ],
+  "geometry_origin": "upstream author scene, no added modeled geometry",
+  "resolution": [
+    960,
+    640
+  ],
+  "engine": "CYCLES",
+  "samples": 12,
+  "missing_dependencies": [],
+  "library_count": 50,
+  "camera_type": "PERSP"
+}

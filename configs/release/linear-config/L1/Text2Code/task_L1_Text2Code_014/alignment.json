@@ -1,0 +1,251 @@
+{
+  "version": "l1-l2-alignment-plan-v1",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_014",
+  "category": "Text2Code",
+  "title": "平面曲线矩形扫掠件",
+  "profile": "l1-brief-l2aligned-v1.0.0",
+  "l2_baseline": "l2-brief-vlm-v7.0.0",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "physics": 0.1
+  },
+  "spec_sha256": "591c6baf140d7a2c665ea3e60bd2afd8f218b6a29cb2c465a6fbf193e9d5165d",
+  "sources": {
+    "instruction.md": "6c60dee5ff74619288c1e80946578f19f1cb68fa27f418450615ed7e5d8dbf14",
+    "solution/EVALUATION.md": "f73336f6d09a0e0b6f93e9f6029a63ba4e4280adcfe3b306005032c445a702a5",
+    "harness/eval_spec.json": "cc0c8b5c38f362b7ff7d75df3b54a9c0f43c007500e29002d3f982b376492803",
+    "harness/evaluation_design.json": "48a494a5ede33190d6062b52ab332c0f16a1405f6b13ff09a6635056045ee4ea"
+  },
+  "validity_policy": "system_gates_no_quality_credit",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "quality_population": "accepted_baseline_seed_checks_are_system_evidence",
+  "localization_policy": null,
+  "automatic_checks": [
+    "section_depth",
+    "closed",
+    "connected",
+    "solid_validity",
+    "native_sweep_solid",
+    "native_sweep_surface",
+    "native_sweep_section_dimensions",
+    "glb_sweep_solid",
+    "glb_sweep_surface",
+    "glb_sweep_section_dimensions",
+    "part_count"
+  ],
+  "reference_primary": null,
+  "render_views": [
+    {
+      "id": "assembled",
+      "location": [
+        0.13,
+        -0.16,
+        0.12
+      ],
+      "target": [
+        0.012,
+        0,
+        0.022
+      ],
+      "ortho_scale": 0.075,
+      "resolution": 128,
+      "frame": 1
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "unverified_requirements": [
+    {
+      "id": "editable_part",
+      "text": "一件闭合、连通、独立可编辑真实三维零件，不要求装配或爆炸动画",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "glb_sweep_solid",
+        "native_sweep_solid",
+        "part_count",
+        "real_geometry"
+      ],
+      "reason": "实体数量/非平面检查不能证明完整编辑结构。"
+    },
+    {
+      "id": "interpolated_path",
+      "text": "中心线位于XZ平面，按顺序插值(0,0,0)/(0,0,10.348767)/(11.4975,0,20.995524)/(15.5835,0,21.221145)/(16.821,0,42.57) mm；非周期C2、弦长参数、无指定端切线，OCC GeomAPI_Interpolate容差0.000001 mm",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "glb_sweep_section_dimensions",
+        "glb_sweep_surface",
+        "native_sweep_section_dimensions",
+        "native_sweep_surface"
+      ],
+      "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+    },
+    {
+      "id": "rectangular_section",
+      "text": "沿路径扫掠9.3×6.9 mm居中矩形，起始位于原点XY面，9.3沿X/6.9沿Y；截面深度始终平行Y",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "glb_sweep_section_dimensions",
+        "glb_sweep_surface",
+        "native_sweep_section_dimensions",
+        "native_sweep_surface",
+        "section_depth"
+      ],
+      "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+    },
+    {
+      "id": "sweep_transport",
+      "text": "采用corrected-Frenet传输且无附加扭转，保留四条纵向锐边、无圆角、封闭两端；不以多个长方块串接替代",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "glb_sweep_section_dimensions",
+        "glb_sweep_surface",
+        "native_sweep_section_dimensions",
+        "native_sweep_surface"
+      ],
+      "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+    },
+    {
+      "id": "surface_accuracy",
+      "text": "全部尺寸和表面位置误差≤0.15 mm；中间近邻插值点造成的弯曲须保留",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "glb_sweep_section_dimensions",
+        "glb_sweep_surface",
+        "native_sweep_section_dimensions",
+        "native_sweep_surface"
+      ],
+      "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+    },
+    {
+      "id": "glb_assembled",
+      "text": "GLB与原生静态实体的几何、单位及可表达材质一致",
+      "source": "instruction.md paragraph 3",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "export",
+        "reproducible"
+      ],
+      "reason": "复用跨格式诊断，任务级等价阈值未标定。"
+    },
+    {
+      "id": "reconstruction",
+      "text": "清洁环境从代码重建，使用便携依赖，不依赖旧产物或个人路径",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "reproducible"
+      ],
+      "reason": "基准/seed和现有比较已接线，复杂诊断可能预算耗尽，完整语义与依赖仍未覆盖。"
+    },
+    {
+      "id": "instructions",
+      "text": "README说明执行方式及依赖",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "readme"
+      ],
+      "reason": "仅检查可读取并收集辅助文件，内容语义待验证。"
+    },
+    {
+      "id": "units",
+      "text": "米制导出、Z向上；按本题0.15 mm尺寸/表面位置容差判定",
+      "source": "instruction.md paragraph 2",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "glb_sweep_section_dimensions",
+        "glb_sweep_surface",
+        "native_sweep_section_dimensions",
+        "native_sweep_surface",
+        "section_depth"
+      ],
+      "reason": "已接原生/GLB连续双向表面误差及25个明确矩形切面尺寸；紧弯5切面不强加矩形，全部路径尺寸/特征与容差标定仍待完成，不提升整题验收。"
+    },
+    {
+      "id": "materials",
+      "text": "蓝灰金属材料；相机和背景不作为隐藏匹配目标",
+      "source": "instruction.md paragraph 1",
+      "required": true,
+      "applicable": true,
+      "check_ids": [],
+      "reason": "有效材质/表面外观尚未正式绑定。"
+    },
+    {
+      "id": "review_view",
+      "text": "保存可供审阅的真实三维原生场景",
+      "source": "instruction.md Submission contract",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "assembled_valid"
+      ],
+      "reason": "固定诊断视图只验证非空，未自动适配视角及材质。"
+    },
+    {
+      "id": "procedural_materials",
+      "text": "原生全部声明状态及静态GLB仅允许已分配纯色或程序化材质；禁止实际使用位图/HDRI图片输入",
+      "source": "user_goal_2026-10-03 / solution/EVALUATION.md material requirements",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "native_procedural_materials",
+        "glb_procedural_materials",
+        "native_state_materials"
+      ],
+      "reason": "已接入逐声明状态依赖取证；全部逐题控制与复杂渲染依赖验收仍待完成。颜色和材质正确性另测。"
+    },
+    {
+      "id": "seed_quality",
+      "text": "每个seed独立检查全部声明材质状态及本题已接入的数值/保护或主图质量，不以重现性代替质量",
+      "source": "user_goal_2026-10-03 / seed delivery protocol",
+      "required": true,
+      "applicable": true,
+      "check_ids": [
+        "all_seed_quality"
+      ],
+      "reason": "按本题帧策略取证和逐seed同门；全部逐题控制、尚未实现的专项要求及标定仍待完成。"
+    }
+  ],
+  "physics": {
+    "method": "l1-assembly-support-v1",
+    "review_status": "approved",
+    "review_kind": "ai_draft_not_human_approved",
+    "frame": 1,
+    "datum": "largest_connected_surface_object_assembly",
+    "policy": {
+      "relative_contact_tolerance": 0.005,
+      "area_weighting": true,
+      "grounding_required": false
+    },
+    "reason": "L1 isolated object/assembly, not an L2 room with terrain. Full triangle contact graph; no fabricated floor or gravity exception.",
+    "limitations": [
+      "Connection proxy only; no load balance, penetration, hidden joints or dynamics certification."
+    ]
+  },
+  "reference_regions": null,
+  "reference_boxes": null,
+  "vlm_spec_digest": "e8efb4421063f79d81eac5577e4c8bb3015e0e3b777d71dcf87723c19a1ae64e",
+  "formal_score_eligible": false,
+  "reference_views": [],
+  "annotation_review": "ai_draft_pending_human_calibration",
+  "strict_reference_evidence": false,
+  "presentation_policy": "fixed_neutral_studio_intrinsic_object_aesthetics_not_authored_lighting"
+}

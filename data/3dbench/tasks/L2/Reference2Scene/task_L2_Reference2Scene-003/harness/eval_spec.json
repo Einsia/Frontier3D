@@ -1,0 +1,218 @@
+{
+  "version": "l2-v2.2.0",
+  "profile": "L2",
+  "mode": "reference",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "main.png",
+    "alternate.png",
+    "README.md"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "checks": {
+    "content": [
+      {
+        "id": "real_geometry",
+        "metric": "equals",
+        "group": "real_geometry",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "spatial": [
+      {
+        "id": "alternate_relationship",
+        "metric": "l2_case_camera_pair",
+        "group": "alternate_relationship",
+        "params": {
+          "mode": "local_translation",
+          "delta_m": 0.3,
+          "tolerance": 0.003
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "main_projection",
+        "metric": "equals",
+        "group": "main_projection",
+        "params": {
+          "path": "/scene/cameras/__main/type",
+          "expected": "PERSP"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "physics": [
+      {
+        "id": "support_geometry_available",
+        "metric": "equals",
+        "group": "support_geometry_available",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        }
+      }
+    ],
+    "visual": [
+      {
+        "id": "main_native_size",
+        "metric": "equals",
+        "group": "main_native_size",
+        "params": {
+          "path": "/artifacts/main.png/size",
+          "expected": [
+            1600,
+            900
+          ]
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "main_png",
+        "metric": "equals",
+        "group": "main_png",
+        "params": {
+          "path": "/artifacts/main.png/format",
+          "expected": "PNG"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "alternate_native_size",
+        "metric": "equals",
+        "group": "alternate_native_size",
+        "params": {
+          "path": "/artifacts/alternate.png/size",
+          "expected": [
+            1600,
+            900
+          ]
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "alternate_png",
+        "metric": "equals",
+        "group": "alternate_png",
+        "params": {
+          "path": "/artifacts/alternate.png/format",
+          "expected": "PNG"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "structure": [
+      {
+        "id": "engine",
+        "metric": "equals",
+        "group": "engine",
+        "params": {
+          "path": "/scene/render/engine",
+          "expected": "CYCLES"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "view_transform",
+        "metric": "equals",
+        "group": "view_transform",
+        "params": {
+          "path": "/scene/render/view_transform",
+          "expected": "AgX"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "exposure",
+        "metric": "numeric",
+        "group": "exposure",
+        "params": {
+          "path": "/scene/render/exposure",
+          "expected": 0.0,
+          "tolerance": 1e-06
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "gamma",
+        "metric": "numeric",
+        "group": "gamma",
+        "params": {
+          "path": "/scene/render/gamma",
+          "expected": 1.0,
+          "tolerance": 1e-06
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "metres",
+        "metric": "equals",
+        "group": "metres",
+        "params": {
+          "path": "/scene/unit_system",
+          "expected": "METRIC"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "unit_scale",
+        "metric": "numeric",
+        "group": "unit_scale",
+        "params": {
+          "path": "/scene/unit_scale",
+          "expected": 1.0,
+          "tolerance": 1e-06
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "editable",
+        "metric": "equals",
+        "group": "editable",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "robust": [
+      {
+        "id": "seed_execution",
+        "metric": "seed_success",
+        "group": "seed_execution",
+        "params": {},
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ]
+  },
+  "reference_images": {
+    "main": "environment/input/reference.png"
+  },
+  "critical_constraints": [],
+  "scene": "scene.blend",
+  "render_views": []
+}

@@ -1,0 +1,112 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_024",
+  "family": "Reference2Scene",
+  "instruction_sha256": "23262d8c56173c1f2e0b3452d019a8a68e1e61e5b4f768b15538424fc244183d",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "03585d7383b1ed0602282c281a4a3af419c9b50a40452d014517233fcfc80b61"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "detail_open_toe_straps",
+      "component": "F",
+      "question": "是否保留露趾开口、前部横向带和踝部环带的局部形态？",
+      "units": [
+        "Preserve the open toe, front strap, ankle strap"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_insole_sole",
+      "component": "F",
+      "question": "鞋垫是否呈连续弯曲形态，鞋底是否保持薄的截面？",
+      "units": [
+        "curved insole, thin sole"
+      ],
+      "global_weight": 0.16,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_heel_structure",
+      "component": "F",
+      "question": "后跟是否具有图示的雕塑性结构和可见负空间？",
+      "units": [
+        "sculptural heel structure, including the negative spaces in the heel"
+      ],
+      "global_weight": 0.2,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_surface_geometry",
+      "component": "F",
+      "question": "可见表面是否保留连续曲率、厚度、凹陷、开口和连接关系？",
+      "units": [
+        "Preserve continuous curvature, thickness, recesses, openings, thin structures, connections and occlusions."
+      ],
+      "global_weight": 0.18,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_separable_parts",
+      "component": "F",
+      "question": "独立部件是否可编辑为独立对象或清晰分离的网格岛？",
+      "units": [
+        "Distinct components should be editable objects or clearly separable mesh islands"
+      ],
+      "global_weight": 0.14,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "detail_unseen_surfaces",
+      "component": "F",
+      "question": "不可见表面是否以合理的完整几何延续，而没有添加内部机械结构？",
+      "units": [
+        "complete unseen surfaces plausibly without inventing internal machinery"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ]
+}

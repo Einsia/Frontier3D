@@ -1,0 +1,17 @@
+{
+  "uid": "e1127f2c8d4d4d65b9608ff3714890bc",
+  "file": "source.glb",
+  "download_filename": "red_digital_cinema_weapon_dragon_8k_camera.glb",
+  "bytes": 24099924,
+  "sha256": "0e5d1f8e749613b88d596453fdc901be59919557d7d604e4915e2dcf64eb6af9",
+  "method": "User browser download; identity verified from embedded glTF asset.extras",
+  "embedded_attribution": {
+    "author": "Black Prism Studios (https://sketchfab.com/blackprismstudios)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/red-digital-cinema-weapon-dragon-8k-camera-e1127f2c8d4d4d65b9608ff3714890bc",
+    "title": "RED Digital Cinema Weapon Dragon 8K Camera"
+  },
+  "gltf_meshes": 301,
+  "gltf_images": 10,
+  "animations": []
+}

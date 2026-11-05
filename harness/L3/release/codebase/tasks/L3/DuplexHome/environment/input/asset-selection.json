@@ -1,0 +1,29 @@
+{
+  "material_ids": [
+    "wooden_floor_02",
+    "old_wooden_floor_01",
+    "roof_tiles",
+    "granite_tile",
+    "black_painted_planks",
+    "blue_painted_planks",
+    "plastered_wall_05",
+    "plastered_wall_04",
+    "quatrefoil_jacquard_fabric",
+    "denim_fabric",
+    "metal_plate_02",
+    "rusty_metal_05"
+  ],
+  "model_packs": [
+    "furniture-kit",
+    "food-kit",
+    "survival-kit"
+  ],
+  "available_model_count": 420,
+  "model_catalog": "/assets/models/manifest.json",
+  "material_catalog": "/assets/polyhaven/manifest.json",
+  "catalog_sha256": {
+    "materials": "14d62e1c63a8a1b5a6a2286707fa89bb772859058199ef8918892ab735705e05",
+    "models": "2a53433384384d8e2d57af7bf931db0a189bc26f59caeffe06cc094db97d52bf"
+  },
+  "note": "Shortlist only; all libraries remain available. Modify assets or build your own to match the task style."
+}

@@ -1,0 +1,5 @@
+便携无线电收发机
+Mateusz Sadek
+https://polyhaven.com/a/vintage_radio_transceiver
+CC0-1.0
+Changes: static display normalization, original studio lighting and cameras. Source meshes may combine multiple physical components; reconstruction must preserve editable semantic parts.

@@ -1,0 +1,274 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/58779cfb5616157476e0/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/1ed52de60e496272b590/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/187be1d36f2aac77dc5e/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_024/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r01",
+      "label": "左下前景自行车及后货筐",
+      "polygon": [
+        [
+          0,
+          0.565
+        ],
+        [
+          0.175,
+          0.559
+        ],
+        [
+          0.255,
+          0.605
+        ],
+        [
+          0.444,
+          0.587
+        ],
+        [
+          0.505,
+          0.629
+        ],
+        [
+          0.452,
+          0.788
+        ],
+        [
+          0.158,
+          0.819
+        ],
+        [
+          0,
+          0.829
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "r02",
+      "label": "右侧近景自行车",
+      "polygon": [
+        [
+          0.651,
+          0.522
+        ],
+        [
+          0.815,
+          0.531
+        ],
+        [
+          0.867,
+          0.567
+        ],
+        [
+          0.872,
+          0.658
+        ],
+        [
+          0.747,
+          0.721
+        ],
+        [
+          0.655,
+          0.71
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r03",
+      "label": "顶部桥梁与梁间结构",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.43
+        ],
+        [
+          0.81,
+          0.425
+        ],
+        [
+          0.758,
+          0.34
+        ],
+        [
+          0.55,
+          0.29
+        ],
+        [
+          0,
+          0.197
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "r04",
+      "label": "中央主要支柱",
+      "polygon": [
+        [
+          0.559,
+          0.291
+        ],
+        [
+          0.647,
+          0.299
+        ],
+        [
+          0.638,
+          0.691
+        ],
+        [
+          0.596,
+          0.697
+        ],
+        [
+          0.557,
+          0.677
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r05",
+      "label": "前景栏杆与扶手",
+      "polygon": [
+        [
+          0,
+          0.537
+        ],
+        [
+          0.58,
+          0.525
+        ],
+        [
+          0.586,
+          0.689
+        ],
+        [
+          0,
+          0.782
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "r06",
+      "label": "桥外树木",
+      "polygon": [
+        [
+          0,
+          0.202
+        ],
+        [
+          0.556,
+          0.296
+        ],
+        [
+          0.555,
+          0.405
+        ],
+        [
+          0.415,
+          0.444
+        ],
+        [
+          0.354,
+          0.514
+        ],
+        [
+          0.126,
+          0.541
+        ],
+        [
+          0,
+          0.523
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "n01",
+      "measurement_definition": "在原生场景中，以米为单位，沿世界 Z 轴测量作为尺度基准的行人栏杆从其所在步行地面到顶部的高度；不得以图像像素高度代替。",
+      "quantity": "行人栏杆尺度基准高度",
+      "relation": "equal",
+      "source_quote": "Use a 1.1 m pedestrian railing height as the task scale convention",
+      "target": 1.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n02",
+      "measurement_definition": "读取两台相机的世界位置，将备用相机位置减去主相机位置所得位移投影到主相机局部正 X 轴，检查该有符号分量；位移方向、旋转和镜头保持另作语义检查。",
+      "quantity": "备用相机沿主相机局部正 X 轴的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "n03",
+      "measurement_definition": "在原生场景中计数用于主视图及平移备用视图且被保留的相机对象；仅计该指定相机对，不限制其他辅助相机。",
+      "quantity": "保留的指定视图相机数量",
+      "relation": "equal",
+      "source_quote": "retain both cameras",
+      "target": 2,
+      "unit": "台",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

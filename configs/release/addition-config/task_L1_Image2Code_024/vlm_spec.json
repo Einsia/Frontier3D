@@ -1,0 +1,142 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_024",
+  "family": "Reference2Scene",
+  "instruction_sha256": "0f75d3273cd2157da1a58ca0c48ec402df6229efd35d7f6578ad8dabb72a0546",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_024",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "fc02402baaf717b675862bf06057aa33877a0df5d0454b5e35053e0fb49ea249",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-dc93de6e72af32240d3cc51aec6c47e6efbd686cd6b0e7678807f19712d2bdf7"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_rotor",
+        "query": "圆形制动盘，包括深色盘面与通风外缘",
+        "weight": 0.35,
+        "boxes": [
+          [
+            0.273,
+            0.301,
+            0.683,
+            0.827
+          ]
+        ],
+        "boundary_notes": "框住卡钳下方可见盘体的完整范围；包含左侧深色厚度，不补全被卡钳遮住的圆周，不含投影。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_hub",
+        "query": "凸起的中央轮毂",
+        "weight": 0.25,
+        "boxes": [
+          [
+            0.399,
+            0.376,
+            0.626,
+            0.704
+          ]
+        ],
+        "boundary_notes": "包含黑色前面、环形台阶及凸起侧壁，不把周围摩擦盘面算入轮毂。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_caliper",
+        "query": "完整金色卡钳组件",
+        "weight": 0.3,
+        "boxes": [
+          [
+            0.354,
+            0.182,
+            0.73,
+            0.484
+          ]
+        ],
+        "boundary_notes": "包含壳体、安装耳、可见紧固件和前端细管；不包含其后露出的制动盘。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_bore",
+        "query": "轮毂中心通孔",
+        "weight": 0.1,
+        "boxes": [
+          [
+            0.527,
+            0.504,
+            0.58,
+            0.593
+          ]
+        ],
+        "boundary_notes": "限中心孔口及可见内壁，不含外围凸起环唇；不对微小孔洞另作定位类别。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

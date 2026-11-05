@@ -1,0 +1,223 @@
+{
+  "protocol": "3dbench-l2-rubric-v3",
+  "case_id": "L2/Reference2Scene/task_L2_Reference2Scene-009",
+  "family": "Reference2Scene",
+  "instruction_sha256": "1fa98fc1420f58dd9efb73af10c9ddefc92620e885474b0289c7b6e5356720a0",
+  "reference_policy": "Public originals only. reference-0 -> main; alternate is a geometry diagnostic.",
+  "focus": "Tall hall and repeated side arches/columns. Near arch frames upper edge, symmetrical deep hall converges on far stairs; whale remains suspended centrally above the floor. Warm weathered stone, dark timber roof panels, pale glazing and white skeleton; fine carving may simplify.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "reference_feature_1",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Tall hall and repeated side arches/columns. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_1"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_2",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Upper galleries and layered balustrades. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_2"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_3",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Glazed pitched roof with real ribs. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_3"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_4",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Far split staircase beneath tall windows. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_4"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "reference_feature_5",
+      "dimension": "reference_fidelity",
+      "weight": 0.08,
+      "question": "Compare actual visible ORIGINAL -> CANDIDATE geometry, completeness and proportions: Suspended whale skeleton with skull, curved jaw/spine and repeated ribs. Labels and generic shapes are not evidence.",
+      "units": [
+        "reference_feature_5"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "dimension": "reference_layout",
+      "weight": 0.2,
+      "question": "Near arch frames upper edge, symmetrical deep hall converges on far stairs; whale remains suspended centrally above the floor. No alignment/cropping. Judge the authored main composition.",
+      "units": [
+        "composition_fidelity"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "cross_view",
+      "dimension": "reference_layout",
+      "weight": 0.1,
+      "question": "Compare every supplied original and every required authored view for coherent real 3D structure, thickness and attachments. Use native inspection for suspected flat photographic substitutes; wrong/absent required geometry earns zero on its feature. Do not infer unseen reference geometry. Alternate has no reference pixel target.",
+      "units": [
+        "cross_view"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png",
+        "candidate/alternate.png"
+      ]
+    },
+    {
+      "id": "materials_colors",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original material/color fidelity: Warm weathered stone, dark timber roof panels, pale glazing and white skeleton; fine carving may simplify.",
+      "units": [
+        "materials_colors"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    },
+    {
+      "id": "lighting_atmosphere",
+      "dimension": "reference_appearance",
+      "weight": 0.15,
+      "question": "Compare original light direction, contrast, exposure, shadows and atmosphere: Warm weathered stone, dark timber roof panels, pale glazing and white skeleton; fine carving may simplify.",
+      "units": [
+        "lighting_atmosphere"
+      ],
+      "required_evidence": [
+        "candidate/main.png",
+        "reference/reference-0.png"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.2.0",
+    "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-009",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "reference_path": "environment/input/reference.png",
+    "reference_sha256": "b6a381084e938030c205c35cef8a10abfa4188e2a38f932ea37f1c840007a7f6",
+    "image_size": [
+      1600,
+      900
+    ],
+    "detector": {
+      "method": "vlm-boxes-v2",
+      "model": "strict-agentic-judge",
+      "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+    },
+    "context_queries": [],
+    "review_kind": "primary_assistant_reference_only_ai_draft",
+    "human_reviewed": false,
+    "formal_score_eligible": false,
+    "targets": [
+      {
+        "id": "target_1",
+        "query": "suspended whale skeleton full visible extent",
+        "label": "suspended whale skeleton full visible extent",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.44,
+            0.461,
+            0.591,
+            0.69
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. suspended whale skeleton full visible extent"
+      },
+      {
+        "id": "target_2",
+        "query": "far main staircase including two upper branches",
+        "label": "far main staircase including two upper branches",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.435,
+            0.736,
+            0.594,
+            0.899
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. far main staircase including two upper branches"
+      },
+      {
+        "id": "target_3",
+        "query": "central pitched glazed roof structure excluding near foreground arch",
+        "label": "central pitched glazed roof structure excluding near foreground arch",
+        "weight": 0.3333333333333333,
+        "boxes": [
+          [
+            0.278,
+            0.076,
+            0.763,
+            0.592
+          ]
+        ],
+        "review_status": "approved",
+        "review_note": "AI reference-only draft frozen before generation; human calibration pending. central pitched glazed roof structure excluding near foreground arch"
+      }
+    ]
+  },
+  "fidelity_policy": "case_specific_reference_fidelity_no_registration_v1",
+  "reference_views": [
+    "reference/reference-0.png"
+  ],
+  "authoring": "primary_assistant_reference_only_ai_draft_human_calibration_pending"
+}

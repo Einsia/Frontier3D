@@ -1,0 +1,21 @@
+{
+  "uid": "7719d93e76ca40a5a8774f5530a7aecf",
+  "name": "R2D2",
+  "source_url": "https://sketchfab.com/3d-models/r2d2-7719d93e76ca40a5a8774f5530a7aecf",
+  "author": {
+    "displayName": "jesuskrisis",
+    "profileUrl": "https://sketchfab.com/jesuskrisis"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "ac78e4d1f5c13887a1b55a28391f04a646cd233be852cd37509f1f3e0433b292",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true,
+  "requested_source_url": "https://sketchfab.com/3d-models/r2d2-657f524bec214484a27a31ea2044f3ad",
+  "source_substitution": "User-supplied R2D2 download; original listed model unavailable"
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "l3-reference-package-v1",
+  "input_mode": "image",
+  "images": [
+    {
+      "id": "reference-01",
+      "path": "references/reference-01.jpg",
+      "sha256": "ccc09171fc711b319caaf09b33bebb9dea908b58c294350fbdcf8e0f232bf1b0",
+      "width": 1280,
+      "height": 720,
+      "provenance": {
+        "task": "l3-g04",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-g04/rialto-01.jpg",
+        "source": "https://www.philipk.net/portfolio/overwatch/overwatch_port.html",
+        "download_url": "https://www.philipk.net/portfolio/overwatch/Overwatch_Rialto_01.jpg",
+        "sha256": "74cf9abf3609a8f3b15b2f7bf60a63ada79b7bd20f9e6abb0a8a7aa2d9c3b91c",
+        "copyright": "Blizzard Entertainment; environment artist Philip Klevestav portfolio",
+        "license": "copyrighted_game_screenshot",
+        "usage": "visual_reference_only",
+        "kind": "game_screenshot"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    },
+    {
+      "id": "reference-02",
+      "path": "references/reference-02.jpg",
+      "sha256": "d1e4fa1a1e57db85dedd848e943578112bb508806a6491ff4f71cafd9b3bd8d2",
+      "width": 1280,
+      "height": 720,
+      "provenance": {
+        "task": "l3-g04",
+        "path": "historical-source:data/l3/preparation/l3-suite-20261023/references/l3-g04/rialto-02.jpg",
+        "source": "https://www.philipk.net/portfolio/overwatch/overwatch_port.html",
+        "download_url": "https://www.philipk.net/portfolio/overwatch/Overwatch_Rialto_02.jpg",
+        "sha256": "331ef587f22dec2b507b4a2a38e887aae7a08d83b1729c38b54b2355104c573c",
+        "copyright": "Blizzard Entertainment; environment artist Philip Klevestav portfolio",
+        "license": "copyrighted_game_screenshot",
+        "usage": "visual_reference_only",
+        "kind": "game_screenshot"
+      },
+      "transform": "aspect-preserving resize, JPEG encoding; no synthesized scene content"
+    }
+  ],
+  "geometry_scope": "Only visible environment is a visual target. Unseen service rooms and task-specific mechanisms are coherent design extensions.",
+  "visual_review": "reviewed_by_organizer_agent",
+  "hud_and_people": "Game HUD, watermark, protagonist and incidental people are not reconstruction requirements."
+}

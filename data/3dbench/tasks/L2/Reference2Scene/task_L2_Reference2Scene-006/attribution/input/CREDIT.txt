@@ -1,0 +1,6 @@
+Bedroom
+Author: amaryase
+Source: https://blendswap.com/blend/30190
+License: CC BY-SA (version not stated on inspected listing)
+License reference: https://blendswap.com/blend/30190
+Changes: imported/packed in Blender 5.2.1; camera and render setup; texture path repair where recorded in audit.json. Original download preserved privately.

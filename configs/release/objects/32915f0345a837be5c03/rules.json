@@ -1,0 +1,645 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "底座是否具有可辨识的箱体形态与上下层结构？",
+      "source_quote": "two-tier box base",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "停机坪是否呈圆形，并具有H形标记和内圈刻度？",
+      "source_quote": "a circular 1.60 m landing pad, H marking, inner graduations",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "限位件是否呈块状，定位件和辅助定位件是否呈锥状？",
+      "source_quote": "two symmetric limit blocks, three positioning cones and a fourth auxiliary cone",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "开启的壳体门是否具有实体门板，开口内是否可辨认线缆和导向件？",
+      "source_quote": "Open both housing doors 80 +/-3 degrees, showing wiring and guides",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "状态指示件是否具有侧面条带形态？",
+      "source_quote": "a half-lit side status strip",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "无人机是否具有四旋翼构型、机身、螺旋桨及可辨识的支脚？",
+      "source_quote": "A quadrotor of 0.60 m motor spacing and 0.45 m body length rests level within 2 degrees, its four feet seated in the cone positions with at most 5 mm gaps. Propellers are stationary at different natural orientations.",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "机尾是否具有可滑动电池舱盖、舱口、插入导轨和导向配合特征？",
+      "source_quote": "Slide the rear battery hatch 70% open. A swapping arm from a rear column holds a charged 0.20 x 0.12 x 0.06 m battery, inserted 60 +/-5% along the tail-bay rails. Align guide features within 2 mm",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "换电机构是否具有后立柱、机械臂及实体夹持末端，并以几何结构表达关节？",
+      "source_quote": "Represent specified joints and end-effectors geometrically.",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "两块电池是否具有相匹配的实体外形，等待位置是否具有转台结构？",
+      "source_quote": "The removed depleted battery rests at a turntable waiting position inside the dock, visually matching the charged one except for a red charge label",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "风速仪是否具有桅杆支撑，信标是否为可辨识的独立实体部件？",
+      "source_quote": "Add a 0.40 m anemometer mast and a beacon at the pad edge.",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "本任务仅有文字，无公共参考图；按文字任务规则，reference_primary为空，regions与targets为空。嵌入schema的reference_primary最小长度与该规则冲突，采用明确的文字任务规则。",
+    "未提供legacy-detail-20261018-v1的具体内容；本计划仅依据本轮完整公开合同，不推定额外历史规则。",
+    "未提供候选作品；所有项目均为待执行的检查，不表示已测量或已通过。",
+    "底座约2.2 x 2.2 m仅有近似名义值，无明示容差；不得将其解释为零误差硬阈值。",
+    "圆形停机坪的1.60 m未明确指直径还是半径；电机间距未明确指相邻电机还是对角电机。相应测量须报告约定及歧义，不增设隐藏定义。",
+    "电池三个尺寸的轴向对应、舱盖开启百分比的行程基准和电池插入百分比的分母未明确；须报告原生几何测量基准。",
+    "门角度的关闭基准、导向对齐的对应特征、支脚间隙测点和机体水平基准未细化；应使用可辨认的功能几何并记录约定。",
+    "half-lit未明确指亮起长度、分段数量或照明强度；仅作语义检查，不设50%的精确几何阈值。",
+    "机械臂工作球的中心、半径和各服务点精确位置未给出；使用场景声明的几何包络，不推定逆运动学或动力学可行性。",
+    "维护带以底座主体还是突出部件为边界未明确；须记录边界并纳入其他设施和突出物对通行的影响。未指定额外导航路线宽度或起终点。",
+    "原文未指定关节类型、关节数量、夹爪形态、材料厚度数值或风速仪叶片数量；不得补充这些约束。",
+    "光线低暖、阴影长、桨叶自然朝向等为定性要求，不转化为未给出的数值阈值。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "读取底座主体沿其第一水平局部轴的外包络尺寸；作为近似名义尺寸记录，不设未给出的误差阈值。",
+      "quantity": "底座第一水平尺寸",
+      "relation": "equal",
+      "source_quote": "about 2.2 x 2.2 m",
+      "target": 2.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取底座主体沿其第二水平局部轴的外包络尺寸；作为近似名义尺寸记录，不设未给出的误差阈值。",
+      "quantity": "底座第二水平尺寸",
+      "relation": "equal",
+      "source_quote": "about 2.2 x 2.2 m",
+      "target": 2.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "按实体层级辨认并计数底座的上下箱体层。",
+      "quantity": "底座层数",
+      "relation": "equal",
+      "source_quote": "two-tier box base",
+      "target": 2,
+      "unit": "层",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "从圆形坪面边界读取圆的尺寸；明确报告直径与半径以及所采用的1.60 m解释，保留文本歧义。",
+      "quantity": "圆形停机坪名义尺寸",
+      "relation": "equal",
+      "source_quote": "a circular 1.60 m landing pad",
+      "target": 1.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "计数具有限位功能的独立块状实体。",
+      "quantity": "限位块数量",
+      "relation": "equal",
+      "source_quote": "two symmetric limit blocks",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "按语义角色计数主要定位锥，不包含辅助锥。",
+      "quantity": "主要定位锥数量",
+      "relation": "equal",
+      "source_quote": "three positioning cones",
+      "target": 3,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "计数作为第四定位位置的辅助锥。",
+      "quantity": "辅助锥数量",
+      "relation": "equal",
+      "source_quote": "a fourth auxiliary cone",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "计数处于开启状态的壳体门实体。",
+      "quantity": "开启壳体门数量",
+      "relation": "equal",
+      "source_quote": "Open both housing doors",
+      "target": 2,
+      "unit": "扇",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 3,
+      "id": "N09",
+      "measurement_definition": "分别测量每扇门绕自身铰轴相对关闭基准的开启角，每扇独立判定。",
+      "quantity": "壳体门开启角",
+      "relation": "equal",
+      "source_quote": "Open both housing doors 80 +/-3 degrees",
+      "target": 80,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "计数无人机的独立旋翼组件。",
+      "quantity": "旋翼数量",
+      "relation": "equal",
+      "source_quote": "A quadrotor",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "读取电机轴心间距，列出相邻与对角距离并记录任务所采用的间距解释。",
+      "quantity": "电机间距",
+      "relation": "equal",
+      "source_quote": "0.60 m motor spacing",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "沿机身纵轴测量机身主体前后端的距离，区分旋翼和突出支撑件。",
+      "quantity": "机身长度",
+      "relation": "equal",
+      "source_quote": "0.45 m body length",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "测量机体水平基准面法向与世界Z轴的夹角。",
+      "quantity": "机体偏离水平角",
+      "relation": "at_most",
+      "source_quote": "rests level within 2 degrees",
+      "target": 2,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "计数支脚实体及其与锥位的一一对应关系。",
+      "quantity": "支脚数量",
+      "relation": "equal",
+      "source_quote": "its four feet seated in the cone positions",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "逐一测量各支脚就位表面与对应锥位承接表面的功能间隙，取最大值；记录测点和方向。",
+      "quantity": "支脚就位最大间隙",
+      "relation": "at_most",
+      "source_quote": "with at most 5 mm gaps",
+      "target": 5,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "沿舱盖滑动自由度测量当前开启位移与完整开启行程之比；完整行程须有可说明的基准。",
+      "quantity": "后电池舱盖开启比例",
+      "relation": "equal",
+      "source_quote": "Slide the rear battery hatch 70% open.",
+      "target": 70,
+      "unit": "%",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "在电池自身坐标系测量标注为第一尺寸的实体包络边长，并记录轴向对应。",
+      "quantity": "充电电池第一尺寸",
+      "relation": "equal",
+      "source_quote": "a charged 0.20 x 0.12 x 0.06 m battery",
+      "target": 0.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "在电池自身坐标系测量标注为第二尺寸的实体包络边长，并记录轴向对应。",
+      "quantity": "充电电池第二尺寸",
+      "relation": "equal",
+      "source_quote": "a charged 0.20 x 0.12 x 0.06 m battery",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "在电池自身坐标系测量标注为第三尺寸的实体包络边长，并记录轴向对应。",
+      "quantity": "充电电池第三尺寸",
+      "relation": "equal",
+      "source_quote": "a charged 0.20 x 0.12 x 0.06 m battery",
+      "target": 0.06,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 5,
+      "id": "N20",
+      "measurement_definition": "沿机尾导轨测量当前插入距离相对于声明的完整插入基准之比；容差按百分数数值的正负5处理。",
+      "quantity": "充电电池插入比例",
+      "relation": "equal",
+      "source_quote": "inserted 60 +/-5% along the tail-bay rails",
+      "target": 60,
+      "unit": "%",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "建立电池与舱体导向特征的对应关系，测量配合横截面内的偏移并取最大值，记录对应特征。",
+      "quantity": "导向特征对齐误差",
+      "relation": "at_most",
+      "source_quote": "Align guide features within 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "计算夹爪指定接触面与充电电池之间的最小非负分离距离；接触或允许的轻微穿入均无正间隙。",
+      "quantity": "夹爪与电池接触间隙",
+      "relation": "equal",
+      "source_quote": "maintain gripper contact",
+      "target": 0,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "在夹爪与电池接触区域计算实体穿入深度并取最大值，说明采用的穿入方向或算法。",
+      "quantity": "夹爪最大穿入深度",
+      "relation": "at_most",
+      "source_quote": "at most 2 mm penetration",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "沿桅杆轴线测量桅杆底端至顶端的实体长度，区分额外传感器部件。",
+      "quantity": "风速仪桅杆长度",
+      "relation": "equal",
+      "source_quote": "a 0.40 m anemometer mast",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "围绕声明的底座边界构造水平维护带并测量全周连续可用宽度；排除被评估机器人自身，纳入其他设施及突出物。",
+      "quantity": "连续维护带要求宽度",
+      "relation": "at_least",
+      "source_quote": "a continuous 0.30 m maintenance band around the dock",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "读取场景标记的换电服务点世界Z坐标。",
+      "quantity": "换电点高度",
+      "relation": "range",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere at heights 0.80-1.30 m.",
+      "target": 0.8,
+      "unit": "m",
+      "upper": 1.3
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "读取等待转台服务点的世界Z坐标，记录其在转台上的定位约定。",
+      "quantity": "等待转台服务点高度",
+      "relation": "range",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere at heights 0.80-1.30 m.",
+      "target": 0.8,
+      "unit": "m",
+      "upper": 1.3
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "读取螺旋桨上方检查服务点的世界Z坐标。",
+      "quantity": "桨上检查点高度",
+      "relation": "range",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere at heights 0.80-1.30 m.",
+      "target": 0.8,
+      "unit": "m",
+      "upper": 1.3
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "由导轨确定插入轴，测量其与机身纵轴的最小平行偏角；插入朝向另由机尾舱关系判断。",
+      "quantity": "插入方向平行偏角",
+      "relation": "at_most",
+      "source_quote": "Insertion direction is parallel to the fuselage axis within 2 degrees",
+      "target": 2,
+      "unit": "degrees",
+      "upper": null
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否表现户外无人机机库正在换电的冻结场景？",
+      "source_quote": "Drone dock: battery swap in progress. Create an outdoor dock",
+      "weight": 0.025
+    },
+    {
+      "id": "S02",
+      "question": "主视图是否从近距离斜上方观察？",
+      "source_quote": "seen close from above at an oblique angle",
+      "weight": 0.025
+    },
+    {
+      "id": "S03",
+      "question": "箱式底座是否承载圆形停机坪？",
+      "source_quote": "Use a two-tier box base with a circular 1.60 m landing pad",
+      "weight": 0.025
+    },
+    {
+      "id": "S04",
+      "question": "停机坪是否具有H标记与内侧刻度？",
+      "source_quote": "H marking, inner graduations",
+      "weight": 0.025
+    },
+    {
+      "id": "S05",
+      "question": "限位块是否对称布置？",
+      "source_quote": "two symmetric limit blocks",
+      "weight": 0.025
+    },
+    {
+      "id": "S06",
+      "question": "是否设置主要定位锥和辅助锥？",
+      "source_quote": "three positioning cones and a fourth auxiliary cone",
+      "weight": 0.025
+    },
+    {
+      "id": "S07",
+      "question": "壳体门是否均已打开并显露线缆与导向件？",
+      "source_quote": "Open both housing doors 80 +/-3 degrees, showing wiring and guides",
+      "weight": 0.025
+    },
+    {
+      "id": "S08",
+      "question": "侧面状态条是否呈半亮状态？",
+      "source_quote": "a half-lit side status strip",
+      "weight": 0.025
+    },
+    {
+      "id": "S09",
+      "question": "四旋翼无人机是否水平停放，各支脚分别落在锥位？",
+      "source_quote": "A quadrotor of 0.60 m motor spacing and 0.45 m body length rests level within 2 degrees, its four feet seated in the cone positions with at most 5 mm gaps.",
+      "weight": 0.025
+    },
+    {
+      "id": "S10",
+      "question": "静止螺旋桨是否具有不同且自然的朝向？",
+      "source_quote": "Propellers are stationary at different natural orientations.",
+      "weight": 0.025
+    },
+    {
+      "id": "S11",
+      "question": "后电池舱盖是否沿滑动方向部分打开？",
+      "source_quote": "Slide the rear battery hatch 70% open.",
+      "weight": 0.025
+    },
+    {
+      "id": "S12",
+      "question": "换电机械臂是否从后立柱伸出并夹持已充电电池？",
+      "source_quote": "A swapping arm from a rear column holds a charged 0.20 x 0.12 x 0.06 m battery",
+      "weight": 0.025
+    },
+    {
+      "id": "S13",
+      "question": "已充电电池是否沿机尾舱导轨部分插入？",
+      "source_quote": "inserted 60 +/-5% along the tail-bay rails",
+      "weight": 0.025
+    },
+    {
+      "id": "S14",
+      "question": "配合导向特征是否对齐？",
+      "source_quote": "Align guide features within 2 mm",
+      "weight": 0.025
+    },
+    {
+      "id": "S15",
+      "question": "夹爪是否保持与电池接触？",
+      "source_quote": "maintain gripper contact with at most 2 mm penetration",
+      "weight": 0.025
+    },
+    {
+      "id": "S16",
+      "question": "取出的耗尽电池是否放置在机库内部转台的等待位置？",
+      "source_quote": "The removed depleted battery rests at a turntable waiting position inside the dock",
+      "weight": 0.025
+    },
+    {
+      "id": "S17",
+      "question": "耗尽电池是否除红色电量标签外与已充电电池外观一致？",
+      "source_quote": "visually matching the charged one except for a red charge label",
+      "weight": 0.025
+    },
+    {
+      "id": "S18",
+      "question": "耗尽电池是否未占用正在插入电池的同一舱位？",
+      "source_quote": "it must not occupy the same bay",
+      "weight": 0.025
+    },
+    {
+      "id": "S19",
+      "question": "停机坪边缘是否设有风速仪桅杆？",
+      "source_quote": "Add a 0.40 m anemometer mast and a beacon at the pad edge.",
+      "weight": 0.025
+    },
+    {
+      "id": "S20",
+      "question": "停机坪边缘是否设有信标？",
+      "source_quote": "Add a 0.40 m anemometer mast and a beacon at the pad edge.",
+      "weight": 0.025
+    },
+    {
+      "id": "S21",
+      "question": "门从关闭到指定开启位置的扫掠空间是否无其他物体侵入？",
+      "source_quote": "Keep door sweep volumes free",
+      "weight": 0.025
+    },
+    {
+      "id": "S22",
+      "question": "机库周围是否具有连续可通行的维护带？",
+      "source_quote": "a continuous 0.30 m maintenance band around the dock",
+      "weight": 0.025
+    },
+    {
+      "id": "S23",
+      "question": "换电点是否位于声明的机械臂工作球内部？",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere",
+      "weight": 0.025
+    },
+    {
+      "id": "S24",
+      "question": "等待转台服务点是否位于声明的机械臂工作球内部？",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere",
+      "weight": 0.025
+    },
+    {
+      "id": "S25",
+      "question": "检查点是否在螺旋桨上方且位于机械臂工作球内部？",
+      "source_quote": "an above-propeller inspection point must lie inside the arm working sphere",
+      "weight": 0.025
+    },
+    {
+      "id": "S26",
+      "question": "电池插入方向是否与机身纵轴平行？",
+      "source_quote": "Insertion direction is parallel to the fuselage axis within 2 degrees",
+      "weight": 0.025
+    },
+    {
+      "id": "S27",
+      "question": "两块电池的实体内部是否互不重叠？",
+      "source_quote": "the batteries remain geometrically exclusive",
+      "weight": 0.025
+    },
+    {
+      "id": "S28",
+      "question": "无人机是否采用白灰配色？",
+      "source_quote": "Use white-grey aircraft",
+      "weight": 0.025
+    },
+    {
+      "id": "S29",
+      "question": "桨叶尖端是否为橙色？",
+      "source_quote": "orange blade tips",
+      "weight": 0.025
+    },
+    {
+      "id": "S30",
+      "question": "机库是否为深灰色？",
+      "source_quote": "dark-grey dock",
+      "weight": 0.025
+    },
+    {
+      "id": "S31",
+      "question": "地面是否为浅色？",
+      "source_quote": "pale ground",
+      "weight": 0.025
+    },
+    {
+      "id": "S32",
+      "question": "是否呈现低角度暖晨光和长停机坪阴影？",
+      "source_quote": "low warm morning light and long pad shadows",
+      "weight": 0.025
+    },
+    {
+      "id": "S33",
+      "question": "构图是否同时纳入飞机、部分插入的电池和开启的门？",
+      "source_quote": "Frame aircraft, partially inserted battery and open doors",
+      "weight": 0.025
+    },
+    {
+      "id": "S34",
+      "question": "是否为无旋翼转动、飞行或电池运动动画的静态场景？",
+      "source_quote": "Static; no rotor rotation, flight or battery-motion animation.",
+      "weight": 0.025
+    },
+    {
+      "id": "S35",
+      "question": "场景是否采用米制与Z轴向上？",
+      "source_quote": "Use metres and Z up.",
+      "weight": 0.025
+    },
+    {
+      "id": "S36",
+      "question": "是否以可编辑、语义部件可分离的实体三维几何构建，并具有合理厚度和支撑？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.025
+    },
+    {
+      "id": "S37",
+      "question": "机械臂是否具有静态关节姿态，关节和末端执行器是否以几何表达？",
+      "source_quote": "A static articulated robot pose is required; no controller, physical dynamics or manipulation trajectory is required. Represent specified joints and end-effectors geometrically.",
+      "weight": 0.025
+    },
+    {
+      "id": "S38",
+      "question": "冻结接触是否与其他服务目标区分，服务点是否标注且未用重复机器人表示？",
+      "source_quote": "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots.",
+      "weight": 0.025
+    },
+    {
+      "id": "S39",
+      "question": "通行净空是否排除被评估机器人自身并计入其他设施及突出物，且具有路线采样坐标和测量约定？",
+      "source_quote": "Navigation clearance refers to the free route excluding the robot being evaluated; include all other furnishings and protrusions. Provide route sample coordinates and the measurement conventions in README.",
+      "weight": 0.025
+    },
+    {
+      "id": "S40",
+      "question": "第二透视视图是否展示关键接触与净空路线，并与主视图保持同一几何和冻结姿态？",
+      "source_quote": "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose",
+      "weight": 0.025
+    }
+  ],
+  "targets": []
+}

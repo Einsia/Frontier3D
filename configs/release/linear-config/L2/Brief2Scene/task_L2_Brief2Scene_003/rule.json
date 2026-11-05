@@ -1,0 +1,60 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_003",
+  "category": "Brief2Scene",
+  "level": "L2",
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "reference_images": {},
+  "edit_context": {},
+  "native_atoms": [],
+  "variants": [
+    "primary",
+    "seed-0",
+    "seed-1",
+    "seed-2"
+  ],
+  "specs": {
+    "native": {
+      "path": "@resource/objects/c9c117103922053d968d/native.json",
+      "sha256": "@recompute"
+    }
+  },
+  "groups": {
+    "native": {
+      "vlm": {
+        "vlm_inventory_house": 0.06666666666666667,
+        "vlm_inventory_road": 0.06666666666666667,
+        "vlm_inventory_sidewalk": 0.06666666666666667,
+        "vlm_inventory_entry_path": 0.06666666666666667,
+        "vlm_inventory_tree": 0.06666666666666667,
+        "vlm_inventory_planter": 0.06666666666666667,
+        "vlm_relations": 0.06666666666666667,
+        "vlm_appearance": 0.06666666666666667,
+        "vlm_cross_view": 0.06666666666666667,
+        "vlm_aesthetic_composition": 0.1,
+        "vlm_aesthetic_light_color": 0.1,
+        "vlm_aesthetic_finish": 0.1,
+        "vlm_aesthetic_coherence": 0.1
+      },
+      "detail": {
+        "detail_semantic_inventory_house": 0.075,
+        "detail_semantic_inventory_road": 0.075,
+        "detail_semantic_inventory_sidewalk": 0.075,
+        "detail_semantic_inventory_entry_path": 0.075,
+        "detail_semantic_inventory_tree": 0.075,
+        "detail_semantic_inventory_planter": 0.075
+      },
+      "content": {
+        "vlm_inventory_house": 0.06666666666666667,
+        "vlm_inventory_road": 0.06666666666666667,
+        "vlm_inventory_sidewalk": 0.06666666666666667,
+        "vlm_inventory_entry_path": 0.06666666666666667,
+        "vlm_inventory_tree": 0.06666666666666667,
+        "vlm_inventory_planter": 0.06666666666666667
+      }
+    }
+  }
+}

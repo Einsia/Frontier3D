@@ -1,0 +1,15 @@
+Task: L1/Image2Code/task_L1_Image2Code_011
+Original source task ID: L1/Image2Code/task_L1_Image2Code_011
+
+Original source notice (environment/input/CREDIT.txt):
+
+多轮行星探索车
+NASA and NASA 3D Resources contributors
+https://github.com/nasa/NASA-3D-Resources/tree/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Space%20Exploration%20Vehicle
+NASA public media (upstream: free and without copyright)
+Changes: static display normalization, original studio lighting and cameras. Source meshes may combine multiple physical components; reconstruction must preserve editable semantic parts.
+
+Scope: These are the existing task source and attribution declarations.
+Third-party assets retain their recorded licenses and restrictions; the
+repository software license does not relicense them. Undeclared or unresolved
+permissions remain unresolved. Original license/provenance files remain in this task.

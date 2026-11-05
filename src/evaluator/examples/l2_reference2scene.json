@@ -1,0 +1,49 @@
+{
+  "version": "scalable-v1.0.0",
+  "profile": "L2",
+  "mode": "reference",
+  "required_artifacts": ["solution.py", "scene.blend", "main.png", "alternate.png"],
+  "scene": "scene.blend",
+  "reference_images": {"main": "environment/input/reference_main.png", "alternate": "environment/input/reference_alternate.png"},
+  "critical_constraints": ["bed_present", "main_camera", "render_main"],
+  "seeds": [0, 1, 2],
+  "tolerances": {"ground_contact_m": 0.10},
+  "render_views": [],
+  "checks": {
+    "content": [
+      {"id": "bed_present", "metric": "object_coverage", "group": "furniture", "params": {"rules": [
+        {"pattern": "bed|Bed|duvet|Duvet|mattress|Mattress", "min_count": 1},
+        {"pattern": "Cabinet|cabinet|wardrobe|Wardrobe|shelf|Shelf", "min_count": 1},
+        {"pattern": "lamp|Lamp|light|Light", "min_count": 1},
+        {"pattern": "wall|Wall|Floor|floor|window|Window", "min_count": 3}
+      ]}},
+      {"id": "real_furniture", "metric": "object_coverage", "group": "three_dimensional", "params": {"rules": [
+        {"pattern": "bed|Bed|Cabinet|cabinet|Ottoman|ottoman|table|Table", "type": "MESH", "min_count": 3}
+      ]}}
+    ],
+    "spatial": [
+      {"id": "main_camera", "metric": "camera_config", "group": "cameras", "importance": "high", "params": {"camera": "Main reference camera", "projection": "PERSP", "resolution": [669, 1000]}},
+      {"id": "alternate_camera", "metric": "camera_config", "group": "cameras", "importance": "high", "params": {"camera": "Alternate reference camera", "projection": "PERSP", "resolution": [669, 1000]}},
+      {"id": "bed_on_floor", "metric": "ground_contact", "group": "support", "params": {"selector": {"pattern": "bed|Bed|mattress|Mattress"}, "max_height": "ground_contact_m"}}
+    ],
+    "physics": [
+      {"id": "scene_collision_budget", "metric": "collision_free", "group": "collision", "params": {"max_pairs": 500}},
+      {"id": "no_unsupported_geometry", "metric": "equals", "group": "geometry_support", "params": {"path": "/scene/unsupported_geometry", "expected": []}}
+    ],
+    "visual": [
+      {"id": "render_main", "metric": "image_validity", "group": "renders", "params": {"path": "/artifacts/main.png/path"}},
+      {"id": "render_alternate", "metric": "image_validity", "group": "renders", "params": {"path": "/artifacts/alternate.png/path"}},
+      {"id": "reference_main_similarity", "metric": "image_ssim", "group": "reference_match", "params": {"candidate": "/artifacts/main.png/path", "reference": "/reference_images/main/path"}},
+      {"id": "reference_alternate_similarity", "metric": "image_ssim", "group": "reference_match", "params": {"candidate": "/artifacts/alternate.png/path", "reference": "/reference_images/alternate/path"}}
+    ],
+    "structure": [
+      {"id": "editable_scene", "metric": "equals", "group": "editable", "params": {"path": "/scene/all_editable", "expected": true}},
+      {"id": "metric_units", "metric": "equals", "group": "units", "params": {"path": "/scene/unit_system", "expected": "METRIC"}}
+    ],
+    "robust": [
+      {"id": "seed_reproducibility", "metric": "seed_success", "group": "reruns"},
+      {"id": "delivery_main", "metric": "equals", "group": "delivery", "params": {"path": "/artifacts/main.png/loadable", "expected": true}},
+      {"id": "delivery_alternate", "metric": "equals", "group": "delivery", "params": {"path": "/artifacts/alternate.png/loadable", "expected": true}}
+    ]
+  }
+}

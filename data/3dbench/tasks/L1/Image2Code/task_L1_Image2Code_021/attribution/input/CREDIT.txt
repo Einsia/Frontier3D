@@ -1,0 +1,7 @@
+Marimba
+Author: 3D Vault (https://sketchfab.com/3DVault)
+Source: https://sketchfab.com/3d-models/marimba-f0829ad13fb4423b9539cc3ba0d13b9e
+License: CC-BY-4.0
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

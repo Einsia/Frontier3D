@@ -1,0 +1,200 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+  "family": "Reference2Scene",
+  "instruction_sha256": "fe7f61608cb129a847605f11ab975e9ed364cea20f317d65d79a7916ce9101af",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_023",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "caadc44bf37355e3c54e491b0e062d70274ac6cbdf4b246c786b39333460a217",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-1c6b8404a723addf6c8dc1984445a1c6378790af489362d7ea153b9e5ac939e8"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t01",
+        "query": "弯曲牛角",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.209,
+            0.211,
+            0.474,
+            0.33
+          ],
+          [
+            0.538,
+            0.272,
+            0.635,
+            0.438
+          ]
+        ],
+        "boundary_notes": "分别框定左右可见角，从角根至角尖，包含暗面；不补画遮挡部分。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t02",
+        "query": "牛耳",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.296,
+            0.292,
+            0.413,
+            0.35
+          ],
+          [
+            0.624,
+            0.35,
+            0.721,
+            0.44
+          ]
+        ],
+        "boundary_notes": "仅包含可辨认的耳片可见范围，耳根遮挡处止于遮挡边界。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t03",
+        "query": "鼻孔及凸起孔缘",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.297,
+            0.496,
+            0.336,
+            0.553
+          ],
+          [
+            0.368,
+            0.516,
+            0.426,
+            0.575
+          ]
+        ],
+        "boundary_notes": "每个框包括完整可见孔缘和内部暗孔，不仅框黑色区域。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t04",
+        "query": "眼球及眼眶眉部",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.363,
+            0.365,
+            0.395,
+            0.434
+          ],
+          [
+            0.443,
+            0.393,
+            0.551,
+            0.467
+          ]
+        ],
+        "boundary_notes": "包含眼球、眼睑与紧邻眉弓；远侧仅框可辨认的露出部分。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t05",
+        "query": "圆润口鼻与下唇",
+        "weight": 0.15,
+        "boxes": [
+          [
+            0.297,
+            0.495,
+            0.46,
+            0.639
+          ]
+        ],
+        "boundary_notes": "涵盖鼻孔、圆钝鼻端、嘴缝及下唇，不延伸到长鼻梁。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t06",
+        "query": "多面底座",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.198,
+            0.589,
+            0.858,
+            0.89
+          ]
+        ],
+        "boundary_notes": "包含全部可见深色顶面和侧面，不包含颈部、背景或投影。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+YSL High Heels
+Author: hiirusama (https://sketchfab.com/hiirusama)
+Source: https://sketchfab.com/3d-models/ysl-high-heels-9f7c5266f7da43d6bbd5a881d49f57aa
+License: CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

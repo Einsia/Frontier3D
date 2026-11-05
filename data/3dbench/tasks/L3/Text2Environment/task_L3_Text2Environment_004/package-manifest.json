@@ -1,0 +1,32 @@
+{
+  "schema_version": "l3-harbor-package-v1",
+  "task_key": "l3-g06",
+  "files": {
+    "COMMON.md": "78d4196dd2cff45c7223103b01324f0f4bf3f3314e0214ed634e46af6b44f1cf",
+    "PROMPT.md": "330be59b009c935973ff0315c6122083c44ecaa8e4b7d36d47ca12026280dc45",
+    "README.md": "49845617098c9d35c08e5c495708cd26fa30c3946f346546bcfe2f48fec01ef5",
+    "attribution/REFERENCES.md": "cdb9fe336019874977c3e7991cc249f311a5ff219fd0f8455da471a48128f89c",
+    "attribution/references.json": "1f899862b0e2e769908ea979aeee58885c9fdbcd1114501e06cd8244e74078b5",
+    "environment/Dockerfile": "c72897ae890cbdf330a11fa9b261174bf3bf2ecc44008b187f233f7942cffddf",
+    "environment/input/ASSETS.md": "4ec6687018d5d3f5321a5178f10d5daa9b2e5b036538b5c1f236210c9eb2330d",
+    "environment/input/BenchEntity.h": "a3c73e5e2590a39080e869005e1fd1d102d97a0d45fdcd772601d677ebd29142",
+    "environment/input/BenchInventory.h": "030174129da5e7b412e1a2066bf524f5600855f5b06dc64b6c28cf1bb469f329",
+    "environment/input/BenchObserver.h": "845d665abc9d7e96dde8bcbb7d218a5c0b4837cc1ebc8b158329f3edd8472ebb",
+    "environment/input/CONTRACT.md": "78d4196dd2cff45c7223103b01324f0f4bf3f3314e0214ed634e46af6b44f1cf",
+    "environment/input/INTEGRATION.md": "e82cdd560ff53633e2a025401de49bf2766a612c754fea2b194c22da610e7792",
+    "environment/input/REFERENCES.md": "c497f59cf77860dac3926bbbf6c4ad98d43eb6b6c679c0dff1008c1f244d763e",
+    "environment/input/REQUIREMENTS.md": "0d9ed4c95d281812f6ac30856488d11373ecd4753dfeb22409827403432f10d8",
+    "environment/input/asset-selection.json": "62b5b14e6adccd34605503ea3c100f60f4b908a2b23de927931605cacfd5f94c",
+    "environment/input/interaction-contract.json": "75b13932eddff836209c901005a39014d95ba6698ed6d16049b601c8e075e660",
+    "environment/input/references.json": "a1935729452e6fb5032c7894281af725ee09c3cca1c9777bfabb85251078be47",
+    "instruction.md": "44566323770499e81cc01a1699ecc21551687feab733cf170b2235d922e6fe75",
+    "instruction.source.md": "0d9ed4c95d281812f6ac30856488d11373ecd4753dfeb22409827403432f10d8",
+    "instruction.zh.md": "dd9656031d0682c32786eb27f941d22b47aa82800f0fa317ae8118ff70189492",
+    "package-manifest.source.json": "b3e42a003968cfa1e8afb37bf11c429e5c88d975eeaeb5e7f56bbc6c48a4f2b5",
+    "reference_plan.json": "558f702f2c97ec1690b76935ce629655008b8618d9cb2b17a0125677e6b030b5",
+    "runtime.json": "7870743c4ec0ed9b5c06135fafcc02d12eda365c96833dbb44d0f038e9598486",
+    "task.json": "c5e0a3aa8fef67bbe97b4fe20ec59eafae0fdd00302ca9289caac0c29f10fe05",
+    "task.toml": "241bb1ed78be48e2f16a2b8afbf8527a6786f157c254ece406a20831849ab09b",
+    "tests/test.sh": "2a4356cbbb827c7e210db592a9314607e648e69b6889a19553173e393e337795"
+  }
+}

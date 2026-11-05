@@ -1,0 +1,17 @@
+{
+  "id": "insight",
+  "author": "NASA and NASA 3D Resources contributors",
+  "source": "https://github.com/nasa/NASA-3D-Resources/tree/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/InSight%20Cruise%20Lander",
+  "commit": "11ebb4ee043715aefbba6aeec8a61746fad67fa7",
+  "rights": "NASA media usage guidelines; not relabelled CC0",
+  "rights_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "downloaded_files": [
+    {
+      "source_path": "3D Models/InSight Cruise Lander/InSight Cruise Lander (panels deployed).glb",
+      "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/InSight%20Cruise%20Lander/InSight%20Cruise%20Lander%20%28panels%20deployed%29.glb",
+      "sha256": "4e4c0c8b034de9f265d2e0b52bd7547254b5547eb09edc97e694b3d990849fb8",
+      "bytes": 3948936,
+      "local": "assets/expansion/nasa-assemblies/insight/source.glb"
+    }
+  ]
+}

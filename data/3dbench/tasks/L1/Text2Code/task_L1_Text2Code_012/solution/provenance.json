@@ -1,0 +1,27 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/roller_guide",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/roller_guide",
+    "license": "CC0-1.0",
+    "changes": [
+      "Pins start at z=6 in matching base recesses; 13 mm spacers now rest on the base and support the rollers at z=21."
+    ],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "8a1f15c66ef9da64914ed56124a6346a9b885c5df9de6dc44c005d4f9ab6df53",
+    "assembled.png": "002858e061866995128f88914d9c92a992be1f2c73714bf1a5f50e153f8e54b2",
+    "exploded.png": "6cd01fb9b83d64f8dc46f798c172668b06be57e8c0b8a0a01a5679e0cf3b4dd5",
+    "front.png": "a0408f4c35acc3019f5fe7e7e071f3ddb597fb2a63298d8d9285b289f4dc7b67",
+    "geometry.json": "c9437cb9fe9a489e4e9c8d9f5723898b01369df399d68abe77ff49239d4ef79f",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "b005fab01ca89ba0c65b5f6eb75b98f1f331c7fb4b86e8689269f74222829b6f",
+    "qa.json": "b4d0c576c3c1cdd064e00adfd96eade45ab5676cf3a7fdb9cb185ead2934c94d",
+    "scene.blend": "1b85eafc48a8eca76d42a3920668d950be3026ac86f72ca00c598f5af88d2016",
+    "scene.glb": "79a60c5fecaf1f0eca903ac8e2a2046bb7a67e05033cb29296ee4624c0c5977d",
+    "spec.json": "254803fd96286fef74953439d8dba49443546b6e30836a67afc287b3fbbb51c6",
+    "top.png": "17ddf8863171c66d48912e49617e9b960ba2c79bf64f3f5b12b3de4904eb2490"
+  }
+}

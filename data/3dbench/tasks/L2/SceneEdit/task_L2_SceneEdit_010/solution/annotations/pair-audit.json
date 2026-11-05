@@ -1,0 +1,27 @@
+{
+  "key": "space-hallways",
+  "scope": "Data preparation validation, not model performance",
+  "target_objects_removed": [
+    "Cylinder",
+    "Cylinder.001",
+    "Cylinder.002",
+    "cloth"
+  ],
+  "private_original_values": [],
+  "preserved_objects_equal": true,
+  "preserved_mesh_count": 21,
+  "preserved_materials_equal": true,
+  "camera_and_render_settings_equal": true,
+  "packed_dependencies": true,
+  "external_libraries": 0,
+  "settings": {
+    "frame": 0,
+    "engine": "CYCLES",
+    "resolution": [
+      960,
+      640
+    ],
+    "view": "AgX",
+    "exposure": 0.0
+  }
+}

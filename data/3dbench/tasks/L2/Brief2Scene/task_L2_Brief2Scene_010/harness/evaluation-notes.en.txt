@@ -1,0 +1,128 @@
+## Numerical geometry protocol (l2-brief-v2.1.0)
+Use solid colors and procedural shading only. Image textures, environment images,
+generated/baked image maps and image-dependent geometry/compositing are prohibited,
+including packed or unused image nodes in used node trees. No private reference is used for scoring.
+Assign bench_role to actual mesh geometry or to a parent grouping the mesh parts
+of one entity. Object names are unrestricted. Roles select measurements and do not
+prove semantics; visual fidelity and local detail are evaluated separately.
+For each route, nominate small endpoint surface patches at road level. All named
+start/goal pairs must connect. Counts group entity parts and reject identical
+co-located copies. Dimensions use complete geometry and world metres; horizontal
+sizes use a minimum-area rotated footprint. Camera heights use actual local ground.
+Opening checks use interior surfaces and bounded through-depth rays. Route checks
+use a 2.5D grid including vertical/thin surfaces, local floor height and low obstacles;
+the ground band defaults to 0.1 m, or the measured vehicle height where specified.
+This is not a general certification of human headroom or arbitrary stacked floors.
+Grid uncertainty or capacity limits produce not_measurable, never an inferred pass.
+Numerical tolerances, route step/slope settings and contact bands are published
+definitions with pending calibration. The JSON below specifies this version exactly.
+
+Roles: dump_truck, entrance, mixer_truck, road, site, work_zone.
+
+```json
+[
+  {
+    "id": "site_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "scope": "union",
+      "lower": [
+        30,
+        40,
+        null
+      ],
+      "upper": [
+        30,
+        40,
+        null
+      ],
+      "relative_tolerance": 0.1
+    }
+  },
+  {
+    "id": "mixer_truck_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "mixer_truck",
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  {
+    "id": "dump_truck_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "dump_truck",
+      "minimum": 1,
+      "maximum": 1
+    }
+  },
+  {
+    "id": "road_clear_route",
+    "metric": "l2_brief_route",
+    "group": "numeric",
+    "params": {
+      "road_role": "road",
+      "start_role": "entrance",
+      "goal_role": "work_zone",
+      "min_width": 4,
+      "cell_size": 0.04,
+      "max_snap": 1.0,
+      "clearance_height": 0.1,
+      "surface_epsilon": 0.001,
+      "max_step": 0.02,
+      "max_slope": 0.5,
+      "clearance_roles": [
+        "mixer_truck",
+        "dump_truck"
+      ]
+    }
+  },
+  {
+    "id": "mixer_truck_bottom_level",
+    "metric": "l2_brief_level",
+    "group": "numeric",
+    "params": {
+      "role": "mixer_truck",
+      "support_role": "site",
+      "endpoint": "bottom",
+      "lower": -0.02,
+      "upper": 0.02,
+      "relative_tolerance": 0
+    }
+  },
+  {
+    "id": "dump_truck_bottom_level",
+    "metric": "l2_brief_level",
+    "group": "numeric",
+    "params": {
+      "role": "dump_truck",
+      "support_role": "site",
+      "endpoint": "bottom",
+      "lower": -0.02,
+      "upper": 0.02,
+      "relative_tolerance": 0
+    }
+  }
+]
+```
+
+
+## Geometry extension (l2-brief-v2.2.0)
+This case retains the preceding numeric definitions unchanged. This native geometry channel does not measure text semantics; semantic fidelity is evaluated separately.
+
+
+## Layout and course geometry (l2-brief-v2.3.0)
+This case retains the preceding numerical definitions unchanged.
+
+## Scoring
+
+Final item score: `60% vlm + 30% data + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

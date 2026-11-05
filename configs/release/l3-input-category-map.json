@@ -1,0 +1,111 @@
+{
+  "version": "release145-l3-input-categories-v1",
+  "classification": "references.json input_mode, verified against all images[].path files relative to environment/input",
+  "tasks": [
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_001",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_001",
+      "task_key": "l3-e01",
+      "references": 4,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_002",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_002",
+      "task_key": "l3-e02",
+      "references": 1,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_003",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_003",
+      "task_key": "l3-e03",
+      "references": 4,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_004",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_004",
+      "task_key": "l3-e04",
+      "references": 4,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_005",
+      "new_task_id": "L3/Text2Environment/task_L3_Text2Environment_001",
+      "task_key": "l3-e05",
+      "references": 0,
+      "input_mode": "text"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_006",
+      "new_task_id": "L3/Text2Environment/task_L3_Text2Environment_002",
+      "task_key": "l3-e06",
+      "references": 0,
+      "input_mode": "text"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_007",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_005",
+      "task_key": "l3-g01",
+      "references": 1,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_008",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_006",
+      "task_key": "l3-g02",
+      "references": 3,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_009",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_007",
+      "task_key": "l3-g03",
+      "references": 1,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_010",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_008",
+      "task_key": "l3-g04",
+      "references": 2,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_011",
+      "new_task_id": "L3/Text2Environment/task_L3_Text2Environment_003",
+      "task_key": "l3-g05",
+      "references": 0,
+      "input_mode": "text"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_012",
+      "new_task_id": "L3/Text2Environment/task_L3_Text2Environment_004",
+      "task_key": "l3-g06",
+      "references": 0,
+      "input_mode": "text"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_013",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_009",
+      "task_key": "l3-r01",
+      "references": 3,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_014",
+      "new_task_id": "L3/Image2Environment/task_L3_Image2Environment_010",
+      "task_key": "l3-r02",
+      "references": 1,
+      "input_mode": "image"
+    },
+    {
+      "old_task_id": "L3/Unified/task_L3_Unified_015",
+      "new_task_id": "L3/Text2Environment/task_L3_Text2Environment_005",
+      "task_key": "l3-r03",
+      "references": 0,
+      "input_mode": "text"
+    }
+  ]
+}

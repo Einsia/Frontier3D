@@ -1,0 +1,315 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/SceneEdit/task_L2_SceneEdit_001",
+  "spec_sha256": "84890ab76f293fda2a8857cadbe840e5ed5655d3836c1e8243e96ad90bf17019",
+  "instruction_sha256": "a55e307c3f474e421c0a5bc5cb668e1e6bb03dfadbb3d532b592aa7b540079e3",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "The bathtub has been removed from the supplied bathroom scene.",
+      "source_quote": "The bathtub has been removed from the supplied bathroom scene.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim.",
+      "source_quote": "Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor.",
+      "source_quote": "Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Match its location and size to the surrounding fixtures, window and vanity.",
+      "source_quote": "Match its location and size to the surrounding fixtures, window and vanity.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "The result should read as a hollow sanitary fixture, not a solid rounded block.",
+      "source_quote": "The result should read as a hollow sanitary fixture, not a solid rounded block.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.",
+      "source_quote": "Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "retained_scene",
+      "text": "Unchanged baseline signature proxy; equivalent renamed/reordered geometry needs review",
+      "source_quote": "The bathtub has been removed from the supplied bathroom scene. Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim. Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor. Match its location and size to the surrounding fixtures, window and vanity. The result should read as a hollow sanitary fixture, not a solid rounded block. Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.\n\nStart from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.\n\nRender output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.\n\nUse only the supplied task inputs to establish this particular scene. Do not retrieve its original source model, an untouched copy of the source scene, or additional source views from the internet.",
+      "implementation": "partial",
+      "checks": [
+        "retained_scene"
+      ]
+    },
+    {
+      "id": "target_added_geometry",
+      "text": "New visible mesh geometry exists; category/parts are reviewed separately",
+      "source_quote": "The bathtub has been removed from the supplied bathroom scene. Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim. Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor. Match its location and size to the surrounding fixtures, window and vanity. The result should read as a hollow sanitary fixture, not a solid rounded block. Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.",
+      "implementation": "partial",
+      "checks": [
+        "target_added_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "Render output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "main_camera_preserved",
+      "text": "main camera preserved",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "main_camera_preserved"
+      ]
+    },
+    {
+      "id": "layout_relative_scale",
+      "text": "Visible proportions, placement, depth ordering and public scale context",
+      "source_quote": "The bathtub has been removed from the supplied bathroom scene. Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim. Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor. Match its location and size to the surrounding fixtures, window and vanity. The result should read as a hollow sanitary fixture, not a solid rounded block. Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.",
+      "implementation": "manual",
+      "checks": [
+        "layout_relative_scale"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "The bathtub has been removed from the supplied bathroom scene. Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim. Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor. Match its location and size to the surrounding fixtures, window and vanity. The result should read as a hollow sanitary fixture, not a solid rounded block. Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "Render output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "Render output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "Render output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "Render output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "main_reference_similarity",
+      "text": "SSIM appearance proxy; not a semantic or hidden-geometry verdict",
+      "source_quote": "The bathtub has been removed from the supplied bathroom scene. Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim. Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor. Match its location and size to the surrounding fixtures, window and vanity. The result should read as a hollow sanitary fixture, not a solid rounded block. Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.",
+      "implementation": "partial",
+      "checks": [
+        "main_reference_similarity"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "The bathtub has been removed from the supplied bathroom scene. Restore it to match input/reference.png: rebuild the curved outer shell, the recessed bathing cavity and the continuous rounded rim. Pay particular attention to the transition from the inner wall to the rim, the visible wall thickness and how the tub fits the retained feet above the floor. Match its location and size to the surrounding fixtures, window and vanity. The result should read as a hollow sanitary fixture, not a solid rounded block. Retain the existing feet, the cloth inside the tub, the taps and other bathroom fittings; do not duplicate them.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "preserve_engine",
+      "text": "preserve engine",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_engine"
+      ]
+    },
+    {
+      "id": "preserve_view_transform",
+      "text": "preserve view transform",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_view_transform"
+      ]
+    },
+    {
+      "id": "preserve_look",
+      "text": "preserve look",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_look"
+      ]
+    },
+    {
+      "id": "preserve_exposure",
+      "text": "preserve exposure",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_exposure"
+      ]
+    },
+    {
+      "id": "preserve_gamma",
+      "text": "preserve gamma",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_gamma"
+      ]
+    },
+    {
+      "id": "preserve_resolution",
+      "text": "preserve resolution",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_resolution"
+      ]
+    },
+    {
+      "id": "preserve_resolution_percentage",
+      "text": "preserve resolution percentage",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_resolution_percentage"
+      ]
+    },
+    {
+      "id": "preserve_unit_system",
+      "text": "preserve unit system",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_unit_system"
+      ]
+    },
+    {
+      "id": "preserve_unit_scale",
+      "text": "preserve unit scale",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "complete",
+      "checks": [
+        "preserve_unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "source_quote": "Start from input/initial.blend. Use the existing geometry as the scale and placement context, and use the single supplied image as the appearance reference. Keep all existing non-target geometry, world transforms, materials, textures, lights and camera settings unchanged. Add independently editable three-dimensional geometry for the missing object; do not substitute an image plane or a projection of the full reference photograph. Small hidden details may be completed plausibly rather than copied from an unavailable original model. Use metres and Z up, and pack any new texture dependencies into the scene.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    },
+    {
+      "id": "public_qualifications_02",
+      "text": "Render output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.",
+      "source_quote": "Render output/main.png from the supplied main camera, preserving the scene's Cycles, resolution, exposure and color-management settings. Render output/alternate.png from a second camera translated 0.30 m to the right along the main camera's local X axis, with the same rotation and lens. Keep both cameras in output/scene.blend. Both renders must come from the same edited scene. The alternate view is a structural check and has no supplied target image.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_02"
+      ]
+    },
+    {
+      "id": "public_qualifications_03",
+      "text": "Use only the supplied task inputs to establish this particular scene. Do not retrieve its original source model, an untouched copy of the source scene, or additional source views from the internet.",
+      "source_quote": "Use only the supplied task inputs to establish this particular scene. Do not retrieve its original source model, an untouched copy of the source scene, or additional source views from the internet.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_03"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "local_translation",
+    "delta_m": 0.3,
+    "tolerance": 0.003
+  },
+  "render_settings": {},
+  "native_resolution": null,
+  "edit_policy": {
+    "mode": "geometry",
+    "light_color_energy": false,
+    "world_background_strength": false
+  },
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "dataset_version": "l2-edit-procedural-data-v1",
+  "scoring_profile": "l2-edit-vlm-v8.0.0",
+  "methods_sha256": "f8637e63d98d2bb0d470443637e9fcb37a6c7eadc1227386aa2b13d052c596f6",
+  "measurement_profile": "l2-edit-v2.5.1",
+  "automatic_profile": "l2-edit-embodied-v5.0.0"
+}

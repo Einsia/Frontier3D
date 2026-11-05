@@ -1,0 +1,342 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_015",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/f657aa09bf4f7b6f4320/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/74ff8005697e12db52de/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/509a935864c2ec9ef813/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在场景原生几何中测量房间地面平面第一条规定边的长度，记录边界约定。",
+      "quantity": "房间第一边长度",
+      "relation": "equal",
+      "source_quote": "3.0 x 2.4 m tool room",
+      "target": 3.0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在场景原生几何中测量房间地面平面另一条规定边的长度。",
+      "quantity": "房间第二边长度",
+      "relation": "equal",
+      "source_quote": "3.0 x 2.4 m tool room",
+      "target": 2.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "沿工作台台面长轴测量实体台面的外缘跨度。",
+      "quantity": "工作台长度",
+      "relation": "equal",
+      "source_quote": "1.50 x 0.70 m",
+      "target": 1.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "沿工作台台面前后方向测量实体台面的外缘跨度。",
+      "quantity": "工作台深度",
+      "relation": "equal",
+      "source_quote": "1.50 x 0.70 m",
+      "target": 0.7,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "沿 Z 轴测量地面至台面上表面的高度。",
+      "quantity": "工作台高度",
+      "relation": "equal",
+      "source_quote": "at 0.90 m height",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "在法兰自身径向平面测量其实体外圆直径。",
+      "quantity": "法兰直径",
+      "relation": "equal",
+      "source_quote": "0.12 m in diameter",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "沿法兰轴线测量两端实体表面之间的厚度。",
+      "quantity": "法兰厚度",
+      "relation": "equal",
+      "source_quote": "0.03 m thick",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "在洞洞板自身平面测量第一条规定边的完整外缘跨度。",
+      "quantity": "洞洞板第一边长度",
+      "relation": "equal",
+      "source_quote": "A 1.20 x 0.80 m pegboard",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "在洞洞板自身平面测量第二条规定边的完整外缘跨度。",
+      "quantity": "洞洞板第二边长度",
+      "relation": "equal",
+      "source_quote": "A 1.20 x 0.80 m pegboard",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "沿 Z 轴测量洞洞板下缘与工作台上表面的高差。",
+      "quantity": "洞洞板下缘距台面高度",
+      "relation": "equal",
+      "source_quote": "starts 0.10 m above the bench",
+      "target": 0.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "按独立工具位置统计洞洞板上扳手轮廓，包含被取走扳手的空轮廓。",
+      "quantity": "扳手轮廓数量",
+      "relation": "equal",
+      "source_quote": "Outline five wrenches",
+      "target": 5,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "按独立工具位置统计螺丝刀及其对应轮廓，不把同一位置的工具和轮廓重复计数。",
+      "quantity": "螺丝刀位置数量",
+      "relation": "equal",
+      "source_quote": "four screwdrivers",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "按独立工具位置统计钳子及其对应轮廓。",
+      "quantity": "钳子位置数量",
+      "relation": "equal",
+      "source_quote": "two pliers",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "以地面为高度基准，沿 Z 轴测量并报告所标注机械臂基座参考部位的高度。",
+      "quantity": "机械臂基座高度",
+      "relation": "equal",
+      "source_quote": "base height 0.95 m",
+      "target": 0.95,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "检查以声明基座参考点为中心的几何可达包络半径；不把该半径解释为逆运动学或动力学认证。",
+      "quantity": "机械臂可达半径",
+      "relation": "equal",
+      "source_quote": "reach 0.85 m",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "统计末端夹具上承担夹持的独立指部，不把关节或指垫重复计数。",
+      "quantity": "夹爪指部数量",
+      "relation": "equal",
+      "source_quote": "two-finger gripper",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "测量声明的扳手夹持参考点与工作台上表面的 Z 高差，并记录参考点约定。",
+      "quantity": "被持扳手距台面高度",
+      "relation": "equal",
+      "source_quote": "0.30 m above the worktop",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "在三维空间计算工作环端朝向向量与指向法兰目标点的向量之间夹角，记录方向轴及目标点定义。",
+      "quantity": "工作环端朝向法兰的偏角",
+      "relation": "at_most",
+      "source_quote": "working ring end aimed toward the flange within 5 degrees",
+      "target": 5,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "对冻结夹持状态的夹指与扳手实体接触面计算最大穿透深度，以原文单位报告。",
+      "quantity": "夹持接触最大穿透",
+      "relation": "at_most",
+      "source_quote": "contact penetration at most 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "按语义独立实体统计场景中要求添加的螺栓。",
+      "quantity": "螺栓数量",
+      "relation": "equal",
+      "source_quote": "Add three bolts",
+      "target": 3,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "按语义独立物体统计要求添加的抹布。",
+      "quantity": "抹布数量",
+      "relation": "equal",
+      "source_quote": "a rag",
+      "target": 1,
+      "unit": "块",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "按语义独立物体统计要求添加的零件托盘。",
+      "quantity": "零件托盘数量",
+      "relation": "equal",
+      "source_quote": "a parts tray",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "在工作台前方声明的操作区域测量前后方向最小自由深度，排除被评估机器人但计入其他家具及突出部。",
+      "quantity": "台前操作净深",
+      "relation": "at_least",
+      "source_quote": "Keep at least 0.80 m operating depth in front",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "沿声明的连续侧通道测量最窄自由横截面宽度，使用路线采样坐标并检查采样间连续性；排除被评估机器人，计入其他家具及突出部。",
+      "quantity": "连续侧通道净宽",
+      "relation": "at_least",
+      "source_quote": "a continuous 0.90 m side passage",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "统计独立标注的工具拾取位置，包含被取走扳手留下的空位置。",
+      "quantity": "工具拾取位置总数",
+      "relation": "equal",
+      "source_quote": "All eleven tool pickup positions, including the empty wrench position",
+      "target": 11,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "逐一计算所有拾取点至同一机械臂基座参考点的三维欧氏距离，取最大值。",
+      "quantity": "拾取点最大基座距离",
+      "relation": "at_most",
+      "source_quote": "must be within 0.85 m of the arm base",
+      "target": 0.85,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "逐一测量所有拾取点相对地面的 Z 高度，要求每个位置均落在规定闭区间内。",
+      "quantity": "拾取点高度范围",
+      "relation": "range",
+      "source_quote": "in the 0.95-1.75 m height band",
+      "target": 0.95,
+      "unit": "m",
+      "upper": 1.75
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

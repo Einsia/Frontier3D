@@ -1,0 +1,364 @@
+{
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_020",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Brief2Scene",
+  "level": 2,
+  "weights": {
+    "vlm": 0.6,
+    "data": 0.3,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/32915f0345a837be5c03/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/87f3b036406e7d70660e/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/b42f7f8523e8efa887ed/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [],
+  "regions": [],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "读取底座主体沿其第一水平局部轴的外包络尺寸；作为近似名义尺寸记录，不设未给出的误差阈值。",
+      "quantity": "底座第一水平尺寸",
+      "relation": "equal",
+      "source_quote": "about 2.2 x 2.2 m",
+      "target": 2.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取底座主体沿其第二水平局部轴的外包络尺寸；作为近似名义尺寸记录，不设未给出的误差阈值。",
+      "quantity": "底座第二水平尺寸",
+      "relation": "equal",
+      "source_quote": "about 2.2 x 2.2 m",
+      "target": 2.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N03",
+      "measurement_definition": "按实体层级辨认并计数底座的上下箱体层。",
+      "quantity": "底座层数",
+      "relation": "equal",
+      "source_quote": "two-tier box base",
+      "target": 2,
+      "unit": "层",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "从圆形坪面边界读取圆的尺寸；明确报告直径与半径以及所采用的1.60 m解释，保留文本歧义。",
+      "quantity": "圆形停机坪名义尺寸",
+      "relation": "equal",
+      "source_quote": "a circular 1.60 m landing pad",
+      "target": 1.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "计数具有限位功能的独立块状实体。",
+      "quantity": "限位块数量",
+      "relation": "equal",
+      "source_quote": "two symmetric limit blocks",
+      "target": 2,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "按语义角色计数主要定位锥，不包含辅助锥。",
+      "quantity": "主要定位锥数量",
+      "relation": "equal",
+      "source_quote": "three positioning cones",
+      "target": 3,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "计数作为第四定位位置的辅助锥。",
+      "quantity": "辅助锥数量",
+      "relation": "equal",
+      "source_quote": "a fourth auxiliary cone",
+      "target": 1,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N08",
+      "measurement_definition": "计数处于开启状态的壳体门实体。",
+      "quantity": "开启壳体门数量",
+      "relation": "equal",
+      "source_quote": "Open both housing doors",
+      "target": 2,
+      "unit": "扇",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 3,
+      "id": "N09",
+      "measurement_definition": "分别测量每扇门绕自身铰轴相对关闭基准的开启角，每扇独立判定。",
+      "quantity": "壳体门开启角",
+      "relation": "equal",
+      "source_quote": "Open both housing doors 80 +/-3 degrees",
+      "target": 80,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "计数无人机的独立旋翼组件。",
+      "quantity": "旋翼数量",
+      "relation": "equal",
+      "source_quote": "A quadrotor",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "读取电机轴心间距，列出相邻与对角距离并记录任务所采用的间距解释。",
+      "quantity": "电机间距",
+      "relation": "equal",
+      "source_quote": "0.60 m motor spacing",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "沿机身纵轴测量机身主体前后端的距离，区分旋翼和突出支撑件。",
+      "quantity": "机身长度",
+      "relation": "equal",
+      "source_quote": "0.45 m body length",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "测量机体水平基准面法向与世界Z轴的夹角。",
+      "quantity": "机体偏离水平角",
+      "relation": "at_most",
+      "source_quote": "rests level within 2 degrees",
+      "target": 2,
+      "unit": "degrees",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "计数支脚实体及其与锥位的一一对应关系。",
+      "quantity": "支脚数量",
+      "relation": "equal",
+      "source_quote": "its four feet seated in the cone positions",
+      "target": 4,
+      "unit": "个",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "逐一测量各支脚就位表面与对应锥位承接表面的功能间隙，取最大值；记录测点和方向。",
+      "quantity": "支脚就位最大间隙",
+      "relation": "at_most",
+      "source_quote": "with at most 5 mm gaps",
+      "target": 5,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "沿舱盖滑动自由度测量当前开启位移与完整开启行程之比；完整行程须有可说明的基准。",
+      "quantity": "后电池舱盖开启比例",
+      "relation": "equal",
+      "source_quote": "Slide the rear battery hatch 70% open.",
+      "target": 70,
+      "unit": "%",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "在电池自身坐标系测量标注为第一尺寸的实体包络边长，并记录轴向对应。",
+      "quantity": "充电电池第一尺寸",
+      "relation": "equal",
+      "source_quote": "a charged 0.20 x 0.12 x 0.06 m battery",
+      "target": 0.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "在电池自身坐标系测量标注为第二尺寸的实体包络边长，并记录轴向对应。",
+      "quantity": "充电电池第二尺寸",
+      "relation": "equal",
+      "source_quote": "a charged 0.20 x 0.12 x 0.06 m battery",
+      "target": 0.12,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "在电池自身坐标系测量标注为第三尺寸的实体包络边长，并记录轴向对应。",
+      "quantity": "充电电池第三尺寸",
+      "relation": "equal",
+      "source_quote": "a charged 0.20 x 0.12 x 0.06 m battery",
+      "target": 0.06,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 5,
+      "id": "N20",
+      "measurement_definition": "沿机尾导轨测量当前插入距离相对于声明的完整插入基准之比；容差按百分数数值的正负5处理。",
+      "quantity": "充电电池插入比例",
+      "relation": "equal",
+      "source_quote": "inserted 60 +/-5% along the tail-bay rails",
+      "target": 60,
+      "unit": "%",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "建立电池与舱体导向特征的对应关系，测量配合横截面内的偏移并取最大值，记录对应特征。",
+      "quantity": "导向特征对齐误差",
+      "relation": "at_most",
+      "source_quote": "Align guide features within 2 mm",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "计算夹爪指定接触面与充电电池之间的最小非负分离距离；接触或允许的轻微穿入均无正间隙。",
+      "quantity": "夹爪与电池接触间隙",
+      "relation": "equal",
+      "source_quote": "maintain gripper contact",
+      "target": 0,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "在夹爪与电池接触区域计算实体穿入深度并取最大值，说明采用的穿入方向或算法。",
+      "quantity": "夹爪最大穿入深度",
+      "relation": "at_most",
+      "source_quote": "at most 2 mm penetration",
+      "target": 2,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "沿桅杆轴线测量桅杆底端至顶端的实体长度，区分额外传感器部件。",
+      "quantity": "风速仪桅杆长度",
+      "relation": "equal",
+      "source_quote": "a 0.40 m anemometer mast",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "围绕声明的底座边界构造水平维护带并测量全周连续可用宽度；排除被评估机器人自身，纳入其他设施及突出物。",
+      "quantity": "连续维护带要求宽度",
+      "relation": "at_least",
+      "source_quote": "a continuous 0.30 m maintenance band around the dock",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N26",
+      "measurement_definition": "读取场景标记的换电服务点世界Z坐标。",
+      "quantity": "换电点高度",
+      "relation": "range",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere at heights 0.80-1.30 m.",
+      "target": 0.8,
+      "unit": "m",
+      "upper": 1.3
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "读取等待转台服务点的世界Z坐标，记录其在转台上的定位约定。",
+      "quantity": "等待转台服务点高度",
+      "relation": "range",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere at heights 0.80-1.30 m.",
+      "target": 0.8,
+      "unit": "m",
+      "upper": 1.3
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "读取螺旋桨上方检查服务点的世界Z坐标。",
+      "quantity": "桨上检查点高度",
+      "relation": "range",
+      "source_quote": "Swap point, waiting turntable and an above-propeller inspection point must lie inside the arm working sphere at heights 0.80-1.30 m.",
+      "target": 0.8,
+      "unit": "m",
+      "upper": 1.3
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "由导轨确定插入轴，测量其与机身纵轴的最小平行偏角；插入朝向另由机尾舱关系判断。",
+      "quantity": "插入方向平行偏角",
+      "relation": "at_most",
+      "source_quote": "Insertion direction is parallel to the fuselage axis within 2 degrees",
+      "target": 2,
+      "unit": "degrees",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements",
+    "native content measurements"
+  ]
+}

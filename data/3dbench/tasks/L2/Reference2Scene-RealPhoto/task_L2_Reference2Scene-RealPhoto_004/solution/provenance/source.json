@@ -1,0 +1,30 @@
+{
+  "title": "教堂肋拱、长椅与祭坛",
+  "source_urls": [
+    "https://pixabay.com/images/download/leonhard_niederwimmer-church-7501379_1920.jpg"
+  ],
+  "document_revision": 902,
+  "license": {
+    "label": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "66c319a491c83acc4000575faee2390d2fac4d141759e787190b09dfe57fb26a",
+      "size": [
+        1280,
+        950
+      ],
+      "original_document_token": "AavabFwsvocJU2xasNbcvIXcnbb"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

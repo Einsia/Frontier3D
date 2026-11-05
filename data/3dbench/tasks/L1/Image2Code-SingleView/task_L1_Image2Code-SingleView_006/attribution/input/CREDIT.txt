@@ -1,0 +1,7 @@
+Gym Trainer
+Author: Gerhald (https://sketchfab.com/Gerhald)
+Source: https://sketchfab.com/3d-models/gym-trainer-9cb04641558e40dbbee9f61ac55fdcb5
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Removed a detached 10-triangle source fragment floating above the intact exercise machine; original download retained unchanged.
+No endorsement by the original author is implied.

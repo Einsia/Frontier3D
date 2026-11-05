@@ -1,0 +1,131 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2d00b0dbe2e08e21c096bf792dade56ed281430d88641aec1240661f79c8c21e",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_021",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "2dcdf0d99db12f288b7353fbbb8a56a2b270145e05e324cc54ff3ae206e6f92b",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-1c3162de346bd534b08f93ac4d83ea8df4abad79827882363f9879eeabb5a68e"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "id": "t_gloves",
+        "query": "完整可见范围的拳击手套",
+        "weight": 0.75,
+        "boxes": [
+          [
+            0.328,
+            0.361,
+            0.591,
+            0.8
+          ],
+          [
+            0.403,
+            0.415,
+            0.668,
+            0.84
+          ]
+        ],
+        "boundary_notes": "分别框后方左手套与前方右手套，包含各自可见拇指、袖口、暗色内壁及拳垫；不推测遮挡部分，不包含悬绳。框因遮挡可重叠。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_cords",
+        "query": "悬挂绳索与绳结整体",
+        "weight": 0.2,
+        "boxes": [
+          [
+            0.434,
+            0.197,
+            0.552,
+            0.441
+          ]
+        ],
+        "boundary_notes": "将多股相连悬绳、顶部缠绕绳结和短垂尾作为一个可辨组件；不强行拆分细小交叉绳段，不含支撑杆。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "id": "t_support",
+        "query": "斜向细支撑杆",
+        "weight": 0.05,
+        "boxes": [
+          [
+            0.507,
+            0.148,
+            0.659,
+            0.236
+          ]
+        ],
+        "boundary_notes": "包含绳结两侧可见杆体及左下暗色端头，排除悬绳；此类仅定位参考中可见物，不另设隐藏结构要求。",
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

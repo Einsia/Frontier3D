@@ -1,0 +1,209 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_020",
+  "family": "Reference2Scene",
+  "instruction_sha256": "2d216c372b840cd1e72c169f15811581860119acf22725204edd91eecb1eddbc",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "d443aa774e2b54ed05ffc3425172daa9e1c6989cc66e948ddef034df7deb0e67",
+    "reference/reference-1.png": "50b2b57cd44d4f2bb406bf0a16d0d5a15a1d159355af94b8f0f1c797a2af8ad7",
+    "reference/reference-2.png": "3699a38c1f5acf61cd63dcbb97863ade966575bf0a2876a99630f29e593b1a75",
+    "reference/reference-3.png": "53bb47bd43711f9637070c33bde6ef493bf654a149d20df52edbd02a98388acc"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_continuity",
+      "component": "F",
+      "question": "直管、回弯和汇接处是否连续衔接，无断口或突兀折角？",
+      "units": [
+        "Preserve tube continuity"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_bell_opening",
+      "component": "F",
+      "question": "喇叭口是否具有真实敞开的内腔，而非实心封面？",
+      "units": [
+        "the bell opening"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_bell_wall",
+      "component": "F",
+      "question": "喇叭口沿是否有可辨识薄壁厚度，并连接内外壁？",
+      "units": [
+        "wall thickness"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_flare",
+      "component": "F",
+      "question": "喇叭颈部是否以连续扩张曲面过渡到宽大口沿，并保留颈部套环？",
+      "units": [
+        "flared bell"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_turns",
+      "component": "F",
+      "question": "盘管是否保留立体圆管截面、重复回弯和前方小回路，而非平面螺旋？",
+      "units": [
+        "repeated turns"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_gaps",
+      "component": "F",
+      "question": "相邻回路之间是否保留真实空隙，避免管段粘连成片？",
+      "units": [
+        "gaps between loops"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_mouthpiece",
+      "component": "F",
+      "question": "吹嘴是否保留杯口凹腔、加厚口缘及向细柄收窄的外形？",
+      "units": [
+        "mouthpiece"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_valve_parts",
+      "component": "F",
+      "question": "阀门是否保留圆形盖体、横向管段和局部套接构造？",
+      "units": [
+        "valve assembly"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_thin_parts",
+      "component": "F",
+      "question": "阀门旁的细连杆、扁平拨键和小环形件是否具有真实厚度与独立轮廓？",
+      "units": [
+        "thin structures"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_connections",
+      "component": "F",
+      "question": "引管支撑、管路套环及阀体接管是否保留参考可见的局部连接结构？",
+      "units": [
+        "connections"
+      ],
+      "global_weight": 0.06,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

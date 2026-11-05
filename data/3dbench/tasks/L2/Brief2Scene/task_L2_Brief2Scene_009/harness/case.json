@@ -1,0 +1,283 @@
+{
+  "version": "l2-case-v1.0.0",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_009",
+  "spec_sha256": "1ffd814601d3473657a066ab0e48b9a8954817cb150a0d4177d777af68d5fe04",
+  "instruction_sha256": "45c97fbdb037d8d67d1f2db1826f2514e3efe00863d7af0dd9c8ae9a53bb20ce",
+  "requirements": [
+    {
+      "id": "content_01",
+      "text": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground.",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground.",
+      "implementation": "manual",
+      "checks": [
+        "content_01"
+      ]
+    },
+    {
+      "id": "content_02",
+      "text": "Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon.",
+      "source_quote": "Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon.",
+      "implementation": "manual",
+      "checks": [
+        "content_02"
+      ]
+    },
+    {
+      "id": "content_03",
+      "text": "Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map.",
+      "source_quote": "Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map.",
+      "implementation": "manual",
+      "checks": [
+        "content_03"
+      ]
+    },
+    {
+      "id": "content_04",
+      "text": "Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations.",
+      "source_quote": "Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations.",
+      "implementation": "manual",
+      "checks": [
+        "content_04"
+      ]
+    },
+    {
+      "id": "content_05",
+      "text": "Use fine regolith detail without repeating an obvious tiling pattern across the image.",
+      "source_quote": "Use fine regolith detail without repeating an obvious tiling pattern across the image.",
+      "implementation": "manual",
+      "checks": [
+        "content_05"
+      ]
+    },
+    {
+      "id": "content_06",
+      "text": "Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky.",
+      "source_quote": "Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky.",
+      "implementation": "manual",
+      "checks": [
+        "content_06"
+      ]
+    },
+    {
+      "id": "content_07",
+      "text": "Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms.",
+      "source_quote": "Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms.",
+      "implementation": "manual",
+      "checks": [
+        "content_07"
+      ]
+    },
+    {
+      "id": "content_08",
+      "text": "Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax.",
+      "source_quote": "Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax.",
+      "implementation": "manual",
+      "checks": [
+        "content_08"
+      ]
+    },
+    {
+      "id": "content_09",
+      "text": "No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "source_quote": "No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "manual",
+      "checks": [
+        "content_09"
+      ]
+    },
+    {
+      "id": "real_geometry",
+      "text": "Measured volumetric geometry; does not establish object identity",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "partial",
+      "checks": [
+        "real_geometry"
+      ]
+    },
+    {
+      "id": "alternate_relationship",
+      "text": "alternate relationship",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_relationship"
+      ]
+    },
+    {
+      "id": "main_ground_height",
+      "text": "Main camera roughly 1.6 m above local terrain",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "manual",
+      "checks": [
+        "main_ground_height"
+      ]
+    },
+    {
+      "id": "explicit_layout_dimensions",
+      "text": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "manual",
+      "checks": [
+        "explicit_layout_dimensions"
+      ]
+    },
+    {
+      "id": "support_clearance",
+      "text": "Case-specific support, allowed contacts, openings and clear routes described in the task",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "manual",
+      "checks": [
+        "support_clearance"
+      ]
+    },
+    {
+      "id": "main_native_size",
+      "text": "main native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "main_native_size"
+      ]
+    },
+    {
+      "id": "main_png",
+      "text": "main png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "main_png"
+      ]
+    },
+    {
+      "id": "alternate_native_size",
+      "text": "alternate native size",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "alternate_native_size"
+      ]
+    },
+    {
+      "id": "alternate_png",
+      "text": "alternate png",
+      "source_quote": "```text\noutput/\n  solution.py       # reproducible Blender generation or editing entry point\n  scene.blend       # editable native scene\n  main.png          # required primary view\n  alternate.png     # required second view\n  README.md         # short dependency and execution note\n  assets/           # optional local textures or other files needed at runtime\n```",
+      "implementation": "complete",
+      "checks": [
+        "alternate_png"
+      ]
+    },
+    {
+      "id": "appearance",
+      "text": "Task-specific composition, material/style, illumination and occlusion; reference only where supplied",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "manual",
+      "checks": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "engine",
+      "text": "engine",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "engine"
+      ]
+    },
+    {
+      "id": "view_transform",
+      "text": "view transform",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "view_transform"
+      ]
+    },
+    {
+      "id": "exposure",
+      "text": "exposure",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "exposure"
+      ]
+    },
+    {
+      "id": "gamma",
+      "text": "gamma",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "complete",
+      "checks": [
+        "gamma"
+      ]
+    },
+    {
+      "id": "metres",
+      "text": "metres",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "complete",
+      "checks": [
+        "metres"
+      ]
+    },
+    {
+      "id": "unit_scale",
+      "text": "unit scale",
+      "source_quote": "Create a realistic barren lunar surface composition, viewed from a low camera roughly 1.6 m above the local ground. Include a gently undulating foreground of gray regolith, at least three shallow craters with raised irregular rims, scattered small stones and several larger angular rocks, and low distant ridges forming a layered horizon. Build the foreground and midground as genuine terrain geometry, not an image plane or a flat floor covered only by a normal map. Let rock sizes range approximately from 0.05 m pebbles to 1 m boulders, with partial burial and varied orientations. Use fine regolith detail without repeating an obvious tiling pattern across the image. Light the scene with a single dominant low-angle sun so that rocks and crater rims cast long coherent shadows against a nearly black sky. Place a small partially illuminated blue Earth above the distant horizon; keep it clearly separate from the terrain and much smaller in the image than the foreground landforms. Use an exposed terrain area of at least 80 by 80 metres so a second camera 2 m to the side reveals consistent nearby parallax. No astronaut, lander, labels, camera crosshairs, animation or orbital calculation is needed.",
+      "implementation": "complete",
+      "checks": [
+        "unit_scale"
+      ]
+    },
+    {
+      "id": "editable",
+      "text": "editable",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "partial",
+      "checks": [
+        "editable"
+      ]
+    },
+    {
+      "id": "seed_execution",
+      "text": "seed execution",
+      "source_quote": "Run the entry point from a clean copy with Blender in background mode:\n`blender --background --factory-startup --python output/solution.py -- --input-dir <workspace>/input --output-dir <workspace>/output`\nThe script must resolve helper files relative to itself, read task data only from the supplied `input/` files and its own `output/assets/` (bundled helper code and installed libraries are allowed), and write or refresh `scene.blend`, `main.png` and `alternate.png` in `output/`. Do not depend on an earlier submission, an absolute personal path, or files outside the task workspace. Both images must come from the same saved scene and use the cameras/settings required above. Keep the required output filenames exactly as shown; optional renders or logs go under `output/renders/` or `output/logs/`.\n",
+      "implementation": "complete",
+      "checks": [
+        "seed_execution"
+      ]
+    },
+    {
+      "id": "public_qualifications_01",
+      "text": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "source_quote": "No reference image or source model is supplied. Create the scene from this brief using Blender, metres and Z up. Keep major structures separately editable, pack all texture dependencies, and use one consistent scene for both views. Unless a different alternate view is specified above, orbit the primary camera 25 degrees around the site centre at the same height and distance and aim at the same point. Render both images at 1200 by 1000 pixels with Cycles, AgX, exposure 0 and gamma 1. Use a fixed random seed for any procedural variation and state it in README.md. Do not download or retrieve a prebuilt scene as your answer.",
+      "implementation": "manual",
+      "checks": [
+        "public_qualifications_01"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "mode": "distance",
+    "delta_m": 2.0,
+    "tolerance": 0.02
+  },
+  "render_settings": {
+    "engine": "CYCLES",
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "native_resolution": [
+    1200,
+    1000
+  ],
+  "edit_policy": null,
+  "semantic_annotation_policy": "No object-name, bench_role or hidden-mesh requirement. Semantic/scale correspondence remains pending.",
+  "calibration": "Serialization 1e-6; explicit camera delta/orbit uses 1% numerical tolerance. SSIM and geometry signatures are diagnostic proxies, not fully calibrated semantics.",
+  "scoring_profile": "l2-brief-vlm-v8.0.0",
+  "dataset_version": "l2-brief-numeric-data-v8",
+  "methods_sha256": "8bfd47354a096b5715c85d7c64d10564bcc9006334fd576b7ccd61c0b2c509fa",
+  "measurement_profile": "l2-brief-v2.8.0",
+  "automatic_profile": "l2-brief-embodied-v4.0.0"
+}

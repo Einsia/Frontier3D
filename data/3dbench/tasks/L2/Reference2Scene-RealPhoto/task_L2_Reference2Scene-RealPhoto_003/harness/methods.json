@@ -1,0 +1,157 @@
+{
+  "version": "l2-method-plan-v1",
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_003",
+  "category": "Reference2Scene-RealPhoto",
+  "sources": {
+    "instruction.md": "150d3328ba1040321c94e4ea429b5041f283db43266eb3807f2674fc32ba7d08",
+    "solution/EVALUATION.md": "71436fd7ff39e30b1dd3443827cf5b73fe13b4a4ea908b20e65ef2944c85a78c"
+  },
+  "evaluation_title": "评测设计：藏书客厅、沙发与落地窗",
+  "evaluation_rows": [
+    {
+      "id": "public_contract",
+      "dimension": "题包逐题要求",
+      "source_quote": "# 评测设计：藏书客厅、沙发与落地窗",
+      "description": [
+        "Large built-in divided bookcase with cabinet base. Bookcase left/rear, bright tall windows right, table across center and cropped foreground seating. Warm timber and yellow lamp shades, pale patterned seating, bright green garden daylight; book covers may simplify."
+      ],
+      "methods": [
+        "strict_fidelity",
+        "native_appearance",
+        "reference_boxes",
+        "static_support"
+      ]
+    }
+  ],
+  "active_checks": [
+    {
+      "id": "real_geometry",
+      "existing_check": "real_geometry",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_relationship",
+      "existing_check": "alternate_relationship",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_projection",
+      "existing_check": "main_projection",
+      "source": "instruction.md"
+    },
+    {
+      "id": "support_geometry_available",
+      "existing_check": "support_geometry_available",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_native_size",
+      "existing_check": "main_native_size",
+      "source": "instruction.md"
+    },
+    {
+      "id": "main_png",
+      "existing_check": "main_png",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_native_size",
+      "existing_check": "alternate_native_size",
+      "source": "instruction.md"
+    },
+    {
+      "id": "alternate_png",
+      "existing_check": "alternate_png",
+      "source": "instruction.md"
+    },
+    {
+      "id": "engine",
+      "existing_check": "engine",
+      "source": "instruction.md"
+    },
+    {
+      "id": "view_transform",
+      "existing_check": "view_transform",
+      "source": "instruction.md"
+    },
+    {
+      "id": "exposure",
+      "existing_check": "exposure",
+      "source": "instruction.md"
+    },
+    {
+      "id": "gamma",
+      "existing_check": "gamma",
+      "source": "instruction.md"
+    },
+    {
+      "id": "metres",
+      "existing_check": "metres",
+      "source": "instruction.md"
+    },
+    {
+      "id": "unit_scale",
+      "existing_check": "unit_scale",
+      "source": "instruction.md"
+    },
+    {
+      "id": "editable",
+      "existing_check": "editable",
+      "source": "instruction.md"
+    },
+    {
+      "id": "seed_execution",
+      "existing_check": "seed_execution",
+      "source": "instruction.md"
+    }
+  ],
+  "material_policy": {
+    "image_textures": true,
+    "packed_dependencies": true,
+    "whole_reference_projection": false
+  },
+  "scoring": {
+    "component_weights": {
+      "main_image": 0.5,
+      "localization": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "weights_status": "pilot_human_calibration_pending"
+  },
+  "appearance_views": [
+    {
+      "artifact": "main.png",
+      "reference_key": "main",
+      "reference_path": "environment/input/reference.png",
+      "reference_sha256": "6205fbe47445ddc6be04271788ad2d2dee22c55685259344862e9e81ad55b96c",
+      "method": "native-appearance-v1"
+    }
+  ],
+  "physics": {
+    "method": "static-support-v1",
+    "gravity": "down_z",
+    "ground_mode": "scene",
+    "contact_tolerance_m": 0.02,
+    "ground_lower_fraction": 0.35,
+    "minimum_ground_area_fraction": 0.15
+  },
+  "vlm_judge": {
+    "version": "l2-vlm-judge-v3",
+    "mode": "interactive",
+    "spec_path": "harness/vlm_spec.json",
+    "spec_sha256": "e58445a6724d1cf5990043cee5e7e8dcd0aec070f1b7de99ae7caa7d16311c2a",
+    "component_weights": {
+      "main_image": 0.5,
+      "localization": 0.2,
+      "physics": 0.1,
+      "vlm": 0.2
+    },
+    "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication"
+  },
+  "score_aggregation_note": "\n## Frozen evaluator protocol (L2 refresh v9, 2026-10-14)\n\nThe valid-scene score retains 50% reference appearance, 20% key-object image-plane\nlocalization, 10% static support and 20% strict task-specific visual fidelity.\nLocal textures and packed dependencies are allowed. Complete-reference planes or\ncamera projections cannot replace genuine scene geometry. Execution, complete\ndeliverables and native rerendering remain validity checks, not quality bonuses.\nNo candidate-fitted alignment, cropping, rescaling or pose registration is used.\nFor two-input tasks, main and alternate are compared with their corresponding\npublic originals with equal image weights; frozen static regions exclude action\nstate differences. Localization uses the first view. Novel is independently\nrerendered and checked for 3D consistency, not pixel-compared with a private photo.\nSingle-input alternates have no pixel target. Small explicitly permitted details\nremain optional. Reference annotations and ordinal VLM grades are AI-authored pilot\nmeasurements awaiting human calibration, not certified 3D ground truth.\n",
+  "remaining_engineering": [
+    "人工校准参考框及视觉等级",
+    "尺度实体自动对应尚为诊断，不推断隐藏真实尺寸"
+  ]
+}

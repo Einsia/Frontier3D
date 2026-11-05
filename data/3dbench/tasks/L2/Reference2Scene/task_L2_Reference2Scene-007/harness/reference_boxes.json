@@ -1,0 +1,82 @@
+{
+  "version": "reference-boxes-v1",
+  "scoring_profile": "l2-reference-localized-v5.2.0",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-007",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "42e353243ece28c10f501e14771a8d8ca08fa73bccbaf88355994e9b0116b0fd",
+  "image_size": [
+    1600,
+    900
+  ],
+  "detector": {
+    "method": "vlm-boxes-v2",
+    "model": "strict-agentic-judge",
+    "fingerprint": "dde0660187fd13295124e56dd9a570f35c010a00d9070834019d74efe4c95a75"
+  },
+  "context_queries": [],
+  "review_kind": "primary_assistant_reference_only_ai_draft",
+  "human_reviewed": false,
+  "formal_score_eligible": false,
+  "targets": [
+    {
+      "id": "target_1",
+      "query": "large rightmost medical equipment cart",
+      "label": "large rightmost medical equipment cart",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.791,
+          0.337,
+          1.0,
+          0.831
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. large rightmost medical equipment cart"
+    },
+    {
+      "id": "target_2",
+      "query": "rear left door including frame",
+      "label": "rear left door including frame",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.262,
+          0.32,
+          0.398,
+          0.701
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. rear left door including frame"
+    },
+    {
+      "id": "target_3",
+      "query": "central ceiling-mounted surgical-light and articulated-arm installation",
+      "label": "central ceiling-mounted surgical-light and articulated-arm installation",
+      "weight": 0.3333333333333333,
+      "boxes": [
+        [
+          0.331,
+          0.0,
+          0.617,
+          0.467
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "AI reference-only draft frozen before generation; human calibration pending. central ceiling-mounted surgical-light and articulated-arm installation"
+    }
+  ]
+}

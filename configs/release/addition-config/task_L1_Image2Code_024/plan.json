@@ -1,0 +1,271 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_024",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/a2032beabed6f80427e6/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/21dbdaff1d0bc9d4899b/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/327861e138f87808f76e/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_024/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_rotor",
+      "label": "制动盘及外缘通风层",
+      "weight": 0.4,
+      "polygon": [
+        [
+          0.385,
+          0.301
+        ],
+        [
+          0.499,
+          0.346
+        ],
+        [
+          0.681,
+          0.452
+        ],
+        [
+          0.671,
+          0.573
+        ],
+        [
+          0.621,
+          0.695
+        ],
+        [
+          0.552,
+          0.783
+        ],
+        [
+          0.469,
+          0.826
+        ],
+        [
+          0.403,
+          0.825
+        ],
+        [
+          0.329,
+          0.792
+        ],
+        [
+          0.285,
+          0.723
+        ],
+        [
+          0.273,
+          0.618
+        ],
+        [
+          0.289,
+          0.494
+        ],
+        [
+          0.332,
+          0.38
+        ]
+      ]
+    },
+    {
+      "id": "r_hub",
+      "label": "中央凸起轮毂与中心开口",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.508,
+          0.377
+        ],
+        [
+          0.561,
+          0.383
+        ],
+        [
+          0.606,
+          0.426
+        ],
+        [
+          0.625,
+          0.492
+        ],
+        [
+          0.616,
+          0.576
+        ],
+        [
+          0.581,
+          0.65
+        ],
+        [
+          0.531,
+          0.693
+        ],
+        [
+          0.477,
+          0.704
+        ],
+        [
+          0.426,
+          0.674
+        ],
+        [
+          0.404,
+          0.608
+        ],
+        [
+          0.415,
+          0.516
+        ],
+        [
+          0.454,
+          0.43
+        ]
+      ]
+    },
+    {
+      "id": "r_caliper",
+      "label": "金色卡钳及安装结构",
+      "weight": 0.35,
+      "polygon": [
+        [
+          0.355,
+          0.272
+        ],
+        [
+          0.378,
+          0.239
+        ],
+        [
+          0.443,
+          0.2
+        ],
+        [
+          0.487,
+          0.195
+        ],
+        [
+          0.498,
+          0.182
+        ],
+        [
+          0.59,
+          0.208
+        ],
+        [
+          0.65,
+          0.23
+        ],
+        [
+          0.663,
+          0.263
+        ],
+        [
+          0.696,
+          0.277
+        ],
+        [
+          0.701,
+          0.31
+        ],
+        [
+          0.723,
+          0.359
+        ],
+        [
+          0.729,
+          0.436
+        ],
+        [
+          0.714,
+          0.484
+        ],
+        [
+          0.62,
+          0.439
+        ],
+        [
+          0.554,
+          0.371
+        ],
+        [
+          0.489,
+          0.352
+        ],
+        [
+          0.409,
+          0.313
+        ],
+        [
+          0.36,
+          0.287
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "装配体最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在最终姿态下，以米读取所有装配体几何的世界坐标，排除相机和灯光，计算整体包围盒三个轴向跨度并取最大值；以 1.000 m 为标称值检验。explicit_tolerance 为原文 2% 的相对容差，不是另加的米制容差。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

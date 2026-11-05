@@ -1,0 +1,435 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_011",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "主要船体的尖艏、弯曲舷缘、外张侧壁及向下收拢的体积是否对应参考？",
+      "source_quote": "Hulls, cabins and rails require geometry",
+      "weight": 0.2
+    },
+    {
+      "id": "D02",
+      "question": "中央封闭船舱是否具有倾斜前壁、分隔前窗、侧窗及突出的顶缘？",
+      "source_quote": "cabins",
+      "weight": 0.2
+    },
+    {
+      "id": "D03",
+      "question": "左船与右侧开敞船的篷顶轮廓、薄厚、支柱和下方开放空间是否对应参考？",
+      "source_quote": "Keep major components independently editable, with thickness, support and meaningful spacing.",
+      "weight": 0.2
+    },
+    {
+      "id": "D04",
+      "question": "栏杆是否具有可辨认的细杆截面、立柱、连接处及沿船艏弯折的结构？",
+      "source_quote": "railings",
+      "weight": 0.2
+    },
+    {
+      "id": "D05",
+      "question": "船舷、甲板边缘与舱壁是否具有实体厚度，支撑件之间是否保留可见间隙？",
+      "source_quote": "with thickness, support and meaningful spacing",
+      "weight": 0.2
+    }
+  ],
+  "limitations": [
+    "未提供候选产物；本计划仅冻结参考区域与检查问题，不报告任何候选属性或测量结果。",
+    "主参考采用公开映射中的 input/reference.png，其附件证据路径为 reference/reference-0.png；坐标均相对于原始完整图像归一化。",
+    "未提供 legacy-detail-20261018-v1 的正文；仅按本次嵌入的合同和检查规则扩展，不推定额外旧版要求。",
+    "单张未标定照片不能确定真实深度、隐藏表面或其他船只的绝对尺寸；中央船的 8 m 是任务尺度约定。",
+    "“central boat”按画面中部偏右、带白色封闭前舱的主要近景船解释；船长是否包括突出附件未明示，测量时需披露端点范围。",
+    "区域和定位框是参考图上的固定视觉标注，不是精确几何尺寸或数值容差；未设置像素估计式数值要求。",
+    "人物、旗帜图案及船身文字不设独立复现要求；定位整船时计入可辨认的附属结构，但不以文字内容作指令。",
+    "远处极小船点和右侧极小岛点不作独立定位实例；细长系泊绳与水面倒影不纳入整船定位范围。",
+    "水面与远景允许简化；不要求流体或船体运动模拟，也不要求唯一恢复不可见的真实细节。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在原生三维场景中识别中央白色封闭舱船，沿船体纵轴测量艏至艉的长度，以场景米制读取；记录端点及突出附件的纳入范围，不从图像像素推算绝对长度。",
+      "quantity": "中央船长度",
+      "relation": "equal",
+      "source_quote": "Use a 8 m length for the central boat as the task scale convention",
+      "target": 8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两台保留相机的世界位置，将备用相机减主相机的位置差变换到主相机局部坐标系，读取局部 X 分量；是否仅沿该轴移动另由相机关系检查确认。",
+      "quantity": "备用相机沿主相机局部正 X 的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "左侧横向开敞船",
+      "polygon": [
+        [
+          0.183,
+          0.418
+        ],
+        [
+          0.376,
+          0.418
+        ],
+        [
+          0.447,
+          0.515
+        ],
+        [
+          0.447,
+          0.585
+        ],
+        [
+          0.19,
+          0.55
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R02",
+      "label": "中央白色封闭舱船",
+      "polygon": [
+        [
+          0.505,
+          0.556
+        ],
+        [
+          0.533,
+          0.454
+        ],
+        [
+          0.571,
+          0.415
+        ],
+        [
+          0.641,
+          0.385
+        ],
+        [
+          0.686,
+          0.399
+        ],
+        [
+          0.691,
+          0.526
+        ],
+        [
+          0.653,
+          0.61
+        ],
+        [
+          0.557,
+          0.663
+        ]
+      ],
+      "weight": 0.25
+    },
+    {
+      "id": "R03",
+      "label": "中央右侧窄开敞船",
+      "polygon": [
+        [
+          0.679,
+          0.533
+        ],
+        [
+          0.702,
+          0.398
+        ],
+        [
+          0.791,
+          0.395
+        ],
+        [
+          0.811,
+          0.54
+        ],
+        [
+          0.787,
+          0.579
+        ],
+        [
+          0.739,
+          0.598
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "最右侧开敞船",
+      "polygon": [
+        [
+          0.796,
+          0.401
+        ],
+        [
+          0.884,
+          0.381
+        ],
+        [
+          0.949,
+          0.425
+        ],
+        [
+          0.975,
+          0.539
+        ],
+        [
+          0.934,
+          0.612
+        ],
+        [
+          0.826,
+          0.551
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R05",
+      "label": "远处小船",
+      "polygon": [
+        [
+          0.61,
+          0.319
+        ],
+        [
+          0.643,
+          0.318
+        ],
+        [
+          0.646,
+          0.34
+        ],
+        [
+          0.62,
+          0.35
+        ],
+        [
+          0.612,
+          0.344
+        ]
+      ],
+      "weight": 0.05
+    },
+    {
+      "id": "R06",
+      "label": "主要远岛轮廓",
+      "polygon": [
+        [
+          0.365,
+          0.309
+        ],
+        [
+          0.409,
+          0.267
+        ],
+        [
+          0.43,
+          0.26
+        ],
+        [
+          0.454,
+          0.272
+        ],
+        [
+          0.486,
+          0.265
+        ],
+        [
+          0.511,
+          0.278
+        ],
+        [
+          0.562,
+          0.269
+        ],
+        [
+          0.583,
+          0.266
+        ],
+        [
+          0.601,
+          0.279
+        ],
+        [
+          0.619,
+          0.265
+        ],
+        [
+          0.64,
+          0.272
+        ],
+        [
+          0.655,
+          0.26
+        ],
+        [
+          0.694,
+          0.265
+        ],
+        [
+          0.727,
+          0.276
+        ],
+        [
+          0.734,
+          0.293
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否呈现参考中近景系泊船群及远处可辨认的小船？",
+      "source_quote": "Reconstruct the visible moored boats",
+      "weight": 0.08
+    },
+    {
+      "id": "S02",
+      "question": "主要船体是否保持参考中的白色外观及可见暗部？",
+      "source_quote": "white hulls",
+      "weight": 0.08
+    },
+    {
+      "id": "S03",
+      "question": "是否保留中央封闭船舱与周边开敞篷舱的形态区别？",
+      "source_quote": "cabins",
+      "weight": 0.08
+    },
+    {
+      "id": "S04",
+      "question": "主要船只是否在参考对应位置具有栏杆？",
+      "source_quote": "railings",
+      "weight": 0.08
+    },
+    {
+      "id": "S05",
+      "question": "左船与右侧船群之间的水面间隔，以及相邻船间的紧密间距是否对应参考？",
+      "source_quote": "their spacing on blue water",
+      "weight": 0.08
+    },
+    {
+      "id": "S06",
+      "question": "船只是否位于蓝色水面上，保留近处较浅、远处较深的整体视觉层次？",
+      "source_quote": "on blue water",
+      "weight": 0.08
+    },
+    {
+      "id": "S07",
+      "question": "背景是否保留低矮远岛及其与水面交接的远处地平线？",
+      "source_quote": "with a low distant island horizon",
+      "weight": 0.08
+    },
+    {
+      "id": "S08",
+      "question": "是否保持左船横向、中央与右侧船艏朝向观者的相对朝向？",
+      "source_quote": "Preserve the main boats' relative orientation",
+      "weight": 0.08
+    },
+    {
+      "id": "S09",
+      "question": "主要船只之间的相对大小是否对应参考？",
+      "source_quote": "Preserve the main boats' relative orientation, size and occlusion.",
+      "weight": 0.08
+    },
+    {
+      "id": "S10",
+      "question": "主要船只及其舱体之间的遮挡前后关系是否对应参考？",
+      "source_quote": "Preserve the main boats' relative orientation, size and occlusion.",
+      "weight": 0.08
+    },
+    {
+      "id": "S11",
+      "question": "船体、船舱和栏杆是否为真实三维几何，而非整图平面或单视角投影替代？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.05
+    },
+    {
+      "id": "S12",
+      "question": "主要部件是否可独立编辑？",
+      "source_quote": "Keep major components independently editable",
+      "weight": 0.05
+    },
+    {
+      "id": "S13",
+      "question": "其他尺寸是否按参考比例推断，隐藏表面是否完成为合理的三维结构？",
+      "source_quote": "Infer other dimensions proportionally and complete hidden surfaces plausibly.",
+      "weight": 0.05
+    },
+    {
+      "id": "S14",
+      "question": "主透视相机是否匹配参考，备用相机是否仅沿主相机局部正 X 平移并保持旋转和镜头不变，且两相机均保留并观察同一场景？",
+      "source_quote": "Create a perspective camera matching the input and render main.png. Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.05
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "依次为左侧船、中央白色封闭舱船、中央右侧窄船、最右侧船和远处小船。整船范围包括可辨认的篷顶、支架、发动机、船艏附件及附着旗杆旗帜，包含暗色船体；不延伸到系泊绳、水面投影或倒影。遮挡处只框可见范围，不推测隐藏轮廓；极小远处船点不纳入。",
+      "boxes": [
+        [
+          0.183,
+          0.418,
+          0.448,
+          0.583
+        ],
+        [
+          0.505,
+          0.382,
+          0.692,
+          0.663
+        ],
+        [
+          0.679,
+          0.343,
+          0.812,
+          0.598
+        ],
+        [
+          0.794,
+          0.346,
+          0.976,
+          0.612
+        ],
+        [
+          0.61,
+          0.318,
+          0.646,
+          0.35
+        ]
+      ],
+      "id": "T01",
+      "query": "可辨认的完整船只",
+      "weight": 0.8
+    },
+    {
+      "boundary_notes": "框住画面中部主要远岛群的连续可见山体，包含深色山坡及后方浅色山峰；不含天空、水面或倒影。右侧极小岛点及左端难分辨的低对比远景不单独定位。",
+      "boxes": [
+        [
+          0.365,
+          0.259,
+          0.734,
+          0.31
+        ]
+      ],
+      "id": "T02",
+      "query": "主要远处岛屿山体",
+      "weight": 0.2
+    }
+  ]
+}

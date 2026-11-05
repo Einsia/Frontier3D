@@ -1,0 +1,37 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-g02",
+  "id": "L3/GameEnvironment/SekiroCastleKeep",
+  "domain": "game",
+  "input_mode": "image",
+  "title": "只狼：苇名城主楼及相连庭院",
+  "title_en": "Sekiro: Ashina Castle Keep and Connected Courtyards",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "../COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "layout": 0.2,
+    "interaction": 0.15,
+    "environment": 0.2,
+    "objects": 0.3,
+    "rubric": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "55f80d0db0472999fe6aeb720634aac38c34161b4bba7d552130771652aa7115",
+  "chinese_instruction_sha256": "4cb1af7407b975aaa1383fd15812a3ed61e23a71aee2888c36e4c29941dbf0e2",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "pending",
+    "scope": "Task-specific objective test implementation and reference object annotations are separate from generation readiness."
+  }
+}

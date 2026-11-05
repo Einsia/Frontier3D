@@ -1,0 +1,283 @@
+{
+  "used_assets": {
+    "roadStraight": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/roadStraight.glb",
+      "sha256": "6b1f92e5859d417951f259e52c9c9eadad5bfceb3b545e074049bbc17d02f00d"
+    },
+    "pitsGarage": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/pitsGarage.glb",
+      "sha256": "db73d2ebd70763380ef872ffd2a399eb72c979f96c5a3c1ab377d93670204a23"
+    },
+    "pitsOffice": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/pitsOffice.glb",
+      "sha256": "32a39cf3b1051d651f6cc28e2febf3d2752c7120206e5688c0a45b93b7eea625"
+    },
+    "grandStandCovered": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/grandStandCovered.glb",
+      "sha256": "48fc8e7eace9969a849805bddd5dce2bf1244129f46ae18f7dc8499fe1792b50"
+    },
+    "overhead": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/overhead.glb",
+      "sha256": "8c38e92377eaeafee28a88f9fe10a580f1da984d3fa6b4b35c08ed62e2db6ff2"
+    },
+    "raceCarRed": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/raceCarRed.glb",
+      "sha256": "1098f37bd5bfad5e6d46266b57f146e0f1f8ea96193df03653966d58f0692b3c"
+    },
+    "raceCarOrange": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/raceCarOrange.glb",
+      "sha256": "3f7d799e54e0f64c846db3764f04ccfcddfbfe48d7d59f366495d4585a35a980"
+    },
+    "barrierWhite": {
+      "path": "assets/expansion/kenney/racing-kit/original/Models/GLTF format/barrierWhite.glb",
+      "sha256": "44bf654b08bb96bd0e9a70c00dab35b0b23df955d3390ec8ede89c20ad64871a"
+    }
+  },
+  "placements": [
+    {
+      "name": "roadStraight",
+      "position": [
+        0,
+        -15,
+        0
+      ],
+      "scale": 6,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "roadStraight",
+      "position": [
+        0,
+        -9,
+        0
+      ],
+      "scale": 6,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "roadStraight",
+      "position": [
+        0,
+        -3,
+        0
+      ],
+      "scale": 6,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "roadStraight",
+      "position": [
+        0,
+        3,
+        0
+      ],
+      "scale": 6,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "roadStraight",
+      "position": [
+        0,
+        9,
+        0
+      ],
+      "scale": 6,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "roadStraight",
+      "position": [
+        0,
+        15,
+        0
+      ],
+      "scale": 6,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "pitsGarage",
+      "position": [
+        8,
+        -9,
+        0
+      ],
+      "scale": 5.5,
+      "yaw": -90,
+      "target": true
+    },
+    {
+      "name": "pitsGarage",
+      "position": [
+        8,
+        -3,
+        0
+      ],
+      "scale": 5.5,
+      "yaw": -90,
+      "target": true
+    },
+    {
+      "name": "pitsGarage",
+      "position": [
+        8,
+        3,
+        0
+      ],
+      "scale": 5.5,
+      "yaw": -90,
+      "target": true
+    },
+    {
+      "name": "pitsOffice",
+      "position": [
+        8,
+        9,
+        0
+      ],
+      "scale": 5.5,
+      "yaw": -90,
+      "target": true
+    },
+    {
+      "name": "grandStandCovered",
+      "position": [
+        -7,
+        1,
+        0
+      ],
+      "scale": 6,
+      "yaw": 90,
+      "target": true
+    },
+    {
+      "name": "overhead",
+      "position": [
+        0,
+        -12,
+        0.1
+      ],
+      "scale": 5,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "raceCarRed",
+      "position": [
+        0,
+        -5,
+        0.12
+      ],
+      "scale": 2.2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "raceCarOrange",
+      "position": [
+        1,
+        4,
+        0.12
+      ],
+      "scale": 2.2,
+      "yaw": 0,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        -15,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        -12,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        -9,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        -6,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        6,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        9,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        12,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    },
+    {
+      "name": "barrierWhite",
+      "position": [
+        -3.5,
+        15,
+        0.02
+      ],
+      "scale": 3,
+      "yaw": 90,
+      "target": false
+    }
+  ],
+  "source": "https://kenney.nl/assets/racing-kit",
+  "license": "CC0-1.0",
+  "changes": "Original full scene layout and procedural site context; selected licensed asset assembly deleted from model input."
+}

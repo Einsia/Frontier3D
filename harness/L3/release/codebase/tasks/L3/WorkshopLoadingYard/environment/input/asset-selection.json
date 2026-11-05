@@ -1,0 +1,30 @@
+{
+  "material_ids": [
+    "patterned_concrete_wall",
+    "brushed_concrete_04",
+    "metal_plate_02",
+    "rusty_metal_05",
+    "rusty_metal_grid",
+    "rusty_corrugated_iron",
+    "wooden_floor_02",
+    "old_wooden_floor_01",
+    "black_painted_planks",
+    "blue_painted_planks",
+    "rubberized_track",
+    "rubber_tiles"
+  ],
+  "model_packs": [
+    "city-kit-industrial",
+    "survival-kit",
+    "furniture-kit",
+    "space-kit"
+  ],
+  "available_model_count": 410,
+  "model_catalog": "/assets/models/manifest.json",
+  "material_catalog": "/assets/polyhaven/manifest.json",
+  "catalog_sha256": {
+    "materials": "14d62e1c63a8a1b5a6a2286707fa89bb772859058199ef8918892ab735705e05",
+    "models": "2a53433384384d8e2d57af7bf931db0a189bc26f59caeffe06cc094db97d52bf"
+  },
+  "note": "Shortlist only; all libraries remain available. Modify assets or build your own to match the task style."
+}

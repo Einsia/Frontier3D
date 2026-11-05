@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "task_id": "L2/SceneEdit",
+  "spec_sha256": "9da3de3829ed0ace68c45ce84c44a9327b8ad14f4c0c3d0159907fac293ae151",
+  "instruction_sha256": "6ee0a9a79e99b9ff38214f60c4054cf2c613efd744dcbec09cbb6dcb9ae53886",
+  "checks": {
+    "chair_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "ground_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "preserve_objects": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "main_camera": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "alternate_camera": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "scene_collision_budget": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "no_unsupported_geometry": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "chair_support": {
+      "source_kind": "instruction",
+      "source_quote": "The wooden chair beside the staircase is missing. Restore its wooden frame and upholstered seat using the supplied initial .blend scene and two complete reference images. Match the proportions, silhouette, materials, ground support and occlusion; do not substitute simple boxes or whole-image billboards. Approximate overall chair bounds are (-0.528,2.120,0.023) m to (0.351,3.061,1.550) m. These are location and scale hints, not a box to fill. Preserve all other furniture, architecture, materials, lights and cameras; choose your own subdivision of new parts. Use metres and right-handed Z-up coordinates. Render main.png with the initial scene camera. For alternate.png, translate a copy of that camera by 0.28 m along its own local X axis, retaining rotation and lens settings. Render both with Cycles, 960×540, AgX and exposure 0; preserve the remaining source render settings. Submit reproducible editing code, scene.blend with complete textures and both images, retaining both output cameras.",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "render_main": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "image_validity uses a fixed luminance/visible-pixel fraction threshold (2/255 and 0.001). This is a blank-image heuristic, not a task-stated quality threshold; calibrate bright/dark positive and negative images.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "reference_main_similarity": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "reference_alternate_similarity": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "preserve_resolution": {
+      "source_kind": "instruction",
+      "source_quote": "The wooden chair beside the staircase is missing. Restore its wooden frame and upholstered seat using the supplied initial .blend scene and two complete reference images. Match the proportions, silhouette, materials, ground support and occlusion; do not substitute simple boxes or whole-image billboards. Approximate overall chair bounds are (-0.528,2.120,0.023) m to (0.351,3.061,1.550) m. These are location and scale hints, not a box to fill. Preserve all other furniture, architecture, materials, lights and cameras; choose your own subdivision of new parts. Use metres and right-handed Z-up coordinates. Render main.png with the initial scene camera. For alternate.png, translate a copy of that camera by 0.28 m along its own local X axis, retaining rotation and lens settings. Render both with Cycles, 960×540, AgX and exposure 0; preserve the remaining source render settings. Submit reproducible editing code, scene.blend with complete textures and both images, retaining both output cameras.",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "preserve_engine": {
+      "source_kind": "instruction",
+      "source_quote": "The wooden chair beside the staircase is missing. Restore its wooden frame and upholstered seat using the supplied initial .blend scene and two complete reference images. Match the proportions, silhouette, materials, ground support and occlusion; do not substitute simple boxes or whole-image billboards. Approximate overall chair bounds are (-0.528,2.120,0.023) m to (0.351,3.061,1.550) m. These are location and scale hints, not a box to fill. Preserve all other furniture, architecture, materials, lights and cameras; choose your own subdivision of new parts. Use metres and right-handed Z-up coordinates. Render main.png with the initial scene camera. For alternate.png, translate a copy of that camera by 0.28 m along its own local X axis, retaining rotation and lens settings. Render both with Cycles, 960×540, AgX and exposure 0; preserve the remaining source render settings. Submit reproducible editing code, scene.blend with complete textures and both images, retaining both output cameras.",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "preserve_view_transform": {
+      "source_kind": "instruction",
+      "source_quote": "The wooden chair beside the staircase is missing. Restore its wooden frame and upholstered seat using the supplied initial .blend scene and two complete reference images. Match the proportions, silhouette, materials, ground support and occlusion; do not substitute simple boxes or whole-image billboards. Approximate overall chair bounds are (-0.528,2.120,0.023) m to (0.351,3.061,1.550) m. These are location and scale hints, not a box to fill. Preserve all other furniture, architecture, materials, lights and cameras; choose your own subdivision of new parts. Use metres and right-handed Z-up coordinates. Render main.png with the initial scene camera. For alternate.png, translate a copy of that camera by 0.28 m along its own local X axis, retaining rotation and lens settings. Render both with Cycles, 960×540, AgX and exposure 0; preserve the remaining source render settings. Submit reproducible editing code, scene.blend with complete textures and both images, retaining both output cameras.",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "main_native_size": {
+      "source_kind": "instruction",
+      "source_quote": "Render main.png with the initial scene camera",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "alternate_native_size": {
+      "source_kind": "instruction",
+      "source_quote": "Render main.png with the initial scene camera",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "main_camera_preserved": {
+      "source_kind": "instruction",
+      "source_quote": "Preserve all other furniture, architecture, materials, lights and cameras; choose your own subdivision of new parts",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "alternate_camera_offset": {
+      "source_kind": "instruction",
+      "source_quote": "Preserve all other furniture, architecture, materials, lights and cameras; choose your own subdivision of new parts",
+      "rationale": "Task-stated setting or dimension; tolerances and geometric algorithms still need representative calibration.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "render_alternate": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "image_validity uses a fixed luminance/visible-pixel fraction threshold (2/255 and 0.001). This is a blank-image heuristic, not a task-stated quality threshold; calibrate bright/dark positive and negative images.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "editable_scene": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "metric_units": {
+      "source_kind": "instruction",
+      "source_quote": "Use metres and right-handed Z-up coordinates",
+      "rationale": "The task explicitly fixes this setting. Exposure/gamma use 1e-6 only for numeric serialization tolerance.",
+      "calibration": "explicit",
+      "public": true
+    },
+    "no_billboards": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "chair_materials": {
+      "source_kind": "heuristic",
+      "source_quote": null,
+      "rationale": "Implementation proxy; absolute size, visual similarity, collision or semantic thresholds require human-reviewed examples.",
+      "calibration": "pending_human",
+      "public": false
+    },
+    "seed_reproducibility": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "delivery_main": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    },
+    "delivery_alternate": {
+      "source_kind": "runtime_contract",
+      "source_quote": null,
+      "rationale": "Reproducible delivery and controlled execution contract.",
+      "calibration": "explicit",
+      "public": false
+    }
+  },
+  "manual_requirements": [
+    {
+      "id": "semantic_identity",
+      "question": "Do the visible entities and their parts match the requested object categories, rather than labels alone?",
+      "evidence_needed": "Both renders, entity inventory, and geometry diagnostics."
+    },
+    {
+      "id": "materials_style",
+      "question": "Do the requested wood, upholstery, glass and other materials visually match the task/references?",
+      "evidence_needed": "Both renders and reference/target crops where available."
+    },
+    {
+      "id": "layout_views",
+      "question": "Do silhouette, relative proportions, occlusion and composition agree with both references?",
+      "evidence_needed": "Paired reference/candidate views; reviewer-defined target regions and landmarks."
+    },
+    {
+      "id": "reference_annotations",
+      "question": "Are the two-view target regions, silhouettes and landmark correspondences correctly annotated?",
+      "evidence_needed": "Human-reviewed normalized ROI/landmark/mask annotations bound to each reference image hash."
+    }
+  ],
+  "visual_regions": []
+}

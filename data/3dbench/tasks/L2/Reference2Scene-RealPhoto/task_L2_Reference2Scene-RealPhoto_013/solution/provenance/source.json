@@ -1,0 +1,24 @@
+{
+  "title": "Pepe Pollo (by me)",
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_table_row": 6,
+  "original_sha256": "aa47822d9e033407e669d79a42a2749142b7e1c20798a1d8ac202984c9d2cae7",
+  "input_sha256": "64503d869c6dce4bacf2ae834a299fd170adfcf7cef9c06efd65954f6e9a6a0f",
+  "input_dimensions": [
+    1600,
+    1200
+  ],
+  "license": {
+    "label": "User-contributed photograph; inclusion in this benchmark requested by user; no general public license asserted",
+    "author": "Document contributor (by me)",
+    "source": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug"
+  },
+  "has_3d_ground_truth": false,
+  "camera_calibration": null,
+  "public_views": [
+    1
+  ],
+  "private_views": [],
+  "transform": "EXIF transpose; preserve aspect, longest side <=1600; RGB PNG, metadata stripped; no crop or generative edit"
+}

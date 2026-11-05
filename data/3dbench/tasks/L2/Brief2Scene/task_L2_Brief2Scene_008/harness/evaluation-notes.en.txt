@@ -1,0 +1,174 @@
+## Numerical geometry protocol (l2-brief-v2.1.0)
+Use solid colors and procedural shading only. Image textures, environment images,
+generated/baked image maps and image-dependent geometry/compositing are prohibited,
+including packed or unused image nodes in used node trees. No private reference is used for scoring.
+Assign bench_role to actual mesh geometry or to a parent grouping the mesh parts
+of one entity. Object names are unrestricted. Roles select measurements and do not
+prove semantics; visual fidelity and local detail are evaluated separately.
+For each route, nominate small endpoint surface patches at road level. All named
+start/goal pairs must connect. Counts group entity parts and reject identical
+co-located copies. Dimensions use complete geometry and world metres; horizontal
+sizes use a minimum-area rotated footprint. Camera heights use actual local ground.
+Opening checks use interior surfaces and bounded through-depth rays. Route checks
+use a 2.5D grid including vertical/thin surfaces, local floor height and low obstacles;
+the ground band defaults to 0.1 m, or the measured vehicle height where specified.
+This is not a general certification of human headroom or arbitrary stacked floors.
+Grid uncertainty or capacity limits produce not_measurable, never an inferred pass.
+Numerical tolerances, route step/slope settings and contact bands are published
+definitions with pending calibration. The JSON below specifies this version exactly.
+
+Roles: far_exit, foreground_entry, natural_arch, passage, pillar, rock_mass, site, vegetation_cluster.
+
+```json
+[
+  {
+    "id": "site_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "site",
+      "scope": "union",
+      "lower": [
+        36,
+        60,
+        null
+      ],
+      "upper": [
+        36,
+        60,
+        null
+      ],
+      "relative_tolerance": 0.1
+    }
+  },
+  {
+    "id": "rock_mass_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "rock_mass",
+      "scope": "each",
+      "lower": [
+        null,
+        null,
+        8
+      ],
+      "upper": [
+        null,
+        null,
+        18
+      ],
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "pillar_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "pillar",
+      "minimum": 2
+    }
+  },
+  {
+    "id": "pillar_dimensions",
+    "metric": "l2_brief_dimensions",
+    "group": "numeric",
+    "params": {
+      "role": "pillar",
+      "scope": "each",
+      "lower": [
+        null,
+        null,
+        8
+      ],
+      "upper": [
+        null,
+        null,
+        18
+      ],
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "vegetation_cluster_count",
+    "metric": "l2_brief_count",
+    "group": "numeric",
+    "params": {
+      "role": "vegetation_cluster",
+      "minimum": 3,
+      "maximum": 3
+    }
+  },
+  {
+    "id": "natural_arch_opening",
+    "metric": "l2_brief_opening",
+    "group": "numeric",
+    "params": {
+      "role": "natural_arch",
+      "support_role": "site",
+      "min_width": 6,
+      "min_height": null,
+      "passage_shape": "rectangle",
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "passage_clear_route",
+    "metric": "l2_brief_route",
+    "group": "numeric",
+    "params": {
+      "road_role": "passage",
+      "start_role": "foreground_entry",
+      "goal_role": "far_exit",
+      "min_width": 3,
+      "cell_size": 0.04,
+      "max_snap": 0.75,
+      "clearance_height": 0.1,
+      "surface_epsilon": 0.001,
+      "max_step": 0.02,
+      "max_slope": 0.5
+    }
+  },
+  {
+    "id": "main_ground_height",
+    "metric": "l2_brief_camera_ground",
+    "group": "numeric",
+    "params": {
+      "camera": "__main",
+      "support_role": "site",
+      "lower": 1.7,
+      "upper": 1.7,
+      "relative_tolerance": 0.01
+    }
+  },
+  {
+    "id": "alternate_ground_height",
+    "metric": "l2_brief_camera_ground",
+    "group": "numeric",
+    "params": {
+      "camera": "__alternate",
+      "support_role": "site",
+      "lower": 8,
+      "upper": null,
+      "relative_tolerance": 0.01
+    }
+  }
+]
+```
+
+
+## Geometry extension (l2-brief-v2.2.0)
+This case retains the preceding numeric definitions unchanged. This native geometry channel does not measure text semantics; semantic fidelity is evaluated separately.
+
+
+## Layout and course geometry (l2-brief-v2.3.0)
+This case retains the preceding numerical definitions unchanged.
+
+## Scoring
+
+Final item score: `60% vlm + 30% data + 10% detail`. Component definitions and evidence policies are in [Scoring](../../../../../../docs/en/scoring.md).
+
+Missing content, shape errors and layout differences reduce the relevant quality terms. Technical failures or missing required evidence leave the score unresolved; missing weights are never redistributed or filled with zero. Delivery, execution, loading, dependencies and integrity are checked separately under the task contract. Bound saved-scene rerenders provide scoring evidence; submitted images and mismatch diagnostics are retained.
+
+Numerical checks cover implemented, evidenced measurements only. Unimplemented exact counts are not treated as satisfied. Visual observations do not certify hidden geometry, physical contacts or complete physical correctness. Reference regions and perceptual judgments retain calibration limits.

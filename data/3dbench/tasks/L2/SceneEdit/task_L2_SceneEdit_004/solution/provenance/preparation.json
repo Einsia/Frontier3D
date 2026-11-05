@@ -1,0 +1,17 @@
+{
+  "key": "medieval-blacksmith",
+  "source_file": "assets\\cc0-replacements-20260921\\medieval-blacksmith\\original\\Blacksmith1Upload.blend",
+  "modifications": [
+    "Neutral daylight to render author asset in current Blender; geometry and arrangement unchanged."
+  ],
+  "geometry_origin": "upstream author scene, no added modeled geometry",
+  "resolution": [
+    960,
+    640
+  ],
+  "engine": "CYCLES",
+  "samples": 12,
+  "missing_dependencies": [],
+  "library_count": 1,
+  "camera_type": "PERSP"
+}

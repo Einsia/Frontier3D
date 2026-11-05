@@ -1,0 +1,459 @@
+{
+  "case_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_021",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "尖拱两侧曲线、顶部收尖及拱洞轮廓是否符合参考？",
+      "source_quote": "repeated tall pointed arches",
+      "weight": 0.2
+    },
+    {
+      "id": "D02",
+      "question": "柱体是否具有参考中可见的厚实截面、纵深侧面及与拱肋连续衔接的形态？",
+      "source_quote": "supporting columns",
+      "weight": 0.2
+    },
+    {
+      "id": "D03",
+      "question": "玻璃端墙的尖拱外缘和内部横竖框格是否符合参考，允许简化细小五金？",
+      "source_quote": "Fine glazing hardware may be simplified;",
+      "weight": 0.2
+    },
+    {
+      "id": "D04",
+      "question": "浅色顶棚分片的收尖边缘、圆角及中心辐射状接缝是否符合参考？",
+      "source_quote": "geometric light ceiling segments",
+      "weight": 0.2
+    },
+    {
+      "id": "D05",
+      "question": "下部楼梯是否呈现参考中的连续踏面、竖向踢面和两侧实体边界？",
+      "source_quote": "lower stairs",
+      "weight": 0.2
+    }
+  ],
+  "limitations": [
+    "本计划仅依据公开文字与所附原始参考图制定；未提供或评估任何候选作品。",
+    "图像附件 reference/reference-0.png 通过公开映射对应 input/reference.png；所有坐标均固定于该原始图像，以左上角为原点。",
+    "未提供 legacy-detail-20261018-v1 的另行定义；这里只落实本次嵌入的合同与检查规则。",
+    "单张照片不能唯一确定真实尺寸、相机标定或隐藏表面；不得将比例推断作为精确数值真值。",
+    "地面层行人门洞在图中无法可靠定位；2.1 m 是规定的尺度约定，需要在场景中识别其采用的对应门洞后测量。",
+    "拱、柱和楼梯的数量、尺寸、间距、厚度及角度均无明确数值要求，不从像素估算添加数值约束。",
+    "light ceiling segments 可能指浅色或明亮的顶棚分片；参考支持浅色面板，不据此要求自发光材质。",
+    "完整三维几何、独立编辑性、隐藏表面和相机变换须检查场景数据；单幅渲染不能充分判定。",
+    "定位类别仅选择可清楚分辨的顶棚分片、玻璃端墙和楼梯；未对相互遮挡的整组拱柱强行拆出实例。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在以米表达的场景几何中识别作为尺度约定的地面层行人门洞，沿世界 Z 方向测量门洞底部至顶部的净高；该值用于尺度约定，并非照片实测尺寸。",
+      "quantity": "地面层行人门洞约定高度",
+      "relation": "equal",
+      "source_quote": "Use a 2.1 m height for a pedestrian doorway at ground level as the task scale convention, not a measured real-world dimension.",
+      "target": 2.1,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取两台相机的世界空间位置，以主相机的局部坐标轴表达位置差，验证该位移向量为沿局部正 X 的 0.30 m 平移。",
+      "quantity": "备用相机沿主相机局部正 X 的平移",
+      "relation": "equal",
+      "source_quote": "translate 0.30 m to its right along local X",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "R01",
+      "label": "重复尖拱与两侧支撑主体",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.947
+        ],
+        [
+          0.757,
+          0.852
+        ],
+        [
+          0.673,
+          0.654
+        ],
+        [
+          0.634,
+          0.525
+        ],
+        [
+          0.601,
+          0.471
+        ],
+        [
+          0.531,
+          0.443
+        ],
+        [
+          0.474,
+          0.443
+        ],
+        [
+          0.414,
+          0.478
+        ],
+        [
+          0.382,
+          0.557
+        ],
+        [
+          0.353,
+          0.655
+        ],
+        [
+          0.24,
+          0.849
+        ],
+        [
+          0,
+          0.947
+        ]
+      ],
+      "weight": 0.4
+    },
+    {
+      "id": "R02",
+      "label": "中央连续浅色几何顶棚",
+      "polygon": [
+        [
+          0.307,
+          0
+        ],
+        [
+          0.739,
+          0
+        ],
+        [
+          0.709,
+          0.162
+        ],
+        [
+          0.66,
+          0.295
+        ],
+        [
+          0.586,
+          0.389
+        ],
+        [
+          0.575,
+          0.436
+        ],
+        [
+          0.446,
+          0.439
+        ],
+        [
+          0.422,
+          0.385
+        ],
+        [
+          0.354,
+          0.295
+        ],
+        [
+          0.333,
+          0.163
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R03",
+      "label": "尖拱玻璃端墙",
+      "polygon": [
+        [
+          0.386,
+          0.645
+        ],
+        [
+          0.388,
+          0.558
+        ],
+        [
+          0.408,
+          0.514
+        ],
+        [
+          0.44,
+          0.475
+        ],
+        [
+          0.466,
+          0.452
+        ],
+        [
+          0.488,
+          0.446
+        ],
+        [
+          0.528,
+          0.447
+        ],
+        [
+          0.554,
+          0.461
+        ],
+        [
+          0.59,
+          0.493
+        ],
+        [
+          0.614,
+          0.535
+        ],
+        [
+          0.627,
+          0.566
+        ],
+        [
+          0.627,
+          0.647
+        ]
+      ],
+      "weight": 0.2
+    },
+    {
+      "id": "R04",
+      "label": "下部楼梯及两侧边界",
+      "polygon": [
+        [
+          0.317,
+          0.654
+        ],
+        [
+          0.682,
+          0.655
+        ],
+        [
+          0.706,
+          0.664
+        ],
+        [
+          0.75,
+          0.81
+        ],
+        [
+          0.266,
+          0.809
+        ],
+        [
+          0.268,
+          0.757
+        ]
+      ],
+      "weight": 0.2
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "是否重建沿纵深重复排列的高挑尖拱？",
+      "source_quote": "repeated tall pointed arches",
+      "weight": 0.05
+    },
+    {
+      "id": "S02",
+      "question": "是否具有承托尖拱的两侧支撑柱？",
+      "source_quote": "supporting columns",
+      "weight": 0.05
+    },
+    {
+      "id": "S03",
+      "question": "建筑纵深尽端是否具有参考中的玻璃端墙？",
+      "source_quote": "glazed end wall",
+      "weight": 0.05
+    },
+    {
+      "id": "S04",
+      "question": "拱间上方是否具有参考中的浅色几何顶棚分片？",
+      "source_quote": "geometric light ceiling segments",
+      "weight": 0.05
+    },
+    {
+      "id": "S05",
+      "question": "画面下部是否具有通向玻璃端墙的平台楼梯？",
+      "source_quote": "lower stairs",
+      "weight": 0.05
+    },
+    {
+      "id": "S06",
+      "question": "主视图的强烈建筑透视和纵深汇聚是否匹配参考？",
+      "source_quote": "Match the strong architectural perspective",
+      "weight": 0.05
+    },
+    {
+      "id": "S07",
+      "question": "重复尖拱的间距节奏是否匹配参考？",
+      "source_quote": "arch spacing",
+      "weight": 0.05
+    },
+    {
+      "id": "S08",
+      "question": "拱柱层层框景的纵深和遮挡关系是否匹配参考？",
+      "source_quote": "framing depth",
+      "weight": 0.05
+    },
+    {
+      "id": "S09",
+      "question": "亮部、暗部及投射光斑的整体分布是否匹配参考？",
+      "source_quote": "light/shadow pattern",
+      "weight": 0.05
+    },
+    {
+      "id": "S10",
+      "question": "尖拱是否为完整三维几何？",
+      "source_quote": "arches and supports must be full geometry.",
+      "weight": 0.05
+    },
+    {
+      "id": "S11",
+      "question": "支撑构件是否为完整三维几何？",
+      "source_quote": "arches and supports must be full geometry.",
+      "weight": 0.05
+    },
+    {
+      "id": "S12",
+      "question": "主要构件是否可独立编辑？",
+      "source_quote": "Keep major components independently editable",
+      "weight": 0.05
+    },
+    {
+      "id": "S13",
+      "question": "主要构件是否具有实体厚度？",
+      "source_quote": "with thickness",
+      "weight": 0.05
+    },
+    {
+      "id": "S14",
+      "question": "主要构件是否具有合理的支撑关系？",
+      "source_quote": "with thickness, support and meaningful spacing.",
+      "weight": 0.05
+    },
+    {
+      "id": "S15",
+      "question": "主要构件之间是否具有有意义的空间间隔？",
+      "source_quote": "meaningful spacing",
+      "weight": 0.05
+    },
+    {
+      "id": "S16",
+      "question": "整体是否采用真实三维结构，而非完整照片贴平面或单相机投影替代？",
+      "source_quote": "Do not substitute the complete reference on a plane or a single-camera projection for three-dimensional geometry.",
+      "weight": 0.05
+    },
+    {
+      "id": "S17",
+      "question": "其余尺寸是否按参考比例推断？",
+      "source_quote": "Infer other dimensions proportionally",
+      "weight": 0.05
+    },
+    {
+      "id": "S18",
+      "question": "不可见表面是否得到合理补全？",
+      "source_quote": "complete hidden surfaces plausibly.",
+      "weight": 0.05
+    },
+    {
+      "id": "S19",
+      "question": "场景是否采用米制并以 Z 轴向上？",
+      "source_quote": "Use metres and Z up.",
+      "weight": 0.05
+    },
+    {
+      "id": "S20",
+      "question": "备用视图是否来自同一场景中保留的主透视相机副本，且旋转与镜头参数不变？",
+      "source_quote": "Copy it and translate 0.30 m to its right along local X without changing rotation or lens; render alternate.png and retain both cameras.",
+      "weight": 0.05
+    }
+  ],
+  "targets": [
+    {
+      "boundary_notes": "单一端墙实例，框住可见尖拱玻璃及内部框格，包括暗色下部；排除外围砖拱和玻璃后方景物的独立延伸。",
+      "boxes": [
+        [
+          0.386,
+          0.445,
+          0.628,
+          0.648
+        ]
+      ],
+      "id": "T01",
+      "query": "尖拱形玻璃端墙",
+      "weight": 0.35
+    },
+    {
+      "boundary_notes": "整座楼梯作为一个实例，含踏步和两侧实体边界；排除前景平地、相邻砖柱及投影。踏步上的小构件不另列类别。",
+      "boxes": [
+        [
+          0.266,
+          0.652,
+          0.75,
+          0.812
+        ]
+      ],
+      "id": "T02",
+      "query": "下部宽楼梯整体",
+      "weight": 0.35
+    },
+    {
+      "boundary_notes": "每个拱间的完整分片组合计为一个实例，不将每片面板拆分。包含组合内暗色接缝与远处较暗面板；最近组合被图像上缘截断，按可见范围框定。",
+      "boxes": [
+        [
+          0.309,
+          0,
+          0.743,
+          0.065
+        ],
+        [
+          0.338,
+          0.095,
+          0.708,
+          0.205
+        ],
+        [
+          0.358,
+          0.225,
+          0.661,
+          0.33
+        ],
+        [
+          0.423,
+          0.341,
+          0.592,
+          0.397
+        ],
+        [
+          0.446,
+          0.404,
+          0.575,
+          0.439
+        ]
+      ],
+      "id": "T03",
+      "query": "拱间浅色几何顶棚分片组合",
+      "weight": 0.3
+    }
+  ]
+}

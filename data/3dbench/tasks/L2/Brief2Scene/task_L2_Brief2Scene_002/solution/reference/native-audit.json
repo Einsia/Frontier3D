@@ -1,0 +1,1192 @@
+{
+  "key": "space-kit",
+  "path": "assets/expansion/kenney/space-kit/review/scene.blend",
+  "unit_scale": 1.0,
+  "frame": 1,
+  "engine": "CYCLES",
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "camera": {
+    "name": "Camera",
+    "position": [
+      40.0,
+      -45.0,
+      40.0
+    ],
+    "rotation_euler": [
+      0.9960010647773743,
+      -1.3340480720103187e-08,
+      0.726642370223999
+    ],
+    "lens": 50.0,
+    "sensor_width": 36.0
+  },
+  "libraries": [],
+  "texts": [],
+  "meshes": [
+    {
+      "name": "Cube",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "0704504674d21592149ce4e7b8cf8fd83eba5bcf6fda0aee8f0ab59b6b7e992d"
+    },
+    {
+      "name": "Cube.001",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "b2d0d38a518b0b1f03f1cafe6ce6b0ff3007c809c4d7fb6bd93dfb80f78c2853"
+    },
+    {
+      "name": "Cube.002",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "26b6e8ade3b51ef5e9e37f10447fdcc34eaa139a23186226932253310b5e87c2"
+    },
+    {
+      "name": "Cube.003",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "26b6e8ade3b51ef5e9e37f10447fdcc34eaa139a23186226932253310b5e87c2"
+    },
+    {
+      "name": "Cube.004",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "26b6e8ade3b51ef5e9e37f10447fdcc34eaa139a23186226932253310b5e87c2"
+    },
+    {
+      "name": "Cube.005",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "26b6e8ade3b51ef5e9e37f10447fdcc34eaa139a23186226932253310b5e87c2"
+    },
+    {
+      "name": "Cube.006",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "26b6e8ade3b51ef5e9e37f10447fdcc34eaa139a23186226932253310b5e87c2"
+    },
+    {
+      "name": "Cube.007",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "26b6e8ade3b51ef5e9e37f10447fdcc34eaa139a23186226932253310b5e87c2"
+    },
+    {
+      "name": "Cube.008",
+      "vertices": 8,
+      "polygons": 6,
+      "sha256": "26b6e8ade3b51ef5e9e37f10447fdcc34eaa139a23186226932253310b5e87c2"
+    },
+    {
+      "name": "Mesh crater",
+      "vertices": 96,
+      "polygons": 60,
+      "sha256": "91767157298d67efe86f70a38b596597ce9a11f6a5a7a032015a1559eefb82f9"
+    },
+    {
+      "name": "Mesh crater.001",
+      "vertices": 96,
+      "polygons": 60,
+      "sha256": "91767157298d67efe86f70a38b596597ce9a11f6a5a7a032015a1559eefb82f9"
+    },
+    {
+      "name": "Mesh crater.002",
+      "vertices": 96,
+      "polygons": 60,
+      "sha256": "91767157298d67efe86f70a38b596597ce9a11f6a5a7a032015a1559eefb82f9"
+    },
+    {
+      "name": "Mesh crater.003",
+      "vertices": 96,
+      "polygons": 60,
+      "sha256": "91767157298d67efe86f70a38b596597ce9a11f6a5a7a032015a1559eefb82f9"
+    },
+    {
+      "name": "Mesh gate",
+      "vertices": 132,
+      "polygons": 98,
+      "sha256": "64be55f778aa2a5245a72d21a284996738d62df08c1c63e1d6e78646a4938edf"
+    },
+    {
+      "name": "Mesh hangar_largeA",
+      "vertices": 308,
+      "polygons": 216,
+      "sha256": "b43aff65990aaf70ca935c5c64a02427b232d2930d2d3d3250167d4fa7ba012f"
+    },
+    {
+      "name": "Mesh hangar_roundGlass",
+      "vertices": 187,
+      "polygons": 113,
+      "sha256": "515954f3c06e8ae6a43bd97196532893fdb09985cc384391d6ed23ed339e9476"
+    },
+    {
+      "name": "Mesh machine_generatorLarge",
+      "vertices": 186,
+      "polygons": 126,
+      "sha256": "2922271f54047f93eca2bca53381eca76c614de8cf6266d9d935afb49e951eef"
+    },
+    {
+      "name": "Mesh monorail_trackStraight",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "6c46508584d3f0747f77c775c5775fd6cc1145092a3c0017ae918b68ba9f0f12"
+    },
+    {
+      "name": "Mesh monorail_trackStraight.001",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "6c46508584d3f0747f77c775c5775fd6cc1145092a3c0017ae918b68ba9f0f12"
+    },
+    {
+      "name": "Mesh monorail_trackStraight.002",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "6c46508584d3f0747f77c775c5775fd6cc1145092a3c0017ae918b68ba9f0f12"
+    },
+    {
+      "name": "Mesh monorail_trackStraight.003",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "6c46508584d3f0747f77c775c5775fd6cc1145092a3c0017ae918b68ba9f0f12"
+    },
+    {
+      "name": "Mesh monorail_trackStraight.004",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "6c46508584d3f0747f77c775c5775fd6cc1145092a3c0017ae918b68ba9f0f12"
+    },
+    {
+      "name": "Mesh monorail_trackStraight.005",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "6c46508584d3f0747f77c775c5775fd6cc1145092a3c0017ae918b68ba9f0f12"
+    },
+    {
+      "name": "Mesh monorail_trackStraight.006",
+      "vertices": 48,
+      "polygons": 28,
+      "sha256": "6c46508584d3f0747f77c775c5775fd6cc1145092a3c0017ae918b68ba9f0f12"
+    },
+    {
+      "name": "Mesh monorail_trainFront",
+      "vertices": 396,
+      "polygons": 242,
+      "sha256": "28c544730b9899362fa9ac7b2563a372418ceb9f4db01c30cdd3fab19923817a"
+    },
+    {
+      "name": "Mesh pipe_straight",
+      "vertices": 112,
+      "polygons": 80,
+      "sha256": "4c8b83ba353730d351132894dd35ada47f6452c02e0fd2c6ff4159e15ca98fb8"
+    },
+    {
+      "name": "Mesh pipe_straight.001",
+      "vertices": 112,
+      "polygons": 80,
+      "sha256": "4c8b83ba353730d351132894dd35ada47f6452c02e0fd2c6ff4159e15ca98fb8"
+    },
+    {
+      "name": "Mesh rocket_baseA",
+      "vertices": 518,
+      "polygons": 300,
+      "sha256": "ea978789f6c4a15e4d61f0dd52d269b25a2da2e9569773564124db941772170b"
+    },
+    {
+      "name": "Mesh rocket_fuelA",
+      "vertices": 142,
+      "polygons": 94,
+      "sha256": "26b9ad698f5cf7786469817c5cec18d83d72579a9eef36d8e4706ae56d4ce838"
+    },
+    {
+      "name": "Mesh rocket_fuelA.001",
+      "vertices": 142,
+      "polygons": 94,
+      "sha256": "26b9ad698f5cf7786469817c5cec18d83d72579a9eef36d8e4706ae56d4ce838"
+    },
+    {
+      "name": "Mesh rocket_topA",
+      "vertices": 98,
+      "polygons": 50,
+      "sha256": "7c26d1521774f609516f8f749d88ef3b915e21148c948e3ef3d46b2b529e8e95"
+    },
+    {
+      "name": "Mesh rover",
+      "vertices": 288,
+      "polygons": 172,
+      "sha256": "f8ec686fedd90dc9abcfbbbd7f4aaa2adac26616a57727fc2e40c27ad39bfecb"
+    },
+    {
+      "name": "Mesh rover.001",
+      "vertices": 288,
+      "polygons": 172,
+      "sha256": "f8ec686fedd90dc9abcfbbbd7f4aaa2adac26616a57727fc2e40c27ad39bfecb"
+    },
+    {
+      "name": "Mesh rover.002",
+      "vertices": 288,
+      "polygons": 172,
+      "sha256": "f8ec686fedd90dc9abcfbbbd7f4aaa2adac26616a57727fc2e40c27ad39bfecb"
+    },
+    {
+      "name": "Mesh satelliteDish_large",
+      "vertices": 308,
+      "polygons": 186,
+      "sha256": "2114ce33bfa6a446a75ba7f6d6ee21b27446ed1bfb9aebb75895f51b952585ea"
+    }
+  ],
+  "images": [],
+  "objects": [
+    {
+      "name": "Outpost terrain",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        36.0,
+        32.0,
+        0.6000000238418579
+      ],
+      "bounds": [
+        [
+          -18.0,
+          -16.0,
+          -0.6000000238418579
+        ],
+        [
+          18.0,
+          16.0,
+          0.0
+        ]
+      ],
+      "materials": [
+        "Original site sand"
+      ]
+    },
+    {
+      "name": "Work apron",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        16.0,
+        18.0,
+        0.10000000149011612
+      ],
+      "bounds": [
+        [
+          -4.0,
+          -9.0,
+          -0.030000001192092896
+        ],
+        [
+          12.0,
+          9.0,
+          0.07000000029802322
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "hangar_largeA",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        6.0,
+        9.0,
+        3.0
+      ],
+      "bounds": [
+        [
+          3.0,
+          0.5,
+          0.07999999821186066
+        ],
+        [
+          9.0,
+          9.5,
+          3.0799999237060547
+        ]
+      ],
+      "materials": [
+        "metalDark",
+        "metal",
+        "metalRed"
+      ]
+    },
+    {
+      "name": "gate",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.399999618530273,
+        0.30000001192092896,
+        2.6999998092651367
+      ],
+      "bounds": [
+        [
+          3.3000001907348633,
+          8.899999618530273,
+          0.08000002801418304
+        ],
+        [
+          8.699999809265137,
+          9.19999885559082,
+          2.7799997329711914
+        ]
+      ],
+      "materials": [
+        "metalDark",
+        "metal",
+        "dark"
+      ]
+    },
+    {
+      "name": "gate.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        5.399999618530273,
+        0.30000001192092896,
+        2.6999998092651367
+      ],
+      "bounds": [
+        [
+          3.3000001907348633,
+          0.8000000715255737,
+          0.08000002801418304
+        ],
+        [
+          8.699999809265137,
+          1.1000005006790161,
+          2.7799997329711914
+        ]
+      ],
+      "materials": [
+        "metalDark",
+        "metal",
+        "dark"
+      ]
+    },
+    {
+      "name": "hangar_roundGlass",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        7.523860454559326,
+        6.5158538818359375,
+        3.2199997901916504
+      ],
+      "bounds": [
+        [
+          2.238069772720337,
+          -9.257926940917969,
+          0.07999999821186066
+        ],
+        [
+          9.761930465698242,
+          -2.7420730590820312,
+          3.299999713897705
+        ]
+      ],
+      "materials": [
+        "metalRed.001",
+        "metalDark.001",
+        "_defaultMat",
+        "dark.001"
+      ]
+    },
+    {
+      "name": "satelliteDish_large",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.3948001861572266,
+        2.947511672973633,
+        3.2567408084869385
+      ],
+      "bounds": [
+        [
+          10.764259338378906,
+          7.819181442260742,
+          0.07999999821186066
+        ],
+        [
+          15.235739707946777,
+          12.180818557739258,
+          3.336740732192993
+        ]
+      ],
+      "materials": [
+        "metalDark.002",
+        "metal.001",
+        "dark.002"
+      ]
+    },
+    {
+      "name": "machine_generatorLarge",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.0,
+        3.8999998569488525,
+        2.0490381717681885
+      ],
+      "bounds": [
+        [
+          -2.0,
+          6.050000190734863,
+          0.07999999821186066
+        ],
+        [
+          1.0,
+          9.949999809265137,
+          2.129038095474243
+        ]
+      ],
+      "materials": [
+        "metalRed.002",
+        "dark.003",
+        "metalDark.003",
+        "metal.002"
+      ]
+    },
+    {
+      "name": "rover",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9000000357627869,
+        1.0499999523162842,
+        1.1557916402816772
+      ],
+      "bounds": [
+        [
+          1.3178164958953857,
+          -6.691427707672119,
+          0.07999999821186066
+        ],
+        [
+          2.6821835041046143,
+          -5.308572292327881,
+          1.2357916831970215
+        ]
+      ],
+      "materials": [
+        "dark.004",
+        "metal.003",
+        "metalRed.003",
+        "metalDark.004"
+      ]
+    },
+    {
+      "name": "rover.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9000000357627869,
+        1.0499999523162842,
+        1.1557916402816772
+      ],
+      "bounds": [
+        [
+          1.3178164958953857,
+          -3.691427707672119,
+          0.07999999821186066
+        ],
+        [
+          2.6821835041046143,
+          -2.308572292327881,
+          1.2357916831970215
+        ]
+      ],
+      "materials": [
+        "dark.005",
+        "metal.004",
+        "metalRed.004",
+        "metalDark.005"
+      ]
+    },
+    {
+      "name": "rover.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.9000000357627869,
+        1.0499999523162842,
+        1.1557916402816772
+      ],
+      "bounds": [
+        [
+          1.3178164958953857,
+          -0.6914277672767639,
+          0.07999999821186066
+        ],
+        [
+          2.6821835041046143,
+          0.6914277672767639,
+          1.2357916831970215
+        ]
+      ],
+      "materials": [
+        "dark.006",
+        "metal.005",
+        "metalRed.005",
+        "metalDark.006"
+      ]
+    },
+    {
+      "name": "monorail_trackStraight",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6000000238418579,
+        3.0,
+        0.38999998569488525
+      ],
+      "bounds": [
+        [
+          -9.300000190734863,
+          -11.5,
+          2.700000047683716
+        ],
+        [
+          -8.699999809265137,
+          -8.5,
+          3.0900001525878906
+        ]
+      ],
+      "materials": [
+        "metalDark.007",
+        "metal.006"
+      ]
+    },
+    {
+      "name": "Rail support",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.550000011920929,
+        0.550000011920929,
+        2.700000047683716
+      ],
+      "bounds": [
+        [
+          -9.274999618530273,
+          -10.274999618530273,
+          0.0
+        ],
+        [
+          -8.725000381469727,
+          -9.725000381469727,
+          2.700000047683716
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "monorail_trackStraight.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6000000238418579,
+        3.0,
+        0.38999998569488525
+      ],
+      "bounds": [
+        [
+          -9.300000190734863,
+          -8.5,
+          2.700000047683716
+        ],
+        [
+          -8.699999809265137,
+          -5.5,
+          3.0900001525878906
+        ]
+      ],
+      "materials": [
+        "metalDark.008",
+        "metal.007"
+      ]
+    },
+    {
+      "name": "Rail support.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.550000011920929,
+        0.550000011920929,
+        2.700000047683716
+      ],
+      "bounds": [
+        [
+          -9.274999618530273,
+          -7.275000095367432,
+          0.0
+        ],
+        [
+          -8.725000381469727,
+          -6.724999904632568,
+          2.700000047683716
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "monorail_trackStraight.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6000000238418579,
+        3.0,
+        0.38999998569488525
+      ],
+      "bounds": [
+        [
+          -9.300000190734863,
+          -5.5,
+          2.700000047683716
+        ],
+        [
+          -8.699999809265137,
+          -2.5,
+          3.0900001525878906
+        ]
+      ],
+      "materials": [
+        "metalDark.009",
+        "metal.008"
+      ]
+    },
+    {
+      "name": "Rail support.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.550000011920929,
+        0.550000011920929,
+        2.700000047683716
+      ],
+      "bounds": [
+        [
+          -9.274999618530273,
+          -4.275000095367432,
+          0.0
+        ],
+        [
+          -8.725000381469727,
+          -3.7249999046325684,
+          2.700000047683716
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "monorail_trackStraight.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6000000238418579,
+        3.0,
+        0.38999998569488525
+      ],
+      "bounds": [
+        [
+          -9.300000190734863,
+          -2.5,
+          2.700000047683716
+        ],
+        [
+          -8.699999809265137,
+          0.5,
+          3.0900001525878906
+        ]
+      ],
+      "materials": [
+        "metalDark.010",
+        "metal.009"
+      ]
+    },
+    {
+      "name": "Rail support.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.550000011920929,
+        0.550000011920929,
+        2.700000047683716
+      ],
+      "bounds": [
+        [
+          -9.274999618530273,
+          -1.274999976158142,
+          0.0
+        ],
+        [
+          -8.725000381469727,
+          -0.7250000238418579,
+          2.700000047683716
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "monorail_trackStraight.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6000000238418579,
+        3.0,
+        0.38999998569488525
+      ],
+      "bounds": [
+        [
+          -9.300000190734863,
+          0.5,
+          2.700000047683716
+        ],
+        [
+          -8.699999809265137,
+          3.5,
+          3.0900001525878906
+        ]
+      ],
+      "materials": [
+        "metalDark.011",
+        "metal.010"
+      ]
+    },
+    {
+      "name": "Rail support.004",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.550000011920929,
+        0.550000011920929,
+        2.700000047683716
+      ],
+      "bounds": [
+        [
+          -9.274999618530273,
+          1.725000023841858,
+          0.0
+        ],
+        [
+          -8.725000381469727,
+          2.2750000953674316,
+          2.700000047683716
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "monorail_trackStraight.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6000000238418579,
+        3.0,
+        0.38999998569488525
+      ],
+      "bounds": [
+        [
+          -9.300000190734863,
+          3.5,
+          2.700000047683716
+        ],
+        [
+          -8.699999809265137,
+          6.5,
+          3.0900001525878906
+        ]
+      ],
+      "materials": [
+        "metalDark.012",
+        "metal.011"
+      ]
+    },
+    {
+      "name": "Rail support.005",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.550000011920929,
+        0.550000011920929,
+        2.700000047683716
+      ],
+      "bounds": [
+        [
+          -9.274999618530273,
+          4.724999904632568,
+          0.0
+        ],
+        [
+          -8.725000381469727,
+          5.275000095367432,
+          2.700000047683716
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "monorail_trackStraight.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.6000000238418579,
+        3.0,
+        0.38999998569488525
+      ],
+      "bounds": [
+        [
+          -9.300000190734863,
+          6.5,
+          2.700000047683716
+        ],
+        [
+          -8.699999809265137,
+          9.5,
+          3.0900001525878906
+        ]
+      ],
+      "materials": [
+        "metalDark.013",
+        "metal.012"
+      ]
+    },
+    {
+      "name": "Rail support.006",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        0.550000011920929,
+        0.550000011920929,
+        2.700000047683716
+      ],
+      "bounds": [
+        [
+          -9.274999618530273,
+          7.724999904632568,
+          0.0
+        ],
+        [
+          -8.725000381469727,
+          8.274999618530273,
+          2.700000047683716
+        ]
+      ],
+      "materials": [
+        "Original paved surface"
+      ]
+    },
+    {
+      "name": "monorail_trainFront",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3200000524520874,
+        2.309999942779541,
+        1.7600001096725464
+      ],
+      "bounds": [
+        [
+          -9.65999984741211,
+          -5.15500020980835,
+          3.0
+        ],
+        [
+          -8.34000015258789,
+          -2.8450002670288086,
+          4.760000228881836
+        ]
+      ],
+      "materials": [
+        "metalRed.006",
+        "metal.013",
+        "dark.007"
+      ]
+    },
+    {
+      "name": "rocket_baseA",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        3.059999942779541,
+        3.059999942779541,
+        2.7200000286102295
+      ],
+      "bounds": [
+        [
+          -3.5299999713897705,
+          -11.529999732971191,
+          0.07999999821186066
+        ],
+        [
+          -0.4700000286102295,
+          -8.470000267028809,
+          2.799999952316284
+        ]
+      ],
+      "materials": [
+        "metalDark.014",
+        "metal.014",
+        "metalRed.007"
+      ]
+    },
+    {
+      "name": "rocket_fuelA",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.7000000476837158,
+        1.7000000476837158,
+        0.8500000238418579
+      ],
+      "bounds": [
+        [
+          -2.8499999046325684,
+          -10.850000381469727,
+          2.799999952316284
+        ],
+        [
+          -1.149999976158142,
+          -9.149999618530273,
+          3.6500000953674316
+        ]
+      ],
+      "materials": [
+        "metalRed.008",
+        "metalDark.015"
+      ]
+    },
+    {
+      "name": "rocket_fuelA.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.7000000476837158,
+        1.7000000476837158,
+        0.8500000238418579
+      ],
+      "bounds": [
+        [
+          -2.8499999046325684,
+          -10.850000381469727,
+          3.6500000953674316
+        ],
+        [
+          -1.149999976158142,
+          -9.149999618530273,
+          4.5
+        ]
+      ],
+      "materials": [
+        "metalRed.009",
+        "metalDark.016"
+      ]
+    },
+    {
+      "name": "rocket_topA",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.7000000476837158,
+        1.7000000476837158,
+        1.3600000143051147
+      ],
+      "bounds": [
+        [
+          -2.8499999046325684,
+          -10.850000381469727,
+          4.5
+        ],
+        [
+          -1.149999976158142,
+          -9.149999618530273,
+          5.860000133514404
+        ]
+      ],
+      "materials": [
+        "metalDark.017",
+        "metalRed.010",
+        "_defaultMat.001",
+        "metal.015"
+      ]
+    },
+    {
+      "name": "crater",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.859962224960327,
+        3.3023998737335205,
+        0.47040000557899475
+      ],
+      "bounds": [
+        [
+          -14.429981231689453,
+          7.348800182342529,
+          -0.019999999552965164
+        ],
+        [
+          -11.570018768310547,
+          10.651200294494629,
+          0.4503999948501587
+        ]
+      ],
+      "materials": [
+        "rockDark",
+        "rock"
+      ]
+    },
+    {
+      "name": "crater.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.859962224960327,
+        3.3023998737335205,
+        0.47040000557899475
+      ],
+      "bounds": [
+        [
+          10.570018768310547,
+          -13.651200294494629,
+          -0.019999999552965164
+        ],
+        [
+          13.429981231689453,
+          -10.348799705505371,
+          0.4503999948501587
+        ]
+      ],
+      "materials": [
+        "rockDark.001",
+        "rock.001"
+      ]
+    },
+    {
+      "name": "crater.002",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.859962224960327,
+        3.3023998737335205,
+        0.47040000557899475
+      ],
+      "bounds": [
+        [
+          -13.429981231689453,
+          -13.651200294494629,
+          -0.019999999552965164
+        ],
+        [
+          -10.570018768310547,
+          -10.348799705505371,
+          0.4503999948501587
+        ]
+      ],
+      "materials": [
+        "rockDark.002",
+        "rock.002"
+      ]
+    },
+    {
+      "name": "crater.003",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        2.859962224960327,
+        3.3023998737335205,
+        0.47040000557899475
+      ],
+      "bounds": [
+        [
+          -1.4299811124801636,
+          11.348799705505371,
+          -0.019999999552965164
+        ],
+        [
+          1.4299811124801636,
+          14.651200294494629,
+          0.4503999948501587
+        ]
+      ],
+      "materials": [
+        "rockDark.003",
+        "rock.003"
+      ]
+    },
+    {
+      "name": "pipe_straight",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3856406211853027,
+        2.0,
+        1.2000000476837158
+      ],
+      "bounds": [
+        [
+          -2.6928203105926514,
+          1.0,
+          0.07999999821186066
+        ],
+        [
+          -1.3071796894073486,
+          3.0,
+          1.28000009059906
+        ]
+      ],
+      "materials": [
+        "metal.016",
+        "metalDark.018",
+        "dark.008"
+      ]
+    },
+    {
+      "name": "pipe_straight.001",
+      "type": "MESH",
+      "visible_render": true,
+      "dimensions": [
+        1.3856406211853027,
+        2.0,
+        1.2000000476837158
+      ],
+      "bounds": [
+        [
+          -2.6928203105926514,
+          4.0,
+          0.07999999821186066
+        ],
+        [
+          -1.3071796894073486,
+          6.0,
+          1.28000009059906
+        ]
+      ],
+      "materials": [
+        "metal.017",
+        "metalDark.019",
+        "dark.009"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source": "pilot-v2/assemblies/camera_pan_tilt",
+  "license": "CC0-1.0",
+  "changes": [
+    "Pedestal extended from z=8 to 28 to support fork base.",
+    "Camera plate made 10 mm thick and centered on the tilt axis, giving a closed pin bore."
+  ],
+  "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+}

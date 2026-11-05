@@ -1,0 +1,9 @@
+{
+  "mesh_count": 1,
+  "connected_components": 1,
+  "nonmanifold_edges": 0,
+  "positive_volume_m3": 3.432943942717924e-06,
+  "relative_volume_error_against_OCC": 3.36893003232475e-05,
+  "external_libraries": 0,
+  "scope": "Reference-data validation, not model testing."
+}

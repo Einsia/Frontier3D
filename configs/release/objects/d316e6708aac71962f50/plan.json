@@ -1,0 +1,545 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L2/Brief2Scene/task_L2_Brief2Scene_003",
+  "title": "双向道路与六户住宅街区",
+  "category": "Brief2Scene",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_inventory_house",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Are the required house:6 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_house",
+      "parameters": {
+        "units": [
+          "house_1",
+          "house_2",
+          "house_3",
+          "house_4",
+          "house_5",
+          "house_6"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_road",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Are the required road objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_road",
+      "parameters": {
+        "units": [
+          "road"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_sidewalk",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Are the required sidewalk:2 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_sidewalk",
+      "parameters": {
+        "units": [
+          "sidewalk_1",
+          "sidewalk_2"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_entry_path",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Are the required entry_path:6 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_entry_path",
+      "parameters": {
+        "units": [
+          "entry_path_1",
+          "entry_path_2",
+          "entry_path_3",
+          "entry_path_4",
+          "entry_path_5",
+          "entry_path_6"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_tree",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Are the required tree:12 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_tree",
+      "parameters": {
+        "units": [
+          "tree_1",
+          "tree_2",
+          "tree_3",
+          "tree_4",
+          "tree_5",
+          "tree_6",
+          "tree_7",
+          "tree_8",
+          "tree_9",
+          "tree_10",
+          "tree_11",
+          "tree_12"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_inventory_planter",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Are the required planter:6 objects recognizable, complete and present in the required numbers? Names identify semantic instances, not Blender object names; allow equivalent modeling. Repeated objects are indexed in stable left-to-right order, or clockwise from +X for circular arrays. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#inventory_planter",
+      "parameters": {
+        "units": [
+          "planter_1",
+          "planter_2",
+          "planter_3",
+          "planter_4",
+          "planter_5",
+          "planter_6"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_relations",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Verify each named layout/connection/access relation against the brief. Allow alternative layouts meeting the contract; check entrances, paths, occlusion, grouping and ground contact. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#relations",
+      "parameters": {
+        "units": [
+          "house_facing_1",
+          "house_facing_2",
+          "house_facing_3",
+          "house_facing_4",
+          "house_facing_5",
+          "house_facing_6",
+          "road_continuity",
+          "sidewalk_clearance_1",
+          "sidewalk_clearance_2",
+          "entry_connection_1",
+          "entry_connection_2",
+          "entry_connection_3",
+          "entry_connection_4",
+          "entry_connection_5",
+          "entry_connection_6"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_appearance",
+      "component": "Q",
+      "weight": 0.075,
+      "question": "Do materials/colors, style and lighting match the explicit brief? Reference styling is illustrative. Ignore differences the written contract allows. Evaluate visible semantics only, exact numerical geometry is handled automatically. Apply the case-specific identifying forms in focus; names and boxes alone are not proof.；只评价语义角色、结构形态、风格及题面指定关系，数量/尺寸由原生项单独计分。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "harness/vlm_spec.json#appearance",
+      "parameters": {
+        "units": [
+          "materials_colors",
+          "style",
+          "lighting"
+        ]
+      },
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_site_dimensions",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: roughly 32 by 34 metre",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/site_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "site_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "site",
+            "scope": "union",
+            "lower": [
+              32,
+              34,
+              null
+            ],
+            "upper": [
+              32,
+              34,
+              null
+            ],
+            "relative_tolerance": 0.1
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_house_count",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: six detached houses",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/house_count",
+      "parameters": {
+        "native_check": {
+          "id": "house_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "house",
+            "minimum": 6,
+            "maximum": 6
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_tree_count",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: at least twelve trees",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/tree_count",
+      "parameters": {
+        "native_check": {
+          "id": "tree_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "tree",
+            "minimum": 12
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_planter_count",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: six planters",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/planter_count",
+      "parameters": {
+        "native_check": {
+          "id": "planter_count",
+          "metric": "l2_brief_count",
+          "group": "numeric",
+          "params": {
+            "role": "planter",
+            "minimum": 6,
+            "maximum": 6
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_road_dimensions",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: straight 6 m wide",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/road_dimensions",
+      "parameters": {
+        "native_check": {
+          "id": "road_dimensions",
+          "metric": "l2_brief_dimensions",
+          "group": "numeric",
+          "params": {
+            "role": "road",
+            "scope": "union",
+            "lower": [
+              6,
+              null,
+              null
+            ],
+            "upper": [
+              6,
+              null,
+              null
+            ],
+            "relative_tolerance": 0.01
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_house_side_layout",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: three per side",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/house_side_layout",
+      "parameters": {
+        "native_check": {
+          "id": "house_side_layout",
+          "metric": "l2_side_layout",
+          "group": "numeric",
+          "params": {
+            "role": "house",
+            "axis_role": "road",
+            "per_side": 3,
+            "rows_per_side": 0,
+            "row_tolerance_m": 0.25
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_distinct_house_chimneys",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: at least two houses with chimneys",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/distinct_house_chimneys",
+      "parameters": {
+        "native_check": {
+          "id": "distinct_house_chimneys",
+          "metric": "l2_attachment_correspondence",
+          "group": "numeric",
+          "params": {
+            "base_role": "house",
+            "attachment_role": "chimney",
+            "minimum_distinct_bases": 2,
+            "grid_size": 5,
+            "max_gap_m": 0.02,
+            "min_protrusion_m": 0.1,
+            "maximum_embedded_fraction": 0.5,
+            "required_fraction": 0.8
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_actual_street_corridors",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: continuous sidewalks at least 1.2 m wide on both sides",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/actual_street_corridors",
+      "parameters": {
+        "native_check": {
+          "id": "actual_street_corridors",
+          "metric": "l2_street_corridors",
+          "group": "numeric",
+          "params": {
+            "road_role": "road",
+            "sidewalk_roles": [
+              "sidewalk_left",
+              "sidewalk_right"
+            ],
+            "house_role": "house",
+            "entry_role": "property_entry",
+            "road_width_m": 6.0,
+            "sidewalk_width_m": 1.2,
+            "entry_width_m": 0.8,
+            "cell_size": 0.02,
+            "max_step": 0.02,
+            "max_slope": 0.5,
+            "surface_epsilon": 0.001,
+            "clearance_height": 1.8,
+            "contact_tolerance_m": 0.02
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_full_street_clearance",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: Keep the road and the full width of the sidewalks clear of buildings, trees and planters",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/full_street_clearance",
+      "parameters": {
+        "native_check": {
+          "id": "full_street_clearance",
+          "metric": "l2_street_clearance",
+          "group": "numeric",
+          "params": {
+            "road_role": "road",
+            "sidewalk_roles": [
+              "sidewalk_left",
+              "sidewalk_right"
+            ],
+            "house_role": "house",
+            "entry_role": "property_entry",
+            "road_width_m": 6.0,
+            "sidewalk_width_m": 1.2,
+            "entry_width_m": 0.8,
+            "cell_size": 0.02,
+            "max_step": 0.02,
+            "max_slope": 0.5,
+            "surface_epsilon": 0.001,
+            "clearance_height": 1.8,
+            "contact_tolerance_m": 0.02
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_each_property_access",
+      "component": "Q",
+      "weight": 0.04,
+      "question": "instruction.md: Connect each property to its sidewalk with a short driveway or entry path",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "harness/methods.json#numeric_definition/each_property_access",
+      "parameters": {
+        "native_check": {
+          "id": "each_property_access",
+          "metric": "l2_property_connections",
+          "group": "numeric",
+          "params": {
+            "road_role": "road",
+            "sidewalk_roles": [
+              "sidewalk_left",
+              "sidewalk_right"
+            ],
+            "house_role": "house",
+            "entry_role": "property_entry",
+            "road_width_m": 6.0,
+            "sidewalk_width_m": 1.2,
+            "entry_width_m": 0.8,
+            "cell_size": 0.02,
+            "max_step": 0.02,
+            "max_slope": 0.5,
+            "surface_epsilon": 0.001,
+            "clearance_height": 1.8,
+            "contact_tolerance_m": 0.02
+          }
+        },
+        "normalization": "honour public ranges; relative dimension half-scale=1% nominal, count=1, route-width=1% required width",
+        "role_selection": "geometry must substantiate declared semantic role; no object-name-only proof"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "editable_structure",
+      "component": "E",
+      "weight": 0.5,
+      "question": "主要结构可独立编辑，允许实例和程序修改器；按主要语义部件的可编辑比例检查",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md",
+      "parameters": {
+        "population": "public major structures; no object-name constraint"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "view_consistency",
+      "component": "E",
+      "weight": 0.5,
+      "question": "规定相机关系、两张提交图与同一原生场景的几何/状态一致性",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md",
+      "parameters": {
+        "camera_checks": [
+          {
+            "id": "alternate_relationship",
+            "metric": "l2_case_camera_pair",
+            "group": "alternate_relationship",
+            "params": {
+              "mode": "orbit",
+              "degrees": 25,
+              "tolerance": 0.25
+            },
+            "role": "standard",
+            "pass_threshold": 1
+          }
+        ],
+        "image_error_half_scale": 0.01
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "698d36fb722624c9b797a1aaa424c4e9cccafb0eb970b7c84f567d6cf2bda229",
+    "task.toml": "f6eda72916de361442ec11c780024cf4a5d76a4d2e3c1c686011d164cc52731a",
+    "harness/eval_spec.json": "987b1a94a40e18900e1625ec86445e4e482394fe7e408bed9628fa3db138251a",
+    "harness/methods.json": "3d32030310fa60cf5d5898fbdfa97252e32ce33ef68b1255b8a71303b031ff52",
+    "harness/vlm_spec.json": "b26bd7948683498cbc661b195b9d278483f37c748939334bb2d2047998545f04"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

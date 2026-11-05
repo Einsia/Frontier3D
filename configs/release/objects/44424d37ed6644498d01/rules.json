@@ -1,0 +1,447 @@
+{
+  "case_id": "L1/Image2Code/task_L1_Image2Code_017",
+  "reference_primary": "input/reference.png",
+  "regions": [
+    {
+      "id": "r01",
+      "label": "长机身",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.257,
+          0.469
+        ],
+        [
+          0.277,
+          0.449
+        ],
+        [
+          0.311,
+          0.451
+        ],
+        [
+          0.647,
+          0.547
+        ],
+        [
+          0.72,
+          0.585
+        ],
+        [
+          0.706,
+          0.602
+        ],
+        [
+          0.613,
+          0.59
+        ],
+        [
+          0.286,
+          0.495
+        ],
+        [
+          0.263,
+          0.483
+        ]
+      ]
+    },
+    {
+      "id": "r02",
+      "label": "远侧后掠机翼",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.476,
+          0.504
+        ],
+        [
+          0.748,
+          0.438
+        ],
+        [
+          0.785,
+          0.435
+        ],
+        [
+          0.772,
+          0.444
+        ],
+        [
+          0.567,
+          0.524
+        ],
+        [
+          0.523,
+          0.527
+        ]
+      ]
+    },
+    {
+      "id": "r03",
+      "label": "近侧弯曲机翼",
+      "weight": 0.2,
+      "polygon": [
+        [
+          0.41,
+          0.526
+        ],
+        [
+          0.51,
+          0.551
+        ],
+        [
+          0.471,
+          0.57
+        ],
+        [
+          0.437,
+          0.604
+        ],
+        [
+          0.416,
+          0.635
+        ],
+        [
+          0.405,
+          0.629
+        ],
+        [
+          0.399,
+          0.614
+        ]
+      ]
+    },
+    {
+      "id": "r04",
+      "label": "近侧发动机短舱",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.36,
+          0.543
+        ],
+        [
+          0.375,
+          0.541
+        ],
+        [
+          0.408,
+          0.552
+        ],
+        [
+          0.405,
+          0.582
+        ],
+        [
+          0.371,
+          0.578
+        ],
+        [
+          0.356,
+          0.566
+        ]
+      ]
+    },
+    {
+      "id": "r05",
+      "label": "垂直及水平尾翼",
+      "weight": 0.15,
+      "polygon": [
+        [
+          0.606,
+          0.575
+        ],
+        [
+          0.715,
+          0.498
+        ],
+        [
+          0.736,
+          0.503
+        ],
+        [
+          0.713,
+          0.568
+        ],
+        [
+          0.788,
+          0.554
+        ],
+        [
+          0.799,
+          0.558
+        ],
+        [
+          0.729,
+          0.592
+        ],
+        [
+          0.685,
+          0.62
+        ],
+        [
+          0.673,
+          0.616
+        ],
+        [
+          0.658,
+          0.587
+        ]
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "t01",
+      "query": "机身主体",
+      "weight": 0.3,
+      "boxes": [
+        [
+          0.257,
+          0.448,
+          0.736,
+          0.603
+        ]
+      ],
+      "boundary_notes": "包含机鼻、机腹暗面与尾锥；排除机翼、尾翼和发动机。遮挡部分不补画隐藏轮廓。"
+    },
+    {
+      "id": "t02",
+      "query": "主机翼",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.476,
+          0.435,
+          0.784,
+          0.529
+        ],
+        [
+          0.399,
+          0.526,
+          0.512,
+          0.635
+        ]
+      ],
+      "boundary_notes": "分别框定远侧和近侧可见机翼，包含翼尖、后缘突出结构与暗色厚度边缘；不包含发动机。"
+    },
+    {
+      "id": "t03",
+      "query": "发动机短舱",
+      "weight": 0.2,
+      "boxes": [
+        [
+          0.355,
+          0.54,
+          0.41,
+          0.584
+        ],
+        [
+          0.47,
+          0.481,
+          0.523,
+          0.5
+        ]
+      ],
+      "boundary_notes": "近侧包含暗色尾部及开口边缘；远侧仅框定机身与机翼上方露出的短舱部分，不推断被遮挡范围。"
+    },
+    {
+      "id": "t04",
+      "query": "垂直尾翼",
+      "weight": 0.15,
+      "boxes": [
+        [
+          0.607,
+          0.498,
+          0.736,
+          0.591
+        ]
+      ],
+      "boundary_notes": "包含红色垂尾及其可见根部，不把机身上的红色涂装延伸区视为垂尾。"
+    },
+    {
+      "id": "t05",
+      "query": "水平尾翼",
+      "weight": 0.1,
+      "boxes": [
+        [
+          0.659,
+          0.581,
+          0.717,
+          0.621
+        ],
+        [
+          0.706,
+          0.554,
+          0.799,
+          0.594
+        ]
+      ],
+      "boundary_notes": "分别框定两侧可见水平尾翼，包含薄边暗面；排除尾锥及投影。"
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "s01",
+      "source_quote": "Reconstruct the Qantas Boeing 787-9",
+      "question": "主体是否可辨认为参考中的澳航波音787-9百年纪念涂装客机？",
+      "weight": 0.12
+    },
+    {
+      "id": "s02",
+      "source_quote": "long fuselage",
+      "question": "机身是否保持参考中的修长客机形态？",
+      "weight": 0.08
+    },
+    {
+      "id": "s03",
+      "source_quote": "swept wings",
+      "question": "机翼是否从机身两侧后掠伸出，布局与参考一致？",
+      "weight": 0.1
+    },
+    {
+      "id": "s04",
+      "source_quote": "twin engine nacelles",
+      "question": "发动机短舱是否位于两侧机翼下方，连接及遮挡关系与参考一致？",
+      "weight": 0.1
+    },
+    {
+      "id": "s05",
+      "source_quote": "tail surfaces",
+      "question": "尾部是否具有参考所示的垂直尾翼和两侧水平尾翼？",
+      "weight": 0.08
+    },
+    {
+      "id": "s06",
+      "source_quote": "visible landing gear",
+      "question": "模型是否包含文字要求的可见起落架？",
+      "weight": 0.06
+    },
+    {
+      "id": "s07",
+      "source_quote": "proportions",
+      "question": "机身、翼展、短舱及尾翼之间的相对比例是否符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s08",
+      "source_quote": "the white/red livery regions",
+      "question": "白色机身与机翼、红色机腹与垂尾及尾部白色图案的区域分布是否符合参考？",
+      "weight": 0.1
+    },
+    {
+      "id": "s09",
+      "source_quote": "This is a static aircraft model, with no flight simulation.",
+      "question": "飞机是否保持完整组装的静态姿态？",
+      "weight": 0.06
+    },
+    {
+      "id": "s10",
+      "source_quote": "Use real editable three-dimensional geometry.",
+      "question": "主体是否由真实可编辑的完整三维几何构成，而非图像平面或朝向相机的薄壳？",
+      "weight": 0.08
+    },
+    {
+      "id": "s11",
+      "source_quote": "Distinct components should be editable objects or clearly separable mesh islands; organic surfaces may remain continuous.",
+      "question": "独立部件是否可作为对象或清晰可分离的网格岛编辑，同时允许连续曲面保持连通？",
+      "weight": 0.06
+    },
+    {
+      "id": "s12",
+      "source_quote": "Use metres, Z up",
+      "question": "原生场景是否采用米制并以Z轴向上？",
+      "weight": 0.03
+    },
+    {
+      "id": "s13",
+      "source_quote": "export the same pose to scene.glb",
+      "question": "导出的GLB是否保持原生场景中的同一静态姿态？",
+      "weight": 0.03
+    }
+  ],
+  "detail_checks": [
+    {
+      "id": "d01",
+      "source_quote": "long fuselage",
+      "question": "机鼻的圆滑收束、筒状机身与渐细尾锥是否形成连续立体曲面？",
+      "weight": 0.125
+    },
+    {
+      "id": "d02",
+      "source_quote": "Preserve wing curvature",
+      "question": "机翼是否保留参考中的展向弯曲和向细长翼尖的平滑收束？",
+      "weight": 0.125
+    },
+    {
+      "id": "d03",
+      "source_quote": "thickness",
+      "question": "机翼和尾翼是否具有可见的薄翼剖面厚度，而非无厚度平面？",
+      "weight": 0.125
+    },
+    {
+      "id": "d04",
+      "source_quote": "nacelle openings",
+      "question": "短舱端部是否具有环状唇口和向内延伸的开口深度，而非平面黑贴片？",
+      "weight": 0.125
+    },
+    {
+      "id": "d05",
+      "source_quote": "twin engine nacelles",
+      "question": "短舱是否保留鼓起的外壳、收缩尾段及参考可见的锯齿状尾缘？",
+      "weight": 0.125
+    },
+    {
+      "id": "d06",
+      "source_quote": "connections and occlusions",
+      "question": "翼根、短舱吊挂及尾翼根部是否具有实体连接，并保留参考中的局部遮挡？",
+      "weight": 0.125
+    },
+    {
+      "id": "d07",
+      "source_quote": "tail surfaces",
+      "question": "垂尾和水平尾翼是否具有后掠轮廓、渐缩尖端及平滑根部过渡？",
+      "weight": 0.125
+    },
+    {
+      "id": "d08",
+      "source_quote": "recesses, openings, thin structures",
+      "question": "参考中可辨识的短舱内凹结构与机翼后缘细小突出结构是否保留立体形态？",
+      "weight": 0.125
+    }
+  ],
+  "numeric_checks": [
+    {
+      "id": "n01",
+      "source_quote": "twin engine nacelles",
+      "quantity": "发动机短舱数量",
+      "unit": "个",
+      "relation": "equal",
+      "target": 2,
+      "upper": null,
+      "explicit_tolerance": null,
+      "measurement_definition": "在原生三维几何中按独立发动机短舱组件计数；同一短舱的外壳、内部和吊挂不重复计数，遮挡不减少计数。"
+    },
+    {
+      "id": "n02",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "模型最大整体跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在静态姿态下，将飞机全部几何变换到米制世界坐标，排除相机与灯光，求沿模型纵向、横向和Z向的整体包围尺寸并取最大值。容差字段0.02表示原文的相对容差2%，不是额外推定的绝对公差。"
+    }
+  ],
+  "limitations": [
+    "未提供候选作品；本计划未测量或推断任何候选属性。",
+    "input/reference.png对应原始公开证据reference/reference-1.png；所有区域和定位框仅依据该原图冻结。其余公开图仅辅助形态检查。",
+    "文字要求visible landing gear，但公开视图未清楚显示展开的起落架。保留文字语义检查，不虚构起落架定位框、轮数、尺寸或局部构造。",
+    "远侧发动机在主图中大幅被遮挡，其定位仅覆盖可见部分；完整形态可参考其他公开视图。",
+    "maximum overall span未明确指定轴向包围尺寸还是任意两点最大距离；此处采用模型主轴整体尺寸的最大值作为尺度约定，不解释为真实飞机翼展。",
+    "细小航空公司文字和面板标记允许简化，不要求逐字或逐线复刻；不从图像估计精确尺寸或追加公差。",
+    "frame 1是保存时序要求，不是几何数量；渲染器、曝光、像素尺寸及通用交付要求未列为内容质量数值检查。",
+    "真实几何、可编辑性、单位、坐标轴和导出姿态一致性须通过原生场景及导出几何核验，不能仅凭单张渲染判定。"
+  ]
+}

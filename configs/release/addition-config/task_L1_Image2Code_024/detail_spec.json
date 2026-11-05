@@ -1,0 +1,209 @@
+{
+  "protocol": "3dbench-task-continuous-v1",
+  "release_id": "legacy-detail-20261019-v2-new-task-extension",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_024",
+  "family": "Reference2Scene",
+  "instruction_sha256": "0f75d3273cd2157da1a58ca0c48ec402df6229efd35d7f6578ad8dabb72a0546",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "Only local morphology and part composition; preserve allowed simplifications, do not give colour credit for shape.",
+  "reference_bindings": {
+    "reference/reference-0.png": "fc02402baaf717b675862bf06057aa33877a0df5d0454b5e35053e0fb49ea249",
+    "reference/reference-1.png": "872c80dff40cf93366417bda6e69926ee1d2f6707603b2e53e695e1536406353",
+    "reference/reference-2.png": "a2a147950476a2b47db2e95f0066846404b045615990aa90253e934d4cbadf03",
+    "reference/reference-3.png": "785628b8adde14b3ae7675d70b3369361714dfb98c27843e2efc00c1d7e39e94"
+  },
+  "authoring": "candidate_blind_public_contract_rules",
+  "formal_score_eligible": false,
+  "checks": [
+    {
+      "id": "d_rim",
+      "component": "F",
+      "question": "盘缘是否具有双层盘片厚度、中间通风槽及连接肋，而非单片平面？",
+      "units": [
+        "Preserve thickness"
+      ],
+      "global_weight": 0.16,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_face",
+      "component": "F",
+      "question": "摩擦盘面是否保留参考所示的圆孔及圆端细长槽的局部形状？",
+      "units": [
+        "recesses, openings"
+      ],
+      "global_weight": 0.13,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_hub",
+      "component": "F",
+      "question": "轮毂是否具有凸起钟帽形侧壁及连续同心环形台阶？",
+      "units": [
+        "concentric steps"
+      ],
+      "global_weight": 0.13,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_bore",
+      "component": "F",
+      "question": "中心开口是否为有内壁厚度和环形孔缘的真实通孔？",
+      "units": [
+        "hub opening"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_fasteners",
+      "component": "F",
+      "question": "轮毂紧固位置是否具有可见孔腔、凹座或紧固件形体，而非仅用色点表示？",
+      "units": [
+        "fastener pattern"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_shell",
+      "component": "F",
+      "question": "卡钳是否具有圆滑厚壳、分层侧盖和参考所示的不规则边缘转折？",
+      "units": [
+        "caliper body"
+      ],
+      "global_weight": 0.12,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_mounts",
+      "component": "F",
+      "question": "卡钳安装耳是否为带孔或嵌入紧固件的厚实凸耳？",
+      "units": [
+        "mounting features"
+      ],
+      "global_weight": 0.08,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_bridge",
+      "component": "F",
+      "question": "卡钳桥架间是否保留开窗、内部深色构件及盘片穿过的间隙？",
+      "units": [
+        "recesses and gaps between components"
+      ],
+      "global_weight": 0.1,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_tube",
+      "component": "F",
+      "question": "卡钳端部是否保留细长弯管及其与壳体连接的接头？",
+      "units": [
+        "thin structures, connections"
+      ],
+      "global_weight": 0.05,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    },
+    {
+      "id": "d_inner",
+      "component": "F",
+      "question": "轮毂与外盘之间是否保留参考可见的支承连接及分段空隙？",
+      "units": [
+        "recesses and gaps between components"
+      ],
+      "global_weight": 0.05,
+      "coverage_definition": "Fraction of explicit local features demonstrated",
+      "deviation_definition": "Geometric deviation within implemented features only; zero coverage implies zero deviation",
+      "required_evidence": [
+        "candidate/main.png",
+        "candidate/alternate.png",
+        "reference/reference-0.png",
+        "reference/reference-1.png",
+        "reference/reference-2.png",
+        "reference/reference-3.png"
+      ]
+    }
+  ]
+}

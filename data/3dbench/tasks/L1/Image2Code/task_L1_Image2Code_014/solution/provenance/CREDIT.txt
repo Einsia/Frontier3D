@@ -1,0 +1,7 @@
+2020 McLaren 720S GT3
+Author: Dave Love SketchFab (https://sketchfab.com/Tyler_Dave)
+Source: https://sketchfab.com/3d-models/2020-mclaren-720s-gt3-c368cc22dcb8480e9e942e57fb63c635
+License: Creative Commons Attribution 4.0 (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

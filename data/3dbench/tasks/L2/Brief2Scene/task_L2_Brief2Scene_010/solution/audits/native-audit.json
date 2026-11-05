@@ -1,0 +1,6589 @@
+{
+  "scope": "Packaged reference/input asset validation, NOT candidate evaluation",
+  "records": [
+    {
+      "file": "tasks/L2/Brief2Scene/solution/scene.blend",
+      "blender_version": "5.2.1 LTS",
+      "opened": true,
+      "libraries": [],
+      "images": [
+        {
+          "name": "ImphenziaPalette01-256-Gradient.png",
+          "source": "FILE",
+          "packed": true,
+          "external_exists_on_author_machine": false,
+          "portable": true
+        },
+        {
+          "name": "ImphenziaPalette01-256-Gradient.png.001",
+          "source": "FILE",
+          "packed": true,
+          "external_exists_on_author_machine": false,
+          "portable": true
+        },
+        {
+          "name": "ImphenziaPalette01-256-Gradient.png.002",
+          "source": "FILE",
+          "packed": true,
+          "external_exists_on_author_machine": false,
+          "portable": true
+        }
+      ],
+      "mesh_count": 124,
+      "objects": {
+        "Ground": {
+          "vertices": 317,
+          "polygons": 266,
+          "local_vertices_sha256": "257102f551d78f0f91bbcf16270b37b172f89f38dbaa1623b755ded00c3ee4bd",
+          "topology_sha256": "a91db47bacc0915c5d27441d8fb715529e2df618f282e9cf8ff80179177134ac",
+          "uv_sha256": "8fab8341d683801c8d54145d81e1097efb1e3821197e99ea7dc27e8ed9fd4fe4",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -50.0,
+              -50.0,
+              -0.02347719669342041
+            ],
+            [
+              50.0,
+              50.0,
+              3.611790657043457
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader.001",
+            "Submission_Diffuse_Shader.001",
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Roads": {
+          "vertices": 376,
+          "polygons": 248,
+          "local_vertices_sha256": "892caa3023bfbef916a2a87acdcac3cbf608587ff925421b68dfced2e017c27e",
+          "topology_sha256": "b3ec833999711658cb410a43ef890438cd757d7ac96a681bb0b4aff06a339b8a",
+          "uv_sha256": "91dd1d7bb8022ea4983bd5c0b2d8f72f01f51d334fff55a62e30ffdc17c1f2cf",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              59.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -68.00008392333984,
+              -68.00008392333984,
+              -0.20000000298023224
+            ],
+            [
+              67.99994659423828,
+              68.0,
+              0.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader.002"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "BuildingBase": {
+          "vertices": 12,
+          "polygons": 7,
+          "local_vertices_sha256": "335edb935e1ac2decff5acfb5895370f823ebe6a8347b62f2f1e06df8988ee01",
+          "topology_sha256": "d0929c95c77aa268e08c253db8d5e65d9cd22fdbb4570cc377eae54e494655f1",
+          "uv_sha256": "e187eb7b19a40d2b005c6b7bb0f132de49d5bcee5adb9ccfc7818cac32eca86b",
+          "matrix_world": [
+            [
+              30.0,
+              0.0,
+              0.0,
+              6.852261066436768
+            ],
+            [
+              0.0,
+              25.0,
+              0.0,
+              -11.947532653808594
+            ],
+            [
+              0.0,
+              0.0,
+              0.20000000298023224,
+              -0.04999971389770508
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -23.14773941040039,
+              -38.447532653808594,
+              0.15000025928020477
+            ],
+            [
+              38.35226058959961,
+              13.052467346191406,
+              0.5500003099441528
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "BuildingFloor.001": {
+          "vertices": 3916,
+          "polygons": 2233,
+          "local_vertices_sha256": "51409abdc9fbc5efee1543721433943692465218dcaca603709b1b50b4597a92",
+          "topology_sha256": "14af778b4ee7da2655f2c2d53d81a9e3fe269b206d5d68d14935c8a5429ef2f1",
+          "uv_sha256": "c224da9ed77d96b29484fb8d44fac4d7ef9fe1d7ae918946a23a665169a50278",
+          "matrix_world": [
+            [
+              30.0,
+              0.0,
+              0.0,
+              6.852261066436768
+            ],
+            [
+              0.0,
+              25.0,
+              0.0,
+              -11.947532653808594
+            ],
+            [
+              0.0,
+              0.0,
+              0.20000000298023224,
+              3.15000057220459
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -23.14773941040039,
+              -38.447532653808594,
+              0.14999985694885254
+            ],
+            [
+              38.35226058959961,
+              13.052467346191406,
+              35.750003814697266
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "BuildingSmallFloor.001": {
+          "vertices": 2084,
+          "polygons": 1229,
+          "local_vertices_sha256": "4131a81898f82198a5d2e9ac21aafcf07712f4146b783a589931309c721ccf74",
+          "topology_sha256": "3fa7257cc84f034bfdbac96cf769946442fe2286cb02e2a9ce0c4e59695d712f",
+          "uv_sha256": "bb4ae66b7256a4bf833b401945ba4e5552bc72ed81684ae8544962e5099d12cd",
+          "matrix_world": [
+            [
+              30.0,
+              0.0,
+              0.0,
+              6.852261066436768
+            ],
+            [
+              0.0,
+              25.0,
+              0.0,
+              -11.947532653808594
+            ],
+            [
+              0.0,
+              0.0,
+              0.20000000298023224,
+              38.349998474121094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -3.147737979888916,
+              -38.447532653808594,
+              35.349998474121094
+            ],
+            [
+              38.35226058959961,
+              13.052467346191406,
+              61.08019256591797
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Fassade": {
+          "vertices": 2658,
+          "polygons": 1885,
+          "local_vertices_sha256": "b3c7ff505a874d41204495d6b1383fff8302c7e145e88fe498efd6147d045006",
+          "topology_sha256": "4c4c902749474491e759b467db315203553b89c15f15c59b3ec8ef8e3ab39122",
+          "uv_sha256": "8bb54d094134ca0b74472cce3931523dc77cbffad0a7dc2f501d148e18a0eff6",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              6.852261066436768
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -38.322532653808594
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.950000524520874
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -23.147741317749023,
+              -38.447532653808594,
+              0.5500003099441528
+            ],
+            [
+              38.352264404296875,
+              13.052467346191406,
+              19.350000381469727
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Crane Ground": {
+          "vertices": 1422,
+          "polygons": 1109,
+          "local_vertices_sha256": "76460c14d4e6487cf356ff45f9d979a427ef5a560f81d9df673afa98f8055102",
+          "topology_sha256": "3aeaa131163fb096df0ad21ae606fa6209cea44031a84274e981310aba9b506a",
+          "uv_sha256": "11387744f3e094ea64fb608e4eda0a204e88c733cfb4c1933305dfba7d04938a",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -20.5
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              30.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -0.19999802112579346
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -38.582054138183594,
+              -1.2219429016113281,
+              1.952052116394043e-06
+            ],
+            [
+              -14.106035232543945,
+              40.384674072265625,
+              54.07588577270508
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Crane Mounted": {
+          "vertices": 1408,
+          "polygons": 1076,
+          "local_vertices_sha256": "a373218b9f7011c7580b65612c77bf11258bcb5a67f03cb99ccb0c6defda8636",
+          "topology_sha256": "3968e0fc092f3a30df94b6d5821f4a91fcbd166b84f47dd3f59deb7d46812e7f",
+          "uv_sha256": "a59a8e1e5aaf391264b71cf02b26274e57d32f372aec1cca1bc3d073b26d3f97",
+          "matrix_world": [
+            [
+              0.934090256690979,
+              0.0,
+              0.0,
+              -12.536924362182617
+            ],
+            [
+              0.0,
+              0.934090256690979,
+              0.0,
+              -39.38166427612305
+            ],
+            [
+              0.0,
+              0.0,
+              0.934090256690979,
+              21.12643051147461
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -19.097150802612305,
+              -46.271873474121094,
+              22.950000762939453
+            ],
+            [
+              11.566457748413086,
+              -15.978052139282227,
+              71.31101989746094
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Office Container": {
+          "vertices": 136,
+          "polygons": 132,
+          "local_vertices_sha256": "1c54707d021dc6245933430a1ede5d4f488a44faf0358cfcd19f9c443d11cea5",
+          "topology_sha256": "74b8f85292644335a19622fabef19b54145afa61109a4712aabddcfd451055a8",
+          "uv_sha256": "2b9ffd17f50f79bfba0bd337b7aa450d2a602301ec492cd8c643b148de75a23d",
+          "matrix_world": [
+            [
+              -1.0,
+              3.2584136988589307e-07,
+              0.0,
+              43.459556579589844
+            ],
+            [
+              -3.2584136988589307e-07,
+              -1.0,
+              0.0,
+              42.775299072265625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              41.959556579589844,
+              39.275299072265625,
+              0.0
+            ],
+            [
+              44.959556579589844,
+              46.275299072265625,
+              2.5999999046325684
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dixie": {
+          "vertices": 48,
+          "polygons": 41,
+          "local_vertices_sha256": "76b7a8f46d239ed476a18f4d4072d7b66b19cab2a514273bfcf5a0290de3e524",
+          "topology_sha256": "544cc44cd8386e643a42cd57eba0d078204a5ea13c7929efa1d9478948ab7cf2",
+          "uv_sha256": "761f1d563646a52fb39e6c55ca8cbcc25e6ea5a3169286ff142de6a752bbad10",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              1.0,
+              0.0,
+              -48.06370544433594
+            ],
+            [
+              -1.0,
+              -4.371138828673793e-08,
+              0.0,
+              3.6215875148773193
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -48.69370651245117,
+              2.9915874004364014,
+              0.0
+            ],
+            [
+              -47.4337043762207,
+              4.251587390899658,
+              2.395681381225586
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "8c62abad1c484eab8655cdf2dd55abac99e130748eb4e56b2142ce539e30b7e5",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8e6b3afd522a30fd1dccc1d3f53c3087a6f93083f220b1f0602bd90d27dc4722",
+          "matrix_world": [
+            [
+              -2.8332066535949707,
+              18.783645629882812,
+              0.0,
+              33.998924255371094
+            ],
+            [
+              -7.74825382232666,
+              -6.868379592895508,
+              0.0,
+              17.82798957824707
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              31.837238311767578,
+              16.36632537841797,
+              0.0
+            ],
+            [
+              36.16061019897461,
+              19.289653778076172,
+              1.7779886722564697
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Office Container.001": {
+          "vertices": 136,
+          "polygons": 132,
+          "local_vertices_sha256": "1c54707d021dc6245933430a1ede5d4f488a44faf0358cfcd19f9c443d11cea5",
+          "topology_sha256": "74b8f85292644335a19622fabef19b54145afa61109a4712aabddcfd451055a8",
+          "uv_sha256": "2b9ffd17f50f79bfba0bd337b7aa450d2a602301ec492cd8c643b148de75a23d",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              -1.0,
+              0.0,
+              38.459556579589844
+            ],
+            [
+              1.0,
+              -4.371138828673793e-08,
+              0.0,
+              44.775299072265625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              34.959556579589844,
+              43.275299072265625,
+              0.0
+            ],
+            [
+              41.959556579589844,
+              46.275299072265625,
+              2.5999999046325684
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Office Container.002": {
+          "vertices": 136,
+          "polygons": 132,
+          "local_vertices_sha256": "1c54707d021dc6245933430a1ede5d4f488a44faf0358cfcd19f9c443d11cea5",
+          "topology_sha256": "74b8f85292644335a19622fabef19b54145afa61109a4712aabddcfd451055a8",
+          "uv_sha256": "2b9ffd17f50f79bfba0bd337b7aa450d2a602301ec492cd8c643b148de75a23d",
+          "matrix_world": [
+            [
+              -1.0,
+              3.2584136988589307e-07,
+              0.0,
+              28.457286834716797
+            ],
+            [
+              -3.2584136988589307e-07,
+              -1.0,
+              0.0,
+              44.22618865966797
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              26.957284927368164,
+              40.72618865966797,
+              0.0
+            ],
+            [
+              29.95728874206543,
+              47.72618865966797,
+              2.5999999046325684
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Office Container.003": {
+          "vertices": 136,
+          "polygons": 132,
+          "local_vertices_sha256": "1c54707d021dc6245933430a1ede5d4f488a44faf0358cfcd19f9c443d11cea5",
+          "topology_sha256": "74b8f85292644335a19622fabef19b54145afa61109a4712aabddcfd451055a8",
+          "uv_sha256": "2b9ffd17f50f79bfba0bd337b7aa450d2a602301ec492cd8c643b148de75a23d",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              -1.0,
+              0.0,
+              41.459556579589844
+            ],
+            [
+              1.0,
+              -4.371138828673793e-08,
+              0.0,
+              44.775299072265625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              2.5999999046325684
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              37.959556579589844,
+              43.275299072265625,
+              2.5999999046325684
+            ],
+            [
+              44.959556579589844,
+              46.275299072265625,
+              5.199999809265137
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dixie.001": {
+          "vertices": 48,
+          "polygons": 41,
+          "local_vertices_sha256": "76b7a8f46d239ed476a18f4d4072d7b66b19cab2a514273bfcf5a0290de3e524",
+          "topology_sha256": "544cc44cd8386e643a42cd57eba0d078204a5ea13c7929efa1d9478948ab7cf2",
+          "uv_sha256": "761f1d563646a52fb39e6c55ca8cbcc25e6ea5a3169286ff142de6a752bbad10",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              -1.0,
+              0.0,
+              25.90209197998047
+            ],
+            [
+              1.0,
+              -4.371138828673793e-08,
+              0.0,
+              45.36874771118164
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              25.272092819213867,
+              44.738746643066406,
+              0.0
+            ],
+            [
+              26.53209114074707,
+              45.998748779296875,
+              2.395681381225586
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dixie.002": {
+          "vertices": 48,
+          "polygons": 41,
+          "local_vertices_sha256": "76b7a8f46d239ed476a18f4d4072d7b66b19cab2a514273bfcf5a0290de3e524",
+          "topology_sha256": "544cc44cd8386e643a42cd57eba0d078204a5ea13c7929efa1d9478948ab7cf2",
+          "uv_sha256": "761f1d563646a52fb39e6c55ca8cbcc25e6ea5a3169286ff142de6a752bbad10",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              -1.0,
+              0.0,
+              25.90209197998047
+            ],
+            [
+              1.0,
+              -4.371138828673793e-08,
+              0.0,
+              43.81421661376953
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              25.272092819213867,
+              43.1842155456543,
+              0.0
+            ],
+            [
+              26.53209114074707,
+              44.444217681884766,
+              2.395681381225586
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container Stairs": {
+          "vertices": 40,
+          "polygons": 32,
+          "local_vertices_sha256": "afeb1d22c1e11173468401ba4ebda3702f7d7055d7d4a04d42de4872729575bf",
+          "topology_sha256": "0f1810617ab5225fa90d275f1a77e2f7a39fd5ecfb5422707a013224a2e5dbc4",
+          "uv_sha256": "5231d603380a36b9a9230fc1c9f458f880c6ebad3dcfe5df41bd9b96bdd493c3",
+          "matrix_world": [
+            [
+              6.0,
+              0.0,
+              0.0,
+              37.320987701416016
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              44.85081481933594
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              2.5560693740844727
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              33.509002685546875,
+              43.2219123840332,
+              -1.1920928955078125e-06
+            ],
+            [
+              37.92098617553711,
+              47.38728332519531,
+              2.7166664600372314
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Office Container.004": {
+          "vertices": 136,
+          "polygons": 132,
+          "local_vertices_sha256": "1c54707d021dc6245933430a1ede5d4f488a44faf0358cfcd19f9c443d11cea5",
+          "topology_sha256": "74b8f85292644335a19622fabef19b54145afa61109a4712aabddcfd451055a8",
+          "uv_sha256": "cba9b3d71a5f48407a209ae1342ea7f7fb0fbfcd04a31cb2e1682c1927b3bd93",
+          "matrix_world": [
+            [
+              -1.0,
+              -3.2584136988589307e-07,
+              0.0,
+              -47.03885269165039
+            ],
+            [
+              -3.2584136988589307e-07,
+              1.0,
+              0.0,
+              9.005271911621094
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -4.76837158203125e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -48.53885269165039,
+              5.5052714347839355,
+              -4.76837158203125e-07
+            ],
+            [
+              -45.53885269165039,
+              12.50527286529541,
+              2.59999942779541
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dixie.003": {
+          "vertices": 48,
+          "polygons": 41,
+          "local_vertices_sha256": "76b7a8f46d239ed476a18f4d4072d7b66b19cab2a514273bfcf5a0290de3e524",
+          "topology_sha256": "544cc44cd8386e643a42cd57eba0d078204a5ea13c7929efa1d9478948ab7cf2",
+          "uv_sha256": "761f1d563646a52fb39e6c55ca8cbcc25e6ea5a3169286ff142de6a752bbad10",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              1.0,
+              0.0,
+              -48.20639419555664
+            ],
+            [
+              -1.0,
+              -4.371138828673793e-08,
+              0.0,
+              2.0995919704437256
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -48.836395263671875,
+              1.4695919752120972,
+              0.0
+            ],
+            [
+              -47.576393127441406,
+              2.7295920848846436,
+              2.395681381225586
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dixie.004": {
+          "vertices": 48,
+          "polygons": 41,
+          "local_vertices_sha256": "76b7a8f46d239ed476a18f4d4072d7b66b19cab2a514273bfcf5a0290de3e524",
+          "topology_sha256": "544cc44cd8386e643a42cd57eba0d078204a5ea13c7929efa1d9478948ab7cf2",
+          "uv_sha256": "761f1d563646a52fb39e6c55ca8cbcc25e6ea5a3169286ff142de6a752bbad10",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              1.0,
+              0.0,
+              -48.15883255004883
+            ],
+            [
+              -1.0,
+              -4.371138828673793e-08,
+              0.0,
+              0.5775964260101318
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -48.78883361816406,
+              -0.05240359529852867,
+              0.0
+            ],
+            [
+              -47.528831481933594,
+              1.2075964212417603,
+              2.395681381225586
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.001": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "8c62abad1c484eab8655cdf2dd55abac99e130748eb4e56b2142ce539e30b7e5",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8e6b3afd522a30fd1dccc1d3f53c3087a6f93083f220b1f0602bd90d27dc4722",
+          "matrix_world": [
+            [
+              8.25,
+              0.0,
+              0.0,
+              -46.894287109375
+            ],
+            [
+              0.0,
+              20.0,
+              0.0,
+              -3.628368377685547
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              2.384185791015625e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -47.71928787231445,
+              -5.628368377685547,
+              2.384185791015625e-07
+            ],
+            [
+              -46.06928634643555,
+              -1.6283683776855469,
+              1.7779889106750488
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.002": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "f51570bbf4bc9c0ba4ae413c329ca422c83adb4b33be74b05d5641e187753804",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8de963fa4fca155bb08a9753e8f7b59b568574a682fed8490df53bde3e610099",
+          "matrix_world": [
+            [
+              8.229903221130371,
+              -1.3951292037963867,
+              0.0,
+              -17.433460235595703
+            ],
+            [
+              0.5754908323287964,
+              19.951282501220703,
+              0.0,
+              4.607003211975098
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              35.509666442871094
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -18.16229820251465,
+              3.167043447494507,
+              35.750003814697266
+            ],
+            [
+              -16.718544006347656,
+              6.246059417724609,
+              37.08349609375
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.003": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "8c62abad1c484eab8655cdf2dd55abac99e130748eb4e56b2142ce539e30b7e5",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8e6b3afd522a30fd1dccc1d3f53c3087a6f93083f220b1f0602bd90d27dc4722",
+          "matrix_world": [
+            [
+              -3.6061894093109004e-07,
+              -20.0,
+              0.0,
+              -25.967533111572266
+            ],
+            [
+              8.25,
+              -8.74227794156468e-07,
+              0.0,
+              9.996007919311523
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -9.5367431640625e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -27.967533111572266,
+              9.171008110046387,
+              -9.5367431640625e-07
+            ],
+            [
+              -23.967533111572266,
+              10.82100772857666,
+              1.7779877185821533
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.004": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "8c62abad1c484eab8655cdf2dd55abac99e130748eb4e56b2142ce539e30b7e5",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8e6b3afd522a30fd1dccc1d3f53c3087a6f93083f220b1f0602bd90d27dc4722",
+          "matrix_world": [
+            [
+              -3.6061894093109004e-07,
+              -20.0,
+              0.0,
+              -25.872407913208008
+            ],
+            [
+              8.25,
+              -8.74227794156468e-07,
+              0.0,
+              7.142263412475586
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -9.5367431640625e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -27.872407913208008,
+              6.317263126373291,
+              -9.5367431640625e-07
+            ],
+            [
+              -23.872407913208008,
+              7.967263698577881,
+              1.7779877185821533
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.005": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "8c62abad1c484eab8655cdf2dd55abac99e130748eb4e56b2142ce539e30b7e5",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8cf01c832ea740f76b67356d0b5c3c74cba5cf016f20e22d5d596c7cf6307556",
+          "matrix_world": [
+            [
+              -3.6061894093109004e-07,
+              -20.0,
+              0.0,
+              -26.015094757080078
+            ],
+            [
+              8.25,
+              -8.74227794156468e-07,
+              0.0,
+              4.526330947875977
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -9.5367431640625e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -28.015094757080078,
+              3.7013309001922607,
+              -9.5367431640625e-07
+            ],
+            [
+              -24.015094757080078,
+              5.3513312339782715,
+              1.7779877185821533
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.006": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "f51570bbf4bc9c0ba4ae413c329ca422c83adb4b33be74b05d5641e187753804",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8de963fa4fca155bb08a9753e8f7b59b568574a682fed8490df53bde3e610099",
+          "matrix_world": [
+            [
+              0.1439831405878067,
+              -19.9969539642334,
+              0.0,
+              27.44021987915039
+            ],
+            [
+              8.248744010925293,
+              0.34905004501342773,
+              0.0,
+              -41.59217071533203
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -0.24033844470977783
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              25.82987403869629,
+              -42.23526382446289,
+              0.0
+            ],
+            [
+              28.85101318359375,
+              -40.945594787597656,
+              1.3334914445877075
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.007": {
+          "vertices": 112,
+          "polygons": 104,
+          "local_vertices_sha256": "5c3d5b431e2b5621e8ec9475367a3a8bc717ec09c11af8dd9251597a60e1ef38",
+          "topology_sha256": "7c5ddbbe209dcec96a346d7835059299256109f5a40f6ea2bd0ecb4653928e90",
+          "uv_sha256": "2b185a9ad6b46768c679e310c096371ae3498ef4656a621592bb7ccb1f21c86f",
+          "matrix_world": [
+            [
+              -8.25,
+              6.5168273977178615e-06,
+              0.0,
+              40.21383285522461
+            ],
+            [
+              -2.6881912162934896e-06,
+              -20.0,
+              0.0,
+              -23.356979370117188
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              38.10226058959961,
+              -25.538949966430664,
+              -1.0244548320770264e-06
+            ],
+            [
+              41.77958297729492,
+              -21.219104766845703,
+              20.791807174682617
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.008": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "8c62abad1c484eab8655cdf2dd55abac99e130748eb4e56b2142ce539e30b7e5",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8054789482a1e12a65ddefa9df400341d66a6de171dac1f07d463feb6a12da07",
+          "matrix_world": [
+            [
+              -2.8332066535949707,
+              18.783645629882812,
+              0.0,
+              27.260608673095703
+            ],
+            [
+              -7.74825382232666,
+              -6.868379592895508,
+              0.0,
+              17.02157974243164
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -2.384185791015625e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              25.098922729492188,
+              15.559916496276855,
+              -2.384185791015625e-07
+            ],
+            [
+              29.42229461669922,
+              18.483243942260742,
+              1.7779884338378906
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container.009": {
+          "vertices": 30,
+          "polygons": 28,
+          "local_vertices_sha256": "8c62abad1c484eab8655cdf2dd55abac99e130748eb4e56b2142ce539e30b7e5",
+          "topology_sha256": "e921f86e89e8e304c12d45e1af568efad252d9df9e429e7772bf0f6df0632329",
+          "uv_sha256": "8cf01c832ea740f76b67356d0b5c3c74cba5cf016f20e22d5d596c7cf6307556",
+          "matrix_world": [
+            [
+              -1.2905848026275635,
+              19.753765106201172,
+              0.0,
+              -18.41930389404297
+            ],
+            [
+              -8.148428916931152,
+              -3.128690481185913,
+              0.0,
+              37.73706817626953
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -9.5367431640625e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -20.523738861083984,
+              36.60935592651367,
+              -9.5367431640625e-07
+            ],
+            [
+              -16.314868927001953,
+              38.86478042602539,
+              1.7779877185821533
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Container Stairs.001": {
+          "vertices": 44,
+          "polygons": 33,
+          "local_vertices_sha256": "42d3c848e544ce840af0bcc2195e0fbc5a854ae9084ce0d5a4cd90bd0b908137",
+          "topology_sha256": "76468d89244dbc5eeff515922bbf4766c40de4f08e7d7c4678a79e7cd908c9e6",
+          "uv_sha256": "ca07393be202ad4445fe4db624117d0911d0406ed0b68b1ff58d024be8d5a89d",
+          "matrix_world": [
+            [
+              -2.6226831550957286e-07,
+              -1.0,
+              0.0,
+              -24.225566864013672
+            ],
+            [
+              6.0,
+              -4.371138828673793e-08,
+              0.0,
+              -13.034343719482422
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              2.5560688972473145
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -24.211713790893555,
+              -19.270326614379883,
+              0.0
+            ],
+            [
+              -23.147741317749023,
+              -12.434343338012695,
+              4.703112602233887
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Office Container.005": {
+          "vertices": 164,
+          "polygons": 151,
+          "local_vertices_sha256": "3e214154d7a22ac0964ab78ae61a131869394cdb7e197ca216b19758690fa200",
+          "topology_sha256": "75c811a4f4fc51d119c5035b747a19d2e255c6f9115381fe5be4e451bcb13042",
+          "uv_sha256": "1889974b58107998ceaca4e49c166b49dd054fabddfb153dd055a4fa340191d3",
+          "matrix_world": [
+            [
+              -2.821299744937278e-07,
+              1.0,
+              0.0,
+              -8.603270530700684
+            ],
+            [
+              1.0,
+              2.821299744937278e-07,
+              0.0,
+              28.63394546508789
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -5.364418029785156e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -12.103270530700684,
+              27.133943557739258,
+              -5.364418029785156e-07
+            ],
+            [
+              -3.7032699584960938,
+              30.133947372436523,
+              2.59999942779541
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Office Container.006": {
+          "vertices": 164,
+          "polygons": 151,
+          "local_vertices_sha256": "3e214154d7a22ac0964ab78ae61a131869394cdb7e197ca216b19758690fa200",
+          "topology_sha256": "75c811a4f4fc51d119c5035b747a19d2e255c6f9115381fe5be4e451bcb13042",
+          "uv_sha256": "b4c8be93d23ccd08a96ea8047171955a01372cad6c377982c694a2b38eba487c",
+          "matrix_world": [
+            [
+              -2.821299744937278e-07,
+              1.0,
+              0.0,
+              7.354635238647461
+            ],
+            [
+              1.0,
+              2.821299744937278e-07,
+              0.0,
+              -47.73418426513672
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -5.364418029785156e-07
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              3.8546347618103027,
+              -49.23418426513672,
+              -5.364418029785156e-07
+            ],
+            [
+              12.25463581085205,
+              -46.23418426513672,
+              2.59999942779541
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dumper Truck": {
+          "vertices": 536,
+          "polygons": 432,
+          "local_vertices_sha256": "feeab2f3cf0efdb284192d36abfea40630c3d87736b3b66e25583d590fe7380f",
+          "topology_sha256": "c38639d9d97753eb6d8c5dce45202ceaf6cf139dbe7a3305f2b5fe95a4aca872",
+          "uv_sha256": "6bc654575c9629c99674d9627a771d3f5fa2f1bea3b5e0433a224a161f408dbc",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              45.124725341796875
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              32.51740646362305
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469716548919678
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              43.559814453125,
+              29.03314208984375,
+              9.5367431640625e-07
+            ],
+            [
+              46.68963623046875,
+              36.03515625,
+              3.197587490081787
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Concrete Truck": {
+          "vertices": 568,
+          "polygons": 458,
+          "local_vertices_sha256": "0e7883c4be2cd75a64efdef2eac58436c0aadb47db248404e1103d9e6fcbb33c",
+          "topology_sha256": "a44e6cfe9e8462cb7c9821c6cab6f1e95762483f20c5f46ad0dbebfd303cf481",
+          "uv_sha256": "eb12e6b80463a39bb674d9c8b467f25d5207a35a8c856cb58f9f7c2a2f273057",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              40.124725341796875
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              32.51740646362305
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469716548919678
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              38.559814453125,
+              29.03314208984375,
+              9.5367431640625e-07
+            ],
+            [
+              41.68963623046875,
+              36.21415710449219,
+              3.8147659301757812
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Small Truck": {
+          "vertices": 436,
+          "polygons": 347,
+          "local_vertices_sha256": "d064c731a607c30e06fd0afae98bbc849a377054bf39369a73b97252ca7094b1",
+          "topology_sha256": "ecede3d62b57d4418bf46298252d7728f0f60351121d982b1d98fd837c747940",
+          "uv_sha256": "16c6a5a0a1284d602d56e3771c48239348ebc23021ba27c712b9e229d7a147af",
+          "matrix_world": [
+            [
+              0.24252089858055115,
+              -0.9701461791992188,
+              0.0,
+              29.38813018798828
+            ],
+            [
+              0.9701461791992188,
+              0.24252089858055115,
+              0.0,
+              35.0794563293457
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469621181488037
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              25.62479591369629,
+              33.17264175415039,
+              0.0
+            ],
+            [
+              31.756126403808594,
+              37.3350830078125,
+              2.9572701454162598
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dumper Truck.001": {
+          "vertices": 536,
+          "polygons": 432,
+          "local_vertices_sha256": "feeab2f3cf0efdb284192d36abfea40630c3d87736b3b66e25583d590fe7380f",
+          "topology_sha256": "c38639d9d97753eb6d8c5dce45202ceaf6cf139dbe7a3305f2b5fe95a4aca872",
+          "uv_sha256": "6bc654575c9629c99674d9627a771d3f5fa2f1bea3b5e0433a224a161f408dbc",
+          "matrix_world": [
+            [
+              -0.982088565826416,
+              -0.18842002749443054,
+              0.0,
+              -44.137115478515625
+            ],
+            [
+              0.18842002749443054,
+              -0.982088565826416,
+              0.0,
+              22.58661460876465
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469716548919678
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -46.33681106567383,
+              18.837011337280273,
+              9.5367431640625e-07
+            ],
+            [
+              -41.943729400634766,
+              26.30333137512207,
+              3.197587490081787
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dumper Truck.002": {
+          "vertices": 536,
+          "polygons": 432,
+          "local_vertices_sha256": "feeab2f3cf0efdb284192d36abfea40630c3d87736b3b66e25583d590fe7380f",
+          "topology_sha256": "c38639d9d97753eb6d8c5dce45202ceaf6cf139dbe7a3305f2b5fe95a4aca872",
+          "uv_sha256": "6bc654575c9629c99674d9627a771d3f5fa2f1bea3b5e0433a224a161f408dbc",
+          "matrix_world": [
+            [
+              0.934029221534729,
+              -0.3571965992450714,
+              0.0,
+              8.053909301757812
+            ],
+            [
+              0.3571965992450714,
+              0.934029221534729,
+              0.0,
+              37.13591003417969
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469716548919678
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              5.3357086181640625,
+              33.32252502441406,
+              9.5367431640625e-07
+            ],
+            [
+              10.760149002075195,
+              40.98057174682617,
+              3.197587490081787
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Dumper Truck.003": {
+          "vertices": 536,
+          "polygons": 432,
+          "local_vertices_sha256": "feeab2f3cf0efdb284192d36abfea40630c3d87736b3b66e25583d590fe7380f",
+          "topology_sha256": "c38639d9d97753eb6d8c5dce45202ceaf6cf139dbe7a3305f2b5fe95a4aca872",
+          "uv_sha256": "d18c77f0e68ed7135afaa021faa3c04305a3dc304d02bceee72760a85e4df5d0",
+          "matrix_world": [
+            [
+              0.22524942457675934,
+              0.9743011593818665,
+              0.0,
+              -18.398517608642578
+            ],
+            [
+              -0.9743011593818665,
+              0.22524942457675934,
+              0.0,
+              44.712886810302734
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469716548919678
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -22.145734786987305,
+              42.40336227416992,
+              9.5367431640625e-07
+            ],
+            [
+              -14.618674278259277,
+              47.02995300292969,
+              3.197587490081787
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Concrete Truck.001": {
+          "vertices": 568,
+          "polygons": 458,
+          "local_vertices_sha256": "0e7883c4be2cd75a64efdef2eac58436c0aadb47db248404e1103d9e6fcbb33c",
+          "topology_sha256": "a44e6cfe9e8462cb7c9821c6cab6f1e95762483f20c5f46ad0dbebfd303cf481",
+          "uv_sha256": "eb12e6b80463a39bb674d9c8b467f25d5207a35a8c856cb58f9f7c2a2f273057",
+          "matrix_world": [
+            [
+              0.4563668668270111,
+              -0.88979172706604,
+              0.0,
+              -43.788818359375
+            ],
+            [
+              0.88979172706604,
+              0.4563668668270111,
+              0.0,
+              36.58818817138672
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469716548919678
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -47.79233169555664,
+              33.60564041137695,
+              9.5367431640625e-07
+            ],
+            [
+              -39.9743766784668,
+              39.66770935058594,
+              3.8147659301757812
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Concrete Truck.002": {
+          "vertices": 568,
+          "polygons": 458,
+          "local_vertices_sha256": "0e7883c4be2cd75a64efdef2eac58436c0aadb47db248404e1103d9e6fcbb33c",
+          "topology_sha256": "a44e6cfe9e8462cb7c9821c6cab6f1e95762483f20c5f46ad0dbebfd303cf481",
+          "uv_sha256": "722f0377b2ffc49458fce6b9060851eeefc2072bc524ac7caae35c7c2d0b5db1",
+          "matrix_world": [
+            [
+              0.7079038619995117,
+              -0.7063087821006775,
+              0.0,
+              -33.35418701171875
+            ],
+            [
+              0.7063087821006775,
+              0.7079038619995117,
+              0.0,
+              28.216211318969727
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.04469716548919678
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -37.07304382324219,
+              24.644376754760742,
+              9.5367431640625e-07
+            ],
+            [
+              -29.78541374206543,
+              31.938467025756836,
+              3.8147659301757812
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Small Truck.001": {
+          "vertices": 436,
+          "polygons": 347,
+          "local_vertices_sha256": "d064c731a607c30e06fd0afae98bbc849a377054bf39369a73b97252ca7094b1",
+          "topology_sha256": "ecede3d62b57d4418bf46298252d7728f0f60351121d982b1d98fd837c747940",
+          "uv_sha256": "16c6a5a0a1284d602d56e3771c48239348ebc23021ba27c712b9e229d7a147af",
+          "matrix_world": [
+            [
+              0.4802510142326355,
+              -0.8771311044692993,
+              0.0,
+              23.584575653076172
+            ],
+            [
+              0.8771311044692993,
+              0.4802510142326355,
+              0.0,
+              -44.180938720703125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.044698119163513184
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              19.80476951599121,
+              -46.44763946533203,
+              1.9073486328125e-06
+            ],
+            [
+              26.102825164794922,
+              -41.22350311279297,
+              2.9572720527648926
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Fence": {
+          "vertices": 96,
+          "polygons": 88,
+          "local_vertices_sha256": "c7cf62e57cdec37eb423d3ca1618cc545d9ac67f0544d52e527b35b7efe2cbb9",
+          "topology_sha256": "a929a70b3b789eaa775e6de1f975f0a2c611fe9087056dceddef6d5bebbbc187",
+          "uv_sha256": "badefdcf4080297960a5847fc230296b9aab9e3caa860ef1414596eee5e12917",
+          "matrix_world": [
+            [
+              500.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              10.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -50.0,
+              -50.0,
+              1.1920928955078125e-07
+            ],
+            [
+              50.0,
+              49.97651672363281,
+              2.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks": {
+          "vertices": 56,
+          "polygons": 42,
+          "local_vertices_sha256": "dbceb9850ae6e111b34496eda194e4fd91878d82eb259684a8c57da98dfbd628",
+          "topology_sha256": "45511fbdcfe7534a9f19e4b881106f2bb6cfce3becc3423d7b9fe7e2c06b8b27",
+          "uv_sha256": "cd0e734d7b025def0fe0b55cf2f84ea6bffd121e11bee4b9355022d2534f8556",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -20.42342758178711
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.38138723373413086
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -21.17342758178711,
+              -1.86860990524292,
+              35.750003814697266
+            ],
+            [
+              -19.67342758178711,
+              2.7819437980651855,
+              36.35000228881836
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.001": {
+          "vertices": 56,
+          "polygons": 42,
+          "local_vertices_sha256": "dbceb9850ae6e111b34496eda194e4fd91878d82eb259684a8c57da98dfbd628",
+          "topology_sha256": "45511fbdcfe7534a9f19e4b881106f2bb6cfce3becc3423d7b9fe7e2c06b8b27",
+          "uv_sha256": "cd0e734d7b025def0fe0b55cf2f84ea6bffd121e11bee4b9355022d2534f8556",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -18.594593048095703
+            ],
+            [
+              0.0,
+              0.8999999761581421,
+              0.0,
+              -2.6725358963012695
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -19.344593048095703,
+              -4.69753360748291,
+              35.750003814697266
+            ],
+            [
+              -17.844593048095703,
+              -0.5120351314544678,
+              36.35000228881836
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.002": {
+          "vertices": 56,
+          "polygons": 42,
+          "local_vertices_sha256": "dbceb9850ae6e111b34496eda194e4fd91878d82eb259684a8c57da98dfbd628",
+          "topology_sha256": "45511fbdcfe7534a9f19e4b881106f2bb6cfce3becc3423d7b9fe7e2c06b8b27",
+          "uv_sha256": "cd0e734d7b025def0fe0b55cf2f84ea6bffd121e11bee4b9355022d2534f8556",
+          "matrix_world": [
+            [
+              0.17364822328090668,
+              -0.9848077297210693,
+              0.0,
+              -1.6582260131835938
+            ],
+            [
+              0.9848077297210693,
+              0.17364822328090668,
+              0.0,
+              -5.668051719665527
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -4.152548789978027,
+              -6.797364711761475,
+              35.750003814697266
+            ],
+            [
+              0.6878249049186707,
+              -4.512592792510986,
+              36.35000228881836
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.003": {
+          "vertices": 56,
+          "polygons": 42,
+          "local_vertices_sha256": "dbceb9850ae6e111b34496eda194e4fd91878d82eb259684a8c57da98dfbd628",
+          "topology_sha256": "45511fbdcfe7534a9f19e4b881106f2bb6cfce3becc3423d7b9fe7e2c06b8b27",
+          "uv_sha256": "cd0e734d7b025def0fe0b55cf2f84ea6bffd121e11bee4b9355022d2534f8556",
+          "matrix_world": [
+            [
+              -0.052335940301418304,
+              -0.9986295104026794,
+              0.0,
+              -2.976207733154297
+            ],
+            [
+              0.9986295104026794,
+              -0.052335940301418304,
+              0.0,
+              -9.199972152709961
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -5.412726402282715,
+              -10.074578285217285,
+              35.750003814697266
+            ],
+            [
+              -0.6900423765182495,
+              -8.333243370056152,
+              36.35000228881836
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.004": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "013d071326c7488e1d98b4b6d310f8daae05bc7cf230a13811ccbd70b8ef38cb",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              -1.0,
+              0.0,
+              18.24380874633789
+            ],
+            [
+              1.0,
+              -4.371138828673793e-08,
+              0.0,
+              -17.840892791748047
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              58.650001525878906
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              15.843252182006836,
+              -18.590892791748047,
+              58.150001525878906
+            ],
+            [
+              20.493806838989258,
+              -17.090890884399414,
+              58.95000076293945
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.005": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "0658f81b4065b84a0e8671e09a5099d87be246e7305ec1d9c6f2847d9d905ae2",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              -0.10452850908041,
+              -0.9945219159126282,
+              0.0,
+              16.678550720214844
+            ],
+            [
+              0.9945219159126282,
+              -0.10452850908041,
+              0.0,
+              -15.544829368591309
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              58.650001525878906
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              14.212748527526855,
+              -16.54164695739746,
+              58.150001525878906
+            ],
+            [
+              18.994617462158203,
+              -14.563748359680176,
+              58.95000076293945
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.006": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "d0bc935c01da288d37320bdad9546d048e810695afed6fe90b0afdb3b98ff355",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              -1.0,
+              0.0,
+              17.557432174682617
+            ],
+            [
+              1.0,
+              -4.371138828673793e-08,
+              0.0,
+              46.50856399536133
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              15.156875610351562,
+              45.75856399536133,
+              0.0
+            ],
+            [
+              19.807430267333984,
+              47.25856399536133,
+              0.7999981045722961
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.007": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "d0bc935c01da288d37320bdad9546d048e810695afed6fe90b0afdb3b98ff355",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              -0.06975647807121277,
+              -0.9975640773773193,
+              0.0,
+              16.125879287719727
+            ],
+            [
+              0.9975640773773193,
+              -0.06975647807121277,
+              0.0,
+              44.957828521728516
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.4688403606414795
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              13.678853034973145,
+              44.04220199584961,
+              0.9688403606414795
+            ],
+            [
+              18.422712326049805,
+              45.862953186035156,
+              1.7688384056091309
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.008": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "d0bc935c01da288d37320bdad9546d048e810695afed6fe90b0afdb3b98ff355",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              0.10452841967344284,
+              -0.9945219159126282,
+              0.0,
+              12.46108627319336
+            ],
+            [
+              0.9945219159126282,
+              0.10452841967344284,
+              0.0,
+              46.441959381103516
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.6480299234390259
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              9.995284080505371,
+              45.460880279541016,
+              0.14802992343902588
+            ],
+            [
+              14.777153968811035,
+              47.438777923583984,
+              0.948028028011322
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.009": {
+          "vertices": 184,
+          "polygons": 138,
+          "local_vertices_sha256": "8222511878044628e00d1caf1714b1b68512ae5f95d2316156c9226e4c7ac196",
+          "topology_sha256": "d17991b1d5405e2aa909fa4b49df3dd8ac345cb4e0e1e4765ee4d01562c420cc",
+          "uv_sha256": "56dbca6c3a53ccd4825ceb3b7e1c29e54e0e98dbaf1ef981260c33d3f6a80397",
+          "matrix_world": [
+            [
+              0.819040834903717,
+              -0.5737351775169373,
+              0.0,
+              -2.0388851165771484
+            ],
+            [
+              0.5737351775169373,
+              0.819040834903717,
+              0.0,
+              -33.78448486328125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -8.986872673034668,
+              -37.548194885253906,
+              35.750003814697266
+            ],
+            [
+              0.06557238101959229,
+              -27.071428298950195,
+              36.69803237915039
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.010": {
+          "vertices": 184,
+          "polygons": 138,
+          "local_vertices_sha256": "8222511878044628e00d1caf1714b1b68512ae5f95d2316156c9226e4c7ac196",
+          "topology_sha256": "d17991b1d5405e2aa909fa4b49df3dd8ac345cb4e0e1e4765ee4d01562c420cc",
+          "uv_sha256": "56dbca6c3a53ccd4825ceb3b7e1c29e54e0e98dbaf1ef981260c33d3f6a80397",
+          "matrix_world": [
+            [
+              0.3419738709926605,
+              -0.939709484577179,
+              0.0,
+              0.06571388244628906
+            ],
+            [
+              0.939709484577179,
+              0.3419738709926605,
+              0.0,
+              7.818970680236816
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              29.85000228881836
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -8.12447738647461,
+              4.0130815505981445,
+              29.35000228881836
+            ],
+            [
+              2.596588373184204,
+              11.263508796691895,
+              30.298030853271484
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Boxes": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "4264868465364e177cb0bce4b254cba3ceec5d619ca4e22d4c7c183c04e5678b",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "822ec345489148ba307edeb37a9d8a936bf74bfd665461f1e28288df5e158319",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -5.585058212280273
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              7.559818744659424
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -6.4941301345825195,
+              6.551675319671631,
+              35.750003814697266
+            ],
+            [
+              -5.325497627258301,
+              8.547829627990723,
+              36.788246154785156
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Boxes.001": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "4264868465364e177cb0bce4b254cba3ceec5d619ca4e22d4c7c183c04e5678b",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "822ec345489148ba307edeb37a9d8a936bf74bfd665461f1e28288df5e158319",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -2.489414691925049
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -2.8408217430114746
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -3.398486375808716,
+              -3.8489651679992676,
+              35.750003814697266
+            ],
+            [
+              -2.2298543453216553,
+              -1.8528112173080444,
+              36.788246154785156
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Boxes.002": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "4264868465364e177cb0bce4b254cba3ceec5d619ca4e22d4c7c183c04e5678b",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "822ec345489148ba307edeb37a9d8a936bf74bfd665461f1e28288df5e158319",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -43.914669036865234
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              10.845775604248047
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5000009536743164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -44.8237419128418,
+              9.837632179260254,
+              1.1920928955078125e-07
+            ],
+            [
+              -43.65510940551758,
+              11.833786010742188,
+              1.0382416248321533
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Boxes.003": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "4264868465364e177cb0bce4b254cba3ceec5d619ca4e22d4c7c183c04e5678b",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "822ec345489148ba307edeb37a9d8a936bf74bfd665461f1e28288df5e158319",
+          "matrix_world": [
+            [
+              0.1869640350341797,
+              -1.0603253841400146,
+              0.0,
+              10.872997283935547
+            ],
+            [
+              1.0603253841400146,
+              0.1869640350341797,
+              0.0,
+              44.38725662231445
+            ],
+            [
+              0.0,
+              0.0,
+              1.076682686805725,
+              0.5383346080780029
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              9.655421257019043,
+              43.234859466552734,
+              -7.62939453125e-06
+            ],
+            [
+              11.990486145019531,
+              44.847198486328125,
+              1.1178489923477173
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Boxes.004": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "4264868465364e177cb0bce4b254cba3ceec5d619ca4e22d4c7c183c04e5678b",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "822ec345489148ba307edeb37a9d8a936bf74bfd665461f1e28288df5e158319",
+          "matrix_world": [
+            [
+              0.1869640350341797,
+              -1.0603253841400146,
+              0.0,
+              16.389781951904297
+            ],
+            [
+              1.0603253841400146,
+              0.1869640350341797,
+              0.0,
+              -15.15030288696289
+            ],
+            [
+              0.0,
+              0.0,
+              1.076682686805725,
+              42.68833923339844
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              15.172205924987793,
+              -16.302701950073242,
+              42.14999771118164
+            ],
+            [
+              17.50727081298828,
+              -14.690361976623535,
+              43.267852783203125
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "31af88ea141333d4fc3c420f13b4e840839c8be3539eac9540d8ed2cafc2be3a",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "052a3ae8a2a6cc92fbd2e303296663002ac65423f4bfedd1edf977257c445212",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -12.696809768676758
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -3.3602962493896484
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -13.196809768676758,
+              -5.046730995178223,
+              35.750003814697266
+            ],
+            [
+              -10.995274543762207,
+              -1.7636090517044067,
+              36.750003814697266
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.001": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "31af88ea141333d4fc3c420f13b4e840839c8be3539eac9540d8ed2cafc2be3a",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "052a3ae8a2a6cc92fbd2e303296663002ac65423f4bfedd1edf977257c445212",
+          "matrix_world": [
+            [
+              -0.293378084897995,
+              0.9559965133666992,
+              0.0,
+              5.639505386352539
+            ],
+            [
+              -0.9559965133666992,
+              -0.293378084897995,
+              0.0,
+              -25.151874542236328
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              58.649993896484375
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              3.5280861854553223,
+              -27.24696922302246,
+              58.149993896484375
+            ],
+            [
+              7.312621593475342,
+              -24.179113388061523,
+              59.149993896484375
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.002": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "31af88ea141333d4fc3c420f13b4e840839c8be3539eac9540d8ed2cafc2be3a",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "052a3ae8a2a6cc92fbd2e303296663002ac65423f4bfedd1edf977257c445212",
+          "matrix_world": [
+            [
+              -0.293378084897995,
+              0.9559965133666992,
+              0.0,
+              31.789844512939453
+            ],
+            [
+              -0.9559965133666992,
+              -0.293378084897995,
+              0.0,
+              -33.17679977416992
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              29.85000228881836
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              29.678424835205078,
+              -35.27189636230469,
+              29.35000228881836
+            ],
+            [
+              33.46295928955078,
+              -32.204036712646484,
+              30.35000228881836
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.003": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "f6115ed85c1e2f6968fd745691bb13cbf874b857f80f6bab1419883299040a25",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "00da7e2cf33aa592ee132337d286300d5df12c8496e0576ef8b0b12094a2aadf",
+          "matrix_world": [
+            [
+              0.17364822328090668,
+              -0.9848077297210693,
+              0.0,
+              14.44877815246582
+            ],
+            [
+              0.9848077297210693,
+              0.17364822328090668,
+              0.0,
+              8.725713729858398
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              20.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              12.526798248291016,
+              6.712646007537842,
+              19.75
+            ],
+            [
+              16.408077239990234,
+              10.68682861328125,
+              21.75
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.004": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "f6115ed85c1e2f6968fd745691bb13cbf874b857f80f6bab1419883299040a25",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "00da7e2cf33aa592ee132337d286300d5df12c8496e0576ef8b0b12094a2aadf",
+          "matrix_world": [
+            [
+              -0.08715564757585526,
+              -0.9961947202682495,
+              0.0,
+              -6.38913631439209
+            ],
+            [
+              0.9961947202682495,
+              -0.08715564757585526,
+              0.0,
+              16.57857894897461
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -8.174903869628906,
+              14.695745468139648,
+              0.0
+            ],
+            [
+              -4.553874969482422,
+              18.420888900756836,
+              2.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.005": {
+          "vertices": 112,
+          "polygons": 84,
+          "local_vertices_sha256": "d2a4d98f4e67631e4ae88dbe67dab898841ebabe1aedac01daa057e652c1cab7",
+          "topology_sha256": "0ab565d239969ed6048d549c8b494f2f812e09d42c38eba68ee34baa2036881a",
+          "uv_sha256": "eff1815449b793ec396e62f45782d6e888bc4a15a2c28dc3ec170f11e05decb7",
+          "matrix_world": [
+            [
+              0.049384839832782745,
+              -0.998779833316803,
+              0.0,
+              -11.763662338256836
+            ],
+            [
+              0.998779833316803,
+              0.049384839832782745,
+              0.0,
+              16.326997756958008
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -13.491617202758789,
+              14.49947452545166,
+              0.0
+            ],
+            [
+              -9.985103607177734,
+              18.251087188720703,
+              2.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.006": {
+          "vertices": 112,
+          "polygons": 84,
+          "local_vertices_sha256": "d2a4d98f4e67631e4ae88dbe67dab898841ebabe1aedac01daa057e652c1cab7",
+          "topology_sha256": "0ab565d239969ed6048d549c8b494f2f812e09d42c38eba68ee34baa2036881a",
+          "uv_sha256": "eff1815449b793ec396e62f45782d6e888bc4a15a2c28dc3ec170f11e05decb7",
+          "matrix_world": [
+            [
+              0.9906749725341797,
+              0.13624633848667145,
+              0.0,
+              -27.38339614868164
+            ],
+            [
+              -0.13624633848667145,
+              0.9906749725341797,
+              0.0,
+              -1.4167327880859375
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -29.34351921081543,
+              -3.3418726921081543,
+              0.0
+            ],
+            [
+              -25.331483840942383,
+              0.44957923889160156,
+              2.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.007": {
+          "vertices": 24,
+          "polygons": 18,
+          "local_vertices_sha256": "9b1953ddfd517030b90ee585cb570c0d9dacdc5715b66fb50812aa6e851b944c",
+          "topology_sha256": "514b414fc20fd00ed1338ca20cba803ab0eb8ac0fe22be100dff57760cce0a11",
+          "uv_sha256": "c2cb21d543b41f3ab2179607fa9ff2a0dc4a342f8f2858e9b308d1f31b7e70c8",
+          "matrix_world": [
+            [
+              0.9802570343017578,
+              0.1977275013923645,
+              0.0,
+              -44.256370544433594
+            ],
+            [
+              -0.1977275013923645,
+              0.9802570343017578,
+              0.0,
+              21.437307357788086
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.8373970985412598
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -45.07579040527344,
+              19.69871711730957,
+              1.3373970985412598
+            ],
+            [
+              -43.41475296020508,
+              23.101335525512695,
+              2.3373970985412598
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.008": {
+          "vertices": 120,
+          "polygons": 90,
+          "local_vertices_sha256": "80396660584282e2629bec99b09445923aea356abc7c200e44eec922dd0f0aa3",
+          "topology_sha256": "e10b2dd039bcd132c357e1008e6b636fa530434bfbc5f3f230ddf00cbc5ea1fd",
+          "uv_sha256": "88d486a71b7e548db4fc1f0f2adc9472a20f400e90bcf214386a08f5ff6c7735",
+          "matrix_world": [
+            [
+              0.21080142259597778,
+              0.9775289297103882,
+              0.0,
+              -16.266704559326172
+            ],
+            [
+              -0.9775289297103882,
+              0.21080142259597778,
+              0.0,
+              15.864954948425293
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -18.28634262084961,
+              13.705102920532227,
+              0.0
+            ],
+            [
+              -14.270953178405762,
+              17.918434143066406,
+              2.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.011": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              -1.0,
+              0.0,
+              6.583005905151367
+            ],
+            [
+              1.0,
+              -4.371138828673793e-08,
+              0.0,
+              -40.40494918823242
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4999959468841553
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              3.0822153091430664,
+              -41.15494918823242,
+              -4.0531158447265625e-06
+            ],
+            [
+              8.922390937805176,
+              -39.65494918823242,
+              0.5999951958656311
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.012": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              0.026439283043146133,
+              -0.9996504187583923,
+              0.0,
+              0.053788185119628906
+            ],
+            [
+              0.9996504187583923,
+              0.026439283043146133,
+              0.0,
+              -40.17072677612305
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4999959468841553
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -3.4656081199645996,
+              -40.98231506347656,
+              -4.0531158447265625e-06
+            ],
+            [
+              2.412184476852417,
+              -39.32843017578125,
+              0.5999951958656311
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.013": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              0.026439283043146133,
+              -0.9996504187583923,
+              0.0,
+              3.52239990234375
+            ],
+            [
+              0.9996504187583923,
+              0.026439283043146133,
+              0.0,
+              -42.105831146240234
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4999959468841553
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              0.0030036717653274536,
+              -42.91741943359375,
+              -4.0531158447265625e-06
+            ],
+            [
+              5.880795955657959,
+              -41.26353454589844,
+              0.5999951958656311
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.014": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              -0.21374382078647614,
+              -0.9768897294998169,
+              0.0,
+              13.48338508605957
+            ],
+            [
+              0.9768897294998169,
+              -0.21374382078647614,
+              0.0,
+              -30.466896057128906
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              23.450000762939453
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              9.903190612792969,
+              -31.947834014892578,
+              22.950000762939453
+            ],
+            [
+              15.9290132522583,
+              -29.23419952392578,
+              23.549999237060547
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.015": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "b580e034c8f7bd65966b7fe0d758c6401a14c1baf392510c847cb5b4b98082a1",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "36c18fd5607526cc685301df59fefc8b74ec5bbd1b1f143be8631fbe56968878",
+          "matrix_world": [
+            [
+              0.026439283043146133,
+              -0.9996504187583923,
+              0.0,
+              -11.12243366241455
+            ],
+            [
+              0.9996504187583923,
+              0.026439283043146133,
+              0.0,
+              -40.60411071777344
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4999959468841553
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -16.665050506591797,
+              -41.589813232421875,
+              -4.0531158447265625e-06
+            ],
+            [
+              -8.763592720031738,
+              -39.69162368774414,
+              0.5999951958656311
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.016": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "b580e034c8f7bd65966b7fe0d758c6401a14c1baf392510c847cb5b4b98082a1",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "36c18fd5607526cc685301df59fefc8b74ec5bbd1b1f143be8631fbe56968878",
+          "matrix_world": [
+            [
+              -0.9981507658958435,
+              0.06078674644231796,
+              0.0,
+              40.39707946777344
+            ],
+            [
+              -0.06078674644231796,
+              -0.9981507658958435,
+              0.0,
+              10.770750999450684
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999403953552246
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              39.48948669433594,
+              5.214234828948975,
+              -5.9604644775390625e-06
+            ],
+            [
+              41.655094146728516,
+              13.1619873046875,
+              0.5999932885169983
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Boxes.005": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "4264868465364e177cb0bce4b254cba3ceec5d619ca4e22d4c7c183c04e5678b",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "822ec345489148ba307edeb37a9d8a936bf74bfd665461f1e28288df5e158319",
+          "matrix_world": [
+            [
+              0.6427876353263855,
+              -0.7660444378852844,
+              0.0,
+              -5.747633457183838
+            ],
+            [
+              0.7660444378852844,
+              0.6427876353263855,
+              0.0,
+              -42.35845947265625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999701976776123
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -7.088833332061768,
+              -43.7028694152832,
+              -3.814697265625e-06
+            ],
+            [
+              -4.808508396148682,
+              -41.52454376220703,
+              1.0382376909255981
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.017": {
+          "vertices": 56,
+          "polygons": 42,
+          "local_vertices_sha256": "dbceb9850ae6e111b34496eda194e4fd91878d82eb259684a8c57da98dfbd628",
+          "topology_sha256": "45511fbdcfe7534a9f19e4b881106f2bb6cfce3becc3423d7b9fe7e2c06b8b27",
+          "uv_sha256": "cd0e734d7b025def0fe0b55cf2f84ea6bffd121e11bee4b9355022d2534f8556",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              40.787017822265625
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.419565200805664
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999237060546875
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              40.037017822265625,
+              -0.8304319381713867,
+              -7.62939453125e-06
+            ],
+            [
+              41.537017822265625,
+              3.8201217651367188,
+              0.5999916195869446
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.018": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "d0bc935c01da288d37320bdad9546d048e810695afed6fe90b0afdb3b98ff355",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              -0.9993908405303955,
+              0.034899625927209854,
+              0.0,
+              41.047183990478516
+            ],
+            [
+              -0.034899625927209854,
+              -0.9993908405303955,
+              0.0,
+              -5.168269157409668
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999988079071045
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              40.2191162109375,
+              -7.593538284301758,
+              -1.1920928955078125e-07
+            ],
+            [
+              41.8805046081543,
+              -2.893467903137207,
+              0.7999979853630066
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.019": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "d0bc935c01da288d37320bdad9546d048e810695afed6fe90b0afdb3b98ff355",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              -0.9975640773773193,
+              -0.06975647062063217,
+              0.0,
+              41.29160690307617
+            ],
+            [
+              0.06975647062063217,
+              -0.9975640773773193,
+              0.0,
+              -10.259187698364258
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              40.375980377197266,
+              -12.70621395111084,
+              0.0
+            ],
+            [
+              42.19673156738281,
+              -7.962353706359863,
+              0.7999981045722961
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.020": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "b580e034c8f7bd65966b7fe0d758c6401a14c1baf392510c847cb5b4b98082a1",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "36c18fd5607526cc685301df59fefc8b74ec5bbd1b1f143be8631fbe56968878",
+          "matrix_world": [
+            [
+              -0.9981507658958435,
+              0.06078674644231796,
+              0.0,
+              -25.599119186401367
+            ],
+            [
+              -0.06078674644231796,
+              -0.9981507658958435,
+              0.0,
+              -31.183982849121094
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999403953552246
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -26.506711959838867,
+              -36.74049758911133,
+              -5.9604644775390625e-06
+            ],
+            [
+              -24.341106414794922,
+              -28.792747497558594,
+              0.5999932885169983
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.009": {
+          "vertices": 104,
+          "polygons": 78,
+          "local_vertices_sha256": "00fbf07bad354bcec669269b727cec426794a44ccbbf7c4998bb22c76be95dde",
+          "topology_sha256": "3b8754025d04fa1f5c7551ff7ee021d9514c64eb384f19329f21ff18f9814489",
+          "uv_sha256": "ea472604597479ba9b751192ab35dffe476d2df431cee883899dc5329b72d2cc",
+          "matrix_world": [
+            [
+              0.005926888436079025,
+              -0.9999824166297913,
+              0.0,
+              -29.203187942504883
+            ],
+            [
+              0.9999824166297913,
+              0.005926888436079025,
+              0.0,
+              47.089866638183594
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -30.85723304748535,
+              45.33366394042969,
+              0.0
+            ],
+            [
+              -27.502784729003906,
+              48.94474411010742,
+              2.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.010": {
+          "vertices": 104,
+          "polygons": 78,
+          "local_vertices_sha256": "c47accdfe6cc14e96cc56ae25167f0511e70586a682c24624042aab03c8b7e46",
+          "topology_sha256": "3b8754025d04fa1f5c7551ff7ee021d9514c64eb384f19329f21ff18f9814489",
+          "uv_sha256": "ea472604597479ba9b751192ab35dffe476d2df431cee883899dc5329b72d2cc",
+          "matrix_world": [
+            [
+              -0.01589849963784218,
+              0.9998736381530762,
+              0.0,
+              -34.324607849121094
+            ],
+            [
+              -0.9998736381530762,
+              -0.01589849963784218,
+              0.0,
+              46.79779052734375
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4999980926513672
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -36.04322814941406,
+              44.92672348022461,
+              -1.9073486328125e-06
+            ],
+            [
+              -32.65332794189453,
+              48.570648193359375,
+              1.9999980926513672
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.021": {
+          "vertices": 56,
+          "polygons": 42,
+          "local_vertices_sha256": "dbceb9850ae6e111b34496eda194e4fd91878d82eb259684a8c57da98dfbd628",
+          "topology_sha256": "45511fbdcfe7534a9f19e4b881106f2bb6cfce3becc3423d7b9fe7e2c06b8b27",
+          "uv_sha256": "cd0e734d7b025def0fe0b55cf2f84ea6bffd121e11bee4b9355022d2534f8556",
+          "matrix_world": [
+            [
+              -0.2854747176170349,
+              -0.958386242389679,
+              0.0,
+              34.142738342285156
+            ],
+            [
+              0.958386242389679,
+              -0.2854747176170349,
+              0.0,
+              -20.23941421508789
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              20.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              31.627971649169922,
+              -21.64350128173828,
+              19.75
+            ],
+            [
+              36.51321029663086,
+              -18.878305435180664,
+              20.349998474121094
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Big Boxes.011": {
+          "vertices": 48,
+          "polygons": 36,
+          "local_vertices_sha256": "31af88ea141333d4fc3c420f13b4e840839c8be3539eac9540d8ed2cafc2be3a",
+          "topology_sha256": "ebace1786acfcbf81c1c7459ac5ac27d80262b4ae04c011be64bc4afd1eeb71a",
+          "uv_sha256": "052a3ae8a2a6cc92fbd2e303296663002ac65423f4bfedd1edf977257c445212",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              46.6240119934082
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -43.529930114746094
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5000009536743164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              46.1240119934082,
+              -45.216365814208984,
+              9.5367431640625e-07
+            ],
+            [
+              48.32554626464844,
+              -41.93324279785156,
+              1.0000009536743164
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              47.404563903808594
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -39.85143280029297
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970749020576477
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              46.911556243896484,
+              -40.352882385253906,
+              0.0
+            ],
+            [
+              47.911556243896484,
+              -39.352882385253906,
+              1.1999969482421875
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Cube.001": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "cdb9bec9351a5d0dc3f5dee3971bc89ea506cf1779a53368b1438fcc538de11c",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "91b4360e3f33c02dc381e7780734bb36fd640216ac254b458370656babb8c148",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              4.297628402709961
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              17.211572647094727
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              2.5386850833892822,
+              15.46789836883545,
+              0.0
+            ],
+            [
+              7.352507591247559,
+              17.711572647094727,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Cube.002": {
+          "vertices": 80,
+          "polygons": 60,
+          "local_vertices_sha256": "35c25ccd297d8fe94373adf3b18526c58daff78f3c497c21f100f51fea3851ce",
+          "topology_sha256": "ede64f27fcf4699e656ef455e9deb54da9b23b181d9d180138915e0de4d64ee7",
+          "uv_sha256": "bb1cc165ab29c7f1b1ae2584d89d3cd3e99305b5a298855572bfea2119d69e14",
+          "matrix_world": [
+            [
+              -0.9925460815429688,
+              0.12186969071626663,
+              0.0,
+              18.89446449279785
+            ],
+            [
+              -0.12186969071626663,
+              -0.9925460815429688,
+              0.0,
+              15.73046875
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5000001192092896
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              15.64985466003418,
+              14.861898422241211,
+              1.1920928955078125e-07
+            ],
+            [
+              20.701231002807617,
+              17.675508499145508,
+              1.9999998807907104
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Cube.003": {
+          "vertices": 80,
+          "polygons": 60,
+          "local_vertices_sha256": "35c25ccd297d8fe94373adf3b18526c58daff78f3c497c21f100f51fea3851ce",
+          "topology_sha256": "ede64f27fcf4699e656ef455e9deb54da9b23b181d9d180138915e0de4d64ee7",
+          "uv_sha256": "bb1cc165ab29c7f1b1ae2584d89d3cd3e99305b5a298855572bfea2119d69e14",
+          "matrix_world": [
+            [
+              -0.9925460815429688,
+              0.12186969071626663,
+              0.0,
+              46.50335693359375
+            ],
+            [
+              -0.12186969071626663,
+              -0.9925460815429688,
+              0.0,
+              -47.83815383911133
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              43.25874710083008,
+              -48.706722259521484,
+              0.0
+            ],
+            [
+              48.310123443603516,
+              -45.89311599731445,
+              1.999999761581421
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.001": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              47.91766357421875
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -38.46601104736328
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970749020576477
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              47.42465591430664,
+              -38.96746063232422,
+              0.0
+            ],
+            [
+              48.42465591430664,
+              -37.96746063232422,
+              1.1999969482421875
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.002": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              46.44761276245117
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -38.55963134765625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970744252204895
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              45.95460510253906,
+              -39.06108093261719,
+              -4.76837158203125e-07
+            ],
+            [
+              46.95460510253906,
+              -38.06108093261719,
+              1.1999964714050293
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.003": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              40.143714904785156
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -15.05099105834961
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970758557319641
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              39.65070724487305,
+              -15.552441596984863,
+              9.5367431640625e-07
+            ],
+            [
+              40.65070724487305,
+              -14.552441596984863,
+              1.199997901916504
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.004": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              40.59136199951172
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              47.426212310791016
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970749020576477
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              40.09835433959961,
+              46.92476272583008,
+              0.0
+            ],
+            [
+              41.09835433959961,
+              47.92476272583008,
+              1.1999969482421875
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.005": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              42.08624267578125
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              47.48270797729492
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970749020576477
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              41.59323501586914,
+              46.981258392333984,
+              0.0
+            ],
+            [
+              42.59323501586914,
+              47.981258392333984,
+              1.1999969482421875
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.006": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -15.39974594116211
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              30.181987762451172
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970749020576477
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -15.892751693725586,
+              29.6805362701416,
+              0.0
+            ],
+            [
+              -14.892751693725586,
+              30.6805362701416,
+              1.1999969482421875
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.007": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -15.869524002075195
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              28.430347442626953
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970749020576477
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -16.362529754638672,
+              27.928895950317383,
+              0.0
+            ],
+            [
+              -15.362529754638672,
+              28.928895950317383,
+              1.1999969482421875
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.008": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -15.746763229370117
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              31.63275146484375
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49707502126693726
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -16.239768981933594,
+              31.13129997253418,
+              1.1920928955078125e-07
+            ],
+            [
+              -15.239768981933594,
+              32.13130187988281,
+              1.199997067451477
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.009": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -14.180756568908691
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              28.514291763305664
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49707502126693726
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -14.673762321472168,
+              28.012840270996094,
+              1.1920928955078125e-07
+            ],
+            [
+              -13.673762321472168,
+              29.012840270996094,
+              1.199997067451477
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.010": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -21.24437713623047
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -40.439239501953125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970739483833313
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -21.737382888793945,
+              -40.94068908691406,
+              -9.5367431640625e-07
+            ],
+            [
+              -20.737382888793945,
+              -39.94068908691406,
+              1.199995994567871
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.011": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              17.66940689086914
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -30.36994171142578
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              58.64707946777344
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              17.176401138305664,
+              -30.87139320373535,
+              58.15000534057617
+            ],
+            [
+              18.176401138305664,
+              -29.87139320373535,
+              59.35000228881836
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.012": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              34.362396240234375
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -2.657650947570801
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              52.2470703125
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              33.869388580322266,
+              -3.159101724624634,
+              51.749996185302734
+            ],
+            [
+              34.869388580322266,
+              -2.159101724624634,
+              52.94999313354492
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.013": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.443599700927734
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -5.2633185386657715
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              52.2470703125
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              32.950592041015625,
+              -5.764769077301025,
+              51.749996185302734
+            ],
+            [
+              33.950592041015625,
+              -4.764769077301025,
+              52.94999313354492
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.014": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              31.98216438293457
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -3.4974069595336914
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              52.2470703125
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              31.489158630371094,
+              -3.9988577365875244,
+              51.749996185302734
+            ],
+            [
+              32.489158630371094,
+              -2.9988577365875244,
+              52.94999313354492
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.015": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              0.9563047885894775,
+              -0.2923716902732849,
+              0.0,
+              -6.907426834106445
+            ],
+            [
+              0.2923716902732849,
+              0.9563047885894775,
+              0.0,
+              -23.249055862426758
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.24707794189453
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -7.524652481079102,
+              -23.87273597717285,
+              35.750003814697266
+            ],
+            [
+              -6.275976181030273,
+              -22.624059677124023,
+              36.95000076293945
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.016": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              0.9563047885894775,
+              -0.2923716902732849,
+              0.0,
+              -6.844549179077148
+            ],
+            [
+              0.2923716902732849,
+              0.9563047885894775,
+              0.0,
+              -25.061508178710938
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.24707794189453
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -7.461774826049805,
+              -25.68518829345703,
+              35.750003814697266
+            ],
+            [
+              -6.213098526000977,
+              -24.436511993408203,
+              36.95000076293945
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.017": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              0.9563047885894775,
+              -0.2923716902732849,
+              0.0,
+              -7.663444519042969
+            ],
+            [
+              0.2923716902732849,
+              0.9563047885894775,
+              0.0,
+              -21.96314239501953
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.24707794189453
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -8.280670166015625,
+              -22.586822509765625,
+              35.750003814697266
+            ],
+            [
+              -7.031993865966797,
+              -21.338146209716797,
+              36.95000076293945
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.018": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              0.9563047885894775,
+              -0.2923716902732849,
+              0.0,
+              -5.254115104675293
+            ],
+            [
+              0.2923716902732849,
+              0.9563047885894775,
+              0.0,
+              -24.487483978271484
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.24707794189453
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -5.871340751647949,
+              -25.111164093017578,
+              35.750003814697266
+            ],
+            [
+              -4.622664451599121,
+              -23.86248779296875,
+              36.95000076293945
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Cube.004": {
+          "vertices": 80,
+          "polygons": 60,
+          "local_vertices_sha256": "35c25ccd297d8fe94373adf3b18526c58daff78f3c497c21f100f51fea3851ce",
+          "topology_sha256": "ede64f27fcf4699e656ef455e9deb54da9b23b181d9d180138915e0de4d64ee7",
+          "uv_sha256": "bb1cc165ab29c7f1b1ae2584d89d3cd3e99305b5a298855572bfea2119d69e14",
+          "matrix_world": [
+            [
+              -0.01745181903243065,
+              0.9998477101325989,
+              0.0,
+              16.15102767944336
+            ],
+            [
+              -0.9998477101325989,
+              -0.01745181903243065,
+              0.0,
+              39.347633361816406
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999916553497314
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              14.354305267333984,
+              36.28449249267578,
+              -8.344650268554688e-07
+            ],
+            [
+              16.68164825439453,
+              41.13673782348633,
+              1.999998927116394
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.022": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              -0.014738904312252998,
+              -0.9998914003372192,
+              0.0,
+              -22.949312210083008
+            ],
+            [
+              0.9998914003372192,
+              -0.014738904312252998,
+              0.0,
+              -48.226016998291016
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999499320983887
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -26.460777282714844,
+              -49.027530670166016,
+              -5.0067901611328125e-06
+            ],
+            [
+              -20.5991268157959,
+              -47.44161605834961,
+              0.5999942421913147
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.023": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              -0.014738904312252998,
+              -0.9998914003372192,
+              0.0,
+              -16.34708023071289
+            ],
+            [
+              0.9998914003372192,
+              -0.014738904312252998,
+              0.0,
+              -48.497798919677734
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4999948740005493
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -19.858545303344727,
+              -49.299312591552734,
+              -5.125999450683594e-06
+            ],
+            [
+              -13.996895790100098,
+              -47.71339797973633,
+              0.5999941229820251
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.024": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              0.053431641310453415,
+              -0.998571515083313,
+              0.0,
+              -9.681807518005371
+            ],
+            [
+              0.998571515083313,
+              0.053431641310453415,
+              0.0,
+              -48.44059371948242
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999499320983887
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -13.217671394348145,
+              -49.314517974853516,
+              -5.0067901611328125e-06
+            ],
+            [
+              -7.305690765380859,
+              -47.50461196899414,
+              0.5999942421913147
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.025": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              0.0002740184427239001,
+              -0.9999999403953552,
+              0.0,
+              -2.779071807861328
+            ],
+            [
+              0.9999999403953552,
+              0.0002740184427239001,
+              0.0,
+              -48.614830017089844
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.49999499320983887
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -6.280067443847656,
+              -49.36547088623047,
+              -5.0067901611328125e-06
+            ],
+            [
+              -0.4394819736480713,
+              -47.863868713378906,
+              0.5999942421913147
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Cube.005": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "b671fb69ccb02024c3bac14267bb9bcf2d2be1ff7e1b1e49743b0d65a468c8d5",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "91b4360e3f33c02dc381e7780734bb36fd640216ac254b458370656babb8c148",
+          "matrix_world": [
+            [
+              -0.1218692883849144,
+              -0.9925461411476135,
+              0.0,
+              -1.646533489227295
+            ],
+            [
+              0.9925461411476135,
+              -0.1218692883849144,
+              0.0,
+              16.837175369262695
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -2.3602757453918457,
+              15.030407905578613,
+              0.0
+            ],
+            [
+              0.2985050678253174,
+              18.82082176208496,
+              1.9999998807907104
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.026": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "b580e034c8f7bd65966b7fe0d758c6401a14c1baf392510c847cb5b4b98082a1",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "36c18fd5607526cc685301df59fefc8b74ec5bbd1b1f143be8631fbe56968878",
+          "matrix_world": [
+            [
+              -0.9935995936393738,
+              -0.11295967549085617,
+              0.0,
+              47.26431655883789
+            ],
+            [
+              0.11295967549085617,
+              -0.9935995936393738,
+              0.0,
+              -30.195884704589844
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.5000004768371582
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              45.878868103027344,
+              -35.78506088256836,
+              4.76837158203125e-07
+            ],
+            [
+              48.44683074951172,
+              -27.784854888916016,
+              0.599999725818634
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.027": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "b580e034c8f7bd65966b7fe0d758c6401a14c1baf392510c847cb5b4b98082a1",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "36c18fd5607526cc685301df59fefc8b74ec5bbd1b1f143be8631fbe56968878",
+          "matrix_world": [
+            [
+              -0.9999979734420776,
+              -0.002015740377828479,
+              0.0,
+              48.466835021972656
+            ],
+            [
+              0.002015740377828479,
+              -0.9999979734420776,
+              0.0,
+              -21.478206634521484
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4999990463256836
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              47.68890380859375,
+              -27.000171661376953,
+              -9.5367431640625e-07
+            ],
+            [
+              49.395721435546875,
+              -19.13728141784668,
+              0.5999982953071594
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.028": {
+          "vertices": 64,
+          "polygons": 48,
+          "local_vertices_sha256": "d0bc935c01da288d37320bdad9546d048e810695afed6fe90b0afdb3b98ff355",
+          "topology_sha256": "b48fcff7354a39ecc181ec3e8b0090e96f0060ac1b3a6f21295987ad1fbffcdc",
+          "uv_sha256": "1883ebc58d1208cfe80c903868c58a0199dd99c6e001f53f53944791dcb1044d",
+          "matrix_world": [
+            [
+              -0.06975647807121277,
+              -0.9975640773773193,
+              0.0,
+              -37.024383544921875
+            ],
+            [
+              0.9975640773773193,
+              -0.06975647807121277,
+              0.0,
+              -7.673501014709473
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.4688403606414795
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -39.47140884399414,
+              -8.589127540588379,
+              0.9688403606414795
+            ],
+            [
+              -34.7275505065918,
+              -6.768374919891357,
+              1.7688384056091309
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.029": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              -0.9798723459243774,
+              -0.19962511956691742,
+              0.0,
+              -18.002605438232422
+            ],
+            [
+              0.19962511956691742,
+              -0.9798723459243774,
+              0.0,
+              -13.635235786437988
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              26.650001525878906
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -19.436355590820312,
+              -17.215282440185547,
+              26.150001525878906
+            ],
+            [
+              -16.800703048706055,
+              -11.193218231201172,
+              26.75
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Planks.030": {
+          "vertices": 96,
+          "polygons": 72,
+          "local_vertices_sha256": "38daa1e28c38085df31fcb9e89880d8883c186a7a375b023df2a6372afe0d013",
+          "topology_sha256": "173a2817aad9bc7fe0bef915978ac8a284ee3b2fa2975cb8fa51ac228b4d019e",
+          "uv_sha256": "4ed2823cd9168cf73372a5336e8680b1bc60dc26bfc74b7df15d09d3496bc268",
+          "matrix_world": [
+            [
+              -0.9798723459243774,
+              -0.19962511956691742,
+              0.0,
+              -15.494580268859863
+            ],
+            [
+              0.19962511956691742,
+              -0.9798723459243774,
+              0.0,
+              -10.555346488952637
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              26.650001525878906
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -16.92833137512207,
+              -14.135393142700195,
+              26.150001525878906
+            ],
+            [
+              -14.29267692565918,
+              -8.11332893371582,
+              26.75
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Barrel.019": {
+          "vertices": 32,
+          "polygons": 26,
+          "local_vertices_sha256": "9a8642a01f3cefc10a30d911cc954d28e901af6e8b30157134579316a79a9c04",
+          "topology_sha256": "7be8cfde39a9997159d7f1674467d2949a721af4742c942b2b089a3157603397",
+          "uv_sha256": "eb2e1c9f17579615404206961b9b688e10111237503135f0feda96dc71ef9d42",
+          "matrix_world": [
+            [
+              0.7247438430786133,
+              0.6890184283256531,
+              0.0,
+              -48.464168548583984
+            ],
+            [
+              -0.6890184283256531,
+              0.7247438430786133,
+              0.0,
+              13.76206111907959
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.4970758557319641
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -49.1669807434082,
+              13.049309730529785,
+              9.5367431640625e-07
+            ],
+            [
+              -47.75321960449219,
+              14.463071823120117,
+              1.199997901916504
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Cube.006": {
+          "vertices": 80,
+          "polygons": 60,
+          "local_vertices_sha256": "35c25ccd297d8fe94373adf3b18526c58daff78f3c497c21f100f51fea3851ce",
+          "topology_sha256": "ede64f27fcf4699e656ef455e9deb54da9b23b181d9d180138915e0de4d64ee7",
+          "uv_sha256": "bb1cc165ab29c7f1b1ae2584d89d3cd3e99305b5a298855572bfea2119d69e14",
+          "matrix_world": [
+            [
+              -0.9925460815429688,
+              0.12186969071626663,
+              0.0,
+              33.69857406616211
+            ],
+            [
+              -0.12186969071626663,
+              -0.9925460815429688,
+              0.0,
+              -25.907426834106445
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              20.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              30.453964233398438,
+              -26.775997161865234,
+              19.75
+            ],
+            [
+              35.505340576171875,
+              -23.962387084960938,
+              21.75
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Box": {
+          "vertices": 8,
+          "polygons": 6,
+          "local_vertices_sha256": "ba1b420ac3bedb913dfed7d7556fe7c5ef2649658eb86eebd8b97a378f632d0a",
+          "topology_sha256": "f7ce25b2ab646f085a78fa4d98ea0ce6e5f3bc7e4b9431c48c4d54dc33bed232",
+          "uv_sha256": "9ec122cd3b4014c9daf3b77efb7ebf81945bc004e01be448424e3de22873279a",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -19.3243408203125
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              4.117093086242676
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              36.250003814697266
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -19.8243408203125,
+              3.617093086242676,
+              35.750003814697266
+            ],
+            [
+              -18.8243408203125,
+              4.617093086242676,
+              36.750003814697266
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Base Truck": {
+          "vertices": 492,
+          "polygons": 397,
+          "local_vertices_sha256": "74c9cf807ed6731aa1c9a0ca216805d9ee535d2f7f88be2d73f9d783f446d15f",
+          "topology_sha256": "5718095b3f1c053249cbf61c51bfe3d0a1407c070b9381a1499fec975a978f81",
+          "uv_sha256": "7c57b31d313b362e73d1635b8423840e5883affb6ff93376c40892b77bd5d7d9",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -1.564911127090454,
+              -3.4842636585235596,
+              -0.04469621181488037
+            ],
+            [
+              1.564911127090454,
+              3.517749786376953,
+              3.152890205383301
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Base Truck Dimensions": {
+          "vertices": 8,
+          "polygons": 6,
+          "local_vertices_sha256": "899206f4312cc11403bc68cb26e8425168301e463899db43debe5c1e2033b36d",
+          "topology_sha256": "f7ce25b2ab646f085a78fa4d98ea0ce6e5f3bc7e4b9431c48c4d54dc33bed232",
+          "uv_sha256": "fe8e39abe12a71ac869d0e287b477ef28f594c1cae93d9854d69441a31e34871",
+          "matrix_world": [
+            [
+              1.25,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              4.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.75,
+              1.75
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -1.25,
+              -4.0,
+              0.0
+            ],
+            [
+              1.25,
+              4.0,
+              3.5
+            ]
+          ],
+          "materials": [],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Crane Ground unrotated": {
+          "vertices": 1334,
+          "polygons": 1039,
+          "local_vertices_sha256": "12b112380a103f9fd135eb298c1fd20172a51e69ac6b2cd7a851d30923a56245",
+          "topology_sha256": "afdf966bce8f2117b5cfd06b406f5510e5eb04a3ae4454e4f361bca30a4f8426",
+          "uv_sha256": "dd5e1c2729e1a2aa38f665a7a6b2fa5c0bdbd20ddc45e3188a4a72f31161ef6c",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -45.348106384277344
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              45.47468566894531
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.9500002861022949
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -48.34600830078125,
+              9.84603500366211,
+              1.1500002145767212
+            ],
+            [
+              -42.22825241088867,
+              56.07623291015625,
+              55.22588348388672
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "Crane Mounted unrotated": {
+          "vertices": 1328,
+          "polygons": 1012,
+          "local_vertices_sha256": "aaac9e5f8f7fa99d9d407e0d50ccf5cdad7ae996a04e4b22309a3c88af5e3cde",
+          "topology_sha256": "3201118ad8884cc72045425dfd34397fb3f079661afde77b7c5a371d924532a6",
+          "uv_sha256": "74b5496afc83ba516a73844350c17b81dd0fd1bd1a9681928b2349728318d27c",
+          "matrix_world": [
+            [
+              0.934090256690979,
+              0.0,
+              0.0,
+              -43.43808364868164
+            ],
+            [
+              0.0,
+              0.934090256690979,
+              0.0,
+              -5.065029144287109
+            ],
+            [
+              0.0,
+              0.0,
+              0.934090256690979,
+              -7.404994964599609
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -44.32991409301758,
+              -38.34540557861328,
+              -5.581425666809082
+            ],
+            [
+              -42.218467712402344,
+              3.249664306640625,
+              42.779598236083984
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "BuildingSingleFloor": {
+          "vertices": 356,
+          "polygons": 203,
+          "local_vertices_sha256": "c58944a978e6cc0c8d182466aa9019a77a16463bd7604659ed3de9fc98a085b2",
+          "topology_sha256": "38e07915ccf476806b9bd748139ff87a7b1254387daeda0edc9d3ae2dfb4dc95",
+          "uv_sha256": "7245dbc8cb42b2b4e387a4419a3dc42f1ac1dc8d186c0f0d306a45fd4420aa56",
+          "matrix_world": [
+            [
+              30.0,
+              0.0,
+              0.0,
+              6.852261066436768
+            ],
+            [
+              0.0,
+              25.0,
+              0.0,
+              -11.947532653808594
+            ],
+            [
+              0.0,
+              0.0,
+              0.20000000298023224,
+              4.15000057220459
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -23.14773941040039,
+              -38.447532653808594,
+              1.1499998569488525
+            ],
+            [
+              38.35226058959961,
+              13.052467346191406,
+              4.750000476837158
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        },
+        "BuildingSingleSmallFloor": {
+          "vertices": 292,
+          "polygons": 171,
+          "local_vertices_sha256": "68d6b95dede9fa20c876cf5d5315e259481d977d50ddd51a8b582da584fd9017",
+          "topology_sha256": "b08ed94cb9767c153a4f9176edffd73b367ef706611e54bf4cd67da18bbb3e6d",
+          "uv_sha256": "c6881ce3ef7c8b351edde23d0b7507b96ca2812190280e7bc8547ebf274f7d95",
+          "matrix_world": [
+            [
+              30.0,
+              0.0,
+              0.0,
+              6.852261066436768
+            ],
+            [
+              0.0,
+              25.0,
+              0.0,
+              -11.947532653808594
+            ],
+            [
+              0.0,
+              0.0,
+              0.20000000298023224,
+              42.54999923706055
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_m": [
+            [
+              -3.147737979888916,
+              -38.447532653808594,
+              39.54999923706055
+            ],
+            [
+              38.35226058959961,
+              13.052467346191406,
+              43.14999771118164
+            ]
+          ],
+          "materials": [
+            "Submission_Diffuse_Shader"
+          ],
+          "hide_render": false,
+          "hide_viewport": false,
+          "parent": null
+        }
+      },
+      "cameras": {
+        "Camera": {
+          "matrix_world": [
+            [
+              -0.5592016577720642,
+              0.3993828296661377,
+              -0.7264895439147949,
+              -76.4039306640625
+            ],
+            [
+              -0.8290319442749023,
+              -0.26939573884010315,
+              0.49003297090530396,
+              53.594642639160156
+            ],
+            [
+              -2.4537202989449725e-06,
+              0.8763103485107422,
+              0.48174744844436646,
+              32.33314514160156
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "type": "PERSP",
+          "lens_mm": 50.0
+        },
+        "Benchmark_Main": {
+          "matrix_world": [
+            [
+              -0.5592016577720642,
+              0.39938288927078247,
+              -0.7264895439147949,
+              -76.4039306640625
+            ],
+            [
+              -0.8290319442749023,
+              -0.2693958282470703,
+              0.4900329113006592,
+              53.594642639160156
+            ],
+            [
+              -2.4792420845187735e-06,
+              0.8763102889060974,
+              0.4817475378513336,
+              32.33314514160156
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "type": "PERSP",
+          "lens_mm": 50.0
+        },
+        "Benchmark_Alternate": {
+          "matrix_world": [
+            [
+              -0.5592016577720642,
+              0.39938288927078247,
+              -0.7264895439147949,
+              -76.8512954711914
+            ],
+            [
+              -0.8290319442749023,
+              -0.2693958282470703,
+              0.4900329113006592,
+              52.93141555786133
+            ],
+            [
+              -2.4792420845187735e-06,
+              0.8763102889060974,
+              0.4817475378513336,
+              32.3331413269043
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "type": "PERSP",
+          "lens_mm": 50.0
+        }
+      },
+      "active_camera": "Benchmark_Main",
+      "render": {
+        "engine": "CYCLES",
+        "resolution": [
+          800,
+          450
+        ],
+        "percentage": 100,
+        "view_transform": "AgX",
+        "look": "None",
+        "exposure": 0.0
+      },
+      "materials": {
+        "Dots Stroke": {
+          "diffuse": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "nodes": [
+            [
+              "NodeFrame",
+              "Frame"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ],
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output.001"
+            ],
+            [
+              "ShaderNodeBsdfDiffuse",
+              "Diffuse BSDF"
+            ]
+          ]
+        },
+        "Submission_Diffuse_Shader": {
+          "diffuse": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeValue",
+              "Value.002"
+            ],
+            [
+              "ShaderNodeValue",
+              "Value"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ],
+            [
+              "ShaderNodeTexImage",
+              "Image Texture"
+            ],
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ]
+          ]
+        },
+        "Submission_Diffuse_Shader.001": {
+          "diffuse": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ],
+            [
+              "ShaderNodeValue",
+              "Value.002"
+            ],
+            [
+              "ShaderNodeValue",
+              "Value"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ],
+            [
+              "ShaderNodeTexImage",
+              "Image Texture"
+            ]
+          ]
+        },
+        "Submission_Diffuse_Shader.002": {
+          "diffuse": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "nodes": [
+            [
+              "ShaderNodeValue",
+              "Value.002"
+            ],
+            [
+              "ShaderNodeValue",
+              "Value"
+            ],
+            [
+              "ShaderNodeOutputMaterial",
+              "Material Output"
+            ],
+            [
+              "ShaderNodeTexImage",
+              "Image Texture"
+            ],
+            [
+              "ShaderNodeBsdfPrincipled",
+              "Principled BSDF"
+            ]
+          ]
+        }
+      },
+      "input_sanitization": null
+    }
+  ],
+  "repair_pair_check": null
+}

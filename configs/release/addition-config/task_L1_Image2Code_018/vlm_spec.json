@@ -1,0 +1,173 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L1/Image2Code/task_L1_Image2Code_018",
+  "family": "Reference2Scene",
+  "instruction_sha256": "5c89be87dc109fd8c621059d4c57861e56e1e382926c7349c8e540372fe4f929",
+  "reference_policy": "reference/reference-0 is the primary target. Other supplied references clarify geometry only. Compare native pixel grids without registration.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "subject_fidelity",
+      "question": "Compare subject identity, distinctive shape, proportions, completeness and visible parts against original references.",
+      "dimension": "reference_fidelity",
+      "weight": 0.4,
+      "units": [
+        "subject_fidelity"
+      ]
+    },
+    {
+      "id": "composition_fidelity",
+      "question": "Compare primary framing, relative position, scale, depth and occlusion on original pixel grid; no alignment.",
+      "dimension": "reference_layout",
+      "weight": 0.3,
+      "units": [
+        "composition_fidelity"
+      ]
+    },
+    {
+      "id": "appearance_fidelity",
+      "question": "Compare authored materials, colours, lighting and rendering style to original references.",
+      "dimension": "reference_appearance",
+      "weight": 0.3,
+      "units": [
+        "appearance_fidelity"
+      ]
+    }
+  ],
+  "localization": {
+    "version": "reference-boxes-v1",
+    "scoring_profile": "l2-reference-localized-v5.3.0",
+    "policy": {
+      "pair_weights": {
+        "iou": 0.5,
+        "center": 0.3,
+        "size": 0.2
+      },
+      "center_tolerance_diagonal": 0.25,
+      "nms_iou": 0.5,
+      "confidence_threshold": 0.25,
+      "max_detections_per_query": 20,
+      "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+    },
+    "task_id": "L1/Image2Code/task_L1_Image2Code_018",
+    "image_size": [
+      1000,
+      1000
+    ],
+    "reference_path": "input/reference.png",
+    "reference_sha256": "d3ad8e54300475bcaa5231c8d021d0d0ba2949fde0ad90283dce5b76803733e4",
+    "detector": {
+      "fingerprint": "gpt-6-astra-reference-only-v1-rules-2d10eb72e370d3912f0a861e4ee2d43f3ad7ea35419164c2b9ba8a66498c2860"
+    },
+    "context_queries": [],
+    "targets": [
+      {
+        "boundary_notes": "仅框中央箱体的可见壳体和周缘法兰，包含暗面；排除向外延伸的气缸、推杆及前轴毂。遮挡处不推测隐藏轮廓。",
+        "boxes": [
+          [
+            0.352,
+            0.407,
+            0.573,
+            0.64
+          ]
+        ],
+        "id": "T01",
+        "query": "中央铜红色曲轴箱",
+        "weight": 0.35,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "框前方突出的轴段及两片有孔法兰的完整可见范围，含孔内暗面；不包含后方箱体。",
+        "boxes": [
+          [
+            0.312,
+            0.518,
+            0.443,
+            0.629
+          ]
+        ],
+        "id": "T02",
+        "query": "前伸轴毂与穿孔圆盘法兰组件",
+        "weight": 0.25,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      },
+      {
+        "boundary_notes": "逐一框主图可辨的带散热片气缸本体及缸头盖；排除伸出的摇臂、推杆和独立黑色弯管。左下两处部分遮挡气缸各按可见范围定位，不补全被箱体遮住的部分。包括片间暗槽。",
+        "boxes": [
+          [
+            0.435,
+            0.268,
+            0.541,
+            0.423
+          ],
+          [
+            0.325,
+            0.273,
+            0.442,
+            0.426
+          ],
+          [
+            0.266,
+            0.366,
+            0.378,
+            0.483
+          ],
+          [
+            0.289,
+            0.514,
+            0.359,
+            0.589
+          ],
+          [
+            0.391,
+            0.613,
+            0.484,
+            0.732
+          ],
+          [
+            0.473,
+            0.619,
+            0.606,
+            0.758
+          ],
+          [
+            0.551,
+            0.567,
+            0.697,
+            0.691
+          ],
+          [
+            0.553,
+            0.479,
+            0.71,
+            0.571
+          ],
+          [
+            0.522,
+            0.351,
+            0.659,
+            0.478
+          ]
+        ],
+        "id": "T03",
+        "query": "带散热片的气缸本体与缸头盖",
+        "weight": 0.4,
+        "review_status": "approved",
+        "machine_annotation": true,
+        "human_reviewed": false
+      }
+    ]
+  }
+}

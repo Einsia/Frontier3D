@@ -1,0 +1,1 @@
+The submitted project must use output/ue5_project/3DBenchGame.uproject as its fixed UE5 project entry. The project root must contain Config/, Content/, optional Source/ and Plugins/, and SourceAssets/Blender/ for the original Blender assets. Do not submit Binaries/, Intermediate/, Saved/ or DerivedDataCache/.

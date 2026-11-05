@@ -1,0 +1,25 @@
+{
+  "key": "furniture-kit",
+  "target_objects_removed": [
+    "kitchenBar(Clone)",
+    "kitchenBar placement",
+    "kitchenBar(Clone).001",
+    "kitchenBar placement.001",
+    "kitchenBar(Clone).002",
+    "kitchenBar placement.002",
+    "kitchenBarEnd(Clone)",
+    "kitchenBarEnd placement",
+    "kitchenBarEnd(Clone).001",
+    "kitchenBarEnd placement.001",
+    "kitchenCoffeeMachine(Clone)",
+    "mug",
+    "kitchenCoffeeMachine placement"
+  ],
+  "preserved_mesh_count": 31,
+  "preserved_meshes_equal": true,
+  "preserved_materials_equal": true,
+  "camera_and_render_settings_equal": true,
+  "missing_active_images": 0,
+  "external_libraries": 0,
+  "scope": "Pair construction: only named target objects deleted; actual full and input renders."
+}

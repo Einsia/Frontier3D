@@ -1,0 +1,663 @@
+{
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_019",
+  "detail_checks": [
+    {
+      "id": "D01",
+      "question": "坡道是否具有实体斜面及防滑条纹细节？",
+      "source_quote": "a 15-degree ramp 1.50 m long and 1.20 m wide with anti-slip stripes",
+      "weight": 0.1
+    },
+    {
+      "id": "D02",
+      "question": "台阶是否具有明确的踏面、立面和实体厚度？",
+      "source_quote": "three steps each 0.15 +/-0.005 m high and 0.30 m deep",
+      "weight": 0.1
+    },
+    {
+      "id": "D03",
+      "question": "间隙是否形成真实开口，边缘是否具有倒角？",
+      "source_quote": "a 0.45 m wide, 0.30 m deep gap with bevelled yellow edges",
+      "weight": 0.1
+    },
+    {
+      "id": "D04",
+      "question": "障碍柱是否具有与指定直径相符的圆形截面和实体柱身？",
+      "source_quote": "five posts 0.08 m in diameter and 0.50 m high",
+      "weight": 0.1
+    },
+    {
+      "id": "D05",
+      "question": "扶手是否由具有圆形截面的栏杆及支撑立柱组成？",
+      "source_quote": "rails at 0.90 m, diameter 0.04 m, posts no more than 0.80 m apart",
+      "weight": 0.1
+    },
+    {
+      "id": "D06",
+      "question": "人形机器人是否具有可辨识的躯干、头部、双臂、双腿、关节及末端部件？",
+      "source_quote": "Represent specified joints and end-effectors geometrically.",
+      "weight": 0.1
+    },
+    {
+      "id": "D07",
+      "question": "机器人脚部是否具有可辨识的脚底和脚尖几何？",
+      "source_quote": "front sole on the tread with at most 30 mm toe overhang, rear foot on the ramp",
+      "weight": 0.1
+    },
+    {
+      "id": "D08",
+      "question": "头部是否具有可辨识的相机部件？",
+      "source_quote": "point head camera toward the next step",
+      "weight": 0.1
+    },
+    {
+      "id": "D09",
+      "question": "补光灯是否具有灯柱结构，拍摄相机是否具有三脚架结构？",
+      "source_quote": "Add three 1.80 m fill-light posts, a tripod camera",
+      "weight": 0.1
+    },
+    {
+      "id": "D10",
+      "question": "标牌、围挡及其他实体部件是否具有合理厚度和支撑，并可按语义分离？",
+      "source_quote": "Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support.",
+      "weight": 0.1
+    }
+  ],
+  "limitations": [
+    "仅有文本任务，无公开参考图或候选；依文本任务规则将 reference_primary 设为空字符串，regions 和 targets 设为空数组。嵌入 schema 的 reference_primary 非空约束与此规则冲突，采用用户明确的文本任务规则。",
+    "未提供 legacy-detail-20261018-v1 的具体内容；本计划仅依据本次提供的合同和 instruction.md，不补充隐藏规则。",
+    "所有项目均为待执行的检查计划，不表示已观察或测量任何候选。",
+    "坡道长度未说明沿斜面还是水平投影；间隙宽、深的轴向及深度是否指竖向未明确，应核对 README 的测量约定，不预设隐藏几何。",
+    "障碍柱交替横向偏移 0.40 m 未明确是相对中心线的单侧偏移还是相邻柱的横向差；纵向间距及扶手柱间距也未明确采用中心距还是净距。",
+    "膝关节约 60 度未明确夹角或屈曲角定义，也未给近似容差；数值项保留名义值，不能据此发明严格接受区间。",
+    "躯干前倾的轴线、竖直投影所用代表几何、前脚支撑区域的构造方法及 0.05 m 容差的应用方式未完整定义，应使用公开声明的几何约定，不能解释为动态稳定性。",
+    "台阶前沿和柱距中心线的要求中，posts 的指代范围及距离采用全体几何还是代表点未明确；应报告相关柱类并注明测量解释。",
+    "坡道旁 0.30 m 安全余量未写明是否为最小值；保留原文名义值，不擅自改写为下限。身高、肩宽及扶手高度的具体端点也应公开说明。",
+    "接触检查中的零距离仅表达明确要求的接触关系，不额外引入接触容差；允许的脚部穿透单独检查。",
+    "未指定服务点清单、其他服务目标或可达球尺寸，不新增这些对象或数值要求；如场景使用这些标注，应遵守原文的区分与解释要求。",
+    "不把渲染引擎、色彩管理、图像尺寸、脚本入口或通用提交文件要求作为内容质量检查。"
+  ],
+  "numeric_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在场景原生几何中测量测试区平面长边；按声明的边界定义取端点。",
+      "quantity": "测试区长度",
+      "relation": "equal",
+      "source_quote": "10 x 4 m test area",
+      "target": 10,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "在场景原生几何中测量测试区平面短边。",
+      "quantity": "测试区宽度",
+      "relation": "equal",
+      "source_quote": "10 x 4 m test area",
+      "target": 4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 0.02,
+      "id": "N03",
+      "measurement_definition": "沿公开的路线采样点，在垂直于局部行进方向的截面测量标记路线宽度，排除明确较窄的扶手通道；边界线的取边约定需声明。",
+      "quantity": "普通标记路线宽度",
+      "relation": "equal",
+      "source_quote": "The marked course is 1.20 +/-0.02 m wide, except the explicitly narrower handrail passage.",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N04",
+      "measurement_definition": "以 Z 为竖直方向，计算坡道主要行走平面与水平面的夹角。",
+      "quantity": "坡道倾角",
+      "relation": "equal",
+      "source_quote": "a 15-degree ramp",
+      "target": 15,
+      "unit": "degree",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N05",
+      "measurement_definition": "按声明的沿斜面或水平投影约定测量坡道纵向长度，并记录采用的定义。",
+      "quantity": "坡道长度",
+      "relation": "equal",
+      "source_quote": "1.50 m long and 1.20 m wide",
+      "target": 1.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N06",
+      "measurement_definition": "在坡道横向测量两侧实际几何边缘之间的宽度。",
+      "quantity": "坡道宽度",
+      "relation": "equal",
+      "source_quote": "1.50 m long and 1.20 m wide",
+      "target": 1.2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N07",
+      "measurement_definition": "按独立的踏面及其上升级数计数，不按网格对象数量计数。",
+      "quantity": "台阶级数",
+      "relation": "equal",
+      "source_quote": "three steps",
+      "target": 3,
+      "unit": "级",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 0.005,
+      "id": "N08",
+      "measurement_definition": "逐级测量相邻支撑水平面之间的 Z 向高差。",
+      "quantity": "每级台阶高度",
+      "relation": "equal",
+      "source_quote": "each 0.15 +/-0.005 m high",
+      "target": 0.15,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N09",
+      "measurement_definition": "逐级沿行进方向测量踏面前后边缘之间的深度。",
+      "quantity": "每级台阶深度",
+      "relation": "equal",
+      "source_quote": "0.30 m deep",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N10",
+      "measurement_definition": "按声明的宽度轴和倒角边界约定，测量间隙两侧边缘的几何间距。",
+      "quantity": "间隙宽度",
+      "relation": "equal",
+      "source_quote": "a 0.45 m wide, 0.30 m deep gap",
+      "target": 0.45,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N11",
+      "measurement_definition": "按声明的深度方向测量间隙对应边界间距，记录采用竖向深度还是平面深度。",
+      "quantity": "间隙深度",
+      "relation": "equal",
+      "source_quote": "a 0.45 m wide, 0.30 m deep gap",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N12",
+      "measurement_definition": "对间隙之后、扶手通道之前的障碍柱进行语义实例计数，排除灯柱和扶手支柱。",
+      "quantity": "障碍柱数量",
+      "relation": "equal",
+      "source_quote": "five posts",
+      "target": 5,
+      "unit": "根",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N13",
+      "measurement_definition": "逐根在垂直柱轴的截面测量障碍柱实体直径。",
+      "quantity": "障碍柱直径",
+      "relation": "equal",
+      "source_quote": "0.08 m in diameter",
+      "target": 0.08,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N14",
+      "measurement_definition": "逐根测量障碍柱底部至顶部的 Z 向高度。",
+      "quantity": "障碍柱高度",
+      "relation": "equal",
+      "source_quote": "0.50 m high",
+      "target": 0.5,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N15",
+      "measurement_definition": "在路线局部横向坐标中，按声明的偏移基准测量各柱轴线的偏移或相邻轴线差，并另核对交替方向。",
+      "quantity": "障碍柱横向偏移",
+      "relation": "equal",
+      "source_quote": "alternately offset laterally by 0.40 m",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N16",
+      "measurement_definition": "沿路线纵向逐对测量相邻障碍柱间距，注明中心距或净距约定。",
+      "quantity": "障碍柱纵向间距",
+      "relation": "equal",
+      "source_quote": "spaced 0.80 m longitudinally",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N17",
+      "measurement_definition": "沿通道行进方向测量扶手通道起止位置之间的长度。",
+      "quantity": "扶手通道长度",
+      "relation": "equal",
+      "source_quote": "a 2.00 m handrail corridor",
+      "target": 2,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N18",
+      "measurement_definition": "沿通道采样横截面，测量相对的实体内侧及突出物之间的自由净宽；排除被评估机器人，计入其他设施。",
+      "quantity": "扶手通道净宽",
+      "relation": "equal",
+      "source_quote": "0.90 m clear width",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N19",
+      "measurement_definition": "从通道行走面沿 Z 方向测量栏杆高度，声明采用栏杆轴线还是表面作为高度端点。",
+      "quantity": "栏杆高度",
+      "relation": "equal",
+      "source_quote": "rails at 0.90 m",
+      "target": 0.9,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N20",
+      "measurement_definition": "在垂直栏杆轴线的截面测量杆件实体直径。",
+      "quantity": "栏杆直径",
+      "relation": "equal",
+      "source_quote": "diameter 0.04 m",
+      "target": 0.04,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N21",
+      "measurement_definition": "沿扶手逐对测量相邻支柱间距并取最大值，记录中心距或净距约定。",
+      "quantity": "扶手支柱最大间距",
+      "relation": "at_most",
+      "source_quote": "posts no more than 0.80 m apart",
+      "target": 0.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N22",
+      "measurement_definition": "依据机器人原生部件和关节几何测量声明的身高；说明是直立身高还是冻结姿态高度，不以渲染像素推断。",
+      "quantity": "机器人身高",
+      "relation": "equal",
+      "source_quote": "1.30 m tall",
+      "target": 1.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N23",
+      "measurement_definition": "依据声明的两侧肩部端点测量肩宽，注明采用关节中心还是肩部外缘。",
+      "quantity": "机器人肩宽",
+      "relation": "equal",
+      "source_quote": "0.40 m shoulder width",
+      "target": 0.4,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N24",
+      "measurement_definition": "将前脚脚尖与第一阶踏面边界投影至踏面，沿脚尖朝向测量超出支撑边界的最大距离。",
+      "quantity": "前脚脚尖悬出量",
+      "relation": "at_most",
+      "source_quote": "at most 30 mm toe overhang",
+      "target": 30,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N25",
+      "measurement_definition": "由髋、膝、踝关节或声明的骨段轴计算膝弯曲角，记录所测腿及角度定义；保留约数属性。",
+      "quantity": "膝弯曲名义角",
+      "relation": "equal",
+      "source_quote": "knee bent about 60 degrees",
+      "target": 60,
+      "unit": "degree",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 2,
+      "id": "N26",
+      "measurement_definition": "按声明的躯干纵轴，测量其在前倾平面内与正 Z 轴的夹角。",
+      "quantity": "躯干前倾角",
+      "relation": "equal",
+      "source_quote": "torso leaning 8 +/-2 degrees",
+      "target": 8,
+      "unit": "degree",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N27",
+      "measurement_definition": "按独立灯柱实例计数，排除障碍柱和扶手支柱。",
+      "quantity": "补光灯柱数量",
+      "relation": "equal",
+      "source_quote": "three 1.80 m fill-light posts",
+      "target": 3,
+      "unit": "根",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N28",
+      "measurement_definition": "逐根测量补光灯柱底部至顶部的 Z 向高度，并声明灯具是否计入端点。",
+      "quantity": "补光灯柱高度",
+      "relation": "equal",
+      "source_quote": "three 1.80 m fill-light posts",
+      "target": 1.8,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N29",
+      "measurement_definition": "在坡道左右侧分别测量横向无占用安全带宽度，计入其他设施和突出物；记录边界定义。",
+      "quantity": "坡道侧向安全余量",
+      "relation": "equal",
+      "source_quote": "leave 0.30 m safety margins beside the ramp",
+      "target": 0.3,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N30",
+      "measurement_definition": "将各台阶前沿投影至水平面，按声明的几何范围计算到路线中心线的横向距离并报告最大值。",
+      "quantity": "台阶前沿距路线中心线",
+      "relation": "at_most",
+      "source_quote": "Step fronts and posts are within 0.60 m of the course centreline.",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N31",
+      "measurement_definition": "对声明属于该要求的柱类，计算其轴线或实体范围到路线中心线的横向距离并报告最大值；明确范围及距离约定。",
+      "quantity": "柱距路线中心线",
+      "relation": "at_most",
+      "source_quote": "Step fronts and posts are within 0.60 m of the course centreline.",
+      "target": 0.6,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N32",
+      "measurement_definition": "对两脚及对应支撑实体做几何相交或有符号距离计算，沿支撑面法向测量最大穿透深度。",
+      "quantity": "脚部最大支撑面穿透",
+      "relation": "at_most",
+      "source_quote": "Foot penetration into support surfaces is at most 3 mm",
+      "target": 3,
+      "unit": "mm",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": 0.05,
+      "id": "N33",
+      "measurement_definition": "沿 Z 方向投影声明的躯干代表几何至前脚支撑平面，计算其超出前脚支撑区域的距离；区域内记零，按明确给出的容差判断。",
+      "quantity": "躯干投影超出前脚支撑区的距离",
+      "relation": "equal",
+      "source_quote": "within the front-foot support region allowing 0.05 m tolerance",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N34",
+      "measurement_definition": "计算前脚底与第一阶踏面的接触集合及最小非负分离距离；零表示接触，另查支撑区域与穿透，不将仅靠近判为接触。",
+      "quantity": "前脚底与第一阶踏面分离距离",
+      "relation": "equal",
+      "source_quote": "on the first step: front sole on the tread",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N35",
+      "measurement_definition": "计算后脚与坡道行走面的接触集合及最小非负分离距离；零表示接触，穿透上限独立检查。",
+      "quantity": "后脚与坡道分离距离",
+      "relation": "equal",
+      "source_quote": "rear foot on the ramp",
+      "target": 0,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "reference_primary": "",
+  "regions": [],
+  "semantic_checks": [
+    {
+      "id": "S01",
+      "question": "场景是否为人形机器人正在通过障碍的测试场？",
+      "source_quote": "Humanoid test track: midway through obstacles.",
+      "weight": 0.03125
+    },
+    {
+      "id": "S02",
+      "question": "测试区是否采用蓝色运动地面？",
+      "source_quote": "blue sports flooring",
+      "weight": 0.03125
+    },
+    {
+      "id": "S03",
+      "question": "测试区是否具有清晰的白色边界线？",
+      "source_quote": "white boundary lines",
+      "weight": 0.03125
+    },
+    {
+      "id": "S04",
+      "question": "路线是否依次经过坡道、台阶、间隙、交替障碍柱和扶手通道？",
+      "source_quote": "In sequence, add a 15-degree ramp 1.50 m long and 1.20 m wide with anti-slip stripes; three steps each 0.15 +/-0.005 m high and 0.30 m deep; a 0.45 m wide, 0.30 m deep gap with bevelled yellow edges; five posts 0.08 m in diameter and 0.50 m high, alternately offset laterally by 0.40 m and spaced 0.80 m longitudinally; then a 2.00 m handrail corridor",
+      "weight": 0.03125
+    },
+    {
+      "id": "S05",
+      "question": "坡道是否显示防滑条纹？",
+      "source_quote": "with anti-slip stripes",
+      "weight": 0.03125
+    },
+    {
+      "id": "S06",
+      "question": "间隙倒角边缘是否为黄色？",
+      "source_quote": "with bevelled yellow edges",
+      "weight": 0.03125
+    },
+    {
+      "id": "S07",
+      "question": "障碍柱是否沿行进方向左右交替错开？",
+      "source_quote": "alternately offset laterally by 0.40 m and spaced 0.80 m longitudinally",
+      "weight": 0.03125
+    },
+    {
+      "id": "S08",
+      "question": "扶手是否形成比普通标记路线更窄的通道？",
+      "source_quote": "except the explicitly narrower handrail passage",
+      "weight": 0.03125
+    },
+    {
+      "id": "S09",
+      "question": "人形机器人是否冻结在第一阶，前脚底支撑于踏面？",
+      "source_quote": "Freeze a humanoid, 1.30 m tall and 0.40 m shoulder width, on the first step: front sole on the tread",
+      "weight": 0.03125
+    },
+    {
+      "id": "S10",
+      "question": "机器人的后脚是否支撑在坡道上？",
+      "source_quote": "rear foot on the ramp",
+      "weight": 0.03125
+    },
+    {
+      "id": "S11",
+      "question": "冻结姿态是否具有弯膝动作？",
+      "source_quote": "knee bent about 60 degrees",
+      "weight": 0.03125
+    },
+    {
+      "id": "S12",
+      "question": "冻结姿态的躯干是否前倾？",
+      "source_quote": "torso leaning 8 +/-2 degrees",
+      "weight": 0.03125
+    },
+    {
+      "id": "S13",
+      "question": "双臂是否呈相反方向的摆臂姿态？",
+      "source_quote": "Swing arms oppositely",
+      "weight": 0.03125
+    },
+    {
+      "id": "S14",
+      "question": "头部相机是否朝向下一阶台阶？",
+      "source_quote": "point head camera toward the next step",
+      "weight": 0.03125
+    },
+    {
+      "id": "S15",
+      "question": "补光灯柱是否设置在路线外？",
+      "source_quote": "Add three 1.80 m fill-light posts, a tripod camera and start/end signs outside the route.",
+      "weight": 0.03125
+    },
+    {
+      "id": "S16",
+      "question": "三脚架相机是否设置在路线外？",
+      "source_quote": "a tripod camera and start/end signs outside the route",
+      "weight": 0.03125
+    },
+    {
+      "id": "S17",
+      "question": "是否有路线外的起点标牌？",
+      "source_quote": "start/end signs outside the route",
+      "weight": 0.03125
+    },
+    {
+      "id": "S18",
+      "question": "是否有路线外的终点标牌？",
+      "source_quote": "start/end signs outside the route",
+      "weight": 0.03125
+    },
+    {
+      "id": "S19",
+      "question": "标记路线内是否排除了未设计的额外障碍？",
+      "source_quote": "Exclude undesigned obstacles from the marked lane",
+      "weight": 0.03125
+    },
+    {
+      "id": "S20",
+      "question": "坡道两侧是否保留安全空间？",
+      "source_quote": "leave 0.30 m safety margins beside the ramp",
+      "weight": 0.03125
+    },
+    {
+      "id": "S21",
+      "question": "机器人主体是否为灰黑色？",
+      "source_quote": "Use grey-black body",
+      "weight": 0.03125
+    },
+    {
+      "id": "S22",
+      "question": "机器人关节是否为橙色？",
+      "source_quote": "orange joints",
+      "weight": 0.03125
+    },
+    {
+      "id": "S23",
+      "question": "围挡是否采用朴素外观？",
+      "source_quote": "plain barriers",
+      "weight": 0.03125
+    },
+    {
+      "id": "S24",
+      "question": "场景是否呈现均匀的高位照明与补光？",
+      "source_quote": "even high-bay/fill lighting",
+      "weight": 0.03125
+    },
+    {
+      "id": "S25",
+      "question": "主视图是否同时展现坡道、踏阶机器人和后续路线纵深？",
+      "source_quote": "Frame ramp, stepping robot and subsequent course depth.",
+      "weight": 0.03125
+    },
+    {
+      "id": "S26",
+      "question": "场景是否为静态关节姿态，且无步态模拟、跌倒或传感器可视化？",
+      "source_quote": "Static; no gait simulation, falls or sensor visualization.",
+      "weight": 0.03125
+    },
+    {
+      "id": "S27",
+      "question": "躯干竖直投影是否被明确声明为几何平衡代理，而非动态稳定性结论？",
+      "source_quote": "use the torso vertical projection as a declared geometric balance proxy, within the front-foot support region allowing 0.05 m tolerance, not a dynamic stability claim",
+      "weight": 0.03125
+    },
+    {
+      "id": "S28",
+      "question": "场景是否以可编辑实体三维部件构成，未用照片或广告板代替完整场景？",
+      "source_quote": "Do not use rendered photographs or billboards as substitutes for the complete scene.",
+      "weight": 0.03125
+    },
+    {
+      "id": "S29",
+      "question": "已指定的冻结接触是否与其他服务目标区分，服务点是否标注且未为此复制机器人？",
+      "source_quote": "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots.",
+      "weight": 0.03125
+    },
+    {
+      "id": "S30",
+      "question": "净空测量是否排除被评估机器人、计入其他设施和突出物，并提供路线采样坐标与测量约定？",
+      "source_quote": "Navigation clearance refers to the free route excluding the robot being evaluated; include all other furnishings and protrusions. Provide route sample coordinates and the measurement conventions in README.",
+      "weight": 0.03125
+    },
+    {
+      "id": "S31",
+      "question": "第二视角是否揭示关键接触和净空路线，并与主视角保持相同几何及冻结姿态？",
+      "source_quote": "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose",
+      "weight": 0.03125
+    },
+    {
+      "id": "S32",
+      "question": "几何是否采用米制和 Z 向上；若使用可达球，是否仅作为几何包络而非运动学或动力学认证？",
+      "source_quote": "Use metres and Z up. Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support. A static articulated robot pose is required; no controller, physical dynamics or manipulation trajectory is required. Represent specified joints and end-effectors geometrically. Reach spheres are geometric envelope checks, not certification of inverse-kinematic or dynamic feasibility.",
+      "weight": 0.03125
+    }
+  ],
+  "targets": []
+}

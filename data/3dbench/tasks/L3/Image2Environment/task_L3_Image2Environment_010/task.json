@@ -1,0 +1,39 @@
+{
+  "schema_version": "l3-task-package-v2",
+  "key": "l3-r02",
+  "id": "L3/RealWorldEnvironment/CoastalFerryTerminal",
+  "domain": "real_world",
+  "input_mode": "image",
+  "title": "现实：长洲渡轮码头与市场后勤区",
+  "title_en": "Cheung Chau Ferry Terminal and Market Service Area",
+  "statement_status": "ready",
+  "execution_status": "generation_ready",
+  "blockers": [],
+  "actual_input_language": "en",
+  "instructions": {
+    "en": "instruction.md",
+    "zh": "instruction.zh.md"
+  },
+  "common_contract": "COMMON.md",
+  "reference_plan": "reference_plan.json",
+  "score": null,
+  "weights": {
+    "visual_quality": 0.6,
+    "task_fidelity": 0.2,
+    "layout": 0.05,
+    "interaction": 0.15
+  },
+  "generation_status": "not_started",
+  "evaluation_status": "pending",
+  "instruction_sha256": "e14a0d4bb333747b81f007a513db92364f4bb31d77508b7f4614fcf6a792cadd",
+  "chinese_instruction_sha256": "8fdb494cdc64c7fd105e2775089b0fca034c138b4b4c91290ce6101b52c01736",
+  "reference_package": "environment/input/references.json",
+  "runtime": "runtime.json",
+  "evaluation_readiness": {
+    "status": "requires_provisioned_ue_host",
+    "implementation": "harness/L3/release",
+    "independent_collection": true
+  },
+  "source_instruction_sha256": "1ad6f5e626c473fab7bbc39fdd8144f783b46c7bdfde2b367e79f6befe5de19c",
+  "evaluation_protocol": "l3-perceptual-quality-v5"
+}

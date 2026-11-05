@@ -1,0 +1,53 @@
+{
+  "slug": "horse_head",
+  "source_url": "https://polyhaven.com/a/horse_head",
+  "author": "Tina",
+  "title": "Horse Head",
+  "license": "CC0-1.0",
+  "license_evidence": "publisher.html",
+  "files": [
+    {
+      "path": "horse_head/original/horse_head.blend",
+      "size": 374316,
+      "sha256": "19c30ad74e1c06dcd561dd35939e1d7e8bf8a1ecce8cddab58f7aa551c66faf7",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/horse_head/horse_head_1k.blend"
+    },
+    {
+      "path": "horse_head/original/textures/horse_head_diff_1k.jpg",
+      "size": 511649,
+      "sha256": "bc7409baf955bc970d7397314f2f126862aef5b8c076167902df7b5742694435",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/horse_head/horse_head_diff_1k.jpg"
+    },
+    {
+      "path": "horse_head/original/textures/horse_head_metal_1k.exr",
+      "size": 358023,
+      "sha256": "b1e69b5930fc95f913ad9636cdc15b70335b4c77a69734bb47b6c2dd88a783f9",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_metal_1k.exr"
+    },
+    {
+      "path": "horse_head/original/textures/horse_head_nor_gl_1k.exr",
+      "size": 852117,
+      "sha256": "b03b2c561a88b838a5a7687b2b0c14b7e09f30652c04805e81bb25160667616b",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_nor_gl_1k.exr"
+    },
+    {
+      "path": "horse_head/original/textures/horse_head_rough_1k.exr",
+      "size": 536575,
+      "sha256": "1cab1bd0d9ccfc6dd57cfb60f6c9e2301b98750a6698bce2544e195903f3a7aa",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/horse_head/horse_head_rough_1k.exr"
+    }
+  ],
+  "preview": {
+    "path": "horse_head/publisher-preview.png",
+    "size": 373720,
+    "sha256": "31ccf535899f24661097dac3c5197f5d45bd8d04d72b869952d052cfc89ba6a0",
+    "url": "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=768&height=768&v=271665b3"
+  },
+  "source_type": "publisher Blender asset",
+  "declared_triangles": 12068,
+  "changes": "Static evaluated geometry; uniform normalization to 1 m maximum span; new studio cameras and lighting.",
+  "candidate": "S06",
+  "replaced_title": "长筒空间望远镜",
+  "source_original_sha256": "19c30ad74e1c06dcd561dd35939e1d7e8bf8a1ecce8cddab58f7aa551c66faf7",
+  "raw_upstream_redistributed": true
+}

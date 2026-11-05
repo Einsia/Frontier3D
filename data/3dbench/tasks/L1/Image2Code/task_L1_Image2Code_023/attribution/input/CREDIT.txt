@@ -1,0 +1,7 @@
+R2D2
+Author: jesuskrisis (https://sketchfab.com/jesuskrisis)
+Source: https://sketchfab.com/3d-models/r2d2-7719d93e76ca40a5a8774f5530a7aecf
+License: CC-BY-4.0
+http://creativecommons.org/licenses/by/4.0/
+Changes: Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.
+No endorsement by the original author is implied.

@@ -1,0 +1,25 @@
+{
+  "source": "Previously authored candidate: pilot-v2/assemblies/sliding_latch",
+  "license": "CC0-1.0",
+  "adaptation": {
+    "source": "pilot-v2/assemblies/sliding_latch",
+    "license": "CC0-1.0",
+    "changes": [],
+    "review_scope": "Original candidate retained with stated fit repairs; not a manufacturing-certified mechanism."
+  },
+  "source_catalog": "assembly_catalog.py",
+  "sha256": {
+    "adaptation.json": "596d5991c7483a086b31e147a5269f65ff256db659b331f25e7d5ac602ba9457",
+    "assembled.png": "ff2d6a1dd76963a8a88b4cba70f7a60e25fc34cce1f80645cd98ab8de5fcd4c7",
+    "exploded.png": "7d0eb378ae187cbf3d862e35fc88e1b8b7dba4b0dfedf3459877b535206e7d40",
+    "front.png": "5aec7a63bad81415dc66757bcb4171b9fdaf66b6397b0857de8acf87ddcc4e6a",
+    "geometry.json": "856d58ceb7280d07aab2cc62890cecce6e3d641e6a24b6591fe0a29f7c8dbad6",
+    "LICENSE-DATA.md": "416306946faa53c5d0e4a28be2c1c0c2d004ea1bd5960a8b4e18dd68fcbefc2e",
+    "occupancy_tests.json": "f2084fb9cff40722d92ce8edb5881640bd3bf9cd91a5696d890d19e863cd2a32",
+    "qa.json": "4c2f2c5365639f5b36ea6427addac717e1e15ba08d9aea4620b455ff15b04752",
+    "scene.blend": "668929d53bd30ad42d857425ce84f5e7c934a486b0a90a8e4c3d1478ca9d1f30",
+    "scene.glb": "e7f18d9c0da1d07bf39a0654aaf94fc197b56b0a42d679ea4680a5f6de09fd3b",
+    "spec.json": "4564c28582d149f28d353a9dcb900b29869509e74120058f39fe80ca3d2dd29f",
+    "top.png": "107794f69d98939fd44df6bad19a8ec00b67ea0f47f71144dc215cb42cc15e05"
+  }
+}

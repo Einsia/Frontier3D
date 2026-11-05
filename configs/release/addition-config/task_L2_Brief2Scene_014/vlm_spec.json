@@ -1,0 +1,235 @@
+{
+  "protocol": "3dbench-l2-rubric-v2",
+  "case_id": "L2/Brief2Scene/task_L2_Brief2Scene_014",
+  "family": "Brief2Scene",
+  "instruction_sha256": "785efedd444ffa8a174189f8adce486406e2d5a4b93b813dd5cc0464c7da7d26",
+  "reference_policy": "Written public brief only; no private example.",
+  "focus": "New-task extension of legacy-detail-20261019-v2. Numeric compliance requires native measurements; never infer dimensions from perspective images.",
+  "missing_policy": "visible_evidence_credit_technical_failure_blocks_publication",
+  "anchors": {
+    "0": "Absent, wholly wrong, or no visible evidence of the required result; no credit.",
+    "1": "Weak resemblance/fulfilment (about one quarter); major omissions or pervasive defects.",
+    "2": "Partial (about half); recognizable intent but material errors in key requirements or visual quality.",
+    "3": "Mostly correct (about three quarters); concrete remaining discrepancies prevent excellent credit.",
+    "4": "Excellent: all important visible requirements satisfied, coherent and polished, no material discrepancy. Requires explicit positive evidence, not merely lack of reported faults."
+  },
+  "checks": [
+    {
+      "id": "S01",
+      "question": "场景是否呈现图书馆书架区域？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Library: high-shelf book retrieval."
+      ]
+    },
+    {
+      "id": "S02",
+      "question": "主视图是否从低角度斜向观察场景？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "seen obliquely from a low angle"
+      ]
+    },
+    {
+      "id": "S03",
+      "question": "书架是否为单面钢制书架？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "A one-sided steel shelf"
+      ]
+    },
+    {
+      "id": "S04",
+      "question": "各层是否放有色彩克制的书籍？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Fill shelves with restrained-colour books"
+      ]
+    },
+    {
+      "id": "S05",
+      "question": "顶层是否可见与目标书关联的书脊间隙？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "On the top level show a 0.03 m spine gap associated with the target book."
+      ]
+    },
+    {
+      "id": "S06",
+      "question": "升降柱机器人是否居中位于书架前方？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Centre a lifting-column robot in front"
+      ]
+    },
+    {
+      "id": "S07",
+      "question": "末端臂是否保持水平？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "a horizontal end arm"
+      ]
+    },
+    {
+      "id": "S08",
+      "question": "双指夹爪是否实际夹住目标书脊？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Its two-finger gripper grips the target spine"
+      ]
+    },
+    {
+      "id": "S09",
+      "question": "目标书是否部分抽出书架前沿并相对邻书保持直立？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "extracts the book 40 +/-5 mm beyond the shelf front while preserving its upright orientation within 2 degrees of neighbouring books"
+      ]
+    },
+    {
+      "id": "S10",
+      "question": "前置接收托盘是否开口向上且位于目标书中心下方？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "A front receiving tray opens upward, its opening centre aligned beneath the book centre"
+      ]
+    },
+    {
+      "id": "S11",
+      "question": "通道两端是否连通形成循环路线？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Connect both aisle ends into a loop"
+      ]
+    },
+    {
+      "id": "S12",
+      "question": "净通路是否排除被评机器人并计入其他家具和凸出物？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Navigation clearance refers to the free route excluding the robot being evaluated; include all other furnishings and protrusions."
+      ]
+    },
+    {
+      "id": "S13",
+      "question": "升降范围及固定向上工具偏移是否能几何覆盖顶部取书与底部还书服务位置？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Use a 0.15-2.05 m lift stroke and a fixed 0.15 m upward tool-reference offset to reach both the 2.20 m top target and 0.30 m bottom return position."
+      ]
+    },
+    {
+      "id": "S14",
+      "question": "书架是否设有暖色照明？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Use warm shelf lights"
+      ]
+    },
+    {
+      "id": "S15",
+      "question": "书脊是否呈米色？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "beige spines"
+      ]
+    },
+    {
+      "id": "S16",
+      "question": "机器人是否呈深灰色？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "dark-grey robot"
+      ]
+    },
+    {
+      "id": "S17",
+      "question": "构图是否同时展示升降柱、部分抽出的书和空位？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Frame the lift column, partially extracted book and empty position."
+      ]
+    },
+    {
+      "id": "S18",
+      "question": "机器人是否保持静态关节姿态，且无翻页或升降动画？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Static; no page turning or lift animation.\n\nUse metres and Z up. Build editable, solid three-dimensional geometry with separable semantic components, meaningful thickness and plausible support. A static articulated robot pose is required"
+      ]
+    },
+    {
+      "id": "S19",
+      "question": "冻结接触是否与其他服务目标区分，服务点是否有标注且未放置重复机器人？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Keep specified frozen contacts distinct from other service targets; label service points in the scene/README without placing duplicate robots."
+      ]
+    },
+    {
+      "id": "S20",
+      "question": "第二透视视图是否展示关键接触和净空路线，并与主视图保持相同几何及冻结姿态？",
+      "dimension": "instruction_following",
+      "weight": 0.03,
+      "units": [
+        "Render alternate.png from a second perspective camera chosen to expose the critical contacts and clearance routes; follow any suggested alternate view when useful. Both views must show the same geometry and frozen pose"
+      ]
+    },
+    {
+      "id": "aesthetic_0",
+      "question": "作者构图、视觉层级与可读性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "作者构图、视觉层级与可读性"
+      ]
+    },
+    {
+      "id": "aesthetic_1",
+      "question": "光照、阴影与色彩协调",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "光照、阴影与色彩协调"
+      ]
+    },
+    {
+      "id": "aesthetic_2",
+      "question": "形体、材质和连接细节的完成度",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "形体、材质和连接细节的完成度"
+      ]
+    },
+    {
+      "id": "aesthetic_3",
+      "question": "整体设计与呈现的一致性",
+      "dimension": "aesthetics",
+      "weight": 0.1,
+      "units": [
+        "整体设计与呈现的一致性"
+      ]
+    }
+  ],
+  "localization": null
+}

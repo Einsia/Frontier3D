@@ -1,0 +1,31 @@
+{
+  "uid": "99af7daa5baf450ea7b809937937e6d5",
+  "name": "Camel",
+  "source_url": "https://sketchfab.com/3d-models/camel-99af7daa5baf450ea7b809937937e6d5",
+  "author": {
+    "displayName": "eb78",
+    "profileUrl": "https://sketchfab.com/E.A.Cornell"
+  },
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "c3fb0ac7a8df8ff5e68094e6d54cd1cf839a297207efbe1adf3fb5c601f65b8c",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras. Baked the evaluated source pose at frame 1; source animation omitted from the static task. Excluded importer-generated armature custom display shapes before pose baking; these objects are absent from the original GLB mesh nodes. Recomputed normalization and reference cameras from real source geometry.",
+  "addition": true,
+  "excluded_importer_helpers": [
+    {
+      "name": "Icosphere",
+      "vertices": 42,
+      "faces": 80,
+      "reason": "Importer-generated armature custom display shape"
+    }
+  ]
+}

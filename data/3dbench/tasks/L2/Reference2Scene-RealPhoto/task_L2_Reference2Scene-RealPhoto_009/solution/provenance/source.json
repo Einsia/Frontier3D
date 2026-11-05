@@ -1,0 +1,30 @@
+{
+  "title": "旋转木马的马匹、立杆与灯饰",
+  "source_urls": [
+    "https://pixabay.com/images/download/lianasmithbautista-carousel-1301291_1920.jpg"
+  ],
+  "document_revision": 902,
+  "license": {
+    "label": "Pixabay Content License",
+    "url": "https://pixabay.com/service/license-summary/",
+    "restrictions": "No standalone redistribution; retain as an attributed and annotated benchmark task context. No CC0 claim. Other third-party rights may apply."
+  },
+  "images": [
+    {
+      "view": 1,
+      "path": "environment/input/reference.png",
+      "sha256": "761589699c2d192e426fd8a745b13a054f0ab76a0c6d3ac14c343779d660269b",
+      "size": [
+        1280,
+        960
+      ],
+      "original_document_token": "JGiSbOg7No49s4x7B4gc0IERnDc"
+    }
+  ],
+  "camera_calibration": null,
+  "has_3d_ground_truth": false,
+  "public_views": [
+    1
+  ],
+  "private_views": []
+}

@@ -1,0 +1,286 @@
+{
+  "task_id": "L1/Image2Code/task_L1_Image2Code_020",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Image2Code",
+  "level": 1,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "primary/glb",
+    "seed-0/native",
+    "seed-0/glb",
+    "seed-1/native",
+    "seed-1/glb",
+    "seed-2/native",
+    "seed-2/glb"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/21bf97793b994ebc70e5/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/4d4aacc6dc57790effac/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/76df00bc9d7232e0bdc3/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/solution/reference/main.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/solution/reference/front.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/solution/reference/side.png",
+      "sha256": "@recompute"
+    },
+    {
+      "path": "@repo/data/3dbench/tasks/L1/Image2Code/task_L1_Image2Code_020/solution/reference/top.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "r_bell",
+      "label": "喇叭口与收窄颈部",
+      "weight": 0.3,
+      "polygon": [
+        [
+          0.12,
+          0.635
+        ],
+        [
+          0.17,
+          0.531
+        ],
+        [
+          0.281,
+          0.433
+        ],
+        [
+          0.415,
+          0.369
+        ],
+        [
+          0.458,
+          0.378
+        ],
+        [
+          0.472,
+          0.411
+        ],
+        [
+          0.429,
+          0.529
+        ],
+        [
+          0.45,
+          0.594
+        ],
+        [
+          0.484,
+          0.664
+        ],
+        [
+          0.456,
+          0.716
+        ],
+        [
+          0.371,
+          0.661
+        ],
+        [
+          0.283,
+          0.631
+        ],
+        [
+          0.178,
+          0.672
+        ],
+        [
+          0.135,
+          0.661
+        ]
+      ]
+    },
+    {
+      "id": "r_coils",
+      "label": "主体盘管及前方回弯",
+      "weight": 0.35,
+      "polygon": [
+        [
+          0.433,
+          0.644
+        ],
+        [
+          0.467,
+          0.476
+        ],
+        [
+          0.501,
+          0.408
+        ],
+        [
+          0.636,
+          0.375
+        ],
+        [
+          0.698,
+          0.393
+        ],
+        [
+          0.766,
+          0.46
+        ],
+        [
+          0.81,
+          0.568
+        ],
+        [
+          0.798,
+          0.697
+        ],
+        [
+          0.743,
+          0.772
+        ],
+        [
+          0.641,
+          0.809
+        ],
+        [
+          0.549,
+          0.793
+        ],
+        [
+          0.461,
+          0.751
+        ]
+      ]
+    },
+    {
+      "id": "r_valves",
+      "label": "银色阀门和操纵机构",
+      "weight": 0.25,
+      "polygon": [
+        [
+          0.515,
+          0.483
+        ],
+        [
+          0.603,
+          0.507
+        ],
+        [
+          0.691,
+          0.548
+        ],
+        [
+          0.789,
+          0.591
+        ],
+        [
+          0.777,
+          0.694
+        ],
+        [
+          0.685,
+          0.744
+        ],
+        [
+          0.635,
+          0.728
+        ],
+        [
+          0.53,
+          0.658
+        ],
+        [
+          0.499,
+          0.622
+        ]
+      ]
+    },
+    {
+      "id": "r_mouthpiece",
+      "label": "吹嘴及竖直引管",
+      "weight": 0.1,
+      "polygon": [
+        [
+          0.803,
+          0.285
+        ],
+        [
+          0.844,
+          0.285
+        ],
+        [
+          0.836,
+          0.319
+        ],
+        [
+          0.824,
+          0.369
+        ],
+        [
+          0.822,
+          0.455
+        ],
+        [
+          0.819,
+          0.569
+        ],
+        [
+          0.804,
+          0.569
+        ],
+        [
+          0.809,
+          0.444
+        ],
+        [
+          0.809,
+          0.366
+        ],
+        [
+          0.811,
+          0.316
+        ]
+      ]
+    }
+  ],
+  "native_content_checks": [
+    {
+      "id": "n_span",
+      "source_quote": "a maximum overall span of 1.000 m with 2% tolerance, excluding cameras and lights",
+      "quantity": "整体最大跨度",
+      "unit": "m",
+      "relation": "equal",
+      "target": 1.0,
+      "upper": null,
+      "explicit_tolerance": 0.02,
+      "measurement_definition": "在最终静态姿态下，将乐器几何变换到以米计的世界坐标，排除相机和灯光；求世界轴对齐包围盒三个轴向长度的最大值，与标称1.000 m比较。explicit_tolerance为原文2%的相对容差。"
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

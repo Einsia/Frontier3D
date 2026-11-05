@@ -1,0 +1,156 @@
+{
+  "version": "reference-boxes-v1",
+  "task_id": "L2/Reference2Scene/task_L2_Reference2Scene-008",
+  "policy": {
+    "pair_weights": {
+      "iou": 0.5,
+      "center": 0.3,
+      "size": 0.2
+    },
+    "center_tolerance_diagonal": 0.25,
+    "nms_iou": 0.5,
+    "confidence_threshold": 0.25,
+    "max_detections_per_query": 20,
+    "extra_detection_penalty": "reference_count/max(reference_count,candidate_count)"
+  },
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "42178ddfa40f9ab14f36fec7eb1d1fa8e92e62ea3204b046894fb81406a1cce5",
+  "image_size": [
+    800,
+    450
+  ],
+  "detector": {
+    "model": "IDEA-Research/grounding-dino-tiny",
+    "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+    "files": {
+      "README.md": "cf46f74c7b6850f1d5cbe406028324d8798148726016d46a69a365b4a2d3e89f",
+      "added_tokens.json": "909e96cb32d92ce728a01bc99850cbba26196d74115c17ebeb019275412588f2",
+      "config.json": "eec82c5ab66e16df12a9a212e68ac011779927c2536cf9078658e35d85f0c67a",
+      "model.safetensors": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3",
+      "preprocessor_config.json": "8454179ba95e2ad22947835aad7b45862a601fc0055ab88bf1ee70892d3aea60",
+      "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "tokenizer_config.json": "d40ab645b68211910b9170d22433d43186a6ec8ee6fd10ba170524b25bf4fb56",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    "runtime": {
+      "torch": "2.9.1+cpu",
+      "transformers": "4.57.3"
+    },
+    "device": "cpu",
+    "threads": 4,
+    "worker_version": "l2-grounding-dino-v5",
+    "uniform_max_channel_range": 1,
+    "query_mode": "joint_phrase_spans_argmax",
+    "threshold": 0.25,
+    "text_threshold": 0.25,
+    "use_fast": false,
+    "short_edges": [
+      800
+    ],
+    "fingerprint": "009b5156445bf55a45637133525eb97fa724bd1f9c298973ba3500a996938cfe"
+  },
+  "context_queries": [],
+  "targets": [
+    {
+      "id": "arch",
+      "label": "拱门",
+      "query": "archway",
+      "weight": 0.4,
+      "boxes": [
+        [
+          0.329,
+          0.226,
+          0.556,
+          0.729
+        ]
+      ],
+      "review_status": "pending",
+      "review_note": "完整中央拱门包围框（含拱顶与可见通道），不把拱顶另计；识别器仍拆框，诊断不计分。"
+    },
+    {
+      "id": "shelves",
+      "label": "货架",
+      "query": "shelf",
+      "weight": 0.35,
+      "boxes": [
+        [
+          0.0,
+          0.0,
+          0.043,
+          1.0
+        ],
+        [
+          0.04,
+          0.425,
+          0.166,
+          0.7
+        ],
+        [
+          0.209,
+          0.308,
+          0.294,
+          0.831
+        ],
+        [
+          0.721,
+          0.35,
+          0.814,
+          0.691
+        ],
+        [
+          0.875,
+          0.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "review_status": "pending",
+      "review_note": "五个可见开放陈列架，含左右截断前景架与远处架；排除落地钟、封闭柜和单独立柱。仍有漏检及单层/整体拆分。"
+    },
+    {
+      "id": "lamps",
+      "label": "吊灯",
+      "query": "pendant lamp",
+      "weight": 0.25,
+      "boxes": [
+        [
+          0.4328006362915039,
+          0.28872233072916664,
+          0.4619336318969727,
+          0.37622399224175346
+        ],
+        [
+          0.614842414855957,
+          0.12179364522298176,
+          0.6603679656982422,
+          0.28292178683810765
+        ],
+        [
+          0.7467101287841796,
+          0.010564885669284397,
+          0.8201314544677735,
+          0.14642593383789063
+        ],
+        [
+          0.036255836486816406,
+          0.13316485087076824,
+          0.12262710571289062,
+          0.3338828870985243
+        ]
+      ],
+      "review_status": "approved",
+      "review_note": "参考图逐项核对；只批准可见实例。检测器误检仍需独立样本校准。"
+    }
+  ],
+  "reviewed_by": "assistant_reference_visual_review_2026-10-09_refinement",
+  "review_kind": "reference_only_refinement_pilot",
+  "proposal_sha256": "820df9a1aa3085f9f598aa6d29bd768d8a73a5673b5086ff16d4e9dff7160eac",
+  "definitions_sha256": "558fa8daf9822182be1997c0a9c8f7f4b3fb775fe2a78cddb698d188d678b4f6",
+  "formal_score_eligible": false,
+  "proposal_detector_fingerprint": "741d93dddea1a9eb00c64f8dac30b978ceddb64c83ce5ab3c60c0e006715e20a",
+  "detector_revision_note": "Explicit mean token scores over frozen phrases with class/context competition. Single scale; larger detector and two-scale alternatives were rejected after reference-only review.",
+  "scoring_profile": "l2-reference-localized-v5.2.0",
+  "previous_annotation_sha256": "62411910745fc2dbac45686957ea0ed0607158709b1eaf972e1a2fcc500fc5ed",
+  "public_scope": "Reference boxes cover visible image extents, not inferred hidden geometry. Only the listed key objects enter localization; other scene content remains in the appearance component. Archway is the whole central arch-and-opening envelope. Shelves are five open display units, including clipped foreground units and distant visible units; clocks, closed cabinets and isolated posts are excluded. These classes await detector calibration."
+}

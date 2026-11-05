@@ -1,0 +1,362 @@
+{
+  "version": "l2-v2.2.0",
+  "profile": "L2",
+  "mode": "text",
+  "required_artifacts": [
+    "solution.py",
+    "scene.blend",
+    "main.png",
+    "alternate.png",
+    "README.md"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "checks": {
+    "content": [
+      {
+        "id": "content_01",
+        "metric": "equals",
+        "group": "content_01",
+        "params": {
+          "path": "/manual/content_01",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_02",
+        "metric": "equals",
+        "group": "content_02",
+        "params": {
+          "path": "/manual/content_02",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_03",
+        "metric": "equals",
+        "group": "content_03",
+        "params": {
+          "path": "/manual/content_03",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_04",
+        "metric": "equals",
+        "group": "content_04",
+        "params": {
+          "path": "/manual/content_04",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_05",
+        "metric": "equals",
+        "group": "content_05",
+        "params": {
+          "path": "/manual/content_05",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_06",
+        "metric": "equals",
+        "group": "content_06",
+        "params": {
+          "path": "/manual/content_06",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_07",
+        "metric": "equals",
+        "group": "content_07",
+        "params": {
+          "path": "/manual/content_07",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_08",
+        "metric": "equals",
+        "group": "content_08",
+        "params": {
+          "path": "/manual/content_08",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_09",
+        "metric": "equals",
+        "group": "content_09",
+        "params": {
+          "path": "/manual/content_09",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "content_10",
+        "metric": "equals",
+        "group": "content_10",
+        "params": {
+          "path": "/manual/content_10",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "real_geometry",
+        "metric": "equals",
+        "group": "real_geometry",
+        "params": {
+          "path": "/scene/has_real_geometry",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "spatial": [
+      {
+        "id": "alternate_relationship",
+        "metric": "l2_case_camera_pair",
+        "group": "alternate_relationship",
+        "params": {
+          "mode": "orbit",
+          "degrees": 25,
+          "tolerance": 0.25
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "explicit_layout_dimensions",
+        "metric": "equals",
+        "group": "explicit_layout_dimensions",
+        "params": {
+          "path": "/manual/explicit_layout_dimensions",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "physics": [
+      {
+        "id": "support_clearance",
+        "metric": "equals",
+        "group": "support_clearance",
+        "params": {
+          "path": "/manual/support_clearance",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "visual": [
+      {
+        "id": "main_native_size",
+        "metric": "equals",
+        "group": "main_native_size",
+        "params": {
+          "path": "/artifacts/main.png/size",
+          "expected": [
+            1200,
+            1000
+          ]
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "main_png",
+        "metric": "equals",
+        "group": "main_png",
+        "params": {
+          "path": "/artifacts/main.png/format",
+          "expected": "PNG"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "alternate_native_size",
+        "metric": "equals",
+        "group": "alternate_native_size",
+        "params": {
+          "path": "/artifacts/alternate.png/size",
+          "expected": [
+            1200,
+            1000
+          ]
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "alternate_png",
+        "metric": "equals",
+        "group": "alternate_png",
+        "params": {
+          "path": "/artifacts/alternate.png/format",
+          "expected": "PNG"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "appearance",
+        "metric": "equals",
+        "group": "appearance",
+        "params": {
+          "path": "/manual/appearance",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "structure": [
+      {
+        "id": "engine",
+        "metric": "equals",
+        "group": "engine",
+        "params": {
+          "path": "/scene/render/engine",
+          "expected": "CYCLES"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "view_transform",
+        "metric": "equals",
+        "group": "view_transform",
+        "params": {
+          "path": "/scene/render/view_transform",
+          "expected": "AgX"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "exposure",
+        "metric": "numeric",
+        "group": "exposure",
+        "params": {
+          "path": "/scene/render/exposure",
+          "expected": 0.0,
+          "tolerance": 1e-06
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "gamma",
+        "metric": "numeric",
+        "group": "gamma",
+        "params": {
+          "path": "/scene/render/gamma",
+          "expected": 1.0,
+          "tolerance": 1e-06
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "metres",
+        "metric": "equals",
+        "group": "metres",
+        "params": {
+          "path": "/scene/unit_system",
+          "expected": "METRIC"
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "unit_scale",
+        "metric": "numeric",
+        "group": "unit_scale",
+        "params": {
+          "path": "/scene/unit_scale",
+          "expected": 1.0,
+          "tolerance": 1e-06
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "editable",
+        "metric": "equals",
+        "group": "editable",
+        "params": {
+          "path": "/scene/all_editable",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      },
+      {
+        "id": "public_qualifications_01",
+        "metric": "equals",
+        "group": "public_qualifications_01",
+        "params": {
+          "path": "/manual/public_qualifications_01",
+          "expected": true
+        },
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ],
+    "robust": [
+      {
+        "id": "seed_execution",
+        "metric": "seed_success",
+        "group": "seed_execution",
+        "params": {},
+        "role": "standard",
+        "pass_threshold": 1
+      }
+    ]
+  },
+  "reference_images": {},
+  "critical_constraints": [
+    "alternate_relationship",
+    "main_native_size",
+    "main_png",
+    "alternate_native_size",
+    "alternate_png",
+    "engine",
+    "view_transform",
+    "exposure",
+    "gamma",
+    "metres",
+    "unit_scale"
+  ],
+  "scene": "scene.blend",
+  "render_views": []
+}

@@ -1,0 +1,35 @@
+{
+  "index": 5,
+  "key": "seven_stars",
+  "title": "Seven Stars Brick Lane",
+  "source_url": "https://sketchfab.com/3d-models/seven-stars-brick-lane-9a16438ddcd34a51a9e3b04e0ab04be7",
+  "slot": 2,
+  "excluded": false,
+  "source_file": "sources/seven_stars/seven_stars_brick_lane.glb",
+  "sha256": "b1d86026146f476dfdf92c184544e1f357fd9c1d7284f14f8d9db170d4f06dfb",
+  "bytes": 89709276,
+  "task_path": "tasks/L2/Reference2Scene/task_L2_Reference2Scene-002",
+  "embedded_attribution": {
+    "author": "artfletch (https://sketchfab.com/artfletch)",
+    "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+    "source": "https://sketchfab.com/3d-models/seven-stars-brick-lane-9a16438ddcd34a51a9e3b04e0ab04be7",
+    "title": "Seven Stars Brick Lane"
+  },
+  "uid": "9a16438ddcd34a51a9e3b04e0ab04be7",
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "author": {
+    "displayName": "artfletch",
+    "profileUrl": "https://sketchfab.com/artfletch",
+    "username": "artfletch"
+  },
+  "resource_family": "sketchfab/9a16438ddcd34a51a9e3b04e0ab04be7",
+  "author_name": "artfletch",
+  "preparation": "../../../../../../curation/l2-refresh-20261011/authoring/build_scene.py"
+}

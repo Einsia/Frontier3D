@@ -1,0 +1,23 @@
+# Task metadata; requirements live in instruction.md.
+version = 1
+id = "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008"
+level = 1
+category = "Image2Code-SingleView"
+title = "RED 8K 摄影机"
+difficulty = "hard"
+status = "ready_for_review"
+instruction = "instruction.md"
+review_instruction = "instruction.zh.md"
+environment = "environment"
+solution = "solution"
+harness = "harness"
+harness_status = "mvp"
+resource_family = "sketchfab/e1127f2c8d4d4d65b9608ff3714890bc"
+environment_files = ["input/reference.png"]
+submission_root = "output"
+submission_files = ["output/solution.py", "output/scene.blend", "output/scene.glb", "output/main.png", "output/README.md"]
+entrypoint = "output/solution.py"
+
+# Stable provenance across release numbering.
+source_task_id = "L1/Image2Code-SingleView/task_L1_Image2Code-SingleView_008"
+release_id = "3DBench-048"

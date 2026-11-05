@@ -1,0 +1,600 @@
+{
+  "version": "continuous-task-plan-v1",
+  "release_id": "continuous-20261016-v2",
+  "task_id": "L1/Text2Code/task_L1_Text2Code_014",
+  "title": "平面曲线矩形扫掠件",
+  "category": "Text2Code",
+  "profile": "text-continuous-80-20-v1",
+  "weights": {
+    "Q": 0.8,
+    "E": 0.2
+  },
+  "physics_scoring": false,
+  "registration": "fixed_format_conversion_only",
+  "public_references": [],
+  "measurements": [
+    {
+      "id": "semantic_interpolated_path",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "中心线位于XZ平面，按顺序插值(0,0,0)/(0,0,10.348767)/(11.4975,0,20.995524)/(15.5835,0,21.221145)/(16.821,0,42.57) mm；非周期C2、弦长参数、无指定端切线，OCC GeomAPI_Interpolate容差0.000001 mm；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_rectangular_section",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "沿路径扫掠9.3×6.9 mm居中矩形，起始位于原点XY面，9.3沿X/6.9沿Y；截面深度始终平行Y；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_sweep_transport",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "采用corrected-Frenet传输且无附加扭转，保留四条纵向锐边、无圆角、封闭两端；不以多个长方块串接替代；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_surface_accuracy",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "全部尺寸和表面位置误差≤0.15 mm；中间近邻插值点造成的弯曲须保留；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "semantic_materials",
+      "component": "Q",
+      "weight": 0.12,
+      "question": "蓝灰金属材料；相机和背景不作为隐藏匹配目标；本项评价角色、真实形态、指定材质或任务关系；精确数值由对应原生条款单独测量。",
+      "method": "visual_coverage_deviation",
+      "measurement_rule": "按声明视角和题目条款记录覆盖 c 与已实现部分偏差 e，q=c(1-e)；不推断精确尺寸；置信度单列。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {},
+      "collector_status": "agentic_protocol_ready"
+    },
+    {
+      "id": "numeric_interpolated_path",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "中心线位于XZ平面，按顺序插值(0,0,0)/(0,0,10.348767)/(11.4975,0,20.995524)/(15.5835,0,21.221145)/(16.821,0,42.57) mm；非周期C2、弦长参数、无指定端切线，OCC GeomAPI_Interpolate容差0.000001 mm",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "interpolated_path",
+        "public_requirement": "中心线位于XZ平面，按顺序插值(0,0,0)/(0,0,10.348767)/(11.4975,0,20.995524)/(15.5835,0,21.221145)/(16.821,0,42.57) mm；非周期C2、弦长参数、无指定端切线，OCC GeomAPI_Interpolate容差0.000001 mm",
+        "legacy_check_bindings": [
+          {
+            "id": "native_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "native_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_rectangular_section",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "沿路径扫掠9.3×6.9 mm居中矩形，起始位于原点XY面，9.3沿X/6.9沿Y；截面深度始终平行Y",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "rectangular_section",
+        "public_requirement": "沿路径扫掠9.3×6.9 mm居中矩形，起始位于原点XY面，9.3沿X/6.9沿Y；截面深度始终平行Y",
+        "legacy_check_bindings": [
+          {
+            "id": "section_depth",
+            "metric": "dimension_match",
+            "group": "dimensions",
+            "params": {
+              "path": "/scene/dimensions",
+              "axes": [
+                1
+              ],
+              "expected": [
+                0.0069
+              ],
+              "tolerance": "dimension_m"
+            }
+          },
+          {
+            "id": "native_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "native_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_sweep_transport",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "采用corrected-Frenet传输且无附加扭转，保留四条纵向锐边、无圆角、封闭两端；不以多个长方块串接替代",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 1",
+      "parameters": {
+        "requirement_id": "sweep_transport",
+        "public_requirement": "采用corrected-Frenet传输且无附加扭转，保留四条纵向锐边、无圆角、封闭两端；不以多个长方块串接替代",
+        "legacy_check_bindings": [
+          {
+            "id": "native_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "native_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "numeric_surface_accuracy",
+      "component": "Q",
+      "weight": 0.1,
+      "question": "全部尺寸和表面位置误差≤0.15 mm；中间近邻插值点造成的弯曲须保留",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "requirement_id": "surface_accuracy",
+        "public_requirement": "全部尺寸和表面位置误差≤0.15 mm；中间近邻插值点造成的弯曲须保留",
+        "legacy_check_bindings": [
+          {
+            "id": "native_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "native_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/native_sweep",
+              "scene": "/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_surface",
+            "metric": "swept_bar",
+            "group": "sweep_surface",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "surface"
+            },
+            "pass_threshold": 1.0
+          },
+          {
+            "id": "glb_sweep_section_dimensions",
+            "metric": "swept_bar",
+            "group": "sweep_section_dimensions",
+            "params": {
+              "path": "/numeric_checks/glb_sweep",
+              "scene": "/artifacts/scene.glb/scene",
+              "design": {
+                "width_m": 0.0093,
+                "depth_m": 0.0069,
+                "tolerance_m": 0.00015,
+                "reference_path": "harness/sweep_reference/reference_v1.json",
+                "reference_sha256": "7f542c6daf642bf6063088bdb7dd10a416f2dc324ef39835ff184349389e020d"
+              },
+              "feature": "section_dimensions"
+            },
+            "pass_threshold": 1.0
+          }
+        ],
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "normalization": "public allowed error interval; half-scale=stated tolerance, count half-scale=1",
+        "coordinate_policy": "task datum; free origins use relative distances without fitting"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_editable_part",
+      "component": "E",
+      "weight": 0.2,
+      "question": "一件闭合、连通、独立可编辑真实三维零件，不要求装配或爆炸动画",
+      "method": "preserved_fraction",
+      "measurement_rule": "按冻结的保护属性/语义部件检查保留比例；连续属性使用误差核，离散设置仅在必须完全一致时使用相等判断；真实缺失计0。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_topology",
+      "component": "E",
+      "weight": 0.2,
+      "question": "所有零件闭合且分别连通",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_solid_validity",
+      "component": "E",
+      "weight": 0.2,
+      "question": "有效实体零件",
+      "method": "defect_fraction",
+      "measurement_rule": "逐声明部件统计拓扑/曲面缺陷面积占比，q=1-缺陷比例；对象划分不改变语义分母，正常锐边不作为缺陷。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_glb_assembled",
+      "component": "E",
+      "weight": 0.2,
+      "question": "GLB与原生静态实体的几何、单位及可表达材质一致",
+      "method": "soft_surface_fscore",
+      "measurement_rule": "在声明区域按三角面面积采样，双向查询对方完整三角表面；距离除以冻结半分尺度，P/R为2^(-d/lambda)均值，q=2PR/(P+R)；固定种子，无配准。",
+      "source": "instruction.md paragraph 3",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    },
+    {
+      "id": "structure_units",
+      "component": "E",
+      "weight": 0.2,
+      "question": "米制导出、Z向上；按本题0.15 mm尺寸/表面位置容差判定",
+      "method": "normalized_error_kernel",
+      "measurement_rule": "从 evaluated mesh/原生参数提取各声明量；允许范围内误差为0，范围外误差除以冻结半分尺度，q=mean(2^(-e/lambda))；保留每个原始量及单位。",
+      "source": "instruction.md paragraph 2",
+      "parameters": {
+        "tolerances": {
+          "dimension_m": 0.00015
+        },
+        "sample_count": 32768,
+        "random_seed": 20261016,
+        "frames": [
+          1
+        ],
+        "surface_scope": "same candidate native/export geometry; no private example target"
+      },
+      "collector_status": "raw_collector_validation_required"
+    }
+  ],
+  "system_validity": [
+    "execution",
+    "required_readable_artifacts",
+    "real_geometry",
+    "integrity",
+    "independent_reproduction"
+  ],
+  "formal_score_eligible": false,
+  "design_status": "case_specific_design_complete",
+  "execution_status": "collector_and_evidence_validation_required",
+  "source_bindings": {
+    "instruction.md": "6c60dee5ff74619288c1e80946578f19f1cb68fa27f418450615ed7e5d8dbf14",
+    "task.toml": "44aaa91d28fe224aea2f80e27a585dea5cbdb79506bc28f021612b53d74f11b7",
+    "harness/eval_spec.json": "cc0c8b5c38f362b7ff7d75df3b54a9c0f43c007500e29002d3f982b376492803"
+  },
+  "source_requirement_dispositions": {
+    "editable_part": "E",
+    "interpolated_path": "Q",
+    "rectangular_section": "Q",
+    "sweep_transport": "Q",
+    "surface_accuracy": "Q",
+    "topology": "E",
+    "solid_validity": "E",
+    "glb_readable": "system_evidence_only",
+    "glb_assembled": "E",
+    "reconstruction": "system_evidence_only",
+    "instructions": "system_evidence_only",
+    "units": "E",
+    "materials": "Q",
+    "review_view": "system_evidence_only",
+    "procedural_materials": "system_evidence_only",
+    "seed_quality": "system_evidence_only"
+  },
+  "geometry_gt_policy": "Text has multiple valid solutions; measure public constraints and candidate cross-format consistency; private example whole-shape score excluded.",
+  "native_execution_contract": "native_contract.json",
+  "implementation_status": "in_progress_not_ready_for_full_scoring"
+}

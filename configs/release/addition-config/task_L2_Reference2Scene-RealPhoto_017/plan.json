@@ -1,0 +1,482 @@
+{
+  "task_id": "L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017",
+  "source_batch": "new-tasks-20261019-v1",
+  "scoring_version": "legacy-detail-20261019-v2",
+  "adaptation": "new-task-extension",
+  "category": "Reference2Scene-RealPhoto",
+  "level": 2,
+  "weights": {
+    "main_image": 0.5,
+    "localization": 0.2,
+    "vlm": 0.2,
+    "detail": 0.1
+  },
+  "detail_variants": [
+    "primary/native",
+    "seed-0/native",
+    "seed-1/native",
+    "seed-2/native"
+  ],
+  "detail_aggregation": "minimum over complete required variant population",
+  "baseline_population": "accepted canonical candidate",
+  "judge_model": "gpt-6-astra",
+  "judge_effort": "medium",
+  "rules": {
+    "path": "@resource/objects/910f31517d6e97217de2/rules.json",
+    "sha256": "@recompute"
+  },
+  "acceptance": {
+    "path": "@resource/objects/83664933e75ef5b428cc/accepted.json",
+    "sha256": "@recompute"
+  },
+  "instruction": {
+    "path": "@resource/objects/7366bef167153e2d3495/instruction.md",
+    "sha256": "@recompute"
+  },
+  "references": [
+    {
+      "path": "@repo/data/3dbench/tasks/L2/Reference2Scene-RealPhoto/task_L2_Reference2Scene-RealPhoto_017/environment/input/reference.png",
+      "sha256": "@recompute"
+    }
+  ],
+  "regions": [
+    {
+      "id": "R01",
+      "label": "盘子可见盘面与盘沿",
+      "polygon": [
+        [
+          0.001,
+          0.29
+        ],
+        [
+          0.16,
+          0.122
+        ],
+        [
+          0.36,
+          0.051
+        ],
+        [
+          0.63,
+          0.061
+        ],
+        [
+          0.85,
+          0.184
+        ],
+        [
+          0.979,
+          0.365
+        ],
+        [
+          0.999,
+          0.52
+        ],
+        [
+          0.999,
+          0.863
+        ],
+        [
+          0.932,
+          0.999
+        ],
+        [
+          0.028,
+          0.999
+        ],
+        [
+          0.001,
+          0.958
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R02",
+      "label": "牛排切片序列",
+      "polygon": [
+        [
+          0.351,
+          0.004
+        ],
+        [
+          0.469,
+          0.027
+        ],
+        [
+          0.499,
+          0.112
+        ],
+        [
+          0.591,
+          0.151
+        ],
+        [
+          0.6,
+          0.311
+        ],
+        [
+          0.57,
+          0.404
+        ],
+        [
+          0.617,
+          0.53
+        ],
+        [
+          0.587,
+          0.734
+        ],
+        [
+          0.537,
+          0.925
+        ],
+        [
+          0.32,
+          0.953
+        ],
+        [
+          0.292,
+          0.879
+        ],
+        [
+          0.296,
+          0.666
+        ],
+        [
+          0.255,
+          0.514
+        ],
+        [
+          0.302,
+          0.424
+        ],
+        [
+          0.278,
+          0.227
+        ],
+        [
+          0.32,
+          0.154
+        ],
+        [
+          0.316,
+          0.067
+        ]
+      ],
+      "weight": 0.3
+    },
+    {
+      "id": "R03",
+      "label": "烤番茄",
+      "polygon": [
+        [
+          0.649,
+          0.236
+        ],
+        [
+          0.697,
+          0.182
+        ],
+        [
+          0.788,
+          0.17
+        ],
+        [
+          0.851,
+          0.214
+        ],
+        [
+          0.871,
+          0.303
+        ],
+        [
+          0.849,
+          0.407
+        ],
+        [
+          0.791,
+          0.46
+        ],
+        [
+          0.712,
+          0.454
+        ],
+        [
+          0.655,
+          0.409
+        ],
+        [
+          0.638,
+          0.319
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R04",
+      "label": "芦笋",
+      "polygon": [
+        [
+          0.589,
+          0.657
+        ],
+        [
+          0.701,
+          0.507
+        ],
+        [
+          0.859,
+          0.345
+        ],
+        [
+          0.885,
+          0.306
+        ],
+        [
+          0.903,
+          0.309
+        ],
+        [
+          0.903,
+          0.357
+        ],
+        [
+          0.977,
+          0.312
+        ],
+        [
+          0.902,
+          0.441
+        ],
+        [
+          0.81,
+          0.538
+        ],
+        [
+          0.744,
+          0.689
+        ],
+        [
+          0.693,
+          0.796
+        ],
+        [
+          0.652,
+          0.773
+        ],
+        [
+          0.67,
+          0.699
+        ],
+        [
+          0.615,
+          0.725
+        ]
+      ],
+      "weight": 0.15
+    },
+    {
+      "id": "R05",
+      "label": "右下土豆配菜",
+      "polygon": [
+        [
+          0.708,
+          0.548
+        ],
+        [
+          0.75,
+          0.504
+        ],
+        [
+          0.815,
+          0.5
+        ],
+        [
+          0.855,
+          0.54
+        ],
+        [
+          0.885,
+          0.613
+        ],
+        [
+          0.871,
+          0.692
+        ],
+        [
+          0.819,
+          0.734
+        ],
+        [
+          0.754,
+          0.717
+        ],
+        [
+          0.716,
+          0.656
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R06",
+      "label": "左侧酱汁",
+      "polygon": [
+        [
+          0.085,
+          0.589
+        ],
+        [
+          0.115,
+          0.403
+        ],
+        [
+          0.148,
+          0.343
+        ],
+        [
+          0.213,
+          0.31
+        ],
+        [
+          0.268,
+          0.319
+        ],
+        [
+          0.314,
+          0.391
+        ],
+        [
+          0.32,
+          0.45
+        ],
+        [
+          0.258,
+          0.509
+        ],
+        [
+          0.296,
+          0.579
+        ],
+        [
+          0.293,
+          0.704
+        ],
+        [
+          0.315,
+          0.744
+        ],
+        [
+          0.269,
+          0.865
+        ],
+        [
+          0.214,
+          0.891
+        ],
+        [
+          0.134,
+          0.877
+        ],
+        [
+          0.086,
+          0.771
+        ]
+      ],
+      "weight": 0.1
+    },
+    {
+      "id": "R07",
+      "label": "肉与蔬菜之间的叶状配饰",
+      "polygon": [
+        [
+          0.531,
+          0.354
+        ],
+        [
+          0.579,
+          0.376
+        ],
+        [
+          0.645,
+          0.345
+        ],
+        [
+          0.66,
+          0.473
+        ],
+        [
+          0.689,
+          0.553
+        ],
+        [
+          0.72,
+          0.641
+        ],
+        [
+          0.672,
+          0.724
+        ],
+        [
+          0.657,
+          0.699
+        ],
+        [
+          0.67,
+          0.629
+        ],
+        [
+          0.601,
+          0.646
+        ],
+        [
+          0.601,
+          0.538
+        ],
+        [
+          0.648,
+          0.483
+        ],
+        [
+          0.593,
+          0.476
+        ],
+        [
+          0.564,
+          0.438
+        ]
+      ],
+      "weight": 0.1
+    }
+  ],
+  "native_content_checks": [
+    {
+      "explicit_tolerance": null,
+      "id": "N01",
+      "measurement_definition": "在场景原生几何中识别盘子的完整外缘，在盘面内测量外径，并使用场景单位读取米制长度；不从图像像素估算。",
+      "quantity": "盘子直径",
+      "relation": "equal",
+      "source_quote": "Use a 0.28 m plate diameter as the task scale convention",
+      "target": 0.28,
+      "unit": "m",
+      "upper": null
+    },
+    {
+      "explicit_tolerance": null,
+      "id": "N02",
+      "measurement_definition": "读取主相机与备用相机的世界位置，将位置差转换到主相机局部坐标系，测量沿局部正 X 方向的位移；方向保持与旋转、镜头一致性另行检查。",
+      "quantity": "备用相机沿主相机局部正 X 的位移",
+      "relation": "equal",
+      "source_quote": "translate 0.03 m to its right along local X",
+      "target": 0.03,
+      "unit": "m",
+      "upper": null
+    }
+  ],
+  "score_ready": false,
+  "remaining_evidence": [
+    "system-validity gates",
+    "all required seed/export detail measurements"
+  ]
+}

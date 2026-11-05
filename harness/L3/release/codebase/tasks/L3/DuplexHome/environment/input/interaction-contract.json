@@ -1,0 +1,236 @@
+{
+  "schema": "l3-public-interaction-v1",
+  "task_key": "l3-e01",
+  "units": "cm, degrees, seconds",
+  "zones": [
+    "kitchen",
+    "dining_corner",
+    "utility_room",
+    "hall",
+    "garden_store"
+  ],
+  "initial_state": "Washer idle, empty and closed; both garments on utility shelf; bottle contains three doses.",
+  "entities": [
+    {
+      "id": "door.room.01",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "door.room.02",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "drawer.01",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "drawer.02",
+      "role": "drawer",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "cupboard.01",
+      "role": "cupboard",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "cupboard.02",
+      "role": "cupboard",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "fridge.door",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed",
+      "argument": ""
+    },
+    {
+      "id": "washer.door",
+      "role": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "initial": "closed; unlocked",
+      "argument": ""
+    },
+    {
+      "id": "washer.controls",
+      "role": "appliance",
+      "actions": [
+        "start",
+        "add_detergent"
+      ],
+      "initial": "idle; empty; zero detergent",
+      "argument": "detergent bottle entity ID"
+    },
+    {
+      "id": "tap.kitchen",
+      "role": "tap",
+      "actions": [
+        "on",
+        "off"
+      ],
+      "initial": "off",
+      "argument": ""
+    },
+    {
+      "id": "garment.01",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "utility shelf",
+      "argument": ""
+    },
+    {
+      "id": "garment.02",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "utility shelf",
+      "argument": ""
+    },
+    {
+      "id": "item.plate",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "kitchen counter",
+      "argument": ""
+    },
+    {
+      "id": "item.cup",
+      "role": "movable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "dining table",
+      "argument": ""
+    },
+    {
+      "id": "item.detergent",
+      "role": "consumable",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "utility shelf; 3 doses",
+      "argument": ""
+    },
+    {
+      "id": "item.garden_tool",
+      "role": "tool",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "hall",
+      "argument": ""
+    },
+    {
+      "id": "basket.laundry",
+      "role": "container",
+      "actions": [
+        "pick_up",
+        "drop",
+        "put_into",
+        "take_out"
+      ],
+      "initial": "utility room; empty",
+      "argument": ""
+    },
+    {
+      "id": "storage.dishes",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    },
+    {
+      "id": "storage.garden",
+      "role": "receptacle",
+      "actions": [
+        "put_into",
+        "take_out"
+      ],
+      "initial": "empty",
+      "argument": ""
+    }
+  ],
+  "inventory_keys": [
+    "detergent_doses"
+  ],
+  "operation_arguments": {
+    "pick_up": "empty",
+    "drop": "JSON {position_cm:[x,y,z]} or empty for a valid nearby placement",
+    "put_into": "destination receptacle EntityId",
+    "take_out": "item EntityId",
+    "set_value": "JSON numeric value in declared units"
+  },
+  "physical_requirements": [
+    "Manual and API operations share gameplay code.",
+    "Real geometry, collision, carried-load support and persistent object identity are required.",
+    "Reject invalid reach, occlusion, prerequisites, capacity and repeated-consumption operations.",
+    "Do not teleport or reset during the end-to-end activity."
+  ],
+  "workflow_specification": "instruction.md / End-to-end activity"
+}

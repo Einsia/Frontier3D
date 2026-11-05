@@ -1,0 +1,78 @@
+{
+  "version": "reference-regions-v1",
+  "task_id": "L1/Image2Code/task_L1_Image2Code_006",
+  "reference_path": "environment/input/reference.png",
+  "reference_sha256": "ea058ad3cad8ee20c06cc1c6d5f917652557d6e52ce069e153c307b75eeb6677",
+  "annotation_origin": "Reference-only AI instance calibration, no benchmark candidate used",
+  "regions": [
+    {
+      "id": "part_1_1",
+      "label": "spinning wheel assembly 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.257,
+          0.215
+        ],
+        [
+          0.7,
+          0.215
+        ],
+        [
+          0.7,
+          0.898
+        ],
+        [
+          0.257,
+          0.898
+        ]
+      ]
+    },
+    {
+      "id": "part_2_1",
+      "label": "large spoked wheel 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.257,
+          0.231
+        ],
+        [
+          0.527,
+          0.231
+        ],
+        [
+          0.527,
+          0.633
+        ],
+        [
+          0.257,
+          0.633
+        ]
+      ]
+    },
+    {
+      "id": "part_3_1",
+      "label": "pedal and support frame 1",
+      "weight": 0.3333333333333333,
+      "polygon": [
+        [
+          0.257,
+          0.379
+        ],
+        [
+          0.676,
+          0.379
+        ],
+        [
+          0.676,
+          0.898
+        ],
+        [
+          0.257,
+          0.898
+        ]
+      ]
+    }
+  ]
+}

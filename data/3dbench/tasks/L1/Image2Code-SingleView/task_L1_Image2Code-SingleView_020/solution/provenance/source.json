@@ -1,0 +1,19 @@
+{
+  "uid": "e9d617bbd0834af3b3a69aa712736c93",
+  "name": "watch-AO",
+  "source_url": "https://sketchfab.com/3d-models/watch-ao-e9d617bbd0834af3b3a69aa712736c93",
+  "author": {
+    "displayName": "voxelpoint",
+    "profileUrl": "https://sketchfab.com/voxelpoint"
+  },
+  "license": {
+    "label": "CC-BY-4.0",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "document_url": "https://ccnawh1pxwn1.feishu.cn/wiki/Pxa5w7qq3iTDudkxfd8cGoOOnug",
+  "document_revision": 741,
+  "source_sha256": "8b8dd223a4542af2661c95bc8b1f0eadcdc4278dc53e5bbaaa9eeaee4e57f63b",
+  "download_method": "User downloaded through browser; copied without changes",
+  "changes": "Imported official GLB; packed textures; normalized the maximum span to 1 m; added new studio lighting and reference cameras.",
+  "addition": true
+}
