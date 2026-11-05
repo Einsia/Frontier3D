@@ -2,7 +2,7 @@
 
 [English](../en/experiment.md) · [文档导航](README.md)
 
-生成与测评统一使用[主CLI](../../README.md#generate-and-evaluate-one-task)。先选择[模型与执行器](models.md)，配置生成和裁判服务，以单题检查环境后再扩大到全量campaign。
+生成与测评统一使用[主CLI](../installation.md#generate-and-evaluate-one-task)。先选择[模型与执行器](models.md)，配置生成和裁判服务，以单题检查环境后再扩大到全量campaign。
 
 ## L1/L2预算与重试
 
@@ -24,7 +24,7 @@
 
 ## L3流程
 
-L3使用相同的`python -m benchmark`入口，内部遵循单独的完整交付流程。3,600秒是目标时长，不是生成硬超时；继续运行循环不继承L1/L2的6次尝试上限。Harbor题包分别声明24小时agent、24小时verifier和1小时环境构建上限，记录时分别注明。候选生成与独立测评使用各自可写的UE引擎副本，配置见[L3安装说明](../../README.md#configure-l3-ue)。
+L3使用相同的`python -m benchmark`入口，内部遵循单独的完整交付流程。3,600秒是目标时长，不是生成硬超时；继续运行循环不继承L1/L2的6次尝试上限。Harbor题包分别声明24小时agent、24小时verifier和1小时环境构建上限，记录时分别注明。候选生成与独立测评使用各自可写的UE引擎副本，配置见[L3安装说明](../installation.md#configure-l3-ue)。
 
 ## 恢复运行
 

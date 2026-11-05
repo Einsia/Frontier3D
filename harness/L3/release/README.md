@@ -2,7 +2,7 @@
 
 L3 installation, environment configuration, asset preparation, generation,
 evaluation, resume and CSV export are documented in the
-[root README](../../../README.md#configure-l3-ue). Use the same
+[installation guide](../../../docs/installation.md#configure-l3-ue). Use the same
 `python -m benchmark` interface for L1, L2 and L3. `run.py` is an internal adapter
 for the nested L3 source layout; users do not need a separate entry point.
 

@@ -1,7 +1,8 @@
 # Orchestrator
 
 Public end-to-end entry point: python -m benchmark run --task TASK --output runs/NAME.
-See the root README for installation, configuration, batch execution and resume.
+See [installation and running](../docs/installation.md) for installation,
+configuration, batch execution and resume.
 
 The modules in this directory manage model-visible task staging, bounded model
 calls, first-success source selection, isolated Blender execution, fresh seeds,

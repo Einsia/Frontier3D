@@ -41,11 +41,11 @@ OpenAI兼容端点可能只支持其中部分API。生成使用`OPENAI_MODEL`、
 Claude、Qwen、MiniMax和Doubao使用Claude Code 2.1.268。适配器会去除Messages基址
 末尾的`/v1`。本机可用`GENERATOR_CLAUDE_BIN`指定CLI，Docker使用
 `GENERATOR_CLAUDE_DOCKER_IMAGE`。L3把所选CLI安装到外部`L3_NATIVE_CLI`目录。
-安装命令及其他覆盖项见[安装说明](../../README.md#install)。
+安装命令及其他覆盖项见[安装说明](../installation.md#install)。
 
 ## 运行选项
 
-按[主README](../../README.md#model-harnesses)中的固定版本安装所选CLI。本机可执行文件覆盖项为：
+按[安装与运行指南](../installation.md#model-harnesses)中的固定版本安装所选CLI。本机可执行文件覆盖项为：
 
 | Harness ID | 可执行文件变量 |
 | --- | --- |

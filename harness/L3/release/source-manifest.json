@@ -2007,13 +2007,13 @@
     },
     {
       "path": "harness/L3/release/README.md",
-      "bytes": 2522,
-      "sha256": "ef3c84916419d431e0e856043c588743f2eaa5913b149ee5e1402956ad222f70"
+      "bytes": 2540,
+      "sha256": "93ebfe8b6e9e4e3d2a48c6f33d0976f5e429afcac7d930fc97906193dffc0e5d"
     },
     {
       "path": "harness/L3/release/codebase/README.md",
-      "bytes": 629,
-      "sha256": "89b30397f5289871b516e47a4522dd5c55d11f6f3170a543117cc16d3017038c"
+      "bytes": 647,
+      "sha256": "fd29a58e7014f62e15dab736967b987f061eda1e491b5a91264fe9fb6fe958ab"
     },
     {
       "path": "harness/L3/release/codebase/benchmarks/l3/assets/README.md",
@@ -2222,8 +2222,8 @@
     },
     {
       "path": "harness/L3/release/codebase/harness/L3/README.md",
-      "bytes": 472,
-      "sha256": "83a014242ca46de8a734bd5a792b888efd0976c506b16f6120d25af3c402d14e"
+      "bytes": 494,
+      "sha256": "dfcc1a440c7d1ccf718fb98437f0dfa32760703242955b62b9dc9040deaf9a1e"
     },
     {
       "path": "harness/L3/release/codebase/harness/L3/Suite/__init__.py",

@@ -1,7 +1,7 @@
 # Contributing
 
 Use an isolated run directory. Install requirements-dev.txt and run
-python -m pytest. Follow README validation before changing task contracts.
+python -m pytest. Follow [validation](docs/installation.md#validate) before changing task contracts.
 
 Keep generation inputs limited to the task's environment_files allowlist.
 Never send hidden reference solutions, evaluator rules, or scores to a generator.

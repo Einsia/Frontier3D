@@ -2,8 +2,9 @@
 
 [English](../README.md)
 
-安装、生成、渲染和测评统一使用[主README](../../README.md)中的
-`python -m benchmark`命令。英文为默认版本，核心文档提供对应中文版。
+安装、生成、渲染和测评见[安装与运行指南](../installation.md)，统一使用
+`python -m benchmark`命令。[主README](../../README.md)介绍项目概况和引用信息。
+英文为默认版本，核心文档提供对应中文版。
 
 | 文档 | 中文 | English |
 | --- | --- | --- |
@@ -25,7 +26,7 @@
 | L1/L2 | Blender 5.2.1及候选执行Docker镜像 |
 | L3 | 已获许可的UE 5.8.3、分别可写的候选和测评引擎副本、NVIDIA/Vulkan、外部CLI目录及校验后的素材库 |
 
-命令见[安装说明](../../README.md#install)和[L3配置](../../README.md#configure-l3-ue)。
+命令见[安装说明](../installation.md#install)和[L3配置](../installation.md#configure-l3-ue)。
 各执行器的API要求见[模型配置](models.md)。未知候选使用Docker运行；
 本机执行使用宿主机权限，详见[安全说明](../../SECURITY.md)。
 

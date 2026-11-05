@@ -6,4 +6,4 @@ L3 has 5 Text2Environment tasks and 10 Image2Environment tasks, based on the pub
 
 Use [collection.json](collection.json) for current task IDs, release numbers and manifest paths, and [the task guide](../../../docs/en/tasks.md) for numbering and 30/30/40 aggregation. L1/L2 source attribution is included in each attribution/CREDITS and [the attribution index](../../../docs/reference/task-attribution-index.json).
 
-Run from the repository root with python -m benchmark list, generate, evaluate or run. See [the main README](../../../README.md) for installation and batch commands. Only the final 145 tasks are distributed.
+Run from the repository root with python -m benchmark list, generate, evaluate or run. See [installation and running](../../../docs/installation.md) for installation and batch commands. Only the final 145 tasks are distributed.

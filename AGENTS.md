@@ -2,7 +2,7 @@
 
 Use the repository root and `python -m benchmark` for public generation and
 evaluation. The release contains 145 tasks: 65 L1, 65 L2, and 15 L3. Start with
-the installation and configuration steps in [README.md](README.md); detailed
+the installation and configuration steps in [docs/installation.md](docs/installation.md); detailed
 documents are in [docs/README.md](docs/README.md).
 
 ## Check a new checkout
@@ -54,7 +54,7 @@ python -m benchmark run --task L1/Text2Code/task_L1_Text2Code_001 \
 
 Use `--level 3` for UE checks. L3 requires the licensed engine, separate writable
 candidate/evaluator engine copies, NVIDIA/Vulkan, and locked offline libraries
-described in README. An unfiltered `--all` includes L3.
+described in [L3 setup](docs/installation.md#configure-l3-ue). An unfiltered `--all` includes L3.
 
 Keep `GENERATOR_RUNTIME=docker` for measured candidates. Only task requirements,
 declared assets and runtime interfaces belong in model input. Grading notes and

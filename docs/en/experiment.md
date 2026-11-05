@@ -2,7 +2,7 @@
 
 [中文](../cn/experiment.md) · [Documentation](../README.md)
 
-Use the [main CLI](../../README.md#generate-and-evaluate-one-task) for generation and evaluation. Choose a [model and harness](models.md), configure generation and judge providers, and start with one task before a full campaign.
+Use the [main CLI](../installation.md#generate-and-evaluate-one-task) for generation and evaluation. Choose a [model and harness](models.md), configure generation and judge providers, and start with one task before a full campaign.
 
 ## L1/L2 budgets and retries
 
@@ -24,7 +24,7 @@ Generation and evaluation have separate clocks. The 24-hour setting constrains t
 
 ## L3 workflow
 
-L3 uses the same `python -m benchmark` entry point and a separate native complete-delivery workflow. Its 3,600-second target is not a hard generation timeout. The continuation loop does not inherit the L1/L2 six-attempt limit. Harbor task packages separately declare 24-hour agent, 24-hour verifier and one-hour environment-build timeouts. Record these separately. Candidate generation and independent measurement use separate writable UE engines; see [L3 setup](../../README.md#configure-l3-ue).
+L3 uses the same `python -m benchmark` entry point and a separate native complete-delivery workflow. Its 3,600-second target is not a hard generation timeout. The continuation loop does not inherit the L1/L2 six-attempt limit. Harbor task packages separately declare 24-hour agent, 24-hour verifier and one-hour environment-build timeouts. Record these separately. Candidate generation and independent measurement use separate writable UE engines; see [L3 setup](../installation.md#configure-l3-ue).
 
 ## Resume
 

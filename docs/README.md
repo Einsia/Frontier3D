@@ -2,8 +2,9 @@
 
 [中文](cn/README.md)
 
-Start with the [repository README](../README.md) for installation and the unified
+Start with [installation and running](installation.md) for setup and the unified
 `python -m benchmark` commands for generation, rendering and evaluation.
+The [repository README](../README.md) introduces the benchmark and its citation.
 English is the default; the core guides have matching Chinese editions.
 
 | Guide | English | 中文 |
@@ -27,7 +28,7 @@ indexes are grouped in [reference/](reference/README.md).
 | L1/L2 | Blender 5.2.1 and the candidate-execution Docker image |
 | L3 | Licensed UE 5.8.3, separate writable candidate/evaluator engines, NVIDIA/Vulkan, an external CLI prefix and verified asset libraries |
 
-The [installation guide](../README.md#install) and [L3 setup](../README.md#configure-l3-ue)
+The [installation guide](installation.md#install) and [L3 setup](installation.md#configure-l3-ue)
 provide the commands. API requirements vary by [harness](en/models.md). Use Docker
 for untrusted candidates; local execution uses host permissions. See [Security](../SECURITY.md).
 

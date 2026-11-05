@@ -45,11 +45,11 @@ Claude, Qwen, MiniMax and Doubao use Claude Code 2.1.268. The adapter removes
 a trailing `/v1` from the Messages base URL. Host overrides include
 `GENERATOR_CLAUDE_BIN`; Docker uses `GENERATOR_CLAUDE_DOCKER_IMAGE`. L3 installs
 the selected CLI in the external `L3_NATIVE_CLI` prefix. Installation and other
-executable overrides are in the [setup guide](../../README.md#install).
+executable overrides are in the [setup guide](../installation.md#install).
 
 ## Runtime options
 
-Install only the selected CLI using the pinned packages in the [main README](../../README.md#model-harnesses). Host executable overrides are:
+Install only the selected CLI using the pinned packages in the [installation guide](../installation.md#model-harnesses). Host executable overrides are:
 
 | Harness ID | Executable variable |
 | --- | --- |
