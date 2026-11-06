@@ -1,5 +1,10 @@
 # Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds
 
+<p align="center">
+  <a href="https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square" alt="Paper PDF" /></a>
+  <a href="https://lab.einsia.ai/frontier3dbench"><img src="https://img.shields.io/badge/Project%20Page-Website-315F85?style=flat-square" alt="Project Page" /></a>
+</p>
+
 ![Frontier3DBench overview: 145 tasks across objects, scenes, and interactive open worlds, with the model leaderboard](docs/img/main.png)
 
 Frontier3DBench evaluates coding agents on executable 3D creation, from individual
@@ -43,21 +48,13 @@ reference-source attribution remain outside candidate workspaces.
 
 If you use Frontier3DBench, please cite:
 
-**Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds**
-
-Xinjie Lin<sup>∗</sup>, Qingle Liu<sup>∗</sup>, Wenyi Li<sup>∗</sup>, John Lam,
-Xiaoqiu Wang, Deyao Hong, Mingju Gao, Zheng Jiang, Yizhe Chi, Youjie Zheng,
-Calvin Xiao<sup>‡</sup>, Kaisen Yang<sup>‡</sup>, Huan-ang Gao<sup>‡</sup>
-
-Navers Lab, Einsia.AI, Tsinghua University
-
-<sup>∗</sup> Equal Contribution · <sup>‡</sup> Corresponding Authors
-
 ```bibtex
-@misc{frontier3dbench,
-  title = {{Frontier3DBench}: Benchmarking Coding Agents for {3D} Creation across Objects, Scenes, and Interactive Open Worlds},
+@misc{lin2026frontier3dbench,
+  title = {Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds},
   author = {Lin, Xinjie and Liu, Qingle and Li, Wenyi and Lam, John and Wang, Xiaoqiu and Hong, Deyao and Gao, Mingju and Jiang, Zheng and Chi, Yizhe and Zheng, Youjie and Xiao, Calvin and Yang, Kaisen and Gao, Huan-ang},
-  url = {https://github.com/Einsia/Frontier3D}
+  year = {2026},
+  url = {https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf},
+  note = {Preprint}
 }
 ```
 
