@@ -27,7 +27,7 @@ from PIL import Image
 
 from src.agent_judge.protocol import read_json as read
 
-from src.evaluator.legacy_detail import ratio
+from src.evaluator.legacy_detail import ratio, require_full_population
 
 from src.evaluator.legacy_detail_v2 import VERSION
 
@@ -61,6 +61,7 @@ def validate_baseline_artifact(name, pointer, primary, judge):
 
 def validate_detail(plan, spec, detail):
     population = plan['detail_variants']
+    require_full_population(detail, population)
     if set(detail['judge_runs']) != set(population):
         raise ValueError('Complete detail population required')
     scores = {}

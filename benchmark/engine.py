@@ -84,6 +84,7 @@ def initialize(root, model, effort, tasks, options):
         "task_source":str(tasks), "scoring_version":"legacy-detail-20261019-v2",
         "provider_transport":settings.get("VLM_BASE_URL") or settings.get("OPENAI_BASE_URL", ""),
         "detail_measurement_profile":"detail-only-v1",
+        "detail_variant_policy":"full-frozen-population-v1",
         "detail_invocation_profile":"detail-single-round-cached-v1",
         "detail_variant_workers":1, "judge_model":judge_model(),
         "generation_policy":binding(options),

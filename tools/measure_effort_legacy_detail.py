@@ -44,7 +44,7 @@ from src.agent_judge.detail_spec import project_detail_spec
 
 from src.agent_judge.protocol import read_json as read,digest
 
-from src.evaluator.legacy_detail import detail_from_mixed_criteria as detail_from_criteria
+from src.evaluator.legacy_detail import detail_from_mixed_criteria as detail_from_criteria, require_full_population
 
 from tools.evaluate_linear_candidate import artifact_variants,exported_scene,atomic,pin
 
@@ -121,13 +121,6 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
                          if pair['candidate']=='candidate/main.png'),1) if native_atoms else 1
     if selected_variants is None:
         measured_population = population
-        # LEGACY_DETAIL_VARIANT_LIMIT caps how many variants are judged, keeping the
-        # output in legacy_detail/detail.json so finalize() finds it unchanged.
-        # Variants are ordered: primary/native, primary/glb, seed-N/native, seed-N/glb …
-        # A limit of 2 keeps only the primary seed's native and glb renders.
-        limit = int(os.environ.get('LEGACY_DETAIL_VARIANT_LIMIT', '0')) or len(population)
-        if limit < len(population):
-            measured_population = population[:limit]
     else:
         if not selected_variants or len(selected_variants) != len(set(selected_variants)):
             raise ValueError('Screening variant subset must be nonempty and distinct')
@@ -180,6 +173,8 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
     if (folder/output_name).exists():
         saved=read(folder/output_name)
         if saved['source_bindings']!=binding:raise ValueError('Cached detail evidence changed')
+        if selected_variants is None:
+            require_full_population(saved, population)
         if selected_variants is not None and saved.get('measured_variants') != measured_population:
             raise ValueError('Cached screening variant subset changed; use a separate output root')
         for pointer in saved.get('judge_runs',{}).values():
@@ -300,8 +295,7 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
     if selected_variants is None:
         result={**detail,'source_bindings':binding,'judge_runs':provenance,
             'judge_model':judge_model(),'judge_effort':'medium',
-            # Record the judged subset so finalize() replays the same arithmetic.
-            # Equal to population unless LEGACY_DETAIL_VARIANT_LIMIT narrowed it.
+            # Formal measurements always cover the complete frozen population.
             'required_variants':population,'measured_variants':measured_population}
         if native_provenance: result['native_runs']=native_provenance
         if preparation_failures: result['preparation_failures']=preparation_failures

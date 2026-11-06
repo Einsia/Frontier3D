@@ -16,7 +16,7 @@ from tools.experiment_identity import tested_model
 
 from src.agent_judge.protocol import read_json as read
 
-from src.evaluator.legacy_detail import replace_connection,detail_from_mixed_criteria as detail_from_criteria
+from src.evaluator.legacy_detail import replace_connection,detail_from_mixed_criteria as detail_from_criteria,require_full_population
 
 from src.evaluator.legacy_detail_v2 import TASK_RULES,VERSION
 
@@ -73,14 +73,8 @@ def finalize(root,task_id):
                 raise ValueError('Projected detail criteria, weights or evidence changed')
         elif bindings.get('measurement_profile') is not None:
             raise ValueError('Detail measurement profile lacks its frozen rubric')
-        # measure_effort_legacy_detail records the full contract population in
-        # 'required_variants' and the subset it actually judged in
-        # 'measured_variants' (narrowed by LEGACY_DETAIL_VARIANT_LIMIT). Replay
-        # against the measured subset so a deliberate narrowing stays verifiable
-        # instead of failing as an incomplete population.
-        measured=detail.get('measured_variants') or population
-        if set(measured)-set(population):
-            raise ValueError('Measured detail variant outside the contract population')
+        require_full_population(detail, population)
+        measured=population
         failures=detail.get('preparation_failures',{})
         if set(detail.get('judge_runs',{})) & set(failures): raise ValueError('Variant has both judge and preparation zero')
         if set(detail.get('judge_runs',{})) | set(failures) !=set(measured):

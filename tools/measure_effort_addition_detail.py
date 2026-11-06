@@ -112,6 +112,9 @@ def run(root, task_id, *, profile=None, output_folder=None):
             saved = read(folder / output_name)
             if saved['source_bindings'] != bindings:
                 raise ValueError('Cached detail evidence changed')
+            if profile is None:
+                from src.evaluator.legacy_detail import require_full_population
+                require_full_population(saved, population)
             if profile is not None and saved.get('measured_variants') != measured_population:
                 raise ValueError('Cached screening subset changed')
             for pointer in saved['judge_runs'].values():
@@ -178,7 +181,8 @@ def run(root, task_id, *, profile=None, output_folder=None):
                     'measured_variants': measured_population})
         result = {**aggregate(spec, scores, measured_population), 'task_id': task_id,
                   'source_bindings': bindings, 'judge_runs': provenance,
-                  'judge_model': config.model, 'judge_effort': config.effort}
+                  'judge_model': config.model, 'judge_effort': config.effort,
+                  'required_variants': population, 'measured_variants': measured_population}
         if profile is not None:
             result.update(measurement_status=result['status'], status='screening',
                           screening_score=result.pop('score'), required_variants=population,

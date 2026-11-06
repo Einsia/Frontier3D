@@ -92,6 +92,8 @@ def finalize(root, task_id, row):
     for name in ('response', 'measurement_manifest', 'catalogue'):
         pin(numeric[name]['path'], numeric[name]['sha256'])
     data = numeric_data_score(numeric, plan)
+    if data['score'] is None:
+        raise ValueError('Numeric measurement incomplete: ' + ', '.join(data['missing_checks']))
     components = {'vlm': judge.get('S_vlm'), 'data': data['score']}
     if baseline['components'] != {'vlm': components['vlm'], 'data': None}:
         raise ValueError('Baseline arithmetic changed')

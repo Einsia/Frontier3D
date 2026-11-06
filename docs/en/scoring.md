@@ -54,7 +54,7 @@ Compute a complete detail value for each variant, then take the minimum variant.
 - Extensions normally use the corresponding eight L1 or four L2 variants.
 - `detail-only-v1` limits each judge checklist to counted atoms while preserving their definitions and weights. It does not reduce the variant population.
 
-The public CLI uses the full frozen population. Lower-level screening and variant-limit options produce diagnostic subsets; inspect `required_variants` and `measured_variants` before comparing results.
+The public CLI uses the full frozen population. `LEGACY_DETAIL_VARIANT_LIMIT` has no effect on formal measurements. Explicit lower-level screening options produce separate diagnostic subsets; cached subsets cannot be reused or finalized as formal results. Inspect `required_variants` and `measured_variants` before comparing results.
 
 ## Task-specific overrides
 
@@ -74,7 +74,7 @@ Each atom uses `coverage * (1 - deviation)`. These overrides judge the bound bas
 | Result | Score treatment |
 | --- | --- |
 | Measured content defect, wrong proportions, absent required detail or poor exposure | Related quality terms can be low or zero; preserve other measured terms and fixed weights |
-| Confirmed required-delivery violation, such as an unloadable scene or forbidden dependency | May produce `score_valid=false`, `system_invalid` and `S_core=0`; inspect the specific gate |
+| Confirmed required-delivery violation, such as an unloadable scene or forbidden dependency | `score_valid=false`, `system_invalid` and `S_core=0`; include zero in the fixed task population and level mean |
 | API failure, corrupt/missing technical evidence, binding mismatch or unimplemented measurement | Preserve missingness (`S_core=null` or `technical_failure`) and retain evidence |
 | Signature, seed or submitted-image difference | Record a diagnostic and apply the route's evidence policy |
 
@@ -86,7 +86,7 @@ Reference-texture checks trace active material, world and compositor nodes, pack
 
 The [candidate policy](../../configs/evaluation/candidate-robustness-v1.json) permits zeroing only affected checks with confirmed candidate-caused undefined content. It excludes API, filesystem, provenance and interrupted-infrastructure failures. Unknown crashes need diagnosis. Keep the original measurement snapshot and recovery reason.
 
-Every positive-weight component requires a finite measurement. Do not fill technical failures with zero, redistribute missing detail weight or select the best judge retry. The extension Brief contract credits only `satisfied` entries over the fixed `native_content_checks` population; other accepted statuses remain in its denominator and unresolved list. A failed or unbound review still blocks output.
+Every positive-weight component requires a finite measurement. Do not fill technical failures with zero, redistribute missing detail weight or select the best judge retry. The extension Brief contract credits only `satisfied` entries over the fixed `native_content_checks` population; `violated`, `partial` and `observed` entries retain zero credit in that denominator. A `not_measurable` entry blocks the data component and final score, following the original missing-measurement policy. A failed or unbound review also blocks output.
 
 ## Example and interpretation
 

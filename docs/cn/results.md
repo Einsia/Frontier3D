@@ -62,7 +62,7 @@ python -m benchmark export --output runs/my-model-contract
 python -m benchmark summarize --scores runs/my-model-contract/scores.csv --output runs/combined
 ~~~
 
-`scores.csv`保存有限最终分数、状态、有效性、effort、报告路径与哈希，缺测／非有限值不导出；无效测量不进入加权总分。`summary.json/mean`是已导出行的无权诊断均分。完整发布总分位于`leaderboard.csv`和`weighted-summary.json`，使用[各层全部题均分](tasks.md#成绩汇总)，模型／effort分别成组。
+`scores.csv`保存有限最终分数、状态、有效性、effort、报告路径与哈希。确认交付失败（`system_invalid`、`S_core=0`）的零分保留在导出结果中，并计入固定题目总体。技术故障及缺测／非有限值不导出，完整总分保持缺测。CSV导出与加权汇总采用相同的纳入规则。`summary.json/mean`是已导出行的无权诊断均分。完整发布总分位于`leaderboard.csv`和`weighted-summary.json`，使用[各层全部题均分](tasks.md#成绩汇总)，模型／effort分别成组。
 
 `--resume`复用前检查已接受源码和缓存报告。定位失败时保留生成、运行和裁判日志。源码或证据哈希不符需查明原因，配置变化时创建新campaign。
 

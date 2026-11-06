@@ -53,12 +53,52 @@ def test_l3_harbor_scores_map_to_the_continuous_release_ids(tmp_path):
                   {'model':'qwen','effort':'xhigh','task_id':'L3/Image2Environment/task_L3_Image2Environment_001','score_100':20.}]
 
 
-def test_effort_groups_never_mix_and_invalid_measurements_are_not_zero(tmp_path):
+def test_effort_groups_never_mix_and_confirmed_delivery_zero_is_included(tmp_path):
     path=tmp_path/'efforts.csv'
     path.write_text('model,effort,task_key,score_100,status,score_valid\nqwen3.8-max,xhigh,l3-e01,40,measured,true\nqwen3.8-max,max,l3-e01,60,measured,true\nqwen3.8-max,xhigh,l3-e02,0,system_invalid,false\n')
     results=aggregate(normalized_rows([path]))
-    assert {(r['effort'],r['completed']) for r in results}=={('max',1),('xhigh',1)}
+    assert {(r['effort'],r['completed']) for r in results}=={('max',1),('xhigh',2)}
     assert all(r['total_100'] is None for r in results)
+
+
+def test_export_and_csv_reaggregation_keep_delivery_zero_in_145_task_mean(tmp_path):
+    from benchmark.export import export_scores
+    rows=full_rows()
+    failed=rows[0]['task_id']
+    for row in rows:
+        report={'model': row['model'], 'task_id': row['task_id'],
+                'S_core': 0 if row['task_id']==failed else row['score_100']/100,
+                'status': 'system_invalid' if row['task_id']==failed else 'scored',
+                'score_valid': row['task_id']!=failed}
+        target=tmp_path/'main_results'/row['model']/row['task_id'].split('/')[-1]/'report.json'
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(json.dumps(report))
+    assert export_scores(tmp_path)['completed']==145
+    direct=json.loads((tmp_path/'weighted-summary.json').read_text())['models'][0]
+    replay=aggregate(normalized_rows([tmp_path/'scores.csv']))[0]
+    assert direct['status']==replay['status']=='complete'
+    assert direct['L1_score_100']==replay['L1_score_100']==pytest.approx(64*50/65)
+    assert direct['total_100']==replay['total_100']==pytest.approx(.3*(64*50/65)+.3*60+.4*70)
+
+
+@pytest.mark.parametrize('status',['technical_failure','infrastructure_error','not_measurable','error','failed'])
+def test_technical_zero_never_becomes_a_measured_delivery_zero(tmp_path,status):
+    from benchmark.export import export_scores
+    task=full_rows()[0]['task_id']
+    report={'model':'fixture','task_id':task,'S_core':0,'status':status,'score_valid':False}
+    target=tmp_path/'main_results/fixture/task/report.json'
+    target.parent.mkdir(parents=True)
+    target.write_text(json.dumps(report))
+    assert export_scores(tmp_path)['completed']==0
+    assert normalized_rows([tmp_path/'scores.csv'])==[]
+    assert aggregate([{'model':'fixture','task_id':task,'score_100':0,'status':status,'score_valid':False}])==[]
+
+
+def test_system_invalid_positive_score_is_rejected(tmp_path):
+    path=tmp_path/'bad.csv'
+    path.write_text('model,task_key,score_100,status,score_valid\nfixture,l3-e01,20,system_invalid,false\n')
+    with pytest.raises(ValueError,match='retain zero'):
+        normalized_rows([path])
 
 def test_active_numbers_are_continuous_and_all_paths_exist():
     mapping=json.loads((ROOT/'configs/release/task-id-map.json').read_text())['tasks']

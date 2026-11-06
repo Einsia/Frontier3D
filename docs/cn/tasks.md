@@ -52,7 +52,7 @@ Total = 0.30 * L1 + 0.30 * L2 + 0.40 * L3
 | L3 | 15 | 40% | 2.666667% |
 
 每层内各题等权。层级分要求该层全部题，总分要求145题齐全。缺测和技术无效测量保留缺失，
-真实测得的有效0分参与汇总；缺题时不重新分配权重。成绩按模型与effort联合分组。
+真实测得的0分及确认交付失败的0分参与汇总；缺题时不重新分配权重。成绩按模型与effort联合分组。
 
 ~~~sh
 python -m benchmark summarize --scores /path/to/l12/scores.csv --scores /path/to/l3/scores.csv --output runs/combined

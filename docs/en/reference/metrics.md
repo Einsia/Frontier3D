@@ -73,7 +73,7 @@ Extension Brief uses [measure_effort_addition_numeric.py](../../../tools/measure
 data = number_of_satisfied_entries / number_of_frozen_native_content_checks
 ~~~
 
-Accepted `violated`, `partial`, `observed` and `not_measurable` entries remain in the fixed denominator; unresolved entries are recorded. API failure, failed ledger validation or an incomplete review blocks the review output.
+Accepted `violated`, `partial` and `observed` entries remain in the fixed denominator with zero credit; unresolved entries are recorded. Any `not_measurable` entry leaves `data=null` and blocks the final score, following the original missing-measurement policy. API failure, failed ledger validation or an incomplete review also blocks output.
 
 ## SceneEdit
 

@@ -54,7 +54,7 @@ D = min(D_v for v in P)
 - 扩展题通常对应L1的8个或L2的4个变体。
 - `detail-only-v1`只缩小单次裁判的计分原子清单，保留定义与权重，不缩减变体总体。
 
-公开CLI使用完整冻结总体。底层screening及变体数量开关可产生诊断子集；比较成绩前检查`required_variants`和`measured_variants`。
+公开CLI使用完整冻结总体。`LEGACY_DETAIL_VARIANT_LIMIT`不影响正式测量。底层显式screening选项生成独立诊断子集，子集缓存不能复用或发布为正式结果。比较成绩前检查`required_variants`和`measured_variants`。
 
 ## 四题专项
 
@@ -74,7 +74,7 @@ D = min(D_v for v in P)
 | 结果 | 计分处理 |
 | --- | --- |
 | 已测内容缺陷、比例错误、必需细节缺失或曝光差 | 相关质量项低分／零分，保留其他已测项和固定权重 |
-| 确认违反交付合同，如场景无法加载、依赖被禁止 | 可出现`score_valid=false`、`system_invalid`和`S_core=0`，需查看具体gate |
+| 确认违反交付合同，如场景无法加载、依赖被禁止 | `score_valid=false`、`system_invalid`和`S_core=0`，零分计入固定题目总体及层级均分 |
 | API故障、技术证据损坏／缺失、绑定不符、测量未实现 | 保留缺测（`S_core=null`或`technical_failure`）和证据 |
 | 签名、seed或提交图片差异 | 记录诊断，并按该路由的证据策略处理 |
 
@@ -86,7 +86,7 @@ D = min(D_v for v in P)
 
 [候选异常政策](../../configs/evaluation/candidate-robustness-v1.json)仅允许将已确认由候选内容导致不可定义的受影响检查记零，排除API、文件系统、来源不符及基础设施中断。未知崩溃需诊断，保留原测量快照与恢复原因。
 
-每个正权重分项都需有限测量。技术缺测不填零，缺失detail权重不重分配，裁判重试不按分数择优。扩展Brief仅对`satisfied`条目给分，分母固定为`native_content_checks`总体；其他已接受状态保留在分母和未决列表。核验失败或未绑定时仍阻塞输出。
+每个正权重分项都需有限测量。技术缺测不填零，缺失detail权重不重分配，裁判重试不按分数择优。扩展Brief仅对`satisfied`条目给分，分母固定为`native_content_checks`总体；`violated`、`partial`和`observed`条目保留在分母中，得分为零。`not_measurable`沿用原初缺测政策，阻塞data分项及最终成绩。核验失败或未绑定时也阻塞输出。
 
 ## 示例与解释
 

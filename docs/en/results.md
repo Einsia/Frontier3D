@@ -62,7 +62,7 @@ python -m benchmark export --output runs/my-model-contract
 python -m benchmark summarize --scores runs/my-model-contract/scores.csv --output runs/combined
 ~~~
 
-`scores.csv` contains finite final report scores, status, validity, effort, report path and hash. Missing/nonfinite values are omitted; invalid measurements do not enter the weighted total. `summary.json/mean` is an unweighted diagnostic over exported rows. The complete release total is in `leaderboard.csv` and `weighted-summary.json`, using [all-task level means](tasks.md#aggregate-scores). Model/effort groups remain separate.
+`scores.csv` contains finite final report scores, status, validity, effort, report path and hash. Confirmed delivery failures (`system_invalid`, `S_core=0`) remain in exports and count as zero in the fixed task population. Technical failures and missing/nonfinite measurements are omitted and block a complete total. The same eligibility rule applies to CSV export and weighted aggregation. `summary.json/mean` is an unweighted diagnostic over exported rows. The complete release total is in `leaderboard.csv` and `weighted-summary.json`, using [all-task level means](tasks.md#aggregate-scores). Model/effort groups remain separate.
 
 `--resume` verifies accepted sources and cached reports before reusing stages. Keep generation, runtime and judge logs when diagnosing failure. A source or evidence hash mismatch requires investigation; choose a new campaign when changing configuration.
 

@@ -1,8 +1,8 @@
 '''Final native numeric score for the added Brief2Scene tasks.
 
 A frozen check counts only when the native audit marks it satisfied. Partial,
-observed, violated and not_measurable rows stay in the denominator, so nothing
-is inferred from status labels beyond what the audit demonstrated.
+observed and violated rows stay in the denominator. Unavailable measurements
+block the component, following the original unmeasured-no-redistribution policy.
 '''
 
 STATUSES = {'satisfied', 'violated', 'partial', 'observed', 'not_measurable'}
@@ -23,6 +23,9 @@ def numeric_data_score(report, plan):
         counts[row['status']] = counts.get(row['status'], 0) + 1
     if set(counts) - STATUSES:
         raise ValueError('Unknown numeric audit status')
-    return {'score': counts.get('satisfied', 0) / len(checks), 'counts': counts,
+    missing = sorted(i for i, r in rows.items() if r['status'] == 'not_measurable')
+    return {'status': 'not_measurable' if missing else 'measured',
+            'score': None if missing else counts.get('satisfied', 0) / len(checks), 'counts': counts,
             'checks': len(checks),
+            'missing_checks': missing,
             'unresolved': sorted(i for i, r in rows.items() if r['status'] in UNRESOLVED)}

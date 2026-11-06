@@ -56,7 +56,7 @@ Total = 0.30 * L1 + 0.30 * L2 + 0.40 * L3
 
 Tasks have equal weight within a level. A complete level requires every task;
 the total requires all 145. Missing and technical-invalid measurements stay
-missing. Valid measured zeros count. Weights are never redistributed for
+missing. Measured zeros and confirmed delivery-failure zeros count. Weights are never redistributed for
 missing tasks. Scores are grouped by model **and effort**.
 
 ~~~sh

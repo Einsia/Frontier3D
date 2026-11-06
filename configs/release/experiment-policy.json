@@ -12,18 +12,7 @@
   "execution_timeout_seconds": 28800,
   "evaluation_timeout_seconds": 86400,
   "generator_internal_attempts": 1,
-  "rounding": "3600 * 2**ceil(log2(max_observed_seconds / 3600)); unit: hours",
   "budget_scope": "Generation total includes model calls, feedback backoff and public delivery validation; attempts share one budget. Evaluation is separate.",
-  "evidence": {
-    "selected_completed_max_records": 1540,
-    "longest_generation_invocation_seconds": 50940.74119557103,
-    "longest_generation_with_validation_seconds": 78334.93969366897,
-    "longest_generation_attempt_validation_seconds": 20050.54908165004,
-    "qwen_xhigh_included": false,
-    "additional_max_comparison_records_checked": 1,
-    "additional_comparison_records_with_success": 0,
-    "selected_generation_history_hash_mismatches": 0
-  },
   "model_effort_source": "model-harness-contract.json",
   "generation_effort_exceptions": {
     "qwen3.8-max": "xhigh",

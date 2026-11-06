@@ -12,6 +12,18 @@ VERSION = 'legacy-detail-replacement-v1'
 COMPONENT = 'detail'
 
 
+def require_full_population(detail, population):
+    """Reject screening and incomplete cached evidence before formal reuse."""
+    for field in ('required_variants', 'measured_variants'):
+        if field in detail and detail[field] != population:
+            raise ValueError('Complete frozen detail population required: ' + field)
+    judgments = set(detail.get('judge_runs', {}))
+    failures = set(detail.get('preparation_failures', {}))
+    if (detail.get('status') == 'screening' or judgments & failures
+            or judgments | failures != set(population)):
+        raise ValueError('Complete frozen detail population required')
+
+
 def ratio(value):
     if type(value) not in (int, float) or not math.isfinite(value) or not 0 <= value <= 1:
         raise ValueError('Expected a finite score in [0, 1]')

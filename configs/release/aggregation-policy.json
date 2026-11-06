@@ -1,5 +1,7 @@
 {
-  "version": "3dbench-145-max-levelmean-334-v1",
+  "version": "3dbench-145-max-levelmean-334-v2",
+  "confirmed_delivery_failure": "zero_in_fixed_population",
+  "technical_failure": "missing_blocks_total",
   "task_count": 145,
   "levels": {
     "L1": {

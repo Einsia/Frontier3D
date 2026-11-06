@@ -8,6 +8,23 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 POLICY_PATH=ROOT/'configs/release/aggregation-policy.json'
 
+def score_is_complete(row, value):
+    """A confirmed delivery zero is measured; technical missingness is not."""
+    if type(value) not in (int, float) or not math.isfinite(value):
+        return False
+    if not 0 <= value <= 100:
+        raise ValueError('Invalid score')
+    status = row.get('status')
+    if status == 'system_invalid':
+        if value != 0 or row.get('score_valid') in (True, 'true', 'True'):
+            raise ValueError('Confirmed delivery failure must retain zero and invalid delivery status')
+        return True
+    if status in {'failed', 'error', 'technical_failure', 'infrastructure_error',
+                  'not_measurable', 'not_implemented'}:
+        return False
+    return row.get('score_valid') not in (False, 'false', 'False')
+
+
 def load_policy():
     policy=json.loads(POLICY_PATH.read_text())
     tasks=[t for c in policy['categories'] for t in c['tasks']]
@@ -52,7 +69,7 @@ def normalized_rows(files,identity='release'):
                 from src.generator.harnesses import model_effort
                 effort=r.get('effort') or model_effort(model)
                 if effort not in ('medium','high','xhigh','max'):raise ValueError('Invalid effort')
-                if r.get('score_valid','').lower()=='false' or r.get('status') in ('system_invalid','failed','error','technical_failure'):continue
+                if not score_is_complete(r, value):continue
                 item={'model':model,'task_id':tid,'score_100':value}
                 if effort!='max' or model_effort(model)!='max':item['effort']=effort
                 rows.append(item)
@@ -64,6 +81,7 @@ def aggregate(rows,policy=None):
         if not r.get('model') or r['task_id'] not in population:raise ValueError('Unknown model or task identity')
         value=r['score_100']
         if type(value) not in (int,float) or not math.isfinite(value) or not 0<=value<=100:raise ValueError('Invalid score')
+        if not score_is_complete(r, value):continue
         from src.generator.harnesses import model_effort
         effort=r.get('effort') or model_effort(r['model'])
         bucket=by_model.setdefault((r['model'],effort),{})
