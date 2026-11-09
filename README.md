@@ -53,8 +53,10 @@ If you use Frontier3DBench, please cite:
   title = {Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds},
   author = {Lin, Xinjie and Liu, Qingle and Li, Wenyi and Lam, John and Wang, Xiaoqiu and Hong, Deyao and Gao, Mingju and Jiang, Zheng and Chi, Yizhe and Zheng, Youjie and Xiao, Calvin and Yang, Kaisen and Gao, Huan-ang},
   year = {2026},
-  url = {https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf},
-  note = {Preprint}
+  eprint = {2611.09017},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  url = {https://arxiv.org/abs/2611.09017}
 }
 ```
 
