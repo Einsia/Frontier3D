@@ -3,6 +3,8 @@
 <p align="center">
   <a href="https://lab.einsia.ai/frontier3dbench/Frontier3DBench.pdf"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square" alt="Paper PDF" /></a>
   <a href="https://lab.einsia.ai/frontier3dbench"><img src="https://img.shields.io/badge/Project%20Page-Website-315F85?style=flat-square" alt="Project Page" /></a>
+  <a href="https://github.com/Einsia/Frontier3D"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="GitHub Code" /></a>
+  <a href="https://huggingface.co/datasets/Einsia/Frontier3DBench"><img src="https://img.shields.io/badge/Hugging%20Face-Dataset-FFD21E?style=flat-square&logo=huggingface" alt="Hugging Face Dataset" /></a>
 </p>
 
 ![Frontier3DBench overview: 145 tasks across objects, scenes, and interactive open worlds, with the model leaderboard](docs/img/main.png)
