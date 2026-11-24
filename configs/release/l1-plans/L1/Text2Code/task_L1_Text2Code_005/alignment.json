@@ -301,7 +301,7 @@
   },
   "reference_regions": null,
   "reference_boxes": null,
-  "vlm_spec_digest": "16ccd4b04bdf6b37fc090585c3227f2f03254fda28d4b784049fb821e5d49058",
+  "vlm_spec_digest": "7a07af4c3210bc44b361188de57fb28eb7f119b5839d901505a19840ef6e90dd",
   "formal_score_eligible": false,
   "reference_views": [],
   "annotation_review": "ai_draft_pending_human_calibration",

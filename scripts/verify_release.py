@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 MANIFEST = ROOT / "docs/reference/release-manifest.json"
 IGNORED_PARTS = {
     ".git",
@@ -107,6 +108,12 @@ def main():
     files = sorted(release_files())
     errors = [str(p.relative_to(ROOT)) + ": symlink" for p in files if p.is_symlink()]
     errors.extend(doc_errors(files))
+    try:
+        from benchmark.l1_contracts import verify_l1_rubrics
+        verify_l1_rubrics(ROOT)
+        print('L1 rubric bindings: 45 tasks passed')
+    except (OSError, ValueError, KeyError) as error:
+        errors.append('L1 rubric bindings: ' + str(error))
     try:
         errors.extend(source_inventory_errors(ROOT))
     except (OSError,ValueError,KeyError) as error:

@@ -257,7 +257,7 @@
   },
   "reference_regions": "bda88a4e3a3917ff044943fefea3b673d3d715526611953078b5eaf7975a5dfb",
   "reference_boxes": "6985f8e5e9216e3aca5e081c85d2c981236bae22b481811547f0991dc8252633",
-  "vlm_spec_digest": "abf3c2232b30699ee35d197a25af2fa62e61765ac120748d2d692237b80b2d67",
+  "vlm_spec_digest": "191b5e225b1b29c3c6a8c04e40357048a02bd54841a9ebcd579d6f185afe1cf0",
   "formal_score_eligible": false,
   "reference_views": [
     "environment/input/reference.png",

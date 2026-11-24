@@ -290,7 +290,7 @@
   },
   "reference_regions": null,
   "reference_boxes": null,
-  "vlm_spec_digest": "c164b2fc90fff3828c22d1cfc33de73d1ef5ffad5f814ba0fd5f2ea0960738bd",
+  "vlm_spec_digest": "0c1f9b0262b84fa64829d70b8f229a7efcaaa8da0278423cd7548a70bdacc40f",
   "formal_score_eligible": false,
   "reference_views": [],
   "annotation_review": "ai_draft_pending_human_calibration",

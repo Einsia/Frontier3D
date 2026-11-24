@@ -120,5 +120,7 @@ def prepare(destination):
 
     for key in index["json_templates"] + index.get("binary_files", []):
         materialize(key)
+    from benchmark.l1_contracts import verify_l1_rubrics
+    verify_l1_rubrics(ROOT, resources=destination)
     os.environ["THREEDBENCH_RESOURCE_ROOT"] = str(destination)
     return destination

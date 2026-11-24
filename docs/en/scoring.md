@@ -2,6 +2,9 @@
 
 [中文](../cn/scoring.md) · [Documentation](../README.md)
 
+For the native L1 instruction-binding repair affecting releases through `73c3b2c`,
+see [rubric binding repair and offline verification](reference/l1-rubric-bindings.md).
+
 `python -m benchmark run/generate/evaluate` covers all three levels. Final item reports are written to `main_results/<model>/<task>/report.json`. `S_core` is in `[0,1]`; multiply by 100 for a percentage score. Level means and the 30/30/40 total are defined in [Tasks](tasks.md).
 
 ## Evaluation flow
