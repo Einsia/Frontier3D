@@ -65,12 +65,10 @@ def prepare(task, run, folder, *, retained_report=None, rerender=False):
             if Path(prior['path'])!=original_path:raise ValueError('Prior native report lineage differs')
             expected=prior['sha256']
         pin(original_path,expected)
-    audits={}
-    for label in ('baseline','seed-0','seed-1','seed-2'):
-        path=run/'audit'/(label+'.json');pin(path,record['evidence_sha256']['audit/'+label+'.json'])
-        audit=load(path)
+    from tools.l2_seed_evidence import native_audits
+    _, _, audits = native_audits(run, task=task)
+    for label, audit in audits.items():
         if not l2_audit_valid(audit):raise ValueError('Independent execution/integrity/loadability failed: '+label)
-        audits[label]=audit
     result=copy.deepcopy(original)
     harness=copy.deepcopy(evidence['harness'])
     for seed in manifest['seeds']:

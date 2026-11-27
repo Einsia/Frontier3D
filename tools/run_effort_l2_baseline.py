@@ -57,7 +57,9 @@ def run(root,task_id,*,preview=False,output_folder=None):
             base_url=campaign['provider_transport'],timeout=600,attempts=3)
         config=compact_judge(config,preview=True) if preview else configured_judge(config,campaign)
         report_path, evidence_path = original['report_path'], original['evidence_path']
-        audits = [read(source/'audit'/(label+'.json')) for label in ('baseline','seed-0','seed-1','seed-2')]
+        from tools.l2_seed_evidence import native_audits
+        _, _, bound_audits = native_audits(source, task=task)
+        audits = list(bound_audits.values())
         from src.evaluator.content_evidence_policy import l2_audit_valid
         policy_needed=(original.get('implementation_unchanged') is False or any(
             a.get('reproduction_matches_baseline') is False or a.get('rerender',{}).get('passed') is False for a in audits))

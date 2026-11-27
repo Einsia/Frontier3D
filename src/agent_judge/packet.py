@@ -146,6 +146,7 @@ def prepare(
     timeout=180,
     reference=None,
     tool_budget=12,
+    supplemental_evidence=None,
 ):
     validate_spec(spec)
     instruction = (task / "instruction.md").read_text(encoding="utf-8-sig")
@@ -256,6 +257,18 @@ def prepare(
             for path in root.rglob("*"):
                 if path.is_file() and path not in role_images:
                     path.unlink()
+    if supplemental_evidence:
+        from .protocol import digest as file_digest
+        if mode != 'interactive' or set(supplemental_evidence) != {'candidate/lighting_edit_evidence.json'}:
+            raise ValueError('Unsupported supplemental judge evidence')
+        for name, pointer in supplemental_evidence.items():
+            source = Path(pointer['path'])
+            if source.is_symlink() or file_digest(source) != pointer['sha256']:
+                raise ValueError('Supplemental judge evidence changed')
+            target = output / name
+            if target.exists():
+                raise ValueError('Supplemental judge evidence destination occupied')
+            shutil.copyfile(source, target)
     evidence = sorted(
         p.relative_to(output).as_posix()
         for role in ("reference", "candidate")

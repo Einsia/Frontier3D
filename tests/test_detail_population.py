@@ -60,7 +60,7 @@ def test_formal_measurement_ignores_old_variant_limit_and_measures_all(campaign,
             pointer_path=folder/'judges'/variant/'run.json'
             write(pointer_path,{'status':'scored','criterion_scores':{'detail':.2 if variant==population[-1] else .8}})
             future=Future()
-            future.set_result((variant,{'detail':.2 if variant==population[-1] else .8},pin(pointer_path),{},None))
+            future.set_result((variant,{'detail':.2 if variant==population[-1] else .8},pin(pointer_path),{},None,None))
             return future
     monkeypatch.setattr(measurement,'ThreadPoolExecutor',OfflinePool)
     result=measurement._measure(root,task,folder)

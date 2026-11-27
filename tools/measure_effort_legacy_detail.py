@@ -52,6 +52,8 @@ from tools.run_l1_strict_review import collect_native,BLENDER
 
 from tools.scene_render import render
 
+from tools.lighting_edit_evidence import TASKS as LIGHTING_TASKS, VERSION as LIGHTING_VERSION
+
 def contract(task_id, root=None):
     policy=read(resource('legacy_policy'))
     recipe=next(r for r in policy['cases'] if r['task_id']==task_id)
@@ -130,6 +132,8 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
     binding={'run':pin(run_dir/'run.json'),'plan':recipe['source_plan'],
         'spec':pin(Path(recipe['source_plan']['path']).with_name('judge_spec.json')),
         'variants':population}
+    if task_id in LIGHTING_TASKS:
+        binding['lighting_edit_evidence_policy'] = LIGHTING_VERSION
     scoring_images=None
     baseline_path=Path(baseline_report or root/'legacy_baseline'/tested_model(root)/Path('cases')/Path(task_id).name/'report.json')
     if baseline_path.exists():
@@ -175,6 +179,9 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
         if saved['source_bindings']!=binding:raise ValueError('Cached detail evidence changed')
         if selected_variants is None:
             require_full_population(saved, population)
+        if task_id in LIGHTING_TASKS:
+            from tools.lighting_edit_evidence import verify_detail
+            verify_detail(run_dir, Path(campaign['frozen'])/'data/3dbench/tasks'/task_id, task_id, saved)
         if selected_variants is not None and saved.get('measured_variants') != measured_population:
             raise ValueError('Cached screening variant subset changed; use a separate output root')
         for pointer in saved.get('judge_runs',{}).values():
@@ -214,7 +221,7 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
         # Keep the established detail binding for completed old results. New
         # paired evidence carries its additional policy/helper provenance here.
         atomic(folder/'view_policy_evidence.json', view_proof)
-    scores={};provenance={};native_provenance={};preparation_failures={}
+    scores={};provenance={};native_provenance={};preparation_failures={};lighting_provenance={}
     atomic(folder/'status.json',{'status':'running','task_id':task_id,
         'required_variants':population,'measured_variants':measured_population})
     seed_locks={seed:Lock() for seed in {v.split('/',1)[0] for v in population}}
@@ -259,7 +266,7 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
             atomic(dest/'preparation-zero.json',failure)
             criterion={identity:0. for identity in visual_ids}
             for identity,pointer in native_results.items(): criterion[identity]=read(Path(pointer['path']))['score']
-            return variant,criterion,None,native_results,pin(dest/'preparation-zero.json')
+            return variant,criterion,None,native_results,pin(dest/'preparation-zero.json'),None
         variant_config=config
         if invocation=='compact-v1' and os.environ.get('LEGACY_DETAIL_PRELOAD_NATIVE_VIEWS','0') == '1':
             preload=[{'scene':'candidate/scene.blend',
@@ -270,24 +277,31 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
             options=dict(config.responses_options)
             options['preload_views']=preload
             variant_config=replace(config,responses_options=options)
-        result=judge_task(task,{'artifacts':artifacts,'reference_images':references},
+        judge_evidence={'artifacts':artifacts,'reference_images':references}
+        lighting_pointer=None
+        if task_id in LIGHTING_TASKS:
+            from tools.lighting_edit_evidence import prepare as prepare_lighting
+            lighting_pointer=prepare_lighting(run_dir,task,task_id,variant,current['scene.blend'],dest)
+            judge_evidence['lighting_edit_evidence']=lighting_pointer
+        result=judge_task(task,judge_evidence,
             {'_vlm_judge':{'version':'continuous-task-judge-v1','spec':measurement_spec,
                 'spec_sha256':binding.get('measurement_spec',binding['spec'])['sha256'],
                 'mode':'interactive','edit_context':linear['edit_context']}},
             dest/'judge',config=variant_config,tested_model=tested_model(root),blender=BLENDER)
         criterion = dict(result.get('criterion_scores',{})) if result.get('status')=='scored' else {}
         for identity,pointer in native_results.items(): criterion[identity] = read(Path(pointer['path']))['score']
-        return variant, criterion, pin(dest/'judge/run.json'), native_results, None
+        return variant, criterion, pin(dest/'judge/run.json'), native_results, None, lighting_pointer
     workers=max(1,min(len(measured_population),int(os.environ.get(
         'LEGACY_DETAIL_VARIANT_WORKERS',str(campaign.get('detail_variant_workers',2))))))
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures=[pool.submit(judge_variant,variant) for variant in measured_population]
         for future in as_completed(futures):
-            variant,criterion,provenance_row,native_results,preparation_failure=future.result()
+            variant,criterion,provenance_row,native_results,preparation_failure,lighting_pointer=future.result()
             scores[variant]=criterion
             if provenance_row:provenance[variant]=provenance_row
             if native_results: native_provenance[variant]=native_results
             if preparation_failure: preparation_failures[variant]=preparation_failure
+            if lighting_pointer: lighting_provenance[variant]=lighting_pointer
             atomic(folder/'status.json',{'status':'running','task_id':task_id,'finished_variants':list(scores),
                 'required_variants':population,'measured_variants':measured_population,
                 'variant_workers':workers})
@@ -299,6 +313,7 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
             'required_variants':population,'measured_variants':measured_population}
         if native_provenance: result['native_runs']=native_provenance
         if preparation_failures: result['preparation_failures']=preparation_failures
+        if lighting_provenance: result['lighting_edit_evidence']=lighting_provenance
         atomic(folder/'detail.json',result)
         atomic(folder/'status.json',{'status':detail['status'],'task_id':task_id})
     else:
@@ -308,6 +323,7 @@ def _measure(root,task_id,folder,*,export_worker=None,selected_variants=None,all
             'required_variants':population,'measured_variants':measured_population,
             'criterion_ids':recipe['criterion_ids'],'source_bindings':binding,
             'judge_runs':provenance,'judge_model':judge_model(),'judge_effort':'medium'}
+        if lighting_provenance: result['lighting_edit_evidence']=lighting_provenance
         atomic(folder/'screening.json',result)
         atomic(folder/'status.json',{'status':'screening','task_id':task_id,
             'required_variants':population,'measured_variants':measured_population})

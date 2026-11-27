@@ -62,12 +62,13 @@ def addition_images(source, manifest, *, level, folder=None):
     return record
 
 def native_images(run, *, folder=None):
-    run=Path(run);record=load(run/'execution_record.json');manifest=load(run/'run.json')
+    from tools.l2_seed_evidence import native_audits
+    run=Path(run)
+    manifest, record, observations = native_audits(run)
     images={};audits={}
-    for label in ('baseline','seed-0','seed-1','seed-2'):
+    for label, audit in observations.items():
         path=run/'audit'/(label+'.json')
         pin(path,record['evidence_sha256']['audit/'+label+'.json'])
-        audit=load(path)
         if label=='baseline':scene=pin(run/'submission/scene.blend',record['artifact_sha256']['scene.blend'])
         else:
             attempt=manifest['attempts'][label][-1]

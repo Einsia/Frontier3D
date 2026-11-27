@@ -50,6 +50,9 @@ def validate_answer(work, home, answer):
     manifest=read_json(work/'manifest.json')
     for relative,expected in manifest['sha256'].items():
         if digest(work/relative)!=expected:raise ValueError('Input changed before response reuse')
+    if 'candidate/lighting_edit_evidence.json' in manifest['sha256']:
+        from tools.lighting_edit_evidence import require_citation
+        require_citation(answer)
     generated=home/'blender/generated' if manifest['mode']=='interactive' else None
     return score(answer,spec,verified_evidence(manifest,generated))
 

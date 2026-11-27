@@ -126,6 +126,11 @@ def judge_task(task_root, evidence, plan, output, *, config=None, env_file=None,
         elif strict_protocol is image_continuous:
             candidate_names += [Path(p['candidate']).name for p in spec['view_pairs']]
         candidate_names = list(dict.fromkeys(candidate_names))
+        supplemental = evidence.get('lighting_edit_evidence')
+        if supplemental:
+            from tools.lighting_edit_evidence import TASKS, require_citation
+            if spec['case_id'] not in TASKS or mode != 'interactive':
+                raise ValueError('Unexpected lighting edit evidence')
         if (output/'run.json').exists():
             previous=read_json(output/'run.json')
             if previous.get('invocation', metadata['invocation']) != metadata['invocation']:
@@ -137,6 +142,8 @@ def judge_task(task_root, evidence, plan, output, *, config=None, env_file=None,
             packet=output/'packet';manifest=read_json(packet/'manifest.json')
             if digest(packet/'manifest.json')!=previous['packet_sha256']:raise ValueError('Resume packet changed')
             verify_packet(packet,manifest);bindings=previous['source_bindings']
+            if manifest['sha256'].get('candidate/lighting_edit_evidence.json') != (supplemental or {}).get('sha256'):
+                raise ValueError('Resume lighting evidence changed; use a fresh judge directory')
             for path,expected in bindings.items():
                 if digest(Path(path))!=expected:raise ValueError('Resume source evidence changed')
             for name in candidate_names:
@@ -157,6 +164,7 @@ def judge_task(task_root, evidence, plan, output, *, config=None, env_file=None,
                 spec_sha256=previous['spec_sha256'],source_bindings=bindings,mode=mode)
             if previous.get('accepted_attempt'):
                 if digest(output/'issues.json')!=previous['response_sha256']:raise ValueError('Accepted response changed')
+                if supplemental:require_citation(read_json(output/'issues.json'))
                 directory=output/f"attempt-{previous['accepted_attempt']}"
                 paths=verified_evidence(manifest,directory/'generated' if mode=='interactive' else None)
                 recovered=score(read_json(output/'issues.json'),spec,paths)
@@ -199,7 +207,11 @@ def judge_task(task_root, evidence, plan, output, *, config=None, env_file=None,
                     file=task_root/scene;item={'path':str(file),'sha256':digest(file)}
                     bound_copy(item,reference/'scene.blend');bindings[str(file)]=item['sha256']
             packet=output/'packet'
-            manifest=prepare(task_root,candidate,spec,packet,mode=mode,reference=reference,tool_budget=12)
+            extra = {'candidate/lighting_edit_evidence.json': supplemental} if supplemental else None
+            if supplemental:
+                bindings[str(Path(supplemental['path']).resolve())] = supplemental['sha256']
+            manifest=prepare(task_root,candidate,spec,packet,mode=mode,reference=reference,tool_budget=12,
+                             supplemental_evidence=extra)
             if fidelity:strict_protocol.verify_packet_inputs(spec,manifest)
             metadata.update(packet_sha256=digest(packet/'manifest.json'),spec_sha256=frozen['spec_sha256'],
                 source_bindings=bindings,mode=mode)
@@ -234,6 +246,7 @@ def judge_task(task_root, evidence, plan, output, *, config=None, env_file=None,
                         continue
                     verify_packet(packet,manifest)
                     response=read_json(directory/'response.json')
+                    if supplemental:require_citation(response)
                     paths=verified_evidence(manifest,directory/'generated' if mode=='interactive' else None)
                     judgment=score(response,spec,paths)
                     for path,expected in bindings.items():

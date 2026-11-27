@@ -22,6 +22,8 @@ from src.evaluator.legacy_detail_v2 import TASK_RULES,VERSION
 
 from tools.evaluate_linear_candidate import pin,atomic
 
+from tools.lighting_edit_evidence import TASKS as LIGHTING_TASKS
+
 def finalize(root,task_id):
     if task_id in TASK_RULES:
         raise ValueError('This task requires the additional published v2 correction')
@@ -74,6 +76,10 @@ def finalize(root,task_id):
         elif bindings.get('measurement_profile') is not None:
             raise ValueError('Detail measurement profile lacks its frozen rubric')
         require_full_population(detail, population)
+        from tools.lighting_edit_evidence import verify_detail
+        if task_id in LIGHTING_TASKS:
+            campaign=read(root/'campaign.json')
+            verify_detail(run, Path(campaign['frozen'])/'data/3dbench/tasks'/task_id, task_id, detail)
         measured=population
         failures=detail.get('preparation_failures',{})
         if set(detail.get('judge_runs',{})) & set(failures): raise ValueError('Variant has both judge and preparation zero')
@@ -120,6 +126,8 @@ def finalize(root,task_id):
     report.update(scoring_version=VERSION,framework='legacy-composite-detail',
         components=report['score_components'],judge_model=judge_model(),judge_effort='medium',
         detail_source=pin(detail_path),baseline_report=base_binding)
+    if task_id in LIGHTING_TASKS:
+        report['lighting_edit_evidence_policy']=detail['source_bindings'].get('lighting_edit_evidence_policy')
     target=root/'main_results'/tested_model(root)/name/'report.json'
     if target.exists():
         old=read(target)
